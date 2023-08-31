@@ -1,0 +1,57 @@
+# main links
+main:
+  - title: "Schedule"
+    url: /schedule/00-overview
+  - title: "Assessments"
+    url: /assessments/01-overview
+  - title: "Policies"
+    url: /policies
+  - title: "Weekly Materials"
+    url: /materials/intro-ai-cli/01-course-ai-tools
+
+assessments:
+  - title: Assessments
+    children:
+      - title: "Overview"
+        url: /assessments/01-overview
+      - title: "Weekly Assignments"
+        url: /assessments/02-weekly-assessments
+      - title: "Semester Long Project"
+        url: /assessments/03-semester-project
+      - title: "Grading"
+        url: /assessments/04-grading
+
+materials:
+  - title: Intro to AI and CLI
+    children:
+      - title: "Course & AI Tools"
+        url: /materials/intro-ai-cli/01-course-ai-tools
+      - title: "Introduction to the Command-Line"
+        url: /materials/intro-ai-cli/02-command-line
+      - title: "Command-Line Cheatsheet"
+        url: /materials/intro-ai-cli/03-command-line-cheatsheet
+  - title: Intro to GitHub, Git, and File Formats (Forthcoming)
+  - title: Intro to Spreadsheets (Forthcoming)
+  - title: Intro to Visualizing Data (Forthcoming)
+  - title: Intro to Text Analysis (Forthcoming)
+  - title: Intro to Networks (Forthcoming)
+  - title: Intro to Mapping (Forthcoming)
+  - title: Intro to Markup Languages (Forthcoming)
+  - title: Intro to Web Styling (Forthcoming)
+  - title: Intro to Static Sites (Forthcoming)
+     
+
+schedule:
+  - title: Overview
+    children:
+      - title: "Schedule Overview"
+        url: /schedule/00-overview
+  - title: August Detailed Activities
+    children:
+      - title: "<b>August 31</b><br> Introducing to Digital Huamanities"
+        url: /schedule/01-introducing-dh/
+  - title: September Detailed Activities
+    children:
+      - title: "<b>September 7</b><br> Introducing DH Workflows"
+        url: /schedule/02-introducing-dh-workflows
+     
