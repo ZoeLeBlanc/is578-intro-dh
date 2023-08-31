@@ -23,6 +23,7 @@ Your initial proposal should:
 
 The proposal should be no shorter than 3 pages and no longer than 6 pages double spaced, and can contain tables, graphs, bullet points, or any other format that will help you outline the goals and plan for this workshop. Ultimately, this proposal should lay the groundwork for your workshop and will serve as your blueprint for the remainder of the semester.
 
+As you are developing your proposal, I would highly recommend trying to attend at least one of the Savvy Researcher workshops hosted by Mary Ton in the library (calendar is available here [https://uiuc.libcal.com/calendar/savvy?cid=15337&t=g&d=0000-00-00&cal=15337&audience=4666&inc=0](https://uiuc.libcal.com/calendar/savvy?cid=15337&t=g&d=0000-00-00&cal=15337&audience=4666&inc=0)).
 
 <h2 id="workshop-presentation">Workshop Presentation 15%</h2> 
 <h3>Due Nov 16, 2023 (Extension Possible Until Nov 23, 2023)</h3>
