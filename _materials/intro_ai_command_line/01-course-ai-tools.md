@@ -28,7 +28,7 @@ Finally, in addition to this course website, we will be using Canvas for links t
 
 ## Potential Tools for this Course
 
-In addition to these tools, we will also be exploring some emerging AI tools. These tools are not required for the course, but you are welcome to use them, whether for your assignments and final project, or really any other use you find helpful. We will be exploring these tools throughout the semester, but I wanted to provide a list of them here as well as some resources for using them. I also want to underscore that these are *emerging* technologies, so next week will be discussing some of the ethical and political implications of these tools, as well as some of the limitations.
+In addition to these foundational tools, we will also explore emerging AI technologies. These tools are not required for the course, but you are welcome to use them, whether for your assignments and final project, or really any other use you find helpful. We will be exploring these tools throughout the semester, but I wanted to provide a list of them here as well as some resources for using them. I also want to underscore that these are *emerging* technologies, so next week will be discussing some of the ethical and political implications of these tools, as well as some of the limitations.
 
 Today though, we will be exploring how to use these tools, and I've provided some resources below to help you get started.
 
@@ -64,7 +64,7 @@ Regardless of which tool you use, you will need to learn to do something that is
 
 So far we have discussed various definitions of digital humanities and the development of this field in the last decade. Working with ChatGPT, let's see if it can help us generate a definition of the field.
 
-1. What should be are initial prompt?
+1. What should our initial prompt be?
 2. How can we refine our prompt to create definitions that are historically accurate? How would our definition change if we were asking ChatGPT to write from the perspective of a librarian vs a historian vs a computer scientist?
 3. How are these definitions similar or different from the ones we read for today?
 

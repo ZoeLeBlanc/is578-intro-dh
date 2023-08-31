@@ -37,7 +37,7 @@ Let's first create a prompt for ChatGPT to generate a command for us. Here are s
 
 ----
 
-So know we need to try and understand what ChatGPT is telling us. Let's break down the command:
+So now we need to try and understand what ChatGPT is telling us. Let's break down the command:
 
 - `mkdir` is the command to create a new directory
 - `is578-2023` is the name of the directory we want to create
@@ -66,7 +66,7 @@ Let's once again try to generate a prompt to help us create a new file in our `i
 
 So far I have been using ChatGPT to generate prompts for us, but now it is your turn to try and generate a prompt.
 
-Download gpt4all https://gpt4all.io/index.html and use it to complete the following assingment:
+Download gpt4all https://gpt4all.io/index.html and use it to complete the following assignment:
 
 1. First, using the command line commands and your terminal create a series of nested directories and files.
 
