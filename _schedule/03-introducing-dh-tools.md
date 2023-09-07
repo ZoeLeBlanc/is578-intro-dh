@@ -21,16 +21,11 @@ class_date: 2023-09-14
 ## Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
 - Morgan, Paige C. “The Consequences of Framing Digital Humanities Tools as Easy to Use.” *College & Undergraduate Libraries* 25, no. 3 (July 3, 2018): 211–31. [https://doi.org/10.1080/10691316.2018.1480440](https://doi.org/10.1080/10691316.2018.1480440).
-
-## Workshop Assignments (to be completed prior to class)
-
-- [ ] Find one DH tool and share in the GitHub discussion forum.
-- [ ] Explain why you consider this to be a “DH tool” and whether you have previous experience using it.
-- [ ] Once you’ve located your tool, try to find it in the Index of DH conferences interface and share any relevant abstracts in your GitHub post.
-
-## Additional Resources
-
 - James Baker, "Preserving Your Research Data," *Programming Historian* 3 (2014). [https://doi.org/10.46430/phen0039](https://doi.org/10.46430/phen0039).
+
+## Prior to Class
+
+- [ ] Complete the GitHub, Git, & DH Tools assignment.
 
 ## Lab Workshop Session
 

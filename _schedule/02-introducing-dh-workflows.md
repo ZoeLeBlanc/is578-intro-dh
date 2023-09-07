@@ -31,3 +31,7 @@ class_date: 2023-09-07
 
 - [ ] Sign up for a GitHub account
 - [ ] Complete the AI & Command Line Assignment
+
+## Lab Workshop Session
+
+- Introduction to GitHub and Git

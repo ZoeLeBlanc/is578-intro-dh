@@ -21,7 +21,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 |  Date | Seminar Topic | Lab Topic |
 | -----------------: | --------------: | --------------: |
 | August 31, 2023 | [Introducing DH]({{site.baseurl}}/schedule/01-introducing-dh) | [Intro to AI and CLI]({{site.baseurl}}/materials/intro-ai-cli/01-course-ai-tools) |
-| September 7, 2023 | [Introducing DH Workflows]({{site.baseurl}}/schedule/02-introducing-dh-workflows) | Intro to GitHub and Git (To be posted) |
+| September 7, 2023 | [Introducing DH Workflows]({{site.baseurl}}/schedule/02-introducing-dh-workflows) | [Intro to GitHub and Git]({{site.baseurl}}/materials/intro-github-git/01-intro-github) |
 | September 14, 2023 | [Introducing DH Tools]({{site.baseurl}}/schedule/03-introducing-dh-tools) | Intro to Spreadsheets (To be posted) |
 | September 21, 2023 | [Introducing DH Data]({{site.baseurl}}/schedule/04-introducing-dh-data) | Intro to Visualizing Data (To be posted) |
 | September 28, 2023 | [Introducing DH Visualizations]({{site.baseurl}}/schedule/05-introducing-dh-visualizations) | Intro to Text Analysis (To be posted) |
@@ -42,7 +42,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 | Assignment | Due Date (Subject to Change) |
 | -----------------: | --------------: |
 | [AI & Command Line Assignment]({{site.baseurl}}/materials/intro-ai-cli/02-command-line#ai--command-line-assignment) | [September 7]({{site.baseurl}}/schedule/02-introducing-dh-workflows) |
-| [Intro to GitHub and Git Assignment](#) | [September 14]({{site.baseurl}}/schedule/03-introducing-dh-tools) |
+| [Intro to GitHub and Git Assignment]({{site.baseurl}}/materials/intro-github-git/02-intro-git#assignment) | [September 14]({{site.baseurl}}/schedule/03-introducing-dh-tools) |
 | [Intro to Spreadsheets Assignment](#) | [September 21]({{site.baseurl}}/schedule/04-introducing-dh-data) |
 | [Intro to Visualizing Data Assignment](#) | [September 28]({{site.baseurl}}/schedule/05-introducing-dh-visualizations) |
 | [Intro to Text Analysis Assignment](#) | [October 5]({{site.baseurl}}/schedule/06-introducing-dh-analysis) |
