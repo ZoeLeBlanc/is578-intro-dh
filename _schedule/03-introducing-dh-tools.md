@@ -16,7 +16,8 @@ class_date: 2023-09-14
 
 ## Applied Materials
 
-- Weingart, Scott B., and Nickoal Eichmann-Kalwara. “What’s Under the Big Tent?: A Study of ADHO Conference Abstracts.” *Digital Studies / Le Champ Numérique* 7, no. 1 (October 13, 2017). [https://doi.org/10.16995/dscn.284](https://doi.org/10.16995/dscn.284) and explore [DH Abstracts](https://dh-abstracts.library.virginia.edu/).
+- Weingart, Scott B., and Nickoal Eichmann-Kalwara. “What’s Under the Big Tent?: A Study of ADHO Conference Abstracts.” *Digital Studies / Le Champ Numérique* 7, no. 1 (October 13, 2017). [https://doi.org/10.16995/dscn.284](https://doi.org/10.16995/dscn.284)
+- Explore the Index of Digital Humanities Conferences [https://dh-abstracts.library.virginia.edu/](https://dh-abstracts.library.virginia.edu/).
 
 ## Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
