@@ -17,6 +17,8 @@ class_date: 2023-09-22
 ## Applied Materials
 
 - Lincoln, Matthew D., Scott B. Weingart, and Nickoal Eichmann-Kalwara. “The Index of Digital Humanities Conferences” *Journal of Open Humanities Data* 7, no. 0 (July 9, 2021): 12. [https://doi.org/10.5334/johd.26](https://doi.org/10.5334/johd.26).
+- And skim Groskopf, Christopher. “The Quartz Guide to Bad Data.” Quartz, December 15, 2015. [https://qz.com/572338/the-quartz-guide-to-bad-data](https://qz.com/572338/the-quartz-guide-to-bad-data).
+
 
 ## Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
