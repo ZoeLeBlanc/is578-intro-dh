@@ -113,7 +113,7 @@ Once completed, we will discuss collectively as a class.
 
 ## Additional Resources
 
-- “File Formats.” *Digital Humanities*, 2022. [https://dh.obdurodon.org/file-formats.shtml](https://dh.obdurodon.org/file-formats.shtml).
+- Gregory, Ben. “Data Formats 101.” Astronomer, n.d. [https://www.astronomer.io/blog/data-formats-101](https://www.astronomer.io/blog/data-formats-101).
 
 
 

@@ -49,7 +49,7 @@ Let's try and complete the following tasks:
 1. We want to join our dataset together. How could we do this?
 2. We want to compare the popularity of tools over time. How could we do this?
 
-### Data Manipulation with Google Sheets
+### Data Manipulation with Google Sheets (Proceed with Caution)
 
 I am assuming that most of you have used Google Sheets before, but if not that's ok too.
 
@@ -107,6 +107,8 @@ While Google Sheets is great, it has a number of limitations. However, there are
 
 Open Refine is a free and open source tool that allows you to clean and transform data. It is a powerful tool that can help you with a number of tasks, but it is not a magic bullet. It is important to understand that data cleaning is a process and that it is not always possible to clean data perfectly. Also how you want your data structured often depends on your goals.
 
+Let's follow this tutorial by Miriam Posner [https://github.com/miriamposner/get-started-with-openrefine/](https://github.com/miriamposner/get-started-with-openrefine/)
+
 1. First, we would need to download OpenRefine and open it up.
 
 ![open refine home](https://github.com/miriamposner/get-started-with-openrefine/raw/master/images/get-started-with-openrefine/open-openrefine.png)
@@ -122,8 +124,6 @@ To do this we need to create a new project and then select the file we want to i
 3. Now we can start cleaning our data.
 
 A few things to try. Let's try and make it so that we can not have our years be columns but instead be rows. How could we do this?
-
-#### Transposing Data
 
 ![transposing](https://tavareshugo.github.io/r-intro-tidyverse-gapminder/fig/07-data_shapes.png)
 
