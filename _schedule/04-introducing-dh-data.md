@@ -11,7 +11,6 @@ class_date: 2023-09-22
 
 - Posner, Miriam. “Humanities Data: A Necessary Contradiction – Miriam Posner’s Blog,” June 25, 2015. [https://miriamposner.com/blog/humanities-data-a-necessary-contradiction/](https://miriamposner.com/blog/humanities-data-a-necessary-contradiction/).
 - D’Ignazio, Catherine, and Lauren F. Klein. “The Numbers Don’t Speak for Themselves.” In *Data Feminism*, 2020. [https://data-feminism.mitpress.mit.edu/](https://data-feminism.mitpress.mit.edu/).
-- Tilton, Lauren, Emeline Alexander, Luke Malcynsky, and Hanglin Zhou. “The Role of Metadata in American Studies.” *Polish Journal for American Studies*, no. Issue 14 (Autumn 2020) (December 1, 2020): 149–63. [https://doi.org/10.7311/PJAS.14/2/2020.02](https://doi.org/10.7311/PJAS.14/2/2020.02).
 - Johnson, Jessica Marie. “Markup Bodies: Black [Life] Studies and Slavery [Death] Studies at the Digital Crossroads.” *Social Text* 36, no. 4 (137) (December 1, 2018): 57–79. [https://doi.org/10.1215/01642472-7145658](https://doi.org/10.1215/01642472-7145658).
 
 ## Applied Materials
@@ -22,6 +21,7 @@ class_date: 2023-09-22
 
 ## Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
+- Tilton, Lauren, Emeline Alexander, Luke Malcynsky, and Hanglin Zhou. “The Role of Metadata in American Studies.” *Polish Journal for American Studies*, no. Issue 14 (Autumn 2020) (December 1, 2020): 149–63. [https://doi.org/10.7311/PJAS.14/2/2020.02](https://doi.org/10.7311/PJAS.14/2/2020.02).
 - Cordell, Ryan. “‘Q i-Jtb the Raven’: Taking Dirty OCR Seriously.” *Book History* 20, no. 1 (2017): 188–225. [https://doi.org/10.1353/bh.2017.0006](https://doi.org/10.1353/bh.2017.0006).
 - Gebru, Timnit, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III, and Kate Crawford. “Datasheets for Datasets.” *Communications of the ACM* 64, no. 12 (November 19, 2021): 86–92. [https://doi.org/10.1145/3458723](https://doi.org/10.1145/3458723).
 - Mahoney, Jennifer, Roopika Risam, and Hibba Nassereddin. “Data Fail: Teaching Data Literacy with African Diaspora Digital Humanities.” The *Journal of Interactive Technology and Pedagogy*, December 10, 2020. [https://jitp.commons.gc.cuny.edu/data-fail-teaching-data-literacy-with-african-diaspora-digital-humanities/](https://jitp.commons.gc.cuny.edu/data-fail-teaching-data-literacy-with-african-diaspora-digital-humanities/).
