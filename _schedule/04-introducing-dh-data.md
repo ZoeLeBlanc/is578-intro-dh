@@ -29,8 +29,7 @@ class_date: 2023-09-22
 
 ## Workshop Assignments (to be completed prior to class)
 
-- [ ] Find one DH dataset, and similar to last week’s assignment, explain your rationale for why it should count as “DH”.
-- [ ] Share your rationale on GitHub and a sample of the data in a repository.
+- [ ] Complete the Data Creation & Discovery Assignment
 
 ## Additional Resources
 
@@ -41,4 +40,4 @@ class_date: 2023-09-22
 
 ## Lab Workshop Session
 
-- Introduction to visualizing data
+- Introduction to transforming & visualizing data

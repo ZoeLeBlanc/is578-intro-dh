@@ -1,7 +1,7 @@
 ---
-title: "Introduction to File Formats"
-permalink: /materials/intro-spreadsheets/01-intro-file-formats/
-excerpt: "An introduction to file formats and how they are used in DH."
+title: "Introduction to Formatting and Organizing Data"
+permalink: /materials/intro-data-work/01-intro-formatting-organizing-data/
+excerpt: "An introduction to working with data across file formats and considering how we organize data."
 toc: true
 ---
 
@@ -98,18 +98,37 @@ CSVs have a long history as well and the file format was first created in the 19
 
 ![punch card](https://imgur.com/V5mfB2w.jpg)
 
-## In Class (Breakout Room) Assignment
+## Data Creation & Discovery Assignment
 
-So far we have a list of DH Tools in everyone's respective repositories. How could we create a CSV file from this data? What would the columns be? What would the rows be? 
+In class, we worked through taking everyone's submission of a DH Tool and turning it into a dataset. You find last week's DH Tools submissions in this discussion forum on our GitHub repo [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/2](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/2) and our starting dataset at this Google Sheets link [here](https://docs.google.com/spreadsheets/d/176ml9ANRJBFGWEx279HQno70RCbi4NoSjGPW_SAosjw/edit?usp=sharing).
 
-Working together in groups, you'll need to do the following.
+For homework this week, your goal is to finish inputting the remaining submissions from the GitHub repository, but also consider how you might want to organize this data, label these columns, and what other data you might want to add. One key thing is that for the moment you should aim to have **ZERO empty cells**. This is a good practice for working with data in general, but also will help us when we try to join this dataset with other datasets.
 
-1. First create a folder in this [Google Drive Folder](https://drive.google.com/drive/folders/1ZFIPZtkJrmAOWITohsk6n7sNGluIwQEg?usp=sharing) with your group name.
-2. Then create a Google Sheets file in this folder and name it `DH Tools`.
-3. Discuss how you want to organize your data and what columns you want to include.
-4. Enter the data from your repository into this Google Sheets file.
+As I mentioned in class, we will be trying to join this dataset to other ones from this week, including the datasets from “Which DH Tools Are Actually Used in Research?,” December 6, 2019. [https://weltliteratur.net/dh-tools-used-in-research/](Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. https://weltliteratur.net/dh-tools-used-in-research/) and then the data from Index of DH Conferences [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads).
 
-Once completed, we will discuss collectively as a class.
+So some things to consider are:
+
+1. Are there structures you want to emulate from these examples?
+2. Do you want to keep the current structure and have to fill in the remaining data? Or change the structure?
+
+To help you do this exercise, here's a few steps to follow:
+
+1. You'll need to either copy or download the data from the Google Sheet. To do this, go to File > Download > Comma-separated values (.csv, current sheet). This will download the data as a CSV file. You're welcome to use whatever software you prefer to enter data.
+2. Once completed, upload your spreadsheet to GitHub and create a new Markdown file to document your dataset, similar to the data dictionary on the Index of DH Conferences.
+   1. If you are having trouble using `github.dev`, I'm actively investigating what is going wrong but in the interrim, you can link to a Google Drive Folder with your data and documentation (the documentation can be a Google Doc, if you are struggling to create a Markdown file).
+3. Finally submit a link to our next GitHub forum discussion [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/3](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/3).
+
+*Bonus Assignment*
+
+If you have time and interest, you are also welcome to post a link to a DH dataset in this forum. Finding existing data can be faster than having to build some by hand, so this may be useful for you as you start to work on developing your DH Workshop.
+
+Some places to look include:
+
+- The Journal of Open Humanities Data [https://openhumanitiesdata.metajnl.com/](https://openhumanitiesdata.metajnl.com/)
+- HumanitiesData.com [https://humanitiesdata.com/](https://humanitiesdata.com/)
+- Kaggle [https://www.kaggle.com/datasets?fileType=csv](https://www.kaggle.com/datasets?fileType=csv)
+
+
 
 ## Additional Resources
 
