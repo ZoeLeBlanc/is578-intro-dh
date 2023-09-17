@@ -40,4 +40,4 @@ class_date: 2023-09-22
 
 ## Lab Workshop Session
 
-- Introduction to transforming & visualizing data
+- Introduction to transforming and visualizing data
