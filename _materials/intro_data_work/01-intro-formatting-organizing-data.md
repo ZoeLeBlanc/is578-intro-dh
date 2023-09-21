@@ -104,7 +104,7 @@ In class, we worked through taking everyone's submission of a DH Tool and turnin
 
 For homework this week, your goal is to finish inputting the remaining submissions from the GitHub repository, but also consider how you might want to organize this data, label these columns, and what other data you might want to add. One key thing is that for the moment you should aim to have **ZERO empty cells**. This is a good practice for working with data in general, but also will help us when we try to join this dataset with other datasets.
 
-As I mentioned in class, we will be trying to join this dataset to other ones from this week, including the datasets from “Which DH Tools Are Actually Used in Research?,” December 6, 2019. [https://weltliteratur.net/dh-tools-used-in-research/](Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. https://weltliteratur.net/dh-tools-used-in-research/) and then the data from Index of DH Conferences [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads).
+As I mentioned in class, we will be trying to join this dataset to other ones from this week, including the datasets from “Which DH Tools Are Actually Used in Research?,” December 6, 2019. Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. [https://weltliteratur.net/dh-tools-used-in-research/](https://weltliteratur.net/dh-tools-used-in-research/) and then the data from Index of DH Conferences [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads).
 
 So some things to consider are:
 

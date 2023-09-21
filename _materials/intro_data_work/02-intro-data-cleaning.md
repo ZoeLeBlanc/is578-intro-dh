@@ -1,17 +1,126 @@
 ---
-title: "Introduction to Working with Data"
-permalink: /materials/intro-spreadsheets/02-intro-data
-excerpt: "An introduction to creating and working with data."
+title: "Introduction to Cleaning and Working With Data"
+permalink: /materials/intro-spreadsheets/02-intro-data-cleaning
+excerpt: "An introduction to cleaning and working with data for DH and LIS."
 toc: true
 ---
 
-So far we have been talking about file formats and trying our hand at creating data, but what about best practices for this work? And what does it mean to work with data?
+<div class="notice--info">⚡️ This lesson has been adapted from Heather Froehlich's A Gentle Introduction To Excel And Spreadsheets For Humanities People <a href="https://hfroehli.ch/2021/06/17/a-gentle-introduction-to-excel-and-spreadsheets-for-humanities-people/">https://hfroehli.ch/2021/06/17/a-gentle-introduction-to-excel-and-spreadsheets-for-humanities-people/</a></div>
+
+
+So far we have been talking about file formats and trying our hand at creating data, but what about best practices for this work? And what does it mean to work with data in the humanities?
+
+### What is Humanities Data and How Can We Work with It?
+
+As you've read this week, there's no one definition of or way to work with humanities data, especially since the very category of 'humanities' itself is contested and nebulous. One of the key things that you've hopefully learned from our assignment this week is that creating data is a process that requires many interpretative steps and that it can difficult to know how to proceed if you don't have a clear goal in mind.
+
+As Posner writes:
+
+> "It requires some real soul-searching about what we think data actually is and its relationship to reality itself; where is it completely inadequate, and what about the world can be broken into pieces and turned into structured data? I think that’s why digital humanities is so challenging and fun, because you’re always holding in your head this tension between the power of computation and the inadequacy of data to truly represent reality."
+
+While hopefully we have discussed some of the choices everyone made in their dataset creation assignment, I also wanted to share my attempt at creating this dataset.
+
+[![custom dataset]({{site.baseurl}}/assets/images/custom_dataset.png)](https://zoeleblanc.notion.site/All-DH-Tools-Dataset-from-IS578-2e91aff0480e48dfbc3d2adb01795930?pvs=4)
+*Click on the image to see my dataset*
+
+As I mentioned in class, when manually cleaning data, I often use Notion (though you can do this work in Google Sheets, Excel, AirTable, etc...). In my example, you can see I've made a few interpretative choices from our original dataset from class:
+
+1. I have renamed all the column names to be lowercase and underscored. This is a common practice in datasets since it is easier for computers to autocomplete and requires less typing, depending on the software you are using.
+2. I have changed the description column to contains `True`, `False`, `None` which are values that work better with computers rather than `Yes` or `No`.
+3. I have filled in as many of the missing values as I could. But I also created a column called `abstract_original` so that I could keep track of whether a contributor had initially submitted an abstract or if it was one I found. This choice was so that I was not skewing the initial records but still had a way to fill in missing values.
+4. I also created a column called `revised_keywords` where I combined our two categorical columns (`Tool Category` and `Area of Use`) and also limited the number of values. This choice is very subjective and I could have made different choices, but I wanted to limit the number of values to make it easier to work with the data. The more options you have, the more complexity you create.
+5. Lastly, I used some of the built-in Notion functionality to color some of the values. This makes it easier for me to look at the data, but it is important to note that computers do not understand colors. So if I wanted to use this data in a visualization, I would need to create a new column that would translate the colors into values that computers can understand.
+
+All of these choices are subjective and represent my own interpretation of the data. But they are also choices that I made to make it easier to work with the data down the road. One of the reasons I use Notion is also because this let's me export the data as a Markdown File and CSV, which you can also find in the [GitHub repository](
+
+
+### Dataset Foundations
+
+From this experience of creating data, you are starting to learn that datasets are highly structured ways to work with and manipulate data.
+
+While the particular software you use will influence you experience, there are some key things to know about datasets:
+
+1. Datasets are made up of rows and columns. Each row represents a single record and each column represents a single variable. So for example, a row might be a single book and the columns might be the title, author, and publication date. Or in our case a row might be a single DH tool and the columns might be the name, description, and category.
+2. Single values are often called cells. These cells are the intersection of a row and column, and can contain many types of data. Often a rule of thumb is that a cell should contain a single observation or data point, but this is a general rule and not always the case.
+3. The first row of a dataset is often called the header row. This row contains the column names and is often used to describe the data in the dataset. Naming columns is an important part of creating a dataset because it helps you and others understand what the data represents.
+4. Many spreadsheet software allow you to have multiple sheets (like Google Sheets for example), or you might try to add multiple datasets on one sheet like we did in class last week. Another general rule of thumb is that each sheet should contain a single dataset. This is because it makes it easier to work with the data and to share it with others.
+5. Finally, it is important to remember that this is not a text document so it is crucial to work with these softwares in ways the expect. For example, many of these softwares might try to automatically deduce your data from the formatting, so if you have dates you might want to structure it as `YYYY-MM-DD` or if you have numbers you might want to remove any commas or dollar signs. This is because computers do not understand the same things as humans, so we need to make sure that we are structuring our data in ways that computers can understand.
+
+Here's an example from Google Sheets:
+
+![google sheets](https://sheetshelp.com/wp-content/uploads/2021/12/parts-of-a-spreadsheet-1b-1024x516.png)
+
+And you can read more about these foundations here: [https://sheetshelp.com/spreadsheet-parts/](https://sheetshelp.com/spreadsheet-parts/)
+
+
+### Data Types
+
+Now let's trying working in Google Sheets again with this revised All DH Tools dataset to start understanding some of the foundations of working with data.
+
+[![gsheets dataset]({{site.baseurl}}/assets/images/gsheets_dataset.png)](https://docs.google.com/spreadsheets/d/1gqfnd5GssQ_4g2ELnM_zQ_40Lgg7TwOnehVri0WpeOc/edit?usp=sharing)
+
+Here's an uploaded version of the dataset I created in Notion. You'll notice a few things immediately. First, all the colors are gone as predicted. You'll also see that all the links are automatically rendering as links, and that `experience` is also rendering as `TRUE` and `FALSE` versus `abstract_original` which was a checkbox in Notion that is now rendered as `Yes` or `No` since that was how Notion exported that format.
+
+When working with data it is crucial to understand that there are different types of data.
+
+![data types](https://ucarecdn.com/2bc4eb6c-4c71-4679-8c0b-308b293b8515/)
+
+Using this graph we can see that our data is primarily `categorical` from `tool_name` to `description`, etc... But we also have some `boolean` data in `experience` and `abstract_original`. Boolean is a fancy way of saying `True` or `False`. We also have a `None` value in `abstract_original` which is a way of saying that there is no value in that cell. Explicitly stating that there is no value can be useful so that there's no ambiguity, though most spreadsheet software will automatically assume empty cells contain `None` (which is also called a Null value).
+
+You will also see that my `revised_keywords` column now has commas to separate our keywords. When working with a list of items in a cell, it is good practice to use some type of symbol that can be a `delimiter`. Most software assumes that commas or semi-colons are delimiters, and by having this standard format it will allow you to more easily work with this data.
+
+We can try creating some `derived` `numerical` data from our current dataset through Google Sheets. Derived data is a termed often used to denote any aggregation or transformation of a dataset to create additional data that was not there originally.
+
+One thing we might want to know is how popular these tools are across the class. We can get some help through ChatGPT to find the exact syntax, through using the following prompt:
+
+> I have a Google Sheets dataset with the following columns: tool_name, link_tool, abstract_title, link_dh_abstract, contributor, description, experience, revised_keywords, original_submission, rationale, abstract_original, alternative_link. I want to know how many times each tool was used and save that into a new column called `tool_count`. `tool_name` is in column A and I want `tool_count` to be in column M. There is also 18 rows including the header column. My sheet is also called `All DH Tools Revised`. How can I do this?
+
+
+And from ChatGPT we learn that:
+
+
+Given your dataset and the specified columns, here's how you can determine how many times each tool was used and save that into the `tool_count` column:
+
+1. **Column Headers**:
+   Assuming you have your headers in row 1, type "tool_count" in cell M1 to label the new column.
+
+2. **Count Formula**:
+   In cell M2, right next to the first tool name in column A, you will use the `COUNTIF` function to calculate the number of times that tool appears in the `tool_name` column.
+
+   Enter the following formula in cell M2:
+   ```shell
+   =COUNTIF(A$2:A$18, A2)
+   ```
+
+3. **Drag Down the Formula**:
+   After entering the formula in cell M2, you can click on the bottom-right corner of the cell (where there's a little square or "handle") and drag it down to fill cells M2 through M18. This will apply the formula to each row, counting occurrences of the corresponding tool in column A.
+
+4. **Result**:
+   Now, column M will contain the count of each tool listed in column A for all rows 2 through 18.
+
+Remember, the absolute reference (`$` in `A$2:A$18`) ensures that as you drag the formula down, it will always count against the entire specified range, whereas the relative reference (`A2`) updates for each row you drag to.
+
+If done correctly, we should get a result that looks like this:
+
+![count column]({{site.baseurl}}/assets/images/count_column.png)
+
+We can also visually examine the popularity of tools by creating a bar chart. Using the graph button in Google Sheets to see the most popular tools:
+
+
+![graph]({{site.baseurl}}/assets/images/graph_count.png)
+
+### Data Merging and Filtering
+
+Now that we have our own dataset, let's try and work with some other datasets to compare our results. 
+
+First, we can have the data from Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. [https://weltliteratur.net/dh-tools-used-in-research/](https://weltliteratur.net/dh-tools-used-in-research/), which should download as 
+
 
 ## A Tale of Two Datasets
 
 This week we read articles that provided datasets. 
 
-First, we can have the data from Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. [https://weltliteratur.net/dh-tools-used-in-research/](Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. https://weltliteratur.net/dh-tools-used-in-research/) and then the data from Index of DH Conferences [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads).
+F and then the data from Index of DH Conferences [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads).
 
 Let's explore these datasets together and discuss some of their features.
 
