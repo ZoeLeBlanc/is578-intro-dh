@@ -9,7 +9,6 @@ class_date: 2023-09-28
 
 ## Contextual Materials
 
-- Collier, Zakiya. “Review: The Library of Missing Datasets.” Reviews in Digital Humanities III, no. 4 (April 19, 2022). [https://doi.org/10.21428/3e88f64f.6bdb8931](https://doi.org/10.21428/3e88f64f.6bdb8931).
 - D’Ignazio, Catherine, and Lauren F. Klein. “On Rational, Scientific, Objective Viewpoints from Mythical, Imaginary, Impossible Standpoints.” and “What Gets Counted”  In Data Feminism. The MIT Press, 2020. [https://data-feminism.mitpress.mit.edu/](https://data-feminism.mitpress.mit.edu/).
 - Hinrichs, Uta, Stefania Forlini, and Bridget Moynihan. “In Defense of Sandcastles: Research Thinking through Visualization in Digital Humanities.” Digital Scholarship in the Humanities 34, no. Supplement_1 (December 1, 2019): 80–99. [https://doi.org/10.1093/llc/fqy051](https://doi.org/10.1093/llc/fqy051).
 
@@ -21,6 +20,7 @@ class_date: 2023-09-28
 
 - Drucker, Johanna. “Humanities Approaches to Graphical Display.” Digital Humanities Quarterly 005, no. 1 (March 10, 2011).
 - Lavin, Matthew. “Why Digital Humanists Should Emphasize Situated Data over Capta.” Digital Humanities Quarterly 015, no. 2 (June 15, 2021).
+- Collier, Zakiya. “Review: The Library of Missing Datasets.” Reviews in Digital Humanities III, no. 4 (April 19, 2022). [https://doi.org/10.21428/3e88f64f.6bdb8931](https://doi.org/10.21428/3e88f64f.6bdb8931).
 
 ## Workshop Assignments (to be completed prior to class)
 
