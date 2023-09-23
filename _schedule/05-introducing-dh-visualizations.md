@@ -24,7 +24,7 @@ class_date: 2023-09-28
 
 ## Workshop Assignments (to be completed prior to class)
 
-- [ ] *Assignments will be updated closer to the class date.*
+- [ ] Complete the Data Cleaning & Merging Assignment
 
 ## Additional Resources
 
