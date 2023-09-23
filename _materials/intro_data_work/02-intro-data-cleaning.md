@@ -168,41 +168,432 @@ We can even ask ChatGPT how to alter our formula so that it includes zeros inste
 
 ```
 
-Now there's more we could do with this dataset, like comparing our counts but first let's try also merging this dataset with our Index of DH Abstracts which is available here [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads).
+#### VLOOKUP and Google Sheets Documentation
 
-First, we would need to download the dataset and upload it to our Google Sheet.
+As ChatGPT explains briefly, `VLOOKUP` is a built-in function that stands for "Vertical Lookup" and exists in most spreadsheet software. It searches for a value in the first column of a table range and returns a corresponding value from another column in the same row. Essentially, VLOOKUP helps in cross-referencing data. The function can be immensely valuable when trying to integrate information from different tables or datasets based on a common identifier.
 
-*Class Question: How and can we import this data into our existing Google Sheet?*
+![vlookup](https://lh3.googleusercontent.com/VOvPOX4k-wVnkNEPEX_HcOAjOu-xMtEdwAfK_CrcNVfBVVRNDBocpF2C2T5ZvYX2yytH=w761-rwa)
 
-Now we need to figure out how we can merge these two datasets. What columns are shared between the two?
+To explain it in a bit more depth, the VLOOKUP function takes four arguments:
+
+1. **Search Key**:
+   The value to search for in the first column of the table range. In our case, this is the tool name from the "Merged Dataset" sheet.
+
+2. **Table Range**:
+   The range of cells that contains the data to be searched. In our case, this is the `tool_name` column from the `tools-dh-proceedings` sheet.
+
+3. **Column Index**:
+   The column number of the table range from which to return a value. In our case, this is the column number of the year's data (e.g., `2015` is column 2, `2016` is column 3, etc.).
+
+4. **Is Sorted**:
+   A boolean value that indicates whether the first column of the table range is sorted in ascending order. In our case, this is `FALSE` because the `tool_name` column is not sorted.
+
+The `IFERROR` function is used to handle errors that may occur when the `VLOOKUP` function is unable to find a match. In our case, if a match is not found, the `VLOOKUP` function returns an error, which is then replaced with an empty string by the `IFERROR` function.
+
+The `ARRAYFORMULA` function allows the `VLOOKUP` function to process multiple rows at once. Without this function, you would have to copy the `VLOOKUP` formula to each row individually.
+
+The `COLUMN` function returns the column number of a specified cell reference. In our case, we use `COLUMN(B1)` to return the column number of the cell in column B (i.e., column 2).
+
+This is a lot of technical information that while helpful to know is not critical to memorize, instead you can find most of this information in the help documentation for your software. For example, here's the help documentation for Google Sheets: [https://support.google.com/docs/answer/3093318?hl=en](https://support.google.com/docs/answer/3093318?hl=en). Learning to read documentation is a helpful skill so while ChatGPT and other tools can help you get started, it is important to learn how to read documentation and to understand the basics of how your software works.
+
+----
+
+Let's try and merge these two datasets in a different way to make sure we are fully understanding how to do this. This time lets merge `All DH Tools Revised` into `tools-dh-proceedings` using similar steps:
+
+- First, we need to create a new Google Sheet called `Reversed Merged Dataset`. 
+
+- Then we need to once again copy the headers from each sheet, along with the full data from `tools-dh-proceedings`. Though remember to not repeat `tool_name` in the `Reversed Merged Dataset` sheet.
+
+- Next, we can use ChatGPT to help us with the formula to merge the data from `All DH Tools Revised` into `Reversed Merged Dataset`:
+
+> I have a Google Sheets dataset with two sheets. The first is called `tools-dh-proceedings` with the following columns: tool_name, 2015, 2016, 2017, 2018, 2019. The second is called `All DH Tools Revised` with the following columns: tool_name, link_tool, abstract_title, link_dh_abstract, contributor, description, experience, revised_keywords, original_submission, rationale, abstract_original, alternative_link, tool_count. How can I merge these two datasets into a single dataset? In this instance, I want to merge `All DH Tools Revised` into `tools-dh-proceedings`. The `tool_name` column contains the same information but there are fewer rows in the first dataset than the second. `tools-dh-proceedings` has a range from A1:F239 including the header column and `All DH Tools Revised` has a range of A1:M18 including the header column. I want to save this merged dataset in a new sheet called `Reversed Merged Dataset`. Help me write this formula.
+
+ChatGPT gives us the following answer:
+
+1. In cell `A2` of your `Reversed Merged Dataset` sheet, write the following formula to bring over all data from `tools-dh-proceedings`:
+
+    ```shell
+    =ARRAYFORMULA('tools-dh-proceedings'!A2:F239)
+    ```
+*Notice that we had previously manually copied the data, but ChatGPT is sharing that we can use `ARRAYFORMULA` to do this programatically*
+    
+2. In cell `G2` of your `Reversed Merged Dataset` sheet, use the following formula to bring over data from `All DH Tools Revised` based on the `tool_name`:
+
+    ```shell
+    =ARRAYFORMULA(IF(A2:A239="", "", IFERROR(VLOOKUP(A2:A239, {'All DH Tools Revised'!A2:A18, 'All DH Tools Revised'!B2:M18}, COLUMN(B1)+1, FALSE), "")))
+    ```
+  
+    - The `IF(A2:A239="", "", ...)` part checks if the `tool_name` is empty and skips the empty rows.
+    - `VLOOKUP(A2:A239, {'All DH Tools Revised'!A2:A18, 'All DH Tools Revised'!B2:M18}, COLUMN(B1)+1, FALSE)` performs a lookup based on `tool_name` to get corresponding values from the second dataset.
+    - The `COLUMN(B1)+1` dynamically calculates the column index for the data from `All DH Tools Revised` so that it starts from column B (`link_tool`) in that sheet. 
+
+3. Drag this formula across from column `G` to column `O` so that it fetches all remaining columns from `All DH Tools Revised`.
+
+![successful drag]({{site.baseurl}}/assets/images/successful_drag.png)
+
+While this formula largely works, when we drag it across columns, you'll notice that it is not autopopulating our data.
+
+![missing data]({{site.baseurl}}/assets/images/missing_data.png)
+
+
+
+Instead we need to ask ChatGPT to tweak the formula to work with multiple columns (otherwise we would have to update the formula for each column):
+
+```shell
+=ARRAYFORMULA(
+   IF(A2:A239="", "", 
+      IFERROR(VLOOKUP(A2:A239, 'All DH Tools Revised'!A2:M18, SEQUENCE(1, 12, 2), FALSE), "")
+   )
+)
+```
+
+![revised formula]({{site.baseurl}}/assets/images/revised_formula.png)
+
+When we enter this revised formula, we'll see an option to add a new function, which we can do by clicking on the `+` button (this is optional though).
+
+![sucessful merge]({{site.baseurl}}/assets/images/successful_merge.png)
+
+Once we click on the `+` button, we should see that our data has been merged successfully if we scroll down.
+
+#### Optional In-Depth Explanation
+{% capture toggle_content %}
+   While we are largely using ChatGPT to help us with this work, it is important to understand what is happening in this formula.
+
+   **`ARRAYFORMULA`**
+
+   `=ARRAYFORMULA(...)`
+
+   This function allows you to perform a calculation or operation over an entire range of cells rather than just a single one. In the context of the formula you provided, it enables the subsequent functions (IF, IFERROR, and VLOOKUP) to operate over arrays of cells rather than just individual ones.
+
+   **`IF`**
+
+   `IF(A2:A239="", "", ...)`
+
+   This is a condition that checks whether the cells from A2 to A239 are empty. The logic is:
+
+   - If they're empty (`A2:A239=""`), it returns an empty string, essentially ignoring that row.
+   - If they're not empty, it proceeds to evaluate the next portion of the formula.
+
+   **`IFERROR`**
+
+   `IFERROR(VLOOKUP(...), "")`
+
+   This function checks if the inner function (VLOOKUP in this case) returns an error. If VLOOKUP results in an error, rather than displaying that error, IFERROR will return an empty string (""). This is especially useful for tidying up the spreadsheet so that if there's no match found by VLOOKUP, the cell doesn't display a distracting error message but instead remains blank.
+
+   **`VLOOKUP`**
+
+   `VLOOKUP(A2:A239, 'All DH Tools Revised'!A2:M18, SEQUENCE(1, 12, 2), FALSE)`
+
+   This is the primary function doing the data fetching and merging:
+
+   - `A2:A239`: This is the lookup range. For each cell value in this range, VLOOKUP will attempt to find a matching value in the first column of the provided table range.
+   
+   - `'All DH Tools Revised'!A2:M18`: This is the table array where VLOOKUP searches for the lookup value. In this case, it's searching within another sheet titled "All DH Tools Revised" from columns A to M.
+   
+   - `SEQUENCE(1, 12, 2)`: This is the dynamic column index that tells VLOOKUP which column(s) to return once a match is found.
+   
+   - `SEQUENCE(1, 12, 2)` generates a virtual array: [2, 3, 4, ... 13]. Here's the breakdown of its parameters:
+      - `1`: Number of rows for the sequence (in this case, just one row).
+      - `12`: Number of columns, so we get 12 sequential numbers.
+      - `2`: Start value; the sequence starts from 2.
+
+   Since VLOOKUP usually returns a single column, combining it with `SEQUENCE` in an `ARRAYFORMULA` effectively makes it fetch multiple columns dynamically.
+   
+   - `FALSE`: This ensures VLOOKUP looks for an exact match.
+
+   **Summary**
+
+   To put it all together: For each non-empty cell in the range A2 to A239, the formula will look up its value in the 'All DH Tools Revised' sheet within columns A to M. If it finds a match, it will return the corresponding values from columns B to M (12 columns) of that sheet. If it doesn't find a match or encounters any other error, it will leave the cell blank.
+
+{% endcapture %}
+{% include toggle.html content=toggle_content %}
+
+### Cleaning Large Datasets with OpenRefine
+
+So far we have joined our dataset with the `tools-dh-proceedings` data but we also have the Index of DH Conferences that contains relevant potential data for our dataset. Let's try and merge these two datasets together.
+
+We can download the `simple csv` dataset from here [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads) and that should download a zip file that when opened contains a csv file called `dh_conferences_works.csv`. As we tried in class though, this file is much larger, containing over 8000 rows. So instead we need to use a program called OpenRefine to help us clean this data.
+
+OpenRefine is a popular tool in DH because it is both free and open source, but also because it is a powerful tool for cleaning data. You can download OpenRefine here: [https://openrefine.org/download](https://openrefine.org/download).
+
+
+Once you have downloaded and installed the tool (remember to reach out if you have issues), you should see the following interface:
+
+![openrefine home]({{site.baseurl}}/assets/images/openrefine_home.png)
+
+You'll notice that the url bar at the top has a strange series of numbers or might include something like `localhost`. All that means is that this is a local server running on your computer. You can think of it like a website that is only accessible on your computer. This is important to know because it means that you can only access this data on your computer, so if you want to share it with others you will need to export it.
+
+To get started, we can click on the `Create Project` button and then select the `dh_conferences_works.csv` file that we downloaded earlier.
+
+![openrefine project]({{site.baseurl}}/assets/images/openrefine_project.png)
+
+You'll notice that it is currently struggling to parse our data into individual cells (it is all clumped together in the preview). To fix this we need to tell OpenRefine that our file is a csv (that is our data is separated by commas, not tabs -- like a tsv file) and then we can also name our project in the top right hand side.
+
+![fixed import]({{site.baseurl}}/assets/images/fixed_project_upload.png)
+
+Now we should see our full dataset of 8820 rows and we can start exploring it through the OpenRefine interface.
+
+![initial data]({{site.baseurl}}/assets/images/initial_dataset.png)
+
+To learn more about what OpenRefine can do, we should first explore the documentation: [https://openrefine.org/docs/manual/exploring](https://openrefine.org/docs/manual/exploring)
+
+#### Facets and Transforms
+
+While the Overview section provides some helpful information about data types, the most important section is on `Facets`. One of the most powerful features of OpenRefine is the ability to use `facets` to explore your data. Facets are a way of filtering your data based on a specific column or value. For example, we can use the `facet` functionality to see how many unique values there are in the `conference_label` column, one of the required columns according to the documentation.
+
+To try this out, we can click on the `conference_label` column and then click on the `Facet` button in the top right hand corner. This will open up a new menu on the left hand side that will allow us to explore the data. Then we can click on the `Text Facet` button to see the unique values in this column, through a popup box on the left hand side. We can also click on the `Count` button to sort the data and see the top values in the dataset.
+
+![text facet]({{site.baseurl}}/assets/images/text_facet.png)
+
+From this feature, we learn that we have the top amount of rows from the 2020 DH Conference in Ottawa. We can also click on the `2020 DH Conference in Ottawa` value to see all the rows that contain this value.
+
+![subset facet]({{site.baseurl}}/assets/images/subset_facet.png)
+
+We can press the `x` button to remove this facet and return to our full dataset. We can also use the `Text Facet` functionality to explore other columns like `conference_year` or `conference_city`.
+
+In addition to the `Text Facet` functionality, we can also use the `Numeric Facet` functionality to explore the `conference_year` column. This will allow us to see the range of values in this column and also to sort the data by the number of rows that contain each value.
+
+![numeric facet]({{site.baseurl}}/assets/images/numeric_facet.png)
+
+However, you'll notice that when we try to use this filter we get an error message. This is because OpenRefine is trying to treat the `conference_year` column as a text column, not a numeric column. To fix this we need to use the `Edit Cells` functionality to change the data type of this column. We can read how to do this in the docs: [https://openrefine.org/docs/manual/cellediting](https://openrefine.org/docs/manual/cellediting).
+
+Essentially we want to turn our string into a number, so through selecting edit cells, and then common transforms, we can find the `To number` option. This will allow us to convert our string into a number.
+
+![fixed numeric facet]({{site.baseurl}}/assets/images/fixed_numeric_facet.png)
+
+Now we should see that we have a numeric facet that allows us to explore the `conference_year` column. But notice that it is treating years as numbers rather than a date. We can also try instead using the `Timeline Facet` functionality to explore this column.
+
+![timeline facet]({{site.baseurl}}/assets/images/timeline_facet.png)
+
+But now we are again getting an empty timeline. This is because OpenRefine is treating our column as a number, not a date. To fix this we can use the `Edit Column` functionality to change the data type of this column. First we should remove the `Numeric Facet` and then once again transform our data.
+
+![timeline transform]({{site.baseurl}}/assets/images/timeline_transform.png)
+
+Now our data is correctly formatted and facetted, and we can even use this interface to filter our data by year.
+
+We can also undo our transformations if you click on the `Undo / Redo` button in the top right hand corner. This will allow you to see all your changes, and reverse any changes you have made to your data.
+
+![undo redo]({{site.baseurl}}/assets/images/undo_redo.png)
+
+#### Filtering and Deriving Data with OpenRefine
+
+So far we have started to explore the functionality of this platform, but we also want to ultimately merge this data with our existing dataset. One of the issues is that currently OpenRefine does not allow you to merge datasets, so we will need to export this data and then merge it with our existing dataset in Google Sheets. You can read more about this missing functionality that used to exist in this tool and is proposed to be added in the GitHub repository for OpenRefine [https://github.com/OpenRefine/OpenRefine/issues/5393](https://github.com/OpenRefine/OpenRefine/issues/5393).
+
+But prior to exporting we need to think about how we plan to merge our datasets. Similar to our last example, we need to consider what would be a column that shares similar values.
 
 In our `dh tools` dataset we have two potential candidates: either the `link_dh_abstract` or `abstract_title`. We can try using the `link_dh_abstract` column first, but we will need to clean it up a bit first.
 
 If you notice the `link_dh_abstract` column contains urls that have the following structure `https://dh-abstracts.library.virginia.edu/works/2621` where the number at the end is the unique identifier for each abstract. We can use this to create a new column that only contains the number at the end of the url.
 
-We can once again use ChatGPT to help us with this task. 
+Let's test this out first by using the filter functionality in our index dataset to only show the rows that contain the id above.
 
-*Class Question: How should I write a prompt to create a new column called `work_id` that only contains the number at the end of the url?*
+![filter]({{site.baseurl}}/assets/images/filter.png)
 
-Now this is a bit of a gotcha but because our `dh_conferences_works` is so large we need to filter it down to only the rows that contain the `work_id` we are looking for. We can do this by using the `Filter` functionality in Google Sheets.
-
-![filter_data]({{site.baseurl}}/assets/images/filter_data.png)
-
-Now that we have this filtered data, we can again try and merge it.
-
-*Class Question: How should I write a prompt to merge these two datasets?*
-
-We should end up with something that looks like this:
-
-![merged_data]({{site.baseurl}}/assets/images/merged_data.png)
-
-*Class Question: How could we bring in more columns from DH Abstracts dataset into our DH Tools dataset?*
-
-## Data Cleaning and Merging Assignment
-
-To be posted after class depending on how far we get collectively 😅.
+Now that we know this logic works, we can create a new column in our DH Tools dataset to contain only the `work_id` derived from the `link_dh_abstract` column. We could do this either in Google Sheets or OpenRefine if we loaded our data into OpenRefine.
 
 
+##### OpenRefine Derive Column
+{% capture or_toggle_content %}
+   
+   If using OpenRefine, we first need to export our data from Google Sheets and upload it as a new project in OpenRefine as a project called `DH Tools`. Then we can use ChatGPT to help us with the following prompt:
+
+   > I have an OpenRefine Project called DH Tools that has a column called `linked_dh_abstract` and that contains values formatted like the follow `https://dh-abstracts.library.virginia.edu/works/2621`. I want to create a new column called `work_id` that only contains the number at the end of the url. How can I do this?
+
+   We get the following instructions from ChatGPT:
+
+   To extract the number at the end of the URL in OpenRefine, you can use a combination of OpenRefine's GREL (General Refine Expression Language) functions. The task essentially involves parsing the string to get the characters after the last forward slash (`/`). 
+
+   Here's how you can do this:
+
+   1. **Open Your Project**:
+      Open your "DH Tools" project in OpenRefine.
+
+   2. **Create a New Column**:
+      - Click on the dropdown arrow next to the `linked_dh_abstract` column.
+      - Choose `Edit column` > `Add column based on this column...`
+
+   3. **Enter the GREL Expression**:
+      In the expression box, use the following GREL formula:
+
+      ```grel
+      value.split("/")[length(value.split("/")) - 1]
+      ```
+
+      Here's a brief explanation of the expression:
+      - `value.split("/")`: This splits the URL at each forward slash, creating an array of elements.
+      - `length(value.split("/")) - 1`: This finds the index of the last element in the array.
+      - The whole expression thus extracts the last element of the array, which is the number you want.
+
+   4. **Name the New Column**:
+      Enter the name `work_id` for the new column.
+
+   5. **Apply Changes**:
+      Click on the `OK` button to apply the changes.
+
+   The new column, `work_id`, should now appear in your dataset, containing only the number at the end of each URL from the `linked_dh_abstract` column.
+
+   ![work_id]({{site.baseurl}}/assets/images/work_id.png)
+{% endcapture %}
+{% include toggle.html content=or_toggle_content %}
+
+
+##### Google Sheets Derive Column
+{% capture gs_toggle_content %}
+
+   If using Google Sheets, we can use ChatGPT to help us with the following prompt:
+
+   > I have a Google Sheets dataset called `All DH Tools Revised` with a column called `link_dh_abstract` that contains values formatted like the follow `https://dh-abstracts.library.virginia.edu/works/2621`. I want to create a new column called `work_id` that only contains the number at the end of the url and that column will be from the range S1:S18, whereas `linked_dh_abstract` has the range of D1:D18. How can I do this?
+
+   We get the following instructions from ChatGPT:
+
+   To extract the number at the end of the URL in Google Sheets, you can use a combination of Google Sheets' built-in functions. The task essentially involves parsing the string to get the characters after the last forward slash (`/`).
+
+   Here's how you can do this:
+
+   1. **Create a New Column**:
+      - Click on the `+` button at the bottom-left of the Google Sheets interface.
+      - Name the new column `work_id`.
+
+   2. **Enter the Formula**:
+      In cell `S2`, enter the following formula:
+
+      ```shell
+      =ARRAYFORMULA(IF(D2:D="", "", REGEXEXTRACT(D2:D, "/(\d+)$")))
+      ```
+
+      Here's a brief explanation of the formula:
+      - `REGEXEXTRACT(D2:D, "/(\d+)$")`: This formula extracts sequences of numbers (represented by \d+) that appear at the end of a string (represented by $). The number sequence should follow a forward slash /, as seen in your URL format.
+      - `ARRAYFORMULA`: This wraps around the REGEXEXTRACT function to apply the regex extraction to the entire column range.
+      - `IF(D2:D="", "", ...)`: This checks if a cell in column D is empty and, if so, ensures the corresponding cell in column S remains empty. Otherwise, it applies the regex extraction.
+
+   ![derived column]({{site.baseurl}}/assets/images/derived_column.png)
+
+{% endcapture %}
+{% include toggle.html content=gs_toggle_content %}
+
+Regardless of how you generate this new column, once we have `work_id` in our dataset, we can use this column to filter our data with the Index of DH Conferences dataset with the help of ChatGPT and OpenRefine.
+
+We want to use the `Text Filter` in OpenRefine with our Index of DH Abstracts Project to filter our data by the `work_id` column. We have already used this filter to try and find the `work_id` from the `linked_dh_abstrct` url. So we can try adding more work_ids to our filter by clicking on the `work_id` column and then selecting `Text filter`. Finally we can start adding our ids by simply copying them from Google Sheets.
+
+![work_id facet]({{site.baseurl}}/assets/images/work_id_facet.png)
+
+But you'll notice that if we just enter multiple ids, then we end up with no rows or results. That's because OpenRefine is trying to find rows that contain **all of** the ids we entered. Instead we want to find rows that contain **any of** the ids we entered. We can ask ChatGPT for help with this by using the following prompt:
+
+> I have an OpenRefine Project called Index of DH Abstracts that has a column called `work_id` that contains values like `2621`. I want to filter this dataset by multiple values in the `work_id` column. How can I do this?
+
+
+With the following answer:
+
+In OpenRefine, filtering by multiple values in a column can be achieved using a text filter with a regular expression. Here's how you can filter the `work_id` column by multiple values:
+
+1. **Open Your Project**:
+   
+   Launch OpenRefine and open your project named "Index of DH Abstracts."
+
+2. **Access Text Filter**:
+   
+   Click on the downward arrow next to the `work_id` column header. From the drop-down menu, select `Text filter`.
+
+3. **Enter the Regular Expression**:
+   
+   In the text filter box that appears, enter a regular expression that matches the values you want to filter by. For example, if you want to filter by the `work_id` values `2621`, `1762`, and `3879`, you would enter:
+
+   ```
+   ^(2621|1762|3879)$
+   ```
+
+   Explanation:
+   - `^`: Matches the beginning of the string.
+   - `$`: Matches the end of the string.
+   - `|`: Acts as an OR operator in regex.
+   - `(2621|1762|3879)`: Matches any of the provided values.
+
+4. **Apply the Filter**:
+
+   Once you've entered the regex, the rows that match the provided `work_id` values will be displayed, and the rest will be filtered out.
+
+5. **View or Export the Filtered Data**:
+
+   With the filter applied, you can view, edit, or export the data as needed.
+
+6. **Remove the Filter**:
+
+   If you want to go back to viewing all rows, simply click on the "x" or "clear" button in the text filter box to remove the filter.
+
+This method lets you filter by multiple values in a column efficiently. If you have more values to filter by, simply add them to the regex using the `|` operator. This special symbol is called a `pipe` or `|` and tells OpenRefine to filter **any rows that contain any of these values**. We can read more about this in the docs: [https://openrefine.org/docs/manual/facets.html#text-filter](https://openrefine.org/docs/manual/facets.html#text-filter).
+
+We can even use ChatGPT to take our list of work_ids:
+
+```shell
+2621
+1762
+3879
+11736
+2822
+1066
+2111
+2257
+11970
+
+11841
+6286
+1932
+6358
+7848
+9425
+1610
+```
+
+And turn it into a regular expression that we can use in OpenRefine:
+
+```shell
+^(2621|1762|3879|11736|2822|1066|2111|2257|11970|11841|6286|1932|6358|7848|9425|1610)$
+```
+
+Now we can use this in our `Text Filter`:
+
+![empty rows]({{site.baseurl}}/assets/images/empty_rows.png)
+
+Initially we will still have empty values, but if we click the `regular expression` button, then we should see our filtered data.
+
+![click regex]({{site.baseurl}}/assets/images/click_regex.png)
+
+Now we have our filtered dataset (we only have 16 rows, since our dataset had 18 rows with one missing work_id and one row of headers), and now we can export our filtered dataset to finally merge it with our `dh tools` dataset using the same VLOOKUP process.
+
+![export data]({{site.baseurl}}/assets/images/export_data.png)
+
+
+### Data Cleaning and Merging Assignment
+
+#### Part 1: Completing Data Merging (Optional Assignment)
+This assignment is somewhat advanced so it is technically optional though I think you are all capable of undertaking this work. But we will also go through it at the start of our workshop in class just to make sure everyone is understanding how we merge and transform data.
+
+If you decide to try it out for this assignment, you will complete the final merging process of `dh tools` with the Index of DH Abstracts dataset. I have provided the example Google Sheets dataset that has all the steps up to now, as well as the filtered dataset from OpenRefine. You can find these datasets here:
+
+- [DH Tools dataset](https://docs.google.com/spreadsheets/d/1ctHUflQQ4vl19A2y8-PnIFe0PVJe4No0wYNCkpi8wkY/edit?usp=sharing)
+- [Index of DH Abstracts](https://drive.google.com/file/d/1dXiuQSBzgQQsHEHZmQ4Nfi6m6Cs5yU-6/view?usp=sharing)
+
+Now you need to complete the following steps:
+
+1. Create a copy of the example Google Sheets dataset and rename it to `dh tools merged`.
+2. Import the subset of `index of dh abstracts` dataset into your Google Sheets
+3. Now start trying to merge the datasets with the help of ChatGPT and the examples above. You should be sure to include the following information in your prompt:
+   - The name of your respective sheets
+   - The name of the columns you want to merge
+   - The range of the columns you want to merge
+   - The name of the new sheet you want to create
+   - The name of the **shared** column that you want to use to merge the datasets 
+
+#### Part 2: Experimenting with Data Cleaning
+
+If you aren't feeling comfortable doing VLOOKUP merges yet that's completely ok! Instead, in this assignment you will start experimenting with OpenRefine.
+
+1. Download the `simple csv` dataset from here [https://dh-abstracts.library.virginia.edu/downloads](https://dh-abstracts.library.virginia.edu/downloads) and that should download a zip file that when opened contains a csv file called `dh_conferences_works.csv`.
+2. Install OpenRefine [https://openrefine.org/download](https://openrefine.org/download) and then create a new project with the `dh_conferences_works.csv` file.
+3. Start exploring the data using the `Facet` functionality in OpenRefine. You can read more about this functionality here: [https://openrefine.org/docs/manual/exploring](https://openrefine.org/docs/manual/exploring)
+4. Transform the data so that conference year is an actual date.
+5. Try using the `Text Filter` functionality to filter the data by one or two DH Tools that you are interested in. You can read more about this functionality here: [https://openrefine.org/docs/manual/facets.html#text-filter](https://openrefine.org/docs/manual/facets.html#text-filter). You will need to decide which column to filter on and should aim to have a dataset that is no larger than 200 rows but no smaller than 5 rows.
+6. Export your filtered data as a CSV and share it with the class, either through uploading it directly to GitHub or sharing a link to a Google Sheets version. All links should be shared in the GitHub discussion [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/4](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/4).
 
 ## Additional Resources
 

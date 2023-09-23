@@ -1,0 +1,7 @@
+<details>
+    <summary>
+      <button class="btn btn--info" onclick="event.preventDefault(); var details = this.closest('details'); details.open = !details.open;">toggle info</button>
+    </summary>
+    {{ include.content | markdownify }}
+</details>
+  
