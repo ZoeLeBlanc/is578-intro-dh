@@ -18,14 +18,14 @@ class_date: 2023-09-28
 
 ## Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
-- Drucker, Johanna. “Humanities Approaches to Graphical Display.” Digital Humanities Quarterly 005, no. 1 (March 10, 2011).
-- Lavin, Matthew. “Why Digital Humanists Should Emphasize Situated Data over Capta.” Digital Humanities Quarterly 015, no. 2 (June 15, 2021).
+- Drucker, Johanna. “Humanities Approaches to Graphical Display.” Digital Humanities Quarterly 005, no. 1 (March 10, 2011). [https://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html](https://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html).
+- Lavin, Matthew. “Why Digital Humanists Should Emphasize Situated Data over Capta.” Digital Humanities Quarterly 015, no. 2 (June 15, 2021). [http://www.digitalhumanities.org/dhq/vol/15/2/000556/000556.html](http://www.digitalhumanities.org/dhq/vol/15/2/000556/000556.html)
 - Collier, Zakiya. “Review: The Library of Missing Datasets.” Reviews in Digital Humanities III, no. 4 (April 19, 2022). [https://doi.org/10.21428/3e88f64f.6bdb8931](https://doi.org/10.21428/3e88f64f.6bdb8931).
 
 ## Workshop Assignments (to be completed prior to class)
 
-- [ ] Complete the Data Cleaning & Merging Assignment
-- [ ] Optional watch the updated tutorial on data cleaning (coming soon)
+- [ ] Complete the Data Cleaning & Merging Assignment (one of which is optional)
+- [ ] Optional: watch the updated tutorial on data cleaning (coming soon)
 
 ## Lab Workshop Session
 
