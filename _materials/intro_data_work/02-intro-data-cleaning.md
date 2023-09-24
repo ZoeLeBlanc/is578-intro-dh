@@ -168,6 +168,8 @@ We can even ask ChatGPT how to alter our formula so that it includes zeros inste
 
 ```
 
+<div class="notice--info">⚡️ I have filmed the remainder of the tutorial and posted the video here since we did not complete everything during class <a href="https://mediaspace.illinois.edu/media/t/1_4itob4ov">https://mediaspace.illinois.edu/media/t/1_4itob4ov</a>. Please reach out on Slack if you have any questions or difficulty watching the video</div>
+
 #### VLOOKUP and Google Sheets Documentation
 
 As ChatGPT explains briefly, `VLOOKUP` is a built-in function that stands for "Vertical Lookup" and exists in most spreadsheet software. It searches for a value in the first column of a table range and returns a corresponding value from another column in the same row. Essentially, VLOOKUP helps in cross-referencing data. The function can be immensely valuable when trying to integrate information from different tables or datasets based on a common identifier.
