@@ -13,6 +13,7 @@ class_date: 2023-10-05
 
 - D’Ignazio, Catherine, and Lauren F. Klein. “On Rational, Scientific, Objective Viewpoints from Mythical, Imaginary, Impossible Standpoints.” and “What Gets Counted”  In Data Feminism. The MIT Press, 2020. [https://data-feminism.mitpress.mit.edu/](https://data-feminism.mitpress.mit.edu/).
 - Hinrichs, Uta, Stefania Forlini, and Bridget Moynihan. “In Defense of Sandcastles: Research Thinking through Visualization in Digital Humanities.” Digital Scholarship in the Humanities 34, no. Supplement_1 (December 1, 2019): 80–99. [https://doi.org/10.1093/llc/fqy051](https://doi.org/10.1093/llc/fqy051).
+- "Introduction" in Guiliano, Laura Estill, Jennifer, ed. Digital Humanities Workshops: Lessons Learned. London: Routledge, 2023. [https://doi.org/10.4324/9781003301097](https://doi.org/10.4324/9781003301097) 
 
 ### Applied Materials
 
