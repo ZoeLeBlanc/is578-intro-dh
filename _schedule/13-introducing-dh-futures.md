@@ -1,19 +1,18 @@
 ---
-title: "Introducing DH Futures"
+title: "Introducing DH Futures (Optional Session)"
 permalink: /schedule/13-introducing-dh-futures/
 toc: true
-class_date: 2023-11-30
+class_date: 2023-12-07
 ---
+
+## Seminar and Workshop Framing
 
 *What is the future(s) of DH and how are new technologies transforming DH? What is your future path within and beyond DH?*
 
-## Contextual Materials
+### Contextual Materials
 
 - Nowviskie, Bethany. “Reconstitute the World.” Bethany Nowviskie, June 12, 2018. [http://nowviskie.org/2018/reconstitute-the-world/](http://nowviskie.org/2018/reconstitute-the-world/).
 - Platt, Ben. “Now the Humanities Can Disrupt ‘AI.’” Public Books (blog), February 20, 2023. [https://www.publicbooks.org/now-the-humanities-can-disrupt-ai/](https://www.publicbooks.org/now-the-humanities-can-disrupt-ai/).
 - Underwood, Ted. “We Can Save What Matters about Writing—at a Price.” The Stone and the Shell, July 31, 2023. [https://tedunderwood.com/](https://tedunderwood.com/).
 - Posner, Miriam. “What’s Next: The Radical, Unrealized Potential of Digital Humanities.” In Debates in the Digital Humanities 2016, edited by Matthew K. Gold and Lauren F. Klein, 32–41. [https://doi.org/10.5749/j.ctt1cn6thb.6](https://doi.org/10.5749/j.ctt1cn6thb.6).
 
-## Lab Workshop Session
-
-- Open session

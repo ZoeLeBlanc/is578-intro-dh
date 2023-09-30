@@ -6,8 +6,10 @@ main:
     url: /assessments/01-overview
   - title: "Policies"
     url: /policies
-  - title: "Weekly Materials"
+  - title: "Workshop Materials"
     url: /materials/intro-ai-cli/01-course-ai-tools
+  - title: "Blog & Resources"
+    url: /blog/
 
 assessments:
   - title: Assessments
@@ -68,25 +70,28 @@ schedule:
         url: /schedule/03-introducing-dh-tools
       - title: "<b>September 21</b><br> Introducing DH Data"
         url: /schedule/04-introducing-dh-data
-      - title: "<b>September 28</b><br> Introducing DH Visualizations"
-        url: /schedule/05-introducing-dh-visualizations
+      - title: "<b>September 28</b><br> Class Canceled Due to COVID"
   - title: October Detailed Activities
     children:
-      - title: "<b>October 5</b><br> Introducing DH Analysis"
+      - title: "<b>October 5</b><br> Introducing DH Visualizations"
+        url: /schedule/05-introducing-dh-visualizations
+      - title: "<b>October 12</b><br> Introducing DH Analysis"
         url: /schedule/06-introducing-dh-analysis
-      - title: "<b>October 12</b><br> Introducing DH Networks"
+      - title: "<b>October 19</b><br> Introducing DH Networks"
         url: /schedule/07-introducing-dh-networks
-      - title: "<b>October 19</b><br> Introducing DH Maps"
-        url: /schedule/08-introducing-dh-maps
-      - title: "<b>October 26</b><br> Introducing DH Markup"
-        url: /schedule/09-introducing-dh-markup      
+      - title: "<b>October 26</b><br> Introducing DH Maps"
+        url: /schedule/08-introducing-dh-maps     
   - title: November Detailed Activities
     children:
-      - title: "<b>November 2</b><br> Introducing DH Websites"
+      - title: "<b>November 2</b><br> Introducing DH Markup"
+        url: /schedule/09-introducing-dh-markup
+      - title: "<b>November 9</b><br> Introducing DH Websites"
         url: /schedule/10-introducing-dh-websites
-      - title: "<b>November 9</b><br> Introducing DH Collections"
+      - title: "<b>November 16</b><br> Introducing DH Collections"
         url: /schedule/11-introducing-dh-collections
-      - title: "<b>November 16</b><br> Introducing DH Workshops"
+      - title: "<b>November 30</b><br> Introducing DH Workshops"
         url: /schedule/12-introducing-dh-workshops
-      - title: "<b>November 30</b><br> Introducing DH Futures"
+  - title: December Detailed Activities
+    children:
+      - title: "<b>December 7 </b><br> Introducing DH Futures (Optional)"
         url: /schedule/13-introducing-dh-futures

@@ -13,12 +13,14 @@ There is no definitive answer of what makes a workshop digital humanities-focuse
 <h2 id="initial-proposal">Workshop Proposal 10%</h2>
 <h3>Due Oct 5, 2023 (Extension Possible Until Oct 12, 2023)</h3>
 
+<div class="notice--info">⚡️ More information about developing your workshop is available <a href="{{site.baseurl}}/resources/workshop-guidelines/">here</a></div>
+
 The first part of the project is developing a workshop proposal. You should envision this as your pitch for the workshop, and should consider the type of audience and format that would be most compelling for your workshop (whether that’s a humanities department, a DH lab, a digital scholarship unit in a library, or a summer institute, etc…).
 
 Your initial proposal should:
 
 - outline your proposed focus for the workshop and explain what problem this workshop aims to help resolve (what are your initial workshop goals, what are you trying to teach or study, and why this topic?) 
-- outline your proposed plan for developing the workshop (how will you organize the workshop and what is your rationale for your proposed structure? What methods or tools, and datasets or digital objects do you plan to use?)
+- outline your proposed plan for developing the workshop (do you already know how to use the materials in your workshop or do you still need to learn how? If still learning, what is your plan for starting to experiment? how will you organize the workshop and what is your rationale for your proposed structure? What methods or tools, and datasets or digital objects do you plan to use? If using data, do you have access to it already or do you need to find it or create it?)
 - explain your initial goals of this workshop in relation to the readings and topics we have discussed in class (what are the scholarly goals of your workshop and how would you situate it in relation to digital humanities? Who are your audiences and what scholarship does your workshop draw upon?).
 
 The proposal should be no shorter than 3 pages and no longer than 6 pages double spaced, and can contain tables, graphs, bullet points, or any other format that will help you outline the goals and plan for this workshop. Ultimately, this proposal should lay the groundwork for your workshop and will serve as your blueprint for the remainder of the semester.
