@@ -24,7 +24,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 | September 7, 2023 | [Introducing DH Workflows]({{site.baseurl}}/schedule/02-introducing-dh-workflows) | [Intro to GitHub and Git]({{site.baseurl}}/materials/intro-github-git/01-intro-github) |
 | September 14, 2023 | [Introducing DH Tools]({{site.baseurl}}/schedule/03-introducing-dh-tools) | [Intro to Organizing and Formatting Data]({{site.baseurl}}/materials/intro-data-work/01-intro-formatting-organizing-data/) |
 | September 21, 2023 | [Introducing DH Data]({{site.baseurl}}/schedule/04-introducing-dh-data) | [Intro to Transforming Data]({{site.baseurl}}/materials/intro-spreadsheets/02-intro-data-cleaning#data-cleaning-and-merging-assignment) |
-| October 5, 2023 | [Introducing DH Visualizations]({{site.baseurl}}/schedule/05-introducing-dh-visualizations) | Intro to Data Visualization (To be posted) |
+| October 5, 2023 | [Introducing DH Visualizations]({{site.baseurl}}/schedule/05-introducing-dh-visualizations) | [Intro to Data Visualization]({{site.baseurl}}/materials/intro-visualizing-data/01-intro-data-visualization) |
 | October 12, 2023 | [Introducing DH Analysis]({{site.baseurl}}/schedule/06-introducing-dh-analysis) | Intro to Text Analysis (To be posted) |
 | October 19, 2023 | [Introducing DH Networks]({{site.baseurl}}/schedule/07-introducing-dh-networks) | Intro to Networks (To be posted) |
 | October 26, 2023 | [Introducing DH Maps]({{site.baseurl}}/schedule/08-introducing-dh-maps) | Intro to Mapping (To be posted) |
@@ -45,7 +45,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 | [Intro to GitHub and Git Assignment]({{site.baseurl}}/materials/intro-github-git/02-intro-git#assignment) | [September 14]({{site.baseurl}}/schedule/03-introducing-dh-tools) |
 | [Intro to Data Creation & Discovery Assignment]({{site.baseurl}}/materials/intro-data-work/01-intro-formatting-organizing-data/#data-creation--discovery-assignment) | [September 21]({{site.baseurl}}/schedule/04-introducing-dh-data) |
 | [Intro to Cleaning & Merging Data]({{site.baseurl}}/materials/intro-spreadsheets/02-intro-data-cleaning#data-cleaning-and-merging-assignment) | [October 5]({{site.baseurl}}/schedule/05-introducing-dh-visualizations) |
-| [Intro to Text Analysis Assignment](#) | [October 12]({{site.baseurl}}/schedule/06-introducing-dh-analysis) |
+| [Intro to Data Visualization Assignment]({{site.baseurl}}/materials/intro-visualizing-data/01-intro-data-visualization#data-visualization-assignments) | [October 12]({{site.baseurl}}/schedule/06-introducing-dh-analysis) |
 | [Intro to Networks Assignment](#) | [October 19]({{site.baseurl}}/schedule/07-introducing-dh-networks) |
 | [Intro to Mapping Assignment](#) | [October 26]({{site.baseurl}}/schedule/08-introducing-dh-maps) |
 | [Intro to Markup Languages Assignment](#) | [November 2]({{site.baseurl}}/schedule/09-introducing-dh-markup) |
