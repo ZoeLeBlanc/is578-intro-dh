@@ -449,7 +449,7 @@ Here's my first attempt using RawGraphs' Line Chart feature, augmented with a co
 
 ## Data Visualization Assignment(s)
 
-We are trying something slightly different this week to accomodate everyone's differing interests and pace. You have the option of completing any (or all) of the following assignments. What you select should be geared towards your interests. For example, if you plan to work with data than I would recommend assignment 2 , but if you plan to primarily assist others in finding materials than assignment 1 might be more appropriate. As always in this course there is no wrong answer or choice, but I would recommend trying to challenge yourself (though again what that means is for you to decide).
+We are trying something slightly different this week to accomodate everyone's differing interests and pace. You have the option of completing any (or all) of the following assignments. What you select should be geared towards your interests. For example, if you plan to work with data than I would recommend assignment 2 , but if you plan to primarily assist others in finding materials than assignment 1 might be more appropriate. As always in this course there is no wrong answer or choice, but I would recommend trying to challenge yourself (though again what that means is for you to decide). Both assignments should be shared in this GitHub Discussion Forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/5](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/5) and please specify which assignment you are sharing with your submission.
 
 1. Trends: Finding and Inspecting DH Data Visualization Examples
 
@@ -461,13 +461,14 @@ For this assignment, the goal is to find examples of data visualization in DH an
 You are welcome to either create a Markdown file and link to that in the relevant GitHub discussion, or simply post your findings directly in the discussion. If you are having trouble finding examples, please let me know and I can help you with your search.
 
 
-1. Outliers: Testing out New Data Visualization Tools
+1. Outliers: Testing and Creating New Data Visualizations
    
-For this assignment, the goal is to try making data visualizations using data from this course with tool you have never used before. You can use the tools we discussed in class but would also recommend potentially trying something like DataWrapper [https://www.datawrapper.de/](https://www.datawrapper.de/) or Flourish [https://flourish.studio/](https://flourish.studio/). The goal is to try to create at least one graph and explain your choices.
+For this assignment, the goal is to try making data visualizations using data from this course with tool you have never used before. You can use the tools we discussed in class but would also recommend potentially trying something like DataWrapper [https://www.datawrapper.de/](https://www.datawrapper.de/) or Flourish [https://flourish.studio/](https://flourish.studio/). The goal is to try to create at least one graph and explain your rationale. You should share your graph and rationale in the relevant GitHub discussion, which you can do directly in the forum or link a Markdown file from a repository.
 
-- You are welcome to use your own version of our merged DH tools dataset, or you can use the version from class (link forthcoming), or my preferred option would be that you try using a dataset I compiled that contains not only counts from the blog post or class, but also all mentions of individual tools in the Index of DH Conferences. You can access the data here []
+You are welcome to use your own version of our merged DH tools dataset, or you can use the version from class (link forthcoming), or my preferred option would be that you try using a dataset I compiled that contains not only counts from the blog post or class, but also all mentions of individual tools in the Index of DH Conferences. You can access the data in our course repository with this link [https://github.com/ZoeLeBlanc/is578-intro-dh/blob/gh-pages/public_course_data/all_tool_counts.csv](https://github.com/ZoeLeBlanc/is578-intro-dh/blob/gh-pages/public_course_data/all_tool_counts.csv). You'll notice that if using this dataset some of the columns match our existing ones, but you'll need to do some investigating to understand the remaining ones.
 
-https://academy.datawrapper.de/article/245-how-to-create-your-first-datawrapper-chart
+Tutorials for using new tools (again, tool choice is yours):
 
-https://help.flourish.studio/article/9-creating-a-visualization
+- DataWrapper [https://academy.datawrapper.de/article/245-how-to-create-your-first-datawrapper-chart](https://academy.datawrapper.de/article/245-how-to-create-your-first-datawrapper-chart)
+- Flourish [https://help.flourish.studio/article/9-creating-a-visualization](https://help.flourish.studio/article/9-creating-a-visualization)
 
