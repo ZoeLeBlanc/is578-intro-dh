@@ -95,7 +95,7 @@ Given your dataset and the specified columns, here's how you can determine how m
    In cell M2, right next to the first tool name in column A, you will use the `COUNTIF` function to calculate the number of times that tool appears in the `tool_name` column.
 
    Enter the following formula in cell M2:
-   ```shell
+   ```bash
    =COUNTIF(A$2:A$18, A2)
    ```
 
@@ -146,7 +146,7 @@ Yes, renaming the header "Tool" to "tool_name" in the `tools-dh-proceedings` she
 
 4. **Use ARRAYFORMULA with VLOOKUP for the Remaining Columns**:
    - Assuming the data from `All DH Tools Revised` starts in row 2 of the "Merged Dataset" sheet, in the next available column (which corresponds to `2015`), input the following formula in the cell corresponding to row 2:
-     ```excel
+     ```shell
      =ARRAYFORMULA(IFERROR(VLOOKUP($A2:$A, 'tools-dh-proceedings'!$A:$F, COLUMN(B1), FALSE), ""))
      ```
    - Drag this formula to the right for the years `2016`, `2017`, `2018`, and `2019`. Adjust the `COLUMN(B1)` part to `COLUMN(C1)`, `COLUMN(D1)`, etc., respectively, as you move right.

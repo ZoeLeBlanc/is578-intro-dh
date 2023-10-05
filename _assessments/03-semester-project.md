@@ -49,3 +49,11 @@ You are welcome to use screenshots or link to recordings. Also, be sure to inclu
 
 Finally, this final submission must be submitted via GitHub into the appropriate course folder. If you choose, you may also publish it publicly on the course website (More details available closer to submission).
 
+
+## Logistics
+
+- All assignments can be sent to the instructor in Slack, uploaded via Canvas, or sent directly via email. 
+- You do not need to ask for extension for the posted extension date, but any extension past that date requires instructor approval.
+- You may use whatever file formats/structures you prefer, unless specified otherwise.
+
+
