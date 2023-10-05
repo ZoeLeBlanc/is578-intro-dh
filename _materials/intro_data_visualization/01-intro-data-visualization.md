@@ -5,47 +5,58 @@ excerpt: "An introduction to data visualization and some more advanced data tran
 toc: true
 ---
 
-So far we have focused on cleaning and merging data, but a big question has been for what purpose. In this lesson we will start to explore how we can visualize our data to help us better understand it. We will also start to explore some more advanced data transformations that will help us visualize our data.
+So far, we have focused on cleaning and merging data, but the primary question has remained: for what purpose? In this lesson, we'll begin exploring ways to visualize our data, which will aid our understanding. Additionally, time permitting, we'll delve into more advanced data transformations that will assist in data visualization.
 
 ## Final Merging of Data
 *Toggle to See My Solution*
 {% capture toggle_content %}
 
-Where we left from last lesson was having to complete a final merge of our two datasets:
+In our last lesson, we were left with the task of performing a final merge of our two datasets:
 
 - [DH Tools dataset](https://docs.google.com/spreadsheets/d/1ctHUflQQ4vl19A2y8-PnIFe0PVJe4No0wYNCkpi8wkY/edit?usp=sharing)
 - [Index of DH Abstracts](https://drive.google.com/file/d/1dXiuQSBzgQQsHEHZmQ4Nfi6m6Cs5yU-6/view?usp=sharing)
 
 I outlined many of the steps in the assignment description, but let's go through them one-by-one.
 
-1. Importing the data
-   
-First, we need to add our data to our spreadsheet. I did the normal import spreadsheet, but you could directly import from a different Google Sheets as well.
+1. **Importing the Data**
 
-![import_data_into_sheets]({{site.baseurl}}/assets/images/import_data_into_sheets
-.png)
+Initially, we need to add our data to our spreadsheet. I used the standard import feature, but you can also directly import from another Google Sheets if you prefer.
 
-2. Resizing and inspecting the data
-   
-Next we should see a new sheet at the bottom of our sheets, which we can name `index-of-dh-abstracts` if isn't already named that. We also will see that the size of text in each cell is large and makes it difficult to inspect the data.
+   <figure>
+       <a href="{{site.baseurl}}/assets/images/import_data_into_sheets.png" class="image-popup">
+           <img src="{{site.baseurl}}/assets/images/import_data_into_sheets.png">
+       </a>
+   </figure>
 
-![original_large_data]({{site.baseurl}}/assets/images/original_large_data.png)
+2. **Resizing and Inspecting the Data**
 
-To get around that way can select all the rows with data, press shift, and then use the cursor on the final row to resize them.
+Upon importing, you should find a new sheet at the bottom, which you can name `index-of-dh-abstracts` if it isn't already. You'll also notice that the text size within each cell is considerably large, complicating data inspection.
 
-![resized_rows]({{site.baseurl}}/assets/images/resized_rows.png)
+   <figure>
+       <a href="{{site.baseurl}}/assets/images/original_large_data.png" class="image-popup">
+           <img src="{{site.baseurl}}/assets/images/original_large_data.png">
+       </a>
+   </figure>
 
-3. Find shared columns
+To address this, you can select all rows containing data, press shift, and then drag the cursor on the last row to resize them all simultaneously.
 
-Between both our datasets, we can see that we have the `work_id` column in common. This is the column we will use to merge our datasets, even if our datasets are differing sizes.
-   
-4. Merging the datasets into a new sheet
+   <figure>
+       <a href="{{site.baseurl}}/assets/images/resized_rows.png" class="image-popup">
+           <img src="{{site.baseurl}}/assets/images/resized_rows.png">
+       </a>
+   </figure>
 
-Finally, we can now start merging! 
+3. **Identifying Shared Columns**
 
-- First, we need to create a new sheet in our spreadsheet. We can do this by clicking the `+` button at the bottom of the spreadsheet. We can name this sheet `Final Merged Dataset`.
+Upon inspecting both our datasets, it's evident that they have the `work_id` column in common. This will be our reference column for merging, even if the datasets are of different sizes.
 
-- Second, we need to import our `Merged Dataset` into this dataset (though you could do the inverse if you choose and import `index-of-dh-abstracts` first).
+4. **Merging the Datasets into a New Sheet**
+
+The merging process entails several steps:
+
+- Start by creating a new sheet in your spreadsheet, which can be done by clicking on the `+` button situated at the bottom. Name this new sheet `Final Merged Dataset`.
+
+- Next, you'll need to import your `Merged Dataset` into this sheet (though if you prefer, you could import `index-of-dh-abstracts` first).
 
 We can either do this manually or use the `ARRAYFORMULA` function:
 
@@ -53,18 +64,17 @@ We can either do this manually or use the `ARRAYFORMULA` function:
 =ARRAYFORMULA('Merged Dataset'!A1:S18)
 ```
 
-Regardless of how we do import the data, we should now see one of our datasets in the sheet. So the final goal is to merge in the other dataset into this sheet. We can do this once again using a formula, and either work from scratch or ask ChatGPT for help.
+Once you've imported the data, the remaining task is to integrate the other dataset into the same sheet. This can also be done using a formula, whether designed from scratch or with assistance from ChatGPT.
 
-Some of our previous examples of forumulas for merging include:
+Here are some previously discussed formulas for merging:
 
-- This code for merging two datasets with a shared column:
+- Merging two datasets with a shared column:
 
- ```shell
-    =ARRAYFORMULA(IF(A2:A239="", "", IFERROR(VLOOKUP(A2:A239, {'All DH Tools Revised'!A2:A18, 'All DH Tools Revised'!B2:M18}, COLUMN(B1)+1, FALSE), "")))
+```shell
+=ARRAYFORMULA(IF(A2:A239="", "", IFERROR(VLOOKUP(A2:A239, {'All DH Tools Revised'!A2:A18, 'All DH Tools Revised'!B2:M18}, COLUMN(B1)+1, FALSE), "")))
 ```
 
-- This code for merging two datasets with a shared column and autocompleting the rest of the columns:
-
+- Merging two datasets with a shared column and autofilling the other columns:
 
 ```shell
 =ARRAYFORMULA(
@@ -83,15 +93,12 @@ So our code might look like the following since we have `A1:S18` in `Final Merge
    )
 )
 ```
-
-This doesn't quite work though since we aren't searching for values in our `A` column in `Final Merged Dataset` since `work_id` in that dataset is in column `S`. 
-
-So we need to change our formula to the following:
+However, this isn't entirely accurate since in our `Final Merged Dataset`, the `work_id` is in column `S`. Hence, the formula must be adjusted:
 
 ```shell
 =ARRAYFORMULA(
    IF(S2:S="", "", 
-      IFERROR(VLOOKUP(S2:S, 'index-of-dh-abstracts'!A2:W17, SEQUENCE(1, 23), FALSE), "")
+     IFERROR(VLOOKUP(S2:S, 'index-of-dh-abstracts'!A2:W17, SEQUENCE(1, 23), FALSE), "")
    )
 )
 ```
@@ -152,33 +159,315 @@ This formula differs from our attempt but shows some similarities, such as the u
 
 And now we should have the following data in our `Final Merged Dataset`:
 
-![final_merged_dataset]({{site.baseurl}}/assets/images/final_merged_dataset.png)
+<figure>
+    <a href="{{site.baseurl}}/assets/images/final_merged_dataset.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/final_merged_dataset.png">
+    </a>
+</figure>
+
+We could keep tweaking this formula to work with our original attempts but this is a good example of how we can use ChatGPT to help us with our formulas.
+
+Also if you are having any issues be sure to check that your data types in your `work_id` column is identical. Remember computers are powerful, but dumb. You have to often specify things that most humans would understand implicitly.
 
 {% endcapture %}
 {% include toggle.html content=toggle_content %}
 
 ## Data Visualization
 
-Now that we have our final merged dataset, we can start to explore how we can visualize our data. We will start with some basic visualizations in Google Sheets and then move to a more advanced tool called [RawGraphs](https://rawgraphs.io/).
+Now that we have our final merged dataset, it's time to consider how we might use this data to address our primary inquiry: how do the popularity of DH tools from this class compare to the DH tools in the Index of DH Abstracts? 
+
+Currently, we can utilize three datasets to answer this:
+
+- Our class dataset
+- The tools dataset from the blog post titled "What Tools are Popular in DH"
+- The tools dataset from the Index of DH Abstracts
+
+When thinking about how to answer this question we need to start thinking about how we would make this comparison. Intuitively, a counting approach stands out, particularly given that some of our columns already provide such counts (`tool_count`, along with the year-based data from the blog post).
+
+While a cursory glance at these results reveals certain trends, Google Sheets' built-in visualization capabilities can enhance our understanding of the data.
+
+### Visualizing Data in Google Sheets
+
+Google Sheets has a number of built-in functionality to help us visualize our data. We can access this functionality by selecting our columns that contain numeric data, and then clicking on the `Insert` menu and then selecting `Chart` (or the icon in the menu bar).
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/insert_chart.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/insert_chart.png">
+    </a>
+</figure>
+
+At first glance, the generated chart might seem overwhelming, yet it provides valuable insights into Google Sheets' data interpretation. For a deeper understanding, utilize the `edit chart` feature. Clicking the three small circles atop the chart and selecting `Edit Chart` will open the Chart Editor, granting access to tools for chart type alteration, data manipulation, and formatting.
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/chart_editor.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/chart_editor.png">
+    </a>
+</figure>
+
+For instance, designating row 1 as headers offers a clearer representation: Google Sheets treats each column as an independent entity, manifesting as distinct bars on the chart.
+
+Before we keep tweaking, it is often helpful to step back and think about what we are trying to visualize. In this case, we are trying to visualize the popularity of tools across our class and the Index of DH Abstracts. We can see that we have a column for `tool_count` and then a column for each year. 
+
+This raises some potential opportunities but also challenges. For example, if we want to compare this popularity across time, then we need to change our `tool_count` column to represent a year like `2023`. However, we also have duplicates in that column because it is sharing the same value for each row.
+
+So let's create a new Sheet called `Tools Popularity` and copy our `Final Merged Dataset` into it. Next I'm going to delete a few of the columns that are less useful for this exercise. Depending on how your data is formatted, you might need to update any formula errors as well.
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/subset_tools_popularity.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/subset_tools_popularity.png">
+    </a>
+</figure>
+
+Your dataset should now resemble a truncated version of the original, with `tool_count` renamed to `2023`. Creating a chart with this data yields:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/tools_popularity_chart.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/tools_popularity_chart.png">
+    </a>
+</figure>
+
+While this is an improvement, data duplication still remains a concern. With assistance from ChatGPT, we discern that Google Sheets offers a `UNIQUE` function, which, when employed, yields a duplicate-free version of our dataset.
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/deduped_data.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/deduped_data.png">
+    </a>
+</figure>
+
+With this refined dataset, our chart becomes markedly more intelligible.
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/updated_chart.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/updated_chart.png">
+    </a>
+</figure>
+
+By stacking the chart, the popularity of the tools across datasets becomes more distinguishable. Particularly, `Voyant` emerges as a favorite in our class.
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/stacked_chart.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/stacked_chart.png">
+    </a>
+</figure>
+
+## Data Visualization in DH
+
+So far we have been particularly focused on how we can visualize our data in Google Sheets, but there are many other tools that we can use to visualize our data. In fact, there are many DH projects that are focused on data visualization. Here are a few examples:
+
+- [PixPlot, Yale DH Lab](https://dhlab.yale.edu/projects/pixplot/)
+
+<figure>
+    <a href="https://dhlab.yale.edu/projects/pixplot/" class="image-popup">
+        <img src="https://dhlab.yale.edu/assets/images/projects/originals/pixplot-banner.jpg" alt="Pixplot">
+    </a>
+</figure>
+
+- [Shipping Maps, Ben Schmidt](http://sappingattention.blogspot.com/2014/03/shipping-maps-and-how-states-see.html)
+
+<figure>
+    <a href="http://sappingattention.blogspot.com/2014/03/shipping-maps-and-how-states-see.html" class="image-popup">
+        <img src="http://3.bp.blogspot.com/-rpKWf1ZEZxk/UKQmrPWdlDI/AAAAAAAADpE/Vx4qBM6pPYI/s1600/MauryMetadata.png" alt="Whaling ship logs">
+    </a>
+</figure>
+
+- [Mapping the Republic of Letters, Stanford](http://republicofletters.stanford.edu/)
+
+<figure>
+    <a href="http://republicofletters.stanford.edu/" class="image-popup">
+        <img src="https://web.stanford.edu/group/toolingup/rplviz/images/rplviz.png" alt="Republic of Letters">
+    </a>
+</figure>
+
+- [Digital Humanities Twitter Network, Martin Grandjean](http://www.martingrandjean.ch/dataviz-digital-humanities-twitter-dh2014/)
+
+<figure>
+    <a href="http://www.martingrandjean.ch/dataviz-digital-humanities-twitter-dh2014/" class="image-popup">
+        <img src="http://scalar.usc.edu/works/dhriastate/media/DigitalHumanitiesTwitterNetwork2.png" alt="DH Tweets">
+    </a>
+</figure>
+
+All of these projects use data visualization in different ways, which brings us to the larger questions of why create visualization in the first place? There's no definitive answer but I think these infographics provide some helpful overview/answers:
+
+- From [Jeffrey Heer](https://homes.cs.washington.edu/~jheer/):
+
+<figure>
+    <a href="https://courses.cs.washington.edu/courses/cse512/16sp/lectures/CSE512-ValueOfVisualization.pdf" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/why_create_viz.png" alt="Why create viz">
+    </a>
+</figure>
+
+- From [Lisa Charlotte Muth](https://lisacharlottemuth.com/):
+
+<figure>
+    <a href="https://lisacharlottemuth.com/2017/03/10/why-do-we-visualize-data/" class="image-popup">
+        <img src="https://lisacharlottemuth.com/pic/170310_INCH_DataVis_short.png" alt="Why data viz">
+    </a>
+</figure>
+
+- From [Duncan Geere](https://www.duncangeere.com/):
+
+<figure>
+    <a href="https://blog.duncangeere.com/defining-information-design/" class="image-popup">
+        <img src="https://blog.duncangeere.com/content/images/2020/05/image-1.png" alt="Exploratory explanatory viz">
+    </a>
+</figure>
+
+### In-Class Assignment 
+
+Now that we have some foundation between our readings and these examples, we can start to dig more into what would be an interesting question to explore across these datasets (or within individual ones).
+
+Working together in breakout rooms, spend ~10 minutes discussing what would be a potentially useful or impactful graph from this dataset, and also what might be some potential dangers in visualizing this data. You can use the following questions to help guide your discussion:
+
+- What might be some interesting questions to explore with this data, especially based on our readings so far?
+- What makes a good data visualization? Specifically in DH but also more broadly?
+- What are the potential audiences for this data visualization? How would that impact the final output?
+- What are some of the potential pitfalls of showing this data in aggregate? How does this distort its origins and how can we try to mitigate that?
+
+I would also encourage you to draw on our applied readings from this week to help guide your discussion. For example, knowing some of the diversity issues in DH conferences, how might that impact our visualization of this data? Or knowing that data visualization is often used to make arguments, how might that impact our visualization of this data?
+
+## Advanced Data Visualization and Transposing Data
+
+While Google Sheets is a great tool for visualizing data, it is limited in the types of visualizations it can create and is only one of many tools that can help us visualize data. One of my favorite tools for visualizing data is [RawGraphs](https://rawgraphs.io/), a free and open-source tool tailored for crafting visualizations.
+
+### RawGraphs
+
+<figure>
+    <a href="https://rawgraphs.io/" class="image-popup">
+        <img src="https://flowingdata.com/wp-content/uploads/2021/03/RAW-graphs.png?w=640" alt="Raw Graphs">
+    </a>
+</figure>
+
+We can easily try out RawGraphs by copying our data from Google Sheets and pasting it into RawGraphs.
+
+<figure>
+    <a href="https://rawgraphs.io/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/rawgraph_data.png" alt="RawGraph Data">
+    </a>
+</figure>
+
+RawGraphs suggests we try something called an Alluvial Diagram, which is a type of flow diagram that can help us visualize how our data is changing over time. 
+
+<figure>
+    <a href="https://rawgraphs.io/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/input_columns.png" alt="Input Columns">
+    </a>
+</figure>
+
+Once we enter the columns, we should see the following chart:
+
+<figure>
+    <a href="https://rawgraphs.io/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/alluvial_chart.png" alt="Alluvial Chart">
+    </a>
+</figure>
+
+While this visualization offers an aesthetic upgrade from Google Sheets, it remains somewhat cluttered for temporal depictions. But you'll notice that if we try to change our chart to one advertised as suitable for temporal data, like Bar or Line charts, RawGraphs prompts for X and Y axes.
+
+<figure>
+    <a href="https://medium.com/" class="image-popup">
+        <img src="https://miro.medium.com/v2/resize:fit:500/1*XtKQfgKVQFtpqXF_am4p3Q.png" alt="X Y Axis">
+    </a>
+</figure>
+
+In data visualization, we often talk about the X and Y axes—horizontal and vertical axes of a chart. For example, in our data we might try to show year on the X axis since it is a continuous variable (i.e. time) and then the counts for each tool on the Y axis since it is a discrete variable. To do this though requires doing something called transposing our data.
+
+### Transposing Data
+
+Transposing, while sounding sophisticated, simply involves switching rows and columns in datasets, as illustrated below. For our purpose, we aim to convert our year-based columns into rows.
+
+<figure>
+    <a href="https://www.w3resource.com/" class="image-popup">
+        <img src="https://www.w3resource.com/w3r_images/pandas-dataframe-transpose-1.png" alt="Transposing">
+    </a>
+</figure>
 
 
-Now that we have merged both our datasets we can finally compare how popular these tools are across the class compared to this dataset. In our original merge sheet `Merged Dataset` we should have the following:
+While we can do this in Google Sheets, OpenRefine's interface is slightly easier to use for this type of transformation. So, to begin we can simply copy our data from Google Sheets and paste it into OpenRefine.
 
-![counts table]({{site.baseurl}}/assets/images/counts_table.png)
+<figure>
+    <a href="https://openrefine.org/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/clipboard.png" alt="Clipboard">
+    </a>
+</figure>
+
+Select `Clipboard` and then `Next`. 
+
+<figure>
+    <a href="https://openrefine.org/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/tab_separated.png" alt="Tab Separated">
+    </a>
+</figure>
+
+Then once you see the data preview, ensure `Tab` is chosen as the separator before initiating `Create Project`.
+
+<figure>
+    <a href="https://openrefine.org/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/transpose_openrefine.png" alt="Transpose OpenRefine">
+    </a>
+</figure>
+
+Now we can start transposing the data, by selecting the **first** column we want to transpose. One gotcha is that OpenRefine will transform all subsequent columns, so we need to be careful to only select the first column we want to transpose and that our column ordering conforms to this choice. For more information about transposing, I would highly recommend checking out the documentation [https://openrefine.org/docs/manual/transposing](https://openrefine.org/docs/manual/transposing)
+
+<figure>
+    <a href="https://openrefine.org/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/new_columns.png" alt="New Columns">
+    </a>
+</figure>
+
+Once we have selected the first column, we can select `Transpose` and then `Transpose cells across columns into rows`. This will raise the option of naming our new columns. Again remember we are changing our data from columns to rows, so we want to name our new columns something that makes sense. In our case, we want to name our new columns `year` and `tool_count`.
+
+<figure>
+    <a href="https://openrefine.org/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/fill_down.png" alt="Fill Down">
+    </a>
+</figure>
+
+Now, we should have our dataset with three columns: `tool_name`, `year`, `tool_count`. The final step we need to do is to fill down the `tool_name` column, so that each row has a value for `tool_name`. We can do this by selecting the `tool_name` column and then selecting `Edit Cells` and then `Fill Down`.
+
+<figure>
+    <a href="https://openrefine.org/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/final_transposed_data.png" alt="Final Transposed Data">
+    </a>
+</figure>
+
+The result is a dataset that is transposed, which we can now copy and paste, or download and upload into RawGraphs to try creating a graph that shows change over time.
+
+<figure>
+    <a href="https://rawgraphs.io/" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/line_chart_rawgraphs.png" alt="Line Chart RawGraphs">
+    </a>
+</figure>
+
+Here's my first attempt using RawGraphs' Line Chart feature, augmented with a color gradient for distinct tool differentiation.
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/final_linechart.png" class="image-popup">
+        <img src="{{site.baseurl}}/assets/images/final_linechart.png">
+    </a>
+</figure>
 
 
+## Data Visualization Assignment(s)
+
+We are trying something slightly different this week to accomodate everyone's differing interests and pace. You have the option of completing any (or all) of the following assignments. What you select should be geared towards your interests. For example, if you plan to work with data than I would recommend assignment 2 , but if you plan to primarily assist others in finding materials than assignment 1 might be more appropriate. As always in this course there is no wrong answer or choice, but I would recommend trying to challenge yourself (though again what that means is for you to decide).
+
+1. Trends: Finding and Inspecting DH Data Visualization Examples
+
+For this assignment, the goal is to find examples of data visualization in DH and trying to identify how the visualization (broadly defined) was created. You can use the examples above or from the readings or find your own. The goal is to try to find at least 2 examples, and then try to identify the following:
+
+- How was the visualization created? What tools were used?
+- What does this visualization tell us about not only the data, but trends in DH more broadly?
+
+You are welcome to either create a Markdown file and link to that in the relevant GitHub discussion, or simply post your findings directly in the discussion. If you are having trouble finding examples, please let me know and I can help you with your search.
 
 
+1. Outliers: Testing out New Data Visualization Tools
+   
+For this assignment, the goal is to try making data visualizations using data from this course with tool you have never used before. You can use the tools we discussed in class but would also recommend potentially trying something like DataWrapper [https://www.datawrapper.de/](https://www.datawrapper.de/) or Flourish [https://flourish.studio/](https://flourish.studio/). The goal is to try to create at least one graph and explain your choices.
 
-1. Finish finalized merged dataset
-2. Start to visualize in Google Sheets
-   1. Then do Raw Graphs
-3. Then transpose in OpenRefine
-4. The import in Google Sheets
-5. Sum values
-6. Start to visualize in RawGraphs again
+- You are welcome to use your own version of our merged DH tools dataset, or you can use the version from class (link forthcoming), or my preferred option would be that you try using a dataset I compiled that contains not only counts from the blog post or class, but also all mentions of individual tools in the Index of DH Conferences. You can access the data here []
 
-Talk about what makes a good data visualization
+https://academy.datawrapper.de/article/245-how-to-create-your-first-datawrapper-chart
 
-Give the students the total tool counts and have them create a visualization in Google Sheets and RawGraphs
-Reflect on what makes these tools useful or not, difficult or easy to use
+https://help.flourish.studio/article/9-creating-a-visualization
+
