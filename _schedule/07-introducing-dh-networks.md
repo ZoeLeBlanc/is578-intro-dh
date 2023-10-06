@@ -14,6 +14,10 @@ class_date: 2023-10-19
 - Chapters 3 and 4 in Ahnert, Ruth, Sebastian E. Ahnert, Catherine Nicole Coleman, and Scott B. Weingart. "The Network Turn: Changing Perspectives in the Humanities." Elements in Publishing and Book Culture, December 2020. [https://doi.org/10.1017/9781108866804](https://doi.org/10.1017/9781108866804).
 - Earhart, Amy E, Roopika Risam, and Matthew Bruno. "Citational Politics: Quantifying the Influence of Gender on Citation in Digital Scholarship in the Humanities." Digital Scholarship in the Humanities 36, no. 3 (September 1, 2021): 581–94. [https://doi.org/10.1093/llc/fqaa011](https://doi.org/10.1093/llc/fqaa011).
 
+### Applied Materials
+
+- Return to Eichmann-Kalwara, Nickoal, Jeana Jorgensen, and Scott B. Weingart. “Representation at Digital Humanities Conferences (2000–2015).” In Bodies of Information, edited by Elizabeth Losh and Jacqueline Wernimont, 72–92. Intersectional Feminism and the Digital Humanities. University of Minnesota Press, 2018. [https://doi.org/10.5749/j.ctv9hj9r9.9](https://doi.org/10.5749/j.ctv9hj9r9.9).
+
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
 - Grandjean, Martin. "A Social Network Analysis of Twitter: Mapping the Digital Humanities Community." Edited by Aaron Mauro. Cogent Arts & Humanities 3, no. 1 (December 31, 2016): 1171458. [https://doi.org/10.1080/23311983.2016.1171458](https://doi.org/10.1080/23311983.2016.1171458).
