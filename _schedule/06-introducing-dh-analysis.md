@@ -30,7 +30,7 @@ class_date: 2023-10-12
 
 ### Workshop Assignments (to be completed prior to class)
 
-- [ ] Introduction to Data Visualization
+- [ ] [Data Visualization Assignment(s)](http://zoeleblanc.com/is578-intro-dh/materials/intro-visualizing-data/01-intro-data-visualization#data-visualization-assignments)
 
 #### Additional Resources
 
