@@ -1,0 +1,91 @@
+
+        
+            With a few limited exceptions 
+                (Blanke et al., 2020), the application of machine learning (ML) within the historical research process maintains a strong human-in-the-loop element that limits the extent of its proliferation. Part of the reason for this is surely the omnipresence of certain kinds of uncertainty in historical research, which the traditions of historiography have developed powerful (albeit analogue) tools to manage. As Myles Lavan recently suggested, the persistence of these longstanding methods may not be ‘a mistaken belief that uncertainty about the past is qualitatively different from that faced by other disciplines,’ 
+                (Lavan, 2019) however. Instead, we propose that ML/AI methods challenge one of the most fundamental and foundational elements of historical research, namely provenance, in ways that are not simple to resolve or document. In historical research, provenance typically refers to the record of where an object, collection, or dataset has come from and the places and ‘experiences’ (additions, transformations, deletions, etc.) it has had since its original documentation. The entry of ML methods into DH might be changing the limits and implications of this definition. 
+            
+            For such methods to be meaningfully applied to historical research, provenance needs to be reconsidered, modelled from multiple perspectives, and documented differently from the current standards in computer science. Specifically, data transformations that are no longer performed by human actors but by autonomous or semi-autonomous computational systems need to be captured to enable provenance management. Conversely, historians’ reliance on provenance requires that we (a) agree upon a shared definition of data provenance and (b) ensure that ML systems designed for use in this specific context maintain legibility. Such a negotiation between research fields will require more than the current research in explainable AI promises to deliver, making the computational provenance not only be reconstructed but also comprehensible in the multidisciplinary space of DH.
+            The research project “PROgressive VIsual DEcision-Making in Digital Humanities” (PROVIDEDH, 2017-2021) has contributed to this requirement by proposing a Visual Analytics (VA) approach to representing and managing uncertainty in DH research and demonstrating how a better communication of human or machine-induced uncertainty can enhance the user experience for humanities scholars using ML models. Among other outputs, the project developed an HCI-inspired uncertainty taxonomy (see Figure 1) differentiating between two main types of uncertainty: human-made and technology-made, which correspond to aleatoric (irreducible) and epistemic (reducible) uncertainty as per previous works in the literature 
+                (Edmond, 2019; Therón Sánchez et al., 2019; Simon et al., 2018) (Edmond, 2019; Therón Sánchez et al., 2019; Simon, 2017). 
+            
+            
+                
+            
+            
+                Figure 1: Proposed uncertainty model. Top: human-induced uncertainty with four predefined categories that map to the epistemic categories previously introduced by Fisher and others. Users can add more categories on a per-project basis if required. Bottom: Machine-induced uncertainty showing the results of applying N different algorithms to the data.
+            
+            The first uncertainty category, technology-induced, can be mapped to aleatoric uncertainty (well-defined objects in Fisher’s 
+                (Fisher, 1999) taxonomy) and results from applying computational algorithms to the data, which often give their results with a variable degree of bounded uncertainty (e.g., topic models). For this reason, this type of uncertainty is better represented as a continuous probability distribution. In addition, this representation allows a better understanding of speculative runs of a given algorithm and enhances the what-if analysis process. For example, a researcher could parametrise an algorithm with a fixed set of inputs and launch it several times, obtaining a range of mean values and deviations encoded in a probability distribution function (PDF), which, if correctly displayed, would allow her to get an idea of how the algorithm behaves. Analogously, the algorithm could be parametrised with a variable set of inputs created by the user running the computation or by other researchers. This operation mode would answer the questions of “what happens if I run the algorithm n times using my assumptions?” or “what happens if I run the algorithm n times using another person’s assumptions?” As in the case of running the algorithm with the same parameters many times, the results of multiple runs with different parameters could also be summarised in a continuous PDF, allowing the desired kind of what-if analysis. We argue this kind of insights are highly valuable, specifically in the case of probabilistic algorithms, such as topic models or word embeddings, and whose results –and thus, interpretations– can vary significantly between different runs 
+                (Alexander and Gleicher, 2016).
+            
+            The other category, human-induced uncertainty, arises from 1) direct interpretations of the raw data (which in turn may be based on others’ previous interpretations and grounded expert knowledge of the user), 2) interpretations of computational analyses performed on the data, or 3) most likely, a combination of the two. Human actors report this category on a 5-point Likert scale, which is thus best modelled as a discrete PDF. The relationships of dependency between the categories in our taxonomy are bidirectional and self-recurring since, for example, input parameters and data — and therefore the results — are derived from a user’s previous interpretations of textual data and related machine- or human-generated annotations. In turn, these interpretations must necessarily be built upon previous insight obtained by the same or other users who apply computational techniques to the data. This creates a temporal belief network 
+                (Druzdzel and Simon, 1993; Pearl and Mackenzie, 2018) (see Figure 2) in which the actors’ perspectives are fixated on the different versions of a dataset.
+            
+            
+                
+            
+            
+                Figure 2: A Bayesian Belief Network formed by different interactions of a machine and human actors with the data. Each of these interactions produces a new version of the data, which may, in turn, be used as an input by another actor to create a more recent version. 
+            
+            Our taxonomy was evaluated in different user studies 
+                (Benito-Santos et al., 2021), and it can be used by other researchers in a digital research platform (
+                https://providedh.ehum.psnc.pl/). Although this kind of encoding may still feel foreign to many researchers trained in the traditions of historical methods, it will only be through this kind of convergence between the affordances and constraints of ML on the one said, and the values and tolerances of historical research on the other, that we will be able to see more widespread integration of ML into historical research workflows.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        
+                        Alexander, E. and Gleicher, M. (2016). Task-Driven Comparison of Topic Models. 
+                        IEEE Transactions on Visualization and Computer Graphics, 
+                        22(1): 320–29 doi:10.1109/TVCG.2015.2467618.
+                    
+                    
+                        Benito-Santos, A., Doran, M., Rocha, A., Wandl-Vogt, E., Edmond, J. and Therón, R. (2021). Evaluating a Taxonomy of Textual Uncertainty for Collaborative Visualisation in the Digital Humanities. 
+                        Information, 
+                        12(11). Multidisciplinary Digital Publishing Institute: 436 doi:10.3390/info12110436.
+                    
+                    
+                        Blanke, T., Bryant, M. and Hedges, M. (2020). Understanding memories of the Holocaust—A new approach to neural networks in the digital humanities. 
+                        Digital Scholarship in the Humanities, 
+                        35(1): 17–33 doi:10.1093/llc/fqy082.
+                    
+                    
+                        Druzdzel, M. J. and Simon, H. A. (1993). Causality in Bayesian Belief Networks. In Heckerman, D. and Mamdani, A. (eds), 
+                        Uncertainty in Artificial Intelligence. Morgan Kaufmann, pp. 3–11 doi:10.1016/B978-1-4832-1451-1.50005-6. http://www.sciencedirect.com/science/article/pii/B9781483214511500056 (accessed 2 December 2020).
+                    
+                    
+                        Edmond, J. (2019). Strategies and Recommendations for the Management of Uncertainty in Research Tools and Environments for Digital History. 
+                        Informatics, 
+                        6(3): 36 doi:10.3390/informatics6030036.
+                    
+                    
+                        Fisher, P. F. (1999). Models of uncertainty in spatial data. 
+                        Geographical Information Systems, 
+                        1: 191–205.
+                    
+                    
+                        Lavan, M. (2019). Epistemic Uncertainty, Subjective Probability, and Ancient History. 
+                        The Journal of Interdisciplinary History, 
+                        50(1): 91–111 doi:10.1162/jinh_a_01377.
+                    
+                    
+                        Pearl, J. and Mackenzie, D. (2018). 
+                        The Book of Why: The New Science of Cause and Effect. 1st ed. USA: Basic Books, Inc.
+                    
+                    
+                        Simon, C., Weber, P. and Sallak, M. (2018). 
+                        Data Uncertainty and Important Measures. John Wiley & Sons.
+                    
+                    
+                        Therón Sánchez, R., Benito-Santos, A., Santamaría Vicente, R. S. and Losada Gómez, A. (2019). Towards an Uncertainty-Aware Visualization in the Digital Humanities. 
+                        Informatics, 
+                        6(3): 31 doi:10.3390/informatics6030031.
+                    
+                
+            
+        
+    
+

@@ -1,0 +1,84 @@
+
+      
+         
+            Motivation
+            Aufgrund zahlreicher Sommer-Schulen, Workshops, DH-Studiengänge und vielfältiger online-Tutorials ist die Kodierung eines Textes in XML nach dem de-facto-Standard TEI ein oft anzutreffender Projektbestandteil. Was jedoch häufig fehlt sind einstiegsfreundliche Anleitungen, Tutorials, HowTos zu dem sich an die Kodierung anschließenden Themenkomplex der Publikation einer digitalen Edition. Die Frage nach dem »Wohin?« der oftmals in langer und mühsamer Arbeit erstellten Editionen betrifft vor allem jene Forschende, welche nicht Teil eines größer angelegten Projektes sind oder auch sonst über keine allzu starke Anbindung an eine gut institutionalisierte Forschungsinfrastruktur verfügen. Zwar entwickeln zunehmend mehr Institutionen, vielfach in Verbindung mit konkreten Projekten, Kompetenzen, Workflows und (technische) Infrastrukturen zur Veröffentlichung Digitaler Editionen, aufgrund chronisch knapper Finanzierung können oftmals aber nur wenige und in erster Linie nur eigene/interne Projekte hinreichend betreut werden. 
+            Gleichzeitig kann in vielen Digitalen Editionsprojekten eine sehr starre Arbeitsteilung zwischen so genannten FachwissenschlafterInnen und TechnikerInnen beobachtet werden. Obwohl es sicherlich nicht als Nachteil bewertet werden kann, wenn jeder das tut, wofür er ausgebildet wurde und was sie bzw. er demzufolge auch gut kann, so besteht in einem stark arbeitsteiligen Umfeld die Gefahr asymmetrischer Kompetenzverhältnisse und daraus resultierender Abhängigkeiten. Sei es durch unrealistische Wünsche seitens der Fachwissenschaft, die aufgrund mangelnder technischer Kenntnisse an die Technik herangetragen werden. Oder sei es die Verzögerung des Arbeitsfortschritts aufgrund schleppender Implementierung basaler Technologien oder von editorischer Seite dringend benötigter Funktionalitäten. 
+            Der hier vorgeschlagene Workshop versucht, beide Problembereiche aufzugreifen, indem gemeinsam mit den Teilnehmern, welche vorzugsweise ihre eigenen XML/TEI Daten mitbringen, eine auf der XML-Datenbank eXist basierte Web-Applikation zur Publikation eigener Editionen entwickelt wird. 
+         
+         
+            Die Applikation
+            Die Anforderungen für eine solche Applikation stehen in engem Zusammenhang mit der im Kontext dieses Workshops verwendeten Vorstellung über die Eigenschaften und über potentielle Verwendungszwecke einer Digitalen Edition. Zur Erläuterung: Unter dem Begriff »Digitale Edition« sollen ein kohärenter Text oder mehrere kohärente Texte verstanden werden, die mittels XML/TEI kodiert wurden und worin in der Regel verschiedene Entitäten wie z.B. Personen, Orte, Werke oder ähnliches erfasst, deren Form und Textgenese beschrieben und die um weiterführende Erläuterungen, Annotationen und Anmerkungen ergänzt wurden. Eine solche Digitale Edition wird vorwiegend im ›close reading‹ rezipiert mit dem Zweck, ein tieferes Verständnis über den Text, dessen Inhalt sowie dessen Kontext und Entstehung zu erhalten. Abgesehen von einer solchen eher traditionellen Auseinandersetzung mit einer Digitalen Edition verfügt diese aber auch über den Mehrwert, systematisch und vor allem maschinell gelesen werden zu können.
+            Eine ›Digital Edition Web-App‹ sollte ganz generell die kodierten Texte in einer möglichst benutzerfreundlichen Art und Weise präsentieren und den »technischen Unterbau« dem Benutzer nicht aufbürden, wohl aber die computergestützte Weiterverarbeitung der Texte jederzeit ermöglichen. Konkreter formuliert heißt das, dass eine solche Anwendung folgende Anforderungen zu erfüllen hat.
+            
+               Einstiegsseite
+               NutzerInnen sollen auf einer zentralen Einstiegsseite einen möglichst vollständigen Überblick über den kompletten Umfang der Edition erhalten. Dies ist insbesondere dann von großer Bedeutung, wenn die Edition aus mehreren Editionseinheiten besteht, wie zum Beispiel im Falle eines Briefwechsels. 
+               In der im Zuge des Workshops zu entwickelnden Applikation wird das in Form einer ListView gelöst, welche sämtliche XML/TEI Dokumente bzw. ausgewählte Informationen aus dem teiHeader in einer von den NutzerInnen such-, filter- und sortierbaren Ansicht präsentiert. Von diesem Inhaltsverzeichnis gelangen die NutzerInnen dann über Verlinkung zu den einzelnen Dokumenten. 
+            
+            
+               Responsive Design
+               Da Digitale Editionen im www verfügbar sind, muss davon ausgegangen werden, dass diese generell in digitaler Form, sprich auf einem PC, Notebook, Tablet, eventuell auch auf einem Smartphone gelesen werden. Insofern gilt es, den kodierten Text in einer leserfreundlichen Darstellung anzuzeigen, die die verschiedenen Formate der Anzeigegeräte berücksichtigt (womit einige der Grundlagen des sog. ›responsive design‹ berücksichtigt werden müssen). Andererseits darf aber der Wunsch vieler Nutzer, die Inhalte »klassisch« auf Papier zu nutzen, nicht vergessen werden.
+               Die digitale Darstellung im Web eröffnet indes auch die Möglichkeit für dynamische, sprich von den Nutzer/innen frei konfigurierbare, Darstellungsweisen. Abhängig vom konkreten Mark-Up können, um nur ein paar Beispiele zu nennen, etwa Anmerkungen ein- oder ausgeblendet, Abkürzungen aufgelöst, oder Korrekturschritte ausgeblendet werden. 
+               In der ›Digital Edition Web-App‹ wird mittels XSLT Transformation aus den XML Dateien eine HTML Dokument ›on the fly‹ generiert. Diese ›DetailView‹ verfügt, sofern aufgrund des Markups des Ausgangsdokumentes möglich, über ein Navigationsmenü, welches eine rasche Orientierung im Text ermöglicht. Über ein weiteres Menü können außerdem verschiedene Darstellungsoptionen (de)aktiviert werden. 
+            
+            
+               Suche
+               Die Möglichkeit, eine digitale Edition in ihrer Gesamtheit im Volltext durchsuchen zu können, wird häufig als einer der größten Vorzüge einer digitalen Edition beschrieben. Zusätzlich zu einer so genannten »einfachen Suche« wird darüber hinaus auch gerne eine »erweiterte Suche« angeboten, welche eine spezifizierte Suche wie zum Beispiel nur in Anmerkungen oder über Metadaten ermöglicht. 
+               Aufgrund der Integration der Volltext-Suchengine Lucene in die Datenbanksoftware eXist-db ist die Realisierung sowohl einer »einfachen« wie auch einer »erweiterten« Suche im Rahmen der ›Digital Edition Web-App‹ einfach zu bewerkstelligen, wobei die Spezifika der »erweiterten« Suche vom konkreten Markup der einzelnen Editionen abhängt.
+               Einige grundlegende Überlegungen zum Erstellen einer Suche werden hierbei anhand konkreter Beispiele mit den Teilnehmern diskutiert und demonstriert werden.
+            
+            
+               Register
+               Neben einer Volltextsuche bieten viele digitale Editionen auch eine registerbasierte Suche an, mit deren Hilfe etwa gezielt Personen oder Orte in der Edition identifiziert werden können.
+               Je nach Art der Daten wird ein solches Register auf verschiedene Weisen demonstriert werden.
+            
+            
+               PDF-Erzeugung
+               Als Nachteil einer digitalen Edition wird oft angesehen, dass ihr die Möglichkeit, einfache Anmerkungen – ähnlich einem eigenen Studienexemplar – anzubringen, fehlt. Aus diesem und anderen Gründen wird häufig die HTML-Seite ausgedruckt.
+               Im Rahmen des Workshops werden hierzu zwei verschiedene Lösungswege kurz umrissen, ohne jedoch weiter ins Detail gehen zu können: Einerseits handelt es sich um ein für den Druck spezifisch erarbeitetes CSS-Stylesheet (»print-CSS«), andererseits die Generierung einer Datei für das Satzprogramm LaTeX.
+            
+            
+               Schnittstellen
+               Da die Texte in einer (einigermaßen) standardisierten Art und Weise kodiert sind, können diese auch maschinell prozessiert werden. Dafür ist es notwendig, dass nicht nur eine HTML Darstellung der Daten veröffentlicht wird, sondern auch die eigentlichen XML/TEI-Daten.
+               Die ›Digital Edition Web-App‹ wird ihre Daten über die in der eXist-db integrierte ›REST-Style Web API‹ veröffentlichen.
+            
+         
+         
+            Ziel und Zielgruppe des Workshops
+            Ziel des Workshops ist es, den TeilnehmerInnen einen ersten Einblick in weit verbreitete Workflows, Technologien und Terminologien sowie Konzepte zur Umsetzung der genannten Funktionalitäten zu vermitteln. Sie erhalten somit Grundlagen zur Weiterentwicklung oder auch Beurteilung anderer Plattformen und Tools.
+            Die von den TeilnehmerInnen im Zuge des Workshops erarbeitete Web-App wird – auch aufgrund der Heterogenität der von den TeilnehmerInnen gestellten Daten – keine produktionsreife Applikation sein, die alle Aspekte einer digitalen Edition umsetzt. Allerdings bildet die im Workshop teilweise selbst geschriebene Software eine solide Basis für weiteres Selbststudium, woraus sich später für die einzelnen Teilnehmer oder Institutionen einfache, aber auf die spezifischen Bedürfnisse zugeschnittene Plattformen entwickeln können.
+            Die TeilnehmerInnen des Workshops sollten über Erfahrung in der Kodierung in XML/TEI verfügen und im besten Fall an einem konkreten Projekt arbeiten und über XML/TEI Dateien verfügen, auf deren Grundlage sie im Workshop ihre eigene ›Digital Edition Web-App‹ entwickeln können.
+         
+         
+            Ablauf und Teilnehmeranzahl
+            Die TeilnehmerInnen erhalten vorab eine detaillierte Anleitung zur Installation der notwendige Software (eXist-db).
+            Im eigentlichen Workshop werden die jeweiligen Arbeitsschritte von einem der Organisatoren live vorgeführt (dafür wird ein Beamer benötigt). Die konkreten Inhalte orientieren sich dabei an dem gleichnamigen Blog (Andorfer/Kampkaspar 2016), welcher von den Organisatoren im Rahmen der TEI-Konferenz 2016 offiziell präsentiert wurde.
+            Während des Workshops werden wir bei auftretenden Fragen und Problemen den Teilnehmenden helfend zur Seite stehen. Um eine möglichst gute Betreuung der TeilnehmerInnen gewährleisten zu können, sollte die Teilnehmerzahl 25 nicht überschreiten.
+         
+         
+            Organsiatoren
+            Peter Andorfer
+            hat im Zuge seiner Dissertation eine digitale Edition erstellt und war im Editionsprojekt »Die Korrespondenz von Leo von Thun-Hohenstein« für die technische Umsetzung des Projektes (Entwicklung der Web-Applikation) verantwortlich. Gemeinsam mit Dario Kampkaspar schreibt er außerdem für den Blog »HowTo build a digital edition web app«.
+            Dario Kampkaspar 
+            erstellt im Rahmen seines Dissertationsprojektes eine Edition einer frühneuzeitlichen Handschrift. An der HAB ist er im Rahmen zweier Projekte (Andreas Bodenstein von Karlstadt; Johannes Rist) intensiv mit Edition und Entwicklung beschäftigt. Gemeinsam mit Peter Andorfer schreibt er außerdem für den Blog »HowTo build a digital edition web app«. 
+            Marcus Baumgarten 
+            ist langjähriger Mitarbeiter an der HAB und betreut unterschiedliche Editionsprojekte. Zur Zeit arbeitet er in einem Kooperationsprojekt mit dem historischen Seminar der Universität Freiburg (die »Tagebücher des Fürsten Christian II. von Anhalt-Bernburg«) und gemeinsam mit dem Leibniz-Institut für europäische Geschichte in Mainz (»Digitale Edition europäischer Religionsfrieden zwischen 1500 - 1800«). 
+            Gemeinsam mit Timo Steyer und Studierenden der TU Braunschweig betreibt er das Weblog www.digital-ist-besser.net
+            Timo Steyer 
+            ist aktuell in den Bereichen Metadaten und Datenmodellierung im Forschungsverbund Marbach Weimar Wolfenbüttel am Standort Wolfenbüttel tätig. In diesem Kontext beschäftigt er sich mit Fragen und Methoden zu den Themen der Interoperabilität von digitalen Editionen und der Retrodigitalisierung von bereits im Druck vorliegenden Editionen (z. B. »Controversia et Confessio« und »Die Briefe der Fruchtbringenden Gesellschaft«).
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Andorfer, Peter / Kampkaspar, Dario (2016):
+                        How to build a Digital Edition Web-App
+                  http://www.digital-archiv.at/howto-build-a-digital-edition-web-app/.
+                    
+            
+         
+      
+   
+

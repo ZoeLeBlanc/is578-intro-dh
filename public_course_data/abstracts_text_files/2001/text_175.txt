@@ -1,0 +1,341 @@
+
+
+
+    
+        
+            
+                 What can Hyperplane-Classifiers tell us about
+                    Texts?
+                
+                    
+                        Edda
+                        Leopold
+                        
+                            GMD German National Research Center for Information
+                                Technology
+                            Institute for Autonomous intelligent Systems
+                            
+                        
+                    
+                
+                
+                    
+                        Jörg
+                        Kindermann
+                        
+                            GMD German National Research Center for Information
+                                Technology
+                            Institute for Autonomous intelligent Systems
+                            
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+
+                
+                    
+                        vector space representation
+                        text classification
+                         
+                    
+                
+            
+        
+
+    
+    
+        
+            
+                We want to report from our results with Support Vector Machines for Text
+                    Classification in order to promote the interdisciplinary dialogue. Our research
+                    group consists mainly of statisticians and computer-scientists, and focusses on
+                    the algorithmic side of text-classifica-tion. We want to discuss our experiences
+                    with researchers working on other fields of linguistic computing and ask for the
+                    implications of our results on linguistic approaches which use vector space
+                    representations as for example "semantic spaces" and "latent semantic
+                    indexing".
+                The algorithm called "Support Vector Machines", can shortly be described as
+                    follows (A more detailed description can be found in (Vapnik 1998)):
+                        1 A set of labeled documents is needed for training. Documents are
+                            mapped to their type-frequency vectors. These vectors span an high
+                            dimensional input space (every type represents one dimension). This kind
+                            of abstraction from syntagmatic structures is often refered to as
+                            "bag-of-words" approach.
+                        2. The algorithm searches for a hyperplane in input space which
+                            optimally separates the training documents.
+                        3. Documents of a test-set are attributed to one of the classes
+                            depending on the side of the hyperplane they are located on. SVM have
+                            proven to provide an effective means for text classification on
+                            different languages (English and German) and textual domains (English
+                            Reuters news; Ohsumed medical abstracts, e-mail newsgroups; German:
+                            newspapers taz, FR, BZ, e-mail newsgroups) and different tasks (topic
+                            identification, Authorship attribution, classification according
+                            newspaper issues of different years). (Joachims 1997; Joachims1998;
+                            Drucker et al.; Dumais et al. 1998; Diederich &amp; Kindermann &amp;
+                            Leopold &amp; Paaþ 2000; Leopold &amp; Kindermann 2001)
+                    
+                
+                The great advantage of SVMs is, that they can manage a very large number of
+                    attributes (in our experiments we have worked with up to half a million
+                    attributes), given that the attribute vectors are sparse. This makes it possible
+                    to perform document-classification directly on the frequency spectra of
+                    documents without any kind of feature selection. This is why we think that
+                    results on the precision/recall performance of Support Vector Machines can be
+                    interpreted as statements about frequency spectra of document collections, and
+                    thus constitute a kind of linguistic evidence.
+                Another advantage of SVMs is, that various kernel functions can be used. Kernel
+                    functions correspond to a mapping of input vectors to a even higer dimensional
+                    feature space and can heuristically interpreted as different geometries in input
+                    space ((hyper)planes may be substituted by e.g. (hyper)spheres).
+                The choice of the kernel function is crucial to most applications of support
+                    vector machines. However in the case of text-classification Kernel functions
+                    only slightly affect performance although they imply completely different
+                    geometries of input space. So from the stand point of retrieval performance it
+                    is nearly irrelevant if topic-boundaries are defined by planes or by
+                    spheres.
+                What does this mean for the bag-of-words approach which represents documents in
+                    the form of type frequency vectors, and what does it mean for the quality of
+                    co-occurrence of types within the context of a document? We will try to give an
+                    answer in terms of stochastical dependency of types.
+                Another observation we made is that lemmatization does not affect performance in
+                    terms of precision and recall. In English our results on the Reuters news corpus
+                    obtained without any linguistic preprocessing do not differ significantly from
+                    those obtained by Joachims (1998) who has used the Porter stemmer. In German
+                    lemmatization also did not yield an improovement of performance, which is
+                    surprising because of the morphological richness of German. However our results
+                    agree with those obtained with neural nets in French news data (Stricker 2000),
+                    neural nets however need a reduction of dimensionality as opposed to SVM. An
+                    explanation of this finding is that lemmatization leads loss of information,
+                    because different word forms are mapped to the same lemma. A surprising result,
+                    is that author identification is also best done on the bases of word-forms
+                    rather than on the basis of bigramms of grammatical tags.
+                We are currently working multi-class classification using Support Vector Machines
+                    (Kindermann et al 2000). The problem here is to group the classes of documents
+                    in an appropriate way. To this end we explore the inter- and intra-class
+                    distance of type-frequency distributions.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            Joachim
+                                    Diederich
+                            Jörg
+                                    Kindermann
+                            Edda
+                                    Leopold
+                            Gerhard
+                                    Paaß
+                            Authorship Attribution with Support Vector
+                                Machines
+                        
+                        
+                            Poster presented at The Learning Workshop; 4 - 7 April,
+                                2000 in Snowbird, Utah
+                            
+                                
+                                
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            H.
+                                    Drucker
+                            D.
+                                    Wu
+                            V.
+                                    Vapnik
+                            Support vector machines for spam categorization
+                        
+                        
+                            IEEE Transactions on Neural Networks
+                            
+                                10
+                                5
+                                1048-1054
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            Susan
+                                    Dumais
+                            John
+                                    Platt
+                            David
+                                    Heckerman
+                            Mehran
+                                    Sahami
+                            Inductive Learning Algorithms and Representations for
+                                Text Categorization
+                        
+                        
+                            Proceedings of ACM-CIKM-98; 7th International
+                                Conference on Information Retrieval and Knowledge Management
+                            
+                                
+                                
+                                1998
+                                148--155
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Thorsten
+                                    Joachims
+                                
+                            
+                            Text categorization with support vector machines:
+                                learning with many relevant features
+                        
+                        
+                            Proceedings of ECML-98, 10th European Conference on
+                                Machine Learning
+                            Lecture Notes in Computer Science, Number 1398
+                            
+                                Heidelberg, DE
+                                Springer Verlag
+                                1998
+                                137-142
+                            
+                        
+                    
+                    
+                        
+                            Jörg
+                                    Kindermann
+                            Edda
+                                    Leopold
+                            Gerhard
+                                    Paaß
+                            Multiclass Classification with Error Correcting
+                                Codes
+                        
+                        
+                            
+                                
+                                    Edda
+                                    Leopold
+                                
+                            
+                            
+                                
+                                    Mathias
+                                    Kirsten
+                                
+                            
+                             Treffen der GI-Fachgruppe 1.1.3 Maschinelles
+                                Lernen
+                            
+                                
+                                
+                                2000
+                                56-64
+                            
+                        
+                    
+                    
+                        
+                            Edda
+                                    Leopold
+                            Jörg
+                                    Kindermann
+                            Text Categorization with Support Vector Machines. How
+                                to Represent Texts in Input Space?
+                        
+                        
+                            Machine Learning
+                            
+                                
+                                
+                                
+                                accepted for publication
+                            
+                        
+                    
+                    
+                        
+                            M.Stricker
+                            Réseaux de neurones pour le traitement automatique du
+                                langage : conception et réalisatiion de filtres
+                                d'informations
+                        
+                        
+                            Thèse de Doctorat de l'Université Pierre et Marie Curie - Paris
+                                VI
+                            
+                                School of Library, Archive and Information Studies,
+                                    University College London
+                                200
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Vladimir
+                                    Vapnik
+                                
+                            
+                            Statistical Learning Theory
+                            
+                                
+                                Wiley &amp; sons
+                                1998
+                            
+                        
+                    
+                
+            
+        
+    

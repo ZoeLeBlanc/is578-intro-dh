@@ -1,0 +1,175 @@
+
+      
+         Die Web-Applikation 
+Schmankerl Time Machine
+            
+             wurde im Rahmen des Hackathons für offene Kulturdaten, „Coding da Vinci Süd 2019“ (Bergmann, 2019), von einem interdisziplinären Team aus Informatikern, Statistikern und Geisteswissenschaftlern entwickelt (Deck, 2018). Das Projekt basiert auf den digitalisierten Speisekarten Münchner Restaurants, die die 
+Monacensia der Stadtbibliothek München für den Hackathon zur Verfügung gestellt hatte. Am Ende der sechswöchigen Sprintphase konnte der Prototyp reüssieren und wurde von der Jury mit dem Preis in der Kategorie „Most Technical“ bedacht (Lehr, 2019). Seitdem lädt die 
+Schmankerl Time Machine zu einem lukullischen Streifzug durch die traditionsreiche Münchner Wirtshausgeschichte der vergangenen 150 Jahre ein. Einen ähnlichen Weg schlägt die Plattform „What’s on the Menu?“ ein, die auf dem Speisekartenbestand der 
+New York Public Library basiert und die überwiegend US-amerikanische Gastronomie zwischen 1851 und 2008 abbildet. Andere interessante Bestände harren dagegen noch ihrer Digitalisierung aus.
+         
+         Die Applikation besitzt bereits jetzt ein großes Potenzial für eine breite Öffentlichkeit (Guyton, 2019; Kotteder, 2019) und zeigt damit exemplarisch, wie die 
+Digital Humanities über den wissenschaftlichen Raum hinaus zu einer Beschäftigung mit kulturgeschichtlichen Daten anregen können. Das einzureichende Poster möchte die Idee hinter der Applikation, ihre technische Umsetzung und Funktionalität gleichermaßen wie die Nachhaltigkeitsstrategie sowie künftige Entwicklungsmöglichkeiten präsentieren.
+
+         
+            Daten und Datenaufbereitung
+            375 Speisekarten mit 1.020 Seiten aus den Jahren 1855 bis 2008 wurden inklusive 
+  Metadaten durch die 
+  Monacensia bereitgestellt. Sie entstammen 144 Münchner Gaststätten, Restaurants, Cafés, Bars, Festzelten und -hallen, die regional größtenteils in den Stadtbezirken Altstadt-Lehel und Ludwigvorstadt-Isarvorstadt zu verorten sind. Aufgrund unterschiedlicher Schriftarten wurde in 
+  Transkribus ein komplementärer Ansatz mit 
+  Handwritten Text Recognition (HTR) und 
+  Optical Character Recognition (OCR) verfolgt. Anschließend erfolgte eine manuelle Fehlerüberprüfung. Zusätzlich wurde ein 
+  Tagset entworfen, um die konsistente Annotation von Mengenangaben und Preisen, Gerichten und deren Zusammensetzung zu gewährleisten. Für die kollaborative Projektarbeit, insbesondere die Datenorganisation und -analyse, wurde die Lehr- und Forschungsinfrastruktur 
+  Digital Humanities Virtual Laboratory (DHVLab) eingesetzt, die seit 2016 an der IT-Gruppe Geisteswissenschaften der Ludwig-Maximilians-Universität München entwickelt wird (Klinke, 2018: 29–32).
+  
+         
+         
+            Technische Umsetzung und Funktionalitäten
+            Folgende Frage stand im Vordergrund: Wie kann die enorme Vielfalt der Speisekarten auch von einer technisch wenig versierten Zielgruppe auf möglichst unterschiedliche Art und Weise exploriert werden? Um dies zu erreichen, wurde eine interaktive, responsive Web-Applikation mit der Open-Source-Umgebung 
+R und den auf 
+R basierenden Paketen 
+Shiny und 
+Tidyverse entwickelt, die auf Clientseite ergänzt wird durch 
+HTML5, 
+JavaScript und das 
+Frontend-CSS-Framework Bootstrap. Eine Lokalität kann entweder über ein 
+Dropdown-Menü oder eine dynamische Karte (basierend auf 
+Leaflet und 
+LocationIQ) ausgewählt werden (Abbildung 1). Zu jeder Lokalität werden weiterführende Informationen angeboten. Sofern digital vorhanden, wird auf alte Ansichten der Restaurants aus dem Münchner Stadtarchiv verlinkt.
+
+            
+               
+               Abbildung 1: Auswahl einer Lokalität über eine dynamische Karte. Bildnachweis: 
+  Schmankerl Time Machine; lizenziert unter CC BY-SA 4.0.
+  
+            
+            Jede zu einer Lokalität gehörende Speisekarte kann beliebig gezoomt und verschoben werden. Zudem ist jede Annotation, und damit auch jedes Gericht, direkt anwählbar (Abbildung 2). Besonders „exquisite“ Speisen werden algorithmisch über das 0,65-Quantil ausfindig gemacht – und sogar komplette Menüs zusammengestellt; wobei nicht nur die Präferenzen der jeweiligen Nutzerin oder des jeweiligen Nutzers berücksichtigt werden, sondern auch ihr oder sein Budget (Abbildung 3). Ein virtueller Warenkorb unterstützt die Exploration des Fundus weiterhin: Durch die Verknüpfung mit der Rezeptdatenbank des Webportals 
+Chefkoch.de können ausgewählte Gerichte nachgekocht werden; Zutatenliste inklusive.
+
+            
+               
+               Abbildung 2: Speisekarte der Augustiner Gaststätte von 1959. Bildnachweis: 
+  Schmankerl Time Machine; lizenziert unter CC BY-SA 4.0.
+  
+            
+            Neben diesem spielerischen Zugang zu den Speisekarten kann die 
+Schmankerl Time Machine als Ausgangspunkt für wissenschaftliche und gesellschaftliche Fragestellungen dienen:
+
+            
+               In welchem Jahr findet sich erstmals ein bestimmtes Gericht? Wie stellt sich die Preisentwicklung dar?
+               Welche Strategien verfolgten die Restaurants, um ihre Kunden zu einer profitablen Speisenauswahl zu animieren?
+               Finden sich in der Beschreibung der Gerichte Hinweise auf ein sich veränderndes Ernährungsbewusstsein?
+            
+            
+               
+               Abbildung 3: Nutzerpräferenzen-basierte Menüempfehlung. Bildnachweis: 
+  Schmankerl Time Machine; lizenziert unter CC BY-SA 4.0.
+  
+            
+            Diese Beispiele zeigen, wie vielfältig sich die Beschäftigung mit den hier erstmals dargebotenen Speisekarten gestalten kann (Roth und Rauchhaus, 2018). Um einen möglichst niederschwelligen Einstieg zu gewährleisten, werden 
+Jupyter Notebooks in 
+Python 3 zur Verfügung gestellt, die die Daten importieren, bereinigen und exemplarische Statistiken beinhalten. Hierfür werden gängige Bibliotheken im Bereich 
+Data Science verwendet (etwa 
+pandas, 
+NumPy und 
+Matplotlib).
+
+         
+         
+            Nachhaltigkeitskonzept
+            Gemäß den 
+  FAIR-Prinzipien
+  (Findable, Accessible, Interoperable, Re-usable) wurde ein umfassendes Nachhaltigkeitskonzept verfolgt. Der Quelltext der Applikation sowie die Skripte sind auf 
+  GitLab verfügbar.
+  Die Abbildungen der Speisekarten sowie die im Projekt entstandenen
+  Forschungsdaten stehen im Repositorium der
+  Ludwig-Maximilians-Universität München
+  (Open Data LMU) unter einer offenen Lizenz (CC BY-SA 4.0) dauerhaft und mittels 
+  DOI eindeutig referenzierbar zur Nachnutzung bereit. Die Beschreibung des Projekts erfolgt im Metadatenschema 
+  DataCite unter Verwendung eines Best-Practice-Guides, der eine standardisierte Anreicherung der Metadaten unterstützt. Dies ermöglicht die Einbindung der Projektdaten in übergeordnete Forschungsdateninfrastrukturen (z. B. 
+  GeRDI) und damit ihre leichtere Auffindbarkeit.
+  
+         
+         
+            Ausblick
+            Bei der 
+                    Schmankerl Time Machine handelt es sich um einen fortgeschrittenen Prototyp. Um sein Potenzial sowohl für wissenschaftliche Fragestellungen als auch für eine interessierte Öffentlichkeit zu vergrößern, ist die Integration weiterer Speisekartensammlungen und damit eine wesentliche Erweiterung des Datenbestands vorgesehen. Damit einhergehend wird darauf abgezielt, die Annotation der Karten – unter Einbezug der „Crowd“ – fortzuführen und um weitere Analysekategorien zu erweitern. In Kooperation mit der 
+                    Monacensia ist zu diesem Zweck auch ein 
+                    Edithaton geplant, bei dem Studierende der Ludwig-Maximilians-Universität München u. a. praktische Kenntnisse im Umgang mit 
+                    Transkribus erhalten.
+                
+            Ein Beispiel, welche Forschungsfragen dadurch eröffnet werden können, stellt das Projekt „Menu Journeys“ dar, das Studierende der 
+                    Berkeley School of Information 2015 angestoßen haben. In interaktiven Grafiken wird auf Basis des Speisekartenbestands der 
+                    New York Public Library anschaulich dargestellt, wie sich etwa der durchschnittliche Preis eines Gerichts über die Jahrzehnte hinweg und in Relation zur Inflationsrate entwickelt hat. Analysen dieser Art wären auch für die Münchner Gastronomiegeschichte begrüßenswert. Die hier vorgestellte Web-Applikation bietet einen Ausgangspunkt für künftige Entwicklungen in diese Richtung.
+                
+         
+      
+      
+         
+            
+      https://dhvlab.gwi.uni-muenchen.de/schmankerltimemachine/ (27.09.2019).
+    
+            
+      http://menus.nypl.org/ (27.09.2019).
+    
+            
+      Größere Bestände mit geographischem Schwerpunkt auf München befinden sich im Münchner Stadtarchiv sowie der Stadtbibliothek München.
+    
+            
+      https://gitlab.com/cds19-team/cds19 (27.09.2019).
+    
+            
+      https://doi.org/10.5282/ubm/data.146 (27.09.2019).
+    
+            
+      Der DataCite-Best-Practice-Guide wurde im Rahmen des Projekts „eHumanities – interdisziplinär“ in Kooperation mit dem Leibniz-Rechenzentrum der Bayerischen Akademie der Wissenschaften entwickelt: https://doi.org/10.5281/zenodo.3559800.
+    
+            
+      Eine Mitarbeit am Projekt „cds19“ ist nach Registrierung möglich: https://transkribus.eu/r/read/projects/ (27.09.2019).
+    
+            
+      http://people.ischool.berkeley.edu/~carlos/menujourneys/ (18.12.2019).
+
+         
+         
+            
+               Bibliographie
+               
+                   Bergmann, Claudia  (2019): „Kultur-Hackathon Coding da Vinci Süd. Sterbende Jesuiten, visualisierte Theaterdaten und Wirtshausgeschichte zum Nachkochen“, auf: 
+      Wikimedia Blog vom 27.05.2019, URL: 
+      https://blog.wikimedia.de/2019/05/27/kultur-hackathon-coding-da-vinci-sued-sterbende-jesuiten-visualisierte-theaterdaten-und-wirtshausgeschichte-zum-nachkochen/.
+    
+               
+                   Deck, Klaus-Georg  (2018): „Digital Humanities. Eine Herausforderung an die Informatik und an die Geisteswissenschaften“, in: Huber, Martin / Krämer, Sybille (Hrsg.): 
+      Wie Digitalität die Geisteswissenschaften verändert. Neue Forschungsgegenstände und Methoden. Sonderband der Zeitschrift für digitale Geisteswissenschaften 3. DOI: 
+      10.17175/sb003_002.
+    
+               
+                   Guyton, Patrick (2019): „Zeitreise durchs kulinarische München“, in: 
+      Der Tagesspiegel  vom 26.07.2019, URL: 
+      https://www.tagesspiegel.de/gesellschaft/panorama/historische-speisekarten-zeitreise-durchs-kulinarische-muenchen/24843382.html.
+    
+               
+                   Klinke, Harald (2018): „Datenanalyse in der Digitalen Kunstgeschichte. Neue Methoden in Forschung und Lehre und der Einsatz des DHVLab in der Lehre“, in: Ders. (Hrsg.): 
+      #DigiCampus. Digitale Forschung und Lehre in den Geisteswissenschaften. München: Universitätsbibliothek der Ludwig-Maximilians-Universität, 19–34, DOI: 
+      https://doi.org/10.5282/ubm/epub.42415.
+    
+               
+                   Kotteder, Franz (2019): „Hat’s geschmeckt?“, in: 
+      Süddeutsche Zeitung  vom 09.07.2019, URL:
+      http://sz.de/1.4516782.
+    
+               
+                   Lehr, Andrea (2019): „Hochkarätig. CDV Süd
+      punktet mit Projekten auf hohem Niveau“. 
+      Pressemitteilung vom 21.05.2019, URL: 
+      https://codingdavinci.de/news/2019/05/21/cdvs-preisverleihung_2.html.
+    
+               
+                   Roth, Tobias / Rauchhaus, Moritz (Hrsg.)  (2018): Wohl bekam’s! In hundert Menus durch die Weltgeschichte. Berlin: Verlag Das Kulturelle Gedächtnis.
+
+            
+         
+      
+   
+

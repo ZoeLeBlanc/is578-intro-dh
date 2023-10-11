@@ -1,0 +1,283 @@
+
+
+
+
+
+
+Preliminaries: The Social Networks of Literary Production in the Spanish Empire During the Administration of the Duke of Lerma (1598-1618)
+
+
+
+Brown
+,
+David Michael
+
+University of Western Ontario, Canada
+dbrow52@uwo.ca
+
+
+
+Suárez
+,
+Juan Luis
+
+University of Western Ontario, Canada
+jsuarez@uwo.ca
+
+
+
+
+University of Nebraska-Lincoln
+
+Center for Digital Research in the Humanities
+
+319 Love Library
+University of Nebraska–Lincoln
+Lincoln, NE 68588-4100
+cdrh@unl.edu
+
+
+Lincoln, Nebraska
+
+University of Nebraska-Lincoln
+Lincoln, NE 68588-4100
+
+
+
+
+
+
+
+The Preliminaries Project is an ongoing study that uses social network analysis to better understand the publication of literary texts in the 17th century Spanish Empire. Using the metadata provided in the preliminaries sections of these texts, we have constructed a series of graph databases that allow us to organize this information in a custom tailored and meaningful way. The data is exported to Gephi graph visualization software for analysis to discover patterns, key communities, and structures not apparent in traditional humanistic studies. We then use traditional humanistic techniques to study important points located in the graph. This study demonstrates the utility of social network analysis in understanding Early Modern publication in the Spanish Empire. By using modern tools to analyze large data sets, we show the effectiveness of digital humanities as a tool to locate previously overlooked areas for further study using a more traditional humanistic approach.
+
+
+
+No source: created in electronic format.
+
+
+
+
+LP20
+
+
+
+
+
+Paper
+
+
+Long Paper
+
+
+Hispanic Studies
+Social Networks
+Transatlantic Communities
+Publication
+Gephi
+
+
+databases & dbms
+historical studies
+literary studies
+metadata
+
+data modeling and architecture including hypothesis-driven modeling
+
+spanish and spanish american studies
+bibliographic methods / textual studies
+cultural studies
+visualisation
+
+
+
+
+
+
+Laura Weakly
+Initial encoding
+
+
+
+
+
+
+
+The “preliminaries” section of a 17th-century book encompasses the pages appearing in the printed text before the beginning of the work itself. This information is divided into seven different types of documents: details of publication, documentation of censorship (both civil and ecclesiastical), licensing, selling price, dedications, letters, and errors. The importance of the preliminaries for this project lies in the information present in these sections: the names of the officials signing the documents, their governmental/institutional affiliation, dates, place of issue, and literary circles that appear in the form of dedications and poetry written by various authors and published in their friend’s or associate’s books. In a few pages, the preliminaries give a complete image of the formal process required for the publication of each work of literature. By compiling all this information into a graph database and performing queries specific to various research questions, we have at hand a valuable source of information about the historical networks that influenced the publication of Early Modern Spanish literature.
+
+
+To get a comprehensive look at this information, we generated lists of every edition of what we consider literary texts (fiction in prose, theatre, poetry, chronicles) published during the 17th -century in the Spanish empire (Jiménez et al. 1980)(Calvo et al. 2003). As shown by the following screen shot, we have focused on acquiring every available edition of each literary work.
+
+
+
+
+Sample of one of our
+acquisitions
+lists
+
+
+
+We then divided the 17th Century into periods corresponding to the different “validos” —royal favorites that served as head of government or “prime ministers” — of the various kings in order to address the changing power structures of the time and their influence in literary production (Hernán et al. 2002). Through interlibrary loans and, in some cases, trips to the libraries that hold the edition, we acquired copies of the pages of each book that make up the preliminaries section. Then, we manually built a graph database using sylvadb.com, an open source software and free graph database management service developed in the CulturePlex Lab. Within Sylva, data was stored and organized using a custom designed system of schemas based on a node/edge relationship system. Finally, we exported the database to Gephi (
+https://gephi.org/
+), a software package that allows for visualization and statistical/metric analysis of the network using built-in algorithms and Python based scripting (Bastian et al. 2009). This allows us to detect important communities within the network, key players, important objects, and hubs of production.
+
+
+For this study, we have unearthed the social networks of publishing and literary creation in 17th-century Spanish literature, focusing particularly on the period during the rule of the Duke of Lerma (1598-1618). Currently the first of our
+editions
+lists (Duke of Lerma) consists of 330 editions, out of which we have successfully obtained 228 scanned copies of preliminaries sections: approximately 70% of the total number. Of these scans, 121 have been entered into the database, producing a graph with 1612 nodes and 3472 relationships. Rendered in Gephi using the built-in OpenOrd algorithm, the graph looks like this:
+
+
+
+The Preliminaries graph rendered in Gephi
+
+
+Using the algorithms, metric analysis tools, and filters built into Gephi we pinpointed the individuals, governmental and ecclesiastical bodies that influenced publication in this period. Also, by using the concept of “ego network” from social network analysis, we established what we call the “publication network” of some of the authors that interest us (Carrington et al. 2011). A publication network includes the editors, censors, and other individuals important in the formal process of publication, as well as any other individuals that are more directly connected to the author: friends, family, patrons, literary colleagues, etc. We determined the range of the publication network based on the internal data structure of the Preliminaries database as follows. Due to bibliographic concerns (Bowers et al. 1962) and organizational aspects of our data schema, in order to establish a connection between the author and those involved in the approval, licensing, and publication of an edition there are four steps e.g., Author->Work, Work->Edition, Edition->Approval, Approval->Censor. Therefore, to establish an author’s publication network we needed to find neighbors for up to four degrees of separation. Although Gephi does not include ego network filters that extend to four degrees, using its Python based scripting console we were able to code functions that allowed us to isolate subsets within the graph to generate ego networks for any node to
+n
+degrees of separation. For instance, in the graph below we can see the publication networks of two authors associated with Mexico; Bernardo de Balbuena, author of
+Grandeza Mexicana
+; Juan de Torquemada, author of
+Monarquía Indiana
+; and the intersecting nodes in their publication networks:
+
+
+
+
+Publications Networks: Balbuena=Black, Torquemada=Grey, Intersecting Nodes=White
+
+
+
+Using the above techniques, we set out to find and isolate the main nodes of this social network that made possible the creation and sustainability of a transatlantic network of cultural agents. The first thing that stands out in the graph is Lope de Vega and his powerful, Madrid based publication network (Martínez et al. 2011). Using the Python scripting console, we determined that Lope’s publication network consists of 1083 nodes, or 67% of the nodes in the graph. This information is not new, based on the extremely prolific nature of his literary production we can assume that he was very well connected. However, we can also determine who
+wasn’t
+in his publication network. Departing from Lope’s publication network, we were able to locate the successful political and institutional connections that help us explain the central position of institutions such as the House of Zúñiga in the cultural fabric of the period.
+
+
+
+Publication network: Lope de Vega=Black
+
+
+To do this we used the scripting console to remove the subset of nodes representing Lope’s publication network from the other nodes that make up the graph, and returned a list of the names of all of the people who are not in Lope’s publication network. A quick review of this list produced some interesting results: we found several authors based in Spain including Gonzalo de Céspedes y Meneses and El Inca Garcilaso; and two authors active in Peru, Diego Dávalos y Figueroa and Pedro de Oña. While a quick look at both Céspedes and El Inca produced interesting results, the two Lima based authors attracted our attention. In this period social circles were highly influenced by geography, and it is logical that these authors find themselves at the periphery of a network centered geographically in Madrid. However, despite geographic concerns both authors remain connected to Lope de Vega’s network. We found that both Oña and Dávalos y Figueroa are connected to Lope’s network at 3 degrees of separation through their dedications to the Viceroy of Peru, Luis de Velasco y Castilla; and at four degrees through Juan de Zúñiga, Diego de Ojeda, and the Order of Santiago:
+
+
+
+
+Publication networks: Dávalos y Figueroa=Black, Lope de Vega=Grey, Intersecting nodes=White
+
+
+
+In order to contextualize the Peruvian network we compared the aforementioned “Mexican” authors with the “Peruvian” authors. Combining the four social networks into two based on geographic constraints, we found that at 4 degrees of separation there was no direct overlap, so we upped the parameter to 5 degrees of separation and produced the following image:
+
+
+
+
+Publication Networks: Intersection between Mexican and Peruvian Networks
+
+
+
+As shown here, even at five degrees of separation there are few overlaps between the networks. However, in the above image we begin to notice the importance of the House of Zúñiga. It is well known that the House of Zúñiga was powerful in both Spain and the Americas, and also that certain members of this house were important patrons of the arts and literature (Cátedra 2003; Díez Fernández et al. 2005). Nonetheless, we don’t think that their role in transatlantic literary production has been adequately explored. The political importance of this family in New Spain is obviously important (an Archbishop and a Viceroy); however, the Preliminaries graph illustrates not only the political role this house played in America, but also the importance of political figures/nobility in publication circles and how the members of one house can spread their cultural influence throughout geographic space. To take this concept one step further, we followed the Zúñigas back the Spain. Here we find the Duke of Béjar, Alonso López de Zúñiga y Pérez de Guzmán, and the first part of Don Quixote. It turns out that American authors were not the only artists soliciting support from the House of Zúñiga: Miguel de Cervantes dedicated part 1 of Don Quixote to the famous Duke of Béjar(Rico 2005).
+
+
+The above samples show the potential of a research model that combines network-based analysis with quantitative and qualitative studies of cultural production, providing evidence of the interaction between political structures and cultural production in the Spanish Empire (Martínez et al 2008). By repurposing bibliographic data, the Preliminaries Project allows us to explore the concept of cultural networks within the framework of transatlantic studies and complexity theory (Wood 2010; Suárez 2007). Furthermore, this study demonstrates the effectiveness of digital humanities methods as a tool to locate previously overlooked areas for further study using a more traditional humanistic approach.
+
+
+
+
+
+
+
+1.
+ Pedraza Jiménez, F. B., and M. R. Cáceres.
+(1980).
+Manual de literature española
+. Pamploa: Cénlit.
+
+
+2.
+Huerta Calvo, J. (dir.)
+(2003).
+Historia del teatro español
+. Madrid: Gredos.
+
+
+3.
+García Hernán, E.
+(2002).
+Políticos de la monarquía hispánica (1469-1700)
+. Madrid: Fernández Ciudad.
+
+
+4.
+Bastian M., S. Heymann, and M. Jacomy
+(2009). “Gephi: an open source software for exploring and manipulating networks.” International AAAI Conference on Weblogs and Social Media.
+
+
+5.
+Carrington, P. J., and J. Scott
+(2011).
+The SAGE Handbook of Social Network Analysis
+. Los Angeles: Sage.
+
+
+6.
+Bowers, Fredson.
+(1962).
+Principles of Bibliographic Description
+. New York: Russell & Russell.
+
+
+7.
+Martínez, J. F. 
+(2011).
+
+Biografía de Lope de Vega, 1562-1635: un friso literario del Siglo de Oro
+
+. Barcelona, PPU.
+
+
+8.
+ Cátedra, P. M. 
+(2003).
+
+La "Historia de la Casa de Zúñiga" otrora atribuida a Mosén Diego de Valera
+
+. Salamanca: Gráficas Cervantes.
+
+
+9.
+Díez Fernández, J.; I., and G. Santonja.
+(2005).
+El mecenazgo literario en la casa ducal de Béjar
+. Burgos: Instituto Castellano y Leonés de la Lengua.
+
+
+10.
+Rico, F. 
+(2005).
+
+El texto del "Quijote”: preliminares a una ecdótica del Siglo de Oro
+
+. Barcelona: Ediciónes Destino.
+
+
+11.
+Martínez Millán, J.;, and M. A. Visceglia (eds.)
+(2008).
+La monarquía de Felipe III
+. >Madrid: Cyan, Proyectos y Producciones Editoriales. Print.
+
+
+12.
+Wood, A. T.
+(2010). Fire, Water, Earth, and Sky: Global Systems History and the Human Prospect.
+The Journal of the Historical Society
+. X:3: 287-318.
+
+
+13.
+Suárez, J. L.
+(2007). Hispanic Baroque: A Model for the Study of Cultural Complexity in the Atlantic World.
+South Atlantic Review
+. 72(1): 31-47.
+
+
+
+
+

@@ -1,0 +1,297 @@
+
+
+
+    
+        
+            
+                Of Media, Data, Documents: An Argument for the
+                    Importance of Relational Technology to the Project of Humanities
+                    Computing
+                
+                    
+                        Rafael
+                        C.
+                        Alvarado
+                        
+                            McGraw Center for Teaching and Learning
+                            Princeton University
+                            alvarado@princeton.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Summary
+                    The idea that relational database technology is inappropriate for humanities
+                        computing applications (HCA) is now commonplace. A standard argument is that
+                        the allegedly two-dimensional tabular format of relational data is an
+                        outmoded method of information storage that forces us to "dumb down" our
+                        material (Hockey 1998). Others argue that hierarchical and object-oriented
+                        structures are better suited to the modeling of sequentially arbitrary
+                        format of semiotic and textual information (Simons 1997). Still others,
+                        while not opposed to database technology in principle, find no use for it.
+                        Such views in general do not follow from a thorough-going familiarity with
+                        either the practical possibilities or theoretical implications of the
+                        relational model. Far from being outmoded, the relational model--first
+                        articulated by Codd in 1970 (1970) and now the foundation for a number
+                        database management systems--stands as one of the few fundamental conceptual
+                        innovations in the history information technology. In addition, it is one of
+                        the only such technologies to avail itself fully of the hypertextual
+                        properties of the digital medium. Indeed, this feature allows us to address
+                        another commonplace among humanities computing specialists be addressed,
+                        namely the idea that marked-up documents remain "too smart" for the tools
+                        used to access them (Seaman 1998).
+                    The value of the relational model to an HCA is best seen in the context of
+                        the three-tiered architecture of humanities computing applications. At one
+                        level, we have first-order collections of primary sources in the form of
+                        digital media objects, such as electronic texts, digital images, digital
+                        sounds, videos and other media types, including numeric datasets. At a
+                        higher level we have the second-order interpretive and rhetorical documents
+                        that result from the selection, manipulation and incorporation of
+                        first-order objects into presentations of various formats, such as books,
+                        slide shows, web sites, interactive programs, and virtual reality spaces.
+                        Between these two levels resides a layer of metadata and tools that provide
+                        access to and control over first-order media to aid scholars in the
+                        production of second-order documents. I call this middle layer a "digital
+                        collections management system" (DCMS).
+                    From a structural perspective, an HCA is a system whereby syntagmatically
+                        structured documents are transformed by various operations--pattern
+                        matching, selection, sorting, collection, subtraction, addition, etc.--and
+                        incorporated into other syntagmatic structures. Thus, the middle layer is
+                        essentially a transformational engine. The capabilities of this engine are a
+                        direct function of the operations it is able to perform.
+                    One form of DCMS consists of metadata stored in the form of SGML-encoded text
+                        files or in the headers of media files, which files are in turn stored in a
+                        file system and indexed by a web-accessible search engine, such as OpenText.
+                        There are two frequently cited advantages to this type of DCMS. The first is
+                        that since the media files in a collection possess their own data,
+                        information can travel with the files and thus not be tied to any DCMS. The
+                        second is that the hierarchical and sequential format of SGML allows us to
+                        model data in the form that it is actually found, and therefore to access
+                        and work with the media in an intuitive fashion.
+                    Although both of these features are useful, they possess serious drawbacks.
+                        In the first case, there are good reasons for decoupling media files from
+                        their metadata since, except for properties intrinsic to the digital file
+                        itself--such as its size, location and format--none of the metadata itself
+                        belongs to the media file. For example, all information about a media file
+                        source--such as a photographic negative owned by an archive--is logically
+                        independent of the derived digital file and associated with any other media
+                        files derived from the same source, or which have been copied and modified
+                        from an archived digital file. The non-intrinsic relationship between media
+                        file and metadata is even more pronounced in the case of the
+                        representational content associated with the file source--such as the
+                        figures that populate a painting or text. Linking metadata to media means
+                        creating redundant metadata instances, which is not only inefficient, but a
+                        problem to maintain.
+                    Regarding the second point, the hierarchical and syntagmatic format of
+                        metadata storage is an advantage only if one is interested in performing
+                        comparatively few structural transformations on the first-order material one
+                        seeks to deploy in second-order works. For example, if one uses electronic
+                        texts to search for extractable passages, or to build concordance files, or
+                        to describe the statistical distribution of words and passages in a text or
+                        corpus, the structural operations required to perform such tasks can be
+                        accomplished with a standard indexing engine. However, if one is interested
+                        in the systematic decomposition of texts, and in the recombination of
+                        textual elements with elements drawn from other texts or from metadata
+                        associated with other media objects, then the transformational requirements
+                        for these operations will exceed what is provided by an indexing engine by
+                        itself. For example, to conduct the kind of structural analysis of mythic
+                        texts proposed by Lévi-Strauss (Lévi-Strauss 1963), one must be able to
+                        describe a text in a paradigmatic, polythetic form. But it is precisely this
+                        form of organization that the mark-up approach inhibits, first by its
+                        emphasis on syntagm over paradigm, and second by the effective prohibition
+                        of over-lapping tags.
+                    It is significant that both of these problems derive from the same
+                        intuitivist principles that argue against the use of the relational model.
+                        For both problems can be addressed precisely to the degree that the
+                        decidedly unintuitive principles of normalization are employed in the design
+                        of a DCMS data model. This is because normalization forces us to analyze our
+                        material, not simply describe it. In the process of defining the categories
+                        and relationships associated with the materials of humanistic research, we
+                        not only demystify objects by disarticulating from them the data that they
+                        supposedly contain, we raise the relationships between objects to the level
+                        of observation when they would otherwise remain hidden. The great advantage
+                        of this work is not only that we produce a more flexible and powerful DCMS,
+                        but that we produce a database that becomes an encyclopedic work in
+                        itself.
+                    In my talk I will illustrate these points with examples from HCAs at
+                        Princeton. In doing so I will discuss the design of a DCMS that combines the
+                        advantages of mark-up technologies (such as XML), relational database
+                        technologies, and object-oriented application technologies.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    E.
+                                    F.
+                                    Codd
+                                
+                            
+                            A Relational Model of Data for Large Shared Data
+                                Banks
+                        
+                        
+                            Communications of the ACM
+                            
+                                13
+                                
+                                377-387
+                                1970
+                            
+                        
+                    
+                    
+                        
+                            >
+                                    S.
+                                    Hockey
+                                
+                            Humanities Computing and Scholarship in the 21st
+                                Century
+                        
+                        
+                            A special presentation in a New York University series
+                                of colloquia on uses of computers and communications, given Friday,
+                                April 3 at 2 p.m. in Room 109 Warren Weaver Hall, 251 Mercer Street
+                                at West 4th St.
+                            
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    Lévi-Strauss
+                                
+                            
+                            Structural anthropology
+                            
+                                
+                                    Claire
+                                    Jacobson
+                                
+                            
+                            
+                                
+                                    Brooke
+                                    Grundfest
+                                    Schoepf
+                                
+                            
+                            
+                                New York
+                                Basic Books
+                                1963
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    Seaman
+                                
+                            
+                            Presentation on the Electronic Text Center at the
+                                University of Virginia
+                        
+                        
+                             A talk given the New Tools for Teaching and Research
+                                Seminar at Princeton University, June 1998
+                            
+                                
+                                
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    F.
+                                    Simons
+                                
+                            
+                            Conceptual modeling versus visual modeling: a
+                                technological key to building consensus
+                        
+                        
+                            Computers in the Humanities
+                            
+                                30
+                                
+                                303-319
+                                1997
+                            
+                        
+                    
+                
+            
+        
+    

@@ -1,0 +1,827 @@
+
+
+
+    
+        
+            
+                Beyond Corpora: Elicitation as a tool in second
+                    language word formation studies
+                
+                    
+                        Greg
+                        Lessard
+                        French Studies Queen's University 
+                            lessardg@qsilver.queensu.ca
+                        
+                    
+                
+                
+                    
+                        Michael
+                        Levison
+                        Computing and Information Service Queen's
+                                University at Kingston
+                            levison@cs.queensu.ca
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Background
+                    In this paper, we will be concerned with the study of second language (L2)
+                        linguistic creativity as it manifests itself on the lexical level,
+                        particularly with respect to word formation. More specifically, we want to
+                        measure the extent to which anglophone learners of French of varying degrees
+                        of experience are capable of judging the relative productivity of different
+                        suffixes, and how this performance compares to that of native speakers.
+                    The measures of productivity of word-formation devices which have been used
+                        to date, such as lexicographical data (Dubois 1962) and corpus data (Baayen
+                        and Renouf 1996, Baayen and Lieber 1991) do not lend themselves well to the
+                        study of L2 productivity. Among other things, L2 corpora show relatively
+                        small amounts of productivity (Lessard, Levison, Maher and Tomek 1994,
+                        Boeder et alii 1993). Despite issues of reliability and interpretation (see
+                        Birdsong 1989, Gass 1994, Coppetiers 1987), elicitation appears to offer a
+                        potentially useful measure.
+                    However, to our knowledge, little research has been done on elicitation to
+                        test lexical productivity in French, particularly among L2 learners. Hawkins
+                        (1985) forms one exception, but he was concerned primarily with the class of
+                        past participle markers, which are at the borderline of affixation and
+                        derivation.
+                    The research described here draws upon and extends previous work on native
+                        speaker judgements of lexical productivity, including Aronoff and
+                        Schvaneveldt 1978, Gorska 1982, Anshen and Aronoff 1991, Levison and
+                        Lessard, 1995a, Fowler and Liberman 1995 and Keane and Costello 1997. It
+                        should be noted however that very little previous work used a computational
+                        environment, whereas this is central to the work presented here, and is
+                        based on the VINCI natural language generation environment.
+                
+                
+                    Experiments and results
+                    The results discussed in the paper represent the third of three stages. 
+                    In the first, judgements of acceptability were elicited from native speakers
+                        of French for derived forms in -able, -age, -ment, -tion and -ure. In a
+                        nutshell, a French lexicon sorted by frequency was used to provide verbs of
+                        the first conjugation. Suffixes were added automatically, and at random. A
+                        randomized subset of the resulting derived forms was presented to each
+                        subject, along with the base form of each verb. Subjects were required to
+                        identify which verbs were known to them (almost all, in the case of the
+                        native speakers) and which derived forms they found acceptable. Results
+                        defined a continuum of relative acceptability with -able at the top of the list, followed by -age, -ment, -tion and -ure in that order. It is
+                        important to note that the variable being measured was neither the
+                        correctness of the judgements (whether an existing derived form corresponded
+                        to those seen as acceptable) nor the individual lexical items, but rather
+                        the ranking of suffixes in terms of the number of derived forms they were
+                        seen to be capable of producing.
+                    In the second stage, the same protocol was applied to non-native speakers
+                        ranging from some with high school training in French to some with
+                        significant university level studies in French. Results of these tests
+                        showed that as knowledge of verb bases decreased, non-native speakers showed
+                        increasing discrepancy in their judgements with respect to native speaker
+                        rankings.
+                    The third stage addressed problems found in the second: the absence of an
+                        external measure on which to rank the linguistic skills of the subjects
+                        tested, and the relatively high level of linguistic competence of almost all
+                        the subjects tested. In response to these problems, the experiment was
+                        repeated using the same protocols. Subjects tested were students in oral
+                        French classes at Queen's University. Five levels were represented, ranging
+                        from 016 to 320, where 016 represented those with essentially no previous
+                        knowledge of French, while 320 represented those with near-native
+                        proficiency. Placement in these classes had been done on the basis of an
+                        oral interview.
+                    As an illustration, the results for three of the five suffixes are reproduced
+                        in the following table. In the table, the columns suffix ok and suffix not ok
+                        represent the average of all responses for each class on the basis of 20
+                        questions. In principle, each row should sum to 20, however because some
+                        students responded to less than 20 questions, some small variations are
+                        found. Verb known and verb
+                            not known represent subjects' claimed knowledge of the base
+                        verb.
+                    
+                        
+                            Suffix
+                            Course
+                            Verb Known
+                            
+                            Verb not Known
+                            
+                        
+                        
+                            
+                            
+                            Suffix ok
+                            Suffix not ok
+                            Suffix ok
+                            Suffix not ok
+                        
+                        
+                            
+                            016
+                            2
+                            2.25
+                            2.75
+                            12.75
+                        
+                        
+                            
+                            017
+                            3.75
+                            1.5
+                            8.75
+                            6
+                        
+                        
+                            -able
+                            118
+                            6.5
+                            2.5
+                            7
+                            4
+                        
+                        
+                            
+                            219
+                            9.4
+                            3.7
+                            2.4
+                            3.8
+                        
+                        
+                            
+                            320
+                            9.1
+                            4.1
+                            2.1
+                            3.7
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                        
+                            
+                            016
+                            2
+                            3
+                            1.5
+                            13
+                        
+                        
+                            
+                            017
+                            4.75
+                            3.25
+                            8.5
+                            3.5
+                        
+                        
+                            -ment
+                            118
+                            5
+                            4.5
+                            9.5
+                            1
+                        
+                        
+                            
+                            219
+                            8.7
+                            4.3
+                            2.7
+                            3.6
+                        
+                        
+                            
+                            320
+                            4.6
+                            8.1
+                            2.1
+                            4.6
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                        
+                            
+                            016
+                            1.5
+                            4.25
+                            2.5
+                            11.75
+                        
+                        
+                            
+                            017
+                            1.75
+                            4.75
+                            3.5
+                            9.75
+                        
+                        
+                            -ure
+                            118
+                            2.5
+                            9
+                            2
+                            6
+                        
+                        
+                            
+                            219
+                            1.3
+                            10.9
+                            1.3
+                            5.7
+                        
+                        
+                            
+                            320
+                            2.9
+                            10
+                            1
+                            5.4
+                        
+                    
+                    The table shows that in all cases, the number of base verbs known rises with
+                        level, suggesting that knowledge of verbal base and placement interview
+                        results are measuring comparable things. As well, bearing in mind that the
+                        acceptance rates by native speakers for derived forms based on -able, -ment and -ure were 77%, 39% and 10% respectively, we see in
+                        the non-native speaker data a gradual convergence on native speaker-like
+                        judgements. Thus, in the case of -able, while
+                        016 students find little to choose between accepting of rejecting derived
+                        forms for verbs they know (2 acceptances and 2.25 rejections) and reject
+                        strongly derived forms for verbs they don't know (2.75 acceptances versus
+                        12.75 rejections), more advanced students tend to accept derived forms for
+                        verbs they know (in the case of 219, 9.4 acceptances versus 4 rejections)
+                        while rejecting somewhat derived forms in -able
+                        for verbs they don't know.
+                
+                
+                    Conclusions and future directions
+                    This data hides considerable variation which will be elaborated during the
+                        presentation. However, it confirms that the measure is robust, even with
+                        students with relatively lower skill levels in French. In the paper, more
+                        detailed analyses will be presented. As well, an extended range of measuring
+                        instruments will be discussed, based on contextualizing examples to be
+                        evaluated in a sentence generated on the fly, other types of measures (see
+                        Feldman 1995 for examples) and scales (see Bard, Robertson and Sorace
+                        1996).
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    F.
+                                    Anshen
+                                
+                            
+                            
+                                M.
+                                Aronoff
+                            
+                            Morphological Productivity and Phonological
+                                Transparency
+                        
+                        
+                            Canadian Journal of Linguistics
+                            
+                                26
+                                1
+                                63-72,
+                                1981
+                            
+                        
+                    
+                    
+                        
+                            
+                                M.
+                                Aronoff
+                            
+                            
+                                
+                                    R.
+                                    Schvaneveldt
+                                
+                            
+                            Testing morphological productivity
+                        
+                        
+                            Annals of the New York Academy of Sciences
+                            
+                                318
+                                
+                                106-114
+                                1978
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    Baayen
+                                
+                            
+                            
+                                
+                                    R.
+                                    Lieber
+                                
+                            
+                            Productivity and English derivation: a corpus-based
+                                study
+                        
+                        
+                            Linguistics
+                            
+                                29
+                                4
+                                801-844
+                                1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    Baayen
+                                
+                            
+                            
+                                
+                                    A.
+                                    Renouf
+                                
+                            
+                            Chronicling the Times: Productive Lexical Innovations
+                                in an English Newspaper
+                        
+                        
+                            Language
+                            
+                                72
+                                1
+                                69-96
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    E.
+                                    Bard
+                                
+                            
+                            
+                                
+                                    D.
+                                    Robertson
+                                
+                            
+                            
+                                
+                                    A.
+                                    Sorace
+                                
+                            
+                            Magnitude Estimation of Linguistic
+                                Acceptability
+                        
+                        
+                            Language
+                            
+                                72
+                                1
+                                32-67
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    Birdsong
+                                
+                            
+                            Metalinguistic Performance and Interlinguistic
+                                Competence
+                            
+                                Berlin
+                                Springer-Verlag
+                                1989
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Broeder
+                                
+                            
+                            
+                                
+                                    G.
+                                    Extra
+                                
+                            
+                            
+                                
+                                    R.
+                                    van Hout
+                                
+                            
+                            
+                                K.
+                                        >Voionmaa
+                            
+                            Word formation processes in talking about
+                                entities
+                        
+                        
+                            
+                                
+                                    C.
+                                    Perdue
+                                
+                            
+                            Adult language acquisition: cross-linguistic
+                                perspectives
+                            
+                                vol. 2
+                                Cambridge
+                                Cambridge University Press
+                                1993
+                                41-72
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    R.
+                                    Coppetiers
+                                
+                            
+                            Competence Differences between Native and Near-Native
+                                Speakers
+                        
+                        
+                            Language
+                            
+                                63
+                                3
+                                544-573
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    Dubois
+                                
+                            
+                            Ètude sur la dérivation suffixale en francais moderne
+                                et contemporain; essai d'interprétation des mouvements observés dans
+                                le domaine de la morphologie des mots construits
+                            
+                                Paris
+                                Larousse
+                                1962
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    L.
+                                    B.
+                                    Feldman
+                                
+                            
+                            Morphological aspects of language processing
+                            
+                                Hillsdale, NJ
+                                Lawrence Erlbaum
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    Fowler
+                                
+                            
+                            
+                                
+                                    I.
+                                    Liberman
+                                
+                            
+                            The Role of Phonology and Orthography in Morphological
+                                Awareness
+                        
+                        
+                            
+                                
+                                    L.
+                                    B.
+                                    Feldman
+                                
+                            
+                            Morphological aspects of language processing
+                            
+                                Hillsdale, NJ
+                                Lawrence Erlbaum
+                                1995
+                                157-188
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    S.
+                                    Gass
+                                
+                            
+                            The Reliability of Second-Language Grammaticality
+                                Judgements
+                        
+                        
+                            
+                                
+                                    E.
+                                    Tarone
+                                
+                            
+                            
+                                
+                                    S.
+                                    Gass
+                                
+                            
+                            
+                                
+                                    A.
+                                    Cohen
+                                
+                            
+                            Research Methodology in Second-Language
+                                Acquisition
+                            
+                                Hillsdale, NJ
+                                Lawrence Erlbaum
+                                1994
+                                303-322
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Elzbieta
+                                    Gorska
+                                
+                            
+                            A way of testing the productivity of word formation
+                                rules (WFRs)?
+                        
+                        
+                            Studia Anglica Posaniensa
+                            
+                                14
+                                1
+                                169-174
+                                1982
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    R.
+                                    Hawkins
+                                
+                            
+                            Errors in the Use of French Past Participles By Foreign
+                                Speakers and Their Implications for a Model of Morphology
+                        
+                        
+                            Lingua
+                            
+                                67
+                                
+                                171-188
+                                1985
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Keane
+                                
+                            
+                            
+                                
+                                    F.
+                                    Costello
+                                
+                            
+                            Where Do "Soccer Moms" Come From? Cognitive Constraints
+                                on Noun-Noun Compounding in English
+                        
+                        
+                            Proceedings, Computational Models of Creative Cognition
+                                Conference, Dublin
+                            
+                                
+                                
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    M.
+                                    Levison
+                                
+                            
+                            Lexical Creativity in L2 French
+                        
+                        
+                            Internation Review of Applied Linguistics
+                            
+                                
+                                
+                                
+                                (in press)
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    M.
+                                    Levison
+                                
+                            
+                            
+                                
+                                    D.
+                                    Maher
+                                
+                            
+                            
+                                
+                                    I.
+                                    Tomek
+                                
+                            
+                            Modelling Second Language Learner Creativity
+                        
+                        
+                            Journal of Artificial Intelligence in Education
+                            
+                                5
+                                4
+                                455-480
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    M.
+                                    Levison
+                                
+                            
+                            Experiments in Word Creation
+                        
+                        
+                            ACH/ALLC 95, Santa Barbara Conference Abstracts
+                            
+                                
+                                
+                                1995
+                                74-77
+                            
+                        
+                    
+                
+            
+        
+    

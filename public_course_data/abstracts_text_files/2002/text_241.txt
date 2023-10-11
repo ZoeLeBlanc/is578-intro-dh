@@ -1,0 +1,385 @@
+
+
+
+    
+        
+            
+                Facet analytical theory as a basis for a subject
+                    organization tool in a humanities portal
+                
+                    
+                        Vanda
+                        Broughton
+                        
+                            University College London
+                            v.broughton@ucl.ac.uk
+                        
+                    
+                
+                
+                    
+                        Michael
+                        Fraser
+                        
+                            Humbul Humanities Hub
+                            mike.fraser@computing-services.oxford.ac.uk
+                        
+                    
+                
+                
+                    
+                        Sheila
+                        Anderson
+                        
+                            Arts and Humanities Data Service
+                            sheila.anderson@ahds.ac.uk
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The paper describes a collaborative project, funded by the UK Arts and Humanities
+                    Research Board, between the School of Library, Archive &amp; Information
+                    Studies, University College London and two major digital resource gateways, Arts
+                    &amp; Humanities Data Service, and the Humbul Humanities Hub.
+                AHDS () and Humbul () are on-going government funded projects
+                    for the identification, evaluation and organization of quality digital resources
+                    in the humanities, primarily for the use of the higher education community.
+                    AHDS' remit includes visual and performing arts and archaeology in addition to
+                    traditional humanities disciplines; Humbul covers a slightly narrower humanities
+                    field including history, archaeology, literature, theology and philosophy.
+                The two are developing a single humanities portal () which will become operational in 2002.
+                    The new portal will draw in resources from the wider Web in addition to the
+                    managed material already available.
+                An important consideration is the choice of a tool to manage the subject content
+                    of the new site. A digital library on the AHDS model has much in common with the
+                    conventional library in terms of structuring the semantic content of the
+                    resource; it may benefit from the knowledge organization theory that has been
+                    developed over the last fifty years within the library sector for the creation
+                    of tools for vocabulary management and semantic organization of document
+                    content. Systems such as faceted classifications, structured subject headings,
+                    thesauri, and other controlled vocabularies provide a scientifically based
+                    approach to the analysis of 'document' content, and to the creation of indexes,
+                    descriptors, visible taxonomies and hierarchies, as well as linear ordering
+                    schemes (i.e. rules for filing order and sequencing) for the physical management
+                    of materials with respect to intellectual content. These have been tested over
+                    managed bibliographic databases as well as print-based materials, and the theory
+                    is at a high level of sophistication.
+                Existing means of subject organization at AHDS and Humbul are the Library of
+                    Congress Subject Headings (LCSH) and the Dewey Decimal Classification (DDC),
+                    both designed for organization of print-based material in a traditional library.
+                    While these offer management advantages (e.g. an established system with
+                    institutional support, regular maintenance and revision, and centralised
+                    bibliographic services) they are not particularly useful within a digital
+                    environment. They display little sophistication in the structure, cannot handle
+                    complex objects well, and can do little to expose the complex interrelationships
+                    and multidimensional links within the structure of the digital collection.
+                The new humanities portal requires a system that performs several functions;
+                        accurate description, for retrieval purposes, of complex digital
+                            documents/objects with a range of attributes, both of intellectual
+                            content and format
+                        provision of a systematic structure for the organization of the
+                            front-end in a directory format, using hypertext techniques to expose
+                            deeper layers of the network
+                        generation of structured subject headings for specific objects
+                        manipulation of these to create browsable alphabetical subject indexes
+                        capability of conversion to a thesaural structure to provide a
+                            controlled vocabulary of keywords and concepts.
+                    
+                Ideally, the system should also display;
+                        potential for multiple access points to the structure to enable
+                            resource discovery by various routes or search strategies;
+                        potential for incorporation into search software as a device in
+                            negotiating the wider Web.
+                    
+                The School of Library, Archive &amp; Information Studies (SLAIS) at
+                    University College London has a particularly strong history in education and
+                    research in classification and indexing. It is one of only a few British schools
+                    offering teaching in this area, and its staff are actively involved in the
+                    management of several systems of bibliographic classification, and research into
+                    the development and use of faceted schemes. We are investigating a structure of
+                    this kind for the organization of the new humanities portal.
+                Classifications built on the facet analytical model provide effective tools for
+                    analysing and organizing documents on the basis of their subject content, and
+                    consequently for retrieving those documents from a managed store. They work on
+                    different principles from older enumerative schemes such as Dewey and the
+                    Library of Congress classifications which simply provide long lists, or
+                    enumerations, of classes for the accommodation of documents.
+                Facet analysis was conceived by S. R. Ranganathan, a mathematician by training,
+                    and a student at SLAIS in the 1920s. He proposed a system for the description
+                    and organization of documents with complex subject content, based on
+                    identification and analysis of constituent parts of the subject, rather than by
+                    creation of lists or enumerations of compound classes into which specific
+                    documents must be fitted. Documents were analysed, the content encoded, and the
+                    codes synthesised into an appropriate classmark which was used for filing and
+                    which was expressive of the subject content.
+                Ranganathan's system was ground-breaking, but relatively unsophisticated. It
+                    continues to be developed in India, but is virtually unused outside that
+                    country. In the UK the Classification Research Group, formed in the 1950s,
+                    further developed facet analytical theory.
+                The internal logic of a faceted system of the CRG type is based on rigorous
+                    analysis of the terminology of a subject, whereby terms are sorted into standard
+                    sets of functional categories. Within these categories a range of semantic
+                    relations are acknowledged, and problems of vocabulary control (such as
+                    synonymy, partial synonymy and variations in word forms) are addressed. A
+                    sophisticated system syntax provides for arrangement and combination of terms
+                    both intra- and inter-category, and for the management of syntactic relations.
+                    This improves performance in the accommodation of complex subjects, the
+                    predictability of location, and in the effectiveness of retrieval.
+                A faceted classification is, in its simplest form, a structured set of simple
+                    terms or concepts with rules for the combination of these into compound concepts
+                    such as occur in the content of documents. These compounds are placed precisely
+                    in the base structure by the application of the system syntax. When these
+                    classes are populated by the 'real' subjects of documents (or other objects with
+                    semantic content) a more complex structure grows in accordance with the internal
+                    logic of the system.
+                A faceted classification, when applied to a large collection of documents, can
+                    generate a very complex knowledge structure of n-dimensionality and great
+                    logical regularity, with deep levels of hierarchy. The resultant structure can
+                    be utilised in a number of ways; as an ordering device, as a source of index
+                    terms and subject headings, and can also be converted to a thesaurus. Hypertext
+                    can be utilised to expand the levels of hierarchy, or to make links between
+                    distributed elements.
+                An example of a small classification for religion demonstrates how the structure
+                    can be applied:
+                    Judaism
+                        (Form subdivisions)
+                        Bibliography of Judaism
+                        Encyclopaedia of Judaism
+                        (Place subdivisions)
+                        Judaism in Europe
+                        (Period subdivisions)
+                        Judaism in the Middle Ages
+                        Judaism in the Nineteenth Century
+                        Judaism in Nineteenth century Europe
+                        (Philosophy and theory of religion)
+                        Religious philosophy of Judaism
+                        (Sacred texts)
+                        Hebrew Bible
+                        Mediaeval Hebrew Bible
+                        (Worship)
+                        Jewish festivals
+                        (Organization of the religion)
+                        Jewish religious law
+                        (Sacred texts)
+                        The Hebrew Bible in Jewish religious law
+                
+                This can be represented in the form of subject headings as:
+                    Judaism
+                        Judaism - Bibliography
+                        Judaism - Encyclopaedias
+                        Judaism - Europe
+                        Judaism - Middle ages
+                        Judaism - Nineteenth century
+                        Judaism - Nineteenth century - Europe
+                        Judaism - Religious philosophy
+                        Judaism - Bible
+                        Judaism - Bible - Middle Ages
+                        Judaism - Festivals
+                        Judaism - Religious law
+                        Judaism - Religious law - Bible
+                
+                These can be left in this order, to represent the systematic structure, or they
+                    can be alphabetized:
+                    Judaism
+                        Judaism - Bible
+                        Judaism - Bible - Middle Ages
+                        Judaism - Bibliography
+                        Judaism - Encyclopaedias
+                        Judaism - Europe
+                        Judaism - Festivals
+                        Judaism - Middle ages
+                        Judaism - Nineteenth century
+                        Judaism - Nineteenth century - Europe
+                        Judaism - Religious law
+                        Judaism - Religious law - Bible
+                        Judaism - Religious philosophy
+                
+                From a small base vocabulary of 30-40 terms like this one, hundreds of multi-term
+                    subject headings can be generated.
+                The subject headings can be inverted to form a browsable index in which
+                    distributed relatives are collocated.
+                
+                    Bible - Judaism
+                        Bible - Religious law - Judaism
+                        Bibliographies - Judaism
+                        Encyclopaedias - Judaism
+                        Europe - Judaism
+                        Europe - Nineteenth century - Judaism
+                        Festivals - Judaism
+                        Judaism
+                        Middle Ages - Bible - Judaism
+                        Middle Ages - Judaism
+                        Nineteenth century - Judaism
+                        Religious law - Judaism
+                        Religious philosophy - Judaism
+                
+                The regularity of the system and its rules of syntax suggests that much of the
+                    routine work of managing documents could be carried out automatically, once the
+                    initial intellectual analysis has been made.
+                In a testbed implementation for the research, AHDS and Humbul are applying the
+                    knowledge structure to the Portal's planned metadata repository for all the
+                    digital objects in their collection; it is likely that XML will prove to be the
+                    best tool for the implementation of the structure. They will also experiment
+                    with its use in cross-disciplinary browsing and retrieval of digital resources
+                    which are held elsewhere.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    V.
+                                    Broughton
+                                
+                            
+                            Faceted classification as a basis for knowledge
+                                organization in a digital environment
+                        
+                        
+                            New Review of Hypermedia and Multimedia
+                            
+                                
+                                
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    V.
+                                    Broughton
+                                
+                            
+                            
+                                
+                                    Heather
+                                    Lane
+                                
+                            
+                            Classification schemes revisited; applications to web
+                                indexing and searching
+                        
+                        
+                            
+                                
+                                    Alan
+                                    Thomas
+                                
+                            
+                            
+                                
+                                    Jame
+                                    Shearer
+                                
+                            
+                            Internet searching and indexing; the subject approach
+                            
+                                New York
+                                Howarth
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    S.
+                                    R.
+                                    Ranganathan
+                                
+                            
+                            Prolegomena to library classification
+                            
+                                
+                                Madras Library Association
+                                1937
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    Mills
+                                
+                            
+                            
+                                
+                                    Vanda
+                                    Broughton
+                                
+                            
+                            Bliss Bibliographic Classfication
+                            
+                                London
+                                Butterworth, Bowker-Saur
+                                1977
+                            
+                        
+                    
+                
+            
+        
+    

@@ -1,0 +1,159 @@
+
+
+
+    
+        
+            
+                The Web Cahier: A Tool For Implementing
+                    Just-in-Time-Teaching In the Humanities
+                
+                    
+                        Mark
+                        Wolff
+                        
+                            Hartwick College
+                            wolffmanO@hartwick.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Web Cahier is a web-based server application that allows instructors to
+                    assess individual student performance and to prepare targeted lectures and
+                    discussions according to the needs and interests of students. The pedagogy which
+                    informs the design of the Web Cahier is Just-in-Time-Teaching, or JiTT, a
+                    teaching strategy developed by Gregor M. Novak at Indiana University-Purdue
+                    University Indianapolis and Evelyn T. Patterson at the United States Air Force
+                    Academy for introductory physics classes (I will discuss the effectiveness of
+                    this pedagogy in a separate paper). During this poster session I will explain
+                    the design of the Web Cahier, sollicit comments and suggestions on ways to
+                    improve it, and make the application available to other scholars as open source
+                    software.
+                The Web Cahier uses MySQL as its back-end database and PHP as its dynamic HTML
+                    interface. I will demonstate the program on a computer running the Linux
+                    operating system, but the Web Cahier can be implemented on multiple platforms.
+                The Web Cahier has an instructor interface and a student interface. For a given
+                    course the instructor creates cahiers, or sets of questions for assignments to
+                    be completed before students come to class. A cahier consists of web objects,
+                    such as text, images, short answer text fields, essay question text areas, and
+                    multiple choice questions using radio buttons. The instructor can build cahiers
+                    by creating and arranging web objects. No experience with HTML is required,
+                    although the appearance of a cahier is improved with basic HTML for which brief
+                    documentation is provided online. The instructor can determine how she wants to
+                    respond to each answer a student gives in a cahier: a pulldown list of
+                    predetermined values (excellent, good, adequate, poor, unacceptable, etc.),
+                    short answer, or detailed comments. The instructor can set a deadline for when
+                    students must complete a cahier. Once a deadline has passed, students will not
+                    be able to modify their answers for the cahier. The instructor can evaluate
+                    student work easily and assign grades that students can see when they return to
+                    a cahier. The instructor can also manage course enrollment and easily add and
+                    drop students.
+                Students can access cahiers from any networked computer. They can work on an
+                    assignment intermittently, saving their work and returning to it as often as
+                    they like before the deadline. Once a deadline has passed they can return to a
+                    cahier to review their work and to receive instructor comments, but they cannot
+                    make any changes.
+                The Web Cahier is available for peer evaluation at . The instructor user id is
+                    "ALLC" and the password is "ACH". The student user id is "student" and the
+                    password is "student". This demonstration is based on the Online History Lab
+                    which was designed by the staff at Hartwick College's Stevens-German Library to
+                    teach students basic skills in working with historical documents. Evaluators
+                    should feel free to create their own courses and enroll the student "ALLC_ACH,
+                    student" to test the software.
+                I hope others will find the Web Cahier interesting and useful for their own
+                    teaching, and I welcome requests to test the software at other institutions. I
+                    would also welcome offers to help develop the Web Cahier which I make available
+                    according to the GNU Public Licence.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Gregor
+                                    M.
+                                    Novak
+                                
+                            
+                            
+                                
+                                    Evelyn
+                                    T.
+                                    Patterson
+                                
+                            
+                            Just-in-Time-Teaching: Active Learner Pedagogy with
+                            WWW
+                        
+                        
+                            Paper presented at IASTED International Conference on
+                                Computers and Advanced Technology in Education, May 27-30, 1998 in
+                                Cancun, Mexico
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        Available online at .
+                    
+                
+            
+        
+    

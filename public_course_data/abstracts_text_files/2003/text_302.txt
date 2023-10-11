@@ -1,0 +1,158 @@
+
+
+
+    
+        
+            
+                The Development of the Poetry Portal at the Beck
+                    Center, Woodruff Library, Emory University
+                
+                    
+                        Alice
+                        Hickcox
+                        
+                            Emory University
+                            ahickco@emory.edu
+                        
+                    
+                
+                
+                    
+                        Julia
+                        Leon
+                        
+                            Emory University
+                            jleon@emory.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Emory University Library's electronic text center, known as the Beck Center for
+                    Electronic Collections and Services, holds a number of poetry collections that
+                    are served out on the web as separate databases. In order to span these
+                    collections of more than 200,000 poems we set out to develop a portal that would
+                    allow searching across several different databases. The portal provides students
+                    and faculty a tool for retrieving and reading individual poems for personal and
+                    classroom teaching and research. The portal was implemented using XML
+                    technology.
+                This is a story of the development of the site, explaining why the project was
+                    conceived, and how the library, Information Technology Division and faculty
+                    collaborated to design and implement the portal. The web-interface design and
+                    technical architecture will also be described.
+                Since 1995 the Beck Center has built a collection of texts that are tagged in
+                    SGML; many of these texts are poetry databases. Both commercially and locally
+                    produced texts comprise the electronic poetry holdings of the Beck Center. The
+                    texts were served separately out in a number of discrete poetry databases, each
+                    with its own search interface.
+                Emory's Irish Poets collection is one example of a locally produced digital
+                    collection. A portion of Emory's literary archives of Ireland's leading poets
+                    was digitized. The archives were developed over the course of the last twenty
+                    years, and includes worksheets of the poets affiliated with the Belfast
+                    Group-including Seamus Heaney, Michael Longley, and Paul Muldoon.
+                In addition to the substantial body of electronic texts that existed, campus-wide
+                    interest in poetry was building, demonstrated by the establishment of a Poetry
+                    Council which sponsors periodic poetry readings.
+                These forces converged to raise questions about how to make the use of on-line
+                    poetry resources easier to access and more logical in organization and use. A
+                    group of people from the library and the Information Technology support group
+                    for faculty came together to plan for a poetry portal. The Beck Center provided
+                    data management. ITD provided analysis and programming support. An informal
+                    focus group of Emory faculty who teach poetry provided subject matter
+                    expertise.
+                The Beck Center put forth the original vision of the project: to present poetry
+                    across multiple collections through a common web portal. A prototype of the
+                    portal was built as a proof of concept of the use of metadata and XML
+                    technology. It also served as the launching point for further design.
+                The unifying element of the disparate collections is the metadata, which contains
+                    information that was deemed useful for cataloging, indexing, and referencing
+                    items.
+                The portal was built entirely with open-source software, with the one exception
+                    of the search engine. The process of building the portal may be divided in to
+                    two sub-applications: data preparation and the web interface.
+                Data preparation involved converting the source collections from SGML to XML.
+                    From the XML metadata was created using XSLT and SAX software. The metadata was
+                    stored in the Dublin Core format.
+                The web interface for the poetry portal employs a suite of XML technologies.
+                    Specifically, Tomcat and Cocoon, from the Apache Software Foundation, serve up
+                    XML source files on the web. XSLT (XML Style Sheet Language Transformation) is
+                    used to transform XML to HTML.
+                The prototype application was demonstrated to English faculty involved in
+                    teaching poetry. A blue-sky discussion of how a portal could be useful and
+                    interesting in teaching and research formed the basis of the application
+                    requirements.
+                The interface provides browse and search capabilities. The collection may be
+                    browsed by author, title, first line, collection, or date. The user may search
+                    for poems, either by word used anywhere in the poem, by author, date or title.
+                    Either browsing or searching will take the user to a poem window or a series of
+                    poem windows.
+                From a poem window the user may also search for other poems by the same author,
+                    other poems of the same date, other poems with the same title or other poems in
+                    the same volume or collection. The user may also execute a simple search in the
+                        Oxford English Dictionary from the poem window, and
+                    bring up results in another window.
+                Additional features that we hope to implement include user-defined "poetry
+                    notebooks," which allow users to save links to particular poems or searches, a
+                    search history for registered users, and the ability to save searches.
+                Some associated features that were not part of the XML search-retrieval
+                    programming also emerged as special projects. One such project would be to
+                    collect manuscript and published versions of certain poems of poets that were in
+                    their collections in various forms, and to present them for study. Another
+                    specialized application is to have poems accompanied by audio files so that
+                    students can hear the poems read aloud. For some of the poems in their Special
+                    Collections, tapes were available of poets reading their own work. Other
+                    possibilities exist for audio performance as well.
+            
+        
+    

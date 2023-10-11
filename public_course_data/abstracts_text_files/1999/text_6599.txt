@@ -1,0 +1,180 @@
+
+
+
+    
+        
+            
+                The Spoken Corpus of the Survey of English Dialects:
+                    Language variation and oral history
+                
+                    
+                        Judith
+                        Beare
+                        
+                            Routledge
+                            
+                        
+                    
+                
+                
+                    
+                        Brad
+                        Scott
+                        
+                            Routledge
+                            Scott@routledge.co.uk
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Survey of English Dialects: The spoken corpus, recorded in
+                        England 1948-1973 is an SGML-based linguistic corpus which includes
+                    part of speech tagging, in which the text is linked to its corresponding audio
+                    file, and will be delivered within an extended DynaText application. It will be
+                    published in the winter of 1999. This paper will describe the context of the
+                    creation of such a resource, indicating the benefits and disadvantages of these
+                    methodologies for researchers in a number of disciplines compared with existing
+                    resources, and will discuss practicalities of the novel mark-up and other
+                    technical features that the project engenders. We will also highlight the
+                    practical questions that relate to the design and development of such a resource
+                    within a commercial publishing environment.
+                The Survey of English Dialects was started in 1948 by Harold Orton at the
+                    University of Leeds and has been producing unique research data ever since. The
+                    initial work comprised a questionnaire-based survey of traditional dialects
+                    based on extensive interviews from 318 locations all over rural England. These
+                    were published as the Survey of English Dialects: Basic
+                        Material (13 vols) in the 1960s, and have formed the core data for a
+                    number of other publications since then.Such as Clive Upton et al.
+                        (1990) Survey of English Dialects: Dictionary and
+                            Grammar, and H. Orton et al. (1978) Linguistic
+                            Atlas of England.
+                During the course of the survey a number of recordings were made as well as the
+                    detailed interviews. These unique recordings are between eight and twenty
+                    minutes duration, equalling about 60 hours of dialogue. They are invariably of
+                    elderly people talking about life, work and recreation and have not been widely
+                    available, but are potentially an important resource, not merely for
+                    dialectologists, but for linguists more generally, those studying variation in
+                    world Englishes and many historians. The recordings were made from the 1950s
+                    through to the 1970s. The early ones are on 78 rpm disks in four minute chunks,
+                    and the later ones are on reel-to-reel tapes and may extend to over twenty
+                    minutes of free conversation.
+                During 1997, Juhani Klemola at the University of Leeds received a grant from the
+                    Leverhulme Trust to transcribe the recordings, which work has now been
+                    completed. From the mark-up scheme deriving from the transcription process the
+                    data has been converted to TEI-conformant SGML, and then part of speech (POS)
+                    tagging added by Tony McEnery and colleagues at the University of Lancaster
+                    using their CLAWS tagger. The results of this process, given that the target
+                    text comprises some very irregular words and grammar, will be reported. In
+                    addition, to facilitate the use of the resource, the text and audio will be
+                    linked, so that the user can easily hear the audio relating to a given segment
+                    of the text. The technical issues in creating this will be discussed.Some existing resources have already combined SGML linguistic data with a
+                        linked audio (e.g., the Map Task Corpus developed
+                        by Henry S. Thompson and colleagues at the University of Edinburgh).
+                        However, as far as we are aware, the SED Spoken
+                            Corpus will be the first to extend such functionality in a
+                        Windows application using a commercially available SGML browser.
+                For the study of the dialects of England, currently available resources tend to
+                    focus on unusual words in isolation, rather than dialectal variation in natural
+                        speech.Most of the major resources in this area are only
+                        available in print form; alternatively, there are of course numerous
+                        collections of recordings made for more specific studies, though very little
+                        is widely available in electronic form. However, W. Elmer and G. Schiltz at
+                        the University of Basel are in the process of creating an impressive
+                        electronic version of the SED Basic Material, which includes a facility to
+                        search by phonetic string and generate a map of its geographical
+                        distribution. However, the development of the application of
+                    computing methodologies to linguistic data such as the BNC and ICE-GB has
+                    generated a number of corpora which are available for researchers in linguistics
+                    and language engineering, and which many specialist researchers now use.
+                    Building on these developments, the SED Spoken Corpus
+                    has been conceived as a resource that should be accessible to a user group with
+                    a wide spectrum of technical literacy, not only in linguistics, but also in
+                    history. This necessitates the design of a simple interface and presumes no
+                    knowledge of SGML to effectively use the resource, but which also allows and
+                    supports research by those in the corpus linguistics community. Any difficulties
+                    and compromises which were necessary to achieve this will be outlined.
+                A number of features of the development process will be described and discussed.
+                    These include:
+                        the delivery of a combined text and audio dataset within a (modified)
+                            DynaText application;
+                        designing a tool that does not necessarily assume great knowledge of
+                            using computers in linguistics or history, though which can support
+                            those users who want access to all the tagged data and the audio files,
+                            whether this be for interrogating the data using the SGML in
+                            sophisticated ways, or to load data into other applications (given that
+                            one cannot predict every conceivable use to which people may want to put
+                            the data);
+                        linguistic and organisational issues in implementing the POS
+                            tagging;
+                        text-audio linking.
+                    
+                Given the numerous competing requirements in the development of such an
+                    application, the paper will also address those factors which may be seen as
+                    (necessary) limitations of the functionality of the application.
+                The SED Spoken Corpus was never conceived as an oral
+                    history project and the recordings were never constructed with such a purpose in
+                    mind. Nevertheless, even with the currently limited awareness of the material
+                    within the oral history community, these recordings are known as a unique and
+                    important collection for which there is strong research interest. This of course
+                    raises an additional challenge in the creation of the electronic resource, as
+                    the data and the application have to be designed to support the interrogation of
+                    rather disparate academic groups. The issues so raised and solutions adopted
+                    will be outlined and discussed. Other themes specifically relating to the oral
+                    historical dimension of the data will be included, in particular the question of
+                    interviewee identity.
+            
+        
+    

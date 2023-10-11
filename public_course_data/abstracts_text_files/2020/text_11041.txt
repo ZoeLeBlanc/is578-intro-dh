@@ -1,0 +1,108 @@
+
+      
+         Im Sommer 2019 konnte die Historische Kommission bei der Bayerischen Akademie der Wissenschaften ihr 2014 begonnenes Pilotprojekt für ein neues Konzept historisch-kritischer Editionsarbeit zu einem erfolgreichen Abschluss bringen. Mit dem neunten Band der Reihe „Protokolle des Bayerischen Ministerrats 1945–1962“, bearbeitet von Dr. Oliver Braun (München), entstand die erste Edition der Historischen Kommission auf XML-Basis. Das neue Konzept ermöglicht es, ohne großen Zusatzaufwand, einen vollwertigen gedruckten Band und eine digitale Version mit zahlreichen Such- und Verlinkungsfeatures herzustellen. Vor allem aber ist es darauf ausgelegt, dass die Bearbeiter und Bearbeiterinnen ihren Editionstext in vollwertigem TEI-XML herstellen können, ohne technische Vorkenntnisse zu benötigen. Dank einer speziell eingerichteten Arbeitsumgebung im Programm                Oxygen XML Editor
+             können sie ihre bisher gewohnte Arbeitsweise weitgehend beibehalten. Unser Vortrag möchte dieses neue Editionskonzept und die Arbeitsumgebung vorstellen sowie von den Erfahrungen berichten, die wir bei der Herstellung des Bands 9 der Bayerischen Ministerratsprotokolle gemacht haben.
+            
+         Die Edition „Protokolle des Bayerischen Ministerrats 1945–1962“, die seit Anfang der 1990er Jahre
+                , dank Förderung durch den Freistaat Bayern, bei der Historischen Kommission entsteht, ist eines der wichtigsten Forschungsprojekte zur bayerischen Zeitgeschichte. In bisher acht Bänden, die die Jahre 1945 bis 1951 abdecken, dokumentieren die ausführlichen Gesprächsprotokolle der Ministerratssitzungen das Handeln der Bayerischen Staatsregierung. Sie geben Einblick in die Fragen und Herausforderungen der Nachkriegszeit in Bayern, erst unter amerikanischer Kontrolle, dann in der noch jungen Bundesrepublik. Deutlich lassen sich aus Ihnen die Kontroversen und die teilweise heftig geführten Diskussionen zwischen den Kabinettsmitgliedern herauslesen. Nicht selten gleichen dabei die vor 70 Jahren geführten Debatten zu Themen wie Flüchtlingen, Verkehrspolitik und Bildungswesen verblüffend den aktuellen politischen Auseinandersetzungen in Bayern und Deutschland. Die ersten acht Bände der Edition (bis 1952) stehen im Volltext retrodigitalisiert auch online zur Verfügung.
+         
+         
+            
+            Abbildung 1: Ein Protokoll aus der Edition in seiner XML-Grundform, …
+         
+         Die Arbeiten an dem hier vorgestellten Editionskonzept begannen im Jahr 2014. Ausgangsbasis war damals das Projekt 
+                ediarum
+             der Berlin-Brandenburgischen Akademie der Wissenschaften (Dumont/Fechner 2015). Während es Inspiration und eine wertvolle technische Grundlage lieferte, ergaben sich rasch Anforderungen, die mit dem damals verfügbaren Werkzeugen von 
+                ediarum nicht vollständig zu erfüllen waren. Und so begannen Matthias Reinert und Maximilian Schrott (beide München), Mitarbeiter in der Abteilung „Digitale Publikationen“ mit der Entwicklung eines eigenen Ansatzes. Dessen Kerngedanke ist es, dass der Bearbeiter möglichst gar keine Berührungspunkte mit der XML-Syntax der Dokumente hat. Stattdessen soll er sich voll auf die Arbeit am Editionstext konzentrieren können. Dennoch legt Herr Dr. Braun teils komplexe Strukturen auf Basis des TEI Lite Schemas in den Protokolltext an und baut während der gesamten Editionsarbeit interne und externe Verknüpfungen in den Text ein. So wird das Projekt mit Metainformationen angereicht, die vor allem bei der digitalen Veröffentlichung im Internet einen Mehrwert bringen. Entscheidend unterstützt wird er dabei durch den 
+                Oxygen XML Editor. Dieses leistungsstarke XML-Bearbeitungsprogramm, bietet die Möglichkeit eine stark individualisierte Arbeitsumgebung einzurichten. 
+            
+         Die wichtigsten Bestandteile dieser Arbeitsumgebung für unser Editionsprojekt sind Operationen und Stile. Die Operationen sind eine Reihe von vorbereiten Funktionen, die eine Eingabe des Bearbeiters entgegen nehmen, daraus XML-Fragmente generieren und in den Text einfügen. Sie werden entweder aus Standardoperationen, die der 
+                Oxygen XML Editor bietet, konfiguriert oder können selbst über eine Java-Schnittstelle programmiert werden. Herr Dr. Braun löst sie nach Bedarf über Buttons in der Menüleiste des Editors aus. Die Operationen ermöglichen es ihm mit wenigen Mausklicks und Eingaben in Textmasken komplexe Strukturelemente wie den Protokollkopf einzufügen, den Protokolltext in Tagesordnungspunkte und Unterpunkte zu gliedern oder Verweise auf andere Abschnitte und Fußnoten innerhalb des Editionskorpus zu setzen. Auf diese Weise kann Herr Dr. Braun das XML seiner Editionsdokumente bequem und ohne Angst vor lästigen Flüchtigkeitsfehlern bearbeiten und das mit minimalem Einarbeitungsaufwand.
+            
+         Die Stile werden über Cascading Style Sheets (CSS) eingerichtet. Mit diesen kann die Darstellung der XML-Dokumente in 
+                Oxygen XML Editor weitreichend angepasst werden. Für die Bayerischen Ministerratsprotokolle fiel der Entschluss, das XML-Markup, das oft als störend empfunden wird, größtenteils auszublenden und nur den reinen Editionstext darzustellen. Die semantischen Strukturen werden stattdessen über Formatierung, Textsetzung und farbliche Markierungen kenntlich gemacht. Herr Dr. Braun kann zwischen mehreren hinterlegten Stilen wechseln, die jeweils einen bestimmten Schritt des Workflows besonders unterstützen.
+            
+         
+            
+            Abbildung 2: … in der Darstellung der Arbeitsumgebung …
+         
+         Zusammengenommen ermöglichen Operationen und Stile ein bequemes und produktives Arbeiten in XML. Durch das vollständige Verlagern der Syntax in den Hintergrund, sinkt die Einstiegshürde für XML-unkundige Bearbeiter. Gleichzeitig ist die Arbeit schneller, bequemer und weniger fehleranfällig, als wenn das Markup von Hand eingegeben werden müsste. Und der Blick des Bearbeiters auf den Text wird nicht durch unübersichtliche XML-Element-Konstruktionen versperrt.
+         Eine neu hinzugekommene Aufgabe für Herrn Dr. Braun während der Editionsarbeit ist die Markierung der registerrelevanten Entitäten (Personen, Orte, Schlagwörter, Gesetze, Quellen und Literaturtitel) im Text. Die systematische Referenzierung dieser Textstellen erhöht den Grad der thematischen Verknüpfung innerhalb der Edition enorm und ermöglicht ein hohes Maß an Erschließ- und Durchsuchbarkeit für die digitale Präsentation. Kernstück dieser Verknüpfungsarbeit ist die Registerdatenbank (RDB). In diese trägt der Bearbeiter sämtliche registerrelevanten Entitäten im TEI-Format ein, ebenfalls unterstützt durch die Arbeitsumgebung. Da Herr Dr. Braun zwar an verschiedenen Orten aber alleine an seinen Editionstexten arbeitet, schien es zunächst unnötig die RDB als 
+                eXist-Datenbank einzurichten. Stattdessen handelt es sich um eine Reihe von einfachen XML-Dateien, die jeweils einen einzelnen Entitätstypen beinhalten. Diese Lösung spart Wartungsaufwand und vermeidet einen Onlinezwang während der Arbeit, ohne dass sich dadurch ein merkbarer Nachteil ergab. Die Sicherung der RDB-Dateien, wie auch der Editionsdokumente, erfolgt stattdessen über 
+                Sync+Share
+            , das Cloud-Speicherangebot des Leibniz-Rechenzentrums. Dieses sorgt gleichzeitig für den Austausch der Arbeitsdateien mit den technischen Betreuern.
+            
+         Vom Text aus kann Herr Dr. Braun über entsprechende Operationen den jeweils benötigten RDB-Eintrag heraussuchen und eine Referenz auf diesen hinterlegen. Zusätzlich zu den Registerinformationen wie Personen- und Ortsname kann die RDB auch weiterführende Daten zu ihren Einträgen speichern. Zum Beispiel die geographischen Koordinaten eines Ortes, Normdaten-Identifier (GND) oder biographische Informationen zu den Personen. Diese können während der Bearbeitung und später in der digitalen Präsentation genutzt werden, um zusätzlichen Funktionen zu realisieren.
+            
+         Während sich Herr Dr. Braun auf seine Editionsarbeit konzentrieren kann, kümmert sich die Abteilung Digitale Publikationen der Historischen Kommission um die technische Umsetzung. Zu Projektbeginn prüfte sie, in Absprachen mit dem Bearbeiter, die Anforderungen des Editionsprojekts. Auf dieser Basis wurde dann entschieden, welche Phänomene des Editionstextes in XML kodiert werden mussten und wie. Aus diesen Überlegungen entstanden schließlich die digitalen Editionsrichtlinien. Anhand dieser richtete Maximilian Schrott dann die Editionsumgebung in 
+                Oxygen XML Editor ein, designte die Stile und programmierte die Operationen. Nach dieser Erstkonfiguration leistete er Herrn Dr. Braun während des gesamten Bearbeitungszeitraums fortlaufend Support. Er verbesserte Fehler in der Arbeitsumgebung, entwickelte diese auf Basis seines Feedbacks weiter und überwachte die korrekte Form der Editionsdokumente. Zum Ende der Editionsarbeit hin übernahm die Abteilung Digitale Publikation schließlich die Umwandlung des Editionstextes in die gedruckte Form.
+            
+         
+            
+            Abbildung 3: … und in der finalen PDF-Druckfassung.
+         
+         Denn auch wenn die Veröffentlichung einer hochwertigen, digitalen Version im Fokus des Editionskonzepts steht, sollte auch der neunte Band der Bayerischen Ministerratsprotokolle noch gedruckt erscheinen. Die PDF-Vorlage für den Druck wird dabei direkt aus den erstellten XML-Dateien erzeugt. Als Satzprogramm dient das in den 
+                Oxygen XML Editor integrierte 
+                Apache-FOP
+            . In dieses werden die Editionsdateien mittels einer XSL-Transformation überführt. So lässt sich in weniger als einer Minute eine vollständige Druckversion des kompletten 1000seitigen Druckbandes im gewünschten Layout erstellen. Der finale Satz erfolgt somit komplett intern, ohne Zuarbeiten durch den Verlag. Der automatisierte Satz funktioniert insgesamt sehr gut, es bleiben aber vereinzelte Mängel. Vor allem Zeilen-, Spalten- und Seitenumbruch müssen an einigen Stellen manuell nachgearbeitet werden. Auch bei der Erstellung der gedruckten Version ergeben sich durch die Anreicherungsarbeiten in XML Vorteile. So kann durch die wortgenaue Kennzeichnung der registerrelevanten Entitäten und die Verknüpfung mit der RDB auch das Druckregister halbautomatisch erstellt und dem Bearbeiter so eine besonders mühsame Arbeit erspart werden.
+            
+         Das abgeschlossen Pilotprojekt wird von Seiten der Historischen Kommission als sehr erfolgreich eingestuft. Die Arbeit im 
+                Oxygen XML Editor wurde von Herrn Dr. Braun als angenehm empfunden, die Drucklegung wurde pünktlich abgeschlossen und es konnten wertvolle Erfahrungen zur Verbesserung der Arbeitsumgebung und des Workflows gesammelt werden. Der Komfort für den Bearbeiter und die Qualität der Ergebnisse wird freilich durch eine vergleichsweise hohen Einrichtungs- und Supportaufwand erkauft. Diese Mehrarbeiten werden aber von der technischen Betreuung geleistet. Eine zusätzliche Belastung für den wissenschaftlichen Editor wird weitestgehend vermieden. Die Veränderungen in seinem Workflow sind zwar merkbar, aber nicht einschneidend. In der jetzigen Form funktioniert die Zusammenarbeit zwischen Bearbeiter und Technikern für beide Seiten sehr fruchtbringend. Außerdem sind die gewonnen Erfahrungen und Programmierarbeiten zum größten Teil für andere Projekte wiederverwendbar. Die Historische Kommission sieht sich deshalb in ihrem Entschluss bestätigt, zukünftig verstärkt auf das digitale, XML-basierte Editionskonzept zu setzen. Neben den noch ausstehenden Bänden der Bayerischen Ministerratsprotokolle sind bereits drei Briefeditionsprojekte in Arbeit, die auf diesem Ansatz beruhen.  Weitere Projekte befinden sich in der Vorbereitungs- und Planungsphase. 
+            
+         Der neunte Band der Bayerischen Ministerratsprotokolle ist im Oktober 2019 gedruckt erschienen. Die Veröffentlichung im Internet wird sich noch bis voraussichtlich 2022 verzögern. Dann endet mit dem Erscheinen des 10. Bandes, die mit dem Verlag vereinbarte Exklusivitätsperiode im Druck. Der Inhalt von Band 9 und der RDB können somit zum bestehenden Webangebot der Protokolle des Bayerischen Ministerrats hinzugefügt werden. Ein größeres Funktionsupdate für die Website, das hiermit einhergehen soll, befindet sich derzeit noch in der Konzeptionsphase. Es soll das Webangebot um zahlreiche neue Features erweitern, die die Anreicherungen und Vernetzungen im Editionstext für die User zugänglich macht. Noch geprüft wird, welche Verlinkungsmöglichkeiten zu externen Webangeboten und Normdatenbanken umgesetzt werden können. Außerdem gibt es Überlegungen für spezialisierte Recherche- und Visualisierungsmöglichkeiten, zum Bespiel mittels der in der RDB erfassten Orte auf Karten.
+            
+      
+      
+         
+            
+      Das Kabinett Ehard III 18.Dezember 1950 bis 14. Dezember 1954, Band 3 8.1.1953–29.12.1953. bearb. von Oliver Braun, München [2019] (= Die Protokolle des Bayerischen Ministerrats. 1945-1962, Hg. von der Historischen Kommission bei der Bayerischen Akademie der Wissenschaften durch Andreas Wirsching und von der Generaldirektion der Staatlichen Archive durch Margit Ksoll-Marcon, Band 9).
+    
+            
+               http://www.tei-c.org ; alle URLs in diesem Artikel wurden zuletzt am 25.09.2019 aufgerufen.
+    
+            
+               http://oxygenxml.com
+            
+            
+      Die Protokolle des Bayerischen Ministerrats 1945-1962 [ehemals 1945-1954], Hg. von der Historischen Kommission bei der Bayerischen Akademie der Wissenschaften und der Generaldirektion der Staatlichen Archive Bayerns, 9 Bände, bearbeitet von Karl-Ulrich Gelberg [Bände 1-5] und Oliver Braun [Bände 6-9], 1995-2019.
+    
+            
+               www.bayerischer-ministerrat.de
+            
+            
+               http://www.bbaw.de/telota/software/ediarum
+            
+            
+               https://exist-db.org
+            
+            
+               https://syncandshare.lrz.de
+            
+            
+               https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+            
+            
+               https://xmlgraphics.apache.org/fop/
+            
+            
+      Die wissenschaftliche Korrespondenz des Historikers Karl Hegel (1813-1901), bearbeitet von Marion Kreis; Der Briefwechsel zwischen Adolf Harnack und Friedrich Althoff (1886-1908), bearbeitet von Claudia Kampmann; Zwischen Wissenschaft und Politik. Hans Delbrück – Ausgewählte Korrespondenz (1868-1929), bearbeitet von Andreas Rose und Jonas Klein.
+    
+            
+      Siehe Anm. 5.
+      
+         
+         
+            
+               Bibliographie
+               
+                  Dumont, Stefan / Fechner, Martin (2012): „Digitale Arbeitsumgebung für das Editionvorhaben ‚Schleiermacher in Berlin 1808–1834‘“ http://digiversity.net/2012/digitale-arbeitsumgebung-fur-das-editionsvorhaben-schleiermacher-in-berlin-1808-1834 [letzter Zugriff 25.09.2019].
+                    
+               
+                  Dumont Stefan / Fechner Martin (2015): „Bridging the Gap: Greater Usability for TEI encoding, in: Journal of the Text Encoding Initiative 8“ http://jtei.revues.org/1242 [letzter Zugriff 25.09.2019].
+                    
+            
+                  
+         
+      
+   
+

@@ -1,0 +1,360 @@
+
+
+
+    
+        
+            
+                The Charles W. Cushman Collection: Enhancing Visual
+                    Resource Discovery Through Descriptive Metadata Based on Subjective Image
+                    Analysis
+                
+                    
+                        Linda
+                        Cantara
+                        
+                            Indiana University Libraries
+                            lcantara@indiana.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Charles W. Cushman CollectionThis project is funded by an IMLS
+                        National Leadership Grant. comprises nearly 18,000 Kodachrome slides,
+                    captured from 1938 to 1969 by Charles Weever Cushman, an accomplished amateur
+                    photographer, world traveler, and pioneer in the use of color photography.
+                    Cushman bequeathed the collection to his alma mater, Indiana University, on his
+                    death in 1972, yet its existence was virtually unknown until late 1999 when a
+                    university archivist rediscovered the suitcases in which the slides were stored,
+                    along with Cushman’s notebooks containing identifying information and dates for
+                    each slide. The images visually document in color the vernacular history of
+                    people, places, and events that have previously been seen only or primarily in
+                    black and white. To provide online access to the collection, a project team at
+                    Indiana—including staff of the Digital Library Program, the University Archives,
+                    and the University Libraries— has digitized the slides and has designed a
+                    relational database to document administrative, technical, and descriptive
+                    metadata about the images. Transcriptions of Cushman’s notebook annotations and
+                    corresponding documentation on slide mounts will be keyword searchable. In
+                    addition, we are creating descriptive metadata for each image by assigning terms
+                    for subject content, genre, physical characteristics, and geographic location.
+                    The terms are selected from standard controlled vocabularies, primarily the
+                    Library of Congress Thesauri for Graphic Materials (TGM I and TGM II), but also
+                    Library of Congress Authorities Files (LCAF) and the Getty Thesaurus of
+                    Geographic Names (TGN). When all the slides have been cataloged, the database
+                    will be mapped to an XML format—most likely Encoded Archival Description (EAD)
+                    but possibly Metadata Object Description Schema (MODS)—and will be searchable
+                    over the Web.
+                The use of controlled vocabularies in the descriptive metadata of a large image
+                    collection has the potential to optimize visual resource discovery, but many
+                    issues must be addressed and resolved to ensure the expense of assigning the
+                    terms truly results in improved image retrieval:
+                        The Library of Congress Thesaurus for Graphic Materials I: Subject
+                            Terms (TGM I) and Thesaurus for Graphic Materials II: Genre and Physical
+                            Characteristic Terms (TGM II) include topic headings developed by the
+                            Library of Congress Prints and Photographs Division over the past fifty
+                            years to catalog graphic materials. In adherence with ANSI/NISO
+                                Z39.19-1994,ANSI/NISO Z39.19-1984 is the American
+                                National Standards Institute/National Information Standards
+                                Organization Guidelines for the Construction, Format and Management
+                                of Monolingual Thesauri. NISO recently announced plans to revise
+                                these guidelines: see .
+                            terms are expressed in natural language word order following American
+                            English spelling conventions. Although new terms are added regularly
+                            based on proposals submitted by catalogers (Alexander), these thesauri
+                            frequently lack the specificity desirable for describing individual
+                            images. In addition, regardless of the domain knowledge and cataloging
+                            expertise of personnel performing image analysis to assign subject
+                            headings, inconsistencies are inevitable. Professional catalogers of
+                            traditional media readily acknowledge that subject analysis of printed
+                            materials may vary from cataloger to cataloger as well as from day to
+                            day. In this paper, I will discuss how we have attempted to approximate
+                            consistency of image analysis by multiple catalogers, the quality
+                            control procedures we have implemented to further ensure uniformity of
+                            subject term assignment, and the “work- arounds” we have devised to deal
+                            with encountered inadequacies in the selected controlled
+                            vocabularies.
+                        The Digital Library Federation, the Getty Grant Program, and the
+                            Andrew W. Mellon Foundation in cooperation with Rice University are
+                            currently sponsoring a Visual Resources Association (VRA) review and
+                            evaluation of existing data content standards and current practice in
+                            order to compile a guide to good practice for describing cultural
+                            objects and images. The forthcoming Cataloguing Cultural Objects: A
+                            Guide to Describing Cultural Objects and their Images—the CCO Guide—will
+                            provide recommendations and examples for using data value standards
+                            tools and building authority records.See  and “Project
+                                Proposal for Guide to Good Practice: Cataloging Standards for
+                                Describing Cultural Objects and Images,” Digital Library Federation,
+                                January 12, 2001, at .
+                            Used in concert with XML data structure and communication standards, the
+                            CCO Guide will facilitate consistent creation of descriptive metadata
+                            for visual resources, enabling interactive and complex search options.
+                            Paradoxically, Open Archive Initiative Metadata Harvester (OAI-PMH)
+                            service providers require data providers map rich metadata to
+                            unqualified Dublin Core, while content aggregators like the Research
+                            Libraries Group (RLG) Cultural Materials service must currently treat
+                            all controlled vocabulary terms as keywords.See the Research
+                                Libraries Group (RLG) Cultural Materials site at . In this regard, the RLG states, “Ultimately, we hope to add
+                                powerful ‘assisted searching’ tools, to help users navigate across
+                                different vocabularies and subject schemes, but in the meantime we
+                                are simply using whatever subject terms are provided in the source
+                                data.” (See ). Although neither OAI service providers nor RLG preclude
+                            the use of multiple or complex metadata formats, content creators
+                            nevertheless face a quandary: why commit extensive and expensive
+                            personnel hours to create increasingly rich metadata when interoperable
+                            and federated access is possible when implementing simpler, less costly,
+                            metadata standards?I am, of course, playing the devil’s
+                                advocate here.
+                        The foremost concern when designing and implementing an image
+                            retrieval system should be the searching needs of the user community
+                            (Sundt). Art historians, for example, may be trained in the use of one
+                            or more controlled vocabularies specific to art images,For
+                                example, Getty Art &amp; Architecture Thesaurus (AAT) at ,
+                                ICONCLASS at http://www.iconclass.nl/, and Categories for the
+                                Description of Works of Art at . but users of vernacular photography collections may have
+                            limited experience with any controlled vocabulary. Since lack of
+                            familiarity with the underlying vocabulary tools may actually diminish
+                            rather than enhance user interaction, the search interface should
+                            ideally facilitate direct mining of the encoded metadata, directing the
+                            user to broader, narrower, related and cross-referenced subject terms.
+                            This paper will conclude with a review of our usability test findings in
+                            respect to a prototype interface that integrates TGM I and II terms into
+                            the search facilities for the Cushman Collection.
+                    
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Arden
+                                    Alexander
+                                
+                            
+                            
+                                
+                                    Tracy
+                                    Meehleib
+                                
+                            
+                            The Thesaurus for Graphic Materials: Its History, Use,
+                                and Future
+                        
+                        
+                            Cataloging &amp; Classification Quarterly
+                            
+                                31
+                                3/4
+                                189-211
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Encoded Archival Description
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Getty Thesaurus of Geographic Names (TGN)
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Guidelines for Implementing DC in XML
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Library of Congress Authorities
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Library of Congress Thesauri of Graphic Materials: TGM
+                                I (Subjects) and TGM II (Genre and Physical Characteristics
+                                Terms)
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;
+                                &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Metadata Object Description Schema (MODS)
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Open Archives Initiative FAQ
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    Christine
+                                    L.
+                                    Sundt
+                                
+                            
+                            The Image User and the Search for Images
+                        
+                        
+                            
+                                
+                                    Murtha
+                                    Baca
+                                
+                            
+                            Introduction to Art Image Access: Issues, Tools,
+                                Standards, Strategies
+                            
+                                Los Angeles
+                                Getty Research Institute
+                                2002
+                                67-85
+                            
+                        
+                    
+                
+            
+        
+    

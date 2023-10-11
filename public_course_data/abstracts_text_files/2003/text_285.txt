@@ -1,0 +1,530 @@
+
+
+
+    
+        
+            
+                Annotation and Electronic Scholarly Editions
+                
+                    
+                        Chris
+                        Tiffin
+                        
+                            Univ of Queensland
+                            c.tiffin@uq.edu.au
+                        
+                    
+                
+                
+                    
+                        Graham
+                        Barwell
+                        
+                            Univ of Wollongong
+                            g.barwell@uow.edu.au
+                        
+                    
+                
+                
+                    
+                        Phill
+                        Berrie
+                        
+                            Australian Defence Force Academy
+                            p.berrie@adfa.edu.au
+                        
+                    
+                
+                
+                    
+                        Paul
+                        Eggert
+                        
+                            Australian Defence Force Academy
+                            p.eggert@adfa.edu.au
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper considers the purpose of annotation in scholarly editions and the
+                    methods by which annotation should be provided in the electronic
+                    environment.
+                There is a consensus that the most important task in scholarly editing is to
+                    prepare an accurate and reliable text, according to transparent criteria. The
+                    second task is to supplement that text with apparatus to enable the modern
+                    reader to read it more adequately. While some of the more influential guides to
+                    editing procedure (Center for Editions on American Authors, Committee for
+                    Scholarly Editions) suggest that annotation will not in all cases be required,
+                    the annotative process can be high on the list of editor’s satisfactions and may
+                    therefore be accorded disproportionate effort. As Mary-Jo Kline reports, some of
+                    the volumes in such magisterial series as the Jefferson Davis Papers and the
+                    Madison Papers were criticised for the “plague” of overannotation. Any General
+                    Editor must quickly learn stealthy strategies for restraining the annotative
+                    enthusiasms of contributors.
+                The process of footnoting or annotating in the presentation of an edited text has
+                    a different role from the one it does in works of literary critical commentary.
+                    On a critic’s page the primary end of the annotation is to provide the
+                    evidentiary basis for the commentator’s assertions and argument, or, in one
+                    lurid account, to fight turf wars about academic status with other scholars
+                    (McFarland 1991). We concentrate here, however, on the principles and practice
+                    of annotating the primary text in a scholarly edition.
+                The purpose of annotation is usually framed with the reader in mind. It may be
+                    based idealistically on “render[ing] the author’s meaning wholly intelligible”
+                    (Battestin 1981), or it may be based on the attempt to provide the modern reader
+                    with the information that would have been possessed by a reader on first
+                    publication. In the case of unpublished works, it may translate a general reader
+                    into an essentially private world. There is often a strong injunction that
+                    annotation should not be subjective or judgmental (CEAA, Hewett 1996). In
+                    practice, a further aim may be to present the accretion of scholarly knowledge
+                    and interpretation of the text up to the present (Ricks 1989)
+                Annotation in the print mode is arranged in a number of different ways: textual
+                    or explanatory notes at the foot of the page, notes at the end of the chapter or
+                    book, collations, glossaries, appendices, and “excursus notes” (McFarland
+                    1991).
+                For reasons of cost, electronic editions can offer much richer annotation than
+                    print editions, and targeted parts of this extra material can be made accessible
+                    from precise points in the text. Two important questions arise, though: how
+                    should this ancillary material be arranged, and how should it be linked, or
+                    rather, how should its availability be signaled from within the text?
+                One system, used especially by publications like journals that have both a print
+                    and a web publication, is to follow closely the endnotes practice used in print
+                    publications by offering the notes in a single file and signaling them by a
+                    numerical footnote indice. Other editions indicate the presence of the
+                    annotative note by a marginal indice (e.g. Thomas Gray Archive), by highlighting
+                    the span of text to which the note refers, or by enabling the highlighting of
+                    the text span through a mouseover to reveal the presence of the link.
+                Some of the most spectacular scholarly editing projects of the last decade such
+                    as the Rossetti Archive and the Blake Archive situate their texts in such a
+                    complex environment that the annotative strategy of immediate explication of
+                    individual terms in texts is abandoned in favor of more serious immersion in the
+                    contexts of the poems. Paradoxically, though, under this system precise
+                    assistance is not always available to the reader.
+                In the electronic edition of His Natural Life developed by the Authenticated
+                    Editions Project at its JITM website, we commenced with the list of annotations
+                    in a flat file transferred as legacy data from the printed Academy Edition of
+                    this text, and highlighted the text spans which were indicated in the lead-ins
+                    to the print edition’s endnotes. But this seemed to make poor use of the
+                    amplitude and precision offered by the markup scheme of the electronic edition.
+                    Accordingly, we have analysed the content of the notes and reformatted them
+                    according to type into sub-glossaries. The result constitutes in itself a
+                    critical approach to the text.
+                Signaling the presence of annotations has been rethought in the light of the
+                    expected readership of the electronic version, and this has led to the provision
+                    of greater density of annotation links. However, providing for multitudinous
+                    non-sequential reading patterns can easily produce an absurdly over-linked text
+                    when the names of recurrent characters, places or motifs are annotated. This
+                    latter problem can be alleviated if users have a mechanism for enabling or
+                    suppressing the link indicators themselves.
+                We conclude that different strategies are required for the arrangement and
+                    announcement of annotative material in the electronic environment from the print
+                    one, but the major determinant of how annotations are to be arranged and offered
+                    (and perhaps still the most difficult thing to judge) is how readers will
+                    approach the edition.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Authenticated Editions Project
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Martin
+                                    C.
+                                    Battestin
+                                
+                            
+                            A Rationale of Literary Annotation
+                        
+                        
+                            Studies in Bibliography
+                            
+                                34
+                                
+                                1-22
+                                1981
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Marcus
+                                    Clarke
+                                
+                            
+                            His Natural Life
+                            The Academy Editions of Australian Literature
+                            
+                                
+                                    Lurline
+                                    Stuart
+                                
+                            
+                            
+                                (St Lucia, Qld
+                                University of Queensland Press
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Richard
+                                    Furuta
+                                
+                            
+                            
+                                
+                                    Eduardo
+                                    Urbina
+                                
+                            
+                            “On the Characteristics of Scholarly
+                                Annotations
+                        
+                        
+                            HT02, June 11-15
+                            
+                                
+                                
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                Ralph
+                                    HannaIII
+                            
+                            Annotation as Social Practice
+                        
+                        
+                            
+                                
+                                    Stephen
+                                    A.
+                                    Barney
+                                
+                            
+                            Annotation and Its Texts
+                            
+                                New York
+                                Oxford University Press
+                                1991
+                                178-84
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    Hewitt
+                                 et al 
+                            The Edinburgh Edition of the Waverley Novels: A Guide
+                                for Editors
+                            
+                                Edinburgh
+                                
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Mary-Jo
+                                    Kline
+                                
+                            
+                            A Guide to Documentary Editing
+                            
+                                Baltimore
+                                Johns Hopkins University Press
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Thomas
+                                    McFarland
+                                
+                            
+                            Who Was Benjamin Whichcote? Or The Myth of
+                                Annotation
+                        
+                        
+                            
+                                
+                                    Stephen
+                                    A.
+                                    Barney
+                                
+                            
+                            Annotation and Its Texts
+                            
+                                New York
+                                Oxford University Press
+                                1991
+                                152-77
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Jerome
+                                    McGann
+                                
+                            
+                            Textual Scholarship, Textual Theory, and the Uses of
+                                Electronic Tools: A Brief Report on Current Undertakings
+                        
+                        
+                            Victorian Studies
+                            
+                                41
+                                
+                                609-19
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                Modern Language Association of America. Committee
+                                    on Scholarly Editions
+                            
+                            MLA Guidelines for Electronic Scholarly
+                                Editions
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                Modern Language Association of America. Committee
+                                    on Scholarly Editions
+                            
+                            Draft Revised MLA Guidelines for Electronic Scholarly
+                                Editions
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christopher
+                                    Ricks
+                                
+                            
+                            The Poems of Tennyson
+                            
+                                3 vols.
+                                Harlow, Essex
+                                Longman
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Rossetti Archive
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                    Michael
+                                    Suarez
+                                S.J.
+                            In Dreams Begins Responsibility: Novels, Promises and
+                                the Electronic Editor
+                        
+                        
+                            
+                                
+                                    Alexander
+                                    Pettit
+                                
+                            
+                            Textual Studies and the Common Reader
+                            
+                                Athens, Georgia
+                                University of Georgia Press
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Thomas Gray Archive
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Uncle Tom’s Cabin and American Culture
+                            
+                                
+                                
+                                
+                            
+                        
+                        Website. 
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            William Blake Archive
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

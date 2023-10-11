@@ -1,0 +1,188 @@
+
+
+
+    
+        
+            
+                Challenges in the Design of Online Full-Text Databases:
+                    Creating Rich Text Encoding
+                
+                    
+                        Carole
+                        E.
+                        Mah
+                        Women Writers Project Brown University
+                            Carole_Mah@brown.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction: Encoding System Design in the Context of User-Centered
+                        Design
+                    Writing about the Cypress project at the University of California at
+                        Berkeley, Nancy Van House et al. state that "digital libraries can be
+                        described and evaluated on three key components: contents, functionality,
+                        and interface"Van House, Nancy A. and Mark H. Butler, Virginia
+                            Ogle, and Lisa Schiff. "User-Centered Iterative Design for Digital
+                            Libraries: The Cypress Experience", D-Lib
+                                Magazine, February 1996. &lt;&gt;. The writers lament the fact that of these three, contents
+                        and functionality are not commonly enough evaluated. For a digital resource
+                        whose function depends to a high degree on the encoding of its contents, we
+                        can extend these observations and suggest that user-centered design and
+                        evaluation of functionality must begin with the design of the encoding
+                        system itself. This is increasingly true as the encoding system becomes more
+                        complex. For a project like the Brown University Women Writers Project
+                        (WWP), whose research focuses on highly detailed encoding, our central
+                        problems are how to provide encoding which will support anticipated user
+                        needs; how to find a delivery system which can use this encoding; and how to
+                        design an interface which makes this encoding useful to the user. Since the
+                        topic of user interface design deserves its own paper, and since there are
+                        already many studies of that subjectBaecker, Ronald M.. Readings in human-computer interaction: toward the year
+                                2000. (San Francisco, Calif.: M. Kaufmann Pub.,
+                            1995.) Nielson, Jakob. "Jakob Nielson's Website (Usable
+                            Information Technology)". &lt;&gt;, this paper focuses on WWP encoding decisions rather than
+                        on the choice and design of the delivery systemAddressing these
+                            issues deserves a separate forum. To this end, we are conducting a
+                            demo/poster presentation on the technical details of our online delivery
+                            system..
+                    Moreover, the aforementioned studies are generalized, rather than focused on
+                        humanities textbase design. Studies that do focus on humanities projects are
+                        scarce, and the ones that do existIn addition to Van House
+                            (cited above) see for example: Arms, Caroline R. "Historical
+                            Collections for the National Digital Library: Lessons and Challenges at
+                            the Library of Congress", D-Lib Magazine, May
+                            1996. &lt;&gt; Seaman, David. "The User Community as Responsibility
+                            and Resource", D-Lib Magazine, July/August
+                            1997. &lt;&gt; Shaw, Elizabeth J. and Sarr Blumson "Making of America
+                            -- Online Searching and Page Presentation at the University of
+                            Michigan", D-Lib Magazine, July 1998. &lt;&gt;
+                        do not specifically address the issue of how the kind of markup offered in
+                        the Text Encoding Initiative (TEI) Guidelines might best be utilized in
+                        encoding and delivery. We are interested in exploring what components(s) of
+                        TEI markup are actually necessary to fulfill scholarly user needs. For this
+                        reason (and because it is not clear how much one could generalize from
+                        others' studies) the WWP has performed our own assessment of users' needs
+                        via beta-testing (prior to the textbase release date of August 1999) and via
+                        a Mellon Foundation-funded user survey.
+                
+                
+                    Defining "Rich" Text Encoding
+                    Within the context of the TEI, the definition of "rich" encoding occurs on a
+                        spectrum. The "lightest" involves transcribing from a modern standard
+                        edition of a work using minimal phrase-level elements, ignoring original
+                        pagination, lineation, and typography. The other extreme is to transcribe
+                        several different versions of a work, marking them up so as to enable
+                        collation/comparison, providing detailed analysis of handwritten
+                        additions/deletions, and providing markup to enable linguistic and/or
+                        metrical analysis. The WWP falls in the middle of these two extremes. We
+                        provide robust phrase-level markup, preserve original errors, typography,
+                        abbreviations, spelling, lineation, pagination, forme work information, and
+                        basic information about handwritten additions/deletions. We also record a
+                        few aspects of the original rendition (e.g., case, slant, and alignment, but
+                        not kerning, leading, or type size).
+                
+                
+                    Arguments For and Against Rich TEI Markup
+                    One of the primary arguments against rich text encoding is that it exceeds
+                        actual scholarly requirements, providing unnecessary detail at prohibitive
+                        cost. Part of the problem with this argument is that scholarly requirements
+                        vary considerably from discipline to discipline; historians may chiefly need
+                        simple search and retrieval tools, while literary scholars may need features
+                        which support more detailed analysis of the text. In addition, a diversity
+                        of potential uses may also require more detailed encoding to accommodate
+                        different needs. Thus, while scholars engaged in historical or literary
+                        research value a transcription which reproduces the original lineation,
+                        pagination and spelling, teachers may need a version with some degree of
+                        spelling modernization or regularized typography for their students. The
+                        WWP's user survey ()
+                        suggests strongly that users expect the textbase to function both for
+                        research and for teaching, and that they do require a transcription which
+                        reproduces the basic material details of the text as well as its structure
+                        and content.
+                
+                
+                    Justifying the Cost of Rich Text Encoding
+                    Very few projects provide rich, detailed markup of primary source texts
+                        because the expense of this level of markup is regarded as an obstacle to
+                        getting important materials online, and greater priority is given to the
+                        quantity of material encoded than to the detail of the encoding. While the
+                        WWP also feels these pressures, we feel that the actual added cost and
+                        effort are still matters for research. Our working hypothesis is that rich
+                        markup is necessary in order to provide a research environment within which
+                        users feel empowered and at home. Rather than thinking of rich text markup
+                        as adding levels of arcane complexity which will never be used, we feel that
+                        its level of detail anticipates the users' basic expectations about how text
+                        should be represented and manipulated. Therefore, from our point of view the
+                        question is not how to justify the costs associated with rich text encoding
+                        but rather (given that rich text encoding is a necessity) what might be the
+                        best way to minimize those costs. These methods of cost minimization will be
+                        addressed at length in the final version of this paper.
+                
+                
+                    Conclusions
+                    While not decisive, our user survey and beta-testing results so far confirm
+                        our hypothesis that rich text markup is essential for providing a textbase
+                        which is a genuinely useful teaching and research tool. Moreover, these
+                        results indicate the direction future testing should take. Future evaluation
+                        and design iterations must focus even more on user-centered testing and
+                        evaluation. In particular, as Seaman suggests, pro-actively
+                        educating users will help greatly in solving many still-unanswered
+                        questions.
+                
+            
+        
+    

@@ -1,0 +1,78 @@
+
+        
+            The Advanced Research Consortium (ar-c.org) is a hub of humanities research nodes focused on aggregating and peer reviewing digital archives, collections, and research resources.  Each node hosts an online “finding aid” which serves as a centralized research space for exploring traditional scholarship such as journal articles, digital collections (Early English Books Online and Eighteenth-Century Collections Online, for example), and scholarly digital resources that ARC peer-reviews, using the same process as journals and university publishers in the humanities. These nodes aggregate millions of digital artifacts from across the digital humanities spectrum, from proprietary projects such as JSTOR and Adam Matthew Digital to independent digital humanities projects like the London Stage Database and the Lili Elbe Digital Archive, as well as collections from major libraries throughout North America and Europe.
+            ARC has a long history. Its roots lie in Jerome McGann’s founding of NINES (Networked Infrastructure for Nineteenth-Century Electronic Scholarship) in 2003. The initial Steering Committee was led by Jerome McGann and Bethany Nowviskie and included Morris Eaves, Neil Fraistat, Steven Jones, Laura Mandell, Kenneth Price, and Martha Nell Smith, all of whom had created digital archives for nineteenth-century studies. Their resources would be peer-reviewed and made findable, at the level of objects in the archive, through NINES.org. The goal was to de-silo these projects, to render them all searchable alongside proprietary resources. NINES fit its nodes and peer review process into traditional humanities field structures to render the peer-review process legible to traditional colleagues: renowned experts served on the editorial boards, rendering them as illustrious as any board for a university press. Through this merging of traditional scholarly apparatus with ever-evolving digital work, NINES, and later ARC, translated digital humanities work into familiar structures for tenure and promotion, and made them visible for teaching and research. 
+            ARC is a response to the need for aggregating and providing peer review to communities of scholars beyond those specializing in nineteenth-century studies; it supported the development of medieval, eighteenth-century, and modernist nodes. Later in ARC’s history, thanks to the efforts of Michigan State University, ARC began creating nodes for libraries with special collections that wanted to make their holdings searchable alongside relevant archives and journal publications. MSU’s Studies in Radicalism (SiRO) led the way in rethinking ARC’s traditional, period-centric structure.
+            While conservative on the front end, ARC’s original backend was technologically advanced, thanks to the prescience of (now) Dean Nowviskie:
+                
+                    
+                        See also Jerome McGann, Bethany Nowviskie, “NINES: a federated model for integrating digital scholarship”,
+                         Electronic Book Review
+                        , 31 January 2012, an earlier form of which is available here: https://nines.org/about/wp-content/uploads/2011/12/9swhitepaper.pdf.
+                    
+                 the metadata was rdf xml in format which was loaded into SoLR with a Lucene search engine (Nowviskie, 2007). This metadata format (
+                
+                    Submitting RDF
+                ) made it possible to add URIs to create Linked Open Data and for ARC to organize search returns beyond traditional disciplines.
+            
+            ARC was launched when content management systems and cultural heritage platforms were in their infancy. To maintain robust and flexible metadata and search capabilities, we are sunsetting our legacy COLLEX software and moving to WordPress to allow nodes more control over their web presence. These WordPress instances will interface with an updated backend: the Corpora Dataset Studio, developed by ARC technology director Bryan Tarpley. Corpora uses mongoDB as well as elasticsearch and neo4j databases and has been designed with data visualization and Linked Open Data in mind. In collaboration with Linked Infrastructure for Networked Cultural Scholarship (
+                
+                    LINCS
+                , Susan Brown, PI), Tarpley is recreating ARC’s legacy visual search interface, BigDIVA, in the form of a Rich Prospect Linked Open Data Viewer. Susan Brown has argued that Linked Open Data can demonstrate that categories such as disciplines, gender, and nationality can be revealed as “categorically provisional” through forging crosswalks between traditional categories and new, anti-disciplinary, intersectional, decolonizing, and queer modes of categorization (Brown, 2020). The new LOD viewer will allow users to dynamically organize the ARC catalog in their own ways, using categories and queries that make sense to them. 
+            
+            ARC is now working with special interest groups – from the American Antiquarian Society to the Canadian Writing Research Collaboratory and Escalator in South Africa – to create new nodes, and we are actively recruiting nodes and peer reviewing projects that reconsider the boundaries of traditional humanities subjects. ARC seeks partnerships with other groups who are in the same situation as the original NINES steering committee: they would like their projects to be searchable along with other digital projects and resources. To this end, we are developing nodes focused on disability studies, early modern drama, music studies, and more. 
+            If ARC can support such groups, it will live up to that very tendentious but invigorating hope expressed in the original 
+                Digital Humanities Manifesto composed by the DH group at UCLA: “
+                Traditional Humanities is balkanized by nation, language, method, and media…. [W]e imagine different constellations (not just disciplinary constellations, but also other configurations of producing knowledge that can be team- and project-based, collaborative, open-ended, globally-oriented, engaging for new audiences and institutions)”(Digital Humanities Manifesto, 2008).
+                
+                    
+                        The Digital Humanities Manifesto 2.0, dated 5/29/2009, is described and available for download: 
+                        
+                            http://www.toddpresner.com/?p=7
+                        
+                        . The original manifesto, dated 12/15/2008, is no longer available: email mandell at tamu dot edu for a saved copy.
+                    
+                
+                 ARC and Corpora – to be released open source next year, and usable on a laptop – aspire to constitute a “diversity stack” (Liu, 2020)
+            
+            Establishing nodes related to special communities and interests can constellate the scholarly research universe in un- or even anti-disciplinary ways. Scholars everywhere will be able to get involved in these communities, to join the editorial boards, contribute projects for peer review, attend ARC workshops, etc. Insofar as “de-disciplining” requires de-colonizing as well, ARC is expanding Corpora’s capacities to read non-Latin script and make it possible to better accommodate “expanding the notion of evidence” to include “fragments of events, depicted in periodicals, testimony, pamphlets and even poetry, in the archive” (Risam, 2015).
+            The authors present these two modes of de-disciplining ARC, viz., 1) supporting emergent (anti-)disciplines in co-developing an infrastructure free of colonial archiving constraints, from the ground up; and 2) transforming the ARC catalog from Enlightenment-style index (Pasanek and Wellmon, 2015) into a Linked Open Data viewer organized by SPARQ-L queries, in order to elicit ideas from the audience about how ARC can further support spontaneous constellations of intellectual community that may contribute to the evolution of university disciplines in the Humanities.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Brown, S. (2020). Categorically provisional. 
+                        PMLA
+                        , 135(1): 165-174.
+                    
+                    
+                        Liu, A. (2020). Toward a diversity stack: Digital humanities and diversity as technical problem. 
+                        PMLA
+                        , 135(1): 130-151. 
+                    
+                    
+                        Nowviskie, B. (2007). A scholar’s guide to research, collaboration, and publication in NINES. 
+                        Romanticism and Victorianism on the Net
+                        , 
+                        
+                            https://doi.org/10.7202/016707ar
+                        
+                        . 
+                    
+                    
+                        Pasanek, B. and Wellmon, C. (2015). The Enlightenment index. 
+                        The Eighteenth Century
+                        , 56(3): 359-382. 
+                    
+                    
+                        Risam, R. (2015). Revising history and re-authouring the left in the postcolonial digital archive. 
+                        Left History
+                         18(2): 35-46.
+                    
+                
+            
+        
+    
+

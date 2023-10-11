@@ -1,0 +1,386 @@
+
+
+
+    
+        
+            
+                Temporal Modelling
+                
+                    
+                        Johanna
+                        Drucker
+                        Media Studies, University of Virginia
+                            jrd8e@virginia.edu
+                        
+                    
+                
+                
+                    
+                        Bethany
+                        Nowviskie
+                        SpecLab, University of Virginia
+                            bethany@virginia.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Temporal Modelling is an interface designed specifically to meet the needs of
+                    humanities scholars wanting to interpret or analyse the subjective experience of
+                    temporality in historical documents or imaginative artifacts. Since its
+                    inception, Temporal Modelling has had two goals: 1) to provide a responsive
+                    interface for visualizing complex temporal relations in humanities data and 2)
+                    to experiment with an alternative approach to content modelling in humanities
+                    computing. Two years into the project, we think we can demonstrate progress on
+                    both fronts. We’ve designed a working prototype suited to humanities scholars
+                    that generates XML output concurrent with a user's graphical modelling. Our
+                    session describes the interwoven conceptual and technical development of this
+                    project (research, visual design development, conceptualization process, and
+                    prototype production), and also aims to make it known to a community who we hope
+                    will be among its primary users and first adopters.
+                Temporal Modelling demonstrates an alternative approach to content modelling for
+                    humanities computing. In the usual sequence of humanities computing events, a
+                    content model is developed and then used to create a richly marked data set.
+                    Visualizations or graphical displays follow as a result, not as a point of
+                    input. By contrast, we’ve created a tool that allows visualization to act as a
+                    procedure, not an outcome, of interpretation. Graphical sketching integrates
+                    interpretation into digitization concretely, creating a content model.
+                Temporal Modelling consists of two parts. The first we call a composition space
+                    or PlaySpace: an interface with a set of visual, graphical elements for making
+                    models of temporal relations. The mechanisms and processes of the composition
+                    space focus on: the positioning of temporal objects (such as events, intervals,
+                    and points in time) on the axis of a timeline; the labelling of those objects
+                    using text, color, size, and quality; the relation of objects to specific
+                    temporal granularities (the standards by which we mark hours, seasons, aeons);
+                    and, in complex interaction, the relation of objects to each other. These can be
+                    further modified by a process we call “inflection”—the assignment of attributes
+                    with either semantic or syntactic values. For example, a humanities scholar
+                    attempting to chart a sequence of events traced in family letters, in which many
+                    temporal events are referenced relationally, rather than by date, could use such
+                    a system in a preliminary stage of analysis, creating a visual scheme to
+                    represent events or references. In addition, however, Temporal Modelling
+                    contains tools of interpretation and analysis to characterize events through
+                    such inflections as anticipation, regret, foreshadowing or causality.
+                A user’s interpretation is captured and formalized into a structured data scheme
+                    that develops concurrently, as the visualization proceeds. User gestures and
+                    image renderings are translated into an XML schema which can be exported, used
+                    to design a DTD, or transformed through use of XSLT or other manipulations. In
+                    the second part of our project, a complementary DisplaySpace will use the same
+                    graphical elements to display “published” models from the PlaySpace, as well as
+                    supporting display from imported structured data. DisplaySpace models can be
+                    manipulated for contrast and comparison in their “published” form or reloaded
+                    into the PlaySpace for further refinement. The composition space enables
+                    understanding through iterative visual construction in an editing environment
+                    that implies infinite visual breadth and depth. In contrast, the display space
+                    channels energy into iterative visual reflection by providing a responsive,
+                    richly-layered surface in which subjectivity and inflection in temporal
+                    relations are not fashioned but may be reconfigured.
+                The objects, actions, and relations defined by our schemata and programming are
+                    not married inextricably with specific graphics and on-screen animations or
+                    display modes. Just as we have provided tools for captioning and coloring (and
+                    the ability to regularize custom-made systems with legends and labels), we have
+                    also made possible the upload and substitution of user-made standard vector
+                    (SVG) graphics for the generic notation systems we've devised. This is more than
+                    mere window-dressing. Our intense methodological emphasis on the importance of
+                    visual understanding allows the substitution of a single set of graphics
+                    (representing inflections for, say, mood or foreshadowing) to alter radically
+                    the statements made possible by Temporal Modelling’s loose grammar. Users are
+                    invited to intervene in the interpretive processes enabled by our tool almost at
+                    its root level.
+                Temporal Modelling can be used to model date-stamped, or empirical data, but its
+                    strength is in its ability to structure the representation of subjective
+                    experience. Several of the design features of our project embody this
+                    conviction, most notably the “now slider”. This element embeds an individual
+                    point of view (or several, depending on the project) into the graphical model
+                    and allows the interpretation to be played forward or backward (“progressed” or
+                    “regressed”). The model of events changes depending on the position of these
+                    individual now-sliders. An event once anticipated may give rise to an unforeseen
+                    set of outcomes and be transformed into an interval charged with regret or
+                    melancholy. Temporal Modelling attempts to embody the subjectivity of an
+                    interpretation, not merely depict a subjective approach.
+                Our initial conceptualization was informed by reading across a range of
+                    disciplines and fields. We were interested in a historical, trans-cultural
+                    inventory of ways time and temporality have been conceptualized. We grounded our
+                    fundamental distinction between time as an a priori category and temporality as
+                    a relational conception. Our readings were drawn from logic, religion,
+                    anthropology, and philosophy, as well other humanities and social sciences (see
+                    References). In addition, we made an inventory of visualizations for showing and
+                    analyzing data that have a temporal dimension (). Because we are intent on
+                    creating both a composition space and a display space that can utilize the same
+                    set of visual elements, we wanted to consider conventions for presenting
+                    date-stamped information while concentrating our design on a system suited to
+                    humanities documents whose temporal references and/or relations do not conform
+                    to empirical models.
+                After this research survey, we created a basic conceptual schema for designing
+                    the Temporal Modelling project. This involved several steps 1) defining temporal
+                    primitives (entities, actions, and relations); 2) developing a graphical
+                    vocabulary for their presentation; 3) developing a labelling and annotation
+                    system that allows for customization by individual users. Our assertion is that
+                    representations based on empirical approaches assume an objective, homogeneous,
+                    continuous, and uni-directional notion of time. We wanted to design a system
+                    grounded in subjective, heterogeneous, dis-continuous, and multi-directional
+                    temporalities. To accomplish this, we conceived of a number of unique design
+                    features in addition to the now slider. These include “stretchy” timelines with
+                    variable scales and granularities, branching and alternative narratives of
+                    temporal events according to catastrophic (event-driven) and continuous
+                    (unfolding) models. Designs for ruptured and discontinuous time are also in the
+                    plans. The technical implementation of this design involved creating a tightly
+                    integrated relation between visualization and digitization of information. In
+                    addition, at each instance, the design of specific elements raises interesting
+                    intellectual problems at the intersection of philosophical and computational
+                    concerns—for instance, is “regret” a semantic attribute of an event, or a
+                    syntactic one, engaged in relational effects? Such issues are central to the
+                    intellectual and programming structure of this project.
+                Temporal Modelling is an experiment in using speculative methods— approaches to
+                    conceptualization and design of computational tools or projects with uncertain
+                    outcomes. The Speculative Computing Lab at the University of Virginia defines
+                    its mission as undertaking projects that have a risk of failure. These projects
+                    are not necessarily grounded in discipline-specific research and have a
+                    tool-based and interpretive aim rather than a collections or archive development
+                    goal. Speculative projects are motivated by the desire to foreground these
+                    interpretive practices, particularly the subjective practices that are central
+                    to traditional humanities. Temporal Modelling is an Intel-sponsored project of
+                    the Speculative Computing Lab in the Media Studies Program at the University of
+                    Virginia.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    J.
+                                    F.
+                                    Allen
+                                
+                            
+                            Time and Time Again: The Many Ways to Represent
+                                Time
+                        
+                        
+                             International Journal of Intelligent Systems
+                            
+                                6
+                                4
+                                341-355
+                                July 1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                    J.
+                                    Burg
+                                , et al
+                            Using Constraint Logic Programming to Analyze the
+                                Chronology in A Rose for Emily
+                        
+                        
+                            Computers and the Humanities
+                            
+                                34
+                                4
+                                377-392
+                                December 2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    T.
+                                    Fraser
+                                
+                            
+                            Time, The Familiar Stranger
+                            
+                                
+                                Massachusetts UP
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                    C.
+                                    S.
+                                    Jensen
+                                et al
+                            A Glossary of Temporal Database Concepts
+                        
+                        
+                             Proceedings of ACM SIGMOD International Conference on
+                                Management of Data 23, 1, March, 1994
+                            
+                                
+                                
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    W.
+                                    Jordan
+                                
+                            
+                             Determining the Temporal Ordering of Events in
+                                Discourse.
+                        
+                        
+                             Unpublished masters thesis for
+                            
+                                Carnegie Mellon Computational Linguistics
+                                    Program
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    Price
+                                
+                            
+                            The View from Nowhen
+                        
+                        
+                            Time’s Arrow and Archimedes’ Point.
+                            
+                                New York
+                                Oxford UP
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Teri
+                                    Reynolds
+                                
+                            
+                            Spacetime and Imagetext
+                        
+                        
+                            Germanic Review
+                            
+                                73
+                                2
+                                161–74
+                                Spring 1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    F.
+                                    A.
+                                    Schreiber
+                                
+                            
+                            Is Time a Real Time? An Overview of Time Ontology in
+                                Informatics
+                        
+                        
+                            Real Time Computing
+                            
+                                
+                                
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Steedman
+                                
+                            
+                            The Productions of Time
+                        
+                        
+                            draft tutorial notes 2.0: University of
+                                Edinburgh
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

@@ -1,0 +1,317 @@
+
+
+
+    
+        
+            
+                The Analysis of Classical Greek and Latin Compositional
+                    Word-Order Data
+                
+                    
+                        Fiona
+                        J.
+                        Tweedie
+                        Department: Statistics University of
+                                Glasgow
+                            fiona@stats.gla.ac.uk
+                        
+                    
+                
+                
+                    
+                        Bernard
+                        D.
+                        Frischer
+                        Dept. of Classics University of
+                                California
+                            frischer49@aol.com
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    A recent paper by Frischer et al. (1999) examines the position of the direct
+                        object and its governing verb in works in Classical Greek and Latin. Through
+                        statistical analysis of a great number of sentences, one long suspected
+                        difference between Latin and Greek word-order was confirmed, and the
+                        ramifications of this observation were explored for some possible cases of
+                        word-order transference between Latin and Greek. The difference between the
+                        languages concerns the positioning of the accusative direct object with
+                        respect to the verb governing it. That there is a difference in the Greek
+                        and Latin distributions is no surprise: Classical linguists have long
+                        observed that Latin has a greater tendency to place the verb at the end of
+                        the clause than does Greek. From this fact alone one might predict that the
+                        direct object in Latin is more likely to precede than to follow the verb on
+                        which it depends than is the case in Greek. This prediction was tested
+                        empirically by tabulating the direct object distributions in sixty passages
+                        written by fifteen Latin and ten Greek prose authors. Each passage was
+                        randomly selected in the text of an author. Analysis was based on the first
+                        one hundred direct objects in the accusative case that were encountered in a
+                        passage, and a tabulation was done of those that occurred before and those
+                        after the governing verbs. With remarkable consistency, the texts in our
+                        sample clumped into a Latin and a Greek cluster, offering strong empirical
+                        and statistically significant proof that the position of the direct object
+                        with respect to its governing verb differed in Greek and Latin prose.
+                    Five Greek texts by two authors writing in Greek turned out to be anomalous,
+                        fitting firmly into the Latin group. Four of the texts were written by
+                        Cassius Dio; the fifth is the Greek translation of the Emperor Augustus'
+                            Res Gestae, a bilingual version of which
+                        survives, and whose original is known to have been written in Latin.
+                    In considering the results, including the anomalous texts, the study showed
+                        that native language did not necessarily have an effect on a writer's
+                        placement of the direct object; nor did the language of an important
+                        literary or historical source. Native Greek authors writing in Latin
+                        respected Latin word order; Romans writing in Greek generally conformed to
+                        Greek practice.
+                    The study suggested that some but not all explanations for the data are
+                        linguistic. On the linguistic level, it was the greater consistency of Latin
+                        SOV word-order that helped the Latin pattern to prevail over the more
+                        flexible Greek positioning of the verb and direct object. This was true not
+                        only for Roman authors writing Latin with a Greek source before them (like
+                        Aulus Gellius or Cicero) but also for a Greek author like Ammianus
+                        Marcellinus writing in Latin. It was evidently normally easy for both Greeks
+                        and Romans to recognize and to respect the tendency of Latin to place the
+                        verb at the end of the clause. On the other hand, in the interesting case of
+                        the Greek translation of the Res Gestae and other
+                        official documents, where the Roman chancellery's habit of translating Latin
+                        into Greek through quasi-relexification was seen, the study proposed an
+                        explanation based either on Roman scrupulosity in legal matters or on a
+                        sociological factor of linguistic hegemony. Finally, in the case of Cassius
+                        Dio there was seen the operation of a psycholinguistic or sociolinguistic
+                        cause for word-order transference: Dio's conscious or unconscious
+                        presentation of himself as a Roman.
+                    The data sets used by Frischer et al. list for each text sample the number of
+                        direct objects that occur before the governing verb
+                        in main clauses (MCB) and other clauses (OB) as well as the number of direct
+                        objects that occur after the governing verb in main
+                        clauses (MCA) and other clauses (OA). In most cases the total number of
+                        direct objects is 100. There are a few samples where only 99 sentences were
+                        examined, the data have been rescaled to have a total of 100. Frischer et
+                        al. (1999) treat the number of clauses in each of the categories as
+                        separate, independent random variables. Quantitative linguists and
+                        stylometricians may not be aware of a well-known problem that affects the
+                        "standard" statistical analysis of compositional data, that is, when dealing
+                        with data that adds up to a known total. This presentation aims to explain
+                        the problem, present one approach that succeeds in solving it; and apply
+                        this approach to such statistical techniques such as principal components
+                        analysis, cluster analysis and discriminant analysis. The conclusions of
+                        Frischer et al. (1999) will be re-examined.
+                
+                
+                    Compositional Data Analysis
+                    The statistical analysis detailed in the previous section produces easily
+                        interpretable results; separate clusters of Latin and Greek authors.
+                        However, the authors ignore a constraint on the data, that the number of
+                        clauses examined is always one hundred. This constraint has far-reaching
+                        implications, Aitchison (1986) shows that that interpretation of the
+                        covariance matrix of data with a constrained sum is fraught with problems.
+                        Thus any analysis of the data which involves the covariance matrix is also
+                        suspect. This includes principal components analysis, discriminant analysis
+                        and certain versions of cluster analysis. We shall use compositional data
+                        analysis analogues of these techniques to investigate these data.
+                    Logcontrast principal components analysis and logcontrast cluster analysis
+                        broadly confirm the results from the crude analysis and add refinements; the
+                        Graecian nature of Varro's word-ordering and the highlighting of genre
+                        differences with Tacitus appear to merit further investigation. In addition,
+                        some Greek texts of Plutarch and Marcus Aurelius appear more Latinate than
+                        had been previously noticed.
+                    Discriminant analysis results in these Greek texts being classed as Latinate,
+                        while Tacitus' Agricola is classified as Graecian.
+                        In addition, the texts by Cassius Dio and the Greek version of the Res Gestae are classed as Latinate.
+                    Further work is currently being undertaken on other works by Varro which
+                        appears to indicate that his word-order straddles the Greek-Latin boundary.
+                        This will be reported in detail at the conference.
+                
+            
+        
+        
+            
+                References:
+                
+                    
+                        
+                            
+                                
+                                    J.
+                                    Aitchison
+                                
+                            
+                            The Statistical Analysis of Compositional Data
+                            Monographs in Statistics and Applied
+                                Probability
+                            
+                                London
+                                Chapman and Hall
+                                1986
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    B.
+                                    D.
+                                    Frischer
+                                
+                            
+                            
+                                
+                                    R.
+                                    Andersen
+                                
+                            
+                            
+                                
+                                    S.
+                                    Burnstein
+                                
+                            
+                            
+                                
+                                    J.
+                                    Crawford
+                                
+                            
+                            
+                                
+                                    H.
+                                    Dik
+                                
+                            
+                            
+                                
+                                    R.
+                                    Gallucci
+                                
+                            
+                            
+                                
+                                    A.
+                                    Gowing
+                                
+                            
+                            
+                                
+                                    D.
+                                    Guthrie
+                                
+                            
+                            
+                                
+                                    M.
+                                    Haslam
+                                
+                            
+                            
+                                
+                                    D.
+                                    I.
+                                    Holmes
+                                
+                            
+                            
+                                
+                                    V.
+                                    Rudich
+                                
+                            
+                            
+                                
+                                    R.
+                                    K.
+                                    Sherk
+                                
+                            
+                            
+                                
+                                    A.
+                                    Taylor
+                                
+                            
+                            
+                                
+                                    F.
+                                    J.
+                                    Tweedie
+                                
+                            
+                            
+                                
+                                    B.
+                                    Vine
+                                
+                            
+                            Word-order transference between Latin and Greek: The
+                                relative position of the accusative direct object and the governing
+                                verb in Cassius Dio and other Greek and Roman prose authors
+                        
+                        
+                            Harvard Studies in Classical Philology
+                            
+                                
+                                
+                                
+                                1999
+                            
+                        
+                        Forthcoming
+                    
+                
+            
+        
+    

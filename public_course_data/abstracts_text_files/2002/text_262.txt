@@ -1,0 +1,1004 @@
+
+
+
+    
+        
+            
+                Into the Depths of Data. Methods of Subject Specific
+                    Content Retrieval
+                
+                    
+                        Kurt
+                        Gärtner
+                        
+                            University of Trier
+                            gaertnek@mailer.uni-marburg.de
+                        
+                    
+                
+                
+                    
+                        Gisela
+                        Minn
+                        
+                            University of Trier
+                            minn@uni-trier.de
+                        
+                    
+                
+                
+                    
+                        Andrea
+                        Rapp
+                        
+                            University of Trier
+                            rappand@uni-trier.de
+                        
+                    
+                
+                
+                    
+                        Martin
+                        Raspe
+                        
+                            University of Trier
+                            raspe@uni-trier.de
+                        
+                    
+                
+                
+                    
+                        Ruth
+                        Christmann
+                        
+                            University of Trier
+                            christma@uni-trier.de
+                        
+                    
+                
+                
+                    
+                        Thomas
+                        Schares
+                        
+                            University of Trier
+                            schares@uni-trier.de
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    In April 1998, the Competence Centre for Electronic
+                            Retrieval and Publishing Techniques in the Humanities was founded
+                        at the University of Trier. The use of international hard- and software
+                        independent standards as SGML/XML is one of the main targets of the
+                        Competence Centre in dealing with full-text digitization especially of
+                        critical editions, dictionaries, and important reference works. Information
+                        scientists and humanists from various disciplines are working closely
+                        together in order to guarantee that the electronic resources developed at
+                        the Centre meet with scientific requirements. Furthermore, the team aims at
+                        complex and powerful retrieval mechanisms that can be handled easily by a
+                        consistently user-oriented design of Graphical User Interfaces. An important
+                        overall feature that has often been ignored by people working in the field
+                        of digitization but is characteristic for the research done at the
+                        Competence Centre is the close linking of software development to the
+                        scholarly background of the material.
+                    Examples for the development of user-oriented software in different projects
+                        as well as for the embedding of the activities of the Competence Centre into
+                        research done by universities and the German academies of sciences shall be
+                        given in the following three papers on (A) the Rhine-Meuse Net, (B) the WIRE
+                        project, and (C) the digitization of the Deutsche
+                            Wörterbuch - a history, an art history, and a German language
+                        and literature project.
+                    (A) The conception of the so-called Rhine-Meuse Net originated from the
+                        activities of a Collaborative Research Centre (= SFB 235) having examined
+                        the history of a European core area from the Ancient World to the 19th
+                        century. For more than 12 years, a large amount of valuable data has been
+                        accumulated in multiple document types and formats. However, not all the
+                        material was published, although, in many cases, even the unpublished
+                        material is of high interest to researchers in and outside the context of
+                        the SFB. Therefore, the existing data will now be encoded in order to ensure
+                        its longevity and at the same time be entered into a database. Thus it will
+                        be possible to use these data even though the funding of the SFB by the
+                        Deutsche Forschungsgemeinschaft (= DFG) is due to cease in 2002.
+                    (B) In contrast to the Rhine-Meuse Net dealing with material already
+                        existing, WIRE, the Word and Image Retrieval Environment, is primarily intended as a tool for
+                        scholars that need some support in building new (digital) collections of
+                        scientifically relevant texts and images. The internet-based system allows
+                        for an integration of texts, structured data, images, and bibliographies
+                        into a relational database. As WIRE can be configured according to specific
+                        needs, it does not only support the use by individual scholars but is also
+                        well apt at being used by teams of scholars working together on a particular
+                        object of research. Since various retrieval functions are implemented, WIRE
+                        is not only useful for scholars who build new collections but also for those
+                        who only want to browse through collections built by their colleagues.
+                    (C) The retrodigitization of the Deutsche Wörterbuch
+                        by Jacob and Wilhelm Grimm has to be seen in the broader context of
+                        dictionary making at the University of Trier. When work on a new Middle High
+                        German dictionary was started in 1994, lexicographers wished to have access
+                        to as many electronic texts and dictionaries as possible. However, to fully
+                        exploit the advantages of an electronic dictionary, one does not only need a
+                        fairly thorough markup of the entries but also a highly comfortable way to
+                        present the dictionary on screen and thus make it readable - just imagine
+                        that several entries of the Deutsche Wörterbuch
+                        cover more than 300 columns in print! The demonstration of the CD-ROM
+                        prototype of the Deutsche Wörterbuch might serve as
+                        a good example for how in-depth retrieval carried out thoroughly contributes
+                        to the development of software that allows accessing the dictionary data in
+                        new ways.
+                    It will be very interesting to see how new possibilities to access data of
+                        various provenance and of multiple kinds will lead to new questions, new
+                        methods, and new insights into the digitally edited source material.
+                
+                
+                    
+                        Title A: The Information and Reference Network for the History of the
+                            Rhine-Meuse Area. An Area-Oriented Subject Information System for the
+                            Humanities
+                        Dr. Gisela Minn
+                        Dr. Andrea Rapp 
+                        
+                            
+                                1. General and Institutional Preconditions
+                                Apart from the parameter "time", the parameter "area" has in the
+                                    past few years received increased attention as a fundamental
+                                    category of human existence. Particularly regions as
+                                    middle-sized units of area have established themselves in a
+                                    multitude of disciplines as ideal units for investigation. In
+                                    the Rhine-Meuse Net, the regional area is made use of as a
+                                    central access and ordering category for the integration of
+                                    research results that are far apart with regard to time and
+                                    differ in document type, methods, and topic. The international
+                                    research compound of the Collaborative Research Centre "Between
+                                    the Meuse and the Rhine. Connections, Encounters, and Conflicts
+                                    in a European Core Area from the Ancient World to the 19th
+                                    Century" (SFB 235) has acquired a large amount of valuable and,
+                                    with regard to document types, very heterogeneous data, that are
+                                    not only concerned with a common area of investigation but are
+                                    also closely connected with regard to content.
+                                This complex amount of data forms the nucleus of a projected
+                                    database serving as a reference system for European regional
+                                    history. The project is being funded by the Deutsche
+                                    Forschungsgemeinschaft (DFG) since 1st November 2001. Apart from
+                                    the historical field with all its specialist research interests,
+                                    there are involved related disciplines such as art history,
+                                    archaeology, history of law, and history of German and Roman
+                                    languages; they all partake in the research compound, as well as
+                                    various national and international, university and
+                                    non-university cooperation partners.
+                                Therefore the project aims firstly to take into account the
+                                    changed needs for information of a growing international
+                                    research community and secondly to lay the grounds for European
+                                    research in history beyond the borders of nation-states. For
+                                    this the network is particularly apt, as it opens up a European
+                                    core area at the intersection between Western and Middle Europe
+                                    from ancient times up to the present, and it will present the
+                                    results of international researchcollaboration. The long-term
+                                    data-conservation and its platform-independent use is ensured by
+                                    a consistent application of international standards on the basis
+                                    of SGML/XML.
+                            
+                            
+                                2. Content-Related Principles of the Network
+                                The realization of the network starts at two core units: Firstly,
+                                    the annotated bibliography of the whole publication output of
+                                    the SFB (about 900 nos.) will be edited, including all the
+                                    unpublished dissertations and theses which document the whole
+                                    scope of research. Due to the area-oriented interest of the SFB,
+                                    cartographical methods and techniques of representation belong
+                                    to the most important research procedures. Thus secondly, an
+                                    electronic archive of maps was built (of about 500 items) that
+                                    will be linked to the bibliography.
+                                By these two core units that are representative for the whole
+                                    scope of the network, thesauri of places, persons, and subjects
+                                    will be accumulated and structured hierarchically for an
+                                    in-depth disclosure of the data. They form the basic framework
+                                    for a further indexing of the data and will be extended to a
+                                    dynamic research tool that will become more extensive and
+                                    complex with the integration of each new reference unit. A
+                                    sophisticated system of indexes and metadata will guarantee the
+                                    linking of these units.
+                            
+                            
+                                3. Variety of Document Types
+                                The document types representing the cultural heritage as well as
+                                    the results of scientific research in digital form are very
+                                    heterogeneous: texts, maps, pictures, plans, images, tables,
+                                    archival finding-aids and repository guides, indices,
+                                    bibliographies etc. At the same time, these document types are
+                                    very closely related as regards content in a very complex and
+                                    multidirectional manner. In the Humanities especially,
+                                    far-reaching methodical and content-related impulses are to be
+                                    expected by an explicit representation of these relations.
+                                Moreover, the general approach requires interdisciplinary and
+                                    comparative studies, new access to digital resources, and the
+                                    development of cartographic methods for analyzation and
+                                    documentation. Therefore, we aim at a concatenation, retrieval
+                                    and integration of these digital reference-units of different
+                                    document types in a reference compound. The following document
+                                    types form the database of the network and have to be opened up
+                                    and interlinked:
+                                        Units of information referring to area and region such
+                                            as local registers and catalogues, complex place lexica,
+                                            single maps and series of maps, annotated atlasses that
+                                            combine maps, place catalogues, and commentaries.
+                                        Units of information referring to persons and
+                                            institutions such as registers and catalogues of
+                                            persons, prosopographies and biograms of persons,
+                                            catalogues, lexica, tables, and lists of institutions.
+                                        Units of information that combine information on texts
+                                            and pictures such as text or picture catalogues,
+                                            visualizations, and reconstructions.
+                                        Units of information that represent sources, archival
+                                            finding-aids, and instruments for the documentation of
+                                            research such as special bibliographies, region-related
+                                            source editions of different genres, and repository
+                                            guides, literature and review service, documentations of
+                                            research.
+                                    
+                                Therefore we provided for the following ways of access by
+                                    thesauri: access by place (in addition by visual representations
+                                    such as two- or three-dimensional maps), access by time, access
+                                    by person, access by topic, access by object via document types
+                                    (e.g. only maps, only sources, etc.), access by funding
+                                    organizations (respective research institution).
+                            
+                            
+                                4. Methods, Technical Bases
+                                Due to the complexity of the structures and the implicit
+                                    relations characteristic for the Humanities, the construction of
+                                    such networks cannot be carried out by automatic means only but
+                                    has to be completed and supervised by human researchers.
+                                    Therefore it is all the more important to develop mechanisms
+                                    with the help of standards that support the construction of a
+                                    complex structure and corresponding retrieval mechanisms
+                                    effectively. Moreover, these mechanisms have to be well
+                                    documented and safely stored for further research in times of
+                                    rapid technical change. Variable, differentiated, and efficient
+                                    strategies for searches and visualizations have to be created
+                                    for convenient use.
+                                Due to different structures of document types brought together in
+                                    the network, existing DTD schemes have to be checked as to their
+                                    usability, varied and expanded, and new DTD schemes have to be
+                                    developed for document types not already on hand in an
+                                    SGML-compliant format. These schemes have to be applicable to
+                                    different research projects as well. The open conception of the
+                                    network resulting from this is the precondition for a transfer
+                                    of these structures and methods to other information and
+                                    reference networks.
+                            
+                            
+                                5. Comparisons and Prospects
+                                The information and reference network is open to cooperation
+                                    projects with university and non-university institutions
+                                    offering further information that goes beyond the scope of
+                                    research of the SFB. Special emphasis is laid on the integration
+                                    of libraries and archives. For example, the SFB bibliography as
+                                    core unit is linked to the OPAC of Trier University Library. The
+                                    integration of archival finding-aids beginning with the
+                                    finding-aids of the municipal archive Worms may serve as an
+                                    example for cooperation with other archives. Furthermore,
+                                    cooperations with scholars from neighbouring countries have been
+                                    established which focus on common region-related aspects and
+                                    methods respectively and, by common use of the information and
+                                    reference network, should be long-lasting.
+                                In some regards, the Rhine-Meuse Net was inspired by the project
+                                    "The Valley of the Shadow. Two Communities in the American Civil
+                                    War", that was carried out at the University of
+                                    Virginia/Charlottesville ().
+                                    Especially the regional aspect as well as the variety of
+                                    document types offered are comparable to the content and
+                                    structure of the Rhine-Meuse Net. However, a significant
+                                    difference can be seen in the variety of topics of the documents
+                                    worked on in the Rhine-Meuse Net and in the in-depth retrieval
+                                    and thorough interlinking of these materials.
+                            
+                        
+                    
+                    
+                        6. Literature
+                        
+                            
+                                
+                                    
+                                        
+                                            Franz
+                                            Irsigler
+                                        
+                                    
+                                    Raumkonzepte in der historischen
+                                    Forschung
+                                
+                                
+                                    Zwischen Gallia und Germania, Frankreich und
+                                        Deutschland. Konstanz und Wandel raumbestimmender Kräfte 
+                                    Trierer Historische Forschungen 
+                                    
+                                        Hrsg. von
+                                        
+                                            Alfred
+                                            Heit
+                                        
+                                    
+                                    
+                                        12
+                                        
+                                        
+                                        1987
+                                        11-27
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Andrea
+                                            Rapp
+                                        
+                                    
+                                    Die elektronische Publikation, Erschließung und
+                                        Vernetzung des Trierer Korpus mittelfränkischer Urkunden des
+                                        14. Jahrhunderts
+                                
+                                
+                                    Jahrbuch für Computerphilologie
+                                    
+                                        Hrsg. von
+                                        
+                                            Georg
+                                            Braungart
+                                        
+                                        
+                                            Karl
+                                            Eibl
+                                        
+                                        
+                                            Fotis
+                                            Jannidis
+                                        
+                                    
+                                    
+                                        Paderborn
+                                        
+                                        
+                                        
+                                        2000
+                                        147-161
+                                    
+                                
+                                online in: Jahrbuch für Computerphilologie
+                                    
+                            
+                            
+                                
+                                    RMnet
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Title B: WIRE -- An Instrument for Collecting Visual and Textual Data
+                        Martin Raspe
+                        
+                            
+                                WIRE (“Word &amp; Image Retrieval
+                                        Environment”) is an integrated environment for
+                                    collecting scientific resources, particularly in the field of
+                                    art history. It is being developed at Trier University and is
+                                    specifically taylored to meet the methodologic needs of the
+                                    discipline. Image data, bibliographic entries, source texts (and
+                                    optionally other structured data) are stored in a single
+                                    relational database, along with an unrestricted number of
+                                    descriptive texts which may contain individual formatting. The
+                                    whole material can be searched conventionally; in addition, the
+                                    content is accessible through a flexible, hierarchically
+                                    organized, multi-lingual keyword system. Data can be entered as
+                                    well as queried via Internet from different places at a time.
+                                    The program is based on widely-spread software components
+                                    (Microsoft Word plus a web browser) and is easy to learn.
+                            
+                            
+                                1. The Problem
+                                Not many art historians use database systems in their research
+                                    projects. This fact is partly explained by the general
+                                    reluctance of traditional scholars towards new technologies; on
+                                    the other hand, available database software doesn't lend itself
+                                    easily to the specific tasks of this discipline. The sources
+                                    consist of images and various types of historic texts which do
+                                    not fit easily into predefined categories or structures;
+                                    accordingly, the methodology of art history is mainly based on
+                                    associative rather than standardized procedures.
+                                Consequently, the incoming data either has to be trimmed down to
+                                    fit in schematic entry forms, or the resulting overhead will
+                                    grow so complex that the efforts to manage the database soon
+                                    overshadow its practical use. Moreover, in the course of every
+                                    research project questions tend to come up that have not been
+                                    thought of when the database structure was first conceived.
+                            
+                            
+                                2. The Idea
+                                Thus the staff of the History of Art department at Trier
+                                    University asked for a program that manages text along with
+                                    images, is equally suited for the needs of teaching and
+                                    research, supports team cooperation at different places and can
+                                    be understood by scholars who have hardly any computing
+                                    experience beyond word processing. Departing from this
+                                    specification I started to look around for software, but it soon
+                                    turned out that existing programs - most of them authoring
+                                    systems - are much too complex and would strain the finances of
+                                    a small department. This situation led to the idea of creating
+                                    such a program myself. Since I am an art historian and have some
+                                    experience in computer programming, the task seemed feasible; as
+                                    an associated member of the "Competence Centre", I get all the
+                                    practical support I need.
+                            
+                            
+                                3. The Concept
+                                My intention was to create a kind of working tool for art
+                                    historians that supports the collecting of visual and textual
+                                    data. It soon became clear that the program had to focus on
+                                    three major types of material, i.e. images
+                                        of works of art, original source
+                                        texts and bibliographic
+                                        references, all three of which should be accessed
+                                    through textual descriptions. In addition it should be possible
+                                    not only to collect the material,
+                                    but also to arrange it, to comment on it and to add independent
+                                    scientific texts without restrictions. On top of that, people at
+                                    different places should be able to work simultaneously with the
+                                    same database.
+                                WIRE tries to meet these requirements in a simple and robust, but
+                                    flexible way. It tries to combine two different types of data, a
+                                        collection of unstructured scientific
+                                        texts and a structured database
+                                        system that can be queried with exact criteria. The
+                                    texts that describe, summarize or comment the source material
+                                    form the scientific backbone of the database. Links can be
+                                    created from these texts to any of the source documents and
+                                    between them, so that the user is guided from one document to
+                                    other pertinent subjects. All texts can be searched fully, but
+                                    to retrieve the content intelligently a flexible keyword system
+                                    based on thesaurus lists is used. Each text may be associated
+                                    with any number of keywords; single keywords as well as entire
+                                    thesauri can be modified and added at any time without touching
+                                    the main data tables. The keywords can be structured
+                                    hierarchically, so that a search for "Tuscany" will also return
+                                    those entries which were only associated with the keywords
+                                    "Florence" or "Pisa."
+                                A main goal is ease of use: All entry, modification and data
+                                    maintenance is done from Microsoft
+                                    Word, while the material may be searched and viewed
+                                    through a web browser. Data collections can be accessed locally,
+                                    but also via Internet from all over the world. Accordingly, WIRE
+                                    has a multilingual user interface (currently you can switch
+                                    between German and English; French, Italian and Latin are
+                                    planned). WIRE is not suited for highly specific databases with
+                                    many fields which require complex query strategies; in order to
+                                    achieve simplicity and flexibility some compromises are made.
+                                    Anyway, the collected material can be exported to other
+                                    databases using standard SQL commands; exporting into
+                                    standardized XML format is planned, thereby ensuring the future
+                                    value of the collected data.
+                            
+                            
+                                4. The Realization
+                                
+                                    Database design
+                                    Every project that is realized in WIRE is an independent,
+                                        internet-accessible database that contains the complete data
+                                        (except for the image files which are stored in separate
+                                        directories). The three categories of source material and
+                                        the accompanying texts are stored in predefined tables
+                                        (which can be customized later). The bibliographic table has
+                                        the characteristic fields, while the image table contains
+                                        filenames and short identification tags. Each keyword list
+                                        is stored in a separate table; one of its fields denotes the
+                                        position of the entry in the hierarchy. To guarantee speed
+                                        and consistency, all links between documents and keywords
+                                        are stored in one heavily indexed table. Table definitions
+                                        and individual customizations are kept in a configuration
+                                        script and can be easily modified.
+                                
+                                
+                                    Software
+                                    WIRE is realized with robust, ubiquitous and inexpensive
+                                        software. The Swedish open-source product MySQL serves as its database
+                                        engine, whereas for internet querying the free web server
+                                            Xitami is used. The script
+                                        modules that combine both are written in Perl, a widely-used free
+                                        programming language. In the future it will be possible to
+                                        install the system and to create individual databases
+                                        through user-friendly routines. A special document template
+                                        for Microsoft Word helps to
+                                        input the data and to manage the database, so that
+                                        researchers won't have to leave their familiar working
+                                        environment. The formatting is converted into HTML code and
+                                        inserted into the database along with the unencoded text
+                                        which is used for searching. Except for the Word interface WIRE runs on other
+                                        operating systems, too.
+                                
+                            
+                            
+                                5. The Users
+                                WIRE is being designed for art historians, but it may be useful
+                                    in other disciplines of the humanities, too. It could serve
+                                    students and teachers alike, whether they work together in
+                                    research projects or on their own in seminars. Students could
+                                    present their papers using WIRE and at the same time preserve
+                                    and maintain the material for future use. Currently it is
+                                    already in use at Trier University as a platform for half a
+                                    dozen projects, some of which are dependent on international
+                                    collaboration.
+                            
+                        
+                    
+                    
+                        Publications
+                        
+                            
+                                
+                                    
+                                        
+                                            Martin
+                                            Raspe
+                                        
+                                    
+                                    WIRE - ein Instrument zur Materialsammlung in
+                                        den Bildwissenschaften
+                                
+                                
+                                    EVA 2001 Berlin (Electronic Imaging &amp;
+                                        the Visual Arts), Konferenzband
+                                    
+                                        
+                                        
+                                        [forthcoming]
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Title C: Towards the User: The Digital Edition of the Deutsche Wörterbuch by Jacob and Wilhelm Grimm
+                        Ruth Christmann, M.A.
+                        Thomas Schares, M.A. 
+                        
+                            
+                                
+                                    1. Starting position, targets:
+                                    The Deutsche Wörterbuch (DWB) by
+                                        Jacob and Wilhelm Grimm is the most important dictionary to
+                                        the German language. Begun in 1838 and completed in 1971
+                                        with the publication of an index volume to the numerous
+                                        sources quoted within the DWB, it is a chief stock for
+                                        scholarly study of the German language and comparable to the
+                                        importance of the OED for the English-speaking world.
+                                    In November 1998, a team of lexicographers and computer
+                                        scientists started to develop a digitized version of the
+                                        DWB, taking into account the needs of academic researchers
+                                        wanting to cope with the huge amount of data. This is, and
+                                        always has been, a task not too easily performed, as the DWB
+                                        is used by students of German, historians, lexicographers,
+                                        and philologists of all disciplines.
+                                    The DWB consists of 32 volumes and one index volume. It fills
+                                        altogether 33,872 pages in folio-format, contains ca.
+                                        250.000 main entries, the number of printed characters
+                                        amounts to 300 million. (Compare the 2nd Edition of the OED:
+                                        21,730 pages, 231,000 main entries, 350 million printed
+                                        characters). The printed dictionary has been made
+                                        machine-readable by a Chinese company and has been completed
+                                        in October 2000. After having received the first files from
+                                        China we started to insert SGML-markup compliant to the TEI
+                                        guidelines into the dictionary. First we decided on marking
+                                        up two volumes that were published in the 1950s, as the last
+                                        volumes published have a fairly uniform structure.
+                                        Afterwards the procedures developed for these volumes were
+                                        applied to the other volumes successively, starting from the
+                                        first volume which had been published in 1854.
+                                    As a dictionary retrodigitization project, we do not have to
+                                        cope with different classes of information or media. What we
+                                        need to do is digitize dictionary entries, which exist
+                                        already in a final state and - what is by no means trivial
+                                        -, give users a firm grip on what they are looking for
+                                        within the dictionary without restraining them by supplying
+                                        unsuitable means for information retrieval.
+                                
+                                
+                                    2. Necessity for retrodigitization: Beyond the scope of
+                                        the printed dictionary
+                                    From the very beginning of the project, it was our aim to
+                                        anticipate the needs of the average user of the DWB. As the
+                                        DWB has complicated and heterogeneous structures as a result
+                                        of nearly one and a half centuries of philological research
+                                        and lexicography which determine the dictionary's contents
+                                        and structure, the access to the printed version of the DWB
+                                        is quite complicated: Not only does the user have to consult
+                                        more than one volume in most cases, as the DWB is full of
+                                        cross-references to other parts of the dictionary or to
+                                        certain columns within the same entry which may be found
+                                        dozens of pages apart from each other. The reader is also
+                                        confronted with the difficulty to find exactly those
+                                        paragraphs within an entry he is interested in, e.g. the
+                                        exact meaning he is looking for: Due to the long time it
+                                        took to complete the DWB, the entries are very
+                                        heterogeneously structured, and hierarchical elements vary
+                                        according to different underlying entry structures and often
+                                        serve different purposes.
+                                    Therefore, a digitized version of the DWB has to take into
+                                        account these problems and in the first place has to
+                                        facilitate a convenient access to the dictionary entries.
+                                        Second, the graphical user interface (GUI) has to support an
+                                        effective orientation within and a sophisticated navigation
+                                        through the dictionary, it should make it easy to follow up
+                                        cross-references within entries as well as within the
+                                        dictionary as a whole.
+                                
+                                
+                                    3. User-oriented approach to data via the DWB GUI
+                                    The DWB GUI is designed to make use of the special riches of
+                                        the dictionary and to provide a comfortable access to its
+                                        contents. It offers various possibilities for simple
+                                        headword search and provides a wide range of information to
+                                        chosen entries. It gives for example the exact reference
+                                        where in the printed dictionary is the entry located,
+                                        furthermore who is the author of the entry (more than 150
+                                        lexicographers participated in the making of the DWB) and
+                                        when did it appear in print (an important information for
+                                        evaluating the entry's contents with regard to historical
+                                        circumstances) etc. The - often cryptic - bibliographical
+                                        information within the dictionary referring to the sources
+                                        of the quotations is being made comprehensible by
+                                        interlinking it with the dictionary's index volume that
+                                        shows the sigla with their full bibliographical information.
+                                    A special feature of the DWB is the great number of very long
+                                        entries: the DWB has more than 50 entries consisting of more
+                                        than 50 columns and more than 200 entries consisting of 5 or
+                                        more columns, about 40 percent of the dictionary contents
+                                        consist of entries of five or more columns length. For ease
+                                        of reference, the GUI is provided with a window section
+                                        which visualizes the hierarchical structure of long entries,
+                                        especially in the sense section. For this purpose, the
+                                        various numbers and characters indicating sections and
+                                        sub-sections - there are up to nine sub-sections - are
+                                        ordered according to a structure resembling a family tree.
+                                        This overview is based on the far-reaching markup that takes
+                                        into account and describes the various functions of numbers
+                                        and characters representing the structural elements of an
+                                        entry.
+                                    This special feature enables users to enhance his search
+                                        strategies considerably by offering them this window with an
+                                        overview of the contents of an entry. From this table of
+                                        contents, users may look up the various 'chapters' of an
+                                        entry. A more detailed description of this special feature
+                                        shows the goal of the design of the DWB GUI: It will offer
+                                        an easy access to the dictionary contents by taking into
+                                        account and encoding all the essential features of the
+                                        dictionary.
+                                
+                                
+                                    4. The DWB retrieval mask
+                                    The electronic DWB will also be provided with a powerful
+                                        search retrieval tool. In addition to the basic features of
+                                        fulltext search and Boolean search, there is the possibility
+                                        of complex queries. These are carried out by making use of
+                                        the structural encoding of the dictionary's data. All key
+                                        elements and sections of an entry have been encoded
+                                        according to their structural positions in order to retrieve
+                                        as much information as possible.
+                                    At present, searches in the electronic DWB are still limited
+                                        to headwords, word class (part of speech), languages
+                                        especially in the etymology section, quotations from poetic
+                                        sources and bibliographical information on these.
+                                        Nevertheless, even now a user interested in word formation
+                                        and the author Goethe may start
+                                        a complex query to find all entries to adverbial derivations
+                                        with the suffix -lich which
+                                        contain at least one quotation by Goethe. The user will
+                                        combine the search for "G*the" (according to the variant
+                                        spellings "oe" or "ö") entered in the field for author/work
+                                        which is linked to the index volume, "*lich" in the field
+                                        for the headword, and "adv" in the field for word class. The
+                                        result will list all the relevant entries within the
+                                        dictionary. This may serve as an example for complex search
+                                        strategies which will be made possible in the electronic
+                                        version of the DWB.
+                                
+                                
+                                    5. The future of digitization and research
+                                    By now, volumes 1 to 9 and volumes 27 to 32 have been encoded
+                                        according to SGML/TEI and since Jan. 2002 been made
+                                        available on the Internet.
+                                    At the time of the conference, the complete DWB will be fully
+                                        encoded and accessible for searches described above.
+                                        Furthermore, PDF files have been designed to represent the
+                                        printed dictionary, these will also be accessible. We will
+                                        give some details as to the problems that had to be solved
+                                        when aiming at an exact representation of the character-sets
+                                        (Greek, Hebrew and others) on different platforms.
+                                    Questions to be discussed when presenting the DWB may focus
+                                        on future necessities of encoding the DWB and of data
+                                        encoding in general, especially in connection with the
+                                        question of user needs. This may also include a comparison
+                                        of the DWB to at least one major digitized dictionary on
+                                        historical principles, the Oxford English Dictionary (OED)
+                                        which is comparable in size and structure.
+                                
+                            
+                        
+                        
+                            Literature
+                            
+                                
+                                    
+                                        
+                                            
+                                                Thomas
+                                                Burch
+                                            
+                                        
+                                        
+                                            
+                                                Ruth
+                                                Christmann
+                                            
+                                        
+                                        
+                                            
+                                                Vera
+                                                Hildenbrandt
+                                            
+                                        
+                                        
+                                            
+                                                Thomas
+                                                Schares
+                                            
+                                        
+                                        Ein “Hausbuch” für alle? Das Deutsche Wörterbuch der Brüder
+                                            Grimm auf CD-ROM und im Internet
+                                    
+                                    
+                                        Jahrbuch für Computerphilologie
+                                        
+                                            2
+                                            
+                                            11-34
+                                            2000
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Thomas
+                                                Burch
+                                            
+                                        
+                                        
+                                            
+                                                Kurt
+                                                Gärtner
+                                            
+                                        
+                                        
+                                            
+                                                Thomas
+                                                Schares
+                                            
+                                        
+                                        Das digitale Deutsche
+                                                Wörterbuch der Brüder Grimm
+                                    
+                                    
+                                         Mitteilungen des Deutschen
+                                            Germanistenverbandes
+                                        
+                                            
+                                            
+                                            
+                                            Forthcoming in 2002
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Ruth
+                                                Christmann
+                                            
+                                        
+                                        
+                                            
+                                                Vera
+                                                Hildenbrant
+                                            
+                                        
+                                        
+                                            
+                                                Thomas
+                                                Schares
+                                            
+                                        
+                                        Ein “heiligthum der sprache” digitalisiert:
+                                            Das Deutsche Wörterbuch von
+                                            Jacob und Wilhelm Grimm auf CD-ROM und im
+                                        Internet
+                                    
+                                    
+                                        
+                                            
+                                                Nicolás
+                                                Castrillo Benito
+                                             et al 
+                                        Tagungsband der ITUG-Jahrestagung 1999 in
+                                            Burgos: TUSTEP educa
+                                        
+                                            Burgos
+                                            
+                                            2002
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Ruth
+                                                Christmann
+                                            
+                                        
+                                        Books into Bytes: Jacob and Wilhelm Grimm's
+                                                Deutsches Wörterbuch on
+                                            CD-ROM and on the Internet
+                                    
+                                    
+                                        Literary &amp; Linguistic Computing
+                                        
+                                            16
+                                            2
+                                            121-133
+                                            2001
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Vera
+                                                Hildenbrandt
+                                            
+                                        
+                                        
+                                            
+                                                Thomas
+                                                Schares
+                                            
+                                        
+                                        Das Grimmsche Wörterbuch geht ins 21.
+                                            Jahrhundert: Präsentation eines Prototyps des digitalen
+                                                Deutschen Wörterbuchs von
+                                            Jacob und Wilhelm Grimm
+                                        
+                                            
+                                            
+                                            ().
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Ruth
+                                                Kersting
+                                            
+                                        
+                                        
+                                            
+                                                Andrea
+                                                Rapp
+                                            
+                                        
+                                        Mein schönes Fräulein ... Bedeutungs- und
+                                            Bezeichnungswandel in Wortfeldern anhand des Grimmschen
+                                            Wörterbuchs
+                                    
+                                    
+                                        Praxis Deutsch
+                                        
+                                            165
+                                            
+                                            54-59
+                                            2001
+                                        
+                                    
+                                
+                                
+                                    
+                                        Homepage:
+                                        
+                                            
+                                            
+                                            
+                                        
+                                    
+                                    
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    

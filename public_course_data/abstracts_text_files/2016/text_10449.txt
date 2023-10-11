@@ -1,0 +1,72 @@
+
+      
+         
+            
+            Konzept
+            
+               EbnerOnline ist
+      eine im www frei zugängliche Digitale Edition von Gesammelten Werken des
+      österreichischen Dialog- und Sprachphilosophen Ferdinand Ebner (vgl.
+      Universitätsbibliothek Salzburg). 
+            In der aktuellen Version beinhaltet die Edition eine Auswahl aus den Texten Ebners, in erster Linie aus seinen philosophischen Werken, den Tagebüchern und Aphorismenbänden. Die Auswahl besteht aus einer Reihe von Schlüsseltexten des Autors, die einen repräsentativen Querschnitt aus den verschiedenen Phasen seines Denkens bieten.
+            Konzipiert war die Edition von Beginn als kommentierte, textkritische Ausgabe. „Textkritisch“ heißt, dass es eine diplomatische Fassung gibt, in der der Text mit allen Bearbeitungen des Autors so wiedergegeben wird wie er im Original vorliegt, ergänzt durch eine normalisierte Fassung, die den Text lesbar macht und alle dazu vorgenommenen Änderungen durch die Herausgeber kennzeichnet.
+            Der Kommentar sollte zusätzliche Informationen bereitstellen, um zu einem besseren Verständnis der Texte zu führen und das Denken Ebners in den größeren Zusammenhang zeitgenössischer Entwicklungen und der europäischen Geistesgeschichte im Allgemeinen einordnen zu lassen.
+            Basierend auf den Erfahrungen des Brenner-Archivs in Innsbruck, an dem der Nachlass liegt, wurden für die Kommentierung ein Stellenkommentar, eine Biographien-Sammlung und ein Werkverzeichnis ausgewählt. Vor- bzw. Nachworte, Editorische Berichte zu jedem Text, ein Sach- und Personenregister sollten den Kommentar vervollständigen.
+            Angelegt wurde die Ebner-Edition als Hybridedition, bestehend aus einer Druckausgabe und einer elektronischen Ausgabe im Hintergrund, deren Veröffentlichung im www erfolgen sollte. Das Ziel war, EbnerOnline so aufzubauen, dass auf die Quelltexte und die Metainformationen in der gleichen Weise stabil und dauerhaft zugegriffen werden kann wie das beim analogen Pendant der Fall ist.
+         
+         
+            Realisierung
+            Zur Umsetzung dieses Konzeptes wurden die transkribierten Texte in XML-TEI
+        ausgezeichnet. Das markup umfasst dabei sowohl die textkritischen Aspekte, d. h.
+        die Bearbeitungen des Autors und der Herausgeber als auch den Kommentarteil. Zu
+        jedem Text gibt es eine XML-TEI Datei, die den Einzelstellenkommentar enthält.
+        Die Kommentare sind mit fortlaufenden, automatisiert vergebenen ID’s eindeutig
+        mit den Lemmata verlinkt. Gleiches gilt für die biographischen und
+        bibliographischen Verzeichnisse. 
+            Für die Biographien wurde mit den entsprechenden TEI-Elementen eine Biographien-Datenbank angelegt, die Kurzbiographien zu den in den Texten genannten Persönlichkeiten enthält, eine Angabe wichtiger Werke und wo möglich und sinnvoll den Bezug der Person zu Ferdinand Ebner. Im Falle von bekannten Personen entfällt die Kurzbiographie zugunsten eines Links auf die entsprechende Wikipedia Seite, die umfassende, inzwischen auch wissenschaftlich anerkannte Informationen bereitstellt. 
+            Trotz der fortgeschrittenen Digitalisierung und stabilen Identifizierung von Werktiteln in den Bibliothekssystemen entschieden sich die Herausgeber auch hier, auf den angebotenen Satz von TEI-Regeln zurückzugreifen und eine bibliographische Datenbank aufzubauen. So können Informationen zu den Werken, die in Bibliothekssystemen (noch) nicht enthalten sind, einheitlich angezeigt und eine stabile Referenz garantiert werden.
+            In der editionsphilologischen Bearbeitung und Kommentierung musste ein Kosten-Nutzen
+          Kalkül beachtet werden. Das heißt, es wurden nicht alle möglichen TEI-Elemente
+          für das markup verwendet und ein „over tagging“ vermieden. Um dennoch zukünftig
+          einen Ausbau des markups zu ermöglichen, werden den Texten Faksimiles
+          beigestellt, die stets eine Überprüfung des tatsächlich Ausgezeichneten an dem
+          potentiell Auszeichenbaren erlauben.
+            Zur Darstellung und Auswertung der XML-TEI Dokumente im www wurde auf einem Server der Universität Salzburg mit eXistdb eine native XML-Datenbank eingerichtet, die open source ist und in der die Suchmaschine Lucene mit frei konfigurierbaren XQuery Routinen implementiert ist. Die Server-Client Verbindung ist so gestaltet, dass clientseitig unter Einsatz von CSS, HTML und JavaScript (+ Bibliotheken) die stabilen und dynamischen Seitenelemente generiert und über asynchrone http-Anfragen vom Server die Seiteninhalte geliefert werden. Letztere werden am Server mittels xQuery Abfragen und XSLT-Transformationen aus den XML-TEI Dokumenten aufgebaut. Auf diese Weise gelingt es, die Metainformationen nicht nur strukturell, sondern auch visuell mit ihren Lemmata zu verbinden. Auch die Verschachtelung von Metainformationen ist so möglich, ohne dass es zu einem Orientierungsverlust kommt.1
+            
+            Die Suche nach Begriffen und Phrasen erfolgt über eine Suchmaske, in der die zu
+            suchenden Ausdrücke eingegeben werden. In der aktuellen Version wird immer über
+            den gesamten Corpus gesucht, die Ergebnisse werden zunächst in der Maske in Form
+            einer Liste von Werken zurückgeliefert und dann bei Klick auf einen Werktitel in
+            Form der hervorgehobenen und abspringbaren Treffer in dem jeweiligen Text
+            selbst. Eine feinkörnigere Suche, die die Möglichkeiten der umfangreichen
+            Auszeichnung ausnützt (z. B. die Suche nach einer bestimmten Person in
+            bestimmten Werken) musste bisher aufgrund der beschränkten Projekt-Ressourcen
+            unterbleiben.
+         
+         
+            Probleme
+            Die während der Arbeit an EbnerOnline aufgetretenen Probleme sind in der Hauptsache auf fehlende oder ungenügende Standards im Bereich Digitaler Editionen zurückzuführen. Die Verwendung von XML-TEI konnte daran nur bezüglich des markups etwas ändern. Und auch hier ist festzuhalten, dass der Umfang der von der TEI angebotenen Regeln so groß ist, dass es dem einzelnen Projektteam überlassen bleibt, einen eingeschränkten Satz daraus auszuwählen. Das fördert die Flexibilität, macht aber die Intention der TEI, editionswissenschaftliche Standards zu schaffen, ein Stück weit zunichte.
+            Viel auffallender ist das Fehlen von Standards, wenn es um die Auswahl der anderen Komponenten geht, die für den Aufbau einer Online Edition erforderlich sind. Die Wahl von eXistdb als Datenbank etwa war eine projektinterne Entscheidung, für die es gute Argumente, aber keine Empfehlung a la TEI gab. Dass diese Entscheidung zum Glück die richtige gewesen sein dürfte, scheint die zunehmende Verbreitung dieses Produktes innerhalb Digitaler Editionsprojekte zu belegen.
+            Die Probleme aus dem Einsatz dieser Datenbank mussten aus den Erfahrungen im Umgang mit ihr ermittelt werden. Beispiele dazu, die im Vortrag genauer beschrieben werden, sind die zu langen Ladezeiten beim Öffnen eines Textes oder die nicht korrekt angezeigten Treffer bei der Suche nach Phrasen, die über mehrere TEI-tags gehen. Problematisch erwies sich das Konzept, die Texte über JavaScript-Funktionen vom Server zu holen. Dadurch können ihnen keine persistenten Identifier zugeordnet werden, die ihre bibliothekarische Aufnahme und ihre Durchsuchbarkeit über globale Suchmaschinen (Google) ermöglichen.
+            Die derzeit größten Schwierigkeiten bereitet die Sicherstellung der Langzeitarchivierung. EbnerOnline ist das Ergebnis eines Projektes, das 2014 ausgelaufen ist. Die Frage, die sich seitdem stellt, ist, wie die Seite erreichbar bleiben kann, wenn die am Projekt Beteiligten nicht mehr oder nur zum Teil die Betreuung übernehmen können. Eine ausbleibende Integration der Seite in die IT-Infrastruktur der Universität Salzburg würde über kurz oder lang dazu führen, dass EbnerOnline vom Netz verschwindet und die eingesetzten Mittel verpuffen.
+            Ein effizientes Hosting der Seiten Digitaler Editionen durch Institutionen wie Universitäten hängt auch davon ab, ob es insgesamt gelingt, das Standardisierungsproblem zu beheben, etwa indem ein Baukastensystem geschaffen wird, das die zum Aufbau einer Digitalen Edition benötigten Komponenten frei zugänglich macht. Die gegenwärtig häufig noch sehr hohe Hemmschwelle, eine Online-Edition eines Autors zu beginnen, könnte damit gesenkt und die Anzahl an derartigen Projekten gesteigert werden, was wiederum die Leistungsfähigkeit Digitaler Geisteswissenschaften im allgemeinen stärken würde.
+         
+      
+      
+         
+            Die Kommentare sind in der aktuellen Version nur für das Hauptwerk Ebners
+                Das Wort und die geistigen Realitäten eingeblendet.
+              
+         
+         
+            
+               Bibliographie
+               
+                  Universitätsbibliothek Salzburg (o. J.): Ferdinand Ebner Online Edition
+                  http://www.uni-salzburg.at/index.php?id=202485 [letzter Zugriff
+                15. Februar 2016].
+            
+         
+      
+   
+

@@ -1,0 +1,263 @@
+
+
+
+    
+        
+            
+                Some considerations on a framework for electronic
+                    editions
+                
+                    
+                        Fotis
+                        Jannidis
+                        
+                            Institut fuer Deutsche Philologie
+                            LMU Muenchen
+                            fotis.jannidis@lrz.uni-muenchen.de
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                *Considerations on a framework for electronic editions*
+                
+                    Overview
+                    A replacement for tools like Tact and WordCruncher is very much needed,
+                        because the existence of reliable and accepted standards for text encoding
+                        like TEI stimulate the creation of electronic editions, but there is no free
+                        tool available to publish them. The design of such a reading program has to
+                        be abstract enough to make implementations in different programming
+                        languages possible, therefore it would be advisable not to write a new
+                        program but creating a framework for philological components. The proposed
+                        framework should help small to medium sized projects planning electronic
+                        editions to get started with as little additional time and money investment
+                        as possible. At the same time the framework should scale so well, that it
+                        allows its use in very large projects or in projects with a lot of
+                        additional features. As has been pointed out before no philological program
+                        is able to fulfil all user wishes, so extensibility is an important design
+                        factor for the proposed framework. In this paper I will discuss some typical
+                        needs of such a framework from three different perspectives:
+                            1. The end user reading an edition or searching it
+                            2. The editor building an edition
+                            3. The programmer customizing and extending the framework
+                        
+                    In the fourth section I point out some design options and problems for the
+                        architecture of such a framework.
+                
+                
+                    end user
+                    The end user should be able to use the edition in two modes: first without
+                        any learning curve; at least basic feature like reading and simple searches
+                        should be accessible in this mode. Therefore the end user interface should
+                        be imitating established practices like browsing the net and using an
+                        Internet search engine. The second mode for more advanced users has a
+                        command line interface, which allows the formulation (storing, commenting
+                        etc.) of more complex retrieval requests.
+                    Three typical uses of an electronic edition should be possible:
+                            Reading / browsing. Next to the usual navigating along the
+                                structural information of the text, the reader should be able to
+                                choose between different views on the text. Three views are probably
+                                enough for a start: a) simple reading version, where all additional
+                                information is hidden; b) scholarly reading text with all additional
+                                information presented in a typographical form; c) the raw xml text.
+                                In the case of critical editions it should be possible to choose
+                                between different base texts.
+                            Text retrieval. The user can choose to have all 'hits' either
+                                in the sequence they are in the repository or ranked according to
+                                the quality of the 'hit' as is the practice in Internet search
+                                engines. - The scope of the search can be limited to certain parts
+                                of the corpus or extended to include other corpora maybe living on
+                                other servers.
+                            Retrieval of simple statistical information like type/token
+                                ratio, collocation etc. (as in WordCruncher or Tact).
+                        
+                    To have some solid ground for any assumptions on the user needs, this section
+                        will be based on the analysis of some electronic editions and a survey
+                        distributed to editors on the next meeting of German editors.
+                
+                
+                    editor
+                    The editor wants to make the material she or he edited accessible to the end
+                        user without much additional work and without loosing to much information.
+                        These are contradictory aims, because necessarily it needs some
+                        configuration to make all specific features of an edition accessible and a
+                        standard interface can only make those features accessible, which most
+                        editions probably share. But the configuration should be made as easy as
+                        possible and in the normal case should not need any programming knowledge.
+                        Especially for small to medium sized projects there is a need to have some
+                        publishing environment to test the markup during production and to publish
+                        the text because they cannot afford expensive publishing software. Existence
+                        and easy use of such a framework could also stimulate the creation of small
+                        editions because editors would find help with all basic steps.
+                    To get a clearer picture of the needs of editors the survey which has already
+                        been mentioned above will also include questions on what editors expect from
+                        their electronic tools.
+                
+                
+                    programmer
+                    The programmer wants to be able to extend the framework to fulfil the needs
+                        of a special edition. Doing this should be possible by using standards like
+                        XML, TEI, SOAP etc., which he or she probably would know about anyway, and
+                        by working with a well-defined and well-documented API. Having working
+                        examples to build on should further the process of creating new components.
+                        It should be possible to build new components, which enable new ways of
+                        visualization, searching or using (e.g. statistics) the edition. Ideally
+                        these components can be added to the basic software without recompilation of
+                        the other software or reindexing the text, just by registering them with the
+                        framework. The framework shouldn't be tied to a special platform.
+                
+                
+                    The framework
+                    The many different needs, which define the framework, shouldn't lead to a
+                        monolithic program doing it all. They can better be solved with an ensemble
+                        of small components each of them solving only one task. Unix tools are good
+                        model for this, but in contrast to these tools the input and output needs to
+                        be more strictly defined and a graphical user interface, at least for the
+                        group "end user" and the group "editor", should make the tool collection
+                        more accessible. The main task of designing the framework is the definition
+                        of a basic set of such components and the communication between them. The
+                        basic framework doesn't need to have already all requested features users
+                        wish, but should exclude their integration at a later moment.
+                    The following components would be part of such a basic structure:
+                            A web browser based interface to the end user
+                            A component, which receives the cgi requests from the web
+                                browser. It wraps the request information into an xml based
+                                communication format.
+                            A component, which has a table matching, requests to some
+                                request handler. It receives the request, looks up the appropriate
+                                handler and calls it.
+                            A handler, which uses the next two components to send the user
+                                query to the backend. It manages state information etc.
+                            A component, which converts the information from the user form
+                                to some query format using XPath, XML Query etc. See below for a
+                                more detailed discussion of this aspect. This is used by all
+                                components.
+                            A component, which converts the query format to some format the
+                                backend supports (if the query format is supported by the backend,
+                                it is even better).
+                            A backend consisting of some storage for the edited material,
+                                e.g. a relational database or an xml database.
+                            A component, which wraps the results - usually a node set -
+                                return by the backend into some standardized wrapper
+                                format.[1]
+                            A component, which allows the application of xsl:t stylesheets
+                                to the query result to convert it into html, which is sent back to
+                                the web browser.
+                        
+                    It should be possible for a programmer to insert pre- or postprocessor
+                        components into this basic structure, so the components shouldn't be
+                        integrated too tightly. The paper will discuss possibilities to achieve this
+                        by using newer web service protocols like XML-RPC or SOAP.
+                    The framework has to define standards for at least to interfaces in this data
+                        flow: 1) A wrapper format into which the cgi request is stored; 2) a
+                        standardized way to match user requests and handlers; 3) the query language,
+                        4) the wrapper.
+                    The paper will discuss possible solutions, especially contentrating on the
+                        problem of a suitable query language.
+                    The reason for the paper is not so much the proposal of adefined framework
+                        but the hope to start a new discussion in a time where the means for
+                        collaborative work are easily accessible. Not the least aspect of it is its
+                        aim to offer a sound basis for such project by defining the user needs.
+                
+            
+        
+        
+            
+                Literature
+                
+                    
+                        
+                            
+                                
+                                    Michael
+                                    Sperberg-McQueen
+                                
+                            
+                            MOTS 15 - An interactive concordance system built from
+                                mostly off the shelf parts
+                            
+                                
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    John
+                                    Bradley
+                                
+                            
+                            
+                                
+                                    Geoffrey
+                                    Rockwell
+                                
+                            
+                            Towards new Research Tools in Computer-Assisted Text
+                                Analysis
+                            
+                                
+                                
+                                1992
+                            
+                        
+                    
+                
+            
+        
+    

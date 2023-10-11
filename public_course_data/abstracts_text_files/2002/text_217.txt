@@ -1,0 +1,332 @@
+
+
+
+    
+        
+            
+                 LEMMA3 -- a Primarily Wordform Based Wordclass Tagger
+                    and Lemmatizer for Unrestricted German Texts
+                
+                    
+                        Gerd
+                        Willée
+                        
+                            IKP - University of Bonn
+                            willee@uni-bonn.de
+                        
+                    
+                
+                
+                    
+                        Karlheinz
+                        Stöber
+                        
+                            IKP - University of Bonn
+                            kst@ikp.uni-bonn.de
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    The problem of wordclass tagging nowdays gains more and more importancecf. Hans van Halteren, Syntactic Wordclass
+                                Tagging, Dordecht / Boston / London 1999. It is
+                        required for syntactic analyses in dialog systems, for prosody prediction in
+                        speech synthesis and for syntactic annotations of large text corpora. There
+                        seems to be a need for systems which can be implemented as modules in other
+                        NLP-systems.
+                    The system presented here is based on the system LEMMA2e.g. Gerd
+                            Willée (1982): Das Programmsystem LEMMA2 - eine Weiterentwicklung von
+                            LEMMA. IKP-Arbeitsbericht (Abt. LDV) Nr. 2, Bonn 1982 (als Manuskript
+                            veröffentlicht and Gerd Willée (1987): Lemmatisierungsprobleme am Beispiel des Deutschen. Vortrag,
+                            gehalten auf dem 35. Kolloquium über die Anwendung der EDV in den
+                            Geisteswissenschaften in Tübingen written in PL/1 for the use on
+                        main frames. Even if the results and the speed of LEMMA2 were fairly good in
+                        those times, because of the meanwhile mostly outdated programming language
+                        PL/I we decided to rebuild the system and to redesign it at a large scale.
+                    This redesign of the LEMMA2 algorithm resulted in a much faster system, which
+                        can be used in speech synthesis systems at nearly real time, with a very
+                        efficient deflection-modul using an extendable deflection list, a
+                        disambiguation facility for homographs within the closed word classes, and a
+                        mostly stringent separation of the data and the algorithms.
+                    C++ was chosen as programming language because of its easy portability to
+                        many other platforms.
+                
+                
+                    Functionality
+                    LEMMA3 is a word class tagger and lemmatizer of unrestricted German text,
+                        i.e., to each text word form the (or one possible) word class indication,
+                        the base form, and - for the simple tenses of the verbs - the indication of
+                        the inflection is added.
+                    he program processes text in three steps:
+                            Dictionary Lookup: Every text word form is compared with a
+                                dictionary containing the -- at this stage still partly homographic
+                                - members of the closed word classes
+                            Deflection: Word forms belonging to the open, inflected word
+                                classes are processed by the modul MORPH
+                            Disambiguation: The homographs -- the ones from the closed word
+                                classes and the not yet completely resolved inflection indications
+                                of verb forms -- are disambiguated by the modul UMGEBUNG
+                        
+                    LEMMA3 detects the following word classesThe system of word
+                            classes used in LEMMA3 corresponds to the classic system, completed by
+                            the (quasi-)word class 'Verbzusatz' (under special conditions separable
+                            prefixes of German verbs, e.g. 'um-', 'ab-', 'wieder-', cf. 'er kommt
+                            wieder' vs. 'wiederkommend').
+                            verb
+                            verbzusatzsee the endnote above
+                            noun
+                            adjective
+                            adverb
+                            pronoun (incl. article)
+                            conjunction
+                            preposition
+                            postposition
+                            numeral
+                            interjection
+                        
+                    
+                
+                
+                    Structure
+                    The algorithm is mainly word form based, execpt for the module UMGEBUNG,
+                        which uses parts of the sentence context in order to disambiguate
+                        homographs.
+                    The first step after the tokenization is the dictionary look-up.
+                    The dictionary used is a full form dictionary containing the elements of the
+                        closed word classes. The information assigned to a match consists of the
+                        appropriate base form and word class indication, the latter possibly if
+                        necessary a homograph class, which will be disambiguated later on.
+                    Each dictionary entry has the following structure:keyword -- base
+                            form - &lt;word class&gt;
+                    Some sample entries from the dictionary:
+                        denn denn &lt;aK&gt;
+                         in in &lt;PP&gt;
+                        seitlich seitlich &lt;p9&gt;
+                        zu zu &lt;PX&gt;
+                        zugute zugute &lt;VZ&gt;
+                    
+                    The homograph class 'aK' (homograph between a conjunction and an adverb) is
+                        assigned to 'denn' and is to be disambiguated in UMGEBUNG.
+                    The wordclass 'PP' (preposition) is assigned to 'in'.
+                    The homograph class 'p8' (homograph between an adverb and a preposition) is
+                        assigned to 'seitlich' and is to be disambiguated in UMGEBUNG.
+                    The homograph class 'PX' (homograph between a verbzusatz and a preposition)
+                        is assigned to 'zu' and is to be disambiguated in UMGEBUNG.
+                    The wordclass 'VZ' (verbzusatz) is assigned to 'zugute'.
+                    The deflection for verbs, adjectives, and nouns is made by the modul MORPH,
+                        i.e. it determines the word class and generates the proper base form to a
+                        given word form. This is done by the aid of the deflection list, which
+                        contains word stems or parts of them together with the allowed endings for a
+                        given base form and its word class. The latter information can be taken
+                        only, if the tested word form ends in a valid combination of stem and
+                        ending. For verb forms the (at this point often still provisional)
+                        inflection codes are supplied as well.
+                    The entries for nouns can be searched only, if a word form has an initial
+                        capital. The distinction between adjectives and verbs (e.g. 'lieb' vs.
+                        'lieben') can only be done, if the endings are different; otherwose this
+                        distinction has to be done by the modul UMGEBUNG.
+                    The structure of the deflection list is as follows:
+                        keystring (stem)
+                        -- word class -- base form -- list of endings ('$' means 'no
+                        ending'), the endings for verb forms include numeric codes for the
+                        inflection charcteristics.
+                    Some sample entries from the morphlis-dataset:
+                        em su em en, e, s, $,
+                        einzig ad einzig e, em, en, es, er, $,
+                        geh v gehen e,1 $,11 st,3 est,12 (...)
+                        lieb ad lieb (...) es, er, em, $,
+                        lieb v lieben (...) tet,20 st,3 t,5 (...)
+                        liebe su liebe $,
+                    
+                    If the final string of the courrent word form matches a list entry
+                        concatenated with one of the allowed endings given, then the word class is
+                        taken from the entry (in case of nouns after a successful check of an
+                        initial capital of the word form), the base form of the current word is
+                        formed by subsituting the matching string by the given base form, in case of
+                        verbs the appropriate inflection codes are evaluated.
+                    
+                        word form in question: 'Systems'
+                        
+                        word class added: 'su' (noun)
+                        
+                        generated base form: 'System'
+                        
+                        word form in question: 'einziger'
+                        
+                        word class added: 'ad' (adjective)
+                        
+                        generated base form: 'einzig'
+                        
+                        word form in question: 'vergehst'
+                        
+                        word class added: 'v' (verb)
+                        
+                        generated base form: 'vergehen'
+                        
+                        indication of inflection: 'G2' (see list below)
+                        
+                        word form in question: 'liebem'
+                        
+                        word class added: 'ad'
+                        
+                        generated base form: 'lieb'
+                        
+                        word form in question: 'verliebtet'
+                        
+                         word class added: 'v'
+                        
+                        generated base form: 'verlieben'
+                        
+                        indication of inflection: 'V5' (see list below)
+                        
+                    
+                    
+                        word form in question: 'Liebe'
+                        
+                        word class added: 'su'
+                        
+                        generated base form: 'Liebe'
+                    
+                    Explanation of some inflection codes for verbs:
+                        1 G0#: provisinal, homograph between 1.sg.pres.ind.act.
+                            and 3.sg.pres.conj.act.
+                        
+                        3 G2: 2.sg.pres.ind.act.
+                        
+                        11 IS: imp.sg.
+                        
+                        12 K2: 2.sg.conj.[I+II]act.
+                        
+                        20 V5: 2.pl.pret.ind.act.
+                    
+                    The modul UMGEBUNG is the final component of LEMMA3 operating on whole
+                        sentences.
+                    In a first step all word class assignements not yet done by the modul MORPH
+                        are added by rules, according to the word classes already determined for the
+                        surrounding word forms. E.g., if an undetermined word form ending in '-e'
+                        has a pronoun as predecessor and is followed by a noun, then the word class
+                        is 'adjective', the base form is generated by reducing the final '-e' from
+                        the word form. if the predecessor is the word 'ich', then the word class is
+                        verb, the base form is generated by adding a final '-n' and the inflection
+                        is determined as 1.sg.pres.ind.act.
+                    As example for the disambiguation of the homographs found in the dictionary
+                        follows the rule for the homograph class 'p9'(cf. the example form the
+                            dictionary):
+                            'If the word following the word form in question is a pronoun, an
+                                article or a preposition, then it is a preposition; else it is an
+                                adverb.'
+                        
+                    The not yet completely resolved indications of the verbal inflection forms
+                        are disambiguated by context rules, which use the fact, that the 1. and 2.
+                        person of verbforms always must be accompanied by the corresponding personal
+                        pronoun. e.g.:
+                            The provisional indicator 'G0^#' stands for present stems ending
+                                in '-e'. If an 'ich' is found in a defined tontext of the verb,
+                                1.sg.pres.ind.act. is assumed, otherwise 3.sg.pres.conj.act.
+                        
+                
+                
+                    Limitations
+                    The focus for the new conception of LEMMA3 had been laid on a clear
+                        manageable algorithm, the analysis data of which easily can be extended,
+                        more than on a system as linguistically sophisticated as possible. This is
+                        reflected in the choice of the word classes and in the algorithm in general.
+                    Some incorrect word class tages are produced systematically:
+                    Word forms with an initial capital, which are not nouns, (at the beginning of
+                        a sentence), but which resemble nouns, are treated as nouns.
+                    Without further semantic and contextual information it is not possible to
+                        distinguish between word forms like 'tränke' (conjunctive II form from the
+                        verb 'trinken') and 'tränke' (present tense form from the verb 'tränken') on
+                        the base of the pure word form given. In these cases one definite choice had
+                        to be made in favour of the (probabely) more frequent occurrence.
+                    Word sequences like 'hin- und hergehen' cannot be processed correctly by
+                        LEMMA3.
+                    Forms of the compound tenses (like 'ich werde gehen') can be analysed only as
+                        seperated parts ('werde' and 'gehen').
+                    The default rule for word forms with no other classification normally
+                        determines the word class 'noun', which sometimes may be wrong, especially
+                        if the word form has no initial capital.
+                
+                
+                    Evaluation
+                    The evaluation still is in progress. First estimates on a medium sized test
+                        set show that - as for the word classes - LEMMA3 tags more than 95%
+                        correctly.
+                    A more detailed evaluation will be presented at the conference.
+                
+                
+                    Intended Use of LEMMA3
+                    There has been a need for a fast word class tagger for speech synthesis
+                        purposes as well as for corpus linguistics. The first implementation of
+                        LEMMA3 as a modul will be in the BOSS-Systemsee among others:
+                            Stöber, K., (2001), "Bestimmung und Auswahl von Zeitbereichseinheiten
+                            für die konkatenative Sprachsynthese", Doctoral Thesis, University of
+                            Bonn, Germany (Bonn Open Synthesis System)Klabbers
+                            E.A.M., Stöber K., Veldhuis R., Wagner P., Breuer S., (2001), "Speech
+                            synthesis development made easy: The Bonn Open Synthesis System", In:
+                                Proc. Eurospeech'2001, Aalborg, Denmark,
+                            Vol. 1, pp. 521-524 , for which purpose real time processing is
+                        needed, and in RETIVOXRETIVOX is being developed by Dr. B.
+                            Schröder and Dr. Th. Portele, IKP, University of Bonn (e-mail:
+                            B.Schroeder@uni-bonn.de)., a text-to-speech application, which
+                        provides an interface between telephone and e-mail or www; moreover it will
+                        be used stand-alone in corpuslinguistical research and teaching at the IKP.
+                    It will be freely available for scientific purposes.
+                
+            
+        
+    

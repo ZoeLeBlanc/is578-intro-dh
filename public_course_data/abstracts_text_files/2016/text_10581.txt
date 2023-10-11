@@ -1,0 +1,150 @@
+
+      
+         
+            Einleitung
+            Die Diskussion rund um digitale Editionen als Ergänzung oder sogar Ersatz für die
+          klassische Buchausgabe ist in vollem Gange. Grund dafür ist auch der Siegeszug
+          der plattform- und implementationsunabhängigen Metasprache XML in den „Digital
+          Humanities“. Insbesondere der TEI-Standard (Burnard / Bauman 2007) hat dafür
+          gesorgt, dass Informationen aller Art in einem Sammelformat vorliegen, das von
+          vielen neu entwickelten Werkzeugen als Ausgabe- und Austauschformat verwendet
+          wird.
+            Der weitere Bearbeitungsprozess bis hin zur Fertigstellung einer Edition fußt daher heutzutage stark auf XML. Gleichwohl bleibt das Buch als notwendiges Ergebnis eines Editionsprojekts weiterhin die Regel. Somit stehen viele Wissenschaftler zu Beginn eines solchen Projekts vor dem Problem, einen Workflow auf XML-Basis zu definieren, der am Ende möglichst komfortabel – mit oder ohne Zutun eines Verlags – auch einen hochwertigen Buchdruck erlaubt.
+            Projekte wie
+            XML-Print oder
+            Apache FOP setzen hier an und wollen das Textsatzproblem innerhalb der „X-Technologien“
+            1  lösen. Es ist in den vergangenen Jahren jedoch deutlich geworden, dass der wissenschaftliche Textsatz von diesen Werkzeugen (noch) nicht in all seinen Facetten erfasst werden kann. Daher greifen aktuelle Editionsprojekte in der Regel auf etablierte Werkzeuge wie
+            TUSTEP oder andere nicht notwendigerweise XML-basierte Ansätze zurück, indem der XML-Eingabetext mittels XSLT in die entsprechenden Zwischenformate überführt wird.
+          
+            Genau hier möchte der Workshop ansetzen und die Möglichkeiten des Textsatzsystems
+            TeX 2 im Bezug auf die Erstellung
+            einer historisch-kritischen Ausgabe (kritische Edition) vorstellen. Leider wird
+            dieser Weg aus Unwissenheit bzw. wegen falscher oder schlicht veralteter
+            Informationen bzgl. des Funktionsumfangs viel zu selten beschritten. Umso
+            erfreulicher sind Forschungs- und Arbeitsumgebungen wie 
+                  FuD
+                oder
+            
+                  ediarum
+               , die am Ende des editorischen XML-basierten
+              Workflows eine mit TeX erzeugte PDF-Datei zur Kontrolle bzw. als Vorstufe des
+              Druckergebnisses ausgeben. 
+         
+         
+            Funktionsweise von LaTeX
+            
+               Allgemein
+               Das quelloffene Textsatzsystem TeX und die gleichnamige Programmiersprache wurden Ende der Siebziger Jahre vom amerikanischen Mathematikprofessor Donald E. Knuth für den Druck seiner eigener Bücher entwickelt. Das Problem des Textsatzes – „Wie bringe ich unter Beachtung verschiedener Regeln möglichst schön Zeichen aller Art aufs Papier?“ – wurde von ihm als mathematisches Optimierungsproblem definiert und mit neuartigen Algorithmen gelöst. Die
+                  subjektive Schönheit wurde dadurch von Knuth auf Basis typographischer Traditionen und Methoden
+                  objektiviert.
+                
+               Die so entstandenen Algorithmen, z. B. derjenige für den Zeilenumbruch (Knuth
+                  / Plass 1981) waren bahnbrechend und sind bis heute „State of the Art“.
+                  Entsprechend werden sie auch in jüngerer Software wie Adobe InDesign oder Apache FOP nahezu
+                  unverändert verwendet. Für den Autor eines Texts bedeutet dies, dass er sich
+                  vollständig auf die inhaltliche bzw. strukturelle Gestaltung konzentrieren
+                  kann. Dies entspricht der Arbeit mit XML-Quelldaten, die in der Regel
+                  keinerlei typographische Anweisungen enthalten. 
+               Somit lebt die klassische Trennung zwischen Autor und Setzer wieder auf, die
+                    durch Textverarbeitungsprogramme in den vergangenen
+                    Jahrzehnten stückweise aufgeweicht worden ist – mit negativen Folgen für die
+                    Druckqualität. In heutigen digitalen Arbeitsumgebungen entspricht der Setzer
+                    einem Satzprogramm, das eine Druckvorlage – heutzutage oft „hinter den
+                    Kulissen“ einer virtuellen Arbeitsumgebung – auf die Quelldokumente eines
+                    Autors anwendet. 
+            
+            
+               Anwendungsfall Kritische Edition
+               Eine kritische Edition stellt besondere Anforderungen an ein
+                      Textsatzwerkzeug. Daher eignet sich dieser Dokumenttyp besonders gut, um die
+                      Qualität von LaTeX zu demonstrieren. Plachta definiert für eine kritische
+                      Edition zehn elementare Bestandteile (Plachta 2006: 14-15). Diese lassen
+                      sich zu den folgenden drei Themenkomplexen zusammenfassen:
+               
+                  Edierter Text,
+                  Apparate,
+                  Verzeichnisse.
+               
+               Zu all diesen Bereichen liefert LaTeX entweder direkt oder über Erweiterungen (Pakete) Möglichkeiten, hochwertige Ergebnisse zu erzielen. Sie stehen über das zentrale Paketarchiv CTAN
+                        3 allen Nutzern kostenfrei zur Verfügung.
+                      
+            
+         
+         
+            Inhalte des Workshops
+            Entlang der im vorherigen Abschnitt genannten Bestandteile einer kritischen Edition wird der Workshop den Teilnehmern die Gelegenheit geben, LaTeX als Satzprogramm kennenzulernen bzw. vorhandene Kenntnisse auszubauen. Im Detail werden die folgenden Inhalte vermittelt:
+            
+               Edierter Text: Neben den grundlegenden Satzalgorithmen werden
+                        mikrotypographische Fragen thematisiert. Dazu gehören neben der Nutzung
+                        typographisch korrekter Zeichen (z. B. bei Anführungszeichen, Gedankenstrich
+                        oder Ellipse) auch der automatische optische Randausgleich oder die
+                        Laufweitenänderung, die beide durch das Paket microtype bereitgestellt werden. Mehr zum Thema Mikrotypographie
+                        findet man bei Beinert (2015). 
+               Apparate: Die Anforderungen an den Satz von Apparaten gehen weit über
+                          diejenigen „normaler“ Fußnoten hinaus. Es wird das Paket reledmac vorgestellt und neben verschiedenen Anpassungen auch
+                          Lösungen für Probleme wie z. B. überlappende Lemmata erarbeitet. 
+               Verzeichnisse: Eine kritische Edition enthält neben einem Quellenverzeichnis verschiedene Register. Diese sollen im Idealfall direkt aus den Druckdaten dynamisch erzeugt werden. Dazu werden die Erweiterungen
+                            biblatex sowie
+                            imakeidx vorgestellt, die genau dies bewerkstelligen.
+                          
+            
+         
+         
+            Teilnehmerkreis / Technische Ausstattung
+            Der Workshop richtet sich an alle interessierten Wissenschaftler_innen, die Wert
+                          auf einen hochwertigen Druck ihrer Edition legen. Auch Entscheidungsträger, die
+                          ein Textsatzsystem für ihr Editionsprojekt suchen, sind ausdrücklich
+                          angesprochen. Für die praktischen Beispiele werden grundlegende Kenntnisse der
+                          Textsatzsprache LaTeX vorausgesetzt.
+            Da es sich um eine „Hands-on“-Sitzung handelt, sollte die Teilnehmerzahl 15 nicht
+                            übersteigen, wobei ich eine Warteliste begrüßen würde. Die Teilnehmerinnen und
+                            Teilnehmer benötigen einen Laptop mit einer (möglichst aktuellen)
+                            TeX-Distribution (MiKTeX oder TeX Live). Für die Präsentation selbst wird ein
+                            Beamer benötigt.
+         
+      
+      
+         
+            Unter den X-Technologien versteht man die W3C-Standards XML, XSL und XPath sowie je nach Kontext weitere im XML-Umfeld entstandene Sprachen und Formate wie XQuery oder XLink.
+            TeX wird seit langem schon nur noch
+                              selten direkt angewendet, sondern in der Regel über eine Makrosprache wie
+                              LaTeX (siehe z. B. http://www.latex-project.org) oder ConTeXt (siehe z. B. http://wiki.contextgarden.net/What_is_ConTeXt) angesprochen. Der
+                              Workshop konzentriert sich auf LaTeX.
+            Das
+                                Comprehensive TeX Archive Network stellt über zwei zentrale Server und mehr als hundert Spiegelserver (Mirrors) weltweit unter
+                                http://www.ctan.org insgesamt über 4500 Erweiterungen bereit.
+         
+         
+            
+               Bibliographie
+               
+                  Beinert, Wolfgang (2015): Typolexikon.de. Das Lexikon der europäische Typographie http://www.typolexikon.de/m/mikrotypographie.html [letzter
+                                  Zugriff 05. Februar 2016].
+               
+                  Berlin-Brandenburgische Akademie der Wissenschaften
+                                  (2010): ediarum. Eine digitale Arbeitsumgebung für
+                                  Editionsvorhaben http://www.bbaw.de/telota/software/ediarum [letzter Zugriff 05.
+                                  Februar 2016].
+               
+                  Burnard, Lou / Bauman, Syd (2007): TEI P5. Guidelines for Electronic Text Encoding and Interchange.
+                                    Text Encoding Initiative http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ [letzter
+                                    Zugriff 05. Februar 2016].
+               
+                  Knuth, Donald E. / Plass, Michael F. (1981): “Breaking
+                                      paragraphs into lines”, in: Journal Software: Practice and
+                                      Experience 1 0.1002/spe.4380111102.
+               
+                  Plachta, Bodo (22006): Editionswissenschaft: eine Einführung in Methode und
+                                        Praxis der Edition neuerer Texte (= Reclams Universal-Bibliothek
+                                        17603). Stuttgart: Philipp Reclam jun. 
+               
+                  Trier Center for Digital Humanities (TCDH) /
+                                          Forschungszentrum Europa (FZE) (2014): FuD.
+                                          Eine virtuelle Forschungsumgebung für die Geisteswissenschaften. Universität
+                                          Trier http://fud.uni-trier.de/de/ [letzter Zugriff 05. Februar
+                                          2016].
+            
+         
+      
+   
+

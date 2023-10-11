@@ -1,0 +1,162 @@
+
+
+
+    
+        
+            
+                A Text-Based Approach to Electronic Cataloguing of
+                    Non-Western Manuscripts
+                
+                    
+                        Kim
+                        Plofker
+                        History of Mathematics/Scholarly Technology Group Brown University
+                            Kim_Plofker@Brown.edu
+                        
+                    
+                
+                
+                    
+                        David
+                        Pingree
+                        History of Mathematics/Scholarly Technology Group Brown University
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The importance of the descriptive catalogue of manuscripts as a bibliographic
+                    tool is currently being reaffirmed by the interest shown by various institutions
+                    in creating such catalogues on-line. The advantages of an electronic format for
+                    such a tool--accessibility, searchability, ease of revision and expansion--are
+                    too widely recognized to need explication here. Instead, this paper concentrates
+                    on some of the difficulties involved in the attempt to exploit these advantages
+                    without sacrificing the usefulness of the mature traditional printed format,
+                    particularly in the case of non-Western texts; and on the solutions employed in
+                    designing one such project, an electronic descriptive catalogue of some 5000
+                    manuscripts from South and West Asia.
+                The task of descriptive cataloguing itself, irrespective of the format of the
+                    finished product, exhibits a new set of problems to those cataloguers who
+                    venture outside the European textual tradition. In the first place, the greater
+                    chronological extent of the chirographic tradition in most of Asia, as compared
+                    to that in most of Europe (where scribal copying of texts began later and was
+                    sooner replaced by printing) means that there are simply more manuscripts from
+                    the non-Western world, by some orders of magnitude. Related to this is the
+                    comparative lack of bibliographic control for non-Western manuscripts, where the
+                    relation among author, text, and manuscript is generally much more obscure than
+                    for European ones. Thus any catalogue of such manuscripts must undertake to be
+                    also a catalogue of the texts themselves, rather than merely concentrating on
+                    the physical characteristics of manuscript instances of known works.
+                The same uncertainty permeates almost all other aspects of Asian manuscriptology.
+                    Even the subject classifications of known works are not firmly established in
+                    all their divisions: although a sufficiently minute classification scheme may
+                    exist in the work's indigenous tradition, such schemes are in many cases not yet
+                    usefully integrated into Western bibliography. The features of the physical
+                    manuscripts are no more tractable than those of their more abstract contents.
+                    Since it is neither feasible nor sensible to refrain from cataloguing
+                    non-Western manuscripts until all these varied issues of bibliographic and
+                    codicological control have been resolved (and indeed, in all probability it is
+                    only the knowledge gained through cataloguing attempts that will make it
+                    possible to resolve them), the author of such a catalogue must for the present
+                    rest satisfied with ensuring that its structure and presentation convey as much
+                    information as possible, without giving misleading impressions of certainty
+                    where none exists.
+                The foregoing brief and simplified description of some challenges peculiar
+                    (either in kind or in degree) to making a catalogue of non-Western manuscripts
+                    should serve to make it apparent that the electronic finding aid, implemented as
+                    or at least based upon a fielded database, is not in all respects the ideal
+                    model for producing such a catalogue in electronic form. The searchable fielded
+                    database works best with data that conforms well to a highly organized and
+                    unambiguous structure, and that can easily be segmented and then reconstructed
+                    in an automated process. The varying confidence levels of the information
+                    comprised by a catalogue of non-Western manuscripts are not as well suited to
+                    this format. Finally, a descriptive catalogue in electronic form should have a
+                    structure that is easily converted to that of a conventional printed catalogue,
+                    with the standard textual finding aids that electronic search capabilities
+                    attempt to mimic and extend.
+                These are the considerations that shaped the design of the bio-bibliographical
+                    electronic cataloguing project described in this paper, a project now being
+                    developed by the American Committee for South Asian Manuscripts (ACSAM). ACSAM
+                    will publish over the next few years an on-line version of a Union Descriptive
+                    Catalogue containing detailed information about thousands of South and West
+                    Asian manuscripts in North America and the texts contained in them. The
+                    prototype of the Union Descriptive Catalogue reflects some approaches differing
+                    from the design of most traditional electronic finding aids; they were adopted
+                    to lessen the tensions described above between the binary logic of computer
+                    operations and the ambiguity inherent in describing works and manuscripts
+                    outside the European tradition. The chief of these approaches is the abandonment
+                    of a fielded database structure in favor of SGML.
+                The catalogue's user interface also requires some deviations from that of a more
+                    straightforward electronic finding aid, in order to accomodate the unusual
+                    nature of the data. Although non-roman scripts will all be represented in roman
+                    transliteration, the transliterated characters must include a complete set of
+                    diacritical marks in order to provide unambiguous standard scholarly character
+                    equivalents for each script. At the same time, the screen representation of
+                    these characters must be as little dependent as possible on the advanced
+                    capabilities of current hardware and software, since many users will not have
+                    access to the latest technology or anything near it. Finally, the search engine
+                    will have a customized query manager to augment its existing capabilities of
+                    searching for free text and/or by element or attribute type, or structural
+                    characteristic. The query manager will employ various "fuzzy matching"
+                    techniques to optimize the usefulness of searches whose typical ambiguities will
+                    include variant forms or vocalizations of names, comparisons of precise dates or
+                    chronological ranges with vague or unknown ones, identification of well-known
+                    texts by the European version(s) of their titles, and so forth. The goal of the
+                    design as a whole is to use as much as possible of the power of computing
+                    capabilities while simultaneously doing no violence to the somewhat amorphous
+                    structure of the data.
+            
+        
+    

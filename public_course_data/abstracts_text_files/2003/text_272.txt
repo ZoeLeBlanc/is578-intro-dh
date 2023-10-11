@@ -1,0 +1,316 @@
+
+
+
+    
+        
+            
+                Tagging Time in PROLOG: from quick and dirty to TEI 
+                
+                    
+                        Jan
+                        Christoph
+                        Meister
+                        
+                            University of Hamburg 
+                            jan-c-meister@uni-hamburg.de
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper presents work in progress from a current research project at Hamburg
+                    University that employs Humanities Computing methodology for developing and
+                    testing a new theory and model of “narrative time”. Our premise is that
+                    narrative time should be defined in functional and not in essential or
+                    categorical terms: time is not an objective phenomenon, but a cognitive
+                    construct and can thus best be modeled in terms of a 'temporality effect'. This
+                    effect -- that is, the impression of temporal order in narrative, both on the
+                    level of fictional reality and narrative discourse – is to be explained and
+                    analyzed in terms of the distribution of empirical 'notions' (representations of
+                    objects) and 'temporal operators' throughout a representational medium, in our
+                    case: a narrative text.
+                Humanities Computing methodology plays a central role with regard to both the
+                    description (markup) and the subsequent combinatory analysis of relevant textual
+                    elements. However, adhering to a TEI compliant tagging approach proves
+                    unacceptably complicated. The paper therefore argues for a quick and dirty approach to time tagging based on feature structure
+                    tags that are defined in the form of PROLOG clauses.
+            
+            
+                THEORY
+                To date most theories of narrative—in particular those focusing on the domain of
+                    literary narratives—conceptualize of ‘time’ in terms of a dichotomy of narrated time vs. time of
+                        narration or, as Günter Müller’s classic formulation goes, of Erzählzeit vs. erzählte
+                        Zeit. This is essentially an ontological distinction that attempts to
+                    set apart two ‘worlds’, each of with is seen to have its ‘own time’. However,
+                    this distinction immediately becomes problematic when dealing with non-fictional
+                    representations of events which, irrespective of chronological proximity, are by
+                    definition situated on a singular objective time line. Our approach is therefore
+                    based not on the traditional narratological concept, but rather on the unitary
+                    model of time originally proposed by McTavern who distinguished between two
+                        perspectives onto time: namely, that of events
+                    in an objective before-after relationship (the
+                    so-called B-series of time), and that of events as
+                    occurring in the subjective cognitive order of future-present-past (A-series). 
+            
+            
+                COMPUTER-BASED IMPLEMENTATION
+                As far as tools are concerned, the implementation of this theoretical model in a
+                    Humanities Computing orientated project has necessitated the development of two
+                        programs:
+                        TempusMarker -- a software tool providing automatic and semi-automatic
+                            markup routines for the tagging of temporal expressions in natural
+                            language texts. A prototype of TempusMarker has already been
+                                programmed.Available for download at . A
+                                detailed description of the tool (in German) is
+                            included.
+                        TempusParser -- an analytical tool that generates a version (or
+                            versions, as the case may be) of the base text in which all the
+                            sequences that form a complex narrative discourse are organized in
+                            strict chronological order. This (re)construction is the result of an
+                            algorithm driven process of analysis and recombination of textual
+                            segments during which the ‘time stamp’ of each segment as indicated by
+                            the temporal tags is interpreted.A schematic representation
+                                of the TempusParser architecture and workflow is available at 
+                    
+                The computational implementation of McTavern’s model for the purpose of concrete
+                    analyses of A-series governed textual discourse and its eventual reconstruction
+                    in terms of B-series ordered event sequences offers an interesting example for
+                    the difficulties faced by the computing Humanist who tries to tackle even
+                    modestly ‘intelligent’ hermeneutic problems. In the project to be presented here
+                    an added problem stems from its empirical orientation: rather than having
+                    experts (Literary Scholars) tag the texts we are using student groups in order
+                    to simulate as closely as possible the ‘naïve’ reader’s processing habits. A
+                    demonstration of the actual tagging process, including the use of the
+                    TempusMarker prototype, will form part of the presentation.
+                The computational implementation of McTavern’s model for the purpose of concrete
+                    analyses of A-series governed textual discourse and
+                    its eventual reconstruction in terms of B-series
+                    ordered event sequences offers an interesting example for the difficulties faced
+                    by the computing Humanist who tries to tackle even modestly ‘intelligent’
+                    hermeneutic problems. In the project to be presented here an added problem stems
+                    from its empirical orientation: rather than having experts (Literary Scholars)
+                    tag the texts we are using student groups in order to simulate as closely as
+                    possible the ‘naïve’ reader’s processing habits. A demonstration of the actual
+                    tagging process, including the use of the TempusMarker prototype, will form part
+                    of the presentation.
+                Whereas the temporal value of the respective natural language expressions -- be
+                    they denotative or deictic -- is comparatively easy to establish either
+                    contextually, or from a dictionary, their explication in the form of
+                    standardized TEI markup (core tag set + additional tag sets for dates and time,
+                    ref. chapter 20.4. of TEI guidelines) has proven rather unwieldy and often
+                    contra-intuitive to our readers. Defining more readily comprehensible feature structure tags would seem to be the
+                    alternative of choice; however, this raises the methodological question of how
+                    to design a sufficiently fine-grained feature structure that does not
+                    automatically become completely idiosyncratic to the particular research problem
+                    at hand, thus inadvertently restricting the uses of the tagged corpus at a later
+                    stage.
+                Against this background the paper advocates and will demonstrate a calculated
+                        quick and dirty approach to designing temporal
+                    feature structure tags. In particular, it will be shown how the PROLOG predicate
+                    structure can facilitate rapid prototyping of feature structure tags.
+            
+            
+                CONCLUSION
+                Expressing relatively complex hermeneutical problems and models in terms of
+                    Humanities Computing methodology and standards should be conceived of as a
+                    process of translation, rather than one of mere re-presentation. From a
+                    hermeneutical point of view semantic tags are not
+                    just descriptors, but rather predicates of a prepositional clause in which the
+                    tagged string itself is one argument, and its feature values the subsequent
+                    arguments. Capturing experimental temporal feature structure tags in the form of
+                    PROLOG predicates therefore holds two advantages: first, it offers a more
+                    intuitive approach to semantic tagging. Second, it facilitates automatic
+                    conversion of feature structures into composite TEI tags at a later stage, thus
+                    turning the quick and dirty into the beautifully
+                    intricate -- and fast at that.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Christopher
+                                    Habel
+                                
+                            
+                            
+                                
+                                    Frank
+                                    Schilder
+                                
+                            
+                            From Temporal Expressions to Temporal Information:
+                                Semantic Tagging of News Messages
+                        
+                        
+                            
+                            
+                                
+                                
+                                
+                            
+                        
+                        - 27.11.2002
+                    
+                    
+                        
+                            
+                                
+                                    Günter
+                                    Dammann
+                                
+                            
+                            
+                                
+                                    Jan
+                                    Christoph
+                                    Meister
+                                
+                            
+                            The temporality effect: Design and computer-based
+                                application of a constituent model of narrative temporal
+                                order
+                        
+                        
+                            
+                            
+                                
+                                
+                                
+                            
+                        
+                        - 27.11.2002
+                            (contains hyperlinks to the prototype of the TempusMarker tagging
+                            tool.)
+                    
+                    
+                        
+                            
+                                
+                                    John
+                                    Ellis
+                                    McTaggart
+                                
+                            
+                            The Unreality of Time
+                        
+                        
+                            Mind
+                            
+                                17
+                                
+                                457-474
+                                1908
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Günther
+                                    Müller
+                                
+                            
+                            Erzählzeit und erzählte Zeit
+                        
+                        
+                            Festschrift für Paul Kluckhohn und Hermann
+                                Schneider
+                            
+                                Tübingen
+                                
+                                1948
+                                195-212
+                            
+                        
+                    
+                    
+                        
+                            
+                                TEI Consortium
+                            
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            TEI P4 - Guidelines for Electronic Text Encoding and
+                                Interchange
+                            XML-compatible edition
+                            
+                                
+                                
+                                2001
+                            
+                        
+                        (Chapter 6.4: Names and Dates, and Chapter 20.4: Names, Numbers,
+                            Dates, Abbreviations, and Addresses.) 
+                    
+                
+            
+        
+    

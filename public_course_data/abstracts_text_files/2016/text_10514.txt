@@ -1,0 +1,90 @@
+
+      
+         Im prädigitalen Zeitalter war der Herausgeber einer wissenschaftlichen (Buch-)Edition nicht nur verantwortlich für die Textkonstitution und für die Kommentierung des edierten Textes, sondern er war es auch für die Materialrecherche, -beschaffung und für die Autopsie der Handschriften. Zugleich entwickelt jede Buchedition im Hinblick auf die Aufarbeitung und Präsentation der Materialien ihre je eigenen Kriterien. Auch wenn sich in den letzten Jahrzehnten in der Editionsphilologie im Hinblick auf die Qualität von Editionen ein wissenschaftlicher Standard etabliert hat, weicht die Präsentation der edierten Quellen in Buchform zumeist stark voneinander ab.
+         Mit der Möglichkeit, Quellen digital aufarbeiten und präsentieren zu können, hat sich der sehr aufwändige Arbeitsprozess des Erschließens und Edierens bekanntlich grundlegend gewandelt (Sahle 2013). So sieht etwa in einer digitalen Edition nicht nur der Bearbeiter das Material ein, da es nun in digitalisierter Form mitgeliefert wird und vom Nutzer problemlos eingesehen werden kann. Vor allem trägt der Wunsch nach Standardisierungen bereits Früchte: Die meisten Netz-Editionen beziehen sich inzwischen auf die Gemeinsame Normdatei der Deutschen Nationalbibliothek (GND) sowie weitere einschlägige Datenbanken und Dateiformate (VIAF, Beacon etc.) und arbeiten mit der Standardauszeichnungssprache XML/TEI (Hochstrasser 2014).
+         Was allerdings noch immer fehlt, ist ein allgemeinverbindlicher, d. h.
+        standardisierter und nachnutzbarer Editionsworkflow, der für die einzelnen Schritte
+        beim Erarbeiten einer digitalen Edition von der Aufnahme der
+        Handschriftendigitalisate und deren normierten Metadaten über die Transkription und
+        Präsentation der Quellen bis hin zur Langzeitarchivierung genutzt wird. Noch immer
+        liefern viele Archive ihre Digitalisate auf unterschiedlichen Medienträgern mit
+        teils stark voneinander abweichenden Qualitätskriterien bzw. senden sie per E-Mail
+        an den Editor, der sie in Auftrag gegeben hat. Das ist für beide Seiten umständlich,
+        zumal so zunächst keine Möglichkeit der Nachnutzbarkeit oder Weiterverarbeitung
+        existiert – sowohl was die Digitalisate als auch was die Metadaten angeht. Auch die
+        vom Philologen korrigierten Metadaten fließen i.d.R. nicht in die Archive und die
+        zentralen Datenbanken wie Kalliope zurück – ein eklatanter
+        Mangel, der für alle Beteiligten, auch für den Nutzer, der nach aktuellen und
+        verlässlichen Informationen sucht, von großem Nachteil ist.
+         Das in Dresden, Marburg und Trier angesiedelte DFG-Projekt „Digitale Edition der Korrespondenz August Wilhelm Schlegels“ (www.august-wilhelm-schlegel.de) hat in den letzten Jahren ein beispielhaftes Modell der Datenverarbeitung entwickelt, das diese Lücke schließen will, indem es eine standardisierte Infrastruktur für digitale Editionen bereitstellt. In der zweiten Projektphase, die nach der Bewilligung der DFG am 1. Oktober 2015 beginnt und Ende 2018 endet, soll diese Infrastruktur vollständig eingerichtet werden. Anders gesagt: Der Open-Source-Editionsworkflow des Schlegel-Projekts, der in weiten Teilen bereits funktioniert und im Vortrag im Einzelnen vorgestellt werden soll, möchte beispielgebend sein. Er will zukünftigen Projekten als vollständig freie, quelloffene und einfach nachnutzbare technisch-organisatorische Lösung zur Nachnutzung zur Verfügung stehen. Das bedeutet auch, dass die erhobenen standardisierten und, wo nötig, korrigierten Briefdaten sofort frei zugänglich sind und nicht nur in der eigenen Editionssoftware verzeichnet werden, sondern auch an die zentralen Datenbanken und an die Archive zurückgespielt werden. Der Nutzer kann somit sofort den neuesten editorischen Stand abrufen.
+         Dafür ist eine enge und kontinuierliche Zusammenarbeit zwischen der Sächsischen
+          Landesbibliothek – Staats- und Universitätsbibliothek Dresden (SLUB), dem Trier
+          Center for Digital Humanities (TCDH), der Universität Marburg und den
+          Partnerinstitutionen – den zahlreichen, über hundert Archiven – erforderlich. Die
+          Werkzeuge, die in diesem Workflow zum Einsatz kommen, weiterentwickelt werden und
+          ineinander spielen, sind die Digitalisierungssoftware Goobi
+          (Bonte) sowie die in Trier entwickelte
+          virtuelle Forschungsumgebung und Editionsplattform Forschungsnetzwerk und Datenbanksystem FuD (FuD 2014; Bamberg / Burch 2014) Goobi wird inzwischen von rund 50 Anwendern genutzt, mit FuD arbeiten zahlreiche vom TCDH betreute Editionsprojekte.
+          Über Standardschnittstellen können die Metadaten mitsamt Image-Digitalisaten der
+          Handschriften automatisch abgerufen und übertragen werden.
+         Im Schlegel-Projekt hat zunächst der Projektpartner in Dresden, die SLUB, unter der
+            Leitung von Prof. Dr. Thomas Bürger seine Schlegeliana (rund 3.800 Briefe) von der
+            zentralen Autographendatenbank Kalliope nach Goobi, wo die Image-Digitalisate der Autographen hinzugefügt
+            wurden, und von dort nach FuD importiert, wo sie editorisch
+            bearbeitet werden können. Zugleich stehen die Autographen in den eigenen digitalen
+            Sammlungen frei zur Verfügung. Auch die Universitäts- und Landesbibliothek Bonn hat
+            als erster Pilotpartner des Schlegel-Projekts ihre Autographensammlung zu A. W.
+            Schlegel (rund 350 Schreiben) über Goobi nach FuD transferiert.
+         Grundlegend für eine gelingende und nachhaltige Infrastrukturbildung ist die
+              normierte Verzeichnung der Metadaten, so dass die einzelnen Systeme diese richtig
+              erkennen und zuordnen und sie außerdem weiterverarbeitet werden können und die
+              Edition mit anderen Projekten vernetzbar ist. Für die Autographen, die nach
+              internationalen Standards (METS / EAD bzw. METS / MODS) in den Katalogen und
+              Datenbanken verzeichnet sind, wird eine Schnittstelle in FuD
+              implementiert, so dass eine konsistente Datenerhaltung zwischen den Katalogen und
+              FuD – mithin in beide Richtungen – gewährleistet ist. Für
+              jene Briefdaten, die noch nicht auf diese Weise verfügbar sind, wird, nach der
+              Aufnahme und Bearbeitung in FuD, ein Exportfilter entwickelt,
+              so dass sie aus FuD nach Kalliope und
+              von hier aus in die lokalen Kataloge exportiert werden können (Bamberg / Burch 2014:
+              293).
+         Der geplante Vortrag möchte diesen im Schlegel-Projekt entwickelten Open-Source-Workflow anhand einiger Beispiele aus der digitalen Briefedition darstellen und dabei zeigen, dass eine solche Infrastrukturbildung, die Quellen aus den unterschiedlichsten Archiven in einer Plattform einheitlich strukturiert zusammenführt, um sie weiter verfüg- und vernetzbar zu machen, auch eine neue Erschließungstiefe eines umfangreichen Briefkorpus ermöglicht.
+      
+      
+         
+            
+               Bibliographie
+               
+                  Bamberg, Claudia / Burch, Thomas (2014):
+                    „Inventarisieren, Analysieren und Archivieren vernetzt. Digitalisierung und
+                    Edition größerer Briefkorpora mit der virtuellen Editionsplattform
+                    'Forschungsnetzwerk und Datenbanksystem' (FuD)“, in: Delf von Wolzogen,
+                    Hanna / Falk, Rainer (eds.): Fontanes Briefe ediert.
+                    Würzburg: Königshausen und Neumann 265–282. 
+               
+                  Bonte, Achim (ed.): Goobi. SLUB:
+                      Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden
+                      http://www.goobi.org/ [letzter
+                      Zugriff 08. Januar 2016]. 
+               
+                  FuD (2014): FuD. Die virtuelle
+                        Forschungsumgebung für die Geisteswissenschaften. Trier Center for Digital
+                        Humanities (TCDH) & Forschungszentrum Europa (FZE). Universität Trier
+                        http://fud.uni-trier.de/de/ [letzter Zugriff 08. Januar 2016]. 
+               
+                  Hochstrasser, Daniel (2014): „Anforderungen an digitale
+                            Briefeditionen“, in: Delf von Wolzogen, Hanna / Falk, Rainer (eds.): Fontanes Briefe ediert. Würzburg: Königshausen und
+                            Neumann 266–277. 
+               
+                  Sahle, Patrick (2013): Digitale
+                              Editionsformen. Zum Umgang mit der Überlieferung unter den
+                              Bedingungen des Medienwandels. 3 Bde. Norderstedt: Books on Demand.
+               
+                  Stadler, Peter (2014): „Interoperabilität von digitalen
+                                Briefeditionen“, in: Delf von Wolzogen, Hanna / Falk, Rainer (ed.): Fontanes Briefe ediert. Würzburg: Königshausen und
+                                Neumann 278–287. 
+            
+         
+      
+   
+

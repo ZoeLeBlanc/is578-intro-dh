@@ -1,0 +1,235 @@
+
+
+
+    
+        
+            
+                A computational model for MLCD
+                
+                    
+                        Paul
+                        Meurer
+                        HIT-senteret, 
+                            University of Bergen
+                            paul.meurer@hit.uib.no
+                        
+                    
+                
+                
+                    
+                        Kjersti
+                        Bjørnestad Berg
+                        Department of Information Science, 
+                            University of Bergen
+                            Kjersti.Berg@ifi.uib.no
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    1 Introduction 
+                    SGML, and increasingly XML are the prevailing standards for text encoding
+                        today. XML, a simplified subset of SGML, is commonly believed to become the
+                        new standard for web publishing. One of the strengths of SGML/XML is that it
+                        combines a labelled bracketed notation with an intuitive document structure
+                        and a powerful formalism for constraining that structure. All SGML/XML like
+                        systems, however, have problems representing non-hierarchical textual
+                        features, because they require elements to nest. In practice, various
+                        techniques for encoding non- hierarchical features have been developed,
+                        including the use of milestone elements, fragmentation of elements, the SGML
+                        feature CONCUR, and various other techniques for recreating 'virtual
+                        elements' from fragments of the text. The problem with all of these
+                        approaches however, is that they require application- specific logic to
+                        retrieve the intended structure. SGML/XML processors are not sufficient.
+                    MECS is a text encoding system designed by Claus Huitfeldt at the
+                        Wittgenstein Archive in Bergen that was specifically designed to enable
+                        elements to overlap. [3] MECS, on the other hand, has no defined data
+                        structure. The MLCD (Markup Language for Complex Documents) project was
+                        started in February 2001, and is hosted by the Center for Humanities
+                        Information Technology at the University of Bergen. It aims at developing a
+                        text encoding system combining the best of SGML/XML and MECS. This work has
+                        resulted in a notation for a markup meta-language for complex documents,
+                        TexMECS [2], and a data structure for complex documents, GODDAG. This paper
+                        will present the data structure and its implementation.
+                
+                
+                    2 A computational model for MLCD
+                    In [1], Huitfeldt and Sperberg-McQueen describe a data structure for
+                        overlapping hierarchies. The GODDAG, or Generalised Ordered-Descendant
+                        Directed Acyclic Graph, is defined as a labelled directed acyclic graph. As
+                        for the tree structures of SGML/XML documents, leaf nodes represent the
+                        character data content of the document, non-terminal nodes represent
+                        elements and are labelled with the generic identifier. The set of leaf nodes
+                        is referred to as the graph's frontier. An arc indicates a parent-child
+                        relationship, modelling containment. A node is said to dominate all nodes
+                        reachable from it. There is no requirement that the graph be rooted.
+                    MECS, and TexMECS allow elements to overlap arbitrarily. Overlapping elements
+                        are represented in the GODDAG as nodes with shared children. All elments
+                        will dominate unique and contiguous sequences of leaf nodes. TexMECS has a
+                        specific syntax for encoding elements that are interrupted by other
+                        material. In the TEI a part attribute is sometimes used to indicate that the
+                        linear form is in some way incomplete, and that more than one element
+                        constitutes the entire element. It would be useful if these elements could
+                        be treated as one element on the GODDAG level, for instance to facilitate
+                        proximity search. In the GODDAG the whole element is represented by one
+                        node, which is the parent of the fragment elements.
+                        &lt;sp who="AASE"&gt;&lt;l part="i"&gt;Peer, you're
+                            lying! &lt;l&gt;&lt;sp&gt; &lt;sp who="PEER
+                            GYNT"&gt; &lt;stage&gt;without stopping&lt;stage&gt;
+                            &lt;l part="f"&gt;No, I'm
+                            not!&lt;l&gt;&lt;sp&gt; 
+                    See Figure 1 for the GODDAG structure.
+                    
+                        Figure 1
+                    
+                    In the TEI there are several examples of elements used to recreate 'virtual
+                        elements' from fragments of the text. (C.f.&lt;join&gt;, &lt;span&gt;,&lt;fs&gt;.) TexMECS also includes a specific syntax for
+                        so-called virtual elements, elements that are created by fragments of the
+                        text that may be discontiguous or out of order. A virtual element in TexMECS
+                        has an element identifier and an id reference. In the GODDAG, the virtual
+                        element is labelled with its generic identifier, and is the parent of all
+                        children of the referenced element. This means that applications can access
+                        and process virtual elements like any other elements.
+                    Below is an example, in TexMECS syntax, that shows a simple reordering of
+                        lines, in one view representing a dialogue between Hughie, Luis and Dewey,
+                        in another representing the haiku they are trying to remember.
+                        {sp who="HUGHIE"{{p{How did that translation go?}p} {lg
+                            type="haiku"{{l{da de dum de dum,}l} {l=frog{gets a new frog,}l}
+                            {l{...}l}}lg} }sp} {sp who="LOUIS"{{p{Er ...}p} {lg{{l=new{it's a new
+                            pond.}l}}lg} }sp} {sp who="DEWEY"{{p{Ah ...}p} {lg{{l=pond{When the old
+                            pond}l}}lg} {p{Right. That's it.}p}}sp}
+                            {lg{{^l^pond}{^l^frog}{^l^new}}lg} 
+                    In the GODDAG generated from this example (Figure 2), both the dialogue and
+                        the haiku are structured as part of the document, and none of the views is
+                        dominant.
+                    
+                        Figure 2
+                    
+                
+                
+                    3 Implementation
+                    A computational model of the above structure has been implemented in Java and
+                        CommonLisp, along with loaders and linearisers for TexMECS, MECS and XML.
+                        Using these, the GODDAG can function as a simple means of translating
+                        between the various encoding schemes.
+                
+                
+                    4 Serialization: some issues and problems
+                    There is an obvious 1-1 relationship between the set of valid XML documents
+                        and their tree representations. In the case of TexMECS, things are more
+                        complicated. A given GODDAG structure can be serialized in different ways,
+                        depending on whether nodes with multiple parents are serialized as virtual
+                        elements or as overlap. On the other hand, there is a small class of TexMECS
+                        documents with discontinuous elements which do not seem to correspond to any
+                        GODDAG structure, if one tries to map discontinuous elements to a single
+                        node. We try to formalize the relationship between GODDAG structures and
+                        serializations and propose a solution for the aforementioned problem.
+                
+                
+                    5 Conclusion
+                    The work presented in this paper shows how to implement the data structures
+                        and formalize some of the ideas presented in [1].
+                
+            
+        
+        Bibliography
+            
+                
+                    C.
+                        M.Sperberg-McQueen
+                   ClausHuitfeldt
+                    GODDAG: a data structure for overlapping hierarchies
+                
+                
+                    Principles of Digital Document Processing, Munich, September 2000
+                    
+                        Berlin
+                        Springer
+                        (Proceedings in press)
+                    
+                
+            
+                
+                    
+                        Claus
+                        Huitfeldt
+                    
+                
+                C.M.Sperberg-McQueen
+                TexMECS: an experimental markup meta-language for complex documents
+                
+                    
+                    
+                    (January - February 2001, not complete)
+                
+            ()
+            
+                
+                    Claus
+                        Huitfeldt
+                    A Multi-Element Code System
+                
+                
+                    Working Papers of the Wittgenstein Archives at the University of Bergen 
+                    
+                        
+                        
+                        
+                    
+                
+            
+        
+    

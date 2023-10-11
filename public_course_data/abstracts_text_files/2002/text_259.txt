@@ -1,0 +1,351 @@
+
+
+
+    
+        
+            
+                Bridging disciplinary boundaries: A case study of the
+                    Music Information Retrieval Annotated Bibliography Project
+                
+                    
+                        J.
+                        Stephen
+                        Downie
+                        
+                            Graduate School of Library and Information Science,
+                            University of Illinois at Urbana-Champaign
+                            jdownie@uiuc.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Background
+                    Music information retrieval (MIR) research and development strives to afford
+                        the same level of access to the world's corpus of music as is afforded to
+                        text. Recently concluded international symposia devoted to MIR research and
+                        development bear witness to the promise of powerful, robust, large-scale,
+                        and flexible search and retrieval tools designed to be used by scholars and
+                        novices alike (ISMIR 2000; ISMIR 2001). Like many other humanities computing
+                        endeavours, it has attracted a multi-disciplinary group of researchers who
+                        are applying their domain-specific expertise to the wide range of challenges
+                        inherent in MIR development. MIR researchers come from library science,
+                        musicology, music theory, music psychology, computer science, digital and
+                        traditional librarianship, audio engineering, information science,
+                        information retrieval, publishing, media studies, broadcasting, law, and
+                        business, to name only a small handful of the disciplines represented. MIR
+                        research is all the stronger for the cross-pollination of disciplinary
+                        paradigms, research methods, and technological approaches. Effective
+                        communications across disciplinary boundaries, however, are impeding the
+                        coalescence of MIR research into a coherent discipline in its own right. The
+                        nascent MIR community is plagued with two forms of communications breakdown:
+                            1. The scattering of the MIR literature caused by a lack of
+                                bibliographic control; and,
+                            2. The confusion brought about by the use of discipline-specific
+                                assumptions, techniques, and language throughout its
+                                literature.
+                        
+                    My paper reports upon the background, framework, goals and ongoing
+                        development of the Music Information Retrieval Annotated Bibliography
+                        Project (). It extends and augments the
+                        preliminary explication presented in Downie (2001). This project is being
+                        undertaken to specifically address and overcome the bibliographic control
+                        and communications issues plaguing the MIR research community. However,
+                        since most humanities computing projects also draw upon multi-disciplinary
+                        groups of researchers, I to hope provide and delineate a model that should
+                        assist others in facilitating efficient and effective communications among
+                        their particular research communities.
+                
+                
+                    Problem Overview
+                    MIR research has no disciplinary home. Because of this, researchers have been
+                        publishing their findings within the contexts of their own disciplines.
+                        Important MIR papers are thus scattered, for example, across the computer
+                        science, library science, musicology, humanities, and audio engineering
+                        literatures. There is no comprehensive indexing tool that successfully
+                        gathers up these papers. For example, significant musicology-based advances
+                        can be located through various music, arts and humanities indexes but not
+                        through the engineering and computer science indexes. Advances in audio
+                        engineering techniques are similarly absent from the music, arts and
+                        humanities indexes. Since researchers are generally unaware of the
+                        differences in scope of the various discipline-based indexes, they tend to
+                        focus upon those with which they are most familiar and thus overlook the
+                        contributions of those based in other disciplines. Unfamiliarity with the
+                        wide range of vocabularies used by the various disciplines further compounds
+                        the communication difficulties by making it problematic for MIR
+                        investigators to conduct thorough and comprehensive searches for MIR
+                        materials. Until these issues are addressed, MIR will never be in a position
+                        to fully realize the benefits that a multi-disciplinary research and
+                        development community offers, nor will it be able to develop into a
+                        discipline in its own right.
+                
+                
+                    Solution
+                    
+                    Our solution to the issues outlined above centers about the creation of a
+                        Web-based, two-level, collection of annotated bibliographies (Fig. 1). The
+                        first level, or core bibliography, will bring together those items
+                        identified as being germane to MIR as a nascent discipline. Thus, the core
+                        bibliography comprises only those papers dealing specifically with some
+                        aspect of the MIR problem, such as MIR system development, experimentation,
+                        and evaluation, etc. The second level, or periphery bibliographies, comprise
+                        a set of discipline-specific bibliographies. Each discipline-specific
+                        bibliography in the set will provide access to the discipline-specific
+                        background materials necessary for non-expert members of the other
+                        disciplines to comprehend and evaluate the papers from each participating
+                        discipline. For example, an audio engineering bibliography could be used by
+                        music librarians and others to understand the basics of signal processing
+                        (e.g., Fast Fourier Transforms, etc.). Another example would be a musicology
+                        bibliography that computer scientists could draw upon in an effort to
+                        understand the strengths and weaknesses of the various music encoding
+                        schemes, and so on. Thus, taken together, the two-levels of the MIR
+                        bibliography will provide:
+                            1. The much needed bibliographic control to the MIR literature;
+                                and,
+                            2. An important a mechanism for members of each discipline to
+                                comprehend the contributions of the other disciplines. 
+                        
+                    An important operating principle of the project is the use of non-proprietary
+                        formats and software. We are committed to the ideals of the Open Source
+                        Initiative (OSI, 2001) and the GNU General Public License (GNU Project,
+                        2001) and thus intend to make our innovations freely available to others. In
+                        keeping with this commitment, we have chosen the Greenstone Digital Library
+                        Software (GSDL) package (New Zealand Digital Library Project, 2001), the
+                        Apache HTTP server (Apache Software Foundation, 2001), the PERL scripting
+                        language (PERL Mongers, 2001) and the Linux operating system (Linux Online,
+                        2001) to create the basic technological foundation of the project. We have
+                        purchased copies of the commercial bibliographic software package, ProCite
+                        (ISI ResearchSoft, 2001) for initial, in-house, data-entry. ProCite also
+                        provides us with a representative instance of commercially available
+                        software that many end-users might utilize in manipulating the records they
+                        retrieve from our bibliography.
+                    At present, there are two central components of project undergoing
+                        development and alpha testing:
+                            1. The bibliographic search and retrieval interface using the GSDL
+                                package; and,
+                            2. The Web-based end-user data entry system.
+                        
+                    For both of these, the goal is to create a system that will permit ongoing
+                        viability of the bibliography by minimizing-but not necessarily
+                        eliminating-the amount of human editorial intervention required. Item ^#1
+                        issues being addressed include modifications to the basic GSDL system to
+                        permit the importation of specially structured bibliographic records and
+                        their subsequent access through a variety of field selection options. Item
+                        ^#2 is a CGI-based input system that guides end-users through the process of
+                        constructing well-structured bibliographic records through a series of
+                        step-by-step interactions and the on-the-fly generation of input forms
+                        specifically designed to provide the appropriate fields for the various
+                        types of bibliographic source materials (i.e., journal articles, conference
+                        papers, theses, etc.).
+                    Now that the general framework for the core bibliography has been laid, we
+                        are moving forward on the acquisition of the supplementary and explanatory
+                        materials. For these we are drawing upon the expert advice of those that
+                        have graciously signed on as advisors to the project. These advisors are not
+                        only lending their disciplinary expertise but are also affording us a very
+                        important multinational perspective on the potential uses and growth of the
+                        bibliography.
+                
+                
+                    Acknowledgements
+                    I would like to thank Dr. Suzanne Lodato for helping the project obtain its
+                        principal financial support from the Andrew W. Mellon Foundation. I would
+                        also like to thank Dr. Radha Nandkumar and the National Center for
+                        Supercomputing Applications Faculty Fellows Programme for their support. The
+                        hard work and insightful advice of Karen Medina, Joe Futrelle, Dr. David
+                        Dubin, and the other members of the Information Science Research Laboratory
+                        at the Graduate School of Library and Information Science, UIUC, is
+                        gratefully appreciated. Those members of the MIR research community who have
+                        volunteered to act as project advisors are also thanked.
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                Apache Software Foundation
+                            
+                            Apache project
+                            
+                                
+                                
+                                2001
+                            
+                        
+                        Available at .
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    Stephen
+                                    Downie
+                                
+                            
+                            [Poster abstract] The music information retrieval annotated bibliography
+                            project, phase I
+                        
+                        
+                            Proceeding of the Second International Symposium on
+                                Music Information Retrieval, 15-17 October, 2001, Bloomington,
+                                IN
+                            
+                                Bloomington, IN
+                                Indiana University
+                                2001
+                            
+                        
+                        Available at: 
+                    
+                    
+                        
+                            NU Project
+                        
+                        Free software licenses
+                        
+                            
+                            
+                            2001
+                        
+                    Available at:  
+                    
+                        
+                            ISI Researchsoft
+                        
+                        ProCite
+                        Version 5
+                        
+                            
+                            
+                            2001
+                        
+                    Available at: .
+                    
+                        
+                            ISMIR 2000
+                        
+                        The International Symposium on Music Information Retrieval, 23-25 October, 2000, Plymouth, MA
+                        
+                            
+                            
+                            2000
+                        
+                    Available at: 
+                    
+                        
+                            ISMIR 2001
+                        
+                        The Second International Symposium on Music Information Retrieval, 15-17 October, 2001, Bloomington, IN
+                        
+                            
+                            
+                            2001
+                        
+                    Available at: 
+                    
+                        
+                            Linux Online
+                        
+                        The Linux homepage
+                        
+                            
+                            
+                            2001
+                        
+                    Available at: 
+                    
+                        
+                            New Zealand Digital Library Project
+                        
+                        About the Greenstone software
+                        
+                            
+                            
+                            2001
+                        
+                    Available at: 
+                    
+                    
+                        
+                            Open Source Initiative
+                        
+                        The open source definition
+                        version 1.9
+                        
+                            
+                            
+                            2001
+                        
+                    
+                    
+                        
+                            Perl Mongers
+                        
+                        Perl Mongers: The PERL advocacy people
+                        
+                            
+                            
+                            2001
+                        
+                    Available at: 
+                
+            
+        
+    

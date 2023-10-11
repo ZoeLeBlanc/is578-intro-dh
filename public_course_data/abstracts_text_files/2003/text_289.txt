@@ -1,0 +1,672 @@
+
+
+
+    
+        
+            
+                Text Markup—Data Structure vs. Data Model
+                
+                    
+                        Allen
+                        Renear
+                        
+                            GSLIS/University of
+                                Illinois
+                            renear@uiuc.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    SUMMARY
+                    For over ten years there have been several carefully argued critiques of the
+                        descriptive markup approach to text representation that have for the most
+                        part not been adequately answered. Recently an integrated development of
+                        some of these criticisms has been presented at length, and with considerable
+                        ingenuity and extension, in a widely read article by Dino Buzzetti,
+                        published in New Literary History (2002, 33:
+                        61–88). In our paper we analyze some of Buzzetti’s criticisms, accepting
+                        some but resisting others.
+                
+                
+                    BACKGROUND
+                    When the SGML or “descriptive markup” approach to text began to be actively
+                        promoted in the mid-1980s, quite a number of criticisms were developed in
+                        response to this approach, or, more exactly, to the accompanying theoretical
+                        claims, express or implied. In retrospect, it appears today that some of
+                        these criticisms have been answered by the proponents of SGML descriptive
+                        markup, others have simply faded in apparent significance, and still others,
+                        while live issues to some scholars, seem neverless to generate only
+                        unproductive repetitive discussions.
+                    However there is a particular family of related criticisms that upon careful
+                        re-consideration still seem fresh, deep, and, at least given their positive
+                        reception, plausible—and yet these criticisms have also been, strangely,
+                        largely ignored by the markup community. Some of these arguments were first
+                        presented in the late 1980s in a paper titled “Markup Considered Harmful”
+                        privately circulated by Darryll Raymond in response to Coombs et al 1987.
+                        They were later presented again, in more detail in 1992 in “Markup
+                        Reconsidered” (Raymond, Tompa, and Wood 1995); and then were further refined
+                        in “From Data Representation to Data Model: Meta-Semantic Issues in the
+                        Evolution of SGML” (Raymond, Tompa, Wood 1996).
+                    In brief these papers argue that “Markup is not a data model” but rather a
+                        “data representation” (Raymond et al 1992), and that while “SGML provides
+                        standard representations for documents” a “standard semantics” is required
+                        as well (Raymond et al 1996). And then, generalizing from this conclusion,
+                        the authors go on to suggest that many of the expectations for SGML-based
+                        markup systems, such as TEI, are misplaced.
+                    Despite the fact that these were pointed and clearly argued positions, the
+                        response from the TEI community, and perhaps more importantly from the
+                        theorizing researchers whose ambitious claims were particularly targeted
+                        (Coombs et al 1987, DeRose et al 1990, Sperberg-McQueen 1990), appears to
+                        have been largely to simply ignore these criticisms.
+                    Recently Dino Buzzetti has been re-presenting these arguments, supplementing
+                        them with further theoretical extensions, and integrating them with other
+                        criticisms of descriptive markup approach, in particular those of Jerome
+                        McGann, most recently presented and extended in a new book Radiant Textuality: Literature Since the World Wide Web (New
+                        York 2001)—which Buzzetti takes as supporting Raymond’s and his own
+                        criticisms. Buzzetti has in fact presented his concerns in several venues
+                        over the last 5 years (e.g. Buzzetti 1999a, Buzzetti 1999b), but it is in
+                        “Digital Representation and the Text Model” (New Literary
+                            History, 2002 33) that he presents these criticisms in a form,
+                        and a forum, and a language, in which they can no longer be ignored.
+                    Interestingly, this article comes precisely at a moment when some of the
+                        theorizing descriptive markup proponents are themselves very actively
+                        working in a similar vein. Sperberg-McQueen, who has called for the
+                        development of a SGML/XML semantics since at least 1992 (Sperberg-McQueen
+                        1992), is leading a project to develop such a semantics now, and Renear, who
+                        is member of this project, has also recently claimed, in language similar to
+                        that of Buzzetti and Raymond et al, that an SGML document instance per se
+                        provides “only a data structure, not a theory” (Renear 2001).
+                
+                
+                    THE CRITICISM
+                    Raymond et al argue, as described above, that markup is not a “data model”,
+                        but only a data representation that is “fully dependent on external
+                        information for meaning”. They note several characteristics that they say
+                        confirm that markup is not a data model in the sense that that expression is
+                        used in database theory. These include inadequate notions of equivalence,
+                        lack of redundancy control, and lack of defined algebraic operators. This
+                        claim should not of course be taken simply as a narrow assertion that SGML
+                        markup does not meet criteria for being a certain sort of thing as defined
+                        in some field or other—the larger point, and in the context of the
+                        discussion a plausible one, is that SGML markup will be inadequate for the
+                        kinds of theoretical tasks it is being assigned in virtue of failing to have
+                        these characteristics. Raymond et al (1995) state that this failure can be
+                        remedied either by adding a “formal structure on top of markup systems” or
+                        by defining a new abstraction from scratch. Raymond et al prefer the latter
+                        because they believe that markup systems are not only a representation
+                        rather than a data model, but they are in fact a relatively poor technique
+                        for representation. Raymond et al 1996 characterizes this addition of a
+                        formal structure as adding “semantics” to SGML.
+                    Buzzetti accepts Raymond et al’s criticism of SGML markup. But he goes much
+                        further, both in the extent of his theorizing and in the specific nature of
+                        his criticisms. With respect to the latter Buzzetti argues that descriptive
+                        markup theorists are actually confused, and profoundly so: they conflate the
+                        “structure of the representation” with the “structure of the object
+                        represented”, or, alternatively, they confuse the “expression” with the
+                        “content” of that expression. Supplementing Raymond’s criticism from the
+                        perspective of database theory with an opposition from Saussure Buzzetti
+                        argues that descriptive markup is an expression whose form is a data
+                        structure. But the form of the content of that expression is a “data model”.
+                        Neither the expression itself nor its form however, is a data model—as
+                        mistakenly believed by the promoters of SGML descriptive markup and the
+                        defenders of the OHCO model of text. (Buzzetti goes on to make this point
+                        with juxtapositions of other theoretical terms: “format” vs. “formalism”,
+                        “syntax” vs. “interpretation”). As examples of this confusion Buzzetti
+                        singles out in particular the TEI Guidelines, Coombs et al 1987, and DeRose
+                        et al 1990, and Renear et al 1996.
+                    “In summary,” Buzzetti says, “we may assert that strongly embedded markup
+                        systems [are] inadequate in reference to both the exhaustivity and the
+                        functionality of the text representation and model.”
+                
+                
+                    OUR RESPONSE
+                    We believe that that there is some truth to both Raymond, Tompa, and Wood’s
+                        criticisms, and to Buzzetti’s application of the criticisms. However we
+                        believe that both Raymond et al and Buzzetti substantially overstate the
+                        case, Raymond somewhat and Buzzetti much more. Such a response may seem too
+                        mild to deserve public airing, but it is for two reasons much more important
+                        than it sounds: first because of the radical form the criticism takes in
+                        Buzzetti, and second because our response might clarify some long confused
+                        issues in text encoding.
+                    There can be little doubt that many SGML markup enthusiasts have been now and
+                        then confused, and, even more frequently, confusing, about the
+                        representational nature of SGML document instances. This is mostly because
+                        representation itself is conceptually difficult, and subject to a kind of
+                        semiotic oscillation between expressing, referring, and exhibiting. And it
+                        may also be partly because of carelessness and genuine lapses of clarity and
+                        understanding.
+                    But Buzzetti makes too much of the fact that we are sometimes awkward about
+                        what document instances are, representationally, and exactly how markup does
+                        what it does. Notice that for the most part everyone manages the ambiguities
+                        quite well, and gets on, successfully more often than not, with various
+                        tasks and projects. How could this be the case if there were such a
+                        consistent systematic widespread conflation of expression and content? And,
+                        in fact, a close examination shows that Buzzetti does not produce evidence
+                        for such a systematic conflation, other than the various awkward or
+                        unfortunate characterizations mentioned above—and those, while admittedly
+                        signs of some failure to fully conceptualize key notions, are far from
+                        convincing evidence for systematic conflation.
+                    Moreover, there is no evidence that this confusion, such as it is, is
+                        connected, as either cause or effect, with a radical unsuitability of SGML
+                        markup to express theories about text. (According to Buzzetti “SGML is a
+                        data structure representation language” and does not provide a data model;
+                        and he echoes the views of Raymond et al that it is, moreover, a bad data
+                        structure representation language.) Part of the problem is that Raymond and
+                        Buzzetti rely too much in their argument on the specific notion of a “data
+                        model” from database theory, and therefore over-react to the failure of SGML
+                        to have precisely that sort of data model, or to have a good (i.e.
+                        completely or exactly defined) one. Part of the problem is that they demand
+                        formalization before admitting that there has been sucessful representation.
+                        It cannot be denied that we use SGML document instances to express express
+                        facts and theories about texts rather effectively: that is simply an
+                        empirical fact. Part of the problem is that in claiming that SGML and XML
+                        lack semantics and a defined set of operators, Raymond et al and Buzzetti
+                        ignore the fact that both SGML and XML define the semantics of the markup
+                        vocabulary in use as an intrinsic part of the application's document type
+                        definition. Unlike Raymond et al and Buzzetti, the SGML standard does not
+                        assume that the full semantics of an SGML application are captured in full
+                        by the SGML formalisms used to declare elements and attributes. Nor does a
+                        demand for an exhaustive set of algebraic or other operations seem a
+                        promising start for a critique of a markup discipline intended to encourage
+                        the reuse of data and the separation of data representation from processing
+                        concerns.
+                    In this connection Buzzetti’s criticism of the ordered-hierarchy of content
+                        objects (OHCO) hypothesis is particularly illuminating, because strikingly
+                        unconvincing. Unlike SGML markup, OHCO is obviously not intended as a
+                        representation syntax, but rather an abstraction claimed to be,
+                        structurally, the general form taken by all texts. As such it actually
+                        appears to be roughly the kind of thing that Buzzetti wants for a data
+                        model, though without the specific features characteristic of data models in
+                        database theory. Buzzetti’s interpretation of OHCO however has it as “not a
+                        model of the text, but a possible model of its expression”, just as SGML on
+                        Buzzetti’s account, describes not the text, but “the structure of the text’s
+                        expression”, consistent with its distinctive role as “a data structure
+                        representation language”. But whatever the failures of OCHO as a data model,
+                        this is no more than a tortured effort to make things seem worse then they
+                        are. The data structures in question have untyped purely logical
+                        parent/child relationships, whereas “hierarchy” in OHCO clearly refers to
+                            containment—and that is not a purely data
+                        structural relationship, despite the obvious formal similarities (asymmetry,
+                        transitivity, etc.) that makes tree data structures convenient for
+                        representing hierachical containment.
+                    It is true that additional formalization of the semantics of SGML markup is a
+                        good thing. Formalization will assist in precision, clarity, and
+                        computation. It is for that reason that Sperberg-McQueen and others are
+                        working to explicate the semantics of XML markup. But while we may regret
+                        that such work has not made more progress, or that not everyone understands
+                        the need for improved formalization of semantics and “data models”, or that
+                        some of our colleagues are sometimes confused about subtle matters of
+                        representation, or that we ourselves are now and then confused, or even
+                        often confused, we should not conclude that things are worse than they are.
+                        Scholars working in SGML descriptive markup are working with languages that
+                        do have semantics, and do have “data models”, even if inadequately
+                        formalized, or not quite the sort of thing database researchers prefer. And
+                        these scholars are at least as often as not quite clear on the difference
+                        between expression and content.
+                
+                
+                    CONCLUSION
+                    The criticisms of inadequate formalization that began with Raymond et al and
+                        that have recently been so intriguingly developed and extended by Buzzetti
+                        are important ones that have been mysteriously neglected by the markup
+                        community. And the more ambitious criticisms made by Buzzetti of our failure
+                        to fully theorize, or at least attempt to clarify, the complexities of
+                        representation are perhaps even deeper and more important, and also
+                        unfortunately neglected. But the claim that in these failures we see the
+                        signs of either a systematic category mistake endemic in the text encoding
+                        community, or evidence of a disastrous inadequacy in current techniques,
+                        simply has not yet been proven. On the contrary, as we have suggested here,
+                        that claim itself seems to be based upon the mistaken notion, ironically
+                        reminiscent of the third man argument, that one more formal system will
+                        finally bridge the gap between thought and object. There may or may not be a
+                        gap, but if there is it will not be closed simply by another formal system,
+                        however useful that system may be.
+                
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Dino
+                                    Buzzetti
+                                
+                            
+                            Text Representation and Textual Models
+                        
+                        
+                            ACH-ALLC'99 Conference Proceedings
+                            
+                                Charlottesville
+                                
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Dino
+                                    Buzzetti
+                                
+                            
+                            Digital Representation and the Text Model
+                        
+                        
+                            New Literary History
+                            
+                                33
+                                
+                                
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    James
+                                    H.
+                                    Coombs
+                                
+                            
+                            
+                                
+                                    Allen
+                                    H.
+                                    Renear
+                                
+                            
+                            
+                                
+                                    Steven
+                                    J.
+                                    DeRose
+                                
+                            
+                            Markup Systems and the Future of Scholarly Text
+                                Processing
+                        
+                        
+                            Communications of the ACM
+                            
+                                30
+                                11
+                                
+                                November 1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Steven
+                                    J.
+                                    DeRose
+                                
+                            
+                            
+                                
+                                    David
+                                    G.
+                                    Durand
+                                
+                            
+                            
+                                
+                                    Elli
+                                    Mylonas
+                                
+                            
+                            
+                                
+                                    Allen
+                                    H.
+                                    Renear
+                                
+                            
+                            What Is Text, Really?
+                        
+                        
+                            Journal of Computing in Higher Education
+                            
+                                1
+                                2
+                                
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Jerome
+                                    McGann
+                                
+                            
+                            Radiant Textuality: Literature Since the World Wide
+                                Web
+                            
+                                New York
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Darrell
+                                    R.
+                                    Raymond
+                                
+                            
+                            
+                                
+                                    Frank
+                                    W.
+                                    Tompa
+                                
+                            
+                            
+                                
+                                    Derrick
+                                    Wood
+                                
+                            
+                            Markup Reconsidered
+                        
+                        
+                            First International Workshop on Principles of Document
+                                Processing, Washington, D.C., October, 1992
+                            
+                                
+                                
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Darrell
+                                    Raymond
+                                
+                            
+                            
+                                
+                                    Frank
+                                    Tompa
+                                
+                            
+                            
+                                
+                                    Derrick
+                                    Wood
+                                
+                            
+                            From Data Representation to Data Model: Meta-Semantic
+                                Issues in the Evolution of SGML
+                        
+                        
+                            Computer Standards and Interfaces
+                            
+                                18
+                                1
+                                
+                                January 1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            
+                                
+                                    David
+                                    Dubin
+                                
+                            
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            Towards a Semantics For XML Markup
+                        
+                        
+                            Proceedings of the ACM Symposium on Document
+                                Engineering ACM, November 2002
+                            
+                                
+                                
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            
+                                
+                                    Elli
+                                    Mylonas
+                                
+                            
+                            
+                                
+                                    David
+                                    G.
+                                    Durand
+                                
+                            
+                            Refining Our Notion of What Text Really Is: The Problem
+                                of Overlapping Hierarchies
+                        
+                        
+                            Research in Humanites Computing
+                            
+                                Oxford
+                                
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            Raising the Bar, Text Encoding from a Logical Point of
+                                View
+                        
+                        
+                            CLiP 2001
+                            
+                                
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            Back to the Frontiers and Edges
+                        
+                        
+                            Closing remarks at “SGML '92: the quiet revolution”
+                                conference sponsored by the Graphic Communications Association
+                                (GCA), Boston, 29 October 1992
+                            
+                                
+                                
+                                1992
+                            
+                        
+                        Available on the Web at 
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            Meaning and Interpretation in Markup
+                        
+                        
+                            Markup Languages: Theory and Practice
+                            
+                                
+                                MIT Press
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            
+                                
+                                    David
+                                    Dubin
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            Drawing Inferences on the Basis of Markup
+                        
+                        
+                            Proceedings of Extreme Markup 2002
+                            
+                                
+                                
+                                2002
+                            
+                        
+                    
+                
+            
+        
+    

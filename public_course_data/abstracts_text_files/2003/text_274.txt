@@ -1,0 +1,458 @@
+
+
+
+    
+        
+            
+                Chinese Collections in Museums on the Web: Current
+                    Status, Problems, and Future
+                
+                    
+                        Hsin-Liang
+                        Chen
+                        
+                            Graduate School of Library and Information
+                                Science, UT-Austin
+                            chen@gslis.uexas.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    INTRODUCTION
+                    With the development of computing technology, many Chinese museums and
+                        museums with significant Chinese collections have digitized and provided
+                        images of their collections on Web sites. These online resources offer users
+                        around the world access to valuable treasures to learn about Chinese
+                        culture. However, there are obstacles that must be overcome to achieve the
+                        goals of promoting the Chinese heritage and educating new generations.
+                    The purpose of this project is to study how museum practitioners use current
+                        image indexing practices and services to retrieve the images of the Chinese
+                        collections. Several issues, including image needs, information-seeking
+                        strategies, information queries, search functions, display formats and
+                        human-computer interaction are examined in this study.
+                    This paper focuses specifically on the current practices of image management.
+                        The following questions are addressed:
+                            What kind of images do the museums index?
+                            How do the museums index their image collections?
+                            What kind of indexing tools do the museums use?
+                        
+                
+                
+                    BACKGROUND OF THE PROBLEM
+                    
+                        CURRENT IMAGE MANAGEMENT AT MUSEUMS AND ART LIBRARIES
+                        Graham (1999) surveyed 60 art libraries in the U.K. The survey included
+                            the important issues of image collections, cataloging and indexing
+                            practices, content-based image retrieval (CBIR) systems, and the use of
+                            images. Graham’s study reports on the current management of image
+                            collections and techniques for image and video retrieval in the U.K.
+                            Eakins and Graham (1999) study the current state of the art in CBIR
+                            systems within the U.K. and submit several suggestions to U.K.
+                            governmental agencies, users and managers of image collections, and CBIR
+                            software developers. The Visual Image User Study (VIUS) project at Penn
+                            State University is conducting an extensive and systematic assessment of
+                            its needs for digital image delivery (Pisciotta, et al, 2001). The VIUS
+                            project is working to develop digital picture libraries to serve new
+                            uses of digital images for teaching and research.
+                    
+                    
+                        IMPORTANCE OF INFORMATION NEEDS AND INFORMATION-SEEKING BEHAVIOR TO
+                            SYSTEM DESIGN
+                        Stephenson (1999) examined several cultural heritage image databases and
+                            identified key issues for future improvements. She pointed out that, in
+                            addition to technological challenges, the areas of audience, user
+                            behavior, and use should be addressed as well. According to Stephenson,
+                            museums should examine:
+                                For whom are museums building an image database?
+                                What image databases are museums building?
+                                What are those users’ purposes in using the image
+                                    database?
+                                What functionality do the users need to use the
+                                    database?
+                            
+                        These questions reflect a user-centered design philosophy which assists
+                            database designers understand their users thoroughly.
+                        
+                            
+                                Defining the primary user group
+                            
+                            One of the major goals of an online image database is to break the
+                                barriers of time differences, geographical locations, and limited
+                                physical access to materials. This brings up a critical question:
+                                who is the user? The online database is likely to serve a diverse
+                                group of users: local and remote users, experienced and naïve
+                                users, and existing and new users. Different user services are
+                                required for this diverse group of users. Museums should examine the
+                                institutional goals and purposes of their online image databases to
+                                determine the priority of their missions.
+                        
+                        
+                            
+                                Understanding anticipated users
+                            
+                            After determining their primary user group, the museums should study
+                                their users. The following questions should be considered:
+                                    Goals of designing an online image database
+                                    Differences between existing access to the image
+                                        collection and the use of the new online image
+                                        database
+                                    Anticipated users’ behavior in different locations
+                                    Selection of surrogates for image indexing and
+                                        retrieval
+                                    Information architecture of the online image
+                                        database
+                                
+                        
+                        
+                            
+                                Supporting discovery and retrieval
+                            
+                            To use the online image database successfully, the users should have
+                                knowledge of information retrieval in general, subject areas, and
+                                search systems. On the other hand, the museums should investigate
+                                the following factors:
+                                    Indexing standards such as metadata
+                                    Query analysis
+                                    Effectiveness and efficiency of indexing tools and
+                                        methods
+                                    Multi-dimensional indexing and retrieval methods
+                                    Users’ capabilities
+                                    User support and training
+                                
+                        
+                        
+                            
+                                Supporting functionality
+                            
+                            New functions may be created to facilitate users’ search strategies.
+                                To achieve such goals, studies on interface design, human-computer
+                                interaction, and users’ information-seeking behavior should be
+                                conducted. Different tools may be required by special users and
+                                environments.
+                        
+                        
+                            
+                                Other challenges
+                            
+                            In addition to the above key issues, the museums also face several
+                                    challenges:
+                                    lack of communication among museums;
+                                    lack of indexing standards and tools; and
+                                    lack of translation standards of Chinese into western
+                                        languages.
+                                
+                            Chinese museums and museums with significant Chinese collections
+                                should form a consortium to establish communication and to develop
+                                collaboration. Many western museums have begun those efforts. The
+                                Art Museum Image Consortium (AMICO) is one of those consortiums, but
+                                its image collections only have about 6,000 works from Asian
+                                cultures (AMICO, 2001). The lack of indexing standards and tools is
+                                the same challenge for all museums. Most museums either develop
+                                their own indexing standards and tools or do not have adequate
+                                professional personnel to manage their image collections (CLIR,
+                                1999; Graham, 1999). Regarding translation standards, although
+                                American libraries started using Pinyin as the standard romanization
+                                scheme for Chinese characters on October 1, 2000 (RLG, 2000), many
+                                museums may not be aware of this change and may still use the
+                                Wade-Giles system. These challenges are important to the development
+                                of image collections.
+                        
+                    
+                
+                
+                    METHODOLOGY
+                    
+                        PARTICIPANTS
+                        Six museums were selected for this study based on the size and diversity
+                            of their Chinese collections or their image management. The six
+                            participating museums were in the states of California, Illinois,
+                            Massachusetts, New York, Ohio, and Washington, D.C.
+                    
+                    
+                        PROCEDURE
+                        
+                            
+                                Pre-visit questionnaire
+                            
+                            A set of self-administered questionnaires was used to collect
+                                librarians’ views on cataloging/indexing practices, the functions of
+                                new image management systems, and the use of images. The
+                                questionnaires were distributed to librarians before an on-site
+                                visit and were collected between January and April 2002.
+                        
+                        
+                            
+                                Follow-up phone interview
+                            
+                            After all respondents answered the questionnaires, the investigator
+                                examined the questionnaires and conducted phone interviews with the
+                                respondents for unclear answers and in-depth information. The
+                                investigator identified several key people for observations and
+                                interviews when visiting museums.
+                        
+                        
+                            
+                                On-site visit
+                            
+                            Based on the knowledge gained from the questionnaires and phone
+                                interviews, on-site visits were conducted between June and August
+                                2002. The investigator observed librarians and museum practitioners’
+                                image seeking behavior and also interviewed those people for further
+                                understanding of their search behavior. The investigator interviewed
+                                museum administrators to obtain their expectations for digital image
+                                management in the mission of the museum.
+                        
+                    
+                
+                
+                    RESULTS AND DISCUSSION
+                    According to the questionnaires, observations, and interviews, the
+                        investigator reports on the current status, problems, and future of image management:
+                            Current Status: all six museums have
+                                been digitizing the Chinese collections. Photographic prints,
+                                photographic negatives, and transparencies/slides (35 mm) are the
+                                most popular formats. All the museums have used or purchased a
+                                computer-based image management system to organize the digital
+                                images and related information.
+                            Problems: most museums did not have
+                                comprehensive records in the past, so they have spent substantial
+                                amounts of their budgets and people-power to establish basic records
+                                or re-enter data for the digital images. Their conventional
+                                cataloging and indexing practices are not suitable or transferable
+                                for the new image management system. Image management systems used
+                                by the six museums are not able to accommodate the features of the
+                                Chinese collections and their records. Most image management systems
+                                are not metadata/XML ready, which means that the expansion of the
+                                systems onto the Web may be limited. Each museum has its unique
+                                institutional structure, which hinders the workflow of image
+                                management and a lack of communication and collaboration exists
+                                among museums departments. 
+                            Future: the development of the
+                                indexing schema is critical to the management of digital images and
+                                to the museum practitioners and on-line users. Image management
+                                systems should be enhanced with the standards of metadata/XML, etc.
+                                for the Web-based environment. 
+                        
+                    Regarding the image-seeking behavior of museum practitioners, and the
+                        administration's expectations of digital images, the investigator will
+                        report the findings of these issues in the future.
+                
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                Art Museum Image Consortium (AMICO)
+                            
+                            
+                            
+                                
+                                
+                                
+                            
+                        
+                         (access September, 2001)
+                    
+                    
+                        
+                            
+                                Council on Library and Information Resources
+                            
+                             Scholarship, instruction, and libraries at the turn of
+                                the century: Results from five task forces of learned societies and
+                                the Council on Library and Information Resources
+                            
+                                Washington, D.C.
+                                 The Council
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    E.
+                                    P.
+                                    Eakins
+                                
+                            
+                            
+                                
+                                    M.
+                                    E.
+                                    Graham
+                                
+                            
+                             Content-based image retrieval: A report to the JISC
+                                Technology Application Programme
+                            
+                                
+                                
+                                1999
+                            
+                        
+                        [Online]: 
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    E.
+                                    Graham
+                                
+                            
+                            The description and indexing of images: Report of a
+                                survey of ARLIS members, 1998/99
+                            
+                                
+                                
+                                1999
+                            
+                        
+                        [Online]. Available: 
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    Pisciotta
+                                
+                            
+                            
+                                
+                                    R.
+                                    Brisson
+                                
+                            
+                            
+                                
+                                    E.
+                                    Ferrin
+                                
+                            
+                            
+                                
+                                    M.
+                                    Dooris
+                                
+                            
+                            
+                                
+                                    A.
+                                    Spink
+                                
+                            
+                            Penn State Visual Image User Study
+                        
+                        
+                            D-Lib Magazine
+                            
+                                
+                                July/August
+                                
+                                2001
+                            
+                        
+                        URL: (access September 2001).
+                    
+                    
+                        
+                            
+                                Research Libraries Group (RLG)
+                            
+                            Library of Congress, other US libraries join
+                                international community on use of Pinyin
+                            
+                                
+                                
+                                2000
+                            
+                        
+                        URL: (access
+                            September, 2001)..
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    Stephenson
+                                
+                            
+                            “Recent developments in cultural heritage image
+                                databases: directions for user-centered design
+                        
+                        
+                            Library-Trends
+                            
+                                48
+                                2
+                                410-437
+                                1999
+                            
+                        
+                    
+                
+            
+        
+    

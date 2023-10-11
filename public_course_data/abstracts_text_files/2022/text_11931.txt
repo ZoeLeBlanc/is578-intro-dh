@@ -1,0 +1,663 @@
+
+        
+            
+                
+                    The lyrical tradition and the 
+                    Chansonnier du roi
+                    
+                
+                
+                    
+                        
+                        Figure 1: BnF, fr. 844, fol. 29 (manuscrit du roi), beginning of
+                            the section for the texts of the count of Bar.
+                        
+                    
+                
+                In the landscape of medieval French texts’ authorship, the lyrical poetry of the 
+                    trouveres and 
+                    trouveresses has the aspect of an exception: contrarily to what can be observed elsewhere, anonymity is rare, and the manuscripts mostly take care to give a clear (though often conflicting between them) attribution, even up to the point of adopting a material organisation by author (fig. 1). Yet, very little is known about the attribution of the melodies that accompany many of these texts: how often are they original? Were they composed by the 
+                    trouvere himself, or by one or several other composers? Is there even a unity behind the different melodies of the work of a given author?
+                
+                To answer these questions, we propose to experiment in the cross examination of the text, the metrical composition and the melodies of a corpus of lyrical texts with the methods of computational stylometry. We will focus on the 
+                    Manuscrit du Roi (Paris, BnF fr. 844), one of the earliest (1260-1270) and richest sources for Romance lyric poetry with its 602 compositions. The literary, musical and linguistic diversity of its contents (profane songs of French trouvères and Occitan troubadours, French motets, instrumental works and Latin sacred compositions) makes it a unique case-study.
+                
+                The contents of this manuscript were acquired thanks to a workflow going from layout analysis, handwritten text recognition to digital editing and ultimately stylometric analysis. Text and music are encoded following the 
+                    Guidelines of, respectively, the 
+                    Text Encoding Initiative (TEI, 2020) and the 
+                    Music Encoding Initiative (MEI, 2020), resulting in a textual and musical edition (See, for a detailed presentation of the ongoing editorial process, Camps 
+                    et al., 2021a).
+                
+                For the needs of the textual analysis of the text, the HTR output, after careful human correction, was then segmented into words, normalised (abbreviations expanded, allographs normalised), lemmatised and POS-tagged using deep learning methods (Table 1). Even if the scores obtained are high, cumulative errors through the different steps might remain an issue.
+                
+                    Table 1: Word accuracy is indicated with respect to the in-domain test set (samples set apart from training material).
+                    
+                        Step
+                        Word acc
+                        Engine
+                        Data/Model
+                    
+                    
+                        segmentation
+                        96.71
+                        Boudams (Clérice, 2020)
+                        
+                            10.5281/zenodo.6500604 
+                        
+                    
+                    
+                        normalisation
+                        98.01
+                        Pie (Manjavacas 
+                            et al., 2019)
+                        
+                        
+                            10.5281/zenodo.6500649
+                        
+                    
+                    
+                        lemmatisation
+                        97.66
+                        Pie (
+                            ibid.)
+                        
+                        
+                            10.5281/zenodo.4320487
+                        
+                    
+                    
+                        pos-tagging
+                        97.55
+                        Pie (ibid.)
+                        
+                            10.5281/zenodo.4320487
+                        
+                    
+                
+                The availability of a complete transcription of both text and musical notations paves the way for the stylometric analysis of the songs of the 
+                    trouvères and 
+                    trouveresses, at a level impossible until now. This is a critical issue, because disputed attributions are very numerous inside the Old French Lyrical tradition (Gatti, 2019), yet it poses specific challenges, because the components are very short (often less than 50 verses), idiolect of the text appears rather homogeneous – sharing as they are on surface the same elitist cultural tradition –, while, in the meantime, the manuscript tradition creates noise (linguistic and substantial variants, even between scribes of the same manuscript). Moreover, the field of musical stylometry is still quite new, and attribution of the text and of the melody have rarely - if ever - been addressed as a whole in this tradition.
+                
+                By default, scholars generally postulate that the melody and the text of a song were composed by the same person. Yet the attested musical elements (for exemple : musical curbe, modality, intervals, ambitus, motives, melismas and musical form) have usually been considered as much more influenced by the tradition than the textual ones. Nonetheless, it will be worth testing the hypothesis that song attribution may be consistently built on both textual and musical elements.
+                Specifically, the Chansonnier du roi offers an interesting dossier, because it contains a subunit dedicated to the collected work of a single author (Thibaut de Champagne so-called 
+                    Liederbuch). Thibaut is perhaps the most prominent of all trouvères (Barbieri, 1999), and the attribution of several songs to him is still disputed (Wallensköld, 1925; Callahan, 2010).
+                
+            
+            
+                
+                    Stylometric analysis of the text
+                    
+                
+                In order to give new insights into these disputed attributions, we performed several stylometric analyses of the text and the music.
+                Stylometric analysis of the text has initially been done using features robust to noise and short text length, in particular character 3-grams (Camps 
+                    et al., 2021a). Both exploratory and supervised analyses, the latter using a linear SVM , were performed to shed more light on the attribution of these components. To compensate for the imbalance between the available samples for all four authors, various upsampling and downsampling strategies (alone or in combination) were experimented, and Tomek links removal (Tomek, 1976), in combination with class weights, was found to be the best performing. Evaluation was done using a leave-one-out approach, and the models reached a global accuracy of 0.79, with a F1 score of 0.93 for Thibaut and 0.76 for Gace (Table 2).
+                
+                
+                     Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words
+                    
+                        
+                        character 3-grams
+                    
+                    
+                        
+                        precision
+                        recall
+                        f1
+                        support
+                    
+                    
+                        Blond
+                        0.85
+                        0.52
+                        0.65
+                        21
+                    
+                    
+                        Gace
+                        0.69
+                        0.86
+                        0.76
+                        43
+                    
+                    
+                        Gaut
+                        0.71
+                        0.60
+                        0.65
+                        20
+                    
+                    
+                        Thib
+                        0.93
+                        0.93
+                        0.93
+                        45
+                    
+                    
+                        —
+                        
+                        
+                        
+                        
+                    
+                    
+                        accuracy
+                        
+                        
+                        0.79
+                        129
+                    
+                    
+                        macro avg
+                        0.79
+                        0.73
+                        0.75
+                        129
+                    
+                    
+                        weighted avg
+                        0.80
+                        0.79
+                        0.79
+                        129
+                    
+                
+                
+                    
+                        
+                        Lemmas (all)
+                    
+                    
+                        
+                        precision
+                        recall
+                        f1
+                        support
+                    
+                    
+                        Blond
+                        0.77
+                        0.48
+                        0.59
+                        21
+                    
+                    
+                        Gace
+                        0.70
+                        0.65
+                        0.67
+                        43
+                    
+                    
+                        Gaut
+                        0.85
+                        0.55
+                        0.67
+                        20
+                    
+                    
+                        Thib
+                        0.65
+                        0.91
+                        0.76
+                        45
+                    
+                    
+                        —
+                        
+                        
+                        
+                        
+                    
+                    
+                        accuracy
+                        
+                        
+                        0.70
+                        129
+                    
+                    
+                        macro avg
+                        0.74
+                        0.65
+                        0.67
+                        129
+                    
+                    
+                        weighted avg
+                        0.72
+                        0.70
+                        0.69
+                        129
+                    
+                
+                
+                    
+                        
+                        POS 3-grams
+                    
+                    
+                        
+                        precision
+                        recall
+                        f1
+                        support
+                    
+                    
+                        Blond
+                        1.00
+                        0.24
+                        0.38
+                        21
+                    
+                    
+                        Gace
+                        0.43
+                        0.49
+                        0.46
+                        43
+                    
+                    
+                        Gaut
+                        0.17
+                        0.05
+                        0.08
+                        20
+                    
+                    
+                        Thib
+                        0.43
+                        0.67
+                        0.53
+                        45
+                    
+                    
+                        —
+                        
+                        
+                        
+                        
+                    
+                    
+                        accuracy
+                        
+                        
+                        0.44
+                        129
+                    
+                    
+                        macro avg
+                        0.51
+                        0.36
+                        0.36
+                        129
+                    
+                    
+                        weighted avg
+                        0.48
+                        0.44
+                        0.41
+                        129
+                    
+                
+                
+                    
+                        
+                        Lemmas (function words)
+                    
+                    
+                        
+                        precision
+                        recall
+                        f1
+                        support
+                    
+                    
+                        Blond
+                        0.59
+                        0.48
+                        0.53
+                        21
+                    
+                    
+                        Gace
+                        0.45
+                        0.40
+                        0.42
+                        43
+                    
+                    
+                        Gaut
+                        0.25
+                        0.30
+                        0.27
+                        20
+                    
+                    
+                        Thib
+                        0.62
+                        0.69
+                        0.65
+                        45
+                    
+                    
+                        —
+                        
+                        
+                        
+                        
+                    
+                    
+                        accuracy
+                        
+                        
+                        0.50
+                        129
+                    
+                    
+                        macro avg
+                        0.48
+                        0.47
+                        0.47
+                        129
+                    
+                    
+                        weighted avg
+                        0.50
+                        0.50
+                        0.50
+                        129
+                    
+                
+                Yet, the extraction of the features with the highest coefficients in the SVM models show a more contrasted result. For an author like Gace Brulé, the 3-grams seem to reveal aspects significant for our stylometric analysis and reflecting lexical and morphological preferences of the author. For instance, the high-frequency of 
+                    apl, 
+                    usp depends mainly of the syntagm 
+                    a plaisir (written as one single word) and the words 
+                    souspir/
+                    souspirer respectively, which seem to be typical of Gace’s idiolect, whereas the low-frequency 
+                    ete is consistent with the raffinate poet’s avoidance of the diminutive nouns and adjectives in -
+                    ete, as marks of a popular register, and his apparent rare use of some abstract nouns like 
+                    faussete. Yet for Thibaut’s corpus, the analysis of the most and least recurrent 3-grams seems to include features that are not of an authorial nature but reflect the particular graphemic habits of the copyist of the part of the manuscript known as Thibaut’s 
+                    Liederbuch as opposed to the scribes at work in the rest of the manuscript: use of ‹o› instead of ‹ou› in particular in words like 
+                    po(u)r, 
+                    to(u)z, 
+                    amo(u)rs, use of ‹u›, not ‹v› at the beginning of words (this last feature being even of a more graphetic nature).
+                
+                To bypass this inconvenient, analyses were repeated, using lemmas, part-of-speech 3-grams and lemmatised function words. Results actually were found to be less accurate (Table 2), which can either point to a less informative nature of these features (i.e., excessive suppression of information and noise generation through lemmatisation, tagging and function words selection), or to the fact that some of the performance of the 3-grams model is due to correlation between scribal practice and authorial units. If that were true, normalisations could both potentially decrease the performance of the model and increase the authorial nature of the features it uses. The relative better performance of lemmas (function and content words) in comparison to part-of-speech or function lemmas could also point towards the importance of lexical choices to discriminate between authors in the training material.
+                
+                    
+                        
+                    
+                    
+                        
+                    
+                
+                Figure 2: Features with the 10 highest positive and negative coefficients in the linear SVM models for Gace Brulé and Thibaut de Champagne; the higher the coefficient, the more the feature would contribute to a placement on one side of the separating hyperplane or the other
+            
+            
+                
+                    Stylometric analysis of the music
+                    
+                
+                Musical stylometry (especially of the 
+                    trouvères) is a much less waymarked field. It is supposed that all composers integrate some little elements consciously or unconsciously in their compositions. A recent study observed that the troubadour Bernard de Ventadorn used in most of this songs three ascendants sounds at the beginning of verses (Chaillou-Amadieu 2016). Such methodology can be automated and show promise for the joint stylometry of text and music. In order to identify relevant features, experiments have been conducted with a variety of variables: notes, intervals, octaves n-grams, with the inclusion of syllable boundaries in the absence of noted measure, all extracted from MEI neumes notation. They were done on two different dataset: a small, controlled dataset (3x10 melodies of supposedly three authors), and an enlarged and more difficult dataset (117 melodies, with imbalanced training set of six authors).
+                
+                
+                    Table 3: Benchmark of musical features for musical stylometry
+                    
+                        
+                        Smaller set
+                    
+                    
+                        n
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                    
+                    
+                        notes
+                        0.67
+                        0.80
+                        0.73
+                        0.67
+                        0.63
+                        0.70
+                    
+                    
+                        octaves
+                        0.57
+                        0.53
+                        0.57
+                        0.60
+                        0.57
+                        0.63
+                    
+                    
+                        intervals
+                        0.77
+                        0.80
+                        0.73
+                        0.70
+                        0.70
+                        0.53
+                    
+                
+                
+                    
+                        
+                        Larger set
+                    
+                    
+                        n
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                    
+                    
+                        notes
+                        0.29
+                        0.38
+                        0.38
+                        0.38
+                        0.26
+                        0.26
+                    
+                    
+                        octaves
+                        0.31
+                        0.44
+                        0.47
+                        0.41
+                        0.38
+                        0.47
+                    
+                    
+                        intervals
+                        0.37
+                        0.40
+                        0.41
+                        0.43
+                        0.46
+                        0.40
+                    
+                
+                Intervals or notes bigrams have proved to be the most efficient on the smaller set, while results on the larger set remain more difficult to interpret. A visualisation on the smaller set shows how these features can structure a vector space of partly authorial data clouds (fig. 
+                    4), yet a benchmark of the various types of features for supervised learning gives results whose interpretation is more elusive (Table 3), apart from the obvious impact of availability of training samples (Table 3).
+                
+                
+                    
+                        
+                    
+                    
+                        
+                    
+                
+                Figure 3: First factor plane from principal component analysis of notes and intervals bigrams (smaller set)
+                
+                    Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)
+                    
+                        
+                        precision
+                        recall
+                        f1
+                        support
+                    
+                    
+                        BlonNes
+                        0.21
+                        0.19
+                        0.20
+                        16
+                    
+                    
+                        GaBru
+                        0.41
+                        0.35
+                        0.38
+                        34
+                    
+                    
+                        GautDarg
+                        0.29
+                        0.31
+                        0.30
+                        16
+                    
+                    
+                        GuilVinier
+                        0.29
+                        0.33
+                        0.31
+                        12
+                    
+                    
+                        Moniot
+                        0.50
+                        0.75
+                        0.60
+                        12
+                    
+                    
+                        ThibChamp
+                        0.68
+                        0.63
+                        0.65
+                        27
+                    
+                    
+                        —
+                        
+                        
+                        
+                        
+                    
+                    
+                        accuracy
+                        
+                        
+                        0.43
+                        117
+                    
+                    
+                        macro avg
+                        0.40
+                        0.43
+                        0.41
+                        117
+                    
+                    
+                        weighted avg
+                        0.43
+                        0.43
+                        0.42
+                        117
+                    
+                
+            
+            
+                
+                    Discussion and further research
+                    
+                
+                Initial results show good and average performance on the attribution of texts and melodies, with an interesting better performance for Thibaut and Gace, our two main target authors.
+                Yet, important work remains to be done, on one hand, to measure the relevancy of different features both for textual and musical stylometry, going beyond simple metrics. Indeed, our work results stress the necessity to go beyond bare metrics in the evaluation of supervised model training, to actually consider the precise features on which the model bases its attributions.
+                Moreover, we aim to explore features that are at the intersection of text and music, such as recurring associations between certain musical and textual features, as well as metric patterns.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Callahan, C. (2010). ‘Thibaut de Champagne and Disputed Attributions: The Case of MSS Bern, Burgerbibliothek 389 (C) and Paris, BnF fr. 1591(R)’. 
+                        Textual Cultures, 5(1). Indiana University Press: 111–32 doi:
+                        10.2979/tex.2010.5.1.111.
+                    
+                    
+                        Camps, J. B., Clérice, T., & Pinche, A. (2021a). ‘Noisy medieval data, from digitized manuscript to stylometric analysis: Evaluating Paul Meyer’s hagiographic hypothesis’. 
+                        Digital Scholarship in the Humanities, 36(Supplement_2), ii49-ii71.
+                    
+                    
+                        Camps, J.-B., Chaillou, C., Mariotti, V. and Saviotti, F. (2021b). ‘Editing and Attributing Musical Texts: the Chansonnier du Roi and the MARITEM Project’. 
+                        EADH2021: Interdisciplinary Perspectives on Data, 2nd International Conference of the European Association for Digital Humanities, Krasnoyarsk, 2021 
+                        .
+                    
+                    
+                        Chaillou-Amadieu, C. (2017).
+                        Philologie et musicologie. Les variantes musicales dans les chansons de troubadours. In Les noces de Philologie et de musicologie. Textes et musiques du Moyen Âge, ed. C. Cazaux-Kowalski and al. Paris: Classiques Garnier, 2017, p. 69-95.
+                    
+                    
+                        Clérice, T. (2020). ‘Evaluating Deep Learning Methods for Word Segmentation of Scripta Continua Texts in Old French and Latin’. 
+                        Journal of Data Mining & Digital Humanities, 2020.
+                    
+                    
+                        Clérice, T., Camps, J.-B. and Pinche, A. (2019). Deucalion, Modèle Ancien Francais (0.2.0). Zenodo doi: 
+                        10.5281/zenodo.3237455..
+                    
+                    
+                        Dees, A. (1987).
+                        Atlas des formes linguistiques des textes littéraires de l’ancien français, Tübingen, Niemeyer.
+                    
+                    
+                        Gatti, L. (2019).
+                        Repertorio delle attribuzioni discordanti nella lirica trovierica, Roma, Sapienza Università Editrice (Online: 
+                        ).
+                    
+                    
+                        Manjavacas, E., Kádár, Á. and Kestemont, M. (2019). ‘Improving Lemmatization of Non-Standard Languages with Joint Learning’. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies Minneapolis, p. 1493–503, doi: 
+                        10.18653/v1/N19-1153.
+                    
+                    
+                        Music Encoding Initiative (2020).
+                        Guidelines. Mainz 
+                         (accessed 8 January 2021).
+                    
+                    
+                        TEI Consortium (2020).
+                        TEI P5: Guidelines for Electronic Text Encoding and Interchange. 
+                         (accessed 9 May 2015).
+                    
+                    
+                        Tomek, Ivan (1976). ‘Two modifications of CNN’, 
+                        IEEE Trans. Systems, Man and Cybernetics, 6:769–772.
+                    
+                    
+                        Troubadour Melodies Database, 
+                        .
+                    
+                    
+                        Wallensköld, A. (1925), ed.. Thibaud IV (1201-1253 ; comte de Champagne): Les chansons de Thibaut de Champagne, roi de 
+                        Navarre. 
+                         (accessed 8 January 2021).
+                    
+                
+            
+        
+    
+

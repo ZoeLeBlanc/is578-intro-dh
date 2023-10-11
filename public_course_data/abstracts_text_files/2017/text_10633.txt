@@ -1,0 +1,163 @@
+
+      
+         
+            Einleitung
+            Dreht sich ein Roman vorab um das Roman-Schreiben, den Zustand der zeitgenössischen Literatur und die Kritik an ihr, dann ist es vielleicht gar nicht so abwegig, dass sein cleverster Witz in seiner eigenen Nicht-Veröffentlichung steckt. Der schweizerische Schriftsteller Hermann Burger griff auf den letzten Seiten seines Romans 
+                    Lokalbericht (1970) zu genau dieser selbstreflexiven und auto-dekonstruktiven Volte, als er den Mentor des jungen Protagonisten und angehenden Schriftstellers urteilen lässt, so könne man heute nicht mehr schreiben, das Manuskript solle liegen bleiben, “ein Jahr, zwei Jahre, zehn Jahre lang” – und Burger sich offenbar selbst an den Ratschlag hält und den Roman tatsächlich zeit seines Lebens nicht veröffentlicht.
+                
+            Ausschlaggebend für die Nicht-Veröffentlichung war freilich nicht diese Pointe, sondern ein biographischer Umstand (vgl. dazu den Kommentar in Zumsteg 2016a: 257-304 bzw. http://www.lokalbericht.ch/kommentar). Aus heutiger Warte erscheint die Veröffentlichung jedoch zweifellos geboten. Der 
+                    Lokalbericht nimmt in Burgers Lebenswerk und Werkleben eine Scharnierfunktion ein, indem sich Burger in diesem ‘Rohdiamanten’ erstmals ungestüm an jene unverwechselbare Poetik herantastet, die ab seinem Roman 
+                    Schilten: Schulbericht zuhanden der Inspektorenkonferenz von 1976 zu seinem Markenzeichen wird. Die lang währende Beschäftigung Burgers mit dem Romantext und seinen Vorstufen – schreibend, vorlesend, auszugsweise publizierend – legt darüber hinaus Zeugnis ab für die Bedeutung, die er dem Text beimaß. Burgers Bonmot “Literatur ist, wenn man trotzdem druckt”, muss also zur Rechtfertigung dieser postumen Veröffentlichung gar nicht erst bemüht werden.
+                
+         
+         
+            Der Lokalbericht als Hybrid-Edition
+            Die erstmalige Herausgabe des Romans aus dem Nachlass im Schweizerischen Literaturarchiv, Bern (SLA), erforderte eine andere editorische Handhabe als die vor zwei Jahren erschienene Leseausgabe von Burgers Werken in acht Bänden (Zumsteg 2014), die sich auf den Wiederabdruck seiner bereits zuvor publizierten Texte beschränkte. Eine Hybrid-Edition, bestehend aus einer umfassenden digitalen Edition und einem schlichten Lesebändchen als deren Spin-off (Zumsteg 2016a, 2016b), wird dem Archivfund besser gerecht, zumal sich die Entstehung des Romans dadurch auszeichnet, dass einzelne Textbausteine eine lange Vorgeschichte haben. Die Änderungen und Unterschiede werden dabei viel weniger auf den einzelnen Typoskript-Seiten manifest als zwischen den Textstufen, sie werden erst im Vergleich der betreffenden Dokumente erkennbar. Die Möglichkeiten einer digitalen Edition, die nicht durch das Format der Buchseite und die lineare Folge bestimmt und begrenzt sind, boten sich für diese Situation besonders an. Das digitale Format gab überdies Gelegenheit, die vielfältigen allographen Materialien aus dem Nachlass und aus anderer Provenienz miteinzubeziehen, die für die Kontextualisierung und das Verständnis der Autographen sowie für Burgers mosaikartige Arbeitsweise erhellend sind. Das Projekt bot also eine gute Ausgangslage, den vielgerühmten Mehrwert einer digitalen Edition gegenüber den hergebrachten Publikationsformen zu realisieren. Die digitale Edition (beta) ist seit dem 22. Oktober 2016 unter http://www.lokalbericht.ch verfügbar.
+         
+         
+            Grundlage: hochqualitative Digitalisate, dokument-orientierte TEI-Encodings
+            Neben den 179 beschriebenen Typoskriptseiten des Romans wurden von den knapp 900 weiteren Textträgern, die im Rahmen der digitalen Edition präsentiert werden, hochauflösende Digitalisate im TIFF-Format und/oder mit OCR hinterlegte PDF-Dateien angefertigt. Aufgrund der fotografisch hervorragenden Qualität und der ohnehin guten Leserlichkeit der (zumeist nur punktuell korrigierten) Typoskripte und handschriftlichen Dokumente nehmen diese Digitalisate den Rang der primären digitalen Repräsentation ein.
+            Die Digitalisate aller Dokumente, die Bestandteil des eigentlichen dossier génétique sind, wurden durch dokument-orientierte, auf der Basis von OCR-Daten erstellte, TEI-Encodings (sourceDoc) ergänzt. Diese Encodings bilden die Grundlage der diplomatischen Transkription, d.h. der Umschrift aller Texte inklusive mikrogenetischer Varianz. Die minutiöse Aufzeichnung dieser Phänomene erwies sich als sehr zeitaufwändig. Retrospektiv wäre zu erwägen, die Tiefe des Encodings im Sinne des Vermeidens eines “Over-taggings” (Bernhart/Hahn 2014, Hanrahan 2015) zu reduzieren, zumal die derart codierten Phänomene aus der Perspektive der naheliegenden Forschungsfragen nur einen begrenzten Mehrwert gegenüber dem durchsuchbaren Volltext und den Digitalisaten schaffen.
+            Durch Extraktion der Text-Nodes inklusive der regularisierten Varianten und basierend auf Milestone-Elementen (Absätze, Seitenumbrüche) ließen sich ab dem dokument-orientierten TEI-Encoding sowohl der für die Druckausgabe verwendete Lesetext als auch text-orientierte TEI-Encodings gewinnen, welche die Grundlage für die Lesefassung der digitalen Edition bilden (Umschrift aller Texte ohne Berücksichtigung mikrogenetischer Varianz).
+            Die TEI-Encodings, die unter den Bedingungen der CC BY 2.0-Lizenz nachnutzbar sind, enthalten selbstredend auch die Metadaten des jeweiligen Typoskript-Konvoluts oder Briefes.
+         
+         
+            Präsentation und Funktionalität
+            Als digitale Edition mit ausgeprägter textgenetischer Komponente lehnt sich der Aufbau der 
+                    Lokalbericht-Edition an vergleichbare aktuelle Projekte wie die textgenetische Edition Wofgang Koeppens 
+                    Jugend (Krüger, Mengaldo, Schumacher 2016) und die historisch-kritische Edition von Goethes 
+                    Faust an (Bohnenkamp, Henke, Jannidis 2016). Die angebotenen Interaktionsmechanismen lassen sich mit der Edition Ch. G. Heynes' Vorlesungen über die Archäologie vergleichen (Graepler o. J.). Die Benutzerin oder der Benutzer der Edition hat in jeder Dokumentansicht die Möglichkeit, zwischen den vier Präsentationsformen Digitalisat, Transkription, Lesefassung und Metadaten hin und her zu wechseln. Dabei gibt es drei Ansichtsmodi, die für unterschiedliche Lese- bzw. Benutzungspraktiken stehen:
+                
+            In der 
+                    Grundansicht wird eine Oberfläche eines Textträgers dargestellt. Schaltflächen erlauben das Navigieren innerhalb des Texts, offerieren aber auch Verknüpfungen zu textgenetisch verwandten Seiten anderer Konvolute. Die verlinkten Ziele werden standardmäßig an Stelle des aktuellen Dokumentes geladen. Die Grundansicht eignet sich daher besonders für eine (zumeist) lineare Lektüre. Sie lässt sich im Gegensatz zu den beiden Doppelansichten auch auf kleinen Anzeigegeräten verwenden.
+                
+            Die 
+                    Parallelansicht dient dazu, die gleiche Textstelle in zwei Ansichten zu vergleichen. Sie erlaubt z.B. die Gegenüberstellung von Digitalisat und Transkription. Vor- und Zurückblättern wirkt sich dabei jeweils auf beide Ansichten aus. Auch in der Parallelansicht lassen sich Seiten anderer Konvolute laden, die einen textgenetischen Bezug zur aktuell dargestellten Seite haben.
+                
+            Die flexibelste Benutzungsmöglichkeit bietet schließlich die 
+                    Synopsis. Sie ähnelt beim ersten Aufruf der Parallelansicht, lässt im Unterschied zu ihr aber den Vergleich zwischen textgenetisch verwandten Textträgern Seite an Seite zu. In dieser Ansicht wird typischerweise zweimal die gleiche Präsentationsform gewählt, etwa Faksimile gegen Faksimile oder diplomatische Transkription gegen diplomatische Transkription.
+                
+            
+               
+                  
+                  Digitale Edition 
+                            Lokalbericht: Synoptische Darstellung
+                        
+               Alle drei Ansichtsmodi binden unter der Textansicht auch eine visuelle Navigation in der Form eines skizzenbasierten Graphs ein, der eine Vogelperspektive auf das gesamte Materialkorpus bietet. Indem in Benutzerinteraktion die textgenetischen Bezüge als Verbindungslinien (Links) zwischen den als Kreissymbolen (Nodes) dargestellten Einzelblättern ein- und ausgeblendet werden können, lässt sich die Textentwicklung auf der Makroebene anschaulich verfolgen. Die einzelnen Verbindungslinien dienen dabei zugleich als Links, über die sich die beiden ausgewählten Blätter wiederum in der synoptischen Ansicht laden lassen (Dängeli, Theisen, Wieland, Zumsteg 2016).
+                
+            Editoriale Expertise zur Textgenese wird zusätzlich durch einen erläuternden Überblickskommentar und Stellenkommentare zum Romantext sowie durch Verweise auf editionsinterne und -externe Ressourcen befördert.
+            Durch die Auszeichnung von Personen (421), Orten (378) und Werken (191), die im Roman bzw. im Korpus vorkommen oder einen wichtigen Bezug dazu haben, ist das Korpus überdies auch semantisch erschlossen. Diese wo immer möglich auf Normdatensätze (VIAF, GND, GeoNames) referierenden Einheiten sind über Register zugänglich, sie lassen sich aber auch in der Transkription und im Lesetext hervorheben.
+            Die Volltextsuche mit flexibel kombinierbaren Filtern (z.B. nach Textkategorie) bietet dem Benutzer einen weiteren Einstiegspunkt in die vielfältigen und spannenden Materialien der digitalen Edition.
+         
+         
+            Aspekte digitaler Nachhaltigkeit
+            Weil von Anfang an die Perspektive bestand, die digitale Edition nach der Entwicklung am Cologne Center for eHumanities an das Schweizerische Literaturarchiv bzw. die Schweizerische Nationalbibliothek zu übergeben –, galt ab Projektbeginn die Prämisse, eine bewusst einfache und leichtgewichtige technische Lösung anzustreben, die nur einen geringen Anteil an serverseitiger Progammierung erfordert und die sich mittel- und langfristig leicht warten lässt. Diese Kriterien legten es nahe, aus den TEI-Encodings statisches HTML zu erzeugen, das nur punktuell durch dynamisch erzeugten Code ergänzt werden muss (z.B. freie Volltextsuche). Dass eine solche datenbanklose Lösung durchaus zeitgemäß sein kann, zeigen die zahlreichen Generatoren für statische Webseiten, die in jüngerer Zeit entwickelt wurden und die mitunter große Akzeptanz fanden.
+                    1
+            
+            Für die digitale Lokalbericht-Edition fiel die Wahl mit Apache Cocoon
+                    2 auf eine vom Ansatz her in gewissem Grad vergleichbare, jedoch besser zu den vorliegenden XML-Daten passende und insbesondere auch sehr ausgereifte Anwendung. Dabei profitierten wir von der soliden Grundlage des im Produktiveinsatz bewährten Werkzeugs 
+                    Kiln (vormals 
+                    xMod) von Monteiro Viera und Norrish (2012), das Cocoon mit SOLR und Sesame bündelt und dank guter Dokumentation schnell einsatzbereit ist.
+                    3 Ergänzt um eigene Pipeline-Definitionen und XSL-Transformationen ließ sich auf der Grundlage von Kiln eine monolithische Webanwendung erstellen, die abgesehen vom Bildserver alle Funktionalitäten umschließt und die mit einem einzigen Befehl auf einem Standardwebserver lauffähig ist. Im Bedarfsfall lässt sich die Seite auch als komplett statisches HTML abspeichern, wodurch ein wesentlicher Schritt zur langfristigen Konservierung und Verfügbarmachung erfüllt sein sollte.
+                
+            Um die Hürde der Applikations-Präservierung auch hinsichtlich der permanenten Referenzierung tief zu halten, verweisen die Permalinks lediglich auf – irgendwie geartete – digitale Repräsentationen real existierender Dokumente. Bestimmte Ansichten oder Funktionalitätszustände sind damit explizit nicht permanent referenzierbar, was die Verantwortung der übernehmenden Institution reduziert und ihr mehr Flexibilität für künftige konzeptuelle oder technische Veränderungen zubilligt. Im Bedarfsfall sind die Benutzer gehalten, bestimmte Ansichten selbständig zu persistieren, beispielsweise durch Übergabe der URL an die Wayback Machine.
+                    4
+            
+            Ein weiterer Mosaikstein zur Sicherung der Nachhaltigkeit betrifft die (derzeit laufende) Aufnahme der Ressource durch das Data Center for the Humanities (DCH)
+                    5 der Universität zu Köln, in deren Rahmen neben der Klärung technischer und rechtlicher Fragen auch die periodische Prüfung der Ressource nach festgelegten Kriterien geregelt wird. Möge dies gewährleisten, dass der zu Lebzeiten unpubliziert gebliebene Lokalbericht nach seiner Erstveröffentlichung nicht abermals ins archivalische Dunkel versinkt.
+                
+         
+      
+      
+         
+            Die ihrerseits mit DocPad erstellte Liste unter https://staticsitegenerators.net führt per November 2016 445 derartige Tools auf. Zur Beliebtheit vgl. auch https://www.staticgen.com. Die Vorteile dieses Ansatzes liegen auf der Inputseite vorab in den einfachen Quellformaten, die zumeist zur Verwendung kommen (z.B. Markdown, Textile, YAML), auf der Outputseite in der durch die direkte HTML-Auslieferung bedingten hervorragenden Performanz (Biilmann Christensen 2015, Kraetke/Imsiek 2016, Rinaldi 2015).
+            Vgl. https://cocoon.apache.org/2.1/.
+            Vgl. zu Kiln auch Turska 2014.
+            Die Umsetzung einer technischen Adressierbarkeit granulärer Dateneinheiten war nicht Bestandteil des Projekts, sie könnte auf der Bestehenden Grundlage aber nachgerüstet werden.
+            Vgl. http://dch.phil-fak.uni-koeln.de.
+         
+         
+            
+               Bibliographie
+               
+                  Bernhart, Toni / Hahn, Carolin (2014): 
+                        „Datenmodellierung in digitalen Briefeditionen und ihre interpretatorische Leistung. Ontologien, Textgenetik und Visualisierungsstrategien. Workshop im Jacob-und-Wilhelm-Grimm-Zentrum der Humboldt-Universität zu Berlin, 15./16. Mai 2014“,
+                        in: 
+                        editio 28: 225-229.
+                    
+               
+                  Biilmann Christensen, Mathias (2015): 
+                        „Why Static Website Generators Are The Next Big Thing“,
+                        in:
+                        Smashing Magazine 2. November 2015
+                        https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/ [letzter Zugriff 24. August 2016].
+                    
+               
+                  Bohnenkamp, Anne / Henke, Silke / Jannidis, Fotis (2016): 
+                        Historisch-kritische Faustedition. Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach. Beta-Version 2. http://beta.faustedition.net [letzter Zugriff 28. Oktober 2016].
+                    
+               
+                  Daengeli, Peter / Theisen, Christian / Wieland, Magnus / Zumsteg, Simon (2016): 
+                        „Visualizing the Gradual Production of a Text“, in: 
+                        DH2016: Conference Abstracts 767–769.
+                    
+               
+                  Graepler, Daniel (o. J.):
+                        Christian Gottlob Heyne – Vorlesungen über die Archäologie. 
+                        http://heyne-digital.de [letzter Zugriff 20. November 2016].
+                    
+               
+                  Hanrahan, Elise (2015): 
+                        „‚Over-tagging‘ with XML in Digital Scholarly Editions“, 
+                        in: 
+                        DHd 2015: Von Daten zu Erkenntnissen 193–196.
+                    
+               
+                  Kraetke, Martin / Imsieke, Gerrit (2016): 
+                        „XSLT as a powerful static website generator. Hogrefe's Clinical Handbook of Psychotropic Drugs“, 
+                        in: 
+                        Proceedings of XML In, Web Out: International Symposium on sub rosa XML. Balisage Series on Markup Technologies 18 
+                        http://www.balisage.net/Proceedings/vol18/html/Kraetke02/BalisageVol18-Kraetke02.html [letzter Zugriff 24. August 2016].
+                    
+               
+                  Krüger, Katharina / Mengaldo, Elisabetta / Schumacher, Eckhard (2016): 
+                        Wolfgang Koeppen. Jugend. 
+                        http://www.koeppen-jugend.de/ [letzter Zugriff 24. August 2016].
+                    
+               
+                  Monteiro Viera, Jose Miguel / Norrish, Jamie (2012): 
+                        Kiln. 
+                        https://github.com/kcl-ddh/kiln [letzter Zugriff 24. August 2016].
+                    
+               
+                  Rinaldi, Brian (2015): 
+                        Static Site Generators. Modern Tools for Static Website Development. 
+                        Sebastopol: O’Reilly.
+                    
+               
+                  Turska, Magdalena (2014): 
+                        „What prevents people from firing their own Kiln?“,
+                        in:
+                         Nesting Instinct. Build in progress
+                  http://blogs.it.ox.ac.uk/mturska/2014/07/30/what-prevents-people-from-firing-their-own-kiln [letzter Zugriff 24. August 2016].
+                    
+               
+                  Zumsteg, Simon (2014): 
+                        Hermann Burger: Werke in acht Bänden. 
+                        Zürich: Nagel und Kimche.
+                    
+               
+                  Zumsteg, Simon (2016a): 
+                        Hermann Burger – Lokalbericht: Roman. Herausgegeben aus dem Nachlass. 
+                        Zürich: Voldemeer.
+                    
+               
+                  Zumsteg, Simon / Dängeli, Peter / Wieland, Magnus / Wirtz, Irmgard (2016b): 
+                        Hermann Burger – Lokalbericht: Digitale Edition. 
+                        http://www.lokalbericht.ch [Beta-Version vom 22. Oktober 2016].
+                    
+            
+         
+      
+   
+

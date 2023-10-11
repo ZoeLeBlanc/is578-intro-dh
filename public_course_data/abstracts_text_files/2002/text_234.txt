@@ -1,0 +1,203 @@
+
+
+
+    
+        
+            
+                Rich Textual Metadata: Implementation and Theory
+                
+                    
+                        Mark
+                        Olsen
+                        
+                            University of Chicago
+                            mark@barkov.uchicago.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Textual metadata is widely and extensively supported in various encoding schemes,
+                    from the most basic representations such as Simplified Dublin Core to the almost
+                    limitless extensions supported by the Text Encoding Initiative. Defined as
+                    "structured data about data" metadata functions, in both computerized and
+                    non-computerized (such as printed library card catalogues) primarily as means to
+                    manage and find information resources. The limits of what might be considered
+                    metadata, or more specifically textual metadata, are hazy. Many scholars in the
+                    human sciences have used data about text, which might not typically be
+                    considered to be metadata, to further analytical objectives. In my own work for
+                    example, I have used data about the production and distribution of printed books
+                    and the performance of plays to examine "reader response" to texts and to track
+                    the "consumption" of text in social, cultural and political contexts.[1] For example, Mark Olsen and Louis-Georges Harvey, "Reading in
+                        Revolutionary Times: Book Borrowing from the Harvard College Library,
+                        1773-1782," in Harvard Library Bulletin (1993):
+                        57-72 and Emmet Kennedy, et. al. Theatre, Opera, and
+                            Audiences in Revolutionary Paris: Analysis and Repertory
+                        (Greenwood Press, 1996). Rich textual metadata may serve as more than
+                    a vital means to manage and find information, but act as a basis for a variety
+                    of analytical functions and focus attention back to questions regarding the
+                    nature of textuality.
+                This paper will first address extensions to the textual object model under
+                    PhiloLogic, the "chunky soup model"[2] Leonid Andreev et al,
+                        "Re-engineering a War Machine: ARTFL's Encyclopédie" in Literary and Linguistic
+                        Computing Vol 14, No. 1 1999, pp. 11-28., in which all
+                    elements of textual databases from words to documents may be considered to be
+                    objects with attributes. The utility of this model will be demonstrated by
+                    reference to databases produced by Alexander Street Press in conjunction with
+                    the University of Chicago, which combine a wide array of metadata, full text
+                    tools, and hypermedia integration. Finally, the ability to manage an almost
+                    unlimited array of textual metadata poses a set of questions about the nature
+                    and organization of text and metadata.
+                PhiloLogic is a modular system, in which a textbase is really a set of
+                    coordinated or related databases, typically including an object database, a word
+                    forms database, a word concordance index mapped to textual objects, and an
+                    object manager mapping text objects to byte offsets in data files. Each of these
+                    databases is stored and managed using its own subsystem. To support a rich
+                    textual metadata, I implemented a perl/SQL object manager containing one or more
+                    SQL tables with full relational capabilities between them, linked by unique
+                    object identifiers to the text data. This unique key is, in most
+                    implementations, a logical address of the object. Typically, these are defined
+                    in a hierarchy descending from a document down to a word, without reference in
+                    the object mapper, to the type of object -- book, chapter, article, dictionary
+                    entry, poem, verse, sentence, etc. -- allowing for searching of words in
+                    selected objects and navigation up and down the hierarchy. The independence of
+                    the object hierarchy from the data associated with it allows for query driven
+                    access to any object at any level. Equally, this model supports creation of
+                    multiple metadata representations to support different query capabilities into
+                    the same textual database.
+                The paragraph in Diderot's Encyclopédie, for example,
+                    containing the phrase étincelles lumineuses has the
+                    logical address: 35:78:0:51, being the 51st child object of the 78th top level
+                    object, of the 35th file (or document). The metadata associated with this object
+                    is stored in an SQL table points to 35:78 indicating that it is the main article
+                        Electricité, by d'Aumont, in the class of
+                    knowledge Physique, and is associated with the page
+                    object 35:43, the 43rd page object (not the page number which is stored in a
+                    related table) of the 35th file. In some databases, an individual file would
+                    correspond to a text or document, but this is not required since document
+                    definition is built dynamically from the metadata. This model may be extended to
+                    any depth of object and associate an arbitrary amount of metadata to any
+                    particular object. One may also create of multiple, related, metadata tables to
+                    permit handling objects of different granularity and definition.
+                    Chadwick-Healy's English Poetry database, for example, may be defined as a
+                    collection of volumes of poetry, with the typical metadata, such as author,
+                    title of the volume, date of publication. A second "look" into the same database
+                    may associate a different SQL table to individual poems, including year of
+                    composition, title, and type of poem. The poem "Vpon a Diamond cutt in forme..."
+                    in The English and Latin Poems of Sir Robert Ayton...
+                    is identified as object 1143:1:44 in the database. Two automatically generated
+                    SQL tables support different "looks" into the database, one as "books of poetry"
+                    and one as individual "poems", with data corresponding to the level of
+                    representation related by unique object identifier.
+                The collaboration between the University of Chicago and Alexander Street Press
+                    (ASP) to develop large and important textual databases with unprecedented levels
+                    of metadata allowed me to implement, test and refine many of PhiloLogic's object
+                    and metadata handling capabilities. The currently released databases, North American Women's Letters and Diaries (currently
+                    14,700 documents, with a final projected size of over 40,000) and Civil War Letters and Diaries --and those under
+                    development including Early Encounters in North
+                    America, Black Drama, and American Film Scripts Online -- are each composed of
+                    many SQL metadata tables containing of anywhere from 30 to well over 100 fields,
+                    associated with textual materials in various ways.
+                Complementing normal kinds of metadata one would expect, such as author, date,
+                    genre, the editors of each database select different kinds of metadata to be
+                    included in the database. Some of these extend direct descriptions of the text,
+                    such as the social context of composition, occupation or social status of the
+                    author, names of battles or tribes, flora and fauna described, and so on. The
+                    databases also make use of extensive document indexing, such as subject,
+                    geographic, historical, personal events, and other controlled terminology
+                    descriptions of the contents of each document or object. Thus, for example, one
+                    can find or search documents referring to Lincoln's assassination where neither
+                    the word "Lincoln" nor "assassination" appear. The full paper will present
+                    examples of the interaction of rich metadata and full text searching to
+                    illustrate the utility of the object model in PhiloLogic and specific
+                    theoretical issues.
+                The textual object model allows creation of multiple tables to support different
+                    looks into a textual database. Tables of chronological events may have data or
+                    descriptions regarding battles or encounters with native tribes. Tables of
+                    authors, might include number of children or number of marriages, military rank
+                    or age at death. These tables may include heterogeneous data types that might
+                    not be typically considered to be textual metadata, such as winners and losers
+                    of Civil War battles, commanding generals, and even the number of combatants and
+                    losses.
+                Rich metadata also allows for greater flexibility definition of documents and how
+                    texts may be dynamically constructed. To date, ASP implementations are based on
+                    relatively small document segments as a basic unit of analysis. Rich metadata
+                    allows these small segments to be multi-threaded, providing an arbitrary number
+                    of lines of document definition and sequence, including the order in which
+                    documents are published in source volumes, letters to and from particular
+                    authors across published accounts, or sequence descriptions of particular events
+                    such as battles or encounters. Such threading may also serve as a means for
+                    handling hypertext/media relations, from one object to another.
+                The textual object model outlined here blurs the distinctions between text and
+                    context, data and metadata. Metadata may well be found in places least expected,
+                    not limited to headers. Consider the type attribute of a line group
+                        tag&lt;lg type="Epithalamion"&gt;
+                It appears outside of a header but might be considered to be metadata because it
+                    is structured data, subsequently added, about the nature of the data contained
+                    in the line group. In the textual object model this would be accessed in the
+                    same way as any other metadata object, as an element in an SQL table. A rich
+                    textual metadata environment opens significant editorial and analytical freedom
+                    regarding the appropriate contexts for particular views of textual material and
+                    how these might be associated as metadata.
+                The ability to manage practically unlimited amounts of multi-tiered metadata in
+                    an object oriented model might serve as an example of the intersection of
+                    humanities computing and digital librarianship. By adopting and extending
+                    indexing practiced by librarians, to include information not typically
+                    considered textual metadata, with fulltext analysis from humanities computing,
+                    we can further the goals of improving access to materials and introduce new
+                    analytical capabilities to large textbases.
+            
+        
+    

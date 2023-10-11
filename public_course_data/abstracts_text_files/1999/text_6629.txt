@@ -1,0 +1,293 @@
+
+
+
+    
+        
+            
+                HyperPo: The Next Generation
+                
+                    
+                        Stéfan
+                        Sinclair
+                        Department of French Queen's University
+                            4ss42@qsilver.queensu.ca
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    
+                         "Only, perhaps, when hypertext or something like it begins to open
+                            our eyes to startling truths about some body of text, truths that were
+                            totally imperceptible before, may we expect a significant attempt of
+                            synthesis or any substantial shift toward the computer as a major tool
+                            of humanistic study."
+                        (Raben, p. 349)
+                    
+                
+                Since the sophistication and wider implementation of Graphical User Interfaces
+                    (GUI) in the early 1990's, the prodigious diffusion of Hypertext has conduced a
+                    dizzying array of experiments and applications, guides and theories. Granted,
+                    many important foundations date back to prior years, decades centuries and even
+                    millennia - at least as far back as Vannever Bush's description of his Memex
+                    machine (1945) and Ted Nelson's 1965 coining of the word "hypertext" - but the
+                    more recent profusion of hypertextual technology has allowed a great pooling of
+                    resources that has combined the creative and innovative forces of many people
+                    from diverse disciplines. It's of no surprise, then, that hypertext has seen
+                    itself successfully woven into the fabric of objectives as disparate as
+                    pedagogy, retail and literary writing. Literary criticism, however, is one
+                    discipline where the hypertextual paradigm has been almost absent (TACTweb is a
+                    rare notable exception). This is all the more surprising, I think, since
+                    literary criticism stands to benefit substantially from certain possibilities
+                    offered by hypertext. Time and again colleagues have commented on the
+                    regrettable chasm that continues to exist, methodologically, between the text to
+                    be analysed and the data produced to help analyse it (retrospectives on
+                    computing in the humanities such as those by Raben and Potter invariably invoke
+                    this impediment). This paper will present the latest version of HyperPo (Hypertexte potentiel), a Web-based application intended, among other
+                    things, to bridge the gap between text and data by fully exploiting the
+                    hypertext paradigm (HyperPo is available at ).
+                It needs to be asserted from the outset that HyperPo is as much a tool for text
+                    exploration as a program for text analysis (a fundamental characteristic
+                    enshrined in its full name "HyperPo: Text Analysis and Exploration Software").
+                    In fact, HyperPo strives to blur the distinction between exploration and
+                    analysis with two related strategies: (1) the superimposition of text and data
+                    through typographical schemes (2) the tight integration of text and data through
+                    hypertextual links. The act of reading the text and the acts of producing and
+                    analysing data are all collapsed into a flexible exploratory and experimental
+                    activity that assumes the modalities desired by the particular
+                    reader/user/researcher (these distinctions are of course also blurred).
+                In essence, HyperPo is an extensible text reading program. The first-time user
+                    can have HyperPo display an electronic text with little or no supplementary
+                    information (in a format that would seem comforting and familiar), and
+                    progressively add types of textual information deemed potentially interesting or
+                    useful. I see this incremental approach to computer-assisted literary criticism
+                    as a crucial step if it is to gain wider acceptance. No longer must the
+                    traditional literary critic make a daunting leap of faith away from her text and
+                    towards a new world of quantitative analytical tools; she can stroll around on
+                    relatively familiar ground and, in time, explore and claim new territories as
+                    she sees fit. Although HyperPo's user-friendliness doesn't come at the expense
+                    of utility and power, it should be conceded that all of its text analysis
+                    functions (frequency, distribution, cooccurrence, KWIC lists, etc.) are
+                    available from other programs. What is novel, and epistemologically significant
+                    (in ways that will be defined and elaborated), is the possibility of dynamically
+                    generating text and data intertwined in a rich web of associated
+                    information.
+                Given that HyperPo is freely available as a web-based program -- which, among
+                    other advantages, eliminates the need for the user to install and update
+                    software other than a browser -- I will forego a detailed description of the
+                    software in favour of a brief account of its major features and a somewhat
+                    hypothetical presentation of it in action with an excerpt of Georges Perec's
+                        La Disparition. (My work on the play between
+                    literary game and violence in La Disparition will be a
+                    secondary preoccupation in this context. Although I heed the warnings of
+                    colleagues to not concentrate on the tools of criticism at the expense of proper
+                    literary scholarship, I think that HyperPo represents a sufficiently significant
+                    shift in methodology that the process of hypertextually
+                    driven exploration merits full consideration and elaboration. See my ACH-ALLC'97
+                    summary for an apologia of Oulipian texts in my corpus).
+                As one would expect, the absence of the letter 'e' in Perec's lipogrammatical
+                    novel La Disparition severely limits the use of the
+                    primary feminine morphological marker in nouns and adjectives of French. This in
+                    turn further limits an already deleted vocabulary, encouraging recourse to
+                    foreign and unusual words («la Star» and «la Squaw»), unorthodox paraphrases («pli labial» for une
+                    lèvre) and aberrant syntactical forms («un Roman
+                        Jakobson qui nous dirait son structural avis» -- the strange
+                    anteposition of the adjectif masks how Perec avoids more common forms such as
+                    «structuralisme» or «structuraliste»). In fact, the lipogrammatical constraint
+                    propagates itself through successive textual levels: the graphemic, the
+                    morphemic, the lexical, the syntactical, the textual and the semantic (the
+                    precise meaning and order of these are obviously open to discussion).
+                By representing parts of speech or repetition information directly in the text
+                    (through a chosen colour scheme), by linking together text based on this
+                    information, by providing the means to generate KWIC, distribution and
+                    coocurence lists, and finally, by linking words to outside resources such as the
+                    Altavista search engine and the ARTFL Frequency database, HyperPo provides the
+                    means of exploring different stylistic strategies present in La
+                        Disparition and indeed in any text. Figure 1 shows a screen shot of
+                    HyperPo where the relative frequency of repeating series of two words are shown
+                    in increasing hues of grey in the text of the top left frame, the list of
+                    repeating series of words in alphabetic order are shown in the top right frame,
+                    the distribution of pouvoir is shown in the bottom
+                    left frame, and other information is indicated in the status bar.
+                
+                    Figure 1
+                
+                As always, HyperPo is about making readily available a relatively powerful but
+                    easy-to-use tool for text exploration and analysis; one that fully exploits the
+                    hypertextual paradigm. Despite progress, much frustration has resulted in
+                    Humanities Computing from trying to make computers do things that they can't
+                    (yet?) do. HyperPo recognizes the respective strengths of humans and computers
+                    and attempts to maximise the collaboration through hypertext.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Vannevar
+                                    Bush
+                                
+                            
+                            As We May Think
+                        
+                        
+                            Atlantic Monthly
+                            
+                                176
+                                
+                                101-108
+                                1945
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Georges
+                                    Perec
+                                
+                            
+                            La Disparition
+                            
+                                Paris
+                                Denoël
+                                1969
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Rosanne
+                                    G.
+                                    Potter
+                                
+                            
+                            Statistical Analysis of Literature: A Retrospective on
+                                Computers and the Humanities, 1966-1990
+                        
+                        
+                            Computers and the Humanities
+                            
+                                25
+                                6
+                                401-429
+                                December 1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Joseph
+                                    Raben
+                                
+                            
+                            Humanities Computing 25 Years Later
+                        
+                        
+                            Computers and the Humanities
+                            
+                                25
+                                6
+                                341-350
+                                December 1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Stéfan
+                                    Sinclair
+                                
+                            
+                            L'HyperPo: Exploration des structures lexicales à
+                                l'aide des formes hypertextuelles
+                        
+                        
+                            
+                                
+                                    Greg
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    Michael
+                                    Levison
+                                
+                            
+                            ACH-ALLC '97 Conference Abstracts
+                            
+                                Kingston, ON
+                                Queen's University Press
+                                1997
+                            
+                        
+                    
+                
+            
+        
+    

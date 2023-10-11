@@ -1,0 +1,215 @@
+
+
+
+    
+        
+            
+                Markup vs. Character Encoding: The quandary of handling
+                    the epigraphical/papyrological “underdot” in computer representation 
+                
+                    
+                        Deborah
+                        Anderson
+                        Dept. of Linguistics, UC Berkeley
+                            dwanders@socrates.berkeley.edu
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        markup
+                        Unicode
+                        underdot
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Problem
+                    When dealing with ancient texts written on various media for detailed
+                        scholarly publication, it is critical to convey information on the specifics
+                        of the writing. After a photo, scanned image, or line drawing is made from
+                        the original text, texts are commonly transferred to paper or an electronic
+                        medium. In order to capture the information from the inscription,
+                        transliteration and transcription schemes in Roman letters (or Greek, for
+                        materials using Greek script) are often used to capture all the
+                        characters--whether clearly legible, faint, damaged--and the empty
+                        spaces.
+                    Ancient texts, especially those in damaged condition, present difficulties,
+                        for they must rely upon the subjective judgment of the transcriber (and
+                        editor) in deciding what characters are present, whether an erasure is
+                        identifiable, the amount of empty space(s), etc. Certain conventions on how
+                        to represent these details have been created and are followed in various
+                        fields (i.e., double square brackets [[ ]] enclose erasures, angle brackets
+                        &lt; &gt; indicate letters made in err by the scribe). A common method in
+                        transliteration and transcription for denoting a damaged character--or one
+                        whose identity is uncertain--is a dot placed below a letter. This underdot
+                        is common in ancient Greek texts and Latin, for example, at least those
+                        editions intended for the scholar interested in paleography, philology,
+                        etc.
+                    A problem arises in how to handle the underdot in computer representation.
+                        This question surfaced in a project done at UC Berkeley in conjunction with
+                        the Berkeley Library, wherein the Indo-European Studies
+                            Bulletin, a publication affiliated with the UCLA Indo-European
+                        Studies Program, was being put online, using XML, Unicode, and a TEI-Lite
+                        DTD. The underdot appeared in a Sabellian inscription. Since our project
+                        intended to test out the use of Unicode, we reviewed the options available
+                        in Unicode and employed the combining underdot (U+0323) after the character.
+                        On the surface level, this reflected the character represented in the
+                        Sabellian article. However, the combining underdot raised a potential
+                        problem: by interrupting the plain text string with the diacritic, searching
+                        for the entire word could be impeded, unless the underdot was taken into
+                        account when searching. More importantly, should the underdot actually be
+                        encoded as a separate character? Is it on the same level as an “a acute”,
+                        for example, where the diacritic is an essential part of the character? Or
+                        should markup be used, such as denoting the sign with a &lt;damage&gt;
+                        and/or &lt;unclear&gt; tag? Markup then could be visually rendered according
+                        to one’s own convention or taste.
+                    Since Unicode support is only just now becoming more prevalent in new
+                        software and hardware, most computer projects have adopted ASCII
+                        representations of the underdot and other epigraphic and papyrological
+                        symbols. For Greek, the Beta Code of the Thesaurus Linguae Graecae has been
+                        widely adopted by projects (such as Perseus). Eventually, a changeover to
+                        Unicode will occur, and the need to decide how to handle it is becoming more
+                        pressing: should one use a character encoding or markup?
+                    The underdot is but one member of a long list of epigraphic and papyrological
+                        symbols used in transcription and transliteration. An agreement amongst
+                        scholars ought to be made if there is to be consistency in handling these
+                        symbols within the same discipline and across disciplines, since similar
+                        problems are faced in other fields. Currently, Unicode proposals on
+                        cuneiform, Coptic, and Iranian await to see how the problem is resolved in
+                        the Greek and Latin sphere, since it will influence their projects. Or are
+                        the variations between fields (and lack of communication so great) that a
+                        discipline-specific approach will prevail?
+                
+                
+                    Issues
+                    A number of important issues arise when reviewing the problem more deeply:
+                            --While the underdot is frequently used to indicate damage or
+                                uncertainty, it is not necessarily consistently used with this broad
+                                definition, even in ancient Greek materials. In a standard book used
+                                for Greek dialects, Carl Darling Buck’s The Greek
+                                    Dialects (Chicago and London, 1955), he states: “The
+                                occasional use of a dot under a letter indicates that it is
+                                mutilated. But this is commonly disregarded if the proper reading is
+                                reasonably certain” (p. 184). In Mycenaean materials (Emmett
+                                Bennett, Jr., and Jean-Pierre Olivier, The Pylos
+                                    Tablets Transcribed, Part I: Texts and Notes, Rome,
+                                1973), however, an underdot under a digit can indicate that there is
+                                a question whether the number is in the text at all, a problem
+                                regarding the identity of the number, or it may merely indicate that
+                                the number is almost illegible” (p. 10). Indeed, if fine
+                                granularity of a text is intended, “damage” and
+                                “uncertainty” can and probably should be separated as two
+                                distinct elements, and this is so done in a new proposal,
+                                “Epidoc”, being worked by at the University of North Carolina by
+                                Tom Elliott, Hugh Cayless, and Helen Hawkins (, ).
+                            --In some languages, an underdot has a specific phonetic meaning.
+                                In Sanskrit, it is used for a retroflex s. The phonetic sense
+                                specific to the underdot is at variance with the unclear sign
+                                meaning. Potential confusion with the phonetic sign is possible in
+                                searching.
+                            --One potential problem of character-encoding with Unicode is an
+                                apparent ambiguity of certain signs for the naive user. A scholar
+                                looking for a combining underdot when skimming through the Unicode
+                                Standard (or scrolling down the choices under MS Office 2000’s
+                                Arial Unicode MS font) may choose, quite incorrectly, U+093C, the
+                                Devanagari sign nukta, which has very specific use. This error would
+                                cause problems for searching and rendering.
+                            --A number of characters for damaged signs are proposed in a
+                                Unicode proposal for Egyptian hieroglyphs. While such signs would
+                                appear with the hieroglyphic characters and not in a Roman-type
+                                transliteration/transcription scheme, it significantly offers a
+                                character-encoded model for conveying a damaged sign, and not one
+                                based on markup. Could this option peacefully co-exist with a
+                                markup-only approach used in other projects and is this
+                                advisable?
+                            --Unicode will allow using the ancient scripts more fully, since
+                                the character encoding standard should allow for easier writing,
+                                rendering, and printing of the original scripts, beyond what printed
+                                publications have been able to offer in the past. (However, this is
+                                only possible with necessary Unicode-enabled operating system,
+                                software, and font support for the characters are present.) Hence, a
+                                fuller representation of a text with the ancient scripts could be
+                                added between the layers of photo/drawing and Romanized
+                                transliteration/transcription. Instead of using an underdot to
+                                indicate a faint letter, for example, markup could be used with the
+                                original script (as well as the transliterated/transcribed version)
+                                to make the sign (or letter) appear fainter or in a slightly
+                                different color.
+                            --A consistent markup scheme could be used with a style sheet to
+                                render the faint/damaged letter in a variety of ways, as suggested
+                                above, offering wide extensibility. If a text is intended for
+                                beginners, the markup indicating the traces of letters or erasures
+                                could be disregarded. If Hittite scholars regularly used a special
+                                symbol for a mutilated sign, for example, this could also be
+                                accommodated by changes to the style sheet.
+                            --Since new Unicode character encoding proposals can take from two
+                                to five years from the first proposal until approval into ISO 10646,
+                                markup offers a much quicker solution. A “best practices” guide
+                                to markup, similar to the Epidoc proposal, would be needed.
+                        
+                    
+                
+                
+                    A Possible Solution?
+                    Markup seems to present the best option, for it allows flexibility and
+                        provides a speedier means to put epigraphic/papyrological text information
+                        on the Web. Also, the use of the underdot reflects information regarding
+                        damage/uncertainty/etc. of a character, and hence is probably best not
+                        encoded as a separate character. However, if markup is to be advocated as
+                        the best approach here, can user-friendly software be created in the
+                        foreseeable future for typing and rendering of such markup schemes? This
+                        poster is intended to encourage further open discussion on the “underdot
+                        quandary” and its ramifications, and to seek input from others,
+                        particularly those with projects on ancient texts or whose expertise is on
+                        markup and relevant technology.
+                
+            
+        
+    

@@ -1,0 +1,146 @@
+
+
+
+    
+        
+            
+                Music via Motion: Interactive Multimedia
+                    Performances
+                
+                    
+                        Kia
+                        Ng
+                        
+                            University of Leeds
+                            kia@kcng.org
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        vision
+                        motion
+                        music
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper presents a motion and colour detection system called Music via Motion
+                    (MvM), which uses a video camera to survey a live scene and track visual
+                    changes. Detected visual activity is used to generate musical events using an
+                    extensible set of predefined musical mapping functions, and a database of
+                    musical phrases. Additional sensing capabilities are provided by physical
+                    sensors (e.g. pressure maps, vibration switches and others) installed on the
+                    performance environments, for direct triggering of specific musical events. This
+                    system allows anyone to control musical sounds with their physical movements in
+                    front of the camera. For example, a simple wave of the hand would result in a
+                    series of musical notes or sound corresponding to the speed and position of the
+                    movement.
+                The main objective of this project is to bring together multiple creative domains
+                    to build an augmented and interactive audio-visual environment, which aims to
+                    offer a new sensory experience to audiences. The user can be both the audience
+                    and the performer, controlling the events both visually and musically. MvM is
+                    portable and can be installed easily in a public environment, enabling it to be
+                    accessible by anyone anywhere, including locations not usually associated with
+                    contemporary exhibitions. The system is also designed to be intuitive and
+                    user-friendly to minimise the time needed for familiarisation; users can
+                    interact with the system with little or no guidance or training. There are
+                    graphical user interfaces providing the ability to change the behaviour and
+                    configuration of the software so that different musical sounds result from
+                    specific forms of movement. The system has been tested in the form of a public
+                    installation where audiences were able to explore it by themselves, and by
+                    public performances with live dancers.
+                Currently, MvM is equipped with several mapping functions, including a
+                    distance-to-MIDI-events mapping with many configurable parameters, such as scale
+                    type, pitch range and others. Parameters of motion such as proximity,
+                    trajectory, velocity and direction can also be tracked and mapped onto musical
+                    parameters such as pitch, velocity, timbre and duration. MvM also offers user
+                    configurable ‘active regions’ where detected visual activities in certain areas
+                    can be mapped onto different MIDI channels.
+                This paper also reports recent interactive dance performances exploring MvM as an
+                    automatic accompaniment system called CoIN (Coat of Invisible Notes), and
+                    discusses design and installation issues for several ongoing interactive
+                    installation-arts projects which explore both motion and sensor modules of MvM.
+                    For CoIN performances, the costumes for the interactive dance performances were
+                    specially designed to explore the colour detection module of the system. MvM is
+                    configured to track the colour where visual changes were detected. Detected
+                    colours are used to control the choice of musical sounds and effects. This
+                    feature is fully explored and particularly clear in a section of the
+                    choreography where the dancers are divided into two groups, wearing costumes in
+                    different colours. The contrasting movements and interactions between the two
+                    groups create interesting musical dialogues with two different musical strands.
+                    A particular feature of these costumes is that they are reversible and can be
+                    split apart, allowing the users to ‘re-assemble’ and ‘re-configure’ them to
+                    achieve different visual effects. These various changes in turn are detected by
+                    MvM and can be used to alter the character of the musical responses.
+                MvM detects visual changes using computer-vision techniques, and enables the
+                    participants (whether trained dancers or the general public) to enjoy complete
+                    freedom of movement, without the need to wear any body-mounted physical sensors
+                    or markers. Physical sensors are installed on the stage and the installations
+                    are designed so they do not obstruct any physical movement. In addition to
+                    musical mapping, MvM display a live-video window of the scene under inspection,
+                    and a processing window highlights visual changes to provide musical and visual
+                    feed-back to performers and audiences. MvM aims to offer audiences a new
+                    experience in which they will have hands-on opportunities to explore their own
+                    artistic expressive creativity. All of the design features offer a very exciting
+                    experience for participants of any ability, allowing anyone to create their own
+                    sensory experience.
+                This paper discusses the low-level image processing modules for motion and colour
+                    detection, various musical mapping functions, hardware setup, and physical
+                    sensor installation on the performance stage for direct triggering of musical
+                    events.
+                In summary, this paper presents a research framework to explore the ‘trans-domain
+                    mapping’ of one creative domain onto another using Computer Vision techniques
+                    and electronic sensors. Technical details and setup are presented and
+                    experiences from recent performances and installations are discussed. Plausible
+                    future directions, including the use of multiple cameras and gesture detection,
+                    are proposed. Mapping functions, sensors, and installation issues are
+                    discussed.
+            
+        
+    

@@ -1,0 +1,193 @@
+
+
+
+    
+        
+            
+                New Technologies, New Strategies for Integrating
+                    Information and Knowledge: Forced Migration Online
+                
+                    
+                        Marilyn
+                        Deegan
+                        
+                            University of Oxford
+                            marilyn.deegan@qeh.ox.ac.uk
+                        
+                    
+                
+                
+                    
+                        Harold
+                        Short
+                        
+                            King's College London
+                            harold.short@kcl.ac.uk
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    The first ten years of the web have largely represented a triumph of
+                        interconnectedness over functionality: in the late nineteen eighties and
+                        early nineteen nineties information resources and teaching tools were being
+                        developed that were highly sophisticated and interactive. The web, for all
+                        its benefits of connectivity, actually resulted in a massive downturn in
+                        functionality, and we are only now able to recover some of those functions
+                        with newer developments. A paradigm example of this loss of functionality is
+                        in the Oxford English Dictionary: the first version
+                        of this, released in the late 1980s, with a DOS interface, represented a
+                        revolution in data access. Version 2, released in 1992 with a Windows
+                        interface added little in terms of functionality, but a great deal in terms
+                        of access. However, OED Online, released in 1999, gave connectivity and
+                        wider access at the cost of a huge loss of the functions that many users had
+                        come to rely upon—so much so that many users have never made the transition
+                        from CD. This is by no means the fault of the developers, but is a
+                        consequence of the platform that we are all now using.
+                    New resources are now being developed for data access and retrieval that take
+                        full advantage of the benefits of interconnectedness, while giving us
+                        enhanced functionality and also allowing us to integrate complex
+                        technologies into an apparently seamless whole. This paper will discuss the
+                        development of an advanced Internet resource, Forced Migration Online () that was launched in November
+                        2002.
+                
+                
+                    THE STUDY OF FORCED MIGRATION
+                    Forced migration is defined by the International Association for the Study of
+                        Forced Migration as ‘a general term that refers to the movements of refugees
+                        and internally displaced people (those displaced by conflicts) as well as
+                        people displaced by natural or environmental disasters, chemical or nuclear
+                        disasters, famine, or development projects’. Forced migration studies are
+                        essentially interdisciplinary, drawing from anthropology, history, politics,
+                        international law, sociology, psychology, and many other disciplines in the
+                        humanities and social sciences. The documentary base of the subject has
+                        grown rapidly over the last twenty years, and scholars and practitioners in
+                        the field rely for their information and studies upon a diverse body of
+                        work: conventional books and journals, but also largely ‘grey’ (unpublished
+                        or semi-published) literature. This grey literature can be difficult to get
+                        hold of, as it derives from so many different sources: government agencies,
+                        non-governmental organizations, academic sources, etc.
+                
+                
+                    THE DEVELOPMENT OF FORCED MIGRATION ONLINE
+                    The development of Forced Migration Online (FMO) began in 1997 at the Refugee
+                        Studies Centre (RSC) at the University of Oxford. The RSC has the world’s
+                        largest collection of grey literature on forced migration (some 15,000
+                        items) and the Andrew W Mellon Foundation granted funding for a portion of
+                        this to be digitized. In 2000, the Mellon Foundation and the European Union
+                        gave further funding for the development of an integrated portal to be
+                        developed on forced migration. The project to develop this portal has been
+                        led by the RSC, but with technical and content partners from around the
+                        world: the FMO team coordinates participants in some 10 institutions and is
+                        working with many more than this to develop content further. FMO now
+                        contains 100,000 pages of fully searchable grey literature, 30,000 pages of
+                        full-text journal materials, a number of specially-commissioned research
+                        guides, a web catalogue with c. 700 entries, an organizations database with
+                        c. 800 records, and a prototype image database.
+                
+                
+                    CREATING INFORMATION ARCHITECTURES FOR THE DEVELOPMENT OF FMO
+                    As anyone engaged in the development of digital libraries and portals knows
+                        only too well, there is no one obvious tool or technology to implement such
+                        complex information resources, though many are currently in development. In
+                        FMO, there are a number of different technologies underlying the resource: a
+                        complexity which is well hidden from the user, for whom access is relatively
+                        simple. The full-text documents are presented using Olive Software’s Active
+                        Paper Archive, which was originally developed for presentation of historic
+                        newspaper content on the web, and which has proved an excellent choice for
+                        the grey literature and journals. FMO is the first project that has used
+                        this product in this way, and the development was a joint research project
+                        between the FMO technical teams at the RSC and at the Centre for Computing
+                        in the Humanities at King’s College London (CCH), and Olive Software. The
+                        structured information resources and catalogues are delivered using Esprit
+                        Soutron’s xdirectory content management system, and various research guides
+                        and other documents are created and presented by means of XML/XSLT.
+                    The core challenge is one of integration: integration of a wide variety of
+                        information types, drawn from geographically separated repositories capable
+                        of providing widely disparate levels of metadata; integration of materials
+                        in numerous languages in a variety of scripts; integration of the multiple
+                        technologies required to meet the differing information processing and
+                        delivery functions; integration of academic analysis and advice for
+                        practitioners, and of information and knowledge, to meet widely varying user
+                        requirements.
+                    Delivering a coherent and integrated resource in a seamless way is a
+                        non-trivial technical challenge. It involves visual design, architectural
+                        design, development of DTDs and style sheets, and the implementation of
+                        leading edge (and therefore constantly evolving) products. Managing the
+                        input from so many people and places around the world represents another
+                        layer of challenge.
+                    This paper assesses the problems of developing and integrating these complex
+                        technologies into a hybrid information environment, in particular looking a
+                        metadata, cataloguing, preservation, delivery and accessibility issues. It
+                        reports on the solutions and partial solutions developed so far, and
+                        assesses the extent to which the solutions fall short of the ideal. It also
+                        discusses a range of further challenges that the FMO team is now tackling:
+                        automatic metadata extraction from journal cross-searching tools for
+                        different products using advanced APIs; using focused crawlers as aids to
+                        cataloguing; automatic categorization of documents for the creation of
+                        regional and topical browse sets. The progress in meeting these challenges
+                        will be discussed in the context of the more established work in the
+                        project.
+                    The paper also places the project in a wider context: of past and current
+                        work in the development and delivery of scholarly resources, including a
+                        number of projects at IATH in Virginia, in CCH at King's College London, and
+                        elsewhere; and of digital library research and development, including
+                        projects such as the ‘hybrid library’ projects funded by the UK government
+                        (including the Malibu project), the DSpace initiative of MIT and others, and
+                        the Mellon-funded FEDORA project based at Virginia and Cornell.
+                
+            
+        
+    

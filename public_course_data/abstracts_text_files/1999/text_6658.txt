@@ -1,0 +1,387 @@
+
+
+
+    
+        
+            
+                Overview of Computer Supported Medieval Slavic
+                    Manuscript Studies in Bulgaria
+                
+                    
+                        Milena
+                        Dobreva
+                        
+                            Institute of Mathematics and Informatics
+                            dobreva@math.bas.bg
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Background
+                    The medieval Slavic manuscript heritage is rich and widely spread. The exact
+                        number of Slavic manuscripts is unknown. Only in Bulgaria, the state-owned
+                        repositories store about 8,000 manuscripts of Slavic origin.
+                    These texts have been created in an interesting cultural setting. The use of
+                        a vernacular language with many regional differences at the orthographic,
+                        lexical and phrase-structure levels makes the medieval texts an important
+                        source for the study of the diachronic and synchronic development of Slavic
+                        languages. The fact that a comparison of 150 variants of a sentence from the
+                        Gospel does not result in two ideal matches is a brilliant illustration of
+                        the variety scale.
+                    The application of computer tools to the medieval Slavic text studies could
+                        facilitate research tasks, especially those, which require analysis of text
+                        variants. This explains the interest of the specialists to the IT
+                        applications. 
+                    This paper aims at presenting the state of the field in Bulgaria. It also
+                        points to the basic unsolved problem - the development of proper text
+                        encoding system, which will enable the encoding of the medieval Slavic texts
+                        close to the originals.
+                
+                
+                    First endeavors in the field
+                    The first applications of IT to the medieval Slavic studies have not been
+                        aimed at collecting and processing texts in electronic form, but rather to
+                        collecting structured information about the manuscripts [Geurts et al.
+                        87].
+                    The creation of formal models was the basic
+                        difficulty in the beginning. Due to the unique researchers' profiles and
+                        interests, the views on the data to be stored and processed were
+                        significantly different.
+                    Initially, the samples of original texts were encoded in Latin
+                        transliteration. This was a practical solution but it was unsatisfactory for
+                        the specialists who would like to be able to represent the texts as close to
+                        the original as it would be possible.
+                
+                
+                    Current state
+                    With the further development of information technologies and the spread of
+                        Windows-based applications, a new stage of the work has been achieved. The
+                        specialists' dream -- to see the text in a form close to the original,
+                        already was viewed as easily reachable. The specialists were concerned with
+                        the development of fonts presenting accurately the paleographic features
+                        characteristic for different periods, schools or scribes. However, a major
+                        problem -- that of creating adequate text encoding standard -- remained
+                        unsolved. The problems with the creation of an encoding system are presented
+                        thoroughly in [Birnbaum 96], but his encoding suggestions are still not
+                        implemented in practice.
+                    The difficulties in creating widely accepted encoding standard are caused by
+                        several reasons:
+                            1. The sets of graphemes appearing in different manuscripts are
+                                different. In some cases the difference of graphemes represents
+                                character differences; in other cases these were variants of the
+                                same character.
+                            2. The encoding of specific textual features (e.g. superscript,
+                                subscript, inscript letters and abbreviations) is still debatable.
+                                Some of the specialists insist on encoding normalized texts where all these features disappear. For
+                                others, the encoding of the text in a form, which represents the
+                                original as close as possible, is a must. But even if we have a
+                                satisfactory encoding standard, we will need to build tools enabling
+                                search within encoded texts. The 'normalization' approach leads to
+                                better solution of the problem with text search, paying the price of
+                                data loss.
+                        
+                    A brief overview of 70 publications from 1995-1998 in the field of computer
+                        processing of medieval Slavic manuscripts shows that 40 publications treat
+                        text representation and processing, including TEI issues. Articles on data
+                        base applications form the next largest group (10 publications). Multimedia,
+                        AI applications and preservation issues appear in isolated cases. This study
+                        was done on the material of [Birnbaum et al. 96], [Dobreva 98] and
+                        publications by Bulgarian authors published in other editions (the complete
+                        bibliography is published on [KNIGCHIJ-SCRIBE].
+                    The major projects which were undertaken in Bulgaria up till now, include:
+                            1. Experiments with data base applications for cataloguing
+                                manuscripts [Geurts et al. 87].
+                            2. Computer Repertory of Old Slavic Manuscripts
+                                    and Letters based on TEI-conformant description of
+                                medieval manuscripts [Miltenova 98].
+                            3. Quantitative study of orthographic variety [Dobreva, Dobrev
+                                98].
+                            4. Lexicographic study of the Psalter using the DBT system
+                                [Camuglia 96].
+                        
+                
+                
+                    Conclusions
+                    Although the Bulgarian specialists already have practical experience in
+                        different computer applications to the medieval Slavic studies, the basic
+                        problem of developing internationally recognized encoding system is still
+                        unsolved. Under these circumstances, the efforts to collect digital
+                        resources are prone. This situation is unpleasant in general, and in
+                        countries in transition with many economic problems is a real disaster.
+                    Important characteristic of the work in the field is that the most
+                        considerable effort is oriented towards text encoding. Real digitization
+                        work is still not undertaken. This can be explained with the economic
+                        difficulties of the Bulgarian institutions working in the field of medieval
+                        manuscript heritage.
+                    With the above in mind, we could expect that Slavic materials would still
+                        remain underrepresented in electronic form compared to manuscripts belonging
+                        to other written traditions.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    D.
+                                    Birnbaum
+                                
+                            
+                            
+                                
+                                    A.
+                                    Bojadzhiev
+                                
+                            
+                            
+                                
+                                    M.
+                                    Dobreva
+                                
+                            
+                            
+                                
+                                    A.
+                                    Miltenova
+                                
+                            
+                            Proceedings of the First International Conference
+                                Computer Processing of Medieval Slavic Manuscripts, July 1995,
+                                Blagoevgrad, S.
+                            
+                                
+                                
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    Birnbaum
+                                
+                            
+                            Standardizing Characters, Glyphs, and SGML Entities for
+                                Encoding Early Cyrillic Writing
+                        
+                        
+                            Computer Standards and Interfaces
+                            
+                                18
+                                
+                                201-252
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Camuglia
+                                
+                            
+                            The Psalter, its Tradition and the Computer: a New
+                                Method of Textual Analysis
+                        
+                        
+                            Palaeobulgarica
+                            
+                                XX
+                                1
+                                3-13
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Dobreva
+                                
+                            
+                            Text Variety in the Witnesses of Medieval Texts:
+                                Proceedings of Int. Workshop, Sofia, September 1997
+                            
+                                Sofia
+                                
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Dobreva
+                                
+                            
+                            
+                                
+                                    D.
+                                    Dobrev
+                                
+                            
+                            Orthographic Variety in Medieval Slavic Texts: How to
+                                Study and Model It?
+                        
+                        
+                            ALLC-ACH'98, Conference abstracts, July 5-10 1998,
+                                Debrecen, Hungary
+                            
+                                
+                                
+                                1998
+                                36-38
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    J.
+                                    Geurts
+                                
+                            
+                            
+                                
+                                    A.
+                                    Gruijs
+                                
+                            
+                            
+                                
+                                    J.
+                                    van Krieken
+                                
+                            
+                            
+                                
+                                    W.
+                                    R.
+                                    Veder
+                                
+                            
+                            Codicography and Computer
+                        
+                        
+                            Polata knigopisnaja
+                            
+                                17-18
+                                
+                                4-29
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            The Website on Digitizing Slavic Manuscripts in
+                                Bulgaria
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;
+                    
+
+                    
+                        
+                            
+                                
+                                    A.
+                                    Miltenova
+                                
+                            
+                            Computer Repertory of Medieval Literature and
+                                Letters
+                        
+                        
+                            
+                                
+                                    M.
+                                    Dobreva
+                                
+                            
+                            Text Variety in the Witnesses of Medieval Texts:
+                                Proceedings of Int. Workshop, Sofia, September 1997
+                            
+                                Sofia
+                                
+                                1998
+                                138-149
+                            
+                        
+                    
+                
+            
+        
+    

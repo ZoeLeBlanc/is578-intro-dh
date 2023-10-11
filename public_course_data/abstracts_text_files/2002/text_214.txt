@@ -1,0 +1,336 @@
+
+
+
+    
+        
+            
+                The Open Language Archives Community: An Infrastructure
+                    for Distributed Archiving of Language Resources
+                
+                    
+                        Gary
+                        Simons
+                        
+                            SIL International
+                            gary_simons@sil.org
+                        
+                    
+                
+                
+                    
+                        Steven
+                        Bird
+                        
+                            University of Pennsylvania
+                            sb@ldc.upenn.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    1. Introduction
+                    A current trend in humanities computing is the explosion of digital resources
+                        and tools. It is clear that the new electronic media in conjunction with
+                        distribution via the World-Wide Web offer a degree of access to resources
+                        that is unparalleled in history. But there is a gap between what users want
+                        and what they can achieve today. For instance, potential users cannot
+                        necessarily find the material they are interested in, different data
+                        providers use different formats and conventions, the average researcher has
+                        no idea how to prepare materials for publication via this medium, to name
+                        just a few of the problems.
+                    A new direction for humanities computing would be for the community to
+                        organize its efforts so as to bridge this gap. This paper describes what one
+                        subcommunity, namely, those working with language-related resources, is
+                        doing in pursuit of this goal. The Open Language Archives Community was
+                        founded in December of 2000 with the following purpose statement:
+                            OLAC, the Open Language Archives Community, is an international
+                                partnership of institutions and individuals who are creating a
+                                worldwide virtual library of language resources by: (1) developing
+                                consensus on best current practice for the digital archiving of
+                                language resources, and (2) developing a network of interoperating
+                                repositories and services for housing and accessing such
+                                resources.
+                        
+                    This community involves both people and machines in cooperation. This paper
+                        describes the infrastructure that has been developed in order to support
+                        this cooperation. There are three aspects of infrastructure which are
+                        explained in the remaining sections:
+                            a technical infrastructure that defines how participating machines
+                                interact with other participating machines,
+                            a governance infrastructure that defines how participating people
+                                interact with other participating people, and
+                            a usage infrastructure that defines how participating people
+                                interact with participating machines.
+                        
+                
+                
+                    2. Technical infrastructure
+                    The technical infrastructure for OLAC is built on an infrastructure developed
+                        within the digital libraries community by the Open Archives Initiative
+                        [OAI][2]. This infrastructure has two components: a metadata standard
+                        [OAI-DC] [3]and a metadata harvesting protocol [OAI-MHP] [4]. The OLAC
+                        versions of these are specializations that address the particular needs of
+                        language archiving. The two components of technical infrastructure are:
+                            The OLAC Metadata Set [ OLAC-MS] [6] defines the elements to be
+                                used in metadata descriptions of archive holdings and how such
+                                descriptions are to be represented in XML for publication to the
+                                community. The OLAC metadata set contains the 15 elements of the
+                                Dublin Core metadata set [DC-MS] [1], plus 8 refined elements that
+                                capture information of special interest to the language resources
+                                community. In order to improve recall and precision when searching
+                                for resources, the standard also defines a number of controlled
+                                vocabularies for descriptor terms. The most important of these is a
+                                standard for identifying languages [ Simons, 2000] [8].
+                            The OLAC Metadata Harvesting Protocol [ OLAC-MHP] [5] defines the
+                                protocol by which machines that are "service providers" query the
+                                machines that are "data providers" in order to harvest the metadata
+                                records they publish. In this model, every participating archive is
+                                a data provider. Any other site may use the protocol to collect
+                                metadata records in order to provide a service, such as offering a
+                                union catalog of all archives or a specialized search service
+                                pertaining to a particular topic. The protocol is based on HTTP.
+                                Requests to data providers are issued via URLs with parameters;
+                                responses are returned as XML documents.
+                        
+                    
+                
+                
+                    3. Governance infrastructure
+                    The infrastructure that supports the interaction among the human participants
+                        of the Open Language Archives Community is defined in the OLAC process
+                        document [ OLAC-Process] [7]. It defines three things:
+                            The governing ideas of OLAC. These are defined through a summary
+                                statement of its purpose, vision, and core values.
+                            The organization of OLAC. This is defined in terms of the groups
+                                of participants that play key roles: advisory board, participating
+                                archives and services, prospective participants, working groups,
+                                participating individuals, and coordinators.
+                            The operation of OLAC. It is through documents (such as standards
+                                and best practice recommendations) that OLAC defines itself and the
+                                practices that it promotes. The document process defines how
+                                documents are generated and how they progress from one status to the
+                                next along the five-phase life cycle of development, proposal,
+                                testing, adoption, and retirement.
+                        
+                
+                
+                    4. Usage infrastructure
+                    The infrastructure that has been built to allow the community of users
+                        interested in language resources to interact with the machines that provide
+                        services for this community has four major components:
+                            A community gateway (hosted by the Linguistic Data Consortium at
+                                    ) provides
+                                access to all aspects of the community: news, documents, a directory
+                                of participants, links to service providers, resources for
+                                implementing data providers, and so on.
+                            A union catalog (to be hosted by Linguist List at ) of all records harvested
+                                from all OLAC data providers along with a full search engine.
+                            A language identification server ( hosted by SIL International at
+                                    ) that documents the
+                                standard OLAC follows in identifying the 6,800+ living languages of
+                                the world.
+                            A proxied data provider (also hosted by the Linguistic Data
+                                Consortium) that gives individual researchers and small institutions
+                                that do not have the capacity to implement their own data provider
+                                an alternative way to publish their data and metadata as an OLAC
+                                archive.
+                        
+                
+                
+                    5. Conclusion
+                    During its first year of operation, 2001, the basic infrastructure for OLAC
+                        has been developed. By the end of that year, twelve institutions have become
+                        full participants and implemented data providers that publish a total of
+                        18,000 metadata records. During the second year, 2002, the focus will be on
+                        enlarging the community of participating archives. The technical standards
+                        will be frozen in candidate status during that year so that archives need
+                        not worry about a moving target as they implement an OLAC data provider.
+                        Based on the experiences of the archives that participate in the first two
+                        years, the standards will be refined and formally adopted by the community
+                        during the third year, 2003. All individuals and institutions who have
+                        language-related resources to share are enthusiastically invited to take
+                        part in this new direction for humanities computing to build a distributed
+                        virtual library of digital resources for the documentation and study of
+                        human languages.
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            Dublin Core Metadata Element Set
+                            Version 1.1: Reference Description
+                            
+                                
+                                
+                                1999
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            Open Archives Initiative
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            Schema for OAI implementation of Dublin Core
+                                metadata
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            The Open Archives Initiative Protocol for Metadata
+                                Harvesting
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            OLAC Metadata Harvesting Protocol
+                            
+                                
+                                
+                                
+                            
+                        
+                        To appear at 
+                    
+                    
+                        
+                            OLAC Metadata Set
+                            
+                                
+                                
+                                
+                            
+                        
+                         See
+                            also "The OLAC Metadata Set and Controlled Vocabularies," by Steven Bird
+                            and Gary Simons. Proceedings of the ACL/EACL Workshop
+                                on Sharing Tools and Resources for Research and Education, Toulouse,
+                                July 2001, Association for Computational Linguistics. 
+                    
+                    
+                        
+                            OLAC Process
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Gary
+                                    Simons
+                                
+                            
+                            Language identification in metadata descriptions of
+                                language archive holdings
+                        
+                        
+                            Proceedings of the Workshop on Web-Based Language
+                                Documentation and Description 12-15 December 2000, Philadelphia,
+                                USA
+                            
+                                
+                                
+                                2000
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

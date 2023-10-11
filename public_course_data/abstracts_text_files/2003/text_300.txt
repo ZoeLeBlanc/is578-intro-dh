@@ -1,0 +1,272 @@
+
+
+
+    
+        
+            
+                Orlando on the Web: From Development System to
+                    Web-based Delivery of a Content-Encoded Textbase
+                
+                    
+                        Patricia
+                        Clements
+                        
+                            University of Alberta
+                            Patricia.Clements@ualberta.ca
+                        
+                    
+                
+                
+                    
+                        Renée
+                        Elio
+                        
+                            University of Alberta
+                            ree@cs.ualberta.ca
+                        
+                    
+                
+                
+                    
+                        Sharon
+                        Balazs
+                        
+                            University of Alberta
+                            sbalazs@ualberta.ca
+                        
+                    
+                
+                
+                    
+                        Susan
+                        Brown
+                        
+                            University of Guelph
+                            sbrown@uoguelph.ca
+                        
+                    
+                
+                
+                    
+                        Isobel
+                        Grundy
+                        
+                            University of Alberta, with members of the Orlando
+                                Project
+                            Isobel.Grundy@ualberta.ca
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    INTRODUCTION
+                    The Orlando Project at the Universities of Alberta and Guelph aims to produce
+                        the first full scholarly account of women’s writing in the British Isles in
+                        a mode of literary history designed to take advantage of new technological
+                        capabilities. To enable researchers to discover the sophisticated and
+                        nuanced interconnections among this complex mass of material, Orlando has
+                        produced a custom-designed SGML text encoding system capable of reflecting
+                        literary and historical interpretation.
+                    Aspects of this encoding scheme have been discussed in other forumsBrown, S., Fisher, S., Clements, P., Binhammer, K., Butler, T.,
+                            Carter, K., Grundy, I., &amp; Hockey, S. (1998). “SGML and the
+                            Orlando Project: Descriptive Markup for an Electronic History of Women’s
+                            Writing”. Computers and the Humanities. 31,
+                            271–85.,Butler, T., Fisher, S., Hockey, S., Coulombe,
+                            G., Clements, P., Brown, S., Grundy, I., Carter, K., Harvey, K., Wood,
+                            J. (2000). “Can a Team Tag Consistently? Experiences on the Orlando
+                            Project”. Markup Languages Theory and Practice,
+                            2, 111–125. and the ways in which the encoding scheme has, as
+                        planned, turned out to be effective in supporting the identification of
+                        novel and significant interrelationships in literary history has been
+                            presentedGrundy, I., Clements, P., Brown, S., Butler, T.,
+                            Cameron, R., Coulombe, G., Fisher, S., &amp; Wood, J. (2000). “Dates
+                            and ChronStructs: Dynamic Chronology in the Orlando Project”. Literary and Linguistic Computing, 15,
+                            265–289.,Brown, S., Grundy, I., et al. (2001). “Text
+                            and Intertext in Electronic Documents.” Annual ALLC/ACH
+                                Conference, New York, June 2001,Brown,
+                            S., Grundy, I., et al. (2001). Session of three Orlando Project papers:
+                            “The Hard and the Soft: Encoding Literary History,” “Risking
+                            E-Race-Sure/Erasure: Encoding Cultural Formations,” and “The Anxiety of
+                            Encoding: Intertextuality and Feminist Literary History.” Annual Digital Research in the Humanities Conference,
+                                School of African and Oriental Studies, London University, UK, 9
+                                July 2001. During its development, the use of the
+                        Orlando textbase and its encoding scheme to explore such relationships has
+                        been limited to the immediate research team, using the in-house Orlando
+                        development tools. But the vision of the Orlando project is, of course, to
+                        present its encoded textbase to the larger research community; i.e. to
+                        create a web-based delivery system that researchers world-wide can use to
+                        explore Orlando content. This presentation will take a systems view of the
+                        Orlando Project, focusing on issues and methods that have arisen in
+                        producing the first version of this delivery system
+                    The three key aspects of this systems view, which will be outlined here, are:
+                        (a) the in-house Orlando development environment, its tools, and the
+                        decisions made in crafting this environment for the construction of the
+                        textbase; (b) the definition and design of a prototype system to achieve
+                        certain core, albeit limited, functionalities without precluding the later
+                        design and implementation of a more powerful system; (c) general issues in
+                        designing an interface that will lead novice users step by step to
+                        exploiting at first a manageable selection from an integrated set of
+                        literary historical materials and complex underlying encoding scheme, and so
+                        by stages to fuller use of the potentialities of such a scheme. A
+                        demonstration of the first version delivery system will both clarify and
+                        concretise the issues discussed in the presentation.
+                
+                
+                    IN-HOUSE SGML DEVELOPMENT ENVIRONMENT
+                    In brief, the development environment supports the creation and ongoing
+                        revision of the three components to the Orlando system. The first of these
+                        is a textbase containing SGML documents for the biography and writing career
+                        of each individual writer, and for historical topics and issues. The
+                        biographical documents contain newly researched material on the lives,
+                        backgrounds, and activities of women writers. The writing documents contain
+                        newly researched material on literary careers, and the production, textual
+                        features, and reception of texts. The topic documents contain newly
+                        researched material under a range of headings deemed crucial for coverage.
+                        The second component to the Orlando system is an Oracle database which holds
+                        information on historical context: brief accounts of historical events and
+                        processes chosen to reflect each period’s literary, cultural, and social
+                        concerns, anchored to a date or date-range. The goal of this material is to
+                        enable a user to produce a chronology—an ordered set of events—relating to
+                        any particular time period, writer, word or concept. Sorting by event-type
+                        or level of priority is an obvious use of this database. The third component
+                        of the Orlando system is another Oracle database, which holds full
+                        bibliographic details of all primary texts and secondary sources referred to
+                        in the electronic text.
+                    The investment in SGML necessitated using SGML-compatible software such as
+                        Oracle in the development environment. The way in which this development
+                        environment has in turn affected the development of the delivery system will
+                        be outlined in a detailed chart.
+                
+                
+                    DEFINING AND IMPLEMENTING A PROTOTYPE DELIVERY SYSTEM
+                    The first Orlando delivery system had several goals. The primary goal was to
+                        provide web-based access to most of the core Orlando materials (writing
+                        documents, biographical documents, and events) to create chronologies and to
+                        provide the first automated hyperlinks.
+                    The SGML encoding scheme includes a number of tags by which materials in each
+                        of these separate databases are related. For example, a
+                        &lt;BIBCIT&gt; (bibliographic citation) tag that appears in a
+                        writing, biography, topic or event prose refers, by means of unique
+                        identifiers of records in the Oracle database, to complete bibliographic
+                        material. Also in development is an SGML-tagged name authority list, which
+                        not only ensures accurate hyperlinking (via the &lt;NAME&gt; tag)
+                        across the various databases, but which also aids in search and
+                        retrieval.
+                    The prototype delivery system allows a user to access the Orlando material in
+                        three primary ways: through a writer’s name, through event chronologies, and
+                        through several thematic entry points. Given a writer’s name, the writer’s
+                        biographical and writing documents are retrieved, and a chronology of events
+                        mentioning that writer’s name is computed and displayed. Certain “core tags”
+                        (name, place, date, title, organization name) act as hyperlinks to other
+                        areas of the textbase. Users can also access Orlando material through event
+                        chronologies generated by means of a freetext search on a given word/phrase,
+                        or a search by tagged name, genre, title, place, or organization name. (For
+                        these categories users are free to type in a search term or select from a
+                        list of possibilities). Users can also specify a given time range, and/or
+                        specify particular event types and/or priority levels. Thematic entry points
+                        are a means of entering into Orlando by way of material that cuts across the
+                        textbase in ways that highlight certain themes. “People” allows users to
+                        find people by name, historical period, occupation, or what they wrote”;
+                        “Texts” allows users to discover texts by title, subjects, or types of
+                        writing”; “Contexts” allows users to search on various topics,
+                        organizations, and places in women’s literary history; “Networks” allows
+                        users to investigate literary, social or family connections, organizational
+                        links or intertextual relations; and “Identities and Politics” allows users
+                        to investigate cultural and political issues.
+                    The full power of the Orlando system, of course, comes with sophisticated use
+                        of its interpretative tags for information exploration, i.e., those tags
+                        such as &lt;INTERTEXTUALITY&gt;, &lt;CULTURAL FORMATION&gt;,
+                        &lt;RELATIONS WITH PUBLISHER&gt;, and &lt;POLITICS&gt;,
+                        which the authors of documents have used to mark up text for literary
+                        historical interpretation. However, for the first delivery system, issues
+                        taking precedence were those related to working with extant web browsers and
+                        XML software, those related to automating the transformation of SGML into
+                        XML for web delivery as materials are moved from the development to the
+                        delivery environment, and those concerning a first pass at a user interface
+                        to what will ultimately be a powerful information exploration system (but
+                        that will always need simpler ways in to be available). Orlando has taken a
+                        modular approach to the definition, design, and implementation of its
+                        delivery system and hence this first version did not fully exploit these
+                        interpretative tags.
+                
+                
+                    ON USER INTERFACE ISSUES FOR INFORMATION EXPLORATION
+                    In the first version of a web-based delivery system, we aimed to follow good
+                        user interface design principles. This involved, firstly, developing a
+                        powerful yet usable interface that would allow both novice and expert users
+                        to access Orlando materials. (For example, a novice user may choose to enter
+                        directly through a writer’s name, whereas an expert user may choose to enter
+                        through a more complex chronological search.) Secondly, this involved
+                        revealing to the user a portion of the underlying interpretive scheme to
+                        allow some exploitation of it. (For example, thematic entry points reveal to
+                        the user some of the complexity of the Orlando interpretive scheme.)
+                        Thirdly, this involved arriving at design principles and choices to create a
+                        coherent display of the material. The paper will outline the ways in which
+                        this process served as a foundation for the next stage of delivery work,
+                        currently underway, which is focused on representing the interpretative
+                        markup, and ensuring that the interface allows for maximum exploitation of
+                        it. By conference time this next phase of delivery work will be completed in
+                        its first instantiation and ready for demonstration.
+                
+                
+                    CONCLUSION
+                    This poster presentation will introduce the first version of the Orlando
+                        delivery system, discuss in detail the progress that was made in the
+                        creation of this system, and outline the ways in which it provided a basis
+                        for subsequent delivery development.
+                
+            
+        
+    

@@ -1,0 +1,279 @@
+
+
+
+    
+        
+            
+                The Norwegian Museum Project
+                
+                    
+                        Christian-Emil
+                        Ore
+                        
+                             
+                            
+                        
+                    
+                
+                
+                    
+                        Øyvind
+                        Eide
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+
+                
+                    
+                        museum informatics
+                        cultural history
+                        digitization
+                    
+                
+            
+        
+
+    
+    
+        
+            
+                
+                    Background
+                    Norwegian university museums are custodians of large bodies of knowledge and
+                        data about societies, culture, nature and the environment in Norway, both
+                        historical and current. An important role of the university museums has been
+                        the compilation and dissemination of this information. It is no accident
+                        that museums have formed the nucleus for the founding of Norwegian colleges
+                        and universities.
+                    Due to the magnitude and the organization of the university collections, they
+                        have not been readily accessible for use in research, teaching and public
+                        services or for inspection by the general public. In order to maintain their
+                        position as the country's leading institutions and information pools for
+                        object-based research, the university museums must revitalize their
+                        collections. An important step in this process is the introduction of
+                        information technology at all levels in the museums. However, this calls for
+                        an extremely costly reassessment and conversion of existing archives into a
+                        digital format, requiring extra effort and additional funding. In some
+                        cases, establishing the databases will entail a complete revision of some of
+                        the museum collections.
+                
+                
+                    The project
+                    The Museum Project (1) was established in the spring of 1998 as a national
+                        collaborative project involving all four Norwegian universities. It is
+                        planned to run until 2005 with an annual budget of 1-2 million Euro. The aim
+                        of the project is to develop common database systems for the management of
+                        collections for all the Norwegian university museums. Ideally, these
+                        database systems should be able to handle all reference information related
+                        to artifact and specimen collections inside and outside the museums.
+                        Important aspects include internal requirements regarding the management of
+                        collections, fieldwork, research and dissemination, and external demands
+                        from the authorities and the public concerning access to reference data.
+                    The work is motivated by an ambition to develop IT-based systems that will
+                        offer users centralized and efficient access to information regarding the
+                        Norwegian cultural and natural heritage. With the help of common user
+                        interfaces and links between data from different fields of study, it will be
+                        possible to generate new information combinations and new insights in the
+                        various disciplines.
+                    The Museum Project includes a systems development group that is responsible
+                        for modeling and constructing the databases. This group is a direct
+                        continuation of the systems development group in the Documentation Project
+                        (2). In addition the project employs at least one scientific consultant from
+                        a relevant discipline for each of the sub-projects. The consultant is
+                        responsible for the follow-up of the scientific aspects of the digitization
+                        process and works in close co-operation with colleagues in the relevant
+                        field and with the project's system developers.
+                    The Museum Project involves the museums of natural history as well as the
+                        museums of cultural history. It is organized in various subsections, with
+                        sub-projects in the fields of archaeology, ethnography, cultural history,
+                        botany, zoology, geology and paleontology. Each of the sub-projects is
+                        responsible for the digitization of large collections, some so complex that
+                        getting even an overview is difficult. Once the digitized material is
+                        recorded, it undergoes a quality control procedure before being entered into
+                        databases. The completed databases are all built on the same platform. This
+                        implies that while each database accommodates the specific features of each
+                        collection the different databases will nonetheless be compatible with one
+                        another. The computer programs and methods used for the electronic recording
+                        of data are determined by the structure of each collection, and to some
+                        extent by the traditions of each discipline.
+                
+                
+                    Technical solutions
+                    The Norwegian University Museums cover a wide range of disciplines, from
+                        archaeology and ethnography to natural history. The project organization has
+                        taken over the responsibility for maintaining and developing the data base
+                        systems for the department of lexicography (old Norse and modern Norwegian)
+                        and place name studies.
+                    The development of the new systems has been continuous process for the last 6
+                        years done in parallel with giving assistance to the ongoing digitization of
+                        the museum collections and various reference informations. The design and
+                        implementation of the common systems and interfaces is now completed and
+                        will be presented at the conference.
+                    To make data base systems for the large number of disciplines is a challenge
+                        for a small group. An extra challenge is the requirement for
+                        interdisciplinary searches. The number of databases and the
+                        inter-disiplinarity has forced us to try to make as generic data base
+                        solutions as possible. The new information systems replace in turn older,
+                        mostly stand alone database applications. This is fortunate since it is
+                        easier to create new interconnecting systems instead of connection old ones,
+                        although technologies like the Z39.50 standard have open for relatively easy
+                        interconnection of databases.
+                    The system group has tried to think generically along two axis:
+                            common interface tools and database functionality
+                            common database solutions for common data types like geographical
+                                data, bibliographical data, data about persons (legal and real),
+                                classification systems in cultural and natural history and so
+                                on
+                        
+                    During the model phase, the collections of each discipline has been described
+                        as a set of different object types. We will here use a simplified model for
+                        archaeology as an example. The collections of an archaeological museum
+                        consist of artifacts, classification and acquisition catalogues, excavation
+                        and conservation reports, photos and so on. We have modeled this as object
+                        types such as:
+                            a type of artifact objects
+                            a type of finding circumstances (stray finds and excavation)
+                                objects
+                            a type of conservation objects
+                            a transportation type
+                        
+                    The latter used to describe the movement of the artifacts inside and outside
+                        of the museum and is shared with other museums and collections. Other shared
+                        object types are persons, publications and geographical places (both natural
+                        formations and abstract geographical entities like counties and
+                        municipalities).
+                    All the object types are implemented as relational databases in Oracle8i.
+                        This is not an object oriented DBMS, but the object view of the data is
+                        taken care of by a common meta database containing a subset of the data
+                        model of each database (scheme). The user interface applications comes in
+                        two version, one advanced version implemented in DELPHI5 and a somewhat
+                        simpler WWW-interfaced based on plain HTML and Java-scripts. Both versions
+                        use the information in the meta database to automatically create a user
+                        adjustable search forms and result tables or grids. In the DELPHI5 version
+                        each object type is also supplied with one or more object viewers presenting
+                        the data connected to a given object. That is, by clicking on a line in the
+                        grid of result, a more detailed view of the data is presented. In the photo
+                        database a digital photo filing card with detailed information and a thumb
+                        is presented. In a dictionary database a formatted entry will occur.
+                    The second common feature of the system is the so called list module. The
+                        visual metaphor is the ordinary file hierarchy with nested folders and
+                        files. The "file icons" represent stored queries, hand compiled lists of
+                        parts of one or many search result. A list can consist of objects of
+                        different types, say, photos from a site, information about artifacts and
+                        excavation reports. The folder hierarchy is used to systematize the lists.
+                        The lists and the folders can be global, shared by a group or private. When
+                        opened, a heterogeneous list will be presented as a collection of icons and
+                        some basic information. Each element can be inspected by a viewer
+                        corresponding to its object type. A list of objects of the same type can
+                        also be seen as a result grid with a predefined layout.
+                
+                
+                    Work with Sites and Monuments Records (SMR)
+                    Norway has five archaeological museums. They are situated in Oslo, Bergen,
+                        Trondheim, Troms¯ and Stavanger. With the exception of Stavanger, all are
+                        university museums. Each museum has a collection of items from its own
+                        district. Previously, however, the geographical division between the museums
+                        was not so rigid, resulting in the different museums having artifacts from
+                        other museum districts. The five archaeological museums have traditionally
+                        had the responsibility of keeping and updating the SMR for their part of the
+                        country. In 1993 the responsibility, but not the actual records, was
+                        transfered to a central body, the Norwegian Institute for Cultural Heritage
+                        Research (NIKU). In 1998 the Museum Project was asked to design and develop
+                        a central database solution for a national SMR. The task was completed in
+                        March 2000 and the national SRM database is now operating. The system is a
+                        client-server solution based on Oracle and a client application developed in
+                        Borland Delphi. In addition the SMR has a WWW interface used by local
+                        authorities throughout the country. The SRM system is developed so that it
+                        will be a seamless part of the information system which is the main
+                        objectives of the Project. The WWW version will be demonstrated at the
+                        conference.
+                
+                
+                    Electronic exhibitions
+                    Based on the digital collections we are building up, we have designed and
+                        authored some electronic exhibitions: a folk music exhibition installed on
+                        an ambulating Nordic exhibition celebrating a Queen Margerethe the first and
+                        the so called Kalmar union (1397 a.d.) and a exhibition over Norwegian
+                        coinage the last 1000 years originally used as an exhibition kiosk in the
+                        exhibition hall at the University's Coin Collection. The original exhibition
+                        contains video and sound which are excluded from the web-version due to
+                        copyright limitations. An English version of this coinage exhibition is
+                        available on the web and will be demonstrated at the conference.
+                    The Museum project has also developed an image database for the photo
+                        collections at the university museums, both for storing and cataloging
+                        photos. The conversion and cataloging is an ongoing process for the next
+                        decade. There are currently 110 000 images in the system. The web version of
+                        this system will be available for demonstration.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                    
+                    
+                        
+                            
+                            
+                                
+                                
+                                
+                            
+                        
+                        The project ran from 1992 to 1997, see .
+                    
+                
+            
+        
+    

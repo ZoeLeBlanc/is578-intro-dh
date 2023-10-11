@@ -1,0 +1,438 @@
+
+
+
+    
+        
+            
+                Experiments in Multivariate Analysis and Authorship
+                    Attribution 
+                
+                    
+                        David
+                        L.
+                        Hoover
+                        
+                            New York University
+                            david.hoover@nyu.edu
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        statistics
+                        authorship
+                        multivariate analysis
+                    
+                
+            
+        
+    
+    
+        
+            
+                Although statistical stylistics has never been a very popular area of study, it
+                    is attractive because its powerful techniquesñwidely used in the sciences and
+                    social sciencesñseem especially appropriate for the large amounts of information
+                    that texts represent. I am working on a project that reexamines the statistical
+                    techniques used by the most careful and respected of the practitioners of the
+                    methodñspecifically, methods inspired by or derived from the work of John F.
+                    Burrows (1987, 1989, 1992; Burrows and Hassall, 1988; Burrows and Craig, 1994;
+                    Craig, 1999). Specifically, I am working with cluster analysis of the
+                    frequencies of high frequency words. The high frequency and low semantic load of
+                    the most frequent function words have led researchers to assume that their use
+                    is likely to escape the conscious control of authors. If so, their frequencies
+                    may reflect deeply ingrained linguistic habits and provide what might be called
+                    ìwordprintsî for authors. If such wordprints exist, they may provide the kind of
+                    objective measure of style that has been sought since the 18th century.
+                The techniques pioneered by Burrows have been quite well received because they
+                    are careful, reasonable, and compelling, and they have been extended to
+                    examinations of the authorship of the Book of Mormon (Holmes, 1992), have been
+                    tested on the Federalist Papers (Holmes and Forsyth, 1995), and have been
+                    applied to the question of Miltonís authorship of De Doctrina Christiana
+                    (Tweedie, Holmes, and Corns, 1998); see also Holmes (1994), Baayen, Van
+                    Halteren, and Tweedie (1996), and Tweedie and Baayen (1998). This work tends to
+                    confirm the accuracy and effectiveness of multivariate analysis in authorship
+                    attribution, but in each case the field of claimants and the range of texts is
+                    relatively limited. No one has taken up Burrows suggestion ìto match a natural
+                    desire to work on celebrated cases like Henry VIII and The Revengerís Tragedy
+                    with a more sober, though less immediately rewarding, concern for testing our
+                    methods thoroughly on cases where the true answers are not in any doubtî
+                    (Burrows, 1992, 174).
+                I am interested mainly in the possible application of statistical techniques to
+                    stylistic analysis, especially in the areas of character development, genre
+                    definition, and stylistic variability within works or authors, but I would like
+                    to demonstrate some of the work required for the task suggested by Burrows.
+                    After all, only those statistical techniques that can effectively and reliably
+                    distinguish known authors and known texts from each other seem likely to be
+                    useful in characterizing and comparing the styles of those authors.
+                My first experiment analyzed the first 3,000 words of opening chapters of a group
+                    of 50 current novels by 27 authors, downloaded from . My second experiment analyzed the
+                    first 30,000 words of 46 novels by 31 authors, mainly taken from Hoover (1999).
+                    Another experiment analyzed the 4,000-word sections of 25 pieces of current
+                    literary criticism by 14 authors, downloaded from Project Muse (). Unfortunately, none of these
+                    experiments showed the kind of results that one would hope. In fact, the best
+                    result was less than 90% accurate in attributing texts to the correct authors.
+                    This was true even when first and third person narration was separated and when
+                    function word homographs were distinguished. Using the results of the analyses,
+                    I then selected some of the most problematic texts in the second and third
+                    groups for further analysis. When I analyzed the texts of only 2-4 authors,
+                    cluster analysis still failed to group texts by the same author or distinguish
+                    texts by different authors accurately. This lack of accuracy suggests that
+                    further work is necessary before such techniques can be accepted as important
+                    tools in authorship attribution or stylistic studies.
+                In my presentation, I would like to show how the process of multivariate analysis
+                    works, from the point when the texts have been collected to the production of
+                    cluster graphs or PCA plots. Based on conversations with other humanities
+                    computing people, I believe that there is a need for this kind of fairly
+                    explicit and basic introduction to statistical analysis. At the same time, the
+                    results of my experiments seem very interesting and significant in their own
+                    right: although a proof of the accuracy of the techniques on large groups of
+                    varied texts would have been more welcome, a demonstration of their inaccuracy
+                    may, in the long run be just as useful.
+                The main components of my own technique are TACT, used to analyze the word
+                    frequencies of the individual texts and of a text that combines all of the
+                    texts; FoxPro, a programmable database, used to import word frequency data, tag
+                    it with author and text information, cull the data so that it includes only the
+                    desired number of most frequent words (generally the 50-500 most frequent
+                    words), and create zero- frequency records of frequent words that do not appear
+                    in one or more of the individual texts (note: I am currently looking into the
+                    feasibility of moving the techniques to Microsoft Access, with Visual Basic as
+                    the programming language); and Minitab, a statistical analysis program, used to
+                    perform the actual PCA and cluster analysis. The techniques I use allow for
+                    quick and relatively painless analysis of many different groups of texts of many
+                    different kinds, and so have the potential to provide a wide range of tests of
+                    the techniques on extremely varied and extensive groups of textsñsomething that
+                    has not, to my knowledge, been done before.
+                For my poster presentation, I would need access to a PC running Windows 98 (NOT
+                    2000 or MEñI need access to DOS, for running batch files), on which I could
+                    install Foxpro (Access might be needed, if I get the conversion done in time),
+                    Minitab, TACT, and a bunch of texts for possible analysis.
+            
+        
+        
+            
+                Works Cited
+                
+                    
+                        
+                            R.
+                                    HaraldBaayen
+                            Statistical Models for Word Frequency Distributions: A
+                                Linguistic Evaluation
+                        
+                        
+                            Computers and the Humanities
+                            
+                                26
+                                5-6
+                                347-363
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            R.
+                                    HaraldBaayen
+                            The Effect of Lexical Specialization on the Growth
+                                Curve of the Vocabulary
+                        
+                        
+                            Computational Linguistics
+                            
+                                22
+                                4
+                                455-480
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            R.
+                                    HaraldBaayen
+                            Hans
+                                    Van Halteren
+                            Fiona
+                                    J.Tweedie
+                            Outside the Cave of Shadows: Using Syntactic Annotation
+                                to Enhance Authorship Attribution
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                11
+                                3
+                                121-31
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    F.
+                                    Burrows
+                                
+                            
+                            Computation into Criticism
+                            
+                                Oxford
+                                Clarendon Press
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            J.
+                                    F.Burrows
+                            'A Vision' as a Revision?
+                        
+                        
+                            Eighteenth-Century Studies
+                            
+                                22
+                                4
+                                551-565
+                                1989
+                            
+                        
+                    
+                    
+                        
+                            J.
+                                    F.Burrows
+                            Computers and the Study of Literature
+                        
+                        
+                            
+                                
+                                    Christopher
+                                    Butler
+                                
+                            
+                            Computers and Written Texts: an Applied
+                                Perspective
+                            
+                                Oxford
+                                Blackwell
+                                1992
+                                167-204
+                            
+                        
+                    
+                    
+                        
+                            J.
+                                    F.Burrows
+                            A.
+                                    J.Hassall
+                            Anna Boleyn and the Authenticity of Fielding's Feminine
+                                Narratives
+                        
+                        
+                            Eighteenth Century Studies
+                            
+                                21
+                                4
+                                427-453
+                                1988
+                            
+                        
+                    
+                    
+                        
+                            J.
+                                    F.Burrows
+                            D.
+                                    H.Craig
+                            Lyrical Drama and the 'Turbid Mountebanks': Styles of
+                                Dialogue in Romantic and Renaissance Tragedy
+                        
+                        
+                            Computers and the Humanities
+                            
+                                28
+                                2
+                                63-86
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                    HughCraig
+                            Contrast and Change in the Idiolects of Ben Jonson
+                                Characters
+                        
+                        
+                            Computers and the Humanities
+                            
+                                33
+                                3
+                                221-40
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            D.
+                                    I.Holmes
+                            A Stylometric Analysis of Mormon Scripture and Related
+                                Texts
+                        
+                        
+                            Journal of the Royal Statistical Society, Series
+                                A
+                            
+                                155
+                                1
+                                91-120
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            D.
+                                    I.Holmes
+                            Authorship Attribution
+                        
+                        
+                            Computers and the Humanities
+                            
+                                28
+                                2
+                                87-106
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            D.
+                                    I.Holmes
+                            R.
+                                    S.Forsyth
+                            The Federalist Revisited: New Directions in Authorship
+                                Attribution
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                10
+                                2
+                                111-127
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    L.
+                                    Hoover
+                                
+                            
+                            Language and Style in The Inheritors
+                            
+                                Lanham, MD
+                                University Press of America
+                                1999
+                            
+                        
+                    
+
+                    
+                        
+                            F.
+                                    J.Tweedie
+                            R.
+                                    H.Baayen
+                            How Variable May a Constant Be? Measures of Lexical
+                                Richness in Perspective
+                        
+                        
+                            Computers and the Humanities
+                            
+                                32
+                                5
+                                323-352
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            F.
+                                    J.Tweedie
+                            D.
+                                    I.Holmes
+                            Thomas
+                                    N.Corns
+                            The Provenance of De Doctrina
+                                    Christiana, Attributed to John Milton: A Statistical
+                                Investigation
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                13
+                                2
+                                77-87
+                                1998
+                            
+                        
+                    
+                
+            
+        
+    

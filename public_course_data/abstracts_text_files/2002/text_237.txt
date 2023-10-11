@@ -1,0 +1,332 @@
+
+
+
+    
+        
+            
+                System for Automatic Building of a Representative
+                    Corpus Using Internet
+                
+                    
+                        Grigori
+                        Sidorov
+                        
+                            Center for Computing Research, National Polytechnic Institute, Mexico
+                                sidorov@cic.ipn.mx
+                        
+                    
+                
+                
+                    
+                        Alexander
+                        Gelbukh
+                        
+                            Center for Computing Research, National Polytechnic Institute, Mexico
+                                elbukh@cic.ipn.mx
+                        
+                    
+                
+                
+                    
+                        Liliana
+                        Chanona-Hernandez
+                        
+                            Center for Computing Research, National Polytechnic Institute, Mexico
+                                lchanona@mail.com
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    The problem of using Internet as a linguistic resource is very practical.
+                        Internet has a vast number of documents, so there is a possibility to
+                        extract many useful linguistic facts without much additional effort and
+                        cost.
+                    Usually, the Internet resources are viewed as something that should be
+                        searched every time the data is needed, see, for example, the concept of
+                        virtual corpus (Kilgariff, 2001). We suggest using Internet as a source of
+                        linguistic data that is searched only once and the results of searches are
+                        saved in a local computer without the necessity to repeat the whole process.
+                        Still, the resulting texts neither can be a collection of all available
+                        texts because of its size, nor the texts can be randomly chosen from
+                        Internet because this does not guarantee the correct representation of
+                        different text types, or words, or morphemes, etc.
+                    Thus, it is necessary to develop criteria of a representative corpus, at
+                        least, in some sense, i.e., to represent certain language features. In our
+                        opinion, one of the possible criteria of a representative corpus is the
+                        proportional representation of all wordforms that exist in the language.
+                        Such a corpus is representative from the morphological or lexical points of
+                        view, though it represents neither all varieties of syntactic structures,
+                        nor, for example, different types of texts (like texts of different styles
+                        or genres).
+                    It is obvious that this criterion is good for typical Indo-European languages
+                        though it may be not appropriate for languages of different types. For
+                        example, in the agglutinative languages, where the words are composed of a
+                        great number of morphemes, it is necessary to represent morphemes rather
+                        than wordforms. The same happens with the polysynthetic languages. So, the
+                        application of this criterion is limited to the languages with certain
+                        morphological structure.
+                    Further in the paper we first describe the basic steps of the system that is
+                        used for compilation of the corpus and then describe its application to the
+                        Spanish language.
+                
+                
+                    System's functioning
+                    We adopted the point of view that the corpus is considered representative (in
+                        our case, in morphological or lexical sense) if it has contexts for all
+                        wordforms that exist in the language in some proportion (we are speaking
+                        about wordforms derived from the words that are contained in usual
+                        dictionaries). There are several possible ways to calculate the proportions,
+                        thus, there are different strategies of context searches during corpus
+                            compilation:
+                            To search equal number of contexts for each wordform.
+                            To search equal number of contexts for each lemma. This means that
+                                if lemmas that belong to different parts of speech have different
+                                number of wordforms, then some wordforms will have much less
+                                contexts than the others. It is possible to equalize the number of
+                                contexts for wordforms taking into account parts of speech, but then
+                                this strategy will be the same as the previous one.
+                            To search wordforms in the proportion that corresponds to their
+                                frequencies in texts. Maybe, it is necessary to take into account
+                                parts of speech because words of different parts of speech have
+                                different number of wordforms.
+                        
+                    We have chosen the last approach, for the time being ignoring parts of
+                        speech. For Internet searches we used AltaVista search engine.
+                    The system makes the following basic steps.
+                            To obtain the initial list of words from an existing dictionary
+                                (the head words are taken) or from a corpus. If it is necessary, the
+                                words are normalized.
+                            To generate all wordforms for each lemma.
+                            To get from Internet the number of documents, containing each
+                                wordform (AltaVista search).
+                            To calculate the number of contexts for each wordform given a
+                                fixed number of contexts for lemmas.
+                            To get from Internet the URLs of the documents containing each
+                                wordform (using AltaVista).
+                            To load the documents using the found URLs.
+                            To get the context for wordforms applying the criterion of the
+                                "acceptable" contexts (the context has enough words, the words in
+                                the different contexts are not repeated). The context size and the
+                                criterion of the context acceptability are parameters of the
+                            system.
+                        
+                    This system permits to calculate the number of contexts for each wordform
+                        according to their frequencies in Internet and to obtain the real-world
+                        contexts.
+                
+                
+                    Application to Spanish
+                    We developed software that implements the system described above. This
+                        software was applied to the Spanish language.
+                    First, we obtained a wordlist from the Spanish explanatory dictionary by
+                        Anaya group. The dictionary has about 30,000 headwords. Since the words are
+                        in their dictionary forms, no normalization was necessary. For each lemma,
+                        the list of its grammatical forms was generated. We used the system of
+                        morphological generation/analysis developed in our laboratory.
+                    At the next step, for each wordform the program made query to AltaVista and
+                        analyzed the results. First, it got a number of documents and calculated the
+                        number of contexts that should be obtained. We used the value of 50 contexts
+                        per lemma. Note that it was considered impossible for a wordform to have a
+                        frequency "0", if this value was obtained then the frequency "1" was
+                        assigned by force. For example, this situation happened for verbs that have
+                        a lot of grammatical forms in Spanish.
+                    After this, the program obtained the URLs of the documents that contain the
+                        wordform.
+                    Then the system loaded the documents using their URLs and analyzed them in
+                        order to detect contexts. We used the following criteria for a context to be
+                        included in our corpus:
+                            It contains more than 7 words, and
+                            The contexts do not repeat. We check the repetition by comparing
+                                the first significant wordform to the left and to the right of the
+                                given wordform (significant wordform here means that we do not take
+                                into account auxiliary words like articles, prepositions,
+                            etc.)
+                        
+                    The contexts that have not met these criteria were not included in the
+                        corpus.
+                    After execution of the program we had the corpus which has contexts for each
+                        wordform of Spanish. To store it we used the data base format, though it can
+                        be easily exported in a pure text format.
+                    Let us have a look at the example of the obtained contexts. Say, for the
+                        wordform abades (abbots) it was necessary to obtain just 2 context (all the
+                        rest contexts were for the wordform abad (abbot) in singular):
+                        San Benito en los monasterios de todo el Imperio carolingio . En el año
+                            910 se funda en Galia la famosa abadí­a de Cluny, cuyos primeros abases,
+                            los santos Odón, Odilón, Mayolo, Hugo y Pedro el Venerable, buscaron
+                            manifestar por medio de la liturgia, el...
+                        
+                        su contenido doctrinal y su definitiva cohesión como Orden, extendida
+                            muy rápidamente por toda Europa. En 1215 el IV Concilio Lateranense
+                            prescribe reuniones trienales de los abades de monasterios de una misma
+                            región, y visitas periódicas para velar por la observancia. El papa
+                            Benedicto XII reagrupa a los monasterios en provincias...
+                
+                
+                    Conclusions and future work
+                    We presented the system that permits to build the local representative corpus
+                        of words using Internet as a source. We chose the following criterion of a
+                        representative corpus: the presence of all wordforms in the proportion that
+                        they have in the Internet documents.
+                    The method was applied to 30,000 lemmas of the Spanish language. The obtained
+                        corpus is representative from morphological and lexical points of view.
+                    There are several directions of further investigations:
+                            To evaluate to what degree the obtained corpus is representative,
+                                maybe, comparing with some other corpora.
+                            To verify if the criterion of the "acceptable" contexts should be
+                                modified.
+                            To verify it the chosen value of the context length is
+                                appropriate.
+                            To develop more exact criteria of the representative corpus in
+                                different senses (morphological, lexical, syntactic,
+                            semantic).
+                        
+                
+                
+                    Acknowledgements
+                    The work was done under partial support of CONACyT, CGEPI/COFAA-IPN, and SNI,
+                        Mexico.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    D.
+                                    Biber
+                                
+                            
+                            
+                                
+                                    S.
+                                    Conrad
+                                
+                            
+                            
+                                
+                                    D.
+                                    Reppen
+                                
+                            
+                            Corpus linguistics. Investigating language structure
+                                and use
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    R.
+                                    Jones
+                                
+                            
+                            
+                                
+                                    R.
+                                    Ghani
+                                
+                            
+                            Automatically building a corpus for a minority language
+                                from the web
+                        
+                        
+                            38th Meeting of the ACL, Proceedings of the Student
+                                Research Workshop. Hong Kong. October 2000
+                            
+                                
+                                
+                                2000
+                                29-36
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    Kilgariff
+                                
+                            
+                            Web as Corpus
+                        
+                        
+                            Proc. of Corpus Linguistics 2001 conference
+                            University center for computer corpus research on
+                                language, technical papers vol. 13, Lancaster University
+                            
+                                
+                                
+                                2001
+                                342-344
+                            
+                        
+                    
+                
+            
+        
+    

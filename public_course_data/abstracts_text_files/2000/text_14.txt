@@ -1,0 +1,606 @@
+
+
+
+    
+        
+            
+                Meaning and Interpretation of Markup
+                Markup is inserted into textual material not at random, but to convey some meaning. An author may supply markup as part of the act of composing a text; in this case the markup expresses the author's intentions. The author creates certain textual structures simply by tagging them; the markup has performative significance. In other cases, markup is supplied as part of the transcription in electronic form of pre-existing material. In such cases, markup reflects the understanding of the text held by the transcriber; we say that the markup expresses a claim about the text.
+
+In the one case, markup is constitutive of the meaning; in the other, it is interpretive. In each case, the reader (for all practical purposes, readers include software which processes marked up documents) may legitimately use the markup to make inferences about the structure and properties of the text. For this reason, we say that markup licenses certain inferences about the text.
+
+If markup has meaning, it seems fair to ask how to identify the meaning of the markup used in a document, and how to document the meaning assigned to particular markup constructs by specifications of markup languages (e.g. by DTDs and their documentation).
+
+In this paper, we propose an account of how markup licenses inferences, and how to tell, for a given marked up text, what inferences are actually licensed by its markup. As a side effect, we will also provide an account of what is needed in a specification of the meaning of a markup language. We begin by proposing a simple method of expressing the meaning of SGML or XML element types and attributes; we then identify a fundamental distinction between distributive and sortal features of texts, which affects the interpretation of markup. We describe a simple model of interpretation for markup, and note various ways in which it must be refined in order to handle standard patterns of usage in existing markup schemes; this allows us to define a simple measure of complexity, which allows direct comparison of the complexity of different ways of expressing the same information (i.e. licensing the same inferences) about a given text, using markup.
+
+For simplicity, we formulate our discussion in terms of SGML or XML markup, applied to documents or texts. Similar arguments can be made for other uses of SGML and XML, and may be possible for some other families of markup language.
+
+Related work has been done by Simons (in the context of translating between marked up texts and database systems), Sperberg-McQueen and Burnard (in an informal introduction to the TEI), Langendoen and Simons (also with respect to the TEI), Huitfeldt and others in Bergen (in discussions of the Wittgenstein Archive at the University of Bergen, and in critiques of SGML), Renear and others at Brown University, and Welty and Ide (in a description of systems which draw inferences from markup). Much of this earlier work, however, has focused on questions of subjectivity and objectivity in text markup, or on the nature of text, and the like. The approach taken in this paper is somewhat more formal, while still much less formal and rigorous than that taken by Wadler in his recent work on XSLT.
+
+Let us begin with a concrete example. Among the papers of the American historical figure Henry Laurens is a draft Laurens prepared of a letter to be sent from the Commons House of Assembly of South Carolina to the royal governor, Lord William Campbell, in 1775. Some words have lines through them, and others written above the line. The editors of Laurens's papers interpret the lines through words as cancellations, and the words above the lines as insertions; an electronic version of the document using TEI markup and reflecting these interpretations, might read thus:
+It was be For When we applied to Your Excellency for leave to adjourn it was because we foresaw that we were should continue wasting our own time ... 
+From the DEL elements, the reader of the document is licensed to infer that the letters "It was be", "For", and "were" are marked as deleted; from the ADD element, the reader may infer that the words "should continue" have been added. Software might rely on these inferences in the course of making a concordance or displaying a clear text; human readers will rely on them in interpreting the historical document. Note that the markup here stops short of licensing the inference that "should continue" was substituted for "were". The editors could license that inference as well by appropriate markup, if they wished. Human readers may make the inference on their own, given the linguistic context; software cannot safely infer a substitution every time an addition is adjacent to a deletion.
+
+A simple way to capture the meaning of markup is to define, for each markup construct, a set of open sentences - sentences with unbound variables - which express the inferences licensed by the use of that construct. In formal reasoning, such open sentences may be transformed into logical predicates in the usual way.
+
+For example, the TEI element type DEL is said by the documentation to mark "a letter, word or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator or corrector" (TEI P3, p. 922). We take this to mean that when a DEL element is encountered in a document, the reader is licensed to infer that the material so marked has been deleted. In formal contexts, we may write "deleted(X)"; we can specify the meaning of the DEL element and of the logical predicate "deleted(X)" by means of an open sentence: "X has been deleted, or marked as deleted, or ..." etc. The variable X is to be bound, in practice, to the contents of the DEL element. If we imagine a variable named 'this', instantiated to each element of a document in turn, and a function 'contents' which returns the contents of its argument, then the meaning of the DEL element becomes "deleted(contents(this)))", or equivalently "contents(this) has been deleted ..." etc.
+
+The TEI element type HI, similarly, "marks [its contents] as graphically distinct from the surrounding text" (TEI P3, p. 1013). We can capture the meaning of HI by the open sentence "X is graphically distinct from the surrounding text", or "highlighted(X)", where X is, as before, to be replaced by "contents(this)".
+
+Attributes may be treated similarly. The 'rend' attribute on the  element "describes the rendition or presentation of the word or phrase highlighted". In the example
+And this Indenture further witnesseth that the said Walter Shandy, merchant, in consideration of the said intended marriage ... 
+the HI elements convey the information that the contents of those elements are distinct from their surroundings, while the 'rend' attributes on the HI elements specify how. The meaning of the 'rend' attribute is expressed by the open sentence "X is rendered in style Y." An HI element with a 'rend' attribute thus means "X is graphically distinct from its surroundings, and X is rendered in style Y".
+
+Perhaps the simplest method of interpreting markup is to assume that
+
+The meaning of every element type is expressed by an open sentence whose single unbound variable is to be bound to 'contents(this)'.
+The meaning of every attribute is expressed by an open sentence with two unbound variables, one of which is to be bound to 'contents(this)' and the other to 'value(this,attribute-name)' (i.e. to the value of the attribute in question). In other words, each attribute defines some relation R which holds between the contents of the element and the value of the attribute.
+All inferences licensed by any two elements are compatible.
+The set of inferences applicable to any given location L is then the union of the inferences licensed by all the elements within which L is contained. Let us call this the 'union model' of interpretation.
+The union model is simple, and provides a good first approximation of the rules of inference for marked up text. But it is not wholly adequate.
+
+First, it fails to distinguish distributed properties (such as 'italic' or 'highlighted') from sortal properties (such as paragraphs, sections, or - as illustrated above - deletion). It is as true to say "The word 'And' is in black-letter" as to say it of the entire phrase, and the meaning of the example given above would not change if the HI elements were split into two or more adjacent pieces each with the same 'rend' value. Conversely, two HI elements with the same attribute values can be merged without changing the meaning of the markup. Other elements mark properties which are NOT distributed equally among the contents, and cannot be split or joined without changing the meaning of the markup. From the markup
+
+Reader, I married him.
+
+we can infer the existence of one paragraph, but we cannot infer that "Reader" is itself a paragraph. Such properties we call 'sortal' properties, borrowing a term of art from linguistics. Elements marking sortals are usefully countable; those marking distributed properties are not.
+
+Second, the union model fails to allow a correct interpretation of inherited values and overrides, as illustrated by the TEI 'lang' attribute or the xml:lang attribute of XML. In fact, some inferences do contradict each other, and specifications of the meaning of markup need to say which inferences are compatible, and which are in conflict, and how to adjudicate conflicts.
+
+Third, the union model allows inferences about a location L only on the basis of markup on open elements (those which contain L); in order to handle common idioms of SGML and XML, a model of interpretation must handle
+
+upward propagation: the meaning of an element may depend in part on its contents; this is unusual in colloquial SGML/XML systems, but is a regular feature of proposals to eliminate attributes from markup languages.
+context dependency: the meaning of an element may depend on its context; trivial examples include TEI's HI and FOREIGN, which can mean 'not-Roman' and 'not-English' in one context, and 'not-italic' and 'not-German' in others.
+ordinal position, relative or absolute; dependence of meaning upon ordinal position is seldom an explicit feature of markup languages, but dependence of processing based on position is a standard feature of style-sheet languages.
+milestone elements; these convey information by position in the beginning-to-end scan of the linear form of the document, rather than by position in the tree.
+linking: out-of-line or 'standoff' markup conveys information about location L based not only on open elements, but on elements which point at L or some ancestor of L.
+Other methods of associating markup with meaning are imaginable, but we believe a survey of existing DTDs will show that all or virtually all current practice is covered by any model of interpretation which encompasses the complications just outlined.
+Essentially, these can be handled by extending the rules for binding variables in the open sentences which specify the meaning of a given markup construct. The simple union model allows only 'contents(this)' and 'value(this,attribute-name)'; the constructs listed above require more complex expressions, roughly equivalent in expressiveness to the TEI extended-pointer notation or to the patterns of the XPath language defined by W3C.
+
+Complexity of the semantics associated with an element type or attribute may be measured by the number of unbound variables in the open slots, by the complexity of the expressions which are to fill them, and by the amount or kind of memory required to allow full generation of the inferences licensed by markup in a particular text.
+
+References
+
+DeRose, Steve et al. (1990). "What is Text, Really?" Journal of Computing in Higher Education 1: 3-26.
+Huitfeldt, Claus (1995). "Multi-Dimensional Texts in a One-Dimensional Medium." CHum 28: 235-241.
+Langendoen, D. Terence, and Simons, Gary F. (1995). "Rationale for the TEI Recommendations for Feature-Structure Markup." CHum 29.3: 191-209.
+[Laurens, Henry.] (1985). "Commons House of Assembly to Lord William Campbell." The Papers of Henry Laurens, ed. David R. Chesnutt et al. University of South Carolina Press, Columbia, S.C.. Vol. 10, pp. 305-308.
+Pichler, Alois (1993). "What is Transcription, Really?" ACH/ALLC '93, Georgetown.
+Renear, Allen, Durand, David G., and Mylonas, Elli (1995). "Refining our notion of what text really is: the problem of overlapping hierarchies." Research in Humanities Computing. Oxford University Press, Oxford. Originally delivered at ALLC/ACH '92.
+Simons, Gary F. (1997) "Conceptual Modeling versus Visual Modeling: A Technological Key to Building Consensus." CHum 30.4: 303-319.
+Sperberg-Mcqueen, C. M., and Burnard, Lou (eds) (1994). Guidelines for Electronic Text Encoding and Interchange (TEI P3). Chicago, Oxford: ACH, ALLC, and ACL, 1994.
+Sperberg-Mcqueen, C. M., and Burnard, Lou (1995). "The Design of the TEI Encoding Scheme." CHum 29: 17-39.
+Wadler, Philip (1999). "A formal semantics of patterns in XSLT." Paper presented at Markup Technologies '99.
+Welty, Christopher, and Ide, Nancy (1999). "Using the Right Tools: Enhancing Retrieval from Marked-up Documents." CHum 33: 59-84. Originally delivered at TEI 10, Providence (1997).
+                    
+                        C.
+                        M.
+                        Sperberg-McQueen
+                        
+                            World Wide Web Consortium, USA 
+                        
+                    
+                
+                
+                    
+                        Claus
+                        Huitfeldt
+                        
+                            University of Bergen, Norway 
+                        
+                    
+                
+                
+                    
+                        Allen
+                        Renear
+                        
+                            Brown University, USA 
+                        
+                    
+                
+            
+            
+                2000
+                
+                    University of Glasgow
+                
+                Glasgow
+            
+            
+                ALLC/ACH 2000
+                
+                    editor
+                    
+                        Jean
+                        Anderson
+                    
+                    
+                        Amal
+                        Chatterjee
+                    
+                    
+                        Christian
+                        J.
+                        Kay
+                    
+                    
+                        Margaret
+                        Scott
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        Text Encoding
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Markup is inserted into textual material not at random, but to convey some
+                    meaning. An author may supply markup as part of the act of composing a text; in
+                    this case the markup expresses the author's intentions. The author creates
+                    certain textual structures simply by tagging them; the markup has performative
+                    significance. In other cases, markup is supplied as part of the transcription in
+                    electronic form of pre-existing material. In such cases, markup reflects the
+                    understanding of the text held by the transcriber; we say that the markup
+                    expresses a claim about the text.
+                In the one case, markup is constitutive of the meaning; in the other, it is
+                    interpretive. In each case, the reader (for all practical purposes, readers
+                    include software which processes marked up documents) may legitimately use the
+                    markup to make inferences about the structure and properties of the text. For
+                    this reason, we say that markup licenses certain inferences about the text.
+                If markup has meaning, it seems fair to ask how to identify the meaning of the
+                    markup used in a document, and how to document the meaning assigned to
+                    particular markup constructs by specifications of markup languages (e.g. by DTDs
+                    and their documentation).
+                In this paper, we propose an account of how markup licenses inferences, and how
+                    to tell, for a given marked up text, what inferences are actually licensed by
+                    its markup. As a side effect, we will also provide an account of what is needed
+                    in a specification of the meaning of a markup language. We begin by proposing a
+                    simple method of expressing the meaning of SGML or XML element types and
+                    attributes; we then identify a fundamental distinction between distributive and
+                    sortal features of texts, which affects the interpretation of markup. We
+                    describe a simple model of interpretation for markup, and note various ways in
+                    which it must be refined in order to handle standard patterns of usage in
+                    existing markup schemes; this allows us to define a simple measure of
+                    complexity, which allows direct comparison of the complexity of different ways
+                    of expressing the same information (i.e. licensing the same inferences) about a
+                    given text, using markup.
+                For simplicity, we formulate our discussion in terms of SGML or XML markup,
+                    applied to documents or texts. Similar arguments can be made for other uses of
+                    SGML and XML, and may be possible for some other families of markup
+                    language.
+                Related work has been done by Simons (in the context of translating between
+                    marked up texts and database systems), Sperberg-McQueen and Burnard (in an
+                    informal introduction to the TEI), Langendoen and Simons (also with respect to
+                    the TEI), Huitfeldt and others in Bergen (in discussions of the Wittgenstein
+                    Archive at the University of Bergen, and in critiques of SGML), Renear and
+                    others at Brown University, and Welty and Ide (in a description of systems which
+                    draw inferences from markup). Much of this earlier work, however, has focused on
+                    questions of subjectivity and objectivity in text markup, or on the nature of
+                    text, and the like. The approach taken in this paper is somewhat more formal,
+                    while still much less formal and rigorous than that taken by Wadler in his
+                    recent work on XSLT.
+                Let us begin with a concrete example. Among the papers of the American historical
+                    figure Henry Laurens is a draft Laurens prepared of a letter to be sent from the
+                    Commons House of Assembly of South Carolina to the royal governor, Lord William
+                    Campbell, in 1775. Some words have lines through them, and others written above
+                    the line. The editors of Laurens's papers interpret the lines through words as
+                    cancellations, and the words above the lines as insertions; an electronic
+                    version of the document using TEI markup and reflecting these interpretations,
+                    might read thus:
+                    &lt;P&gt;&lt;DEL&gt;It was be&lt;/DEL&gt; &lt;DEL&gt;For&lt;/DEL&gt; When we
+                        applied to Your Excellency for leave to adjourn it was because we foresaw
+                        that we &lt;DEL&gt;were&lt;/DEL&gt; &lt;ADD&gt;should continue&lt;/ADD&gt;
+                        wasting our own time ... &lt;/P&gt;
+                From the DEL elements, the reader of the document is licensed to infer that the
+                    letters "It was be", "For", and "were" are marked as deleted; from the ADD
+                    element, the reader may infer that the words "should continue" have been added.
+                    Software might rely on these inferences in the course of making a concordance or
+                    displaying a clear text; human readers will rely on them in interpreting the
+                    historical document. Note that the markup here stops short of licensing the
+                    inference that "should continue" was substituted for "were". The editors could
+                    license that inference as well by appropriate markup, if they wished. Human
+                    readers may make the inference on their own, given the linguistic context;
+                    software cannot safely infer a substitution every time an addition is adjacent
+                    to a deletion.
+                A simple way to capture the meaning of markup is to define, for each markup
+                    construct, a set of open sentences - sentences with unbound variables - which
+                    express the inferences licensed by the use of that construct. In formal
+                    reasoning, such open sentences may be transformed into logical predicates in the
+                    usual way.
+                For example, the TEI element type DEL is said by the documentation to mark "a
+                    letter, word or passage deleted, marked as deleted, or otherwise indicated as
+                    superfluous or spurious in the copy text by an author, scribe, annotator or
+                    corrector" (TEI P3, p. 922). We take this to mean that when a DEL element is
+                    encountered in a document, the reader is licensed to infer that the material so
+                    marked has been deleted. In formal contexts, we may write "deleted(X)"; we can
+                    specify the meaning of the DEL element and of the logical predicate "deleted(X)"
+                    by means of an open sentence: "X has been deleted, or marked as deleted, or ..."
+                    etc. The variable X is to be bound, in practice, to the contents of the DEL
+                    element. If we imagine a variable named 'this', instantiated to each element of
+                    a document in turn, and a function 'contents' which returns the contents of its
+                    argument, then the meaning of the DEL element becomes
+                    "deleted(contents(this)))", or equivalently "contents(this) has been deleted
+                    ..." etc.
+                The TEI element type HI, similarly, "marks [its contents] as graphically distinct
+                    from the surrounding text" (TEI P3, p. 1013). We can capture the meaning of HI
+                    by the open sentence "X is graphically distinct from the surrounding text", or
+                    "highlighted(X)", where X is, as before, to be replaced by "contents(this)".
+                Attributes may be treated similarly. The 'rend' attribute on the &lt;hi&gt;
+                    element "describes the rendition or presentation of the word or phrase
+                    highlighted". In the example&lt;P&gt;&lt;HI REND="gothic"&gt;And this
+                        Indenture further witnesseth&lt;/HI&gt; that the said &lt;HI
+                        REND="italic"&gt;Walter Shandy&lt;/HI&gt;, merchant, in consideration of the
+                        said intended marriage ... &lt;/P&gt; the HI elements convey the
+                    information that the contents of those elements are distinct from their
+                    surroundings, while the 'rend' attributes on the HI elements specify how. The
+                    meaning of the 'rend' attribute is expressed by the open sentence "X is rendered
+                    in style Y." An HI element with a 'rend' attribute thus means "X is graphically
+                    distinct from its surroundings, and X is rendered in style Y".
+                Perhaps the simplest method of interpreting markup is to assume that
+                        1. The meaning of every element type is expressed by an open sentence
+                            whose single unbound variable is to be bound to 'contents(this)'.
+                        2. The meaning of every attribute is expressed by an open sentence
+                            with two unbound variables, one of which is to be bound to
+                            'contents(this)' and the other to 'value(this,attribute-name)' (i.e. to
+                            the value of the attribute in question). In other words, each attribute
+                            defines some relation R which holds between the contents of the element
+                            and the value of the attribute.
+                        3. All inferences licensed by any two elements are compatible.
+                    
+                The set of inferences applicable to any given location L is then the union of the
+                    inferences licensed by all the elements within which L is contained. Let us call
+                    this the 'union model' of interpretation.
+                The union model is simple, and provides a good first approximation of the rules
+                    of inference for marked up text. But it is not wholly adequate.
+                First, it fails to distinguish distributed properties (such as 'italic' or
+                    'highlighted') from sortal properties (such as paragraphs, sections, or - as
+                    illustrated above - deletion). It is as true to say "The word 'And' is in
+                    black-letter" as to say it of the entire phrase, and the meaning of the example
+                    given above would not change if the HI elements were split into two or more
+                    adjacent pieces each with the same 'rend' value. Conversely, two HI elements
+                    with the same attribute values can be merged without changing the meaning of the
+                    markup. Other elements mark properties which are NOT distributed equally among
+                    the contents, and cannot be split or joined without changing the meaning of the
+                    markup. From the markup&lt;P&gt;Reader, I married
+                    him.&lt;/P&gt;we can infer the existence of one paragraph, but we
+                    cannot infer that "Reader" is itself a paragraph. Such properties we call
+                    'sortal' properties, borrowing a term of art from linguistics. Elements marking
+                    sortals are usefully countable; those marking distributed properties are
+                    not.
+                Second, the union model fails to allow a correct interpretation of inherited
+                    values and overrides, as illustrated by the TEI 'lang' attribute or the xml:lang
+                    attribute of XML. In fact, some inferences do contradict each other, and
+                    specifications of the meaning of markup need to say which inferences are
+                    compatible, and which are in conflict, and how to adjudicate conflicts.
+                Third, the union model allows inferences about a location L only on the basis of
+                    markup on open elements (those which contain L); in order to handle common
+                    idioms of SGML and XML, a model of interpretation must handle
+                        upward propagation: the meaning of an element may depend in part on
+                            its contents; this is unusual in colloquial SGML/XML systems, but is a
+                            regular feature of proposals to eliminate attributes from markup
+                            languages.
+                        context dependency: the meaning of an element may depend on its
+                            context; trivial examples include TEI's HI and FOREIGN, which can mean
+                            'not-Roman' and 'not-English' in one context, and 'not-italic' and
+                            'not-German' in others.
+                        ordinal position, relative or absolute; dependence of meaning upon
+                            ordinal position is seldom an explicit feature of markup languages, but
+                            dependence of processing based on position is a standard feature of
+                            style-sheet languages.
+                        milestone elements; these convey information by position in the
+                            beginning-to-end scan of the linear form of the document, rather than by
+                            position in the tree.
+                        linking: out-of-line or 'standoff' markup conveys information about
+                            location L based not only on open elements, but on elements which point
+                            at L or some ancestor of L.
+                    
+                Other methods of associating markup with meaning are imaginable, but we believe a
+                    survey of existing DTDs will show that all or virtually all current practice is
+                    covered by any model of interpretation which encompasses the complications just
+                    outlined.
+                Essentially, these can be handled by extending the rules for binding variables in
+                    the open sentences which specify the meaning of a given markup construct. The
+                    simple union model allows only 'contents(this)' and
+                    'value(this,attribute-name)'; the constructs listed above require more complex
+                    expressions, roughly equivalent in expressiveness to the TEI extended-pointer
+                    notation or to the patterns of the XPath language defined by W3C.
+                Complexity of the semantics associated with an element type or attribute may be
+                    measured by the number of unbound variables in the open slots, by the complexity
+                    of the expressions which are to fill them, and by the amount or kind of memory
+                    required to allow full generation of the inferences licensed by markup in a
+                    particular text.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                    Steve
+                                    DeRose
+                                 et al
+                            What is Text, Really?
+                        
+                        
+                            Journal of Computing in Higher Education
+                            
+                                1
+                                
+                                3-26
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            Multi-Dimensional Texts in a One-Dimensional
+                                Medium
+                        
+                        
+                            Computers and the Humanities
+                            
+                                28
+                                4-5
+                                235-241
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    Terence
+                                    Langendoen
+                                
+                            
+                            
+                                
+                                    Gary
+                                    F.
+                                    Simons
+                                
+                            
+                            Rationale for the TEI Recommendations for
+                                Feature-Structure Markup
+                        
+                        
+                            Computers and the Humanities
+                            
+                                29
+                                3
+                                191-209
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                [Laurens, Henry.]
+                            
+                            Commons House of Assembly to Lord William
+                                Campbell
+                        
+                        
+                            
+                                
+                                    David
+                                    R.
+                                    Chesnutt et al 
+                            
+                            The Papers of Henry Laurens
+                            
+                                Columbia, S.C.
+                                University of South Carolina Press
+                                1985
+                                Vol. 10
+                                305-308
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Alois
+                                    Pichler
+                                
+                            
+                            What is Transcription, Really?
+                        
+                        
+                            ACH/ALLC '93, Georgetown
+                            
+                                
+                                
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            
+                                
+                                    David
+                                    G.
+                                    Durand
+                                
+                            
+                            
+                                
+                                    Elli
+                                    Mylonas
+                                
+                            
+                            Refining our notion of what text really is: the problem
+                                of overlapping hierarchies
+                        
+                        
+                            Research in Humanities Computing
+                            
+                                Oxford
+                                Oxford University Press
+                                1995
+                            
+                        
+                        Originally delivered at ALLC/ACH '92.
+                    
+                    
+                        
+                            
+                                
+                                    Gary
+                                    F.
+                                    Simons
+                                
+                            
+                            Conceptual Modeling versus Visual Modeling: A
+                                Technological Key to Building Consensus
+                        
+                        
+                            Computers and the Humanities
+                            
+                                30
+                                4
+                                303-319
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            Guidelines for Electronic Text Encoding and Interchange
+                                (TEI P3)
+                            
+                                Chicago, Oxford
+                                ACH, ALLC, and ACL
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            Lou
+                                    Burnard
+                            The Design of the TEI Encoding Scheme
+                        
+                        
+                            Computers and the Humanities
+                            
+                                29
+                                1
+                                17-39
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Philip
+                                    Wadler
+                                
+                            
+                            A formal semantics of patterns in XSLT
+                        
+                        
+                            Paper presented at Markup Technologies '99
+                            
+                                
+                                
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christopher
+                                    Welty
+                                
+                            
+                            
+                                
+                                    Nancy
+                                    Ide
+                                
+                            
+                            Using the Right Tools: Enhancing Retrieval from
+                                Marked-up Documents
+                        
+                        
+                            Computers and the Humanities
+                            
+                                33
+                                1-2
+                                58-84
+                                1999
+                            
+                        
+                        Originally delivered at TEI 10, Providence (1997).
+                    
+                
+            
+        
+    

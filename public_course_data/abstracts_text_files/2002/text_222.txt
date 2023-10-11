@@ -1,0 +1,546 @@
+
+
+
+    
+        
+            
+                Crunching numbers in the 'Night Watches of
+                    Bonaventura': A computer-aided contribution to author's lexicography
+                
+                    
+                        Barbara
+                        Arnold
+                        
+                            University of Exeter
+                            b.arnold@exeter.ac.uk
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Analysing the language of a literary text is a complex undertaking. In order
+                        to obtain a complete survey of the literary idiolect of a particular writer,
+                        as defined by his use of individual word and syntactic style, author
+                        dictionaries have proved to be a reliable and informative source of data.
+                        Such data, in the form of a corpus, lends itself to analytical
+                        interpretation by providing a basis for literary and linguistic exegesis.
+                        This presentation will introduce a project, namely the construction of a
+                        dictionary based on a German novel of the early 19th century, 'Nachtwachen von Bonaventura' (Night
+                            Watches of Bonaventura'). Various aspects of computer-based
+                        research in author lexicography will be discussed, focussing on statistical
+                        methods that can be used as a basis for extracting characteristic features
+                        of style and lexis.
+                
+                
+                    1. Preliminary notes
+                    The creation of a dictionary based on the 'Night Watches of
+                            Bonaventura' presented itself as a rewarding and challenging
+                        task for a number of reasons. Firstly, it would make a contribution to the
+                        rather neglected area of author lexicography in general (Mattausch 1990,
+                        1558). Secondly, because a dictionary of this particular text has not
+                        previously been compiled, although the novel is widely considered to be a
+                        valuable source for literary, linguistic and computational research. A
+                        dictionary of the 'Night Watches' appeared able to
+                        serve all of these purposes simultaneously. Being a systematically ordered
+                        collection of language material and with its XML-encoded structure, the
+                        lexicon is intended to be a prototype example of the capabilities of
+                        text-based computing in the humanities, offering easy access to semantic
+                        definitions as well as to a set of sense relations.
+                    Following decades of speculation concerning authorship of the novel, which
+                        was published under the pseudonym 'Bonaventura' in 1804, it can now be taken
+                        as certain that August Klingemann, who had formerly been regarded as a
+                        rather marginal figure in German Romanticism, indeed wrote the 'Night Watches'. The techniques employed to unlock the
+                        puzzle of who wrote as 'Bonaventura' ranged from frequency counts (Fleig
+                        1985) to sophisticated computer-aided approaches (Wickmann 1974).
+                        Irrefutable evidence of Klingemann's authorship emerged when an autograph
+                        originating from him was found in 1987, citing the 'Night
+                            Watches' among his other works (Haag 1987). Knowing who
+                        'Bonaventura' really was marked the beginning of a new epoch in research on
+                        the novel. Now it is the text itself that attracts scholars, as one of the
+                        most recent publications indicates (Kaminski 2001).
+                
+                
+                    2. Crunching numbers in the ‘Night Watches of
+                            Bonaventura’
+                    Compiling a dictionary and processing items of vocabulary lexicographically
+                        both require one simple question to be resolved at the very outset: "What is
+                        a word?" Defining the term 'word' as a primitive carrier of meaning that
+                        exists independently of the syntactical structure (Duden-Grammatik 1998,
+                        870), is certainly an attractive assumption, but it provides no help in
+                        carried out computer-aided text analysis for a language like German, which
+                        is extraordinarily rich in displaying phenomena such as separable prefixes
+                        that appear as "words" in the data file but are not independent of other
+                        elements of the sentence.
+                    Neither is it clear whether abbreviations, numbers or symbols such as Greek
+                        letters, which are employed quite frequently throughout the novel, ought to
+                        be treated as other lemmata or extracted from the word list and presented in
+                        an appendix. Equally troublesome is the problem of proper names. One wonders
+                        whether proper names are proper words at all or whether their status within
+                        the system of language is somewhat different as they refer to individuals
+                        rather than general ideas (Lerner/Zimmermann 1991, 349).
+                    Reviewing the statistical aspects of the corpus material leads to some
+                        fascinating conclusions about the essential ingredients of a literary text.
+                        "Crunching numbers" in Bonaventura's 16 'Night
+                            Watches', the 16 chapters in which the novel is organized, works
+                        on several levels. Counting all the separate "word" units within each
+                        sentence produces a total of 38,785 tokens to be identified by a
+                        word-processing programme. Using Tustep to generate a Kwic-Index of these
+                        parts of speech produces a list of 8,522 types. This number shrinks again
+                        after having reduced the inflected word forms to their canonical form. This
+                        means that we can reduce the 'Night Watches' to a
+                        list of 5739 lemmata in terms of our dictionary.
+                    Not all words appear with equal frequency in the novel. Not surprisingly are
+                        there more contextual occurrences of articles, conjunctions and auxiliary
+                        verbs than of nouns and other mere grammatical words. With a total number of
+                        6,692 occurrences for all the nouns they only form 17.25% of the whole
+                        novel, while this number is easily topped just by counting all the
+                        occurrences for the definite articles der, die,
+                            das (3,576 occurrences), the conjunction und (1,689 occurrences) and the pronouns er, sie, es(1,575 occurrences).
+                    Although these functional words clearly dominate the text, their semantic
+                        meaning remains mainly on the surface. Focussing on the most frequent nouns
+                        on the other hand is much more rewarding in terms of meaning and
+                        interpretational value. A survey such as that given in figure 1 produces a
+                        puzzling effect: Mensch ('human being'; 83
+                        occurrences), Teufel ('devil'; 56 occurrences), Nacht ('night'; 53 occurrences), Kopf ('head'; 51 occurrences), Hand
+                        ('hand'; 50 occurrences), Zeit ('time'; 50
+                        occurrences), Gott ('god'; 49 occurrences),
+                            Himmel ('heaven/sky'; 49 occurrences), Liebe ('love'; 47 occurrences) and Tod ('death'; 43 occurrences) are only ten
+                        different types, but they seem to be enough to express the content of the
+                            'Night Watches', disregarding the rest of the
+                        novel.
+                    
+                        Figure 1: frequency count of nouns 
+                    
+                    Another surprising figure is the percentage of those words that appear only
+                        once in the whole of the text: 54.8% of all lemmata are employed only once
+                        throughout the novel, leaving 3,146 entries in the dictionary with single
+                        occurrences.
+                    Some words show a significantly high number of occurrences concentrated in
+                        certain 'Night Watches' only. The verb lieben ('to love') for instance occurs 30 times
+                        throughout the whole of the novel, with an average number of zero to four
+                        occurrences per chapter. Although the semantics of 'love' are implicitly
+                        dealt with in almost each 'Night Watch', there is
+                        only one statistical peak in chapter XIV with 12 references close together.
+                        The antonymic hassen ('to hate') on the other
+                        hand appears only 12 times showing no significant peak at all (figure
+                        2).
+                    Retrieving this sort of information might most conveniently be supported by a
+                        computational programme, e.g. Tom Horton's WordCluster ( ) as the method applied so far, despite using Tustep, still requires
+                        several repetitive procedural actions and quite a considerable amount of
+                        tedious manual interferences.
+                    
+                        figure 2: distributional relations of 'lieben / Liebe - hassen / Hass
+                            '
+                    
+                    Expressing lexical material in terms of such precise statistics contributes
+                        to a deeper understanding of what poetic texts consist of. For the 'Night Watches' surveys like these become even more
+                        relevant, especially as doubts are still expressed as to the work's
+                        authorship. Assuming that Klingemann was involved in authorship, one recent
+                        publication nevertheless suggests that some parts might originate from
+                        another writer, Clemens Brentano (Braeuer-Ewers 1995, 13).
+                        Computer-generated comparative studies of a variety of narrative prose
+                        showing distributional relations like the above may certainly help to
+                        develop a further insight into the concept of an 'idiolectal fingerprint'
+                        (Cluett 1976).
+                
+                
+                    3. Outlook
+                    Analysing frequency counts and distributional relations are certainly not the
+                        only way in which a dictionary of Klingemann's 'Night
+                            Watches of Bonaventura' can be used in a linguistic context. As
+                        an illustrative article (figure 3) indicates, the dictionary can be used for
+                        different purposes.
+                    
+                        figure 3: example of a dictionary article
+                    
+                    Besides lemma, word class, frequency, definition and contextual reference
+                        there is a sophisticated system of cross-references at the bottom of each
+                        entry. Here hints on word-formation are given and sense-related pointers
+                        create a network structure of meanings. Each article is generated by
+                        consulting a number of lexicographical reference works. Comparing the
+                        semantic commentaries of dictionaries published during the 18th and 19th
+                        century (Adelung 1793-1801; Campe 1807-11; Grimm 1854-1961) with a reliable
+                        reference work of contemporary German (Duden 1999) leads to insights into
+                        the history of words, including aspects of lexicalisation and changes in
+                        meaning and usage.
+                    The dictionary on the ‘Night Watches of Bonaventura’
+                        is just one part of a larger project dealing with August Klingemann. As
+                        mentioned above linguistic research has to a great extent concentrated on
+                        isolating typical idiolectal ways of expression within the novel for the
+                        purpose of proving authorship. Now that we know its author it makes sense to
+                        compare the vocabulary employed in the ‘Night
+                            Watches’ to that of other items of written work left by
+                        Klingemann. The application of IT facilities may provide interesting
+                        insights into these, too, pointing the way to further potential of
+                        computer-aided research in the field of author lexicography.
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    Johann
+                                    Christoph
+                                    Adelung
+                                
+                            
+                            Grammatisch-kritisches Wörterbuch der hochdeutschen
+                                Mundart
+                            2nd edn
+                            
+                                5 vols
+                                Leipzeig
+                                Breitkopf und Härtel
+                                1793-1801
+                            
+                        
+                        repr. Hildesheim / New York: Georg Olms, 1970
+                    
+                    
+                        
+                            
+                                
+                                    Ina
+                                    Braeuer-Ewers
+                                
+                            
+                            Züge des Grotesken in den 'Nachtwachen von
+                                Bonaventura'
+                            
+                                Paderborn
+                                Schöningh
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Joachim
+                                    Heinrich
+                                    Campe
+                                
+                            
+                            Wörterbuch der Deutschen Sprache
+                            
+                                5 vols
+                                Braunschweig
+                                Schulbuchhandlung
+                                1807-11
+                            
+                        
+                        repr. Hildesheim / New York: Georg Olms, 1969
+                    
+                    
+                        
+                            
+                                
+                                    Robert
+                                    Cluett
+                                
+                            
+                            Prose Style and Critical Reading
+                            
+                                New York
+                                Teachers College Press
+                                1976
+                            
+                        
+                    
+                    
+                        
+                            
+                                Duden
+                            
+                            Das große Wörterbuch der deutschen Sprache
+                            
+                                Dudenredaktion
+                            
+                            3rd edn
+                            
+                                10 vols
+                                Mannheim / Leipzig / Wien
+                                Bibliographisches Institut
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                Duden
+                            
+                            Grammatik der deutschen Gegenwartssprache
+                            
+                                Dudenredaktion
+                            
+                            6th edn
+                            
+                                Mannheim / Leipzig / Wien
+                                Bibliographisches Institut
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Horst
+                                    Fleig
+                                
+                            
+                            Literarischer Vampirismus. Klingemanns 'Nachtwachen von
+                                Bonaventura'
+                            
+                                Tübingen
+                                Niemeyer
+                                1985
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Jacob
+                                    Grimm
+                                
+                            
+                            
+                                
+                                    Wilhelm
+                                    Grimm
+                                
+                            
+                            Deutsches Wörterbuch
+                            
+                                32 vols
+                                Leipzig
+                                Hirzel
+                                1854-1961
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Ruth
+                                    Haag
+                                
+                            
+                            Noch einmal: Der Verfasser der Nachtwachen von
+                                Bonaventura
+                        
+                        
+                            Euphorion
+                            
+                                81
+                                
+                                286-297
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Nicola
+                                    Kaminski
+                                
+                            
+                            Kreuz-Gänge. Romanexperimente der deutschen
+                                Romantik
+                            
+                                Paderborn
+                                Schöningh
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    August
+                                    Klingemann
+                                
+                            
+                            Nachtwachen von Bonaventura
+                            
+                                Penig
+                                Dienemann
+                                1804
+                            
+                        
+                        repr. Frankfurt / Main: Insel Verlag, 1974
+                    
+                    
+                        
+                            
+                                
+                                    Jean-Yves
+                                    Lerner
+                                
+                            
+                            
+                                
+                                    Thomas
+                                    E.
+                                    Zimmermann
+                                
+                            
+                            Eigennamen
+                        
+                        
+                            Semantik. Ein internationales Handbuch der
+                                zeitgenössischen Forschung
+                            
+                                
+                                    Arnim
+                                    von Stechow
+                                
+                            
+                            
+                                
+                                    Dieter
+                                    Wunderlich
+                                
+                            
+                            
+                                Berlin
+                                Walter de Gruyter
+                                1991
+                                349-370
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Josef
+                                    Mattausch
+                                
+                            
+                            Das Autoren-Bedeutungswörterbuch
+                        
+                        
+                            
+                                
+                                    Franz
+                                    Josef
+                                    Hausmann
+                                
+                            
+                            
+                                
+                                    Oskar
+                                    Reichmann
+                                
+                            
+                            
+                                
+                                    Herbert
+                                    Ernst
+                                    Wiegand
+                                
+                            
+                            Wörterbücher. Ein internationales Handbuch zur
+                                Lexikographie
+                            
+                                vol 2
+                                Berlin
+                                Walter de Gruyter
+                                1990
+                                1549-1562
+                            
+                        
+                    
+
+                    
+                        
+                            
+                                
+                                    Dieter,
+                                    Wickmann
+                                
+                            
+                            Zum Bonaventura-Problem: Eine mathematisch-statistische
+                                Überprüfung der Klingemann-Hypothese
+                        
+                        
+                            Zeitschrift für Literaturwissenschaft und
+                                Linguistik
+                            
+                                4
+                                
+                                13-29
+                                1974
+                            
+                        
+                    
+                
+            
+        
+    

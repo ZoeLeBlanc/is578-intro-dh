@@ -1,0 +1,178 @@
+
+
+
+    
+        
+            
+                Anastasia: A New XML Publication System
+                
+                    
+                        Peter
+                        Robinson
+                        
+                            De Montfort University
+                            peter.robinson@dmu.ac.uk
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Over the last decade, many humanities scholars have been persuaded by the promise
+                    and the power of encoding schemes for electronic texts to create texts,
+                    sometimes very large and complex, encoded using these schemes. This is specially
+                    true of SGML/XML based encodings, with the implementation of the Text Encoding
+                    Initiative being particularly influential in the community. However, scholars
+                    who have made such texts have typically discovered that software to publish them
+                    is too expensive for their limited budgets, or too difficult to use, or lacking
+                    essential facilities, or all three of these.
+                The Anastasia electronic publishing system, developed
+                    in the last five years in a partnership between the Centre for Technology and
+                    the Arts, De Montfort University, and a new electronic publishing company,
+                    Scholarly Digital Editions (SDE), attempts to supply this deficiency. Anastasia stands for ‘Analytic system tools and SGML
+                    integration application’. As this implies, it is able to handle all valid SGML
+                    and XML documents, with no limits on their complexity.
+                Particularly, Anastasia has been designed to meet the
+                    needs of humanists, and especially textual scholars. It is a common complaint of
+                    humanists that SGML/XML systems constrain a single hierarchical view of a
+                    document, while humanities texts can be seen as containing many overlapping and
+                    competing hierarchies. SGML/XML publishing systems usually cannot support
+                    facilities which cut across the primary document hierarchy, and so cannot
+                    satisify even such simple needs as display of a single page of transcription, or
+                    display of a tabular list of key word in context search results with formatting
+                    of all returned search strings according to the embedded encoding. Anastasia seeks to escape these limitations by
+                    adopting a document processing model that sees the document as made up of a
+                    series of events which are defined not only by their hierarchical relation, but
+                    also by their left to right relation in the document stream. As a result, Anastasia provides tools which allow the document to
+                    be manipulated according to alternative hierarchies implicit in the element
+                    relations. Thus, one can very easily extract views of the text by column or
+                    page, or indeed start a display at any point in any element and continue to any
+                    point in any other element. A KWIC display, for example, requires that we
+                    display an arbitrary number of characters before a hit, then display the
+                    characters in the hit themselves, and then display an arbitrary number of
+                    characters after the hit, all with complete awareness of the document encoding
+                    within those spans of characters: Anastasia can do
+                    this. Then, one should be able to click on a link from the KWIC display to the
+                    document itself, and see the hits highlight in the full-text context: once more,
+                        Anastasia has been designed to make this easy.
+                    One can also manufacture virtual texts by extracting and combining multiple and
+                    even overlapping segments.
+                Anastasia is also designed to fill another need: for
+                    a mode of publication which is identical on both CD-ROM and the internet, on the
+                    major Windows and Macintosh systems. Typically, the scholar will prepare a body
+                    of SGML/XML documents for publication using the Anastasia GroveMaker application, which compiles the documents into
+                    a binary database. The Anastasia Reader then serves
+                    the documents to an internet browser, either over a network or from a CD-ROM.
+                    Control of all aspects of the publication's display and behaviour (including
+                    fully SGML/XML aware searching) is achieved through a series of Tcl script
+                    files.
+                A key factor in the development of Anastasia has been
+                    the desire to achieve publication without compromise. That is: if it is possible
+                    to achieve a certain kind of computer display effect, then Anastasia will allow this. For example, we might want to use some of
+                    the advanced dynamic HTML features permitted by Javascript: pop-up menus, text which changes colour as the mouse
+                    passes over some other part of the document (for instance, to show that a word
+                    or phrase in one window is a translation of, or is otherwise related to, a word
+                    or phrase another window), synchronous scrolling or separate windows, and more.
+                    Practically, this means that we should be able to generate streams for display
+                    in any format whatever, directly from the XML: in pdf, SVG, rtf, any variant of
+                    HTML and XML, and send it directly to the display engine. We have concentrated
+                    on using Anastasia to generate HTML with Javascript:
+                    an example of the effects possible through this can be seen in the work on the
+                    digital 28th edition of the Nestle-Aland Greek New Testament, accessible through
+                    nestlealand.uni-muester.de. Other instances can be seen from the SDE website,
+                        .
+                Anastasia is designed to work as a Apache webserver
+                    module. It also requires C-language support, and the Tcl (Tool Control Language)
+                    libraries. In theory at least, this means Anastasia
+                    can operate whereever Apache operates: our main development is on Macintosh OS X
+                    and Windows machines; there is also a Linux port. The search systems in Anastasia are based on SGREP, written by Jani Jaakkola
+                    and Pekka Kilpelainen of the University of Helsinki: we have heavily customized
+                    the SGREP code to improve its performance with large texts. Perhaps one of the
+                    most distinctive (if not controversial) features of Anastasia is that the style sheets we use to control exactly how the
+                    source XML is sent to the browser are written in Tcl, and not in any of the
+                    various XML-based systems which have appeared in the last years (such as XSLT,
+                    XPATH, and others). In part this is historical: the roots of Anastasia lie some distance back, as far as the first
+                    work done by myself on the Canterbury Tales Project
+                    with Elizabeth Solopova and Norman Blake) in 1993, long before even XML made an
+                    appearance. In part, it is because those systems themselves remain in a start of
+                    flux. But it is also because there is room for argument about the efficiency of
+                    such schemes. There is no doubt that XML is superb at representing textual
+                    structure. But this does not mean it is suitable for use as a programming
+                    language, requiring ease of use, rapid development, efficient maintenance, and
+                    widespread support across many different computer systems. Tcl does offer all
+                    these.
+                Anastasia is not intended to be the tool of choice
+                    for everyone who works with XML. It is designed for situations where the very
+                    best possible presentation is required of highly complex XML. A single screen of
+                    the digital Nestle-Aland, for example, may draw XML from hundreds of different
+                    places within the source, reformat into HTML interwoven with Javascript
+                    commands, and spread this across a series of frames nested within the browser
+                    display Ð all in a fraction of a second, in response to a request from the
+                    reader. It is also designed to run identically on CD-ROM and over the internet.
+                    Reports of the death of CD-ROM appear rather exaggerated: indeed, the
+                    availability of cheaply priced publication tools such as Anastasia may make it possible for high-quality CD-ROMs to be made
+                    available at much lower prices than hitherto, and so create a market which has
+                    been previously elusive. Finally, my hope when designing Anastasia was that a single scholar, with reasonable dedication,
+                    good knowledge of XML and with no more computer resources and support than are
+                    commonly available within university departments, would be able to use it to
+                    make high-quality XML based publications. There have been some encouraging signs
+                    that Anastasia can indeed be used in this manner. In
+                    the same context, it should also be appropriate for use by smaller academic
+                    publishers.
+                This is the first conference presentation of Anastasia as a mature publication system. There has been one
+                    previous conference presentation of the system, at the DRRH conference in Sydney
+                    in September 2001, when only a preliminary version of the software was
+                    available.
+            
+        
+    

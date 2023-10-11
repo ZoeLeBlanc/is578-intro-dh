@@ -1,0 +1,415 @@
+
+
+
+    
+        
+            
+                PhiloNet: creating semantic concordances for the
+                    analysis of philosophical texts
+                
+                    
+                        Luisa
+                        Bentivogli
+                        
+                            ITC-irst, Trento
+                                bentivo@irst.itc.it
+                        
+                    
+                
+                
+                    
+                        Fabio
+                        Pianesi
+                        
+                            ITC-irst, Trento
+                                pianesi@irst.itc.it
+                        
+                    
+                
+                
+                    
+                        Emanuele
+                        Pianta
+                        
+                            ITC-irst, Trento
+                                pianta@irst.itc.it
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        Philosophical text-analysis
+                        semantic concordances
+                        WordNet
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    1. Introduction
+                    The PhiloNet project is a joint effort between ITC-irst and the Department of
+                        Philosophy of the University of Bologna that aims at providing students and
+                        scholars of philosophy with new computing tools. In particular, we are
+                        developing tools for computer-aided analysis of digitized (philosophical)
+                        texts capable of overcoming the limits of traditional methods, by offering
+                        greater flexibility, analytical power, and adaptation to the goals of
+                        different users.
+                    In the field of text analysis a number of already available software tools
+                        can produce very accurate lists of words, word concordances, word
+                        frequencies, collocations and so on (Biber et al., 1998). These
+                        computational techniques are all word-based, and they hardly provide support
+                        for more sophisticated analyses, like the targeting of concepts. It is
+                        conceivable, however, that exactly the latter kind of analytical tools are
+                        more suitable for a domain, such as philosophy, where the need for
+                        accessing, elucidating, comparing, etc. concepts across and within texts is
+                        an important part of the work of scholars. Thus, new computational
+                        concept-oriented resources are needed. More precisely, resources must be
+                        available that list concepts, enumerate their mutual relationships, and
+                        point at their realization at the word level.
+                    In this work we report on preliminary results obtained by developing
+                        techniques to create concept-based concordances rather than word-based ones,
+                        by using generic and domain-specific (philosophical) wordnets as tools.
+                
+                
+                    2. Semantic concordances for text-analysis
+                    We use the term "semantic concordance" to refer to the set of text passages
+                        in which a concept occurs. Concepts are expressed in texts through words and
+                        therefore, to build semantic concordances, two lexical semantic issues must
+                        be dealt with: polysemy (when a given word expresses different concepts) and
+                        synonymy (when different words express the same concept). If one searches
+                        for a concept on the base of a word "w" expressing that concept, polysemy
+                        affects precision (the proportion of retrieved words that are actually
+                        correct) because along with occurrences of "w" expressing the desired
+                        concept, those expressing the other concepts conveyed by "w" will also be
+                        retrieved. On the other hand, synonymy affects recall (the proportion of
+                        correct words actually retrieved in answer to a search request) because all
+                        the synonyms of "w", hence other possible occurrences of the target concept,
+                        are missed. Thus, to move from a word-based to a concept-based text-analysis
+                        it is necessary to disambiguate each occurrence of a word in a text, and to
+                        have a list of the words that can express the same concept.
+                    To this purpose, WordNet (Miller,1990) turns out to be a very useful tool.
+                        WordNet is a lexical database, created at Princeton University, in which
+                        nouns, verbs, adjectives and adverbs are organized into sets of synonyms
+                        (synsets), representing lexical concepts. Synsets are linked by means of
+                        various relations, including hypo/hypernymy, meronymy, and antonymy. As far
+                        as semantic concordances are concerned, WordNet synsets can be used to
+                        extend the search for a word to all its synonyms. Moreover, the relations
+                        between synsets can be exploited to search related concepts, something which
+                        is absolutely not available with normal word-based techniques. For instance,
+                        we can search for a concept and its hyponyms or hypernyms. WordNet can also
+                        be useful for addressing the polysemy problem, as it is currently used as a
+                        tool for word sense disambiguation (WSD), both automatic and manual. In
+                        manual WSD, WordNet plays the role of extensive sense inventory; a
+                        well-known effort of this kind is the SemCor project (Miller,1993) in which
+                        a subset of the Brown Corpus was tagged with WordNet senses for educational
+                        use.
+                    Our proposal consists in manually annotating philosophical texts with synsets
+                        selected from an extension of the generic WordNet called PhiloNet (which is
+                        specialized for the philosophical domain, see below), and having a user
+                        interface that given a synset/concept permits the accessing of all the
+                        passages in which the concept is used.
+                
+                
+                    3. An example of semantic concordances for philosophical texts
+                    In order to experiment with WordNet as a tool for creating semantic
+                        concordances, we analyzed the different philosophical concepts expressed by
+                        the word "reason" in Pearson's work "The Grammar of Science". The text was
+                        digitized by the University of Bologna following the TEI guidelines and
+                        using XML-based encoding schemes. The passages of the text relevant for our
+                        example were then manually semantically tagged by using the synsets of the
+                        specialized philosophical wordnet called PhiloNet.
+                    Three different types of concordances have been tested on Pearson's work:
+                        traditional word-based concordances, semantic concordances based on the
+                        generic Princeton WordNet, and semantic concordances based on the
+                        specialized PhiloNet.
+                    A simple word-based concordance produces 125 occurrences of the word
+                        "reason(s)", including verbs and nouns relating to different senses such as:
+                        about these conceptions we reason, endeavouring to ascertain their
+                        ask whether we have any reason for conceiving atoms as
+                        human powers of perception and reason, lies the mystery and the
+                        universe to be guided by reason. But reason, because it is a directive
+                            power ...... 
+                    As can be seen, with a word-based concordance it is the scholar interested in
+                        the study of the philosophical concepts of "reason" who has to single out,
+                        among the 125 occurrences found, the ones that are relevant to her purpose. 
+                    We expect semantic concordances based on WordNet to deliver more focused
+                        information. In WordNet, the word "reason" occurs in six synsets, but only
+                        the one reproduced here is relevant for our philosophical purposes: 
+                        Sense 3 reason, understanding, intellect -- (the capacity for rational
+                            thought or inference or discrimination)
+                        hypernym => faculty, mental faculty, module
+                    This synset can be considered a philosophical concept, as it refers to the
+                        British empiricist tradition starting with Locke, in which reason is broadly
+                        viewed as the generic power or faculty of knowing.
+                    Having Pearson's text tagged with WordNet synsets and by using the
+                        philosophical synset above as a search key to find occurrences of the
+                        relevant philosophical concept of reason, we obtain more focused results
+                        compared to the ones obtained with the word-based concordance. In fact, 8
+                        occurrences of the verb "to reason" and 40 occurrences of the noun "reason",
+                        which were retrieved in the word-based concordance seen above, are now
+                        dropped because expressing non-philosophical senses. The synset-based search
+                        produces 22 occurrences of the philosophical concept as delivered by the
+                        word "reason", along with previously undetected occurrences due to synonyms
+                        of "reason": 2 occurrences due to the word "understanding", and 4 due to
+                        "intellect", as for instance in:
+                        the only proof that our intellect has been keen enough to
+                        in his Essay concerning Human Understanding, where he writes
+                     Furthermore, we can exploit the relations between synsets available from
+                        WordNet to obtain information about concepts semantically related to the one
+                        we are interested in. In our example we find 27 occurrences of the hypernym
+                        of "reason, understanding, intellect", that is "faculty, mental faculty, module":
+                        the power of the reasoning faculty possesses of resuming
+                        product of the reflective faculty, analyzing the process of
+                            perception, ....... 
+                    It seems to us that even this simple experiment demonstrates the advantages
+                        and power of the semantic concordance methodology based on the current,
+                        generic WordNet. However Princeton WordNet, aiming at capturing common
+                        linguistic knowledge, contains only one philosophically relevant concept for
+                        "reason". Therefore, in a WordNet-based concordance, the other occurrences
+                        of the word "reason" in different though philosophically relevant senses are
+                        missed.
+                    The results of the concept-based concordance of "reason" can be further
+                        refined by having access to a specialized philosophical wordnet. To this
+                        purpose we used PhiloNet, a wordnet specialized in the philosophical domain,
+                        currently under development in conjunction with the University of Bologna.
+                        PhiloNet is a component of MultiWordNet (Bentivogli et al., 2000), an
+                        aligned multilingual lexical database built at ITC-irst on the basis of
+                        Princeton WordNet. PhiloNet is developed in two stages. At the first stage,
+                        philosophical synsets already existing in WordNet are identified, labeled as
+                        philosophical, and imported into PhiloNet. At the second stage, new
+                        philosophical synsets are added to PhiloNet and linked to the generic
+                        WordNet. The criterion followed for the identification and for the creation
+                        of philosophical synsets is to represent only current philosophical concepts
+                        as found in philosophical handbooks. Moreover, PhiloNet allows context
+                        labels to be attached to synsets, words, or relations to represent special
+                        pieces of information that would be hardly captured by means of the usual
+                        lexical and semantic relationships. For instance, if a philosopher or
+                        philosophical school uses a idiosyncratic term to refer to a concept that
+                        corresponds to a common philosophical concept, a context label can be added
+                        to that word in the synset specifying the philosopher/s for which the
+                        synonymy holds.
+                    Coming back to our example, PhiloNet contains the synset "reason,
+                        understanding, intellect" which has been imported from the generic WordNet
+                        and other seven philosophical synsets:
+                            (1) "reason", a generic synset in which the concept of reason is
+                                broadly represented as the most distinctive characteristic of human
+                                beings guiding them.
+                            (2) "reason, dianoia"
+                            (3) "reason, evidence, good sense"
+                            (4) "reason, self-consciousness"
+                            (5) "reason, calculus, computation"
+                            (6) "reason, foundation, essence"
+                            (7) "reason, law, natural law, law of nature".
+                        
+                    We can now perform more sophisticated analyses with respect to those possible
+                        on the basis of the generic WordNet. As a result, we can see that in
+                        Pearson's work synset (1) occurs 18 times, (6) occurs 28 times, (7) occurs
+                        51 times (8 through the word "reason", 14 through "law", 22 through "natural
+                        law", 7 through "law of nature") while the other concepts yield no
+                        occurrences.
+                    Summing up the results of our experiments with the concept of "reason" in
+                        Pearson's work "The Grammar of Science", we can see that the three types of
+                        concordance provide different levels of precision and recall of the
+                        information retrieved:
+                            -Word concordance: 125 lines all due to the word "reason" and not
+                                distinguishing between relevant (77) and non relevant (48)
+                                occurrences. Precision is 61.6% and recall is 61.1%.
+                            -WordNet-based semantic concordance: 28 lines all relevant and
+                                referring to one philosophical concept (22 due to "reason", 2 to
+                                "understand", and 4 to "intellect"). Precision is 100% and recall is
+                                22.2%.
+                            -PhiloNet-based semantic concordance: 126 lines all relevant and
+                                distinguishing four different philosophical concepts. In these 126
+                                lines, 77 are due to the word "reason", 2 to "understanding", 4 to
+                                "intellect", 14 to "law", 22 to "natural law", and 7 to "law of
+                                nature". Both precision and recall amount to 100%.
+                        
+                
+                
+                    4. Conclusion and prospects
+                     In this paper we have introduced and discussed two levels of concept-based
+                        textual analysis: a "linguistic level", relying on a generic WordNet, and a
+                        "domain level", requiring a philosophical WordNet.
+                    These two levels should be carefully identified and delimited. In particular,
+                        it is important that the domain-based wordnet contains only concepts that
+                        are widely accepted in the field. Respecting these guidelines will guarantee
+                        that the tagging performed on a philosophical text can be used by students
+                        and scholars of different theoretical background.
+                    At still another level, very specialized wordnets relative to single books
+                        make sense, and can be used in the proposed methodology. However, in this
+                        case the theoretical background and aims of the scholar building the wordnet
+                        and tagging the text become crucial. In a way, the resulting tagged text
+                        should be seen more akin to an essay than to a reference work. On the other
+                        hand, pushing the metaphor a little further, linguistic and domain-based
+                        text analysis can be compared with general dictionaries and philosophy
+                        handbooks, respectively.
+                     In conclusion, the preliminary results of our research support the
+                        feasibility and importance of a concept-based text analysis.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            L.
+                                    Bentivogli
+                            E.
+                                    Pianta
+                            F.
+                                    Pianesi
+                            Coping with lexical gaps when building aligned
+                                multilingual wordnets
+                        
+                        
+                            Proceedings of the Second International Conference on
+                                Language Resources and Evaluation (LREC 2000), Athens,
+                                Greece
+                            
+                                
+                                
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    Biber
+                                
+                            
+                            
+                                
+                                    S.
+                                    Conrad
+                                
+                            
+                            
+                                
+                                    R.
+                                    Reppen
+                                
+                            
+                            Corpus Linguistics: Investigating Language Structure
+                                and Use
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    Fellbaum
+                                
+                            
+                             WordNet: an electronic lexical database
+                            
+                                
+                                
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            G.
+                                    A.Miller
+                            
+                                
+                                    R.
+                                    Tengi
+                                
+                            
+                            
+                                
+                                    R.
+                                    T.
+                                    Bunker
+                                
+                            
+                            A Semantic Concordance
+                        
+                        
+                            Proceedings of the ARPA Human Language Technology
+                                Workshop, San Francisco
+                            
+                                
+                                
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    K.
+                                    Pearson
+                                
+                            
+                            The Grammar of Science
+                            
+                                
+                                Thoemmes Antiquarian Books
+                                1991
+                            
+                        
+                    
+                
+            
+        
+    

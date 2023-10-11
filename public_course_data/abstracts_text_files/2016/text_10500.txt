@@ -1,0 +1,91 @@
+
+      
+         Das digitale Handbuch der Höfe und Residenzen im spätmittelalterlichen Reich ist die
+        online-Ausgabe einer Druckpublikation, die zwischen 1998 und 2011 von Autorinnen und
+        Autoren der Hof- und Residenzenforschung erstellt und von der Residenzen-Kommission
+        der Akademie der Wissenschaften zu Göttingen konzeptionell und redaktionell betreut
+        wurde. Das ca. 5000 Seiten und mehrere hundert Abbildungen umfassende Werk besteht
+        aus über 1000 Einzelartikeln, die dynastisch, topographisch und sachlich gegliedert
+        und vielfältig miteinander verknüpft sind. Der topographische Schwerpunkt liegt auf
+        Höfen und Residenzen des Heiligen Römischen Reichs Deutscher Nation in der Zeit
+        zwischen etwa 1200 bis 1650 (Hirschbiegel / Wettlaufer 1999, 2000, 2002; Wettlaufer
+        2005). In einer Zusammenarbeit mit der SUB Göttingen wurde ein Konzept für eine
+        Online Präsentation der Druckdaten, die vom Thorbecke Verlag im TEI-Format zur
+        Verfügung gestellt wurden, entworfen und umgesetzt.
+         In dem Projekt spielen Datenmodellierung, Vernetzung und Visualisierung eine entscheidende Rolle. Aufbauend auf einen SOLR - Index wird ein Zugriff auf Text und Bilder über eine string-basierte Suche sowie über eine topographischen Zugriff mittels Open-Street-Map Karten und dem leaflet Javascript Framework angeboten, die die ortsgebundenen Informationen zu den Artikeln erschließen. 
+         
+            
+         
+         Eine Facettierung zu Handbuchteilen, Autoren und Artikeln erlaubt die Einschränkung der Suchergebnisse auf bestimmte Teilmengen. Die Texte und Bilder werden sowohl über eine HTML-basierte Ansicht als auch im PDF Format für die Benutzer präsentiert. Abkürzungen werden zur besseren Verständlichkeit bei mouse-over Events aufgelöst. Quellen und Literatur zu den einzelnen Artikeln können bei Bedarf ausgeklappt und angezeigt werden. Ein Zitierlink erlaubt die Referenzierung zur seitenidentischen Druckausgabe des Handbuchs. Eine besondere Herausforderung stellte die Verlinkung der Artikel untereinander dar, die über eindeutige Identifikatoren für alle Texte und Bilder miteinander verknüpft sind. Aufgrund der Datengrundlage waren die End- und Zielpunkte der zu verknüpfenden Strings, die nur durch einen Pfeil im Fließtext gekennzeichnet sind, nicht leicht zu bestimmen. Trotzdem konnte eine über 90% korrekte Verlinkung durch automatisierte string-matching Verfahren mit Hilfe des kontrollierten Lemmavokabulars erreicht werden. 
+         
+            
+         
+         Die Architektur des Projekts ist auf eine leichte Archivierbarkeit und langfristige
+          Nachnutzung hin optimiert, da nach dem Auslaufen von Akademieprojekten in der Regel
+          keine Mittel mehr für eine Pflege von digitalen Projektergebnissen mehr zur
+          Verfügung stehen (Wettlaufer 2012). Über XML TEI stehen die Textdaten langfristig
+          lesbar bereit und durch Apache SOLR können die Daten mit Hilfe einer etablierten
+          Technologie effizient gesucht und angezeigt werden. Die Nutzung von Typo3 und der
+          Extension "Find" erlauben die Integration in die schon bestehende digitale
+          Infrastruktur der Göttinger Akademie. Die "Find"-Erweiterung der SUB
+          Göttingen schafft eine Schnittstelle zu beliebigen SOLR-Indizes in Typo3 und
+          zeichnet sich durch eine leichte Konfigurierbarkeit und erweiterte
+          Templating-Fähigkeiten aus, mit denen komplexe Ansichten der Suchergebnisse
+          realisiert werden können. Das Hosting an der Göttinger Staats- und
+          Universitätsbibliothek lassen die langfristige Pflege und Verfügbarkeit der
+          Handbücher im Rahmen einer bestehenden Kooperationsvereinbarung erwarten. 
+         Für die Zukunft sind neben einer Erweiterung des Userinterface mit zusätzlichen Materialien und einer Verknüpfung der Artikel mit prosopographischen Datensätzen von Hofinhabern auch eine Bereitstellung der Metadaten der Einzelartikel als Linked Open Data sowie eine Verknüpfung mit weiteren Handbüchern zu einem ähnlichen Themenbereich aus einem Nachfolgeprojekt geplant. Das digitale Handbuch wird voraussichtlich im Frühjahr 2016 öffentlich zur Verfügung stehen.
+         Projektseite:
+            http://adw-goe.de/forschung/abgeschlossene-forschungsprojekte-aus-dem-akademienprogramm/hof-und-residenz/
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Hirschbiegel, Jan / Wettlaufer, Jörg (1999):
+                "Materialien zum Werk 'Fürstliche Höfe und Residenzen im
+                spätmittelalterlichen Reich. Ein dynastisch-topographisches Handbuch'.
+                Zusammengestellt von Jan Hirschbiegel und Jörg Wettlaufer", in: Mitteilungen der Residenzen-Kommission der Akademie der
+                Wissenschaften zu Göttingen. Sonderheft 3 http://resikom.adw-goettingen.gwdg.de/MRK/SH3.pdf [letzter
+                Zugriff 15. Oktober 2015]. 
+               
+                  Hirschbiegel, Jan / Wettlaufer, Jörg (2000):
+                  "Projektdatenbank: Fürstliche Höfe und Residenzen im spätmittelalterlichen
+                  Reich. Ein dynastisch-topographisches Handbuch", in: Mitteilungen der Residenzen-Kommission der Akademie der Wissenschaften
+                  zu Göttingen 11, 2: 9-14 http://resikom.adw-goettingen.gwdg.de/MRK/MRK11-2.pdf [letzter
+                  Zugriff 15. Oktober 2015]. 
+               
+                  Hirschbiegel, Jan / Wettlaufer, Jörg (2002):
+                    "Fürstliche Höfe und Residenzen im spätmittelalterlichen Reich. Bilder und
+                    Begriffe", in: Mitteilungen der Residenzen-Kommission der
+                    Akademie der Wissenschaften zu Göttingen 12, 1: 12-18 http://resikom.adw-goettingen.gwdg.de/MRK/MRK12-1.pdf [letzter
+                    Zugriff 15. Oktober 2015]. 
+               
+                  SUB Göttingen (o. J.): TYPO3
+                    extension providing a frontend for Solr indexes
+                  https://github.com/subugoe/typo3-find [letzter Zugriff 12.
+                      Februar 2016].
+               
+                  Wettlaufer, Jörg (2005): "Höfe und Residenzen im
+                        spätmittelalterlichen Reich. Erste Ergebnisse des Handbuchprojekts der
+                        Residenzen-Kommission der Akademie der Wissenschaften zu Göttingen", in:
+                        Pils, Susanne / Niederkorn, Jan Paul (eds.):Ein
+                        zweigeteilter Ort? Hof und Stadt in der frühen Neuzeit (=
+                        Forschungen und Beiträge zur Wiener Stadtgeschichte 44). Wien: Böhlau 7-26. 
+               
+                  Wettlaufer, Jörg (2012): "Das digitale Handbuch der
+                          Höfe und Residenzen im spätmittelalterlichen Reich. Probleme und Erfahrungen
+                          einer digitalen Bereitstellung von kollaborativen Werken in Open Access nach
+                          dem Projektende", Vortrag auf dem Workshop Rechtliche
+                          Rahmenbedingungen der Akademievorhaben der Akademie der Wissenschaften
+                          zu Göttingen und der Union der deutschen Akademien der Wissenschaften AG
+                          „Elektronisches Publizieren“. 8. und 9. Oktober 2012, Göttingen,
+                          Historische Sternwarte http://www.digihum.de/agep/docs/wettlaufer_2012_agep.pdf [letzter
+                          Zugriff 15. Oktober 2015]. 
+            
+         
+      
+   
+

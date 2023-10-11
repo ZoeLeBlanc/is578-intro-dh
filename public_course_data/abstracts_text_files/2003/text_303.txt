@@ -1,0 +1,229 @@
+
+
+
+    
+        
+            
+                Solving the Legacy-Encoding Debacle with On-line
+                    Transliteration
+                
+                    
+                        John
+                        Paolillo
+                        
+                            Indiana University
+                            paolillo@indiana.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Non-roman scripts have always faced severe challenges in computer applications.
+                    Early challenges concerned the lack of non-roman support in ASCII. Today,
+                    Unicode provides or promises to provide support for almost all non-roman
+                    scripts. But Unicode support is not widespread in many languages, for example in
+                    the languages of South and Southeast Asia. In the last decade, the international
+                    expansion of the World-Wide Web caused demand for non-roman text encodings to
+                    rise faster than Unicode development could proceed. The consequent void was
+                    filled in many cases by ad-hoc 8-bit font encodings. While these encodings lack
+                    many of Unicode’s advantages, they allowed many South Asian websites, especially
+                    newspaper companies, to establish a native-language web presence. Now they are
+                    firmly established in use: hundreds of web sites use special 8-bit encodings,
+                    with new material being added every day. These encodings are thus likely to be
+                    widely used for some time, even if Unicode support grows. In addition, many
+                    materials encoded in these forms are now legacy materials, and continued access
+                    to them is required for historical and other studies [Baker, et al., 2000].
+                These 8-bit encodings have many well-known problems, the most salient of which is
+                    the large number of alternative encoding schemes. Languages such as Sinhala or
+                    Tamil have three or four widely-used encodings, and Hindi has six or more. Few
+                    of these encodings reflect local, regional or international standardization
+                    efforts. Numerous fonts are required for display, and words are not likely to
+                    match across any two texts, seriously hampering efforts to search or index the
+                    documents. For example, when different newspapers use different font-based
+                    encodings to post stories on the same current events, the keywords for those
+                    stories will not match. Users searching for those stories must search separately
+                    for pages in each of the relevant encodings, or else fail to find them entirely.
+                    Many opportunities for humanistic, literary and linguistic research are
+                    encumbered by this situation. Unicode alone cannot solve these problems:
+                    conversion methods are needed to reconcile the variant text encodings.
+                This poster presents a general solution for these problems in the from of a
+                    protocol for transliterating variant text encodings of a language. The design of
+                    the protocol employs conversion tables for each supported encoding written in
+                    XML. Websites presenting materials in 8-bit encodings would publish such a
+                    conversion table where it can be readily retrieved by browsers and search
+                    engines. On the application side, the conversion tables are compiled by a
+                    general transliteration program into finite state transducers. When the encoded
+                    text is encountered, the transliterator is invoked to convert the encoding into
+                    one that can be used for indexing or display. Font detection is supported so
+                    that multilingual pages are handled appropriately, converting only that portion
+                    of the text in a document whose encoding requires it.
+                The transliterator may be used in any context where it is required. Search
+                    engines can select a conversion target for all web pages in a given language,
+                    e.g. Unicode, which would then be correctly indexed alongside other languages.
+                    Similarly, browsers could convert the encoding of a web page into one for which
+                    there is an available font, or convert a romanized query input into a suitable
+                    representation to be matched by a search engine, etc. Application software
+                    equipped to handle this protocol, whether web browsers, search engines, text
+                    editors or anything else, need only know the location of the conversion table
+                    for each encoding.
+                The transliteration program is based on the notion of a graphic template, which
+                    permits even highly complex alpha-syllabic Brahmi-based South Asian scripts to
+                    be efficiently transliterated. A graphic template is used instead of, e.g.
+                    phonetic representations, because it simplifies the many-to-many relations among
+                    script elements and their phonetic representation. Additionally, non-programmers
+                    and non-specialists can modify a conversion table more readily if its elements
+                    refer to graphic elements, rather than to phones or phonemes, which require
+                    specialized linguistic knowledge to appreciate. Graphic templates are finitely
+                    bounded, and hence can be parsed efficiently using finite state transducers,
+                    which are readily written in rule form [Antworth, 1990], hence, the conversion
+                    table is a list of finite state rules. The graphic template functions as an
+                    interlingual representation for the transliterator, meaning that bi-directional
+                    conversions between any two variant encodings can be realized by providing a
+                    suitable conversion table for each encoding. Roman transliterations are easily
+                    incorporated into the same framework, meaning that the protocol can used in
+                    additional ways for research purposes.
+                A working prototype transliterator written in SWI-Prolog will be demonstrated in
+                    several deployment scenarios: as a reading interface for several South Asian
+                    Language websites, in an interactive editor for text, and in an index and a
+                    query interface for a search engine. These scenarios illustrate the diversity of
+                    applications of the transliterator, as well as its ease-of-use and efficiency.
+                    It is hoped that widespread adoption of this system will facilitate the use of
+                    non-roman text for scholars and non-scholars alike.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Evan
+                                    Antworth
+                                
+                            
+                            PC-KIMMO: A Two-Level Processor for Morphological
+                                Analysis
+                            
+                                Dallas, Texas
+                                Summer Institute of Linguistics
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Paul
+                                    Baker
+                                
+                            
+                            
+                                
+                                    Tony
+                                    McEnery
+                                
+                            
+                            
+                                
+                                    Mark
+                                    Leisher
+                                
+                            
+                            
+                                
+                                    Hamish
+                                    Cunningham
+                                
+                            
+                            
+                                
+                                    Robert
+                                    Gaizauskas
+                                
+                            
+                            Mapping multiple South Asian 8-bit character sets to
+                                the Unicode standard
+                        
+                        
+                            Linguistic Exploration: Workshop on Web-Based Language
+                                Documentation and Description
+                            
+                                Philadelphia, Pennsylvania
+                                Institute for Research on Cognitive Science, University
+                                    of Pennsylvania
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                Unicode Consortium
+                            
+                            The Unicode Standard
+                            Version 3.0
+                            
+                                New York, New York
+                                Addison-Wesley Longman
+                                2002
+                            
+                        
+                    
+                
+            
+        
+    

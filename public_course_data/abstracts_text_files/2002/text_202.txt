@@ -1,0 +1,562 @@
+
+
+
+    
+        
+            
+                Multiple Architectures and Multiple Media: The Salem
+                    Witch Trials and Boston's Back Bay Fens Projects
+                
+                    
+                        Daniel
+                        V.
+                        Pitti
+                        
+                            Institute for Advanced Technology in the
+                            Humanities, University of Virginia
+                            dpitti@virginia.edu
+                        
+                    
+                
+                
+                    
+                        Chris
+                        Jessee
+                        
+                            Institute for Advanced Technology in the
+                            Humanities, University of Virginia
+                            cj8n@virginia.edu
+                        
+                    
+                
+                
+                    
+                        Stephen
+                        Ramsay
+                        
+                            Institute for Advanced Technology in the
+                            Humanities, University of Virginia
+                            sjra@virginia.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    The Salem Witch Trials and Boston's Back Bay Fens Projects have been under
+                        development at the Institute for Advanced Technology in the Humanities
+                        (IATH) since July 1999. Professor Ben Ray of the Religious Studies
+                        Department leads The Salem Witch Trials project. Kathy Poole, a professor in
+                        the School of Architecture at the time of the award, leads Boston's Back Bay
+                        Fens project.
+                    While the two projects have distinctly different subject matter and
+                        objectives, they have in common an historical perspective and analysis, and
+                        the use of interrelated geographic, social, documentary, and interpretive
+                        data and information. Specific challenges involved identifying the key
+                        "objects of interest;" analysis of their nature and characteristics;
+                        identification of appropriate representation architectures and development
+                        of appropriate models and implementations; and finally, interrelating the
+                        diverse architectures to fulfill the pedagogical and research objectives of
+                        each project. Three papers will be presented describing both the
+                        intellectual and technological methods employed in the design and
+                        implementation of these two projects.
+                    "Data Diversity and Integration in Two Socio-Cultural Historical Research
+                        Projects" will provide an overview of each project. In particular, it will
+                        describe the people (faculty, student, and staff) involved and the essential
+                        research and pedagogical objectives of each project, the analytic methods
+                        employed to identify the essential intellectual components and appropriate
+                        representational architectures for each, the data and textual schemas
+                        developed, and the overarching relational architecture that integrates the
+                        diverse, data specific architectures. Each project comprises relational
+                        database, XML textual documents (both documentary and interpretative),
+                        pictorial material, geographic information, and real-time dynamically
+                        created XML data instances used to integrate the various architectures, and
+                        data structures and content.
+                    "Flash GIS: Delivering Geographic Information on the Internet," using
+                        examples from the Salem Witch Trials and Boston's Back Bay Fens, will
+                        discuss the challenge of delivering geographic information on the Internet
+                        for the humanities researcher. Current GIS-to-web solutions have the benefit
+                        of being easy to use and fast to deploy if their features and functionality
+                        meet project requirements. However, if the research requires high quality
+                        display, animation, a custom interface, or advanced interactivity, these
+                        systems will be inadequate. Combining the high quality vector display of
+                        Flash with an SQL database, the Institute has developed a system which it
+                        has named "Flash GIS." This system offers the extensibility and
+                        functionality needed to handle complex geographic relationships. The Flash
+                        plug-in was designed to display animated advertising in a web browser, but
+                        it is broad and general in function, and thus can be applied to a range of
+                        humanities data visualization problems.
+                    "Relational Ontologies and the New Historicism," will discuss the opportunity
+                        offered by these two projects to think about the ways in which computer
+                        technology can assist historians in effecting the union of macro- and micro-
+                        historiographic methods. Both projects employ schema with conventional
+                        records, but enrich that record set with an extremely rich relational
+                        ontology that can capture the complex relationships between divergent record
+                        types. This paper discusses the ways in which the system uses those
+                        relational junctions to bring forth the micro-narratives implicit in the
+                        data--narratives that were perhaps beyond the view of any individual
+                        researcher entering data into the database. This paper also presents the
+                        Sibelius libraries (a set of generic Java classes for rendering database
+                        relationships), and goes on to propose several possibilities for more
+                        elaborate data visualizations.
+                
+                
+                    
+                        Data Diversity and Integration in Two Socio-Cultural Historical
+                            Research Projects
+                        Daniel V. Pitti
+                        
+                            Each year the Institute for Advanced Technology in the Humanities
+                                awards a two- year fellowships for computer-assisted research in the
+                                humanities to a member of the humanities faculty at the University
+                                of Virginia. The selection committee evaluates proposals based on
+                                the merit of content and on innovative use of computer technology in
+                                humanities research. The Salem Witch Trials and Boston's Back Bay
+                                Fens projects were awarded fellowships in 1999, under the
+                                Institute's early policy of offering two one-year fellowships each
+                                year.
+                            The Salem Witch Trial project is using computer technology to
+                                document, research, and interpret the witch trials that took place
+                                between 1692 and 1693 in Salem, Massachusetts. The Boston's Back Bay
+                                Fens project is using computer technology to document, research, and
+                                interpret the history of the infrastructure of Boston's Back Bay
+                                Fens park and surrounding area from 1878 until the present.
+                            While the two projects differ significantly in the subjects being
+                                investigated, we can characterize each as an historical, social, and
+                                cultural study. The similarities in methodology and the related
+                                focus on social and cultural phenomena in a bounded space and time
+                                lead to similar computer data representations and architectures.
+                            At the outset of each project, the faculty researchers leading each
+                                project began a series of meetings with Institute faculty and staff,
+                                and graduate students assisting the projects. The goals of these
+                                meetings are to analyze the objectives of each project, to identify
+                                the resources and relations among them required to meet the
+                                objectives, to identify the appropriate computer architectures for
+                                representing the resources and meeting the research objectives, and,
+                                finally, to develop appropriate, detailed representational schemas.
+                                Both projects utilize a wide variety of both primary and secondary
+                                resources. While many of these resources are textual in nature, many
+                                represent a variety of other forms: geographic information,
+                                pictorial and other graphic materials, as well as social and
+                                cultural data extracted from primary resources and represented.
+                            A central challenge in all projects at the Institute is identifying
+                                the central "objects of interests." Objects of interest comprise
+                                both the key artifacts and resources that constitute the core
+                                evidence under study, as well as the people, places, things, and
+                                events documented in these resources. While the resources and the
+                                various social, cultural, and political entities they document are
+                                of primary importance, the relations among them are equally
+                                important.
+                            Both projects employ relational databases at the center of their
+                                architectures. The Salem Witch Trials database has primary tables
+                                representing people (accusers, accused, witnesses, and the like),
+                                organizations or corporate bodies (including courts, juries,
+                                households, and town, church, and legal officials), legal and
+                                judicial events (accusations, arrests, trials, convictions,
+                                executions, and the like), public and private buildings and
+                                structures (court houses, homes, and so on), and bibliographic
+                                resources (court records and other documentary evidence, critical
+                                early and modern secondary resources, pictorial materials, maps,
+                                derived and original digital materials, and so on). Many of the
+                                materials described in bibliographic records in the database are the
+                                sources for describing the individuals, organizations, events, and
+                                structures represented in the databases.
+                            Each primary table defines a set of descriptive attributes for each
+                                object. In turn, each object represented in a primary table is
+                                related to each of the others in a variety of ways through secondary
+                                tables. People, for example, are related through secondary tables
+                                from which family structures can be dynamically derived. Families,
+                                in turn, are related to households, which encompass broader
+                                relations than families. Families, further, are related to houses,
+                                which are also related to specific geographic information locating
+                                them in space, as well as in time. In this manner, people,
+                                organizations, structures, events, and resources function as
+                                primitives that, when interrelated, comprise more complex structures
+                                serving particular research and analytic objectives.
+                            Boston's Back Bay Fens has five primary tables: people, organizations
+                                or corporate bodies, events, objects or structures, and
+                                bibliographic resources. While the primary tables are remarkably
+                                similar to the tables in Salem Witch Trials tables, there is only
+                                some overlap in the attributes associated with each object. The
+                                differences in attributes primarily reflect differences in the
+                                nature of the disciplines (religious studies and history of
+                                architecture) and the nature of the objects and relations being
+                                investigated. The primary objects identified and the attributes
+                                identified and associated with them reflect the disciplinary
+                                methodology employed, and assumptions about which phenomenon will
+                                lead to furthering our understanding. In essence, the entities
+                                represented in each primary table and the relations between them in
+                                secondary tables reflect the hypothetical assumptions of each
+                                researcher.
+                            The information represented in the databases is extracted from a
+                                variety of primary and secondary resources. The latter category
+                                includes both second and first generation digital materials.
+                                Decisions concerning the appropriate architectures and
+                                representations of the primary and secondary resources required
+                                additional analysis, though not independent of the analysis and
+                                design of the databases. The entities represented in the database
+                                are necessarily related to the documentary and secondary sources,
+                                and these relations must necessarily be maintained. Maintaining
+                                these relations requires identifying and representing in both the
+                                database representations and the representations of the resources
+                                machine-readable data facilitating correlations.
+                            Given the historical nature of each project, spatial and temporal
+                                orientation of the people and organizations that play significant
+                                roles, the natural and cultural objects that coexist with them, and
+                                the events that reveal significant relations among them, become of
+                                critical importance. Geographic and temporal information thus plays
+                                a critical role in each of these projects. We can characterize
+                                existing Geographic Information Systems (GIS) as generally dealing
+                                with change over time through a series of static maps linked to
+                                relatively flat structures representing the data being plotted
+                                through time and space. Both of these projects, however, wanted to
+                                be able to display (visualize?) people, objects, and events in
+                                geographic space and through time dynamically. This presented the
+                                challenge of not merely re-presenting maps as images or even GIS,
+                                but representing geographic information in relation to entities
+                                represented in the respective databases. The data in the databases
+                                is used "to drive" dynamic temporal-geographic displays.
+                            Each project also had to consider the representation of texts,
+                                pictorial and other graphic material. Given past and extensive
+                                experience with markup and imaging technologies, texts were not a
+                                difficult challenge. Neither project had significant interest in
+                                text bearing artifacts as such, or in exploring text or editing
+                                theory. Both projects were primarily interested in the information
+                                content of texts: reading, searching. In addition to reading and
+                                searching, individual texts and people, objects, and events
+                                documented in them also had to be represented in a machine-readable
+                                manner that would facilitate correlations with entities in the
+                                relational databases, and, through them, maps. TEI Lite was chosen
+                                as the method for representing texts. Some texts from primary
+                                resources are also represented as images, and some texts, where
+                                creating machine-readable texts was not deemed necessary or
+                                currently economically feasible, are only represented as images.
+                            The Salem Witch Trials and the Boston's Back Bay Fens projects are
+                                socio- cultural historical studies. While the subject matter in each
+                                differs, the similarities in methodology lead to similarities in the
+                                phenomenon represented and the methods for representing them. Both
+                                projects employ relational databases as axis around which are
+                                correlated sophisticated dynamic GIS systems, and resources
+                                represented using XML and XML systems, as well other technologies
+                                appropriate to the nature of the data and research objectives. While
+                                the databases play a central role in the analysis and navigation of
+                                the data and resources, XML plays the role of representing texts, as
+                                well as integration of the various resources and resource systems
+                                employed in the two projects.
+                        
+                    
+                
+                
+                    
+                        Flash GIS: Delivering Geographic Information on the Internet
+                        Chris Jessee
+                        
+                            
+                                Overview
+                                Delivering geographic information on the Internet is a great
+                                    challenge for the humanities researcher. Current GIS-to-web
+                                    solutions have the benefit of being easy to use and fast to
+                                    deploy if their features and functionality meet your project
+                                    requirements. However, if you need high quality display,
+                                    animation, a custom interface or advanced interactivity these
+                                    systems will be inadequate. Combining the high quality vector
+                                    display of Flash with an SQL database, we have developed a
+                                    system we call Flash GIS. This system can offer the
+                                    extensibility and functionality needed to handle complex
+                                    geographic relationships. The Flash plug-in was designed to
+                                    display animated advertising in a web browser, but it is broad
+                                    and general in function and thus can be applied to a range of
+                                    humanities data visualization problems.
+                                In order for Flash GIS to move beyond its current
+                                    proof-of-concept state and become production ready, automated
+                                    conversion of standard GIS file formats to Flash's .swf format
+                                    will be needed. If we can overcome this hurdle, Flash's
+                                    flexibility and ease of integration with immerging technologies
+                                    gives it the potential to be a robust GIS-to-web solution for
+                                    humanities research.
+                            
+                            
+                                GIS-to-Web Solutions
+                                Slow download, lack of customization and limited animation are
+                                    the major problems with current GIS-to-web solutions. Commercial
+                                    solutions like ESRI ArcIMS or AutoDesk MapGuide share the same
+                                    organizational model: 1) a database, 2) an application server on
+                                    a web server and 3) a display engine in the web browser. The
+                                    application server functions to negotiate the communication
+                                    between the database and the display engine. The display engine
+                                    may be as simple as the web browser or as sophisticated as a
+                                    Java applet. The display engines vary but provide these common
+                                        functions:
+                                        Pan and zoom
+                                        Show and hide layer or coverage
+                                        Cursor location readout of latitude and longitude
+                                        Hot linked objects and areas to web resources
+                                        Object information rollovers
+                                        Printing
+                                    
+                                If the browser is used as the display engine, all user
+                                    interaction requires message passing to the application server,
+                                    thus making response times slow. Java applets are large and slow
+                                    to download and inherit the poor quality of the Java display
+                                    technology. Java applets may not function properly across
+                                    multiple platforms and browsers and may not be supported in
+                                    future versions of web browsers. Current GIS-to web solutions
+                                    use native GIS file formats for storage. Native file formats are
+                                    convenient as preprocessing is reduced or eliminated, but their
+                                    inefficient structure results in large files sizes. Only limited
+                                    tools and functionality for showing change over time or
+                                    animation are available in these off-the-shelf systems.
+                                    Customization of interactive functions and user interface are
+                                    also very limited without extensive programming.
+                            
+                            
+                                Flash GIS
+                                With installation on 96 percent of all web browsers, the Flash
+                                    player plug-in is a more stable delivery target than the web
+                                    browsers themselves. There are hundreds of thousands of Flash
+                                    users - far more than all GIS users combined. Although Flash was
+                                    designed to deliver animation and advertising, not GIS data, the
+                                    ease with which we have re-purposed Flash demonstrates its
+                                    flexibility and adaptability to a broad range of display and
+                                    data visualization tasks. Flash GIS follows the same
+                                    organizational model as commercial GIS-to-web solutions with the
+                                    Flash Player plug-in serves as the display engine on the web
+                                    browser. We store data in a temporary XML file to reduce server
+                                    hits, speed delivery and allow the display to run independent of
+                                    the server. When the database contents change, the temporary XML
+                                    file is updated to reflect the changes. If the data changes
+                                    frequently a direct XML socket connection to the database would
+                                    replace the XML temp file. Our configuration is as follows:
+                                    PostgreSQL Database > Java Servlet > XML > Flash Player
+                                        Plug-in
+                                Flash is composed of an authoring environment and a browser
+                                    plug-in. Using the plug-in as the GIS display engine and the
+                                    authoring environment for tool and interface development
+                                    provides significant advantages over commercial GIS-to-web
+                                    solutions. Flash offers the following features:
+                                        Fast downloads via open, compact, streaming media file
+                                            format. (SWF).
+                                        High quality vector and raster display.
+                                        High-level customizable interactivity.
+                                        Automatic viewer scaling in the web browser.
+                                        Complete control over interface customization.
+                                        Animation - positional, shape and display property
+                                            transformations.
+                                        Tight integration with off-the-shelf web development
+                                            tools.
+                                        Retrieval and display of HTML, XML, images, movies and
+                                            other map files.
+                                        Standards based scripting language. (ECMA-Script,
+                                            JavaScript)
+                                        Encapsulation - separation of data from display.
+                                        Data driven from local or remote files or any ODBC
+                                            database.
+                                        Deliverable to a broad range of devices and media,
+                                            including removable media, web browsers and wireless
+                                            devices.
+                                    
+                            
+                            
+                                Examples
+                                The Valley of the Shadow Project: This initial effort shows the theater-level movements of
+                                    American Civil War units from Augusta County, Virginia, and
+                                    Franklin County, Pennsylvania. Each major battle they fought in
+                                    is linked to a database fact sheet, which provides detailed
+                                    information on that unit's experience. All urls are hand coded
+                                    and all animation hand tweened.
+                                Production details available here: This link includes information on projection correction of
+                                    historic maps as well as detailed information about conversion
+                                    from the Shape to .swf file format.
+                                The Salem Witch Trials Project: This map shows the occurrence of witchcraft accusations in
+                                    the Massachusetts Bay Province during 1692. Animation and object
+                                    properties are driven by externally loaded XML data. This
+                                    regional map also demonstrates pan and zoom, lat long tracking,
+                                    external file loading, an advanced menu system and dynamically
+                                    calculated date values.
+                                The Salem Township Map is in early development, serving as a
+                                    test-bed for arbitrary coordinate system re-mapping and point
+                                    plotting accuracy.
+                                The Boston Back Bay Fens Project: This case study of Boston's Back Bay Fens and its surrounding
+                                    urban landscape demonstrates the extreme data density that Flash
+                                    can manage, while maintaining small file sizes and a high level
+                                    of interactivity. This map is also in a state of early
+                                    development.
+                                Page Viewer Project: This simple page viewer demonstrates the ease with which
+                                    Flash tools can be generalized and reused. The pan and zoom
+                                    navigation tool shown in the page viewer originated in the Salem
+                                    Regional map. It was re-purposed into a page viewing utility in
+                                    a matter of minutes.
+                            
+                            
+                                Remaining Challenges
+                                Flash's .swf file format is an open standard and available for
+                                    developers to integrate into their products. Our technique for
+                                    migrating Shape files into .swf format optimizes the data by
+                                    converting simple segmented lines into bezier spline curves
+                                    using the MaPublisher Plug-in running in Adobe Illustrator.
+                                    However, This conversion and optimization process is labor
+                                    intensive. An automated conversion from standard GIS file
+                                    formats into .swf format is needed for Flash to work well in a
+                                    larger production pipeline. Ideally, ESRI would adopt the Flash
+                                    format as a direct output option.
+                                Software vendors and users have a great opportunity to deliver
+                                    better products and projects based on Flash's strengths. For
+                                    example, Flash uses a technology termed SmartClips, which allows
+                                    a user to create a Flash interface that assists users in
+                                    repetitive authoring tasks. A single high-level user can empower
+                                    any number of lesser skilled users with advanced functionality
+                                    using SmartClips. Another Macromedia product, Director, has
+                                    recently added 3d capabilities with Shockwave 3-d. This promises
+                                    rich and highly customizable 3d elements and environments that
+                                    integrate cleanly with Flash.
+                                Despite Flash's roots as an advertising and animation tool, the
+                                    humanities GIS community should consider it as a display engine.
+                                    Flash, more than other available technologies, can offer the
+                                    extensibility and functionality required to display these
+                                    complex geographic relationships.
+                            
+                        
+                    
+                
+                
+                    
+                        Relational Ontologies and the New Historicism
+                        Stephen Ramsay
+                        
+                            Modern historiography, in whatever discipline it might occur, is
+                                primarily an attempt at multi-leveled contextualization--a weaving
+                                together of anecdotal evidence and "micro-narrative" with broader,
+                                and perhaps more data-centric quantitative evidence. The modern
+                                historian, in other words, cares as much about letters, photographs,
+                                and snippets of conversation as about census data, geographical
+                                information, and tax records. The former has traditionally resided
+                                in digital archives; the latter, in relational databases and GIS
+                                systems. Effecting the union of the various technical approaches is
+                                not by itself a difficult matter. RDBMS, GIS, and digital
+                                collections all participate in a similar quest for order and
+                                organization. But with the rise of humanities computing has come
+                                opportunities for thinking about how technology can be brought to
+                                bear on the two-pronged historicism now current. How can the
+                                traditional forms of computer-assisted data representation be used
+                                to draw forth unforeseen connections, micro-narratives, and
+                                anecdotal anomalies in the large and diverse datasets available to
+                                the modern historian?
+                            The Institute for Advanced Technology in the Humanities confronted
+                                this problem recently with two historiographic projects: "The Salem
+                                Witchcraft Papers" and "Evolutionary Infrastructures: Boston's Back
+                                Bay Fens." Both of the scholars initiating the projects wanted to
+                                capture large datasets concerning events in a sizeable geographic
+                                area over a long period of time. They both envisioned databases that
+                                would contain the usual large-dataset materials, like GIS data,
+                                building records, and population census materials. In both cases,
+                                however, the usefulness of the historical record was thought to
+                                depend equally upon individual images, biographical information, and
+                                individual documents.
+                            The database schema we designed (discussed in a previous paper by D.
+                                Pitti) organizes the data into a deliberately heterogeneous
+                                ontology: people, places, significant events, objects, corporate
+                                bodies, and bibliographical records. The data in each of these major
+                                tables is organized according to its own internal logic, but these
+                                five tables are related in an overall schema that in both systems
+                                reaches to almost a hundred separate relational junctions and
+                                subtables. The schema, therefore, consists mainly of many-to-many
+                                relationships of the form "person/corporate_body.owner(),"
+                                "object/event.role()," "bibliographical_record/person.about()," and
+                                so forth. The data entry mechanisms for the projects involve a
+                                combination of both large-scale import, as well as more finely
+                                grained data entry. The former method is employed for entering the
+                                main records themselves, but the relationships are hand-drawn and
+                                classified by members of each respective team.
+                            The knowledge possessed by any particular team member is necessarily
+                                partial and imperfect. A scholar might have evidence of a connection
+                                between the builder of the Boston Conservatory and the building
+                                itself, but not about the relationship between that builder and
+                                other buildings, or about the relationship between that building and
+                                what stood before it. However, the database is all the time watching
+                                and recording these connections. We developed a generic Java class
+                                library (called the Sibelius libraries) that can search through the
+                                junction tables for any particular record looking for these
+                                relationships. Whenever the user arrives at a particular record, all
+                                of the relationships with other tables are then aggregated and
+                                presented to the user.
+                            We believe this function is significant for two reasons. On the one
+                                hand, it creates synergies out of the partial ontologies possessed
+                                by the individual team members; what was partial before may now
+                                reveal itself in full. More significant, however, is the fact that
+                                these "unwound" connections often have the character of
+                                micro-narratives. A typical search result for buildings in the Muddy
+                                River Watershed in Boston, for example, might yield information
+                                about the New England Conservatory. The linking mechanism will in
+                                turn yield further connections to various architects, places,
+                                buildings, and events, each of which will yield further connections.
+                                One is therefore able to create statements like, "The New England
+                                Conservatory, which was once the Harvard Medical Library, was built
+                                by Henry Hunnewell, who also built the student house at 96 Fenway,
+                                which was once owned by T. Frothingham . . ." At no point was this
+                                narrative explicitly entered into the database in this form, and yet
+                                the system can use the local connections to build the larger
+                                narrative.
+                            This paper will discuss our method from both a philosophical and
+                                technical standpoint, and will go on to suggest some directions for
+                                how research might proceed on the visualization of these "unwound"
+                                narratives. We have been experimenting, in particular, with graph
+                                visualization software, which we hope eventually to apply to the
+                                ontological submaps created by the Sibelius engine.
+                        
+                    
+                
+            
+        
+    

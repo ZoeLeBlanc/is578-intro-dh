@@ -1,0 +1,170 @@
+
+
+
+    
+        
+            
+                Revisiting Revisions: employing XML and XSL to display
+                    deeply encoded, multi-versioned text
+                
+                    
+                        Susan
+                        Schreibman
+                        
+                            New Jersey Institute of Technology
+                            susan.Schreibman@njit.edu
+                        
+                    
+                
+                
+                    
+                        Jose
+                        B.
+                        Chua
+                        
+                            New Jersey Institute of Technology
+                            
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+
+    
+    
+        
+            
+                 Many humanities computing projects working in SGML are contemplating porting
+                    their data into XML for direct display on the Internet. In addition, for many
+                    projects who found the barriers to working with SGML too great, XML and its
+                    related technologies offers them the opportunity of working with low cost (free
+                    in many cases), more human-friendly tools to encode and display their texts.
+                One of the many areas that the suite of XML technologies promises much greater
+                    functionality over SGML is in the area of display. Although the editors of a
+                    digital project might develop a robust encoding scheme in SGML, unless they
+                    could afford the $1000,000 price tag that went with DynaWeb, in addition to the
+                    salary of a programmer to work with the system, their encoding was for
+                    naught.
+                XSL (Extensible Stylesheet Language) provides the breakthrough that projects with
+                    limited resources have been waiting for to display deeply-encoded texts. The
+                    display possibilities afforded by XSLT (Extensible Stylesheet Transformation
+                    Language) provide new challenges and opportunities to the humanities computing
+                    community in developing more complex inter- and intra-textual encoding which
+                    displays several distinct yet interconnected objects.
+                One of the areas begging for investigation in this regard is the use of XML/XSL
+                    for versioning poetry. Encoding and presenting multiple versions of poetry has
+                    been one of the most challenging areas of SGML encoding using the TEI. There
+                    are, indeed, very few examples of it (notable exceptions are The Blake Archive,
+                    The Rosetti Archive, and The Piers Plowman Archive).
+                Our Poster Session will explore the encoding and display issues of XML-encoded
+                    poetry across several versions, using XSL to display multiple views of the texts
+                    and its related apparatus. XSL is particularly interesting in this regard in
+                    that it is flexible enough to handle nested revisions easily, and can even
+                    assign identification numbers based on an elementís nesting level (see Figure
+                    1).
+                
+                    Figure 1: 3 nested-level identification Using XSL
+                
+                This type of identification makes it easier to determine the parent of the
+                    revision, and the XSL stylesheet can attach and present it appropriately.
+                Publishing textual apparatus has always presented editorial difficulties. In
+                    print publication the conundrum of whether to place apparatus at the foot of the
+                    text or at the end of the text was never successfully resolved. Digital editing
+                    has only compounded these problems, and presenting apparatus across versions
+                    presents even greater challenges. Placement depends on which line or lines the
+                    note is referring to, and the existence of those lines depends on which version
+                    is being viewed. One solution we are currently experimenting with is to place
+                    the comment separately from the poem, and to assign linespan and versionspan
+                    parameters. The versionspan parameter would indicate which versions the comment
+                    is applicable to, and the presentation logic (XSL stylesheet) would suppress or
+                    show the comment depending on what version was on display. The linespan
+                    parameter would allow the presentation logic to determine where to place the
+                    comment. This placement could run alongside the line it referring to, or could
+                    be suppressed until a specific user action occurred.
+                Since the same comment may be displayed across several versions, it would be
+                    beneficial to the reader if he or she knew that a particular comment was already
+                    read. However, persistence is not a goal of XML or XSL. The solution would lay
+                    in either a server-side or client-side application logic language. The simplest
+                    solution would be to give each comment an identification number. A persistence
+                    datastore (either on the server or client side) would keep track of which
+                    comments were already read and the application logic could then take appropriate
+                    action. To give a more concrete example, if an XSLT document transformed an XML
+                    document into HTML, a Javascript routine could mark unread and read comments in
+                    different colors.
+                 Another particularly challenging editorial issue has been the representation of
+                    the intra-textual writing process. When working with a particular manuscript
+                    draft, an editor may make an educated guess as to when additions, deletions and
+                    emendations were made on a particular manuscript draft (based on handwriting,
+                    ink colour, the logic of the sentences, etc). Indeed, one of the beauties of
+                    publishing facsimile editions of manuscripts is that no editorial statement need
+                    be made in this regard ñ it is left up the reader to decide on the writing
+                    process based on an examination of the evidence. Of course, this textual
+                    ambiguity can be replicated in the digital environment by publishing scanned
+                    versions of text. Unfortunately, however, encoded texts allow no such
+                    ambiguity.
+                Representing the intra-textual revision process in an encoded edition is a
+                    particularly interesting and challenging problem. In these cases, relative
+                    ordering may alleviate the encoding process. We are experimenting with assigning
+                    ordering comparative identifications in XML, regardless of the exact revision
+                    time relative to other emendations. In the case where two or more revisions
+                    cannot be ordered, they are assigned the same ordering identification. It is
+                    then up to the presentation logic to determine how to display it. These
+                    revisions could be displayed side-by-side, or may require an explicit action on
+                    the readerís part to be viewed. Figure 2 shows a very simple example of the
+                    types of XML encoding we are experimenting with in encoding an intra-textual
+                    variation with apparatus.
+                
+                    Figure 2: XML document snippet
+                
+            
+        
+    

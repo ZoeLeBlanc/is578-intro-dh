@@ -1,0 +1,230 @@
+
+
+
+    
+        
+            
+                Mapping Differences in 1st Century Greek Style
+                
+                    
+                        David
+                        L.
+                        Mealand
+                        
+                            University of Edinburgh
+                            D.Mealand@ed.ac.uk
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                A series of studies has built up a set of 178 samples of Greek texts in a format
+                    which now provides a dataset comprising 178 rows and 35 columns. The previous
+                    studies by this author and relevant works by others are listed in Mealand
+                    (1999). There are 30 effective linguistic features being tested for each sample,
+                    and to these we need to add classification categories such as author, genre,
+                    subgroup, text and sample. The 178 samples and 30 linguistic variables alone
+                    provide 5340 observations. We are now in a position to make report on detailed
+                    stylistic comparisons of a wide range of texts from 300 BCE to 200 CE but
+                    focused on texts from 100 BCE to 100 CE. Some manual intervention and a set of
+                    programmes eventually turns complexities of the Greek texts from the TLG into
+                    thousand row columns of single words, and simpler routines then allow a pentium
+                    to make much shorter work of the word counts.
+                The texts include a range of Greek historical writers: Polybius, Dionysius of
+                    Halicarnassus, Plutarch; also a set of Greek technical writers, some samples of
+                    letters and other documents preserved on papyri, and a range of biblical and
+                    other Jewish and Christian writings of the period. The latter include samples
+                    from the Septuagint (4 Kingdoms, Deuteronomy, Isaiah, 2 &amp; 4 Maccabees
+                    and the like), most of the New Testament books, Philo, Josephus, Clement of
+                    Rome, Ignatius of Antioch and Polycarp.
+                The variables include a set of stylistic features which are mostly function
+                    words: a set of sentence connectives equivalent to but, for, and, therefore, on
+                    the one hand; a set of conjunctions which introduce clauses such as if, while,
+                    in order that, where, whenever, and the like; a large set of prepositions such
+                    as away from, into, out of, in, on account of, according to, after, with, about,
+                    on, towards; and a set of (genitive) participle endings. These variables were
+                    chosen as a set of function words suitable for inspecting the style of samples
+                    of 1000 words. (It would be possible to extend the range of the linguistic
+                    features by choosing much larger samples of those texts which have the necessary
+                    bulk. Some, but not all, of the works are extensive.) Variables were selected in
+                    the light of recent studies showing the effectiveness of high frequency words
+                    and or features linked to syntax.
+                The statistical method used was Correspondence Analysis as this plots both
+                    samples and variables and allows one to see not only relations between texts,
+                    but also those linguistic features which associate or separate the texts. CA was
+                    run on a Sun machine shared by scores of other users. Correspondence Analysis
+                    also differs from some other multivariate analysis in not requiring the data to
+                    be normally distributed. This issue is a problem when samples from large numbers
+                    of different authors are involved. Many stylometric studies limit themselves to
+                    a handful of authors or even just two or three. This study is attempting to make
+                    comparisons across a wide range of ancient literature.
+                Using all the data we obtain a complete plot (OHP Cell 1) showing the location of
+                    178 samples and 30 variables. This was the plot to which much careful attention
+                    was given. But it is not an easy plot to interpret and for display purposes a
+                    supplementary strategy provided an overview plot of cumulated samples - mostly
+                    of 5000 words from 5 samples from each author combined together. This preserves
+                    the broad shape and outline of the more complex plot. Each author still appears
+                    in the same general segment of the plot as in the original. We can, however,
+                    more easily see how the authors relate to each other and to the linguistic
+                    variables. We can also interestingly see how the original plot reveals the wider
+                    spread of 1000 word samples compared with the cumulated 5000 word samples. This
+                    gives added insight into variation within the work or works of each author
+                The main interpretation of the plots is that the more fluent Greek writers (i.e.
+                    Polybius, Dionysius, Plutarch and their associates) lie to one side (right) of
+                    the plot while the Septuagint translations of biblical texts lie to the other
+                    side. (I use the term fluent to capture the more complex
+                        observation that the writers who appear on the right of the plot are those
+                        whose work would be regarded as more acceptable in style by an educated
+                        Graeco-Roman public. Jerome is on record as being embarrassed by some
+                        features of biblical Greek.) As the horizontal axis represents
+                    Dimension 1 this captures the largest single component of the inertia. The
+                    vertical axis seems to separate narrative texts lower down the plot from speech,
+                    reported speech, treatises, and ordinary letters in the centre of the plot.
+                    Paul's letters are even higher up the plot though neither to the extreme left
+                    nor right. Paul's style is therefore between that of the Septuagint and that of
+                    Dionysius on the one dimension, and much higher than the others on the vertical
+                    dimension. This may reflect the very argumentative style of Paul's dictation in
+                    his letters.
+                The plots from Correspondence Analysis show the location of the variables in
+                    relation to the location of the samples and from this we can draw inferences
+                    which we can confirm by inspecting boxplots of means and other statistics. This
+                    reveals the relative weight of usage of our main criteria in the different
+                    writers. So for example we can see that Paul makes heavier use of alla, gar, ei,
+                    ou, mh, hina (but, for, if, not, not, in order that) and to some extent dia and
+                    eis (into), while making moderate use of de, oun, and men (but, therefore, on
+                    the one hand). He has low usage of kai, meta and peri (and, after/with, about).
+                    Much work on Paul has focused on internal differences of style. This study shows more clearly than before just how Paul
+                        differs widely from most, but not all, of the other authors selected.
+                    The Septuagint passages from Biblical texts have higher use of kai, apo and epi
+                    (and, from, on)and to some extent hews (while/until), moderate use of ou (not),
+                    and low usage of alla, gar, de, men, oun, ei, mh, kata and peri (but, for, but,
+                    on the one hand, therefore, if, not, according to/against, about). But the Septuagint texts themselves differ and I conclude
+                        that the differences are not just due to the style of samples from 4
+                        Kingdoms, nor just to differences between translated texts and those
+                        composed in Greek. The samples from Genesis and Proverbs lie between these
+                        other Septuagintal groups. The more fluent Greek writers have higher
+                    use of de, men, kata, peri (but, on the one hand, according to/against, about)
+                    and the genitive participle endings, moderate use of alla, gar, ou, kai, and oun
+                    (but, for, not, and, therefore), and low usage of hina and mh (in order that,
+                    not). Here it is worth noting that despite his diffidence
+                        Josephus is close on stylometric grounds to Dionysius and Plutarch. It is
+                        also worth noting that the few selected samples from non-literary papyri are
+                        not as far distant from Dionysius as some might expect. Finally we should
+                        note that the Greek technical writers do not form a coherent group, as
+                        Alexander and others tend to assume, but lie in several different directions
+                        around the group including Dionysius and Plutarch. All these provisional
+                        conclusions suggest lines for further investigation.
+                Therefore (oun) is more heavily used in some NT texts esp. some Johannine texts.
+                    The conjunction hopws (in order that) is mainly used by the more fluent Greeks.
+                    The preposition ek (out of) is more heavily used in Revelation, moderately in
+                    the Septuagint. The word en (in/by) is used more heavily in Colossians and
+                    Ephesians and in some of the Johannine texts, and moderately high usage is also
+                    found in the Septuagint and Paul. Philo and Josephus often side with the more
+                    fluent Greeks on most criteria, but do have a raised usage of pros (towards).
+                The results reported here make use of a larger selection of samples than any of
+                    the previous work I have published on the stylometry of 1st Century Greek texts.
+                    We can see not only that the writers fall into different groupings, but also
+                    which literary criteria tend to distinguish their styles one from another.
+                Some of the authors used could not provide further samples as their works are
+                    relatively short. Others could provide massive amounts of further text for
+                    analysis. That leaves plenty of scope for further researchers to explore the
+                    more voluminous authors further, and perhaps, by taking much larger samples from
+                    them, to scrutinize stylistic features of their work which appear slightly less
+                    frequently than the highest frequency words and features which are the main
+                    criteria used here.
+            
+        
+        
+            
+                Bibliography:
+                
+                    
+                        
+                            
+                                
+                                    David
+                                    L.
+                                    Mealand
+                                
+                            
+                            Style, Genre and Authorship in Acts, the Septuagint,
+                                and Hellenistic Historians
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                14
+                                4
+                                479-505 esp. 501-502
+                                1999
+                            
+                        
+                        a list of 29 relevant works will be found in
+                    
+                
+            
+            
+                Plots:
+                Plot of large text samples
+                This plot shows the relative location of the different large cumulated samples of
+                    text from the main authors. The samples from Genesis and Proverbs appear near
+                    Acts on the more detailed plots: 2 and 4 Maccabees nearer Dionysius. Samples
+                    from the papyri appear near Hebrews. Various Greek technical writers appear on
+                    the more detailed plots above and below Polybius, well above Philo, to the right
+                    of Acts and below Acts.
+                Plot of literary variables
+            
+        
+    

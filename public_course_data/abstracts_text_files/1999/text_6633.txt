@@ -1,0 +1,163 @@
+
+
+
+    
+        
+            
+                The Ibsen Letters - and Beyond
+                
+                    
+                        Øyvind
+                        Eide
+                        
+                            Centre for Ibsen Studies
+                            University of Oslo
+                            oyvind.eide@ub.uio.no
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper will explore the possibilities for combining TEI encoding and database
+                    approaches in order to present a structure of metadata about letters, and
+                    demonstrate how these metadata can be used to integrate information from
+                    different sources in order to generate TEI documents "on the fly". We will also
+                    show how this system can be extended to include not only letters wrritten by a
+                    single person, bu also letter exchanges between different persons.
+                In January 1998, the Manuscript project at the Centre for Ibsen Studies at the
+                    University of Oslo was started. The goals of the project are as follows:
+                        Locate all original manuscripts and letters written by Ibsen
+                        Track down material that is still unknown to the research
+                            community
+                        Make digital facsimiles of all manuscripts and letters
+                    
+                The Manuscript project works in close co-operation with two other projects which
+                    are also located at the centre, i.e. The International Ibsen Bibliography1. &lt;&gt;
+                     and the Henrik Ibsen's Writing.2. &lt;&gt; The
+                    digitization part of the Manuscript project does not aim at digitizing a
+                    particular collection of documents from one archive, but the writings of Henrik
+                    Ibsen wherever they are located. The manuscripts for his plays, poems, articles
+                    and speeches constitute a relatively small number of items located in 10-15
+                    collections, whereas ownership of approximately 2.700 known letters, telegrams
+                    and dedications3. This number includes letters that we know the
+                        existence, but not the whereabouts, of. We believe most of them to be
+                        lost.is spread between 100-150 different libraries, archives, museums
+                    and private collectors.
+                We have developed a digital register of all known letters based on a printed
+                    register from 1978.4. Henrik Ibsen's brev : kronologisk registrant
+                        med adressatregister m.v. / ved Øyvind Anker. - Oslo, 1978. The
+                    purpose of the digital register is to:
+                        Contain information about each of Ibsen's letters, including
+                            information about the location of the originals
+                        Contain information about the status of the digitization of each
+                            letter, with links to the digital facsimiles
+                        Support advanced searches
+                    
+                The use of TEI for metadata is, along with formats like EAD, MARC and Dublin
+                    Core, found in several other projects.5. The William Blake Archive
+                            &lt;&gt; uses TEI for
+                        manuscript description. See also three papers from DRH'97 &lt;&gt;: "Integrating data
+                        and metadata in the digital library: SGML and other approaches" by MacKenzie
+                        Smith, Harvard University Libraries; "EAD at the Library of Congress: a
+                        progress report" by Lee Ellen Friedland, Library of Congress; and "Linking
+                        word and image: two TEI-based imaging projects" by Richard Gartner, Pearson
+                        New Media Librarian, Bodleian Library, Oxford. In the first version
+                    of the register, it was a single SGML file using a small subset of TEI Lite. The
+                    links to the facsimiles were contained in the register for each letter, but
+                    there were no links to transcriptions, as the aim of the project was to make
+                    facsimiles, and not transcripts. But, as we will see later, this kind of
+                    information is included at a different level.
+                As in other projects using TEI for metadata, we soon faced a file size
+                        problem.6. "SGML solution can obviate many of these problems:
+                        [...] It can, however, lead to extremely large documents when the collection
+                        is large." MacKenzie Smith, op.cit. We decided to convert the TEI
+                    file into a database, but we wanted to continue using the TEI format for
+                    delivery. We use PERL scripts to link the database to a HTTP interface. The
+                    search page is written in HTML, while the user can choose to have the result of
+                    a search delivered as a TEI lite document or as a document containing a HTML
+                    table.
+                This system presents the results of our project. But printed editions of most of
+                    the letters exist in electronic forms. It is important for the users to have
+                    access to as much source material concerning Ibsen as possible, provided the
+                    quality of the material is of an acceptable standard.
+                Therefore, we made an agreement with the Documentation project7.
+                            &lt;&gt;  to include
+                    searches in their database of classical Norwegian literary texts as a part of
+                    our presentation. This made it possible to include a link to a text version of
+                    each letter, together with the link to the facsimiles.
+                This system can be described using the library catalogue metaphor: The register
+                    database corresponds to the card catalogue. A search in this database will
+                    produce "cards" pointing to the online resources. Some questions regarding
+                    integration of the different source materials will be discussed in this
+                    context.
+                A main problem with publishing letters as described above is that it does not
+                    show clearly in which way the letters are part of an exchange between two
+                    persons. Letters to Ibsen from some persons, e.g. the author Bjørnstjerne
+                    Bjørnson, are also published in digital form by the Documentation project. We
+                    will demonstrate a user interface that shows the two participants in a letter
+                    exchange as a TEI document presenting the letters in chronological order, with
+                    facsimiles and text when they are available. Some of the difficulties we faced
+                    in this work will be discussed.
+                Most letter exchanges will be part of a vast international web. No single
+                    institution, nor single country, can publish a complete set. Possibilities to
+                    use our approach for integration of collections and registries of letters will
+                    be discussed. A long-term goal is a system where all digitally available letter
+                    registers and collections worldwide are available through an integrated search
+                    system. This would be an important step in the direction of a digital library
+                    with an organization based on content, not on the locations of paper
+                    collections.
+            
+        
+    

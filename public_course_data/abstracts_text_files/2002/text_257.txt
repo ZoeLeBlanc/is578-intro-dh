@@ -1,0 +1,158 @@
+
+
+
+    
+        
+            
+                Visualizing Overlapping Hierarchies in Textual Markup
+                
+                    
+                        Patrick
+                        Durusau
+                        
+                            Society of Biblical Literature
+                            pdurusau@emory.edu
+                        
+                    
+                
+                
+                    
+                        Matthew
+                        Brook
+                        O'Donnell
+                        
+                            OpenText.org
+                            mtrout@nycap.rr.com
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The impact of SGML and XML on computing in the humanities is wellknown. Markup
+                    languages have been used on such diverse texts as Nordic runes (Driscoll Driscoll, M. J., Encoding Old Norse-Icelandic primary
+                            sources using TEI-conformant SGML/XML: A handbook ()), to the Oxford English Dictionary(New OED and Text Research UW Centre for the New OED and Text Research (ptr
+                        target="http://db.uwaterloo.ca/OED/" />). Substantial experience has
+                    been gained in the application of markup languages to diverse texts with
+                    corresponding gains in the usefulness of such texts for computing humanists.
+                The default use of SGML for the representation of only one hierarchy, and the
+                    explicit prohibition of overlapping elements in XML, has posed considerable
+                    limitations to humanists attempting to record their observations of multiple
+                    overlapping hierarchies in textual materials. Several approaches have addressed
+                    these limitations, ranging from milestone elements(TEI), stand-off markup to
+                    record hierarchies (Thomspon 1997Thompson, H.S., and McKelvie, D,
+                            Hyperlink semantics for standoff markup of read-only
+                            documents, Language Technology Group, HCRC, University of
+                            Edinburgh()), fragmentation of a base text (TEI), to the development of
+                    non-SGML/XML markup languages which will require special processing software
+                    TexMECS: New meta-language for recording multiple hierarchies (Sperberg-McQueen
+                    and Huitfeldt 2001Huitfeldt, C., and Sperberg-McQueen, C.M., TexMECS: An experimental markup meta-language for complex
+                            documents ()).All of these approaches suffer from a variety of limitations and
+                    problems. The most notable problem is a lack of commonly available software to
+                    create and make the overlapping hierarchies available to scholarly
+                    investigation.
+                Durusau and O'Donnell (2001Durusau, P., and O'Donnell, M.B., Implementing Concurrent Markup in XML, Extreme Markup
+                        2001. Paper submitted to Markup Languages: Theory and
+                            Practice. Presentation materials andworking examples available
+                        at .) present a
+                    method for recording overlapping hierarchies using XML standards, particularly
+                    XPath and XSLT. The essential insight is that the key piece of information in
+                    encoding a complex text is membership of a particular piece of text (PCDATA in
+                    SGML/XML terminology) in a given hierarchy, and not its surface representation
+                    through markup. Whether this membership information is represented in a
+                    conventional SGML/XML "tree" or by some other means, it is the information that
+                    is of interest to the computing humanist. This technique relies upon the use of
+                    XPath syntax to record the hierarchy information for atoms of text in a larger
+                    work. For example:
+                    &lt;w id="w1" sn:clauses="/clauses/clause[1][@id='c1']/s[1]/w[1]"
+                        tx:text="/text/para[1][@id='p1']/w[1]"
+                        pg:pages="/pages/page[1][@id='p1']/line[1][@id='l1']/w[1]"
+                        &gt;This&lt;/w&gt;
+                Durusau and O'Donnell demonstrated the use XSLT to construct and then query
+                    overlapping hierarchies of XML markup on a base text.The theory and practice of
+                    querying of XML documents has been under rapid development at the World Wide Web
+                    Consortium (XQuerySee ). Despite that pace of development, there has been no systematic
+                    investigation of querying texts across multiple hierarchies. However, most of
+                    the techniques currently under development recognize the importance of XPath
+                    syntax on the effective formulation of an XML query language.
+                To develop effective querying of XML documents across multiple hierarchies,
+                    Durusau and O'Donnell are developing techniques to visually present overlapping
+                    hierarchies to allow "discovery" of fruitful lines of investigation for
+                    particular texts. XSLT andSVG are used for this purpose. Overlapping hierarchies
+                    may well exist for a text that are of no interest to one researcher that are the
+                    focus of research for another. The ability to effectively choose which
+                    hierarchies are of interest will be crucial to effective use of overlapping
+                    hierarchies recorded for a particular text.
+                In addition to allowing a separation of hierarchies of interest from those that
+                    are not, the visual presentation of overlapping hierarchies is also the first
+                    step towards addressing the need for intimate knowledge of the underlying markup
+                    to formulate a query for the multiple hierarchies recorded using this technique.
+                    Effective queries now require mastery of the various hierarchies and a working
+                    knowledge of their relationships, one to the other, in order to obtain any
+                    predictable results. With an entirely visual presentation of the overlapping
+                    hierarchies, scholars will be able to choose the hierarchies by display and not
+                    markup syntax, as being the subject(s) of further analysis. This paper
+                    demonstrates the use of XSLT and SVG to produce visual representations of
+                    documents with overlapping hierarchies and the linking of these visualizations
+                    to XPath and XQuery statements. Multiple editions, annotations and analyses of
+                    Book 1 of Milton's Paradise Lost form the test case for
+                    these techniques. The more detailed the analysis the greater the need for
+                    detailed knowledge of the syntax but that will be only after the scholar has
+                    found information of interest and not a general exercise in mastering several
+                    divergent markup regimes. This will be of particular importance with many texts
+                    such as biblical texts that have complex syntax, grammatical, literary and
+                    transmission hierarchies that overlap and combine in complex ways.
+            
+        
+    

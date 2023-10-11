@@ -1,0 +1,286 @@
+
+
+
+    
+        
+            
+                The encoding of Ibsen's manuscripts for "Emperor and
+                    Galilean"
+                
+                    
+                        Hilde
+                        Bøe
+                        
+                            Henrik Ibsen's Writings
+                            hilde.boe@ibsen.uio.no
+                        
+                    
+                
+                
+                    
+                        Ingvald
+                        Aarstein
+                        
+                            Henrik Ibsen's Writings
+                            ingvald.aarstein@ibsen.uio.no
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    Henrik Ibsen (1828-1906) left a manuscript material that covers approximately
+                        20.000 pages. All of these manuscripts are now being prepared for
+                        publishing. For the drama texts there are prompt copies; parts; printer's
+                        copies; final fair copies; copies of printed editions revised by hand and
+                        used as printer's copy for the next edition; drafts that range from ideas
+                        for the whole play on a piece of paper to complete fair copies that have
+                        been revised so thoroughly that they can no longer be considered to be fair
+                        copies. Then there are drafts and fair copies of the poems, and finally
+                        Ibsen's letters.
+                    Our situation is surely not unique. Projects that are publishing the complete
+                        writings of a modern writer are sure to encounter the same range of
+                        manuscripts, and will also, when using the TEI
+                            Guidelines, encounter phenomena in the manuscripts that are not
+                        covered by chapter 18 "Transcription of Primary Sources". The Guidelines state that their "recommendations are not
+                        intended to meet every transcriptional circumstance likely to be faced by
+                        any scholar" (quoted from the introduction to chapter 18). Still we would
+                        find it useful if the Guidelines did include
+                        recommendations for some of these transcriptional circumstances, or if a
+                        documentation of best practise was included. For this reason we would like
+                        to present the problems we have encountered and the solutions we have chosen
+                        in the encoding of Ibsen's manuscripts for Emperor and
+                            Galilean (1873). We feel that it is appropriate and useful to
+                        present the whole process of encoding a complex manuscript, and the
+                        questions this process has raised. 
+                
+                
+                    The manuscripts for «Emperor and Galilean»
+                    The planning and writing of Emperor and Galilean
+                        took almost ten years. The play was published in 1873, and consists of two
+                        dramas, both with five acts; the first edition covers 512 pages. The content
+                        of the drama is the life of the Roman emperor Julian the Apostate. Though
+                        later not thought to be one of Ibsen's best plays, Ibsen himself considered
+                            Emperor and Galilean to be his most important
+                        work.
+                    There are six manuscripts for Emperor and Galilean.
+                        Four of these (NBO Ms. 8to 1937a, NBO Ms. 8to 1937b, NBO Ms. 8to 1937c, NBO
+                        Ms. 8to 2821:14) are small fragments containing drafts and notes. These are
+                        all at the National Library in Oslo. Then there is the printer's copy (Kgl.
+                        Bibl. Kbh. Collin 262, 4to, II, 3), which is at the Royal Library in
+                        Copenhagen. The last one, also at the National Library in Oslo, and the one
+                        we would like to present here, is NBO Ms. 4to 1111.
+                    NBO Ms. 4to 1111 consists of notes, drafts and unfinished fair copies, bound
+                        by the library in one large volume of about 700 pages. Smaller notes and
+                        fragments have been placed first in the volume, larger drafts and temporary
+                        fair copies have been placed at the end. This organization is new, and has
+                        probably been done during the binding. Earlier it has been ordered
+                        differently; a red pagination (supposedly done by a librarian) is sign of
+                        this earlier order. In the volume the red pagination is no longer in its
+                        original order. Ibsen himself has left us few clues as to how the material
+                        should be organized; there are few dates and only some parts are paginated.
+                        We do not consider the current organization of the manuscript as final,
+                        since the volume has been made after Ibsen's own time. Our first task is
+                        thus to organize the manuscript according to our project's principles. We
+                        have decided on chronology/genesis, where this is possible to decide. When
+                        we have no direct clues in the material as to what belongs where we will
+                        have to make qualified guesses based on content analysis.
+                    The next question is the question of typology. This is important for
+                        searchability and for the possibilities of organizing the electronic
+                        edition. As said, NBO Ms. 4to 1111 consists of a number of different types
+                        of manuscripts. There are two sides to this. First we have to decide how
+                        detailed the typology should be. Secondly we have to find appropriate terms
+                        for the types of material in the manuscript (cfr. facsimile below). There is
+                        not yet a fixed typology in this area. Scholars are not always using terms
+                        like notes, drafts, fair copies etc. in the same manner. This we think holds
+                        for both Norwegian and international scholars. The TEI
+                            Guidelines keep themselves out of this discussion (for obvious
+                        reasons) and leave the question of typology to their users. Our project has
+                        developed a typology that fits the Ibsen material. This typology might be of
+                        interest to others as well. (The facsimile below contains a working
+                        manuscript with drafts of speeches, and notes in prose.)
+                    
+                    &lt;group&gt;
+                        
+                        &lt;text&gt;...&lt;/text&gt;
+                        
+                        &lt;text&gt;
+                        
+                        &lt;body&gt;
+                        
+                        lt;div type="workingManuscript"&gt;
+                        
+                        &lt;div type="act" n="1-3"&gt;
+                        
+                        &lt;sp who="JULIAN"&gt;
+                        
+                        &lt;p&gt;&lt;/p&gt;&lt;/sp&gt;
+                        
+                        &lt;sp who="GALLUS"&gt;
+                        
+                        &lt;spOpener&gt;&lt;speaker&gt;Pr. G.&lt;/speaker&gt;&lt;/spOpener&gt;
+                        
+                        &lt;p&gt;&lt;/p&gt;&lt;/sp&gt;
+                        
+                        &lt;sp who="JULIAN"&gt;
+                        
+                        &lt;spOpener&gt;&lt;speaker&gt;Pr. J.&lt;/speaker&gt;&lt;/spOpener&gt;
+                        
+                        &lt;p&gt;&lt;/p&gt;&lt;/sp&gt;
+                        
+                        ...
+                        
+                        &lt;/div&gt;
+                        
+                        &lt;/div&gt;
+                        
+                        &lt;lb/&gt;&lt;figure type="bar"&gt;&lt;/figure&gt;
+                        
+                        &lt;div type="notes"&gt;
+                        
+                        &lt;div type="act" n="1-4"&gt;
+                        
+                        &lt;p&gt;...&lt;/p&gt;
+                        
+                        &lt;/div&gt;
+                        
+                        &lt;/div&gt;
+                        
+                        &lt;/body&gt;
+                        
+                        &lt;/text&gt;
+                        
+                        &lt;text&gt;...&lt;/text&gt;
+                        
+                        &lt;/group&gt;
+                    Then there is the question of the basic encoding of this material. We have
+                        decided on a structure of groups of texts (cfr. the TEI
+                            Guidelines 7.3). We also use unnumbered &lt;div&gt;
+                        elements rather than numbered ones since we have found the same types of
+                        texts on different levels (cfr. the TEI Guidelines
+                        7.1.3). At the more detailed level of the encoding, we will have to consider
+                        for instance what encoding is appropriate for text fragments that later turn
+                        up as parts of speeches. How should these be encoded, as speeches or prose?
+                        They usually lack speakers and stage directions. To what extent should we
+                        link these fragments to their later use in speeches?
+                    It will be possible to link the manuscript material both internally and
+                        externally (to the rest of the text witnesses to Emperor
+                            and Galilean), and it will also be possible to organize the
+                        material according to other principles than ours. As shown in the encoded
+                        example above we supply the outer &lt;div&gt; level
+                        (type="workingManuscript/notes") with a type attribute holding the
+                        appropriate value for the text type. The inner &lt;div&gt; level
+                        (type="act") contains type and n attributes. The value in the n attribute
+                        records which part of the drama and which act (within this part) the text
+                        belongs to. The type attribute records which textual level (e.g. "act") this
+                        piece of text belongs to. With this information we can for example
+                        reorganize the material according to text type or according to the
+                        chronology of the first print. We can also present comparisons of manuscript
+                        and e.g. the first print through linking.
+                    In addition to the questions mentioned above, there are a few minor problems
+                        to solve. First, some of the bits and pieces of the manuscript are
+                        unfinished; the text ends in the middle of a sentence. We will of course
+                        check that the missing parts really are missing, and put them in the correct
+                        place if they are located somewhere else in the manuscript. Secondly, we
+                        have encountered what is for us a new phenomenon. There are a few lists
+                        (cfr. facsimile below) in this manuscript, listing either sources (with page
+                        numbers) that Ibsen has read and then used in his writing, or listing
+                        themes/scenes (also with page numbers) that he wants to include. As he has
+                        checked his list he has crossed out (some, but not all of) the items. How
+                        should we record this? These deletions seem not to be standard manuscript
+                        deletions, yet we consider using the &lt;del&gt; element with the
+                        rend and type attributes to record the rendition and the unusual purpose of
+                        the overstrike.
+                    
+                    &lt;del type="checkList" rend="overstrike"&gt;...&lt;/del&gt;
+                    The manuscript also includes graphics, illustrations (cfr. facsimile below)
+                        and calculations (this manuscript reveals that Ibsen among other things
+                        invested some of his money in train stocks, cfr. facsimile below). There is
+                        also writing upside down on some pages (cfr. facsimile below). So far we
+                        have decided that upside-down writing and calculations should be recorded in
+                        the appropriate part of the &lt;teiHeader&gt;. Graphics and
+                        illustrations are encoded as usual as &lt;figure&gt;.
+                    This is work-in-progress which hopefully by summer 2002 will be well on the
+                        way. We are very interested in hearing what experience others have with
+                        similar questions, and we hope that our work may be of interest to others
+                        working in this field.
+                
+                
+                    Facsimiles
+                    Ibsen, Henrik: Emperor and Galilean. The National Library of Norway Ms. 4to
+                        1111. Reproduced from the database at Centre for Ibsen Studies
+                        (), University of Oslo.
+                
+            
+        
+        
+            
+                
+                    C.
+                    M.
+                    Sperberg-McQueen
+                
+            
+            LouBurnard
+            Guidelines for Text Encoding and Interchange
+            
+                Chicago and Oxford
+                Text Encoding Initiative
+                1994
+            
+        
+        
+    

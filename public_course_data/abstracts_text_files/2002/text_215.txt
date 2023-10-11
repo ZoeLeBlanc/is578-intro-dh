@@ -1,0 +1,326 @@
+
+
+
+    
+        
+            
+                Forensic linguistics: the contribution of humanities
+                    computing
+                
+                    
+                        László
+                        Hunyadi
+                        
+                            University of Debrecen
+                            hunyadi@llab2.arts.klte.hu
+                        
+                    
+                
+                
+                    
+                        Enikő
+                        Tóth
+                        
+                            University of Debrecen
+                            teniko@pmail.arts.klte.hu
+                        
+                    
+                
+                
+                    
+                        Kálmán
+                        Abari
+                        
+                            University of Debrecen
+                            abarik@pmail.arts.klte.hu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Abstract:
+                    The aim of the talk is to demonstrate how useful humanities computing can
+                        prove to be in solving issues of a seemingly as distant field as forensic
+                        science. We will present a case study of an actual forensic linguistic
+                        assignment whose aim it was to determine if a digitalized recording of a
+                        conversation had been tempered. The task, highly challenging due to its
+                        novelty both in applied linguistics and forensic practice, was carried out
+                        by investigating three independent aspects of the issue: those of
+                        experimental phonetics, situational semantics and computation. The results
+                        of the three approaches were synthesized to give a comprehensive basis for
+                        an answer to the initial question.
+                
+                
+                    Introduction:
+                    To find a proof for or against the assumption that a given document has been
+                        tempered with is one of the important tasks of forensic science. With the
+                        introduction of various voice-recording techniques it became especially
+                        important to decide whether or not such a recording can authentically
+                        represent a certain event of reference. The case of magnetic tape recordings
+                        is relatively simple, since any (either electronic or mechanical)
+                        modification of the tape leaves a trace behind, characteristic even of the
+                        kind of manipulation (cf. Gruber et al. 1995, Gruber et al. 1993, Poza
+                        1979). However, with digital recordings gaining more and more popularity in
+                        our days, on the one hand, and digital manipulation becoming technically
+                        possible and easy, on the other, one might believe that the discovery of
+                        such a manipulation is highly unlikely. The novelty of the issue in
+                        scientific literature just adds to this challenge. In order to carry out the
+                        task, we had two assumptions: a. due to human voice having a highly complex
+                        structure, even digital tempering by a person might leave a significant
+                        trace, and b. due to conversations also having their strict internal
+                        structure, the removal of a segment of the given conversation might also be
+                        noticeable.
+                
+                
+                    Discussion:
+                    The findings of the three approaches were as follows:
+                    
+                        1. A detailed spectrographic analysis of digitalized voice recordings
+                            found a characteristic pattern with a duration of 8-10 milliseconds at
+                            the place where a segment had been digitally removed. Although this
+                            pattern varied according to the actual immediate environment, its
+                            characteristic features could be established (a symmetrical increase of
+                            intensity as well as a 500 Hz increase of frequency). This
+                            spectrographic pattern was only manifested in the exact location of
+                            recordings with a digital cut. Applying the methodology to the given
+                            task, we found that no spectrographic trace of this kind of manipulation
+                            could be identified.
+                        2. The aim of the situational-semantic study was to find out if an
+                            eventual cutting of a portion of the text could have possibly left a
+                            trace that can be identified as semantically significant. Our attention
+                            was directed to the analysis of the appropriateness of pieces of
+                            linguistic material with a referential function, including pronouns,
+                            determiners and names (cf. Brown et al. 1983, Kamp 1981). The analysis
+                            pointed at some places where the reference was not unambiguously
+                            computable from the immediate linguistic environment, but since in
+                            running conversation such immediate turns often happen, they could not
+                            be decided on the basis of linguistic content alone. These locations
+                            became thus subject to spectrographic analysis, and the latter concluded
+                            that no tempering could be identified there.
+                        3. In our work we included a separate computational task to find out
+                            if segments of an eventual cut in the voice recording were still
+                            recoverable from the hard disk originally used for digitizing. Since it
+                            turned out that the hard disk had been completely reformatted, we could
+                            not complete this task. However, we elaborated a methodology for similar
+                            tasks and applied it in model situations. The applied statistical method
+                            of zero crossing proved to yield significant interpretable results in
+                            the differentiation of headerless segments of certain types of files.
+                            This method showed a significant difference between .bmp and .txt files,
+                            and .wav files also had a characteristic value for zero-crossing. Thus,
+                            we suggest that this methodology may be useful for the possible
+                            differentiation of at least a few types of files in future work.
+                    
+                
+                
+                    Summary:
+                    This case study showed us that humanities computing can have a significant
+                        contribution to forensic science, especially in the form of a combination of
+                        theoretical and applied linguistics as well as statistics and computing.
+                        This assignment was a real challenge for us, and it resulted in the
+                        elaboration of a new methodology both in experimental phonetics and
+                        computation. Thus proving the inspiring force of humanities computing across
+                        various fields of science.
+                
+            
+        
+        
+            
+                References:
+                
+                    
+                        
+                            
+                                
+                                    G.
+                                    Brown
+                                
+                            
+                            
+                                
+                                    G.
+                                    Yule
+                                
+                            
+                            Discourse Analysis
+                            
+                                
+                                CUP
+                                1983
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    Kamp
+                                
+                            
+                            A theory of truth and semantic representation
+                        
+                        
+                            
+                                
+                                    J.
+                                    Groenendijk
+                                
+                            
+                            
+                                
+                                    T.
+                                    Janssen
+                                
+                            
+                            
+                                
+                                    M.
+                                    Stokhof
+                                
+                            
+                            Formal Methods in the Study of Language
+                            
+                                Amsterdam
+                                Mathematical Centre
+                                1981
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    S.
+                                    Gruber
+                                
+                            
+                            
+                                
+                                    F.
+                                    Poza
+                                
+                            
+                            Voicegram Identification Evidence
+                        
+                        
+                            American Jurisprudence Trials
+                            
+                                Lawyers Cooperative Publishing
+                                54
+                                
+                                
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    S.
+                                    Gruber
+                                
+                            
+                            
+                                
+                                    F.
+                                    Poza
+                                
+                            
+                            
+                                
+                                    A.
+                                    J.
+                                    Pellicano
+                                
+                            
+                            Audio Recordings: Evidence, Experts and
+                            Technology
+                        
+                        
+                            American Jurisprudence Trials
+                            
+                                Lawyers Cooperative Publishing
+                                48
+                                
+                                
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            On the Theory and Practice of Voice Identification
+                            
+                                
+                                    F.
+                                    Poza
+                                
+                                (Technical Consultant)
+                            
+                            
+                                
+                                National Academy of Sciences
+                                1979
+                            
+                        
+                    
+                
+            
+        
+    

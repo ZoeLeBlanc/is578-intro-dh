@@ -1,0 +1,440 @@
+
+
+
+    
+        
+            
+                Figura: A Tool for the Collaborative Editing of
+                    Non-nesting Content
+                
+                    
+                        Rafael
+                        Alvarado
+                        
+                            Princeton University
+                            alvarado@princeton.edu
+                        
+                    
+                
+                
+                    
+                        Sarah-Jane
+                        Murray
+                        
+                            Princeton University
+                            sjmurray@princeton.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Figura is a web-based database application designed to support the Charrette
+                    Project at Princeton University (Uitti 1997). In particular, it supports the
+                    work of creating a TEI-compliant critical edition of the Old French manuscript
+                    tradition of Chrétien de Troyes’s Le Chevalier de la
+                        Charrette. The application addresses the shortcomings of a
+                    traditional, purely document-centric approach to humanities computing
+                    applications (described below) through the use of a database management system
+                    that acts as a pre-processor for marked up documents. The motivation behind the
+                    use of a database has not been to supplant the primary role of XML and the TEI
+                    in the development of digital critical editions, but rather to avoid having to
+                    employ an “extreme markup” solution that would further complicate an already
+                    difficult set of technologies. Instead, Figura targets the black box of
+                    traditional humanities computing applications-the indexing engine-and replaces
+                    it with something that is more accommodating to the specific needs of scholars,
+                    all the while keeping document encoding standards intact.
+                The traditional approach to humanities computing applications is one in which
+                    primary source materials are marked up using a textual encoding standard, such
+                    as the TEI (Sperberg-McQueen, Burnard et al. 1994), in order to produce “thick
+                    documents” that contain both primary and interpretive content in a single
+                    document or collection of documents. These documents are then made available for
+                    use by the scholarly public by means of a transformation engine that can
+                    generate content in a standard, viewable format, such as HTML, and an indexing
+                    engine that will allow the document web to be searched, presumably taking
+                    advantage of the rich markup found in the source documents.
+                A primary task of the Charrette Project has been to encode a set of rhetorical
+                    figures—e.g. instances of chiasmus, adnominatio, enjambment, etc.—in the
+                    critical edition of the text (Uitti and Foulet 1989). Because of their large
+                    number and radically non-nesting character, however, the prospect of directly
+                    encoding the figures into the text, using the technique of segmenting and
+                    splicing elements, has seemed impractical at best. In addition, the Charrette
+                    Project has been collaborative from the outset, involving the work of many
+                    editorial assistants, both over time and at any given time. Each editor has been
+                    in charge of a figure type, and has been responsible for locating figure
+                    instances in the entire document. In the traditional approach, this division of
+                    labor would have to be carried out serially, and therefore the length of time
+                    required to complete the project would multiply by the number of assistants
+                    involved. Each of these problems was solved through the use of a database to
+                    store the textual content of the Foulet-Uitti edition.
+                The problem of encoding non-hierarchical and multiple hierarchies of content
+                    objects using markup technologies such as SGML and XML is well documented
+                    (Renear, Mylonas et al. 1996; Alvarado 1999; Sperberg-McQueen and Huitfeldt
+                    1999). In areas where this problem cannot be ignored, such as the analysis of
+                    qualitative data and discourse, the principle of standoff markup has been
+                    developed by several groups (Thompson and McKelvie 1997; Müller and Strube 2001;
+                    Glass and Eugenio 2002). Figura employs a methodology similar to that of these
+                    examples—which makes sense, given the kinship between discourse analysis and
+                    rhetoric—but makes use of a relational database, rather than a collection of
+                    documents, to store the links between textual elements and their affiliations in
+                    figural elements. The advantage of this approach is that editors are freed from
+                    the well-formedness constraint of XML. Once the data is entered, an algorithm
+                    may be applied to the join the source document and its non-nesting elements, to
+                    produce well-formed XML—or even MECS—using a variety of techniques, such as
+                    automated splicing or CSS grouping.
+                Standoff markup also allows for rich, secondary content to be stored
+                    independently of the source document. This enables parallel, collaborative
+                    editing, a problem that has not received a great deal of treatment in the
+                    literature, but which posed a threat to the timely completion of the Charrette
+                    Project. With Figura, editorial assistants use a web-based markup tool at the
+                    same time, without worrying about editing collisions, and with the assurance
+                    that their figural data are immediately available to everyone else in the
+                    project.
+                Beyond the immediate gains of such an approach for the Charrette Project, Figura
+                    introduces a novel approach to humanities computing applications that is worth
+                    consideration and development by others. One of the greatest shortcomings of the
+                    traditional approach to humanities computing applications is that it relegates
+                    the decisive task of indexing to proprietary technologies, such as DynaText or
+                    Oracle Text, which are not only inaccessible to the designers of humanities
+                    applications, but are designed for commerce and not scholarship. Because the
+                    indexing engine has the pivotal role of mediating between source archive and
+                    end-user web, a consistent result is that marked up documents end up being
+                    “smarter” than their published variants, leaving a wide gap between a project’s
+                    collection of marked up texts and the documents that most scholars end up
+                    seeing. Put in bare economic terms, indexing engines have been grossly
+                    inefficient converters of scholarly labor into intellectual product. McGann once
+                    described this situation as a “gulf separating a Unix from a Mac world,” and
+                    advocated the construction of two separate schemes to support each side of what
+                    he characterized as a “double helix” (McGann 1997). Figura seeks to eliminate
+                    the gap in the first place by inverting the relationship between index and
+                    archive—essentially, by treating the index as the text itself.
+                In our poster presentation we will present the Figura application and describe
+                    its architecture, its place in the Charrette Project, and the design philosophy
+                    behind the application. We will also try to focus as much attention on how the
+                    application is designed as on how it is used by scholars in actual situations of
+                    interpretation. Figura is above all a practical application, created to meet
+                    directly the needs of scholars; it was not conceived as a formal solution to an
+                    abstract problem. Finally, we will also present what we consider to be the
+                    principle shortcomings of the application, covering cases where it is most and
+                    least suitable, and compare it to related initiatives.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    R.
+                                    Alvarado
+                                
+                            
+                            Of Media, Data, Documents: An Argument for the
+                                Importance of Relational Technology to the Project of Humanities
+                                Computing
+                        
+                        
+                            Annual ACH-ALLC Conference, Charlottesville,
+                                Virginia
+                            
+                                
+                                
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Glass
+                                
+                            
+                            
+                                
+                                    B.
+                                    D.
+                                    Eugenio
+                                
+                            
+                            MUP: The UIC Standoff Markup Tool
+                        
+                        
+                            Third SIGDial Workshop on Discourse and Dialogue
+                                (SIGDial-02), Philadelphia
+                            
+                                
+                                
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    McGann
+                                
+                            
+                            Imagining What You Don’t Know: The Theoretical Goals of
+                                the Rosetti Archive
+                        
+                        
+                            
+                            
+                                
+                                Institute for Advanced Technology in the
+                                    Humanities
+                                1997
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    Müller
+                                
+                            
+                            
+                                
+                                    M.
+                                    Strube
+                                
+                            
+
+                            MMAX: A Tool for the Annotation of Multi-modal
+                                Corpora
+                        
+                        
+                            2nd Workshop IJCAI Workshop on Knowledge and Reasoning
+                                in Practical Dialogue Systems.
+                            
+                                Seattle
+                                SIGdial
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    Renear
+                                
+                            
+                            
+                                    E.
+                                    Mylonas
+                                 et al 
+                            Refining our Notion of What Text Really Is: The Problem
+                                of Overlapping Hierarchies
+                        
+                        
+                            
+                                
+                                    N.
+                                    Ide
+                                
+                            
+                            
+                                
+                                    S.
+                                    Hockey
+                                
+                            
+                            Research in Humanities Computing
+                            
+                                Oxford, UK
+                                Oxford University Press
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    L.
+                                    Burnard
+                                 et al 
+                            Guidelines for electronic text encoding and
+                                interchange
+                            
+                                Chicago and Oxford
+                                Text Encoding Initiative
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    C.
+                                    Huitfeldt
+                                
+                            
+                            GODDAG: A Data Structure for Overlapping
+                                Hierarchies
+                        
+                        
+                            Annual ACH-ALLC Conference, Charlottesville,
+                                Virginia
+                            
+                                
+                                
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    S.
+                                    Thompson
+                                
+                            
+                            
+                                
+                                    D.
+                                    McKelvie
+                                
+                            
+                            Hyperlink semantics for standoff markup of read-only
+                                documents
+                        
+                        
+                            Language Technology Group, HCRC, University of
+                                Edinburgh
+                            
+                                
+                                
+                                1997
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    K.
+                                    D.
+                                    Uitti
+                                
+                            
+                            A Brief History of the ‘Charrette Project’ and Its
+                                Basic Rationale
+                        
+                        
+                            
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        []. Last accessed
+                            11/25/2002
+                    
+                    
+                        
+                            
+                                
+                                    K.
+                                    D.
+                                    Uitti
+                                
+                            
+                            
+                                
+                                    A.
+                                    Foulet
+                                
+                            
+                            Le Chevalier de la Charrette
+                            
+                                
+                                Classiques Garnier
+                                1989
+                            
+                        
+                    
+                
+            
+        
+    

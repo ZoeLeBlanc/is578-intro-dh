@@ -1,0 +1,681 @@
+
+
+
+    
+        
+            
+                Organizing Multimedia Inter-textual Knowledge: New
+                    Tasks, Challenges and Technologies
+                
+                    
+                        Ziva
+                        Ben-Porat
+                        
+                            Tel Aviv University
+                            zivabp@post.tau.ac.il
+                        
+                    
+                
+                
+                    
+                        Siegfried
+                        Reich
+                        
+                            Salzburg Research
+                            siegfried.reich@salzburgresearch.at
+                        
+                    
+                
+                
+                    
+                        Wernher
+                        Behrendt
+                        
+                            Salzburg Research
+                            wernher.behrendt@salzburgresearch.at
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Experts in Arts and Humanities form a community with specialist knowledge,
+                        but are at a disadvantage compared with "hard science" because the Arts and
+                        Humanities community often lacks the technological background as well as the
+                        software tools required to reach their potential audiences with today's
+                        communication infrastructure. The CULTOS project addresses this need by
+                        focusing on the development of multimedia authoring tools for the
+                        construction of knowledge enhanced multimedia objects. The project is unique
+                        in its balanced collaboration between culture ─ mainly literature and art -
+                        researchers and technologies. This collaboration provides ample opportunity
+                        to study ─ and hopefully resolve - the problematics of "translating" complex
+                        content dependent phenomena into the language of computation, as well as the
+                        problematics of training humanistic scholars in the use of software tools
+                        and of providing them with easy to use tools and attractive interfaces. The
+                        need for such authoring tools arose when a group of literary scholars came
+                        up with the idea of constructing a digital multimedia intertextual library.
+                        The first part of the paper will accordingly deal with the vision underlying
+                        the proposed library and the second part will deal with the tools needed to
+                        support such kind of library.
+                
+                
+                    INTRODUCTION
+                    The idea of a digital multimedia intertextual library is situated within the
+                        theoretical position that there is a need to reconstruct ─ or, at least, to
+                        re-present and make newly accessible - the European literary and artistic
+                        canons. The canons are obviously treated not as the obsolete monuments of
+                        particular cultural politics, but as one of several tools developed by
+                        Western Culture (presumably other cultures as well) in order to
+                        counterbalance the inevitability of the constant flattening of the semantic
+                        content of semiotic systems. For example, many "native speakers" of western
+                        culture can use the phrase "Achilles'heel" properly without remembering
+                        (i.e. cognitively activating) the relevant myth. Culture has kept the myth
+                        alive in two major ways: by compressing it into a linguistic unit, and by
+                        making it part of its artistic canons, producing a large number of visual
+                        representations, teaching it in schools, or, by bestowing prestige on those
+                        who know it. Most of these tools no longer exist. But, it will be argued,
+                        open hypermedia [6] and Semantic Web technology [2] provides us with new
+                        means of keeping semantic depth alive in the present and for the future.
+                    More specifically, the library aims at explicating intertextual relationships
+                        [1]. Major cultural past artefacts still function in contemporary culture,
+                        be it "high" or "low", popular or mass-media, verbal or non-verbal in the
+                        form of inter-textual triggers. Explicitly defined inter-textual relations
+                        (such as parody, quotation, amplification, opposition, etc.), traced back
+                        from contemporary culture, allow us to go beyond a conventional study of
+                        topoi and show the relations obtaining between texts that express different
+                        themes in different media of different cultural status at any given
+                        time.
+                    For the users (both literature experts and everyday users), a navigable
+                        thread constructed on the basis of such relations, linking the most
+                        memorable ─ hence active - textual segments, presents the complex historical
+                        relations in a manner that is easily accessible. It may have the "text"
+                        appeal that long realistic novels, classical tragedies, and long venerated
+                        museum pieces have lost. Furthermore, the backward movement from present
+                        texts in all media to past canonic milestones and the collaborative dynamic
+                        reconstruction of the European canon will embody the complex structure of
+                        European cultural identity (common core and independent national features)
+                        and will provide an important database for literary and cultural studies.
+                    Such an ambitious plan requires careful planning and must begin in small
+                        steps. In particular, over the next couple of years we plan to develop and
+                        evaluate the tools for literature experts to allow them to
+                        (semi-)automatically express interextual relationships. Based on these
+                        tools, in a further step a libraries' infrastructure will be built so that
+                        finally a digital representation of the canon can be established.
+                    The remainder of this paper specifies the requirements for the tools to be
+                        developed within its framework. We finish with a description of the current
+                        status and ongoing work.
+                
+                
+                    PREREQUISITES FOR KNOWLEDGE AWARE MULTIMEDIA AUTHORING TOOLS
+                    
+                        Digital Content
+                        For intertextual threads to be created (automatically or manually), we
+                            need digital access to those works which will be interlinked. More
+                            specifically, we need at least a digital reference (such as a
+                            description about an artefact). The library of explicated intertextual
+                            threads must either keep these contents in some central repository, or
+                            be able to take part in a federation of interconnected repositories that
+                            are able to interoperate with each other using standards. Reliability
+                            (in terms of accessibility of resources) and therefore naming of
+                            artefacts will be of particular importance [9].
+                    
+                    
+                        Analysis and Search
+                        For the large scale creation of intertextual threads, experts require
+                            sophisticated tools that automate ─ at least in part ─ the analysis of
+                            texts for intertextual markers. This is comparable to the task that was
+                            faced by the Human Genome Project [10]. The deciphering of the genome
+                            would have taken hundreds or thousands of years if researchers had
+                            carried on using the manual methods of genome analysis. The task was
+                            finished within one generation because the methodology became
+                            standardised, so that machines were able to do millions of analyses
+                            automatically. In order to find intertextual relationships, similar
+                            machines (software) will have to be developed in order to augment:
+                                lexical search ─ it must be possible to find texts through
+                                    lexical dependencies, tools must support word-stem analysis,
+                                    understanding of composite terms (fish and chips), etc.
+                                grammatical search ─ we may wish to find certain grammatical
+                                    constructs (nested clauses, conditionals, etc)
+                                semantic search ─ we need to be able to analyse various media
+                                    with respect to prima facie cognitive patterns or markers
+                                pragmatic search ─ we need to be able to interpret cognitive
+                                    patterns in their respective contextual settings in order to
+                                    infer valid intertextual relationships
+                            
+                        
+                            Figure 1: Research Focus on Authoring
+                        
+                        It is obvious that the development of analysis tools for all four levels
+                            amounts to the task of natural language understanding and even,
+                            understanding of every-day life situations (common-sense reasoning).
+                            This is why the research agenda for the project is as exciting as it is
+                            open-ended. The focus of the current project is not on "deep reasoning",
+                            but on developing the initial authoring tools that will enhance
+                            productivity of humans undertaking these analysis tasks. We are only
+                            including the first level of automatic analysis, that is, lexical
+                            search.
+                    
+                    
+                        Knowledge Structures, Topologies and Metaphors
+                        Experts in Arts and Humanities have accumulated not only vast knowledge
+                            about the works of art they study, but have also methods and "tools"
+                            (albeit in their heads) to analyse the works, and to identify a fairly
+                            large number of specific relationships that may occur between texts. At
+                            the technical level, we are using an object-oriented, graph-based
+                            knowledge representation language to specify a "knowledge model"
+                            (ontology) of intertextuality (such as conceptual graphs [7]). Experts
+                            use these very detailed knowledge structures in their everyday work, but
+                            they also use metaphoric language for organising larger chunks of
+                            knowledge.
+                        We have, so far, identified four "topologies" in which intertextual
+                            studies can be organised: Spider (one central text with all its
+                            relations), Millipede (one central theme [text, topos, etc.] over time,
+                            languages, media, etc.), Associative Map (free navigation from one text
+                            to another), Mistletoe (two texts one of which depends on the other for
+                            major components)
+                        
+                            Figure 2: High-Level Design Topologies for Intertextual
+                                Studies
+                        
+                        The authoring tools are intended to support such high-level design
+                            structures that will assist experts in organising their knowledge
+                            appropriately, for today's IT-based audiences.
+                    
+                    
+                        Collaborative Authoring
+                        It is very likely that experts for different genres and different
+                            cultural spheres will have to work together to establish interesting
+                            links between works of art. This imposes that threads can be manipulated
+                            by multiple participants in parallel as well as sequentially. Hence, the
+                            authoring environment needs to be capable of supporting versioning
+                            mechanisms and merging mechanisms for handling change clashes during
+                            authoring [11].
+                    
+                    
+                        Rights Management
+                        Changes need to be traceable to a particular knowledge worker to be able
+                            to protect the Intellectual Property Rights (IPR) of the worker.
+                            Equally, the works that are referred to by an intertextual analysis may
+                            also be subject to copyrights etc. As rights management is not the core
+                            of our research, we aim at integrating existing solutions in the field
+                            of IPR management. However, the threads produced need to carry enough
+                            information to be able to track copyright relevant changes on threads or
+                            related data, i.e. texts.
+                    
+                    
+                        Presentation Component
+                        In order to allow for presentation of threads and the different modes of
+                            interaction (such as navigation, spatial representation, etc.) we aim at
+                            developing specific presentation modules. Adaptation to different user
+                            groups (i.e., students, scholars, "ordinary" end users) and modes of
+                            interaction (i.e., editing, browsing, etc.) are important. For the
+                            presentation components, the SMIL Standard (Synchronised Multimedia
+                            Integration Language) and extensions to it, will be further explored
+                            [12].
+                    
+                    
+                    
+                        Enhanced Multimedia Meta Objects (EMMOs)
+                        In order to address the key requirements as briefly outlined in the
+                            previous section we have developed the concept of capturing threads in
+                            so-called EMMOs, i.e, autonomous knowledge objects [8][5]. These
+                            Enhanced Multimedia Meta Objects aggregate the information needed to
+                            represent all aspects of a thread. The following Figure describes the
+                            logical views dealt with.
+                        
+                            Figure 3: EMMO with its Interfaces.
+                        
+                        The interfaces illustrated above are outlined below (for further details
+                            see [5]). The interfaces are defined using widely adopted standards
+                            wherever possible.
+                                The Links Repository manages "standard", i.e., untyped
+                                    associative links.
+                                The Contents Repository interface defines the information
+                                    necessary to store and retrieve contents and related meta-data.
+                                    The actual implementation will rely on existing meta-data
+                                    standards such as MPEG-7.
+                                The Transformation Interface allows to import / export
+                                    information stored in the EMMO. In a first step this will
+                                    primarily be used for providing data for publishing (see
+                                    presentation component above).
+                                The Knowledge Interface refers to the knowledge model an EMMO
+                                    is built upon. It is via this interface that an EMMO can
+                                    exchange knowledge structures.
+                                The Trading Interface holds the IPR information necessary to
+                                    market the knowledge within an EMMO. This is of particular
+                                    importance for trading the intertextual relationships, just like
+                                    multimedia artefacts in general.
+                                The Trails Repository: trails allow users to navigate based
+                                    on other people's paths [3] thereby mainly assisting navigation
+                                    in vast hypermedia networks.
+                             
+                
+                
+                    Summary And Ongoing Work
+                    n this paper we have outlined the idea of an intertextual library. We have
+                        argued that tools for (semi-)automatically creating these relationships
+                        amongst multimedia artefacts is key to building the library and that we are
+                        therefore developing the authoring tools in a first step.
+                    The development of these tools is organised within a European project funded
+                        by the IST-Programme (CULTOS, IST-2000-28134) which has started in September
+                        2001. In a first requirements capture phase the literature experts have
+                        demonstrated the methodologies used in their work and expressed their needs.
+                        This has led to the specification of an EMMO as outlined above. In a next
+                        step we will now define standard types of intertextual relationships (such
+                        as parody, etc.) and adopt existing tools in order to allow the literature
+                        experts to define intertextual cultural threads.
+                
+                
+                    Acknowledgements
+                    We would like to acknowledge the support by the European Union
+                        (IST-2000-28134). Also, we would like to thank our colleagues in the
+                        consortium.
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    Ziva
+                                    Ben-Porat
+                                
+                            
+                            The poetics of literary allusion
+                        
+                        
+                            Poetics and Theory of Literature (PTL). Journal for the
+                                Descriptive Poetics and Theory of Literature
+                            
+                                1
+                                
+                                
+                                1976
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Tim
+                                    Berners-Lee
+                                
+                            
+                            
+                                
+                                    James
+                                    Hendler
+                                
+                            
+                            
+                                
+                                    Ora
+                                    Lassila
+                                
+                            
+                            The semantic web
+                        
+                        
+                            Scientific American
+                            
+                                124
+                                
+                                
+                                2001
+                            
+                        
+                        Available as 
+                    
+                    
+                        
+                            
+                                
+                                    Vannevar
+                                    Bush
+                                
+                            
+                            As we may think
+                        
+                        
+                            The Atlantic Monthly
+                            
+                                176
+                                1
+                                101-108
+                                1945
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Theodor
+                                    Holm
+                                    Nelson
+                                
+                            
+                            Literary Machines
+                            87.1 edition
+                            
+                                
+                                Published by the author. Mindful Press
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Siegfried
+                                    Reich
+                                
+                            
+                            
+                                
+                                    Wernher
+                                    Behrendt
+                                
+                            
+                            
+                                
+                                    Christian
+                                    Eichinger
+                                
+                            
+                            
+                                
+                                    Martin
+                                    Schaller
+                                
+                            
+                            Document models for navigating digital
+                                libraries
+                        
+                        
+                            2000 Kyoto International Conference on Digital
+                                Libraries: Research and Practice. November 13 - 16, Kyoto,
+                                Japan
+                            
+                                
+                                277-284
+                                November 2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Siegfried
+                                    Reich
+                                
+                            
+                            
+                                
+                                    Uffe
+                                    K.
+                                    Wiil
+                                
+                            
+                            
+                                
+                                    Peter
+                                    J.
+                                    Nürnberg
+                                
+                            
+                            
+                                
+                                    Hugh
+                                    C.
+                                    Davis
+                                
+                            
+                            
+                                
+                                    Kaj
+                                    Grønbæk
+                                
+                            
+                            
+                                
+                                    Kenneth
+                                    M.
+                                    Anderson
+                                
+                            
+                            
+                                
+                                    David
+                                    E.
+                                    Millard
+                                
+                            
+                            
+                                
+                                    Jörg
+                                    M.
+                                    KHaake
+                                
+                            
+                            Addressing interoperability in open hypermedia: The
+                                design of the open hypermedia protocol
+                        
+                        
+                            New Review of Hypermedia and Multimedia
+                            
+                                5
+                                
+                                207-248
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    John
+                                    F.
+                                    Sowa
+                                
+                            
+                            Knowledge Representation: Logical, Philosophical, and
+                                Computational Foundations
+                            
+                                Pacific Grove, CA
+                                Brooks Cole Publishing Co.
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Dionysios
+                                    C.
+                                    Tsichritzis
+                                
+                            
+                            Objectworld
+                        
+                        
+                            Office Automation, Concepts and Tools
+                            
+                                
+                                Springer
+                                1985
+                                379-398
+                            
+                        
+                        Chapter 15
+                    
+                    
+                        
+                            
+                                
+                                    Manolis
+                                    Tzagarakis
+                                
+                            
+                            
+                                
+                                    Siegfried
+                                    Reich
+                                
+                            
+                            
+                                
+                                    Nikos
+                                    Karousos
+                                
+                            
+                            
+                                
+                                    Dimitris
+                                    Christodoulakis
+                                
+                            
+                            Naming as a fundamental concept of open hypermedia
+                                systems
+                        
+                        
+                            Proceedings of the '00 ACM Conference on Hypertext, May
+                                30 - June 3, San Antonio, TX
+                            
+                                
+                                
+                                2000
+                                103-112
+                            
+                        
+                    
+                    
+                        
+                            
+                                U.S. Department of Energy (DOE)
+                            
+                            Genomics and Its Impact on Medicine and Society: A 2001
+                                Primer
+                            
+                                
+                                
+                                2001
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Weigang
+                                    Wang
+                                
+                            
+                            
+                                
+                                    Jörg
+                                    M.
+                                    Haake
+                                
+                            
+                            Flexible coordination with cooperative
+                                hypermedia
+                        
+                        
+                            Proceedings of the '98 ACM Conference on Hypertext,
+                                June 20-24, 1998, Pittsburgh, PA
+                            
+                                
+                                
+                                1998
+                                245-255
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Phillipp
+                                    Hoschka
+                                
+                            
+                            Synchronized Multimedia Integration Language
+                                SMIL
+                            1.0 Specification,Recommendation 15 June 1998,
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        Available as: 
+                    
+                
+            
+        
+    

@@ -1,0 +1,81 @@
+
+        
+            At first, the 
+                Peanuts comic of 23 January 1952 seems easy to understand. Charlie Brown and Schroeder, two of Charles M. Schulz’s most familiar characters, talk about the music the latter is playing. Upon looking closer, the visual representation is far more complex than what is expected: Schulz reproduces the opening stanzas of Beethoven’s “Grosse Sonate für das Hammerklavier” (Piano Sonata No.29, Op.106); Schroeder, responding to Charlie Brown’s question about the piece, replies in German; and his speech is rendered in 
+                Fraktur; Charlie Brown’s response is a single typographic character; and Schulz signs his name in the final panel in 
+                Fraktur. 
+            
+            How do you train students to see the complications in this strip? One solution would be to have them read Scott McCloud’s accessible classic 
+                Understanding Comics, Hilary Chute’s more recent 
+                Why Comics?, or the audacious 
+                How to Read Nancy by Paul Karasik and Mark Newgarden. But another solution would be to have them read the comics very closely through the act of encoding them and to then quantify their findings. In this presentation, I will discuss recent courses I have taught that have taken a digital humanities approach to Schulz’s corpus. 
+            
+            
+                Peanuts first appeared in October 1950. As a “space-saving strip,” which meant editors could arrange its panels in different ways on the comics page, Schulz’s strip may have appeared destined to be quickly forgotten (Schulz, “An Interview” 316). Instead, he continued drawing strip after strip for the next 50 years. When the final Peanuts strip was published on 13 February 2000 (the morning after Schulz had passed away), he had singlehandedly drawn, inked, and lettered 17,897 strips, resulting in what Robert Thompson called the “longest story ever told by one human being” (qtd. in Boxer). 
+                Peanuts influenced not only other comics but culture as a whole, with Charlie Brown, Snoopy, and the others being some of the most recognizable characters on earth. Compared to the strips that preceded Schulz’s, such as 
+                The Yellow Kid (1895-1898), 
+                Krazy Kat (1913-1944), and 
+                Pogo (1948-1975), or those that followed it, including 
+                The Far Side (1979-1995) and 
+                Calvin and Hobbes (1985-1995), Schulz’s style of both illustration and humor was minimal. But as the preceding paragraph suggests, simplicity does not preclude complexity.
+            
+            For the last two years, I have taught a semester-long “Research in Digital Humanities” course that focuses on Schulz’s work. While we closely read more than four years worth of strips, we extend our understanding of Schulz’s work through the application of different digital humanities methods. First, we have collectively begun a digital edition of 
+                Peanuts, encoding strips according to both TEI and the Comic Book Markup Language (CBML; see Walsh). Encoding strips allows us to precisely record features of strips, including setting, weather, activities the characters are engaged in, and whether the strips are tied to a particular holiday (see Croxall et al., 
+                Peanuts Taxonomy). We tag characters who are named in the strip as well as place names, and record speech, sounds, types of speech bubbles, and diegetic text that appears in the strip. Throughout this process, the choices of what we encode are collectively determined by the class (see Croxall et al, 
+                Peanuts Encoding Editorial Decisions). We discuss the encoding regularly in class sessions, as precision requires us to look carefully at both the comic and the TEI and CBML guidelines. 
+            
+            While we slowly build this digital edition, we also use a data set of transcriptions (similar to 
+                alt-text) harvested from the 
+                GoComics website that gives us the ability to search across all 50 years of the comics’ history. With these two different data sets—one small and precise, the other broad and varied—we then engage in distant reading approaches. The first year of the class was dedicated to determining character co-occurrence within the strips and analyzing the networks among Schulz’s characters (see Fig. 1). The second year found us using stylometry to determine whether the different characters had distinct speaking patterns. In the upcoming semester (Winter 2022), we will consider the bounds of season for both weather and sports. 
+            
+            In this presentation, I will discuss both our methods of encoding and the results of our quantifications. While drawing on the work of others who have examined comics in the terms of digital humanities (see Whitson and Salter; Dunst et al.), I extend the conversation for the first time into the convergence of comics, DH, and pedagogy.
+            
+                
+            
+            Fig. 1, Network Analysis of In-strip Character Co-Occurrence
+        
+        
+            
+                
+                    Bibliography
+                    Boxer, S. (2000). Charles M. Schulz, ‘Peanuts’ Creator, Dies at 77. 
+                        New York Times. 14 February 2000, https://www.nytimes.com/2000/02/14/arts/charles-m-schulz-peanuts-creator-dies-at-77.html?pagewanted=all&src=pm (accessed 27 April 2022). 
+                    
+                    Chute, H. (2017). 
+                        Why Comics? From Underground to Everywhere. New York: Harper.
+                    
+                    Croxall, B. et al. (2020-2022). 
+                        Peanuts Encoding Editorial Decisions. Google Docs, https://docs.google.com/document/d/1-4u0SHY5PW16sfcEqL8mOYl-x2JB0piXowOOpLYGn7I/edit?usp=sharing (accessed 27 April 2022). 
+                    
+                    Croxall, B. et al. (2020-2022). 
+                        Peanuts Taxonomy. GitHub, https://github.com/briancroxall/peanuts-taxonomy (accessed 27 April 2022).
+                    
+                    Dunst, A. et al. (2018). 
+                        Empirical Comics Research: Digital, Multimodal, and Cognitive Methods. New York: Routledge. 
+                    
+                    Karasik, P. and Newgarden, M. (2017). 
+                        How to Read Nancy: The Elements of Comics in Three Easy Panels. Seattle: Fantagraphic Books. 
+                    
+                    McCloud, S. (1993) 
+                        Understanding Comics: The Invisible Art. New York: William Morrow. 
+                    
+                    Schulz, C. (2004). “An Interview with Charles M. Schulz.” 
+                        The Complete Peanuts: 1950-1952. Seattle: Fantagraphic Books, pp. 304-337.
+                    
+                    Schulz, C. (2014-2016). 
+                        The Complete Peanuts. 25 vols. Seattle: Fantagraphic Books.
+                    
+                    Schulz, C. 23 January 1952. 
+                        GoComics, https://www.gocomics.com/peanuts/1952/01/23 (accessed 27 April 2022). 
+                    
+                    Walsh, J. A. (2012). “Comic Book Markup Language: An Introduction and Rationale.” 
+                        Digital Humanities Quarterly 6.1, http://www.digitalhumanities.org/dhq/vol/6/1/000117/000117.html (accessed 27 April 2022). 
+                    
+                    Whitson, R. T. and Salter, A. (2015). “Introduction: Comics and the Digital Humanities.” 
+                        Digital Humanities Quarterly 9.4, http://digitalhumanities.org/dhq/vol/9/4/000210/000210.html (accessed 27 April 2022).
+                    
+                
+            
+        
+    
+

@@ -1,0 +1,215 @@
+
+
+
+    
+        
+            
+                The Making of America II: Towards a Standardized
+                    Architecture for the Digitization of Primary Sources
+                
+                    
+                        Jerome
+                        P.
+                        McDonough
+                        Library Systems Office University of
+                                California at Berkeley
+                            jmcdonou@library.berkeley.edu
+                        
+                    
+                
+                
+                    
+                        Merrilee
+                        Proffitt
+                        The Bancroft Library Unversity of
+                                California
+                            mproffit@library.berkeley.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The primary resources in the nation's research libraries, which constitute an
+                    invaluable foundation for research, are increasingly viewed as resources for
+                    teaching and learning for students in elementary school through college. The
+                    geographic distribution of such collections added to the fragility and
+                    uniqueness of many primary source materials have always presented barriers to
+                    access. Digital technologies offer opportunities to overcome these problems of
+                    geographic distribution and fragility of primary sources by making digital
+                    surrogates of the materials available on the Internet where they can be used by
+                    scholars, students, and the general public.
+                The Making Of America II Testbed Project See &lt;&gt; for details regarding
+                        the MoA II project. (MoA II) continues and extends research and
+                    demonstration projects that have begun to develop best practices for the
+                    encoding of intellectual, structural, and administrative data regarding primary
+                    resources housed in research libraries. It builds most directly on the
+                    development of the Encoded Archival Description (EAD) (EAD Working Group, 1998),
+                    now being maintained jointly by The Society of American Archivists and the
+                    Library of Congress. While the EAD provides a community standard for encoding
+                    finding aids, it does not provide any guidance for creating or encoding the
+                    digitized surrogates of the primary source materials which may be contained in
+                    collections. Therefore, the next step in the process of developing seamless
+                    access through EAD-encoded finding aids is the development of related community
+                    practices for creating and encoding the digitized versions of the primary
+                    sources.
+                The MoA II project proposes a Digital Library Service Model in which services are
+                    based on tools that work with the digital objects from distributed repositories.
+                    A digital object is defined as encapsulating content, metadata and methods. Our
+                    hope is that the MoA II project can serve as a first step towards the
+                    standardization of digital objects' content, metadata and methods. We believe
+                    that such standardization will vastly reduce the effort needed to develop tools
+                    and services that work with materials from different content providers.
+                The MoA II object model defines classes of digital archival objects (e.g.,
+                    diaries, journals, photographs, correspondence, etc.). As expected, each object
+                    in a given class has content (e.g., ASCII text, TIFF images, SGML documents)
+                    that is a digital representation of a particular item. In addition to content,
+                    any given class of archival object also encapsulates descriptive, structural and
+                    administrative metadata used to discover, display, navigate, manipulate and
+                    learn more about a particular object's management information. Finally, a class
+                    of archival object will encapsulate a variety of associated methods, where the
+                    methods are used by tools to retrieve, store or manipulate that object's
+                    content.
+                To support this model, the MoA II project has implemented has three major
+                    components: (1) a database system for capturing metadata regarding digital
+                    objects, and encoding that information in XML format; (2) a program which will
+                    take that XML metadata description for a given archival object and produce a set
+                    of Java class files that incorporate the metadata and methods necessary to
+                    manipulate the metadata and content of the object (Jones, 1997); and (3) a
+                    browser for selecting objects for display and navigating within those objects.
+                    In combination, this system allows archives to track their work flow in creating
+                    digitized versions of primary source material while simultaneously capturing
+                    associated descriptive, administrative, and structural metadata, encapsulate
+                    that information in object format for dissemination, and present those objects
+                    to users in a manner that facilitates the objects' navigation and use. Further
+                    information about each of these tools, including the DTD for the XML format and
+                    a demonstration version of the object browser, are available at the MoA II web
+                    site. Development of a test digital library using these tools is currently being
+                    undertaken by the MoA II project teams at Cornell University, New York Public
+                    Library, Pennsylvania State University, Stanford University, and the University
+                    of California at Berkeley.
+                The MoA II system architecture as currently implemented has demonstrated the
+                    feasibility of the object model for providing access to digital versions of
+                    archival material, as well as providing an initial suite of tools for creating,
+                    disseminating and using such digital objects. By establishing an XML DTD
+                    describing the necessary metadata elements for production of such digital
+                    objects, the MoA II project has attempted to help start the discussion of how
+                    such digital objects might be standardized. The project has also identified some
+                    potential areas for further research, including the best mechanisms for encoding
+                    the complex relationships between object content and descriptive, structural and
+                    administrative metadata, how we might standardize document display mechanisms
+                    for scholarly use, and whether we might be able to standardize application
+                    program interfaces (APIs) for interacting with digital archival objects. We hope
+                    that the development of the MoA II system will encourage other members of the
+                    archival community both to begin exploring the process of providing access to
+                    digital versions of their materials, and participate in efforts to help
+                    standardize the implementation of such materials in order to ease the
+                    development of tools and services for archive patrons.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                Encoded Archival Description Working Group, Society
+                                    of American Archivists
+                            
+                            Encoded Archival Description Document Type
+                                Definition
+                            (Version 1.0) [On-line]
+                            
+                                
+                                    Daniel
+                                    Pitti
+                                
+                            
+                            
+                                Chicago
+                                Society of American Archivists
+                                1998
+                            
+                        
+                        Available on the World Wide Web: &lt;&gt;
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Jones
+                                
+                            
+                            Java and Libraries: Digital and Otherwise
+                        
+                        
+                            D-Lib Magazine
+                            [On-line]
+                            
+                                Reston, VA
+                                Corporation for National Research Initiatives
+                                3
+                                
+                                
+                                March 1997
+                            
+                        
+                        Available on the World Wide Web: &lt;&gt;
+                    
+                
+            
+        
+    

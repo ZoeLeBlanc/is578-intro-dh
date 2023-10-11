@@ -1,0 +1,161 @@
+
+
+
+    
+        
+            
+                Encoding a Transcript of the Beowulf Manuscript in
+                    SGML
+                
+                    
+                        Elizabeth
+                        Solopova
+                        Department of English University of
+                                Kentucky
+                            esolop@pop.uky.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Electronic Beowulf Project is a joint project of the University of Kentucky
+                    and the British Library and has made available on CD-ROM high resolution images
+                    of the manuscript and its early transcripts, together with commentary, glossary,
+                    and searchable transcription and edition of the poem. The edition and the
+                    transcript have been encoded in SGML to enable the users to search for editorial
+                    decisions such as restorations and emendations in the edition, and for
+                    palaeographical features and various types of scribal activity in the
+                    transcript. Particular features which are now searchable as a result of encoding
+                    the transcript include: scribal abbreviations, additions, deletions and
+                    corrections, missing text and characters damaged or concealed by restoration
+                    attempts.
+                The Beowulf manuscript suffered damage from the fire of the Cottonian library in
+                    1731 which destroyed or damaged a significant proportion of the text, making
+                    textual restoration a near impossible task. Quite apart from the fire damage the
+                    manuscript presents various palaeographical and textual problems, and has been a
+                    subject of considerable scholarly controversy in recent years. Individual
+                    readings in the poem often depend on complex evidence from different sources
+                    including seventeenth and nineteenth-century transcripts of Beowulf, from
+                    back-lighting, ultraviolet photography and, more recently, digital image
+                    processing, as well as the study of spelling and scribal habits throughout the
+                    entire Nowell codex of which Beowulf is a part. The Electronic Beowulf Project
+                    has brought together a wide range of textual information about the poem, making
+                    it easily accessible for re-evaluation and further research. The textual
+                    material has been encoded with SGML which, whilst not strictly TEI-conformant,
+                    is indebted to the TEI for both the original inspiration and for individual
+                    encoding decisions. The markup records a wealth of minute palaeographical and
+                    textual detail in both the transcript and the edition of the poem. This paper
+                    will briefly discuss the development of the DTD before looking at a selection of
+                    the markup problems encountered in the encoding of the Beeowulf transcript.
+                    Finally, I is hoped to demonstrate the usefulness of the encoding for specific
+                    searches within the Electronic Beowulf CD-ROM.
+                The first group of encoding problems is represented by cases where the feature
+                    which needs to be encoded is actually smaller than the smallest segment of the
+                    electronic text - the character. Examples include: the erasure or deletion of a
+                    character's minim by underdotting (or indeed added by the scribe); damaged or
+                    partly-obscured letters, especially on the edges of a fire-damaged or
+                    partly-restored folio. Any editorial restoration of damaged or concealed
+                    characters needs to be accompanied by the evidence for a particular reading,
+                    often incomplete and based on a range of sources. The editor's comments
+                    referring to damaged letters range from 'only descender survives', to 'part of
+                    the letter survives', to 'only traces are preserved'. The TEI Guidelines offer a
+                    method for describing such instances within its primary documents tag set. The
+                    element &lt;DAMAGE&gt;, for example, has an attribute EXTENT which, according to
+                    the TEI Guidelines, can have values such as "half-letter", "minim" etc. However
+                    a similar attribute is not available for other elements such as &lt;DEL&gt; (for
+                    deletions). The Electronic Beowulf Project developed both descriptive notes and
+                    customized elements and attributes to accommodate these features.
+                Multiple scribal alterations carried out in a particular sequence offer another
+                    set of encoding problems. For example, the editorial note which accompanies the
+                    reading, 'aet' in the transcript reads, 'Originally "seah", but "e" underdotted,
+                    "eah" crossed out, and "aet" written over it in the same hand'. All types of
+                    scribal activity mentioned in this context, such as the additions and various
+                    types of deletions, are commonly encountered in the manuscript separately and
+                    encoded with a corresponding set of elements and attributes. However,
+                    multi-scribal activity not only defy conventions which work well for the large
+                    majority of simpler cases, but present particular difficulties in the need to
+                    record the order in which the alterations took place.
+                A third group of difficult cases concern the presence of ambiguity in the
+                    material itself where the encoding had to reflect the unavailability of a
+                    straightforward interpretation. An example of this is described in the following
+                    editorial note: 'After "dream", traces of erased or faded letters, sometimes
+                    restored as "ic", appear to be bottoms of "h" and "e" under ultraviolet light'.
+                    The uncertainty expressed in the editorial note presents an encoding problem,
+                    even though elements for both faded and erased text were broadly used in the
+                    encoding of the Beowulf transcript. A similar difficulty occurs when a
+                    particular feature falls under two or more categories distinguished within the
+                    markup system. Thus a common method of deletion in Anglo-Saxon manuscripts is
+                    underdotting a letter or a word. On the other hand a point beneath the line is
+                    commonly used by one of the Beowulf scribes to indicate the place where
+                    additions written above the line were intended to belong. There are cases
+                    however, where it is impossible to say whether a point beneath the line is an
+                    insertion or a deletion mark for in fact it stands for both.
+                Finally the paper will discuss the use of cross-referencing and the recording of
+                    additional information in the markup to represent the complex evidence for
+                    individual readings in Beowulf. Thus, the encoding may record that a particular
+                    word is missing from the manuscript whilst also recording that its presence in
+                    the edition is a result of an editorial restoration based on the
+                    seventeenth-century Thorkelin transcripts. The markup, therefore, also serves to
+                    indicate something of the status of the reading in the transcripts in order to
+                    supply the reader with as much information as possible. This is particularly
+                    important given that some readings in the Thorkelin transcripts appear to be a
+                    later additions and so already lost from the manuscript when the transcripts
+                    were made, casting doubt on usually reliable source of evidence. The paper will
+                    discuss the integration of this essential but descriptive material into the
+                    textual markup and the subsequent display of the search results on the
+                    CD-ROM.
+            
+        
+    

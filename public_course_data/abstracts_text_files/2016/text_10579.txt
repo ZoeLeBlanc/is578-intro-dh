@@ -1,0 +1,155 @@
+
+      
+         
+            Einleitung
+            Geisteswissenschaftliche Projekte – von der studentischen Studienarbeit bis hin
+          zu groß angelegten Forschungsverbünden – sind heute mit der Anforderung
+          konfrontiert, ihre Arbeitsergebnisse nicht nur in einer einzigen
+          Publikationsform (z. B. in gedruckter Form) zu veröffentlichen, sondern vielmehr
+          auch in diversen elektronischen Formaten (z. B. für Ebook-Reader und / oder als
+          dynamische Webseiten). Dabei kann das Verhältnis der verschiedenen
+          Publikationsformen zueinander ganz verschieden sein: Während die Ebook- oder
+          PDF-Varianten oftmals elektronische Abbilder der Druckfassung mit überschaubarem
+          eigenen Mehrwert (z. B. Volltextsuche, Bookmarks usw.) sind, können dynamische
+          Publikationsformen sehr weit über die Druckfassungen hinausgehen, indem sie mehr
+          Inhalte (z. B. die Grunddaten oder alternative Lesefassungen) und zusätzliche
+          Funktionen anbieten. Bei wissenschaftlichen Publikationen darf erwartet werden,
+          dass die verschiedenen Fassungen zitierfähig und aufeinander bezogen sind.
+            Der Siegeszug von XML / TEI als Auszeichnungsformat auch in den
+            geisteswissenschaftlichen Fächern hat die Grundlage für das
+            "Single-Source"-Prinzip bereitet, indem es durch inhaltsbezogenes, nicht
+            layout-spezifisches Markup die Voraussetzung dafür schafft, aus einer einzigen
+            Datenquelle mithilfe geeigneter Werkzeuge mehrere Ziel-Publikationsformen zu
+            bedienen. Neben den bekannten XML-Standard-Techniken wie XSLT, XQuery und XSL:FO
+            stehen Werkzeuge für die Verarbeitung von XML-Daten nach dem
+            Single-Source-Prinzip zur Verfügung, die speziell geisteswissenschaftliche
+            Arbeitsweisen und Anforderungen unterstützen, darunter das Tübinger System von
+            Textverarbeitungsprogrammen (TUSTEP). 
+            Der Workshop Crossmediales Publizieren mit TUSTEP wird
+            anhand eines überschaubaren, konkreten Beispiels einer Briefedition zeigen, wie
+            XML-Daten in TUSTEP für die Print-, die Ebook- und die dynamische
+            HTML-Publikation verarbeitet werden können. Er richtet sich an Teilnehmerinnen
+            und Teilnehmer, die sich über die allgemeinen Methoden des Single-Souce-Prinzips
+            informieren und erfahren wollen, wie sie in TUSTEP umgesetzt werden.
+            Vorausgesetzt werden grundlegende Kenntnisse im Umgang mit XML-Daten. Im
+            Workshop werden sich präsentierende Abschnitte, in denen die Möglichkeiten von
+            TUSTEP in diesem Bereich vorgestellt werden, mit Anteilen abwechseln, in denen
+            die Teilnehmerinnen und Teilnehmer die Bearbeitung von XML-Daten mit TUSTEP
+            selbst erproben können. 
+         
+         
+            Das Tübinger System von Textverarbeitungs-programmen
+            Das Tübinger System von Textverarbeitungsprogrammen ist eines der ältesten, seit
+              über 40 Jahren bis heute beständig weiterentwickelten und in zahlreichen
+              geisteswissenschaftlichen Projekten (für eine Auswahl siehe itug). Es bietet ein
+              umfangreiches Paket von speziell auf philologisch-sprachwissenschaftliche
+              Anforderungen zugeschnittenen, aufeinander abgestimmten Werkzeugen, die in hohem
+              Maß an projektspezifische Erfordernisse angepasst werden können. Die Bandbreite
+              der Programmmodule reicht dabei vom Vergleichen und Kollationieren, dem
+              Segmentieren, Annotieren und Indexieren von Texten in XML oder anderen Formaten
+              über das Skripting bis hin zum professionellen Satz und kann – beispielsweise
+              für dynamische Webpublikationen – auch direkt auf Servern eingesetzt werden.
+              Seit Kurzem verfügt TUSTEP über eine XML-basierte, alternative Kommandosyntax
+              namens TXSTEP, die eine Steuerung des
+              Programms von außerhalb, z. B. aus der XML-Entwicklungsumgebung Oxygen
+              erlaubt.
+            Die International TUSTEP User Group e.V. (ITUG)
+              unterstützt TUSTEP-Anwender und -Lerner seit über 20 Jahren durch Kurse, jährlich stattfindende Fach-Kolloquien (
+              und das TUSTEP-Wiki.
+              Außerdem fördert sie die Weiterentwicklung von TUSTEP, seit es seit 2011 als Open Source Software frei und kostenlos verfügbar ist.
+            
+         
+         
+            Workshop-Inhalte
+            
+               Überblick über TUSTEP
+               Zu Beginn des Workshops wird ein kurzer orientierender Überblick über die Programmbausteine und die Arbeitsweise von TUSTEP gegeben, wobei insbesondere die einschlägigen Hilfsmittel vorgestellt werden.
+            
+            
+               XML-Daten im TUSTEP-Editor
+               Die Teilnehmerinnen und Teilnehmer unternehmen anhand des Beispieltexts ihre
+                ersten Schritte in TUSTEP, indem sie sich den Editor für die Bearbeitung von
+                XML-Daten einrichten. Sie erfahren, wie sie Kommandos und einfache
+                Pattern-Matching-Anweisungen ausführen.
+            
+            
+               TEI-Beispieltexte setzen (PS- / PDF-Herstellung)
+               Die in TEI ausgezeichneten Beispieltexte werden mithilfe des schnell zu
+                  erschließenden und einfach zu benutzenden, dabei dennoch auf eine hohe
+                  Qualität abzielenden TUSTEP-Moduls *SATZ
+                  für die Druckstufe (PS / PDF) vorbereitet. Nach einer Vorstellung
+                  der Funktionsweise und der Einstellungsmöglichkeiten können die
+                  Workshopteilnehmenden die PDF-Ausgabe nach eigenem Belieben variieren. 
+            
+            
+               Von TEI nach EPUB: TUSTEP im Rahmen von Toolchains
+               Für die Herstellung eines Ebooks im EPUB-Format wird aus den TEI-Daten
+                    zunächst mit der TUSTEP-eigenen Skriptsprache TUSCRIPT eine HTML-Datei
+                    erzeugt, die anschließend mit dem Open source-Konvertierer Calibre nach EPUB
+                    transformiert wird. Neben der Erläuterung und gemeinsamen Anwendung der
+                    verschiedenen Komponenten soll in diesem Bereich deutlich werden, auf welche
+                    Weise  TUSTEP und externe Tools gemeinsam verwendet und automatisiert
+                    genutzt werden können.
+            
+            
+               Einsatz von TUSTEP als Publikationsserver
+               Abschließend werden die zuvor vorgestellten Verarbeitungsmöglichkeiten für
+                      XML-Daten auf einem Webserver eingesetzt und gemeinsam mit den Teilnehmenden
+                      getestet. Diese Zusammenführung soll insbesondere die Stärken von TUSTEP im
+                      Rahmen dynamischer Online-Projekte (z. B. Editionen mit fortlaufend
+                      aktualisierten Daten) aufzeigen.
+            
+         
+         
+            Organisatorisches
+            
+               Technische Ausstattung
+               Alle Teilnehmenden sollten ein eigenes Notebook (Linux, MAC OS X, Windows) mitbringen. Die nötige Software (TUSTEP und weitere benötigte Komponenten) werden von den Veranstaltern auf USB-Sticks mitgebracht. Hierzu wird vorab eine Informationsmail an die angemeldeten Workshopbesucher versendet. – Für den Workshop werden ein Beamer und WLAN-Zugang für alle Teilnehmenden benötigt.
+            
+            
+               Zahl der möglichen Teilnehmenden
+               Die Zahl der Teilnehmenden sollte auf max. 20 Personen begrenzt sein, um eine angemessene, interaktive Durchführung gewährleisten zu können.
+            
+            
+               Zeitplanung
+               Der Workshop ist auf zweimal 90 Minuten Dauer zuzüglich einer etwa 30-minütige Pause konzipiert.
+            
+         
+         
+            Kontaktdaten
+            Ute Recker-Hamm, M.A.
+                      Akademie der Wissenschaften und der Literatur Mainz
+                      Arbeitsstelle »Mittelhochdeutsches Wörterbuch« an der Universität Trier
+                      54286 Trier
+                      
+               
+                        recker@uni-trier.de
+                      
+               
+               
+                        www.uni-trier.de/index.php?id=19336
+                      
+               Forschungsinteressen: Datenverarbeitung für philologische und lexikographische Zwecke, Digitale Editionen, Native XML-Datenbanken
+                      Zweite Vorsitzende der International TUSTEP User Group
+                    
+            Matthias Schneider, M.A.
+                      Universität Trier
+                      Kompetenzzentrum für elektronische Erschließungs- und Publikationsverfahren in den Geisteswissenschaften
+                      54286 Trier
+                      
+               
+                        schneiderm@uni-trier.de
+                      
+               
+               
+                        http://kompetenzzentrum.uni-trier.de/
+                       /
+                      
+                        www.m-schneider.eu
+                      
+               Forschungsinteressen: Digitale Geisteswissenschaften, strukturelle Textdatenverarbeitung sowie politische, militärische und Historiographiegeschichte der Neueren und Neuesten Zeit
+                    
+         
+      
+   
+

@@ -1,0 +1,194 @@
+
+
+
+    
+        
+            
+                The Electronic Lyrical
+                    Ballads: A Progress Report
+                
+                    
+                        Bruce
+                        Graver
+                        Department of English Providence
+                                College
+                            beg@providence.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    At the 1995 ACH/ALLC conference in Santa Barbara, I announced a new
+                        electronic editing project: an electronic Wordsworth edition, co-edited by
+                        Ronald Tetreault and myself. Within a month of the announcement, we were
+                        contacted by Cambridge University Press; within another year, we had
+                        contracted with them to produce an electronic edition of Lyrical Ballads, which we then saw as a pilot project for a
+                        full edition of Wordsworth's poetical works. In this paper I will discuss
+                        the ways in which we have redefined our project; I will then describe some
+                        of the problems we have had in assembling it, focusing especially on the
+                        difficulties we have had encoding authorial manuscripts in such a way that
+                        they can be conveniently and accurately represented in existing
+                        software.
+                
+                
+                    I. From Hypertext to Archive
+                    We originally conceived of our edition as a kind of hypertext, modeled after
+                        descriptions of similar projects undertaken by Jerome McGann, Stuart Curran,
+                        and others. Our aim was to bring together in electronic form not only the
+                        texts of the Lyrical Ballads themselves, but all of
+                        the relevant manuscripts, much of the source material, all of the
+                        contemporary reviews, all authorial comments, and whatever else seemed
+                        pertinent to this collection of poems. These materials would be organized
+                        with a variety of hypertext links which would, we thought, easily enable the
+                        reader to switch from one version of the poem to another, from poem to
+                        source, from poem to review, and so forth. But it quickly became evident
+                        that such an edition would not be feasible. There were the usual problems
+                        with permissions, of course, but the main problem was one of audience and
+                        design. Would it make sense, in the early days of the electronic edition, to
+                        try to assemble such a massive amount of materials? Would scholars, many of
+                        whom are unfamiliar with the electronic environment, be able to negotiate an
+                        edition so complex? And, finally, would we ever finish such an edition, so
+                        that Cambridge could establish a market for electronic products and continue
+                        to support other endeavors like ours? As we worked, our skepticism grew.
+                    As it happened, the bibliographical complexity of the Lyrical Ballads came to our rescue. Several different versions
+                        of the collection survive. It went through four editions in seven years,
+                        each of which is substantially different from the others; there were two
+                        distinct printings of the first edition, and first printing of the first
+                        edition survives in three distinct versions; the second edition also
+                        contains significant printed variants from one copy to the next, in part
+                        because of printer's errors and in part because the authors revised their
+                        poems while the volumes were in press. And there are also unauthorized
+                        printings of the collection, including an American edition and an odd set of
+                        London editions made from the discarded sheets of the original printings.
+                        Scholars, of course, have known about these differences for some time, but
+                        few have ever seen the wide variety of printed variants because the volumes
+                        which contain them are very rare and are scattered in libraries and private
+                        collections from New Zealand to Grasmere to Colorado. So we decided to
+                        attempt to bring together in one place all of these variant printings,
+                        supplying full texts of specific copies of Lyrical
+                            Ballads, supplemented by photographs of the printed pages in all
+                        of their various states. At the same time, we decided to eliminate many of
+                        the supporting documents that we had originally intended to include,
+                        believing that they would distract and perhaps even confuse readers. In
+                        short, we stopped thinking of our work as a hypertext, and began thinking of
+                        it as an archive, a virtual library containing digital representations of
+                        printed volumes that few had ever seen. This project seemed doable and
+                        useful, and would have the added benefit of not burying the Lyrical Ballads under the sheer weight of its associated
+                        texts.
+                
+                
+                    II. Representing Revision
+                    Because we decided to focus our edition on the printed versions of Lyrical Ballads, we minimized the need for reproducing
+                        poetical manuscripts. We thereby avoided the need to get permissions to
+                        reproduce copyrighted material, and we also avoided the difficulties
+                        inherent in encoding and representing in software extremely messy draft
+                        work. But we could not avoid manuscripts altogether. Our edition seeks to
+                        preserve the history of the printed artifact, Lyrical
+                            Ballads. Part of that history is contained in the printer's
+                        manuscripts, the most substantial of which survive in the Beinecke Library
+                        at Yale. These printer's manuscripts have been given added importance by the
+                        most recent editors of the collection, James Butler and Karen Green, whose
+                        edition appeared in 1992 in the Cornell Wordsworth series. Butler and Green
+                        chose the printer's manuscripts of Lyrical Ballads
+                        (1800) as their copy text; for us to ignore the printer's manuscripts would
+                        be to ignore the texts of the poems that most scholars are now reading. So I
+                        set to work transcribing and encoding both of the Yale sets of printer's
+                        manuscripts: those for 1800 and 1802. The main problem I had to confront was
+                        how to encode the manuscripts in such a way that their subtleties could be
+                        represented adequately on a computer screen. There was only one model: Peter
+                        Robinson's Wife of Bath's Prologue, which I studied
+                        very closely. But the differences between a 15th century manuscript, drawn
+                        up by a professional scribe long after the author's death, and a printer's
+                        manuscript, drawn up by the authors themselves, are enormous, and it soon
+                        became clear that Robinson's model would be of little use. Where Robinson
+                        had just a handful of revisions to deal with (few of them with any
+                        authority), I had thousands, all in the autograph of either the author or
+                        his copyist, and I had to find a variety of ways to encode these revisions,
+                        in order to distinguish them from each other. For example, Wordsworth's 1802
+                        printer's manuscripts were prepared from proof sheets of the 1800 edition,
+                        and thus the "manuscript" looks more or less like a printed book which has
+                        been marked up by its owner. But there is little consistency in the ways
+                        revisions were entered (the sort of consistency that computers, which depend
+                        on global commands, clearly understand). Sometimes revisions were written in
+                        the margins, sometimes at the foot of the page, sometimes in between lines,
+                        and sometimes as overwrites; where the revisions became too extensive to fit
+                        on the page, Wordsworth inserted loose sheets of writing paper and entered
+                        them there. For the 1800 printer's manuscripts, the complexities are even
+                        greater. These manuscripts are a series of letters, prepared in the Lake
+                        District by Wordsworth and Coleridge and sent to their printer in Bristol,
+                        hundreds of miles away. The letters were sent over a period of several
+                        months; the first ones were sent before the authors had determined the final
+                        order of the poems, and before several of the poems were even written. The
+                        manuscripts were revised as they were prepared, and later letters often
+                        include revisions to poems sent weeks earlier. There are also several
+                        different autographs in the manuscripts: the base text was prepared by
+                        Coleridge or Dorothy Wordsworth, usually, and then revised either by William
+                        Wordsworth or Coleridge. Definitive punctuation was added in Bristol by the
+                        brilliant young chemist, Humphry Davy, and there are also marginal notations
+                        made at the printers, including one that caused the omission of 15 lines of
+                        one of the poems. Now all of this is clearly part of the publication
+                        process, and it helps to explain the state of the published volumes. And it
+                        can be encoded, fairly accurately although not without great pains, with the
+                        TEI DTD. But can it be represented clearly in a browser? Can textual
+                        scholars, used to the way manuscripts are transcribed in printed volumes,
+                        see something vaguely like what they are used to seeing? This is a problem
+                        that we yet to solve, and I would like to describe some of the difficulties
+                        at the conference, in hopes that someone there will be able to offer
+                        suggestions.
+                
+            
+        
+    

@@ -1,0 +1,101 @@
+
+        
+            Database structures and export formats of Handwritten Text Recognition tools (e.g. Transkribus, Tesseract, eScriptorium) are usually based on a document layout hierarchy with regions/zones and lines. Interlinear or marginal additions to the main text are in separate zones and lines (Page XML, Alto XML) (Kahle et al. 2017, Stokes et al. 2021).
+            While this is less problematic for documentary texts (Chagué et al. 2021), it poses a problem for those working on critical editions of literary texts with multiple textual witnesses because any such edition presupposes a running text hierarchy (books, chapters, verses), where the interlinear and marginal additions need to be inserted at the right spots. This is a precondition to using text-alignment tools such as CollatEx (Dekkers et al. 2011).
+            We present a pipeline that permits to overcome this problem for Medieval Hebrew manuscripts in a semi-automatized fashion beginning with the discovery of insertion marks in the HTR process and leading to a critical edition in TEI: 
+            
+                We include a series of different insertion marks in the recognition training data for the HTR. Different insertion marks distinguish between interlinear and marginal additions (Stökl Ben Ezra et al. 2021). 
+                Optimal matches of insertion marks with a) interlinear lines and b) marginal additions are calculated with the “Hungarian Algorithm” (Kuhn 1955). The results can be visualized via eScriptorium’s API for image annotation (see fig. 1).
+                A. If there is already an e-text of a printed edition with an accepted text hierarchy, we use the Dicta synopsis-algorithm via an API (Brill et al. 2020) or alternatively a combination of global and local alignments of the Smith-Waterman (1981) and Needleman Wunsch (1970) algorithms to align the main text of the HTRed manuscript with the standard edition to calculate the places for the textual hierarchy markers. This needs to be manually verified subsequentially, especially if some of the markers for the text hierarchy should be in the interlinear or marginal additions.
+                    B. If there is no printed edition, the text hierarchy markers need to be inserted manually. This is usually necessary only for one manuscript (if there is a manuscript that represents the complete text).
+                
+                Based on the combination of 2 and 3, the first manuscript transcription in the HTR tool can now be converted from document hierarchy to text hierarchy TEI. If there was no printed edition (3B), the text hierarchy markers of this manuscript can be used in step 3A to automatically insert them. 
+                The resulting data is submitted via json to an optimized Needleman-Wunsch algorithm, Collatex or another alignment tool (Brill et al. 2020) to automatically produce an alignment between the different witnesses. For error correction, Microsoft Excel can be used or the tool in step 7. 
+                Text comparison in the alignment can serve to resolve most of the abbreviations.
+                The final result is fed into TEI-Publisher (Turska and Meier 2021). We hope to be able to integrate a tabular tool that allows to manually but ergonomically correct any misalignments of the automatic alignment process to produce the critical edition: 
+                    https://editions.erabbinica.org/
+                
+                The TEI-Publisher publication includes accessibility via DTS (Distributed Text Service).
+            
+            Fig. 1: eScriptorium with 3 panels turned on: On the left, the image annotation panel with the triangles representing the links between marginal (blue) or interlinear (red) insertion spots and the first and last word of the insertion, the segmentation panel. In the center, the image annotation panel with the main text and the marginal and interlinear text lines. On the right, the manually corrected automatic transcription.
+            
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Almas, B., Clérice, T., Cayless, H., Jolivet, V., Liuzzo, P., Romanello, M., Robie, J., and Scott, I. (2021). Distributed Text Services (DTS): a Community-built API to Publish and Consume Text Collections as Linked Data (
+                        https://hal.archives-ouvertes.fr/hal-03183886) 
+                    
+                    
+                        Brill, O., Koppel, M., and Shmidman, A. (2020). FAST: Fast and Accurate Synoptic Texts. 
+                        Digital Scholarship Humanities 35(2): 254-264.
+                    
+                    
+                        Chagué, A. and Scheithauer, H.
+                         (2021). page2tei - LECTAUREP [Computer software]: 
+                        https://github.com/lectaurep/page2tei
+                    
+                    
+                        Dekker, R. H. and Middell, G. (2011). Computer-Supported Collation with CollateX: Managing Textual Variance in an Environment with Varying Requirements. 
+                        Supporting Digital Humanities University of Copenhagen, Denmark. 17-18 November 2011.
+                    
+                    
+                        
+                            Kahle, P., Colutto, S., Hackl, G., 
+                            and 
+                        
+                        
+                            Mühlberger
+                        
+                        
+                            ,
+                             G. (2017). 
+                        
+                        Transkribus - A Service Platform for Transcription, Recognition and Retrieval of Historical Documents,”
+                         OST@ICDAR 2017: 19-24
+                    
+                    
+                        
+                            Kuhn, H. (1955). "The Hungarian Method for the assignment problem," 
+                            Naval Research Logistics Quarterly, 2: 83–97. 
+                        
+                    
+                    
+                        
+                            Needleman, 
+                            S. and 
+                            Wunsch, C. (1970). "A general method applicable to the search for similarities in the amino acid sequence of two proteins," Journal of Molecular Biology 48 (3): 443–53.
+                        
+                    
+                    
+                        
+                            Smith, T
+                            . and
+                             Waterman, M. (1981). "Identification of Common Molecular Subsequences." Journal of Molecular Biology 147 (1): 195–197.
+                        
+                    
+                    
+                        Stokes, P., Stökl Ben Ezra, D., Kiessling, B., Tissot, R. and Gargem, E. (2021). “
+                        The eScriptorium VRE for Manuscript Cultures” in Claire 
+                        Clivaz and Garrick V. Allen (eds), 
+                        Ancient Manuscripts and Virtual Research Environments, special issue, 
+                        Classics@ 18 n.p. 
+                    
+                    
+                        Stökl Ben Ezra, D., Brown-DeVost, B., and Jablonski, P. (2021). “Exploiting Insertion Symbols for Marginal Additions in the Recognition Process to Establish Reading Order” 
+                        IWCP@ICDAR 2021.
+                    
+                    
+                        Turska, M., Meier, W. (2021). 
+                        TEI Publisher
+                        http://teipublisher.com. (version 7, 2021)
+                    
+                
+            
+        
+    
+

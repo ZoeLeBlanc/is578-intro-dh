@@ -1,0 +1,403 @@
+
+
+
+    
+        
+            
+                New Directions in Statistical Stylistics and Authorship
+                    Attribution
+                
+                    
+                        David
+                        Hoover
+                        
+                            New York University
+                            david.hoover@nyu.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This presentation will describe an investigation that compares the relative
+                    effectiveness and accuracy of multivariate analysis (cluster analysis) of the
+                    frequencies of very frequent words and the frequencies of very frequent word
+                    sequences in correctly attributing texts to authors. Cluster analyses based on
+                    the most frequent words are fairly accurate for corpora of texts by known
+                    authors, whether the texts are 30,000- or 10,000-word sections of modern British
+                    and American novels, or 4,000-word sections of contemporary literary critical
+                    texts. They are, however, only rarely completely accurate; furthermore, when
+                    small groups of problematic texts taken from the corpora are used in simulated
+                    authorship studies, analyses based on frequent words rather consistently fail to
+                    cluster them correctly. But when frequent word sequences are used rather than
+                    frequent words or in addition to them, the analyses often improve in accuracy,
+                    sometimes quite significantly, suggesting that analyses based on frequent word
+                    sequences constitute improved tools for authorship attribution and statistical
+                    stylistic studies.
+                One of the most popular places to search for a "wordprint" that can characterize
+                    the style of an author has been among the frequencies of the most frequent words
+                    of the language. In his seminal work on Jane Austen (1987), John F. Burrows
+                    demonstrated fairly convincingly that the frequencies of extremely frequent
+                    words like the, and, of, a, and to, can often be used to distinguish different
+                    authors, novels, and even different characters within a single novel. In spite
+                    of their intuitively insignificant nature, such words can even have interesting
+                    and potentially significant stylistic effects. This seems surprising when we
+                    remember that the five words above normally constitute roughly 20% of the word
+                    tokens in a novel. Yet their high frequency and the extreme unlikelihood that
+                    authors can or even wish to consciously control them suggests habitual or
+                    routinized use that may reflect an author's style across all his or her texts,
+                    in spite of differing subjects, themes, and points of view. Because of this, and
+                    because their frequencies often vary significantly among different authors,
+                    texts, and characters, in spite of their uniformly high frequencies (see
+                    Burrows, 1987: 3-4), frequent words have been popular targets for various kinds
+                    of multivariate analysis (see also, Burrows and Hassall, 1988, and Burrows,
+                    1992).
+                Much recent work with multivariate analysis of the frequencies of frequent words
+                    has produced interesting and significant results, especially in the field of
+                    authorship attribution (see Holmes, 1992, Holmes and Forsyth, 1995; Tweedie,
+                    Holmes, and Corns, 1998). As I have shown in a recent study (Hoover, 2001),
+                    however, cluster analysis of the frequencies of the most frequent words is very
+                    often not completely accurate in attributing texts to their authors when
+                    performed on a corpus of texts by known authors.
+                As interesting as authorship attribution is, multivariate analysis is, I would
+                    argue, of potentially more interest in statistical stylistics and corpus
+                    stylistics. If techniques can be found that can accurately distinguish authors
+                    from each other, those techniques should be able to tell us something
+                    significant about the styles of those authors. To further the search for more
+                    accurate analytic methods, I have been evaluating cluster analyses based on
+                    frequent word sequences (defined simply as groups of contiguous words) rather
+                    than or combined with frequent words. (The idea for this project came out of a
+                    discussion with Gary Shawver of the Humanities Computing group at New York
+                    University about the possibility of looking at frequent collocations.) One
+                    reason that sequences are attractive is that the order of words within them
+                    provides information that cannot be retrieved from the frequencies of the
+                    constitutive elements alone.
+                My investigation has shown that analyses involving frequent word sequences are
+                    often superior to analyses of the frequencies of frequent words in attributing
+                    known texts to known author. Some analyses using frequent sequences produce
+                    results that are completely accurate where frequent words alone fail, and some
+                    analyses using combinations of frequent sequences and frequent words are more
+                    effective than either by themselves, again sometimes producing completely
+                    accurate attributions in relatively intractable cases.
+                I begin with an initial corpus of twenty-nine 30,000-word sections of Modern
+                    British and American novels by fourteen authors. I go on to analyze a subset of
+                    this corpus, consisting of twenty of novels by eight authors, limit the analysis
+                    still further to a corpus consisting of the sixteen third-person novels
+                    extracted from among the twenty novels, and then to the pure narrative of the
+                    same sixteen novels. I turn next to a very different kind of corpus, analyzing
+                    twenty-five contemporary articles of literary criticism, to test whether
+                    frequent collocations produce improved results for other genres. Finally,
+                    extracting the texts of two problematic authors from the sixteen pure narratives
+                    and two more from among the literary criticism analysis, I test the
+                    effectiveness of the analysis of frequent sequences under circumstances that
+                    more closely resemble traditional authorship problems.
+                Although analyses based on frequent sequences or combinations of frequent
+                    sequences and frequent words are not universally more effective than those based
+                    on frequent words alone, and still fail to achieve completely correct results in
+                    some cases, they do seem promising as an additional tool in authorship
+                    attribution, and, potentially, in stylistic studies as well. Figures 1 and 2
+                    show the improvement in two analyses when frequent sequences are used instead
+                    of, or in combination with, frequent words. Figure 3 shows that, in some cases,
+                    frequent sequences give correct results, even when frequent words uniformly
+                    fail.
+                
+                
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    J.
+                                    F.
+                                    Burrows
+                                
+                            
+                            Computation into Criticism
+                            
+                                Oxford
+                                Clarendon Press
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    F.
+                                    Burrows
+                                
+                            
+                            Computers and the Study of Literature
+                        
+                        
+                            
+                                
+                                    Christopher
+                                    S.
+                                    Butler
+                                
+                            
+                            Computers and Written Texts
+                            
+                                Oxford
+                                Blackwell
+                                1992
+                                167-204
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    F.
+                                    Burrows
+                                
+                            
+                            
+                                
+                                    A.
+                                    J.
+                                    Hassall
+                                
+                            
+                            Anna Boleyn and the Authenticity of Fielding's Feminine
+                                Narratives
+                        
+                        
+                            Eighteenth Century Studies
+                            
+                                21
+                                4
+                                427-453
+                                1988
+                             
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christopher
+                                    S.
+                                    Butler
+                                
+                            
+                            Computers and Written Texts
+                            
+                                Oxford
+                                Blackwell
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    I.
+                                    Holmes
+                                
+                            
+                            A Stylometric Analysis of Mormon Scripture and Related
+                                Texts
+                        
+                        
+                            Journal of the Royal Statistical Society (A)
+                            
+                                155
+                                1
+                                91-120
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    I.
+                                    Holmes
+                                
+                            
+                            
+                                
+                                    R.
+                                    S.
+                                    Forsyth
+                                
+                            
+                            The Federalist Revisited: New Directions in Authorship
+                                Attribution
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                10
+                                2
+                                111-127
+                                `995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    L.
+                                    Hoover
+                                
+                            
+                            Making Use of Statistical Measures of Style
+                        
+                        
+                            MLA Convention, San Francisco, December 28, 1998
+                            
+                                
+                                
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    L.
+                                    Hoover
+                                
+                            
+                            Language and Style in The Inheritors
+                            
+                                Lanham, MD
+                                University Press of America
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    L.
+                                    Hoover
+                                
+                            
+                            Statistical Stylistics and Authorship Attribution: an
+                                Empirical Investigation
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                16
+                                4
+                                421-44
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    F.
+                                    J.
+                                    Tweedie
+                                
+                            
+                            
+                                
+                                    D.
+                                    I.
+                                    Holmes
+                                
+                            
+                            
+                                
+                                    Thomas
+                                    N.
+                                    Corns
+                                
+                            
+                            The Provenance of De Doctrina Christiana, Attributed to
+                                John Milton: A Statistical Investigation
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                13
+                                2
+                                77-87
+                                1998
+                            
+                        
+                    
+                
+            
+        
+    

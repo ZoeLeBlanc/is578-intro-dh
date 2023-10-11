@@ -1,0 +1,438 @@
+
+
+
+    
+        
+            
+                Building and processing a multilingual corpus of
+                    parallel texts
+                
+                    
+                        Peter
+                        Stahl
+                        
+                            Universität Würzburg
+                            stahl@germanistik.uni-wuerzburg.de
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Preparation
+                    The need for parallel texts has been discussed in numerous articles in recent
+                        years. This paper focuses on how to set up a corpus of parallel texts, how
+                        to do research on such texts and how to export parallel texts to different
+                        file types.
+                    Parallel texts should be tagged in order to mark structural characteristics
+                        and other additional information. 
+                
+                
+                    Setting up parallel texts
+                    The example below is taken from a joint research project between the German
+                        departments of the Universities of Würzburg (Germany) and Jyväskylä
+                        (Finland). The aim of the project was to describe and analyse problems of
+                        contrastive word formation and to explore possibilities of text analysis.
+                        For that purpose a corpus was set up consisting of complete and contemporary
+                        Finnish and German literary and documentary texts and their translations
+                        into the other language. The sheer number of 800,000 word forms makes it
+                        obvious that commercial word processing programs cannot handle such a large
+                        amount of text data. Therefore, we chose as a software tool the 'Tuebingen
+                        System of Text Processing Programs' (Tustep).
+                    One decisive factor in building a parallel corpus of two or more texts is -
+                        if you do not work with semantic features - that there must be the same
+                        number of structural tags in all basic files that relate to each other. For
+                        our purposes it was sufficient to restrict the alignment to paragraphs only.
+                        The following example demonstrates how a German text and its Finnish
+                        translation are aligned so that both can either be read on the PC-screen.
+                        The extract consists of three short paragraphs which are taken from the
+                        novel Der Tangospieler by Christoph Hein (1989):
+                        
+                            
+                                5.7  |&lt;p&gt;"Was ist mit Ihrer Hand?" fragte der Beamte, der vor
+                                5.8  |ihm saß und ihm zusah.
+                                5.23 |&lt;p rend=missing&gt;Dann betrachtete er sein Werk, es
+                                6.1  |sah aus wie die Unterschrift eines Achtjährigen. Er
+                                6.2  |nickte zufrieden.
+                                6.29 |&lt;p&gt;Am Bahnhof ging er zum Schalter und verlangte eine
+                                6.30 |Fahrkarte nach Leipzig.
+                            
+                        
+                    The Finnish version (Sästäjä) reads:
+                            
+                                5.7  |&lt;p&gt;"Mikä kättä vaivaa?" kysyi virkailija, joka istui
+                                     |vastapäätä
+                                5.8  |häntä katsellen.
+                                5.25 |&lt;p&gt;Sitten hän tiiraili aikaansaannostaan. Se näytti
+                                5.26 |kahdeksanvuotiaan nimikirjoitukselta. Hän nyökkäsi
+                                     |tyytyväisenä.
+                                6.24 |&lt;p&gt;Asemalla hän meni luukulle ja pyysi lipun Leipzigiin.
+                            
+                        
+                    Both texts show their original structure as they were published. In order to
+                        do research easily on both texts at the same time it is necessary to combine
+                        them into one single file and to align all related units. The files are
+                        reformatted; the marked units are given a running number and merged into
+                        one. The newly created file can be edited by using the Tustep text
+                        editor:
+                
+                
+                    Searching in parallel texts
+                    The Tustep text editor provides all basic functions common to other word
+                        processing programs. In addition to that it can handle complex instructions
+                        for pattern matching. You can search for
+                            several specific strings such as character strings or words or
+                                parts of words, at the same time excluding other character strings
+                                which you do not want to see (an instruction such as
+                                so,,,-pf-kl-st-fr--ist- shows only ( so) the clusters 'pf', 'kl',
+                                'st', 'fr' with the exception of 'ist');
+                            abstract strings such as capital or small letters, any standard or
+                                extended ASCII character, digits, identical characters, elements
+                                which depend upon characters on their left or right border;
+                                exclusions can also be made (the instruction
+                                so,,,/&gt;*&gt;*&gt;=02&gt;=01/ shows any
+                                combinations of two small letters (&gt;*), followed by the
+                                second one (&gt;=02) and then the first one again. Thus,
+                                patterns like 'assa', 'elle', and 'niin' are displayed);
+                            any character in combination with a frequency declaration
+                                (&gt;&lt;3 meaning 'minimum of 3', &gt;&lt;0 'may be
+                                missing', &lt;&gt;9 'maximum of 9', &lt;&gt;0 'any
+                                number of');
+                            any combination of the three above. And there are many other
+                                possibilities.
+                        
+                    If you want to find all German nouns in our text above, for example, which
+                        are movated by using the suffix '-in', you could use an instruction like
+                        so,,1-45,-&lt;*&lt;&gt;0&gt;*&gt;1&gt;2&gt;|&gt;&lt;0&gt;3-
+                        which searches all lines of the current file from the first to the
+                        forty-fifth position, i.e. only in the German column, to determine whether
+                        there is a capital letter (&lt;*), followed by any number of
+                        (&lt;&gt;0) small letters (&gt;*), a member of character group
+                        &gt;1, of string group &gt;2, which has on its right side
+                        (&gt;|) an optional (&gt;&lt;0) member of character group
+                        &gt;3. Before entering this search instruction the three groups just
+                        mentioned have to be defined. The group &gt;1 contains all small letters
+                        with the exception of the vowels, which cannot occur before the suffix
+                        '-in', &gt;2 holds the strings in and innen, and &gt;3 contains all
+                        characters that could possibly follow the noun such as a blank or a
+                        punctuation mark (.,;:!?"). Detailed information on the syntax of
+                        instructions and other topics is given by Stahl (1996).
+                    
+                    As a result, this so-instruction displays the first set of occurrences that
+                        fulfil the pattern matching requirements in Christoph Hein's novel. By
+                        changing so in the instruction above to sa (show around) the context of each pattern is
+                        displayed.
+                    The user is able to find these forms only by means of pattern matching and
+                        not with the help of semantic tags. He or she is completely independent and
+                        not restricted to any predefined information.
+                
+                
+                    Exporting parallel texts
+                    The next example is taken from the material of an international intensive
+                        course on "Multilingual text processing" which was given in Galway in 1997
+                        with support from the EC Erasmus program. It is based upon Die Nachtwachen von Bonaventura by August Klingemann together
+                        with its translations into English by Gillespie (1972), into Italian by
+                        Collini (1990), and into Finnish by Kolehmainen, Oikarinen and Rahikainen
+                        (1997). Among other tasks, one aim of the course was to align the four texts
+                        horizontally sentence by sentence, and to export them to a PostScript file
+                        for printing and to a HTML file for web publishing. For economic and safety
+                        reasons the four text files are kept separate from each other. The beginning
+                        of the German original text file reads:
+                        [1-9] Erste Nachtwache
+                            [2-9] Die Nachtstunde schlug; ich hüllte mich in 
+                            meine abenteuerliche Vermummung, nahm die Pike und 
+                            das Horn zur Hand, ging in die Finsterniß hinaus und
+                            rief die Stunde ab, nachdem ich mich durch ein Kreuz
+                            gegen die bösen Geister geschützt hatte.
+                        
+                    The three translations contain the same structure. The original and the
+                        translations are exported to PostScript by typesetting them with the
+                        Tustep-typesetting program (#Satz). Only a few of all typesetting
+                        possibilities are made use of when the four texts are processed to produce
+                        an output of aligned sentences. First, they are typeset in narrow columns
+                        one after the other to determine the linebreaks. Four new destination files
+                        are generated which show the final layout of all lines. The text blocks
+                        holding the grammatical sentences, however, are still of different length.
+                        These units of all text files are compared with each other to find out which
+                        is the longest among the four languages; if necessary empty space is
+                        inserted into the shorter ones. When the text is now typeset again with the
+                        inserted empty lines, all units are of equal length:
+                    D. Lewis and P. Stahl describe the source code, which you can download from
+                             (&gt; Programme &gt;
+                        Nützliches), as well as possibilities of evaluating a literary
+                    translation.
+                
+                
+                    Output to other formats
+                    The same four basic text files that were used above can also be combined into
+                        one single HTML-file. To do this task you need about 40 lines of Tustep
+                            code:
+                        1 |#CREATE,BV,CONFIRM=- 
+                              2 |#OPEN,READ=+,POSITIVE=|BV&lt;/.S0| 
+                              3 | 
+                              4 |#EXECUTE,*,PARAMETER=D;E;I;F,MARKER=! 
+                              5 |#COPY,SOURCE=BV!1.S0,DESTINATION=BV,MODE=-,ERASE=-,PARAMETER=* 
+                              6 |XX        .[&gt;/-.[0&gt;=02!1-.[&gt;/&gt;/-.[&gt;=02&gt;=03!1-.
+                              7 |*EOF* 
+                              8 |*EOF 
+                              9 | 
+                             10 |#PRESORT,BV,-STD-,MODE=-,ERASE=+,PARAMETER=* 
+                             11 |AA        .[. 
+                             12 |AS1       .[. 
+                             13 |ES1       .-. 
+                             14 |AES       11 
+                             15 |A1        DEIF 
+                             16 |SSL       3 
+                             17 |*EOF 
+                             18 | 
+                             19 |#SORT,-STD-,-STD-,SORTFIELD=1+3,DELETE=1+3,ERASE=+ 
+                             20 |
+                             21 |#CONVERT,SOURCE=*,DESTINATION=BV,MODE=0,ERASE=+ 
+                             22 |&lt;HTML&gt; 
+                             23 |&lt;HEAD&gt;&lt;TITLE&gt;Bonaventura&lt;/TITLE&gt;&lt;/HEAD&gt;
+                             24 |&lt;BODY&gt;&lt;TABLE WIDTH="100%"&gt; 
+                             25 |*EOF 
+                             26 |
+                             27 |#COPY,-STD-,BV,+,-,* 
+                             28 |X         .[&lt;&gt;0&gt;/D.&lt;&lt;TR&gt;&gt;[&gt;=02D.
+                             29 |XX        .[&lt;&gt;0&gt;/&lt;/-&lt;&gt;0&gt;/]. 
+                             30 |XX        &lt;&lt;TD WIDTH="25%"      VALIGN="TOP"&gt;&gt;[&gt;=02-&lt;=02]. 
+                             31 |XX        .#F+.&lt;&lt;B&gt;&gt;.#F-.&lt;&lt;/B&gt;&gt;.#/+.&lt;&lt;I&gt;&gt;.#/-.&lt;&lt;/I&gt;&gt;.
+                             32 |XX        .&lt;Ä.&amp;Auml;.&lt;Ö.&amp;Ouml;.&lt;Ü.&amp;Uuml;.\..
+                             33 |XX        .&gt;ä.&amp;auml;.&gt;ö.&amp;ouml;.&gt;ü.&amp;uuml;.ß.&amp;szlig;.
+                             34 |XX        .&amp;`/.&amp;&lt;=01grave;.&amp;´/.&amp;&lt;=01acute;...`
+                             35 |XXX       -#.&lt;&lt;-"-#.&gt;&gt;-"-·-.-___-&amp;nbsp;-[0-[- 
+                            36 |*EOF 
+                            37 | 
+                            38 |#CONVERT,*,BV,0,- 
+                            39 |&lt;/TABLE&gt;&lt;/BODY&gt; 
+                            40 |&lt;/HTML&gt;
+                            41 |*EOF 
+                            42 | 
+                            43 |#CREATE,BV.HTM,SDF-AP
+                            44 |#CONVERT,BV,BV.HTM,,+,CODE=ASCII
+                    This program file contains all necessary commands to achieve our goal. In the
+                        first line a temporary file is created and given the file name 'BV'. The
+                        four basic text files are opened for reading (l. 2) and copied to the new
+                        destination file 'BV' (l. 5-8), which is then sorted (l. 10-19). A HTML
+                        header is written to the file 'BV' (l. 21-25); the standard file containing
+                        the sorted units is added to the same destination file, and while the
+                        copying takes place, several source strings are exchanged for new
+                        destination strings to produce HTML tags and entities (l. 27-36). Finally,
+                        three closing tags are added (l. 38-41). A permanent non-Tustep file is
+                        created ('BV.HTM') which 'BV' is exported to (l. 43-44). A web browser
+                        displays the result: 
+                    All examples show that text files provide the basis for all other tasks. They
+                        can be aligned in such a way that a user is able to search the text for
+                        words and patterns he or she is interested in, or they can be exported to
+                        other coding schemes.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    P.
+                                    Collini
+                                
+                            
+                            Veglie
+                            
+                                Venezia
+                                Marsilio
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    Gillespie
+                                
+                            
+                            The night watches of Bonaventura
+                            
+                                Edinburgh
+                                University of Edinburgh Press
+                                1972
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    Klingemann
+                                
+                            
+                            Nachtwachen von Bonaventura
+                            
+                                Leipzig
+                                Reclam Verlag
+                                1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    L.
+                                    Kolehmainen
+                                
+                            
+                            
+                                
+                                    L.
+                                    Oikarinen
+                                
+                            
+                            
+                                
+                                    M.
+                                    Rahikainen
+                                
+                            
+                            Ensimmäinen Yövartio
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        Available at:  &gt; Programme
+                            &gt; Nützliches.
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    Lewis
+                                
+                            
+                            
+                                
+                                    P.
+                                    Stahl
+                                
+                            
+                            Zugriff auf multilinguale Texte: Das Evaluieren einer
+                                literarischen Übersetzung unter Anwendung von Tustep
+                        
+                        
+                            
+                                
+                                    S.
+                                    Moser
+                                
+                            
+                            
+                                
+                                    P.
+                                    Stahl
+                                
+                            
+                            
+                                
+                                    W.
+                                    Wegstein
+                                
+                            
+                            
+                                
+                                    N.
+                                    R.
+                                    Wolf
+                                
+                            
+                            Maschinelle Verarbeitung altdeutscher Texte V. Beiträge
+                                zum Fünften Internationalen Symposion Würzburg 4. bis 6. März 1997
+                            
+                                Tübingen
+                                Max Niemeyer Verlag
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Stahl
+                                
+                            
+                            Tustep für Einsteiger. Eine Einführung in das "Tübinger
+                                System von Textverarbeitungs-Programmen"
+                            
+                                Würzburg
+                                Verlag Königshausen &amp; Neumann
+                                1996
+                            
+                        
+                    
+                
+            
+        
+    

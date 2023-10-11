@@ -1,0 +1,162 @@
+
+
+
+    
+        
+            
+                Facilitating Text Analysis in Russian Culture: TEI or
+                    Topic Maps?
+                
+                    
+                        Miranda
+                        Remnek
+                        
+                            University of Minnesota
+                            m-remn@tc.umn.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Still under development, the University of Minnesota's Early 19th Century Russian
+                    Readership &amp; Culture Project () is one of relatively few
+                    comprehensive digital archives for the study of Imperial Russian history. Based
+                    on materials gathered over two decades of research that culminated in a
+                    dissertation on The Expansion of Russian Reading Audiences,
+                        1828-1848, the project is distinctive in a number of ways. First, it
+                    pulls together a variety of primary research materials into a single archive.
+                    (To some extent this is not uncommon, but the ENCRRC archive includes not only
+                    texts, images, and scholarly reference materials, but also a large statistical
+                    database of 12,000 subscription records which provide much additional research
+                    data). Second, the search mechanism has been customized to provide simultaneous
+                    access to both English and Cyrillic TEI-encoded texts without the need for a
+                    Cyrillic keyboard--and this in itself is a technical feat.
+                But the project's most distinctive feature is its use of SGML
+                    &lt;interp&gt; tags to enrich the texts by encapsulating a number of
+                    pre-selected analytical categories. This means that users of the archive are
+                    given not one but two modes of access to the content of the four main text
+                    groups (fiction, journals, memoirs and travel accounts). How is this achieved?
+                    First, researchers are presented with a comprehensive full-text search option,
+                    since the project uses Enigma Corporation's powerful SGML-based DynaWeb software
+                    to deliver the texts to the web (). Second, the project's adoption of SGML-based analytical tagging means that
+                    users have an additional avenue of access to thematic categories. To enable this
+                    approach the interface presents a roster of 10 main categories of analysis, each
+                    divided into small groups of differing sizes for a total of 60 subcategories.
+                    Entries are scripted so that the software can retrieve and display passages that
+                    contain superimposed SGML ID references even though the texts are converted to
+                    HTML for delivery over the web. Space limitations prevent enumeration of all the
+                    subcategories, but a listing of the main themes will give some idea of the
+                    research potential involved: Publishing, Print Categories, Novels, Journals,
+                    Newspapers, Booktrade, Text Access (Bookstores, Coffeehouses, etc), Reading
+                    Publics, Social Groups, and Job Titles.
+                The provision of these categories works well for researchers in differing fields
+                    of Russian culture. A literary scholar may use the archive to trace references
+                    in the various groups of texts to the distribution of original Russian novels
+                    versus translations of foreign compositions; he or she may then enhance these
+                    findings by searching the database of subscription records from the period
+                    1825-1846, and reviewing biographic and geographic data about the subscribers
+                    connected with both native and translated novels. A history scholar, on the
+                    other hand, may use the materials to trace levels of access to print materials
+                    among less privileged groups (such as lower-level bueaucrats and merchants) not
+                    normally considered part of the contemporary cultural milieu. A women's studies
+                    scholar may use the archive to piece together hard-to-find references to women's
+                    reading, and the mechanisms women used to gain access to texts in a clearly
+                    defined patriarchal society. It should therefore be clear that employment of a
+                    relatively simple SGML-based analysis option has enabled substantial enrichment
+                    of a carefully-selected core of texts such that they are immediately serviceable
+                    for multiple purposes.
+                In addition to the project's value for different fields of study, another
+                    important benefit resides, as noted, in its presentation of a rich variety of
+                    sources that include encoded images and historical records as well as primary
+                    texts. All these resources are related, moreover, by topic. But the linkage
+                    between them is not always straightforward, and so it has seemed important to
+                    take note of new concepts like SGML Topic Maps (ISO standard 13250, Geneva,
+                    December 2000)--which promises to facilitate the linkage of similar elements in
+                    different types of research data. As Christian Wittern has suggested ("TEI and
+                    Topic Maps," ACH/ALLC 2001), topic maps provide an
+                    "architecture for the semantic structuring of information networks…[that] has
+                    the potential to provide a bridge between… texts encoded with schemes like the
+                    TEI [and] other information resources." More explicitly, Bill Trippe noted
+                    recently in an article published in EContent (August
+                    2001, v. 24, issue 6, p. 45ff), "For proponents, topic maps are the ideal
+                    solution for helping users find information about a topic across a variety of
+                    documents."
+                Wittern also suggests that topic maps enable an archive to present abstract as
+                    well as concrete representations of knowledge. Until recently the categories
+                    used in the ENCRRC archive were more exclusively objective than the mix of
+                    categories used in our better-known sister project, Women's
+                        Travel Writing, 1830-1930 (), and as such, have been
+                    easier to apply. But WTW's two subjective categories--gender and ethnicity--are
+                    strongly championed by faculty advisers to the project as essential material for
+                    the pursuit of current scholarly trends in women's studies (though certainly
+                    more challenging to the encoder). It thus seemed advisable to problematize more
+                    fully the analytical tools supplied for the ENCRRC archive.
+                With this in mind, we are redesigning and testing out certain revamped portions
+                    of the ENCRRC archive. Drawing on the work of Hans Holger Rath and Steve Pepper
+                    (including their "Navigating Haystacks, Discovering Needles," Markup Languages,
+                    1999), we hope to achieve a partial implementation of the topic map standard. We
+                    are partially motivated by the hope that this will facilitate an overlay of more
+                    provocative, abstract linkages superimposed on our current, largely objective
+                    interpretive network. A second goal is to determine whether the presentation of
+                    disparate early 19th century Russian history materials in the form of topic maps
+                    will make their analysis more convenient and productive for the researcher than
+                    their current presentation in separate, though proximate, data groups. But as
+                    noted by Trippe, "the proposed standard itself is relatively new… and the
+                    commercial technology supporting the standard is still in its early stages." Our
+                    second goal is therefore our major concern: to explore how well this concept
+                    works in a multi-type archive.
+            
+        
+    

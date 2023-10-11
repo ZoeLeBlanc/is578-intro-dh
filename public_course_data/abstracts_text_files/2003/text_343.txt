@@ -1,0 +1,213 @@
+
+
+
+    
+        
+            
+                Confronting the Challenges in Collaborative Editing
+                    Projects: The Dickinson Electronic Archives File
+                    Management System
+                
+                    
+                        Lara
+                        Vetter
+                        
+                            Maryland Institute for Technology in the
+                                Humanities, University of Maryland, College
+                                Park
+                            LV26@umail.umd.edu
+                        
+                    
+                
+                
+                    
+                        Jarom
+                        McDonald
+                        
+                            Maryland Institute for Technology in the
+                                Humanities, University of Maryland, College Park
+                            jmcdon@glue.umd.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This year, the Dickinson Electronic Archives (DEA) began work on an edition of
+                    Emily Dickinson’s Correspondences (EDC), a multi-volume TEI-conformant XML
+                    scholarly edition of individual collections of letters and poems sent to and
+                    from Dickinson to her various correspondents that will include manuscript
+                    images, transcriptions, and critical annotation. Overseen by general editors
+                    Martha Nell Smith, Ellen Louise Hart, Lara Vetter, and Marta Werner, and
+                    coordinated by Vetter, EDC volumes are guest-edited
+                    correspondence-by-correspondence by Dickinson scholars across the country. The
+                    project is ambitious in scope; Dickinson sent over 1800 letters and poems to
+                    about 100 friends, family, and acquaintances, and conceivably many individual
+                    guest editors could be working simultaneously on various sets of documents.
+                The DEA faces several challenges in managing the concurrent editing of the
+                    voluminous correspondence, not the least of which is geographical. All four
+                    general editors are dispersed geographically: Smith in Maryland, Hart in
+                    California, Vetter in Missouri, and Werner in New York. The DEA project manager,
+                    Jarom McDonald, and encoding staff are located in Maryland at the Maryland
+                    Institute for Technology in the Humanities, while guest editors live and work
+                    all over the country. The documents are located primarily in two different
+                    libraries in Massachusetts with scattered manuscripts elsewhere, and the encoded
+                    data resides on a server at Institute for Advanced Technology in the Humanities
+                    in Virginia. Clearly, we need a system by which the geographically remote
+                    project coordinator can track the status of multiple documents in multiple
+                    correspondences at various stages of editing and encoding, and work with a staff
+                    and editors at a distance. We also face the utter impracticality of training
+                    innumerable guest editors in advanced TEI and XML, particularly given the
+                    encoding difficulties posed by the experimental nature of Dickinson’s page, yet
+                    we need to maintain consistency in encoding and editing across sets of
+                    correspondence, all the while preserving the integrity of the individual
+                    editor’s work.
+                Originally conceived by Lara Vetter and implemented by Jarom McDonald, the
+                    Dickinson Electronic Archives Manuscript Project File Management System is
+                    designed to allow editors and staff working from different locations across the
+                    country to collaborate on the production of XML files for web delivery. The
+                    system will accommodate multiple editors and staff working on different subsets
+                    of documents.
+                The DEA Manuscript Project File Management System facilitates the following processes:
+                        1. For each manuscript, the editor completes a php-driven submission
+                            form collecting relevant information about that manuscript. When the
+                            form is submitted, it writes an XML file that parses against the DEA
+                            DTD, pulling additional data from SQL regularization databases, and
+                            deposits the file into the directory for newly submitted documents;
+                            whatever data cannot be automatically tagged is placed in a comment tag
+                            to provide instruction to the encoder. When the form is deposited into
+                            the directory, the editor receives a copy via email, and the project
+                            coordinator is notified via email that new manuscript data has been
+                            submitted. Additionally, an entry in the SQL-driven management
+                            submission database is generated that contains the filename, the
+                            editor’s name, and the date the file was submitted. Finally, a
+                            &lt;revisionDesc&gt; statement is generated and placed
+                            automatically into the XML file, containing information about the nature
+                            of the action, the person who performed it, and the date.
+                        2. The project coordinator logs into the administrative section of the
+                            system and is presented with a complete list of all submitted documents
+                            pending assignment to encoders. The coordinator can assign each document
+                            individually to any of the current DEA encoders via a drop-down menu;
+                            doing so will automatically generate and send an email to that encoder,
+                            notifying him/her of the new assignment. The corresponding entry in the
+                            submission log will be updated to reflect the encoder assigned to the
+                            project.
+                        3. The encoder logs into the “Document Check-in/Check-out” section of
+                            the system and is presented with a complete list of all documents
+                            pending to be downloaded and those which have previously been
+                            checked-out for encoding but not yet uploaded. The encoder clicks on the
+                            file to be downloaded and is taken to the download page, where he/she
+                            can save the file locally for encoding. This step updates the submission
+                            log entry, noting the date that the file was downloaded for encoding,
+                            and moves the particular file from the “pending check-out” section to
+                            the “pending check-in” section for the given encoder. This step also
+                            automatically updates the &lt;resp&gt; attribute in the header
+                            that signifies the encoder. The encoder’s job is to perform
+                            post-processing on the XML file by utilizing the editor’s notes,
+                            comparing the XML file to an electronic image of the manuscript, and
+                            tagging everything that cannot be automatically generated by the
+                            form.
+                        4. When the encoder has finished with the file locally, he/she can log
+                            back into the system and click on the entry to “check-in.” The encoder
+                            is then taken to the upload page and deposits the newly encoded file in
+                            a directory separate from that which the editor-submitted file is
+                            located. Checking a file in through the system will update the
+                            submission log to reflect the date of encoder uploading, as well as
+                            generating another &lt;revisionDesc&gt; entry into the document
+                            itself. The project coordinator/proofreader is also notified via
+                            automatic email that the encoded file has been uploaded.
+                        5. Upon logging back into the system, the project coordinator is
+                            presented with a list of files that need to be proofread, in addition to
+                            seeing which files need assignment to encoders (see item 2 above). These
+                            files can be checked-out and checked-in for proofreading in the same
+                            manner as described above for encoders; each action generates the
+                            relevant entry in the submission log. Downloading modifies the
+                            &lt;resp&gt; element that signifies the proofreader’s name, and
+                            when the final proofed file has been uploaded, it is deposited in a
+                            third directory; hence, all archival copies of the document are
+                            preserved. Once the proofreader has uploaded the file, a third
+                            &lt;revisionDesc&gt; entry is generated and written into the
+                            file and the coordinator is notified via e-mail.
+                        6. Finally, when the proofreader is done, an automatically generated
+                            e-mail is sent to the editor(s) with a URL for a transformed version of
+                            the file. The editor then visits the URL indicated to perform a final
+                            proofing of the document; the HTML page gives the editor the option to
+                            accept or modify the file, and the coordinator is notified of the status
+                            of the document. If the file is accepted, it is copied to the public
+                            directory and becomes available online; if it is modified, the editor’s
+                            modifications (again, submitted via a php-form) are routed back to the
+                            proofreader who can make the final emendations and subsequently upload
+                            the document into the public directory.
+                    
+                Additionally, the project coordinator has access to a report feature, which
+                    returns the entire SQL database of the submission log. This allows her to
+                    monitor the status of all ongoing projects and documents and to track what
+                    documents individual editors, encoders, and proofreaders are currently working
+                    on.
+                Though there will, undoubtedly, be issues with certain edited documents that
+                    cannot be addressed through the type of automation described above, the document
+                    management system will do much to streamline the editing and encoding process
+                    and increase the quantity and quality of work done by the dispersed staff.
+                    Decisions about what to tag and how to tag complex features of Dickinson’s
+                    manuscripts are made by the general editors and enforced by the editorial
+                    submission form, so documents are encoded consistently across the various sets
+                    of correspondence. Editors can focus on editing, without having to learn
+                    advanced XML and TEI (although the system, as designed, will accept XML tags as
+                    part of submitted editorial data for those editors who are familiar with the TEI
+                    and the Dickinson project DTD). Encoders can focus on encoding, without being
+                    called upon to make difficult editorial choices. Ultimately, the entire process
+                    will facilitate integrity in editing, quality control, and institutional
+                    memory.
+            
+        
+    

@@ -1,0 +1,91 @@
+
+      
+         Im musealen Bereich spielt die Frage, wie man langfristig interpretierbare Daten erzeugt und bereitstellt, eine immer größere Rolle, insbesondere wenn, wie am Germanischen Nationalmuseum (GNM), drittmittelgeförderte inter- und transdisziplinäre Forschungsprojekte große Datenmengen zu den Objektbeständen erheben. Welche Lösungsansätze für den nachhaltigen Umgang mit Forschungsdaten das GNM verfolgt, soll anhand zweier Forschungsprojekte dargestellt werden.
+         1. Anforderungen und Ziele des transdisziplinären Forschungsprojektes zu Friedensrepräsentationen in der Vormoderne
+         Das von der Leibniz-Gemeinschaft seit Juli 2015 geförderte internationale Kooperationsprojekt „Repräsentationen des Friedens im vormodernen Europa“ erforscht Friedensbilder im Zeitraum vom 16. bis 18. Jahrhundert. Friedensvereinbarungen mussten über den reinen Vertragstext hinaus erklärt, begründet und vermittelt werden. Das übernahmen Friedensrepräsentationen, die ein multimediales Phänomen der Frühen Neuzeit waren. Folglich nimmt das Forschungsprojekt visuelle Darstellungen, sprachliche Bilder sowie musikalische Ausprägungsformen in den Blick. Dieser breite Ansatz erfordert die Kooperation unterschiedlicher geisteswissenschaftlicher Fachrichtungen mit ihren jeweiligen Analysekompetenzen und Perspektiven sowie Institutionen mit geeigneten Beständen.
+                2
+         
+         Um abstrakte Konzepte wie Frieden, Gerechtigkeit oder Wohlstand darzustellen, verwendeten Künstler, Dichter oder Komponisten einen Kanon von Motiven, die europaweit genutzt und verstanden wurden. Dieses „Vokabular“ des Friedens soll beispielhaft erschlossen und über die Gattungs- und Genregrenzen hinweg analysiert werden. Zudem wurden gemeinsame Fragestellungen zu transmedialen Rezeptionsvorgängen, Veränderungen der Motivik im Zusammenhang mit unterschiedlichen Friedensschlüssen, zu Funktion und Wahrnehmung von visuellen, sprachlichen und musikalischen Konzepten entwickelt. Am Anfang steht daher die transdisziplinäre Erfassung und Nutzung der heterogenen Bestände.
+         Ein entsprechendes Dokumentationssystem muss demzufolge für alle beteiligten WissenschaftlerInnen unabhängig von der Art und Darstellungsform der Quellen gewährleisten, dass sie schnell und effizient die relevanten Informationen eingeben und abrufen können. Die erfassten Informationen beziehen sich auf objektbezogene Daten, aber auch auf deren Inhalte und Form, wie Ikonografie, Textgattung oder Instrumentierung. Außerdem soll der inhaltliche Zusammenhang zwischen Objekten und Friedensereignissen dokumentiert werden. Daher muss die Datenbank in der Lage sein, auch Zusammenhänge strukturiert abbilden zu können. Die Ergebnisse sollen in einem virtuellen Themenportal am Ende des Projektes veröffentlicht werden. Die Einbindung von digitalen Bild-, Text- und Musikquellen ist daher wünschenswert, ebenso die Möglichkeit mit einem Thesaurus arbeiten und bereits vorhandene Normdaten einbinden zu können.
+         2. Anforderungen und Ziele des interdisziplinären Forschungsprojektes MUSICES
+         Das Projekt „MUSICES“ (MUSIkinstrumenten-Computertomographie-Examinierungs-Standard) hat es sich zur Aufgabe gemacht einen Standard zu entwickeln, der die Bedingungen für eine wissenschaftliche und praxisnahe Abbildung von Musikinstrumenten durch 3D-Computertomographie beschreibt. Das zerstörungsfreie, bildgebende Verfahren der Computertomographie ist ein wichtiges Instrument geworden, um Informationen über den Aufbau und die Konstruktion von Musikinstrumenten zu gewinnen und so Aussagen über Herstellungsweise, Erhaltungszustand und klangliche Eigenschaften zu liefern. In Kooperation von WissenschaftlerInnen und RestauratorInnen des Germanischen Nationalmuseums und des Fraunhofer Instituts EZRT (Entwicklungszentrum Röntgentechnik) in Fürth werden gemeinsam die technischen Parameter, effiziente und objektschonende Praxisabläufe sowie die Möglichkeiten und Grenzen dieser Technik intensiv erarbeitet.
+         Die Entwicklung des Standards besteht aus verschiedenen Aspekten: Zunächst bedarf es eines Schemas, das den kompletten Ablauf der Untersuchung des Instruments dokumentiert, von der Auswahl eines Objekts und die Fragestellung an dieses bis über den Transport, die eigentliche Messung und deren Parameter sowie die daraus erzeugten 3D-Röntgenbilder. Im Laufe des Projekts werden über 100 verschiedene Instrumente erforscht, die in ihrer Auswahl eine möglichst große Vielfalt an Eigenschaften abbilden sollen, um die Anwendbarkeit des Standards auch auf andere Objekte übertragen zu können. Unterschiedliche Materialien und die geometrischen Formen der Musikinstrumente spielen bei den einzustellenden Parametern der 3D-CT eine entscheidende Rolle, um die gewünschten Resultate zu erzielen. Für die Objekte werden deshalb ihren Eigenschaften entsprechend Kategorien definiert. Auf diese Weise können Richtwerte entwickelt werden, beispielsweise für die Strahlungsdosis, die vom Material und dessen Stärke abhängig sind. Die Relation zwischen Objektkategorie und Messeinstellungen in Abhängigkeit von der Forschungsfrage muss durch das Dokumentationsschema abgebildet werden. Letzteres muss zudem aufgrund der stetigen Optimierung des Untersuchungsprozesses während des Projektverlaufs flexibel gestaltet sein.
+         Als Teil des Standards soll das Dokumentationsschema in bestehende Standards integriert werden und als Metadatenmodell für künftige Projekte dienen, die sich mit der 3D-CT von Objekten beschäftigen. Alle gewonnenen Daten sollen zum Projektende in das Objektdokumentationssystem des Germanischen Nationalmuseums integriert, darüber hinaus aber auch an internationale Portale geliefert und öffentlich zugänglich gemacht werden.
+         3. CIDOC CRM und WissKI als Werkzeuge der Dokumentation und Langzeitinterpretierbarkeit
+         Die semantische Erschließung, die eine nachhaltige Interpretierbarkeit von heterogenen Forschungsdaten zunächst innerhalb einer Institution gewährleistet, erfolgt auf Grundlage einer Ontologie, die es ermöglicht Wissen formal zu definieren, zu kategorisieren, zu beschreiben und auszutauschen. Forschungsprojekte am GNM verwenden das ISO-zertifizierte Conceptual Reference Model (CIDOC CRM, ISO 21127, Doerr / Lampe / Krause 2011).
+                3 Da das CRM nicht maschinell lesbar ist, wurde dies im sog. „Erlangen-CRM“
+                4 auf Basis von OWL
+                5 nachgeholt (Görz 2011).
+            
+         Damit die Projektdaten in einem gemeinsamen Kontext unter Verwendung einer gemeinsamen „Sprache“ dokumentiert werden können, werden Anwendungs- bzw. Domänenontologie, basierend auf dem CIDOC CRM, für jedes Projekt entwickelt. Der Austausch von Daten und deren Langzeitinterpretierbarkeit wird durch die gemeinsame Basis des CIDOC CRM gewährleistet, während alle Spezifika der jeweiligen Projekte möglichst fachspeziell durch die Domänenontologie abgedeckt sind (Hohmann / Fichtner 2015, 117-118). Dies geschieht unter dem Vorbehalt, dass innerhalb einer Institution die Klassen und Eigenschaften gleich gehandhabt werden.
+         Um das angesprochene kollaborative und transdisziplinäre Arbeiten zu ermöglichen, benötigt man eine virtuelle Forschungsumgebung. Ausgewählt wurde WissKI
+                6, dessen Fokus auf dem interaktiven und vernetzten Arbeiten basierend auf semantischer Tiefenerschließung mit Hilfe des Erlangen-CRM liegt. Die Erfassung kann text- und formularbasiert erfolgen. Die Oberflächen des Systems können den jeweiligen Bedürfnissen der Projekte angepasst werden, wobei die Form der Wissensrepräsentation und die Wiederverwendung der Daten gattungs- und disziplinübergreifend ermöglicht wird. Darüber hinaus können digitale Bild-, Text- und Audiodateien angezeigt und verwaltet werden. Zudem unterstützt WissKI die Erstellung lokaler Vokabulare und die Nutzung bestehender Normdaten.
+            
+         3.1 Anwendungsbeispiel Projekt „Friedensrepräsentationen“
+         Das zentrale Anliegen des Projektes zur Analyse der Friedensrepräsentationen ist ein transdisziplinärer und vergleichender Forschungsansatz basierend auf einer kooperativen Erschließung und Nutzung heterogener Quellenbestände. Angaben zu den Objekten und ihren Inhalten müssen ebenso wie historische Daten zu Friedensereignissen erfasst werden. Diese unterschiedlichen Informationen sollen semantisch vernetzt sein, um eine langfristige und nachhaltige Interpretierbarkeit sicher zu stellen. Eine Herausforderung ist es, spezifische Daten und Anforderungen unterschiedlicher Fachdisziplinen zu vereinheitlichen und Schnittpunkte zu bilden. Das CIDOC CRM erlaubt durch die Definition geeigneter übergeordneter Abstraktionen und Relationen ein Erkennen und Kommunizieren gleicher Konzepte und dadurch eine disziplinunabhängige semantische Vernetzung der Informationen. Durch die semantische Modellierung in Form von sog. Pfaden ist eine nachhaltige Interpretierbarkeit der Zusammenhänge von unterschiedlichen Informationen möglich, die für die inhaltliche Erschließung der Quellenbestände von Bedeutung ist. Die Pfade wiederum sind netzwerkartig miteinander verbunden. So kann z. B. nachvollzogen werden, in welchem Verhältnis eine Person zu einem Friedensereignis oder zu einem Objekt steht, beides kann für die Forschungsfragen nach Funktion des jeweiligen Quelleninhaltes von Interesse sein.
+         Für die Veröffentlichung der Ergebnisse in einem virtuellen Themenportal können zur besseren Strukturierung und auch um Abhängigkeiten darzustellen, Informationen hierarchisch in Beziehung gesetzt werden, wie Friedensschlüsse und auf ihnen basierende Anlässe oder Allegorien zu übergeordneten Bildtopoi. Auf allen hierarchischen Stufen bleiben die entsprechenden Eigenschaften und Relationen der entsprechenden Klassen erhalten und können demzufolge immer mit abgebildet und abgefragt werden.
+         Die unterschiedlichen Informationen werden in spezifisch modellierten Masken erfasst, in deren Feldern Normdaten und Vokabulare hinterlegt sind. Durch verschiedene systemimmanente Eigenschaften können Wissenschaftler sehr schnell in einer Objektmaske zugehörige Dokumente und Objekte angezeigt bekommen. Für den Benutzer dient dies bei ca. 2000 angestrebten Einträgen der Übersichtlichkeit, so dass auch auf dieser Ebene die Vernetzung sichtbar sein wird.
+         3.2 Anwendungsbeispiel Projekt „MUSICES“
+         WissKI dient dem Projekt als Datenbank für die zu untersuchenden Musikinstrumente und als Kommunikationsplattform. Darüber hinaus ist das System in der Lage, den kompletten Untersuchungsablauf sowie die Messergebnisse und die erzeugten 3D-Daten jedes einzelnen Objekts, zusammengefasst das im Standard enthaltene Dokumentationsschema und das Netzwerk der Metadaten, abzubilden. Die zu erfassenden Metadaten beinhalten nicht nur die objektbezogenen des kulturwissenschaftlichen Bereichs, sondern auch die vom Fraunhofer Institut zu dokumentierenden Messparameter, wie die Röntgenspannung, die applizierte Strahlungsdosis, aber auch Informationen zu den CT-Anlagen. Für die Erfassung der Projektdaten in einem gemeinsamen Kontext wurde eine Anwendungsontologie, basierend auf dem CIDOC CRM entwickelt, die ebenfalls Teil des im Projekt zu entwickelnden Standards ist. Durch eine klare Definition der Metadaten, die sich auch in der Modellierung der Pfadstrukturen niederschlägt, entsteht eine Datenstruktur, die eine weitere Nutzbarkeit und Interpretierbarkeit der Projektergebnisse gewährleistet.
+         Durch die Verwendung des CIDOC CRM können die Metadaten in das museumsinterne Objektdokumentationssystem und darüber hinaus in internationale Portale integriert werden. Im Rahmen des EU-Projekts MIMO
+                7 konnte mit MIMO-LIDO ein Metadatenmodell für Musikinstrumente entwickelt werden, das die Grunddatenerfassung und die Zuordnung zu Sammlungskontexten standardisiert. Das Metadatenmodell für die 3D-CT-Aufnahmen des MUSICES-Projekts wird in MIMO-LIDO integriert, steht darüber hinaus aber auch als eigenständige Domänenontologie zur Verfügung. Für den Bereich der Erforschung von Musikinstrumenten und ihrer künftigen Erfassung, insbesondere im Hinblick auf 3D-CT-Maßnahmen, wird das MUSICES-Projekt Wegbereiter für einen Standard sein, der auf verschiedenen bestehenden Standards des kulturellen Bereichs aufbaut und diese für einen spezifischen Anwendungsfall ergänzt. Durch die Publikation mit WissKI und internationalen Portalen kann garantiert werden, dass die Projektdaten verfügbar und zitierbar sind. 
+            
+         In beiden Forschungsprojekten, obgleich ihrer unterschiedlichen Disziplinen und Objektgattungen, kann durch Anwendung des CIDOC CRM eine nachhaltige Interpretierbarkeit und Austauschbarkeit der in den Projekten erhobenen Daten am GNM gewährleistet werden. In Verbindung mit WissKI sind alle anwendungsspezifischen Anforderungen abgedeckt. Durch seine Systemarchitektur ist WissKI flexibel genug, auch auf sich während der Projektlaufzeit neu ergebende Forschungsfragen zu reagieren.
+      
+      
+         
+            MUSICES: Sebastian Kirsch1, Frank Bär1, Theobald Fuchs2, Christian Kretzer2, Markus Raquet1, Gabriele Scholz2, Rebecca Wagner2, Meike Wolters-Rosbach1; 1 Germanisches Nationalmuseum, Nürnberg; 2 Fraunhofer-Entwicklungszentrum Röntgentechnik EZRT, Fürth
+             Das Leibniz-Institut für Europäische Geschichte, Mainz, untersucht Friedenspredigten, die Herzog August Bibliothek, Wolfenbüttel, Dichtungen und Festschriften, das Germanische Nationalmuseum Objekte aus den graphischen und numismatischen Sammlungen, das Deutsche Historische Institut, Rom, Kantaten, Oratorien und Festmusiken vor allem in Bezug auf Italien und das Tadeusz Manteuffel Institut für Geschichte der Polnischen Akademie der Wissenschaften, Warschau, die Friedensrepräsentationen in den östlichen Gebieten Europas.
+             Diese Ontologie wurde vom International Committee for Documentation (CIDOC) als Teil des International Council of Museums (ICOM) erstellt (URL: 
+                        http://www.cidoc-crm.org/), wobei das Germanische Nationalmuseum federführend beteiligt war.
+                    
+             URL: 
+                        http://erlangen-crm.org
+               / (25.08.2016).
+                    
+             OWL= Web Ontology Language, vgl. URL: 
+                        https://www.w3.org/TR/owl2-overview/ (25.08.2016).
+                    
+             WissKI = Wissenschaftliche Kommunikations-Infrastruktur, URL: 
+                        http://wiss-ki.eu
+               /) basierend auf dem Open-Source Content Management System Drupal (URL: 
+                        http://drupal.org
+               /), und wurde in Zusammenarbeit zwischen dem Germanischen Nationalmuseum, Nürnberg, dem Zoologischen Forschungsmuseum Alexander Koenig, Bonn und der Friedrich-Alexander-Universität Erlangen-Nürnberg entwickelt.
+                    
+             Musical Instrument Museums Online (URL: 
+                        www.mimo-international.com.). Während der Projektlaufzeit 2009 bis 2011 wurden rund 50.000 Musikinstrumente in öffentlichen Sammlungen digitalisiert und über MIMO-DB zugänglich gemacht (URL: 
+                        http://www.mimo-db.eu/ (25.8.2016).
+                    
+         
+         
+            
+               Bibliographie
+               
+                  Doerr, Martin / Lampe, Karl-Heinz / Krause, Siegfried (2011): 
+                        Definition des CIDOC Conceptual Reference Model Version 5.0.1.
+                        autor. durch die CIDOC CRM Special Interest Group (SIG) (= Beiträge zur Museologie 1). 
+                        Berlin: ICOM Deutschland.
+                    
+               
+                  Görz, Günther (2011): 
+                        „WissKI: Semantische Annotation, Wissensverarbeitung und Wissenschaftskommunikation in einer virtuellen Forschungsumgebung“,
+                        in:
+                        Kunstgeschichte. Open Peer Reviewed Journal urn:nbn:de:bvb:355-kuge-167-7 [letzter Zugriff 22. November 2016].
+                    
+               
+                  Hohmann, Georg / Fichtner, Mark (2015): 
+                        „Chancen und Herausforderungen in der praktischen Anwendung von Ontologien für das Kulturerbe“, 
+                        in: Robertson – von Trotta, Caroline Y. / Schneider, Ralf Y. (eds.): 
+                        Digitales Kulturerbe. Bewahrung und Zugänglichkeit in der wissenschaftlichen Praxis. (= Kulturelle Überlieferung – digital 2). 
+                        Karlsruhe: KIT Scientific Publishing 115-128.
+                    
+               
+                  Stein, Regine / Gottschewski, Jürgen / Heuchert, Regina / Ermert, Axel / Hagedorn-Saupe, Monika / Hansen, Hans-Jürgen / Saro, Carlos / Scheffel, Regine / Schulte-Dornberg, Gisela (2005): 
+                        Das CIDOC Conceptual Reference Model. Eine Hilfe für den Datenaustausch? (= Mitteilungen und berichte aus dem Institut für Museumskunde 31). 
+                        Berlin: Institut für Museumskunde.
+                    
+            
+         
+      
+   
+

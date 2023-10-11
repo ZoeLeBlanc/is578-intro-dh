@@ -1,0 +1,804 @@
+
+
+
+    
+        
+            
+                METS: The Metadata Encoding Transmission Standard
+                
+                    
+                        Merrilee
+                        Proffitt
+                        
+                            RLG
+                            mgp@notes.rlg.org
+                        
+                    
+                
+                
+                    
+                        Birgit
+                        Stehno
+                        
+                            MetaE Project
+                            
+                        
+                    
+                
+                
+                    
+                        Alexander
+                        Egger
+                        
+                            MetaE Project
+                            alex@sbox.tu-graz.ac.at
+                        
+                    
+                
+                
+                    
+                        Thornton
+                        Staples
+                        
+                            University of Virginia
+                            tls@virginia.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    METS is a generalized metadata framework, developed to encode the structural
+                        metadata for objects within a digital library and related descriptive and
+                        administrative metadata. Those currently involved with or planning
+                        digitization will want to hear about METS, which can help to structure data
+                        for presentation and/or archiving.
+                    Expressed using the XML schema language of the World Wide Web Consortium,
+                        METS provides for the responsible management and transfer of digital library
+                        objects by bundling and storing appropriate metadata along with the digital
+                        objects. The use of a single, flexible means of encoding can simplify both
+                        the exchange of objects between repositories and the development of software
+                        tools for search and display of those objects. Additionally, METS encoding
+                        will provide a coherent means for archiving digital objects and their
+                        metadata. The METS initiative has two major components. On the technical
+                        side, the initiative seeks to provide a single, standard mechanism for
+                        encoding all forms of metadata for digital library objects. On the
+                        organizational side, the group looks towards developing mechanisms for
+                        maintenance and further development of the format, including establishing a
+                        METS testbed and METS tools.
+                    The first paper will provide a basic introduction to METS and will outline
+                        the objectives and progress and of the METS initiative to date. The second
+                        two papers will be reports from the field. Each project will give
+                        organizational background and context to their work, and will explain how
+                        METS may help the projects meet their objectives.
+                
+                
+                    
+                        Introduction to METS
+                        Merrilee Proffitt
+                        
+                            
+                                METS is a generalized metadata framework, developed to encode the
+                                    structural metadata for objects within a digital library and
+                                    related descriptive and administrative metadata. METS provides
+                                    for the responsible management and transfer of digital library
+                                    objects by bundling and storing appropriate metadata along with
+                                    the digital objects.
+                                METS is expressed using XML, which means that METS data is stored
+                                    according to platform and software independent encoding
+                                    standards, such as UTF-8 (Unicode), ISO-8859-1, etc. One
+                                    important application of METS may be as an implementation of the
+                                    Open Archival Information System (OAIS) reference model and as
+                                    such can function as a Submission Information Package (SIP) for
+                                    use as a transfer syntax; a Dissemination Information Package
+                                    (DIP) for display or other applications; and an Archival
+                                    Information Package (AIP) for storing and managing information
+                                    internally.
+                            
+                            
+                                Background
+                                METS had its beginnings as a project that identified metadata and
+                                    architecture problems as an area of critical need for digital
+                                    libraries. As more and more institutions created digital images
+                                    and other files, there was growing concern about sensible
+                                    storage for the digital objects (defined as digital files plus
+                                    associated metadata). It was the beginning of a serious
+                                    discussion, tying together many important aspects of digital
+                                    library research. The Making of America 2 (MOA2) project
+                                    sponsored by the Digital Library Federation (DLF) in the early
+                                    stages and funded by the National Endowment for the Humanities
+                                    was the project that resulted from these discussions. New York
+                                    Public Library and the libraries of Cornell, Penn State, and
+                                    Stanford collaborated under the leadership of the University of
+                                    California, Berkeley Library, contributing images and data
+                                    towards an investigation of structural and administrative
+                                    metadata for digital objects. The MOA2 Document Type Definition
+                                    (DTD), which was the direct predecessor of METS, was developed
+                                    for the MOA2 project to encapsulate what were then seen as the
+                                    required metadata elements.
+                                The MOA2 project was completed in early 2000, the Council on
+                                    Library and Information Resources (CLIR) published the group's
+                                    findings, and the MOA2 DTD was circulated for assessment and
+                                    discussion. While MOA2 aroused considerable interest within the
+                                    library community, the MOA2 DTD was too restrictive in some
+                                    respects and lacked some basic functionality, especially for
+                                    time-based media such as audio and video. A meeting was held in
+                                    February 2001 for the various parties interested in advancing
+                                    the MOA2 DTD to the next stage. Following this meeting, METS was
+                                    born.
+                            
+                            
+                                The METS Initiative: Technical Underpinnings
+                                The technical component of the METS initiative has completed a
+                                    draft schema for the encoding format and made it publicly
+                                    available for review. The METS schema tries to support the dual
+                                    and sometimes competing requirements of ensuring
+                                    interoperability and exchange of documents between different
+                                    institutions while also allowing for significant flexibility in
+                                    local practice with regards to descriptive and administrative
+                                    metadata standards.
+                                METS has a very simple structure with just four major components:
+                                    descriptive metadata, administrative metadata, file inventory,
+                                    and structural map. Only the file inventory and structural map
+                                    are required.
+                                        The descriptive metadata is optional. A METS object
+                                            can contain a Metadata Reference or a Metadata Wrapper.
+                                            A Metadata Reference is a link to external descriptive
+                                            metadata. A Metadata Wrapper is for descriptive metadata
+                                            that is internal to the METS object, as either Base64
+                                            encoded binary data or XML. METS does not require a
+                                            particular scheme for description, so the implementer
+                                            can choose the most appropriate descriptive scheme.
+                                        The administrative metadata, also optional, has four
+                                            optional subcomponents for technical metadata, rights
+                                            metadata, source metadata, and preservation metadata.
+                                            Each of these subsections act like the descriptive
+                                            section in that the metadata can be encoded ("wrapped")
+                                            within the METS document or pointed to in an external
+                                            location ("referenced").
+                                        The file inventory allows for listing all the files
+                                            associated with a digital object. Files can be grouped;
+                                            some groupings might include master files, thumbnails,
+                                            etc. The files may be pointed to or can be contained
+                                            internally as Base64 encoded binary data.
+                                        The structural map forms a simple or complex tree
+                                            structure that describes the digital object. The
+                                            structural map permits the definition of a digital
+                                            object that has either parallel or sequential modes and
+                                            also allows for the coding of particular regions or
+                                            zones of a file as part of the document.
+                                    
+                            
+                            
+                                The METS Initiative: Organizational
+                                The standard is currently maintained in the Network Development
+                                    and MARC Standards Office of the Library of Congress. Having
+                                    played a key role in moving this initiative forward and serving
+                                    as the work coordinator, the DLF has helped to bring the METS
+                                    work to the forefront. RLG has recently taken over as the new
+                                    coordinator. This is a natural step for a number of reasons. The
+                                    METS standard will be applicable to RLG's member community of
+                                    libraries, museums, archives, and historical societies. METS
+                                    fits in nicely with much of RLG's ongoing work in digital
+                                    preservation. Finally, RLG has always advocated community
+                                    standards such as EAD and Z39.50, and METS is viewed as such a
+                                    standard. For the next six to eight months, in partnership with
+                                    the METS editorial board, RLG will continue the process of
+                                    education, information dissemination, and gathering of feedback
+                                    on METS. The process of review and evaluation based on use will
+                                    continue during this time.
+                            
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    METS homepage:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    MOA2 homepage:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    DLF homepage:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    RLG homepage:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    OAIS:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            B.
+                                            Hurley
+                                        
+                                    
+                                    
+                                        
+                                            J.
+                                            Price-Wilkin
+                                        
+                                    
+                                    
+                                        
+                                            M.
+                                            Proffitt
+                                        
+                                    
+                                    
+                                        
+                                            H.
+                                            Besser
+                                        
+                                    
+                                    The Making of America II Testbed Project: A
+                                        Digital Library Service Model
+                                    
+                                        
+                                        CLIR
+                                        1999
+                                    
+                                
+                                Also availalbe at: 
+                            
+                        
+                    
+                
+                
+                    
+                        METAe and AUTOMATED ENCODING of DIGITIZED TEXTS
+                        Birgit Stehno
+                        Alexander Egger
+                        
+                            
+                                METAe is a research and development project co-funded by the
+                                    European commission (5th Framework, IST Programme, area "Digital
+                                    Heritage and Cultural Content") and aims at the development of
+                                    an application software for digital archives and libraries. This
+                                    software package, the METAe-engine, will automate the structural
+                                    encoding of digitized material by introducing layout and
+                                    document analysis as basic features. In analogy to OCR engines,
+                                    where pure text is generated from image files, the METAe engine
+                                    will extract layout and logical elements such as page numbers,
+                                    pictures, captions, titles, subtitles, footnotes and document
+                                    structures such as prefaces, chapters, subchapters, issues,
+                                    contributions, etc. by analyzing the digitized pages of printed
+                                    documents. The output of the METAe engine will be an 'archival
+                                    information package' (OAIS) - ready for further processing and
+                                    integration into digital library applications.
+                                This approach should guarantee that a huge amount of work which
+                                    up to now has to be done manually will be done automatically. A
+                                    central issue related to automated document understanding is the
+                                    choice of the mark-up language. As the METAe project aims to
+                                    produce a highly flexible output, existing guidelines and
+                                    standards have been analyzed with regard to the needs of
+                                    automated metadata capturing and encoding. The team decided to
+                                    follow the METS working group.
+                            
+                            
+                                Structural mark-up with automated layout analysis and document
+                                    understanding
+                                In contrast to text encoding performed by humans, automated
+                                    capturing of structural metadata, i.e. the automated recognition
+                                    of the physical and logical structure, requires not only a
+                                    representation model (DTD), but also a recognition model which
+                                    supports the automated identification of logical elements such
+                                    as titles, chapters, footnotes, etc. (Cfr. Brugger, 1998; Dori
+                                    et al., 2000, p. 424f.) As up to now artificial intelligence is
+                                    not able to identify logical units by understanding their
+                                    textual contents, recognition models have to represent rules and
+                                    principles which allow the extraction of logical units on the
+                                    basis of their component elements, of their physical (layout)
+                                    characteristics and their syntactic relations. Having this
+                                    information encoded in a model, the physical structure (physical
+                                    blocks and sets of blocks) of a scanned image can be mapped onto
+                                    the logical one.
+                                The model used in the METAe project has been generated by hand on
+                                    the basis of a detailed analysis of monographs and journals and
+                                    is represented by 'Augmented Transition Networks' (Woods, 1970),
+                                    a formal grammar used normally within the field of natural
+                                    language parsing. (Stehno/Retti).
+                                Since TEI is conceived as a "common encoding scheme for complex
+                                    textual structures" meeting "the varied encoding requirements of
+                                    any discipline or application" (Sperberg-McQueen/Burnard, 1999)
+                                    our plan was to integrate the TEI encoding scheme in our
+                                    recognition model as well as in the presentation model. However,
+                                    this approach turned out to be problematic, since TEI - though
+                                    it represents an advanced mark-up language - is not designed for
+                                    automated document understanding and encoding. TEI offers just a
+                                    very inexplicit set of rules for the hierarchical structuring of
+                                    the elements.
+                                The METAe engine creates an extensive set of descriptive and
+                                    administrative metadata on the document and its parts. A lot of
+                                    different metadata standards (e.g. MARC, Dublin Core, or DIG35)
+                                    will be used depending on the type of metadata and on the kind
+                                    of element the metadata is linked to. TEI provides the
+                                    possibility of adding metadata, mostly bibliographic metadata,
+                                    in the TEI header as well as in the attributes of some of its
+                                    elements. For the purpose of METAe the set of elements and
+                                    attributes of TEI is not extensive enough. The METAe engine
+                                    requires the possibility to add a set of descriptive and
+                                    administrative metadata in any metadata format to any of the
+                                    elements created by the engine.
+                                Moreover TEI never was designed to encode layout characteristics
+                                    and physical structure of printed objects in a detailed and
+                                    exhaustive way. By the help of the 'rend'-attributes,
+                                    typographical information like &lt;head
+                                    rend='italics'&gt; can be encoded in some cases, but the
+                                    detailed description of pages, page spaces, text blocks and
+                                    lines or strings is not possible. Within automated document
+                                    analysis and understanding, all this physical information is
+                                    available because it is needed for the identification of logical
+                                    units. E.g., titles of different levels nearly always are
+                                    expressed by different font styles and sizes, margin notes
+                                    appear on the outer margin of pages, the font size of epigraphs
+                                    is smaller than the default one, etc. Once disposing of this
+                                    information, it should be encoded and thus conserved, in order
+                                    to allow the recoverability of the original respectively an
+                                    electronic representation which presents the source text with
+                                    high fidelity.
+                                Considering these arguments, we decided to use the METS schema
+                                    within the METAe project. The METS schema allows to encode the
+                                    bibliographical, administrative and structural metadata
+                                    separately providing the possibility to encode the physical as
+                                    well as the logical structure within the 'structural maps'. By
+                                    this way it is possible to describe the hierarchical layout of
+                                    each page, i.e. the decomposition of a page into page spaces
+                                    (print space and outer/inner/top/bottom margin), and physical
+                                    blocks (text/image/composed blocks). In the METAe project this
+                                    information is assembled in an XML file named "ALTO" ('Analysed
+                                    layout and text object'). The physical and logical structures
+                                    are encoded by linking and grouping layout elements out of the
+                                    ALO file using 'div' tags of the structural maps. The physical
+                                    structure is linked also to the image files of the pages. Each
+                                    physical and logical element can be assigned an arbitrary set of
+                                    metadata.
+                            
+                            
+                                METAe: Organizational
+                                The METAe project comprises 14 partners from Europe and the US
+                                    among them universities, libraries, and software companies. The
+                                    METAe engine will be a collaborative product with input from all
+                                    partners. The software development is carried out by the German
+                                    software company CCS and the University of Florence. The
+                                    University of Innsbruck is responsible for the recognition model
+                                    and the structural mark-up. A first prototype of the METAe
+                                    engine will be available for demonstration purposes in spring
+                                    2002.
+                            
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    
+                                        
+                                            R.
+                                            Brugger
+                                        
+                                    
+                                    Eine statistische Methode zur Erkennung von
+                                        Dokumentstrukturen
+                                
+                                
+                                    PhD thesis
+                                    
+                                        University of Fribourg
+                                        1998
+                                    
+                                
+                                Also available at:  (visited 05/11/2001)
+                            
+                            
+                                
+                                    
+                                        
+                                            D.
+                                            Dori
+                                        
+                                    
+                                    
+                                        
+                                            D.
+                                            Doermann
+                                        
+                                    
+                                    
+                                        
+                                            C.
+                                            Shin
+                                        
+                                    
+                                    
+                                        
+                                            R.
+                                            Haralick
+                                        
+                                    
+                                    
+                                        
+                                            I.
+                                            Phillips
+                                        
+                                    
+                                    
+                                        
+                                            M.
+                                            Buchman
+                                        
+                                    
+                                    
+                                        
+                                            R.
+                                            David
+                                        
+                                    
+                                    The Representation of Document Structure: A
+                                        Generic Object- Process Analysis
+                                
+                                
+                                    
+                                        
+                                            H.
+                                            Bunke
+                                        
+                                    
+                                    
+                                        
+                                            P.
+                                            S.
+                                            P.
+                                            Wang
+                                        
+                                    
+                                    Handbook of Character Recognition and Document
+                                        Analysis
+                                    
+                                        Singapore
+                                        World Scientific Publishing Company
+                                        1997, Reprint 2000
+                                        421-456
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        Library of Congress, Network Development
+                                            and MARC Standards Office
+                                    
+                                    MARC21 Concise Format for Bibliographic Data
+                                    
+                                        
+                                        
+                                        2001
+                                    
+                                
+                                 (visited 9/11/2001)
+                            
+                            
+                                
+                                    METAe Project, University of Innsbruck:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                 (visited
+                                12/11/2001)
+                            
+                            
+                                
+                                    METS. Official homepage at the Library of
+                                        Congress:
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                 (visited
+                                    12/11/2001)
+                            
+                            
+                                
+                                    
+                                        
+                                            C.
+                                            M.
+                                            Sperberg-McQueen
+                                        
+                                    
+                                    
+                                        
+                                            Lou
+                                            Burnard
+                                        
+                                    
+                                    The Association for Literary and Linguistic
+                                        Computing (ALLC) Guidelines for Electronic Text Encoding and
+                                        Interchange. TEI P3
+                                    Revised Reprint, Oxford, May 1999
+                                    
+                                        Chicago, Oxford
+                                        Text Encoding Initiative
+                                        1999
+                                    
+                                
+                                
+                                    (visited 05/11/2001)
+                            
+                            
+                                
+                                    
+                                        
+                                            B.
+                                            Stehno
+                                        
+                                    
+                                    
+                                        
+                                            G.
+                                            Retti
+                                        
+                                    
+                                    Modelling the logical structure of books and
+                                        journals using augmented transition network grammars
+                                
+                                
+                                    
+                                    
+                                        
+                                        
+                                        
+                                        (submitted)
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            W.
+                                            A.
+                                            Woods
+                                        
+                                    
+                                    Transition Network Grammars for Natural
+                                        Language Analysis
+                                
+                                
+                                    Communications of the ACM
+                                    
+                                        13
+                                        10
+                                        591-606
+                                        1970
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        METS and FEDORA
+                        Thornton Staples
+                        
+                            The University of Virginia Library has been building digital
+                                collections since 1992. We have amassed a large collection that
+                                includes a variety of SGML encoded etexts, digital still images,
+                                video and audio files, and social science and geographic data sets
+                                that are being served to the public from a collection of independent
+                                web sites that have very little cross-integration.
+                            We began searching in 1998 for a digital library management system
+                                that could effectively meet both our current and future digital
+                                content needs. Like many other libraries, we initially sought a
+                                vertical vendor solution that provided a complete, self-contained
+                                package for delivering and managing all digital content needs.
+                                Finding nothing available that would meet our needs, we decided to
+                                embark on an in-house development effort. Modularity and use of
+                                open-system standards is fundamental to our design strategy. Such
+                                modularity is essential for future evolution through component
+                                replacement. We are convinced that an object-oriented design is most
+                                appropriate, allowing us maximum flexibility, scalability and,
+                                eventually, interoperability with other repositories. We are also
+                                convinced that the Library should be providing tools to our users to
+                                give them sophisticated access to our collections and to help them
+                                manage their own collections.
+                            In the summer of 1999, early in our design process, we discovered a
+                                paper about the Flexible Extensible Digital Object Repository
+                                Architecture (FEDORA) written by Carl Lagoze and Sandra Payette at
+                                Cornell's Digital Library Research Group, describing the
+                                architecture that they had designed. FEDORA is a modular
+                                architecture built on the principle that interoperability and
+                                extensibility is best achieved by the clean separation of data,
+                                interfaces, and mechanisms (i.e., executable programs). A FEDORA
+                                Repository provides a general-purpose management layer for digital
+                                objects. In their simplest form, digital objects are containers that
+                                aggregate mime-typed streams of data (e.g., digital images, XML
+                                files, metadata), known as datastreams. It should be noted that
+                                datastreams can be references to external data - either
+                                disseminations of other FEDORA digital objects, or service requests
+                                to remote data sources. This capability allows FEDORA digital
+                                objects to serve as aggregators and value-added surrogates for
+                                existing on-line digital content.
+                            In addition to behaving in a generic manner, digital objects must be
+                                able to mirror real-world entities by providing access methods that
+                                make an object behave in a content-specific manner. For example, a
+                                natural behavior for a book would be "Get Table of Contents." FEDORA
+                                allows the association of rich and extensible behaviors with digital
+                                objects by "plugging in" generic components known as disseminators.
+                                Each disseminator aggregates references to: (1) a formally defined
+                                behavior interface that defines a set of methods for a particular
+                                kind of digital library resource (e.g. a Book interface), (2) an
+                                executable mechanism that runs these methods, and (3) the
+                                datastreams that the execution mechanism should use to fulfill
+                                specific method requests. These interfaces and mechanisms can,
+                                themselves, be stored as digital objects, laying the foundation for
+                                unlimited extensibility of the architecture.
+                            The Digital Library Research and Development group implemented the
+                                FEDORA architecture, using an SQL database and a single Java
+                                servlet. We implemented a variety of different testbeds, ultimately
+                                scale-testing a repository with 10,000,000 objects in it, simulating
+                                a very heavy user load, with excellent results. In September of 2001
+                                we received a grant from the Andrew W. Mellon Foundation that will
+                                enable the University of Virginia Library, in collaboration with
+                                Cornell University, to build a sophisticated digital object
+                                repository system based on FEDORA that can be the basis for a
+                                variety of information management schemes.
+                            We will form two teams to carry out this project. First, a
+                                development team composed of people from Virginia and Cornell that
+                                will pursue a three-phase project with the goal of producing an
+                                open-source reference implementation, which will be available to
+                                other libraries and practitioners as they construct digital library
+                                systems. The first phase involves taking a strong proof of concept
+                                (already done) and producing a package that can be distributed and
+                                used in a variety of settings. The later phases will extend system
+                                by adding important functions that a sophisticated digital library
+                                system needs.
+                            The second team will deploy the software package at each of their own
+                                sites, using it to deliver testbeds of their own digital resources.
+                                That group includes: the Digital Library group at Indiana
+                                University; the Humanities Computing group at New York University;
+                                the Digital Collections and Archives Department at Tufts University;
+                                the Humanities Computing group at Kings College, London; the Refugee
+                                Studies Center at Oxford University; and the Motion Picture
+                                Broadcasting and Recorded Sound Division at the Library of Congress;
+                                and a library/academic computing team from Northwestern University.
+                            As the development team started to review the Virginia
+                                implementation, we discussed the possibility of building the objects
+                                as XML files, then using these files to build the necessary indexes
+                                in SQL databases. By doing this we are able to build the management
+                                interface against the XML, simplifying that effort, while separating
+                                the backend of the repository to make it easy to experiment with
+                                other indexing schemes. Ultimately, that should make it easy for us
+                                to experiment with a full-XML based repository, which we suspect
+                                will allow us to scale up to required levels.
+                            As we started to redesign the implementation, we looked at the
+                                Metadata Encoding and Transmission Standard (METS) schema to see if
+                                it would work for describing the objects. It turned out that most of
+                                what we needed to describe a FEDORA object was readily available in
+                                METS. The only thing really missing was a way to handle the
+                                disseminators that FEDORA uses to give the object behaviors. We made
+                                a proposal to the METS working group that resulted in a new
+                                top-level section being added for behavioral metadata that will be
+                                optional. That section can be used to associate an object with a
+                                behavior definition object and a corresponding behavior mechanism
+                                object. This presentation will discuss the use of METS to build a
+                                variety of different types of FEDORA objects, including the two
+                                types of behavior objects.
+                        
+                    
+                
+            
+        
+    

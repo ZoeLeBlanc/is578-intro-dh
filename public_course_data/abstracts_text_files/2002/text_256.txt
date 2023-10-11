@@ -1,0 +1,262 @@
+
+
+
+    
+        
+            
+                A logic programming environment for document semantics
+                    and inference
+                
+                    
+                        David
+                        Dubin
+                        
+                            University of Illinois at Champaign-Urbana
+                            ddubin@uiuc.edu
+                        
+                    
+                
+                
+                    
+                        Michael
+                        Sperberg-McQueen
+                        
+                            World Wide Web Consortium, USA
+                            cmsmcq@acm.org
+                        
+                    
+                
+                
+                    
+                        Allen
+                        Renear
+                        
+                            University of Illinois at Champaign-Urbana
+                            renear@alexia.lis.uiuc.edu
+                        
+                    
+                
+                
+                    
+                        Claus
+                        Huitfeldt
+                        
+                            University of Bergen, Norway
+                            Claus.Huitfeldt@hit.uib.no
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Recently Sperberg-McQueen and others have argued that markup functions by
+                    licensing inferences about a text. They remark, however, that the information
+                    warranting such inferences may not be entirely explicit in the syntax of the
+                    markup language used to encode the text. (Sperberg-McQueen et al., 2001)
+                For example, a language defined in SGML or XML may include an attribute (such as
+                    'lang') that an encoder may apply to an element with the generic identifier
+                    'QUOT.' One might then infer that the QUOT element marks an identifiable
+                    component of the document (called a quotation) and that the quotation has the
+                    property of being in a particular language (as indicated by the 'lang'
+                    attribute). It may also be valid to infer that children of the 'QUOT' element
+                    share the property of being in that language, unless overridden with a language
+                    attribute of their own. On the other hand, there may not be such a simple
+                    one-to-one mapping between components and elements: for example, a single
+                    quotation may be broken across two or more 'QUOT' elements.
+                There are a number of other inferences that are typically assumed by tag set
+                    designers and application designers alike, but which cannot be formally
+                    expressed in the DTD, and may or may not be informally expressed in the tag set
+                    documentation.
+                In order to adequately represent such inferences (the "meaning of markup") the
+                    Sperberg-McQueen group developed techniques for expressing in predicate logic,
+                    (i) the facts signalled by the encoding of a particular document instance and
+                    (ii) the logical relationships commonly understood to exist and license further
+                    inferences. A Prolog database was used to demonstrate the effectiveness of this
+                    approach.
+                The present paper builds directly on this previous work, and reflects new results
+                    which provide more rigorous and explanatory layers of abstraction and progress
+                    in understanding problems with "deictic" expressions and domains of variables,
+                    etc. But the fundmental new result presented is the completion of a complete
+                    integrated working system with an entirely new and substantially redesigned
+                    Prolog database at its core. This Prolog database has been redesigned to improve
+                    functionally, better reflect the theoretical results, and increase
+                    functionality, flexibility, and performance.
+                The system permits an analyst to specify facts about the markup syntax (e.g.,
+                    generic identifiers and attribute values) separately from facts and rules of
+                    inference about semantic entities and properties. The system provides a level of
+                    abstraction at which the performative or interpretive meaning of the markup can
+                    be explicitly represented in machine-readable and executable form. Inferences
+                    can then be drawn regarding document components, including problematic
+                    structures, such as those participating in overlapping hierarchies.
+                The new Prolog database is integrated with an SGML/XML parser so that SGML and
+                    XML instances can be input and output. Facts and rules of inference concerning
+                    the document are expressed in Prolog's standard declarative syntax. We have
+                    developed a collection of predicates that emulate a subset of the W3C's Document
+                    Object Model methods for navigating the hierarchical structure of nodes, and
+                    retrieving attribute values and information from the document type definition.
+                    These predicates afford a clear separation of the syntactic information captured
+                    by the parser and the document semantics expressed by the analyst.
+                Another collection of predicates support deictic expression resolution. These
+                    allow rules of inference to include location-relative pointing from one part of
+                    the document to another. For example, we have predicates for resolving an
+                    element's closest ancestor having a particular generic identifier, attribute, or
+                    attribute value pair. Another set of predicates resolves the identity of an
+                    element of a particular type occurring most closely in terms of the linear
+                    structure of the document (rather than the closest in the hierarchy). A third
+                    set of predicates supports the tracing of connections across elements, such as
+                    those linked by ID and IDREF attribute pairs.
+                Rules (axioms) represent the further logical relationships mentioned above, such
+                    as for defeasible inheritance, distribution of distributive properties, etc.
+                In developing the architecture of this system, we have adopted an object-oriented
+                    strategy: each node identified by the parser and semantic entity instantiated
+                    via a rule of inference has a unique identifier assigned by the system.
+                    Predicates for retrieving or manipulating that information are written with the
+                    aim of hiding the underlying data structure. The system architecture can
+                    therefore be understood to have several distinct layers of representation:
+                        1. A parser that handles the serialized document instance.
+                        2. Predicates for processing the output of the parser.
+                        3. Predicates for storing a representation of the parse tree in the
+                            Prolog database.
+                        4. Predicates for emulating DOM methods, deictic expression
+                            resolution, object instantiation, and general characteristics of
+                            properties (such as their inheritance and distribution).
+                        5. Facts and rules of inference expressing the document
+                            semantics.
+                    
+                The first two layers are implementation-dependent, and are designed to be
+                    modular, allowing experimentation to improve robustness and scalability. We
+                    intend the upper layers to be consistent across different implementations of the
+                    system. Currently the interface between the lower and upper layers in written
+                    entirely in Prolog, but we may employ other technologies (such as XSLT) in the
+                    future.
+                This system is being developed with the aim of advancing several interrelated
+                    research goals. We will develop applications that provide a complete formal
+                    account of the semantics of particular document classes. The system will also
+                    provide an environment for experimenting with proposed or conjectured semantics
+                    with the goal of improving document retrieval and conversion applications. We
+                    also propose to build applications that draw inferences based on both document
+                    semantics and domain or world knowledge.
+                At this time the new Prolog database has been completed and tested and the entire
+                    working system can be demonstrated on small fragments of TEI. By the conference
+                    we hope to have completed the representation of the markup semantics of two XML
+                    systems (XHTML and TEI-lite), which will allow us to be able to present a
+                    substantial demonstration of the practical advantages of representing markup
+                    semantics, as well as the theoretical soundness of this approach to the meaning
+                    of markup.
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            Text in the Electronic Age: Textual Study and Text
+                                Encoding, with Examples from Medieval Texts
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                6
+                                1
+                                
+                                1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            Meaning and Interpretation of Markup
+                        
+                        
+                            Markup Languages: Theory and Practice
+                            
+                                2
+                                3
+                                215-234
+                                2001
+                            
+                        
+                        Originally delivered at ALLC/ACH 2000 in Glasgow.
+                    
+                
+            
+        
+    

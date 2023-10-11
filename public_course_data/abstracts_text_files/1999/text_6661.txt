@@ -1,0 +1,219 @@
+
+
+
+    
+        
+            
+                ATE: ARTFL Text Encoding
+                
+                    
+                        Mark
+                        Wolff
+                        Electronic Text Services University of
+                                Chicago
+                            mbw3@stone.lib.uchicago.edu
+                        
+                    
+                
+                
+                    
+                        Leonid
+                        Andreev
+                        Department of Mathematics Harvard
+                                University
+                            leonid@math.harvard.edu
+                        
+                    
+                
+                
+                    
+                        Mark
+                        Olsen
+                        ARTFL Project University of Chicago
+                            mark@barkov.uchicago.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The ATE (ARTFL Text Encoding) specification is the encoding scheme for the
+                    current generation of textual databases running under PhiloLogic, a full-text
+                    search engine developed by ARTFL. The advantage of using ATE is that electronic
+                    text centers (such as the University of Chicago Library's Electronic Text
+                    Services) can provide sophisticated access to full-text databases without the
+                    costs and overhead of encoding document structure that current software cannot
+                    easily process. For those who wish to continue using full SGML (such as the TEI
+                    and the EAD), PhiloLogic can provide access to their electronic texts right now
+                    through data conversion.
+                PhiloLogic offers users the ability to define a corpus of documents by multiple
+                    criteria (such as author, title, and date) and allows them to search for words,
+                    phrases, and UNIX regular expressions in that corpus. Search results are
+                    displayed in concordance and KWIC formats as well as frequency by title
+                    listings. From the concordance and KWIC displays users can expand the context
+                    surrounding their search terms by viewing the page or content object (paragraph,
+                    poem, chapter, etc.) containing the terms. Users can also navigate a document
+                    from a table of contents which lists major document objects.
+                SGML in general and the TEI in particular make reporting search results over the
+                    web difficult for commercial full-text software because most browsers cannot
+                    handle anything other than HTML. XML promises a way for future browsers to
+                    handle document structure, but that functionality has yet to become a reality
+                    and will require not only a host of new or modified DTDs but also new browser
+                    software to process XML-encoded documents, all of which will require specialized
+                    skills and staff that may be beyond the resources of most humanities computing
+                        organizations.1. Jon Bosak and Tim Bray, "XML and the
+                        Second-Generation Web," Scientific American (May
+                        1999). &lt;&gt; We agree with one of the authors of the TEI who observes
+                    that HTML is currently the most effective delivery vehicle for SGML documents to
+                    web browsers.2. Lou Burnard, "SGML on the Web: Too Little Too Soon,
+                        or Too Much Too Late," Computers &amp; Texts,
+                        15 (August 1997). &lt;&gt; As he notes, SGML-to-HTML conversion on the fly is
+                    complex, costly, and CPU-intensive. Commercial applications such as DynaWeb
+                    provide a means to search SGML-encoded documents and send results over the Web,
+                    but these applications are often cumbersome and require extensive postprocessing
+                    of search reports.3. Toby Burrows, "Using DynaWeb to Deliver Large
+                        Full-Text Databases in the Humanities," Computers &amp;
+                            Texts, 13 (December 1996). &lt;&gt;
+                Searching ATE-encoded documents with PhiloLogic over the web avoids many of the
+                    problems of commercial SGML search engines because the source files are already
+                    in a format web browsers can handle. ATE uses Dublin Core headers for metadata
+                    as well as a few optional extensions to HTML. The following header from our
+                    general specification is in use for both ARTFL data creation projects, most
+                    notably our French Women Writer's project, and for loading databases from other
+                    sources with SGML DTDs.
+                &lt;head&gt; 
+                    &lt;meta name="DC.title" content="TITLE GOES HERE"&gt; 
+                    &lt;meta name="DC.creator" content="AUTHOR GOES HERE"&gt; 
+                    &lt;meta name="DC.publisher" content="PUBLISHER INFO HERE"&gt; 
+                    &lt;meta name="DC.date" content="YEAR FIRST PUB"&gt; 
+                    &lt;meta name="DC.type" content="GENRE OR TYPE"&gt; 
+                    &lt;meta name="DC.identifier" content="SHORT CITATION"&gt; 
+                    &lt;meta name="DC.contributor" content="Editor or other"&gt; 
+                    &lt;meta name="DC.subject" content="TO BE DETERMINED"&gt; 
+                    &lt;meta name="DC.format" content="ATE"&gt; 
+                    &lt;meta name="DC.language" content="fr"&gt; 
+                    &lt;meta name="DC.description" content="TO BE DETERMINED"&gt; 
+                    &lt;meta name="DC.relation" content="TO BE DETERMINED"&gt; 
+                    &lt;meta name="DC.coverage" content="TO BE DETERMINED"&gt; 
+                    &lt;meta name="DC.source" content="ARTFL:WW:1999"&gt; 
+                    &lt;meta name="DC.rights" content="ARTFL:1999"&gt; 
+                    &lt;/head&gt;
+                ATE uses HTML to represent text as an ordered hierarchy of content objects.See Steven J. DeRose, David Durand, Elli Mylonas, and Allen H. Renear,
+                        "What is Text, Really?", Journal of Computing in Higher
+                            Education, 1:2 (1990), 3-26. The top level of the
+                    hierarchy is the document itself, as described in the DC header. Lower text
+                    levels are encoded with the older HTML tags &lt;H1&gt;,
+                    &lt;H2&gt;, etc., instead of nested &lt;DIV&gt;s:
+                    &lt;body&gt; 
+                        &lt;H1&gt;Preface&lt;/H1&gt; 
+                        ... some text and tags ... 
+                        &lt;H1&gt;Book One &lt;/H1&gt; 
+                        &lt;H2&gt;Part One&lt;/H2&gt; 
+                        &lt;H3&gt;Chapter 1&lt;/H3&gt; 
+                        ... some text and tags ... 
+                        &lt;H3&gt;Chapter 2&lt;/H3&gt; 
+                        ... some text and tags ... 
+                        . 
+                        . 
+                        . 
+                        &lt;/body&gt;
+                A document need not contain all these divisions. The three level hierarchy can
+                    reflect any number of possible structures, such as Book-Chapter-Verse, or
+                    Act-Scene (leaving &lt;H3&gt; blank).
+                Further object levels which descend from the lowest division level are as
+                    follows:
+                    &lt;p&gt; = paragraph/stanza 
+                        sentence = which are defined by a set of rules or optional tags (&lt;sent&gt;) 
+                        word = delimited by white space and punctuation 
+                Pages constitute optional objects. They do not fit into the structural hierarchy
+                    outlined above, but they form a parallel structure for display
+                    purposes:
+                     &lt;page n="[ANY STRING]"&gt; where [ANY STRING] is a page object identifier (e.g. page 
+                         number) from the source edition (page tags occur at the beginning of pages).
+                ATE is therefore a specific implementation of HTML 3.2 with a few optional tags.
+                    PhiloLogic completely ignores SGML encoding that it does not recognize, simply
+                    passing such encoding through the system, to be delivered to the browser or
+                    modified by a database specific formatting module on output. Not only does ATE
+                    facilitate the use of well known systems (such as HTML editors, WWW browsers,
+                    etc.) for creating and modifying documents for PhiloLogic databases, but it also
+                    provides an experimental infrastructure for intelligent indexing of WWW document
+                    spaces.
+                In order to import SGML-encoded data into a PhiloLogic database, the SGML must be
+                    flattened to ATE. Any SGML data set can be converted to ATE using James Clark's
+                    nsgmls parser and David Megginson's Perl module SGMLS.pm. We have found that
+                    despite the inconsistencies in text markup from one etext shop to another and
+                    even within a single etext shop (such as Chadwyck-Healey, arguably the largest
+                    and most consistent producer of encoded text), the ATE specification can be
+                    applied to any set of SGML data through parsing and conversion. We have already
+                    loaded many databases based on a variety of SGML DTDs, including a many
+                    Chadwyck-Healey products (Patrologia Latina, Voltaire électronique, Goethes
+                    Werke, English Poetry, and many others), TEI documents (such the Oxford Text
+                    Archive's First Folio Shakespeare and documents from Indiana University's
+                    Victorian Women Writer's Project), and sample Encoded Archival Descriptions
+                    (EAD).
+                We plan to add extensions to PhiloLogic, but we are not developing encoding
+                    elements for which we not have an application or planned application. Extensions
+                    to the tag set and PhiloLogic functionality include database internal
+                    cross-references, of which notes are an important subclass, and full UNICODE
+                    support. We are particularly interested in hearing from users and text encoding
+                    experts regarding critical functional/tag set deficiencies.
+                We believe that we have built an effective search engine with a general data
+                    encoding specification that provides sophisticated capabilities at low cost.
+                    PhiloLogic is in full production at ARTFL and the University of Chicago Library.
+                    We are currently exploring several avenues for release of PhiloLogic and are
+                    beginning to work with some collaborating institutions to build a release
+                    version of PhiloLogic.
+            
+        
+    

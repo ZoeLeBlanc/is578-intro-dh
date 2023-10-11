@@ -1,0 +1,107 @@
+
+
+
+    
+        
+            
+                Fun with Unix Tools
+                
+                    
+                        Eileen
+                        Fitzpatrick
+                        
+                            Montclair State University
+                            fitzpatr@sapir.montclair.edu
+                        
+                    
+                
+                
+                    
+                        Steve
+                        Seegmiller
+                        
+                            Montclair State University
+                            
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Unix operating system provides a set of flexible text processing tools that
+                    offer the user features beyond those of standard concordancers including the
+                    ability to compare and manipulate different types of text. We show how simple
+                    tools can combine to accomplish sophisticated tasks, using examples from
+                    lexicography and phonology.
+                The creation of an English-Karachay (a Turkic language) dictionary involves
+                    checking elicitations from native speakers, grammars, and glossaries against a
+                    series of authentic texts for accuracy, citations, and words that do not appear
+                    in our sources. Unix tools allow us to find words in context in the manner of
+                    traditional concordancers, but they also permit the creation of three lists --
+                    words only in the dictionary, words only in the texts, and words in both -- that
+                    enable us to decide which words should be omitted from and which words entered
+                    into the dictionary.
+                Spanish text-to-speech systems are set at a faster rate than English systems. One
+                    reason for this might be that Spanish words and phrases are longer than their
+                    English counterparts. Unix tools allow us to estimate average syllable length
+                    per word by counting vowels in English and Spanish pronouncing dictionaries and
+                    showing that, on average, Spanish words have twice as many syllables as English
+                    words. Word counts of parallel corpora show that Spanish also has more words per
+                    text than English.
+                The operations discussed here involve standard commands available on any Unix (or
+                    Linux) system, do not require extensive training to use, and are re-usable for
+                    widely varying applications.
+            
+        
+    

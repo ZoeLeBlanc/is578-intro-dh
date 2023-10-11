@@ -1,0 +1,353 @@
+
+
+
+    
+        
+            
+                Can a Team Tag Consistently? Experiences on the Orlando
+                    Project
+                
+                    
+                        Terry
+                        Butler
+                        
+                            Arts Technologies for Learning Centre
+                            University of Alberta
+                            Terry.Butler@UAlberta.ca
+                        
+                    
+                
+                
+                    
+                        Sue
+                        Fisher
+                    
+                
+                
+                    
+                        Susan
+                        Hockey
+                    
+                
+                
+                    
+                        Greg
+                        Coulombe
+                    
+                
+                
+                    
+                        Patricia
+                        Clements
+                    
+                
+                
+                    
+                        Susan
+                        Brown
+                    
+                
+                
+                    
+                        Isobel
+                        Grundy
+                    
+                
+                
+                    
+                        Kathryn
+                        Carter
+                    
+                
+                
+                    
+                        Kathryn
+                        Harvey
+                    
+                
+                
+                    
+                        Jeanne
+                        Wood
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    Given that a team of thirty-five humanities researchers cannot possibly use
+                        structural and interpretive SGML tags consistently over a period of three
+                        years, what issues face a major SGML research project wanting to impose
+                        adequate amounts of consistency to their tagged data? This is the key
+                        question currently facing the Orlando Project as we take stock and embark on
+                        a process of tag cleanup work.
+                
+                
+                    Extent of the Project's Tagging
+                    The Orlando Project is in the 4th year of its 6 year tenure as a Major
+                        Collaborative Research Initiative funded by the Social Sciences and
+                        Humanities Research Council of Canada and the Universities of Alberta and
+                        Guelph. Our aim is to research, write, and tag in SGML an integrated history
+                        of women's writing in the British Isles. We are not tagging pre-existing
+                        texts; rather we are creating our own literary history through conducting
+                        primary research that we then filter through SGML tagging. To do this we
+                        have created three unique yet interdependent SGML document types (DTDs): one
+                        that permits the description of biography, one that takes into account all
+                        the factors that contribute to a writing career, and one that provides an
+                        architecture for describing chronological events. Our DTDs are modeled
+                        structurally on the TEI but each contains many interpretive tags that allow
+                        us to foreground our research practices and label the intellectual content
+                        of our material. For example, the biography DTD has tags for birth, family,
+                        education, and political affiliations; writing documents use tags for such
+                        text-specific information as genre, intertextuality, literary awards, and
+                        relations with publishers; events documents contain chronological events
+                        that have such information as organization names and places tagged.
+                    Currently there are 252 unique tags in our DTDs and 114 unique attributes.
+                        These tags are used extensively across over 2,200 documents in our system.
+                        As of April 1999, the total number of elements in use in all project
+                        documents was over 640,000. For example, in biography documents alone the
+                        &lt;quote&gt; tag is used 2,135 times and the &lt;name&gt; tag 8,103 times.
+                        There are 51,125 uses of &lt;date&gt; in events documents. With element
+                        numbers of this scale, it became clear to us that we simply couldn't clean
+                        up our tags on an element by element basis. This paper will address the
+                        issues that we have faced when trying to achieve tagging consistency on the
+                        project. It will also report on a pilot study on tag consistency work that
+                        we have undertaken in the Fall and Winter of 1998-1999.
+                
+                
+                    Is Consistency Possible?
+                    We realize that achieving complete consistency with a diverse team of taggers
+                        using a complex tagset is impossible. Surveys of similar work done in the
+                        fields of indexing [Leonard, 1977], tagging linguistic data [Garside, 1993],
+                        and hypertext linking [Ellis, 1994] show that only a modest degree of
+                        consistency can be achieved by a team, even with ample training and a more
+                        focused and smaller tagset than we possess. Our own process of document
+                        analysis when we developed our DTDs lead us to the same conclusion: it is
+                        immensely difficult for a group of people to come to a common understanding
+                        of exactly what a particular tag means and what its use in the research
+                        document should be.
+                    However, there is a level of consistency to which we aspire, and it is
+                        predicated upon the needs of the scholarly community who will be our end
+                        users. Therefore, some tag cleanup will be necessary to ensure adequate
+                        search and retrieval, chronological sorting, and consistent presentation of
+                        material to our research communities.
+                
+                
+                    Current and Past Efforts at Achieving Tagging Consistency
+                    Although we have only begun tag cleanup work in earnest in the Fall of 1998,
+                        we have had practices in place from the early stages of the project that
+                        have helped us work towards consistent tagging. Our Graduate Research
+                        Assistants (GRAs) receive three full-time days worth of training each
+                        September, after which they begin tagging and have their work reviewed by
+                        experienced team members. This training and checking is complemented by a
+                        comprehensive online glossary of our SGML tags and tagging practices. When a
+                        tagger cannot find an answer in the documentation or is faced with a new
+                        tagging/research problem, she can pose a question of our student e-mail
+                        discussion list. Here Postdoctoral Fellows answer most questions that come
+                        up (referring the more difficult cases to an e-mail list of Co-investigators
+                        and Postdoctoral fellows) and revise and augment the documentation when
+                        necessary.
+                    Our practices for ensuring tag consistency have proven enormously useful, but
+                        they cannot in themselves moderate the work of 20 researches using such a
+                        complex tag set. Tags sometimes get used without the tagger realizing that
+                        an issue has been discussed or appears in the documentation. At over 500
+                        pages, the documentation is a testament to the fact that a complex research
+                        project deals with issues that can't be tracked by all taggers at all
+                        times.
+                
+                
+                    Tag cleanup pilot
+                    In the Fall of 1998, we began a tag cleanup pilot study to investigate the
+                        problem of inconsistent tagging and to draw conclusions about the degree of
+                        consistency which will be achievable. During the pilot, GRAs were each given
+                        a group of representative tags to look at in detail across all project
+                        documents. The following is a list of some of the strategies they used to
+                        uncover inconsistency problems in the data:
+                            Comparing the use of a tag to how its use has been documented and
+                                recommending a change in practice or documentation where necessary. 
+                            Investigating the use of 'odd' sub-elements. For example, there is
+                                an instance in the system where a word has been tagged as both
+                                &lt;genre&gt; and &lt;characterName&gt;. In all likelihood, this is
+                                a tagging mistake.
+                            Finding missing attribute values such as, for example, the
+                                titletype attribute on &lt;title&gt;.
+                            Investigating "odd" uses of attributes.
+                            Finding improperly filled in attributes. For example, the value
+                                attribute on &lt;date&gt; has some inconsistencies in terms of how
+                                standard dates should be expressed.
+                            Investigating the over-use of a single tag in a document.
+                        
+                    In their reports, the GRA's noted which problems could be fixed with batch
+                        search and replace capabilities and which would need to be manually fixed.
+                        The pilot helped us realize that the tags most in need of fixing were those
+                        that acted as index/linking tags (name, orgname), those that governed
+                        presentation of our material (title, quote), and those that needed to be
+                        consistent for automated sorting/alphabetizing (date, name, orgname,
+                        title).
+                
+                
+                    Computer Tools
+                    In the spring of 1999, we turned our attention to developing a set of
+                        protocols for fixing these tags. We defined and ran a set of batch changes
+                        that would address many of the consistency problems outlined in the tag
+                        cleanup reports. Our programmer has also created a set of tools over the
+                        last year that would ease the process of manual cleanup. A Web front-end to
+                        the SGREP program with canned search queries allows team members to see just
+                        how a tag or attribute has been used (or misused) across all project
+                        documents. A "System-wide Document Statistics Report" provides statistical
+                        information on the use of tags and their attributes and reports documents
+                        where tag use has varied widely from normal usage. An finally, a "Tag
+                        Cleanup Reporting Tool" alphabetizes any given tag according to its standard
+                        or reg attribute across any combination of project documents. These tools
+                        will be demonstrated and their merits discussed in the during session.
+                
+                
+                    Conclusions
+                    The insights gleaned from our pilot study have helped us better quantify and
+                        assign the work that we are currently undertaking. By setting priorities for
+                        fixing the problems, we hope that we have defined a level of consistency
+                        that we can achieve and that we can learn to be content with. We also hope
+                        that we can now avoid having qualified researchers spending valuable time
+                        fixing problems that can be more quickly and accurately fixed by computer
+                        processes. We hope that doing this work will make our data rich in its
+                        breadth and depth of research and tagging and will make our end product
+                        meaningful and accessible to our user community.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Lawrence
+                                    E.
+                                    Leonard
+                                
+                            
+                            Inter-Indexer Consistency Studies, 1954-1975: A Review
+                                of the Literature and Summary of the Study Results
+                            Univ of Illinois Graduate School of Library Science,
+                                Occasional Papers
+                            
+                                131
+                                
+                                Univ of Illinois Graduate School of Library
+                                    Science
+                                December 1977
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    Ellis
+                                
+                            
+                            
+                                
+                                    Jonathan
+                                    Furner-Hines
+                                
+                            
+                            
+                                
+                                    Peter
+                                    Willett
+                                
+                            
+                            On the Creation of Hypertext Links in Full-Text
+                                Documents: Measurement of Inter-Linker Consistency
+                        
+                        
+                            Journal of Documentation
+                            
+                                50
+                                2
+                                67-98
+                                June 1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Roger
+                                    Garside
+                                
+                            
+                            The Large-scale Production of Syntactically Analysed
+                                Corpora
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                8
+                                1
+                                39-46
+                                1993
+                            
+                        
+                    
+                
+            
+        
+    

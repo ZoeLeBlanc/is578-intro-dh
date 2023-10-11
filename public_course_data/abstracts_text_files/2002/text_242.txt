@@ -1,0 +1,355 @@
+
+
+
+    
+        
+            
+                The name of the place : towards a model for
+                    interconnection of geographical entities
+                
+                    
+                        Øyvind
+                        Eide
+                        The Museum Project, 
+                            University of Oslo
+                            oyvind.eide@muspro.uio.no
+                        
+                    
+                
+                
+                    
+                        Lars-Jørgen
+                        Tvedt
+                        The Documentation Project, 
+                            University of Oslo
+                            l.j.tvedt@muspro.uio.no
+                        
+                    
+                
+                
+                    
+                        Jon
+                        Holmen
+                        The Museum Project, 
+                            University of Oslo
+                            jon.holmen@muspro.uio.no
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    The Documentation Project and the Museum Project are cooperative projects
+                        between the four universities in Norway. Since 1991, these projects have
+                        performed retro-conversion and digitization of analogue archives, books,
+                        images and other media types. During the building up of our diverse
+                        collections, the need for a model expressing relationships between place
+                        names has been strongly felt, both in the modelling and the presentation of
+                        each collection and in the present work towards deeper integration between
+                        the various collections.
+                    In our paper, we will present an object-oriented model for expressing
+                        relations between geographical objects applied on Norwegian geographical
+                        information taken from our digital collections, followed by a discussion
+                        about further development and implementation of the model.
+                
+                
+                    Previous efforts
+                    In connection with geographical reference systems for digital libraries we
+                        commonly find the use of UTM coordinates in the specification of
+                        geographical entities, as seen e.g. in the Alexandria project (Beard 1997).
+                        Whereas this method gives many possibilities both for use in single
+                        collections and in the interconnection of heterogeneous collections of
+                        information object, this method is not suitable for collections that
+                        contains a large number of references to geographical entities for which it
+                        is impossible or unfeasible to enter this type of coordinates.
+                    Whereas the use of UTM coordinates will be an important part of our system,
+                        we have to design a system which does not depend on this type of
+                        information. As the basic structure in the organization of the geographical
+                        information objects, we use the political geography of Norway. At any single
+                        point in history, this structure takes the form of a tree, as seen in fig.
+                        1. However, this tree structured model is too restricted to cover
+                        collections spanning a time period. It have to be expanded, as we will see
+                        below.
+                    
+                    Vegard Elvestrand has published a standard for geographical classification
+                        (Elvestrand 1977) with municipalities as the smallest unit. The number of
+                        municipalities in Norway has changed a great deal through splits and
+                        unifications. His model is effective for the classification of literature;
+                        one of our collections is classified according to his standard (Eide, 1998
+                        p. 287-288), but the underlying model is also too restricted for our use.
+                        His model contains classification symbols for every municipality that has
+                        existed, but it has no linking showing the actual changes.
+                    Norsk samfunnsvitenskapelig datatjeneste
+                        (Norwegian Social Science Data Services, NSD) has designed various databases
+                        based on the administrative structure of Norway, directed towards the needs
+                        of the social sciences to present data on present and historical statistics
+                        (NSD 1997, chapter 3). Their model is effective for historical models of
+                        municipalities, but it does not allow us to include the multiple systems of
+                        geographical information needed for cultural and natural historical
+                        information systems, as we will see below.
+                    The model described here is conform with the CIDOC object-oriented Conceptual
+                        Reference Model (CIDOC 1999), and we will follow the further development of
+                        the CIDOC model closely as we develop and implement our model of
+                        geographical information.
+                
+                
+                    Places vs. place names
+                    There are several other structures interconnected with the simple structure
+                        of fig. 1, e.g.:
+                            Other administrative regions, e.g. police districts, clerical
+                                districts
+                            Named geographical formations, e.g. lakes, mountains,
+                                rivers
+                            Property structures, e.g. farms, common land
+                        
+                    In the geographical model in fig. 1, there is no distinction between a place
+                        and a place name. The difference between a geographical unity in the real
+                        world and the name we use to refer to this unity must be expressed in any
+                        geographical model. There are two main reasons for this:
+                            The same word often refer to several distinct places. One example
+                                of this is a municipality called Våler, which is found in the county
+                                of Hedmark as well as in the county of Østfold.
+                            Political structures may change. The area of the town of Hamar is
+                                larger today than it was ten years ago, whereas the municipality of
+                                Vang no longer exists (in a bureaucratic sense of the word exist),
+                                as it is included in the expanded town of Hamar.
+                        
+                    In fig. 2, our basic geographic model is
+                        sketched, populated with several geographical objects. The idea behind the
+                        model is not to represent all potential information about geographical
+                        entities and their relations, but to include enough information to perform
+                        computer search, browse and interconnection between objects in an effective
+                        way.
+                    
+                    Each object in our model may have an attribute showing the time span that the
+                        geographical entity was known in that form. This does not mean that the
+                        object is placed in a time continuum, as it has a distinct, everlasting
+                        geographical location, which may be expressed in geographical coordinates.
+                        The time span is just an attribute showing which time period this specific
+                        geographical object was referred to. This is especially important for legal
+                        entities such as municipalities. Municipalities described as old or new in the
+                        figure have been split up or united.
+                    The direction of the graph is always from the bigger unit to the smaller
+                        unit: a unit pointed to is a part of the unit pointing from. To make this
+                        possible, we have split geographical entities covering parts of several
+                        other entities into parts shown on the figure as hp for hill parts and sp for sea
+                        parts. Each such part is part of both the sea as a whole and the
+                        municipality that this part is located in.
+                    The known place object contains a name, an optional time span, and references
+                        to other objects forming the graph. As some of our collections contain UTM
+                        data, and as we will be able to import such data for all our municipalities
+                        from e.g. NSD, the object also contains an optional UTM attribute.
+                
+                
+                    Expansion into the unknown
+                    We define each actual mentioning of names in texts and other media as an
+                        observation. In this context, observations are all references to
+                        geographical entities in information objects. Their relation to the model is
+                        seen in fig. 3. These observations are external
+                        to the model; whereas the model shows the objective reality (in the meaning
+                        agreed upon, checked), observations are subjective references made by a
+                        human being at a specific time, although this time may be uncertain or
+                        unknown.
+                    
+                    An observation will never refer to more than one place-name by definition. If
+                        there is more than one link from an observation to known facts, such a split
+                        expresses an insecure fact, in which case an observation may relate to one
+                        out of several possible known places, but we do not know which one.
+                    There is no limitations as to what kind of entities may be included in an
+                        implementation of this model, but we will have to decide on standards when
+                        we use the model in actual work. The development of such standards will be
+                        be discussed in our paper, together with search facilities and matters of
+                        implementation.
+                    
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    K.
+                                    Beard
+                                
+                            
+                            
+                                
+                                    T.
+                                    Smith
+                                
+                            
+                            
+                                
+                                    L.
+                                    Hill
+                                
+                            
+                            Meta-information models for georeferenced digital
+                                library collections
+                        
+                        
+                            Proceedings of the Second IEEE Metadata Conference,
+                                September 16-17, 1997
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Nick
+                                    Crofts
+                                
+                            
+                            
+                                
+                                    Ifigenia
+                                    Dionissiadou
+                                
+                            
+                            
+                                
+                                    Martin
+                                    Doerr
+                                
+                            
+                            
+                                
+                                    Matthew
+                                    Stiff
+                                
+                            
+                            Definition of the CIDOC object-oriented Conceptual
+                                Reference Model
+                            
+                                
+                                Produced by the ICOM/CIDOC Documentation Standards
+                                    Group
+                                1999
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Vegard
+                                    Elvestrand
+                                
+                            
+                            Klassifikasjonsnøkkel til norsk topografi
+                                [Classification key to Norwegian topography]
+                            
+                                Trondheim
+                                
+                                1976
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Øyvind
+                                    Eide
+                                
+                            
+                            The Quest for Re-Intergration : Creating New Documents
+                                across Traditional Borders
+                        
+                        
+                            Proceeding of 6th International BOBCATSSS Symposium,
+                                January 1998
+                            
+                                Budapest
+                                
+                                1998
+                                280-291
+                            
+                        
+                    
+                    
+                        
+                            NDS: Katalog 1997. Data og servicetilbud [Catalog 1997.
+                                Data and products]
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

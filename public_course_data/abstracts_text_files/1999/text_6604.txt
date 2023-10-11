@@ -1,0 +1,648 @@
+
+
+
+    
+        
+            
+                Word sense disambiguation using cross-lingual
+                    inform
+                
+                    
+                        Nancy
+                        Ide
+                        Department of Computer Science Vassar
+                                College
+                            Ide@cs.vassar.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                It is well known that the most nagging issue for word sense disambiguation (WSD)
+                    is the definition of just what a word sense is. At its base, the problem is a
+                    philosophical and linguistic one that is far from being resolved. However, work
+                    in automated language processing has led to efforts to find practical means to
+                    distinguish word senses, at least to the degree that they are useful for natural
+                    language processing tasks such as summarization, document retrieval, and machine
+                    translation. Several criteria have been suggested and exploited to automatically
+                    determine the sense of a word in context, including syntactic behavior, semantic
+                    and pragmatic knowledge, and especially in more recent empirical studies, word
+                    co-occurrence within syntactic relations (e.g., Hearst, 1991; Yarowsky, 1993),
+                    words co-occurring in global context (e.g., Gale et al., 1993; Yarowsky, 1992;
+                    Schütze, 1992, 1993), etc. No clear criteria have emerged, however, and the
+                    problem continues to loom large for WSD work.
+                The notion that cross-lingual comparison can be useful for sense disambiguation
+                    has served as a basis for some recent work on WSD. For example, Brown et al.
+                    (1991) and Gale et al. (1992a, 1993) used the parallel, aligned Hansard Corpus
+                    of Canadian Parliamentary debates for WSD, and Dagan et al. (1991) and Dagan and
+                    Itai (1994) used monolingual corpora of Hebrew and German and a bilingual
+                    dictionary. These studies rely on the assumption that the mapping between words
+                    and word senses varies significantly among languages. For example, the word duty
+                    in English translates into French as devoir in its obligation sense, and impôt
+                    in its tax sense. By determining the translation equivalent of duty in a
+                    parallel French text, the correct sense of the English word is identified. These
+                    studies exploit this information in order to gather co-occurrence data for the
+                    different senses, which is then used to disambiguate new texts. In related work,
+                    Dyvik (1998) used patterns of translational relations in an English-Norwegian
+                    parallel corpus (ENPC, Oslo University) to define semantic properties such as
+                    synonymy, ambiguity, vagueness, and semantic fields and suggested a derivation
+                    of semantic representations for signs (e.g., lexemes), capturing semantic
+                    relationships such as hyponymy etc., from such translational relations.
+                Recently, Resnik and Yarowsky (1997) suggested that for the purposes of WSD, the
+                    different senses of a word could be determined by considering only sense
+                    distinctions that are lexicalized cross-linguistically. In particular, they
+                    propose that some set of target languages be identified, and that the sense
+                    distinctions to be considered for language processing applications and
+                    evaluation be restricted to those that are realized lexically in some minimum
+                    subset of those languages. This idea would seem to provide an answer, at least
+                    in part, to the problem of determining different senses of a word: intuitively,
+                    one assumes that if another language lexicalizes a word in two or more ways,
+                    there must be a conceptual motivation. If we look at enough languages, we would
+                    be likely to find the significant lexical differences that delimit different
+                    senses of a word.
+                However, this suggestion raises several questions. For instance, it is well known
+                    that many ambiguities are preserved across languages (for example, the French
+                    intérêt and the English interest), especially languages that are relatively
+                    closely related, such as English and French. Assuming this problem can be
+                    overcome, should differences found in closely related languages be given lesser
+                    (or greater) weight than those found in more distantly related languages? More
+                    generally, which languages should be considered for this exercise? All
+                    languages? Closely related languages? Languages from different language
+                    families? A mixture of the two? How many languages would be "enough" to provide
+                    adequate information for this purpose?
+                There is also the question of the criteria that would be used to establish that a
+                    sense distinction is "lexicalized cross-linguistically". How consistent must the
+                    distinction be? Does it mean that two concepts are expressed by mutually
+                    non-interchangeable lexical items in some significant number of other languages,
+                    or need it only be the case that the option of a different lexicalization exists
+                    in a certain percentage of cases?
+                This paper attempts to provide some preliminary answers to these questions, in
+                    order to eventually determine the degree to which the use of parallel data is
+                    viable to determine sense distinctions, and if so, the ways in which this
+                    information might be used. Given the lack of large parallel texts across
+                    multiple languages, the study is necessarily limited; however, close examination
+                    of a small sample of parallel data can, as a first step, provide the basis and
+                    direction for more extensive studies. I have used parallel, aligned versions of
+                    George Orwell's Nineteen Eighty-Four (Erjavec and Ide, 1998) in five languages:
+                    English, Slovene, Estonian, Romanian, and Czech.The Orwell parallel
+                        corpus also includes versions of Nineteen-Eighty
+                            Four in Hungarian, Bulgarian, Latvian, Lithuanian, Serbian, and
+                        Russian.  The study therefore involves languages from four language
+                    families (Germanic, Slavic, Finno-Ugrec, and Romance), as well as two languages
+                    from the same family (Czech and Slovene). Four ambiguous English words were
+                    considered in this study: hard, line, head, and country. Line and hard were
+                    chosen because they have served in various WSD studies to date (e.g., Leacock et
+                    al, 1993) and a corpus of occurrences of these words from the Wall Street
+                    Journal corpus was generously made available for comparison. Serve, another word
+                    frequently used in these studies, did not appear frequently enough in the Orwell
+                    text to be considered, nor did any other suitable ambiguous verb. Country and
+                    head were chosen as substitutes because they appeared frequently enough for
+                    consideration.
+                All sentences containing an occurrence or occurrences (including morphological
+                    variants) of each of the three words were extracted from the English text,
+                    together with the parallel sentences in which they occur in the texts of the
+                    four comparison languages (Czech, Estonian, Romanian, Slovene). The English
+                    occurrences were grouped into senses, using the relatively coarse sense
+                    distinctions in the Oxford Advanced Learner's Dictionary (OALD)Note
+                        that sense divisions for line and hard can be very fine in larger, standard
+                        dictionaries, often involving dozens of senses (e.g., in the Collins English Dictionary, line as a noun has 63
+                        senses) (used to provide sense distinctions in WordNet [Miller et
+                    al., 1990; Fellbaum, forthcoming]). The sense categorization was performed by
+                    the author and two student assistants; results from the three were compared and
+                    a final, mutually agreeable grouping was established.
+                For each of the four comparison languages, the corpus of sense-grouped parallel
+                    sentences for English and that language was sent to a linguist and native
+                    speaker of the comparison language. The linguists were asked to provide the
+                    following information for each word occurrence:
+                        1. Provide the lexical item in each parallel sentence that corresponds
+                            to the ambiguous English word. If it is inflected, provide both the
+                            inflected form and the root form.
+                        2. Is the translation one-to-one (i.e., the English word is translated
+                            by a single word in your language)? If not, please provide the phrase
+                            (or other means) by which it is translated, or indicate that it is not
+                            lexicalized.
+                        3. Are there obvious synonyms for the word in your language that could
+                            have been used instead of the one chosen? Are they better or worse as
+                            translations?
+                        4. f a given word in any one of its senses is translated using
+                            different words in your language (for example, if a word in the "not
+                            soft" sense of "hard" is translated differently in different sentences),
+                            please indicate why this difference may exist. For example, is it due to
+                            the use of a more general term (hyponym)? a more specific word
+                            (hypernym)? a different sense?
+                        5. Is any of the translations of one of the ambiguous words itself
+                            ambiguous in your language? Is the ambiguity the same as in the English?
+                            If not, is the word ambiguous among different meanings than those for
+                            which it is ambiguous in English? If so, what are its other
+                            meanings?
+                    
+                In order to determine the degree to which the assigned sense distinctions from
+                    the OALD correspond to translation equivalents, a coherence index (CI) was
+                    computed that measures the consistency with which a given sense is translated as
+                    well as the degree of relationship between two senses. CIs were also computed
+                    for each language individually. A simple correlation was then run over all the
+                    CI data, providing an index of the degree to which there is an affinity (or
+                    disaffinity) between the different senses of a given word in each of these
+                    groups. Finally, in order to determine the degree to which the linguistic
+                    relation between languages may affect coherence, a correlation was run among CIs
+                    for all pairs of the four target languages.
+                The results, which will be fully outlined in the final paper, show that
+                    cross-lingual information may be useful for automatic disambiguation, especially
+                    for gross sense distinctions. More interestingly, the data suggest that
+                    translation equivalents may provide a valuable source of information for
+                    determining sense distinctions, by providing an indication of the relatedness
+                    between sense s of a given word that are derived from standard dictionaries. In
+                    particular, the CI's can be used to define a "map" depicting the relative
+                    distance between senses. This information can in turn serve as a basis for
+                    collapsing two senses when the cross-lingual data suggest that their meanings
+                    are nearly interchangeable or for recognizing them as relatively distinct. An
+                    even more promising approach for sense determination is to use information about
+                    translation equivalents to group word occurrences into sense clusters without
+                    assigning or considering senses defined a priori in a dictionary. We are
+                    exploring this last idea and will have additional results to report in the final
+                    paper.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Ido
+                                    Dagan
+                                
+                            
+                            
+                                
+                                    Alon
+                                    Itai
+                                
+                            
+                            Word sense disambiguation using a second language
+                                monolingual corpus
+                        
+                        
+                            Computational Linguistics
+                            
+                                20
+                                4
+                                563-596
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Ido
+                                    Dagan
+                                
+                            
+                            
+                                
+                                    Alon
+                                    Itai
+                                
+                            
+                            
+                                
+                                    Ulrike
+                                    Schwall
+                                
+                            
+                            Two languages are more informative than one
+                        
+                        
+                            Proceedings of the 29th Annual Meeting of the
+                                Association for Computational Linguistics, 18-21 June 1991,
+                                Berkeley, California
+                            
+                                
+                                
+                                1991
+                                130-137
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Helge
+                                    Dyvik
+                                
+                            
+                            Translations as Semantic Mirrors
+                        
+                        
+                            Proceedings of Workshop W13: Multilinguality in the
+                                lexicon II, The 13th Biennial European Conference on Artificial
+                                Intelligence (ECAI 98), Brighton, UK
+                            
+                                
+                                
+                                1998
+                                24-44
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Tomaz
+                                    Erjavec
+                                
+                            
+                            
+                                
+                                    Nancy
+                                    Ide
+                                
+                            
+                            The MULTEXT-EAST Corpus
+                        
+                        
+                            Proceedings of the First International Conference on
+                                Language Resources and Evaluation, 27-30 May 1998, Granada
+                            
+                                
+                                
+                                1998
+                                971-74
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christiane
+                                    Fellbaum
+                                
+                            
+                            WordNet: An Electronic Lexical Database
+                            
+                                Cambridge, Massachusetts
+                                MIT Press
+                                (forthcoming)
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    William
+                                    A.
+                                    Gale
+                                
+                            
+                            
+                                
+                                    Kenneth
+                                    W.
+                                    Church
+                                
+                            
+                            
+                                
+                                    David
+                                    Yarowsky
+                                
+                            
+                            A method for disambiguating word senses in a large
+                                corpus
+                        
+                        
+                            Computers and the Humanities
+                            
+                                26
+                                
+                                415-439
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Marti
+                                    A.
+                                    Hearst
+                                
+                            
+                            Noun homograph disambiguation using local context in
+                                large corpora
+                        
+                        
+                            Proceedings of the 7th Annual Conference of the
+                                University of Waterloo Centre for the New OED and Text Research,
+                                Oxford, United Kingdom
+                            
+                                
+                                
+                                1991
+                                1-19
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Claudia
+                                    Leacock
+                                
+                            
+                            
+                                
+                                    Geoffrey
+                                    Towell
+                                
+                            
+                            
+                                
+                                    Ellen
+                                    Voorhees
+                                
+                            
+                            Corpus-based statistical sense resolution
+                        
+                        
+                            Proceedings of the ARPA Human Language Technology
+                                Workshop
+                            
+                                San Francisco
+                                Morgan Kaufman
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Dan
+                                    I.
+                                    Melamed
+                                
+                            
+                            Measuring Semantic Entropy
+                        
+                        
+                            ACL-SIGLEX Workshop Tagging Text with Lexical
+                                Semantics: Why, What, and How? April 4-5, 1997, Washington,
+                                D.C.
+                            
+                                
+                                
+                                1997
+                                41-46
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    George
+                                    A.
+                                    Miller
+                                
+                            
+                            
+                                
+                                    Richard
+                                    T.
+                                    Beckwith
+                                
+                            
+                            
+                                
+                                    Christine
+                                    D.
+                                    Fellbaum
+                                
+                            
+                            
+                                
+                                    Derek
+                                    Gross
+                                
+                            
+                            
+                                
+                                    Katherine
+                                    J.
+                                    Miller
+                                
+                            
+                            WordNet: An on-line lexical database
+                        
+                        
+                            International Journal of Lexicography
+                            
+                                3
+                                4
+                                235-244
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Philip
+                                    Resnik
+                                
+                            
+                            
+                                
+                                    David
+                                    Yarowsky
+                                
+                            
+                            A perspective on word sense disambiguation methods and
+                                their evaluation
+                        
+                        
+                            ACL-SIGLEX Workshop Tagging Text with Lexical
+                                Semantics: Why, What, and How? April 4-5, 1997, Washington,
+                                D.C.
+                            
+                                
+                                
+                                1997b
+                                79-86
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Hinrich
+                                    Schütze
+                                
+                            
+                            Dimensions of meaning
+                        
+                        
+                            Proceedings of Supercomputing '92
+                            
+                                Los Alamitos, California
+                                IEEE Computer Society Press
+                                1992
+                                787-796
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Hinrich
+                                    Schütze
+                                
+                            
+                            Word space
+                        
+                        
+                            
+                                
+                                    Stephen
+                                    J.
+                                    Hanson
+                                
+                            
+                            
+                                
+                                    Jack
+                                    D.
+                                    Cowan
+                                
+                            
+                            
+                                
+                                    C.
+                                    Lee
+                                    Giles
+                                
+                            
+                            Advances in Neural Information Processing
+                                Systems
+                            
+                                San Mateo, California
+                                Morgan Kauffman
+                                1993
+                                895-902
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    Yarowsky
+                                
+                            
+                            Word sense disambiguation using statistical models of
+                                Roget's categories trained on large corpora
+                        
+                        
+                            Proceedings of the 14th International Conference on
+                                Computational Linguistics, COLING'92, 23-28 August, Nantes,
+                                France
+                            
+                                
+                                
+                                1992
+                                454-460
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    Yarowsky
+                                
+                            
+                            One sense per collocation
+                        
+                        
+                            Proceedings of the ARPA Human Language Technology
+                                Workshop, Princeton, New Jersey
+                            
+                                
+                                
+                                1993
+                                266-271
+                            
+                        
+                    
+                
+            
+        
+    

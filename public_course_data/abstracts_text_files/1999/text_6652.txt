@@ -1,0 +1,558 @@
+
+
+
+    
+        
+            
+                The "Preposterous Muddle" Revisited: An XML Thematic
+                    Catalog DTD
+                
+                    
+                        Perry
+                        Roland
+                        Technology Services Alderman Library University of Virginia
+                            pdr4h@virginia.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Introduction
+                    Thematic catalogs of music have been produced for centuries. Yet, little
+                        attention has been paid to the study of this class of documents due to its
+                        specialized and complex nature. This paper describes the thematic catalog,
+                        its value in the field of music bibliography, and proposes an XML Document
+                        Type Definition that, it is hoped, will stimulate debate on the value of
+                        standardization of this document class.
+                
+                
+                    What is a Thematic Catalog?
+                    A thematic catalog systematically arranges a body of music. Its general
+                        functions are the same as other bibliographical tools: identification,
+                        location, and collocation. The thematic catalog, however, derives special
+                        power from the use of brief citations of music, called incipits, which
+                        provide more certain identification of musical works than any single element
+                        or combination of elements used for other materials, such as creator, title,
+                        publisher, or date. (Brook, p. vii) Such precise identification is necessary
+                        because a single musical work can exist in multiple printed and recorded
+                        editions, because portions of musical works are frequently published or
+                        performed separately (sometimes with a different title) with no reference to
+                        the parent work, and because entire musical works, or selected portions, are
+                        often arranged or transcribed to create "new" entities. (Nagy, p. 15)
+                    Brook identifies several applications for thematic catalogs -- mnemonic aid,
+                        table of contents, guide to a composer's own output, inventory of library
+                        holdings, advertisement for a copying or publishing firm, legal document,
+                        compilation of "true" themes, musicological documentation, and thematic
+                        locator for incipits without an existing catalog. (Brook, p. x-xv) This list
+                        of functions demonstrates the same continuum of activity from simple
+                        list-making to complex analytical endeavor observed in general
+                        bibliographies. (Krummel 1984, p. 4)
+                    The Value of Thematic Catalogs Thematic catalogs have long been recognized as
+                        a solution to the special problems of accessing and describing music. The
+                        earliest examples of thematic catalogs were produced in the 9th to 11th
+                        centuries (Brook, p. x). The fact that production of printed thematic
+                        catalogs has increased every year since 1850 (Basart, p.7) also demonstrates
+                        their value. Vincent Duckles wrote "the thematic catalog is one of the most
+                        useful of all reference tools in the field of music bibliography." (Duckles,
+                        p. 552) While Duckles was primarily concerned with the value of thematic
+                        catalogs to scholars, librarians, and catalogers, Brook's list clearly
+                        demonstrates their usefulness to many segments of the music community.
+                
+                
+                    How is a Thematic Catalog Organized?
+                    Despite Cowley's statement that "the compiler of a bibliography ... is bound
+                        by no conventional rules of arrangement" (Cowley, p. 179), several
+                        organizational methods can be identified for thematic catalogs. When dealing
+                        with the work of a single composer, catalog entries are usually arranged
+                        chronologically or in some classified manner, e.g., by genre. (Basart, p. 6)
+                        Alphabetical arrangement is usually preferred when addressing a single genre
+                        or a body of works by many composers. It is not uncommon, however, to
+                        encounter complex hierarchical arrangements, e.g., alphabetical geographical
+                        entries containing alphabetical composer entries containing works listed by
+                        date.
+                    Responding to the rise in production of thematic catalogs, Hyatt King was the
+                        first to set down the data requirements for a thematic catalog. (King, p.
+                        45-46) His list of suggestions was later expanded based on examination of
+                        catalogs created after the publication of King's guidelines. (Basart, p.
+                        8-10) While not appropriate in every situation, the data requirements given
+                        by King and Basart demonstrate the wide range of information that may be
+                        included in a thematic catalog.
+                
+                
+                    Why Do We Need a Standard?
+                    The benefits to creators and users of an encoding and interchange standard
+                        for thematic catalogs are many. The major benefit of a structured markup
+                        language like XML is that syntax and semantics are treated separately. Once
+                        the precise identification of the role of the information in a document is
+                        accomplished, the data is almost infinitely malleable and can be distributed
+                        in both print and electronic forms. This is a considerable advantage given
+                        the difficulty of creating a thematic catalog and the wide-ranging needs of
+                        its potential users.
+                    Possible applications of the standard include: (1) encoding and interchange
+                        of data in existing catalogs; (2) improvement of the quality of information
+                        contained in future catalogs by providing a template for creators; (3)
+                        realization of "music in print" or "recordings in print" publications,
+                        highly desirable by the music community, comparable to the cumulative trade
+                        catalogs the book world enjoys (Krummel 1987, p. 47); 4) creation of
+                        databases necessary for identifying anonymi, eradicating past errors of
+                        attribution, resolving multiple-parent riddles, and providing data for
+                        future research, e.g., stylistic analysis (LaRue, p. 1181).
+                
+                
+                    Why Not Use an Existing DTD?
+                    The DTDs that exhibit potential for markup of thematic catalogs (TEI and
+                        MARC) are unsatisfactory. TEI is designed primarily for representing texts,
+                        not data, while MARC uses a flat database approach that doesn't accommodate
+                        markup of existing catalogs. In addition, neither DTD allows markup of
+                        musical data using recognized musical terminology, such as "clef" or "pitch
+                        range". Consequently, markup of this group of documents is more likely to be
+                        successful if a new DTD, under the control of the music community, is
+                        created.
+                
+                
+                    The MusiCat DTD
+                    The MusiCat DTD is intended to meet the specialized needs of thematic catalog
+                        creators and users. It provides traditional access points like title,
+                        creator, and imprint as well as music-specific data elements, such as tempo,
+                        meter, and key.
+                    The DTD allows for the many bibliographic arrangements encountered by using
+                        (descriptive unit) elements. Data elements within the are optional and
+                        repeatable, including additional descriptive units. This approach is
+                        structured enough to be usable for database-oriented applications, but loose
+                        enough to accommodate presentation-oriented existing catalogs. It is also
+                        applicable to other kinds of catalogs and bibliographies where extensibility
+                        is a concern.
+                    The use of header information at each descriptive level allows for the
+                        inclusion of management data necessary for collaborative projects and data
+                        access restriction, very important concerns to the music community.
+                
+                
+                    MusiCat Examples
+                    While space does not permit inclusion of the entire DTD, short examples of
+                        compliant markup are provided below.
+                    Example 1
+                                   &lt;musicat&gt; 
+                            &lt;catalog id="18thItalianInstr"&gt;
+                            
+                            &lt;descunit class="composer" id="besozzi"&gt;
+                            
+                            &lt;creator&gt;Besozzi, Alessandro, 
+                            &lt;daterange&gt;&lt;date&gt;1702&lt;/date&gt;&lt;date&gt;1775&lt;/date&gt;&lt;/daterange&gt; 
+                            &lt;biography&gt;
+                            
+                            &lt;p&gt;Oboe virtuoso active in the royal court of Turin ...&lt;/p&gt; 
+                            &lt;p&gt;There are nineteen trio sonatas by Alessandro Besozzi ...&lt;/p&gt; 
+                            
+                            &lt;/biography&gt; 
+                            
+                            &lt;/creator&gt; 
+                            &lt;descunit class="entry" id="It67"&gt;
+                            
+                            &lt;md&gt;&lt;key class="sig"&gt;A major&lt;/key&gt;&lt;/md&gt; 
+                            &lt;titlepage label="1."&gt;
+                            
+                            &lt;title&gt;Sonata a tre&lt;/title&gt; / Del Sigr. Allessandro Besozzi/ Basso/ 
+                            
+                            &lt;/titlepage&gt; 
+                            &lt;physdesc&gt;
+                            
+                            &lt;extent&gt;v 1 &amp; 2, bass.&lt;/extent&gt; 
+                            &lt;dimensions&gt;22x30.5 cm&lt;/dimensions&gt; 
+                            &lt;otherphysdetail&gt;Hand A. Brown&lt;/otherphysdetail&gt; 
+                            
+                            &lt;/physdesc&gt; 
+                            &lt;inciplist&gt;
+                            
+                            &lt;incip&gt;
+                            
+                            &lt;notation&gt;&lt;!-- musical notation --&gt;&lt;/notation&gt; 
+                            &lt;md&gt;
+                            
+                            &lt;duration units="measures"&gt;:11:+:14:&lt;/duration&gt; 
+                            &lt;tempo class="term"&gt;Andante&lt;/tempo&gt; 
+                            
+                            &lt;/md&gt; 
+                            
+                            &lt;/incip&gt; 
+                            &lt;incip&gt;
+                            
+                            &lt;notation&gt;&lt;!-- musical notation --&gt;&lt;/notation&gt; 
+                            &lt;md&gt;
+                            
+                            &lt;duration units="measures"&gt;:34:+:38:&lt;/duration&gt; 
+                            &lt;tempo class="term"&gt;Allegro&lt;/tempo&gt; 
+                            
+                            &lt;/md&gt; 
+                            
+                            &lt;/incip&gt; 
+                            &lt;incip&gt;
+                            
+                            &lt;notation&gt;&lt;!-- musical notation --&gt;&lt;/notation&gt; 
+                            &lt;md&gt;
+                            
+                            &lt;duration units="measures"&gt;:21:+:29:&lt;/duration&gt; 
+                            &lt;tempo class="term"&gt;Allegro&lt;/tempo&gt; 
+                            
+                            &lt;/md&gt; 
+                            
+                            &lt;/incip&gt; 
+                            
+                            &lt;/inciplist&gt; 
+                            &lt;bibref&gt; 
+                            Published as no. 6 of 
+                            &lt;title&gt;XII Sonates ... par Mrs. Bezzossi. Oevre IIe&lt;/title&gt;. 
+                            &lt;imprint&gt;&lt;place&gt;Paris&lt;/place&gt;, 
+                            &lt;publisher&gt;Le Clerc&lt;/publisher&gt;, 
+                            &lt;date&gt;ca. 1740&lt;/date&gt;&lt;/imprint&gt; 
+                            
+                            &lt;/bibref&gt; 
+                            
+                            &lt;/descunit&gt; 
+                            &lt;!-- additional descunits of class "entry" --&gt; 
+                            
+                            &lt;/descunit&gt; 
+                            &lt;!-- additional descunits of class "composer" --&gt; 
+                            &lt;/catalog&gt; 
+                            &lt;/musicat&gt;
+                   Example 2 
+                       &lt;musicat&gt; 
+                           &lt;catalog id="DaviesP"&gt;
+                           
+                           &lt;descunit class="dramatic works"&gt;
+                           
+                           &lt;descunit class="entry" id="d4"&gt;
+                           
+                           &lt;title&gt;The Lighthouse&lt;/title&gt; 
+                           &lt;imprint&gt;&lt;date&gt;1979&lt;/date&gt;&lt;/imprint&gt; 
+                           &lt;md&gt;&lt;duration units="time"&gt;75 mins&lt;/duration&gt;&lt;/md&gt; 
+                           &lt;imprint&gt;&lt;publisher&gt;Chester Music&lt;/publisher&gt;&lt;/imprint&gt; 
+                           &lt;md&gt;
+                           
+                           &lt;formgenre&gt;Chamber opera in one act with prologue&lt;/formgenre&gt; 
+                           &lt;scoring&gt;for tenor, baritone, bass and instrumental ensemble&lt;/scoring&gt; 
+                           
+                           &lt;/md&gt; 
+                           &lt;odd&gt;Libretto by the composer&lt;/odd&gt; 
+                           &lt;performed&gt;
+                           
+                           &lt;performerlist label="Characters:&gt; 
+                           &lt;performer&gt;
+                           
+                           &lt;dramatispersona&gt;Sandy, Officer 1&lt;/dramatispersona&gt;Tenor 
+                           
+                           &lt;/performer&gt; 
+                           &lt;performer&gt;
+                           
+                           &lt;dramatispersona&gt;Blazes, Officer 2 
+                           &lt;/dramatispersona&gt;Baritone 
+                           
+                           &lt;/performer&gt; 
+                           &lt;performer&gt;
+                           
+                           &lt;dramatispersona&gt;Arthur, Voice of the Cards, Officer 3 &lt;/dramatispersona&gt;Tenor 
+                           
+                           &lt;/performer&gt; 
+                           
+                           &lt;/performerlist&gt; 
+                           
+                           &lt;/performed&gt; 
+                           &lt;scoring&gt;flute (doubling piccolo and alto flute), clarinet in A ...&lt;/scoring&gt; 
+                           &lt;scoring&gt;*percussion: marimba, 4 timpani, ...&lt;/scoring&gt; 
+                           &lt;performed&gt;First performance &lt;date&gt;September 2, 1980&lt;/date&gt; at the
+                           
+                           &lt;corpname&gt;Edinburgh International Festival&lt;/corpname&gt; by &lt;performer&gt;Neil Mackie&lt;/performer&gt;, &lt;performer&gt;Michael Rippon&lt;/performer&gt;, &lt;performer&gt;David Wilson-Johnson&lt;/performer&gt; and &lt;performer class="group"&gt;The Fires of London&lt;/performer&gt; conducted by &lt;performer role="conductor"&gt;Richard Dufallo&lt;/performer&gt; 
+                           &lt;/performed&gt; 
+                           &lt;composed&gt;Commissioned by the &lt;corpname role="commissioner"&gt; Edinburgh International Festival&lt;/corpname&gt;. Winner of the first Tennent Caledonian Award. 
+                           &lt;/composed&gt; 
+                           &lt;imprint&gt;
+                           
+                           &lt;availability&gt;Full score, vocal score and parts for hire. Publication of full score and vocal score for sale 1981/2. Libretto on sale. 
+                           &lt;/availability&gt; 
+                           
+                           &lt;/imprint&gt; 
+                           
+                           &lt;/descunit&gt; 
+                           &lt;!-- additional descunits of class "entry" --&gt; &lt;/descunit&gt; 
+                           
+                           &lt;!-- additional genre descunits --&gt; 
+                           
+                           &lt;/catalog&gt; 
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Ann
+                                    Basart
+                                
+                            
+                            Bringing Order into Preposterous Muddle: Recent Trends
+                                in Thematic Catalogs
+                        
+                        
+                            Cum notis variorum
+                            
+                                67
+                                
+                                5-17
+                                Nov. 1982
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Barry
+                                    S.
+                                    Brook
+                                
+                            
+                            
+                                
+                                    Viano
+                                    Richard
+                                
+                            
+                            Thematic Catalogues in Music: An Annotated
+                                Bibliography
+                            2nd ed.
+                            
+                                New York
+                                Pendragon Press
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    D.
+                                    Cowley
+                                
+                            
+                            Bibliographical Description and Cataloguing
+                            
+                                London
+                                Grafton &amp; Co.
+                                1939
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Vincent
+                                    Duckles
+                                
+                            
+                            A Checklist of Thematic Catalogues
+                        
+                        
+                            Notes
+                            
+                                11
+                                
+                                552
+                                Sept. 1954
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Charles
+                                    Goldfarb
+                                
+                            
+                            
+                                
+                                    Paul
+                                    Prescod
+                                
+                            
+                            The XML Handbook
+                            
+                                Upper Saddle River, N.J.
+                                Prentice-Hall PTR
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Alec
+                                    Hyatt
+                                    King
+                                
+                            
+                            The Past, Present and Future of the Thematic
+                                Catalogue
+                        
+                        
+                            Monthly Music Record 
+                            
+                                LXXXIV
+                                953, 954
+                                10-13, 39-46
+                                1954
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    W.
+                                    Krummel
+                                
+                            
+                            Bibliographical Handbook of American Music
+                            
+                                Urbana
+                                University of Illinois Press
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    W.
+                                    Krummel
+                                
+                            
+                            Bibliographies: Their Aims and Methods
+                            
+                                New York
+                                Mansell Publishing
+                                1984
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Jan
+                                    LaRue
+                                
+                            
+                            
+                                
+                                    George
+                                    W.
+                                    Logemann
+                                
+                            
+                            EDP for Thematic Catalogues
+                        
+                        
+                            Notes
+                            
+                                22
+                                
+                                1179-86
+                                1965-66
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Kären
+                                    Nagy
+                                
+                            
+                            Music Authority Control: A Public Service
+                                Perspective
+                        
+                        
+                            
+                                
+                                    Ruth
+                                    Tucker
+                                
+                            
+                            Authority Control in Music Libraries
+                            MLA Technical Report No. 16
+                            
+                                Canton, MA
+                                Music Library Association
+                                1989
+                            
+                        
+                    
+                
+            
+        
+    

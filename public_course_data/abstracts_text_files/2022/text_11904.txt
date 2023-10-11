@@ -1,0 +1,138 @@
+
+        
+            
+                
+            
+            
+                Introduction
+                For the past five years, we have been working on the development of infrastructure to build corpora and machine learning models for lemmatisation and morphosyntactic tagging. Ancient and medieval languages with rich morphology and high spelling variation represent a hanging fruit in the domain of these corpora. However, producing “gold” corpora is a tedious and costly task: even when the automatically produced annotations gain in quality thanks to ever more efficient models and vice versa, a significant amount of manual correction and validation work remains. 
+                To reduce the cost and guarantee the interoperability of our corpora, we have built an ecosystem: (1) Pyrrha, a post-correction webapp for lemmatisation and morphosyntactic tags, (2) PyrrhaCI, a continuous integration tool for validating corpora, (3) Protogenie for merging and standardizing sometimes heterogeneous corpora, (4) Pie-Extended, a tagger taking into account the difference between real-world data training corpora and (5) Deucalion, a web service for annotation.
+                
+                    
+                        
+                        Figure 1: Infrastructure developed at the École nationale des chartes
+                    
+                
+            
+            
+                Producing data
+                Pyrrha (Clérice and Pilla, 2021) is designed to accelerate the correction of lemmatisation and morphosyntactic annotation. When we started our work, our team members were using spreadsheets, which have the ability to display all tags and context at the same time. The Pyrrha web application takes up this principle of a tabular interface but adds powerful validation functionalities thanks to checklists (lexicons of lemmas and morphosyntactic tags) guaranteeing the interoperability of the newly produced corpora, as well as batch correction functionalities, inspired by PoCoto (Vobl et al., 2014), a correction interface for OCR. Both of these functionalities are at the core of Pyrrha and have proven to be useful in speeding up the correction of out-of-domain corpora (
+                    cf. Figure 2). The application also allows collaboration, both for corpora and checklists, logging of corrections and export to multiple standards such as TEI and TSV.
+                
+                
+                    
+                        
+                        Figure 2: Rolling average of the number of checked tokens per hour. Checking a token includes verifying its correctness and correcting it if necessary. Three waves of correction are visible, the first corpus was completely out-of-domain compared to the lemmatizer (Classical Latin), with the end of the corpus being very different from the rest of the corpus in terms of spelling (letters K and W appeared), themes and syntax. The second and third wave benefits of a new model, retrained on the data produced in wave 1: as a result, there is less corrections and a faster checking rate on waves 2 and 3. Wave 3 is composed of two blocs: one is Thomas More's 
+                            Utopia (beginning of W3) and the other the Legenda Aurea which was nearly 100% correct, hence the effectiveness. Each wave / corpus was corrected and proofread on all categories that Pyrrha allows: Lemma, POS and morphological tags.
+                        
+                    
+                
+            
+            
+                Curating Corpora
+                While 
+                    Pyrrha produces data that should be compliant with standard reference sets, mistake happens. 
+                    PyrrhaCI (Clérice et al., 2021) is meant for testing the following attributes of datasets
+                
+                
+                    respect of reference sets;
+                    cross-categorical annotations (
+                        e.g. POS(dog)!=Verb);
+                    
+                    n-gram tagging (
+                        e.g. ADJ should not be followed by VERcon).
+                    
+                
+                Each test failure can be manually ignored for further tests, allowing for a more agile interpretation of grammar. PyrrhaCI is meant to be used as a continuous integration tool, through Github Actions or TravisCI, to validate datasets in open repositories and track the issues raised by editions.
+                
+                    Protogenie (Clérice, 2020b) is focused on preparing datasets for training. It is meant for the following:
+                
+                
+                    keeping track of and using the same original train/dev/test splits while adding new data in order to have “uniform”' evaluation,
+                    allowing for normalization of datasets that come from different projects in different formats,
+                    adding transformation to the original dataset (while respecting (1)), such as removing the distinction between U and V in Latin, replacing labels, splitting multi-categorical tags, etc.
+                
+                While (1) is easily taken care of, it is, in our experience, common to find datasets with different formatting choices or data-based variations such as punctuation, capitalization, morphological tags. Protogenie enables normalization of the “behavior” of different corpora, without having to work with pre-modified files, facilitating easy update of the latter and ensuring the stability of training and performances evaluation.
+            
+            
+                Producing new data: our lemmatization pipeline
+                Our models are trained with 
+                    Pie (Manjavacas et al., 2019)
+                    We moved to a small fork of Pie, https://github.com/lascivaroma/PaPie, which includes tailored functionalities for our training sets., a lemmatizer with state-of-the-art results on pre-orthographic and morphologically rich languages and a relatively flexible and stable python API. Once trained, our models are served through 
+                    Pie-Extended. Its first function is to bridge the gap between the real-world data and the curated training data by normalizing the first according to the latter
+                    
+                        E.g. in our Latin dataset shared with us by the LASLA, there was no punctuation. Unknown character can trigger weird behaviors in neural networks system, from our experience, creating issues for both the context of other lemma and its own lemmatization.
+                    . It also provides features such as token
+                    
+                        E
+                        .g. metadata token with text identifiers.
+                     passthrough (
+                    cf. Figure 3).
+                
+                
+                    
+                        
+                        Figure 3: Steps for token pass-through in Pie-Extended
+                    
+                
+                Finally, as not everyone knows how to install and run a python program in a shell, we produced the Deucalion interface (Clérice, 2020a), meant both for documenting (with complete bibliography for each model and software) and tagging. It is a software layer allowing to use Pie-Extended on the web. This Deucalion interface can be used as a stand-alone web application or an API.
+            
+            
+                Conclusion
+                Over the last five years, this infrastructure has allowed us to build a 1+ million token corpus of Old French (Camps et al., 2021), a couple of datasets in both classical and late Latin (Clérice, 2021; Glaise and Clérice, 2021), one for pre-orthographic Early Modern French (Gabay et al., 2020), and others. There are improvements we would still like to make (
+                    e.g. the user-friendliness and capacities of PyrrhaCI) and we now have our eyes on 
+                    data valorization, through the reuse of tools such as Blacklab (Does, de et al., 2017)
+                    A demo for Latin is available at https://blacklab.alpheios.net/latin-texts/search thanks to Alpheios.. Pyrrha has made lemmatization easier for our collaborators and made it a simpler task to produce data and share them across projects. This paper will be an opportunity to present a proven ecosystem, and also to assess its benefits, its costs and shortcomings.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Camps, J.-B., Clérice, T., Duval, F., Ing, L., Kanaoka, N. and Pinche, A. (2021). Corpus and Models for Lemmatisation and POS-tagging of Old French.
+                    
+                    
+                        Clérice, T. (2020a). 
+                        Flask_pie, a Pie-Extended Wrapper for Flask. https://github.com/hipster-philology/flask_pie.
+                    
+                    
+                        Clérice, T. (2020b). 
+                        Protogenie, Post-Processing for NLP Dataset. Zenodo doi:10.5281/zenodo.3883585. https://doi.org/10.5281/zenodo.3883585.
+                    
+                    
+                        Clérice, T. (2021). Lemmatisation et analyse morpho-syntaxique des Priapées. https://github.com/lascivaroma/priapea-lemmatization.
+                    
+                    
+                        Clérice, T., Blotière, É. and Schmied, M.-C. (2021). 
+                        PyrrhaCI. https://github.com/hipster-philology/pyrrhaCI.
+                    
+                    
+                        Clérice, T. and Pilla, J. (2021). 
+                        Pyrrha. doi:10.5281/zenodo.2325427.
+                    
+                    
+                        Does, J. de, Niestadt, J. and Depuydt, K. (2017). Creating research environments with blacklab. 
+                        CLARIN in the Low Countries: 245–58.
+                    
+                    
+                        Gabay, S., Clérice, T., Camps, J.-B., Tanguy, J.-B. and Gille-Levenson, M. (2020). Standardizing linguistic data: method and tools for annotating (pre-orthographic) French. 
+                        Proceedings of the 2nd International Conference on Digital Tools & Uses Congress. pp. 1–7.
+                    
+                    
+                        Glaise, A. and Clérice, T. (2021). Du IIème siècle à Thomas More, un corpus gold de latin lemmatisé et annoté en morpho-syntaxe. doi:10.5281/zenodo.1234. https://github.com/chartes/latin-non-classical-data.
+                    
+                    
+                        Manjavacas, E., Kádár, Á. and Kestemont, M. (2019). Improving Lemmatization of Non-Standard Languages with Joint Learning. 
+                        ArXiv:1903.06939 [Cs] http://arxiv.org/abs/1903.06939 (accessed 24 November 2019).
+                    
+                    
+                        Vobl, T., Gotscharek, A., Reffle, U., Ringlstetter, C. and Schulz, K. U. (2014). PoCoTo - an Open Source System for Efficient Interactive Postcorrection of OCRed Historical Texts. 
+                        Proceedings of the First International Conference on Digital Access to Textual Cultural Heritage. (DATeCH ’14). New York, NY, USA: ACM, pp. 57–61 doi:10.1145/2595188.2595197. http://doi.acm.org/10.1145/2595188.2595197 (accessed 26 November 2018).
+                    
+                
+            
+        
+    
+

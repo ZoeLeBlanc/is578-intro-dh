@@ -1,0 +1,188 @@
+
+        
+            
+                Introduction
+                
+                    The study of historical figures is of great significance in the field of history. To investigate historical figures with digital humanity methods, the first step is to identify the names of people in texts. Not only is the person's name recognized from the text, but the person's name has to be linked to a knowledge base for reference. This is because the same person's name may refer to different people or other entities. This task is called named entity disambiguation (NED). The problem of historical figures with the same name is particularly serious when studying Manchu and Mongolian historical figures in the Qing Dynasty. A typical example is that the main persons (Cherin-Dorji, Yung-Te, Siang-Lin and Gui-Xiang) involved in the disaster report of the Kharkha Four Leagues 
+                    
+                    (Ting-ting, 2016)
+                    have the same name as other historical figures. Fig. 1 shows that there are 10 Siang-Lins in the Ming-Qing Archives Name Authority Database (MQANAD).
+                
+                
+                    
+                
+                
+                    Fig. 1
+                     There are ten people named Siang-Lin in the MQANAD database. Siang-Lin in this text refers to this historical figure with ID 0079695
+                
+                
+                    Therefore, we select 
+                    Qing Shi-Lu
+                    (
+                    QSL
+                    )
+                    
+                     and MQANAD
+                    
+                    (Liu, 2015)
+                     as the target text and the reference knowledge base for developing our NED system, respectively. 
+                    QSL
+                     is the imperial annals of the Qing emperors, with a total of about 58 million characters, written in classical Chinese.
+                
+                
+                    In 
+                    
+                    (Tsai et al., 2020)
+                    , several procedures were proposed to automatically generate labeled data from 
+                    Ming Shi-Lu
+                     (
+                    MSL
+                    ) for training a NED model. In this work, we improve 
+                    
+                    (Tsai et al., 2020)
+                     in two folds. First, we propose a new way of expressing person names in both texts and profiles. Second, we modify the original procedures to improve the quality of the generated labeling data.
+                
+            
+            
+                Method
+                As mentioned earlier, an NED 
+                    
+                    (Cheng et al., 2019
+                    ;
+                    
+                    Huang et al., 2015) model can link each mention to the correct profile in the reference knowledge base. 
+                    An official’s profile is shown in Table 1, 
+                    we can see that it contains the official’s attributes such as name, birth/death year, biography, resume, relatives, etc. The resume field is composed of all titles the official had held. We search 
+                    QSL
+                     for all mentions of these officials’ names. These mentions with the paragraphs containing them are used as our dataset. Table 2 shows an example instance of the search results.
+                
+                
+                    
+                
+                
+                    Table 1
+                     An official 
+                    Wang An-Kuo’s
+                     profile
+                
+                
+                    
+                
+                
+                    Table 2
+                     An example instance
+                
+                We formulate this NED task as a text classification problem. Given an instance whose name field is m and a profile whose name field is also m, classify them as positive (matched) or negative (not matched). Matched means the person mentioned in the instance’s paragraph field is just the official in the profile.
+                
+                    Tsai et al. was the first work to propose the procedures that compare instances and profiles to automatically generate labeled data to train the model 
+                    (Tsai et al., 2020). In this work, we use all the procedures in 
+                    (Tsai et al., 2020). These procedures based on the rules help us identify part of the data pairs. Then we deal with those data pairs that cannot be identified by the rules by using BERT as a binary classifier. With training data acquired from previous procedures, we make the classifier learn the relationships between instances and profiles and identify them through the context besides using rule-based procedures. In addition, we also propose methods to improve the quality of the labeled data, as described in the following paragraphs.
+                
+                First, we replace the officials’ names mentioned in personal profiles and instances with the symbol [unused_token], as shown in Fig. 2. This allows our model to focus on more information from the context and can be more robust to various person names.
+                
+                    
+                
+                
+                    Fig. 2
+                     Cherin-Dorji, the official’s name mentioned in personal profiles and instances, is replaced with the symbol [unused_token] 
+                    
+                    (Hucker, 2008, 
+                    
+                    Zhang et al., 2017)
+                
+                Second, we have found many examples in the text where a person’s name is the same as a location name. For example, Guilin (桂林) can be the name of a city or a minister’s name. Therefore, we use a self-developed NER 
+                    (Lin et al., 2020) system to process the texts. We use Flair as the NER model for this paper, the training data is from 
+                    MSL and the test data is 
+                    QSL's 50 manually annotated data with F1 score 0.81. We revise 
+                    (Tsai et al., 2020)’s method to correct an instance from positive to negative, an example is shown in Fig. 3.
+                
+                
+                    
+                
+                
+                    Fig. 3
+                     Guilin (桂林) is considered a location name by our NER system, therefore, it is generated as a negative instance
+                
+                Lastly, since the text processed by 
+                    (Tsai et al., 2020) is the Ming Dynasty, the text processed by this study is the Qing Dynasty, and the contents of 
+                    MSL and 
+                    QSL are slightly different, we only retain the first condition of Procedure 1.
+                
+                
+                    
+                
+                
+                    Fig
+                    .
+                     4
+                     Procedure one is modified for writing-style difference between 
+                    MSL
+                     and 
+                    QSL
+                
+                
+                    
+                
+                
+                    Fig. 5
+                     Our BERT-based NED model
+                
+                After automatically labeling the training data, we use BERT 
+                    (Vaswani et al., 2017, 
+                    Devlin et al., 2019), the state-of-the-art natural language understanding model, to perform text classification. We use the model pre-trained on the Chinese Wikipedia. As shown in Fig. 5, for each pair of profile and instance, we concatenate the cls symbol, the profile, the sep symbol, the instance as the input. The BERT model will output all label probabilities at the output position corresponding to the cls symbol.
+                
+                We use the manually labeled data set of 
+                    (Tsai et al., 2020) for performance evaluation. The results show that our NED model achieves an accuracy of 90%, which is 16% higher than the model proposed in 
+                    (Tsai et al., 2020).
+                
+                Finally, we conduct an ablation study. If we remove NER, performance will drop by 3%. If we do not do unused token replacement, performance will drop by 13%. If we do neither, the performance drops by 16%.
+            
+            
+                Conclusion
+                We have refined the approach of automatically generating labeled data for training an NED model. To be more specific, we employ our own NER system to eliminate the location names incorrectly labeled as positive instances and use the unused token symbol to enhance the robustness of our model. Results show that our refinement can improve the performance by 16% and our NED model 
+                    will help us investigate historical figures in the Qing dynasty.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Cheng, J. et al. (2019). Entity Linking for Chinese Short Texts Based on BERT and Entity Name Embeddings. 
+                    
+                    
+                        Devlin, J. et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv:1810.04805 [cs]. 
+                    
+                    
+                        Hucker, C.O. (2008) A Dictionary of Official Titles in Imperial China. Peking University Press.
+                    
+                    
+                        Huang, H., Heck, L. and Ji, H. (2015). Leveraging Deep Neural Networks and Knowledge Graphs for Entity Disambiguation’. arXiv:1504.07678 [cs].
+                    
+                    
+                        Institute of History and Philology, Academia Sinica (1984) Scripta Sinica. http://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm. 
+                    
+                    
+                        Liu, C. (2015) Ming-Qing Archives Name Authority Database.
+                    
+                    
+                        Ting-ting, L. (2016). 清季蒙古親王車林多爾濟史事鉤沉—以喀爾喀四盟報災案為中心[History of Mongolian Prince Cherin-Dorji in the Qing Dynasty-A Disaster Report by the Four Leagues of Khalkha]. Studies of Chinese Frontier Ethnic Groups.
+                    
+                    
+                        Tsai, R.T.-H. et al. (2020). Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu. DH.
+                    
+                    
+                        Vaswani, A. et al. (2017). Attention Is All You Need. arXiv:1706.03762 [cs].
+                    
+                    
+                        Lin, B.Y. et al. (2020). TriggerNER: Learning with Entity Triggers as Explanations for Named Entity Recognition. arXiv:2004.07493 [cs]. 
+                    
+                    
+                        Zhang, Y. et al. (2017). 明代職官中英辭典 Chinese-English Dictionary of Ming Government Official Titles.
+                    
+                
+            
+        
+    
+

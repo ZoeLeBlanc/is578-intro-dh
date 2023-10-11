@@ -1,0 +1,255 @@
+
+
+
+
+
+
+Knitic — The Revolution of Soft Digital Fabrication
+
+
+
+Guljajeva
+,
+Varvara
+
+Estonian Art Academy, Estonia
+varvarag@gmail.com
+
+
+
+Canet Sola
+,
+Mar
+
+
+Interface Cultures, University of Linz for Art and Design
+
+mar.canet@gmail.com
+
+
+
+
+University of Nebraska-Lincoln
+
+Center for Digital Research in the Humanities
+
+319 Love Library
+University of Nebraska–Lincoln
+Lincoln, NE 68588-4100
+cdrh@unl.edu
+
+
+Lincoln, Nebraska
+
+University of Nebraska-Lincoln
+Lincoln, NE 68588-4100
+
+
+
+
+
+
+No source: created in electronic format.
+
+
+
+
+
+Poster
+
+
+
+
+
+other
+
+
+digital fabrication
+open hardware
+personal manufacturing
+textile fabrication
+soft fabrication
+knitting
+
+
+withdrawn
+
+
+
+
+
+
+Laura Weakly
+Initial encoding
+
+
+
+
+
+
+
+The paper points out the rapid development of digital fabrication, the influences and importance of open source in this field, and overlooked manufacturing method that is textile fabrication. By introducing our practical work and research we demonstrate the potential of craft in the era of digital fabrication. Also the works by other artists and designers involved in improving and applying obsolete electronic knitting machines are covered.
+
+
+We have started our research on knitting machines in the beginning of 2012 through our art project SPAMpoetry (Guljajeva 2012) (see Fig. 1.). We have purchased an old Brother knitting machine (Fig. 2.) in order to hack the uploading system and knit poems from SPAM. The research on reverse engineering of knitting machine made us realize that the electronic knitting machine was the first digital manufacturing tool at home that has been totally overlooked in the age of digital fabrication. Hence we got an idea and motivation for developing Knitic — an open hardware and integrate it to the field of digital fabrication (Canet and Guljajeva 2012).
+
+
+
+Fig. 1
+
+SPAMpoetry
+
+
+
+
+Fig. 2
+
+making a workshop on application of a modified Brother KH930 knitting machine.
+
+
+
+What is Knitic? It is an open hardware (see Fig. 3.), which controls an obsolete Brother knitting machine from 1980s via Arduino (open source micro controller). Knitic does not use a floppy emulation or knitting machine’s keypad simulation, like previous hacks. Instead, the open hardware is the new ‘brain’ of a knitting machine that allows real-time control over the needles (see Fig. 4.). It means, one can knit as long patterns as desired and modify the pattern on the fly. Knitic has one more important advantage: it is compatible with all Brother electronic machines. Maybe also with punch-card ones, this needs to be tested though. How come? Because we do not use any Brother electronics but just sensors’ output and solenoids’ input of a knitting machine.
+
+
+
+Fig. 3
+PCB of Knitic
+
+
+
+Fig. 4
+
+Testing Knitic. Knitting machine's new brain is able to control needles according to the pattern.
+
+
+
+Why are we developing open hardware for knitting? Digital fabrication is gaining importance. The numbers of Fab Labs, persons possessing digital fabrication tools, and open hardware are increasing. Furthermore, the number of start-ups and small-scale companies applying digital fabrication devices as their core business idea is increasing. Makers, designers and artists, who have invested in buying a 3D printer and/or laser cutter, in addition to their work are manufacturing for others, too. Now makers also replicate machines and sell, which all in all pays back the investments sooner.
+
+
+Hence, society is shifting towards personal and custom manufacturing that is strongly supported by the information age. In the words of Neil Gershenfeld the founder of Fab Labs' model: 'the real impact of digital communications and computation came in giving ordinary people control over the information in their lives; digital fabrication will likewise give individuals control over their physical world by allowing them to personally program its construction.' (Gershenfeld 2007, 241).
+
+
+However, all this innovation is around certain tools, mainly laser cutters, 3D printers, and CNC machines. At the same time textile fabrication has been overlooked. In the end, it is a shame to forget early fabrication methods, which can be adjusted for digital age needs. Also, re-application of obsolete media and integration of craft are interesting and novel approaches in the field of digital fabrication.
+
+
+We believe that all these results could be augmented if textile fabrication is added as an option for open manufacturing. Individuals, who are experimenting with and making their living from digital fabrication practices could have more possibilities for creation as well as business. And what is more important, more people could be involved, especially the ones who are skilled in handcrafts like knitting and sewing. Hence, introducing this overlooked manufacturing field will certainly bring innovation, as well as novel business and collaboration models.
+
+
+To tell more, there is a growing community of artists and designers working with and improving hacked obsolete electronic knitting machines. For example, Becky Stern from MAKE Magazine introduced the first tutorial how to modify a knitting machine (Stern, 2010). Andrew Salamone an artist from New Year has knit a body of work on those machines. The practice of Fabienne Serriere is a good example of one-person manufacturing. She has modified a knitting machine and now produces knitted items by applying parametric design approach while making her own patterns (Serriere 2011).
+
+
+In addition to that, the machine that was produced for home-use in late 1980s, actually allows to knit big-scale and custom-made items. For instance, we have knit a car Kombi on Brother KH930 machine with Knitic (see Fig. 5,) and a number of SPAMpoetry pieces. Concerning innovation, knitting has a big potential in the field of smart textiles. At the moment the most of work in this field is done on fabrics. Hence, knitting is completely unexplored field from this point of view. For example, thermo chromic and UV pigments could be applied on yarn. Also conductive yarn is a thing to try out. Hence, we see lots of room for creativity and innovation in the field of knitting.
+
+
+
+Fig. 5
+
+Knitted Kombi on the streets of Belo Horizonte, Brazil.
+
+
+
+Why does open source matters? In our point of view, open code, hardware, and design are the reasons for the success of digital fabrication field. For instance, Lipson and Kurman write about the phenomena of a factory at home and one-person industries, which is not a vision or future prediction but already a reality. There are a number of proofs for such a claim, but the most vital ones are open source hardware and software, and an active community around the rising paradigm. For example, 3D printers that were for industrial use and not affordable for individuals, can now, in 2012, be purchased for 1000 euros. Obviously, an industrial machine has better specifications from an open source one, but still a self-assembled RepRap can be applied for prototyping, a small-scale and customised production, and finally for self-replication. Moreover, the price of the machine is dropping and features improving because the machine is an open hardware! There are lots of 3D printers that are open source and through the innovation and contribution of the whole community the development curve is extremely rapid.
+
+
+Concerning further reasons for the advent of digital fabrication, open design as well as software play an extremely important role. Thanks to the database of designs that are available online, like Thingiverse.com, one can find a huge number of 3D models as well as share their own designs freely. Hence, even non-experts are able to start experimenting and producing desired items. In addition to that, open code is also crucial for understanding and improving the performance of digital fabrication machines.
+
+
+Coming back to Knitic, we have opened all our research in order to achieve similar effect in the community of makers as described above. Our ultimate goal is to contribute with completely open source knitting machine that can be produced by laser-cutting and 3D printing its parts. Hence, an open source knitting machine will not depend on availability of discontinued Brother electronic knitting machines.
+
+
+We believe that textile fabrication has a huge potential in the age of digital fabrication and customisation. Moreover, knitting is a skill that humanity has been using for ages. Hence, there are lots of experts, knowledge, learning and production material, tools, etc. On the contrary, the ability to 3D print or laser-cut is the competence of very few people. It means, introducing craft in general to the desktop manufacturing communities and Fab Labs will bring more people and gender balance to these networks. Furthermore, the encounter of different skills and disciplines will most likely constitute innovation and creativity.
+
+
+In the end, it is curious how an electronic knitting machine, the first digital manufacturing tool at home has been forgotten by digital fabrication labs and open hardware developers. Therefore, we are confident in the importance of our research project and contribution to the field of personal manufacturing. Moreover, our research and development of open source knitting machine is a perfect example of artists developing their own tools for their work. And that is what is happening in the world of open source hardware and software that affects greatly art, design, and manufacturing fields.
+
+
+And finally, in our point of view it is impossible to talk about the shift of production paradigm by observing and describing the phenomenon of Fab Labs and novel open source machines that are able to produce hard-surface items, while excluding all other areas of manufacturing.
+
+
+To sum up, since knitting is a well-known craft and there are lots of experts, it is a shame to run after new technology and forget good old skills. On the contrary, innovation should take advantage of existing knowledge.
+
+
+
+
+
+
+
+Canet, M., and V. Guljajeva
+(2012). Knitic.
+http://www.knitic.com/
+(accessed 14 March 2013).
+
+
+The Economist.
+(2011). 3D printing. The printed world.
+http://www.economist.com/node/18114221
+(accessed 1 September 2012).
+
+
+Fab Lab International.
+http://fablabinternational.org/
+(accessed 20 February 2013).
+
+
+Gershenfeld, N.
+(2007).
+
+Fab: The Coming Revolution on Your Desktop — from Personal Computers to Personal Fabrication
+
+. Basic Books.
+
+
+Goodspeed, T.
+(2010). Hacking a Knitting Machine's Keypad.
+
+http://travisgoodspeed.blogspot.com.br/2010/12/hacking-knitting-machines-keypad.html
+
+(accessed 14 January 2013).
+
+
+Guljajeva, V.
+(2012). SPAMpoetry.
+http://www.varvarag.info/spampoetry/
+(accessed 14 March 2013).
+
+
+Igoe, T., and C. Mota
+(2011). Astrategist's Guide to Digital Fabrication.
+m.strategy-business.com/article/11307?gko=63624
+(accessed 1 September 2012).
+
+
+Kurman, M., and H. Lipson
+(2010). Factory @ Home: Emerging Economy of Personal Fabrication.
+
+http://web.mae.cornell.edu/lipson/FactoryAtHome.pdf
+
+(accessed 1 March 2013).
+
+
+Sierrere, F.
+(2011). Mate cosies: warm hands, cold mate.
+http://fabienne.us/
+(accessed 2 February 2013).
+
+
+Solon, O.
+(2013). Digital Fabrication is so much more than 3D printing. In
+Wired Magazine
+, published 13 March 2013.
+
+http://www.wired.co.uk/news/archive/2013-03/13/digital-fabrication
+
+(accessed 14 March 2013).
+
+
+Stern, B.
+(2010). How-To: Hack Your Knitting Machine.
+
+http://blog.makezine.com/craft/hack_your_knitting_machine/
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+
+
+
+    
+        
+            
+                Defining Paragraphs - the basic unit of prose?
+                
+                    
+                        Catherine
+                        Goodall
+                        
+                            Brown University
+                            catherine_goodall@brown.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                P3 does not foresee the inclusion of verse within prose paragraphs. Many
+                    occurrences of verse in prose paragraphs are quoted passages, and do not present
+                    encoding difficulties. However, when the verse passage is attributable to the
+                    same narrative voice as the surrounding prose paragraph, the use of Q and QUOTE
+                    is inappropriate. The two common definitions of a paragraph consider it to be a
+                    unit of content or typography. Another approach considers the occurrence of
+                    "something else" (e.g. poetry) to constitute the end of a paragraph. While
+                    probably sufficient for most formatting functions, this does not adequately
+                    describe the conceptual structure of the passage, i.e. a group of verse lines
+                    embedded in a prose paragraph. Since the description of both the physical and
+                    the conceptual text is an important goal of the encoding, this definition was
+                    unsatisfactory. Possible solutions included: (1) using 2 P elements and an LG
+                    and linking them using JOIN or next= and prev=; (2) nesting the LG within TEXT
+                    within P; and (3) modifying the content model of P to allow LG as its direct
+                    child. The latter emerged as the most accurate and efficient solution. It is
+                    consistent with the typographical and thematic continuity of the material and
+                    thus with the most prevalent definitions of a paragraph. It facilitates the
+                    accurate description of concrete examples already found as well as
+                    unconventional ones with more heavily intermingled verse and prose. Finally, it
+                    minimizes the tagging necessary to describe the passage and its structure.
+            
+        
+    

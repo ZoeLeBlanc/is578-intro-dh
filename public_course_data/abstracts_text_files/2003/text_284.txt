@@ -1,0 +1,207 @@
+
+
+
+    
+        
+            
+                Textual Critical Encoding
+                
+                    
+                        Barbara
+                        Bordalejo
+                        
+                            De Montfort University
+                            bbordalejo@dmu.ac.uk
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                At the beginning of 2001 work started on the Commedia Project, a research effort
+                    which will transcribe in full seven manuscripts of Dante’s Divine Comedy in order to collate them and present them in an
+                    electronic format. As part of the prolegomena for the Project, we had to write
+                    its transcription guidelines, a task that appeared straight forward. However, as
+                    often happens, drafting the new guidelines developed into a task with
+                    implications beyond its immediate intended use.
+                Initially, it was agreed that the Commedia Project transcription guidelines
+                    should be based on those of the Società Dantesca for
+                    their Dante Online website (). It soon became
+                    evident that although the Società Dantesca's
+                    guidelines offered the advantage of having taken into consideration practical
+                    matters concerning spellings, punctuation, word division and the expansion of
+                    abbreviations, they did not deal with many other matters which were required for
+                    the Commedia Project. The Società Dantesca uses a form of symbolic
+                    representation—based on conventions—to convey the transcribers interpretation of
+                    what they believe to be in the manuscripts. For example, the Società Dantesca transcribes (Riccardiana 1005, Inferno, Canto I, 17):
+                    &lt;di +i0 del&gt;
+                These symbols are used to represent a deletion. In this case, the deletion was
+                    carried out by the main scribe of the text—or by an indistinguishable
+                    hand—indicated by 0. The complete set of symbols is enclosed in angle brackets.
+                    The first word, in this case ‘di’ is the one which was originally in the
+                    manuscript, and the last word—‘del’—is the one which replaced it. Next to the
+                    0—representing the main hand or one which cannot be distinguished from it—the
+                    plus symbol is used—addition—and the letter ‘i’ which indicates that the
+                    correction has been introduced between the lines, i.e. it is interlinear. The
+                        Società Dantesca guidelines allow the
+                    possibility of marginal additions—‘m’—or additions within the line—for which
+                    they do not use any symbol. In this specific case, according to the
+                    transcription produced by the Società Dantesca, the
+                    manuscript has the word ‘di’ which has been substituted by the word ‘del,’
+                    creating the phrase ‘del pianeta’ instead of the original reading ‘di
+                    pianeta.’
+                A second example can be found in Riccardiana 1005, Inferno, Canto I, 94:&lt;crede +i0
+                    cride&gt;
+                Here, the original reading “crede” is followed by the identifiers for the
+                    position and the scribe, and at the end, the modified reading “cride,” again,
+                    all enclosed in angle brackets.
+                The Società Dantesca system also permits a symbolic
+                    representation of marginal additions—[... +m1 o], an addition of the letter ‘o’
+                    in the margin, which has been added by a second scribe (here represented by the
+                    number 1) to cover a lacuna—, interpolations or cancellations.
+                Although these guidelines were useful as a base for the Commedia Project’s
+                    transcription system, a new encoding system was required for the encoding of the
+                    manuscripts. Other projects in which we are involved used very simple encoding
+                    systems. For example, the encoding for the Canterbury Tales Project’s
+                    publications uses [add][/add] for additions and [del][/del] for deletions. Thus,
+                    an interlinear addition in the Merchant's Tale, line 219 (CTP lineation system)
+                    was tagged:tree [add]is[/add] neydir
+                However, the verb is not in the same line as the other words, in fact, there is a
+                    caret indicating that the word ‘is’ is an addition to the line. Although the
+                    Canterbury Tales Project tags were useful when it started, they now seem to lack
+                    the flexibility which is required to present certain aspects of a scholarly
+                    edition. Given the nature of the corrections in the Commedia manuscripts, the
+                    Project required tags that were able to handle situations more complex than
+                    those of additions and deletions. One of the main aims of this project is to
+                    produce a CD-ROM with seven witnesses of the Commedia
+                    which Federico Sanguineti has identified as textually the most important.
+                    Sanguineti has already produced a critical edition of Dante’s Commedia, and the research he has already done is still being
+                    carried out at the Canterbury Tales Project. For this reason, the Commedia
+                    Project has a clearer conviction of which things are important and should be
+                    displayed in the CD-ROMs, and what the purposes of its transcriptions are, than
+                    the Canterbury Tales Project had when it was officially started in 1993. Because
+                    of this, it was possible to develop a encoding system which allows the
+                    distinction of different scribal hands or corrections made by the same scribe at
+                    different stages.
+                Hitherto, the encoding of projects similar to the Commedia Project, such as the
+                    Canterbury Tales Project, attempted to present simultaneously both ‘what is in
+                    the manuscript’ as a series of additions or deletion, and ‘what is in the text’,
+                    as a series of distinct readings. However, after months of discussion with Klaus
+                    Wachtel (Institute for New Testament Research, Munster) about the transcription
+                    of corrections of the manuscripts of the Greek New Testament, new ideas about
+                    how to encode different textual stages started to emerge. These discussions were
+                    the base of the encoding system developed for the Commedia Project. The main
+                    goal of this new transcription system is to present a clear distinction between
+                    what is in the manuscript and how the transcriber interprets the different
+                    stages of development of the text.
+                The Commedia Project encoding system aims to represent the different stages of
+                    variation in the text. When a transcriber finds a ‘place of variation’ in the
+                    manuscript, he or she can use the apparatus tag—[app][/app]. (We are using
+                    Collate-style encoding in the transcriptions: before publication, these will be
+                    translated into XML encoding). The apparatus tag contains three main components:
+                    the original reading (contained in the [orig][/orig] tag), the final reading
+                    (contained in a tag which specifies which copyist produced this [c1][/c1],
+                    [c2][/c2], [c3][/c3]), and what literally is in the manuscript (contained in the
+                    [lit][/lit] tag). If there are more than two stages in a correction, for
+                    example, in the case of having more than one corrector), these stages are
+                    presented in what is likely to be their successive order.
+                The following example is taken from Riccardiana 1005, Inferno, Canto III, 9:
+                The Commedia Project transcription guidelines indicate that we should transcribe
+                    as follows :
+                    [app] [orig]dura[/orig] [c1]duro[/c1] [lit]dur[ud]a[/ud]o[/lit]
+                    [/app]
+                Since the dot below the letter ‘a’ indicates deletion, the transcriber is faced
+                    with a place of variation—indicated in the transcription by the apparatus
+                    tag—[app][/app]. The first component inside the apparatus tag is the original
+                    reading—[orig]dura[/orig]. The second component is the final reading by the main
+                    hand, the reading [c1]duro[/c1]. These two components express different states
+                    of the text, but do not explain by which process the text change from one to the
+                    other. For this purpose we use the literal tag—[lit][/lit]—which indicates what
+                    literally is happening in the manuscript, in this case
+                    [lit]dur[ud]a[/ud]o[/lit], that is, literally the letters ‘d’ ‘u’ ‘r’ are
+                    present, followed by an ‘a’ which has been underdotted and an ‘o.’ In the
+                    literal tag, there is less space for interpretation and the transcriber is
+                    required to postpone judgment (for example, whether the underdotting of the ‘a’
+                    indicates cancellation or not).
+                In comparison with the lack of flexibility of the old encoding system of the
+                    Canterbury Tales Project, the Commedia Project's guidelines present several
+                    advantages. Firstly, the transcribers can defer interpretation of the stages of
+                    meaning, since the literal tag can be transcribed independently of the other
+                    components of the apparatus tag (this also gives the advantage of allowing the
+                    editor of a publication to make a final decision as to what happened at each
+                    individual place of variation). Secondly, the contents of the literal tag allows
+                    us to reconstruct what actually appears in a manuscript on the computer screen.
+                    Thirdly, the other components of the apparatus tag, such as original reading,
+                    final reading, and intermediate readings, can be collated separately from the
+                    rest of the text. The separate collation of multiple readings in a manuscript
+                    will be most useful when a scribe used a manuscript of different affiliation to
+                    correct his copy. In such cases, separate collation will allow the isolation of
+                    readings which originated in different manuscripts and which could hint at
+                    distinct affiliations in a single text. Separate collation might also be of help
+                    in cases in which conflation has occurred because a manuscript is corrected with
+                    another one from a different branch of a textual tradition.
+                The encoding system of the Commedia Project has also been implemented by the
+                    Canterbury Tales Project (for publications to appear after the Miller’s Tale on
+                    CD-ROM, edited by Peter Robinson and the Nun’s Priest’s Tale on CD-ROM, edited
+                    by Paul Thomas) and, in the future, might be also adopted by other projects
+                    (notably, transcription of Greek New Testament manuscripts) for their
+                    transcriptions. This new encoding system also offers advantages when applied to
+                    authorial manuscripts, and although it was originally designed to deal with
+                    problems of corrections presented by medieval manuscripts, it should work as
+                    efficiently to distinguish different authorial versions of a particular text.
+                    This should translate into an easier reconstruction of these authorial versions
+                    and allow the distinction and separate reconstruction of different authorial
+                    versions.
+            
+        
+    

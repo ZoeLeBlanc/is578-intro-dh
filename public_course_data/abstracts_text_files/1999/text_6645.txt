@@ -1,0 +1,404 @@
+
+
+
+    
+        
+            
+                Text Analysis Tools: Architectures and protocols Type
+                    of Proposal
+                
+                    
+                        Harold
+                        Short
+                        
+                            King's College London
+                            harold.short@kcl.ac.uk
+                        
+                    
+                
+                
+                    
+                        John
+                        Bradley
+                        
+                            King's College London
+                            john.bradley@kcl.ac.uk
+                        
+                    
+                
+                
+                    
+                        Tom
+                        Horton
+                        
+                            Florida Atlantic University
+                            tom@cse.fau.edu
+                        
+                    
+                
+                
+                    
+                        Manfred
+                        Thaller
+                        
+                            University of Bergen, Norway
+                                manfred.thaller@uib.no
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        ALLC Panel
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Harold Short, Chair
+                    There has been considerable concern in recent years at the absence of text
+                        analysis tools that can take advantage of the intellectual effort that goes
+                        into encoding. Thus, while there are now large collections of encoded texts,
+                        with the number continuing to grow rapidly, there has been little
+                        corresponding development of the 'next generation' of tools such as OCP,
+                        TACT and others that would enable humanities scholars to exploit fully the
+                        intellectual investment represented by these collections. Browsing and
+                        searching is the limit of what can readily be done in most cases.
+                    This concern has resulted in a number of meetings, discussions and
+                        initiatives on both sides of the Atlantic over a number of years. There have
+                        been papers, panels or BOF sessions at many ACH-ALLC conferences, going back
+                        at least to Georgetown in 1995. There were two meetings held at Princeton,
+                        organised by Susan Hockey when she was at CETH. Following the ALLC-ACH 98
+                        conference in Debrecen, the 'ELTA' software initiative was launched to
+                        promote discussion and the exchange of ideas. Related to this, during the
+                        past year a series of meetings and workshops has been organised aimed at
+                        establishing a framework and a set of open specifications that would enable
+                        collaborative tool development to proceed.
+                    There appears to be general perception that in this area it is unlikely that
+                        commercial software developers will create systems to meet scholarly needs
+                        that are (a) affordable and (b) capable of the kind of modification and
+                        tuning that will enable scholars to push these approaches to the limits that
+                        are necessary. It seems likely therefore that the most effective model will
+                        be one that enables scholars and information professionals in higher
+                        education to develop software independently but collaboratively.
+                    The papers in this panel session arise in part from some collaborative work
+                        carried out in Europe, focused on a workshop in Bergen in October 1998,
+                        hosted by Manfred Thaller, which brought together humanities computing (and
+                        historical computing) specialists and computational linguists. In part they
+                        arise from a workshop held at King's College London in January 1999, which
+                        brought together European and North American specialists. In both workshops
+                        the emphasis was on exploring underlying models and structures rather than
+                        on applications or user needs. This session is also informed by recent
+                        transatlantic collaborative activity aimed at initiating practical
+                        development work.
+                    After the presentation of the two formal papers, there will be a brief report
+                        on the ELTA initiative. It is intended that there should be a good amount of
+                        time for open discussion before the close of the session. The URL for ELTA
+                            is:
+                
+                
+                    
+                        A New Computing Architecture to Support Text Analysis
+                        John Bradley
+                        Tom Horton
+                        
+                            Over the past year a small group of researchers and developers have
+                                been designing a general architecture into which a wide range of
+                                text analysis tools could fit. This proposed architecture is
+                                designed to respond both to recent developments in technology and to
+                                developments in textual encoding of the kind represented by the TEI.
+                                Furthermore, an important element of the architecture lies in its
+                                ability to allow independent developers to add or modify existing
+                                elements to suit their own needs, including developing modules to
+                                support kinds of processing as yet unknown.
+                            Such a text analysis support system needs to exhibit certain
+                                characteristics if it is to be suitable for use in such a
+                                potentially wide range of different applications.
+                            First, it needs to be modular and open. Textual research in the
+                                Humanities spans a very wide set of interests and techniques and one
+                                of the challenges for the designers of a new TA system is to avoid
+                                restricting its design to favour one type of application over
+                                another. By "modular" we mean that elements of the system (at a
+                                number of different levels) need to be cleanly defined so that each
+                                component, as far as is possible, stands alone and can be replaced
+                                by other equivalent modules if desired. For example, modularity
+                                would permit components that are oriented towards alphabet-oriented
+                                languages such as French or Hebrew to be replaced by modules that
+                                understand the needs of pictograph languages such as Chinese. It
+                                would permit users who do not need what others consider key
+                                components (such as word indexing) to still use effectively the
+                                parts of the system they do need. New modules could be added that
+                                would fit with existing elements. Interfaces between modules need to
+                                be clearly defined so that output from one module can be passed to a
+                                variety of alternative modules for continuing processing. By "open"
+                                we mean that a complete specification of the system needs to be
+                                accessible to all possible developers so that anyone with the
+                                appropriate technical skills may add new components to the system. 
+                            Second, it needs to be word-oriented. Not all applications of this
+                                system will focus on the words of the text (and indeed, as we have
+                                already said, the system should be useful to those who do not turn
+                                out to need its "word-oriented" features), but for much textual
+                                research, the words are a key component. Users like systems that can
+                                show them word lists, can provide word occurrence counts, and that
+                                understand the rich set of word-related structures implied by such
+                                notions as "part of speech", or "lemmatisation". Thus, although the
+                                system should not be dependant on word-oriented tools, it is natural
+                                that many of the tools and structures should be designed to support
+                                a word-oriented view of the text, and that the design of the system
+                                should be able to accommodate the need to represent these objects. 
+                            Third, it needs to be element-oriented -- to support highly
+                                structured texts of the kind now available to us as a result of the
+                                TEI. We have heard many papers at ALLC/ACH conferences past and
+                                present from people preparing electronic editions who have taken
+                                advantage of different parts of the TEI to identify a varying array
+                                of complex textual objects within a text. There are far too few
+                                tools that can do anything interesting with these objects once they
+                                have been identified. Furthermore, we are beginning to see some
+                                potential interest in new research which can be made possible by the
+                                simultaneous handling of both much more complex word and element
+                                structures in a single environment. An architecture is needed that
+                                can bring together both element-oriented and word-oriented tools in
+                                a single system.
+                            Fourth, we believe that the full power of any new architecture must
+                                rest in its ability to assist in not only "word searching" or "text
+                                indexing", but in the support of the many other types of data
+                                transformations that are key to supporting analysis of data --
+                                whether or not the base data is word-oriented. Tools such as TuStep
+                                have shown the potential power of a set of basic abstract tools;
+                                none of which are specifically "word oriented", but which can be
+                                combined together in many different ways to perform a wide range of
+                                different functions.
+                            Over the past year we have designed an architecture which is based on
+                                the above assumptions and contains four parts:
+                                    (1) It contains a collection of textual objects that
+                                        represents, for a particular user, the text or set of texts
+                                        under study. These texts might well contain a rich markup of
+                                        the kind possible with the TEI markup scheme. Current
+                                        activities in the XML community have resulted in a serious
+                                        of standards which are close to meeting this requirement --
+                                        in particular the development of the Document Object Model
+                                        (DOM) which provides an object-oriented representation of an
+                                        XML document. The DOM provides a logical model of the
+                                        document that contains all relationships between its markup
+                                        and text data. Thus software components that use a DOM
+                                        representation of a text should be able to manipulate
+                                        elements within a text, determine reference identification
+                                        information based on mark-up, distinguish distinct tokens
+                                        according to mark-up that have identical token-strings in
+                                        the file, etc.
+                                    (2) It must also contain a collection of personal textual
+                                        enhancement objects which can store someone's personal
+                                        materials about the text. The architecture is designed so
+                                        that this set of objects could be "overlaid" on top of the
+                                        base text, allowing the user to modify or extend the objects
+                                        found in the DOM for the base text, as well as adding
+                                        entirely new elements to it. This separation of personal
+                                        textual enhancements from the base texts, plus the ability
+                                        to present a "combined view" when useful, offers additional
+                                        advantages -- in particular, it allows the base textual
+                                        objects and the personal materials to exist on different
+                                        machines. Furthermore, this model represents a kind of
+                                        "dynamic representation" that grows and changes each time
+                                        the results of the application of the analysis tools are
+                                        stored either as new data attached to existing nodes, or as
+                                        entirely new nodes and node structures.
+                                    (3) A further part of the environment will be the
+                                        collection of tools that work on this combined DOM
+                                        representation. As mentioned earlier, it was important to
+                                        think not only of text searching elements as the "tools".
+                                        Analysis also includes the manipulation and presentation of
+                                        data in a number of different ways so that patterns or
+                                        structures become more visible. Thus, a TA architecture
+                                        should support transformation tools that can accomplish this
+                                        task. Many existing programs offer one or two
+                                        transformation/presentation tools (a KWIC display is an
+                                        example), but few offer a rich enough set of tools to allow
+                                        users to design their own display. We believe that it is
+                                        important to modularise the process -- to break apart the
+                                        selection, transformation, and presentation elements so that
+                                        the user can "mix and match" components from perhaps
+                                        different software suppliers to meet their particular needs.
+                                        In order to understand better the potential of
+                                        modularisation we are examining a number of the
+                                        transformational tools in inherantly modular systems such as
+                                        TuStep and LT XML, but expect to derive tools also from work
+                                        currently being done in XML style sheets, extended pointers,
+                                        query languages and transformation objects.
+                                    (4) Finally, the environment must contain a framework in
+                                        which the user could combine the tools. This framework would
+                                        provide an operating environment in which the user could see
+                                        the texts, his/her local and remote toolset, and the results
+                                        of the application of the tools on the texts. 
+                                
+                            To us it seems obvious that a model of the DOM that is both
+                                persistent and dynamic represents a key element of this proposal. We
+                                will examine how recent developments and tools in the XML community
+                                can be incorporated to support this model of an architecture. In
+                                particular, several software implementations of the XML Domain
+                                Object Model (DOM) will be discussed. We will describe a prototype
+                                Java application that uses one of these to provide users with the
+                                ability to browse the structure of an XML document and the words it
+                                contains in a tightly-integrated manner.
+                        
+                    
+                
+                
+                    
+                        A proposal for a Humanities Text Processing Protocol
+                        Manfred Thaller
+                        
+                            After almost a decade during which there seemed to be rather little
+                                interest in the creation of Humanities software there are groups of
+                                persons which are now actively interested in it. When we discuss a
+                                "Humanities Software" project today the stress should be on the
+                                possibilities of co-operation. Co-operation is most easily achieved
+                                if people can work in their own environments and ignore their
+                                partners - while still being sure that the result of their labours
+                                will be ultimately able to fit together with the work of others. 
+                            To achieve the design of the "Humanities Software for the Future" we
+                                need to make three sets of decisions:
+                                    Decisions about the functionality to be implemented. 
+                                    Decisions about the software tools to be used.
+                                    Decisions about an infrastructure to enable different
+                                        solutions to communicate with each other.
+                                
+                            The first of these decisions - functionality - will obviously be much
+                                influenced by the Humanities background of different partners: what
+                                is interesting for a literary scholar may be remote to the interests
+                                of a historian and vice versa. Indeed, the choice of tools to be
+                                used may even almost bring us to religious conflicts. There are many
+                                valid reasons to use Delphi for the creation of applications, for
+                                example, although some people will refuse even to look at it. There
+                                are many reasons why C or C++ are highly attractive; and many people
+                                will consider it offensive to be asked to go down to that level of
+                                technical detail.
+                            The infrastructure decision is so important exactly because different
+                                people will tend to make different decisions in the first two: if we
+                                reach agreement there, all the other questions can have multiple
+                                answers and still result in software that can flourish side by side.
+                                This third area, unfortunately, asks for questions which are rather
+                                "hard core" in a technical sense. Only when we can agree completely
+                                and in great detail what our programmes can expect from each other
+                                can we can expect them to communicate.
+                            To design software in such a way (that components produced by
+                                independent parties can easily fit together) seems at first glance
+                                to be to be a very difficult task -- particularly if there is to be
+                                total freedom for individual parties to choose in which programming
+                                languages the individual components can be programmed.
+                            Once we acknowledge, however, that it is necessary to cope with the
+                                task on a rather concrete technical level, then there are fairly
+                                straightforward ways to achieve such interoperability. We propose
+                                here the definition of such a system - usually called a protocol -
+                                within which software components shall be able to communicate with
+                                each other. A written draft for such a protocol will be available at
+                                the presentation of this paper, the paper presented will focus on
+                                the major design decisions involved.
+                            The basic characteristics proposed are:
+                                    1. For communication between modules implementing
+                                        different functionality, text shall be represented as an
+                                        ordered series of tokens, where each token can carry an
+                                        arbitrarily complex set of attributes. Such an ordered set
+                                        of tokens is called a tokenset.
+                                    2. To support text transformations, where one token can be
+                                        converted into a set of logically equivalent ones (e.g.
+                                        cases where lemmatizers produce more than one possible
+                                        solution), we assume that a token is a non-ordered set of
+                                        strings (though most frequently a set with exactly one
+                                        member). 
+                                    3. Tokensets are recursive, i.e. the token of a tokenset
+                                        can be a tokenset in turn.
+                                    4. Strings are implemented in such a way that all
+                                        primitive functions for their handling (comparison,
+                                        concatenation etc.) are transparent for the constituent part
+                                        of a string. Such constituent parts can have different
+                                        character sizes (1 byte (=ASCII), 2 byte (= Unicode), 4 byte
+                                        (= chinese encoding schemes); they may also contain more
+                                        complex models representing textual properties, handled in a
+                                        lower level of processing capabilities.
+                                    5. The protocol provides tools for tokenisation.
+                                        Tokenisation is defined as the process of converting a
+                                        marked up text into the internal representation discussed
+                                        above. Tokenisation functions accept sets of tokenisation
+                                        rules together with input strings, which are than converted
+                                        into tokensets. (Note: Tokenisation obviously describes the
+                                        process of parsing, e.g. putting an SGML text into a form
+                                        where a browser can decide how to display the tokens found.
+                                        The proposed protocol does not define parsers or browsers as
+                                        such. It provides all the tools necessary to build one,
+                                        however.) 
+                                    6. The protocol provides tools for navigation. A
+                                        navigation function selects, out of a set of tokensets,
+                                        those tokesets that either contain specified strings or
+                                        specified combinations of descriptive arguments.
+                                    7. The protocol provides tools for transformation. A
+                                        transformation function usually converts one token set into
+                                        another one. This means: word based transformations have
+                                        usually the context of the word available, when applying a
+                                        specific transformation.
+                                    8. The protocol provides tools for indexing. Indexing
+                                        includes support for all character modes described above. It
+                                        provides mechanisms for "fuzzified" indexing, i.e. for
+                                        working with keys which match only approximately, where the
+                                        rules for the required degree to which two keys have to
+                                        match in order to be considered identical are administered
+                                        at run time; or to put it another way: a created index can
+                                        be accessed with different degrees of precision being
+                                        applied, without having to rebuild the index.
+                                    9. The protocol provides tools for pattern matching,
+                                        including regular expressions, as well as a pattern
+                                        librarian for the administration of more complex patterns,
+                                        which can operate on the string level as well as on the
+                                        level of tokensets.
+                                
+                        
+                    
+                
+            
+        
+    

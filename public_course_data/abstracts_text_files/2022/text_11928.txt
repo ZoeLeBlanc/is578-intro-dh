@@ -1,0 +1,165 @@
+
+        
+            Verbs have not been a prominent object of investigation in the digital humanities, although we do find computational literary studies on acoustic phenomena in novels (Katsma 2014) or narrativity of stage instructions in modernist drama (Trilcke et al. 2020) that both focus on the use of verbs in the respective corpora. Philosophical discussions about verbs often refer only to certain classes that are considered philosophically relevant in a given context: illocutionary verbs (Green 2021), verbs expressing propositional attitudes (Nelson 2019), or intensional transitive verbs (Forbes 2020). Our approach is both more comprehensive and more specific. We look at finite verbs regardless of their semantic classification (in this we follow Langer 1927). At the same time, our interest is ‘philological’ in that we aim to understand how verbs contribute to the meaning and interpretation of historical philosophical texts (Kahn 2003 follows a similar approach, however limited to only one verb, ‘to be’). Whereas most philosophical enquiry focuses on nouns as the linguistic side of relevant concepts like reason, duty, taste, etc., the study of verbs that function as predicates and thus relate these concepts can complete the picture of how philosophical judgements and arguments are made.
+            We present first results of an investigation of verb usage in Kant’s major critical writings. This corpus has the advantage that these texts present a unified system, so that we can ignore their diachronic dimension. And yet they allow for a contrastive analysis, because the three philosophical subdisciplines theoretical philosophy, practical philosophy and aesthetics are clearly mirrored in the structure of this corpus. We exclude minor writings published after the first edition of the
+                Critique of Pure Reason (1781), since they either cannot be clearly assigned to one of the three subdisciplines of philosophy under investigation or belong to subdisciplines such as philosophy of history, political philosophy or philosophy of religionwhich form only a small part of Kant’s overall critical system. The goal of our analysis consists in the identification of verbs that are typical for the respective subcorpus and philosophical subdiscipline. We aim to show that Kant’s usage of verbs differs depending on the philosophical subdiscipline the respective text belongs to.
+            
+            The corpus consists of the main writings of Kant’s critical philosophy and is divided into three subcorpora (tab. 1): 1) 
+                Prolegomena, 
+                Metaphysical Foundations of Natural Science, and the second edition of the 
+                Critique of Pure Reason (the inclusion of both editions would have introduced a lack of balance in the dataset) in theoretical philosophy, 2) 
+                Foundations of the Metaphysics of Morals, 
+                Critique of Practical Reason and 
+                Metaphysics of Morals for practical philosophy and 3) the 
+                Critique of Judgment for aesthetics and teleology.
+            
+            
+                
+                    Assembled Subcorpora
+                    Works
+                    N tokens
+                
+                
+                    
+                        Theoretical Phil.
+                        (3 works)
+                    
+                    Prolegomena
+                    52,588
+                
+                
+                    Metaphysical Foundations of Natural Science
+                    41,962
+                
+                
+                    Critique of Pure Reason
+                    216,587
+                
+                
+                    Total
+                    311,137
+                
+                
+                    
+                        Practical Phil.
+                        (3 works)
+                    
+                    Foundations of the Metaphysics of Morals
+                    32,958
+                
+                
+                    Critique of Practical Reason
+                    67,090
+                
+                
+                    Metaphysics of Morals
+                    106,423
+                
+                
+                    Total
+                    206,471
+                
+                
+                    
+                        Aesth. / Tel.
+                        (1 work)
+                    
+                    Critique of Judgment
+                    127,939
+                
+            
+            Tab. 1 number of tokens per work and subcorpus
+            The digital edition we used employs modernised orthography which increases the reliability of verb identification through POS-tagging. The texts were tagged and lemmatized with the Stanza POS tagger (Qi et al. 2020) with some manual post processing. We then calculated the key verbs (Culpeper/Demmen 2015) for each subcorpus in contrast to the complete critical writings as reference corpus. We used log-likelihood ratio (Dunning 1993) as keyness measure which can handle the differences in the subcorpus sizes and results in a list of verbs that are used significantly more often in a subcorpus than would be expected from a hypothetical equal distribution
+            
+                
+                    Results
+                
+                With the help of our domain knowledge, we can state that Kant’s verb usage shows clear differences across the three subdisciplines. Moreover, we can identify areas within the respective subdiscipline in which verbs make a substantial semantic contribution to Kant’s philosophical language.
+                In practical philosophy, many of the high-ranking verbs belong to the semantic field of law (including the moral law, i. e. the Categorical Imperative): to acquire (
+                    erwerben), to obligate (
+                    verpflichten), to force (
+                    zwingen). Others are generic terms for actions (
+                    handeln, machen, tun). Only one verb denotes an emotion (to love, 
+                    lieben). In theoretical philosophy, the two most high-ranking verbs are associated with the faculty of sensibility: to give, 
+                    geben, associated with what is given in sensibility, and to intuit (
+                    anschauen). Others seem to belong to natural philosophy (
+                    erfüllen, to fill, e. g. space), to move (
+                    bewegen), to begin (
+                    anfangen), to change (
+                    verändern). Some are what we could call ‘generic ontological verbs’, to take place (
+                    stattfinden), to exist
+                     (existieren). Only one verb is connected to a pertinent epistemic activity, to construe 
+                    (konstruieren). In aesthetics and teleology, i. e. in 
+                    Critique of Judgment, verbs that express an activity are more prominent: judging (
+                    urteilen, 
+                    beurteilen) plays, of course, an eminent role as do verbs that denote an aesthetic response (to please
+                    , gefallen, to entertain (
+                    unterhalten), the communicative force of an aesthetic judgment (to require
+                    , ansinnen) or the act of communication itself (to communicate
+                    , mitteilen).
+                
+                Further research will be required to investigate the syntactic diversity of Kant’s use of verbs (finite verb forms compared to participles or infinitives) and its relation to 18th century German in general. Moreover, the collection of typical verb-noun collocations as 
+                    Recht erwerben (to aquire a right) will be a useful step.
+                
+                Our corpus, code and data will be published under free licenses.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Culpeper, Jonathan / Demmen, Jane (2015). "Keywords." In: Biber, Douglas / Reppen, Randi (eds.): The Cambridge Handbook of English Corpus Linguistics. Cambridge: Cambridge University Press. 90–105. (
+                        doi:10.1017/
+                        CBO9781139764377.006)
+                    
+                    
+                        Dunning, Ted (1993). "Accurate methods for the statistics of surprise and coincidence." In: Computational Linguistics 19 (1), S. 61–74.
+                    
+                    
+                        Forbes, Graeme (2020), "Intensional Transitive Verbs", 
+                        The Stanford Encyclopedia of Philosophy (
+                        ). 
+                    
+                    
+                        Green, Mitchell (2021), “Speech Acts”, in: 
+                        The Stanford Encyclopedia of Philosophy, (
+                        
+                            https://plato.stanford.edu/­­­archives/fall2021/entries/speech-acts/
+                        ).
+                    
+                    
+                        Kahn, Charles H. (2003) The verb "be" in ancient Greek, Indianapolis: Hackett.
+                    
+                    
+                        Katsma, Holst (2014). "Loudness in the Novel." (= 
+                        Stanford Literary Lab, Pamphlet Nr. 7 [September 2014].)
+                    
+                    
+                        Langer, Susanne K. (1927). "A Logical Study of Verbs." In: 
+                        The Journal of Philosophy. Band 24, Heft 5 (März 1927), S. 120–129. (
+                        
+                            doi:10.2307/2015082
+                        )
+                    
+                    
+                        Nelson, Michael (2019) "Propositional Attitude Reports", 
+                        The Stanford Encyclopedia of Philosophy, (
+                        ).
+                    
+                    
+                        Qi, Peng / Zhang, Yuhao / Zhang, Yuhui / Bolton, Jason / Manning, Christopher D. (2020).
+                         
+                        
+                            Stanza: A Python Natural Language Processing Toolkit for Many Human Languages.
+                        In Association for Computational Linguistics (ACL) System Demonstrations. 2020.
+                    
+                    
+                        Trilcke, Peer / Kittel, Christopher / Reiter, Nils / Maximova, Daria / Fischer, Frank (2020). "Opening the Stage: A Quantitative Look at Stage Directions in German Drama." In: 
+                        DH2020: »carrefours/intersections«. 22–24. Juli 2020. Conference Abstracts, University of Ottawa.
+                    
+                
+            
+        
+    
+

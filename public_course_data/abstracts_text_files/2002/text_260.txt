@@ -1,0 +1,147 @@
+
+
+
+    
+        
+            
+                Building a multimedia haiku dictionary
+                
+                    
+                        Christine
+                        Ruotolo
+                        
+                            Electronic Text Center
+                            University of Virginia Library
+                            cjr2q@virginia.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Over the past year, the University of Virginia Library's Japanese Text Initiative
+                    (JTI), in partnership with the Electronic Text Center (Etext), has been
+                    developing an online multimedia dictionary of haiku. In this paper, I will
+                    describe the scope and content of the project, and how it combines text and
+                    multimedia materials in unique ways. I will also discuss the project from a
+                    technical perspective, describing its encoding, interface, and search and
+                    delivery mechanisms, with an emphasis on new problems encountered in the course
+                    of development.
+                Haiku is a well-known and increasingly ubiquitous poetic form in the West and
+                    around the world. But while many non-Japanese are familiar with the metrical
+                    structure of haiku poetry, few have a sophisticated knowledge of its traditional
+                    themes, which are based upon deeply nuanced kidai and kigo (season-words). At
+                    the heart of the JTI project is an English translation of portions of the Nyumon
+                    Saijiki, a standard reference of kidai and kigo produced by the Museum of Haiku
+                    Literature in Tokyo. The Nyumon Saijiki contains entries for the people, places,
+                    and things found in haiku, with examples of modern and classical haiku under
+                    each entry. Our translation of this work, completed by world-renowned haiku
+                    expert William Higginson, consists of kanji, hiragana, romaji, and English
+                    renderings for each of the 3,000 kidai and kigo, along with a definition and
+                    brief explication. For the 100 most important terms, Mr. Higginson has
+                    translated the full entry, which includes a discussion of proper usage and
+                    several example poems. In addition, we have supplemented these full entries with
+                    image and sound files harvested from online archives. Audio and visual
+                    illustrations of these recurrent themes (the cries of autumnal insects, the hazy
+                    moon of a spring night, and so forth) will greatly enhance the user's
+                    understanding of poetry that is so deeply rooted in sensory perceptions of
+                    nature; this is doubly true for Western audiences who live half a world away
+                    from the particular plants, animals, rituals, and seasonal phenomena discussed
+                    in the poems.
+                Although Etext has produced and maintained full-text SGML/XML collections for
+                    over a decade, and the JTI's work with Japanese language materials dates back to
+                    1997, the current project has presented us with many new challenges. In the
+                    past, the use of images in our collections was limited primarily to page images
+                    and book illustrations; sound files were all but non-existent. The project's web
+                    designer has strived to integrate the multimedia components into the project in
+                    a way that supplements but does not overwhelm the textual content. The potential
+                    audience for this project is incredibly broad; we anticipate that it will be
+                    used around the world by everyone from grade-school students to professional
+                    scholars of Japanese literature. Different users will require different views of
+                    the data and different tools for manipulating it. A K-12 audience might want to
+                    see just the English translations of the poems, accompanied by the relevant
+                    images, while someone learning the Japanese language would be better served by a
+                    poem in its kanji and romanized versions, along with an audio recitation and
+                    highlighted links from the keywords in the poem to their full dictionary
+                    entries. More expert users might want to run sophisticated search queries on the
+                    dictionary, and a student of comparative literature might want to cross-query
+                    the dictionary against the English Poetry Database or a similar collection.
+                In order to present these multiple views of the project, we have encoded the data
+                    in XML-compliant TEI and have generated much of the output with XSL stylesheets.
+                    This represents a major transition for the Etext Center, which since 1992 has
+                    stored data in SGML and converted it "on the fly" to HTML with CGI scripts. The
+                    nature of the saijiki data, with its deeply nested hierarchies and the
+                    database-like entry structure, combined with our need to sort, recombine and
+                    re-present this data very nimbly, led us to an XML/XSL workflow. However, we
+                    made some sacrifices with this approach. Our on-the-fly delivery of the data
+                    through XSL stylesheets has been considerably slower than a comparable CGI
+                    transformation. For this reason, we currently deliver large chunks of data
+                    through CGI or as XSL-generated static HTML pages while we work to reduce the
+                    delivery time.
+                A further complication has arisen from our need to use UTF-8 encoding for this
+                    project, instead of the EUC encoding we have used in the rest of the JTI
+                    collection. Unicode allows us to easily represent kana and hiragana alongside
+                    Western characters, including macron vowels that aren't part of the EUC
+                    character set. However, our OpenText search tool does not support Unicode; until
+                    current work on Unicode compatibility for OpenText is completed, we need to
+                    convert the Unicode to EUC prior to indexing and essentially maintain two
+                    parallel versions of the same data.
+                In the coming year, we look forward to translating the remaining portions of the
+                    Nyumon Saijiki, adding to the supplementary multimedia materials, and
+                    integrating this haiku collection both "vertically" (with our other
+                    Japanese-language materials) and "horizontally" (with other poetry collections
+                    and dictionary projects across our holdings).
+            
+        
+    

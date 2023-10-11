@@ -1,0 +1,214 @@
+
+
+
+    
+        
+            
+                TAPoR Tools: Portal text analysis tools and other
+                    primitives
+                
+                    
+                        Geoffrey
+                        Rockwell
+                        
+                            McMaster University
+                            grockwel@mcmaster.ca
+                        
+                    
+                
+                
+                    
+                        Lian
+                        Yan
+                        
+                            McMaster University
+                            lyan@mcmaster.ca
+                        
+                    
+                
+                
+                    
+                        Stéfan
+                        Sinclair
+                        
+                            University of Alberta
+                            Stefan.Sinclair@ualberta.ca
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    This poster will demonstrate a collection of text processing tools designed
+                        to work through a portal over the Web. The tools are designed to work on
+                        plain text, html or xml encoded e-texts. They are easily used to search
+                        electronic texts without the need to install software, preprocess the texts,
+                        or master complex tools.
+                
+                
+                    HOW DO TAPOR.TOOLS (T.TOOLS) WORK?
+                    T.tools are written in Ruby, an object-oriented scripting language like Perl
+                        and Python.Ruby is available for Macintosh, Unix and Windows at
+                            the “Ruby Home Page”, URL: ,
+                            Accessed Nov. 20, 2002. The T.tools are written so that they can
+                        be run on the command line or as CGI programs off our portal. This means
+                        that users of the tools need not install or maintain them, but if they wish,
+                        advanced users can download and adapt them.
+                    Using Web forms as an interface to the tools gives T.tools the capacity to be
+                        easily adapted to hide complexity or to provide local adaptations. Simple
+                        search and concordance forms can be created that can utilize xml markup
+                        without having to change the tools. Small scale publishers of electronic
+                        texts can provide T.tool Web forms that process their Web accessible e-texts
+                        without installing the software. The forms simply pass the URL for the text
+                        in a hidden field to the appropriate tool residing on our portal for
+                        processing. (We will demonstrate the adaptation of these tools to support
+                        the Hyperliste project, a collection of French medieval poetry online.)
+                
+                
+                    WHAT ARE PORTAL TOOLS?
+                    A portal is an entry point into a field.Katz, Richard N. and
+                            Associates. Web Portals and Higher Education;
+                                Technologies to Make IT Personal. San Francisco:
+                            Jossey-Bass, 2002. In this case the T.tools are written to
+                        provide simple text processing tools for TAPoR (Text Analysis Portal for
+                        Research), a multi-institutional project which has Canada Foundation for
+                        Innovation funding to create a portal for text analysis.Text
+                            Analysis Portal for Research, URL: ,
+                            Accessed Nov. 21, 2002. It should be noted that in this poster
+                            presentation we will not be presenting on the portal as a whole, just a
+                            specific set of tools designed to work through (or not) the portal that
+                            is being implemented.They are designed to provide a suite of
+                        simple text transformations that will eventually be managed by a portal
+                        environment that additionally provides user and interface customization
+                        tools. At present they can do the following:
+                            List and count words in a text.
+                            List and count elements in an xml text.
+                            List attributes and values in an xml text.
+                            Extract elements from an xml text.
+                            Find patterns (words or phrases) in a text.
+                            Find patterns in specific elements in a text.
+                            Create a concordance of found patterns or elements.
+                            Output results in either html for reading or xml for further
+                                processing.
+                        
+                    This combination of functions allows the user to query an xml text to find
+                        words in specific parts of text or to extract selected parts by element name
+                        and attribute value. Users can also, should they not know the structure of
+                        the text, get a list of the elements or a list of words to search for. Users
+                        have a choice of output from simple output in html to output in xml that
+                        could be saved and processed locally.
+                
+                
+                    WHAT TYPES OF USERS ARE ENVISAGED?
+                    T.tools are designed to be used in three ways by users of differing levels of
+                        expertise.
+                    Introductory Users. A portal should be place one can
+                        learn through playful discovery about a field like computer assisted text
+                        analysis. T.tools are designed so that new users can try basic operations on
+                        electronic texts without having to install software or texts. As the T.tools
+                        do not preprocess texts they can be run on any text a new user can find on
+                        the Web. This allows a new user to experiment with text analysis on texts
+                        they know without much training. The tools are also designed so that they
+                        can be explained and documented in different ways to make them accessible to
+                        different communities.
+                    Small E-text Publishers. While large e-text projects
+                        have access to programmers and systems that allow them to adapt text
+                        processing tools to their texts, many small projects cannot afford to do
+                        more than make available their scholarly texts on the Web in html or xml/css
+                        form. T.tools provides tools run on our server which can be passed a text
+                        (actually a URL) for processing from a Web form set up by the publisher.
+                        Thus small projects can adapt our forms to their needs and integrate them
+                        into their sites.
+                    Advanced Users. As the code is made available as
+                        “open source” according to the definition at the Open Source Initiative,
+                        advanced users can download it and adapt it to their research needs.”The Open Source Definition”, URL: ,
+                            Accessed Nov. 20, 2002. T.tools have been built around a library
+                        of object classes commonly used in text processing whose methods can be
+                        called in new Ruby scripts, from the command line, or through IRB
+                        (Interactive Ruby). Thus the advanced user can use T.tools as a text
+                        processing language and then build new scripts to do things unanticipated by
+                        the developers.
+                
+                
+                    WHAT ARE THE PROBLEMS WITH THIS MODEL?
+                    The major drawback to this model is that T.tools are slow by comparison to
+                        other Web text tools like TACTWeb because they do not work with preprocessed
+                            indexes.For more on TACTWeb see URL: , Accessed Nov. 20,
+                            2002. TACTWeb is built on TACT which has a preindexing program MAKEBASE
+                            which prepares the Text DataBase file (TDB) which is then used by TACT
+                            and TACTWeb to quickly process queries. T.tools work best on
+                        chapter to book length texts not on larger corpora. The processing
+                        capabilities of the server used for the portal is also important. TAPoR has
+                        been funded to install high-end servers for the portal that will partially
+                        compensate for the cost of processing, but there is no substitution for more
+                        efficient tools when dealing with large texts. This is an issue which
+                        deserves further study. Further, T.tools is based on a “pipe-and-flow” model
+                        common in the Unix world which may not scale to certain types of interactive
+                        processing needed in the humanities, for example, situations where texts are
+                        being enriched and studied simultaneously.
+                
+                
+                    WHY A POSTER?
+                    This project is presented as a poster as that will provide the most
+                        convenient way to demonstrate the tools to potential users and redevelopers.
+                        Through the venue of a poster session we can demonstrate how T.tools work on
+                        the texts of the poster visitors. It will also allow us to engage humanists
+                        with small text projects that might benefit from such tools. With individual
+                        visitors we can adapt Web forms to show the usefulness of T.tools to their
+                        projects. CD-ROMs of the code and documentation will be distributed to
+                        advanced users.
+                
+            
+        
+    

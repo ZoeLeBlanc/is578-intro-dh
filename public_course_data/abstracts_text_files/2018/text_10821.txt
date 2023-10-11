@@ -1,0 +1,108 @@
+
+      
+         
+            Ausgangslage
+            Virtuelle Rundgänge, virtuelle Ausstellungen oder virtuelle Touren: Die Begriffe bezeichnen oft ähnliche Vorgehensweisen. Zusätzlich zu strukturierten Suchzugängen werden sie auf den unterschiedlichsten Portalen für digitalisiertes Kulturerbe in der Regel als Ergänzung angeboten. Dazu gehören prominente Beispiele wie die Europeana
+                    , die Deutsche Digitale Bibliothek
+                     oder zahlreiche Regionalportale im deutschsprachigen Raum (stellvertretend sei Bavarikon
+                     oder Kulturerbe Niedersachsen
+                     genannt). Doch auch kommerziellen Anbietern ist das Konzept nicht fremd, wie Google zeigt.
+                     Am häufigsten wird die Bezeichnung (Virtuelle/Digitale) Ausstellung ((
+                    virtual/digital) exhibition) verwendet.
+                
+            Unabhängig von der Begrifflichkeit teilen sich die Umsetzungen meist folgende Merkmale (vgl. auch INDICATE 2012, 17):
+            
+               es handelt sich um Sammlungen von Informationen und Quellen/Objekten zu einem bestimmten Thema, einer Periode oder einer Person (oft auch anlassbezogen zu Jubiläen, z.B. Reformation
+                        , Weltkrieg
+                        , etc.)
+                    
+               die Quellen werden von Fachleuten kontextualisiert und beschrieben
+               verschiedene Inhalte (Text, Bild, Audio, Video) werden miteinander verbunden
+               die Objekte können aus einem oder mehreren digitalisierten Sammlungen oder Beständen kommen
+               meist gibt es einen vorgegebenen (zumindest bevorzugten) Ablauf der Informationen
+            
+            So vielfältig wie die möglichen Themen der Rundgänge sind die technischen Umsetzungen und Visualisierungen. Zahlreiche Werkzeuge sind für die Erstellung und Darstellung von Virtuellen Ausstellungen verfügbar.
+                     Bei der Auswahl des Werkzeuges sind die gewünschte Funktionalität, Kompatibilität mit bestehender Infrastruktur, Unabhängigkeit von äußeren Quellen wie auch eine möglichst geringe Einarbeitungszeit wichtige Kriterien. Eine Wahrung der Prinzipien der Digital Humanities (vor allem mit Hinblick auf open source Software) ist ebenso wünschenswert.
+                
+            Ein Vorbildprojekt ist AthenaPlus, das nicht nur theoretische und methodische Vorarbeit im Bereich Virtuelle Ausstellungen geleistet hat, sondern mit Movio auch ein open source Tool entwickelt hat.
+         
+         
+            Umsetzung im Portal „Kultur- und Wissenschaftserbe“ Steiermark
+            Auch im Webportal „Kultur- und Wissenschaftserbe Steiermark“, einem Ergebnis des Projektes „Repositorium Steirisches Wissenschaftserbe“, ergänzen Virtuelle Rundgänge den strukturierten Suchzugang. Das Konzept zu den Touren wurde gemeinsam mit den Datenlieferanten erarbeitet. Die kuratierten Rundgänge erlauben eine spielerische Auseinandersetzung mit den Objekten und ein „Virtuelles Schlendern“ durch Bestände.
+            Für die Umsetzung wurde die JavaScript-Bibliothek StoryMapJS verwendet, die in Form eines eigenen Objektmodells in die dem Webportal zu Grunde liegende Infrastruktur GAMS integriert wurde. Die Wahl fiel deswegen auf StoryMapJS, weil es sich aus den zahlreich verfügbaren Werkzeugen am besten in das bestehende System implementieren ließ. Viele Werkzeuge bieten ein Rundumpaket von Content Management System bis Präsentation, für die Integration in GAMS war ein reines Disseminationswerkzeug zu bevorzugen. Das Objektmodell kapselt den Inhalt der Ausstellung (Text, Medienreferenzen, Ablauf) und übergibt die Daten an die Javascript-Bibliothek, die die Darstellung übernimmt. So sind alle verwendeten Daten unabhängig von der Anwendung Teil des digitalen Archivs und können somit dauerhaft adressiert sowie gemeinsam verwaltet und (langzeit)archiviert werden. Eine persistente Identifikation der Ausstellung ist auf Basis von Handle möglich.
+            Derzeit wird der für StoryMapJS verlangte JSON Input eins zu eins aus einer XML Datei konvertiert. Das bringt eine teilweise Vermischung von Form und Inhalt mit sich. Um dem entgegen zu wirken, wäre ein spezielles Set zur Beschreibung der Meta(Daten) der Virtuellen Ausstellung sinnvoll. Teilweise wird das durch DEMES (
+                    Digital Exhibition Metadata Element Set) ermöglicht, allerdings werden hier stets die Metadaten der gesamten Ausstellung beschrieben, eine Metabeschreibung der einzelnen Elemente, des Inhalts wie auch von Ablauf und Zusammenhang ist hier nicht möglich.
+                
+         
+         
+            Fazit
+            Die gewählte Bibliothek StoryMapJS erfüllt den Zweck der Visualisierung der Rundgänge für dieses Projekt gut. Ein Nachteil liegt in der relativ eingeschränkten Reihenfolge der einzelnen Stationen; NutzerInnen können nur begrenzt eigene Wege durch das Material finden. Die Einarbeitungszeit ist gering, die Integration in die eigene Infrastruktur funktionierte problemlos.
+            Ein Desiderat ist jedoch die bessere Strukturierung und Standardisierung der Daten und Metadaten. Hier wäre eine einheitliche Beschreibung nicht nur der gesamten Ausstellung (wie durch DEMES ermöglicht, oder vielleicht begrenzt auch mit Dublin Core oder TEI umsetzbar), sondern der einzelnen Stationen und deren Zusammenhang sinnvoll. Zusätzlich könnten durch Anreicherung Anknüpfungspunkte für die Vernetzung der erzeugten Daten entstehen, beispielsweise GeoNames-Referenzen, wenn moderne Karten als Hintergrund verwendet werden. Die vollständige Trennung von Darstellung und Inhalt ist auch für die Weiternutzung und Archivierung zentral.
+            Insgesamt wird die wissenschaftliche Auseinandersetzung mit Virtuellen/Digitalen Ausstellungen/Rundgängen oft vernachlässigt, weil sie in erster Linie als Verschönerung bzw. nachrangiges Angebot von Suchportalen verstanden werden. Ganz im Gegenteil sind diese Einstiegspunkte aber für das Publikum oft leichter verständlich und können einen besseren Überblick über die zu vermittelnde Thematik geben als hochstrukturierte Interfaces und rein textuelle Beschreibungen.
+         
+      
+      
+         
+            
+               http://www.europeana.eu/portal/en/exhibitions/foyer (2017-08-09)
+                        
+            
+               https://www.deutsche-digitale-bibliothek.de/content/ausstellungen (2017-08-09)
+                        
+            
+               https://www.bavarikon.de/topics (2017-08-09)
+                        
+            
+               http://kulturerbe.niedersachsen.de/viewer/kontexte/ (2017-08-09)
+                        
+             https://www.google.com/culturalinstitute (2017-08-17)
+            
+               https://bavarikon.de/object/bav:BSB-CMS-0000000000001151 (2017-08-09)
+                            
+            
+               http://wk1.staatsarchiv.at/ (2017-08-09)
+                            
+             Siehe bspw. 
+                            http://oedb.org/ilibrarian/5-free-and-open-source-tools-for-creating-digital-exhibitions/ (2017-08-09)
+                        
+         
+         
+            
+               Bibliographie
+               
+                  AthenaPlus (2015): Digital storytelling and cultural heritage: stakes and opportunities. 
+                        http://www.athenaplus.eu/index.php?en/207/digital-storytelling [letzter Zugriff 22. August 2017]
+                    
+               
+                  AthenaPlus (2016): Metadata for the description of digital exhibitions: the DEMES element set. Version 1.0. 
+                        http://www.athenaplus.eu/index.php?en/206/demes [letzter Zugriff 22. August 2017]
+                    
+               
+                  AthenaPlus: Movio. 
+                        http://www.athenaplus.eu/index.php?en/211/movio) 
+                    
+               
+                  Geisteswissenschaftliches Asset Management System – GAMS. 
+                        http://gams.uni-graz.at [letzter Zugriff 22. August 2017]
+                    
+               
+                  INDICATE (2012): Handbook on virtual exhibitions and virtual performances. Version 1.0. 
+                        http://www.indicate-project.org/getFile.php?id=412 [letzter Zugriff 22. August 2017]
+                    
+               
+                  Kultur- und Wissenschaftserbe Steiermark. 
+                        http://www.kulturerbe-stmk.at [letzter Zugriff 22. August 2017]
+                    
+               
+                  Repositorium Steirisches Wissenschaftserbe. 
+                        https://wissenschaftserbe.uni-graz.at/ [letzter Zugriff 22. August 2017]
+                    
+               
+                  StoryMapJS. 
+                        https://storymap.knightlab.com/ [letzter Zugriff 22. August 2017]
+                    
+            
+         
+      
+   
+

@@ -1,0 +1,368 @@
+
+
+
+    
+        
+            
+                A broadcast architecture for distributed text
+                    tools
+                
+                    
+                        Steven
+                        J.
+                        DeRose
+                        Computer Center University of Illinois at
+                                Chicago
+                            
+                        
+                    
+                
+                
+                    
+                        C.
+                        M.
+                        Spergberg-McQueen
+                        Computer Center University of Illinois at
+                                Chicago
+                            cmsmcq@acm.org
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Adequate textual analysis software is difficult to create. Scholarly users
+                        have special requirements seldom met by commercial packages, e.g. lexical,
+                        syntactic, and statistical analysis; special layouts for interlinear texts;
+                        synchronized scrolling of multiple translations or editions; and flexible
+                        tools for searching and for organizing search results and making latent
+                        patterns visible. Disparity in document formats and levels of tagging and
+                        meta-information long made it difficult to share text software. And the cost
+                        of software development frequently exceeds the resources available for
+                        humanities computing infrastructure.
+                    Thanks to SGML, XML, the TEI, and even HTML, we are now closer to having a
+                        uniform way to exchange information about documents and their structures.
+                        And thanks to other existing and emergent standards, it is now possible to
+                        specify a simple architecture that can help organize a modular system, into
+                        which a variety of analysis, display, and other tools can be plugged. This
+                        would allow independent development, maintenance, and use of far more tools
+                        than could ever be handled with a monolithic approach.
+                
+                
+                    A simple scenario
+                    Consider a user viewing a large collection of texts; perhaps all the literary
+                        works of a single author or period, using several tools:
+                            a fully-formatted view;
+                            a word list, from which searches may be issued;
+                            a Key Word in Context (KWIC) view;
+                            an interlinear view with grammatical, thematic, or other
+                                information displayed in association with text portions.
+                        
+                    When the user selects a different hit in the KWIC display, the full-text view
+                        might scroll to the new location; when the user selects a different word
+                        from the word list, both the KWIC display and the full-text display might
+                        change accordingly. Each view has its own set of configuration options.
+                    Our architecture is designed to exploit several insights:
+                            1. Almost all scholarly analysis tools can be construed as "views"
+                                of an underlying corpus.
+                            2. Little communication is required between the views. Each must
+                                have efficient access to the underlying data, but individual views
+                                only need communicate terse information (e.g. the new focal
+                                word-type) to others when they change state.
+                            3. When one view changes state, other views can respond by
+                                changing their own state; the first view need not control the others. This allows the user
+                                to have some KWIC or text views which respond to new selections in
+                                the wordlist, and others which are unaffected. Thus, our
+                                architecture decentralizes inter-view control: any view can respond
+                                to others, but no view is controlled by another.
+                            4. A view's response to events elsewhere may be simple (e.g.
+                                scroll) or arbitrarily complex (e.g. recalculate a statistical
+                                description of the text).
+                        
+                
+                
+                    Overall architecture
+                    
+                        The underlying data-access layer
+                        The base of the system is an XML repository, which provides access to
+                            application modules (views) through the W3C Document Object Model (DOM).
+                            Application modules communicate directly with the XML data through the
+                            repository; they need not interact intimately with each other. This
+                            simplifies protocols and implementation considerably.
+                        Since the repository uses standard interfaces, multiple implementations
+                            can co-exist and compete on their performance, scalability, etc.
+                            Ideally, the XML database should provide rapid access to large volumes
+                            of data and annotation, with fundamental kinds of indexed search out of
+                            which tools can build more sophisticated conjoint searches, search
+                            displays, and lexicostatistical analysis tools.
+                    
+                    
+                        The view modules
+                        User interfaces to the data are built on top of the data-access layer.
+                            Each typically provides a specialized view of selected data, and relates
+                            to other modules as a peer. For example, a formatter might collect data
+                            and apply a stylesheet, while a concordance view collects data portions
+                            and lays them out to reveal lexical patterns, and a statistical analysis
+                            tool analyzes selected data portions and provides a graphical or
+                            numerical report.
+                        Modules interact frequently but simply, via broadcast: whenever a module
+                            changes its state, it tells all the other modules. Such broadcasts are
+                            easily performed either on a single system or across a network; they
+                            only need to contain a little information. Recipients can then respond
+                            or not, as desired.
+                        A broadcast message consists of a list of state variables that have
+                            changed. A concordance view, for example, might broadcast changes to its
+                            sort order, the current search string it uses, and the size of context
+                            it displays. A word list might publish its search string and the current
+                            selection. Generally, variables should be small; there is no need to
+                            re-publish data from the underlying collection, which is accessible to
+                            all views.
+                        A module can ignore messages if it has no interest in the originating
+                            view or in the particular state information. For example, a formatted
+                            view may be interested when a concordance view gets a whole new search,
+                            but not when it is merely re-sorted.
+                        Views do not broadcast the new values of variables when they change;
+                            instead, interested recipients ask originators directly about state
+                            values. We believe recipients will, in general, need to be able to query
+                            the state of other modules for more information than changed, even
+                            though their query is triggered by a simple state change.
+                        Each module, then, defines a small set of named information pieces about
+                            which it will broadcast, and another set that it will expose for
+                            examination or perhaps change. These variables amount to the module's
+                            interface to other modules. Its interface to the user remains its
+                            own.
+                    
+                
+                
+                    Summary
+                    We propose here a basic architecture for interconnecting diverse,
+                        decentralized text tools. Modules can thus be built by many people, yet used
+                        together. This requires a very simple protocol, and we propose a broadcast
+                        approach in which modules notify other ones when their visible state
+                        changes, and choose when and how to respond to received notifications. This
+                        fits very smoothly with existing standards such as XML, DOM, HTTP, and
+                        CORBA, making it feasible cooperatively to build an extensive suite of text
+                        tools. Achieving agreement on a very simple communication protocol would
+                        greatly facilitate the development of an effective humanities text analysis
+                        environment, by making it a cooperative rather than monolithic project, and
+                        by enabling re-use of existing standards and future code modules.
+                
+            
+        
+        
+            
+                Partial Bibliography
+                
+                    
+                        
+                            
+                                    Serge
+                                    Abiteboul
+                                 et al
+                            Querying Documents in Object Databases
+                        
+                        
+                            International Journal on Digital Libraries 
+                            
+                                1
+                                1
+                                5-19
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Michael
+                                    Bieber
+                                
+                            
+                            
+                                
+                                    Jiangling
+                                    Wan
+                                
+                            
+                            Backtracking in a Multiple- Window Hypertext
+                                Environment
+                        
+                        
+                            Proceedings of the 1994 European Conference on
+                                Hypertext
+                            
+                                
+                                ACM
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Steven
+                                    Feiner
+                                
+                            
+                            Seeing the Forest for the Trees: Hierarchical Display
+                                of Hypertext Structure
+                        
+                        
+                            Conference on Office Information Systems. March 23-25,
+                                1988, Palo Alto, CA
+                            
+                                New York
+                                ACM Press
+                                1988
+                                205-212
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Gary
+                                    F.
+                                    Simons
+                                
+                            
+                            A Conceptual Modeling Language for the Analysis and
+                                Interpretation of Text
+                        
+                        
+                            Committee on Text Analysis and Interpretation, document
+                                AIW12, January 16
+                            
+                                Chicago
+                                Text Encoding Initiative
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            Guidelines for Electronic Text Encoding and
+                                Interchange
+                            
+                                Chicago
+                                Oxford
+                                Text Encoding Initiative
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Bharathi
+                                    Subramanian
+                                
+                            
+                            
+                                
+                                    Theodore
+                                    W.
+                                    Leung
+                                
+                            
+                            
+                                
+                                    Scott
+                                    L.
+                                    Vandenberg
+                                
+                            
+                            
+                                
+                                    Stanley
+                                    B.
+                                    Zdonik
+                                
+                            
+                            The AQUA Approach to Querying Lists and Trees in
+                                Object-Oriented Databases
+                        
+                        
+                            Presented at the International Conference on Data
+                                Engineering, Taipei, Taiwan
+                            
+                                
+                                
+                                1995
+                            
+                        
+                        Available from the authors.
+                    
+                
+            
+        
+    

@@ -1,0 +1,564 @@
+
+
+
+    
+        
+            
+                Timelines Online: Hypermedia and Information
+                    Architecture in the Representation of Intellectual History
+                
+                    
+                        John
+                        Zuern
+                        Department of English, University of
+                                Hawai'I
+                            zuern@hawaii.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                My presentation will address the potential--and some of the problems--of applying
+                    the principles of information architecture and graphic design elaborated in the
+                    work of Nielsen [13], Rosenfeld and Morville [15], Tufte [17], and Wurman [19]
+                    to the creation of web-based educational resources that represent the history of
+                    ideas. While my own work is focused on developing instructional materials in the
+                    history of literary theory and criticism, my presentation discusses general
+                    problems in the graphic design of timelines that are relevant to a number of
+                    humanities disciplines.
+                Although careful attention to historical issues is commonplace in courses on
+                    literature, educators who confront the daunting task of teaching literary theory
+                    often find that time constraints and the perceived difficulty of individual
+                    texts preclude sufficient consideration of the historical and institutional
+                    contexts which have shaped the formation of concepts, approaches, and
+                    assumptions. Such consideration is, however, crucial for an understanding of any
+                    theory's contribution. Carefully designed hypermedia systems have the potential
+                    to represent intellectual history as a dynamic, networked process driven by
+                    dialogue and contest, providing students a means of exploring the complexity of
+                    that history and of entering into the conversation that sustains it.
+                In an effort to move beyond an instrumental application of electronic media as a
+                    storage-and-delivery system for learning materials, my project seeks to develop
+                    design strategies that take into account developments in the theory of
+                    historiography (e.g. Foucault [7], White [18], and Ginzburg [8]) that have
+                    important implications for the representation of history in any format. With
+                    reference to recent work in knowledge representation [12] and a series of
+                    concrete examples, my paper will demonstrate some of the theoretical and
+                    methodological challenges that arise when we turn to relatively static spatial
+                    relationships as a means of conveying the dynamic temporal and conceptual
+                    interconnections that characterize intellectual history. Developing solutions
+                    for problems of design is a hermeneutic procedure that engages the designer in a
+                    "dialogue with the design situation" [4] and demands a critical examination of
+                    received frameworks for organizing historical knowledge. In the case of
+                    graphical timelines, the dominant metaphor of the "line" itself tends to
+                    privilege chronology, which presents history as a sequence of events, over
+                    models that emphasize, for example, networks of discourses [7].
+                The scope of my own project in its present form is restricted to the years
+                    1965-1975, a decade in which a number of influential positions articulated
+                    within philosophy, linguistics, and the social sciences began to inform
+                    literary-critical study. In pursuing this project, I have attempted to meet the
+                    following desiderata for resources of this kind:
+                        to make available clear, accurate historical data, such as
+                            biographical dates of important figures, publication dates, and the
+                            dates and rosters of significant seminars and conferences, as well as
+                            references to major historical, social, and cultural events that have an
+                            impact on the development of ideas;
+                        to augment the above data with the kinds of anecdotal material
+                            valorized by the New Historicism in literary criticism as well as
+                            relations of quotidian events, personal habits, and chance occurrences
+                            of which records exists and out of which "microhistories" might be
+                            assembled [8];
+                        to ensure that the system encourages both browsing and known-item
+                            searching;
+                        to allow users to specify the types of information they wish to access
+                            (for example, a chronological bibliography of an individual theorist's
+                            publications or the genealogy of a particular critical term);
+                        to allow users to control the level of granularity (for example,
+                            choosing to access a chronological bibliography of an single theorist's
+                            or of representative texts of an entire school of thought);
+                        to permit multiple forms of access and interpretation (enlisting the
+                            poetics of hypertext fiction to allow users to construct a range of
+                            narratives that tell the multiple stories of the development of
+                            contemporary literary theory).
+                    
+                These goals entail a number of conceptual and technical challenges. All
+                    timelines, regardless of their form, write history in the course of displaying
+                    it. As much as the historian, the courseware developer has to interpret the
+                    materials at hand "in order to construct the moving pattern of images in which
+                    the form of the historical process is to be mirrored" [18]. The relative
+                    openness of hypermedia in relation to print documents does little to mitigate
+                    the risk of imposing interpretations upon users; Aarseth [1] has argued that
+                    predetermined paths in hypertext can restrict readers to a greater extent than
+                    the eminently browsable formats of traditional print materials. Developers of
+                    instructional media in all fields, especially those whose subject matter is as
+                    complex and overdetermined as that of intellectual history, must be attuned to
+                    the expressive and interpretative functions of content selection and navigation
+                    design, concerns which cannot be extricated from the resource's overall
+                    architecture and operability. One concern in particular is that of correlation:
+                    how can the system encourage users to correlate historical data without
+                    sacrificing the chronological or otherwise rational organizational structures of
+                    the data?
+                I will illustrate my remarks with demonstrations from my own project as well as
+                    examples of print timelines (Kitts [9], Mann [11], and Davis [5]); interactive
+                    timelines designed for educational kiosks (Skydeck [15]); web-based timelines
+                    that employ HTML (Eckman [6] and Landow [10]), PDF (Bauer et al. [2]) and CGI
+                    programming (Benjamin and Slaughter [3]). I conclude my discussion with
+                    suggestions of how three-dimensional data-management and mapping systems such as
+                    Dynamic Diagrams' MAPA system, Plumb Design's ThinkMap, and can further serve to
+                    accomplish some of the goals outlined in my paper.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    E.
+                                    J.
+                                    Aarseth
+                                
+                            
+                            Cybertext: Perspectives on Ergodic Literature
+                            
+                                Baltimore
+                                Johns Hopkins University Press
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    L.
+                                    Bauer
+                                
+                            
+                            
+                                
+                                    B.
+                                    Carlson
+                                
+                            
+                            
+                                
+                                    A.
+                                    Burgess
+                                
+                            
+                            
+                                
+                                    C.
+                                    Miller
+                                
+                            
+                            Timeline of Computing History
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        &lt;&gt;.
+                            October 18, 1998.
+                    
+                    
+                        
+                            
+                                
+                                    B.
+                                    Benjamin
+                                
+                            
+                            
+                                
+                                    J.
+                                    Slaughter
+                                
+                            
+                            Literary Contests and Contexts Timelines
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        &lt;&gt;. October 18, 1998.
+                    
+                    
+                        
+                            
+                                
+                                    R.
+                                    Coyne
+                                
+                            
+                            
+                                
+                                    A.
+                                    Snodgrass
+                                
+                            
+
+                            Is designing mysterious? challenging the dual knowledge
+                                thesis
+                        
+                        
+                            Design Studies
+                            
+                                2
+                                3
+                                124-131
+                                1991
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    J.
+                                    Davis
+                                
+                            
+                            
+                                
+                                    K.
+                                    West
+                                
+                            
+                            Women writers in the United States: a timeline of
+                                literary, cultural, and social history
+                            
+                                New York
+                                Oxford University Press
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    M.
+                                    Eckman
+                                
+                            
+                            Modernism Timeline, 1890-1940
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        &lt;&gt;. November 25, 1998.
+                    
+                    
+                        
+                            
+                                
+                                    Michel
+                                    Foucault
+                                
+                            
+                            The Archeology of Knowledge and The Discourse on
+                                Language
+                            
+                                
+                                    
+                                        A.
+                                        M.
+                                        S.
+                                        Smith
+                                    
+                                
+                                (trans).
+                            
+                            
+                                New York
+                                Pantheon
+                                1972
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Carlo
+                                    Ginzburg
+                                
+                            
+                            Microhistory: Two or Three Things That I Know about
+                                It
+                        
+                        
+                            Critical Inquiry
+                            
+                                20
+                                1
+                                10-35
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    B.
+                                    Kitts
+                                
+                            
+                            Printed Time
+                        
+                        
+                            Octavo: An International Journal of Typography
+                            
+                                6
+                                
+                                6-11
+                                1988
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    P.
+                                    Landow
+                                
+                            
+                            The Victorian Web
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        &lt;&gt;. November 25, 1998.
+                    
+                    
+                        
+                            
+                                
+                                    W.
+                                    Mann
+                                
+                            
+                            Landscape Architecture: An Illustrated History in
+                                Timelines, Site Plans, and Biography
+                            
+                                New York
+                                John Wiley and Sons
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    B.
+                                    Markman
+                                
+                            
+                            Knowledge Representation
+                            
+                                Mahwah, N.J.
+                                London
+                                Lawrence Erlbaum
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    Nielsen
+                                
+                            
+                            Designing Web Sites with Authority: Secrets of an
+                                Information Architect
+                            
+                                Indianapolis
+                                New Riders
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            Skydeck @ Embarcadero Center
+                            
+                                
+                                
+                                19998
+                            
+                        
+                        &lt;&gt;.
+                            November 25, 1998.
+                    
+                    
+                        
+                            
+                                
+                                    L.
+                                    Rosenfeld
+                                
+                            
+                            
+                                
+                                    P.
+                                    Morville
+                                
+                            
+                            Information Architecture for the World Wide Web:
+                                Designing Large-Scale Web Sites
+                            
+                                Cambridge, MA
+                                O'Reilly
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            S.
+                                    F.Roth
+                            C.
+                                    C.Mei
+                            S.
+                                    Kerpedijiev
+                            J.
+                                    A.Kolojejchick
+                            Toward an Information Visualization Workspace:
+                                Combining Multiple Means of Expression
+                        
+                        
+                            Human-Computer Interaction
+                            
+                                12
+                                1
+                                131-185
+                                1997
+                            
+                        
+                    
+
+                    
+                        
+                            
+                                
+                                    E.
+                                    Tufte
+                                
+                            
+                            Visual Explanations: Images and Quantities, Evidence
+                                and Narrative
+                            
+                                Cheshire, CT
+                                Graphics Press
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Hayden
+                                    White
+                                
+                            
+                            Tropics of Discourse: Essays in Cultural
+                                Criticism
+                            
+                                Baltimore
+                                Johns Hopkins University Press
+                                
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    R.
+                                    S.
+                                    Wurman
+                                
+                            
+                            Information Architects
+                            
+                                Zurich
+                                Graphis Press
+                                1996
+                            
+                        
+                    
+                
+            
+        
+    

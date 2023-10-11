@@ -1,0 +1,658 @@
+
+
+
+    
+        
+            
+                Rethinking TEI markup in the light of SGML
+                    architectures
+                
+                    
+                        Gary
+                        F.
+                        Simons
+                        
+                            Summer Institute of Linguistics
+                            gary_simons@sil.org
+                        
+                    
+                
+                
+                    
+                        C. M.
+                        Sperberg-McQueen
+                        
+                            University of Illinois at Chicago
+                            cmsmcq@uic.edu
+                        
+                    
+                
+                
+                    
+                        David
+                        G.
+                        Durand
+                        Department of Computer Science Boston
+                                University
+                            dgd@cs.bu.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    The HyTime standard [ISO92][DD94] first introduced the concept of
+                        architectural forms as a way to associate standardized semantics with
+                        elements in user-defined DTDs. Since then the concept of architectures has
+                        been generalized and formally adopted into SGML as part of the SGML Extended
+                        Facilities in the 1997 revision of the HyTime standard [ISO97]. An excellent
+                        tutorial introduction to SGML architectures can be found in [Kim97]. An
+                        in-depth explanation of a TEI-related application of architectures can be
+                        found in [Sim97]. See [Cov98] for an up-to-date listing of other resources
+                        relating to SGML architectures and their application.
+                    When the Text Encoding Initiative Guidelines [SMB94]
+                        were being drawn up, generalized architectures were not part of the SGML
+                        landscape. Now that they are, it is worthwhile to rethink aspects of the TEI
+                        that could be improved by the use of architectures. The purpose of this
+                        panel session is to do just that.
+                     The first paper, "Using architectural processing to derive small,
+                        problem-specific XML DTDs from the TEI DTD," demonstrates how a project can
+                        devise a customized XML DTD and then use an SGML parser with architectural
+                        processing to simultaneously verify that documents conform both to the
+                        project DTD and to the full TEI DTD. The second paper, "An architectural
+                        approach to TEI conformance," builds on the results of the first paper to
+                        propose an approach to conformance that is tighter than the approach in the
+                        TEI guidelines and that can be verified by machine. The final paper, "The
+                        TEI DTD should be replaced by a set of Architectural Forms," looks at how
+                        the existence of generalized architectures would change the way we would
+                        design the TEI DTD if we were to begin again today. The key insight is that
+                        the TEI DTD should be viewed as a collection of architectural forms that are
+                        used as a base architecture, and that extension should take place in derived
+                        DTDs rather than in modifications to the full DTD.
+                
+                
+                    
+                        Using architectural processing to derive small, problem-specific XML
+                            DTDs from the TEI DTD
+                        Gary F. Simons
+                        
+                        
+                            
+                                The work described in this paper began as an effort to perform a
+                                    particular markup task. Back in 1983 while doing field work in
+                                    the Solomon Islands, I helped anthropologist William Donner
+                                    produce a bilingual dictionary of the Sikaiana language [Don87].
+                                    We devised a one-of-a-kind markup system. Now, sixteen years
+                                    later, we want to put this data in a form that can be shared on
+                                    the Web; conversion into a standardized form of markup is
+                                    needed. The leading standard for the markup of dictionaries is
+                                    the SGML-based TEI (Text Encoding Initiative) DTD [SMB94].
+                                Using this DTD presents three main problems for this project,
+                                    because what we really want is to: (1) deliver the results on
+                                    the Web as an XML application, (2) customize the markup in some
+                                    ways, and (3) use and interchange a streamlined DTD that
+                                    contains only what is needed for our application. This is a
+                                    general problem. The large SGML DTDs in widespread use (e.g.
+                                    HTML, DocBook, ISO 12083, CALS, EAD, TEI) offer the advantage of
+                                    standardization, but for a particular project they often carry
+                                    the disadvantage of being too large or too general. This paper
+                                    demonstrates how architectural processing can be used to develop
+                                    a problem-specific XML DTD for a project without losing the
+                                    advantage of conforming to a widely-used SGML DTD.
+                            
+                            
+                                SGML architectures
+                                An SGML architecture is an SGML document type that is used as a
+                                    basis for deriving new document types. Each of the elements in
+                                    an architectural DTD is called an architectural form. An architectural form attribute on an element of the
+                                    user document specifies the architectural form on which that
+                                    element is based. For instance, if one were using HTML as an
+                                    architecture and using html as the
+                                    architectural form attribute, the tag &lt;para html="P"&gt; in a user document declares
+                                    that this &lt;para&gt; element is
+                                    derived from (or, inherits the semantics of) HTML's &lt;P&gt; element. An architectural processor is a tool that
+                                    reads the architectural form attributes to translate the user
+                                    document into the equivalent architectural document.
+                                An architecture is defined by a DTD. We can exploit this fact in
+                                    solving the problem at hand by using the existing TEI DTD as an
+                                    architecture. We then write a problem-specific XML DTD to embody
+                                    the constraints of the project and use an architectural form
+                                    attribute to map the elements of our XML DTD onto the elements
+                                    of the TEI architecture.
+                            
+                            
+                                Addressing the three problems
+                                Delivering the project results as an XML application poses two
+                                    kinds of problems. First, there are problems of XML
+                                    well-formedness. A data file that is valid with respect to the
+                                    TEI DTD and the TEI's SGML declaration will not be well-formed
+                                    XML. This problem is solved by altering the TEI's SGML
+                                    declaration so that it accepts XML syntax in the document
+                                    instance. Second, there are problems of XML validity. Many
+                                    features of SGML DTDs are not allowed in XML DTDs. This problem
+                                    is solved by constructing the project DTD as an XML DTD. By
+                                    employing both of these strategies, an XML parser can be used to
+                                    validate a project document against the project's XML DTD, or an
+                                    SGML parser with an architecture engine can be used to
+                                    simultaneously validate a project document against both the
+                                    customized XML DTD and the full TEI DTD.
+                                In a particular markup project, it may be desirable, or even
+                                    necessary, to customize the DTD. It could be that different
+                                    names make more sense for certain elements or attributes, that
+                                    new elements or attributes need to be added, or that certain
+                                    combinations of elements with fixed attribute values should be
+                                    encoded as new element types. This problem is addressed by
+                                    modifying the project's XML DTD as needed. When elements are
+                                    renamed or added, an architectural form attribute is used to
+                                    explicitly map the new elements onto the corresponding TEI
+                                    elements.
+                                A project may find that the TEI DTD is huge in comparison to the
+                                    subset of elements and attributes that are actually used. Having
+                                    a DTD that is limited to just the elements and attributes that
+                                    are used simplifies many tasks like building project-specific
+                                    software, specifying stylesheets, shipping the DTD with the
+                                    data, and documenting markup practice. Even more significant for
+                                    our project was the matter of reducing the permissiveness of the
+                                    content models for the elements that were used. The TEI's model
+                                    for dictionary markup is a descriptive one; it aims to provide
+                                    the user a means of tagging anything that could be encountered
+                                    in published dictionaries. But in tagging the Sikaiana
+                                    dictionary, our purpose was prescriptive; we wanted to specify
+                                    constraints on the structure of entries and then ensure that all
+                                    entries consistently followed that structure. This problem is
+                                    addressed by creating a DTD for the project that omits
+                                    declarations for all the elements and attributes of the
+                                    architecture that are not used and that tightens the content
+                                    models to embody additional constraints the project wants to
+                                    enforce.
+                            
+                            
+                                Conclusion
+                                In order to employ this technique, one must use an SGML parser
+                                    that incorporates a full architectural processing engine. The SP
+                                    parser by James Clark [Cla98] is an example of such a parser.
+                                    The paper concludes by demonstrating how the SP parser can be
+                                    used to simultaneously validate a project document against the
+                                    project-specific XML DTD and the TEI DTD. By using this
+                                    technique, a DTD developer can enjoy the benefits of a
+                                    customized XML DTD without losing the benefits of the
+                                    intellectual effort that went into developing the TEI DTD. By
+                                    the same token, a project can have the advantages of delivering
+                                    a customized XML application without losing the advantages of
+                                    conforming to a widely-used SGML application.
+                            
+                        
+                    
+                
+                
+                    
+                        An architectural approach to TEI conformance
+                        Gary F. Simons
+                        C. M. Sperberg-McQueen
+                        
+                            
+                                As the TEI Guidelines explain, the
+                                    target uses of the DTD demanded that it be possible to extend or
+                                    otherwise modify the DTD: "The document type declaration
+                                    provided by the TEI is intended to cover as wide a variety of
+                                    document types and processing needs as proved feasible. It is
+                                    impossible, however, for any finite list of text elements to
+                                    cover every need of textual research and processing. As a
+                                    result, extension of the TEI DTD has no effect on strict TEI
+                                    conformance, as long as certain restrictions are observed."
+                                    [SMB94, Section 28.5.3] Consequently, the guidelines devote one
+                                    chapter to the issue of TEI conformance and another to
+                                    mechanisms for modifying the DTD in a conforming manner. This
+                                    paper first reviews the TEI approach to DTD modification and
+                                    conformance, and then proposes an alternative approach based on
+                                    architectures. 
+                            
+                            
+                                The original TEI approach
+                                A modified TEI DTD is TEI conformant if it meets two basic
+                                    requirements: (1) all modifications are documented in a
+                                    prescribed way, and (2) all modifications are made in the DTD
+                                    subset of the document (that is, the actual TEI DTD files may
+                                    not be modified). To support DTD modification via the DTD
+                                    subset, the TEI DTD was implemented using an ingenious system of
+                                    parameter entities. Overriding the definition of these parameter
+                                    entities in the DTD subset serves to modify the DTD. In short,
+                                    virtually any change (including wholesale redefinition) is
+                                    conformant, as long as it is done using the prescribed
+                                    mechanisms. Such a liberal view of conformance is probably
+                                    troubling to most. The guidelines partially address this in
+                                    section 29.1 by defining two classes of modifications: "A
+                                    modification is clean if the set of
+                                    documents parsed by the original DTD may be properly contained
+                                    in the set of documents parsed by a modified DTD, or vice
+                                    versa." On the other hand, "A modification is unclean if the set of documents parsed by the
+                                    original DTD overlaps the set of documents parsed by the
+                                    modified DTD with neither being properly contained in the
+                                    other."
+                            
+                            
+                                Using architectures to derive new DTDs
+                                SGML architectures provide another strategy for creating modified
+                                    DTDs. Instead of changing a DTD, one builds a new DTD that is
+                                    formally derived from the original. As the preceding paper in
+                                    this session demonstrates, the TEI DTD can be successfully used
+                                    in this way. In the terminology of architectures, the base DTD
+                                    is called the architectural DTD and the
+                                    derived DTD is called the client DTD.
+                                    Each element in an architectural DTD is called an architectural form. The client DTD is
+                                    derived from the architecture by mapping each of its elements
+                                    onto an architectural form; this is done by means of the architectural form attribute.
+                            
+                            
+                                An architectural approach to conformance
+                                The TEI DTD was developed before the notion of SGML architectures
+                                    was generalized. Had architectures existed, the TEI could have
+                                    avoided devising its elaborate system of extension by adopting
+                                    an architectural approach to conformance. The TEI notion of
+                                    original DTD would correspond to the architectural DTD and the
+                                    TEI notion of modified DTD would correspond to the derived
+                                    client DTD. A client DTD would be TEI conformant if it declared
+                                    the TEI DTD to be its base architecture. Clean and unclean
+                                    conformance would then be defined as follows:
+                                A document conforms cleanly to its base architecture if its
+                                    corresponding architectural document is valid with respect to
+                                    the architectural DTD. A derived DTD conforms cleanly to its
+                                    base architecture if every document that is valid for that DTD
+                                    also conforms cleanly to the base architecture.
+                                By contrast, a document conforms uncleanly to its base
+                                    architecture if its corresponding architectural document is not
+                                    valid with respect to the architectural DTD. A derived DTD
+                                    conforms uncleanly to its base architecture if there is at least
+                                    one document that is valid for that DTD but which does not
+                                    conform cleanly to the base architecture.
+                                 It turns out that every case of conformance that is clean by the
+                                    architectural definition is also clean by the original TEI
+                                    definition, but the reverse is not true--there are cases
+                                    considered clean by the TEI approach that are not clean by the
+                                    architectural approach. The net result is a "cleaner clean" in
+                                    which the set of possible client documents always maps (through
+                                    architectural processing) onto a subset of all possible
+                                    architectural documents.
+                            
+                            
+                                Automatically validating conformance
+                                This architectural approach to defining clean conformance has a
+                                    major advantage over the TEI approach, namely, the SGML parser
+                                    can formally test clean conformance for any user document. By
+                                    simultaneously validating a document against its own DTD and its
+                                    architectural DTD, clean conformance is achieved when no errors
+                                    are reported for either DTD. When a document is valid against
+                                    its own DTD, but generates errors with respect to the
+                                    architectural DTD, then its conformance is unclean.
+                                This approach does have a major weakness, however. The SGML
+                                    parser can only verify that a particular document instance
+                                    conforms to the architecture; it cannot verify that the derived
+                                    DTD conforms to the architectural DTD. For a case in which there
+                                    is a closed set of data files all of which can readily be
+                                    validated against both DTDs, this limitation does not pose a
+                                    problem. However, in an open-ended case where a run-time
+                                    validation error could bring production to a halt, this
+                                    limitation could be a serious one.
+                                To solve this problem, we need a new tool that compares a derived
+                                    DTD to its architectural DTD to determine if it conforms
+                                    cleanly; if not, the tool should report why not. The full paper
+                                    discusses the formal language theory that lies behind such a
+                                    tool, presents an algorithm for making the comparison, and
+                                    describes our results to-date in implementing such a tool.
+                            
+                        
+                    
+                
+                
+                    
+                        The TEI DTD should be replaced by a set of Architectural Forms
+                        David G. Durand
+                        
+                            
+                                The TEI and monolithic DTDs: problems and human factors
+                                There are several problems with the current TEI DTD, that are
+                                    inherent to the TEI's goals and community and the idea of a
+                                    single DTD. DTDs are useful because they are essentially a
+                                    contract that encoders make as to what their content will look
+                                    like. Because the contract is expressed in a machine-readable
+                                    way, a computer can check compliance with the terms of that
+                                    contract. This can enhance the consistency of documents created
+                                    to a particular house style, as well as easing the
+                                    implementation of software to process those documents. These
+                                    advantages of a DTD become more problematic for a project like
+                                    the TEI, however.
+                                The TEI must meet the needs of many different scholarly
+                                    communities, all studying widely different types of primary and
+                                    secondary source material. This has several effects: (1) The
+                                    list of textual features becomes very large--far larger than the
+                                    number of things that would be marked in any particular project.
+                                    (2) The DTD must impose minimal restrictions on content models
+                                    and tagging structure, being more permissive than any individual
+                                    project needs in order that all projects can be accommodated.
+                                    (3) The DTD must include modularity and optionality mechanisms,
+                                    since whole sets of elements will be inessential to significant
+                                    numbers of users of the TEI DTD. (4) Arbitrary extensions must
+                                    be possible, because even at more than 1200 pages, the TEI
+                                    guidelines are not sufficient to meet all the needs of
+                                    humanities scholars.
+                                TEI P3 meets many of these needs with a complex system of
+                                    modules, element classes, and tag renaming rules. While the
+                                    concepts are sensible and well-understood, and the design works,
+                                    the complexity of modifying the DTD is significant. This is
+                                    partly due to the clumsiness of SGML's parameter entity
+                                    mechanisms, and partly due to the sheer scope of the DTD, which
+                                    makes it difficult to understand where best to make
+                                    modifications and especially what the implications of the
+                                    modifications will be. The fact that parameter entities are an
+                                    indirect way of modifying the SGML declarations means that one
+                                    must not only understand enough about SGML to conceptualize
+                                    encoding modifications (and their effect on the structure of the
+                                    DTD), but one must also understand enough about the TEI
+                                    customization mechanisms to execute changes to the DTD.
+                                The work by Simons on extracting sub-DTDs from the main TEI DTD
+                                    (see the first paper of this session), points the way to a
+                                    different approach based on recognizing that SGML knowledge and
+                                    expertise is now much more available than it once was, and that
+                                    direct modification of a DTD is in fact within technical reach
+                                    of most projects. Furthermore, a DTD that is controlled by a
+                                    particular project can reap certain benefits from tailoring to
+                                    the specific documents being encoded. A project specific DTD can
+                                    be more constrained in helpful ways.
+                            
+                            
+                                Sketch of a different approach
+                                So what should the TEI do? Architectural forms now provide a good
+                                    technique for declaring semantics and syntactic restrictions
+                                        without requiring a particular DTD.
+                                    Perhaps the best way to solve the problems of the monolithic DTD
+                                    approach is simply to abandon it.
+                                Instead of the current DTD, the next generation of the TEI
+                                    guidelines should be structured as groups of architectural
+                                    forms, organized by application areas. Since creation of a
+                                    complete DTD is a difficult task, users of the guidelines should
+                                    be provided with "starter sets," complete DTDs for specific
+                                    applications like a critical edition of a verse drama, or a
+                                    linguistic analysis of a short story, or a collection of
+                                    letters. These should be carefully chosen to represent at least
+                                    one each of all the current base types, with some of the more
+                                    complex optional modules included in additional examples.
+                                These DTDs would be exemplary, and could be applied as a starting
+                                    point for DTDs needed for new TEI-using projects. Since they
+                                    would be freed of the need to be normative for all documents in their genre, they could be kept
+                                    simple to understand. As examples of the correct application of
+                                    the architectural forms constituting the "new TEI" they would
+                                    serve as documentation of the intended use of the tags. As
+                                    smaller, self-contained DTDs, they could be read and
+                                    comprehended in their entirety in a relatively short period of
+                                    time (1 or 2 days), something that is not currently possible
+                                    with TEI P3. 
+                            
+                            
+                                Technical advantages
+                                A number of technical advantages are available with such an
+                                    approach: (1) Creating new elements that are simply variations
+                                    of existing TEI elements is much easier in an architectural
+                                    approach. (2) Whereas the existing TEI DTD extension mechanisms
+                                    can result in document instances that generic TEI software could
+                                    not deal with, the architectural approach would facilitate
+                                    development of a new generation of generic processing software
+                                    based on the TEI architectural forms. (3) A simplification would
+                                    result from merging multiple TEI elements with similar formal
+                                    properties into a single architectural form; for instance, tags
+                                    like &lt;appendix&gt;, &lt;chapter&gt;, and the like could live
+                                    on as recommended standard instances of a generic architectural
+                                    form (e.g. &lt;div&gt;).
+                                In conclusion, the TEI approach has been proven to work, but also
+                                    to have some drawbacks. Now that the idea of architectural forms
+                                    has come of age--it has been applied in several areas, software
+                                    is available, and the issues are better understood--the TEI
+                                    should make use of it to simplify the structure of the standard.
+                                    I would note that despite the standardization of HyTime
+                                    architectural forms, the notion is more general, and it may be
+                                    worthwhile to modify the notion to accommodate the specific
+                                    needs of the TEI. Attribute-controlled processing (the notion
+                                    underlying architectural forms) seems to be a great fit to the
+                                    TEI's needs, but it remains to be seen if the HyTime approach
+                                    will be the best way to apply it to the TEI.
+                            
+                        
+                    
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    J.
+                                    Clark
+                                
+                            
+                            SP:An SGML System Conforming to International Standard
+                                ISO 8879 --Standard Generalized Markup Language
+                            version 1.3
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        &lt;&gt;. See especially
+                            "Architectural form processing," &lt;&gt;.
+                    
+                    
+                        
+                            R.
+                                    Cover
+                            Architectural Forms and SGML/XML Architectures
+                        
+                        
+                            The SGML/XML Web Page
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            
+                                
+                                    S.
+                                    DeRose
+                                
+                            
+                            
+                                
+                                    D.
+                                    Durand
+                                
+                            
+                            Making Hypermedia Work: A User's Guide to
+                                HyTime
+                            
+                                Boston
+                                Kluwer Academic Publishers
+                                1994
+                            
+                        
+                        See especially pages 79-90.
+                    
+                    
+                        
+                            
+                                
+                                    W.
+                                    Donner
+                                
+                            
+                            Sikaiana Vocabulary: Na male ma na talatala o
+                                Sikaiana
+                            
+                                Honiara, Solomon Islands
+                                published by the author through a grant from the South
+                                    Pacific Cultures Fund of the Australian government
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                International Organization for
+                                    Standardization
+                            
+                            ISO/IEC 10744
+                            Hypermedia/Time-based Structuring Language:
+                                HyTime
+                            
+                                
+                                
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            International Organization for
+                                    Standardization
+                            Architectural Form Definition Requirements
+                                (AFDR)
+                        
+                        
+                            Annex A.3 of ISO/IEC N1920
+                            Information Processing--Hypermedia/Time-based
+                                Structuring Language (HyTime)
+                            Second edition 1997-08-01
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            W.
+                                    E.Kimber
+                            A tutorial introduction to SGML architectures
+                        
+                        
+                            an ISOGEN International Corporation workpaper
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        &lt;.
+                    
+                    
+                        
+                            G.
+                                    Simons
+                            Using architectural forms to map TEI data into an
+                                object-oriented database
+                        
+                        
+                            TEI Tenth Anniversary User Conference, November 14-16,
+                                1997, Brown University
+                            
+                                
+                                
+                                1997
+                            
+                        
+                        To appear in Computers and the Humanities. A fuller workpaper is
+                            available at &lt;.
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    L.
+                                    Burnard
+                                
+                            
+                            Guidelines for Electronic Text Encoding and
+                                Interchange
+                            
+                                Chicago and Oxford
+                                Text Encoding Initiative
+                                1994
+                            
+                        
+                        &lt;&gt;.
+                            See especially chapter 12, "Print dictionaries," chapter 28,
+                            "Conformance," and chapter 29, "Modifying the TEI DTD."
+                    
+                
+            
+        
+    

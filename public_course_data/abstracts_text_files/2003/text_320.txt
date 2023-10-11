@@ -1,0 +1,367 @@
+
+
+
+    
+        
+            
+                A Controlled-Corpus Experiment in Authorship
+                    Identification by Cross-Entropy
+                
+                    
+                        Patrick
+                        Juola
+                        
+                            Duquesne University
+                            juola@mathcs.duq.edu
+                        
+                    
+                
+                
+                    
+                        Harald
+                        Baayen
+                        
+                            Max Planck Institute for Psycholinguistics
+                            baayen@mpi.nl
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper describes an authorship, and more generally document classification,
+                    experiment on a difficult Dutch corpus of university writings. By measuring
+                    linguistic distances using a cross-entropy technique, a technique sensitive not
+                    only to the distributions of language features, but also to their relative
+                    intersequencing, classification judgments can be made with great sensitivity,
+                    significance, confidence, and accuracy. In particular, despite the designed
+                    difficulty of the Dutch corpus used, the technique was still able to reliably
+                    detect not only authorship, but also subtle features of register, topic, and
+                    even the educational attainments of the author.
+                Authorship attribution has received significant attention in recent years as a
+                    testbed and touchstone for new theories of authorial markers and linguistic
+                    statistics; (Holmes, 1998) presents a brief historical outline of some major
+                    theories. One of the current front-runners, proposed in (Burrows, 1989),
+                    suggests that a strong cue to authorship can be gleaned from a principle
+                    components’ analysis (PCA) of the most common function words in a document. Like
+                    most statistical techniques, a scholar’s ability to apply this technique is
+                    limited by the usual features of sample size, sample representativeness, and
+                    test power. Another popular technique, linear discriminant analysis (LDA), may
+                    be able to distinguish among previously chosen classes, but as a supervised
+                    algorithm, it has so many degrees of freedom that the discriminants it infers
+                    may not be “clinically” significant. An alternative technique using measurements
+                    of cross-entropy (Wyner, 1996; Juola, 1997, 2003) might be a better tool under
+                    difficult circumstances because it is capable of extracting more information
+                    (and thus distinguish more readily) along perceptually salient lines from a
+                    given data set.
+                The corpus studied by Baayen, Van Halteren, Neijt, and Tweedie (Baayen, et al.
+                    2002) has been specifically developed to be a difficult problem in authorship
+                    attribution. This corpus consists of small writing samples taken from
+                    undergraduate students at the University of Nijmegen on carefully and closely
+                    controlled topics. Eight students, four first-year and four fourth-year, were
+                    asked to write nine essays (for a total of 72) on the same set of
+                    closely-specified topics. These topics included three samples of fiction (for
+                    example, a retelling of the fairy tale of “Roodkapje,” the Dutch equivalent of
+                    “Little Red Riding Hood”), three of argumentative writing, and three of
+                    descriptive writing. Document sizes varied from approximately 3600 to 7600
+                    words. These documents were analyzed using cross-entropy and the results
+                    compared to analysis via PCA and linear discriminant analysis (LDA) (Baayen et
+                    al., 2001) to see both what the appropriate dimensions of variation were, and
+                    whether or not authorship attribution was practical in this tightly controlled a
+                    setting.
+                Analysis using function word PCA showed a marked lack of significant and useful
+                    results. Baayen et all found “no authorial structure,” although education level
+                    and to a lesser extent genre were separated. LDA also could not reliably
+                    identify author, and in most experiments performed at chance level. First, as
+                    expected, the overall cross-entropy distances showed an extremely strong ability
+                    to sort documents by topic (grouping all “Roodkapje” stories together, for
+                    instance). Statistical analysis, however, shows a strong (and significant)
+                    tendency to within-group homogeneity across all dimensions of interest : topic,
+                    genre, author, and even year in school. In particular, the average within-group
+                    distance, excluding identity measurements, is significantly less than the
+                    average without-group measurement. This holds true, irrespective of whether
+                    groups are defined by authorship (p &lt; 0.000001), register (p &lt;
+                    10-15), or even education level (p &lt; 0.0084). This suggests that
+                    cross-entropy can be usefully deployed to author identification in this corpus. 
+                A further test revealed that, for every document in the corpus and for every pair
+                    of authors, a potential authorship dispute can be resolved approximately 73% of
+                    the time using cross-entropy. Furthermore, applying a fractionation technique to
+                    restrict attention to only the function words (Juola, 1998; Juola and Baayen, in
+                    preparation) could improve these results to 86% correct identification. This can
+                    be compared to a best published result of 82% obtained by Baayen et al. using an
+                    enhanced LDA model.
+                Although the enhanced version of LDA performed substantially better, it should be
+                    noted, however, that LDA is a supervised technique, and itself makes strong
+                    assumptions about the nature of the authorial problem that make it unsuitable to
+                    exploratory, unsupervised study.
+                Even when one restricts the samples to a mere 500 words each, analysis still
+                    yields 63% of the pairwise comparisons correctly made, better than any result
+                    using PCA or standard (unenhanced) LDA. These results improve upon principle
+                    components analysis and standard linear discriminant analysis, with remarkable
+                    economy of calculation.
+                The improved performance can be attributed to information used by cross-entropy
+                    but not by word-frequency histograms, specifically in ordering and sequencing of
+                    (function) words. Function word PCA performs well by using the relative presence
+                    or absence of function words as a cue and/or proxy for idiosyncratic syntactic
+                    patterns. Cross-entropy can distinguish not only a difference in
+                    presence/absence, but also a difference in relative sequencing. This additional
+                    source of information can allow more reliable inferences to be drawn from
+                    corpora and more subtle distinctions to be made. In theory, the idea that
+                    sequencing is more distinguishing than “mere” presence or absence could be
+                    applied to almost any form of linguistic data and any task. Irrespective of what
+                    feature sets are eventually found to be informative for authorship attribution,
+                    it is to be expected that sequences of features will probably outperform
+                    unordered bags of features in making fine distinctions.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    H.
+                                    Baayen
+                                
+                            
+                            
+                                
+                                    H.
+                                    van Halteren
+                                
+                            
+                            
+                                
+                                    A.
+                                    Niejt
+                                
+                            
+                            
+                                
+                                    F.
+                                    Tweedie
+                                
+                            
+                            An experiment in authorship attribution
+                        
+                        
+                            JADT 2002
+                            
+                                
+                                
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    F.
+                                    Burrows
+                                
+                            
+                            An Ocean where each Kind...: Statistical Analysis and
+                                Some Major Determinants of Literary style
+                        
+                        
+                            Computers and the Humanities
+                            
+                                23
+                                4-5
+                                309-21
+                                1989
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    I.
+                                    Holmes
+                                
+                            
+                            The Evolution of Stylometry in Humanities
+                                Computing.
+                        
+                        
+                            Literary and Linguistic Computing
+                            
+                                13
+                                3
+                                111-7
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Juola
+                                
+                            
+                            What can we do with small corpora? Document
+                                categorization via cross-entropy
+                        
+                        
+                            SimCat 1997
+                            
+                                
+                                
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Juola
+                                
+                            
+                            Measuring Linguistic Complexity : The Morphological
+                                Tier
+                        
+                        
+                            Journal of Quantitative Linguistics
+                            
+                                5
+                                3
+                                206-14
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Juola
+                                
+                            
+                            The Time Course of Language Change
+                        
+                        
+                            Computers and the Humanities
+                            
+                                37
+                                1
+                                
+                                2003
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    P.
+                                    Juola
+                                
+                            
+                            
+                                
+                                    H.
+                                    Baayen
+                                
+                            
+                            Fractionation as a technique for improving document
+                                analysis
+                        
+                        
+                            
+                            
+                                
+                                
+                                (in preparation)
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    Wyner
+                                
+                            
+                            Entropy estimation and patterns
+                        
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Workshop on Information Theory
+                            
+                                
+                                
+                                1996
+                            
+                        
+                    
+                
+            
+        
+    

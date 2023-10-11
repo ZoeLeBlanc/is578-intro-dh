@@ -1,0 +1,224 @@
+
+
+
+    
+        
+            
+                SCHOLIA: a web-based reading tool for the study of
+                    language and literature 
+                
+                    
+                        Wendell
+                        Piez
+                        
+                            Mulberry Technologie, Inc.
+                            wapiez@mulberrytech.com
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This project was developed for a very practical reason. I was sitting down to
+                    read a text in German, a language in which I have some facility but no great
+                    fluency. When studying classical languages, I was schooled in a straightforward
+                    technique that can apply to any foreign literary text: it entails looking up
+                    unknown words in a dictionary or lexicon as I go, and writing an apparatus (in
+                    pencil on note paper) to help me put it all together in rereadings. After some
+                    years of (fairly feeble) practice, I have even refined this process somewhat:
+                    the apparatus takes the form of two separate texts, a running vocabulary and a
+                    translation. A running vocabulary, of course, takes the simple form of a
+                    glossary, listed in order of the appearance of glossed words or phrases in the
+                    original (thus facilitating reference to them when rereading). The translation
+                    provides a record of the larger sense of sentences and passages.
+                Of course, sitting down to do this recently I found the work both as laborious
+                    and as inefficient as I had when trying to learn languages as an undergraduate.
+                    Reflecting on the shortcomings of my process -- and comparing these methods to
+                    the methods of others who, I imagined, were better language students -- I came
+                    up with a design for a set of XML-based tools that I thought would help lighten
+                    the sheer "toil factor" of the exercise, letting me concentrate on the reading.
+                    My objective was twofold:
+                        1. Make it easy to transcribe my apparatus in a standards-based,
+                            non-proprietary electronic form tractable for automated processing;
+                        2. Provide this format with a reading interface that would make
+                            consulting the text and apparatus easier than the old paper-based,
+                            back-and-forth, page-to-notes process I was used to. It should be
+                            lightweight and easy to use.
+                    
+                The results of this effort may be seen on my web site at . It works like
+                        this:
+                        A native-language version of the text under study (in the prototype,
+                            Robert Musil's German-language short story "Die Amsel") appears in a
+                            panel to the left of the screen. Certain terms in the text are
+                            highlighted by appearing in a different color.
+                        Roving a mouse over a highlighted ("flagged") text and letting it sit
+                            for a second pops up a small "tool tip" for a moment. An
+                            English-language translation or short gloss of the word or phrase is
+                            provided.
+                        Also, if you click on the text, a running translation (in English) of
+                            the sentence or clause you have clicked on appears in the right-hand
+                            panel of the screen.
+                        The entire running translation (right-hand panel) may be "toggled" on
+                            and off by clicking on it. Roving your mouse over it also provides
+                            visual cues lining up the sentences or clauses in the original with the
+                            translation.
+                    
+                The idea is that the English apparatus (the scholia or "trot") is unobtrusive and
+                    easy to make disappear; but is readily accessible using just a mouse roll-over
+                    or click whenever the reader wants it.
+                Because the interface relies on scripting that employs both CSS2 and the W3C DOM
+                    API (Level 2), only a new DOM-compliant web browser will render the page
+                    properly. Internet Explorer 5+ is sufficient, albeit with a couple of small
+                    features not supported. Netscape 6.2 works the best among browsers I have tested
+                    (available versions of IE or NN; I have not tested Opera at the time of
+                    writing). Unfortunately, Netscape version 4.x does not support the W3C DOM and
+                    can't provide the reading functionalities that are the point of this project.
+                    Upgrade your browser to one that supports a standard document object model!
+                In addition to this HTML reader's interface, I have an authoring environment
+                    configured for SoftQuad XMetaL, a commercially-available XML structured editing
+                    tool. With its strong customization and macro features, XMetaL facilitates
+                    composing these texts with a minimum of fuss. (Notwithstanding this, the project
+                    is not at all dependent on XMetaL, as the source tag set is designed to be
+                    simple enough to create even in a text editor with minimal support for XML.)
+                Of course, after inital prototyping had satisfied me that these basic goals were
+                    achievable, I added several subordinate goals, including (but not limited
+                        to):
+                        Base the encoding on a TEI-compatible format. Starting with TEI I am
+                            able to get a head start with stylesheets and tool configuration, while
+                            potentially easing interchange (and helping other users who may also
+                            know TEI).
+                        Demonstrate the utility of W3C DOM interface scripting on the client
+                            beyond simply adding gloss, jazz or "dancing bologna" to a web page:
+                            here it provides an application with an actual real-world use (the study
+                            of literature in a foreign language) at least for one user (me), and
+                            hints at others (since the process model and even tagging could be
+                            fairly readily adapted to other uses).
+                        Demonstrate some practical advantages of a two-tier publishing model.
+                            The complex and cumbersome HTML presentation code does not have to be
+                            written by hand, but instead is generated out of an XML source whose
+                            design is optimized for authoring. Novice learners of XML markup should
+                            be able to create the texts. Teams of students and scholars can break up
+                            the work of creating the texts, and yet share access to them.
+                        Demonstrate how XML-based transformation technologies enable all these
+                            benefits while providing for a measure of interoperability with other
+                            uses and forms of electronic text (especially, in this case, TEI texts);
+                            and yet illuminate the tradeoffs and design challenges that this
+                            objective poses.
+                    
+                
+                I named this project "Scholia", which applies to the architecture as a whole and
+                    to its component parts (as described below). But any of these components could
+                    be switched out for an improved or adapted equivalent without changing the basic
+                    design, thus making the Scholia application somewhat like my grandfather's axe.
+                    (Even though my father changed the shaft and I changed the head, it's my
+                    grandfather's axe.)
+                In detail, the architecture is as follows:
+                        A formal document model (TEI-derived) taking the form of a custom XML
+                            DTD along with a related SGML DTD written in TEI P3-compatible form.
+                            (The SGML DTD is a close superset of the XML DTD, which is considered to
+                            be normative.) Either DTD can be used for structural validation, which
+                            in itself is enough to assure referential integrity of cross-references
+                            in the output (thus cross-references do not need to be encoded
+                            explicitly).
+                        A small set of extra-DTD parameters for "driving" and/or configuring
+                            the function of the (DOM/DHTML) output, described in related
+                            documentation, and capable of being validated with an XSLT stylesheet.
+                        One or more XML documents, such as my prototype "Amsel", conforming to
+                            the models and extra-DTD constraints.
+                        An XSLT stylesheet that can be used to transform an XML Scholia
+                            document into HTML, for viewing in a DOM-compliant web browser. (The
+                            conversion can be run either in batch mode, allowing a server to deliver
+                            HTML, or dynamically on a client machine.)
+                        An HTML page, whose design is determined by the stylesheet, proving
+                            source text with the reading interface. This is what readers (students
+                            of the text) will work with.
+                    
+                Optional components of the architecture include:
+                        Stylesheets to create other reading versions, for example annotated or
+                            parallel texts in print;
+                        A transformation that would enable Scholia-compliant texts to be
+                            written out in strict TEI interchange format;
+                        A transformation that would "scrub" any arbitrary TEI text into a form
+                            suitable for marking up with new scholia;
+                        A supplementary transformation that would enable the conversion of
+                            "repository" or "interchange" versions into the scripted HTML reading
+                            version (or other reading/browsing versions);
+                        Transformations that would filter Scholia-compliant texts into other
+                            forms, for example to facilitate web- or email-based collaboration in
+                            writing them;
+                        A "unified" interface for composition and reading, potentially
+                            web-based, for example using forms or editing capabilities of modern
+                            browsers and the latest DOM standards.
+                    
+                But with the exception of a few "quality control" transformations, none of these
+                    exist at the time of writing; nor may any of them be strictly necessary to the
+                    success of the project (and so I propose to implement them only if and as there
+                    is a practical demand of some kind).
+                At ACH/ALLC 2002, my paper, poster or demonstration will include:
+                        A concise review of project goals, non-goals and requirements;
+                        A demonstration of the Scholia reading interface (in the Netscape 6.2
+                            and IE5.5 web browsers),
+                        A demonstration of an authoring interface (using SoftQuad's XMetaL)
+                            along with (if time permits), an alternative "low end" authoring
+                            interface (using a plain text editor),
+                        A presentation of the enhancements or "layer" on top of TEI that
+                            provides the authoring document model, with discussion of the design
+                            principles applied and decisions made, along with the rationales for
+                            those decisions in the light of requirements.
+                        Any attention to the "guts" of the DOM scripting and XSLT
+                            transformations that time may allow.
+                    
+            
+        
+    

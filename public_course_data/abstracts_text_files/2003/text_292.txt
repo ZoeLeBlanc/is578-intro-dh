@@ -1,0 +1,452 @@
+
+
+
+    
+        
+            
+                Texts into Databases: The Evolving Field of New-Style
+                    Prosopography
+                
+                    
+                        John
+                        Bradley
+                        
+                            King's College London
+                            john.bradley@kcl.ac.uk
+                        
+                    
+                
+                
+                    
+                        Harold
+                        Short
+                        
+                            King's College London
+                            harold.short@kcl.ac.uk
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Centre for Computing in the Humanities at King’s College London is involved
+                    in three broadly Prosopographical projects: the Prosopography
+                        of the Byzantine Empire (PBE) (recently renamed Prosopography of the Byzantine World—PBW), the Prosopography of Anglo-Saxon England (PASE), and the Clergy of the Church of England Database (CCE). (All are
+                    funded by the UK’s Arts and Humanities Research Board.)
+                The goals of these three projects at King’s are ambitious. PBE’s goal is “to
+                    record in a computerised relational database all surviving information about
+                    every individual mentioned in Byzantine sources during the period from 641 to
+                    1261, and every individual mentioned in non-Byzantine sources during the same
+                    period who is ‘relevant’ (on a generous interpretation) to Byzantine affairs.”
+                    (from website, see references). PASE’s aim is “to provide a comprehensive
+                    biographical register of recorded inhabitants of Anglo-Saxon England (c.
+                    450-1066).” (from website). CCE intends to create a “database of clergymen of
+                    the Church of England between 1540 and 1835.” (from website).
+                The sources of information for all three projects are surviving manuscript
+                    records of many kinds. The central computing tool that all three projects employ
+                    is the relational database. Obviously, there is a significant issue involved in
+                    taking the textual source material, often presented discursively, and presenting
+                    it in the structured form that a database requires. Central, then, to the design
+                    of the database, and to the continuing process of putting data into it, is
+                    ensuring that the scholarly interpretation essential to this transformation is
+                    properly accommodated.
+                In traditional Prosopography (see, for example, the well-known Prosopography of the Late Roman Empire, or the more recent Prosopographie der mittelbyzantinischen Zeit—PmbZ(Lille et
+                    al 1998-2002)), the central organising principle is the person. The information
+                    about the person is formed into an article by the scholar, and the articles
+                    themselves are organised by the person’s name. There is often some degree of
+                    more structured information attached (in PmbZ, for example, there is, among
+                    other lists, a formal list of sources in which information about the person
+                    could be gleaned). However, the primary source of information for the user is
+                    the article. The article is presented as a narrative in which we find a complex
+                    blending of quotation from sources and scholarly interpretation. Some of the
+                    assertions are made without further justification, in some cases an argument is
+                    provided to support why an assertion has been made, in some cases an issue is
+                    left unresolved and only alternatives are outlined. The scholar's task is to
+                    take the evidence provided by the sources s/he has read and to represent in the
+                    article the shades of certainty about any of them.
+                All three of our Prosopographical projects take a radically different
+                        approach.Those familiar with the CD publication of PBE I may
+                        have observed that the approach taken there was actually a transitional
+                        one—somewhere between the article-oriented and factoid-oriented approach
+                        described here. The current phase of PBE work has fully taken on the
+                        approach described below The final publication will not be a set of
+                    volumes containing articles, but an online database. Furthermore, all three
+                    projects agree that there will be none or very few articles about persons in
+                    their database, and they will be written after the
+                    data collection process is complete, rather than being central to it. Instead,
+                    the evidence data will be recorded as a series of factoids—assertions made by the project team that a source “S” at
+                    location “L” states something (”F”) about person “P”. Factoid was first applied to this kind of information by Dion Smythe
+                    and Gorden Gallacher, and is not a statement of fact about a person; it is an
+                    assertion that a source says something about him/her. In Figure 1 you can see
+                    some sample output from the PBE database, showing factoids derived from the
+                    source Skylitzes Continuatus; for Emperor Alexios I
+                    Komnenos (identified in the DB as Alexios 001) in 1078. As the illustration
+                    suggests, there are several different kinds of factoids provided. In PBE,
+                    factoid data is collected for things such as activities or events in which the
+                    person took part; physical, spiritual or physiological descriptions applied to
+                    them; dignities or offices they held; ethnic group to which they belonged;
+                    kinship relationships with other people; locations with which they were
+                    associated; occupations they took up; possessions they owned; and religion they
+                    professed.
+                
+                    Figure 1: A Factoid List for Alexios I Komnenos (PBE)
+                
+                Factoids are modeled as entities in the prosopographical database, and each
+                    factoid type contains both an explicit and implicit structure. The explicit
+                    structure can be relatively complex. Figure 2 shows the data capture screen
+                    displaying one of PASE's event factoids—the event being the tonsoring of Guthlac
+                    by Aelfthryth (as recorded in the Vita Sancti
+                    Guthlaci). Not only is there a description field that contains
+                    information about the act itself (here only the beginning of the full text
+                    recorded in the field is visible), but the event is:
+                        categorized in the Term field,
+                        attached to a place (the place described using the word found in the
+                            original text, the type of place it is and its modern day location),
+                            and
+                        linked to the two people involved, one identified as the recipient and
+                            the other as the agent.
+                    
+                Furthermore,
+                        the textual source for the event, and location in the text where the
+                            act is recorded is entered in the database, and
+                        there is space for recording a scholarly date recording when the event
+                            is thought to have occurred, and space to record whatever dating
+                            information is given in the source (only partially visible in this
+                            figure).
+                    
+                Finally, there is a place in the “Notes” and “Problems” field where the
+                    researcher can record in free text some commentary on the factoid that s/he
+                    considers important but does not fit the structured fields associated with the
+                    factoid itself.
+                
+                    Figure 2: An Event Factoid in PASE
+                
+                There are, in addition, elements of implicit structure that must be recorded in
+                    the textual elements—a reference to another person in the database in the
+                    description of an event would be an example of this. Textual fields in our
+                    projects are, therefore, often structured as mini-XML documents, with XML being
+                    used to handle the structure that they contain and making it available for
+                    further machine handling.
+                A relational database is most useful when the data it contains is highly
+                    structured. The capability of the relational model is often underestimated in
+                    scholarly circles, and both Greenstein (Greenstein 1994), and Townsend et al (in
+                    the AHDS Guides to Good Practice: Digitising History)
+                    begin their discussion of databases by acknowledging that a single table in the
+                    relational database as often too limited for large scale historical use (it is
+                    described as the “matrix straitjacket” in Townsend). Greenstein, however,
+                    recognises that the relational aspect of the
+                    relational model—which allows material from more than one table to be linked
+                    into a single logical entity —allows for richer collections of information to be
+                    formed. Once an entry (say, for the Person) in a table is changed from being a
+                    text string containing the person’s name to a link to a row in another “person
+                    information” table it is possible to record a great deal of richer information
+                    about that person. Thus, PBE, PASE and CCE databases contain not only structured
+                    data in the form of factoids, but they also contain complex structures spread
+                    over more than one table each that represent other important “objects” in the
+                    database related to the factoids such as persons, geographic locations and
+                    possessions.
+                The challenges associated with our Prosopographical databases are many. First,
+                    there is a constant struggle to be sure that, for each field one enters, one is
+                    clear about to what extent the field represents simply what is in the source,
+                    and to what extent it is actually represents a scholarly interpretation of that
+                    source. Even the “original source” fields holds text out of context, making it a
+                    matter of scholarly decision about exactly what fragment should be
+                        included.Linking of our databases to full-text representations
+                        of the source texts have been considered by all projects. In all three
+                        projects, however, this has been rejected for various reasons. There was no
+                        funding to take on the preparation of a fresh electronic edition, and, in
+                        general, no scholarly reputable electronic editions of the texts were
+                        available elsewhere. PASE might yet explore some options in this area,
+                        however, for recording data from charters.
+                Furthermore, for all three projects data is collected on a source-by-source basis
+                    by more than one researcher. The issue of consistency between researchers is
+                    constantly on our minds. Consistency issues are dealt with during the editorial
+                    phase of the project, where editors will use tools to assert, for example, that
+                    a person A in one source is the same person as person B in another. We expect to
+                    have more to say about these issues during our presentation at the
+                    conference.
+                An article in a traditional prosopography provides a well organised bundle of
+                    information to its user in the form of a narrative. What happens when the
+                    prosopography contains large collections of factoids instead? As figure I
+                    suggests, the factoid model used in these projects provides a way that the
+                    machine can generate “micro-narratives”—to use the term presented in (Ramsay
+                    2002). These narratives will be richly linked to other data in the system, and
+                    different micro-narratives will be generated when one enters from different
+                    starting points (say, from a location, rather than from a person), or by
+                    traversing links that connect materials in each factoid to the broader database
+                    contents. Clearly, a web access mechanism for these databases will need to be
+                    significantly more complex than a simple search form which results in a list of
+                    selected items. We believe that the best interface to this will provide the
+                    blending of a searching and browsing paradigm that is now characteristic of
+                    large websites on the WWW. All three projects are now reaching the stages where
+                    some detailed exploration of these presentation and selection issues can begin.
+                    We will describe some of these issues in more detail during the conference
+                    presentation.
+                In moving from article-based to factoid-based prosopography, all three of our
+                    projects are participating in the development of a radically new approach to the
+                    field. The role of the scholar has clearly altered in our projects. In addition
+                    to being ultimately responsible for the projects’ “content”, all project members
+                    must work together to ensure that new methodologies are developed which ensure
+                    both quality and consistency of information across the large number of
+                    individual factoids. The role of the scholarly end-user may also have to change,
+                    and here too the project has to work to ensure that the experience of the
+                    end-user searching through these factoids is positive and useful. In the end, we
+                    are finding new ways that technology can serve these essential scholarly
+                    goals.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    John
+                                    Bradley
+                                
+                            
+                            
+                                
+                                    Harold
+                                    Short
+                                
+                            
+                            Using Formal Structures to Create Complex
+                                Relationships: The Prosopography of the Byzantine Empire—A Case
+                                Study
+                        
+                        
+                            
+                                
+                                    K.
+                                    S.
+                                    B.
+                                    Keats-Rohan
+                                
+                            
+                            Only Connect: The Use of Computers in Developing
+                                Prosopographical Methodology
+                            
+                                Oxford
+                                Unit for Prosopographical Research, Linacre
+                                    College
+                                2002
+                            
+                        
+                        Preprint online at 
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Clergy of the Church of England
+                            
+                                
+                                
+                                
+                            
+                        
+                        at 
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    I.
+                                    Greenstein
+                                
+                            
+                            A Historian's Guide to Computing
+                            
+                                Oxford
+                                Oxford University Press
+                                1994
+                                268
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Ralph-Johannes
+                                    Lille
+                                 et al 
+                            Prosopographie der mittelbyzantinischen Zeit, Abteilung
+                                I: 641-867
+                            Prolegomena and volumes I-VI
+                            
+                                Berlin
+                                Walter de Gruyter
+                                1998-2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Prosopography of Anglo-Saxon England
+                            
+                                
+                                
+                                
+                            
+                        
+                        at 
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Prosopography of the Byzantine Empire
+                            
+                                
+                                
+                                
+                            
+                        
+                         at 
+                    
+                    
+                        
+                            
+                                
+                                    Stephen
+                                    Ramsay
+                                
+                            
+                            Relational Ontologies and the New Historicism
+                        
+                        
+                            in session Pitty Daniel et al. Multiple Architectures and Multiple Media; The Salem Witch
+                                    Trials and Boston's Back Bay Fens Projects, at
+                            ALLC/ACH conference: July 2002
+                            
+                                
+                                
+                                2002
+                            
+                        
+                        Abstract online at 
+                    
+                    
+                        
+                            
+                                
+                                    Dion
+                                    C.
+                                    Smythe
+                                
+                            
+                            Prosopography of the Byzantine Empire
+                        
+                        
+                            
+                                
+                                    M.
+                                    Deegan
+                                
+                            
+                            
+                                
+                                    H.
+                                    Short
+                                
+                            
+                            DRH99: Selected papers from Digital Resources for the
+                                Humanities 1999
+                            
+                                London
+                                Office for Humanities Communication
+                                2000
+                                75-81
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Sean
+                                    Townsend
+                                 et al 
+                            AHDS Guides to Good Practice: Digitising
+                                History
+                            
+                                Oxford
+                                Oxbow Books
+                                1999
+                            
+                        
+                        Online at .
+                    
+                
+            
+        
+    

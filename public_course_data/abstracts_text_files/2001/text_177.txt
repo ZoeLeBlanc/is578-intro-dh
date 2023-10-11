@@ -1,0 +1,153 @@
+
+
+
+    
+        
+            
+                Optical Music Recognition: Stroke Tracing and
+                    Reconstruction of Handwritten Manuscripts
+                
+                    
+                        Kia
+                        Ng
+                        
+                            University of Leeds
+                            kia@kcng.org
+                        
+                    
+                
+            
+            
+                2001
+                 
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                        document imaging
+                        pattern
+                        music
+                    
+                
+            
+        
+    
+    
+        
+            
+                Nowadays, the computer is an important instrument in music. It can not only
+                    generate sound (audio synthesis) but is also able to perform a wide range of
+                    time consuming and repetitive tasks, such as transposition and part extraction,
+                    with speed and accuracy. However, a score must be represented in a
+                    machine-readable format before any operation can be carried out. Current input
+                    methods, such as using an electronic keyboard, are laborious and require human
+                    intervention. Optical Music Recognition (OMR) provides an efficient and
+                    automatic method to transform paper-based music scores into a machine
+                    representation.
+                The potential benefits of an Optical Music Recognition system were recognised
+                    over thirty years ago. A robust OMR system can provide a convenient and
+                    time-saving input method to transform paper-based music scores into a machine
+                    readable format for widely available music software, in the same way as Optical
+                    Character Recognition (OCR) is useful for text processing applications.
+                In this paper, we present a brief survey of Optical Music Recognition
+                    developments and currently available commercial packages for printed music
+                    scores, followed by an introduction to handwritten manuscript recognition with a
+                    discussion of the obstacles associated with it. We then discuss our framework
+                    design and low-level pre-processing modules, and illustrate the modules with
+                    example inputs and outputs. Our prototype takes a digitised music-score grey
+                    image (300 d.p.i. with 256 grey) as input. An iterative thresholding method is
+                    used to obtain a threshold value, and the image is binarised. Using the black
+                    and white image, the skew of the input image, usually introduced during
+                    digitisation process, can be automatically detected by reference to the
+                    music-typographical features of the roughly parallel stave lines, and the image
+                    is deskewed by rotation. This is follow by layout analysis to determine the
+                    general normalisation factors including the stave line thickness.
+                Stave line thickness and inter-stave-line spacing are used as normalisation
+                    factors, as stave lines form a grid system for musical symbols, of which most
+                    are related to the geometry of the staves: for example, the height of a note
+                    head must approximate the distance between two stave lines plus the thickness of
+                    the two stave lines. Hence, the sum of average distance between two stave lines
+                    and the average stave-line thickness form the fundamental unit used by the
+                    classification process.
+                This paper focuses on our stroke-based segmentation approach using a hybrid of
+                    edge detection technique and mathematical morphology. We make use of the edges,
+                    curvature and variations in relative thickness to extract and segment the
+                    musical objects from the underlying grid (stave lines) and disassemble them into
+                    lower-level graphical primitives, such as vertical and horizontal lines, curves,
+                    ellipses and others. These primitives are classified using a k-Nearest-Neighbour
+                    (kNN) classifier with simple features such as the aspect ratio, normalised width
+                    and height and other feature vectors. After recognition, these sub-segmented
+                    primitives need to be reconstructed.
+                As with other forms of optical document analysis, such as OCR, imperfections
+                    introduced during the printing and digitising process that are normally
+                    tolerable to the human eye can often complicated the recognition process.
+                    Musical notation is highly interconnected, and features may connect horizontally
+                    (for example beams), vertically (for example chords) or sometimes be overlaid
+                    (for example, slurs cutting through stems or bar lines). Furthermore, when
+                    symbols are grouped (beamed), they may vary in shape and size: for example,
+                    consider the shape of isolated semiquavers and the many possible appearances of
+                    four-semiquaver groups. To resolve any ambiguities, contextual information is
+                    required, for example, a dot, classified by the kNN classifier, could be an
+                    expression sign or a duration modifier depending on its relative position with
+                    respect to a note-head nearby.
+                After classification and reconstruction, basic musical syntax and a number of
+                    high level musical analysis techniques are employed to enhance the recognition,
+                    the reconstructed results are re-examined in the light of the analysis and
+                    corrections and enhanced guesses are made if necessary. We attempt to detect
+                    global information such as the key and time signatures and use them to provide
+                    evidence in the detection and correction of possible mis-recognition. It is
+                    clearly important that the OMR system should accurately detect the time
+                    signature of a piece or section of a piece of music in order to produce an
+                    accurate representation of the musical score.
+                Many factors in the input source (for example, resolution, contrast, and other
+                    inherent complexities) could influence the performance of the automatic
+                    recognition and transcription process, especially for handwritten manuscripts.
+                    In order to provide flexible and efficient transcriptions, we are designing a
+                    graphical user-interface editor with built-in basic musical syntax and some
+                    contextual intelligence to resolve uncertainties, assist the transcription and
+                    output. The default output format is currently set to ExpMIDI, which is
+                    compatible with the standard MIDI file format, and is capable of representing
+                    and storing expressive symbols such as accents, phrase markings and others.
+                We believe that the application of domain knowledge essential for complex
+                    document analysis and recognition and it is particularly important in
+                    hand-written-manuscript recognition since it takes years of experience for a
+                    trained copyist or engraver to intelligently decipher poorly or inconsistently
+                    written scores.
+            
+        
+    

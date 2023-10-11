@@ -1,0 +1,498 @@
+
+
+
+    
+        
+            
+                The Meta Dictionary
+                
+                    
+                        Christian-Emil
+                        Ore
+                        
+                            University of Oslo
+                            c.e.s.ore@muspro.uio.no
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    In this paper we will present a lexicographic database tool called The Meta Dictionary. It is designed for systematising
+                        word and phrase information from field datasets for weakly normalised
+                        languages and dialects. The Meta Dictionary has
+                        been developed to function as a pivot in the revitalisation of a large
+                        traditional national dictionary project in Norway. In addition to completing
+                        the traditional dictionary manuscript, this revitalisation project has the
+                        objective of creating a modern lexical database in a way similar to what is
+                        now being done for The Oxford English Dictionary
+                        [10] or the The Cobuild Word Bank [4]. The
+                        Norwegian dictionary project was started in 1930, and the editors are now at
+                        the end of the letter H. According to the new plan this will be finished in
+                        2014. The Meta Dictionary system is meant to be a
+                        general tool for working with lexicographic raw material and is not limited
+                        to the Norwegian dictionary project. The plan is to use it in a project on
+                        the minority languages in Zimbabwe in (2002-2205). However, it can also be
+                        adapted to implement semantical database based on different ontologies
+                        (semantic models) like the one used in WordNet [12]
+                        or in The Simple Project [11 ]. he
+                            Meta Dictionary and the other lexicographical tools described in
+                        this paper are developed by The Museum Project
+                        (MusPro). The MusPro was established in the spring of 1998 as a national
+                        collaborative project involving all four Norwegian universities. The
+                        objective is to develop common database systems for the meta data and the
+                        management of collections, accessible for all Norwegian University museums.
+                        The project organisation has taken over the responsibility for maintaining
+                        and developing the database systems for the department of lexicography (old
+                        Norse and modern Norwegian) and place name studies, and is a direct
+                        continuation of the systems development group in The Documentation Project a
+                        major digitalisation project in the 1990-ies.
+                
+                
+                    Lexicographical background - the hetrogenousity of a language
+                    In Norway several linguistically oriented research groups participated in the
+                        development of electronic corpora from the beginning of the 1970's, (LOB,
+                        ICAME corpus projects, see [6]), but for unknown reasons the development of
+                        corpora consisting of Norwegian texts did not start before the end of the
+                        1990's. As a parallel - there is still no complete and comprehensive
+                        national dictionary for Norwegian. Both cases have connections to the
+                        fluctuating language situation in Norway and the two closely related written
+                        Norweigan languages. On a world basis two written languages in a country is
+                        neither unusual nor impressive. What makes the Norwegian case unusual is the
+                        fact that two languages are completely comprehensible for all Norwegian
+                        speaking persons, that there are no clear- cut boundaries between the two, a
+                        rich flora of accepted alternative spellings and inflection schemas and
+                        finally frequent spelling reforms (although the period between these is
+                        increased to 4 years). The two written standards derived from written Danish
+                        (the only official written language in Norway from the sixteenth century
+                        until 1870) and on a synthesis of the dialects in the western parts of
+                        Norway. The latter was created by the linguist Ivar Aasen (see Norwegian
+                        Dictionary, 1872 [7]). During the last 130 years the standards have
+                        gradually become much closer. However, in non-official written communication
+                        many archaic forms are still in use. In private written communication people
+                        often mix the two standards. The language situation introduces many problems
+                        for the language technology industry and makes good solutions complex and
+                        expensive to develop. However, the relatively weak normalisation and the
+                        focus on dialects have a democratic effect, e.g. it is possible to use a
+                        written language pretty close to one's own spoken language. In most European
+                        countries normally thought of as a homogeneous language areas with a single
+                        official written language, there are in fact many distinct dialects or even
+                        related languages. The German language area (Germany, Austria and parts of
+                        Switzerland) is one example. Thus it can be argued that the language
+                        situation we find in Norway is the norm. However, the Norwegian language
+                        policy is more complex than may be expected. In recent years initiatives
+                        have been taken to at least complete the national dictionaries in Norway. It
+                        now looks as if there will be two printed dictionaries in respectively 7 and
+                        12 volumes. The former will concentrate on the originally Danish based
+                        written language (used by most of the population) and will be based on an
+                        already existing dictionary in six volumes. The latter will describe the
+                        second written language and the Norwegian dialects although this is not
+                        planned as a dialect dictionary in the purest sense of the term. The work on
+                        this dictionary has already been running for 60 years. The editors are now
+                        working at the end of the letter H and at the current pace the dictionary
+                        will be finished in 2040. The Ministry of Culture has, pending the
+                        reorganisation of the team, and its completion by the year 2014, rather
+                        generously refunded the work. The new project is called Norwegian Dictionary 2014 (ND2014). From 2002 the editorial
+                        team will be increased from 6 to 28 full time editors. The main focus is on
+                        a method and tool for systematising source material and preparing the
+                        semantic skeletons of the entries. To explain the idea and the specific use
+                        of The Meta Dictionary we will briefly discuss our
+                        interdisciplinary database framework and the heterogeneous lexicographical
+                        source material.
+                
+                
+                    Creating a multidisciplinary object oriented, database framework
+                    To make database systems for the large number of disciplines is a challenge
+                        for a small group. An additional challenge is the requirement of providing
+                        for interdisciplinary searches. The number of databases and the aspect of
+                        inter-disciplinarity has forced us to try to make as generic database
+                        solutions as possible. The design and implementation of the common systems
+                        and interfaces are now completed in the first version. The new information
+                        system replaces older, mostly independent database applications. This is
+                        fortunate since it is easier to create new interconnecting systems instead
+                        of connecting old ones, although technologies like the Z39.50 standard have
+                        opened for the relatively easy interconnection of databases. The system
+                        group attempts to think generically along two axes: 
+                            Common interface tools and database functionality
+                            Common database solutions for common object types like
+                                geographical data, bibliographical data, data concerning individuals
+                                and legal bodies, classification systems in cultural and natural
+                                history, dictionary entries and so on.
+                        
+                    The databases are event oriented. The information is considered to be the
+                        result of observations and all major changes result from a well-defined
+                        event. The event -based object oriented model is also used in the tools now
+                        designed for the dictionary project ND2014. The system consists of three
+                        parts: 1) The databases containing the background material, that is,
+                        databases containing the old slip collections, dictionary manuscripts,
+                        bibliography etc., editors notes and the corpora of older literary text and
+                        modern Norwegian. 2) The dictionary editing system 3) the backbone of the
+                        system, The Meta Dictionary itself.
+                
+                
+                    The Lexicographic source material
+                    In the late eighteenth century, paper slip collections were introduced in
+                        dictionary making. A single word form with an example of actual usage was
+                        written on each paper slip. The slip collections were stored in alphabetic
+                        order in large filing cabinets. This was a major achievement and introduced
+                        scientific methods into lexicography. From the end of the 18th century most
+                        large-scale dictionary projects, e.g. The Oxford English
+                            Dictionary (OED, first edition
+                        completed in 1930), have been based on slip collections such as this one. At
+                        the outset of 1960 one started to use computers to create concordances from
+                        electronically stored texts and the use of slip collections was regarded
+                        increasingly as being old fashioned. Over the last 10 years the number of
+                        corpora has exploded: there are now text corpora for large number of
+                        languages and social groups. It is almost impossible to imagine that someone
+                        should start building a paper slip collection today. However, many of the
+                        large dictionary projects initiated in the first half of the 20th century
+                        and even earlier are not completed and still rely on their slip collections
+                        (The Afrikaans Dictionary, WAT, The Dictionary of the Swedish Academy, Dutch
+                        national dictionary, to mention a few). The two major Norwegian dictionaries
+                        were planned in the tradition of the large historically oriented, national
+                        dictionaries like OED and during the years slips were collected (numbering
+                        more than 6 millions today). In the 1990 most of the old collections were
+                        made electronically available either as indexed electronic facsimiles (3.2
+                        millions) or replaced by collections of SGML tagged electronic texts. A
+                        series of older dictionaries and historical word lists from the end of the
+                        seventeenth century and onwards was also made electronically. This was done
+                        by the forerunner of The Museum Project, The Documentation Project, and has been described
+                        at ALLC/ACH 1995 and 1996 ([5][9]).
+                
+                
+                    The editing system
+                    A standard electronic editing system for a dictionary manuscript is based on
+                        a database in which the entries and parts of the entries are stored. Each
+                        entry can be stored in one or many tables, e.g. separate tables for the
+                        headword parts, the definitions and the citations, or the entire manuscript
+                        can be stored in a XML based free text system. A typical editing system
+                        usually supports cross-referencing, searching and the production of
+                        camera-ready page lay out. MusPro has made several such freestanding tools
+                        for a national language project in Zimbabwe (Shona and Ndbele)[2] and for
+                        one volumes dictionary in Norwegian. The latter are both free standing and
+                        connected to the common framework and the Meta Dictionary.
+                
+                
+                    The Meta Dictionary
+                    The source databases/datasets (described above) contains samples from
+                        different dialects and times. The most important lexicographical task is to
+                        systematise the material into groups, each describing a descriptive word.
+                        This process is called the lemma/headword selection. For strongly normalised
+                        written languages like Standard English this is normally not considered a
+                        difficult task. For field lexicographers working on not so normalised
+                        languages, this is well known as difficult task. The question "what is a
+                        word "and how to select the right candidate among a set of variants is not a
+                        trivial task. For most existing languages the standardisation has been
+                        mostly based on socio-political circumstances. The Meta
+                            Dictionary system has no features for (semi)automatic lema
+                        selection but is designed to assist the lexicographers in the process, to
+                        make it easier for others to check the lexicographers' decisions and open
+                        for more than one normalisation based on the same material.
+                    In this process we have tried to exploit the interdisciplinary nature of our
+                        organisation to make a tool for preparing the entries in the Norwegian
+                        Dictionary to create a general tool for systematising information from
+                        weakly normalised languages and /or dialect material into a lexical
+                        database.
+                    
+                        The Meta Dictionary is based on the general system
+                        for the users' electronic notebooks or folders used in all our
+                        database-applications. In general all our users can store parts of the
+                        result from a query for later use in their private notebooks in the system.
+                        The notebooks are multi-typed and can store information of all the object
+                        types in the databases. Traditionally, a working lexicographer usually sorts
+                        the available material first under each headword and then according to the
+                        meanings and use before formulating the definitions. In The
+                            Meta Dictionary an entry is a folder containing samples use
+                        taken from the source databases and corpus system connected to it. The user
+                        uses the drag and drop mechanism to move pieces of source information into
+                        the folder. Each entry/folder is labelled by the normalised word(s) and word
+                        class information and information about the actual orthographically standard
+                        used. The database used by the editorial team of the Collins Cobuild dictionary in the lemma selection of from the
+                        corpus is an early example of such a database. Several standards can be used
+                        simultaneously in The Meta Dictionary. This is
+                        useful in the Norwegian context. One possible application could for example
+                        be a Meta Dictionary for German dialects having a Low German and a High
+                        German normalisation. A more realistic application of The
+                            Meta Dictionary system is to use it as a descriptive tool for
+                        old written languages like Old Norse. It is planned to be used in
+                        systematising the data from the fieldwork on minority languages in Zimbabwe
+                        in the phase 3 of the The ALLEX Project
+                        (2002-2005) [2]. In the Norwegian dictionary (ND2014) project The Meta Dictionary system has been used during the
+                        last 2 years and more than 150 000 entries out of a total estimated to 450
+                        000 have been created. The Meta Dictionary can be
+                        seen as an amalgamation of a lexical database, an electronic slip
+                        collection, a set of older dictionaries and a editing tool or database with
+                        a growing manuscript for ND2014. The backbone of The Meta
+                            Dictionary is the list of all the headwords from A to Å (the
+                        last letter in the Norwegian alphabet). The other information is linked to
+                        this list. The source materials in the entries/folders can be view in their
+                        original layout. That is, all the samples can be displayed "inline" as they
+                        are in their separate databases.
+                
+                
+                    Connecting the editing of the dictionary and The Meta
+                            Dictionary
+                    The basic Meta Dictionary is a tool for group the background information
+                        (samples) to (head)words. In a (monolingual) dictionary the defining parts
+                        of the entries usually are divided in a tree like structure reflecting the
+                        semantics of the words. Thus The Meta Dictionary
+                        used in the NO2014-project is linked to the editing system by a drag and
+                        drop based interface for sorting the information in The
+                            Meta Dictionary entry/folder into a tree-like hierarchy which in
+                        turn can be view by the editor in the editing system as the skeleton of an
+                        ordinary entry in ND2014. By these means it is possible to survey back and
+                        forth between the collected source material and the dictionary manuscript.
+                        These links will be kept after the editing of an entry is finished.
+                        Furthermore, the entry for a given word will automatically be placed in
+                            The Meta Dictionary entry/folder. The
+                        NO2014-entry will "live" together with its sources and in fact be just
+                        another information piece describing that word. In a corresponding way it is
+                        relatively easy to connect/extend The Meta
+                        Dictionary to WORDNET-like descriptions or any other ontology-based
+                        semantic structures.
+                    The users of The Meta Dictionary connected to ND2014
+                        do not need to have a ND2014 perspective on the word information, but may
+                        freely chose their focus. The information given in ND2014 is simply one out
+                        of many seen in a time perspective. We believe that the The
+                            Meta Dictionary also is well suited to create a general tool for
+                        systematising information from weakly normalised languages and /or dialect
+                        material into a lexical database.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Christian-Emil
+                                    Ore
+                                
+                            
+                            Making an interdiciplinary system
+                        
+                        
+                            ALLC/ACH 1993, Georgetown University, Georgetown, USA
+                            
+                                
+                                
+                                1993
+                            
+                        
+                    
+                    
+                        
+                             The African Languages Lexicography Project (The ALLEX
+                                project)
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            The COBUILD dictionary
+                            
+                                
+                                
+                                
+                            
+                        
+                        and pointers to the project: 
+                    
+                    
+                        
+                            
+                                
+                                    Jon
+                                    Holmen
+                                
+                            
+                            New life for old reports - The Archaeological Part of
+                                the National Documentation Project of Norway
+                        
+                        
+                            ALLC/ACH 1996, University of Bergen, Bergen, Norway
+                            
+                                
+                                
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            HIT (Programme for Information Technology in the
+                                Humanities)
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    I.
+                                    Aasen
+                                
+                            
+                            Norsk Ordbok [Norwegian Dictionary]
+                            
+                                Norway
+                                Christiania
+                                1872
+                            
+                        
+                    
+                    
+                        
+                            Norsk Ordbok [Norwegian Dictionary]
+                            
+                                Volumes I-IV
+                                
+                                
+                                1950-2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christian-Emil
+                                    Ore
+                                
+                            
+                            The Corpus and the Citation Archive - Peaceful
+                                Coexistence Between the Best and the Good?
+                        
+                        
+                            ALLC/ACH 1995, University of Santa Barbara, Santa
+                                Barbara USA
+                            
+                                
+                                
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            Oxford English Dictionary
+                            
+                                Oxford
+                                
+                                1928
+                            
+                        
+                        and 
+                    
+                    
+                        
+                            The SIMPLE project
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            WORDNET
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

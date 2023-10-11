@@ -1,0 +1,389 @@
+
+
+
+    
+        
+            
+                Systemic Functional Hypertexts
+                
+                    
+                        Alexander
+                        Mehler
+                        
+                            University of Trier
+                            mehler@uni-trier.de
+                        
+                    
+                
+                
+                    
+                        Rodney
+                        Clarke
+                        
+                            University of Wollongong
+                            rclarke@uow.edu.au
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Although texts exist in social contexts, models of hypertext authoring
+                        generally exclude this aspect of the structure and function of texts.
+                        Readers and writers require situational and cultural contexts in order to
+                        understand the meanings negotiated in texts. These contexts are generally
+                        ignored because of the lack of any language model underlying hypertext
+                        authoring or the models used do not reflect relationships between text and
+                        context. In this paper we describe how Systemic Functional Linguistics can
+                        be used to create Systemic Functional Hypertexts
+                        (SFHT), which includes many aspects omitted from conventional models: (i)
+                        text forming resources, (ii) intra- and intertextual relations occurring
+                        within their (iii) situational and cultural contexts. SFHTs are described
+                        with the help of the unified modeling language.
+                
+                
+                    1 Introduction
+                    According to Systemic Functional Linguistics (SFL; Halliday 1978; Martin
+                        1992) texts are produced/received as functional units in patterns of
+                        wordings and grammar dependent on social context. Within SFL, 'context' is
+                        theorized using a bistratal organization of genre and register: whereas
+                        registers manifest variety according to situational use, genres correspond
+                        to the staging of social processes as part of the context of culture. It is
+                        a fundamental insight of SFL that the constitutive dependence of text on
+                        context is bilateral. That is registers (genres) are not only instantiated,
+                        but also constituted by means of texts. This relation of mutual dependence
+                        can be observed on the basis of covariation of
+                        textual and contextual features (Lemke 1995). According to this view,
+                        changes in context are correlated with changes in texture (i.e.
+                        lexico-grammatical choices). Thus, covariation can be used as a source for
+                        predicting intertextual relations: the more similar two registers (genres),
+                        the stronger their dependence, the higher the probability that their textual
+                        realizations are intertextually related.
+                    From this perspective, hypertext authoring becomes crucial in the sense that
+                        it has to reflect the contextsensitivity of intertextual relations in order
+                        to offer their readers value-added information. The perspective of
+                        traditional two-level-hypertext systems (Mayfield 1997) does not suffice,
+                        since it only formally distinguishes representational formats for the
+                        derivation of links and their presentation without taking context layers
+                        into account. What is needed is a system which does not only allow to model
+                            thematic progression (Kuhlen 1991), and adaptivity to varying situational, user centered
+                        views (Kuhlen 1994), but also genres and registers and
+                            their covariation with texture. In the following, the integration
+                        of these perspectives (i.e. hypertextual superstructures and
+                        contextsensitivity) on the basis of SFL is described using the concept of
+                        systemic functional hypertext.
+                
+                
+                    2 Systemic Functional Hypertexts
+                    Applying SFL to hypertext relates to the question of how
+                            to specify which links of which textual units on the background of which
+                            linguistic and social semiotic entities. In order to approximate
+                        an answer, the concept of Systemic Functional
+                            Hypertext (SFHT) is introduced as an n-level hypertext system
+                        which includes at least a genre layer (for
+                        modeling genres, their constituents and staging), a register layer (for modeling registers, their constituents and
+                        accessibility constraints), a texture layer (for
+                        modeling types of texture forming resources, their syntagmatic and
+                        paradigmatic dependencies and linguistic realizations patterns), and a text layer (for modeling intertextual relations of
+                        texts as links in hypertext). Whereas the first three layers describe
+                        different resources for text linkage, the last layer deals with the
+                        organization of concrete links.
+                    
+                        2.1 Systemic Functional Links
+                        In SFHT the concept of a link is concretized in two respects: (i) links
+                            are introduced as a kind of sign. (ii) This
+                            allows to ask for the role of links in the superisation (i.e. constitution) of higher level signs and
+                            their communicative function. To be more
+                            concrete: whereas the expression plane of a
+                                systemic functional link (SFLink) is
+                            given by its surface structural manifestation by means of anchor,
+                            reference, and referent, its content plane
+                            is determined by the intertextual relations it expresses. Since these
+                            relations are seen to co-vary with relations of genres and registers
+                            contextualizing social (communicative) processes, the view of SFLinks as
+                            being signs allows to introduce the concept of function in hypertext. To take a step forward in specifying
+                            SFLinks, two dimensions are distinguished:
+                                1. Foundation: does a link
+                                    manifest linguistic cohesion or
+                                        situational and generic
+                                        coherence of textual reference and referent?
+                                2. Structure formation: does a
+                                    link associate pairs of texts or
+                                    does it participate in chains of
+                                    interlinked texts as manifestations of systemic functional
+                                    progressions?
+                            
+                        Based on these criteria, several types of links can be distinguished: At
+                            the lower end purely associative, context-insensitive links are
+                            distinguished-the typical case of links produced in the area of
+                            automatic hypertext authoring (Salton et al. 1993). The construction of
+                            lexically cohesive as well as path sensitive links has an intermediary
+                            status. More coherent links are produced if context layers are taken
+                            into account. Thus, on the upper end of the matrix situational as well
+                            as generic coherent, contextsensitive paths of interlinked texts which
+                            serve to manifest systemic functional progressions are
+                            distinguished.
+                        The systemic functional perspective chosen to reconstruct the concept of
+                            hypertext allows to reflect the specific complexity of signs. Instead of
+                            describing SFHT by means of contextfree rule systems, contextsensitivity
+                            is taken as the starting point. Following this premise, several moments
+                            of informational uncertainty can be distinguished as necessary
+                            conditions for the functional impact of SFHT: (i) Contextsensitivity: the same link may have multiple
+                            linguistic, situational and generic sources (polymorphism). (ii) Polyfunctionality: the same link may be used
+                            to link different contextual units. (iii) Vagueness: the source of a link may be vague, dissonant,
+                            fuzzy, etc. (iv) Ambiguity: the same
+                            reference can be linked with different referents. (v) Dynamics: links may disappear, emerge or
+                            modify as the text base grows. These moments of complexity correlate
+                            with the constitution of social semiotic entities on the background of
+                            emerging/disappearing usage regularities of signs. SFHTs serve to make
+                            explicit this co-variation of linguistic and
+                            social semiotic system.
+                    
+                
+                
+                    3 Conceptual Modeling
+                    In order to make hypertext more sensitive to the situational and cultural
+                        context the operationalization of the concept of SFHT is needed. Beyond
+                        formalization it is conceptual modeling which
+                        precedes their algorithmization and implementation. This paper presents a
+                        conceptual model of SFHT using the unified modeling language (UML). Besides
+                        structural aspects including the enumeration and specification of
+                        constituents of the linguistic and social system, dynamic aspects of SFHT
+                        are modeled, too. Structural building blocks of SFHTs including genres,
+                        registers, texture forming resources, intratextual/intertextual relations,
+                        systemic functional progressions, links and paths are interrelated.
+                        Furthermore, co-variation and co-evolvement of text and context are
+                        described as procedural building blocks. The conceptual model is used as a
+                        starting point for the specification of data structures and algorithms for
+                        the computer-based implementation of SFHT systems.
+                
+                
+                    4 Conclusion
+                    This paper applies SFL to the area of hypertext authoring based on the
+                        manifold covariation of social and linguistic system, which allows the same
+                        text to be embedded into different contexts and thus to have different
+                        functions. In order to reflect this moment of polymorphism and
+                        polyfunctionality, the concept of SFHT and their main building blocks are
+                        described. On this background, three principal conclusions can be drawn:
+                            1. Because of the dependence of human information processing on
+                                varying cognitive, situational, and social contexts, a given text
+                                corpus does not have a static, predefined hypertext structure. Thus,
+                                text conversion demands a fundamental reconstruction of the concept
+                                of hypertext from the perspective of a sociosemiotic theory of
+                                discourse which views this dynamics as a precondition for
+                                (hyper-)texts to be functional.
+                            2. This reconstruction is necessarily interdisciplinary in the
+                                sense that it includes insights from semiotics, linguistics and
+                                social as well as computer science.
+                            3. The concept of SFHT, used to formally manifest this
+                                reconstruction, demands a stepwise operationalizing in order to
+                                prepare its implementation. For this sake, UML is used, since it
+                                allows to model structural and procedural aspects of SFHTs.
+                        
+                     Thus, this paper contributes to the reconstruction of hypertext from a
+                        semiotic point of view, or more concretely: from the perspective of
+                        computational semiotics.
+                
+            
+        
+        Bibliography
+        
+            
+                
+                    
+                        M.
+                        A.
+                        K.
+                        Halliday
+                    
+                
+                Language as Social Semiotic
+                
+                    London
+                    Edward Arnold Publishers
+                    1978
+                
+            
+            
+                
+                    
+                        R.
+                        Kuhlen
+                    
+                
+                Hypertext: ein nichtlineares Medium zwischen Buch und Wissensbank
+                
+                    Berlin
+                    Springer
+                    1991
+                
+            
+            
+                
+                    R.
+                        Kuhlen
+                    Annäherung an Informationsutopien über offene Hypertextsysteme
+                
+                
+                    
+                        
+                            R.
+                            Wille
+                        
+                    
+                    
+                        
+                            M.
+                            Zickwolff
+                        
+                    
+                    Begriffliche Wissensverarbeitung: Grundlagen und Aufgaben
+                    
+                        Mannheim [u.a.]
+                        Bibliographisches Institut
+                        1994
+                        191-224
+                    
+                
+            
+                
+                    J.
+                        L.Lemke
+                    Intertextuality and Text Semantics
+                
+                
+                    
+                        
+                            P.
+                            H.
+                            Fries
+                        
+                    
+                    
+                        
+                            M.
+                            Gregory
+                        
+                    
+                    Discourse in Society: Systemic Functional Perspectives
+                    
+                        Norwood
+                        Ablex Publishing
+                        1995
+                    
+                
+            
+                
+                    
+                        J.
+                        R.
+                        Martin
+                    
+                
+                English Text. System and Structure
+                
+                    Philadelphia
+                    John Benjamins
+                    1992
+                
+            
+            
+                
+                    J.
+                       Mayfield
+                    Two-Level Models of Hypertext
+                
+                
+                    
+                        
+                            C.
+                            Nicholas
+                        
+                    
+                    
+                        
+                            J.
+                            Mayfield
+                        
+                    
+                    Intelligent Hypertext: Advanced Techniques for the World Wide Web
+                    
+                        Berlin
+                        Springer
+                        1997
+                        90-108
+                    
+                
+            
+                
+                    G.
+                        Salton
+                    J.
+                        Allan
+                    C.
+                        Buckley
+                    Approaches to Passage Retrieval in Full Text Information Systems
+                
+                
+                    ACM-SIGIR '93
+                    
+                        
+                        
+                        1993
+                        49-58
+                    
+                
+        
+    

@@ -1,0 +1,204 @@
+
+
+
+    
+        
+            
+                Constructing a Parsed Corpus of Historical
+                        PortugueseThis research has been developed with the support of
+                        the FAPESP (grants #98/3382-1 and #98/12075-3).
+                
+                    
+                        Helena
+                        Britto
+                        Inst. Estudos da Linguagem (IEL) Univ.
+                                Estadual Campinas (UNICAMP)
+                            molina@server.nib.unicamp.br
+                        
+                    
+                
+                
+                    
+                        Marcelo
+                        Finger
+                        Inst. Estudos da Linguagem (IEL) Univ.
+                                Estadual Campinas (UNICAMP)
+                            molina@server.nib.unicamp.br
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Tycho Brahe Parsed Corpus of Historical Portuguese &lt;&gt; consists of an electronically
+                    annotated corpus of Portuguese texts whose authors were native speakers of
+                    European Portuguese born between 1550 and 1850. Its construction follows the
+                    model of the Penn-Helsinki Parsed Corpus of Middle English &lt;&gt;. Only texts from editions
+                    revised by the own authors or autographed manuscripts are included on the
+                    corpus, each one of them containing at least fifty thousand (50,000) words,
+                    presented electronically in three different ways: orthographically transcript,
+                    morphologically tagged, and syntactically annotated.
+                The Tycho Brahe annotation system is split into three levels: extra-linguistic
+                    material codification; morphological tagging; and a syntactic annotated system.
+                    The extra-linguistic coding system encapsulates information such as text
+                    edition, editor's or researcher's comments, original page number of the texts,
+                    etc.
+                The tag set that compounds the morphological annotation system was the result of
+                    a detailed research about morphosyntactic properties of Portuguese (Britto et
+                    al. 1999). In this system, tags have internal structure, and are basically
+                    formed from the following components: part-of-speech component, inflectional
+                    components, and diacritics. Proposed by Finger (1998), the structuring of tags
+                    in a part-of-speech basis and inflectional components allows for the capturing
+                    of the morphological richness Portuguese exhibits without increasing the number
+                    of tags involved.
+                Keeping the number of POS basic tags low has shown to be crucial to decrease the
+                    computational complexity of training the automated morphological tagger for
+                    Portuguese, which was developed in the lines of Brill's (1995) tagging method. A
+                    tagging editor has also been implemented (TAT: Tagging Aid Tool), to help the
+                    manual tagging of a set of Portuguese texts (Augusto et al. 1998), necessary for
+                    training the tagger. Both the tagger and TAT run under Windows (95/98/NT) with
+                    16MB RAM; the tagger also runs under Unix.
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    M.
+                                    AUGUSTO
+                                 et al 
+                            Morphological tagging for different periods of
+                                Portuguese prose
+                        
+                        
+                            
+                            ms.
+                            
+                                Campinas, Brasil
+                                Unicamp
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    E.
+                                    BRILL
+                                
+                            
+                            Transformation-Based Error-Driven Learning and Natural
+                                Language Processing: A Case Study in Part of Speech Tagging
+                        
+                        
+                            Computational Linguistics
+                            
+                                21
+                                4
+                                543-565
+                                1995
+                            
+                        
+                    
+
+                    
+                        
+                            
+                                    H.
+                                    BRITTO
+                                 et al
+                            Morphological Annotation System for Automatic Tagging
+                                of Electronic Textual Corpora: from English to Romance
+                                Languages
+                        
+                        
+                            Proceeding of the 6th International Symposium of Social
+                                Communication
+                            
+                                Santiago, Cuba
+                                
+                                1999
+                                582-589
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    FINGER
+                                
+                            
+                            Tagging a Morphologically Rich Language
+                        
+                        
+                            Proceeding of the first Workshop on Text, Speech and
+                                Dialogue (TSD'98)
+                            
+                                Brno, Czech Republic
+                                
+                                1998
+                                39-44
+                            
+                        
+                    
+                
+            
+        
+    

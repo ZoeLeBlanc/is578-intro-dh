@@ -1,0 +1,124 @@
+
+      
+         
+            Einleitung
+            Das Osmanische Reich war im 19. Jahrhundert ein im Übergang zur Moderne begriffenes Staatsgebilde, in dem, wie auch in Europa, politische Konzepte wie Nationalismus zunehmend Bedeutung gewannen. Aufgrund dieser Verschiebungen bildeten sich neue Identitäten aus, die weniger religiös, sondern vielmehr nationalstaatlich geprägt waren. In diesem Projekt sollen Informationen zur politischen Situation und zur Wahrnehmung dieser Transformation durch Reisende im Osmanischen Reich in diesem Zeitraum zusammengetragen und erschlossen werden. Dabei wird ein Linked Open Data Ansatz verfolgt, der die extrahierten Entitäten und Informationen als Ressourcen für multimodale Forschungsansätze zur Verfügung stellt. 
+         
+         
+            Methode
+            Das Projekt konzentriert sich auf die Gattung der Reiseberichte (vgl. Wettlaufer 2007) europäischer Reisender im Osmanischen Reich, um die Außenperspektive auf die Verhältnisse im inneren des Osmanischen Reichs zu erfassen (Kilincoglu 2015, 2017a,b;). Hierzu werden die publizierten Berichte europäischer Reisender (vgl. Calikbasi 2004, Genc 2015; Schiffer 1999; Spackman 2017) zunächst identifiziert und in eine Zotero Bibliographie mit Primär- und Sekundärliteratur eingepflegt. Bislang konnte ca. 450 individuelle Berichte identifiziert werden.1 Die gefundenen Berichte wurden in Hinblick auf die darin Reisenden ausgewertet. Digitalisate stehen nach ersten Stichproben für ca. 95% der Berichte über Google Books und Hathi Trust2 zur Verfügung und werden daraus für das Projekt nachgenutzt. Ein im Aufbau befindliches Online-Portal bietet zunächst einen Überblick zu den Reisenden, ihren Berichten und erlaubt Zugriff auf die rechtefreien Volltexten ihrer Reisebeschreibungen.3
+            
+            
+               
+               
+                  Abbildung 1. Open Semantic Desktop Search User Interface (Django) mit Beispieldaten aus dem Projekt.
+					
+            
+            Für die inhaltliche Erschließung der Berichte werden die Texte in einen Suchindex eingepflegt und relevante Entitäten extrahiert, die eine facettierte Suche in dem Apache/Solr-Index möglich machen. Hierfür wird die Suchumgebung Open Semantic Search (OSS)4 verwendet, die eine integrierte NER5 bietet. In einer weiteren Ausbaustufe sollen die Linked Data Kapazitäten von Open Semantic Search verwendet und zusätzliche Metadaten über die Reisenden oder die von Ihnen besuchten Orte eingebunden werden. Dabei können zielgerichtet Ortsnamen automatisiert über wikidata in die NER eingebracht werden (Abb. 2). Weil die automatisierte Generierung von Facetten und Metadaten nicht fehlerfrei möglich sein wird, ist eine manuelle Nachbearbeitung und Anreicherung der Texte notwendig. Das Projekt ist über einen Zeitraum von drei Jahre geplant und soll anschließend nachhaltig über ein geisteswissenschaftliches Forschungsdatenzentrum im Rahmen der NFDI gehostet werden. 
+                
+            
+               
+               
+                  Abbildung 2. Generierung von Facetten aus Listen oder Ontologien bzw. direkt über SPARQL Abfragen. 
+					
+            
+            Die so aufbereiteten Texte, Abbildungen und Metadaten sollen anschließend multimodal und -medial über die GIS Funktionalität der Plattform (ebenfalls in OSS integriert) präsentiert werden. Damit können z.B. die Itinerare der Reisenden visualisiert werden (vgl. auch Wettlaufer 2010, 2011). Zugeordnet zu einen einzelnen Stationen werden Abbildungen, die sich in den Digitalisaten finden und rechtefrei sind, angezeigt bzw. verlinkt. Dadurch wird die Reiseerfahrung plastisch nachvollziehbar und die textuelle Überlieferung in einen geographischen und medialen Kontext gesetzt.
+         
+         
+            Ausblick auf die Ergebnisse
+            Auf der Grundlage dieser Datenaufbereitung sollen anschließend relevante Beschreibungen der politischen Situation im Osmanischen Reich des 19. Jahrhunderts identifiziert und vergleichend analysiert werden. Einige händisch gezogene Stichproben lassen einen reichen Ertrag an Fundstellen erhoffen, die über die nationalstaatlichen Strömungen und Überlegungen dieser Zeit aus der Perspektive von Reisenden Auskunft geben.6 Die extrahierten Metadaten zu Personen, Orten, Publikationen und Reiserouten sollen schließlich mit anderen Ressourcen wie Normdatensätzen und wikidata verknüpft und die gewonnen Erkenntnisse so als Linked Open (Travel) Data maschinenlesbar zur Verfügung gestellt werden. Darüber hinaus soll das Portal offene, reichhaltige und verlässliche Ressource für Wissenschaftler und Forschungsgruppen bieten, die sich für den mittleren Osten im Spiegel von Beschreibungen aus erster Hand im langen 19. Jahrhundert interessieren. Schließlich ist auch eine Nachnutzung der spezifischer Anpassungen in der NLP Toolchaine der OSS Suchumgebung für andere Projekte zur Erforschung von Reiseliteratur geplant.7
+            
+         
+      
+      
+         
+            
+               https://www.zotero.org/groups/2185870/travelers_in_the_19th_century_ottoman_empire . In der Gesamtzahl von ca. 700 Einträgen finden sich noch eine Reihe von Dubletten (unterschiedliche Ausgaben, Übersetzungen etc.), die in einem zukünftigen Arbeitsschritt noch konsolidiert werden müssen. 
+            
+               https://books.google.de/ und https://www.hathitrust.org/ . Stichproben weisen darauf hin, dass die OCR Qualität der Digitalisate in der Regel ausreichend für Text-Mining und NER ist. 
+             Siehe einen Prototypen mit einigen Beispielen und Vorarbeiten, aber ohne die geplante Text-Mining Funktionalität unter: http://middle-east-travelers.de
+            
+            
+               https://www.opensemanticsearch.org/
+            
+             Spacy NER und Stanford NER können einzeln oder gemeinsam genutzt werden. 
+             MacFarlane (1829), 484 über Griechenland: „and even then, on retiring from the village, and taking a solitary path that led to my abode, my ears have been delighted with the sounds of men and women's voices, of the violin or guitar attuned to strains of jollity, or to their national or patriotic airs. * Their boldness astonished me. Their favourite songs were the invocation of the unfortunate Riga, “the Sword of Colocotroni,” the “Death of Marco Bozzari,” the brave “Canaris,” &c. &c. And these I have frequently heard them singing on the Bosphorus, when Turks were within ear-shot!” Vgl. auch Senior (1859), 211.
+             Zum Beispiel für das Portal www.digiberichte.de, auf dem seit 2007 eine KWIC Suche auf Volltexten zu spätmittelalterlichen Reiseberichten angeboten wird. 
+         
+         
+            
+               Bibliographie
+               
+                  Calikbasi, Durdu (2004): 
+                  Das Osmanische Reich in der Darstellung deutschsprachiger Reisberichte um die Jahrhundertwende 1900, 
+                        Norderstedt: Books on Demand.
+                    
+               
+                  Genc, Kaya (2015): 
+                  An Istanbul Anthology: Travel Writing through the Centuries, 
+                        Cairo: The American University in Cairo Press.
+                    
+               
+                  Kilincoglu, Deniz T. (2015): 
+                  Economics and Capitalism in the Ottoman Empire, London: Routledge.
+                    
+               
+                  Kilincoglu, Deniz T. (2017a):
+                  Islamic Economics in the Late Ottoman Empire: Menâpirzâde Nuri Bey’s Mebâhis-i İlm-i Servet. 
+                        The European Journal of the History of Economic Thought 24 (3): 528–54.
+                    
+               
+                  Kilincoglu, Deniz T. (2017b):
+                  Studying Economics as War Effort: The First Economic Treatise in the Ottoman Empire and Its Militaristic Motivations, 
+                        in: 
+                        Ikeda, Yukihiro / Rosselli, Annalisa (eds.):
+                  War in the History of Economic Thought: Economists and the Question of War, 
+                        78–99. Abingdon, Oxon: Routledge.
+                    
+               
+                  MacFarlane, Charles (1829):
+                  Constantinople in 1828; a Residence of Sixteen Months in the Turkish Capital and Provinces: With an Account of the Present State of the Naval and Military Power, and of the Resources of the Ottoman Empire, 
+                        London: Saunders and Otley.
+                    
+               
+                  Schiffer, Reinhold (1999): 
+                  Oriental Panorama: British Travelers in 19th Century Turkey, 
+                        Amsterdam: Rodopi.
+                    
+               
+                  Senior, Nassau William (1859): 
+                  A Journal Kept in Turkey and Greece in the Autumn of 1857, and the Beginning of 1858, 
+                        London: Longman, Brown, Green, Longmans, and Roberts.
+                    
+               
+                  Spackman, Barbara (2017): 
+                  Accidental Orientalists: Modern Italian Travelers in Ottoman Lands, 
+                        Oxford: Oxford University Press.
+                    
+               
+                  Wettlaufer, Jörg (2007):
+                  Reise- und Gesandtschaftsberichte als Quellen der Hof- und Residenzenforschung, 
+                        in: 
+                        Paravicini, Werner (hg.):
+                  Höfe und Residenzen im spätmittelalterlichen Reich, Textband, , bearb. von Jan Hirschbiegel und Jörg Wettlaufer, Ostfildern: Thorbecke, 361-372 (= Residenzenforschung 15, III).
+                    
+               
+                  Wettlaufer, Jörg (2010):
+                  Europäische Reiseberichte des Späten Mittelalters. Das Projekt einer Digitalisierung der Editionen und eines Themenportals im Internet [Les récits de voyageurs européens à la fin du Moyen Âge. Le projet de digitalisation des éditions et d‘un portail de recherche sur internet], 
+                        in: 
+                        Guenée, Bernard / Moeglin, Jean-Marie (hg.):
+                  Relations, échanges et transferts en Europe dans les derniers siècles du Moyen Âge, 
+                        Paris: Éditions de Boccard, 539-555.
+                    
+               
+                  Wettlaufer, Jörg (2011):
+                  Poster zu www.digiberichte.de auf der Tagung .hist2011, 
+                        in Berlin, Humboldt-Universität, 14.-15.9.2011. 
+                        http://digihum.de/scripts/download.php?File=SnJnZ3luaHNyZV8yMDExX3F2dHZvcmV2cHVnci5jcXM= 
+                        [zuletzt abgerufen 12.10.2018].
+                    
+            
+         
+      
+   
+

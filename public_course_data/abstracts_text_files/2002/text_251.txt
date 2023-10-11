@@ -1,0 +1,1116 @@
+
+
+
+    
+        
+            
+                Reconceiving Text Analysis
+                
+                    
+                        Stephen
+                        Ramsay
+                        
+                            IATH, University of Virginia
+                            sjr3@virginia.edu
+                        
+                    
+                
+                
+                    
+                        John
+                        Bradley
+                        
+                            King's College London
+                            john.bradley@kcl.ac.uk
+                        
+                    
+                
+                
+                    
+                        Geoffrey
+                        Rockwell
+                        
+                            McMaster University
+                            grockwel@mcmaster.ca
+                        
+                    
+                
+                
+                    
+                        Stéfan
+                        Sinclair
+                        
+                            University of Alberta
+                            Stefan.Sinclair@ualberta.ca
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    How can we use computers to assist us in the interpretation of literary
+                        texts?
+                    On the one hand, this has the ring of a settled question. Half of the
+                        humanities computing community works to make texts available to researchers
+                        and provides facilities whereby those texts may be searched, annotated, and
+                        linked. The other half produces tools for textual analysis that allow us to
+                        undertake complex statistical and procedural analyses. Yet most humanists
+                        outside of our discipline conceive of these activities as either
+                        pre-interpretive, or else outside of the normative realm of critical
+                        exegesis found in literary criticism, philosophy, history, and the various
+                        other disciplines which take the text as central to the endeavor.
+                    This panel brings together four creators of text analysis software interested
+                        in reconceiving the activity from a theoretical standpoint. Panelists will
+                        address a range of questions about text analysis: Can text analysis be
+                        reconceived as fundamentally an act of text enrichment--not a taking from,
+                        but an adding to the text being analyzed? What happens when text analysis is
+                        thought of not as the quest for empirical data about texts, but as a
+                        technology more in line with the readerly quest for novel patterns? How
+                        might we re-theorize the classical modes of text analysis (searching, word
+                        frequency analysis, stylometrics) as participating in the hermeneutics of
+                        play?
+                    We conceive of this session neither as a critique of existing systems nor as
+                        as a commentary on text analysis as it is brought to bear on problems in
+                        computational linguistics. Rather, we conceive of this session as theorizing
+                        text analysis in literary studies and other fields with similar
+                        hermeneutical practices with an eye toward the future of text analysis
+                        tools. We realize that proposing such a session in Tübingen, the home of
+                        TUSTEP, is like bringing coals to Newcastle, but we offer this panel as a
+                        perspective from across the waters -- a different tradition of text analysis
+                        and computing.
+                    [Note: We have requested that this proposal be considered as a session,
+                        despite the fact that we are proposing the delivery of four formal papers.
+                        However, we are prepared to adjust ourselves to the time constraints as
+                        necessary.]
+                
+                
+                    
+                        Finding the Middle Ground Between "Determinism" and "Aesthetic
+                            Indeterminacy": A Model for Text Analysis Tools
+                        John Bradley
+                        
+                            In Danielle Miller's review of the book The Legacy
+                                    of Northrop Frye, she notes Imre Salusinsky's
+                                observation that the textual theorist is the "true liberal who
+                                positions himself in the middle ground between 'determinism' and
+                                'aesthetic indeterminacy'". Over the past several years I have
+                                proposed a model for text analysis tools that balances the ability
+                                of the computer to carry out a set of formal tasks on a text against
+                                the need of the human user to introduce rather more
+                                non-deterministic material into an analysis. Although it is meant to
+                                reflect a view on some aspects of how a text is analyzed that is not
+                                specifically "computer based", it is also based on certain
+                                developments in the computing world over the past several years, and
+                                on developments in software in a sister field to the humanities: the
+                                social sciences. The model is based on XML, and more specifically
+                                TEI -- surely a solid foundation upon which text analysis tools
+                                should be built. It, however, goes against several of the current
+                                developments in XML -- turning, instead, to a view of XML that is, I
+                                think, truer to the thinking behind TEI than these current
+                                developments.
+                            The World Wide Web, with its model of servers and clients, often
+                                dominates thinking about the role of computers in certain groups
+                                within the computing humanities community. In the web, the server
+                                has a resource that can be made available to a community of users --
+                                the clients. The nature of browser-based interaction means that the
+                                user can use the web to select displays of results, and can also
+                                take advantage of search engines that a
+                                server might make available -- posing a query through a form which
+                                allows the server machine to select material from the resource to be
+                                presented. In the Humanities, then, the WWW encourages the view of
+                                scholarly materials as a resource that
+                                the WWW makes available to a collection of scholars -- no wonder,
+                                perhaps, that conferences like the UK's Digital
+                                    Resources in the Humanities have begun to appear.
+                            The nature of the server/client interaction in the WWW is
+                                transactional. A user sends a request (either in the form of a
+                                request for a page of material, or in the form of a query), and the
+                                server sends back a response. Not surprisingly, given that XML came
+                                from the W3C -- setters of standards for the WWW -- there have been
+                                a flurry of activities that are based on XML that support this
+                                transactional model of interaction. Standards like W3C's SOAP (which
+                                is XML based) work best in a what in computing is called a
+                                "peer-to-peer" context: where a computer system belonging to one
+                                organisation (say a purchasing system) needs to send an order to a
+                                peer machine in another (say, supplier) organisation.
+                            The transactional model is of course appropriate for certain kinds of
+                                humanities resources. In many kinds of linguistics-based work, for
+                                example, it is often sensible to view a corpus as a resource to be
+                                queried. However, this model does not suit other aspects of the
+                                traditional model of humanities scholarship nearly so well. Indeed,
+                                the TEI, originally developed before the WWW was available, takes
+                                quite a different, and much more intimate, view of the relationship
+                                between the user and his/her text. In the TEI's "analytic mechanism"
+                                and related schemes such as "feature structures" one sees an attempt
+                                to express in SGML (and nowadays XML) connections between text and
+                                analysis that are tightly connected to the text itself in that they
+                                rely on the insertion of markup by the scholar directly onto the
+                                text base. This kind of activity is not so much like the
+                                transactional model, which would have the scholar interacting with a
+                                text as a remote resource, but instead should be thought of as being
+                                closer to a form of ownership -- the scholar gradually makes some
+                                aspect of the text his/her own by attaching material ("annotations")
+                                that represent her/his personal interests onto a text.
+                            I believe there is some evidence to suggest that this "enrichment
+                                model" is closer to the interaction between a scholar and his/her
+                                text and provides a better model for computer support of humanities
+                                scholarship than the transactional one does. During the presentation
+                                of this paper we will examine Willard McCarty's "Analytical
+                                Onomasticon to the Metamorphoses of Ovid" as an example of textual
+                                enrichment. The Onomasticon represents a blending of traditional
+                                annotation with computer processing which helps to reveal and assist
+                                in the imposition of a unified, yet rich, vision of personification
+                                on the text. McCarty's recent analysis of the commentary also
+                                proposes a model for the digital commentary in which an enrichment
+                                approach is implicit. Furthermore, there are useful models to
+                                examine in the social sciences, where there has been the blossoming
+                                of tools to provide computer assistance to the kind of textual
+                                analysis that is often needed for their texts (e.g. interviews).
+                            Particularly interesting in this regard are the packages Nud*ist, NVivo
+                                and Atlas.ti, all tools that suggest
+                                some characteristics of enrichment that would suit humanities
+                                scholarship as well.
+                            Tools to support textual enrichment have been available for some
+                                time, and some of them are remarkably powerful. TuStep, for example,
+                                has its origins in the 1970s -- predating even SGML -- and provides
+                                an integrated set of tools to support a broad range of scholarly
+                                activities. Much more recently, the "EyeContact" model, proposed by
+                                Geoffrey Rockwell and me, operates in a broadly similar fashion --
+                                emphasising a set of tools that can process text and text-related
+                                materials, and that can be combined in many ways. I have come to
+                                believe, however, that the enrichment model is better served when
+                                the emphasis provided by the environment to the user is on viewing
+                                of the text and scholarly annotations rather than on the task of
+                                assembling of the tools to do work. Thus, it seems to me that
+                                "XML/SGML editors" such as XMetal or emacs/psgml provide a good
+                                starting point for envisaging a model of what is needed. They are at
+                                least aware of XML/SGML constructs and can assist with ensuring
+                                XML/SGML conformity. However, on their own they cannot help the user
+                                much if s/he tries to introduce one of TEI's more sophisticated
+                                analytic mechanism models onto a text -- the TEI guidelines
+                                themselves suggest that there is a need for software beyond an
+                                XML-aware text editor to facilitate the introduction of the
+                                analytical models that they propose. It is in the combining of XML
+                                structures (already understood by XML editors) with software objects
+                                more closely related to the scholarly tools being modeled that
+                                development work would need to be done.
+                            The development of software that supports an enrichment model of text
+                                is supported by some developments that are XML based. Many of these
+                                standards are still in their early days and are as of yet, from an
+                                enrichment perspective, hobbled by the transactional focus of the
+                                members of the committees that develop them, since they are tailored
+                                first to meet the needs of those who process relatively short,
+                                relatively simple XML documents that characterise transactional
+                                processing. Standards such as XLink -- arising as it does out of
+                                HyTime, provides one starting point, and perhaps because of its
+                                origin, is less specific to transactional-based work. XSLT and XSL's
+                                formatting objects provide another starting point, and the DOM
+                                provides a third. A serious development effort, based on these
+                                standards, could be undertaken, but I believe one would find that in
+                                the end further enhancement of them to more closely match the
+                                complex needs of modeling within the humanities would be needed.
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    
+                                        
+                                            Melina
+                                            Alexa
+                                        
+                                    
+                                    
+                                        
+                                            Cornelia
+                                            Zuell
+                                        
+                                    
+                                    A Review of Software for Text Analysis
+                                    
+                                        Manneheim
+                                        ZUMA
+                                        2000
+                                    
+                                
+                                ISBN 3-924220-16-6
+                            
+                            
+                                
+                                    
+                                        
+                                            John
+                                            Bradley
+                                        
+                                    
+                                    Tools to augment scholarly activity: an
+                                        architecture to support text analysis
+                                
+                                
+                                    
+                                        
+                                            Dino
+                                            Buzzetti
+                                        
+                                    
+                                    
+                                        
+                                            Giuliano
+                                            Pancaldi
+                                        
+                                    
+                                    
+                                        
+                                            Harold
+                                            Short
+                                        
+                                    
+                                    Augmenting Comprehension: Digital Tools (and
+                                        Resources) for the History of Science and Philosophy; Papers
+                                        from the conference "Informatica umanistica: filosofia e
+                                        risorse digitali" (Bologna, September 2000)
+                                    
+                                        
+                                        OHC: Oxford and King's College London
+                                        forthcoming, expected 2002
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Willard
+                                            McCarty
+                                         et al 
+                                    An Analytical Onomasticon to the Metamorphoses
+                                        of Ovid
+                                    (Online Sampler 29/8/99)
+                                    
+                                        
+                                        
+                                        
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Willard
+                                            McCarty
+                                        
+                                    
+                                    The DIY commentary; or, what the reference and
+                                        the link told each other
+                                
+                                
+                                    from Paper for ACH/ALLC 2001 New York
+                                        University 14 June 2001
+                                    
+                                        
+                                        
+                                        2001
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Geoffrey
+                                            Rockwell
+                                        
+                                    
+                                    
+                                        
+                                            John
+                                            Bradley
+                                        
+                                    
+                                    Eye-ConTact: Towards a New Design for Research
+                                        Text Tools
+                                
+                                
+                                    Computing in the Humanities Working Papers
+                                    
+                                        A
+                                        4
+                                        
+                                        February 1998
+                                    
+                                
+                                This online refereed journal is located at: URL:
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Toward an Algorithmic Criticism
+                        Stephen Ramsay
+                        
+                            There is a left-hand tradition in literary analysis which most
+                                literary critics think of as incompatible with mainstream scholarly
+                                activity. That tradition manifests itself in Hebrew gematria and in
+                                the bibliomancy of the ancient Chinese; in the anti-art poetics of
+                                the Dadaists and the algorithmic writing of the Oulipo; in Ferdinand
+                                de Saussure's secret quest for anagrams in Saturnian poetry and in
+                                Emily Dickinson's injunction to read her poems backwards, so that "a
+                                certain Something overtakes the mind." These traditions are often
+                                deliberately anarchic, mystical, and even irrational in their
+                                approach to the text. Instead of the hermeneutics of illumination,
+                                in which the goal is some clear statement of meaning or an unfolding
+                                of the truth, this tradition asserts the hermeneutics of play.
+                            That this tradition should seem so far afield from the normative
+                                practices of literary exegesis is itself revelatory of certain
+                                distinctive features of the illuminative mode. Literary criticism
+                                asserts a rhetoric of explanation intended to reveal both the
+                                internal and extrinsic logic--the meaning--of a textual artifact;
+                                the more ancient ludic traditions deemphasize this aspect of
+                                hermeneutics, often relinquishing this rhetoric entirely, content
+                                simply to let alternative formations exist without the scaffolding
+                                of explicit interpretation.
+                            But these types of interpretive activities, in which one proceeds
+                                from text to playful reordering and "refactoring" (to borrow a term
+                                from software engineering) to interpretation, only serve to make
+                                manifest a progression that is always at work in literary critical
+                                method, even when the dominant rhetorics of interpretation attempt
+                                to conceal the playfulness beneath. In order to create and
+                                communicate meaning, the critic must remap, reenvision, and re-form
+                                (even "deform" it, as Jerome McGann and Lisa Samuels have suggested)
+                                into some alternate arrangement. In essence, one must create the
+                                text anew in order to illuminate the original.
+                            There is also a right-hand tradition in literary analysis which most
+                                literary critics think of as preinterpretive or else unallied with
+                                the real work of generating critical interpretation. That tradition
+                                manifests itself in programs which display search results; in Busa's
+                                Index Thomisticus and in concordancing software; in statistical
+                                analysis of word frequency distributions and in the algorithms of
+                                authorship attribution. Instead of the hermeneutics of play, in
+                                which the goal is simply to facilitate engagement and enable
+                                insight, these traditions assert the hermeneutics of the algorithm.
+                            These types of interpretive activities have always possessed the
+                                sheen of scientism--a feature which practitioners of text analysis
+                                have sometimes emphasized and sometimes deemphasized as the tools
+                                have moved across the disciplines and in and out of academic
+                                fashions. Yet it may be argued that its closest family resemblance
+                                lies not with conventional literary criticism, but with its ludic
+                                cousin. The algorithmic analysis of text may be thought of as
+                                lending a positivistic slant to critical activity, but it may just
+                                as easily be thought of as yet another critical practice at the
+                                interstices of work and interpretation--a critical act of
+                                deformation, neither mystical nor anarchic, and yet invested with
+                                the same power to facilitate engagement and enable insight.
+                            Both the ludic and scientistic traditions of interpretive activity
+                                exist on the margins of literary critical practice. Mainstream
+                                literary critical culture tends to consign the former to the realm
+                                of literary artifact while viewing algorithmic criticism as merely
+                                part of the pre-interpretive organizations deemed necessary for
+                                certain limited types of analysis. In this way, the Muse and the
+                                mathematician each abut the boundaries of a central position
+                                (mainstream literary critical practice) which is too rational for
+                                the former and too mysterious for the latter. As long as the work
+                                generated by these tools is perceived as pre-interpretive--or worse,
+                                positivistic--humanities computing in literary studies will continue
+                                to operate outside of mainstream discussions in the discipline.
+                            I would like to suggest that we reenvision text analysis from the
+                                theoretical standpoint of the ludic tradition--envisioning
+                                computer-assisted text analysis in literary studies as
+                                preinterpretive in the strong sense of exploration and play.
+                                Reforming and refactoring to enable insight, notice aspects, and
+                                reveal codes.
+                            I have developed a set of software components intended to demonstrate
+                                these principles called the D-Machines. The D-Machines consist of a
+                                set of program modules that allow one to perform discrete
+                                deformations of text: e.g. print backwards and forwards, switch
+                                gender terms, colorize word frequencies, show only nouns or only
+                                verbs, and so on. I will demonstrate this system and show how it may
+                                be used to enact the principles I have set forth concerning the
+                                reconception of text analysis as an activity which participates in
+                                the creation of those alternative textualities which undergird all
+                                literary critical acts.
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    
+                                        
+                                            Jerome
+                                            J.
+                                            McGann
+                                        
+                                    
+                                    
+                                        
+                                            Lisa
+                                            Samuels
+                                        
+                                    
+                                    Deformance and Interpretation
+                                
+                                
+                                    New Literary History
+                                    
+                                        30
+                                        1
+                                        25-56
+                                        1999
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Warren
+                                            F.
+                                            Motte
+                                        
+                                    
+                                    OuLiPo: A Primer of Potential Literature
+                                    
+                                        Normal, IL
+                                        Dalkey Archive Press
+                                        1998
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Raymond
+                                            Queneau
+                                        
+                                    
+                                    Cent Mille Milliard de Poems
+                                    
+                                        Paris
+                                        Gallimard
+                                        1997
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Jean
+                                            Starobinsky
+                                        
+                                    
+                                    Words upon Words: The Anagrams of Ferdinand de
+                                        Saussure
+                                    
+                                        New Haven
+                                        Yale UP
+                                        1979
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Richard
+                                            Rutt
+                                        
+                                    
+                                    The Book of Changes (Zhouyi)
+                                    Durham East-Asia Series
+                                    
+                                        1
+                                        Richmond, UK
+                                        Curzon
+                                        1996
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        What is text analysis, really?
+                        Geoffrey Rockwell
+                        
+                            In a mock confrontation between Allen Renear and Jerome McGann at the
+                                ACH/ALLC in 1999 at the University of Virginia, two views as to what
+                                a text really is were put forward. Renear put forward, for the sake
+                                of the confrontation, the OHCO (ordered hierarchy of content
+                                objects) perspective while McGann practiced a view of text as
+                                    performance.[1] Susan Hockey, Chair, with Allen
+                                    Renear and Jerome J. McGann, Panel: "What is text? A debate on
+                                    the philosophical and epistemological nature of text in the
+                                    light of humanities computing research", ACH-ALLC, June 9-13
+                                    1999, at the University of Virginia. In the context of a
+                                humanities computing conference this confrontation was designed to
+                                highlight the relationship between theories of text and ways of
+                                representing texts digitally. Renear's Platonic view of the text as
+                                a real abstract OHCO fits nicely with the dominant practice for the
+                                digital representation of texts, namely the guidelines of the TEI.
+                                McGann instead gave us an example of a reading that was both a
+                                performance itself and pointed to the (hypertextual) links within
+                                and around the text. McGann's challenge to Renear was to show how a
+                                reading of a text both was the text and could not be captured by an
+                                OCHO. The confrontation succinctly opened again the question of the
+                                relationship between how we represent texts, how we use them, and
+                                our theories of textuality.
+                            What does this have to do with literary text analysis and computing?
+                                What was not made clear in the confrontation was the role of the
+                                tools we use for accessing and manipulating digital texts; tools
+                                which I will call text analysis tools. If we are to take McGann's
+                                public performance of a reading as an analogue for what we wish to
+                                achieve digitally, we have to think not just about how we represent
+                                the text but also about analysis and the tools that are used to
+                                perform the analysis on a computer. The logic of the tools, despite
+                                (or because of) their tendency to become transparent in use, can
+                                enhance or constrain different types of reading which in turn makes
+                                them a better or worse fit for practices of literary criticism.
+                            Another way of saying this is that we have a model of
+                                computer-assisted literary text analysis that is guided by a view of
+                                what a text is and how we should use it that does not match the
+                                practice of many contemporary literary critics. (It should be noted
+                                that this is not true in the field of computational linguistics and
+                                may not be true in literary criticism in the future). Consequently,
+                                as others have pointed out, text analysis tools and the practices of
+                                literary computer analysis have not had the anticipated impact on
+                                the research community. This is often blamed on the absence of
+                                easy-to-use tools, especially tools that take advantage of OCHO, but
+                                I will argue in this paper that there are two other issues that have
+                                to be taken into account. First, the tools we have (and even those
+                                we anticipate) have emerged out of a particular critical tradition
+                                that I will call an "editorial" tradition going back to tools for
+                                editors of concordances. To understand the current state of text
+                                analysis tools we need to review their history in terms of the
+                                practices they complement and the theories of textual practice they
+                                augment. Second, I will argue that the moment when humanities
+                                computing could have an impact on literary criticism through the
+                                provision of critical tools (and relevant theories of what computer
+                                based text analysis) is passing as server-based text access tools
+                                that provide access to licensed digital archives seem to satisfy
+                                most of our colleagues while we keep on imagining personal tools. In
+                                other words, we will soon be Googled out of theoretical relevance -
+                                the text tools developed outside the scholarly community (for
+                                digital library access) may prove a closer fit to the practices of
+                                our colleagues than our elaborate analytical tools.
+                            While I doubt we can resist the commercial forces that lead to the
+                                bundling of limited tools and texts, we can understand this process
+                                in terms of its relevance to the practices of our colleagues and
+                                imagine an alternative that is relevant to contemporary literary
+                                criticism. This paper will therefore conclude with (yet another)
+                                proposal for a model for text analysis tools, a portal model. The
+                                portal model provides us a way of taking advantage of the trend away
+                                from personal tools towards community tools while also engaging a
+                                different critical practice of playful criticism. The theory of
+                                analysis illustrated is in a hermeneutical tradition which
+                                incorporates play in method and which is best expressed in the work
+                                of Gadamer. A portal for text analysis can finesse the problems of
+                                ease-of-use while also providing a virtual play-pen for contemporary
+                                critics to try computer-assisted techniques beyond those provided by
+                                the commercial publishers of e-texts. The portal ironically could be
+                                the backdoor through which our colleagues could be introduced to the
+                                playful work of humanities computing.
+                            That said, we should be honest and admit that much of our discourse
+                                around tools is for our own sake. It is our humanities computing
+                                play with tools and texts. Does it matter if anyone else ever uses
+                                these tools as long as they help us understand the practice of
+                                reading digital representations? The portal prototype to be
+                                demonstrated, while it may have practical applications, is for
+                                humanities computing an attempt to illustrate a particular
+                                relationship between a theory of texts and analysis on the one hand
+                                and an interface for text analysis that implements that theory on
+                                the other hand.
+                            In conclusion, this paper will do the following:
+                                    1. Present a short history of text analysis tools as they
+                                        evolved from batch concording tools to server-based digital
+                                        library access tools. This history will focus on the
+                                        relationship between the form of the tools with the
+                                        practices they enabled.
+                                    2. Present an alternative definition of analysis building
+                                        on Gadamer's hermeneutics of play.
+                                    3. Demonstrate a text-analysis portal prototype that is
+                                        designed to enable playful practice.
+                                
+                        
+                    
+                    
+                        Bibliography
+                        
+                            
+                                
+                                    
+                                        
+                                            J.
+                                            Bradley
+                                        
+                                    
+                                    
+                                        
+                                            G.
+                                            Rockwell
+                                        
+                                    
+                                    Watching Scepticism: Computer Assisted
+                                        Visualization and Hume's Dialogues 
+                                
+                                
+                                    Research in Humanities Computing
+                                    
+                                        5
+                                        Oxford
+                                        Clarendon Press
+                                        1996
+                                        32-47
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Hans-Georg
+                                            Gadamer
+                                        
+                                    
+                                    Truth and Method
+                                    
+                                        Trans.
+                                        
+                                            W.
+                                            Glen-Doepel
+                                        
+                                    
+                                    2nd ed.
+                                    
+                                        New York
+                                        Crossroad
+                                        1985
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Johan
+                                            Huizinga
+                                        
+                                    
+                                    Homo Ludens: A Study of the Play-Element in
+                                        Culture
+                                    
+                                        Boston
+                                        Beacon Press
+                                        1950
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            I.
+                                            Lancashire
+                                        
+                                    
+                                    
+                                        
+                                            J.
+                                            Bradley
+                                        
+                                    
+                                    
+                                        
+                                            W.
+                                            McCarty
+                                        
+                                    
+                                    
+                                        
+                                            M.
+                                            Stairs
+                                        
+                                    
+                                    
+                                        
+                                            T.
+                                            R.
+                                            Wooldridge
+                                        
+                                    
+                                    Using TACT with Electronic Texts
+                                    
+                                        New York
+                                        The Modern Language Association of America
+                                        1996
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            R.
+                                            G.
+                                            Potter
+                                        
+                                    
+                                    Literary Criticism and Literary Computing: The
+                                        Difficulties of a Synthesis
+                                
+                                
+                                    Computers and the Humanities
+                                    
+                                        22
+                                        2
+                                        91-97
+                                        1988
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            G.
+                                            Rockwell
+                                        
+                                    
+                                    
+                                        
+                                            J.
+                                            Bradley
+                                        
+                                    
+                                    Eye-ConTact:Towards a New Design for Research
+                                        Text Tools
+                                
+                                
+                                    Computing in the Humanities Working Papers
+                                    
+                                        
+                                        
+                                        
+                                        1998
+                                    
+                                
+                                URL: . Also at URL: .
+                            
+                            
+                                
+                                    
+                                        
+                                            G.
+                                            Rockwell
+                                        
+                                    
+                                    
+                                        
+                                            J.
+                                            Bradley
+                                        
+                                    
+                                    Empreintes dans le sable: Visualisation
+                                        scientifique et analyse de texte
+                                
+                                
+                                    
+                                        
+                                            A.
+                                            Vuillemin
+                                        
+                                    
+                                    
+                                        
+                                            M.
+                                            LeNoble
+                                        
+                                    
+                                    Litterature, informatique, lecture
+                                    
+                                        Paris
+                                        Pulim
+                                        1999
+                                        130-160
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            G.
+                                            Rockwell
+                                        
+                                    
+                                    The Visual Concordance: The Design of
+                                        Eye-ConTact
+                                
+                                
+                                    Text Technology
+                                    
+                                        10
+                                        1
+                                        73-86
+                                        2001
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Computer-Assisted Text Exploration
+                        Stéfan Sinclair
+                        
+                            
+                                
+                                    Mon plaisir peut très bien prendre la forme d'une dérive.
+                                        La dérive advient chaque fois que je ne respecte pas le
+                                        tout, et qu'à force de paraître emporté ici et là au gré des
+                                        illusions, séductions et intimidations de langage, tel un
+                                        bouchon sur la vague, je reste immobile, pivotant sur la
+                                        jouissance intraitable qui me lie au texte.
+                                    -- Roland Barthes, Le Plaisir du
+                                        texte
+                                
+                            
+                            Existing text-analysis tools can be very useful if one knows what
+                                questions to ask (and how to ask them). In general, they presuppose
+                                a researcher who has read a text, who has formulated some questions
+                                about it, who then sets the text aside while using analysis tools to
+                                attempt to answer the questions (with a text in electronic form that
+                                is rarely viewable in its entirety). Thus, data completely displaces
+                                the text, at least temporarily, as the object/objective of study in
+                                text-analysis.
+                            Etymologically, analysis denotes breaking something up or loosening
+                                it. Computer-assisted text-analysis tools have fully exploited the
+                                flexible, digital nature of the electronic medium to allow texts to
+                                be segmented in innumerable ways. It has proven far trickier to
+                                reconstitute the divided parts into meaningful units, in large part
+                                because this step depends on an interpretive intention that is
+                                beyond the capabilities of current tools. Connotatively, analysis
+                                includes this interpretive or synthetic phase that completes the
+                                circle of segmentation and unification, but text-analysis tools have
+                                historically stranded the literary critic at the half-way, base arc,
+                                part of the process (though many imaginative and resourceful
+                                colleagues have made their own way back up).
+                            The computer need not manifest signs of intelligence to play a role
+                                in completing the analytic process, it need only help the critic do
+                                so. One fairly simple strategy for this is to create paths from the
+                                data (segmented text) back to the integral text. That functionality
+                                was precisely the motivation behind the creation of the first
+                                version of HyperPo, an online text-analysis and exploration tool
+                                (see &lt;&gt;). HyperPo can generate many of the usual types of data in
+                                text-analysis, such as frequency, collocation and distribution
+                                lists, but it can also create links from those data back to the
+                                text, displaying both simultaneously (see Sinclair 1997 and 1998 for
+                                more details on these functions). As such, HyperPo can break down a
+                                text into constitutive parts and do comparative analyses, but it can
+                                also reconstitute a text from any of those parts.
+                            Because there is a high degree of speculation and experimentation
+                                involved, I have found it more useful to view such decomposing and
+                                recomposing methods less as analysis and more as exploration. I
+                                navigate through the text and data the way one might explore the
+                                streets of an unknown city or the trails in an expansive parkland;
+                                various things along the way may prompt me to change directions, and
+                                though I often don't know where I am going, I know that I am somehow
+                                accumulating a broader representation of the terrain.
+                            The notion of text-analysis as exploration has recently led me to
+                                develop some more adventurous functions for HyperPo (functions that
+                                may not be available at the above web address until August 2002).
+                                These new functions are less concerned with the immediate analysis
+                                of a text and more concerned with multiplying the means for its
+                                traversal, its discovery, and enjoyment (perhaps even Roland
+                                Barthes' jouissance). Playing with a text may not contribute
+                                directly to its analysis, but I believe it can contribute to its
+                                appreciation and perhaps its understanding (in ways that might be
+                                next to impossible to measure). As Malcolm McCullough states in a
+                                manner that is fully compatible to the development of a literary
+                                interpretation: "play often lacks any immediately obvious aim, other
+                                than the pursuit of stimulation, but functions almost instinctively
+                                to serve the process of development" (223).
+                            Like HyperPo itself (HYPERtexte POtentiel), the new functions are
+                                inspired by the work of the Oulipo (OUvroir de LIttérature
+                                POtentielle; see &lt;&gt;
+                                for more information on this group). Interestingly, the Oulipo
+                                divides its activities (in characteristically ironic terms) between
+                                "l'analoupisme" (the analytic) and "le synthoulipisme" (the
+                                synthetic) and states that "the synthetic branch is more ambitious;
+                                it is the primary vocation of the Oulipo. It is a matter of opening
+                                to our predecessors new and unexplored ways" (17, my translation).
+                                Such are my ambitions too.
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    
+                                        
+                                            Roland
+                                            Barthes
+                                        
+                                    
+                                    Le Plaisir du texte
+                                    
+                                        Paris
+                                        Seuil
+                                        1973
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Malcolm
+                                            McCullough
+                                        
+                                    
+                                    Abstracting Craft: The Practiced Digital Hand
+                                    
+                                        Cambridge, MA
+                                        MIT Press
+                                        1996
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        Oulipo
+                                    
+                                    La Littérature potentielle
+                                    
+                                        Paris
+                                        Gallimard
+                                        1973
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Stéfan
+                                            Sinclair
+                                        
+                                    
+                                    HyperPo: The Next Generation
+                                
+                                
+                                    ACH-ALLC '99 Conference Proceedings
+                                    
+                                        Virginia
+                                        University of Virginia
+                                        1999
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Stéfan
+                                            Sinclair
+                                        
+                                    
+                                    L'HyperPo: Exploration des structures lexicales
+                                        à l'aide des formes hypertextuelles
+                                
+                                
+                                    
+                                        
+                                            Greg
+                                            Lessard
+                                        
+                                    
+                                    
+                                        
+                                            Michael
+                                            Levison
+                                        
+                                    
+                                    ACH-ALLC '97 Conference Abstracts
+                                    
+                                        Kingston, ON
+                                        Queen's University Press
+                                        1997
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    

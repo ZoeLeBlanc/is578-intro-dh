@@ -1,0 +1,481 @@
+
+
+
+    
+        
+            
+                Document management system for supporting historians
+                
+                    
+                        Hiromasa
+                        Nakatani
+                        
+                            Shizuoka University
+                            nakatani@cs.inf.shizuoka.ac.jp
+                        
+                    
+                
+                
+                    
+                        Yukihiro
+                        Itoh
+                        
+                            Shizuoka University
+                            itoh@cs.inf.shizuoka.ac.jp
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Computer assistance in historical documents in the format of official
+                        documents, memorandums, or personal diaries still has problems to be solved.
+                        In this paper, we discuss the point of managing text documents in history,
+                        and construct a system that suffices the research style of historians. We
+                        investigate research styles of historians in view of their computer use, and
+                        present a system for supporting researchers in history. Our system stores
+                        historical stories and materials concerning an event called "Eejanaika"
+                        (Fig. 1) [1-3]. The eccentric event happened from place to place in central
+                        Japan in 1867, triggered by a scattering of protecting charms of shrines.
+                        Clouds danced around with the refrain "Eejanaika," that means "who cares?"
+                        in Japanese, and some of them escalated into a state of chaos [4].
+                    
+                        Eejanaika database
+                    
+                
+                
+                    Subjects and key points for computer assistance for history
+                    By interviewing historians, we investigate the procedure that historians
+                        follow for their research, and summarize key subjects in introducing
+                        computers to historical research.
+                    First key subject is in difficulty in extracting necessary information from
+                        historical documents. Even if a historian gathered all the necessary
+                        documents, it is difficult to find out necessary parts for his/her
+                        particular topic. To solve this problem, we have to tackle the following subjects:
+                            1-1 How to organize such information that can distinguish
+                                necessary documents from unnecessary ones.
+                            1-2 How to make a system function that can retrieve necessary
+                                information from large volumes of those documents.
+                        
+                    Note that historians retrieve the data based on their experiences and their
+                        subjective judgments. Here we have two problems:
+                            2-1 How to classify the documents based on their subjective
+                                judgments.
+                            2-2 How to organize the classification function in the
+                            system.
+                        
+                    Second problem is in difficulty in surveying the retrieved data and
+                        extracting useful information. When we use conventional media like notebooks
+                        or cards to manage collected information, the type of information we can
+                        deal with is restricted, and as the volumes become larger it becomes more
+                        time-consuming and physically difficult to grasp the whole image. Here are
+                        three problems:
+                            3-1 What sort of space we should use for arranging all documents.
+                            3-2 How to locate each document in the above space.
+                            3-3 How to organize the display function to facilitate the
+                                observer.
+                        
+                
+                
+                    Implementation and data structure
+                    We consider those subjects and apply our system to a historical event of
+                        Eejanaika to evaluate the effectiveness of our system by verifying the
+                        hypothesis given by a historian. Suppose that a historian gets an idea that
+                        "Eejanaika is such an extraordinary festival that was triggered by a
+                        scattering of protecting charms of shrines and it came to chaos that was
+                        inadmissible by the Establishment. At some places, on the other hand, those
+                        phenomena were terminated in the acceptable state. Then, it is important to
+                        classify those festivals into three types: (A) Festivals that reached chaos,
+                        (B) Eccentric but terminated in the acceptable state, and (C) Only extension
+                        or extra of regular festivals. It is also necessary to see the distribution
+                        of those festivals on the map. I have an intuition that post-towns on main
+                        roads fell into a state of chaos, but rural districts held just regular
+                        festivals. Maybe that relates to the regional difference as regards degree
+                        of distress, power of the Establishment, and strength of people's ego". To
+                        verify this hypothesis, the historian has to classify the festivals judging
+                        by corresponding documents, make a map of the distribution of the festivals,
+                        and grasp the whole image.
+                    We investigate the above problems 1-1 through 3-3 in the case of Eejanaika
+                        study.
+                    1-1 Representation of key terms for retrieving necessary documents: When a
+                        historian hits on the above hypothesis, the concept of three types of
+                        Eejanaika is formed in their mind. Then related documents are collected for
+                        finding out whether there really happened Eejanaika or not. However there
+                        are few expressions in the documents that explicitly say, "Eejanaika has
+                        occurred." Thus we should make a criterion that can judge whether the
+                        document is relating to Eejanaika or not. For example, if Eejanaika occurred
+                        in an area, such expressions appear in the official documents as "protecting
+                        charms scattered and people held a festival," "Men were disguised in woman's
+                        clothes and women in men's," "dancing with nothing on," "rice cakes and
+                        moneys were scattered." Thus we make a table of expressions with which the
+                        system can determine whether or not the document is relating to the concept
+                        that the historian has interest in.
+                    
+                        Table of expressions
+                        
+                            Category
+                            expressions in documents
+                        
+                        
+                            Scattering
+                            scattering, protecting charms
+                        
+                        
+                            Duration
+                            # days
+                        
+                        
+                            Yell
+                            Eejanaika, Iijanaika
+                        
+                        
+                            Mood
+                            excited, high, crazy, mad
+                        
+                        
+                            Degree
+                            unheard-of, strange, amazing
+                        
+                        
+                            Clothes
+                            disguise, naked, loincloth
+                        
+                        
+                            Things scattered
+                            rice, rice cake
+                        
+                    
+                    1-2 Retrieving contents of document: The system retrieves the document by key
+                        terms and makes document-characteristic tables that are assigned to a
+                        pattern that expresses one of the above categories. An example of a
+                        document-characteristic table that the system retrieved from an official
+                        document of Arai-Town, vol.8, pp. 884 - 445, is shown in Table 2:
+                    
+                        Document-characteristic table
+                        
+                            Theme
+                            Eejanaika
+                        
+                        
+                            Category
+                            pattern of expression
+                        
+                        
+                            Duration
+                            7 days
+                        
+                        
+                            Mood
+                            crazy
+                        
+                        
+                            Degree
+                            unheard-of
+                        
+                        
+                            Clothes
+                            dressed as a man, loincloth
+                        
+                    
+                    2-1 Criterion for classifying the retrieved document: The system classifies
+                        and organizes the document of interest. Here the system classifies
+                        extraordinary festivals into three types using a tree structure for
+                        classification.
+                    2-2 Classification method: The system traverses the tree from its root to the
+                        leaves and tries matching between each document-characteristic table and a
+                        priori given model tables (Fig. 2).
+                    
+                        Classification tree
+                    
+                    3-1 Space for surveying the documents: We adopt three-dimensional space with
+                        axes of time and location (latitude, longitude) for surveying the historical
+                        documents.
+                    3-2 Assign the time and location of the document: The system assigns the time
+                        and location of the document by finding those expressions that relate to
+                        time and location.
+                    3-3 Function for displaying the space: The system has a function for showing
+                        the distribution of documents in three-dimensional space.
+                
+                
+                    Experiments
+                    We show the effectiveness of our system by verifying the hypothesis. We built
+                        a document database by extracting articles that describe events in 1867 from
+                        official documents of cities and towns in Shizuoka and Aichi prefectures,
+                        and the database consists of 50 articles relating to Eejanaika. First, to
+                        verify the above hypothesis, Eejanaika documents classified into three types
+                        are plotted on the then road maps (Fig. 3). That verifies most escalated
+                        festivals range along the route of Tokaido and its connecting routes.
+                    
+                        Distribution of Eejanaika
+                    
+                    
+                        Distribution of Eejanaika and Sukegou-Soudou riot
+                    
+                    Next hypothesis given by a historian is that "Eejanaika might be caused by
+                        public discontent that had been accumulated among people groaning under
+                        tyranny and suffering crop failures. In that sense, Eejanaika was similar
+                        phenomenon with 'Sukegou-Soudou' riot that happened almost at the same time
+                        in the east of Aichi prefecture. A form of the event in the case of
+                        Sukegou-Soudou riot is protest or subversion, while in the case of Eejanaika
+                        it is festival."
+                    Using our system, we plot the records of Eejanaika with Sukegou-Soudou riot
+                        (Fig. 4). In the map, x-marks stand for Sukegou-Soudou riot, and black dots
+                        stand for violent ones. This map can extend following knowledge:
+                            1. Toyohashi and Kariya districts had most violent riots, and
+                                Eejanaika in both districts escalated into a state of chaos. The
+                                first Eejanaika happened in Toyohashi.
+                            2. Many violent Sukegou-Soudou riots happened in the districts
+                                west of Toyokawa river, while that kind of riots scarcely happened
+                                in the east. The situations of the oppression and the crop failures
+                                were almost the same in both ereas. In the east, Eejanaika, instead
+                                of Sukegou-Soudou riots, was triggered by scatterings of protecting
+                                charms in the course of extraordinary festivals.
+                            3. Eejanaika first happened in rural districts, where
+                                Sukegou-Soudou riots happened, then spread over the neighboring
+                                towns and all over the nearby districts.
+                            4. Though both events were caused by the same mental state of the
+                                public, Sukegou-Soudou riots mainly happened in rural districts
+                                while Eejanaika in urban districts.
+                        
+                    Although historians have already pointed out the knowledge 1 to 4 without
+                        using our system, they appreciate the functions of the system that make
+                        their verifications clear and objective. Future work will be applications of
+                        the system to other fields of history or the humanities.
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    H,
+                                    Nakatani
+                                
+                            
+                            
+                                
+                                    Y.
+                                    Itoh
+                                
+                            
+                            
+                                
+                                    K.
+                                    Abe
+                                
+                            
+                            
+                                
+                                    S.
+                                    Tamura
+                                
+                            
+                            
+                                
+                                    M.
+                                    Akaishi
+                                
+                            
+                            Computer De Eejanaika
+                            (in Japanese)
+                        
+                        
+                            Humanities and Information Processing
+                            
+                                Tokyo
+                                Bensei-Shuppan
+                                19
+                                
+                                16-23
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Y.
+                                    Itoh
+                                
+                            
+                            
+                                
+                                    T.
+                                    Konishi
+                                
+                            
+                            
+                                
+                                    T.
+                                    Miura
+                                
+                            
+                            
+                                
+                                    D.
+                                    Akatsuka
+                                
+                            
+                            
+                                
+                                    S.
+                                    Tamura
+                                
+                            
+                            
+                                
+                                    K.
+                                    Abe
+                                
+                            
+                            
+                                
+                                    M.
+                                    Akaishi
+                                
+                            
+                            
+                                
+                                    H.
+                                    Nakatani
+                                
+                            
+                            Extraction and classification of historical documents
+                                and overlook of classification results for historical research
+                                supports
+                            (in Japanese)
+                        
+                        
+                            Trans. of Information Processing Society of Japan
+                            
+                                40
+                                3
+                                821-830
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Akaishi
+                                
+                            
+                            
+                                
+                                    Y.
+                                    Okada
+                                
+                            
+                            
+                                
+                                    H.
+                                    Nakatani
+                                
+                            
+                            
+                                
+                                    Y.
+                                    Itoh
+                                
+                            
+                            
+                                
+                                    S.
+                                    Tamura
+                                
+                            
+                            The historical data management and visualization system
+                                for historical research supports
+                            (in Japanese)
+                        
+                        
+                            Trans. of Information Processing Society of Japan
+                            
+                                40
+                                3
+                                831-839
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Sadao
+                                    Tamura
+                                
+                            
+                            Eejanaika Hajimaru
+                            (in Japanese)
+                            
+                                Tokyo
+                                Aoki-Shoten
+                                1987
+                            
+                        
+                    
+                
+            
+        
+    

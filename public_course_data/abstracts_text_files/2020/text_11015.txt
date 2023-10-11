@@ -1,0 +1,99 @@
+
+      
+         Der Schubert-Forscher Walther Dürr veröffentlichte 2002 einen Beitrag zu Problemen der Artikulation und Dynamik bei Franz Schubert, in dem er betonte, wie stark das „Lesen“ einer Partitur von der Kenntnis der Schreibgewohnheiten eines Komponisten abhängt. Selbst erfahrenen Handschriftenkennern bereiten Phänomene wie jenes von „Schuberts so viel diskutiertem Akzentzeichen“ Schwierigkeiten: Akzente und 
+                decrescendo-Winkel „sind bei Schubert oft nicht leicht zu unterscheiden“ und gelegentlich handele es sich um „etwas dazwischen, das sich im Druck unserer Ausgabe nicht wiedergeben läßt“. Dies gelte auch für manche Bogensetzungen, die „offenbar nicht anzeigen, 
+                was, sondern nur, 
+                daß überhaupt gebunden werden sollte“. Er rät dem Editor daher, zwar Beliebigkeiten der Schubertschen Schreibweise zu kennzeichnen, aber wo „Präzision gemeint“ sei, „diese auch dort anzuzeigen, wo 
+                das Manuskript sie 
+                nicht hergibt“. Von einer (analogen) Edition erwarte die Aufführungspraxis „genaue Anweisungen“, und „musikalische Plausibilität“ sei dabei zweifellos ein wichtiger Orientierungspunkt (Dürr 2002: 322-326).
+            
+         In der gedruckten Edition sorgen die Entscheidungen des Editors und die Normierungen des modernen Notensatzes (wie jede Übertragung eines Schriftträgers in einen anderen) zwangsläufig für eine Verengung des in der Vorlage gegebenen (oder laut Dürr bloß vom Lesenden empfundenen) Interpretationsspielraums, der nur durch verbale Erläuterungen im Kritischen Apparat wieder geöffnet werden kann. 
+         Bei den ersten digitalen Editionen von Musik der klassisch-romantischen Epoche mit der „Edirom“-Software (Edirom 2005/2010, Reger-Werkausgabe, OPERA) ging es genau um diese Frage der Transparenz editorischer Entscheidungen, die nun durch die fallspezifische Einbindung von Digitalisaten der zur Erstellung des Edierten Textes herangezogenen historischen Quellen erreicht werden sollte. Die Kombination „eindeutiger“ Edierter Texte mit deren „Vorlagen“ sollte Interpretationsspielräume wieder öffnen, was durch eine zusätzliche Kombination mit Annotationen an Ort und Stelle (also nicht im separierten Apparat) erleichtert wurde. Das Konzept ging teilweise auf, auch wenn die Verführung durch Bilder alles andere als unproblematisch ist – die gebotenen Ausschnitte verkürzen Wirklichkeit und können bei entsprechender Auswahl (und ohne Kenntnis einschlägiger Notationsgepflogenheiten) ebenso manipulativ sein wie traditionelle verbale Erläuterungen des Editors (vgl. dazu Sahle 2013, Kap. 3.2).
+         Abhilfe versprach die auch für die praktische Nutzung beobachteter Alternativen notwendige Überführung des bildlich Vorgefunden in maschinenles- und verarbeitbare Repräsentationen. Für diese wurde im Bereich wissenschaftlich-kritischer Editionen in den letzten zwanzig Jahren das Format der 
+                Music Encoding Initiative (MEI) entwickelt, das im Gegensatz zu anderen, auf spezifische Erfordernisse zugeschnittenen Codierungsformen oder proprietären Notensatzprogrammen von Anfang an (in Anlehnung an TEI) auf die dokumentarischen Bedürfnisse der wissenschaftlichen Community zielte (vgl. Richts/Veit 2018). Mit dieser Codierung können nun Interpretationsspielräume wie die erwähnten bzw. unterschiedliche Deutungen dieser Symbolschrift erfasst und explizit festgehalten werden.
+            
+         Was bedeutet dies konkret? – MEI ist keine „Auszeichnungssprache“ im engeren Sinne (wie TEI), sondern ein „beschreibendes Markup“, das die auf Konventionen beruhende konkrete graphische Gestalt durch Begriffe bezeichnet und bei deren inhaltlicher Deutung auch den Zeichenkontext berücksichtigt – so kann eine Note aufgrund der äußeren Form als „Viertel“ und durch ihre Position im zweiten Zwischenraum in Verbindung mit einem vorausgehenden Schlüssel als Tonhöhe „c2“ bzw. mit einem vorausgehenden Akzidens als „Viertelnote cis2“ bezeichnet werden. Dabei sagen historische Notensatzregeln, dass ein anschließend wiederholter Ton im gleichen Zwischenraum kein Akzidens benötigt, also graphisch wie ein „c“ aussieht, klingend aber als „cis“ realisiert wird. In die Codierung fließt also – wie im Computernotensatz – Wissen um Notationsregeln mit ein. Wenn der Rechner aber mit dem Ton arbeiten soll, muss ihm explizit mitgeteilt werden, dass die graphische Form hier durch zusätzliche Kontextinformationen in ein anderes klingendes Ergebnis verwandelt wird. 
+         Ebenso könnte in dem genannten Schubertschen Beispiel die Ausdehnung des Akzent- bzw. 
+                decrescendo-Zeichens im Verhältnis zu den Notenpositionen konkret festgehalten und damit expliziter als in einer bloßen verbalen Beschreibung dokumentiert werden. Zusätzlich wären die Deutungsmöglichkeiten als Alternativen in der Codierung – eventuell in einem Apparateintrag als Lesarten – festzuhalten. Dabei erlaubt MEI Angaben zum Urheber der jeweiligen Interpretation sowie prozentuale Festlegungen der Wahrscheinlichkeit der jeweiligen Lösung. Die Codierung erzwingt also eine möglichst präzise Beschreibung der Alternativen – aber wie hoch ist der Erkenntnisgewinn? Und wo liegen – von dem heilsamen Zwang zur präziseren Erfassung der Phänomene abgesehen – die Vorteile eines solchen Verfahrens gegenüber der traditionellen analogen Arbeit? 
+            
+         Um die Frage zuzuspitzen: Menschenlesbar wird das, was hier codiert wird, erst bei einer Rücküberführung in die gewohnte Notendarstellung – dort aber sorgt die Normierung des Drucksatzes dafür, dass der Eindruck, den die Handschrift vermittelte, ein völlig anderer ist. Und die präzise Codierung etwa von Bogenlängen, die nicht mit, sondern irgendwo nach Noten beginnen oder enden (und damit ggf. Bedeutungsunterschiede suggerieren), erweist sich letztlich als verlorene Liebesmüh’, denn sie wirkt in der normierten Umgebung völlig anders und bleibt als bloße Positionsbestimmung blind für eine maschinelle Auswertung, die die Werte in Beziehung zu unterschiedlichen Kontextfaktoren setzen müsste. Das Projekt „Beethovens Werkstatt“, das sich mit der komplexen Genese Beethovenscher Kompositionshandschriften beschäftigt, hat daraus die Konsequenz gezogen, solche kodikologischen Aspekte nicht im Neusatz nachzuahmen (und damit zu verfälschen), sondern die Codierung sozusagen fest mit den Einträgen im Manuskript zu verdrahten – das Markup zur Beschreibung des problematischen Bogens wäre dementsprechend direkt mit einer SVG-Erfassung dieses Objekts im Handschriftendigitalisat verknüpft. Das erleichtert das Erkennen von im Apparat erfassten Mehrdeutigkeiten, dennoch bleiben diese ohne Annotation schwer nachvollziehbarund der Urteilsfähigkeit eines Betrachters anvertraut, der zudem schreibereigene Notationsgepflogenheiten zu berücksichtigen hätte. Zwar könnte man vorgefundene Phänomene unter Kategorien subsumieren und damit rascher auffind- und auswertbar machen – aber dennoch bewegen wir uns hier noch in einem Denkraum, für den das Digitale zwar Erleichterungen bringt, der aber traditionellen Herangehensweisen verpflichtet bleibt, weil die Repräsentation des Objekts, die MEI in der bisher beschriebenen Form bietet – wie bei allen derartigen Repräsentationen – nur auf einer sehr spezifischen, von bestimmten Interessen geleiteten Wahrnehmung des Gegenstands beruht (Sahle 2013, Kap. 2).
+         Greifen also bisherige digitale Editionsmethoden oder Codierungen zu kurz? Wie aber könnten digitale Methoden helfen, mit den genannten Interpretationsspielräumen sinnvoller umzugehen? Ist hier nicht ein radikal anderes Denken erforderlich? 
+         Zunächst muss man sich bewusst machen, welche Fragen überhaupt mit Rechnerunterstützung sinnvoll beantwortbar sind. Bei den erwähnten Bögen mit unklarem Anfang und Ende oder der Akzent/
+                decrescendo-Unterscheidung bleibt die Geltungsdauer der Zeichen stark von individuellen Schreibgewohnheiten abhängig und dürfte kaum schreiberunabhängig beurteilbar sein. Aber Dürrs (durch Doppelautographe Carl Maria von Webers bestätigte) Hypothese, andere Bogenformen suggerierten nur, „daß“ und nicht „was“ genau gebunden werden solle – bezeichneten also im Sinne eines 
+                sempre legato nur grundsätzlich das Binden (nicht aber z.B. den Strichwechsel) –, wäre auf einem großen Korpus an Digitalisaten (ggf. epochenspezifisch) untersuchbar. Was wäre hier nötig?: Es muss zunächst händisch ein ausreichend großer Bestand (zu Festlegung seiner Größe fehlen noch jegliche Erfahrungswerte!) erfasst werden, um die Frage – auch im Hinblick auf zumindest zeichenspezifisches OMR – präzisieren zu können. Darauf aufbauend könnte eine maschinelle Auswertung umfassender Bibliotheksbestände (z.B. über den Zugriff auf im IIIF-Format zur Verfügung gestellte Digitalisate) erfolgen. Das angewandte Verfahren müsste auch in der Lage sein, aufgefundene Stellen so zu „markieren“ (bzw. ihre Koordinaten zu erfassen), dass sie für spätere Einzelfallstudien rascher auffindbar wären. Je nach Aufbereitung der Trainingsdaten könnte dabei bereits eine automatisierte Sortierung der Fundstellen nach vorgegebenen Kategorien erfolgen, um darauf aufsetzende Arbeiten zu erleichtern. (Bei der Interpretation des Akzentzeichens wäre z. B. ein Einbeziehen verbaler Bezeichnungen wie 
+                sf und 
+                fz
+sowie weiterer orthographischer Varianten denkbar, um die Frage zu klären, inwieweit die Verwendung zeitlich, lokal oder im Hinblick auf die Faktur der Musik variiert, je nach Kontext unterschiedliche Deutungen suggeriert oder lediglich auf Synonymität hindeutet.) Bei dieser Form des Markup hilft die für Common Western Notation im Moment entwickelte automatische Taktmarkierung (Waloschek), da sie ein Festhalten von Phänomenen nicht bloß in abstrakten Koordinaten, sondern auch in Bezug auf ein inhaltliches Modell (hier die in MEI abgebildete Werkstruktur) erlaubt. 
+            
+         Ein zweites Beispiel, das im Falle Mozarts gar zu einem Preisausschreiben geführt hat (Albrecht): Die in der Aufführungspraxis heiß diskutierte Frage nach dem Unterschied zwischen „Punkt“ und „Strich“ in Artikulationsbezeichnungen bzw. die Grundsatzfrage, ob überhaupt ein Bedeutungsunterschied zu konstatieren sei (Brown: 200ff.). Die subjektive Beobachtung, dass z. B. Striche in 
+                forte-Abschnitten eindeutig überwiegen, wäre statistisch und im Hinblick auf bestimmte Zeitabschnitte belegbar. Ebenso die Hypothese, dass besonders deutliche Striche Akzentfunktion haben. Aber für die zahllosen, gerade bei Handschriften kaum unterscheidbaren Zwischenformen wäre zunächst ein auch begrifflich schwer zu differenzierendes Vergleichskorpus anzulegen und zusätzlich auf „Normalwerte“ eines Schreibers zu beziehen (welche zudem von Schreibmittel und beschriebener Oberfläche abhängen), um die Auswertung nicht zu verfälschen. Neben die Auswertung des graphischen Befunds muss außerdem stets eine Auswertung aufführungspraktischer Hinweise in Unterrichts- und Lehrwerken oder erläuternder Texte und Selbstzeugnisse im zeitlichen Kontext treten – trotz des komplizierten Zusammenspiels, das m.E. methodisch die Grenzen unseres Faches überschreitet und auch für die Informatik interessante Modellierungsprobleme bietet, sind hier hilfreiche Erkenntnisse zu erwarten. 
+            
+         Letztlich wird man sich derartigen Interpretationsproblemen von zwei Seiten nähern können: Wenn etwas für bedeutungstragend gehalten wird, sollte es in der Codierung festgehalten (also „be-zeichnet“) werden, um eine Sammlung von Befunden anzulegen, die maschinell leicht akkumulierbar und strukturierbar ist – auf der anderen Seite werden Materialitäts- und Schriftlichkeitsuntersuchungen im großen Stil durch neuronale Netze oder Künstliche Intelligenz erst jetzt (bzw. künftig) sinnvoll durchführbar. Dann können solche Verfahren wirklich zum Rettungsanker zumindest bei ausgewählten Interpretationsproblemen werden. Bisherige isolierte Untersuchungen bergen stets die Gefahr sehr eingeschränkter Gültigkeit, die heute möglich werdende Korpus-Analyse birgt andererseits die Gefahr, dass die Bedingungen des Einzelfalls nicht genügend berücksichtigt sind – zwischen beiden Extremen kann sich künftig eine sinnvolle Nutzung digitaler Techniken bewegen, die mit neuen Mitteln die Spielräume von Interpretation auszuloten versucht. 
+      
+      
+         
+             Links
+            
+               
+            
+            
+               https://music-endocing.org/
+            
+         
+         
+            
+               Bibliographie
+               
+                   Albrecht, Hans (1957): 
+    Die Bedeutung der Zeichen Keil, Strich und Punkt bei Mozart. Fünf Lösungen einer Preisfrage, Kassel: Bärenreiter
+  
+               
+                  Brown, Clive (1999): 
+    Classical & Romantic Performance Practice 1750–1900, Oxford: OUP
+  
+               
+                  Dürr, Walther (2002): „Notation und Aufführungspraxis: Artikulation und Dynamik bei Schubert“, in: 
+    Musikedition. Mittler zwischen Wissenschaft und musikalischer Praxis, hg. von Helga Lühning (Beihefte zu editio 17), Tübingen: Niemeyer, S. 313-327
+  
+               
+                  Edirom  (2005): 
+    Carl Maria von Weber. Sämtliche Werke, Serie VI, Bd. 3: 
+    Kammermusik mit Klarinette, hg. von Gerhard Allroggen, Knut Holtsträter und Joachim Veit. Mit einer digitalen Edition des Quintetts op. 34 von Johannes Kepper u. Ralf Schnieders, Mainz: Schott Musik International
+  
+               
+                  Edirom (2010): 
+    Carl Maria von Weber. Sämtliche Werke, Serie V, Bd. 6: 
+    Konzertante Werke für Klarinette, hg. von Frank Heidlberger. Mit einer digitalen Edition der Werke, erarbeitet von Benjamin Wolff Bohl, Daniel Röwenstrunk u. Joachim Veit unter Mitwirkung von Philemon Jacobsen, Mainz: Schott Musik International
+  
+               
+                  Ertel, Wolfgang (2016): 
+    Grundkurs Künstliche Intelligenz: Eine praxisorientierte Einführung (Computational Intelligence), 4. Auflage, Wiesbaden: Springer Vieweg
+  
+               
+                  OPERA. Spektrum des europäischen Musiktheaters in Einzeleditionen (2013ff.), hg. von Thomas Betzwieser, Kassel: Bärenreiter (bislang 3 Bde.)
+  
+               
+                  Reger, Max (2008–2015): 
+    Orgelwerke. Reger-Werkausgabe, Serie I, Bd. 1–7, hg. von Alexander Becker et al., Kritischer Bericht auf DVD, Stuttgart: Carus
+  
+               
+                  Richts, Kristina /  Veit, Joachim (2018): „Stand und Perspektiven der Nutzung von MEI in der Musikwissenschaft und in Bibliotheken“, in: 
+    Bibliothek – Forschung und Praxis 42 (2) ,S. 291-301
+  
+               
+                  Sahle, Patrick (2013): 
+    Digitale Editionsformen. Zum Umgang der Überlieferung unter den Bedingungen des Medienwandels (Schriften des Instituts für Dokumentologie und Editorik 9), Teil 1: Das typographische Erbe, Teil 2: Befunde Theorie und Methodik, Teil 3: Texbegriffe und Recodierung, Norderstedt: BoD
+  
+               
+                  Schmid, Manfred Hermann (2012): 
+    Notationskunde. Schrift und Komposition 900–1900 (Bärenreiter Studienbücher 18), Kassel
+  
+               
+                  Waloschek, Simon / Hadjakos, Aristotelis / Pacha, Alexander (2019): „Identification and Cross-Document Alignement of Measures in Music Score Images“, in: 
+    Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR), Delft 2019
+  
+            
+         
+      
+   
+

@@ -1,0 +1,408 @@
+
+
+
+    
+        
+            
+                GODDAG: A Data Structure for Overlapping
+                    Hierarchies
+                
+                    
+                        C.
+                        M.
+                        Sperberg-McQueen
+                        Computer Center University of Illinois at
+                                Chicago
+                            cmsmcq@acm.org
+                        
+                    
+                
+                
+                    
+                        Claus
+                        Huitfeldt
+                        
+                            Wittgenstein Archives
+                            University of Bergen
+                            Claus.Huitfeldt@hit.uib.no
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    The success of SGML is based in part on the natural way in which SGML
+                        documents can be regarded as linearizations of trees using a notation
+                        essentially similar to labeled bracketing, and on the natural way in which
+                        the tree so represented can be interpreted as a parse tree or an abstract
+                        syntax tree for the grammar defined in the documents' document type
+                        definition (DTD). The close ties among grammar, tree structure, and
+                        linearization give SGML an intellectual coherence missing from some other
+                        markup schemes.
+                    When it comes to overlapping structures, however, these notions cannot be
+                        applied with the same naturalness.
+                    Therefore, a major challenge to any attempt to provide better support for
+                        markup of overlap is to provide not only a convenient file format for
+                        recording overlap, but also a notation for expressing constraints on
+                        documents with overlap, and plausible data structures for representing
+                        documents with overlap. In this paper we address the third of these
+                        problems.
+                
+                
+                    The GODDAG Structure
+                    Consider the following simple example of a document with overlapping structures:
+                        &lt;s/&lt;a/ John &lt;b/ likes /a&gt; Mary /b&gt;/s&gt;
+                    The sentence John likes Mary is tagged as a sentence (s). The words John likes are tagged as an a, and the words likes Mary as a
+                            b. Because the a
+                        and the b overlap, the document has no
+                        convenient representation in SGML, and no SGML-style tree can be drawn for
+                        it.
+                    However, we can draw the containment relations among s, a, b, and the words
+                        of the text in a natural way. The result is a graph like this: 
+                    The graph resembles a tree, but differs from a tree in that multiple parent
+                        nodes can contain the same child. The multiple parents of such a child are
+                        the elements which overlap in the original document; the child is the scope
+                        of the overlap. For our purposes, overlap is simply multiple parentage.
+                    Graphs like the one just shown may be constructed for any document with
+                        overlapping structures. If a document has no overlaps, the graph reduces to
+                        a tree. If a document does have overlap, the corresponding graph will
+                        preserve as many of the characteristics of the document tree as
+                        possible.
+                    Because the structure described is an acyclic directed graph in which nodes
+                        have ordered descendants, we refer to it as a General Ordered-Descendant
+                        Directed Acyclic Graph (GODDAG).
+                    
+                        Interpretation
+                        The GODDAG structure allows the markup in the source document to be
+                            interpreted in fairly straightforward graph-theoretical terms. The
+                            inheritance from parents to children of claims about properties can be
+                            interpreted just as it can be for a tree structure.
+                        Since elements can have multiple parents, however, rules for multiple
+                            inheritance must be developed by the application or document type
+                            definition. Just as with trees, GODDAG structures provide simple ways to
+                            explain and think about overriding of inherited values and the
+                            coexistence of properties asserted of ancestors and descendants.
+                        The rules of interpretation become more complex than those of standard
+                            SGML, precisely because the GODDAG structure is more complex than a
+                            tree.
+                    
+                    
+                        Spurious overlap
+                        When two elements overlap, they define three distinct regions dominated
+                            by one or the other of the overlapping elements, or both:
+                            &lt;a/ John &lt;b/ likes /a&gt; Mary /b&gt;
+                        If any one of the regions is empty, then the overlap is spurious: the
+                            document can be rewritten without overlap, without changing the
+                            interpretation of any character of the document:
+                            &lt;a/ &lt;b/ likes /a&gt; Mary /b&gt;
+                            &lt;a/ John &lt;b//a&gt; Mary /b&gt;
+                            &lt;a/ John &lt;b/ likes /a&gt; /b&gt;
+                        We define the function leafset as returning
+                            the set of leaf nodes dominated by a given non-leaf node. A GODDAG
+                            structure is clean (lacks spurious overlap) if the following conditions
+                                hold:
+                                If leafset(b) is a proper subset
+                                    of leafset(a), then a path of
+                                    parent-child arcs from a to b exists.
+                                If leafset (b) is equal to leafset(a), then either an arc from
+                                        a to b exists or an arc from b to a exists.
+                            
+                    
+                    
+                        Applications
+                        The major expected applications of the GODDAG structure include:
+                                conditional indexing and processing
+                                extraction of well-formed subtrees and subdocuments from MECS
+                                    documents
+                                removal of spurious overlap from MECS documents and HTML
+                                    documents
+                            
+                        Possible extensions include:
+                                graphs with disordered nodes
+                                graphs representing multiple orderings of data
+                                representation of virtual elements
+                            
+                    
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                    David
+                                    Barnard
+                                 et al
+                            SGML Markup for Literary Texts
+                        
+                        
+                            Computers and the Humanities
+                            
+                                22
+                                4
+                                265-276
+                                1988
+                            
+                        
+                    
+                    
+                        
+                            
+                                    David
+                                    Barnard
+                                 et al
+                            Hierarchical Encoding of Text: Technical Problems and
+                                SGML Solutions
+                        
+                        
+                            Computers and the Humanities
+                            
+                                29
+                                3
+                                211-231
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                    Steven
+                                    J.
+                                    DeRose
+                                 et al
+                            What is Text, Really?
+                        
+                        
+                            Journal of Computing in Higher Education
+                            
+                                1
+                                2
+                                3-26
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    Durand
+                                
+                            
+                            
+                                
+                                    Elli
+                                    Mylonas
+                                
+                            
+                            
+                                
+                                    Steve
+                                    DeRose
+                                
+                            
+                            What should markup really be? Applying theories of text
+                                to the design of markup systems
+                        
+                        
+                            ALLC/ACH'96, Joint Conference of the ALLC and ACH,
+                                Bergen, 1996
+                            
+                                
+                                
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            A Multi-Element Code System
+                        
+                        
+                            Working Papers of the Wittgenstein Archives at the
+                                University of Bergen
+                            
+                                
+                                
+                                
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            Multi-Dimensional Texts in a One-Dimensional
+                        
+                        
+                            Computers and the Humanities
+                            
+                                28
+                                4-5
+                                235-241
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            
+                                
+                                    David
+                                    Durand
+                                
+                            
+                            
+                                
+                                    Elli
+                                    Mylonas
+                                
+                            
+                            Refining our notion of what text really is: The problem
+                                of overlapping hierarchies
+                        
+                        
+                            Research in Humanities Computing
+                            
+                                Oxford
+                                Oxford University Press
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            Guidelines for Text Encoding and Interchange
+                            
+                                Chicago
+                                Oxford
+                                Text Encoding Initiative
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            Concurrent Textual Structures in MECS and SGML
+                        
+                        
+                            Paper read at ALLC/ACH'98 Debrecen, Hungary, July
+                                1998
+                            
+                                
+                                
+                                1998
+                            
+                        
+                        Forthcoming in Literary and Linguistic
+                                Computing, 1999.
+                    
+                
+                Everything we say about SGML in this paper applies to XML as well. For
+                    overviews of overlap-related problems, see Barnard et al. 1988, Barnard et al.
+                    1995, DeRose et al. 1990, Durand et al. 1996, Huitfeldt 1995, Renear et al.
+                    1995, and chapter 31 of the TEI Guidelines. The optional CONCUR feature, which
+                    does allow for multiple concurrent hierarchies in SGML documents, is discussed
+                    in Sperberg-McQueen and Huitfeldt 1998.
+            
+        
+    

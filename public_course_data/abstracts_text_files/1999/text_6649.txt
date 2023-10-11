@@ -1,0 +1,1016 @@
+
+
+
+    
+        
+            
+                The Reliability of Human Disambiguation in Text
+                    Markup
+                
+                    
+                        Kevin
+                        J.
+                        Keen
+                        Department of Epidemiology and Biostatistics Case Western Reserve University
+                            kjkeen@darwin.cwru.edu
+                        
+                    
+                
+                
+                    
+                        Paul
+                        A.
+                        Fortier
+                        Department of French, Spanish, and Italian University of Manitoba
+                            fortier@cc.umanitoba.ca
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Semantic Fields
+                    Studying semantic fields or literary themes in texts confronts researchers
+                        with a paradox. A computer string search will produce a list of the
+                        frequencies of words potentially related to the semantic field. But polysemy
+                        implies an un-measurable difference between the potential allusion and the
+                        real allusion. The semantic field of solitude is
+                        important from sociological and psychological perspectives as an indication
+                        of imperfect adaptation to one's milieu. It is also a frequently occurring
+                        literary theme.
+                    The only practical response is disambiguation by human informants. But the
+                        reliability of such a process is a concern. Singh (1986) and Fokkema (1988)
+                        discuss the matter in a theoretical and speculative mode without systematic
+                        empirical evidence. Nothing bearing directly on the topic can be found in
+                        recent issues of Computers and the Humanities or
+                            Literary and Linguistic Computing.
+                    The correctness of a given choice by an individual informant or rater is
+                        generally unknowable. Usually, such a choice is a matter of degree and
+                        judgment within the cultural context of a language. The consistency of
+                        markup from one informant to another is a likely reasonable touchstone for
+                        assessing the reliability of the disambiguation process.
+                
+                
+                    Data
+                    Nine 20th century novels were chosen for this analysis: Bernanos, Journal d'un curé de campagne, Camus, L'Étranger and La Chute, Céline,
+                            Voyage au bout de la nuit, Gide, L'Immoraliste and La Porte
+                            étroite, Mauriac, Le Noeud de Vipères,
+                        Proust, La Fugitive, and Sartre, La Nausée.
+                    French thesauri identify seventy words (in the sense of lemmata) related to
+                        the concept of solitude. These strings were used to search the texts for
+                        words potentially related to solitude in the ARTFL database. Words centered
+                        in 60 characters of context were given to six informants with minimal
+                        instructions: mark the words, which from a reading of the context, do not
+                        evoke the concept of human solitude and go back to the ARTFL database for
+                        more context in doubtful cases.
+                    Table 1 summarizes the number of allusions to human solitude. Note that the
+                        range of the number of counts of allusions to solitude varies widely
+                        according to the text examined.
+                    To assess the impact of providing a greater amount of context to informants,
+                        300 characters of context from the original text were obtained using the
+                        same set of strings as for 60 characters of context. Identical instructions
+                        were given to six informants--two of whom participated in the first
+                        project.
+                    Table 2 summarizes the number of allusions to human solitude for a context of
+                        300 characters. When a larger context is provided, the range of variability
+                        in the results increases. On the other hand, the consistency of the raters
+                        is slightly improved.
+                
+                
+                    Analysis
+                    The sample intraclass correlation coefficient, denoted as formula ICC(3,1) by
+                        Shrout and Fleiss (1979), has been chosen as the measure of agreement among
+                        the informants. For dichotomous responses, an intraclass correlation
+                        coefficient of one-quarter for a sample consisting of two informants is to
+                        be interpreted to reveal that two informants were in agreement for
+                        twenty-five per cent of the observations after correcting for the
+                        possibility that any agreements of the two informants were entirely due to
+                        chance
+                    The measure of reliability of a sum of responses from a random sample of a
+                        set of a fixed number of raters drawn from a population of raters is known
+                        as the Spearman-Brown prophecy after Spearman (1910) and Brown (1910).
+                        Cronbach's alpha, due to Cronbach (1951), is an estimate of the
+                        Spearman-Brown prophecy.
+                    Both the Spearman-Brown prophecy and Cronbach's alpha are increasing
+                        functions of the intraclass correlation--parameter and statistic,
+                        respectively--and each asymptotically equal 100% in the limit as the number
+                        of raters increases without bound despite the consideration that adding more
+                        raters only increases the chances that everybody will not agree.
+                    Statements made regarding a population based on a sample must be qualified by
+                        a probability clause. The standard choice for a probability clause is such
+                        that the statement be correct in the long run, if the statistical procedure
+                        were to be done unboundedly many times, 95% of the time--or nineteen times
+                        out of twenty. So a measure of the degree of difficulty associated with a
+                        specific text in determining whether there is an allusion to solitude is
+                        given by the minimum number of informants to achieve a value of 95% for
+                        Cronbach's alpha nineteen times out of twenty.
+                
+                
+                    Results
+                    Hypothesis tests revealed statistically significant differences regarding
+                        reliability among the different texts and among the two character-string
+                        lengths. Further exploratory analysis ruled out a particular informant, a
+                        particular part of speech, or a particular class of frequency of use as
+                        being influential.
+                    The 95% confidence intervals for the intraclass correlation coefficient are
+                        given in Table 3 for both 60 character and 300 character groups surrounding
+                        each type. Note that for each novel the confidence interval for rater
+                        reliability is shifted to the left with the 300 character groups compared to
+                        the 60 character groups. With more context, the estimate of reliability
+                        becomes lower.
+                    Note the lack of overlap for the 95% confidence intervals for the two sizes
+                        of character groups for each of the novels by Bernanos, Céline, and Proust.
+                        It is conjectured that as the sample size surrounding each type increases,
+                        there is more opportunity for subjectivity based on personal opinion.
+                    Table 4 presents the number of informants required to achieve 95% for
+                        Cronbach's alpha nineteen times out of twenty for 60 and 300 character
+                        contexts. For each novel, as the size of context increases, the number of
+                        informants required to achieve 95% for Cronbach's alpha increases. Moreover,
+                        the size of a jury to decide whether a word alludes to human solitude with
+                        300 characters of context ought to be no fewer than 45 based on the novels
+                        surveyed.
+                    With respect to literary analysis, note that the novels of Camus have a
+                        greater spread in jury size than those of Gide.
+                
+                
+                    Conclusion
+                    It appears that the use of informants for studying semantic fields, or
+                        literary themes, is justifiable from a statistical perspective. However, the
+                        large numbers of informants or jury members appears prohibitive.
+                        Paradoxically, reliability appears to decrease as the number of characters
+                        of content increases. Further studies are needed to determine whether
+                        increases in reliability can be obtained by changing the focus from a word
+                        to a sentence or longer passage.
+                    These results suggest a high degree of subjectivity when a single individual
+                        scores the semantic content of literary data. The meaning of individual
+                        words in context is a matter of opinion, and cannot be taken as definitive
+                        until a high degree of consensus among a large number of raters or
+                        informants is achieved.
+                
+                
+                    
+                        Table 1Scores for Human Solitude with 60 Characters of
+                            Context
+                        
+                            
+                                Texts
+                            
+                            
+                                raw
+                            
+                            
+                                p1
+                            
+                            
+                                p2
+                            
+                            
+                                s1
+                            
+                            
+                                s2
+                            
+                            
+                                s3
+                            
+                            
+                                s4
+                            
+                        
+                        
+                            BJC
+                            260
+                            68
+                            89
+                            51
+                            44
+                            100
+                            91
+                        
+                        
+                            CET
+                            74
+                            22
+                            19
+                            13
+                            11
+                            23
+                            26
+                        
+                        
+                            CCH
+                            115
+                            32
+                            41
+                            26
+                            31
+                            36
+                            41
+                        
+                        
+                            CVN
+                            488
+                            89
+                            133
+                            78
+                            41
+                            127
+                            153
+                        
+                        
+                            GIM
+                            89
+                            28
+                            42
+                            36
+                            18
+                            47
+                            48
+                        
+                        
+                            GPE
+                            108
+                            26
+                            41
+                            36
+                            26
+                            37
+                            54
+                        
+                        
+                            MNV
+                            159
+                            42
+                            70
+                            47
+                            28
+                            92
+                            71
+                        
+                        
+                            PFU
+                            304
+                            49
+                            80
+                            57
+                            44
+                            82
+                            76
+                        
+                        
+                            SNA
+                            233
+                            111
+                            113
+                            77
+                            86
+                            95
+                            122
+                        
+                    
+                    
+                        Table 2.Scores for Human Solitude with 300 Characters of
+                            Context
+                        
+                            
+                                Texts
+                            
+                            
+                                raw
+                            
+                            
+                                p3
+                            
+                            
+                                p4
+                            
+                            
+                                p5
+                            
+                            
+                                s5
+                            
+                            
+                                s6
+                            
+                            
+                                s7
+                            
+                        
+                        
+                            BJC
+                            260
+                            98
+                            44
+                            154
+                            45
+                            73
+                            51
+                        
+                        
+                            CET
+                            74
+                            23
+                            11
+                            48
+                            6
+                            14
+                            10
+                        
+                        
+                            CCH
+                            115
+                            37
+                            34
+                            61
+                            23
+                            30
+                            26
+                        
+                        
+                            CVN
+                            488
+                            153
+                            64
+                            199
+                            53
+                            85
+                            60
+                        
+                        
+                            GIM
+                            89
+                            42
+                            29
+                            49
+                            13
+                            25
+                            22
+                        
+                        
+                            GPE
+                            108
+                            36
+                            29
+                            49
+                            13
+                            25
+                            22
+                        
+                        
+                            MNV
+                            159
+                            80
+                            32
+                            113
+                            28
+                            41
+                            43
+                        
+                        
+                            PFU
+                            304
+                            68
+                            53
+                            126
+                            49
+                            69
+                            44
+                        
+                        
+                            SNA
+                            233
+                            114
+                            96
+                            151
+                            67
+                            70
+                            79
+                        
+                    
+                    
+                        Table 3.95% confidence interval: intraclass correlation
+                            coefficient
+                        
+                            
+                                Texts
+                            
+                            
+                                60 Characters
+                            
+                            
+                            
+                                300 characters
+                            
+                            
+                        
+                        
+                            
+                            
+                                Lower
+                            
+                            
+                                Upper
+                            
+                            
+                                Lower
+                            
+                            
+                                Upper
+                            
+                        
+                        
+                            BJC
+                            0.56
+                            0.66
+                            0.43
+                            0.54
+                        
+                        
+                            CET
+                            0.48
+                            0.68
+                            0.29
+                            0.51
+                        
+                        
+                            CCH
+                            0.68
+                            0.79
+                            0.54
+                            0.69
+                        
+                        
+                            CVN
+                            0.51
+                            0.59
+                            0.42
+                            0.50
+                        
+                        
+                            GIM
+                            0.40
+                            0.59
+                            0.28
+                            0.48
+                        
+                        
+                            GPE
+                            0.43
+                            0.60
+                            0.33
+                            0.50
+                        
+                        
+                            MNV
+                            0.47
+                            0.60
+                            0.33
+                            0.50
+                        
+                        
+                            PFU
+                            0.63
+                            0.71
+                            0.49
+                            0.59
+                        
+                        
+                            SNA
+                            0.59
+                            0.69
+                            0.48
+                            0.59
+                        
+                    
+                
+                
+                    
+                        Table 4.Number of informants required for a value of 95% or more
+                            for Cronbach's alpha nineteen times out of twenty.
+                        
+                            
+                                Texts
+                            
+                            
+                                60 Characters
+                            
+                            
+                                300 Characters
+                            
+                        
+                        
+                            BJC
+                            15
+                            25
+                        
+                        
+                            CET
+                            19
+                            43
+                        
+                        
+                            CCH
+                            9
+                            16
+                        
+                        
+                            CVN
+                            18
+                            26
+                        
+                        
+                            GIM
+                            28
+                            45
+                        
+                        
+                            GPE
+                            25
+                            37
+                        
+                        
+                            MNV
+                            21
+                            25
+                        
+                        
+                            PFU
+                            12
+                            19
+                        
+                        
+                            SNA
+                            14
+                            21
+                        
+                    
+                    Explanation of Symbols used in the Tables Texts: BJC: Bernanos, Journal d'un curé de campagne CET: Camus, L'Étranger CCH: Camus, La
+                            Chute CVN: Céline, Voyage au bout de la
+                            nuit GIM: Gide, L'Immoraliste
+                        GPE: Gide, La Porte étroite MNV: Mauriac,
+                            Le Noeud de Vipères PFU: Proust, La Fugitive SNA: Sartre, La
+                            Nausée.
+                         Informants: raw: raw solitude data as downloaded from the ARTFL
+                        database s(1-7): French Literature Graduate Student p(1-5): French
+                        Literature Professor
+                    
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    W.
+                                    Brown
+                                
+                            
+                            Some experimental results in the correlation of mental
+                                abilities
+                        
+                        
+                            British Journal of Psychology
+                            
+                                3
+                                
+                                296-322
+                                1910
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Georges
+                                    Bernanos
+                                
+                            
+                            Journal d'un curé de campagne
+                            Oeuvres Romanesques
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    Albert
+                                    Béguin
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1935
+                                1961
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Albert
+                                    Camus
+                                
+                            
+                            L'Étranger
+                            Théâtre, Récits, Nouvelles
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    Roger
+                                    Quilliot
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1945
+                                1962
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Albert
+                                    Camus
+                                
+                            
+                            La Chute
+                            Théâtre, Récits, Nouvelles
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    Roger
+                                    Quilliot
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1956
+                                1962
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    L.-F.
+                                    Céline
+                                
+                            
+                            Voyage au bout de la nuit
+                            Romans
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    H.
+                                    Mondor
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1932
+                                1962
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    J.
+                                    Cohen
+                                
+                            
+                            A coefficient of agreement for nominal scales
+                        
+                        
+                            Educational and Psychological Measurement
+                            
+                                20
+                                
+                                37-46
+                                1960
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    L.
+                                    J.
+                                    Cronbach
+                                
+                            
+                            Coefficient alpha and the internal structure of
+                                tests
+                        
+                        
+                            Psychometrika
+                            
+                                16
+                                
+                                297-334
+                                1951
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Douwe
+                                    Fokkema
+                                
+                            
+                            On the reliability of literary studies
+                        
+                        
+                            Poetics Today
+                            
+                                9
+                                
+                                529-543
+                                1988
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    André
+                                    Gide
+                                
+                            
+                            L'Immoraliste
+                            Romans, Récits, Soties, Oeuvres lyriques
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    Y.
+                                    Davet
+                                
+                            
+                            
+                                
+                                    J.-J.
+                                    Thierry
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1902
+                                1958
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    André
+                                    Gide
+                                
+                            
+                            Porte étroite
+                            Romans, Récits, Soties, Oeuvres lyriques
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    Y.
+                                    Davet
+                                
+                            
+                            
+                                
+                                    J.-J.
+                                    Thierry
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1909
+                                1958
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    François
+                                    Mauriac
+                                
+                            
+                            Le Noeud de Vipères
+                            
+                                Paris
+                                Grasset
+                                1932
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Marcel
+                                    Proust
+                                
+                            
+                            La Fugitive
+                            À la recherche du temps perdu
+                            Bibliothèque de la Pleiade
+                            
+                                
+                                    Pierre
+                                    Clarac
+                                
+                            
+                            
+                                
+                                    André
+                                    Ferré
+                                
+                            
+                            
+                                3 vol.
+                                Pars
+                                Gallimard
+                                1925
+                                1954
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Jean-Paul
+                                    Satre
+                                
+                            
+                            La Nausée
+                            Oeuvres Romanesques
+                            Bibliothèque de la Pléiade
+                            
+                                
+                                    Michel
+                                    Contat
+                                
+                            
+                            
+                                
+                                    Michel
+                                    Rybalka
+                                
+                            
+                            
+                                Paris
+                                Gallimard
+                                1938
+                                1981
+                            
+                        
+                    
+
+                    
+                        
+                            
+                                
+                                    P.
+                                    E.
+                                    Shrout
+                                
+                            
+                            
+                                
+                                    J.
+                                    L.
+                                    Fleiss
+                                
+                            
+                            Intraclass correlations: uses in assessing rater
+                                reliability
+                        
+                        
+                            Psychological Bulletin
+                            
+                                86
+                                
+                                420-428
+                                1979
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Gurbhagat
+                                    Singh
+                                
+                            
+                            The identity of the literary text: Problems and
+                                reliability of reader response: An inquiry into theoretical
+                                positions
+                        
+                        
+                            The Literary Criterion
+                            
+                                21
+                                4
+                                49-57
+                                1986
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    Spearman
+                                
+                            
+                            Correlation calculated with faulty data
+                        
+                        
+                            British Journal of Psychology
+                            
+                                3
+                                
+                                271-295
+                                1910
+                            
+                        
+                    
+                
+            
+        
+    

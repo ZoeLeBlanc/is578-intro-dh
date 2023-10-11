@@ -1,0 +1,211 @@
+
+
+
+    
+        
+            
+                Computer Philology: 'Wissenschaft' or
+                    'Hilfswissenschaft'?
+                
+                    
+                        Jan
+                        Christoph
+                        Meister
+                        
+                            University of Hamburg
+                            jan-c-meister@uni-hamburg.de
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper discusses the problem of the theoretical-methodological status of
+                    Humanities Computing (HC). More particularly it focuses on Computer Philology
+                    (CP), i.e. the computational concepts and techniques dedicated to aspects of a
+                    philological analysis of literary texts. The question guiding my deliberations
+                    is whether CP is a proper ‘Wissenschaft’ in the sense of an emerging
+                    fully-fledged discipline, or rather an ancillary discipline, a
+                    ‘Hilfswissenschaft’ similar to Statistics or Library Science?
+                One can safely say that the practice of HC has begun to establish itself as an
+                    integral part of research and teaching in various disciplines in the Arts and
+                    Humanities. But one must also concede that a consensus regarding the
+                    methodological-theoretical calibre of our undertakings seems to have evaded us
+                    thus far. As a result our own debate seems to retreat more and more onto the
+                    safe ground of pragmatism and technology, or in other words: who cares about the
+                    methodological and philosophical appraisal of HC - as long as it works?
+                I believe that this is a dangerousely narrow focus - if nothing else, it is at
+                    least strategically detrimental to the aim of furthering the
+                    institutionalization of Humanities Computing (HC) at universities. The fact that
+                    Computer Philology (CP) concerns a more narrowly defined and homogenous array of
+                    disciplines than HC makes matters even worse. Any attempt to introduce CP vis à
+                    vis the well defined philological disciplines only accentuates the problem of
+                    the as yet vague methodological status of this ‘newcomer’.
+                For example, at Hamburg University we recently (October 2001) managed to formally
+                    institute a joint ‘Arbeitsgruppe Computerphilologie’ in the Faculties of
+                    Computer Science and the Faculty of Languages. We are clear as to our brief:
+                    introduce modularized course components in CP into the language and literature
+                    curricula. Pragmatic considerations, such as, the aim to equip students with new
+                    skills, as well as the current ‘sexyness’ of computer technology work in our
+                    favor. But we are nevertheless divided as to the more profound philosophical and
+                    methodological arguments on which to ‘sell’ this initiative to colleagues and
+                    students. And or differences do indeed boil down to the very question: Is CP a
+                    proper ‘Wissenschaft’ - or is it rather a ‘Hilfswissenschaft’?
+                Proponents of the latter position hold that CP cannot be a true discipline as it
+                    is neither defined by an exclusive subject matter, or a particular perspective
+                    onto such matter, nor ─ and this would seem the more difficult verdict to
+                    counter - has it as yet produced a new theory of literature, not to mention a
+                    meta-theory reflecting its own axioms and practices. This, for example, is the
+                    opinion of my colleagueWalther von Hahn who approaches the question from the
+                    perspective of the Linguist and Computer Scientist. Von Hahn illustrates his
+                    argument with the following process model:
+                        Figure 1:
+                    
+                The positioning of the CP-block in the bottom left rectangle, and in particular
+                    the orientation of the unilinear arrows in this diagramm clearly demonstrate an
+                    hierarchical organisation: CP is primarily conceived of by von Hahn as a
+                    research practice that is governed by the preceeding formulation of philological
+                    desiderata. These desiderata are identified in the course of the inspection of
+                    textual data (1) which leads to a formulation of specific research questions and
+                    interests (2). Only then can the selection of particular CP-tools (= practices)
+                    take place (3). These are now applied to the data (4) and generate a new
+                    representation of the textual data which in turn are passed back to the
+                    philologist (5) for their eventual interpretation. This interpretation then
+                    feeds back into philological theory and methodology.
+                I would now like to juxtapose the underlying hypothesis - e.g., CP as a
+                    ‘Hilfswissenschaft’ - with conclusions drawn from my own research into computer
+                    based analysis of narrated action, a 7-year project concluded in early 2001
+                    (components of this project were presented at the ALLC conferences Paris 1994 /
+                    Virginia 1999.)
+                I initially set out to analyse the structural features of narrated action, with a
+                    view to formulating a model of ‘minimal action structures’, that is, the least
+                    complex yet logically coherent and context-idenpendent sequence of narrated
+                    events. I had found that there was no hard and fast theory on what actually
+                    constitutes a coherent piece of narrated action ─ the problem was either being
+                    discussed in terms of the conditions for achieving narrative ‘closure’, or in an
+                    altogether impressionistic and intuitive way. The only models and partial
+                    definitions useful to me were those developed in Formalism and Structuralism,
+                    schools of thought to whom the graphic respresentation of narrated action in the
+                    form of tree-and-nodes diagrams is fairly common (and owed to generative models
+                    imported from structural linguistics). Then I happened to stumble upon an
+                    article by Alain Colmerauer which gave a brief description of the AI-language
+                    PROLOG and illustrated it by way of a tree diagram. The visual analogy between
+                    an action- and a PROLOG-tree pointed me to the conceptual analogy, and the
+                    possibility to use a computer to model a minimal coherent action in a narrative,
+                    i.e., an EPISODE in the logical sense.
+                Up to this point my project had thus proceeded more or less along steps 1 to 3 of
+                    van Hahn’s process model. The real problem ─ and challenge! ─ however was that
+                    the two blocks in the bottom left box turned out to be - empty containers: there
+                    was no developed theory or model dealing with my particular research problem
+                    available in HC/CP; there were also no established practices to apply. The
+                    bottom line was that I had to design and program a mark-up tool before I could
+                    even begin to model action structures by running a combinatory PROLOG-algorithm
+                    on the meta-data.
+                In more abstract terms, I had found myself confronted with what I now regard as
+                    the most important methodological principle to be elaborated upon in the
+                    methodological-theoretical appraisal of CP. The type of questions considered
+                    relevant in the philologies normally require a semantic mark-up of the ‘raw’
+                    textual data; the mere digital representation of non-numeric data (unless it is
+                    confined to a purely statistical distribution analysis) does not provide access
+                    to semantic phenomena. However, the process of data mark-up, subsequent analysis
+                    and modeling of meta-data, and eventual evaluation of the model in itself also
+                    presupposes that the philologist has identified not just a philological, but
+                    also a ‘computational’ frame of reference - in other words, the computer
+                    philologist is not just picking tools from a box and applying these to old
+                    questions. He or she must rather reconceptualize the research problem in a new
+                    light before the tool’s aspect even comes into play.
+                As for my own project, this is how I would therefore schematize its
+                    methodological architecture:
+                        Figure 2:
+                    
+                In comparing von Hahn’s to my own diagram I come to the following
+                        conclusions:
+                        The interdependency between the tools and practices of CP on the one
+                            hand, and the textual data on the other involves a hidden ‘third party’
+                            - a conceptual frame of reference novel to the philologies.
+                        The two-step representational transformation from textual data to
+                            meta-data, and then from meta-data to philological interpretation,
+                            therefore cannot be thought of as governed exclusively by conceptual
+                            models drawn from philological theory and methodology. The import of the
+                            ‘foreign’ conceptual model informs the entire research architecture
+                            throughout; it is as essential to the design of the transformational
+                            processes as it is to the eventual interpretation of the transforms
+                            generated.
+                        The key intellectual prospect of the development and integration of CP
+                            into the methodological ambit of the philologies proper is not the fact
+                            that, because of deploying computer technology, one can in certain cases
+                            analyze and model textual data faster, more coherently, or on the basis
+                            of more explicit (and thus transparent) interpretive and/or cognitive
+                            algorithms. What seems far more important is that we are offered new
+                            frames of reference as to how to conceptualize and model text-based
+                            phenomena.
+                        Computer Philology undisputedly ‘has’ tools and practices - but it
+                            ‘is’ more than these: neither a proper ‘Wissenschaft’, nor an
+                            a-theroretical ‘Hilfswissenschaft’, its methodological status is that of
+                            a new philological heuristics.
+                    
+                Part of the problem of how to adequately define the methodological status of HC
+                    and CP might, in fact, stem from the tendency to confound two meanings of the
+                    term ‘computer’. When we focus on tools and practices in CP we refer to the
+                    machine ‘computer’ in a very literal sense - hence the pragmatists’ attempt to
+                    define CP per se in this vein. But ‘computer’ is also a metaphor, like ‘book’ or
+                    ‘image’, that stands for a particular mode and method of symbolic
+                    representation. In the philologist’s case it is a metaphor for a very specific
+                    reconceptualization of the phenomenon of ‘text based meaning’: one that aims at
+                    bridging the gap between the qualifiable, and the quantifiable. Whether that
+                    ‘metaphor’ is run on a Cray or on paper and pencil is not really the key
+                    question.
+            
+        
+    

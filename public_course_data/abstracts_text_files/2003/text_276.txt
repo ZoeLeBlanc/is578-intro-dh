@@ -1,0 +1,434 @@
+
+
+
+    
+        
+            
+                Data or Document? Migration of Descriptive Metadata for
+                    Medieval and Renaissance Manuscripts Between Data-Centric and Document-Centric
+                    Models: A Case Study
+                
+                    
+                        Elizabeth
+                        J.
+                        Shaw
+                        
+                            Aziza Technology Associates
+                            ejshaw@azizatech.com
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    This paper will discuss a case study of the dual direction migration of
+                        metadata describing medieval and renaissance manuscript collections between
+                        the Digital Scriptorium database schema and an XML DTD developed to encode
+                        extant manuscript descriptions. This discussion highlights the challenges
+                        and tensions that exist in trying to merge data that is captured in
+                        different data models, roughly categorized as data-centric and
+                        document-centric. The observations garnered from this study may have broader
+                        implications for other efforts to meld distinct descriptive models for
+                        unitary searching and resource discovery.
+                
+                
+                    CONTEXT
+                    The author was hired by Digital Scriptorium to:
+                            1)provide XML —> HTML XSLT transformations of an electronic
+                                version of the Huntington Library “Guide to Medieval and Renaissance
+                                Manuscripts” which has been encoded in the TEI Medieval Manuscripts
+                                Description Work Group (TEI MMSS) draft DTD ,
+                            2) migrate data from the existing Digital Scriptorium database to
+                                the the draft DTD and
+                            3) migrate the TEI-MMSS encoded “Guide” to the Digital
+                                Scriptorium’s existing database schema.
+                        lIn the context of this work, many interesting challenges have come
+                        to light.
+                    The Digital Scriptorium database schema and the TEI MMSS draft DTD are
+                        closely allied since some of the same people worked on both data models.
+                        However, significant differences exist in nomenclature and structuring of
+                        the data, both because the TEI MMSS DTD is an extension of TEI and because
+                        the purpose of the TEI MMSS DTD is to allow for the capture of extant
+                        descriptive information. The database schema, created prior to the DTD is a
+                        more constrained data model and uses slightly different elements and
+                        nomenclature for its basis.
+                
+                
+                    DESCRIPTIVE TRADITIONS
+                    Although the library community has largely settled on a particular
+                        record-based model for descriptive information (the MARC record and AACR2)
+                        about printed works, serials and selected media, many communities of
+                        practice that have need of description to facilitate resource discovery and
+                        scholarship have no such common standard. In many cases, a narrative form of
+                        description has evolved in an attempt to capture the particular descriptive
+                        needs of the curators and users of the materials. Descriptive practice in
+                        disciplines such as manuscript collection or archives has varied greatly
+                        across nations, institutions and within individual institutions over time.
+                        This evolution has largely been dependent on the interests, energies and
+                        capabilities of individual curators.
+                    Furthermore, descriptive practice varies greatly between communities of
+                        practice because of the particular characteristics of the disciplines that
+                        they support. Both the elements of description fundamental to supporting
+                        work and the nature of their expression may be unique. That these
+                        descriptive needs vary greatly has become more obvious as efforts to develop
+                        single metadata standards or standards that easily map across disciplines
+                        have had limited success.
+                    Nonetheless, these communities often face similar problems as they attempt to
+                        migrate their formerly print based description to an electronic form that
+                        can be shared across institutions. Each community must revalidate what
+                        aspect of description is important to the work of the community, 2) define a
+                        common way of expressing information about those important things and 3)
+                        develop a model that accurately captures that information. The work must be
+                        done in an environment with no uniform extant practice and differing
+                        philosophies about the nature, scope and role of description in the
+                        discipline. This paper will focus on two approaches to capturing significant
+                        descriptive data within the same discipline and examine the challenges in
+                        merging the two.
+                
+                
+                    DATA-CENTRIC VS. DOCUMENT CENTRIC DATA MODELS
+                    The numerous schemes for descriptive metadata that have emerged since the
+                        advent of the web vary greatly in their scope, complexity and underlying
+                        assumptions about the nature of descriptive practice. Ronald Bourret’s
+                        article XML and Databases and his associated materials provide an
+                        interesting framework from which to view these different approaches to
+                        capturing descriptive metadata. The emerging practices might be categorized
+                        into two distinct models:
+                            Data-Centric models: These record-like
+                                models capture discrete data elements in a structure that is well
+                                represented in a flat or relational model (ie. Dublin Core, MARC).
+                                Often these flat or relational representations atomize data at the
+                                most discrete levels at which one might manipulate it. Some require
+                                or enforce the normalization of the data, institute data typing and
+                                constrain the syntactical expression in which it is represented. The
+                                Digital Scriptorium database schema follows this record-like model,
+                                though without some of the rigor of syntax that is required in a
+                                MARC record.
+                            Document-Centric models: These models
+                                capture more narrative or discursive, often complex, hierarchical
+                                descriptions. Often, they allow considerable flexibility in what
+                                data elements are required, the form in which data is expressed, and
+                                rarely (especially prior to the advent of XML Schema) utilize data
+                                typing to constrain the expression of information.
+                        
+                    These document-centric models may further be categorized as those that
+                        provide a representation of an idealized model of descriptive practice and
+                        those that represent extant descriptive practice. Those that attempt to
+                        capture an electronic edition of an extant description are often the least
+                        rigorous in their requirements for data elements and normalization because
+                        of the need to accommodate heterogenous practice. The tension between
+                        representing an idealized model of a particular document structure—either to
+                        facilitate machine processing of the data or to enforce practice in a
+                        community—and providing a model that captures existing representations has
+                        been discussed extensively by authors such as Piez and in efforts to develop
+                        data models such as the TEI dictionaries DTD
+                
+                
+                    CAPTURING EXTANT DESCRIPTION
+                    Although document-like descriptions from various institutions and time frames
+                        seem similar in format they often contain distinctly different elements of
+                        description in distinct orders and with variant nomenclature. This has
+                        presented challenges to the developers of DTDs and schemas that attempt to
+                        capture descriptive metadata in these communities of practice. DTDs such as
+                            Encoded Archival Description (EAD) and the
+                        TEI MMSS draft DTD are explicitly designed to accommodate a variety of
+                        extant descriptive practice rather than constrain practice to the schema
+                        developers’ prescribed notions of practice.
+                    The extant documents that are encoded using these models often differ greatly
+                        from their record-like cousins. Narrative and complex, they utilize indirect
+                        reference, inference from context (the description of a manuscript written
+                        in French may never explicitly state the language in which it is written,
+                        assuming that the reader can discern from the quoted text imbedded in the
+                        description), inference from relationships to siblings or parent elements,
+                        and assumptions about relationships of the parts of the description that are
+                        not explicit. Although a human reader can infer these relationships, the
+                        lack of explicitness makes it more difficult to capture characteristics of
+                        the described object in machine processable ways. To capture this
+                        information explicitly requires modifying the extant description.
+                        Data-centric models tend to capture this information in explicit ways from
+                        the start.
+                
+                
+                    MIGRATING DATA
+                    Many practitioners and users of existing descriptive material find that even
+                        when description is reworked by knowledgeable humans in order to import it
+                        to a data-centric metadata representation, the records fail to capture
+                        significant information that is embedded in the narrative of these extant
+                        descriptions. In many cases, the original cataloger has specialized
+                        knowledge of either the collection being described or of the field of study.
+                        References to other significant or related work, connections between objects
+                        in the collections are often lost in their transformation to data-centric
+                        descriptions
+                    Tensions between models for capturing descriptive metadata are often
+                        amplified at the point at which migration occurs. Automated efforts to
+                        migrate encoded extant description have met with mixed success. Chris Prom’s
+                        migration of EAD encoded descriptions to Dublin Core RDF records for
+                        importation into a cultural heritage OAI database points to some of the
+                        problems inherent in automated migration of extant data. Lundberg discusses
+                        the implications for information retrieval of data encoded in XML.
+                
+                
+                    THE DIGITAL SCRIPTORIUM: CASE STUDY
+                    This paper reports on the outcomes of the effort to automate the migration of
+                        data captured in two distinct models and the resulting implications for
+                        resource discovery. The paper describes:
+                            the differing data models,
+                            the process by which the migration occurred,
+                            the challenges faced both in migration from relational database to
+                                XML and in migration from XML to a relational database model,
+                            the development of a relational database model that attempts to
+                                capture both the XML encoded manuscript descriptions as well as the
+                                data in the existing database
+                            the trade-offs in these various representations and
+                            the implications for information display and resource
+                                discovery.
+                        
+                    By highlighting points of ambiguity, strengths and weaknesses of the
+                        different approaches to metadata capture and challenges in merging the data
+                        into the same repository, it is hoped that this study will inform the work
+                        of others who face similar challenges in their efforts to provide
+                        descriptive metadata to their user communities.
+                
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Ronald
+                                    Bourret
+                                
+                            
+                            XML and Databases
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Digital Scriptorum
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Digital Scriptorium Database Schema
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Encoded Archival Description
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Sigfrid
+                                    Lundberg
+                                
+                            
+                            Excursions along the border between metadata for
+                                resource discovery and for resource description
+                        
+                        
+                            
+                            
+                                
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Wendell
+                                    Piez
+                                
+                            
+                            Beyond the ‘descriptive vs. procedural’
+                                distinction
+                        
+                        
+                            Extreme Markup Languages
+                            
+                                Montreal, Canada
+                                
+                                2001
+                                197-214
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christopher
+                                    Prom
+                                
+                            
+                            Does EAD play Well with Other Metadata Standards?:
+                                Searching and Retrieving EAD using the OAI Protocols
+                        
+                        
+                            Journal of Archival Organization
+                            
+                                1
+                                3
+                                
+                                2003
+                            
+                        
+                        (Forthcoming).
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            TEI dictionaries DTD
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            TEI Medieval Manuscripts Description Work Group (TEI
+                                MMSS) draft DTD
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

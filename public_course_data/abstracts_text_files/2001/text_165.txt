@@ -1,0 +1,274 @@
+
+
+
+    
+        
+            
+                Technical aspects of the production process of digital
+                    books using XML-TEI at the Miguel de Cervantes digital library
+                
+                    
+                        Alejandro
+                        Bia
+                        Miguel de Cervantes Digital Library, University of Alicante
+                            abia@dlsi.ua.es
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+
+                
+                    
+                        digital libraries
+                        markup
+                        workflow
+                    
+                
+            
+        
+
+    
+    
+        
+            
+                
+                    We describe the digital-book production process followed at the Miguel de
+                        Cervantes Digital Library, from book acquisition up to Internet publishing,
+                        highlighting the main requirements and design considerations of the workflow
+                        system.
+                    Our library covers many different areas, from a "library of voices" up to
+                        academic thesis and it includes all kinds of multimedia material: text,
+                        images, audio and video. However, the vast majority of our resources are in
+                        text format. These are our 4000 digital books, public domain Hispanic
+                        classics, from the twelfth century up to these days, including narrative,
+                        theater, poetry, history and other subjects. Many professionals and
+                        technicians take part in the development of our digital books: librarians,
+                        scanner operators, correctors, markup specialists and computer technicians.
+                        The poster describes the production process of the digital books and allows
+                        the discussion of markup issues concerning our approach using XML-TEI
+                        encoding.
+                    
+                        Architecture of the digital-book production process
+                    
+                    The production process begins with a bibliographic search to find interesting
+                        available books to digitize. After selecting new literary works to add to
+                        the collection, the librarians elaborate the orders to be sent to various
+                        sources (conventional libraries, bookstores, publishers, private collectors
+                        in the case of rare books, etc.).
+                    Bibliographic information associated to each book is stored into a catalogue
+                        database This information is used for many purposes: it helps in the control
+                        of both the production process and the publication process, it allows
+                        catalogue searches, and is provided to the readers in the form of a digital
+                        bibliographic card accessible through the Internet.
+                    The source physical books and the produced digital books do not always relate
+                        in a one-to-one basis. In some cases, a physical book will give birth to
+                        many digital books as is the case of collections or "complete works" that
+                        may be split into several digital books (In a DL there is no reason to group
+                        different literary works as it is done on a printed book, since the criteria
+                        used for traditional books do not apply to their digital siblings. However,
+                        there are exceptions. Literary experts may decide to group poems from
+                        different collections into a single digital book.). Titles may differ also
+                        since some works are known by many titles according to different editions. 
+                    Upon reception, the books are cataloged. Information like subject, authors
+                        and collaborators, universal decimal classification and search keys that
+                        will simplify the location and retrieval of the books is stored in a
+                        database. At this point, the production process begins. The librarians mark
+                        the received source titles as available for processing and a unique code
+                        that will identify the d-book permanently is assigned. This code is used
+                        within the workflow system, and also in the names of all the files related
+                        to the book (during production and also for publication purposes).
+                    At every stage of the production process start and end date-time information
+                        is recorded along with the operator identification for follow up and
+                        production control purposes. At any time, the librarians can access the
+                        records of the d-books under development to modify bibliographic-catalogue
+                        information.
+                    The resulting output of the scanning process is a set of files of two
+                        classes: first, scanned images, and then optical character recognition
+                        (OCR), text documents. The former are stored in backup media for future
+                        projects. The latter, after an automatic error recovery process, are passed
+                        to the correction stage.
+                    At quality control, if too many errors are detected, measures are taken to
+                        adjust the scanning-OCR process to improve the resulting output, since a
+                        high rate of mistakes rise the time-cost of the rest of the process.
+                    As our library handles books of many centuries of Hispanic literature
+                        (including Spanish, Catalan and Galician languages), peculiar problems arise
+                        which are not trivial, like the spell-checking of ancient writings. Projects
+                        to tackle this time-dynamics of language are being carried out by our
+                        research team.
+                
+                
+                    Correction
+                    The next stage is correction, where specialists in literature, history and
+                        linguistics use a text editor to correct not only OCR errors but also
+                        mistakes in the original publication, sometimes making side-by-side
+                        comparisons among different editions.
+                    Although some works of long extension, may be fragmented to facilitate the
+                        correction task, it is desirable that a single person corrects each book, to
+                        take advantage of the specialized knowledge she/he acquires during the
+                        correction process of its contents and its peculiarities.
+                    If the work was fragmented for correction, the markup operator joins the
+                        fragments. It is also advisable that the markup be accomplished by the same
+                        person that performed the correction, due to her/his familiarity with the
+                        contents, but sometimes a different highly skilled markup specialist may be
+                        preferred. So the system was designed to allow flexibility of task
+                        assignment.
+                
+                
+                    Markup
+                    Markup, consists of applying marks that describe the structure of the
+                        documents, and also marks that indicate how the digital book should be built
+                        later. These marks are concerned with index inclusion, chapter
+                        fragmentation, hypertext linking and graphics insertion, among others.
+                    One of our goals is to automate the markup process as much as possible. In
+                        this sense, we have built parsing programs to convert documents from the two
+                        major commercial text editors to TEI-XML, making use of the style
+                        information to locate headings, deduct division borders, add TEI paragraph
+                        marks, as well as &lt;text&gt;, &lt;front&gt; and &lt;body&gt; marks. The
+                        result is an almost valid XML document, whose markup must be corrected and
+                        completed. The markup effort is reduced substantially in this way, since the
+                        most common tags like &lt;p&gt; are automatically added. Partial markup
+                        processes like these save time, since they add the most common markers, and
+                        generate almost-always valid (or valid with a few corrections) XML documents
+                        to start with.
+                    After markup, documents undergo a final revision before being passed to the
+                        following stages. Documents that pass this check are considered final
+                        products, and are preserved and backed-up accordingly.
+                    From this point on, processing is automatic, and although we now generate a
+                        few publishing formats, we expect to generate many more based on these
+                        revised corrected marked-up files.
+                    
+                        Generation of different file formats from XML-TEI
+                    
+                
+                
+                    Generation and publishing
+                    Finally, the digital book generation stage is a fully automated process where
+                        marked-up XML-TEI files are processed by a parsing program that produces
+                        HTML digital book files ready for immediate Internet publishing.
+                    The use of templates allows us to generate different sets of books with the
+                        same look and functionality within a given set, and a different look and
+                        functionality for other sets. We use this approach to maintain several
+                        different portals of the same digital library: the original one, Miguel de
+                        Cervantes with books in Spanish language, the Joan Lluis Vives with books in
+                        Catalan language, and many others.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            Guidelines for Electronic Text Encoding and Interchange
+                                (Text Encoding Initiative P3)
+                            Revised Reprint, Oxford, May 1999
+                            
+                                Chicago - Oxford
+                                Text Encoding Initiative
+                                May 1994
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            Alejandro
+                                    Bia
+                            Andrés
+                                    Pedreño
+                            The Miguel de Cervantes Digital Library: The Hispanic
+                                Voice on the WEB
+                        
+                        
+                            Literary &amp; Linguistic Computing
+                            
+                                
+                                
+                                
+                                (to be published soon)
+                            
+                        
+                        Presented at ALLC/ACH 2000, The Joint International Conference of the
+                            Association for Literary and Linguistic Computing and the Association
+                            for Computers and the humanities, 21/25 July 2000, University of
+                            Glasgow.
+                    
+                    
+                        
+                            M.
+                                    Lousa
+                            A.
+                                    Sarmento
+                            A.
+                                    Machado
+                            Expectations towards the adoption of workflow systems:
+                                the results of a case study 
+                        
+                        
+                            Proceedings of the Sixth International Workshop on
+                                Groupware: CRIWG 2000
+                            
+                                
+                                
+                                2000
+                            
+                        
+                    
+                
+            
+        
+    

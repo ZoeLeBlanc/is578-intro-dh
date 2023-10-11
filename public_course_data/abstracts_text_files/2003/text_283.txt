@@ -1,0 +1,683 @@
+
+
+
+    
+        
+            
+                Computational Generation of Limericks
+                
+                    
+                        Greg
+                        Lessard
+                        
+                            Queen's University
+                            lessardg@qsilver.queensu.ca
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    FOREWORD
+                    
+                        A program called VINCI from Queen's
+                         Employs computational means
+                        To make metre and rhyme
+                        In right to left time
+                        So limericks appear on your screens.
+                    
+                    
+                        The people attending this session
+                        We hope will have gained the impression
+                         That these powerful tools,
+                        With appropriate rules,
+                        Can give rise to poetic expression!
+                    
+                
+                
+                    BACKGROUND
+                    There is evidence that the generation of at least some classes of humour is a
+                        rule-governed activity, formalisable in terms of algorithms, and
+                        implementable computationally in order to generate actual humorous
+                        utterances. In earlier work, using the VINCI natural language generation
+                        environment, we have shown this to be the case for several subclasses of
+                        verbal humour, including Tom Swifties and several classes of riddles. (See
+                        Lessard &amp; Levison, 1992, 1993, 1995, 1997). Others have done similar
+                        work (see for example Binsted &amp; Ritchie, 1997). This does not mean
+                        that we suppose the specific algorithms used in generation to exist as
+                        internal mental representations in speakers, but only that the productions
+                        observed in humans admit of formalisation.
+                    It must be admitted, however, that puns and riddles form instances of what is
+                        often called verbal humour. This is typically non-narrative, based on
+                        relatively simple paradigmatic lexical relations, and usually evaluated in
+                        terms of cleverness rather than funniness. (See Lessard, Levison &amp;
+                        Venour, 2002, for a discussion of the distinction.) Instances of verbal
+                        humour are in many respects inherently simpler than more narrative
+                        structures like jokes. Limericks, on the other hand, presuppose at least a
+                        primitive narrative structure. As such, they provide a useful proving ground
+                        for more advanced work on both language generation (since it is necessary to
+                        take account of textual coherence) and humour generation (since narrative
+                        structure is involved).
+                
+                
+                    LIMERICKS
+                    Limericks may be characterised generally as five-line verses with the aabba
+                        rhyme scheme, one of a range of metrical foot structures, and some attempt
+                        at humour or at least cleverness. (For discussion, see Bibby, 1978). A
+                        typical example will illustrate the model:
+                    
+                        There was an old man from Peru
+                        Who dreamt he was eating his shoe
+                        He awoke with a fright
+                        In the midst of the night
+                        And found it was perfectly true.
+                    
+                    Taken as a subset of more general poetic language, limericks confront us with
+                        a number of practical problems, but also with a number of theoretical
+                        challenges when they are compared with prose-based natural language
+                        generation. For example, traditional approaches to text planning and
+                        generation tend to be driven by conceptual and syntactic rather than
+                        metrical structure. This is unsurprising when one considers that the object
+                        of most systems of the sort is to represent some encyclopedic or
+                        data-base-like description of some state of affairs in a discursive format.
+                        In such a context, the primary factors to be considered include the model of
+                        the user (see for example Paris, 1993), the overall structure of the text
+                        plan (see for example McKeown, 1985), paragraph-level phenomena (see for
+                        example Mann, 2002), and problems of reference (see for example Dale,
+                        1992).
+                    As a consequence, planning tends to be top-down (from universe of discourse,
+                        to dialogue model, to context, to overall text, to paragraph, to sentence)
+                        and many of the phenomena to be dealt with (anaphora, for example) can be
+                        examined in a left-to-right sequence. This has meant that conceptual tools
+                        such as phrase structure grammars or their variants have provided sufficient
+                        power to deal with the problems raised. Even phenomena such as freer word
+                        order may be captured in such systems by means such as the splitting apart
+                        of linear precedence and immediate dominance as in formalisms like
+                        Generalized Phrase Structure Grammar (Gazdar et alii, 1985).
+                    The production of poetic text, on the other hand, requires that content be
+                        filtered by metrical and phonological factors such as the number of
+                        syllables, stress, and rhyme. A particularly interesting consequence of this
+                        fact is that generation must take account of the ends of lines in the
+                        production of the beginning and middle. For example, in the case of the
+                        limerick quoted above, we may represent the syllable structure as follows,
+                        where s represents an unstressed and S a stressed syllable:
+                    It can be seen that the first, second and fifth line contain an iamb followed
+                        by two anapests, while the third and fourth lines contain two anapests. In
+                        addition, rhyming lines (Peru-shoe-true) must end on the same stressed
+                        syllable nucleus and coda (to use the terminology of metrical phonology (see
+                        for example Hogg, 1987). Note that these are not necessarily lexical items:
+                        in the first, second and fifth lines, the sequences “his shoe” and “-ly
+                        true” rhyme with “Peru”.
+                
+                
+                    GENERATION
+                    A full analysis of the semantic, syntactic, lexical and phonological
+                        relations found in the limerick would take more space than is available
+                        here. However, from the generative perspective, it is possible to imagine
+                        three mechanisms to satisfy this constellation of constraints:
+                            1. exhaustive generation: in essence, if we define a set of
+                                templates, we can generate large numbers of instances of potential
+                                limericks and ask a human to select those few judged to be of good
+                                quality. (This is the monkeys typing Shakespeare model, or Borges’
+                                library.)
+                            2. initial generation followed by tweaking: we may also begin by
+                                producing a sequence of lines and then selectively edit these to
+                                approach the target of an acceptable limerick, by means of the
+                                addition, removal or shifting of items. This may be how human poets
+                                work: it is how we produced the limericks at the head of this
+                                abstract. (Valéry is said to have claimed that the first line of a
+                                poem was a gift of the gods and that the remainder was the product
+                                of the poet's craft and efforts.) Since the edit operations
+                                described above are well-known in the computational context, it is
+                                not impossible to imagine their implementation.
+                            3. right-to-left generation: given the direction of the
+                                constraints in limericks, a possible computational model involves
+                                the selection of the right-most elements of a sequence of lines as a
+                                starting point and then within each line, the
+                                constraint-satisfaction generation of the intervening elements
+                                required to flesh out the entire limerick.
+                        
+                    In fact, these right-to-left formal constraints must interact with top-down
+                        constraints which govern the semantic coherence of the text. In other words,
+                        in order for the limerick to be coherent, the narrative events which it
+                        includes must be consistent with the subject. These thematic constraints may
+                        be fairly loose, as in the Old Man from Peru poem, where there is no
+                        particular logic which attaches old men from that part of South America and
+                        the ingestion of footwear (although more generally, the poem respects the
+                        constraint that old men are humans and that humans eat food which is a
+                        subset of tangible objects, and that footwear is also a subset of tangible
+                        objects). On the other hand, they may be quite tight, as in the VINCI
+                        limericks, which capture a set of characteristics of the software (its
+                        origin, the architecture of the program). Compare as well Bibby’s attempts
+                        to produce limericks appropriate to each of the Cambridge colleges.
+                    The limerick thus represents the semantic expansion from one or more initial
+                        lexical choices, by means of the selection of traits or actions which are at
+                        least consistent with these. This presupposes a rich representation of the
+                        characteristics of each lexical item, including both high-level semantic
+                        traits such as that between humans, eating and objects, but also more
+                        encyclopedic ’information, such as the fact that VINCI is a program produced
+                        at Queen's. (See Peeters, 2000 for a discussion of some of the problems
+                        found at this ‘lexicon-encyclopedia interface’). Note also that a
+                        sufficiently rich set of traits will provide the seed for variant limericks
+                        based on the same starting point. Consider for example the following example
+                        by Edward Lear:
+                    
+                        There was an Old Man of Peru,
+                        Who watched his wife making a stew;
+                        But once by mistake,
+                        In a stove she did bake,
+                        That unfortunate Man of Peru.
+                    
+                    At the formal level, problems arise both between lines (rhyme) and within
+                        lines (metrical structure). Consider the latter in the context of the
+                        initial old man from Peru poem. Let us assume that we have determined to use
+                        a metrical structure based on an iamb and two anapests and that we have
+                        selected the the place-name Peru. At this point, we have used up two of the
+                        eight available syllables. We also know that the next earliest syllable must
+                        be unaccented. The solution found here is “from”. At this point, we know
+                        that we have a prepositional phrase “from Peru” which requires (among other
+                        choices) a noun phrase with the appropriate accent structure. This
+                        constraint is satisfied here by “an old man”). However, in order to verify
+                        that this noun phrase is appropriate, we must have knowledge of its metrical
+                        structure. For example, if the target were an iamb, we would need to seek,
+                        among other possibilities, a DET N structure. This application of
+                        constraints cascades right to left until the overall metrical target is met,
+                        within the semantic constraints already specified
+                
+                
+                    IMPLEMENTATION
+                    In the conference presentation, we will illustrate the implementation of the
+                        approach described above using the VINCI natural language generation
+                        environment (see  for
+                        details). Briefly, VINCI allows for the initial specification (PRESELECTION)
+                        of a constellation of lexical items which may be constrained by semantics,
+                        morphological and syntactic characteristics, and phonology. Preselected
+                        items, as well as all their characteristics, are available to subsequent
+                        steps of the generation process. Among other things, this allows for
+                        multiple layers of preselection, in which a first item determines a set of
+                        rhyme constraints, as well as a set of semantically appropriate
+                        elements.
+                    Within each line of the limerick, and between lines, the VINCI mechanism of
+                        GUARDED SYNTAX allows the control of subsequent steps of the overall
+                        generation to be conditioned by the framework existing at that point. (A
+                        simple example of guarded syntax: if a noun phrase node carries the
+                        attributes ‘first person’ or ‘second person’, then its children may only be
+                        instantiated by a pronoun, whereas if the parent node carries the attribute
+                        ‘third person’, then the children may be pronouns, full noun phrases, or
+                        proper names.) Applied to the production of a limerick, and assuming
+                        right-to-left generation, if the parent node of a tree contains a
+                        prepositional phrase which sums to an anapest, then the next left-most chunk
+                        of syntax must inherit this information and construct an appropriate item
+                        from a library of possible patterns.
+                    One consequence of this model is that syntax is reduced from a single
+                        overarching tree to the sum of a number of possible micro-trees. Such an
+                        approach is comparable to the model of Tree Adjoining Grammars, in which
+                        insertion and development occurs at the level of lexical-based subtrees (see
+                        Joshi &amp; Schabes, 1997). It is also somewhat similar to the Labelled
+                        Deductive System approach used in parsing by Kempson et alii, 2001. Another
+                        consequence is that by precluding tweaking and editing, the system itself is
+                        forced to deal with the interplay of linguistic levels and constraints,
+                        without human assistance, thus providing an acid test for both the model and
+                        the implementation. Of course, this leaves aside the question of evaluation,
+                        itself a thorny issue, since the criteria used are many, varied and probably
+                        fuzzy as well. In related work, we are examining the ability of humans to
+                        learn how to produce limericks, as well as their ability to evaluate
+                        them.
+                
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Harold
+                                    Cyril
+                                    Bibby
+                                
+                            
+                            The Art of the Limerick
+                            
+                                Hamden, Conn.
+                                Archon Books
+                                1978
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Kim
+                                    Binsted
+                                
+                            
+                            
+                                
+                                    Graeme
+                                    Ritchie
+                                
+                            
+                            Computational rules for punning riddles
+                        
+                        
+                            Humor
+                            
+                                10
+                                1
+                                25-76
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Robert
+                                    Dale
+                                
+                            
+                            Generating referring expressions: constructing
+                                descriptions in a domain of objects and processes
+                            
+                                Cambridge, Mass.
+                                MIT Press
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Ruth
+                                    Kempson
+                                
+                            
+                            
+                                
+                                    Wilfried
+                                    Meyer-Viol
+                                
+                            
+                            
+                                
+                                    Dov
+                                    Gabbay
+                                
+                            
+                            Dynamic Syntax: the Flow of Language
+                                Understanding
+                            
+                                London
+                                Blackwell
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    Gazdar
+                                
+                            
+                            
+                                
+                                    E.
+                                    Klein
+                                
+                            
+                            
+                                
+                                    G.
+                                    Pullum
+                                
+                            
+                            
+                                
+                                    I.
+                                    Sag
+                                
+                            
+                            Generalized Phrase Structure Grammar
+                            
+                                Cambridge, MA
+                                Harvard University Press
+                                1985
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Richard
+                                    Hogg
+                                
+                            
+                            Metrical phonology: a coursebook
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    A.
+                                    K.
+                                    Joshi
+                                
+                            
+                            
+                                
+                                    Y.
+                                    Schabes
+                                
+                            
+                            Tree-Adjoining Grammars
+                        
+                        
+                            
+                                
+                                    G.
+                                    Rozenberg
+                                
+                            
+                            
+                                
+                                    A.
+                                    Salomaa
+                                
+                            
+                            Handbook of Formal Languages
+                            
+                                Vol. 3
+                                Berlin
+                                Springer
+                                1997
+                                69-124
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Greg
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    Michael
+                                    Levison
+                                
+                            
+                            
+                                
+                                    Chris
+                                    Venour
+                                
+                            
+                            Cleverness versus funniness
+                        
+                        
+                            April Fool’s Day Workshop on Computational Humour,
+                                Trento
+                            
+                                
+                                
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Greg
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    Michael
+                                    Levison
+                                
+                            
+                            Rule-governed wordplay and creativity
+                        
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Mind II: Computational Models of Creative
+                                Cognition
+                            
+                                
+                                Dublic City University
+                                1997
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Greg
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    Michael
+                                    Levison
+                                
+                            
+                            Linguistic and Cognitive Underpinnings of Verbal
+                                Humour
+                        
+                        
+                            International Cognitive Linguistics Association
+                                Conference, Albuquerque
+                            
+                                
+                                
+                                1995
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Greg
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    Michael
+                                    Levison
+                                
+                            
+                            Computational Modelling of Riddling Strategies
+                        
+                        
+                            ACH/ALLC Joint Annual Conference, Georgetown
+                                University, Washington, DC
+                            
+                                
+                                
+                                1993
+                            
+                        
+                        (Extended abstract in conference proceedings, pp. 120–122.)
+                    
+                    
+                        
+                            
+                                
+                                    Greg
+                                    Lessard
+                                
+                            
+                            
+                                
+                                    Michael
+                                    Levison
+                                
+                            
+                            Computational Modelling of Linguistic Humour: Tom
+                                Swifties
+                        
+                        
+                            ALLC/ACH Joint Annual Conference, Christ Church,
+                                Oxford
+                            
+                                
+                                
+                                1992
+                            
+                        
+                        (Extended abstract in conference proceedings, pp. 175–178.)
+                    
+                    
+                        
+                            
+                                
+                                    W>
+                                    Mann
+                                
+                            
+                            RST Web Site
+                            
+                                
+                                
+                                2002
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Kathleen
+                                    McKeown
+                                
+                            
+                            Text generation : using discourse strategies and focus
+                                constraints to generate natural language text
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1985
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Cécile
+                                    Paris
+                                
+                            
+                            User modelling in text generation
+                            
+                                London
+                                Francis Pinter Publishers
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Bert
+                                    Peeters
+                                
+                            
+                            The Lexicon-encyclopedia interface
+                            
+                                New York
+                                Elsevier
+                                2000
+                            
+                        
+                    
+                
+            
+        
+    

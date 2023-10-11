@@ -1,0 +1,278 @@
+
+
+
+    
+        
+            
+                Human-machine communication by voice (A multimedia
+                    tutorial for linguists and engineers)
+                
+                    
+                        Magdolna
+                        Kovács
+                        Department of General and Applied Liniguistics, Debrecen University
+                            mkovacs@fox.klte.hu
+                        
+                    
+                
+                
+                    
+                        Péter
+                        Nikléczy
+                        
+                            Kempelen Farkas Speech Research Laboratory
+                            nikleczy@nytud.hu
+                        
+                    
+                
+                
+                    
+                        Gábor
+                        Olaszy
+                        
+                            Kempelen Farkas Speech Research Laboratory
+                            olaszy@nytud.hu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    1. Introduction
+                    Human-machine communication by voice is one of the most dynamically
+                        developing fields in information technology. Since human speech in its oral
+                        form is the most natural and compact means for communication, it should be
+                        used for information exchange in any technical innovation, new technology,
+                        as widely as possible. Speech technology is inevitably gaining greater and
+                        greater importance in computing.
+                    Speech technology is a relatively new field in applied science, and it is
+                        strongly interdisciplinary. It integrates both human and engineering
+                        sciences such as theoretical and applied linguistics, acoustic phonetics,
+                        physiology, mathematics, software engineering, database handling. Although
+                        for several years it has been widely recognized, that for success, it is
+                        essential to combine these disciplines in education, it is still hardly
+                        reflected in higher education curricula [1]. The reason is obvious: it is an
+                        essential but a painfully hard task to build the bridges between the various
+                        disciplines involved in speech technology, to show its basis in its all
+                        complexity.
+                    In support of, or, instead of interdisciplinary curricula, special subject
+                        oriented courseware should be offered to the students. Multimedia tutorials
+                        are, undoubtedly, the most suitable teaching aids in speech communication
+                        sciences and for several reasons. Multimedia in this case does not simple
+                        offer novel ways of presenting unfamiliar material but it suits best both
+                        the nature of human speech itself and the technical requirements of the
+                        subject; it provides tools for experiments, creative, problem-solving
+                        learning; for the development of necessary skills in e.g. labeling speech,
+                        reading spectrograms and it offers extensive resources for ear- training.
+                        For the past few years a number of computer assisted learning systems have
+                        been developed in the field, the variety of which demonstrates the range of
+                        the topics covered, the anticipated knowledge and utilization of interactive
+                        elements [1, 2].
+                    In this paper we will introduce a new multimedia tutorial "Speech technology
+                        for Hungarian" and highlight some of the methodological and technical
+                        problems associated with the development of multimedia applications in
+                        speech communication sciences.
+                
+                
+                    2. Outlines of the content
+                    The multimedia tutorial introduces main features of speech technology.
+                        "Speech technology for Hungarian" summaries a kind of knowledge that is not
+                        taught as a complex course in Hungarian higher education institutions and
+                        presents it in a form suited for independent self- instruction by students.
+                        The objective of the tutorial is to provide a starting point for improving
+                        the training of future Hungarian linguists and speech technologists. For
+                        linguistics students it can help to turn from traditional articulatory
+                        phonetics towards state-of-the-art speech science and prepare them to solve
+                        important issues in the practical application of speech. For engineers it
+                        provides the linguistic basis for speech science, the lack of which explains
+                        the low quality of some existing applications.
+                    The tutorial consists of seven units: 1. Anatomy and physiology of speech
+                        production and hearing; 2. Physics of sound; 3. Speech acoustics; 4. The
+                        Hungarian speech; 5. Speech synthesis; 6. Speech recognition by machine; 7.
+                        Digital speech processing, and provides a glossary of terms and an annotated
+                        reference list of relevant literature for the past five years. To tailor the
+                        content material to the target users we decided not to deal in detail with
+                        the underlying mathematics of signal processing, Unit 7 outlines only the
+                        main and most widely used digital speech processing techniques such as FFT,
+                        LPC, PSOLA, HMM. At the same time, the tutorial pays special attention to
+                        language specific issues. So, for example, Unit 4 offers a collection of
+                        extensive articulatory and acoustic data on the segmental and suprasegmental
+                        building elements as well as thorough description of rules for the Hungarian
+                        language; in Unit 6 separate parts deal with the definition of language
+                        dependent rule sets for duration modelling, for the adjustment of correct
+                        intensity values in the case of each soun and for the modelling of the
+                        structure of the fundamental frequency changes in time (sound, syllable,
+                        word, phrase, sentence and text level). Each unit ends with exercises for
+                        self-assessment.
+                
+                
+                     3. Technical Issues
+                    One of the first main questions that arises is the selection of the
+                        developing tool. In spite of the fact that the audio capabilities of early
+                        versions Java were quite restricted, Web-browser executable Java softwares
+                        have rapidly gain ground in speech science CAL-systems for their platform
+                        independence and computational capabilities. Before Java 1.3 one did not
+                        have speech input capability; audio playback was restricted to a-low or
+                        mu-low coded 8 bit quality, what is certainly unsuitable for a course about
+                        the understanding of the real nature of the sound. With sound handling
+                        becoming much more versatile in Java 1.3, we decided to implement the
+                        tutorial using relatively cost-saving and platform-independent tools:
+                        standard HTML including Java 1.3 and other plug-ins - Flash 5.0 and
+                        QuickTime 5.0 for animations and video elements.
+                
+                
+                    4. An Example
+                    For demonstration, let us quote the tutorial material on speeding up and
+                        slowing down the tempo of speech signal. To fit into the time-limits of a TV
+                        or radio commercial or for psychological experiments the artificial
+                        manipulation of speech tempo has to be implemented without changing pitch
+                        and distorting the quality of the sound. The basic technical issues in
+                        speech processing are the determination of cutting or pasting periods, short
+                        segments of sounds. The question is what stretches of the signal to choose
+                        to minimize the distortion. There are different solutions to this problem,
+                        most of them based on mathematical methods applied uniformly to the speech
+                        signal. The tutorial material leads the student through the steps of working
+                        out an algorithm that accounts for the acoustic structure of different sets
+                        of sounds and the contextual changes in the formant frequencies [3]. This
+                        algorithm fits the best the main aim of the courseware: to show how the
+                        understanding of the nature of the sounds can be utilized in practical
+                        applications. The section is based upon with interactive elements by the
+                        help of which students themselves can manipulate the tempo of the speech
+                        examples.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    G.
+                                    Bloothoft
+                                 et al 
+                            The Landscape of Future Education in Speech
+                                Communication Sciences: 1 Analysis, SOCRATES/ERASMUS Programme
+                            
+                                Utrecht
+                                OTS Publications
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    V.
+                                    Hazan
+                                
+                            
+                            
+                                
+                                    M.
+                                    Holland
+                                
+                            
+                            Proceedings of the ESCA/SOCRATES Tutorial and Research
+                                Workshop on Method and Tool Innovations for Speech Science Education
+                                (MATISSE), University College London, 16-17 April 1999.
+                            
+                                
+                                
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    G.
+                                    Olaszy
+                                
+                            
+                            
+                                
+                                    P.
+                                    Olaszi
+                                
+                            
+                            Hangidotartamok mesterséges változtatása periódusok
+                                kivágásával, megismétlésével
+                            [Manipulation of sound duration by cutting and
+                                repetition of periods]
+                        
+                        
+                            
+                                
+                                    M.
+                                    Gósy
+                                
+                            
+                            Beszédkutatás'98
+                            
+                                Budapest
+                                MTA Nyelvtudományi Intézet
+                                1998
+                            
+                        
+                    
+                
+            
+        
+    

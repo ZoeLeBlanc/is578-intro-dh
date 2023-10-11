@@ -1,0 +1,265 @@
+
+
+
+    
+        
+            
+                Developing a Toolkit for Digital Epigraphy
+                
+                    
+                        Hugh
+                        Cayless
+                        
+                            UNC Chapel Hill
+                            hcayless@email.unc.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper will present the results of work being done at UNC Chapel Hill to
+                    support the emerging EpiDoc standard for encoding epigraphic texts. The EpiDoc
+                    standard is based on the Text Encoding Initiative guidelines (). Information on this collaborative effort,
+                    which includes scholars and humanities computing experts from North America and
+                    Europe, is available at . The
+                    mission of the project is to develop "a software and hardware-independent
+                    interchange specification for scholarly and educational editions of inscribed
+                    and incised texts in Greek, Latin and other languages emanating from the ancient
+                    Greek, Roman and nearby civilizations." The Chapel Hill team has focused on
+                    building tools to facilitate epigraphers' work on creating EpiDoc texts and
+                    managing the storage and presentation of those texts. The paper will begin with
+                    a brief outline of the EpiDoc guidelines with examples of their implementation
+                    and a discussion of some of the problems inherent in digital epigraphy. Then the
+                    various tools developed by the Chapel Hill team will be demonstrated.
+                The editing and publication of inscribed documents has a rich history, which
+                    includes the adoption of widely accepted standards for "marking up" texts.
+                    Published Greek and Latin epigraphic texts are almost universally presented
+                    according to the "Leiden convention,"developed in 1931 at the 18th International
+                    Congress of Orientalists by papyrologists. The Leiden convention employs various
+                    symbols to present information about the condition of the inscribed text and
+                    editorial supplements and comments. For example, parentheses surround editorial
+                    expansions of abbreviated words, so "AVG" on the support would be expanded as
+                    "Aug(ustus)" by the editor. In EpiDoc, the same text would be written
+                    "Aug&lt;expan&gt;ustus&lt;/expan&gt;." Because of the widespread
+                    adoption of the Leiden convention, the form of published texts (allowing for
+                    some local variations) is remarkably consistent. Because of this consistency, it
+                    is possible to write a parser that can translate a digitized inscription into a
+                    data structure (such as XML). The Chapel Hill team has developed such a parser,
+                    named the Chapel Hill Epigraphic Text Converter (CHET-C). This tool parses texts
+                    marked up according to the Leiden convention and outputs EpiDoc XML. Both MS
+                    Access and Java versions are being developed.
+                Digital texts in polytonic Greek pose problems of their own because of the
+                    various methods which evolved to encode them prior to the advent of Unicode. One
+                    of the earliest of these was Beta Code, which utilizes 7-bit ASCII to represent
+                    Greek, Latin, and Aramaic texts, as well as various epigraphical and
+                    papyrological sigla. In addition, a number of Greek fonts, each employing its
+                    own specialized encoding, were developed over the years to handle the problem of
+                    typing and viewing Greek with computers. There exist already various programs
+                    and filters which can handle shifting the encoding of texts from one form to
+                    another (the Greek texts on  employ
+                    such filters, for example). There was still a need for a more flexible system to
+                    handle encoding shifts, however, and so the Chapel Hill team (in collaboration
+                    with the Stoa Consortium, ) has developed
+                    Java-based software that performs this function and which can easily be plugged
+                    into the larger toolkit framework. The transcoder classes can perform encoding
+                    shifts on text within specific elements of an XML file, and are also designed to
+                    be modular and easily extensible to handle languages other than Ancient
+                    Greek.
+                The team has also developed a web-based framework for the presentation of EpiDoc
+                    texts. The framework has been built with Apache Cocoon () and is hosted by the Stoa. The
+                    "Epidocinator" as it is called, can dynamically transform EpiDoc documents
+                    against a variety of XSL stylesheets. Both documents and stylesheets may be
+                    either on site or remote. The framework will also perform validation and error
+                    reporting on EpiDoc texts. The transcoder classes will be accessible via a
+                    Cocoon Transformer, so that Greek text can automatically be shifted from any
+                    supported source format to any supported result format. It will employ the Java
+                    version of CHET-C in a custom Cocoon Generator or Transformer to allow users to
+                    generate EpiDocs from already-digitized inscriptions. The framework will be
+                    packaged as a Web Archive (WAR), so that interested developers can easily deploy
+                    their own digital epigraphy frameworks.
+                Finally, the team is also working to integrate the Java tools with jEdit, a
+                    Java-based text editor with a very robust plugin architecture (). The goal is essentially to create an
+                    Integrated Development Environment (IDE) for epigraphers which editors will be
+                    able to use in the electronic publication of EpiDoc texts. All of the tools and
+                    stylesheets developed for use with EpiDoc will be available as jEdit plugins and
+                    editors will also have available jEdit's XML and XSLT plugins, which provide
+                    useful functions like code-completion, tag creation help (based on a DTD),
+                    validation, error reporting, and transformation. The combination of the web
+                    framework and the text editor will provide epigraphers with a cross-platform,
+                    Open Source solution for creating and publishing inscriptions.
+                This paper will present the results of work being done at UNC Chapel Hill to
+                    support the emerging EpiDoc standard for encoding epigraphic texts. The EpiDoc
+                    standard is based on the Text Encoding Initiative guidelines (). Information on this collaborative effort,
+                    which includes scholars and humanities computing experts from North America and
+                    Europe, is available at . The
+                    mission of the project is to develop "a software and hardware-independent
+                    interchange specification for scholarly and educational editions of inscribed
+                    and incised texts in Greek, Latin and other languages emanating from the ancient
+                    Greek, Roman and nearby civilizations." The Chapel Hill team has focused on
+                    building tools to facilitate epigraphers' work on creating EpiDoc texts and
+                    managing the storage and presentation of those texts. The paper will begin with
+                    a brief outline of the EpiDoc guidelines with examples of their implementation
+                    and a discussion of some of the problems inherent in digital epigraphy. Then the
+                    various tools developed by the Chapel Hill team will be demonstrated
+                The editing and publication of inscribed documents has a rich history, which
+                    includes the adoption of widely accepted standards for "marking up" texts.
+                    Published Greek and Latin epigraphic texts are almost universally presented
+                    according to the "Leiden convention,"developed in 1931 at the 18th International
+                    Congress of Orientalists by papyrologists. The Leiden convention employs various
+                    symbols to present information about the condition of the inscribed text and
+                    editorial supplements and comments. For example, parentheses surround editorial
+                    expansions of abbreviated words, so "AVG" on the support would be expanded as
+                    "Aug(ustus)" by the editor. In EpiDoc, the same text would be written
+                    "Aug&lt;expan&gt;ustus&lt;/expan&gt;." Because of the widespread
+                    adoption of the Leiden convention, the form of published texts (allowing for
+                    some local variations) is remarkably consistent. Because of this consistency, it
+                    is possible to write a parser that can translate a digitized inscription into a
+                    data structure (such as XML). The Chapel Hill team has developed such a parser,
+                    named the Chapel Hill Epigraphic Text Converter (CHET-C). This tool parses texts
+                    marked up according to the Leiden convention and outputs EpiDoc XML. Both MS
+                    Access and Java versions are being developed.
+                Digital texts in polytonic Greek pose problems of their own because of the
+                    various methods which evolved to encode them prior to the advent of Unicode. One
+                    of the earliest of these was Beta Code, which utilizes 7-bit ASCII to represent
+                    Greek, Latin, and Aramaic texts, as well as various epigraphical and
+                    papyrological sigla. In addition, a number of Greek fonts, each employing its
+                    own specialized encoding, were developed over the years to handle the problem of
+                    typing and viewing Greek with computers. There exist already various programs
+                    and filters which can handle shifting the encoding of texts from one form to
+                    another (the Greek texts on  employ
+                    such filters, for example). There was still a need for a more flexible system to
+                    handle encoding shifts, however, and so the Chapel Hill team (in collaboration
+                    with the Stoa Consortium, ) has developed
+                    Java-based software that performs this function and which can easily be plugged
+                    into the larger toolkit framework. The transcoder classes can perform encoding
+                    shifts on text within specific elements of an XML file, and are also designed to
+                    be modular and easily extensible to handle languages other than Ancient
+                    Greek.
+                The team has also developed a web-based framework for the presentation of EpiDoc
+                    texts. The framework has been built with Apache Cocoon () and is hosted by the Stoa. The
+                    "Epidocinator" as it is called, can dynamically transform EpiDoc documents
+                    against a variety of XSL stylesheets. Both documents and stylesheets may be
+                    either on site or remote. The framework will also perform validation and error
+                    reporting on EpiDoc texts. The transcoder classes will be accessible via a
+                    Cocoon Transformer, so that Greek text can automatically be shifted from any
+                    supported source format to any supported result format. It will employ the Java
+                    version of CHET-C in a custom Cocoon Generator or Transformer to allow users to
+                    generate EpiDocs from already-digitized inscriptions. The framework will be
+                    packaged as a Web Archive (WAR), so that interested developers can easily deploy
+                    their own digital epigraphy frameworks.
+                Finally, the team is also working to integrate the Java tools with jEdit, a
+                    Java-based text editor with a very robust plugin architecture (). The goal is essentially to create an
+                    Integrated Development Environment (IDE) for epigraphers which editors will be
+                    able to use in the electronic publication of EpiDoc texts. All of the tools and
+                    stylesheets developed for use with EpiDoc will be available as jEdit plugins and
+                    editors will also have available jEdit's XML and XSLT plugins, which provide
+                    useful functions like code-completion, tag creation help (based on a DTD),
+                    validation, error reporting, and transformation. The combination of the web
+                    framework and the text editor will provide epigraphers with a cross-platform,
+                    Open Source solution for creating and publishing inscriptions.
+                All of the tools described above will be demonstrated briefly, using texts marked
+                    up by various projects that have adopted the new standard. Then I will conclude
+                    by discussing how the EpiDoc Collaborative plans to proceed in developing the
+                    standard and the supporting tools. The project's use of open standards and Open
+                    Source development tools provides a useful model for similar types of scholarly
+                    publication, one which could be picked up and extended for other purposes
+                    without a great deal of effort.
+                Digital texts in Greek pose problems of their own because of the various methods
+                    which evolved to encode them prior to the advent of Unicode. One of the earliest
+                    of these was Beta Code, which utilizes 7-bit ASCII to represent Greek, Latin,
+                    and Aramaic texts, as well as various epigraphical and papyrological sigla. In
+                    addition, a number of Greek fonts, each employing its own specialized encoding,
+                    were developed over the years to handle the problem of typing and viewing Greek
+                    with computers. There exist already various programs and filters which can
+                    handle shifting the encoding of texts from one form to another (the Greek texts
+                    on  employ such filters, for
+                    example). There was still a need for a more flexible system to handle encoding
+                    shifts, however, and so the Chapel Hill team (in collaboration with the Stoa
+                    Consortium, ) has developed software in Java
+                    that performs this function and which can easily be plugged into the larger
+                    toolkit framework. The transcoder classes can perform encoding shifts on text
+                    within specific elements of an XML file, and are also designed to be modular and
+                    easily extensible to handle languages other than Ancient Greek.
+                The team has also developed a web-based framework for the presentation of EpiDoc
+                    texts. The framework has been built with Apache Cocoon () and is hosted by the Stoa. The
+                    "Epidocinator" as it is called, can dynamically transform EpiDoc documents
+                    against a variety of XSL stylesheets. Both documents and stylesheets may be
+                    either on site or remote. The framework will also perform validation and error
+                    reporting on EpiDoc texts. The transcoder classes will be accessible via a
+                    Cocoon Transformer, so that Greek text can automatically be shifted from any
+                    supported source format to any supported result format. It will employ the Java
+                    version of CHET-C in a custom Cocoon Generator or Transformer to allow users to
+                    generate EpiDocs from already-digitized inscriptions. The framework will be
+                    packaged as a Web Archive (WAR), so that interested developers can easily deploy
+                    their own digital epigraphy frameworks.
+                Finally, the team is also working to integrate the Java tools with jEdit, a
+                    Java-based text editor with a very robust plugin architecture (). The goal is essentially to create an
+                    Integrated Development Environment (IDE) for epigraphers which editors will be
+                    able to use in the electronic publication of EpiDoc texts. All of the tools and
+                    stylesheets developed for use with EpiDoc will be available as jEdit plugins and
+                    editors will also have available jEdit's XML and XSLT plugins, which provide
+                    useful functions like code-completion, tag creation help (based on a DTD),
+                    validation, error reporting, and transformation. The combination of the web
+                    framework and the text editor will provide epigraphers with a cross-platform,
+                    Open Source solution for creating and publishing inscriptions.
+                All of the tools described above will be demonstrated briefly, using texts marked
+                    up by various projects that have adopted the new standard. Then I will conclude
+                    by discussing how the EpiDoc Collaborative plans to proceed in developing the
+                    standard and the supporting tools. The project's use of open standards and Open
+                    Source development tools provides a useful model for similar types of scholarly
+                    publication, one which could be picked up and extended for other purposes
+                    without a great deal of effort.
+            
+        
+    

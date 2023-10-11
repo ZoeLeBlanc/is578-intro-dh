@@ -1,0 +1,411 @@
+
+
+
+    
+        
+            
+                Refining Our Notions of What (Digital) Images Really
+                    Are
+                
+                    
+                        Matthew
+                        G.
+                        Kirschenbaum
+                        Department of English Institute for Advanced Technology in the
+                            Humanities University of Virginia
+                            mgk3k@virginia.edu
+                        
+                    
+                
+                
+                    
+                        Joanna
+                        Drucker
+                        
+                            SUNY Purchase
+                            
+                        
+                    
+                
+                
+                    
+                        Jerome
+                        J.
+                        McGann
+                        
+                            University of Virginia
+                            
+                        
+                    
+                
+                
+                    
+                        Joseph
+                        Viscomi
+                        
+                            University of North Carolina, Chapel Hill
+                            
+                        
+                    
+                
+                
+                    
+                        Worthy
+                        Martin
+                        
+                            University of Virginia
+                            
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Summary
+                    This panel brings together authorities from the fields of art history,
+                        literary studies, textual editing, and computer science -- all of whom also
+                        command significant applied knowledge of printmaking and the graphic arts,
+                        or electronic production and editing, or both -- to discuss the aesthetic,
+                        ontological, and computational nature of digital images (within the context
+                        of much broader traditions of visual representation). Panelists will address
+                        both technical issues pertaining to the creation, manipulation, and
+                        dissemination of image data, as well as the current state of the
+                        critical/theoretical models undergirding our understanding of digital
+                        images, and do so with particular reference to the role of images in
+                        electronic libraries, editions, and archives.
+                
+                
+                    Full Rationale
+                    The panel has two related objectives:
+                            1. To advance its audience's thinking about digital images as
+                                structured data by reporting on recent technical developments in
+                                such areas as file formats and data standards (PNG, JPEG 2000),
+                                image editing, image annotation, computer visualization and
+                                modeling, and image searching and retrieval based on
+                                pattern-recognition technologies;
+                            2. To advance the humanities computing community's current
+                                understanding of digital images as modes of visual representation,
+                                and, in conjunction with the topics listed in item number one above,
+                                to scrutinize the prevailing theoretical and philosophical
+                                assumptions behind our thinking about digital images.
+                        
+                    As may be obvious already, the panel is motivated by its participants' shared
+                        desire to subject digital images to the same degree of intellectual scrutiny
+                        that has been brought to bear in recent discussions of electronic text
+                        encoding and text-based editing -- exemplified by the frequently-referenced
+                        series of papers by Steve DeRose, Allen Renear, et al. from which we derive
+                        the session's title. The panel is predicated on the assumption that the
+                        humanities computing community at large does not yet engage with digital
+                        images and imaging technologies at anywhere near the same level of
+                        sophistication as electronic text, not least because the underlying
+                        computational structure of images is so radically different from that of
+                        machine-readable text. These computational differences in turn reflect and
+                        recapitulate certain elemental differences in the epistemology and ontology
+                        of images and text. (Consider markup languages in this regard: markup
+                        languages allow one to describe text with more text, but there is no
+                        comparable procedure for describing images -- one cannot "markup" an image
+                        with another image.) We do not propose to address the manifold
+                        epistemological differences between word and image in any comprehensive way,
+                        but rather to suggest a variety of computational approaches to image data
+                        while discriminating among a range of editorial strategies for incorporating
+                        images into digital library collections, electronic editions, and electronic
+                        archives.
+                    In a recent article Julia Flanders maintains that "[t]he role that images
+                        currently play in electronic editions seems to move between decoration,
+                        scholarly substantiation, and bravura display" (309). This has been largely
+                        true thus far, but new tools and techniques have lately begun to allow us to
+                        treat images with far greater subtlety. Moreover, even the seemingly
+                        straightforward notion of a digital "facsimile" involves basic editorial
+                        decisions which too often go unrecognized: should the digital images be
+                        color-corrected, and if so what measure of chromatic fidelity should be
+                        employed? Should the facsimile be presented on the screen at its true
+                        physical dimensions, a prime consideration in a field such as art history?
+                        (The William Blake Archive uses Java technology to resize images on the
+                        fly.)
+                    But the heart of the issue, as Flanders and others have recognized, is the
+                        need to begin treating images as structured data rather than as simple
+                        supplements to machine-readable text. Various strategies to accomplish this,
+                        ranging from descriptive SGML-based image annotation to search technologies
+                        employing sophisticated pattern-matching logics are gradually coming
+                        available, and humanists now need to begin thinking through the implications
+                        of images as structured data, in the same way that recent years have
+                        produced vigorous discussions of text-based electronic editing and
+                        text-encoding. The panel will suggest starting points for such a discussion,
+                        as well as provide examples of projects that have taken early steps in this
+                        direction.
+                    The panel will also consider forms of visual knowledge that lie beyond the
+                        familiar horizon of facsimile reproduction. As Jerome McGann has recently
+                        demonstrated, for example, the algorithms and filters available in common
+                        desktop packages such as Adobe Photoshop have the potential to expose formal
+                        elements of an image's structural composition through processes of
+                        computational deformation. Or else consider modeling and visualization
+                        tools, which have a long history of applications in the hard sciences: a
+                        visualization of search results or the narrative structure of a text is no
+                        less an "image" than a facsimile of a manuscript page, and the increasing
+                        ease with which digital tools allow us to generate such visualizations
+                        suggests that our thinking about visual materials in electronic editions and
+                        digital libraries will soon evolve to encompass this new, non-referential
+                        class of images.
+                
+                
+                    Panelists (In Order of Presentation)
+                    Johanna Drucker has been printing artists' books
+                        using letterpress and offset production techniques since the 1970s. She
+                        holds a doctorate from the Berkeley Visual Studies program and has published
+                        widely as an art historian and graphic design critic. She has held
+                        appointments at Columbia and Yale, and currently directs a visual design
+                        program at SUNY Purchase. She will become the Robertson Professor of Media
+                        Studies at the University of Virginia in the fall of 1999. Drucker has
+                        recently been conducting extensive investigative work on "the ontology of
+                        the digital image," which will form the basis for her remarks at this panel.
+                        Email: jabbooks@earthlink.net
+                    Jerome J. McGann, University Professor at the
+                        University of Virginia and a Fellow of the Institute for Advanced Technology
+                        in the Humanities, has long been an advocate of "image-based" electronic
+                        editing, and his work on the Rossetti Archive has involved extensive
+                        investigation of methods for annotating and encoding images as structured
+                        data. More recently, McGann has been engaged in a series of "deformative"
+                        exercises, using the filters in common image editing software to expose the
+                        formal properties of digital images. Email:
+                            jjm2f@virginia.edu.
+                    Joseph Viscomi is Professor of English at the
+                        University of North Carolina, Chapel Hill and a Fellow of the Institute for
+                        Advanced Technology in the Humanities. He worked as a curator and graphic
+                        artist before reconstructing and reproducing -- accurately for the first
+                        time -- Blake's illuminated printing techniques. As an editor of the
+                        electronic William Blake Archive, Viscomi's work focuses on color correction
+                        and image editing. He will address the twin chimeras of radical subjectivity
+                        and false positivism when engaged in image editing, and will also discuss
+                        image editing vis-a-vis traditional editorial theory. Email:
+                            jsviscom@email.unc.edu.
+                    Worthy Martin is Associate Professor of Computer Science at the University of
+                        Virginia and Technical Director of the Institute for Advanced Technology in
+                        the Humanities. His fields of expertise include machine vision, pattern
+                        recognition, and image databases, and he has published widely in these
+                        areas. Martin will address the question of digital images from a
+                        computational perspective, focusing on how computers "see" and process
+                        pictorial content. Email: wnm@virginia.edu.
+                    Matthew G. Kirschenbaum (Organizer and Chair), is
+                        completing his dissertation in the Department of English at the University
+                        of Virginia. He is also the Managing Editor of the William Blake Archive.
+                        Kirschenbaum will become Assistant Professor of English at the University of
+                        Kentucky in the fall of 1999. In this session, he will briefly assess the
+                        current range of software for comparative and analytical operations on
+                        structured image data as well as outlining provisional specs for a new
+                        image-based software tool entitled LOOKSEE. Email:
+                            mgk3k@virginia.edu.
+                
+                
+                    Format
+                    The panel is allotted 90 minutes. After a short set of introductory remarks
+                        from the panel chair (5 minutes), each member of the panel will be asked to
+                        speak for 10-12 minutes, developing one or two specific talking points from
+                        their particular background and expertise (total time for five
+                        presentations: about 55 minutes). With these initial presentations
+                        concluded, panelists will be asked to briefly respond to one another's
+                        remarks (clearly time will not permit every member of the panel to respond
+                        to every other member, and so the objective here will be to foreground a few
+                        major points of agreement and dissent). The remaining 20-25 minutes of time
+                        will be given over to open discussion with members of the audience.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            Steve
+                                    DeRose et al
+                            What is Text Really?
+                        
+                        
+                            Journal of Computing in Higher Education
+                            
+                                1
+                                2
+                                3-26
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            Julia
+                                    Flanders
+                            Trusting the Electronic Edition
+                        
+                        
+                            Computers and the Humanities
+                            
+                                31
+                                4
+                                301-310
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            Matthew
+                                    G.Kirschenbaum
+                            Documenting Digital Images: Textual Meta-Data at the
+                                Blake Archive
+                        
+                        
+                            The Electronic Library
+                            
+                                16
+                                4
+                                239-41
+                                August 1998
+                            
+                        
+                    
+                    
+                        
+                            Jerome
+                                    McGann
+                            Imagining What You Don't Know: The Theoretical Goals of
+                                the Rossetti Archive
+                        
+                        
+                            General Publications, Institute for Advanced Technology
+                                in the Humanities
+                            
+                                
+                                
+                                
+                            
+                        
+                        &lt;&gt;.
+                    
+                    
+                        
+                            Jerome
+                                    McGann
+                            The Rossetti Archive and Image-Based Electronic
+                                Editing
+                        
+                        
+                            RichardFinneran
+                            The Literary Text in the Digital Age
+                            
+                                Ann Arbor
+                                The University of Michigan Press
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            Allen
+                                    Renear
+                            Out of Praxis: Three (Meta)Theories of Text
+                        
+                        
+                            
+                                
+                                    Kathryn
+                                    Sutherland
+                                
+                            
+                            Electronic Text: Investigations in Method and
+                                Theory
+                            
+                                Oxford
+                                Clarendon Press
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            Allen
+                                    Renear et al
+                            Refining Our Notion of What Text Really Is: The Problem
+                                of Overlapping Hierarchies
+                        
+                        
+                            
+                                
+                                    Nancy
+                                    Ide
+                                
+                            
+                            
+                                
+                                    Susan
+                                    Hockey
+                                
+                            
+                            Research in Humanities Computing
+                            
+                                Oxford
+                                Oxford University Press
+                                1996
+                            
+                        
+                    
+                
+                Note: This short list is intended to portray neither
+                    the broad range of technical literature on digital images and imaging
+                    technologies, nor critical/theoretical work on visual representation, but rather
+                    to suggest the panel's positioning in relation to an ongoing and parallel
+                    discussion of text-encoding and text-based electronic editing. 
+            
+        
+    

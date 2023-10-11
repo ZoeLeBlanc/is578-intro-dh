@@ -1,0 +1,231 @@
+
+
+
+    
+        
+            
+                Using &lt;TEXT&gt; in TEI Markup.
+                
+                    
+                        Paul
+                        Caton
+                        
+                            Women Writers Project
+                            Brown University
+                            paul@swansong.stg.brown.edu
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                The Text Encoding Initiative's DTD has a liberal content model for the
+                    &lt;TEXT&gt; element (Sperberg-McQueen and Burnard 1994, 1192). Because the DTD
+                    requires &lt;TEXT&gt; at a high level, the relative liberality of the content
+                    model helps the markup scheme apply to a wide range of humanities documents.
+                    However, a data resource is only useful if the data are consistent in type of
+                    form and content. In the case of SGML-encoded texts,
+                    while a validating parser can check the form of the data the encoding project
+                    must enforce consistency in the type of content.
+                The need for data consistency generates a principle of contextual equivalence,
+                    namely that an element &lt;FOO&gt; should always mark the same kind of content
+                    regardless of where that content occurs.Note that the reverse is not
+                        true: the same piece of content may perform different functions according to
+                        where it occurs and so may merit different tags in different
+                        positions. A related principle is that where two tags may be used for
+                    the same piece of content then a reason exists for using one rather than the
+                    other that has nothing to do with arbitrariness or convenience but comes instead
+                    from the nature or function of the piece of content. These two principles are
+                    fundamental to the logic of descriptive markup and they have particular
+                    relevance to the use of &lt;TEXT&gt;.Tagging a low-level object as a
+                    &lt;TEXT&gt; presupposes that object has a property or quality that makes it
+                    something more than just a paragraph, quote, line of verse, etc. According to
+                    the principle of contextual equivalence, the quality that makes the low-level
+                    object a &lt;TEXT&gt; is the same that makes the high-level object a
+                    &lt;TEXT&gt;. In effect, even though the low-level &lt;TEXT&gt; is optional
+                    while the high-level &lt;TEXT&gt; is obligatory, it is the possibility of a low-level &lt;TEXT&gt; that imposes a principled
+                    condition on what the high-level &lt;TEXT&gt; can be.
+                The TEI element set is designed to reflect widely-shared textual concepts:
+                    broadly, everyone recognises paragraphs, quotes, dramatic speeches, etc. The
+                    association of &lt;TEXT&gt; with "text" is inescapable (whether the generic
+                    identifier is "TEXT" or "FOO"). While some uses of "a text" or "the text" do
+                    imply nothing more than an arbitrary piece of text (as in, for example, "the
+                    text for my sermon today is ....", or the text for a close-reading exercise),
+                    many other uses imply an identifiable thing: "a text" as a piece of text with a
+                    property or properties not shared by all other pieces of text. That the DTD
+                    specifically allows a low-level use of &lt;TEXT&gt; shows that TEI had this more
+                    specific concept in mind and wanted to accommodate it. The confusion engendered
+                    by this accommodation simply reflects the many different meanings assigned to
+                    "text" in everyday use. A workable description of what constitutes a
+                    text/&lt;TEXT&gt; must account both for the singularity of a text and for its
+                    ability to contain one or more things possessing a similar singularity. The
+                    TEI's Guidelines do not do this, so we must look beyond
+                    them. A promising place to start is the work of the Russian critic and textual
+                    theorist Mikhail Bakhtin, and with one essay in particular, "The Problem of
+                    Speech Genres."
+                In this essay, written in the early nineteen-fifties but not published in Russian
+                    until 1979 and in English until 1986, Bakhtin distinguishes an utterance from a linguistic unit.
+                    Linguistic units--words, phrases, clauses, and sentences--are the building
+                    blocks of utterances, whilst utterances are the building blocks of
+                    communication. Utterances represent the smallest particles in a physics of
+                    language in use. Devoid of any communicative context, words, phrases, etc., are
+                    simply abstractions: representative examples of the formal properties of the
+                    language. Utterances, on the other hand, have unique properties deriving from
+                    their communicative context. Many times the boundaries of a linguistic unit and
+                    an utterance will coincide, but Bakhtin stresses that "[the] completely new
+                    qualities and peculiarities belong not to the sentence that has become the whole
+                    utterance, but precisely to the utterance itself" (Bakhtin 1986, 74). Utterances
+                    must consist of linguistic units, but linguistic units are not necessarily
+                    utterances.
+                All utterances have a generic aspect, a form typical to the communicative
+                    context. Bakhtin calls these forms speech genres, and he distinguishes between
+                    primary and secondary speech genres. Secondary genres are more complex than
+                    primary genres because in "the process of their formation, they absorb and
+                    digest various primary (simple) genres that have taken form in unmediated speech
+                    communion" (Bakhtin 1986, 62). Simple kinds of utterance become compositional
+                    units of more complex utterances. For example, Bakhtin points to the genre of
+                    the novel which, because it represents human activity contains representations
+                    of various utterance types (letters, rejoinders in dialogue, etc.).
+                The problem of "a text" versus "a piece of text," which is the problem of
+                    deciding what is a &lt;TEXT&gt; and what just a &lt;DIV&gt; or &lt;QUOTE&gt; or
+                    &lt;LG&gt;, lies in defining the qualitative difference between what may appear
+                    identical pieces of language. Bakhtin's distinction between utterances and
+                    linguistic units speaks directly to that problem, and his notions of utterances
+                    and primary and secondary speech genres offer an encoding project practical and
+                    principled criteria for using &lt;TEXT&gt;. Briefly, these are:
+                        &lt;TEXT&gt; applies only to the thing that is the utterance (eg. only
+                            to the epistolary novel itself, not to the letters that make it
+                            up)
+                        for a piece of writing to count as a &lt;TEXT&gt; there must be as
+                            much of it as is known to exist (with qualifications for different
+                            versions and historical contingency)
+                        when one instance of a secondary genre incorporates one or more other
+                            instances of secondary genres, and those incorporated instances would on
+                            their own qualify as &lt;TEXT&gt;s, then they should be tagged as
+                            &lt;TEXT&gt;s within the incorporating &lt;TEXT&gt;
+                    
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    M.
+                                    M.
+                                    Bakhtin
+                                
+                            
+                            The problem of speech genres
+                        
+                        
+                            Speech genres and other late essays
+                            
+                                translated from the Russian by
+                                
+                                    Vern
+                                    W.
+                                    McGee
+                                
+                            
+                            
+                                and edited by
+                                
+                                    Caryl
+                                    Emerson
+                                
+                                
+                                    Michael
+                                    Holquist
+                                
+                            
+                            
+                                Austin, Texas
+                                University of Texas Press
+                                1986
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            Guidelines for electronic text encoding and
+                                interchange
+                            
+                                2 vols.
+                                Chicago and Oxford
+                                Text Encoding Initiative
+                                1994
+                            
+                        
+                    
+                
+            
+        
+    

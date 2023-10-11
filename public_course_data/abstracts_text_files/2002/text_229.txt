@@ -1,0 +1,316 @@
+
+
+
+    
+        
+            
+                Music Information Retrieval: Examining what we mean by
+                    success.
+                
+                    
+                        J.
+                        Stephen
+                        Downie
+                        
+                            Graduate School of Library and Information
+                                Science, University of Illinois at
+                                Urbana-Champaign
+                            jdownie@uiuc.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Music information retrieval (MIR) research has been a part of humanities
+                    computing for many years. Kassler (1966) and Lincoln (1967) are both examples of
+                    early work in this area. Over the last several years, there has been a resurgent
+                    interest in MIR research and development (see ISMIR 2000; ISMIR 2001). Inspired,
+                    in part, by the success of the text retrieval research community (e.g.,
+                    Yahoo.com, Google.com, Altavista.com, etc.), present-day MIR researchers strive
+                    to afford the same kind of content-based access to music. Within the context of
+                    music, content-based retrieval implies the use of musical elements to retrieve
+                    music objects or specific parts of music objects: Music-based search inputs
+                    (e.g., humming, singing, notation excerpts, MIDI keyboard, etc.) to search, and
+                    then retrieve, musical works (e.g., recordings, scores, etc.) or to locate
+                    sub-components of musical works (e.g., repeating themes and motifs, harmonic
+                    progressions, etc.).
+                Notwithstanding the promising developments enumerated in the recent MIR
+                    literature, MIR systems are still far from being as useful, comprehensive, or
+                    robust as their text information retrieval (IR) analogues. There are three
+                    principal reasons for this state of affairs.
+                First, prompted by educational, governmental, scientific, economic, and military
+                    imperatives, the text IR community has for many years garnered substantial
+                    financial support which as allowed countless person-hours of effort to be spent
+                    on research, development, and evaluation. Until very recently, most MIR research
+                    projects have been undertaken primarily as labours of love by devoted scholars.
+                    A half-hour's perusal of the back issues of Computing in
+                        Musicology (Hewlett and Selfridge-Field, eds.) will bring this fact
+                    to the fore.
+                Second, music information is inherently more complex than text information. Music
+                    information is a multi-faceted amalgam of pitch, tempo, rhythmic, harmonic,
+                    timbral, textual (i.e., lyrics and librettti), editorial, praxis, and
+                    bibliographic elements. Music can be represented as scores, MIDI files and other
+                    discrete encodings, and in any number of analogue and digital audio formats
+                    (e.g., LPs, tapes, MP3s, CDs, etc.). Unlike most text, music is extremely
+                    plastic; that is, a given piece of music can be transposed, have its rhythms
+                    altered, its harmonies reset, its orchestration recast, its lyrics changed, and
+                    so on, yet somehow it is still perceived to be the same piece of music. This
+                    interaction of music's complexity and plasticity make the selection of possible
+                    retrieval elements extraordinarily difficult.
+                Third, the text IR community has had a set of standardized performance evaluation
+                    metrics for last four decades. Taking the Cranfield evaluations of the early
+                    1960's (Cleverdon et al., 1966) as the starting point of modern text IR
+                    research, two metrics have to this day continually proved themselves to be
+                    particularly important: precision (i.e., the ratio of relevant documents
+                    retrieved to the number of documents retrieved) and recall (i.e, the ratio of
+                    relevant documents retrieved to the number of relevant documents present in the
+                    system). The key determinant in the use of precision and recall as a performance
+                    metric is the apprehension of those documents deemed "relevant" to a particular
+                    query. While there have been ongoing debates about the nature of "relevance"
+                    (see Schamber, 1994), relevance has had relatively stable meaning across the
+                    text-IR literature. Simply put, a "document" is deemed to be "relevant" to a
+                    given query if the document is "about" the same subject matter as the query.
+                    With these metrics, text IR researchers have been able compare and contrast the
+                    results of many different retrieval approaches. Thus, promising approaches have
+                    been explored more thoroughly, and weaker approaches abandoned. At present,
+                    there are no standardized evaluation metrics for MIR. Because of this lack of
+                    metrics, MIR researchers have had no means of effectively comparing and
+                    contrasting MIR methods. MIR research has not been able to move forward as
+                    quickly as it should because it has had no demonstrable basis for concentrating
+                    its efforts on better techniques nor for abandoning weaker approaches.
+                My poster examines the reasons behind the lack of standardized performance
+                    metrics for MIR research and development. Its primary focus is on the
+                    suitability of the precision and recall as candidate MIR metrics. Seeing that
+                    precision and recall have been instrumental in the success of text IR research,
+                    this limited focus is justified. The crux of this explication is the exploration
+                    of the nature of "relevance" as it pertains to MIR tasks. The notion of
+                    relevance in the MIR context must undergo considerable scrutiny. Without a
+                    proper understanding of the applicability, limitations, and implications of
+                    relevance, the use of precision and recall as MIR evaluation metrics will not
+                    have the theoretical grounding necessary to justify their use by MIR
+                    researchers.
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    C.
+                                    Cleverdon
+                                
+                            
+                            
+                                
+                                    J.
+                                    Mills
+                                
+                            
+                            
+                                
+                                    M.
+                                    Keen
+                                
+                            
+                            Factors determining the performance of indexing
+                                systems
+                            
+                                Cranfield, UK
+                                ASLIB Cranfield Research Project, College of
+                                    Aeronautics
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    W.
+                                    B.
+                                    Hewellet
+                                
+                            
+                            
+                                
+                                    E.
+                                    Selfridge-Field
+                                
+                            
+                            Computing in musicology: A directory of
+                                research
+                            
+                                Menlo Park, CA
+                                Center for Computing Assisted Research in the
+                                    Humanities
+                                (various years)
+                            
+                        
+                    
+                    
+                        
+                            
+                                ISMIR 2000
+                            
+                            The International Symposium on Music Information
+                                Retrieval, 23-25 October, 2000, Plymouth, MA
+                            
+                                
+                                
+                                2000
+                            
+                        
+                        Available at: 
+                    
+                    
+                        
+                            
+                                ISMIR 2001
+                            
+                            The Second International Symposium on Music Information
+                                Retrieval, 15-17 October, 2001, Bloomington, IN
+                            
+                                
+                                
+                                2001
+                            
+                        
+                        Available at: 
+                    
+                    
+                        
+                            
+                                
+                                    M.
+                                    Kassler
+                                
+                            
+                            Toward music information retrieval
+                        
+                        
+                            Perspectives of New Music 
+                            
+                                4
+                                (Spring-Summer)
+                                59-67
+                                1966
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    H.
+                                    B.
+                                    Lincoln
+                                
+                            
+                            Some criteria and techniques for developing
+                                computerized thematic indices
+                        
+                        
+                            
+                                
+                                    H.
+                                    Heckman
+                                
+                            
+                            Electronishe datenverarbeitung in der
+                                Musikwissenschaft
+                            
+                                Regensburg
+                                Gustave Bosse Verlag.
+                                1967
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    L.
+                                    Schamber
+                                
+                            
+                            Relevance and information behavior
+                        
+                        
+                            
+                                
+                                    M.
+                                    E.
+                                    Williams
+                                
+                            
+                            Annual review of information science and
+                                technology
+                            
+                                Medford, NJ
+                                Learned Information
+                                29
+                                
+                                3-48
+                                1994
+                            
+                        
+                    
+                
+            
+        
+    

@@ -1,0 +1,981 @@
+
+
+
+    
+        
+            
+                MITH's Lean, Mean Versioning Machine
+                
+                    
+                        Martha
+                        Nell
+                        Smith
+                        
+                            Maryland Institute for Technology in the Humanities
+                                (MITH)
+                            Martha.Nell.Smith@umail.umd.edu
+                        
+                    
+                
+                
+                    
+                        Susan
+                        Schreibman
+                        
+                            Maryland Institute for Technology in the Humanities
+                                (MITH)
+                            Susan.Schreibman@umail.umd.edu
+                        
+                    
+                
+                
+                    
+                        Amit
+                        Kumar
+                        
+                            Maryland Institute for Technology in the Humanities
+                                (MITH)
+                            amit@ccs.uky.edu
+                        
+                    
+                
+                
+                    
+                        Lara
+                        Vetter
+                        
+                            Maryland Institute for Technology in the Humanities
+                                (MITH)
+                            lv26@umail.umd.edu
+                        
+                    
+                
+                
+                    
+                        Jarom
+                        McDonald
+                        
+                            Maryland Institute for Technology in the Humanities
+                                (MITH)
+                            jmcdon@glue.umd.edu
+                        
+                    
+                
+                
+                    
+                        Edward
+                        Vanhoutte
+                        
+                            Centrum voor Teksteditie en Bronnenstudie,
+                            Belgium evanhoutte@kantl.be
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    The presentation of multiple witnesses continues to be a formidable challenge
+                        to both editing and publishing electronic texts. At the core of the theories
+                        of such computer editions and computer assisted editions is the requirement
+                        for a platform independent and non-proprietary markup language which can
+                        deal with the linguistic and the bibliographic text of a work and which can
+                        guarantee maximal accessibility, longevity and intellectual integrity in the
+                        encoding of texts and textual variation. The encoding schemes proposed by
+                        the TEI Guidelines for Electronic Text Encoding and Interchange have
+                        generally been accepted as the most promising solution to this. The
+                        transcription of primary source material enables automatic collation, stemma
+                        (re)construction, the creation of (cumulative) indexes and concordances etc.
+                        by the computer. With all of these advances, however, scholars have been
+                        required either to rely on expensive commercial software such as DynaWeb or
+                        to develop their own solutions (via major grant and institutional support)
+                        to deliver and successfully display multiple witnesses. Thus scholars who
+                        work in institutions that cannot afford to purchase or develop such tools
+                        have no way to deliver richly encoded multiple versions of texts and have
+                        therefore had their work impeded.
+                    The Versioning Machine being developed at MITH is an open-source software
+                        tool that will be freely distributed to individuals and not-for-profit
+                        organizations under general public license to display deeply-encoded,
+                        multiple versions of texts. To use this tool, scholars and students will
+                        encode texts in XML (which must be well-formed, but will not necessarily
+                        require a DTD), which will then be displayed through a browser plug in. The
+                        tool will not only display multiple versions of text, but scholarly
+                        apparatus appropriate to the version of the text being displayed. In
+                        addition, the system would keep track of apparatus already read by users
+                        (for example, a JavaScript routine would mark unread and read comments in
+                        different colors) so that users would not waste time reading previously read
+                        annotation. The papers featured in this session will, therefore, first
+                        describe the versioning machine’s development, and then will show, via
+                        specific projects, its value through diverse usages.
+                
+                
+                    
+                        MITH’s Lean, Mean Versioning Machine
+                        Susan Schreibman
+                        Amit Kumar
+                        
+                            Peter Robinson’s 1996 article, “Is There a Text in These Variants”
+                                lucidly sets out the challenge of editing texts with multiple
+                                witnesses in an electronic environment. The article raises questions
+                                about texts and textuality exploring where “The Text” resides: is it
+                                to be found “in all the editions and printings: in all the various
+                                forms the text, any text, may take” (99), or is it in the imperfect
+                                transmission of the text over time. His thesis, “to consider how the
+                                new possibilities opened up by computer representation offer new
+                                ways of seeing all the various forms of any text - and, with these,
+                                the text beneath, within, or above all these various forms” (99) is
+                                a challenge that the current generation of electronic editions has
+                                not fully realized.
+                            Projects like Robinson’s own Hengwrt Chaucer
+                                    Digital Facsimile and The Blake
+                                    Archive, are two electronic scholarly editions which are
+                                excellent examples of projects that do not edit “from one distance
+                                and from one distance alone” (Robinson 107), but explore the text
+                                that emerges both in and between the variants, both in the text’s
+                                linguistic and bibliographic codes.
+                            Both these projects, however, utilize expensive software systems to
+                                publish their editions. In the case of The Hengwrt Chaucer Digital
+                                Facsimile, Robinson’s own publishing system, Anastasia: Analytical System Tools and SGML/XML Integration
+                                    Applications(&lt;&gt;), is utilized. In the case of The Blake Archive, Dynaweb() is used. Both these publication tools, in addition to being
+                                expensive, require, in the case of Anastasia, some knowledge of programming to, in the case of
+                                    Dynaweb, a full-time programmer to
+                                support the product.
+                            The Versioning Machine that Amit Kumar and Susan Schreibman are
+                                developing is an open-source tool that will be freely distributed to
+                                individuals and not-for-profit organizations under general public
+                                license to display XML encoded text which is both deeply-encoded and
+                                which exists in multiple witnesses. A prototype of this tool,
+                                developed by Jose Chua and Susan Schreibman, was presented as a
+                                poster session at last year’s ACH/ALLC in New York . The present
+                                project will build upon Chua and Schreibman’s work to create a more
+                                robust tool which more fully addresses the various problems, both of
+                                encoding multiple witnesses and displaying them.
+                            The tool will also display scholarly apparatus appropriate to the
+                                version of the text being displayed. Since the same comment may be
+                                displayed across several versions, readers will need visual clues to
+                                know if a particular comment was previously read. However,
+                                persistence is not a goal of XML or XSL. The solution might lay in a
+                                server-side application with the aid of client-side application
+                                logic.
+                            The first time user of the facility will be asked to register under a
+                                name and password, so that the presentation layer is able to
+                                customize view as per users interest. Session Tracking provided by
+                                Java Servlets API will be used to track the users, and the different
+                                witnesses along with their annotation will be stored in the server
+                                side database. The server side database will be either an
+                                Object-Oriented database or better still a XML Database. The
+                                deletion, addition and transposition of the variation (which could
+                                be word or punctuation), will be cued in the presentation, which
+                                will create the impression of cohesion in the different versions.
+                            The simplest solution would be to give each comment an identification
+                                number. The Session tracker and the persistence database on the
+                                server would keep track of which comments were already read and the
+                                application logic could then take appropriate action. To give a more
+                                concrete example, if an XSLT document transformed an XML document
+                                into HTML, a JavaScript routine could mark unread and read comments
+                                in different colors.
+                            Another particularly challenging editorial issue has been the
+                                representation of the intra-textual writing process. When working
+                                with a particular manuscript draft, an editor may make an educated
+                                guess as to when additions, deletions and emendations were made on a
+                                particular manuscript draft (based on handwriting, ink colour, the
+                                logic of the sentences, etc). Indeed, one of the beauties of
+                                publishing facsimile editions of manuscripts is that no editorial
+                                statement need be made in this regard - it is left up the reader to
+                                decide on the writing process based on an examination of the
+                                evidence. Of course, this textual ambiguity can be replicated in the
+                                digital environment by publishing scanned versions of text.
+                                Unfortunately, however, encoded texts allow no such ambiguity.
+                                Representing the intra-textual revision process in an encoded
+                                edition is a particularly interesting and challenging problem. In
+                                these cases, relative ordering may alleviate the encoding process.
+                                We are experimenting with assigning ordering comparative
+                                identifications in XML, regardless of the exact revision time
+                                relative to other emendations. In the case where two or more
+                                revisions cannot be ordered, they are assigned the same ordering
+                                identification. It is then up to the presentation logic to determine
+                                how to display it.
+                            Syd Bauman of The Scholarly Technology
+                                Group at Brown University will be collaborating with Kumar
+                                and Schreibman in developing a free tool to assist authors in
+                                creating and editing multiple witnesses of texts. Most people used
+                                to TEI encoding can follow the following marked up text without
+                                difficulty:
+                                &lt;p&gt;Space, the final frontier. These are the voyages
+                                    of the  starship Enterprise. Its
+                                    &lt;app&gt;
+                                    &lt;rdg wit="tos"&gt;five-year&lt;/rdg&gt;
+                                    &lt;rdg wit="tng"&gt;ongoing&lt;/rdg&gt;
+                                    &lt;/app&gt;
+                                    mission: to explore strange new worlds; to seek 
+                                    out new life and  new civilizations; to boldly go 
+                                    where no
+                                    &lt;app&gt;
+                                    &lt;rdg wit="tos"&gt;man&lt;/rdg&gt;
+                                    &lt;rdg wit="tng"&gt;one&lt;/rdg&gt;   
+                                    &lt;/app&gt;
+                                    has gone before.&lt;/p&gt; 
+                            
+                            Although even this simple example is a bit difficult to follow
+                                without the helpful whitespace. But even using only a relatively
+                                simple subset of TEI markup (not using, for example,
+                                &lt;lem&gt;, type=,cause=, hand=, or resp=, nor any markup
+                                to indicate certainty; and using &lt;witDetail&gt; merely
+                                for citation of the source), it is much harder to read a document
+                                with 12 witnesses. Even the following example, only a few short
+                                lines of a four witness set is challenging to follow:
+                                &lt;TEI.2&gt;
+                                    &lt;teiHeader&gt;
+                                    &lt;!-- &lt;fileDesc&gt; removed --&gt;
+                                    &lt;encodingDesc&gt;
+                                    &lt;!-- &lt;samplingDecl&gt; removed --&gt;
+                                    &lt;variantEncoding
+                                    method="parallel-segmentation" location="internal"/&gt;
+                                    &lt;p&gt;In each encoded APP all witnesses are explicitly mentioned in
+                                    the wit= attribute of one of the RDG elements.&lt;/p&gt;
+                                    &lt;/encodingDesc&gt;
+                                    &lt;/teiHeader&gt;
+                                    &lt;text&gt;
+                                    &lt;body&gt;
+                                    &lt;p&gt;Space&lt;app&gt;
+                                    &lt;rdg wit="STtos2 STtos4 STtos ST2twok2 ST2twok3 STtng1
+                                    STtng2 STtng3 STtng4"&gt;, &lt;/rdg&gt;
+                                    &lt;rdg wit="STtos1"&gt;: &lt;/rdg&gt;
+                                    &lt;rdg wit="STtos3 ST2twok1"&gt;&amp;hellip;&lt;/rdg&gt;
+                                    &lt;/app&gt;&lt;app&gt;
+                                    &lt;rdg wit="STtos1 STtos2 STtos3 STtos4 STtos5 ST2twok1 ST2twok2
+                                    ST2twok3 STtng2 STtng3 STtng4"&gt;t&lt;/rdg&gt;
+                                    &lt;rdg wit="STtng1"&gt;T&lt;/rdg&gt;
+                                    &lt;/app&gt;he
+                                    &lt;app&gt;
+                                    &lt;rdg wit="STtos1 STtos2 STtos3 STtos4 STtos5 ST2twok1 ST2twok2
+                                    ST2twok3 STtng1 STtng3 STtng4"&gt;final&lt;/rdg&gt;
+                                    &lt;rdg wit="STtng2"&gt;&lt;emph rend="slant(italic)"&gt;final&lt;/emph&gt;&lt;/rdg&gt;
+                                    &lt;/app&gt;
+                                    frontier&lt;app&gt;
+                                    &lt;rdg wit="STtos1 STtos2 STtos3 STtos4 STtos5 ST2twok1 ST2twok2
+                                    STtng1 STtng2 STtng3 STtng4"&gt;.&lt;/rdg&gt;
+                                    &lt;rdg wit="ST2twok3"&gt;&amp;hellip;&lt;/rdg&gt;
+                                    &lt;/app&gt; . . .
+                                    &lt;/witList&gt;
+                                    &lt;/body&gt;
+                                    &lt;/text&gt;
+                                    &lt;/TEI.2&gt; 
+                            If reading such instances is extremely difficult, editing them is
+                                even more challenging (but could certainly be done almost completely
+                                automatically, if the individual witnesses have already been
+                                separately captured). Just keeping track of a single phrase across
+                                multiple witnesses is demanding for the textual scholar. The tool
+                                that Syd Bauman is proposing is one which would selectively hide the
+                                markup pertaining directly to all but the witnesses currently being
+                                studied, but left the rest of the markup and all the content visible
+                                for editing.
+                            Bauman believes that it should not be impossible for a developer of
+                                an XML editor to implement these features -- any such editor already
+                                selectively hides markup from other than the selected namespaces.
+                                The only part that need be changed is the code for deciding which
+                                markup is to be hidden and which is to be displayed.
+                            This, however, raises the obvious problem of how to handle a request
+                                by the user for additional markup which would overlap hidden markup
+                                in a non-well-formed manner. Ideally TEI-aware software would, at
+                                user option, automatically use one of the TEI mechanisms (e.g.,
+                                part= if available on particular element in question, next= and
+                                prev=, or &lt;join&gt;). Far easier to implement, of course,
+                                would be to issue an error message. But again, the same basic
+                                problem exists for selective display of markup based on namespaces
+                                instead of witnesses.
+                            The Versioning Machine, therefore, will
+                                be both an editing and display tool to help textual scholars edit
+                                and display multiple witnesses of deeply encoded text.
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    
+                                        
+                                            Peter
+                                            Robinson
+                                        
+                                    
+                                    Is There a Text in These Variants
+                                
+                                
+                                    
+                                        
+                                            Richard
+                                            J.
+                                            Finneran
+                                        
+                                    
+                                    The Literary Text in the Digital Age.
+                                    
+                                        Ann Arbor
+                                        University of Michigan Press
+                                        1996. rpt. 1999
+                                        99-116
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Witnessing Dickinson’s Witnesses
+                        Lara Vetter
+                        Jarom McDonald
+                        
+                            Emily Dickinson’s writings resist the technology of print. In fact,
+                                all of her writings need to be reimagined outside the print
+                                translations that have seen the literary forms of her writerly work
+                                as entities that fit comfortably into the genres designated by
+                                previous editors and that conform to nineteenth-century notions of
+                                what constitutes the poetic and epistolary text. Not only do
+                                Dickinson’s verse productions defy conventions of lineation and text
+                                division, punctuation and capitalization, but they perform
+                                graphically and visually as she playfully reinvents the poem as a
+                                living, generative textual body, infused with movement. It is this
+                                feature of her writing that evokes Marta Werner’s call for
+                                “unediting” Dickinson’s writings, for “constellating these works not
+                                as still points of meaning or as incorruptible texts but, rather, as
+                                events and phenomena of freedom.” To do so, or to “undo” so,
+                                requires that readers unedit a century’s critical receptions to
+                                recuperate a sense of the material documents as Emily Dickinson
+                                herself left them. By offering full-color digital reproductions of
+                                Dickinson’s holographs, the editors of the Dickinson Electronic
+                                Archives have been working toward this goal of unediting; textual
+                                transcription and encoding, however, is another matter. Representing
+                                Dickinson’s compositions, astonishingly energetic and ambitious
+                                creative endeavors not bound to and by the book and print
+                                technology’s presentation of literature, presents unique challenges
+                                to the textual editor struggling to remain within the bounds of the
+                                TEI.
+                            One of the major obstacles in encoding Dickinson’s literary creations
+                                is the vast number of textual variants and versions that are found
+                                amidst the thousands of extant manuscripts. Much of what people
+                                recognize as the corpora of Dickinson’s “poetry” exists in
+                                collections of manuscripts, or “fascicles,” bound by Dickinson
+                                herself, which served as both a form of publication and preservation
+                                as well as a repository for copy texts used when disseminating her
+                                verse to her almost 100 correspondents. Working alone, and in
+                                collaboration with correspondents, Dickinson began to conceive of a
+                                model of the poem as fundamentally open and unstable, scripting
+                                compositions that evoke a multiplicity of readings through alternate
+                                versions and intratextual and subtextual variants.
+                            Editorially, then, the project of encoding Emily Dickinson’s
+                                manuscripts presents us with three types of variant or versioning
+                                issues, each with its own unique challenges in markup and display:
+                            Intratextual and subtextual variant words, phrases, and lines. In
+                                both draft and “finished” compositions, Dickinson frequently
+                                supplies multiple alternate words, phrases, and lines. Dickinson
+                                does not appear to privilege one reading over another; additionally,
+                                she does not always make clear how and where subtextual variants
+                                might operate in the text. Our encoding practice must mimic these
+                                facets of her writing by maintaining the integrity of the visual
+                                layout of the manuscript while still linking variants to possible,
+                                sometimes multiple, locations of substitution through the precision
+                                of the double-end-point methodology.
+                            Intratextual and extratextual variant line groups. Within letters or
+                                a series of letters, Dickinson may offer different final stanzas for
+                                an existing initial stanza, often in response to a collaborative
+                                compositional process with her correspondent. Our practice must
+                                recognize both the multiple suggested incarnations of the poem as
+                                well as the chronological progression by which the iterations
+                                evolved.
+                            Multiple versions. Dickinson often sends the same poem, in identical
+                                or variant form, to multiple correspondents. By encoding each
+                                manuscript separately and constructing constellations of linking
+                                between them, we acknowledge that each version possesses its own
+                                context and genealogy while bearing some significant relationship to
+                                its textual cousins; this practice also resists the notion that any
+                                one version is privileged over another.
+                            Faced with the instability of the Dickinson text, historical editors
+                                have made difficult, individual choices in printing her poems as
+                                singular entities, by choosing definitively a given word or phrase
+                                among the many that she offers and ignoring the rest, or by
+                                producing a “final” poem with a collection of “subset” readings
+                                beneath it; invariably, intratextual variants, if represented at
+                                all, are printed beneath the poem transcription. Hence, we must not
+                                only reflect Dickinson’s multiplicity in textual markup, but in
+                                final display. For example, one Dickinson manuscript offers 12
+                                different word and phrasal intralinear and subtextual variants.
+                                Rather than offering a hierarchical, top-down display of the text in
+                                which the variants are viewed by a user as footnotes or
+                                afterthoughts, we must utilize an environment that recognizes the
+                                expansive nature of this strategy for poetic creation; this is not
+                                one poem with 12 different variants, but, potentially, 144 different
+                                poems. While there is only one encoded file for a given manuscript,
+                                the technology allows us to write scripts that would recognize the
+                                internal variants and allow the user to manipulate the result -- it
+                                could be as rudimentary as multiple, client-moveable layers or as
+                                complex as creating a dynamic relational database from the initial
+                                document which plays out all 144 possibilities. With this approach,
+                                we can de-hierarchize the various instantiations in all of their
+                                visual and theoretical complexities, allowing the reader to
+                                experience the textual creation in a spirit of “unediting” rather
+                                than in a spirit of traditional print translation.
+                        
+                    
+                
+                
+                    
+                        Putting Time back in Manuscripts: Textual Study and Text Encoding,
+                            with Examples from Modern Manuscripts
+                        Edward Vanhoutte
+                        
+                            It’s interesting to observe how many theorists of electronic
+                                scholarly editing have advocated the transition from universional
+                                editions in print to universal electronic editions which can in
+                                theory hold all versions of a work (Dahlström 2000), but have
+                                passed over the practicalities underlying the production of such an
+                                edition. The envisioned model of the versioning edition,
+                                representing multiple texts (Reiman 1987) in facsimile as well as in
+                                machine-readable form, in concordances, stemmata, lists of variants,
+                                etc. has already been applied to editions of older literature and
+                                medieval texts (e.g. Robinson 1996, Solopova 2000), and more
+                                interesting work in several fields is currently under way (e.g.
+                                Parker 2000). At the core of the theories of such computer editions
+                                and computer assisted editions (e.g. Gants 1994, McGann 1996, and
+                                Shillingsburg 1996) is the requirement for a platform independent
+                                and non-proprietary markup language which can deal with the
+                                linguistic and the bibliographic text of a work and which can
+                                guarantee maximal accessibility, longevity and intellectual
+                                integrity (Sperberg-McQueen, 1994 &amp; 1996: 41) in the
+                                encoding of texts and textual variation. The encoding schemes
+                                proposed by the TEI Guidelines for Electronic Text Encoding and
+                                Interchange (Sperberg-McQueen &amp; Burnard 1994) have generally
+                                been accepted as the most promising solution to this. The
+                                transcription of primary source material enables automatic
+                                collation, stemma (re)construction, the creation of (cumulative)
+                                indexes and concordances etc. by the computer.
+                            Although the TEI subsets for the transcription of primary source
+                                material "have not proved entirely satisfactorily" for a number of
+                                problems (Driscoll 2000), they do provide an extremely rich set of
+                                mechanisms for the encoding of medieval manuscripts and documents
+                                with a fairly "neat", static, and stable appearance such as print
+                                editions. The real problems arise when dealing with modern
+                                manuscript material.Whereas medieval manuscripts form part of the
+                                transmission history of a text, evidence of which is given by
+                                several successive witnesses, and which show the working (copying)
+                                process of a scribe and the transmission/distribution of a
+                                work/text, modern manuscripts are manuscripts "qui font partie d'une
+                                genèse textuelle attestée par plusieurs témoins successifs et qui
+                                manifestent le travail d'écriture d'un auteur" (Grésillon 1994:
+                                manuscripts which form part of the genesis of a text, evidence of
+                                which is given by several successive witnesses, and which show the
+                                writing process of an author). The french school of Critique
+                                Génétique primarily deals with modern manuscripts and their
+                                primary aim is to study the avant-texte, not so much as the basis to
+                                set out editorial principles for textual representation, but as a
+                                means to understand the genesis of the literary work or as Daniel
+                                Ferrer puts it: "it does not aim to reconstitute the optimal text of
+                                a work; rather, it aims to reconstitute the writing process which
+                                resulted in the work, based on surviving traces, which are primarily
+                                author's draft manuscripts" (Ferrer 1995, 143).
+                            The application of hypertext technology and the possibility to
+                                display digital facsimiles in establishing electronic dossiers
+                                génétiques, let the editor regroup a series of documents which are
+                                akin to each other on the basis of resemblance or difference in
+                                multiple ways, but the experiments with proprietary software systems
+                                (Hypercard, Toolbook, Macromedia, PDF, etc.) are too much oriented
+                                towards display, and often don't comply with the rule of "no
+                                digitization without transcription" (Robinson 1997).Further, the TEI
+                                solutions for the transcription of primary source material do not
+                                cater for modern manuscripts because the current (P4) and previous
+                                versions of the TEI have never addressed the encoding of the time
+                                factor in text. Since a writing process by definition takes place in
+                                time, four central complications may arise in connection with modern
+                                manuscripts and should thus be catered for in en encoding scheme for
+                                the transcription of modern primary source material. The
+                                complications are the following:
+                                    Its beginning and end may be hard to determine and its
+                                        internal composition difficult to define (document structure
+                                        vs. unit of writing): authors frequently interrupt writing,
+                                        leave sentences unfinished and so on.
+                                    Manuscripts frequently contain items such as scriptorial
+                                        pauzes which have immense importance in the analysis of the
+                                        genesis of a text.
+                                    Even non-verbal elements such as sketches, drawings, or
+                                        doodles may be regarded as forming a component of the
+                                        writing process for some analytical purposes.
+                                    Below the level of the chronological act of writing,
+                                        manuscripts may be segmented into units defined by thematic,
+                                        syntactic, stylistic, etc. phenomena; no clear agreement
+                                        exists, however, even as to the appropriate names for such
+                                        segments.
+                                
+                            These four complications are exactly the ones the TEI Guidelines cite
+                                when trying to define the complexity of speech, emphasizing that
+                                "Unlike a written text, a speech event takes place in time."
+                                (Sperberg-McQueen and Burnard 2001, 254). This may suggest that the
+                                markup solutions employed in the transcription of speech could prove
+                                useful for the transcription of modern manuscripts, in particular
+                                the chapter in the TEI Guidelines on Linking, Segmentation, and
+                                Alignment (esp. 14.5. Synchronization).Building on this assumption,
+                                this paper will address the relationship between theory of texts and
+                                the design of electronic markup, and will be illustrated with
+                                examples from four projects I am currently involved in at the
+                                Centrum voor Teksteditie en Bronnenstudie&lt;&gt; (Centre for
+                                Scholarly Editing and Document Studies): The transcription of the
+                                Finnegan's Wake notebooks by James Joyce, the electronic edition of
+                                the diaries of Daniel Robberechts, a genetic edition of a manuscript
+                                by Willem Elsschot, and the transcription of all of the extant
+                                witnesses of a novel by Stijn Streuvels. This paper will revisit
+                                Michael Sperberg-McQueen's "Text in the Electronic Age: Textual
+                                Study and Text Encoding, with Examples from Medieval Texts."
+                                (Sperberg-McQueen, 1991) and will define a research agenda for the
+                                new TEI Working group on the transcription of modern
+                            manuscripts.
+                        
+                    
+                    
+                        References
+                        
+                            
+                                
+                                    
+                                        
+                                            Mats
+                                            Dahlström
+                                        
+                                    
+                                    Digital Incunables: Versionality and
+                                        Versatility in Digital Scholarly Editions
+                                
+                                
+                                    Paper.
+                                    ICCC/IFIP Third Conference on Electronic
+                                        Publishing 2000, Kaliningrad/Svetlogorsk (Russia):
+                                        Kaliningrad State University, 17th-19th August 2000.
+                                        Accessed on November 29, 2001
+                                    
+                                        
+                                        
+                                        2000
+                                    
+                                
+                                Accessed on November 29, 2001. &lt;&gt;
+                            
+                            
+                                
+                                    
+                                        
+                                            M.
+                                            J.
+                                            Driscoll
+                                        
+                                    
+                                    Encoding Old Norse/Icelandic Primary Sources
+                                        using TEI-Conformant SGML
+                                
+                                
+                                    Literary &amp; Linguistic Computing
+                                    
+                                        15
+                                        1
+                                        81-91
+                                        2000
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Daniel
+                                            Ferrer
+                                        
+                                    
+                                    Hypertextual Representation of Literary Working
+                                        Papers
+                                
+                                
+                                    Literary &amp; Linguistic Computing
+                                    
+                                        10
+                                        2
+                                        143-145
+                                        1995
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            David
+                                            Gants
+                                        
+                                    
+                                    Toward a Rationale of Electronic Textual
+                                        Criticism
+                                
+                                
+                                    Paper.
+                                    ALLC/ACH Conference, Paris, 19 april
+                                        1994. Accessed on November 29, 2001
+                                    
+                                        
+                                        
+                                        1994
+                                    
+                                
+                                Accessed on November 29, 2001. &lt;&gt;
+                            
+                            
+                                
+                                    
+                                        
+                                            Almuth
+                                            Grésillon
+                                        
+                                    
+                                    Eléments de critique génétique. Lire les
+                                        manuscrits modernes
+                                    
+                                        Paris
+                                        Presses Universitaires de Paris
+                                        1994
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Jerome
+                                            McGann
+                                        
+                                    
+                                    The Rationale of HyperText
+                                
+                                
+                                    TEXT
+                                    
+                                        9
+                                        
+                                        
+                                        11-32
+                                        1996
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            D.
+                                            C.
+                                            Parker
+                                        
+                                    
+                                    The Text of the New Testament and Computers:
+                                        the International Greek New Testament Project
+                                
+                                
+                                    Literary &amp; Linguistic Computing
+                                    
+                                        15
+                                        1
+                                        27-41
+                                        2000
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Donald
+                                            H.
+                                            Reiman
+                                        
+                                    
+                                    Chapter 10:
+                                    'Versioning': The Presentation of Multiple
+                                        Texts
+                                
+                                
+                                    Romantic Texts and Contexts
+                                    
+                                        Columbia
+                                        University of Missouri Press
+                                        1987
+                                        167-180
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            P.
+                                            M.
+                                            W.
+                                            Robinson
+                                        
+                                    
+                                    The Wife of Bath's Prologue on CD-ROM
+                                    
+                                        Cambridge
+                                        Cambridge University Press
+                                        1996
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Peter
+                                            M.
+                                            W.
+                                            Robinson
+                                        
+                                    
+                                    New Directions in Critical Editing
+                                
+                                
+                                    
+                                        
+                                            Kathryn
+                                            Sutherland
+                                        
+                                    
+                                    Electronic Text. Investigations in Method and
+                                        Theory
+                                    
+                                        Oxford
+                                        Clarendon Press
+                                        1997
+                                        145-171
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            Peter
+                                            Shillingsburg
+                                        
+                                    
+                                    Principles for Electronic Archives, Scholarly
+                                        Editions, and Tutorials
+                                
+                                
+                                    
+                                        
+                                            Richard
+                                            J.
+                                            Finneran
+                                        
+                                    
+                                    The Literary Text in the Digital Age
+                                    
+                                        Ann Arbor
+                                        The University of Michigan Press
+                                        1996
+                                        23-35
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            E.
+                                            Solopova
+                                        
+                                    
+                                    The General Prologue of The Canterbury Tales on
+                                        CD-ROM
+                                    
+                                        Cambridge
+                                        Cambridge University Press
+                                        2000
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            C.
+                                            M.
+                                            Sperberg-McQueen
+                                        
+                                    
+                                    Text in the Electronic Age: Textual Study and
+                                        Text Encoding, with Examples from Medieval Texts
+                                
+                                
+                                    Literary &amp; Linguistic Computing
+                                    
+                                        6
+                                        1
+                                        34-46
+                                        1991
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            C.
+                                            M.
+                                            Sperberg-McQueen
+                                        
+                                    
+                                    Textual Criticism and the Text Encoding
+                                        Initiative
+                                
+                                
+                                    Paper presented at MLA '94, San Diego
+                                    
+                                        
+                                        
+                                        1994
+                                    
+                                
+                                Accessed on November 29, 2001. &lt;&gt;.
+                            
+                            
+                                
+                                    
+                                        
+                                            C.
+                                            M.
+                                            Sperberg-McQueen
+                                        
+                                    
+                                    Textual Criticism and the Text Encoding
+                                        Initiative
+                                
+                                
+                                    
+                                        
+                                            Richard
+                                            J.
+                                            Finneran
+                                        
+                                    
+                                    The Literary Text in the Digital Age
+                                    
+                                        Ann Arbor
+                                        The University of Michigan Press
+                                        1996
+                                        37-61
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            C.
+                                            M.
+                                            Sperberg-McQueen
+                                        
+                                    
+                                    
+                                        
+                                            Lou
+                                            Burnard
+                                        
+                                    
+                                    Guidelines for Electronic Text Encoding and
+                                        Interchange. (TEI P3)
+                                    
+                                        Chicago and Oxford
+                                        Text Encoding Initiative
+                                        1994
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                        
+                                            C.
+                                            M.
+                                            Sperberg-McQueen
+                                        
+                                    
+                                    
+                                        
+                                            Lou
+                                            Burnard
+                                        
+                                    
+                                    TEI P4 Guidelines for Electronic Text Encoding
+                                        and Interchange
+                                    XML-compatible edition
+                                    
+                                        Oxford, Providence, Charlottesville, and Bergen
+                                        The TEI Consortium
+                                        2001
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    

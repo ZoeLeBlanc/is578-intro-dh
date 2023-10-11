@@ -1,0 +1,329 @@
+
+
+
+    
+        
+            
+                 Encoding of glyph variants -- some preliminary
+                    experiments
+                
+                    
+                        Christian
+                        Wittern
+                        
+                            Kyoto University, Institute for Research in
+                            Humanities wittern@kanji.zinbun.kyoto-u.ac.jp
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    1. Introduction
+                    The character-glyph model, which essentially describes a class-instance
+                        relationship between a character and the class of glyphs that can be used to
+                        render it, has been the underlying model that made modern character encoding
+                        standards possible.
+                    While this model has been successfully applied to many scripts, its
+                        application to East Asian logographic writing systems has not been
+                        satisfying. One of the reasons for this fact is that the model implicitly
+                        neglects the importance of differences on the glyph level and does not allow
+                        for the encoding of such differences. In East Asia, however, there are a
+                        variety of orthographic conventions in place, that do require that specific
+                        glyphs can be selected. Since the model did not allow for this, in many
+                        cases such glyphs have been encoded as separate characters that would have
+                        to be considered merely glyph variants according to the character-glyph
+                        model. This fact has largely contributed to the bloat of East Asian
+                        character encodings and has severely hampered information processing in this
+                        cultural sphere.
+                    In this paper, I am presenting research that is designed to solve this
+                        problem. It does this by storing information about the relationship of glyph
+                        variants, characters and a considerable number of other attributes in a
+                        separate database in form of a topic map. Encoded documents are normalized
+                        to use only codepoint to represent one character. Information about the
+                        intended glyph is separated out and represented with markup constructs. Upon
+                        rendering of the document, this can be used to draw the glyphs that where
+                        present in the original document. Additionally, this approach allows also
+                        alternative renderings according to various requirements. Since information
+                        about the usage of these glyphs is stored in the topic map, it can be used
+                        to render with the respective glyphs expected by audiences in modern Japan,
+                        Taiwan or mainland China, where the typographic and orthographic conventions
+                        have widely diverged in the last decades.
+                    As a proof of concept, a fragment of a topic map for East Asian logographs
+                        has been implemented and used with a small sample of texts to produce output
+                        in the described manner. Some details of this process are given below.
+                
+                
+                    2. Some considerations
+                    In a series of experiments, some different rendering processes have been
+                        tried. They vary in how the information needed for rendering is deduced and
+                        how explicit the markup for this has to be. The two most extreme cases
+                            are:
+                            No explicit information about glyphs that may have variant
+                                rendering forms is stored in the texts. All information has to be
+                                deduced from contextual information (e.g. the date and place of the
+                                origin of a text and the information associated with this in the
+                                database) or explicit information about these occurrences in the
+                                database.
+                            All information for rendering the glyphs is stored in the texts.
+                                In this case, no external database is needed.
+                        
+                    The main purpose of the experiments has been to determine a good compromise
+                        between these two extremes. What can be considered a good compromise itself,
+                        however depends on a range of different factors and will only be possibly
+                        established independently for every project, no global recommendations are
+                        possible. Any encoding scheme, that attempts to deal with these
+                        complexities, will have to take this into account and be better adaptable to
+                        the needs of its intended users.
+                    In this experiment, the texts are encoded according to the TEI Guidelines
+                        (P3/P4) and the database of characters and glyphs is encoded in the topic
+                        map XML format, a XML implementation of the ISO 13250 Topic Maps. Both of
+                        these are widely used standards in their respective areas and provide the
+                        flexibility and expressive power that was needed here.
+                
+                
+                    3. A topic map of East Asian logographs
+                    The topic map of East Asian logographs contains information in the following
+                            dimensions:
+                            abstract character
+                            character instances
+                            mappings to coded character sets
+                            structure of glyph
+                            glyph variants
+                            time scope
+                            location scope
+                            meanings
+                            equivalent characters
+                        
+                    This list is not exhaustive, since one of the characteristics of the topic
+                        map paradigm is that it is always possible to add basic data types, but
+                        reflects which particular character properties proved necessary for the
+                        problem at hand. This list will have to be modified as other application
+                        domains and areas are explored.
+                    It should also be noted, that this list is not flat, but the data are
+                        organized in super-class/sub-class and class/instance hierarchies. This will
+                        be made more explicit in the presentation.
+                
+                
+                    4. The rendering process
+                    The rendering process requires a two pass processing.
+                    In a first pass, the rendering process will read the text and determine which
+                        characters require special treatment. These might be marked as such in the
+                        text, or this information might depend on parameters passed to the rendering
+                        process.
+                    After information about which characters occur in the text is available In a
+                        first step, the rendering process has to read the topic map and store the
+                        information contained in there in tables that will be accessed in the later
+                        stages of the rendering process. What information is extracted from the
+                        topic map depends on the desired form of rendering.
+
+                
+                
+                    5. Conclusions 
+                    Since the character encoding lacked the necessary differentiation of
+                        characters and glyphs and appropriate mechanisms to access them, an
+                        additional layer of information has been created in form of a topic map that
+                        mediates between the characters that are encoded in the document and the
+                        rendering of these characters with instances of glyphs. This allows for the
+                        additional feature of rendering according to various user requirements, that
+                        otherwise would involve costly and error prone conversions on the character
+                        encoding level. It thus opens a new prospect for the information processing
+                        of East Asian texts. It should be noted however, that this process
+                        introduces the abstraction from the concrete glyph instance to the
+                        underlying character, which is an act of interpretation that might introduce
+                        errors.
+                    The experiments reported here might also provide valuable input for a
+                        revision of the Writing System Declaration (WSD) in TEI, which currently
+                        does not support such fine-grained and flexible encoding of glyph
+                        differences.
+                
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                Association for Computers and the Humanities
+                                (ACH)
+                            
+                            
+                                Association for Computational Linguistics
+                                (ACL)
+                            
+                            
+                                Association for Literary and Linguistic Computing
+                                    (ALLC)
+                            
+                            Guidelines for Electronic Text Encoding and Interchange
+                                (TEI P3)
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            
+                                Chicago, Oxford
+                                Text Encoding Initiative
+                                May 16, 1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                 International Organization for
+                                Standardization
+                            
+                            ISO/IEC 13250, Information technology - SGML
+                                Applications - Topic Maps
+                            
+                                Geneva
+                                
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    John
+                                    Lehman
+                                
+                            
+                            
+                                
+                                    C.
+                                    C.
+                                    Hsieh
+                                
+                            
+                            
+                                
+                                    Christian
+                                    Wittern
+                                
+                            
+                            A Project for Dealing with the Missing Character
+                                Problem
+                        
+                        
+                            Presentation at the Electronic Buddhist Text Initiatvie
+                                (EBTI) meeting held May 25 and 26, 2001 at Dongguk University in
+                                Seoul
+                            
+                                
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christian
+                                    Wittern
+                                
+                            
+                            Toward a Web-based Scholar's Workbench
+                        
+                        
+                            Presentation at the 'Third Conference On Sinology',
+                                held at the Academia Sinica June 29 to July 1, 2000 in Taipei
+                            
+                                
+                                
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christian
+                                    Wittern
+                                
+                            
+                            Non-system characters in XML documents
+                        
+                        
+                            Zenkoku buken - jouhousentaa Jinbunshakaigaku
+                                gakujitsujouhouseminaa Series [Series of the National seminar of
+                                Computer application in the Humanities and Social Sciences ]
+                            
+                                10
+                                
+                                35-50
+                                2000
+                            
+                        
+                    
+                
+            
+        
+    

@@ -1,0 +1,163 @@
+
+      
+         Seit der „Geburt des Zeitzeugen“ (Sabrow/Frei 2012) sind in Deutschland und Europa Hunderte von Oral History-Sammlungen entstanden. Zu den thematischen Schwerpunkten dieser „Era of the Witness“ (Wieviorka 2006) zählten neben der Zeit des Nationalsozialismus auch die Erfahrungen von DDR-Bürger/innen sowie die Geschlechter-, Migrations- und Minderheitengeschichte (Klingenböck 2009, Leh 2015). Vor allem seit den 1980er Jahren entstanden neben groß angelegten Dokumentationsprojekten mit jeweils Hunderten von Interviews auch zahlreiche kleine Sammlungen im Bereich von Geschichtswerkstätten, Museen und Gedenkstätten.
+         Audio-visuell aufgezeichnete lebensgeschichtliche Interviews sind zu einer wichtigen Quelle der Geschichtswissenschaft und ihrer Nachbardisziplinen geworden (Andresen/Apel/Heinsohn 2015). Allerdings ist der Status Quo der Sicherung, Erschließung und Bereitstellung von Oral History-Sammlungen an den verschiedenen Einrichtungen noch unzureichend. 
+         Andererseits sind mit der raschen Entwicklung der Video- und Webtechnologie seit der Jahrtausendwende große digitale Oral History-Archive entstanden, die neue Analysemöglichkeiten bieten (Apostolopoulos/Barricelli/Koch 2016). Einige der am besten erschlossenen Sammlungen stehen am Center für Digitale Systeme der Freien Universität Berlin bereit: Das „Visual History Archive“ der USC Shoah Foundation umfasst über 53.000 Interviews, von denen CeDiS 950 Interviews transkribiert hat (
+                www.vha.fu-berlin.de, 
+                www.zeugendershoah.de). Die 590 Interviews von „Zwangsarbeit 1939-1945“ wurden in einem spezialisierten Backend mit Workflow-Management wissenschaftlich erschlossen und in einem mehrsprachigen Online-Archiv mit timecodierten Transkripten, facettierter Suche, interaktiver Karte und Notizfunktion bereitgestellt (
+                www.zwangsarbeit-archiv.de, Apostolopoulos/Pagenstecher 2013, Pagenstecher 2018b). Das über 90 Interviews umfassende Projekt „Erinnerungen an die Okkupation in Griechenland“ setzt den gesamten Prozess von der Interviewführung bis zur Online-Bereitstellung um (
+                www.occupation-memories.org, Droumpouki 2016). Auch die 150 Video-Interviews der britischen Sammlung „Refugee Voices“ und die 4.500 Interviews des „Fortunoff Archives“ der Yale University stehen bereit. 
+            
+         In Vorbereitung sind Sammlungen zur deutsch-chilenischen sowie zur DDR-Geschichte sowie ein sammlungsübergreifender Katalog von Zeitzeugeninterviews. In Zusammenarbeit mit Sammlungsinhabern wie dem Archiv „Deutsches Gedächtnis“ an der FernUniversität Hagen und linguistischen Experten wie dem Bayerischen Archiv für Sprachsignale an der LMU München werden darüber hinaus zukunftsträchtige Wege der digitalen Archivierung, Aufbereitung und Analyse von Oral History-Interviews gesucht.
+         
+            Herausforderungen der digitalen Erschließung
+            Digitale Interview-Archive wie „Zwangsarbeit 1939-1945“ stellen einen ersten Schritt der Oral History in Richtung Digital Humanities dar, aber noch nicht mehr: Die Archive konnten nur mit hohem manuellen Aufwand erstellt werden. Sie sind Einzelprojekte mit unterschiedlichen Erschließungssystemen, was eine sammlungsübergreifende Recherche erschwert. Für digitale Analysen sind die Daten noch unzureichend aufbereitet. Zum Schutz von Urheber- und Persönlichkeitsrechten unterliegen die Bestände unterschiedlichen Zugangsregelungen. 
+            Damit sind einige der Herausforderungen angesprochen, die mit der digitalen Kuratierung von Oral History-Interviews verbunden sind: Spracherkennung, Alignment, Strukturierung, Interoperabilität, Forschungsethik. Die Digital Humanities können hier Lösungswege oder Anregungen anbieten. Gleichzeitig werfen die audiovisuellen, biografisch-narrativen Daten hier besondere technologische, methodische und ethische Fragen auf.
+            Die audiovisuellen Medien bilden den Kern der Oral History; für Recherche, Analyse und Publikation sind aber textgebundene, timecodierte Transkriptionen von zentraler Bedeutung. Die automatische Spracherkennung hat in den letzten Jahren erhebliche Fortschritte gemacht, liefert aber für die oft dialektal und in mäßiger Aufnahmequalität vorliegenden Zeitzeugen-Interviews heute noch keine Transkripte in lesefähiger Qualität. Immerhin kann sie aber die Volltextsuche in nicht transkribierten Interviews unterstützen (Stanislav/Švec/Ircing 2016). 
+            Um die Transkripte mit den mehrstündigen Audio- oder Videoaufnahmen zu koppeln, müssen Timecodes in die Texte eingefügt werden. Erst diese Segmentierung erlaubt eine Volltextsuche in der Audiodatei und eine synchrone Untertiteldarstellung. Verschiedene Programme unterstützen eine manuelle Transkription und Segmentierung, die aber zeitaufwändig ist. Die in der Linguistik genutzten Werkzeuge wie ELAN sind den meisten Oral Historians zu komplex, so dass in der Transkriptionspraxis meistens unstrukturierte Textdokumente erstellt werden. Erst jüngst sind automatische Alignment-Werkzeuge wie WebMAUS (
+                    https://clarin.phonetik.uni-muenchen.de/BASWebServices
+               ) so leistungsfähig geworden, dass auch mehrstündige Oral History-Interviews damit bearbeitet werden können. Ein nutzerfreundliches Transkriptionsportal für die Oral History ist in Vorbereitung (
+                    https://www.phonetik.uni-muenchen.de/apps/oh-portal/). 
+                
+            Bisher werden Interviews nach unterschiedlichen Richtlinien und Methoden transkribiert und indexiert. Anzustreben ist dagegen eine sammlungsübergreifend standardisierte, maschinenlesbare Auszeichnung der Interviews und ihrer timecodierten Transkripte, die oft auch weitere Auszeichnungselemente, z. B. Sprecherwechsel oder Ortsnamen, enthalten. Damit über die reine Textsuche hinaus auch strukturnutzende Suchverfahren möglich sind, müssen die Transkriptionen mit diesen verschiedenen Annotations-Ebenen strukturiert abgebildet werden. Dafür empfiehlt sich ein auf den TEI-Guidelines der Text Encoding Initiative (
+                    http://www.tei-c.org/release/doc/tei-p5-doc/de/html/TS.html) basierendes Schema, das derzeit für die an der FU Berlin erschlossenen Interviewsammlungen erarbeitet wird. Aus linguistischer Sicht wurde dafür der ISO-Standard 24624:2016 entwickelt (Schmidt 2011). 
+                
+            Eine interoperable Erschließung wird erschwert durch die unterschiedlichen Communities, in denen Oral History-Bestände beheimatet sind. Je nach Anbindung der Interview-Sammlungen an ein Archiv, eine Bibliothek, ein Museum oder ein sprachwissenschaftliches Zentrum kommen unterschiedliche Metadatenstandards zur Verwendung. In der Archivwelt ist EAD verbreitet, die angelsächsischen Bibliotheken nutzen MARC21, CLARIN setzt auf das CMDI-Framework. Übergreifende Crosswalks und Discovery-Systeme fehlen, was eine sammlungsübergreifende Recherche erschwert.
+            Schließlich sind die Persönlichkeitsrechte der Interviewten besonders zu beachten. Angesichts der kollaborativen Produktion sensibler Daten im Interviewprozess hat die Oral History-Community schon früh über forschungsethische Verantwortung diskutiert (Leh 2000). Für die digitale Bereitstellung und Analyse von Interviews ist daher große Sensibilität und ein abgestuftes Rechtemanagement erforderlich, oft auch eine Anonymisierung der Interviews. Dies stellt – zusammen mit Fragen der Langzeitarchivierung und persistenten Auffindbarkeit von Audio- und Videodateien – eine weitere Herausforderung dar. 
+         
+         
+            Forschungsfragen und Analysemöglichkeiten
+            Während sich die Linguistik verstärkt für die umfangreichen Datenkorpora der Oral History interessiert (Kasten/Roller/Wilbur 2017, Armaselu/Danescu/Klein 2018), bleiben viele Historiker/innen skeptisch gegenüber quantifizierenden, womöglich dekontextualisierenden Analysemethoden. Hier dominieren hermeneutische und textbasierte Zugänge in der Auswertung weniger, oft selbst geführter Interviews anhand der Transkriptionen. Nun aber erleichtern die digitalen Interview-Archive die Sekundäranalyse vorhandener Interviews unmittelbar anhand der Ton- und Videoaufnahmen. Damit entstehen neue Forschungsfragen, einerseits in Bezug auf Multimodalität und Interaktion in der Gesprächssituation, andererseits auf komparative und korpuslinguistische Auswertungsmöglichkeiten.
+            Eine Fallstudie untersuchte Erzählmuster und Ausdrucksweisen, Intonation und Mimik in zwei Interviews aus dem „Visual History Archive“ und dem Online-Archiv „Zwangsarbeit 1939-1945“. In den beiden Aufnahmen von 1998 und 2006 berichtet die gleiche Zeitzeugin über ihr Leben: Anita Lasker-Wallfisch, britische Cellistin, Holocaust-Überlebende und Breslauer Jüdin. Im Vergleich zeigt das spätere Interview einen klareren Anspruch auf epistemische Autorität sowie eine gewachsene narrative Erfahrung und performative Leistung (Pagenstecher 2018a). Dabei fällt besonders die nonverbale Interaktion auf: Gerade in kritischen Momenten schmiedet die Erzählerin eine visuell-argumentative Allianz mit dem Interviewer. Diese narrativen Muster blieben unbemerkt bei einer konventionellen Interview-Analyse anhand des Transkripts. Digitale Methoden helfen auch, die im Zentrum jedes Interviews stehende Arbeitsallianz zwischen Erzähler/in und Interviewer/in besser zu verstehen. Dieser mehr oder weniger versteckte Dialog ist zwar aus Sicht der praktischen Interviewführung vielfach empfehlend beschrieben, gelegentlich auch selbstkritisch reflektiert, aber noch kaum vergleichend analysiert worden (Pagenstecher/Pfänder 2017).
+            Quantitative Ansätze können helfen, spezifische Erinnerungs- und Erzählmuster in großen Interviewsammlungen zu erkennen. Als Pilotstudie wird hier die Nutzung von Begriffen wie „Sklaverei“, „Sklavenarbeit“ oder „versklavt“ in den Interviews untersucht. Da die Daten für korpuslinguistische Tools noch nicht ausreichend exportierbar sind, werden hier nur die Analysemöglichkeiten des Online-Archivs „Zwangsarbeit 1939-1945“ genutzt. Seit den Nürnberger Prozessen wurde die nationalsozialistische Zwangsarbeit immer wieder in den historischen Kontext der Sklaverei gestellt. Im Laufe der Zeit bekam der Begriff „Sklavenarbeit“ in den verschiedenen Öffentlichkeiten der betroffenen Länder sehr unterschiedliche Konnotationen (vgl. Pagenstecher 2010). 
+            Wie aber sprechen ehemaligen Zwangsarbeiter/innen 2005/2006, also kurz nach der Entschädigungsdebatte, geführten Interviews über ihre Erfahrung der „Sklavenarbeit“? Eine Volltextsuche nach dem Wortteil „*sklav*“ liefert Treffer in 140 von 477 Interviews. Der insgesamt in 29% aller Interviews auftauchende Sklaven-Begriff wird besonders häufig in italienischen (78%) und englischen (66%) Interviews verwendet. Dem entspricht die Verteilung auf Erfahrungsgruppen: Italienische Militärinternierte (60%) und jüdische Überlebende (42%) nutzen den Terminus häufiger, Religiös Verfolgte (14%) sowie Sinti und Roma (16%) seltener als der Durchschnitt. 
+            Entscheidend ist dabei offensichtlich weniger die gruppenspezifische Erfahrung als der landesspezifische Erinnerungsdiskurs. So sprechen jüdische Überlebende in Israel oder Osteuropa seltener über Sklaventum als die im englischen Sprachraum Interviewten. Dass in angelsächsischen Ländern mehr über Sklaven gesprochen wird, liegt vermutlich an der dem Interviewprojekt vorausgehenden, längeren öffentlichen Debatte über die Zwangsarbeiter-Entschädigung, die vor allem dort stark vom Terminus Sklavenarbeit geprägt war. Typisch dafür war etwa die Schlagzeile „Nazi slaves take case to US“ (BBC 1999). Offenbar reagieren die Interviewten auf diese Diskurse, teilweise auch direkt auf sprachliche Vorgaben der Interviewer/innen. 
+            Die Art der Zwangsarbeit spielt dagegen eine geringere Rolle; allerdings wird Sklaventum bei Erfahrungen im gemeinhin besonders schweren Einsatzbereich Bau/Steine/Erden (40%) häufiger erwähnt. Hier ist also eine genauere Untersuchung der Verwendungskontexte erforderlich. Zu prüfen ist beispielsweise, ob mit der „Sklaven“-Referenz eher eine damalige (Arbeits-, Gewalt- oder Diskriminierungs-)Erfahrung wiedergegeben oder eher aus heutiger (biografischer oder politischer) Sicht über eigene Erfahrungen reflektiert wird. Für solche Fragestellungen reicht der von der Korpus-Software angebotene Kontext von einigen Wörtern links und rechts der Fundstelle nicht aus. Hier ist ein Close Reading oder Viewing des Interviews erforderlich. 
+         
+         
+            Resümee
+            Anhand der digitalen Interview-Sammlungen an der Freien Universität Berlin skizzierte dieser Beitrag die Potentiale und Herausforderungen des Zusammenwirkens von Digital Humanities und Oral History in der Kuratierung und Analyse. 
+            Digitale Technologien ermöglichen die softwaregestützte Sicherung, Erschließung und Bereitstellung von Zeitzeugen-Interviews sowie ihre sammlungsübergreifende Recherche und quellennahe Analyse. In Zukunft können auch quantitative Analysen genutzt werden, um individuelle und kollektive Muster des Erfahren, Erinnerns und Erzählens zu entdecken.
+            Gewiss verliert das digital aufbereitete Zeugnis im Zeitalter der technischen Reproduzierbarkeit ein Stück seiner Aura. Seiner fundierten Analyse und sorgsamen, kontextualisierenden Interpretation sollte dies freilich keinen Abbruch tun. Die Digital Humanities eröffnen der Oral History jedenfalls faszinierende neue Forschungsperspektiven.
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Andresen, Knud / Apel, Linde / Heinsohn, Kirsten (eds.) (2015): 
+                  Es gilt das gesprochene Wort. Oral History und Zeitgeschichte heute, 
+                        Göttingen.
+                    
+               
+                  Apostolopoulos, Nicolas / Pagenstecher, Cord (eds.) (2013): 
+                  Erinnern an Zwangsarbeit. Zeitzeugen-Interviews in der digitalen Welt, 
+                        Berlin.
+                    
+               
+                  Apostolopoulos, Nicolas / Barricelli, Michele / Koch, Gertrud (eds.) (2016): 
+                  Preserving Survivors' Memories. Digital Testimony Collections about Nazi Persecution: History, Education and Media, 
+                        Berlin: Stiftung „Erinnerung, Verantwortung und Zukunft“ (EVZ), URL:
+                        http://www.stiftung-evz.de/fileadmin/user_upload/EVZ_Uploads/Handlungsfelder/Auseinandersetzung_mit_der_Geschichte_01/Bildungsarbeit-mit-Zeugnissen/Testimonies_Band3_Web.pdf [zuletzt abgerufen: 10. Januar 2019]
+               
+               
+                  Armaselu, Florentina / Danescu, Elena / Klein, Francois (2018):
+                  Oral History and Linguistic Analysis. A Study in Digital and Contemporary European History,
+                        in: CLARIN Annual Conference 2018 Proceedings: 11-15, URL:
+                        https://office.clarin.eu/v/CE-2018-1292-CLARIN2018_ConferenceProceedings.pdf [zuletzt abgerufen: 10. Januar 2019]
+                    
+               
+                  BBC (1999):
+                  Nazi slaves take case to US, 
+                        12.10.1999, URL:
+                        http://news.bbc.co.uk/2/hi/europe/472104.stm [zuletzt abgerufen: 10. Januar 2019]
+               
+               
+                  Droumpouki, Anna Maria (2016):
+                  Erinnerungen an die Okkupation in Griechenland. Entstehung, Entwicklung und gesellschaftliche Bedeutung eines deutsch-griechischen Dokumentationsprojekts,
+                        in: BIOS. Zeitschrift für Biographieforschung und Oral History, 29/1: 141-151. 
+                        https://doi.org/10.3224/bios.v29i1.09 [zuletzt abgerufen: 10. Januar 2019]
+               
+               
+                  Kasten, Erich / Roller, Katja / Wilbur, Joshua (eds.) (2017):
+                  Oral History Meets Linguistics, 
+                        Fürstenberg: SEC, 185-207, URL: 
+                        http://www.siberian-studies.org/publications/orhili_E.html
+                        [zuletzt abgerufen: 10. Januar 2019]
+                    
+               
+                  Klingenböck, Gerda (2009): 
+                  Stimmen aus der Vergangenheit. Interviews von Überlebenden des Nationalsozialismus in systematischen Sammlungen von 1945 bis heute, 
+                        in: 
+                        Daniel Baranowski (eds.): 
+                  „Ich bin die Stimme der sechs Millionen“. Das Videoarchiv im Ort der Information,
+                        Berlin: Stiftung Denkmal für die ermordeten Juden Europas, 27-40
+                    
+               
+                  
+                  
+                  Leh, Almut (2000): 
+                  Forschungsethische Probleme in der Zeitzeugenforschung, 
+                        in: BIOS. Zeitschrift für Biographieforschung und Oral History, 13: 64-76
+                    
+               
+                  Leh, Almut (2015):
+                  Vierzig Jahre Oral History in Deutschland. Betrag zu einer Gegenwartsdiagnose von Zeitzeugenarchiven am Beispiel des Archivs ‚Deutsches Gedächtnis‘, 
+                        in: Westfälische Forschungen. Zeitschrift des LWL-Instituts für westfälische Regionalgeschichte, 65: 255-268
+                    
+               
+                  Pagenstecher, Cord (2010):
+                  ‘We were treated like slaves.‘ Remembering forced labor for Nazi Germany, 
+                        in: 
+                        Gesa Mackenthun, Raphael Hörmann (eds.), 
+                        Human Bondage in the Cultural Contact Zone. Transdisciplinary Perspectives on Slavery and Its Discourses, 
+                        Münster: Waxmann 275-291.
+                    
+               
+                  Pagenstecher, Cord / Pfänder, Stefan (2017):
+                  Hidden dialogues. Towards an interactional understanding of Oral History interviews, 
+                        in: 
+                        Kasten, Erich / Roller, Katja / Wilbur, Joshua (eds.): 
+                  Oral History Meets Linguistics, 
+                        Fürstenberg: SEC: 185-207
+                    
+               
+                  Pagenstecher, Cord (2018a): 
+                  Testimonies in digital environments: comparing and (de-)contextualising interviews with Holocaust survivor Anita Lasker-Wallfisch, 
+                        in: Oral History Journal, 46 (2): 109-118
+                    
+               
+                  Pagenstecher, Cord (2018b): 
+                  Curating and Analyzing Oral History Collections, 
+                        in: CLARIN Annual Conference 2018 Proceedings , ed. by Inguna Skadin and Maria Eskevich: 34-38, URL: 
+                        https://office.clarin.eu/v/CE-2018-1292-CLARIN2018_ConferenceProceedings.pdf
+                  [zuletzt abgerufen: 10. Januar 2019]
+               
+               
+                  Sabrow, Martin / Frei, Norbert (eds.) (2012): 
+                  Die Geburt des Zeitzeugen nach 1945,
+                        Göttingen: Wallstein
+                    
+               
+                  Schmidt, Thomas (2011):
+                  A TEI-based Approach to Standardising Spoken Language Transcription, 
+                        in: Journal of the Text Encoding Initiative, 1, DOI:10.4000/jtei.142.
+                    
+               
+                  Stanislav, Petr / Švec, Jan / Ircing, Pavel (2016):
+                  An Engine for Online Video Search in Large Archives of the Holocaust Testimonies, 
+                        in: Interspeech 2016: Show & Tell Contribution, 
+                        https://www.isca-speech.org/archive/Interspeech_2016/pdfs/2016.PDF
+                  [zuletzt abgerufen: 10. Januar 2019]
+               
+               
+                  Wieviorka, Annette (2006): 
+                  The Era of the Witness, 
+                        New York.
+                    
+            
+         
+      
+   
+

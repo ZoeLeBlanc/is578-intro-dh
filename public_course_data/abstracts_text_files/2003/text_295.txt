@@ -1,0 +1,203 @@
+
+
+
+    
+        
+            
+                The Tobacco Documents Corpus: Archiving the
+                    Industry
+                
+                    
+                        Clayton
+                        Darwin
+                        
+                            University of Georgia
+                            cdarwin@uga.edu
+                        
+                    
+                
+                
+                    
+                        William
+                        Kretaschmar
+                        
+                            University of Georgia
+                            kretzsch@uga.edu
+                        
+                    
+                
+                
+                    
+                        Donald
+                        Rubin
+                        
+                            University of Georgia
+                            drubin@uga.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Our research group has been awarded funding by the National Cancer Institute for
+                    a rhetorical analysis of “deception” in the Tobacco Documents (TDs). These
+                    documents, which were released by tobacco industry defendants as a result of
+                    state and federal litigation and legislative hearings, cover the complete range
+                    of corporate operations in the tobacco companies, from memos to research papers
+                    to procurement invoices. The documents are stored physically in depositories in
+                    Minneapolis (the site of the original trial) and Guildford, England, and large
+                    collections of them (more than five million documents) are now available in
+                    electronic form on the Web as well. The documents represent a rich source of
+                    corporate and technical discourse which had never been subjected to systematic
+                    linguistic analysis; indeed, we are not aware that any similar corporate body of
+                    documents has ever been available for analysis.
+                Rather than choosing specific documents for analysis, a method which would leave
+                    itself open to attack on grounds of highly selective use of data, the premise of
+                    our work is to treat the TDs as a corpus, and to apply accepted methods of
+                    corpus and forensic linguistics and rhetorical analysis. Of course, this
+                    required that we create sub-corpora for study, since we do not have the
+                    resources to include the entire set. Here we will present our experience with
+                    the planning and creation of our TD corpora: the sampling strategy, archiving,
+                    retrieval, and ultimately, making the corpora available via the Internet for
+                    further research.
+                Our initial goal was to create a series of corpora from the TDs in order to 1)
+                    Identify TDs in which rhetorical manipulation (“deception”) may have occurred,
+                    and to estimate the extent and prevalence of manipulation; and 2) Analyze
+                    manipulation we find in order to classify it and develop means to identify
+                    similar manipulation in other industrial situations. To do so we have followed a
+                    three-part strategy for corpus creation which emphasizes rigorous sampling
+                    methods. We first drew a limited sample from the entire body of TDs so that we
+                    could determine the best classification of text types and estimate their
+                    proportions within the overall body of texts. From those text types which we
+                    considered relevant to (i.e. subject to) rhetorical manipulation, we devised
+                    quotas for creating a reference corpus of approximately 500,000 words, which we
+                    estimated to consist of 808 documents. For this reference corpus, all relevant
+                    TDs were sampled whether or not they were thought to contain any manipulation.
+                    Finally, we are presently compiling a corpus which includes all texts which we
+                    determine to contain any rhetorical manipulation, along with parallel corpora of
+                    earlier drafts of the same texts or versions of the same texts prepared for
+                    other audiences, so that detailed analysis of rhetorical manipulation can be
+                    carried out for itself and by comparison with cross-draft and cross-audience
+                    TDs. As it has turned out, the plan has been effective in the first two parts
+                    which we have now completed, but we have had to make adjustments at several
+                    points in order to take account of our preliminary findings.
+                Once we began the process of collecting documents we immediately encountered two
+                    problems related to archiving and processing the data. The first is that there
+                    was no text available. Rather than being stored digitally as the plain ASCII
+                    text which we needed for computer-assisted corpus analysis, the tobacco
+                    documents are stored as image files, usually as TIF type. This problem was
+                    compounded by the fact that the images, although stored as large high-resolution
+                    files, are generally too poor in quality for automated text processing such as
+                    scanning and OCR. They often have pages that are tipped to one side or, in the
+                    case of dot-matrix or fax printing and handwriting, they can be practically
+                    illegible. The second problem we encountered was the structural complexity of
+                    the documents themselves. For example, just over 50 percent of the documents
+                    contained marginalia of some type, such as filing data, distribution lists,
+                    stamps of various types, editing, and handwritten comments. Most documents
+                    contained large amounts of peripheral data like names, dates, addresses, and
+                    distribution lists. Although these features are significant for archiving, they
+                    have little or no rhetorical value for our intended research. Other documents
+                    often contain or consist of forms, tables, and images that also offered little
+                    value for our analysis. To account for these problems we decided to keyboard the
+                    documents by hand as plain ASCII text and to code them with XML tags.
+                When we investigated the existing XML tag sets, TEI in particular, we found that
+                    they are particularly well suited for archiving standard texts in standard
+                    hierarchies and for naming typesetting conventions. However, we chose to devise
+                    a set of tags specific to our project for primarily two reasons. First, we found
+                    that many of the documents collected for the corpus had a very non-standard
+                    format. In fact, we found no fixed definition for what constitutes a document in
+                    the tobacco archives. For example, a document recently coded began in the middle
+                    of a paragraph and sentence, proceeded for half of a page, changed to a summary
+                    of a court ruling, then to a policy letter, then to a table of denicotinization,
+                    and ended with a diagram of a processing facility. The second reason for
+                    devising our own tag set is that our primary interest is in archiving
+                    rhetorically significant text and events rather than the typesetting conventions
+                    used to represent them. Thus although TEI includes a full set of tags to
+                    indicate divisions and typographical conventions, use of these tags for our
+                    purposes might lead to ambiguities. For example, italics, boldface, and
+                    underlining have all been found to denote emphasis in the document set, which is
+                    rhetorically significant; however, they have also been found to denote titles,
+                    headings, names, quotations, formulas, and standard text, which may be of little
+                    value for our analysis. Thus, tagging a word in a document with a tag designed
+                    to denote typesetting, such as italics, may not be so useful when the corpus is
+                    analyzed linguistically or rhetorically simply because there is no way to know
+                    the significance of that particular event. To counter this, we have devised a
+                    set of XML tags which accommodates the structural complexity of the original
+                    documents and which reflects the purpose of our study.
+                Data is retrieved from the XML files in a straightforward manner. We have
+                    embedded the expat XSLT engine into several Python scripts. This allows us to
+                    assemble a text corpus for study from the reference and manipulated-cases
+                    corpora according to the needs of the research. That is, with our scripts the
+                    XML files are parsed, desired tag content is selected, and the selected content
+                    is assembled and written to an ASCII text file. There are, however, two notable
+                    differences between the standard Web use of XSLT and that of our project. The
+                    first is data permanence. The output of our XSLT processing is ASCII/ANSI text
+                    which is written to file for later analysis rather than HTML sent onto the
+                    Internet. The other difference is that the XSLT output is not solely determined
+                    by the XSL stylesheet. For ease and speed in processing, some general document
+                    and tag selection is done by regular expressions in the Python script prior to
+                    calling the expat program.
+                The end result of this initial phase of our project will be a larger general
+                    corpus of TDs for use as a reference, and a smaller corpus of “manipulated” TDs
+                    for focused analysis. Both will be archived as ASCII text with XML tags, which
+                    will allow us to generate tailored sub-corpora for specific studies using XSLT.
+                    Although these corpora are being created for our own purposes, our intent is to
+                    make them freely available to other researchers over the Internet. What we
+                    envision is an integrated Web site that provides access to the corpora in
+                    several formats: the TIF and/or PDF images of the original documents, the XML
+                    files coded with TEI compliant tags, the XML files coded with our tag set, ASCII
+                    text versions of the files, and access to a CGI version of our XSLT scripts for
+                    generating task-specific sub-corpora.
+            
+        
+    

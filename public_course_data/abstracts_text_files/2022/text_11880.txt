@@ -1,0 +1,90 @@
+
+        
+            
+                Pitchfork.com has published music reviews, news, interviews, feature stories since 1995. Growing out of 1990s zine culture, 
+                Pitchfork took advantage of the affordances of the internet early and has since become the self-proclaimed “most trusted voice in music.” In that time, they have reviewed over 23,000 albums by more than 10,000 artists. When it began, 
+                Pitchfork was known for its attention to alternative/punk/indie rock and, though it has increased its coverage of hip-hop, pop, and more mainstream music over the years, it remains a source of information about unconventional and emerging artists across genres.
+            
+            Though they often cite an extraordinary number of genres, sub-genres, and sub-sub-genres in their reporting, they stick to a very conservative list of nine official genre tags for most of their reviews.
+            
+                
+            
+            
+                Figure 1: Reviews by genre in 
+                Pitchfork
+                . Note that one review may have several genres, each of which would be counted in this graph. The “Null” category describes a small subset of reviews that had no genre tags.
+            
+            Debates over the function of genre are common in music as well as literature, film, and culture studies generally (Sanneh, 2021; Lena, 2012; Brackett, 2016). For an outlet like 
+                Pitchfork, they function, at least in part, to set expectations for readers. Yet, given the scale and the breadth of the types of music covered by 
+                Pitchfork, these nine highly unevenly distributed tags are somewhat uninformative. While the genre tags alone may do little to set expectations, the reviews themselves do this work in at least one highly characteristic way: by comparing the artist under review to other artists who share similar qualities. Fortunately for us, 
+                Pitchfork does this in an easily minable fashion by maintaining individual pages for several thousand artists, and then using links to these pages when the artists are mentioned in reviews.
+            
+            
+                
+            
+            Figure 2
+            Figure 2 is a screenshot from a review. Clicking on “The Meters” or “Dr. John”, indicated by red underlining, will take you to the individual pages for each respective artist. We scraped all of the reviews and relevant metadata, including the artist links. With that data set, we created networks of artists where edges are drawn between any artists who have links in the same review.
+            
+                
+            
+            
+                Figure 3. Nodes are artists; edges reflect co-presence in reviews. Node size shows edge count. Color shows detected community.
+            
+            Tools like Gephi can depict sub-groups in a network like the one we created via community detection (calculated in Gephi using the Louvain method (Blondel et al, 2008)). However, there are important limitations to this method. Because it is non-deterministic, the precise membership of each group, and even the total number of groups, can vary each time the algorithm is run. To work around this, we introduce a method we call “metamodularity”. We simply ran Louvain community detection on the artist network 10,000 times.
+                
+                     We used the NetworkX and Community libraries in Python. Some artists had no links, because they were never mentioned in an article with anyone else. To avoid very small communities and improve the legibility of results, we also filtered out 34 artists not connected to the main network. This left us with 7,524 unique artists.
+                 Though there are many other possibilities that would achieve similar ends, including examining the communities detected during the “passes” from which the Louvain method constructs its final groups, our approach has several key advantages: It is simple to run, easy to understand, and eschews a non-deterministic approximation in favor of data about the probability of particular groupings.
+            
+            Using this method, we can show how often any two artists were sorted into the same group. For instance, the jazz musician Alice Coltrane was grouped with John Coltrane 10,000 times, with Sly and the Family Stone 4,939 times, and with Guns n’ Roses one time. This gives us a more reliable and comprehensible picture of the level of connection between the artists.
+            
+                
+            
+            
+                Figure 4: Showing the top artists (sorted by number of total connections with other artists) who group with Bon Iver at increasing thresholds of connectedness
+            
+            Using the results from this method, we examined every group of at least 25 artists at six different thresholds and renamed the groups to reflect our assessment of the underlying artistic community. For instance, we called the rightmost group in Figure 4 “00’s Indie Rock”.
+            It is worth underscoring that our group names are subjective. Nonetheless, they help to show the relationship between groups at different tiers. The Sankey diagram, Figure 5, makes clear the branching of closely-knit artist communities from larger, more loosely connected groups.
+            
+                
+            
+            Figure 5
+            The richness of these results points to many interesting findings about the operation of genre in 
+                Pitchfork; we will mention just one here. Some of the genres suggested by Figure 5 are incredibly specific—e.g., our names for groupings of metal artists include classic, goth, punk, grüv, and crossover. One notable exception is a group of predominately African American musicians, which is remarkably large and stable up until the 9,000 threshold. The artists within it range from instrumental hip hop composer Flying Lotus to Motown legend Marvin Gaye to trap rapper Young Thug to R&B singer-songwriter Sade to funk innovators Funkadelic to crossover hip hop star Cardi B. This is a far more capacious group along aesthetic, market, and even historic grounds than we see in, e.g., the heavy metal clusters at the same metamodularity threshold. This may reflect real-world connections, since many artists in this group have worked together in various ways, perhaps more often than metal bands have. Or this may reflect a structural difference in the way that writers at 
+                Pitchfork have covered Black artists relative to their reviews of white musicians, particularly in the early years of the publication. In any case, it is a noteworthy difference in the shape of genre in this corpus.
+            
+            This finding will be one of three concluding points in the talk. We will also discuss how, in this dataset, metamodularity based solely on artists’ connections seems to demonstrate Carolyn Miller’s description of genre as “social action” rather than some kind of top-down, taxonomic structure (Miller, 1984). We will also reflect on the potential use of metamodularity as a more broadly useful method for understanding (and depicting) network structures.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Blondel, V., Guillaume, J., Lambiotte, R. and Lefebvre, E. (2008). Fast Unfolding of Communities in Large Networks. 
+                        Journal of Statistical Mechanics: Theory and Experiment
+                        . 2008: 10. 9.
+                    
+                    
+                        Brackett, D. (2016).
+                        Categorizing Sound: Genre and 20th Century Popular Music
+                        . Oakland: University of California Press.
+                    
+                    
+                        Lena, J. (2012).
+                        Banding Together: How Communities Create Genres in Popular Music
+                        . Princeton: Princeton University Press.
+                    
+                    
+                        Miller, C. (1984). Genre as Social Action. 
+                        Quarterly Journal of Speech
+                        . Vol 70, 2; 151-76.
+                    
+                    
+                        Sanneh, K. (2021). 
+                        Major Labels: A History of Popular Music in Seven Genres
+                        . New York: Penguin Press.
+                    
+                
+            
+        
+    
+

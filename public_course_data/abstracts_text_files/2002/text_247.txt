@@ -1,0 +1,415 @@
+
+
+
+    
+        
+            
+                Making Advanced Scholarly Editions
+                
+                    
+                        Barbara
+                        Bordalejo
+                        
+                            De Montfort University
+                            bbordalejo@dmu.ac.uk
+                        
+                    
+                
+                
+                    
+                        Peter
+                        Robinson
+                        
+                            De Montfort University
+                            peter.robinson@dmu.ac.uk
+                        
+                    
+                
+                
+                    
+                        Klaus
+                        Wachtel
+                        
+                            University of Muenster
+                            wachtel@uni-muenster.de
+                        
+                    
+                
+                
+                    
+                        Andrew
+                        West
+                        
+                            De Montfort University
+                            erebus@ntlworld.com
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    This panel will present some of the work being done at the Centre for
+                        Technology and the Arts, De Montfort University, (CTA) and by Scholarly
+                        Digital Editions (SDE), Leicester. The CTA specializes in the application of
+                        advanced computing methods to the making of scholarly editions, and is best
+                        known for the Canterbury Tales Project, often cited as the most advanced
+                        instance in the world of the use of computing in exploration and publication
+                        of large textual traditions. SDE has developed from the need to find an
+                        appropriate vehicle for publishing the work of the Canterbury Tales Project
+                        and similar ventures. SDE now maintains and develops two key pieces of
+                        software used in this work: the Collate software, used in the transcription
+                        and collation of many witnesses, and the Anastasia electronic publishing
+                        software, developed specifically for publication of complex scholarly
+                        materials in electronic form.
+                    This panel will offer three papers covering different aspects of the work of
+                        the CTA and of SDE. It will introduce the tools, methods, and principles
+                        underlying some of the editorial projects in which the CTA and SDE are
+                        currently involved. It will focus on two of these projects: the Canterbury
+                        Tales Project, led by the CTA, and the electronic edition of the Greek New
+                        Testament in the Nestle-Aland 28th edition now being prepared by the
+                        Deutsche Bibelgesellschaft, Stuttgart and the Institut fÃ¼r
+                        Neutestamentliche Textforschung, MÃ¼nster, and for which SDE is providing
+                        software and consultancy services. Reference will be made to other work on
+                        which the CTA and SDE is collaborating, notably the electronic edition of
+                        Dante's Commedia to be published by the Italian publisher SISMEL. The papers
+                        will cover both the practical and theoretical aspects of this work, with
+                        liberal examples drawn from actual and prospective publications. In the
+                        first paper, Barbara Bordalejo will review the processes of preparation
+                        undergone by the Canterbury Tales Project team in making a single
+                        publication. In the second, Peter Robinson will give the background to the
+                        electronic Nestle-Aland 28, outline the aims of this publication as they are
+                        emerging, and show the first prototypes of this. In the third paper, Andrew
+                        West, the Technical Officer for the CTA and a key member of the Anastasia
+                        development team, will discuss the transformation of complex encodings into
+                        richly featured actual and usable publications.
+                
+                
+                    
+                        Everything You Wanted to Know About the Canterbury Tales Project's
+                            Editions and Never Dared to Ask: The Making of The Miller's Tale on
+                            CD-ROM
+                        Barbara Bordalejo
+                        
+                            When one sees an electronic edition one wonders how much work and
+                                effort has gone into it and the first question that springs to mind
+                                is could I do something like that? The short answer is: No, you
+                                can't. There are other kinds of electronic editions that a scholar
+                                could produce on his own, but the multi- witness editions of the
+                                Canterbury Tales Project are just out of the range for individual
+                                production. The proof of this is that the Project has developed,
+                                since its beginning, partnerships and collaborations at different
+                                levels with many scholars. Since its last expansion - with two new
+                                members - the Canterbury Tales Project is now producing our CD-ROMs
+                                more speedily. Of course, another important factor that has enormous
+                                weight on the Canterbury Tales Project's production improvement, is
+                                the fact that most conventions used for the conversion into computer
+                                formats have long been established and tested, and are now more
+                                reliable that ever before. An idea of how many scholars have
+                                participated in a particular edition can be drawn by looking at the
+                                opening pages of one of CDs.
+                            I first approached The Wife of Bath's Prologue on CD-ROM in December
+                                1999. I was then fascinated by the idea of all the manuscripts of
+                                the Canterbury Tales being transcribed and published. I also held a
+                                very strict textual-critical position that made me into a severe
+                                documentary editor. This CD-ROM pleased me greatly - although not
+                                completely - and I was particularly impressed by some of the
+                                transcription policies of the Project. But what really engaged me
+                                was the idea that Collate 'the main program used in our collations'
+                                was such a wonderful tool that could help creating this kind of
+                                materials. I was quite ignorant then and, even if I understood what
+                                coding was and had tried to teach myself SGML, I was far from being
+                                able to truly understand the nature and complexity of the production
+                                of one of these CDs. What I did then is what most of my colleagues
+                                would have done: I read everything I could get a hold of in which
+                                members of the CANTERBURY TALES PROJECT had participated.
+                            Eventually, I came across a statement similar to the one found in The
+                                General Prologue CD-ROM:
+                                    "The computer collation program we are using (Collate)
+                                        permits regularization as part of the collation process.
+                                        This has the great advantage of allowing deferral of
+                                        regularization until all the evidence of all the spellings
+                                        in all the manuscripts at any one point is available. It
+                                        also permits a complete record to be made of all
+                                        regularization done during the collation. Collate can also
+                                        generate regularized-spelling version of each file from the
+                                        regularization process."
+                                
+                            My interpretation was that Collate could automatically generate
+                                regularized texts from the unregularized ones. This is just shows
+                                how naÃ¯ve and ignorant I was. Collate is a wonderful tool and helps
+                                our work in unimaginable ways, but it can not take the various
+                                spellings of Middle English and regularize them to a particular
+                                form. In fact, because of the nature of the language at that time, I
+                                am doubtful that any automated tool could do this. So how do the
+                                complex spellings of the manuscripts get transformed into a
+                                regularized collation? This is just done by hand. Word by word, line
+                                by line, 20.000 lines of verse in 88 fifteenth-century witness are
+                                lemmatized and regularized by the Canterbury Tales Project team. The
+                                process is intricate, requires a great deal of attention and
+                                grammatical skills that few people arrive with, and when it is over,
+                                every single one of the regularizations must be checked to make sure
+                                that most mistakes are eliminated. Both the lemmatization and
+                                regularization are building blocks of our spelling databases.
+                            An important question that one might want to ask to the members of
+                                the Canterbury Tales Project is why should anyone go through the
+                                process of creating very detailed transcriptions of the manuscripts,
+                                making sure that tails and flourishes are accurately represented in
+                                the key manuscripts, if later one has to spend money and time in
+                                taking all those differences out to produce the regularized
+                                collation? The answer is quite simple, the regularized and
+                                unregularized collations have very different function in the
+                                CD-ROMs. Probably, the main reason to have chosen to produce a
+                                regularized collation is the fact that only using this one can
+                                proceed to make an adequate stemmatic analysis. Since one of the
+                                main aims of the Canterbury Tales Project is to achieve a better
+                                understanding of the textual tradition of the Tales and the ways in
+                                which the manuscripts relate to one another, it seems clear why the
+                                role of the stemmatic analysis should be a priority. One of the most
+                                evident discoveries of the Project is the fact that spelling
+                                variants are uninformative while using phylogenetic programs - which
+                                are used as an important part of our stemmatic analysis - and that,
+                                in fact, these create 'white noise' and impair the results yielded
+                                by evolutionary software.
+                            Using examples drawn from my work on The Miller's Tale on CD-ROM I
+                                would like to demonstrate some of the problems that we face in our
+                                everyday work. Moreover, I will discuss other issues generated by
+                                editions of the kind produced by the Project, such as working with
+                                other people - nearby and far away, consistency, revision and
+                                responsibility. In cases like this, it becomes clear that the more
+                                people work in a particular edition, the bigger the need for strict
+                                rules to be applied in each particular case.
+                        
+                    
+                
+                
+                    
+                        Making an electronic edition of the Greek New Testament
+                        Peter Robinson
+                        Klaus Wachtel
+                        
+                            The Greek New Testament represents, by every measure, the Everest of
+                                textual scholarship. Firstly, it is simply the biggest: with over
+                                five thousand surviving manuscripts and other witnesses, from over
+                                two thousand years, it dwarfs every other textual tradition of a
+                                major western text (some Indian textual traditions, where copying
+                                onto palm leaf manuscripts persists to this day, are larger in terms
+                                of sheer numbers of manuscripts). Secondly, it is the most complex:
+                                beside straight-forward copies one has to deal with a vast spectrum
+                                of versions, in many languages and from many cultures, some of them
+                                now deeply obscure. There is also considerable citational evidence,
+                                where scraps of text are referred to in early Christian and other
+                                writers, some of which bears crucial witness to textual readings,
+                                even whole texts (the elusive 'Gospel of the Hebrews', for example),
+                                otherwise unknown. Thirdly, it is the most intractable. Many textual
+                                scholars have lived by a comfortable presumption that as one tunnels
+                                upwards in a textual tradition towards the origins variation will
+                                diminish, to the point where it may be eliminated altogether and a
+                                single perfect and original text (in this case, indeed, the Word of
+                                God) will stand forth. But the situation with the Greek New
+                                Testament appears to show the precise opposite: variation becomes
+                                greater, not less, as we move back in time, and the earliest
+                                substantial evidence we have from the second century shows witnesses
+                                which differ more from each other and from the late text than do
+                                later writers.
+                            Add to this that the Greek New Testament is, by some considerable
+                                margin, the most important single text of western civilization, and
+                                indeed the foundation of nearly two millennia of our culture, and we
+                                have a formidable task. Six centuries of textual scholarship has
+                                defined itself against this task, and the names of the editors who
+                                have struggled with this text and its problems is an impressive
+                                rollcall: Erasmus, Griesbach, Bentley, Lachmann, Tischendorf,
+                                Westcott, Hort, von Soden, Nestle, Aland. Sooner or later, every
+                                theory of textual scholarship, and every technological development,
+                                must test itself against the Greek New Testament. The early
+                                development of printing in the west (and perhaps even its invention)
+                                was driven by the church's need for uniform texts; one could argue
+                                that printing reached its first technical peak in the polyglot Bible
+                                of 1515. Now, it is the turn of computing technology and electronic
+                                publishing to confront this challenge. Over the last five years, the
+                                Institut fÃ¼r Neutestamentliche Textforschung, MÃ¼nster, (INTF) has
+                                been progressively incorporating computer-assisted techniques in the
+                                preparation of the new Editio Critica Maior series of the Greek New
+                                Testament (ECM). The most recent volumes of this have used computer
+                                methods not only in preparation of the printed text, but at every
+                                stage in gathering the data on which the printed text is built. The
+                                manuscripts chosen for inclusion in the ECM apparatus are now
+                                transcribed in full, collated using Robinson’s Collate software
+                                (originally developed for medieval vernacular texts), and the
+                                collation output to a database where it is integrated with other
+                                evidence and the apparatus for the ECM print editions created.
+                            This work involved testing and development of computer techniques
+                                capable of coping with the special demands of the Greek New
+                                Testament. For example: Robinson has had to add many new facilities
+                                to Collate, and enable it to cope with collation of up to 500 texts
+                                at once. At the same time, the INTF has had to redesign how it
+                                carries out the work, rebuilding it around full transcription and
+                                collation of the manuscripts rather than manual excerpting of
+                                variants. So far, this work has been limited to the making of
+                                printed texts. Recently, and encouraged by the success of this
+                                process, the INTF and their publisher, the Deutsche
+                                Bibelgesellschaft (DBG) have determined on a more ambitious program:
+                                the making of an electronic edition of the 28th edition of the
+                                Nestle-Aland Greek New Testament. The Nestle-Aland text is far the
+                                most widely used text of the Greek New Testament: it is the text
+                                published in the United Bible Society publications, it is studied in
+                                seminaries and used in translations worldwide. Just to make an
+                                electronic version of this printed text and apparatus alone would be
+                                a signal advance, and in itself a considerable challenge. However,
+                                the INTF and DBG propose far more: the electronic version of the
+                                existing text should be interwoven with full transcripts of the key
+                                manuscripts (and, as time passes, more and more manuscripts),
+                                collations of these, and analytic tools including the facility to
+                                carry out dynamic comparisions of manuscripts, build stemmatic
+                                analyses from the comparisons, and much more. Beyond this, the
+                                possibilities of linking to on-line manuscript images and
+                                lexicographic resources open yet further perspectives.
+                            Much of this will be built on the existing Collate software, and over
+                                the next years Robinson and other Leicester staff (both from the
+                                Centre and from Scholarly Digital Editions [SDE]) will be working
+                                with Wachtel and other staff at the INTF and DBG to set up the work
+                                practices necessary to support this, and developing a series of
+                                prototype publications. With funding from the Deutsche
+                                Forschungsgemeineschaft and the DBG, the first of these prototypes
+                                will be publically available on the web in February 2003. We will
+                                present a version of this first prototype at the conference. All
+                                text will be encoded in XML, following the TEI guidelines. The first
+                                prototypes, at least, will use Anastasia, the electronic publication
+                                system developed by SDE.
+                        
+                    
+                
+                
+                    
+                        Turning Complicated Texts into Real Publications
+                        Andrew West
+                        
+                            Turning basic text into a simple publication can be a relatively easy
+                                matter. It could be as easy as using a word processor or typewriter,
+                                but what if the text is more complicated? For example, what if the
+                                text was written in a different language, or you needed to include
+                                information pertaining to the original physical document? These can
+                                be some of the obstacles in creating a digital publication.
+                            The first step in this process is to find a means of encoding not
+                                only the raw text but also the information relating to the document
+                                or parts of the document. If it was a simple document produced in
+                                Microsoft Word we could mark parts of the text as bold, italic etc.,
+                                but this method provides nowhere near the flexibility or power which
+                                is required by most. HTML, HyperText Mark-up Language, is a step
+                                closer as parts of the document can be marked or tagged to describe
+                                the structure, such as the title or the document body. Still this
+                                method is inflexible and very restrictive in the information it
+                                allows you to show. What we need is a way similar to this but also
+                                allows us to define how and what information we need to keep.
+                            For their transcription work the Canterbury Tales Project chose XML
+                                (eXtended Mark-up Language), and before this its predecessor SGML
+                                (Standard Mark-up Language) as their format for transcribing the
+                                Canterbury Tales. This allows them to transcribe the manuscripts in
+                                almost infinite detail, from something as simple as marking a
+                                character as being a particular medieval style of letter to showing
+                                that a sentence was added at a later date. For them to create a way
+                                of encoding this selected information all they need do is use a tag,
+                                such as &lt;added&gt;, which itself could hold extra
+                                information about this occurrence of added text. So wherever there
+                                is a need to include information in a portion of text either an
+                                existing tag can be used or a new one created to suit their needs.
+                            This style of encoding can have potential dangers. When several
+                                people are working on a transcription, they need to make sure that
+                                they agree on which tags they are going to be using and in which
+                                circumstances they should use them, otherwise the resulting
+                                transcriptions would be inconsistent and impossible to use in a real
+                                publication. In an effort to solve this problem Peter Robinson,
+                                director of the Canterbury Tales Project, helped produce the T.E.I.
+                                documentation. This set of documents created the standard which the
+                                C.T.P. uses to encode the manuscripts they are working on, and by
+                                which all their transcribers work by in order to create a
+                                consistence format for their publications.
+                            So now we have a set of files with all the text and its relevant
+                                information encoded within, but this format is not going to be
+                                presentable to the public. What we need is to create a system that
+                                can turn this information into format that can be read and navigated
+                                with ease. To this end Scholarly Digital Editions created Anastasia,
+                                an application that takes the transcribers' XML files and produces
+                                intermediate files which enable it to search these XML files and can
+                                tailor its output to suit the needs of the publication. Anastasia
+                                acts like a web server so it can be used in conjunction with a web
+                                browsers such as Internet Explorer or Netscape. The benefits of a
+                                system such as this is that most users will have some knowledge of
+                                these applications so they will not need to learn a new system in
+                                order to be able to use the publication. Other digital publication
+                                applications have chosen to create their own interface for the
+                                users, and this may allow them to refine the way they present the
+                                information to produce a view of the information that is exactly
+                                what they need. But this may have the drawback of having a steeper
+                                learning curve when people start using these applications. An
+                                advantage of the Anastasia system is that it gives extraordinary
+                                control over the interface we present to users. This makes it
+                                possible to tune interfaces precisely as we want. We are currently
+                                working on integration of mySQL into Anastasia. The reason for this
+                                is that there are certain operations which are very well handled by
+                                databases (notably, sorting of results of searches on particular
+                                fields). We also intend to integrate certain of the Collate
+                                functions into the software.
+                            Producing electronic publications is a long and laborious process,
+                                not only in transcribing the manuscripts but also in deciding how to
+                                encoding the information and then how best to let people view the
+                                resulting publication. At least this part of the process can be
+                                simplified by collaborating with publishers and choosing "off the
+                                shelf" applications.
+                        
+                    
+                
+            
+        
+    

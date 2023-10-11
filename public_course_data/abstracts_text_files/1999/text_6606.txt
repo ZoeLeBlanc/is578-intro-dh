@@ -1,0 +1,831 @@
+
+
+
+    
+        
+            
+                Intellectual problems in scholarly encoding
+                
+                    
+                        Harold
+                        Short
+                        Centre for Computing in the Humanities King's
+                                College London
+                            harold.short@kcl.ac.uk
+                        
+                    
+                
+                
+                    
+                        Mavis
+                        H.
+                        Cournane
+                        
+                            The European Foundation
+                            cournane@imbolc.ucc.ie
+                        
+                    
+                
+                
+                    
+                        Donnchadh
+                        Ó Corráin
+                        
+                            The European Foundation
+                            
+                        
+                    
+                
+                
+                    
+                        Claus
+                        Huitfeldt
+                        Wittgenstein Archives University of
+                                Bergen
+                            Claus.Huitfeldt@hit.uib.no
+                        
+                    
+                
+                
+                    
+                        Willard
+                        McCarty
+                        Centre for Computing in the Humanities King's
+                                College London
+                            willard.mccarty@kcl.ac.uk
+                        
+                    
+                
+            
+            
+                1999
+                
+                    University of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Harold Short, Chair
+                    This session offers three views on intellectual problems and consequences in
+                        the scholarly encoding of texts. Two papers (Cournane and McCarty) approach
+                        the issues by direct engagement with literary texts, the third (Huitfeldt)
+                        by a philosophical analysis of the terms "representation" and
+                        "interpretation".
+                    Issues of implementation in hardware and software and of any specific
+                        metalanguage are deliberately excluded. Important though these matters are
+                        to humanities scholars who work with texts, and significant though the TEI
+                        has been and continues to be for the field, there is always the danger that
+                        preoccupation with means may obscure intellectual analysis or that
+                        familiarity with a specific system or set of tools may lead one to approach
+                        a new problem from the perspective of the already-intended solution.
+                    This session therefore focuses specifically on the intersection and
+                        interaction of the philosophical and critical perspectives with the
+                        computation, trying to avoid implementation questions. Although it deals
+                        specifically with markup, its subject is essentially that of humanities
+                        computing as a whole: the electronic medium as an instrument of perception
+                        and analysis.
+                
+                
+                    
+                        Reasoning the rhyme: The encoding of complex early Irish Poetry
+                        Mavis H. Cournane
+                        Donnchadh Ó Corráin
+                        
+                            
+                                Introduction
+                                Poetry was the most significant literary genre in early medieval
+                                    Ireland. Medieval Irish verse is composed in accordance with
+                                    strict metrical rules laid down by influential schools of
+                                    poetry. These rules are prescribed in medieval handbooks of
+                                    metrics that were used in the schools to train poets in the
+                                    intricate rules of Irish metrics. Detailed rules in normative
+                                    text were prescribed for metre, alliteration, and rhyme. The
+                                    encoding of the metrical features of Irish verse will serve a
+                                    variety of the following ends: 
+                                        it occasions detailed and rigorous metrical analysis
+                                            of a kind not usually done to this level of
+                                            consciousness;
+                                        it enables the generation of textual statistics in
+                                            regard to metrical features and it enables the testing
+                                            of the prescriptions of the handbooks against the poetic
+                                            corpus; 
+                                        since the application of metrical features changes
+                                            over time and between poets, it is an aid to
+                                            establishing dating, authorship and milieu of
+                                            texts;
+                                        pedagogically, it enables the construction of
+                                            multi-faceted teaching tools for training students in
+                                            the intricacies of metre (they usually find it
+                                            difficult). For example, with appropriate software,
+                                            different views of metre can be presented clearly and
+                                            unambiguously.
+                                    
+                                
+                                The encoding mechanism chosen has to satisfy a number of
+                                    intellectual requirements:
+                                        it has to aid a comprehensive analysis of the poems to
+                                            check if they obey the rules set out in the handbooks of
+                                            metrics;
+                                        as these metrical rules change over time the encoding
+                                            mechanism has to have the flexibility to reflect
+                                            this;
+                                        it has to facilitate the testing of the normative
+                                            prescription against the actual performance of metrical
+                                            rules either within an individual poem or across an
+                                            entire corpus.
+                                    
+                            
+                            
+                                Methodology
+                                The metrical features covered in this discussion are:
+                                        rhyme (final and internal);
+                                        alliteration;
+                                        formal closure.
+                                    
+                                To satisfy encoding requirements a the single element
+                                    (&lt;seg&gt;) with carefully arranged attributes is used to
+                                    encode all the necessary features. However, this is laborious
+                                    and time consuming and a question about this method is--is the
+                                    end result commensurate with the effort? This is difficult to
+                                    answer but non-computer analysis is at least as time consuming,
+                                    probably less productive in results and, further, the data so
+                                    generated are not readily exchangeable.
+                            
+                            
+                                Conclusion
+                                An encoding scheme such as that offered by the TEI currently
+                                    allows for the encoding of the complexities of Irish poetry in a
+                                    very generic way using the &lt;seg&gt; element and the refining
+                                    attributes of type and subtype. However, markup for markup's
+                                    sake is not an end in itself---the encoding must serve some
+                                    useful purpose. As demonstrated above, encoding in TEI is useful
+                                    for making the workings of early Irish metrics more transparent
+                                    for the student and serves as a useful pedagogical tool for the
+                                    teacher of this subject. Ongoing research on this paper will
+                                    attempt to identify the depth of markup needed to do a more
+                                    complete statistical analysis of metrics in early Irish verse
+                                    and will suggests ways in which the TEI may be extended to meet
+                                    the demands of such analysis.
+                            
+                        
+                        
+                            Bibliography
+                            
+                                
+                                    
+                                        Osborn
+                                                J.Bergin
+                                        Metrica
+                                    
+                                    
+                                        Ériu
+                                        
+                                            8
+                                            
+                                            161-69
+                                            1916
+                                            9
+                                            77-84
+                                            1921-1923
+                                        
+                                    
+                                
+                                
+                                    
+                                        Liam
+                                                Breatnach
+                                        Zur frage der "roscada" im irischen
+                                    
+                                    
+                                        
+                                            
+                                                H.
+                                                L.
+                                                C.
+                                                Tristam
+                                            
+                                        
+                                        Metrik und Medienwechsel/ Metrics and
+                                            Media
+                                        
+                                            Tübingen
+                                            
+                                            1991
+                                            197-205
+                                        
+                                    
+                                
+                                
+                                    
+                                        James
+                                                Carney
+                                        Linking alliteration (`fidrad
+                                            freccomail')
+                                    
+                                    
+                                        Éigse
+                                        
+                                            18
+                                            
+                                            251-62
+                                            1980-1981
+                                        
+                                    
+                                    [metrics]
+                                
+                                
+                                    
+                                        David
+                                                Chisholm
+                                        David
+                                                Robey
+                                        Encoding Verse Texts
+                                    
+                                    
+                                        Computers and the Humanities
+                                        
+                                            29
+                                            2
+                                            99-111
+                                            1995
+                                        
+                                    
+                                
+                                
+                                    
+                                        Rijklof
+                                                Hofman
+                                        Moines irlandais et métrique latine
+                                    
+                                    
+                                        Études Celtiques
+                                        
+                                            27
+                                            
+                                            235-66
+                                            1990
+                                        
+                                    
+                                
+                                
+                                    
+                                        Kaarina
+                                                Hollo
+                                        The alliterative structure of Mael Ísu Ó
+                                            Brolcháin's A aingil, beir
+                                    
+                                    
+                                        Ériu
+                                        
+                                            41
+                                            
+                                            77-80
+                                            1990
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Paul
+                                                Klopsch
+                                            
+                                        
+                                        Einführung in die mittellateinische
+                                            Verslehre
+                                        
+                                            Darmstadt
+                                            
+                                            1972
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Jürgen
+                                                Leonhardt
+                                            
+                                        
+                                        Dimensio syllabarum: Studien zur
+                                            lateinischen Prosodie und Verslehre vone der Spätantike
+                                            bus zur frühen Renaissance
+                                        Hypomnemata: Untersuchungen zur Antike und
+                                            zu ihrem Nachleben
+                                        
+                                            92
+                                            Göttingen
+                                            
+                                            1989
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Michael
+                                                Sperberg-McQueen
+                                            
+                                        
+                                        
+                                            
+                                                Lou
+                                                Burnard
+                                            
+                                        
+                                        Guidelines for Electronic Text Encoding and
+                                            Interchange (P3)
+                                        
+                                            Chicago, Oxford
+                                            
+                                            1994
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Kuno
+                                                Meyer
+                                            
+                                        
+                                        A primer of Irish metrics
+                                        
+                                            Dublin
+                                            
+                                            1909
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Gerard
+                                                Murphy
+                                            
+                                        
+                                        Early Irish metrics
+                                        
+                                            Dublin
+                                            
+                                            1961
+                                            repr. 1963
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Text Encoding, Representation and Interpretation
+                        Claus Huitfeldt
+                        
+                            This paper argues that representation and interpretation should be
+                                regarded as relationships between concrete texts and their
+                                audiences, not as separate entities in some realm of mental or
+                                abstract objects. This perspective proves especially fruitful to
+                                discussions of the role of interpretation in text encoding.
+                             Current views on how text encoding relates to matters of
+                                representation and interpretation seem confused. On the one hand,
+                                many encoding projects in the humanities find their raison d'etre in a claim to represent some
+                                body of texts in an accurate and reliable form. So-called
+                                "descriptive" text encoding is an essential tool in such efforts. On
+                                the other hand, difficulties in these attempts to create objectively
+                                accurate representations are often blamed on a seemingly inescapable
+                                "interpretive" element in transcription and encoding.
+                            But if text encoding is itself at bottom interpretive, how can it be
+                                used to represent texts at all? On the
+                                other hand, if everything about this supposedly representational
+                                device is at bottom interpretive, doesn't the distinction between
+                                representation and interpretation become rather empty?
+                            I propose two steps to get out of this problem. As a first step, we
+                                may imagine representation and interpretation as different parts of
+                                one continuum. Our task is to find a suitable location for a
+                                demarcation line between the two areas somewhere along this
+                                continuum. Then, by stating that something is a representation, we
+                                are not excluding the possibility that it might in some other
+                                perspective be seen as an interpretation, i.e. that the demarcation
+                                line might legitimately have been drawn elsewhere. Nor are we
+                                denying that representations and interpretations are, in some deeper
+                                perspective, of the same kind. But we deny the usefulness of a
+                                demarcation line placed at one extreme of the continuum.
+                            The second step is this: "Representation" and "interpretation" are
+                                best seen as names for relations between texts. Derivatively, the
+                                terms may then also refer to individual texts which have these
+                                relationships to other texts. The move can be brought one step
+                                further by extending the relationships to include the texts' audiences: Texts are not representations or
+                                interpretations of each other in
+                                    abstracto, but only in relation to certain audiences of
+                                human, i.e. social, historical and cultural beings.
+                            On the basis of these two steps, we can clarify the role of text
+                                encoding in representation and interpretation. The word "interpret",
+                                as used in relation to text, has at least two broad senses: 
+                                    1. To identify the meaning of a text (reading, listening,
+                                        deciphering) 
+                                    2. To explain the meaning of a text (paraphrasing,
+                                        analysing, discussing) 
+                                
+                            Whereas the first of these senses talks about identification of meaning, the second talks about explanation of meaning. On the relational
+                                view suggested above, the meaning of a text can only be given by
+                                another text: identification as well as explanation must themselves
+                                take the form of text.
+                            My proposal is that we reserve the word "representation" for the
+                                    identification of meaning. Just as
+                                identification normally precedes explanation, representation
+                                normally precedes interpretation. To represent a text, then, is to
+                                identify and reproduce its meaning in the form of another text. This
+                                meaning is the linguistic content, roughly in the sense of what
+                                representatives of the Text Encoding
+                                    Initiative seem to refer to when they speak about "the
+                                text itself", or what Nelson Goodman has
+                                called "sequences of letters, spaces and punctuation marks" [Goodman
+                                1976, p 115]. For some purposes we may legitimately want to extend
+                                this definition to include compositional or typographic features
+                                like paragraphs, chapters, font shifts etc., but as an absolute
+                                minimum it must include linguistic content in the sense just
+                                indicated. This is as close as we can come to a "rock bottom" of
+                                objective facts in textual scholarship.
+                            Neither the faculties and skills nor the arguments and methods we
+                                employ in identifying text in this sense are essentially different
+                                from those we employ in interpretive activities. This observation is
+                                simply a restatement of the principle of the "hermeneutic circle",
+                                which also accounts for the fact that just as interpretations are
+                                made on the basis of representations, representations themselves may
+                                be revised in the light of interpretations.
+                            According to what we have said so far, to interpret a text is either
+                                    1. to put forth another text
+                                        which is rephrasing or commenting upon the first, or
+                                    2. to add something to the
+                                        original text which contributes to a more or less specific
+                                        understanding of it.
+                                
+                            We may call the first kind of interpretation "stand-alone", and the
+                                second "in-line".
+                            For in-line interpretation, which is the main focus of the rest of
+                                this paper, text encoding provides exciting possibilities. Some
+                                examples are:
+                                    comments,
+                                    links,
+                                    alternate structures, and
+                                    thematic tagging.
+                                
+                            A detailed discussion, including a discussion of how such devices
+                                have been judged by one specific encoding project (the Wittgenstein
+                                Archives), will provide examples of the kinds of considerations
+                                which may be relevant for the application of interpretive encoding
+                                in philosophy as well as other disciplines.
+                            The discussion suggests that the proposed understanding of encoding
+                                practices agrees with the following, common-sense view of
+                                representation and interpretation:
+                                    1. A text is a representation of
+                                        another text if the first has the same linguistic content,
+                                        i.e. the same wording, as the other.
+                                    2. A text is an interpretation of
+                                        another text if the first is not a
+                                        representation of the other, but explains, discusses, or
+                                        gives an alternative account of the meaning of the other
+                                        with other words.
+                                    3. A text may contain both a
+                                        representation and an interpretation of another text,
+                                        provided that the representation and interpretation are
+                                        clearly distinguished from each other.
+                                
+                        
+                        
+                            References
+                            
+                                
+                                    
+                                        
+                                            
+                                                Nelson
+                                                Goodman
+                                            
+                                        
+                                        The Languages of Art: An approach to a
+                                            Theory of Symbols
+                                        2nd ed
+                                        
+                                            Indianapolis
+                                            Bobbs-Merrill
+                                            1969
+                                            1976
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Arne
+                                                Næss
+                                            
+                                        
+                                        Communication and Argument - Elements of
+                                            Applied Semantics
+                                        
+                                            Oslo
+                                            Universitetsforlaget
+                                            1966
+                                            1981
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                C.
+                                                Michael
+                                                Sperberg-McQueen
+                                            
+                                        
+                                        
+                                            
+                                                Lou
+                                                Burnard
+                                            
+                                        
+                                        Guidelines for the Encoding and Interchange
+                                            of Machine-Readable Texts (TEI P3)
+                                        
+                                            Chicago &amp; Oxford
+                                            
+                                            1994
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                Ludwig
+                                                Wittgenstein
+                                            
+                                        
+                                        Wittgenstein's Nachlass. The Bergen
+                                            Electronic Edition
+                                        CD-ROM Edition in four volumes
+                                        
+                                            
+                                            Oxford University Press
+                                            1998-99
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+                
+                    
+                        Thinking with markup: the case of personification
+                        Willard McCarty
+                        
+                            In this paper I use the specific case of personification in Ovid's
+                                    Metamorphoses to test the notion that
+                                encoding is an intellectual act which affects how we understand a
+                                text.
+                            I begin by considering the role of the machine in the act of
+                                encoding, arguing that the sorting capacity of the computer, by
+                                bringing all tags of an identical type together, tends to result in
+                                a degree of systemacity not known or perhaps possible before. It
+                                becomes practical to work at a very fine level of detail over a
+                                large text because individual interpretations can so easily be
+                                brought together. Because only identical items are sorted together,
+                                reduction of variety to a limited set of categories is strongly
+                                rewarded, and so consistency is enforced. The inability of the
+                                machine to handle anything not completely explicit means that
+                                encoding is a starkly declarative process. Thus all ambiguities to
+                                be encoded must be completely resolved. The interesting matter is
+                                not simply that the encoder is forced to make difficult, highly
+                                interpretative decisions which the conventional literary critic can
+                                and perhaps should avoid; he or she is apt to see problems that were
+                                not apparent as problems before.
+                            Personification (lit. "person-making") is a case in point. In the
+                                paper I show how the twin computational imperatives of completely
+                                explicit and rigorously consistent representation, by framing the
+                                mental operations of rendering personification into a computational
+                                metalanguage, change how and what we think about it.
+                            I approach the trope as a phenomenon for encoding against the
+                                background of its long rhetorical and literary-critical tradition
+                                (Paxson 1994; McCarty 1993; McCarty 1994). Curiously, this tradition
+                                seems almost entirely irrelevant to a computational approach -
+                                precisely because computation changes what we see and how we are
+                                able to think about it. Instead of looking at the roles
+                                personificated characters play in the stories where they occur, as
+                                scholars have done for the past two and a half millennia, the
+                                encoder focuses on how even the most minor personifications come
+                                into being linguistically.
+                            After a brief introduction to the Metamorphoses and the ontological context it provides
+                                for personification, I describe my descriptive grammar of the trope.
+                                Then I examine in detail specific instances under three categories,
+                                considering each candidate against the criteria defined in my
+                                grammar. These criteria consist of local features in the language
+                                modified in their effect by 5 different types of context.
+                            The first two categories cover uniquely personified instances and
+                                those with an uneven history of personification, respectively; the
+                                third, entities that are evidently personified by the influence of
+                                an anthropomorph, such as Medea or Orpheus. I show that in addition
+                                to the local factors (which I take as primary) each category
+                                manifests a different range of dependencies on various of the
+                                contexts described in the grammar.
+                            A fourth category is reserved for a significant exception to the rule
+                                that personifications are created through some alteration of a
+                                sub-human entity. It identifies entities ontologically unusual by
+                                nature rather than through change. I include them because they are
+                                products of the human imagination, therefore closer to humanity than
+                                actual beasts and so implicitly personified. They also exemplify the
+                                commanding role of interpretative decision in the absence of direct
+                                evidence.
+                            In addition to the successful personifications, I also focus on
+                                liminal cases so as to emphasise the computationally unjustifiable,
+                                hence arbitrary, interpretative nature of the encoding decision. I
+                                show how by excluding them two things are accomplished: we gain a
+                                delimited and therefore useful set of phenomena, and precisely by
+                                excluding the problematic cases we throw strong light on the
+                                workings of ambiguity in the poem. Thus markup simultaneously
+                                mistranslates and illuminates.
+                            I argue in the paper for the idea that a coherently rendered metatext
+                                is a modifiable interpretative representation of its text, i.e. a
+                                model, and that as is common to the practice of modelling, its
+                                mutability is essential to its purpose. I show how, in the specific
+                                case of personification, the problematic cases invite disagreement,
+                                and how a computational form of publication serves the base nature
+                                of interpretative markup by allowing the user to alter encoding
+                                decisions and automatically regenerate the compiled work.
+                            In conclusion I address the overall question of how scholarly
+                                encoding and scholarship in a given field interrelate. From my
+                                example, it seems clear that computational encoding allows the
+                                scholar systematically to model the behaviour of a complex poetic
+                                trope for a specific text, producing a useful list of instances, a
+                                descriptive grammar and liminal cases that raise illuminating
+                                questions. It seems likely that this grammar can be applied usefully
+                                to other texts and that it can provide a starting point both for a
+                                broader understanding of the trope and for further computational
+                                work on the elusive idea of context. Less obvious is the profound
+                                dependence of an encoding on a prior, readerly conception of the
+                                text. Thus, for Ovidian personification, the redefinition of what is
+                                meant by 'person,' down to the level at which markup provides real
+                                help, proceeds from a reading in which apparently minor ontological
+                                flux is given major importance -- a critical choice not a textual
+                                inevitability. Thus phenomena appear as candidates for markup
+                                because of the interpretative reading that frames them.
+                            Hence encoding is essentially a means of scholarly thought and
+                                expression. This means that encoding is not in essence or only a
+                                backroom technical operation, rather a language of expression that
+                                scholars may need to read directly as a matter of course. If our
+                                goal is the stability of a standard encoding metalanguage against
+                                the flux of hardware and software, then direct encounter with it
+                                would seem to be unavoidable. Furthermore, experience with natural
+                                language suggests strongly that simplicity and perspicuity of style
+                                are closely allied with if not preconditions for profundity of
+                                content. Is readable, perspicuous metalanguage an achievable goal?
+                                The intellectual view of encoding would suggest that it must be.
+                            
+                        
+                        
+                            References
+                            
+                                
+                                    
+                                        W.
+                                                McCarty
+                                        Encoding Persons and Places in the Metamorphoses of Ovid: 1.
+                                            Engineering the Text
+                                    
+                                    
+                                        Texte et Informatique
+                                        Texte: Revue de Critique et de Théorie
+                                            Littéraire
+                                        
+                                            13/14
+                                            
+                                            
+                                            121-72
+                                            1993
+                                        
+                                    
+                                
+                                
+                                    
+                                        W.
+                                                McCarty
+                                        Encoding Persons and Places in the Metamorphoses of Ovid. Part 2: The
+                                            Metatextual Translation
+                                    
+                                    
+                                        Texte, Métatexte, Métalangage
+                                        Texte: Revue de Critique et de Théorie
+                                            Littéraire 
+                                        
+                                            15/16
+                                            
+                                            
+                                            261-305
+                                            1994
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                W.
+                                                McCarty
+                                            
+                                        
+                                        A provisional grammar of personification
+                                            for the Met
+                                    
+                                    
+                                        
+                                        
+                                            
+                                            
+                                            1998
+                                        
+                                    
+                                    &lt;&gt;.
+                                
+                                
+                                    
+                                        
+                                            
+                                                James
+                                                J.
+                                                Paxson
+                                            
+                                        
+                                        The poetics of personification
+                                        Literature, Culture, Theory
+                                        RichardMacksey
+                                        MichaelSpinker
+                                        
+                                            6
+                                            Cambridge
+                                            Cambridge University Press
+                                            1994
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    

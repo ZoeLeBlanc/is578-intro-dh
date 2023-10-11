@@ -1,0 +1,408 @@
+
+
+
+    
+        
+            
+                Query Visualization, Markup, and a Region-based
+                    Document Model
+                
+                    
+                        Thomas
+                        Horton
+                        
+                            University of Virginia
+                            horton@virginia.edu
+                        
+                    
+                
+                
+                    
+                        Sunish
+                        Parikh
+                        
+                            Florida Atlantic University
+                            
+                        
+                    
+                
+                
+                    
+                        Robert
+                        Nash
+                        
+                            Florida Atlantic University
+                            
+                        
+                    
+                
+                
+                    
+                        Abhijit
+                        Pandya
+                        
+                            Florida Atlantic University
+                            abhi@cse.fau.edu
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                This paper will address our work in the area of software models and architectures
+                    for supporting the development of software tools for text corpora and digital
+                    libraries. Previously we have presented a region-based approach for defining and
+                    manipulating things found inside text documents [6]. We believe that combining a
+                    region-based approach with a markup-centered approach that supports XML and SGML
+                    has many benefits. For example, our approach allows software tools to manipulate
+                    text features that are not marked-up and features that are non-hierarchical in
+                    nature (including arbitrary user selections of parts of a document). Both
+                    approaches can be integrated into one tool; for example, a prototype in Java has
+                    been developed in earlier work [4] that can manipulate an XML document using a
+                    DOM (Document Object Model) implementation while also supporting the
+                    region-based operations that we propose.
+                In our paper we will specifically address one benefit of our approach: a general
+                    method for the visualization of query results. Before presenting this method, we
+                    must first provide the terminology used to define it.
+                Our region-based approach is largely inspired by sgrep, a free utility for
+                    searching structured text documents. It takes a query from a user and returns
+                    sections of a text file that match the query. Both its query language and the
+                    results it finds are based on an algebra of *regions* and *region sets*:
+                        A *region* is a chunk of text, determined by a starting and ending
+                            byte position in the text file.
+                        A *region set* is collection of regions that can be manipulated in
+                            powerful and well-defined ways. For example, two sets can be
+                            concatenated, or merged to produce all regions in the first set that are
+                            contained with some region in the second region set.
+                    
+                A simple query in sgrep might be to find a single string in a file; this returns
+                    a set of regions, each of which is the pair of starting and ending byte offsets
+                    in the file where that string occurred.
+                Using regions in text processing is not a new concept. sgrep's notion of regions
+                    is identical to the concept of a *span* defined in the TIPSTER architecture [3]
+                    for information retrieval software and implemented by systems such as GATE [1].
+                    The use of byte-offsets in some way to identify index terms has also been used
+                    in earlier systems. For example, in a PAT tree [2] tokens to be indexed are
+                    defined using semi-infinite strings (sistrings) that begin at one byte position.
+                    This data model supports efficient retrieval in this manner. But our approach
+                    differs from this because our reason for using regions is not to achieve
+                    efficient retrieval but to support the notion of "nesting" of text features.
+                    This supports interesting manipulating of these features to achieve end-user
+                    goals beyond efficient retrieval. We have also developed an important
+                    enhancement to this approach for XML documents by which regions and nesting are
+                    defined based on the markup hierarchy without relying on byte positions.
+                A region set is general enough that it can be used to represent many different
+                    things in a text:
+                        all words in the document;
+                        all occurrences of a given token;
+                        all DIV1 elements in an XML document;
+                        all XML elements that have an attribute with a given value.
+                    
+                Region sets can also represent a subtext or "selection" made from a document. A
+                    region set could represent some selection of XML elements or arbitrary byte
+                    positions that that overlap the markup hierarchy.
+                We will use the term *text object* (TO) to mean any "thing" that a user wants to
+                    define and manipulate in a text document. A *text object occurrence* (TOO) is
+                    one occurrence of one of these. A TOO is simply represented by a region (If a
+                    TOO is non-contiguous, then it would be represented by a region set. Also, if a
+                    document is composed of more than one file, our definition of a region must be
+                    adapted. Both of these issues add a level of complexity that we will ignore for
+                    the sake of this abstract.) Thus "words" and markup-elements are both text
+                    objects in our model, with occurrences of each one represented by a region set.
+                As users of sgrep understand well, many useful queries can be defined in terms of
+                    the nesting or inclusion of two region sets. It becomes simple enough to find or
+                    count occurrences of a particular word (or set of words) in a "context" such as
+                    any markup-element unit (e.g. words, lines, paragraphs) if both word-tokens and
+                    markup are stored as region sets. And since we have a common model where all of
+                    there are represented as text objects, it is just as simple to find or count
+                    occurrences of one markup-element inside another, or inside a user-defined
+                    selection. This is why we argue that a region-based approach as described here
+                    enhances a markup-centered view of documents in software that processes text.
+                Our paper will demonstrate this by focusing on how queries to find occurrences of
+                    text objects (e.g. words, markup elements) can be visualized. Our approach is a
+                    modified version of the TileBars technique [5]. In our approach, a user would
+                    define one or more query terms; each might be one or more text objects. In
+                    addition, the user would choose a search context to indicate the segments or
+                    units in which the software should find occurrences of each of the query terms.
+                    Results of such a query can be shown graphically; for example, this URL shows
+                    TileBars resulting from a query on a small set of documents (from the original
+                    paper on this technique):
+                    
+                In this output, a document is represented by a rectangle. Each of these has a
+                    "row" for each query term, and the "columns" represent the segments that the
+                    document is divided into. A shading of grey in each row-column intersection
+                    indicates how often each query term occurs in that segement.
+                This visualization technique displays the results of queries in terms of several
+                    dimensions: documents, terms, and segments. Various attributes of the query
+                    results can easily be seen. First, the size of each document (in terms of
+                    segments) is shown by the size of the tile. Second, occurrence of terms by
+                    segment is indicated when a cell is grey, revealing the relative location within
+                    a document where the terms occur. Third, strength of occurrence of each term is
+                    indicated by the shade of grey. Finally, cooccurrence of multiple terms is
+                    indicated by looking for columns where both rows are shaded.
+                Our modifications to the original TileBar method are as follows. First, our query
+                    terms are not limited to simply word types. Any text object or combination of
+                    text objects can be used. These could include of course markup-elements. Second,
+                    the context that defines the segments in each document can be completely
+                    controlled by the user, as long as a region-set is selected. The context could
+                    be quickly and easily changed to allow a user to see results by, say, act, scene
+                    or line in a play. Each of these improvements is directly supported by our
+                    region-based model for documents and their contents.
+                In conclusion, we believe region-based approach can be combined with a
+                    markup-based view of documents to produce software architectures that can meet a
+                    variety of user needs. For example, our approach provides a common model for
+                    representing words and markup that can more flexibly support the needs of users
+                    of digital text resources. This common model shows its advantages in developing
+                    a useful and generalized visualization scheme based on the TileBars
+                approach.
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    Rob
+                                    Gaizauskas
+                                 et al 
+                            GATE User Guide
+                            
+                                
+                                
+                                
+                            
+                        
+                        Available at: 
+                    
+                    
+                        
+                            
+                                
+                                    Gaston
+                                    H.
+                                    Gonnet
+                                
+                            
+                            
+                                
+                                    Ricardo
+                                    A.
+                                    Baeza-Yates
+                                
+                            
+                            
+                                
+                                    Tim
+                                    Snider
+                                
+                            
+                            New Indices for Text: PAT Trees and PAT Arrays
+                        
+                        
+                            
+                                
+                                    William
+                                    B.
+                                    Frakes
+                                
+                            
+                            
+                                
+                                    Ricardo
+                                    Baeza-Yates
+                                
+                            
+                            Information Retrieval: Data Structures and Algorithms
+                            
+                                
+                                Prentice Hall PTR
+                                1992
+                                66-82
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Ralph
+                                    Grisham
+                                 et al 
+                            TIPSTER Text Phase II Architecture Design Version 2.3 9
+                            
+                                
+                                New York University
+                                September 1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Olya
+                                    Gurevich
+                                
+                            
+                            
+                                
+                                    Thomas
+                                    B.
+                                    Horton
+                                
+                            
+                            
+                                
+                                    Robert
+                                    Bingler
+                                
+                            
+                            
+                                
+                                    Worthy
+                                    N.
+                                    Martin
+                                
+                            
+                            A Workbook for Humanities Scholars 
+                        
+                        
+                            Submitted for presentation at ALLC/ACH 2000, Glasgow,
+                                21-25 July 2000
+                            
+                                
+                                
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Marti
+                                    A.
+                                    Hearst
+                                
+                            
+                            TileBars: Visualization of Term Distribution
+                                Information in Full Text Information Access
+                        
+                        
+                            Proceedings of CHI'95, Conference on Human Factors and
+                                Computing Systems. Assoc. for Computing Machinery 
+                            
+                                
+                                
+                                1995
+                            
+                        
+                        Available at:
+                    
+                    
+                        
+                            
+                                
+                                    Thomas
+                                    B.
+                                    Horton
+                                
+                            
+                            A Region-based Approach for Processing Digital Text
+                                Resources
+                        
+                        
+                            Conference Abstracts of the Digital Resources for the
+                                Humanities, September 12-15, 1999, King's College, London
+                            
+                                
+                                
+                                1999
+                                47-49
+                            
+                        
+                        Presentation slides available at:
+                    
+                    
+                        
+                            
+                                
+                                    Jani
+                                    Jaakkola
+                                
+                            
+                            
+                                
+                                    Pekka
+                                    Kilpeläinen
+                                
+                            
+                            SGREP (structured grep)
+                            
+                                
+                                University of Helsinki, Finland
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                
+            
+        
+    

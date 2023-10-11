@@ -1,0 +1,187 @@
+
+
+
+    
+        
+            
+                Networked Moving Images
+                
+                    
+                        Celia
+                        Duffy
+                        
+                            Royal Scottish Academy of Music and Drama
+                            c.duffy@rsamd.ac.uk
+                        
+                    
+                
+                
+                    
+                        Steve
+                        Malloch
+                    
+                
+                
+                    
+                        Tony
+                        Pearson
+                    
+                
+            
+            
+                1999
+                
+                    Univeristy of Virginia
+                
+                Charlottesville, VA
+            
+            
+                ACH/ALLC 1999
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    This paper describes and demonstrates the work of the Performing Arts Data
+                        Service (PADS) in piloting the networked delivery of moving image resources
+                        for use in teaching film and TV studies and social history at the University
+                        of Glasgow. Streaming high quality moving images poses many technical
+                        questions, and we outline our solution which has proved robust within the
+                        limited testing arena of the project. The main focus of the paper, however,
+                        is on user issues, covering such areas as the choices we made for the design
+                        of the user interface, what we have learned from our user trials and
+                        evaluations, and what effects networked access to a library of moving image
+                        material might have on pedagogic and research practices in the
+                        humanities.
+                
+                
+                    Overview of the project
+                    A University of Glasgow consortium led by the PADS was chosen at the end of
+                        1997 as one of two pilot sites for a new project to develop the delivery of
+                        moving images to UK academic institutions via networks. The short-term aim
+                        of the project, which was initiated by the British Universities Film &amp;
+                        Video Council (BUFVC) in partnership with the British Film Institute and the
+                        Joint Information Systems Information Committee (JISC) is to test both the
+                        technical and pedagogical viability of networked delivery of moving pictures
+                        to universities. Over the longer term, it may be the opening activity in a
+                        radical new network service for UK higher education.
+                    The collections of digitised moving images and related textual resources are
+                        mounted on servers for access by lecturers and students via a secure web
+                        gateway, with moving images streamed to individual workstations, computer
+                        labs and lecture rooms in the university. Of particular interest to film and
+                        TV studies academics are the collections of resources on Hitchcock's
+                        Blackmail (including substantial extracts from both the sound and silent
+                        versions of the film for comparison, a BBC documentary and a number of
+                        related textual resources) and a collection of archive British TV of the
+                        1950s and 60s.
+                
+                
+                    Technical architecture
+                    Once cleared for copyright via the BFI, the moving image material was
+                        transferred onto Beta SP for digitisation by the Manchester Visualisation
+                        Centre at the University of Manchester. From there it was forwarded to the
+                        client sites. At Glasgow we have concentrated on MPEG1 format, but we are
+                        also trailing MPEG2 format for some selected content after consultation with
+                        academics on the desirability of high quality pictures. We have focussed on
+                        campus-wide delivery, comparing two methods of storing and managing data:
+                        from the PADS SGI servers (using MediaBase and HyperWave) via fast ethernet
+                        and ATM and from the SUN servers of our partners in the Revelation project
+                        at the Department of Computing Science.
+                
+                
+                    Using the collections
+                    HyperWave, the PADS information gateway system enables users to employ a
+                        number of searching strategies (from simple searches on full text content or
+                        specific metadata attributes to more specialised filters) and to have
+                        results displayed in different ways, including graphical representations of
+                        the structure of the information. Users simply click on hyperlinks in the
+                        search results to play the movies via the MediaBase player. If browsing,
+                        again, there are a number of choices; we have found that users value the
+                        opportunity for browsing, an opportunity often denied in digital library
+                        environments. In browsing mode, users are given a subset of the Dublin Core
+                        metadata attributes to help them make their choice (including a brief
+                        description, date and link to related resources). They can also choose to
+                        access the full descriptive metadata for each item.
+                
+                
+                    User evaluations
+                    We have carried out evaluations of the use of this material in contrasting
+                        academic situations. For example, the Hitchcock materials have been used as
+                        part of a junior undergraduate lecture series, with materials made available
+                        to students to follow up in their own time in a student lab; we have also
+                        evaluated how senior undergraduate students majoring in film and TV studies
+                        use the material for personal research, and we have gathered data from
+                        academic colleagues in other universities on the utility of this method of
+                        delivery and its implications for teaching and scholarship. There is a
+                        striking attitudinal difference between faculty and students: students
+                        regard this innovative method of delivery with some nonchalance (this is no
+                        more then they have come to expect from their increasingly digitally-based
+                        study environment), meanwhile faculty, having experienced the difficulties
+                        of locating and using moving image materials in traditional formats for
+                        teaching or research, are much more forthcoming about the potential
+                        benefits. Priority areas for further development work are better indexing
+                        and easy-to-use tools to manipulate content; on the wider scale, rights
+                        management needs to be addressed urgently and a strategy formulated for
+                        digitisation and access priorities.
+                
+                
+                    Conclusions
+                    In comparison with traditional methods of access to moving image materials,
+                        networked delivery has clear advantages, including ease of access for larger
+                        numbers of users than is traditionally possible, and facilitation of access
+                        to a wide range of supporting materials alongside the moving images. Also
+                        some disciplines which have hitherto underused the rich variety of moving
+                        image resources available might be encouraged to take better advantage of
+                        them. However, although the technical setup necessary to achieve networked
+                        delivery of large amounts of moving image data is no longer at the "cutting
+                        edge" it is still unavailable to those without a fairly sophisticated
+                        technical architecture. This, coupled with other obstacles such as the
+                        thorny issue of rights management, make the future widespread availability
+                        of this kind of service still uncertain. At the end of the project we
+                        believe we will have demonstrated significant pedagogic benefit and a
+                        practical technical setup with which to achieve it, as a useful contribution
+                        to the debate about future directions.
+                
+            
+        
+    

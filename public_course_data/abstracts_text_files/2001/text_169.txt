@@ -1,0 +1,336 @@
+
+
+
+    
+        
+            
+                Phraseological Database Extended by Educational
+                    Material for Learning Scientific Style
+                
+                    
+                        Elena
+                        I.
+                        Bolshakova
+                        Center of Computer Investigations (CIC), National Polytechnic Institute (IPN), Mexico City, Mexico
+                                elena@pollux.cic.ipn.mx
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    Literary styles, as well as specialized sublanguages, accomplishing
+                        communicative goals in particular fields of human activity, share main
+                        features of natural language as a whole, and at the same time demonstrates
+                        some deviations from it, with respect to their syntax, morphology, and
+                        lexicon (Grishman and Kittredge 1986). As a rule, each functional style has
+                        its own phraseology, i.e. a system of word stereotypes (cliche) exploited as
+                        stable colloquial formulas that are ready for use and thus optimize
+                        communication. 
+                    Among the others, the functional style of scientific and technical (sci-tech)
+                        prose is admittedly the most distinctive one, primarily due to the intensive
+                        use of scientific phraseology including special sci-tech terms (Mitrofanova
+                        1973). The style covers documents of various genres and particular types -
+                        manual, research paper, technical report, instructions, patents, etc.
+                        Scientific phraseology provides economical ways to express ideas in sci-tech
+                        texts with their factuality, informativeness, and precision.
+                    Teaching and learning literary styles is of great importance not only for
+                        students in the humanities, but also for students in technical and natural
+                        sciences. Student's competence in particular fields should be supplemented
+                        with the ability to write sci-tech documents of a sufficiently high quality.
+                        Thus, education in technical and natural sciences should include some
+                        humanity knowledge, in particular, knowledge of scientific style.
+                    Phraseology of specialized scientific sublanguages includes both sci-tech
+                        terms and the common scientific phraseology. Acquiring the latter presents
+                        the major difficulty in learning scientific style, because terms can be
+                        usually found in specialized dictionaries, while there are few available
+                        dictionaries of typical scientific phraseological expressions. However,
+                        students need certain educational information or/and an assistant system for
+                        acquiring scientific phraseology.
+                    We describe a computer system being under development over a period of two
+                        years and integrating phraseological database of Russian scientific language
+                        and explanatory educational material. It is intended to help students to
+                        improve their linguistic competence in the scientific style and genres and
+                        belongs to hybrid computer systems supporting both process of sci-tech
+                        writing and learning its fundamentals. Another example of such hybrid
+                        systems is an experimental system described in (Bolshakova 2000). While
+                        designing the phraseology database, the principles of several computer
+                        lexical databases were considered (Fellbaum 1998, Bolshakov 1994).
+                
+                
+                    Features of the System
+                    >From the user's point of view, the system can be regarded as a linguistic
+                        database supplied with a computer reference guide accumulating general
+                        explanatory information about scientific style and phraseology. Text of the
+                        guide has been specially written and structured for representation in
+                        hypertext form, since usefulness of hypertext for learning is well
+                        acknowledged (Brusilovsky 1996).
+                    Thus, each page of the reference guide presents a relatively independent
+                        topic and is connected by hypertext links with another pages of the guide
+                        and pages presenting items of the phraseology database. In turn, hypertext
+                        pages with phraseological expressions are both interconnected and connected
+                        with guide pages explaining necessary concepts. Besides browsing through
+                        various pages, the search of phraseological expressions containing fixed
+                        words can be made, resulting in a relevant page.
+                    The system is flexibly organized: it allow a free navigation through pages of
+                        the reference guide and of the phraseological database, thus enabling to
+                        view the information in a desirable sequence. At the same time, a student
+                        can learn the educational material in a predetermined systemic way
+                        recommended for beginners. Such flexibility envisioned by a liberal
+                        humanities viewpoint proved to be more effective learning strategy.
+                
+                
+                    Covered Phraseology
+                    Phraseology represented in the database was gathered from several textual
+                        dictionaries of common scientific phraseology - see, for example, (DICT
+                        1973) and then complemented by phraseological data obtained through manual
+                        scanning of scientific texts in several fields.
+                    Units of common scientific phraseology, including domain independent word
+                        stereotypes and colloquial templates specific for particular scientific
+                        genres, was systemized and arranged according to their functions in texts.
+                        The biggest group of expressions concerns words regarded as common
+                        scientific variables, e.g. "problem", "analysis", "result". For instance,
+                        phraseological expressions with such variables are: "objective analysis
+                        shows/yields ", "to question the results". Another group presents units of
+                        metatext character, designing and organizing scientific text narrative. It
+                        includes expressions serving as connectors of different textual parts ("in
+                        addition", "mentioned above", etc.), expressions indicating information
+                        source (like "in their/our opinion"), and estimating expressions (e.g., "it
+                        seems reasonable").
+                    Each item of the phraseological database integrates all semantically
+                        equivalent variants (synonyms) of a particular expression that are described
+                        by a semantico-syntactic pattern with associated information including an
+                        explanation of its meaning and examples of typical sentences exploiting it.
+                        Empty valences of the expression are indicated in the pattern, with
+                        specification of their semantic roles.
+                
+                
+                    Conclusions
+                    We have described both the methodological framework and the main features of
+                        a computer system intended for learning phraseology of Russian sci-tech
+                        texts. Its interrelated components, i.e. phraseology database and
+                        educational material represented in hypertext form, are partially
+                        implemented with the aid of Borland Delphi environment tools.
+                    Among directions of system improvement being now under consideration we
+                        should point out further extension of phraseology lexicon. Text corpora
+                        reflecting contemporary sci-tech language usage will supposedly be
+                        exploited, since features of any style and sublanguage can be revealed
+                        exhaustively on the basis of corpus analysis (Biber et al. 1998).
+                    Another direction concerns merging into a common database of scientific
+                        phraseologies of several natural languages. Preliminary comparative study of
+                        scientific phraseology of Russian, English, and Spanish languages shows an
+                        evident similarity of their word stereotypes. This fact can be used for the
+                        systematical computer-aided teaching of foreign scientific phraseology.
+                
+            
+        
+        
+            
+                References
+                
+                    
+                        
+                            
+                                
+                                    D.
+                                    Biber
+                                
+                            
+                            
+                                
+                                    S.
+                                    Conrad
+                                
+                            
+                            
+                                
+                                    D.
+                                    Reppen
+                                
+                            
+                            Corpus Linguistics. Investigating Language Structure
+                                and Use
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            I.
+                                    Bolshakov
+                            Multifunctional Thesaurus for Russian Word
+                                Processing
+                        
+                        
+                            Proceedings of 4th Conference on Applied Natural
+                                Language Processing, Stuttgard, 13-15 October, 1994
+                            
+                                
+                                
+                                1994
+                                200-202
+                            
+                        
+                    
+                    
+                        
+                            P.
+                                    Brusilovsky
+                            Methods and Techniques of Adaptive Hypermedia
+                        
+                        
+                            User Modeling and User-Adapted Interaction
+                            
+                                6
+                                2-3
+                                87-129
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            E.
+                                    Bolshakova
+                            Computer Assistance in Writing Technical and Scientific
+                                Texts
+                        
+                        
+                            Proceedings of 2nd International Symposium "Las
+                                Humanidades en la Educacion Tecnica ante el Siglo XXI", Mexico,
+                                27-29 September, 2000
+                            
+                                
+                                
+                                2000
+                                59-63
+                            
+                        
+                    
+                    
+                        
+                            Dictionary of Verb-Noun Combinations of the Common
+                                Scientific Speech
+                            
+                                Moscow
+                                Nauka Publ.
+                                1973
+                            
+                        
+                        (in Russian).
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    Fellbaum
+                                
+                            
+                            WordNet: An Electronic Lexical Database
+                            
+                                Cambridge
+                                MIT Press
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    R.
+                                    Grishman
+                                
+                            
+                            
+                                
+                                    R.
+                                    Kittredge
+                                
+                            
+                            Analyzing Language in Restricted Domains: Sublanguage
+                                Description and Processing
+                            
+                                Hillsdale, N.J.
+                                Lawrence Erlbaum Associates
+                                1986
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    O.
+                                    Mitrofanova
+                                
+                            
+                            Language of Scientific and Technical Literature
+                            
+                                
+                                Moscow University Press 
+                                1973
+                            
+                        
+                        (in Russian).
+                    
+                
+            
+        
+    

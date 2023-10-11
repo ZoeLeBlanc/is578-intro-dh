@@ -1,0 +1,842 @@
+
+
+
+    
+        
+            
+                On Determining a Valid Text for Non-Traditional
+                    Authorship Attribution Studies: Editing, Unediting, and De-Editing
+                
+                    
+                        Joseph
+                        Rudman
+                        
+                            Carnegie Mellon
+                            jr20@andrew.cmu.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                
+                    INTRODUCTION:
+                    
+                        
+                            
+                                The work’s material history since its
+                                    inception, the vast and largely uncharted alterations imposed by
+                                    the history and by the mediation of generation upon generation
+                                    of printers, editors, publishers—this is a relativism we are
+                                    prone to ignore, but ignore at our peril.
+                            
+                            (Marcus 1996)
+                        
+                    
+                    
+                        
+                            
+                                The literary texts often are not homogenous
+                                    since they may comprise dialogues, narrative parts, etc. An
+                                    integrated approach, therefore, would require the development of
+                                    text sampling tools for selecting the parts of the text that
+                                    best illustrate an author’s style.
+                            
+                            (Stamatatos et al. 2001)
+                        
+                    
+                    Most non-traditional authorship attribution studies place too much emphasis
+                        on statistics, stylistics, and the computer and not enough focus is given to
+                        the integrity and validity of the primary data— the text itself.
+                    It is intuitively obvious and easily shown empirically that if you are
+                        conducting a study of the patterns of an author’s stylistic usage (e.g.
+                        Daniel Defoe), the study will be systematically denigrated by each
+                        interpolation of non-Defoe text and even by each interpolation of Defoe text
+                        of a different genre or significantly different time period.
+                    The crux of this paper is about one important element in the empirical
+                        methodology of a valid non-traditional authorship attribution study—the
+                        preparation of the text for stylistic and statistical analysis: unediting,
+                        de-editing, and editing.
+                    The general emphasis of this presentation is on prose analysis with some
+                        peripheral treatment of drama and poetry.
+                    
+                        I. BACKGROUND AND DEFINITIONS
+                                A. Why a valid text is necessary should not even be asked. No
+                                    valid experiment can be done if the input data is flawed—garbage
+                                    in, garbage out!Too many practitioners simply grab a text
+                                    from any available source—without any thought to its pedigree.
+                                    (e.g. Khmelev and Tweedie’s “Using Markov Chains for the
+                                    Identification of Writers.”)Are undertakings such as
+                                    Project Gutenberg or the Oxford Text Archive with their easily
+                                    available machine readable texts a boon or a bane to
+                                    non-traditional authorship atudies? This question is explored in
+                                    some detail.
+                                B. Selecting a starting textThe validity of using texts
+                                    from the oral tradition and the scribal tradition is
+                                    discussed.Before any manipulation and analysis of a text is
+                                    carried out, a valid starting text must be acquired that
+                                    fulfills many necessary requirements. This selection is
+                                    primarily bibliographically driven. If a practitioner is not
+                                    savvy in the bibliographical arts, a collaborator who is should
+                                    be recruited.Examples of bad starting texts causing
+                                    problems are given (e.g. Peng and Hengartner’s “Quantitative
+                                    Analysis of Literary Styles.”)If you cannot obtain a valid
+                                    text, do not do the study.
+                                C. Unediting—getting back to the
+                                    state of “not yet edited”De-editing—removing selected text
+                                    Editing—changing (preparing) a text for
+                                    statistical analysis
+                                
+                            
+                        II. EXPLICATIONThe statement, “each age, each author, each study
+                            demands a different mixture of the following particulars,” is discussed.
+                                A. UneditingAs a rule, the closest text to the holograph
+                                    should be found and used.
+                                        1. Editorial interpolation
+                                                a. Filled in lacunae
+                                                b. Marginal notation
+                                                c. ‘Changes’ in the text
+                                                d. Critical editions
+                                            
+                                        2. Printer interpolation
+                                                For the Printer is a beast, and
+                                                  understands nothing I can say to him of correcting
+                                                  the press.
+                                            Dryden (Ward p. 97)
+                                                a. Catchwords (the first word of the next leaf
+                                                  or gathering)
+                                                b. Signatures (combinations of letters and
+                                                  numerals used something like catchwords)
+                                                c. Removing obvious typesetting mistakes (a
+                                                  slippery slope)
+                                                  i. ‘f’ for the long ‘s’
+                                                  ii. Double words (e.g. ‘the the’ ‘was
+                                                  was’
+                                                  
+                                            
+                                    
+                                B. De-editing
+                                        1. Quotes
+                                                a. Factual, unattributed
+                                                b. Factual, attributed
+                                                c. Self quotes from earlier writings
+                                            
+                                        2. Plagiarism
+                                                a. Direct copy
+                                                b. Paraphrasing
+                                                c. Imitation
+                                            
+                                        3. Collaboration
+                                                a. Sectional
+                                                b. Phrasal
+                                                c. Word level
+                                                d. Ghostwriting
+                                            
+                                        4. Genre
+                                                a. Poetry, prose, drama, letters, etc.
+                                                b. Mixture (e.g. verse drama)
+                                            
+                                        5. Graphs and Numbers
+                                                a. Tables
+                                                b. Lists
+                                                c. Arabic and Roman numerals
+                                            
+                                        6. Guide words
+                                                a. Titles—chapter headings—the end word
+                                                  ‘Finis’
+                                                b. Marginal annotation
+                                            
+                                        7. Foreign Languages
+                                                a. Sentence level and greater
+                                                b. Phrase or word level
+                                            
+                                        8. Translations
+                                                a. Verbatim
+                                                b. Concepts
+                                            
+                                        9. Examples of items de-edited (or not de-edited)
+                                            incorrectly by practitioners
+                                                a. Biblical quotes
+                                                b. Titles in direct apposition
+                                                c. Numbers that are spelled out
+                                                d. Words with an initial capital
+                                            
+                                    
+                                C. Editing
+                                        1. Encoding the text
+                                                a. Why (e.g. homographic forms)
+                                                b. TEI
+                                            
+                                        2. Regularizing
+                                                a. Spelling
+                                                b. Contracted forms (simple, compound)
+                                                c. Hyphenation
+                                                d. Masked words (e.g. ‘D_ _ _ e’ for ‘Defoe’)
+                                                
+                                            
+                                        3. Lemmatizing
+                                                a. Pro
+                                                b. Con
+                                            
+                                    
+                                D. Special Problems in Drama and Poetry
+                                        1. Stage directions
+                                        2. The ‘age’ dependency of transmission and technique.
+                                        
+                                    
+                            
+                        III. SOME EXAMPLESStudies that are compromised by mistakes of
+                            commission and/or omission in editing, unediting, or de-editing.
+                                A. Historia Augusta
+                                        1. Twelve individual studies
+                                    
+                                B. Shakespeare
+                                        1. Eliott and Valenza
+                                        2. Foster
+                                        3. Horton
+                                    
+                                C. Defoe
+                                        1. Hargevik
+                                        2. Rothman
+                                    
+                            
+                        IV. CONCLUSION
+                                1. Some items that are de-edited are valid style markers in
+                                    their own right (e.g. latin phrases, different genre) and should
+                                    be treated as such in a parallel study.
+                                2. No matter which text is selected, the practitioner must
+                                    disclose which text was used and everything that was done to
+                                    it.
+                                3. The same care must be taken with every text in the
+                                    study—the anonymous text, the suspected author’s text, and all
+                                    of the control texts.
+                                4. If valid texts cannot be located and correctly edited,
+                                    unedited, and de-edited, do not do the study
+                                5. A valid text does not guarantee a valid study. However, a
+                                    non-valid text guarantees a non-valid study.
+                            
+                    
+                
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Richard
+                                    D.
+                                    Altick
+                                
+                            
+                            
+                                
+                                    John
+                                    J.
+                                    Fenstermaker
+                                
+                            
+                            The Art of Literary Research
+                            (Fourth Edition)
+                            
+                                New York
+                                W.W. Norton &amp; Company
+                                1993
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    John
+                                    Burrows
+                                
+                            
+                            Questions of Authorship: Attribution and Beyond. A
+                                Lecture Delivered on the Occasion of the Roberto Busa Award
+                        
+                        
+                            ACH-ALLC01 Conference. New York University, New York,
+                                June 14, 2001
+                            
+                                
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Ward
+                                    E.
+                                    Y.
+                                    Eliott
+                                
+                            
+                            
+                                
+                                    Robert
+                                    J.
+                                    Valenza
+                                
+                            
+                            So Many Hardballs, So Few Over the Plate: Conclusions
+                                From Our ‘Debate’ With Donald Foster
+                        
+                        
+                            Computers and the Humanities
+                            
+                                36
+                                
+                                450-460
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Don
+                                    Foster
+                                
+                            
+                            Author Unknown: On the Trail of Anonymous
+                            
+                                New York
+                                Henry Holt and Company
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Bertrand
+                                    A.
+                                    Goldgar
+                                
+                            
+                            Imitation and Plagiarism: The Lauder Affair and Its
+                                Critical Aftermath
+                        
+                        
+                             Studies in Literary Imagination
+                            
+                                34
+                                1
+                                1-16
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    D.
+                                    C.
+                                    Geetham
+                                
+                            
+                            Textual Scholarship: An Introduction
+                            
+                                New York
+                                Garland
+                                1992
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Gregory
+                                    Grefenstette
+                                
+                            
+                            
+                                
+                                    Pasi
+                                    Tapanainen
+                                
+                            
+                            What is a Word, What is a Sentence? Problems of
+                                Tokenization
+                        
+                        
+                            Proceedings of the 3rd International Conference on
+                                Computational Lexicography
+                            
+                                Budapest
+                                 Research Institute for Linguistics, Hungarian Academy of
+                                    Sciences
+                                1994
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Steig
+                                    Hargevik
+                                
+                            
+                            The Disputed Assignment of “Memoirs of an English
+                                Officer to Daniel Defoe”
+                            (Part I and Part II)
+                            
+                                Stockholm
+                                Almqvist and Wiksell
+                                1974
+                            
+                        
+                    
+                    
+                        
+                            
+                                    David
+                                    I.
+                                    Holmes
+                                , et al
+                            A Widow and Her Soldier: Stylometry and the American
+                                Civil War
+                        
+                        
+                            Literary and Linguistic Computing
+                            
+                                16
+                                4
+                                403-420
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Thomas
+                                    B.
+                                    Horton
+                                
+                            
+                             The Effectiveness of the Stylometry of Function Words
+                                in Discriminating between Shakespeare and Fletcher
+                        
+                        
+                            Thesis
+                            
+                                University of Edinburg
+                                1987
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Dmitri
+                                    V.
+                                    Khmelev
+                                
+                            
+                            
+                                
+                                    Fiona
+                                    J.
+                                    Tweedie
+                                
+                            
+                            Using Markov Chains for Identification of
+                                Writers.
+                        
+                        
+                            Literary and Linguistic Computing
+                            
+                                16
+                                3
+                                299–307
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Alexander
+                                    Lindey
+                                
+                            
+                            Plagiarism and Originality
+                            
+                                New York
+                                Harper and Brothers
+                                1952
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Leah
+                                    S.
+                                    Marcus
+                                
+                            
+                            Afterword: Confessions of a Reformed Uneditor
+                        
+                        
+                            
+                                
+                                    Andrew
+                                    Murphy
+                                
+                            
+                            The Renaissance Text: Theory, Editing,
+                                Textuality
+                            
+                                Manchester
+                                Manchester University Press
+                                2000
+                                211–216
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Leah
+                                    S.
+                                    Marcus
+                                
+                            
+                            Unediting the Renaissance: Shakespeare, Marlow,
+                                Milton
+                            
+                                London
+                                Routledge
+                                1996
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Maximillian
+                                    E.
+                                    Novak
+                                
+                            
+                            The Defoe Canon: Attribution and De-attribution
+                        
+                        
+                            Huntington Library Quarterly 
+                            
+                                59
+                                1
+                                83–104
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Roger
+                                    D.
+                                    Peng
+                                
+                            
+                            
+                                
+                                    Nicolas
+                                    W.
+                                    Hengartner
+                                
+                            
+                            Quantitative Analysis of Literary Styles
+                        
+                        
+                            The American Statistician
+                            
+                                56
+                                3
+                                175-185
+                                2002
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Project Gutenberg
+                            
+                                
+                                
+                                
+                            
+                        
+                        URL: 
+                    
+                    
+                        
+                            
+                                
+                                    Pat
+                                    Rogers
+                                
+                            
+                             The Text of Great Britain: Theme and Design in Defoe's
+                                ‘Tour’
+                            
+                                Cranbury, NJ
+                                
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Irving
+                                    N.
+                                    Rothman
+                                
+                            
+                            Defoe De-Attributions Scrutinized Under Hargevik
+                                Criteria: Applying Stylometrics to the Canon
+                        
+                        
+                            Papers of the Bibliographic Society of America
+                            
+                                94
+                                3
+                                375–398
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Joseph
+                                    Rudman
+                                
+                            
+                            The State of Authorship Attribution Studies: Some
+                                Problems and Solutions
+                        
+                        
+                            Computers and the Humanities
+                            
+                                31
+                                
+                                351-365
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Joseph
+                                    Rudman
+                                
+                            
+                            Non-Traditional Authorship Attribution Studies in the
+                                    Historia Augusta: Some Caveats
+                        
+                        
+                            Literary and Linguistic Computing
+                            
+                                13
+                                3
+                                151-157
+                                1998
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Eliot
+                                    Slater
+                                
+                            
+                            The Problem of “The Reign of King Edward III:” A
+                                Statistical Approach
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1988
+                            
+                        
+                    
+                    
+                        
+                            
+                                    E.
+                                    Stamatatos
+                                , et al
+                            Computer-Based Authorship Attribution Without Lexical
+                                Measures
+                        
+                        
+                            Computers and the Humanities
+                            
+                                35
+                                
+                                193–214
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                            Text Encoding Initiative
+                            
+                                
+                                
+                                
+                            
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    James
+                                    Thorp
+                                
+                            
+                            Watching the Ps &amp; Qs: Editorial Treatment of
+                                Accidentals
+                            
+                                Lawrence, Kansas
+                                University of Kansas Printing Service
+                                1971
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Charles
+                                    E.
+                                    Ward
+                                
+                            
+                            The Letters of John Dryden: With Letters Addressed to
+                                Him
+                            
+                                Durham, NC
+                                Duke University Press
+                                1942
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    David
+                                    S.
+                                    Williams
+                                
+                            
+                            Stylometric Authorship Studies in Flavius Josephus and
+                                Related Literature
+                            
+                                Lewistown, New York
+                                The Edwin Mellen Press
+                                1992
+                            
+                        
+                    
+                
+            
+        
+    

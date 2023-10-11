@@ -1,0 +1,324 @@
+
+
+
+    
+        
+            
+                Towards an Electronic Esposizioni: Code as
+                    Commentary
+                
+                    
+                        Cristiana
+                        Fordyce
+                        
+                            Brown University
+                            cristiana_fordyce@brown.edu
+                        
+                    
+                
+                
+                    
+                        Vika
+                        Zafrin
+                        
+                            Brown University
+                            zafrin@brown.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                In 1374, the city of Florence awarded Giovanni Boccaccio the honor and
+                    responsibility of presenting to a civic audience Dante's Divine
+                        Comedy, and of commenting on it. The author of the Decameron held a series of lectures on the Comedy at the Church of Santo Stefano. He doubled as commentator
+                    and preacher: the lectures were intended as both literary and moral education.
+                    Boccaccio was engaged to elucidate all one hundred cantos of the Divine Comedy; unfortunately, he died long before he could
+                    complete this task, and the readings are abandoned at Canto 17 of the Inferno.
+                The text of Boccaccio's lectures has survived to our days as the Esposizioni sopra la Comedia. Despite only covering the first
+                    seventeen cantos, in print, it is over 700 pages long.In our
+                        project, we follow the text as established in the most recent critical
+                        edition, edited by Giorgio Padoan, Esposizioni sopra la
+                            Comedia (Milan: Mondadori, 1965). The text is comprised
+                    of an Accessus (introduction) followed by literal and allegorical exposition on
+                    each of the first cantos of the Inferno. (The tenth
+                    canto contains no allegorical exposition, as Boccaccio claims that it contains
+                    no allegorical import.) The Esposizioni therefore
+                    functions both as lecture series and as encyclopedia. From the beginning,
+                    Boccaccio keeps a prudent distance from theological and intellectual
+                    exposition.
+                Most interested in revealing the effectiveness and clarity of the Dantean text,
+                    Boccaccio strives to cater to the needs of his listeners. He accomplishes this
+                    through maintaining the traditional rhetorical form of the expositio, while
+                    focusing on the utility of the Comedy for the audience
+                    he is to instruct. Boccaccio employs simple and effective means of delivery, in
+                    an attempt to evoke in his audience images and exempla from collective memory
+                    and individual experience. Despite his awareness of the great responsibility
+                    with which he was charged, Boccaccio seems to have felt indebted neither to the
+                    rhetorical tradition nor to moral instruction in his effort to produce the
+                    utilitas of comprehension of the magnitude of Dante's work.
+                Today, we have chosen to offer Dante's text online as commented and presented by
+                    one of the most prominent medieval literary critics. We aim at employing the
+                    spirit that inspired Boccaccio in his lectures. To this end, we wish to recreate
+                    for the modern reader the same utility and efficiency for which Boccaccio's
+                    lessons strove with regard to his own audience. The exigencies of our
+                    contemporaries when reading a medieval text are not the same as those of the
+                    people who gathered in Santo Stefano more than six hundred years ago. The
+                    present audience needs to be introduced not only to Dante but to the language
+                    and rhetorical structures that Boccaccio employed to benefit the public of his
+                    time. To understand the Esposizioni, it is first
+                    necessary to understand the audience to whom the lectures were addressed in the
+                    first place.
+                This project is in the beginning stages of development. Our ultimate aim is to
+                    map the relationships between our various primary and secondary source texts –
+                    the text of the Esposizioni itself, that of the Divine Comedy, and the writing of the many other authors
+                    whom Boccaccio quotes. We will be using XML to encode essential information
+                    about the people and places mentioned in the Esposizioni, paying particular attention to information that the
+                    medieval lecture attendee would have taken for granted, which may not be quite
+                    as obvious to the modern reader. In the course of his exposition, Boccaccio
+                    frequently alludes to texts by classical and medieval authors (such as Virgil
+                    and Livy); we plan to make available the relevant passages from those texts
+                    alongside the principal text. For example, it will be useful to provide context
+                    and detail about the external texts Boccaccio quotes, as well as historical and
+                    biographical information regarding the authors upon whose work he bases his
+                    arguments. Where other types of annotation are necessary which will bring our
+                    audience closer to Boccaccio's writing, thereby making it more useful in
+                    understanding the Comedy, they will also be inserted.
+                In this paper, we would like to address some issues which have arisen in the
+                    process of our thinking about how to approach such a project electronically. The
+                        Esposizioni is a fascinating, multilayered medieval
+                    text. We treat it as both a commentary and expositio on Dante, and as a
+                    stand-alone, authoritative text. We view our electronic publication in the same
+                    dichotomous fashion; in addition to presenting the text of the commentary, we
+                    provide our own commentary in the form of the code itself. It is essentially a
+                    divulgative commentary: our purpose is to bring to our readers enough
+                    supplementary information to Boccaccio's text for it to be as useful to them as
+                    it was to his medieval audience. Of course, we cannot hope to replicate the
+                    experience of the original audience of this text, but with an awareness of the
+                    inter-relations between author, speaker, audience, and reader, we hope to create
+                    a multivalent resource which will challenge and inform in a similar way to that
+                    envisaged by Boccaccio in his lectures.
+                As our starting point, we embrace Michel Meyer's view of rhetoric as a method of
+                    negotiation between two poles – the listener (reader) on one hand, and the
+                    writer on the other. We follow Meyer's lead to consider our role in encoding and
+                    presenting the Esposizioni as a formal negotiation
+                    between intended audiences. The markup of the text, as Lou Burnard has pointed
+                    out, rests on the importance of "a single encoding scheme, a unified semiotic
+                    system... a single formalism [by using which] we reduce the complexity inherent
+                    in representing the interconnectedness of all aspects of our hermeneutic
+                    analysis, and thus facilitate a polyvalent analysis" (Burnard 1998). Although
+                    Burnard was speaking about mark-up in general, his point is especially valid for
+                    a complex electronic medieval text such as the Esposizioni.
+                What we do by commenting through markup is not new, so why do all this with the
+                    aid of a computer? The answer to this is inextricably tied to the principal
+                    difference between the potential audience for our project, and Boccaccio's.
+                    There are no specific records for those who attended Boccaccio’s expository
+                    lectures, but we can assume that a large part of the audience was literate at
+                    least in the Florentine vernacular, and possibly in Latin as well. The
+                    prestigious lectures would have attracted academic and clerical professionals,
+                    scholars and students, as well as interested members of the lay community. There
+                    are many differences between Boccaccio’s audience and the modern-day reader of
+                    the Esposizioni. First and foremost, we are no longer a
+                    memory-based culture, and the modern reader tends not to possess the mnemonic
+                    resources which would have enabled Boccaccio’s original audience to recognize
+                    his explicit and implied intertextual allusions. The amount of information
+                    available to us nowadays is so vast that we are a research-based learning
+                    culture, much more heavily dependent on libraries and other information
+                    depositories. In addition, the modern reader may have had relatively little
+                    exposure to the key texts for the medieval scholar, such as the major classical
+                    and medieval authors, and even the Bible. Finally, even if the modern reader has
+                    the linguistic ability to engage with an Italian-language text, they may not
+                    have the facility to read and understand the many Latin citations in this
+                    work.
+                All of the above problems can be resolved through a sympathetic and accurate
+                    annotation of the electronic text. Electronic data storage space is our only
+                    choice for the easiest and most coherent presentation of the amount of
+                    information we must convey in order to bring our audience closer to Boccaccio's.
+                    Furthermore, by putting the Esposizioni online, we
+                    offer the option of simplifying the commentary for the electronic user, by
+                    offering various different ways into the text. Boccaccio's text often seems
+                    chaotic in nature to the modern reader: it is endlessly self-referential,
+                    sometimes self-contradictory, and at other times simply incorrect. (We should
+                    not of course forget that the text we have is a series of notes intended for
+                    oral delivery and possible further explication.) By a semantic encoding of each
+                    of the themes and subjects treated within this dauntingly linear exposition, the
+                    user is no longer constrained to follow Boccaccio’s digressive reasoning. This
+                    opportunity to encode a series of short comments on varied subjects and make
+                    them semantically searchable is a great advantage of the medium and will be of
+                    great value to future users..
+                Electronic publication and dissemination of this medieval text does not restore
+                    it to its original meaning, but it does restore it to its original purpose: to
+                    take a text out of the hands of the elite and bring it closer to all members of
+                    the interested public. The electronic medium is thus, paradoxically, a simpler,
+                    more straightforward one than print, for our purposes. Paper-based publication
+                    of such a tightly interwoven, heavily annotated text could in theory convey all
+                    this information, but would do so in a much more awkward fashion. Instead, we
+                    will publish it electronically, making it easier both for us to comment, and for
+                    our readers to apprehend. The computer is our "wooden key,"; we "wish nothing
+                    but to open what is closed," and will use the simplest tool for the task."It is a noteworthy quality to love the truth in the words, not the
+                        words themselves. For what use is a golden key if it cannot unlock what we
+                        desire? And what is wrong with a wooden key, if it can unlock what we
+                        desire, when we wish nothing but to open what is closed?". Peter Abelard,
+                        Prologue to Sic et non, in the online Medieval Sourcebook: We will thus de-mystify the Esposizioni
+                    for our contemporaries, as Boccaccio in his time de-mystified the Divine Comedy.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                
+                                    Peter
+                                    Abelard
+                                
+                            
+                            Prologue to Sic et non
+                        
+                        
+                            
+                                
+                                    Blanche
+                                    B.
+                                    Boyer
+                                
+                            
+                            
+                                
+                                    Richard
+                                    McKeon
+                                
+                            
+                            Sic et Non: a critical edition
+                            
+                                Chicago
+                                University of Chicago Press
+                                1976-1977
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Lou
+                                    Burnard
+                                
+                            
+                            On the hermeneutic implications of text
+                                encoding
+                        
+                        
+                            
+                                
+                                    Domenico
+                                    Fiormonte
+                                
+                            
+                            
+                                
+                                    Jonathan
+                                    Usher
+                                
+                            
+                            New Media and the Humanities: Research and
+                                Applications. Proceedings of the first seminar “Computers,
+                                literature and philology.” Edinburgh, 7-9 September 1998
+                            
+                                Oxford
+                                Humanities Computing Unit, University of
+                                    Oxford
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Mary
+                                    J.
+                                    Carruthers
+                                
+                            
+                            The book of memory: a study of memory in medieval
+                                culture
+                            
+                                Cambridge
+                                Cambridge University Press
+                                1990
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Michael
+                                    Meyer
+                                
+                            
+                            Rhetoric, language, and reason
+                            
+                                University Park
+                                Pennsylvania State University Press
+                                1994
+                            
+                        
+                    
+                
+            
+        
+    

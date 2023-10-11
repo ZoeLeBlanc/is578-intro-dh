@@ -1,0 +1,410 @@
+
+
+
+    
+        
+            
+                Skeletons in the closet: Saying what markup means
+                
+                    
+                        Michael
+                        Sperberg-McQueen
+                        
+                            World Wide Web Consortium
+                            cmsmcq@acm.org
+                        
+                    
+                
+                
+                    
+                        Allen
+                        Renear
+                        
+                            University of Illinois at Champaign-Urbana
+                            renear@alexia.lis.uiuc.edu
+                        
+                    
+                
+                
+                    
+                        Claus
+                        Huitfeldt
+                        
+                            University of Bergen
+                            Claus.Huitfeldt@hit.uib.no
+                        
+                    
+                
+                
+                    
+                        David
+                        Dubin
+                        
+                            University of Illinois at Champaign-Urbana
+                            
+                        
+                    
+                
+            
+            
+                2002
+                
+                    University of Tübingen
+                
+                Tübingen
+            
+            
+                ALLC/ACH 2002
+                
+                    editor
+                    
+                        Harald
+                        Fuchs
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                Our immediate area of concern is the problem of providing a clear, explicit
+                    account of the meaning and interpretation of markup.
+                Scores of projects in humanities computing and elsewhere assume implicitly that
+                    markup is meaningful, and use its meaning to govern the processing of the data.
+                    A number of authors have described systems for exploiting information about the
+                    meaning or interpretation of markup; among those most relevant to the work
+                    described here are Simons (1997 and 1999), Welty and Ide (1999), Ramalho et al.
+                    (1999), and Sperberg-McQueen et al. (2000 and 2001).
+                While a complete account of the "meaning of markup" may seem daunting, at least
+                    part of this project appears manageable: explaining how to determine the set of
+                    inferences about a document which are "licensed", implicitly or explicitly, by
+                    its markup. This may or may not be all there is to an account of the meaning of
+                    markup, but it is certainly a significant part of any account -- and doesn't
+                    seem, on its face at least, to be particularly difficult to provide.
+                However, it proves remarkably difficult to find, in the literature, any
+                    straightforward account of how one can go about interpreting markup in such a
+                    way as to draw all and only the correct inferences from it. For the most part,
+                    the papers cited have limited themselves to describing how such a system would
+                    work in theory, rather than describing a practical instantiation of the idea.
+                    Designers and users of markup systems, meanwhile, have relied on human
+                    understanding rather than on automated systems to interpret the markup in
+                    documents.
+                Sperberg-McQueen et al. (2000) describe at some length a 'straw man' proposal for
+                    defining the proper interpretation of markup in a given markup language. In
+                    particular, they identify the meaning of markup in a document as the set of
+                    inferences authorized by it, and propose that it ought to be possible to
+                    generate those inferences from the document mechanically, following certain
+                    simple rules. Having set the strawman up, they then proceed to dismantle it,
+                    noting a number of problems in the rules they have proposed for generating the
+                    inferences. They sketch in general terms how a better account of meaning and
+                    interpretation in markup could be constructed, but leave the actual construction
+                    as an exercise for the reader.
+                This paper describes a concrete realization of one part of the 'framework' model
+                    proposed in Sperberg-McQueen et al. (2000), and outlines some of the problems
+                    encountered in specifying the inferences licensed by commonly used DTDs. (Other
+                    parts of the framework model are also being worked on, but the description of
+                    that work is out of scope for this paper.)
+                We focus here on the development of a notation (specifically, an SGML/XML DTD)
+                    for expressing what Sperberg-McQueen et al. (2000 and 2001) call "sentence
+                    skeletons", or "skeleton sentences". These are sentences, either in English or
+                    some other natural language or in some formal notation, for expressing the
+                    meaning of constructs in a markup language. They are called sentence skeletons,
+                    rather than full sentences, because they have blanks at various key locations; a
+                    system for automatic interpretation of marked up documents will generate actual
+                    sentences by filling in the blanks in the sentence skeletons with appropriate
+                    values from the documents themselves.
+                In existing markup systems, the appropriate values are often to be taken from
+                    whatever occurs in the document at a specific location. In the TEI DTD, for
+                    example, the current page number for the default pagination is given by the
+                    value of the 'n' attribute on the most recent 'pb' element, while the identifier
+                    for the language of the text is given by the value of the 'lang' attribute on
+                    the smallest enclosing element which actually has a value for the 'lang'
+                    attribute; the language itself is described by whatever 'language' element in
+                    the TEI header has that identifier as the value of its 'id' attribute.
+                In the sentence skeleton, therefore, we need to label each blank with some
+                    expression which describes how to derive the appropriate value to be used in the
+                    sentences constructed from this skeleton. Since these expressions typically
+                    "point" to other nearby markup structures, Sperberg-McQueen et al. refer to them
+                    as "deictic expressions"; they express notions like "the contents of this
+                    element" or "the value of the 'lang' attribute on the nearest ancestor which has
+                    such a value" or "the value of the 'type' attribute on the nearest ancestor of
+                    type 'div'".
+                We will describe theoretical and practical problems arising in using sentence
+                    skeletons to say what the markup in some commonly used DTDs actually means, in a
+                    way that allows software to generate the correct inferences from the markup and
+                    to exploit the information. These include the following questions among
+                    others.
+                What formalism should be used to write the sentence skeletons? We can easily
+                    adopt some existing formalism, e.g. that of Prolog or whatever inference engine
+                    we choose to use; can we devise a formalism that will not commit us to a
+                    particular inference engine?
+                There appears to be a significant difference among (a) sentence skeletons which
+                    serve to formulate in some formal notation the specific facts expressed by the
+                    markup in the document, (b) sentences or sentence skeletons which express
+                    invariant rules about specific properties captured by the markup (e.g. "The
+                    value of the 'lang' attribute is inherited; the value of the 'n' attribute is
+                    not inherited") and (c) sentences or sentence skeletons which express invariant
+                    rules about textual and other constructs (e.g. "The author of a letter is
+                    physically located at the place given in the place-date line, on the date given
+                    in the place-date line, unless the letter is falsified or forged in some way").
+                    Sentences in group (b) serve to capture useful generalizations about the way
+                    markup constructs in a given DTD behave; sentences in group (c) are important
+                    for certain kinds of inferences, but appear to have relatively little to do with
+                    the markup itself. What is the best way to reflect these differences in function
+                    among the sentences and sentence skeletons of a markup system?
+                What is the most convenient way to generate the inferencs licensed by markup?
+                    Possibilities include ad hoc software, XSLT transformation sheets, and Prolog or
+                    other inference tools. Our experience suggests that it may be worthwhile to
+                    distinguish different classes of inferences, and to use different software to
+                    derive the different classes.
+                In sentence skeletons like "[this element] is in English", what do the deictic
+                    expressions like "this element" actually refer to? In some cases the inferences
+                    appear to relate to the linguistic components of the text itself ("This document
+                    is written in English"), and in some cases to the text's formal properties
+                    ("Augustine's Confessions is divided into 13 books"). In some cases, the markup
+                    appears to license inferences about some object or entity in the real world
+                    ("Henry Laurens was in Charleston on 18 August 1775"), but sometimes the
+                    entities referred to are not at all in the real world ("Harry Potter missed the
+                    Hogwarts Express on 1 September"). In still other cases, the inferences appear
+                    to apply to the electronic encoding of the text itself ("This metadata was last
+                    revised on 20 July 1998") or to some other witness to the same text ("The
+                    recipient's copy of this letter is preserved in [some particular archival
+                    collection, with some particular call number]"). Attempting to disentangle these
+                    lands the would-be formulator of sentence skeletons promptly in a thicket of
+                    ontological questions which have not yet received adequate attention.
+                The ontological questions become even more thorny in connection with markup
+                    systems like that of the Text Encoding Initiative, which are intended for use by
+                    a wide variety of projects which are expected to have widely different views
+                    about the ontological commitments to be associated with the TEI markup. Do
+                    statements about Augustine's Confessions, for example, relate to some abstract
+                    text distinct from each physical copy of the text, or is the phrase "Augustine's
+                    Confessions" merely a convenient shorthand for "all the physical documents which
+                    witness Augustine's Confessions"? It would appear essential to decide this
+                    question in order to formulate sentence skeletons for markup languages like the
+                    TEI, but the TEI itself is intentionally coy about the issue, in order to ensure
+                    that textual Platonists and textual constructivists can both use TEI markup. It
+                    is a challenge to build a similar ambiguity or vagueness into the set of
+                    sentence skeletons which document the prescribed interpretation of TEI
+                    markup.
+            
+        
+        
+            
+                Bibliography
+                
+                    
+                        
+                            
+                                
+                                    José
+                                    Carlos
+                                    Ramalho
+                                
+                            
+                            
+                                
+                                    Jorge
+                                    Gustavo
+                                    Rocha
+                                
+                            
+                            
+                                
+                                    José 
+                                    João
+                                    Almeida
+                                
+                            
+                            
+                                
+                                    Pedro
+                                    Henriques
+                                
+                            
+                            SGML documents: Where does quality go?
+                        
+                        
+                            Markup Languages: Theory &amp; Practice
+                            
+                                1
+                                1
+                                75-90
+                                1999
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Gary
+                                    F.
+                                    Simons
+                                
+                            
+                            Conceptual Modeling versus Visual Modeling: A
+                                Technological Key to Building Consensus
+                        
+                        
+                            Computers and the Humanities
+                            
+                                30
+                                4
+                                303-319
+                                1997
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Gary
+                                    F.
+                                    Simons
+                                
+                            
+                            Using Architectural Forms to Map TEI Data into an
+                                Object-Oriented Database
+                        
+                        
+                            Computers and the Humanities
+                            
+                                33
+                                1-2
+                                85-101
+                                1999
+                            
+                        
+                        Originally delivered in 1997 at the TEI 10 conference in Providence,
+                            R.I.
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            Meaning and Interpretation of Markup
+                        
+                        
+                            Paper delivered at ALLC/ACH 2000, Glasgow
+                            
+                                
+                                
+                                2000
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    C.
+                                    M.
+                                    Sperberg-McQueen
+                                
+                            
+                            
+                                
+                                    Claus
+                                    Huitfeldt
+                                
+                            
+                            
+                                
+                                    Allen
+                                    Renear
+                                
+                            
+                            Practical Extraction of Meaning from Markup
+                        
+                        
+                            Paper delivered at ACH/ALLC 2001, New York
+                            
+                                
+                                
+                                2001
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Christopher
+                                    Welty
+                                
+                            
+                            
+                                
+                                    Nancy
+                                    Ide
+                                
+                            
+                            Using the Right Tools: Enhancing Retrieval from
+                                Marked-up Documents
+                        
+                        
+                            Computers and the Humanities
+                            
+                                33
+                                
+                                59-84
+                                1999
+                            
+                        
+                        Originally delivered in 1997 at the TEI 10 conference in Providence,
+                            R.I.
+                    
+                
+            
+        
+    

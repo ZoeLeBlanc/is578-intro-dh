@@ -1,0 +1,132 @@
+
+      
+         
+            Das Abstract im Kontext
+            Die Autoren haben auf der DHd2019 einen Hackathon zum Book of Abstracts durchgeführt, in dessen Rahmen sich die Teilnehmenden nicht nur mit der digitalen Publikation, sondern auch mit der Normierung der biobibliographischen Angaben und den Potentialen einer inhaltlichen Analyse der Abstracts auseinander gesetzt haben. (Andorfer et al. 2019) Dieser Beitrag greift die Erkenntnisse der Veranstaltung auf und soll sowohl die konzeptuelle Auseinandersetzung als auch die konkrete Implementierung weiterführen sowie die im Nachgang des Workshops erfolgten Arbeiten präsentieren. Dabei werden im Sinne des Konferenzthemas insbesondere experimentelle Ansätze hervorgehoben. Zwei Aspekte der Konferenzabstracts stehen im Fokus des Beitrags: 1.) das Abstract als eigenständige und reputierliche Publikation und 2.) die Abstracts als Datenquelle selbstreflexiver Untersuchungsansätze in den DH. Die wissenschaftliche Relevanz der Book of Abstracts der DHd-Jahrestagung bekräftigte zuletzt noch einmal Sahle in seiner Einführung des letzten Konferenzbandes (Sahle 2019, S.): „Books of Abstracts als durch peer review-Verfahren gefilterte und qualitätsgesicherte Summen der aktuellen Forschungen definieren das Feld, sind ein äußerst nützliches Instrument der Fachkommunikation und wertvolle Dokumente zum Beleg der Entwicklung über die Zeit.“
+         
+         
+            Das Abstract als Publikation
+            Der Anspruch an die Veröffentlichung der Konferenzbeiträge wird in
+dem bereits 2018 konstatierten „Status einer wissenschaftlich
+nutzbaren Publikation“ (Vogeler 2018) deutlich und mit dem letzten
+Band der DHd 2019 noch einmal unterstrichen (Sahle 2019): „Um das Ziel
+ganz klar zu formulieren: die hier vorgelegten Abstracts sind
+wissenschaftliche Texte eigenen Rechts, die auch bibliografisch
+fassbar sein sollen, um die eigenen Forschungsgebiete und die
+gewonnenen Erkenntnisse sichtbar machen zu können.“ Auf dem Weg zu
+einer digitalen Publikation, die sowohl informationswissenschaftliche
+Standards erfüllt als auch informationstechnologische Potentiale
+ausreizt, ergeben sich zum jetzigen Stand noch viel Raum für
+Entwicklung der Konferenzbeiträge (Cremer 2018). Die Book of Abstracts
+werden als Gesamtband in einer Druckfassung sowie als PDF
+publiziert. Daneben werden einzelne Beiträge von den Vortragenden auf
+verschiedenen Repositorien oder Webseiten unsystematisch
+veröffentlicht, darunter einzelne Abstracts, Poster, Präsentationen
+oder zugrundeliegende Daten. Der Beitrag evaluiert die Möglichkeiten und Voraussetzungen für eine eigenständige Publikation der einzelnen Abstracts mit persistenter Speicherung, zitationsfähiger Adressierung, bibliografischer Erfassung und multipler Repräsentationsform (PDF, HTML, TEI). Dabei werden auch dezentrale (z.B. Zenodo-Community) und zentrale Ansätze (z.B. zentrale Redaktion, eigene Infrastruktur) verglichen. Gegenüber traditionellen Formaten und Infrastrukturkomponenten im Sinne einer reputierlichen und zitierfähigen Publikationsform sollen auch experimentelle Repräsentationsformen betrachtet werden, um die vorhandenen Spielräume digitaler Publikationen auszuloten. Als Ausgangspunkt ist hier die im Rahmen des Hackathons entwickelte Präsentationsschicht zu nennen.
+            
+         
+         
+            Das Abstract als Daten
+            
+Die Konferenzabstracts als TEI-basierte Veröffentlichungen demonstrieren ihr Potential als Untersuchungsgegenstand innerhalb des eigenen Faches (Sahle/Henny-Krahmer 2018; Hannesschläger/Andorfer 2018; Hoenen 2019; Kiefer 2019). Ein Desiderat der Untersuchungen bis dato ist die Betrachtung und Auswertung der in den Abstracts zitierten Literatur. Die Bibliographie wissenschaftlicher Artikel dient in der geisteswissenschaftlichen Forschung neben dem Nachweis der zitierten Literatur auch als Ressource für Recherche und Kontextualisierung (Andorfer, DWP 14, S. 24-25) sowie als Datenquelle für die Analyse von Publikations- und Zitationspraktiken (Nyhan/Duke-Williams 2014). Gerade in den Digital Humanities eröffnen sich durch die Verbindung mit Methoden der Netzwerkanalyse neue Untersuchungsansätze (Gao et al. 2018). Im Rahmen des Hackathons wurden die eingereichten Abstracts über Skripte automatisiert mit zusätzlichen Informationen angereichert sowie über manuelle Arbeiten in ihren Metadaten vereinheitlicht.
+Die bibliographischen Angaben in den Abstracts lagen jedoch in zu heterogenen Formen vor, so dass Auswertungen und Visualisierungen nicht möglich waren. Für das Poster werden diese Daten mit Unterstützung der DHd-AG Digitales Publizieren vereinheitlicht und in der Folge durch die Autoren in ersten Analyseergebnissen und Visualisierungen ausgewertet. Die aufgezeigten Potentiale ließen sich zudem multiplizieren, wenn auch die Konferenzabstracts früherer und folgender DHd-Tagungen aufbereitet werden können, um so auch Entwicklungen und Tendenzen eruieren zu können.
+
+         
+         
+            Das Abstract in der Diskussion
+            Viele Jahre nach Christines Borgmans “Call to Action for the Humanities” (Borgman 2010), der auch das digitale Publizieren jenseits der simplen Konversion der Papiermedien in das PDF-Format inkludierte, werden auch in den Digital Humanities die Möglichkeiten nicht ausgeschöpft und traditionelle Praktiken gepflegt (Kaden/Kleineberg 2017) – von dem Wechsel einer layoutbasierten zu einer strukturbasierten Publikationstechnik ganz zu schweigen (Stäcker 2013). Die DHd-Konferenzabstracts bergen dabei das Potential dieses Paradigma zu durchbrechen: die XML-basierte Einreichung, die datengestützten Analysemethoden und selbstreflexiven Ansätze des Faches, die technische Expertise der Einreichenden, die Kürze der Beiträge und die enge Vernetzung mit Infrastruktureinrichtungen. Das Poster soll auf die bisher erfolgten Arbeiten und die erzielten Ergebnisse aufmerksam machen sowie vor Ort die Diskussion um Möglichkeiten und Ressourcen sowie Relevanz und Reputation einer „erweiterten Publikation“ der DHd-Abstracts weiterführen. Die Autoren werden im Vorfeld der DHd2020 mit dem Organisationskomitee zur Anreicherung der diesjährigen Abstracts sowie Nutzung der HTML-Präsentationsschicht in Kontakt treten.
+         
+      
+      
+         
+            
+      DHd-Community bei Zenodo: 
+            
+            DHd 2019 Book of Abstracts Hackathon: 
+    https://dhd-boas-app.acdh-dev.oeaw.ac.at
+            
+            
+      Die aufbereiteten Daten sind zu finden unter: https://github.com/csae8092/dhd-boas-data.
+    
+         
+         
+            
+               Bibliographie
+               
+                   Andorfer, Peter  (2015): 
+  Forschungsdaten in den (digitalen) Geisteswissenschaften. Versuch einer Konkretisierung, DARIAH-DE Working Papers, 14 
+  urn:nbn:de:gbv:7-dariah-2015-7-2[letzter Zugriff 30.08.2019].
+
+               
+                   Andorfer, Peter / Cremer, Fabian / Steyer, Timo  (2019): DHd 2019 Book of Abstracts Hackathon, in: 
+  DHd 2019 Digital Humanities: multimedial & multimodal. Konferenzabstracts 
+                  [letzter Zugriff 30.08.2019].
+
+               
+                   Borgman, Christine L.  (2010): The Digital Future is Now: A Call to Action for the Humanities, in: 
+  Digital Humanities Quarterly 003, Nr. 4.
+
+               
+                   Cremer, Fabian  (2018): Nun sag, wie hältst Du es mit dem Digitalen Publizieren, Digital Humanities?, in: 
+  Blog. Digitale Redaktion (blog)
+                  [letzter Zugriff 30.08.2019].
+
+               
+                   Gao, J. / Duke-Williams, O. / Mahony, S. / Ramdarshan Bold, M. / Nyhan, J.  (2017):The Intellectual Structure of Digital Humanities: An Author Co-Citation Analysis, in: 
+  Digital Humanities 2017
+                   [letzter Zugriff 30.08.2019].
+
+               
+                   Hall, Mark  (2019): DH is the Study of dead Dudes, in:
+  Hd 2019: multimedial & multimodal Konferenzabstracts: 111-113
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Hannesschläger, Vanessa / Andorfer, Peter  (2018): 
+  Menschen gendern? Datenmodellierung zur Erhebung von Geschlechterverteilung am Beispiel der TEI2016 Abstracts App
+                  [letzter Zugriff 30.08.2019].
+
+               
+                   Henny-Krahmer, Ulrike / Sahle, Patrick  (2019): Einreichungen zur DHd 2018, in: 
+  DHd-Blog (blog), 29. März 2019 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Hoenen, Armin  (2019): Einreichungen zur DHd 2019 II, in: 
+  DHd-Blog (blog), 29. März 2019 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Kaden, Ben / Kleineberg, Michael  (2019): Zur Situation des digitalen geisteswissenschaftlichen Publizierens – Erfahrungen aus dem DFG-Projekt ‚Future Publications in den Humanities‘, in: 
+  Bibliothek Forschung und Praxis 41, Nr. 1 (2017): 7–14 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Kiefer, Katharina  (2019): Einreichungen zur DHd 2019, in: 
+  DHd-Blog (blog), 29. März 2019 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Nyhan, Julianne / Duke-Williams, Oliver  (2014): Joint and Multi-Authored Publication Patterns in the Digital Humanities, in:
+  Literary and Linguistic Computing 29, Nr. 3 (1. September 2014) 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Sahle, Patrick (ed.)  (2019): 
+  DHd 2019 Digital Humanities: multimedial & multimodal. Konferenzabstracts. Frankfurt am Main: Zenodo, 2019 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Stäcker, Thomas  (2013): Wie schreibt man Digital Humanities richtig?, in: 
+  Bibliotheksdienst 47, Nr. 1 
+  [letzter Zugriff 30.08.2019].
+
+               
+                   Vogeler, Georg (ed.)  (2018): 
+  DHd 2018: Kritik der digitalen Vernunft. Konferenzabstracts. Köln, Universität zu Köln, 2018.
+
+            
+         
+      
+   
+

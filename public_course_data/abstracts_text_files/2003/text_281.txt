@@ -1,0 +1,260 @@
+
+
+
+    
+        
+            
+                Identifying Multiword Tokens Using POS Tagging and
+                    Bigram Statistics
+                
+                    
+                        Mark
+                        Arehart
+                        
+                            University of Michigan
+                            marehart@umich.edu
+                        
+                    
+                
+            
+            
+                2003
+                
+                    University of Georgia
+                
+                Athens, Georgia
+            
+            
+                ACH/ALLC 2003
+                
+                    editor
+                    
+                        Eric
+                        Rochester
+                    
+                    
+                        William
+                        A.
+                        Kretzschmar, Jr.
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+                
+                    
+                         
+                         
+                         
+                    
+                
+            
+        
+    
+    
+        
+            
+                I describe and evaluate three methods for automatically identifying in English
+                    text a frequently occurring type of multiword token, the lexicalized noun
+                    compound. The methods combine symbolic part-of-speech information with different
+                    measures of collocational strength, namely minimal frequencies of occurrence in
+                    a corpus, log likelihood of association, and a combination of these two. The
+                    results of testing the methods on two software manuals of approximately 170,000
+                    and 210,000 words suggest that although raw frequency is the best single measure
+                    overall, the combined strategy is useful to the extent that one favors precision
+                    over recall. I also discuss the limitations of the corpora and the test and
+                    suggest additional applications of the methods.
+                A noun compound, like stone wall or stock market, is a series of nouns that
+                    function syntactically as a single noun, inheriting the features of the head
+                    (final) noun. In some languages, noun compounds are not separated by whitespace
+                    and are thus trivially identifiable as words. For instance, the English compound
+                    departure time is Abfahrtzeit in German (Abfahrt ‘departure’ + Zeit ‘time’) and
+                    lähtöaika in Finnish (lähtö + aika). A lexicalized compound is one that has
+                    acquired a conventional or specialized meaning. The compound garbage man, for
+                    instance, could refer to a man made of garbage (cf. snow man) or a man who
+                    delivers garbage (cf. milk man), but has a more salient lexicalized meaning. In
+                    some cases, lexicalization is reflected in orthography, as in the single words
+                    fireman and policeman, and occasionally one finds both multiword and single-word
+                    versions, such as air mail and airmail (both attested in the Brown corpus). It
+                    would be useful to be able to treat compounds like garbage man as single terms
+                    on par with their orthographically unitary counterparts for purposes such as
+                    document indexing and classification.
+                I approach the task of identifying such compounds as a secondary tokenization
+                    step. Tokenization, often unfairly regarded as an uninteresting bit of text
+                    preprocessing, requires one to make nontrivial decisions about what constitute
+                    minimal “word-like units” for further analysis (Grefenstette &amp;
+                    Tapanainen 1994). In addition to garden-variety words, tokens include
+                    punctuation, which is important for identifying clause and sentence boundaries,
+                    and multiword units. Karttunen et al. (1996) divide these multiword units into
+                    several categories: adverbial expressions like “all of a sudden,” prepositions
+                    such as “in spite of,” date and time expressions, proper names, “and other
+                    units.” Typically, a basic tokenizer first segments the text into simple units,
+                    then one or more “multiword staplers” group tokens together again (Karttunen et
+                    al. 1996). What is unique about the approach presented here is the combination
+                    of part-of-speech information, used to identify noun compounds, and
+                    collocational measures. Although “highly collocated” and “lexicalized” are not
+                    the same thing, I suggest that the former can serve as one useful indicator of
+                    the latter.
+                The procedure works as follows. The text is processed by a basic tokenizer,
+                    tagged for part-of-speech, and then the noun sequences are extracted. The goal
+                    is then to identify the subset of these compounds that might qualify as
+                    lexicalized terms by measuring the collocational strength of the component
+                    nouns. The simplest way to identify possible collocations is to extract all
+                    those that occur at or above a certain frequency cutoff. One might hypothesize,
+                    for example, that if a certain noun compound occurs five times in a text, then
+                    it has a lexicalized meaning. Collocational strength can also be measured by
+                    compiling all of the bigrams found in the text and comparing the rate of
+                    co-occurrence of the elements with that expected by chance. Although there are
+                    several possible measures, I use the log likelihood statistic, which has been
+                    shown to be preferable to alternatives such as chi-square and mutual information
+                    (Dunning 1993). To generate collocations of more than two words, a separate
+                    bigram merging process is performed on the corpus. If, for example “NASDAQ
+                    composite” and “composite index” are both significant collocations, then the
+                    trigram “NASDAQ composite index” will be extracted as well if it occurs in the
+                    corpus. In practice, this method can generate terms that are quite long, such as
+                    “American Stock Exchange Market Value Index,” an example extracted from a
+                    portion of the Wall Street Journal corpus. It is also possible to combine these
+                    methods, by extracting compounds that are above certain frequency and likelihood
+                    threshholds. Although the two measures generally correlate (that is, frequently
+                    occurring compounds tend to have larger likelihood scores), they are sensitive
+                    in different ways to corpus size.
+                To evaluate the procedure, I extracted noun compounds from two software manuals
+                    and compared each list to the compounds found in each manual’s index, which
+                    would be expected to contain the significant terms. A baseline procedure using
+                    all the noun compounds averaged 0.26 precision and 0.77 recall on the texts. In
+                    other words, about a quarter of the compounds occurring in the texts were found
+                    in the indexes. Recall is less than 1.0 because some ideas or topics that do not
+                    occur in the text as compounds are reformulated as such for the index. The 0.77
+                    score thus serves as an upper bound on recall. Assigning equal weight to
+                    precision and recall, the best performing strategy was to use a minimum
+                    frequency of 4 for the first text and 3 for the second, with an average of 0.474
+                    precision (82.3% higher than the baseline) and 0.527 recall (31.6% lower than
+                    the upper bound). Adding a conservative log likelihood score threshold increased
+                    precision by an average of 13.6% but lowered recall by an average of 24.1%.
+                    Unless one substantially discounts recall, the likelihood score was not as
+                    useful as anticipated.
+                The results indicate that measures of collocational strength are useful in
+                    separating lexicalized noun compounds, which are profitably viewed as multiword
+                    tokens, from nonlexicalized ones that are best analyzed as token sequences. Such
+                    methods can facilitate the automatic indexing and classification of documents
+                    for textual analysis and search and retrieval applications. Two important
+                    limitations on these results are the restriction to a particular kind of
+                    technical text and the nature of the test itself. It is by no means self-evident
+                    that an index should contain all and only the lexicalized noun compounds of a
+                    text. Such a test is at best indirect, and the project should thus be viewed as
+                    preliminary work indicating the feasibility of the approach. Future work will
+                    test the generalizability and robustness of the methods by identifying other
+                    tests, such as using a glossary rather than an index, and applying the methods
+                    to corpora of different sizes and genres.
+            
+        
+        
+            
+                REFERENCES
+                
+                    
+                        
+                            
+                                Ted
+                                Dunning
+                            
+                        
+                        Accurate methods for the statistics of surprise and
+                            coincidence
+                    
+                    
+                        Computational Linguistics
+                        
+                            19
+                            1
+                            61-74
+                            1993
+                        
+                    
+                
+                
+                    
+                        
+                            
+                                
+                                    Gregory
+                                    Grefenstette
+                                
+                            
+                            
+                                
+                                    Pasi
+                                    Tapanainen
+                                
+                            
+                            What is a word, what is a sentence? Problems of
+                                tokenization
+                        
+                        
+                            Third International Conference on Computational
+                                Lexicography
+                            
+                                Budapest
+                                
+                                1994
+                                79-87
+                            
+                        
+                    
+                    
+                        
+                            
+                                
+                                    Lauri
+                                    Karttunen
+                                
+                            
+                            
+                                
+                                    J-P.
+                                    Chanod
+                                
+                            
+                            
+                                
+                                    Gregory
+                                    Grefenstette
+                                
+                            
+                            
+                                
+                                    A>
+                                    Schiller
+                                
+                            
+                            Regular expressions for language engineering
+                        
+                        
+                            Natural Language Engineering
+                            
+                                2
+                                4
+                                305-238
+                                1996
+                            
+                        
+                    
+                
+            
+        
+    

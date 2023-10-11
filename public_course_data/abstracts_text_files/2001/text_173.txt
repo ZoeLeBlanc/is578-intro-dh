@@ -1,0 +1,165 @@
+
+
+
+    
+        
+            
+                Building Belphegor: A Multilingual Electronic Journal
+                    using TEI
+                
+                    
+                        Vivien
+                        Hannon
+                        
+                            Dalhousie University Electronic Text Centre/Academic
+                                Computing Services
+                            Vivien.Hannon@Dal.CA
+                        
+                    
+                
+                
+                    
+                        Bruno
+                        Roy
+                        
+                            Dalhousie University Electronic Text Centre/Academic
+                                Computing Services
+                            Bruno.Roy@Dal.CA
+                        
+                    
+                
+                
+                    
+                        Vittorio
+                        Frigerio
+                        
+                            Dalhousie University French Department
+                                Vittorio.Frigerio@Dal.CA
+                        
+                    
+                
+                
+                    
+                        John
+                        Barnstead
+                        
+                            Dalhousie University Department of Russian
+                            Studies John.Barnstead@Dal.CA
+                        
+                    
+                
+                
+                    
+                        Oriel
+                        MacLennan
+                        
+                            Dalhousie University Electronic Text Centre/Killam
+                                Library
+                            Oriel.MacLennan@Dal.CA
+                        
+                    
+                
+            
+            
+                2001
+                
+                    New York University
+                
+                New York, NY
+            
+            
+                
+                
+                    editor
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+                
+                    encoder
+                    
+                        Sara
+                        A.
+                        Schmidt
+                    
+                
+            
+            
+                
+            
+        
+        
+            
+
+                
+                    
+                        TEI
+                        E-Journal
+                        Multilingual
+                    
+                
+            
+        
+
+    
+    
+        
+            
+                
+                    Belphegor is the first e-journal to be published at
+                        the Dalhousie University Electronic Text Centre, and has presented
+                        challenges because of its multilingual character. Readers may choose to view
+                        the journal in one of six languages: French, English, German, Portuguese,
+                        Spanish or Italian. Papers published in the journal may be in any one of the
+                        languages; abstracts are offered in more than one language. All information
+                        about the journal itself, the authors, the editorial committee, etc. is
+                        offered in all six languages. Many images presented on the pages have
+                        different versions for each of the languages.
+                    While many e-journals are originally created in HTML, it was decided in this
+                        case to create a single XML-compliant TEI-encoded file for each issue,
+                        containing all the text required for the HTML pages, using entity
+                        definitions for images. A "mock-up" partial set of pages was created in HTML
+                        and used as a sort of design sketch to help with the creation of Belphegor's
+                        TEI template. This template was created keeping in mind that we will be
+                        working on other journals in the future; it can be easily customized.
+                    Using a custom Perl script, a TEI file created using the template is then
+                        converted to a set of HTML files. Another Perl script is used to translate
+                        the TEI file to PDF, creating a version of the journal issue which is
+                        optimised for printing. Using different scripted translators, the TEI
+                        document could later be converted to other formats at the request of the
+                        editors - for example, e-book, LaTeX or Postscript. The journal's appearance
+                        can easily be modified by adjusting the translator script and creating new
+                        graphics if needed.
+                    The search page is designed to take advantage of the TEI markup and allow
+                        readers to search using various criteria; for example, authors' names,
+                        titles of works, dates and places.
+                    As a bonus, we will demonstrate to interested parties an example of the use
+                        of digital media in humanities research in the Kuzmin
+                            Collection, which presents materials associated with the Russian
+                        poet, novelist, dramatist, and composer Mikhail Kuzmin (1872-1936), a key
+                        figure in the development of the twentieth century Russian avant-garde.
+                        Research into neglected aspects of Kuzmin's musical compositions and
+                        settings of his poetry by figures of the "repressed Russian avant-garde" has
+                        been facilitated by use of computer-assisted music transcription. The
+                        Electronic Text Centre allows the presentation of this research to a
+                        widely-scattered scholarly audience at minimal expense, in a much more
+                        useful form than would be possible using traditional forms of publication.
+                        By giving students "hands-on" experience in ongoing scholarly research and
+                        translation, and by providing the means to examine the interrelationships of
+                        poetry, music, and the visual arts, the Dalhousie University Electronic Text
+                        Centre makes a growing contribution to the life of the University and its
+                        mission to serve the community. 
+                
+            
+        
+    

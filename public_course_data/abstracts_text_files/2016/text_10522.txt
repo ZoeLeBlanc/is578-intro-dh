@@ -1,0 +1,249 @@
+
+      
+         
+            Einleitung
+            In diesem Beitrag werden die Probleme skizziert, die sich aus Praktiken
+          Österreichischer Archive bei der Umsetzung von online-Projekten ergeben. Die
+          Beschränkung auf Österreich ergibt sich, um die Beispiel-Palette überschaubar zu
+          halten; die Problembereiche und Lösungsvorschläge lassen sich allerdings
+          allgemein anwenden. State-of-the-art Projekte von Bibliotheken und Archiven im
+          deutschsprachigen Raum, die den neusten Stand der Forschung umsetzen, werden in
+          einem ersten Schritt beschrieben. Der zweite Abschnitt skizziert Gründe dafür
+          und Konsequenzen daraus, dass diese Standards häufig nicht herangezogen werden.
+          Schließlich werden Lösungsvorschläge präsentiert und eine Agenda vorgeschlagen,
+          die die Situation nachhaltig verbessern könnte. Diese wird im Rahmen des
+          Vortrags auf der DHd 2016 im Zentrum stehen. Dort werden auch die hier allgemein
+          beschriebenen Schwierigkeiten anhand mehrerer Beispielprojekte illustriert.
+         
+         
+            Forschungsstand / Vorbildprojekte
+            Vor allem im Bereich der digitalen Edition haben sich im deutschsprachigen Raum
+            auf breiter Ebene Standards und “best practices” entwickelt, die von einer
+            etablierten Community umgesetzt werden. Umfangreiche Bibliotheken publizierter /
+            rechtefreier Werke bieten etwa das 
+                  Deutsche Textarchiv
+               
+            oder der Forschungsverbund 
+                  TextGrid
+               . Diese Plattformen greifen zur Annotation der zur Verfügung gestellten
+            Texte auf die Auszeichnungssprache XML und das Datenformat TEI zurück, die sich
+            in den DH als Standards etabliert haben, und machen auch ihre entsprechenden
+            Tools verfügbar. Die Texte selbst sind creative-commons-lizenziert und können
+            von der Website des Deutschen Textarchivs downgeloadet werden, ebenso wie aus
+            dem TextGrid Repository, das darüberhinaus als
+            Langzeitarchiv fungiert. 
+            Im Bereich der Beforschung von Archivbeständen überwiegen im digitalen Raum
+              ebenfalls Editionsprojekte, die die erwähnten Standards zur Anwendung bringen.
+              Beispiele hierfür sind das 
+                  Heinrich-Heine-Portal
+               , das u. a. vom Deutschen
+              Literaturarchiv Marbach unterstützt und vom Trier Centre for
+              Digital Humanities umgesetzt wird, oder die 
+                  Digitale Edition der Korrespondenz August Wilhelm Schlegels
+               ,
+              an der letztgenanntes Zentrum ebenfalls beteiligt ist. Die Herzog August
+              Bibliothek Wolfenbüttel erarbeitet für ihre in der Reihe 
+                  Editiones Electronicae Guelferbytanae
+               
+              publizierten digitalen Editionen ebenfalls neue Editionstechniken auf Basis der
+              TEI und stellt dazu Dokumentation zur Verfügung. Ein positives Beispiel mit
+              Österreichischer Beteiligung (eine Kooperation zwischen dem Literaturarchiv der
+              ÖNB und dem Institut für Germanistik der Universität Hamburg) ist die
+              Hybridedition des Briefwechsels August Sauer – Bernhard Seuffert (ÖNB 2015), die die Metadaten der online
+              edierten Briefe entsprechend TEI Standards codiert. 
+            Wegweisend speziell für die Arbeit mit literarischen Nachlässen ist auch das
+                Virtual Research Environment (VRE) 
+                  SALSAH 
+                (System for Annotation and Linkage of
+                Sources in Arts and Humanities) des Digital Humanities
+                Lab der Universität Basel, das ähnlich dem System von Susan Schreibmans
+                
+                  versioning machine
+                funktioniert.
+                
+            Im Bereich der Archivierung und Bereitstellung von elektronischen Publikationen,
+                  Multimedia-Objekten und anderen digitalen Daten wird in Österreich das Projekt
+                  
+                  e-Infrastructures Austria
+                umgesetzt, das u. a. mit Horizon
+                    2020 verbunden ist und wichtige Impulse für Forschungswebsitearchivierung
+                    bringen könnte. 
+         
+         
+            Problemanalyse
+            Die in Österreichischen Literaturarchiven aufbewahrten Bestände werden im Rahmen von wissenschaftlichen Projekten mit direkt an der Institution angesiedelten Mitarbeitenden erforscht und publiziert. Aufgrund der Vergabepolitik des FWF Forschungsfonds, der in den allermeisten Fällen Geldgeber dieser Unternehmen ist, haben die betreffenden Projekte mittlerweile häufig eine digitale Komponente. Projektleitende und Mitarbeitende sind zumeist literaturwissenschaftlich ausgebildet. Sie konzipieren und entwerfen, wie die digitale Repräsentation ihrer Arbeit strukturiert wird und erarbeiten das wissenschaftliche Konzept, das Inhalt und Funktionalität zugrundeliegt. Für die technische Umsetzung werden meist erst nach Abschluss der konzeptionellen Arbeit externe Auftragnehmende engagiert, oft privatwirtschaftliche IT-Unternehmen, die von den Möglichkeiten, die im Bereich der DH bereits verfügbar wären, nur eingeschränkte Kenntnis haben.
+            Aus dieser Situation ergeben sich Probleme in mehreren Bereichen:
+            
+               Langzeitarchivierung von Scans
+               Die im Rahmen von Projekten erstellten Scans sollten in einer digitalen Langzeitarchivierung der projekttragenden Institution abgelegt werden, was fallweise versäumt wird. Gründe:
+               
+                  fehlender Speicherplatz 
+                  fehlende Arbeitszeit (sowohl auf Projekt- als auch auf Institutionsseite)
+                  pragmatische Lösungen: Langzeitarchivierungstaugliche Scans bedeuten einen aufwändigeren Arbeitsprozess
+                  die Materialien werden häufig nicht in größere Projekte eingespeist
+                          (z. B. Europeana)
+               
+            
+            
+               Datenmodellierung
+               Die Projektzuständigen haben aufgrund ihrer Ausbildung meist einen editorischen oder von archivarischen Ordnungsprinzipien geprägten Zugang zur Modellierung und Strukturierung der Projektdaten. Gründe und Konsequenzen:
+               
+                  die gewählten Datenmodelle sind selbst innerhalb einzelner Geisteswissenschaften nicht homogen
+                  wie konkret die gewählten Daten zu notieren und annotieren sind, wird in jedem Projekt individuell entschieden
+                  selbst bei Orientierung an vorhandenen Standards ergeben sich unterschiedliche Auslegungen
+                  keine ausreichenden Kenntnisse von TEI und anderen Standards
+                  “Selbstverständlichkeiten” werden im Datenmodell oft vergessen (z. B.
+                            die Angabe der Verfassenden, wenn ein Projekt sich mit dem Werk einer
+                            Einzelperson beschäftigt.)
+                  keine transdisziplinäre (Wieder-)Verwendung der Daten
+               
+            
+            
+               Technische Umsetzung, Vernetzung, Visualisierung
+               Forschungsprojekte werden häufig in Zusammenarbeit mit Firmen umgesetzt, die nicht (primär) mit wissenschaftlicher Klientel arbeiten, deren Wünsche und Methoden daher nicht im Detail verstehen und nicht mit bereits existierenden DH-Tools und Ressourcen vertraut sind. Konsequenzen:
+               
+                  keine semantische Annotation, Vernetzung mit verfügbaren Datensätzen bzw. LOD
+                  keine projektinterne Vernetzung der Daten
+                  keine strukturierte Visualisierung des Datensatzes
+               
+            
+            
+               Langzeitarchivierung / Verfügbarmachung von Daten
+               An hostenden Institutionen werden kaum personelle Ressourcen zur Wartung abgeschlossener online-Projekte einkalkuliert. Projekt-Websites sterben daher oft nach wenigen Jahren, mit ihnen die Daten. Auch in Projektfinanzierungsplänen wird dieser Aspekt bislang nicht berücksichtigt. Konsequenzen:
+               
+                  Daten werden nicht als LOD zur Verfügung gestellt
+                  Trägerinstitutionen archivieren die Daten nicht sachgemäß
+               
+            
+         
+         
+            Lösungsansätze
+            Der skizzierten Situation muss auf allen Ebenen begegnet werden:
+            
+               Institutionen
+               Seitens der hostenden Institutionen muss stärker daran gearbeitet werden, für langfristige Datensicherung Möglichkeiten zu entwickeln und anzubieten oder Kooperationen mit Langzeitdatenarchiven einzugehen. Dafür müssen sowohl substanzielle finanzielle als auch personelle Ressourcen explizit dieser Aufgabe zugeordnet werden. Die Postionen, die die
+                            AG Datenzentren im Verband DHd 2015 formuliert hat, sind dafür wertvolle Impulse und sollten stärker an Institutionen herangetragen werden. Da die betreffenden Institutionen meist Bibliotheken bzw. an solche angeschlossen sind, scheint es auch gewinnbringend, die institutionsinterne Kommunikation zu intensivieren: "digitale Biliothek"-Abteilungen haben für viele der skizzierten Probleme bereits gute Lösungsansätze entwickelt, wie das umfangreiche Vortragsprogramm zu diesem Thema am Österreichischen Bibliothekartag 2015 gezeigt hat. Auch die ÖNB hat mittlerweile eine wichtige Initiative in Angriff genommen: Eine interne Arbeitsgruppe Digital Humanities soll dort Lösungen für die digitale Arbeit entwickeln. Diese Herangehensweise kann für Bibliotheken allgemein als Vorbild dienen, sollte aber auch mit einer Initiative verbunden sein, die im Idealfall kollaborativ erarbeiteten (technischen) Lösungen mit anderen Bibliotheken und Digital Humanists zu teilen.
+                          
+            
+            
+               Fördergebende
+               Bei der Bewilligung von Projektanträgen sollten Fördergebende die skizzierten Probleme ernsthaft berücksichtigen und Projekte, die keine ausreichenden Ressourcen für die Arbeit an der digitalen Repräsentation der Projektergebnisse vorsehen, ablehnen - anstatt die Praxis, utopische Ziele in Projektanträge einzubauen, zu unterstützen. (Inter)Nationale DH-Plattformen sollten es sich zur Aufgabe machen, ein entsprechendes Empfehlungspapier zur Verfügung zu stellen. Bedenkenswert ist auch die Forderung nach einem “offenen Lebenszyklus” von Forschungsprojekten, die etwa von der Plattform
+                            
+                     digital humanities austria
+                  
+                            gestellt wird.
+                          
+            
+            
+               Forschende
+               Das größte Potential zur nachhaltigen Verbesserung der Situation liegt im
+                            Bereich der Projektangestellten. Geisteswissenschaftlich Forschende erfahren
+                            im Rahmen des Studiums unzureichende Ausbildung zur Arbeit im digitalen Raum
+                            und haben in der Folge entsprechende Hemmungen, mit digital humanists in
+                            Austausch zu treten. Deshalb werden DH von nicht primär im digitalen Raum
+                            arbeitenden Forschenden noch immer als eigene Disziplin wahrgenommen anstatt
+                            als Teil und Methode des geisteswissenschaftlichen Forschens an sich. Hier
+                            muss Bewusstsein geschaffen und Skepsis abgebaut werden, indem die Lehrpläne
+                            grundlegend überarbeitet und gegenwärtigen Standards angepasst werden.
+                            Dadurch würden viele der umrissenen Probleme gar nicht erst entstehen. Neben
+                            den Forschenden der Zukunft, die man so erreichen kann, müssen kurz- bis
+                            mittelfristig auch die Forschenden der Gegenwart stärker animiert werden,
+                            sich mit seriösen Methodiken und Frameworks für Forschungsprojekte im
+                            digitalen Raum auseinanderzusetzen, indem sie dort, wo sie mit ihrem Wissen
+                            stehen, abgeholt werden. Dafür kann etwa die Vorgehensweise des 
+                     Austrian Centre
+                            for Digital Humanities
+                   der Österreichischen Akademie der
+                            Wissenschaften als vorbildlich genannt werden: Hier steht den Forschenden
+                            ein digitaler Helpdesk zur Verfügung, der über Möglichkeiten und potentielle
+                            Partner für Projekte informiert. Auch das Outreach-Programm, in dessen
+                            Rahmen Vorträge, Workshops und eine jährliche DH-Konferenz veranstaltet
+                            werden, bietet die Möglichkeit, sich über digitale Methoden zu informieren
+                            und mit digital humanists in Kontakt zu treten. Ebenso zu begrüßen sind die
+                            Outreach Programme des 
+                     Zentrum für Informationsmodellierung – ACDH
+                   der
+                            Universität Graz, das vor allem im Bereich der Lehre ein Österreichweites
+                            Vorbild sein sollte, und von e-Infrastructures
+                            Austria.
+               
+               Die Arbeit in den Bereichen Helpdesk und Outreach zeigt, dass für eine zeitnahe Verbesserung der Situation Adaptionen in der Ausbildung der Forschenden der Zukunft alleine nicht ausreichen; um die Forschenden der Gegenwart zu erreichen, die nicht in digitaler Methodik ausgebildet wurden und sich (noch) nicht damit auseinandergesetzt haben, braucht es “Übersetzende”, die die Kommunikation zwischen rein geisteswissenschaftlich und rein digital Denkenden erleichtern und Brücken bauen. Die Wichtigkeit solcher Bindeglieder, die “beide Sprachen sprechen”, kann nicht hoch genug eingeschätzt werden, da sie allen Beteiligten Frustration, Zeit, überflüssige Arbeit und letztlich auch Geld ersparen können. Zentren, Institute und Verbände, die in den Digital Humanities arbeiten, sollten ihre Aufmerksamkeit vermehrt auf diesen neuen Arbeitsbereich der digital Übersetzenden richten und ihre Aktivitäten gezielt in diese Richtung lenken.
+            
+         
+         
+            Conclusio
+            Die unzureichende Vernetzung geisteswissenschaftlich Forschender mit der DH Community führt zu technischen Unzulänglichkeiten in abseits davon ambitionierten digitalen Projekten, die ihre Nachhaltigkeit gefährden. Gegenseitige Annäherung über Outreach-Programme und die Adaption der Lehrpläne geisteswissenschaftlicher Studienrichtungen, vor allem aber verbesserte interne und externe Kommunikation sind notwendig, um zu nachhaltiger Verbesserung der Situation zu gelangen.
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  AG Datenzentren der DHd (2015): "Was sind und was
+                          sollen Datenzentren in den Geisteswissenschaften?", in: Panel der AG Datenzentren im Verband DHd. Verbandstagung der DHd
+                          in Graz, 26.02.2015 https://www.conftool.pro/dhd2015/index.php?page=browseSessions&form_session=37
+                          [letzter Zugriff 09. Februar 2016].
+               
+                  Berlin-Brandenburgische Akademie der Wissenschaften
+                          (2007-2015): Deutsches Textarchiv
+                  www.deutschestextarchiv.de.
+               
+                  Digital Humanities Lab der Universität Basel
+                            (2009-2016): SALSAH. System for Annotation and
+                            Linkage of Sources in Arts and Humanities http://salsah.org/ [letzter Zugriff 09. Februar 2016].
+               
+                  Europeana Foundation (o. J.): Europeana Collections. http://www.europeana.eu/portal/ [letzter Zugriff 09. Februar
+                            2016].
+               
+                  Herzog August Bibliothek Wolfenbüttel (o. J.): Editiones Electronicae Guelferbytanae
+                  http://www.hab.de/de/home/bibliothek/digitale-bibliothek-wdb/digitale-editionen.html
+                              [letzter Zugriff 09. Februar 2016].
+               
+                  Karl-Franzens-Universität Graz (2016): Zentrum für Informationsmodellierung – Austrian Centre for
+                              Digital Humanities
+                  https://informationsmodellierung.uni-graz.at/ [letzter Zugriff 09
+                                Februar 2016].
+               
+                  Österreichische Akademie der Wissenschaften (2015):
+                                Austrian Centre for Digital Humanities
+                  http://www.oeaw.ac.at/acdh/
+                                [letzter Zugriff 09. Februar 2016].
+               
+                  Österreichische Akademie der Wissenschaften / Universität
+                                  Wien / Universität Graz (o. J.): digital
+                                  humanities austria
+                  http://digital-humanities.at/ [letzter Zugriff 09. Februar
+                                    2016].
+               
+                  Österreichische Nationalbibliothek (2011-2015): Handkeonline. http://handkeonline.onb.ac.at/ [letzter Zugriff 09. Februar
+                                    2016].
+               
+                  ÖNB = Österreichische Nationalbibliothek (2015): Briefwechsel Sauer - Seuffert. http://sauer-seuffert.onb.ac.at/ [letzter Zugriff 09. Februar
+                                    2016].
+               
+                  Susan Schreibman (2010): Versioning
+                                    Machine V4.0
+                  http://v-machine.org/.
+               
+               
+                  TextGrid Konsortium (2006–2015): TextGrid. Digitale Bibliothek. Göttingen https://textgrid.de/digitale-bibliothek.
+               
+                  Trier Centre for Digital Humanities (2014): Digitale Edition der Korrespondenz August Wilhelm
+                                    Schlegels (beta-Version)
+                  http://august-wilhelm-schlegel.de/briefedigital/ [letzter Zugriff
+                                      09. Februar 2016].
+               
+                  Trier Centre for Digital Humanities /
+                                        Heinrich-Heine-Institut Düsseldorf (2004-2009): Heinrich-Heine-Portal
+                  http://www.hhp.uni-trier.de/Projekte/HHP/ [letzter Zugriff 09.
+                                          Februar 2016].
+               
+                  Universität Wien (2014-1016): e-Infrastructures Austria
+                  http://e-infrastructures.at/ [letzter Zugriff 09. Februar
+                                            2016].
+            
+         
+      
+   
+
