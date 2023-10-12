@@ -1,0 +1,369 @@
+10641	2017	
+      
+         
+            
+            Der hier vorgestellte Workflow für die Digitalisierung und Integration bibliographischer Informationen ist Teil des Forschungsprojektes 
+            Niklas Luhmann - Theorie als Passion. Wissenschaftliche Erschließung und Edition des Nachlasses
+            . Das Langzeitvorhaben (2015-2030) an der Fakultät für Soziologie der Universität Bielefeld in Kooperation mit dem Cologne Center for eHumanities (CCeH) wird im Akademienprogramm durch die Nordrhein-Westfälische Akademie der Wissenschaft und der Künste gefördert. Weitere Kooperationspartner sind das Archiv und die Bibliothek der Universität Bielefeld.
+            
+               1
+            
+         
+         Ziel des Gesamtprojektes ist die Sicherung, Digitalisierung, Erschließung, werkgenetische Erforschung und teilweise Edition des wissenschaftlichen Nachlasses Niklas Luhmanns. Zu diesem Zweck werden die bewahrenswerten Teile des Nachlasses (Manuskripte, Zettelkasten, Korrespondenz, Bibliothek etc.) zunächst archivarisch gesichert und in den Teilen, die wissenschaftlich erschlossen werden sollen, digitalisiert, sowie für die weitere Bearbeitung bereitgestellt. Die daran anschließende Edition will den Luhmannschen Nachlass als geistesgeschichtliches Dokument der wissenschaftlichen Forschung sowie der interessierten Öffentlichkeit zugänglich machen. Sie bildet dadurch zugleich die Grundlage für die Entwicklung einer kritisch gesicherten infrastrukturellen Wissensressource, auf welche die interdisziplinäre und internationale Forschung zur und mit der Theorie Luhmanns zukünftig zurückgreifen kann.
+         Bibliographische Informationen stellen ein besonders wichtiges verbindendes Element zwischen den zu erschließenden und ggf. zu edierenden Materialien aus dem Nachlass Niklas Luhmanns dar. Ihre Modellierung, Zusammenführung und Visualisierung verspricht einen vollständigen Überblick über Grundlagen, Rezeption und Verbreitung des Luhmannschen Werks aber auch detaillierte Einblicke in seine Arbeitsweise. 
+         
+            Quellen und Forschungsfragen
+            
+               In Hinblick auf den 
+               Werkkosmos 
+               Niklas Luhmanns
+                
+               wurde am Institut für Soziologie in Bielefeld eine Bibliographie aller Publikationen erstellt, die in digitaler Form finalisiert werden soll. Enthalten sind Monographien, Aufsätze, Rezensionen, Festschriften. Gelistet werden außerdem alle 
+               bearbeiteten 
+               Neu-Auflagen und Übersetzungen. Die insgesamt etwa 1.900 Datensätze sind stark miteinander vernetzt: Sowohl auf der Ebene von Monographien als auch bei Artikeln wird jeweils auf Nachdrucke, Übersetzungen und weitere Auflagen hingewiesen. Die Aufbereitung 
+               dieser Informationen soll anschaulich machen, in welchen Medien Luhmann hauptsächlich publiziert hat und wie sich seine Schriften durch Übersetzungen und Nachdrucke international verbreitet haben. 
+            
+            
+               
+                  
+                  Schematische Darstellung zur Vernetzung der Datensätze
+               
+            
+            
+               Den 
+               Lesekosmos
+                
+               Niklas Luhmanns darstellbar und damit erforschbar zu machen, ist ein zweites zentrales Anliegen. Die folgenden Quellen bibliographischer Information liegen dazu vor: 
+            
+            
+               die zitierte Literatur in den Zettelkästen
+               eigenständige bibliographische Abteilungen je Zettelkasten (ca. 17.800 Einträge)
+               die zitierte Literatur in seinen eigenen publizierten Werken
+               die Literaturhinweise in seinen unpublizierten Manuskripten
+               die private Arbeitsbibliothek (ca. 4.000)
+            
+            Nach Aufarbeitung dieser Materialien können wichtige werkhistorische Fragestellungen untersucht werden: Welche und wie viel Literatur (aus welchen wissenschaftlichen Disziplinen) hat Luhmann im Laufe seiner Forschung rezipiert bzw. verarbeitet? Gibt es bestimmte Werke / Autoren, die er wiederkehrend konsultiert bzw. zitiert hat? Gibt es bevorzugte Zeitschriften?
+            Der Zettelkasten ist der zentrale Startpunkt für die Reise in den bibliographischen Kosmos. Er enthält durchgehend auf den Notizzetteln Hinweise auf benutzte Literatur und ab der Mitte der 70er Jahre auch eine eigenständige Bibliographie-Abteilung (insgesamt etwa 17.800 Einträge). 
+            Eine Auswertung der Zitatnachweise in den gedruckten Bänden Luhmanns soll dann die Verbindung von Zettelkasten und Publikationen erleichtern. Wieviel der im Zettelkasten nachgewiesenen Lektürearbeit ist tatsächlich in die Publikationen eingegangen? Und gibt es Stellen in den Publikationen, die scheinbar keine Wurzeln im Zettelkasten haben? 
+            In den unveröffentlichten Manuskripten finden sich neben bereits standardisierten Literaturnachweisen häufig auch handschriftliche Nennungen von Notizzetteln, die den Kreis über den Zettelkasten wieder schließen.
+         
+         
+            Datenmodell
+            Zu unseren Zielen gehört die Vernetzung der Datensätze zu visualisieren, um so den Werk- bzw. Lesekosmos erfahrbar zu machen. In Anlehnung an das FRBR-Modell
+                    2 verstehen wir die hier zu modellierenden bibliografischen Datensätze als 
+                    Manifestationen eines 
+                    Werks
+                (Wiesenmüller 2008: 350
+                    ). Im Fall der Publikationen Niklas Luhmanns selbst, sind bereits Bezugsinformationen zu anderen 
+                    Manifestationen (z.B. im Sinne von "ist Teil von") und 
+                    Expressions (z.B. im Sinne von "ist Übersetzung von") enthalten. Perspektivisch werden hier noch übergeordnete Datensätze zu 
+                    Werken und deren 
+                    Expressions entstehen, mit denen die Fachwissenschaftler das Material weiter strukturieren und die Werkgenese genauer beschreiben können.
+                    3 Vor allem im Fall der unterschiedlichen Manuskriptfassungen Luhmanns wird die Bestimmung übergreifender 
+                    Werke
+                eine explizit fachwissenschaftliche Aufgabe sein.
+                
+            
+               Die Basiskodierung erfolgt zunächst ohne 
+               weiterführende 
+               ontologischen Differenzierungen und Deutungen in voneinander getrennten Datensätzen 
+               auf 
+               gleicher Ebene
+               .
+                
+               Die TEI bietet 
+               hier 
+               mit  ein geeignetes standardisiertes Datenmodell
+                um 
+               Manifestationen
+                zu beschreiben, aber auch bereits etablierte Wege wie Personen, Körperschaften, Werktitel und später auch Sachschlagwörter mit Normdatensätzen
+               
+                  4
+               
+                verbunden werden können.
+               
+                  5
+               
+                Beziehungen zu anderen Datensätzen 
+               werden
+                über  angereichert. 
+               Alle Erwähnungen und Verweise auf das bibliograhierte Item werden über -Elemente
+                
+               aufgenommen
+               . 
+               Selbst weiterführende 
+               inhaltliche 
+               Informationen aus den unterschiedlichen Nachlasszusammenhängen können über  mitgeführt werden. 
+            
+            
+               Die Offenheit einer TEI-Auszeichnung ermöglicht uns, im Gegensatz zu anderen bestehenden bibliografischen Formaten, die meist für Bibliothekszusammenhänge 
+               zugespitzt wurden
+               , alle vorliegenden Informationen im Datensatz selbst mitzuführen und 
+               schwellenlos
+                
+               projektintern
+                für die restlichen in TEI kodierten Materialien 
+               nutzbar 
+               vorzuhalten
+               .
+               
+                  6
+               
+            
+            Umsetzung im Detail
+            
+               Die Guidelines empfehlen für strukturierte bibliographische Informationen -Items in Listen ().
+               
+                  7
+               
+                
+               Wir weichen in diesem Punkt ab und erzeugen für jede 
+               Manifestation
+                einen eigenständigen bibliographischen Datensatz in Form eines -Single-Files.
+               
+                
+               Jeder Datensatz enthält nur ein  bzw. ein  und ein . Die Dateien erhalten
+                
+               einen eindeutigen Dateinamen (Name des Autors + Erscheinungsjahr + ggf. Erweiterung) und eine entsprechende xml:id. Jedes Vorkommen, etwa im Zettelkasten oder in einem Manuskript, wird in einem -Element dokumentiert. Hinweise auf Reprints, Übersetzungen und weiterführende Informationen werden in Form von  ergänzt. Da die Dateinamen und xml:ids auf Basis des bibliographierten Werks sprechend benannt wurden, ist eine direkte Verlinkung der Datensätze untereinander problemlos möglich. 
+                
+            Die Aufspaltung in -Single-Files lässt sich nun auch für die Vorhaltung von unselbstständigen Titeln nutzen. Die Titelinformation für einen Aufsatz wird in  erfasst, die Information zum Sammelband in einem anschließenden -Element. Um die Wiederholung dieser Information für jeden Aufsatz des Sammelbands zu umgehen, wird ein eigenes -Single-File für den Sammelband erzeugt. Über einen XInclude
+                    8-basierten Weg wird das -Element des Sammelbands in die Datei des Artikels eingebunden. Damit ist die TEI-Datei des Artikels auch während der Bearbeitung vollständig (zusätzlich zu  wird das externe  des Sammelbands eingebunden).
+                    9
+            
+            
+               
+                  
+                  Gliederungsansicht eines -Elements, Typ  Sammelband
+               
+            
+            
+               ”
+               
+                  
+                     
+                     Gliederungsansicht eines -Elements, Typ “Artikel in Sammelband
+                  
+               
+            
+         
+         
+            Arbeitsumgebung
+            
+               Als Arbeitsumgebung zur Bearbeitung und Neuerfassung von bibliographischen Informationen kommt ein speziell für dieses Projekt entwickeltes oXygen-Framework
+               
+                  10
+               
+                
+               zum Einsatz. Ein solches Framework ist eine Erweiterung für den oXygen XML-Editor, welches spezifische Vorgaben für die grafische Darstellung und Funktionsweise eines Eingabeformulars für das hier entwickelte Datenmodell in oXygen macht. Außerdem werden darin benutzerdefinierte Schaltflächen angelegt, die auf den Workflow des Bearbeiters ausgerichtet sind. Damit ist es für Laien ohne Vorkenntnisse in XML oder TEI auf einfache Weise möglich, bibliographische Informationen auf Grundlage des verwendeten Datenmodells zu erstellen, 
+               zu 
+               bearbeiten und auszuzeichnen.
+                        Das Framework-Verzeichnis wird auf den Rechnern der Bearbeiter zur Verfügung gestellt, von oXygen als solches erkannt und ist damit vom Bearbeiter verwendbar.
+                    
+            
+            
+               
+               
+                  
+                     
+                     oXygen-Framework (Author-Mode)
+                  
+               
+            
+         
+         
+            Veröffentlichung
+            
+               Nachdem die Daten in die Datenbank importiert wurden, werden sie automatisiert im Projektportal veröffentlicht. Dies geschieht mit einem modular aufgebauten Web-Präsentationssystem, bestehend aus etablierten Open-Source-Softwarelösungen wie eXist XML Database
+               
+                  11
+               
+               , NodeJS
+               
+                  12
+               
+               , ReactJS
+               
+                  13
+               
+               , sowie dem Design-Framework Material Design Lite
+               
+                  14
+               
+               . Die Datenbank verknüpft automatisch die verschiedenen Datensätze und gibt sie aus, sodass der Benutzer des Portals sofort sehen kann, in welchem Verhältnis ein Werk zu verwandten Werken steht. Eine Visualisierung mittels eines Netzwerk-Graphs soll diese Verknüpfungen zusätzlich veranschaulichen.
+            
+            Die hier dargestellten Workflows setzen ausschließlich auf Open-Source-Softwarelösungen, sowie offene Standards wie TEI. Die Weitergabe des Frameworks mit allen Templates, der ODD, des Schemas und einer Dokumentation wird angestrebt. Die generische Architektur ist nachhaltig und nachnutzbar von anderen Projekten mit ähnlichen Anforderungen.
+            Das Luhmann-Projekt eignet sich aufgrund der Heterogenität des bibliographischen Materials sehr gut als Ausgangspunkt zur Entwicklung eines allgemeinen Modells, das vom konkreten Projekt abstrahiert werden kann und soll. Im CCeH wird der Workflow schon von weiteren Projekten eingesetzt und auf seine Tauglichkeit geprüft.
+            Die für die Publikationen Luhmanns, ihre Reprints und Veröffentlichungen vergebenen Namen und IDs werden, neben den luhmann-basierten Zettelkennungen, als autoritative Identifikatoren für das Werk Luhmanns nachnutzbar sein.
+         
+      
+      
+         
+            
+               Website des Niklas Luhmann-Archivs 
+               
+                
+               [letzter Zugriff 
+               30
+               . 
+               November 
+               2016] 
+            
+            
+                
+               “Functional Requirements for Bibliographic Records” (FRBR)
+               : 
+               
+                
+               [letzter Zugriff 
+               30
+               . 
+               November 
+               2016] 
+            
+            
+                Ein ähnliche Ansatz findet Anwendung im Projekt "Wome
+               n
+                Writer
+               s
+                in Review", vgl 
+               
+                
+               [letzter Zugriff 
+               30
+               . 
+               November 
+               2016] 
+            
+            Gemeinsame Normdatei der Deutschen Nationalbibliothek (GND), 
+                            
+               [letzter Zugriff 
+               30
+               . 
+               November 
+               2016] 
+            
+            Nach dem FRBR-Modell betrifft das die Entitäten der Gruppe 2 und 3 (Tillet 2010: 3)
+            
+                
+               Bei späteren Exporten in andere bibliographische Formate, wie etwa BibTeX, können Hauptfelder gemappt werden, wohingegen Zusatzinformationen - je nach inhaltlicher Zielsetzung des Ausgabeformat
+               s
+                - 
+               schlicht 
+               nicht exportiert werden. 
+            
+            
+                
+               Vgl. TEI-Guidelines, Abschnitt 3.11: Bibliographic Citations and References (
+               
+                
+               [letzter Zugriff 
+               30
+               . 
+               November 
+               2016] 
+            
+            
+               
+                
+               Vgl. W3C Empfehlung: 
+               
+                
+               und TEI Guidelines 
+               
+                
+               [letzter Zugriff 25. August 2016]
+            
+             Für die Weitergabe der Daten nach außenwird das XInclude wieder aufgelöst und für die Verlinkung ergänzte IDs werden gelöscht, so dass die Ausgabe von standardkonformen und vollständigen -Files sichergestellt ist.
+            
+               
+                
+               Vgl. oXygen Visual (WYSIWYG) XML
+                
+               Editors:
+               
+                
+               [letzter Zugriff 25. August 2016]
+            
+            
+               
+                
+               Vgl. 
+               
+                
+               [letzter Zugriff 25. August 2016]
+            
+            
+               
+                
+               Vgl. 
+               
+                
+               [letzter Zugriff 25. August 2016]
+            
+            
+               
+                
+               Vgl. 
+               
+                
+               [letzter Zugriff 25. August 2016]
+            
+            
+               
+                
+               Vgl. 
+               
+                
+               [letzter Zugriff 25. August 2016]
+            
+         
+         
+            
+               Bibliographie
+               
+                  Deutsche Nationalbibliothek (Hg.) (2009): 
+                        Funktionale Anforderungen an bibliografische Datensätze. 
+                        Abschlussbericht der IFLA Study Group on the Functional Requirements for Bibliographic Records. Geänderte und korrigierte Fassung, Februar 2009 (Leipzig/Frankfurt am Main/Berlin, 2009), 
+                        . 
+                        [letzter Zugriff 30. November 2016].
+                    
+               
+                  Tillett, Barbara (2003): 
+                        „What is FRBR?“. Library of Congress Cataloging Distribution Service, 2004 , 
+                        in: 
+                        Technicalities 25 (5) 
+                        
+                        [letzter Zugriff 30. November 2016].
+                    
+               
+                  Wiesenmüller, Heidrun / Horny, Silke (2015):
+                        Basiswissen RDA: Eine Einführung für deutschsprachige Anwender.
+                        De Gruyter Saur.
+                    
+               
+                  Wiesenmüller, Heidrun (2008): 
+                        „Zehn Jahre ‚Functional Requirements for Bibliographic Records“: Vision, Theorie und praktische Anwendung“, 
+                        in: 
+                        Bibliothek, Forschung und Praxis 32 (3).
+                    
+               
+                  Niklas-Luhmann-Archiv:
+                        Webseite
+                         [letzter Zugriff 30. November 2016].
+                    
+               
+                  TEI:
+                        Bibliographic Citations and References in den TEI-Guidelines
+                   [letzter Zugriff 30. November 2016].
+                    
+               
+                  IFLA:
+                        Functional Requirements for Bibliographic Records (FRBR)
+                   [letzter Zugriff 30. November 2016].
+                    
+            
+         
+      
+   
+
+

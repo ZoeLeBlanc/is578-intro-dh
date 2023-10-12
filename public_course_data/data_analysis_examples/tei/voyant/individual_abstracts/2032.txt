@@ -1,0 +1,75 @@
+1. Introduction
+As part of its KOTONOHA (meaning ‘words of the language’ in classical Japanese) Project, the National Institute of Japanese Language and Linguistics (NINJAL) is conducting a morphological analysis of Japanese classics. Both the selection and digitization of classic documents are required in order to execute the analysis correctly. Digitization and morphological analysis have been done thus far on the literature of several ages and styles (Ogiso et al., 2012; Ichimura et al., 2012; 2013), and various text corpora have been published. These text corpora are marked up with NINJAL’s original Document Type Definition (DTD). However, some elements are used in common on all corpora but basically are not unified nor standardized. Under this circumstance, it enables structural analysis and string extraction from a single corpus but causes problems with structural comparison and numerical analyses between several corpora. Thus, it is necessary to design and mark up a unified definition from a higher level in order to conduct analyses concurrently.
+
+In the previous study, we examined the possibility of converting classic documents with TEI-compliant XML (Kawase et al., 2013), in particular, by designing a tag-set and strictly structuring an old wood-block printed book from Sharebon’s “Keisei-kai Futasuji-no-michi” (published in 1798, e.g. Fig. 1) as a model case, and sorted out this problem. This work aims to provide further insights into those problems and propose a solution.
+
+
+Fig. 1: Excerpt image of Sharebon's “Keisei-kai Futasuji-michi” (owned by NINJAL)
+
+2. Significance of Encoding Classic Documents
+The reason for choosing Sharebon as a subject is because it is important primary linguistic data from the early modern period (Keene, 1999) and it has the following three features: (1) published in the broad age from the 18th to the first half of the 19th century; (2) uses colloquial words and expressions among conversations between characters; (3) abundantly describes things in Edo (former name of Tokyo) language and Kamigata (Kyoto-Osaka region) language.
+
+Therefore, describing Sharebon in a machine-readable manner has profound significance not only for bringing numerical analysis of unexplained colloquial expressions of the modern period into reality but also for facilitating humanities research in language history and descriptive bibliography. Furthermore, since many texts that have a similar structure to Sharebon were published over the same period of time, this study will offer a common format for archiving coeval literature. 
+
+3. Issues in Encoding Sharebon
+In order to analyze the manuscript from a corpus linguistic viewpoint, not only outward mark-ups but also internal mark-ups of both document structure and linguistic structure are required. In general, Sharebon is composed of a combination of three parts: the front matter; the narrative body that contains colloquial expressions and descriptive texts; and the back matter. For instance, in the case of “Keisei-kai Futasuji-michi”, the narrative body is made up of two chapters, ‘Natsu-no-toko’ (Summer Alcove) and ‘Fuyu-no-toko’ (Winter Alcove). Since the composition of this whole document is well accorded with the composition of an orthodox Western manuscript, we may mark up most of the elements in reference to TEI P5: Guidelines (Burnard and Baumanm, 2007). Table 1 shows the list of elements with an explication of their roles used to mark up the document.
+
+The problems incurred in the process of encoding Sharebon can be broadly classified into two matters: (A) text formatting on a #PCDATA (character data) level; and (B) structuring ruby annotations. We will discuss these two matters in more detail in the following sections. 
+
+
+Fig. 2: List of elements with an explication of their roles to mark up Sharebon
+
+3.1 Text Formatting on #PCDATA
+To design and assure a high-quality corpus in terms of linguistic resources, it is necessary to index information about lexical morphemes (e.g. word class, inflected forms, pronunciations) at the body-text level. However, since there are three problems in the sentences of early modern Japanese, it is difficult to conduct morphological analysis properly: (A-1) voice markings called dakuten are missing where they should be; (A-2) corresponding phonetic characters called hiragana and katakana are not unified; (A-3) iteration symbols called odoriji are unmodified.
+
+For example, dakuten makes a phonetic shift from ka, ki, ku, ke, ko (written in hiragana letters as か, き, く, け, こ) to ga, gi, gu, ge, go (rendered as が, ぎ, ぐ, げ, ご). 
+
+3.2 Structuring Ruby Annotations
+Such annotations are the small-text characters rendered alongside the base text. In vertical writing, ruby is typically printed on the right-hand side. However, since the three problems exist, it is difficult to mark up both outward information and the linguistic structure simultaneously: (B-1) ruby text carries extended characters (gaiji), damaged and missing characters, and some typographical errors and omissions; (B-2) words of such text and base text are not in one-to-one correspondence; (B-3) There can also be another ruby annotation on the left-hand side simultaneously.
+
+4. Means for Solving the Problem
+4.1 Text Formatting on #PCDATA
+At NINJAL, for problems (A-1), (A-2), and (A-3), the character level is corrected using the original elements of <vMark>, <kana>, and <odoriji>, respectively (Ichimura et al., 2012; 2013). We accurately describe the text formatting in a uniform way by combining the TEI elements <seg> and <choice> (e.g. Fig. 2).
+
+According to TEI P5: Guidelines (Burnard and Baumanm, 2007), <seg> (arbitrary segment) represents any segmentation of text below the ‘chunk’ level, and <choice> groups a number of alternative encodings at the same point in the text. Distinctions in the corrections of (A-1), (A-2), and (A-3) can be shown by writing @type, holding selectable values from vMark, kana, and odoriji, to the attribute of element <seg>. The original text marked with TEI element <orig> (original form), along with the corrected text (the optimal version for morphological analysis) marked with TEI element <reg> (regularization) are written below the <choice> level.
+
+This description policy preserves both the outward and linguistic structure, even if problems (A-1), (A-2), and (A-3) carry over extended characters or omissions in the original manuscript, and brings morphological analysis into reality as well. 
+
+4.2 Structuring Ruby Annotations
+At NINJAL, regarding structuring ruby annotation, since priority is given to morphological analysis, words and characters are encoded using the original defined element <ruby> with an attribute @rubyText (e.g. Fig. 3a). To express this structure with TEI-compliant XML, we can simply substitute the element <ruby> with <w> (word) and the attribute @rubyText with @ana (e.g. Fig. 3b). However, the important ruby text information is described inside @ana as a value, we cannot solve problem (B-1) under this policy. Depending on the technology, CSS, XHTML, and HTML5 platforms might be considered as alternatives in order to structure ruby annotation (Benoit, 2010) (e.g. Fig. 3c).
+
+Here, each <ruby>, <rt>, and <rp> represent inline elements that contain base text with ruby annotation, the superscript which comes over the base text, and ruby parentheses which are used to wrap around opening and closing parentheses <rt>, respectively. However, since the ruby text comes over the #PCDATA level, we cannot solve problem (B-2) under this policy. In addition, we have to solve the above problem and problem (B-3), securing the coexistence of ruby on the right-hand side and left-hand side, simultaneously.
+
+
+Fig. 3: Examples for encoding ruby annotations
+
+
+Fig. 4: Examples for ruby annotations on both sides
+
+Imaginably, as shown in Fig. 4a, we will be able to suggest one solution to express the character on base text in a stand-off fashion, in case of the base text carries double ruby on the both sides. However, the above suggestion may work only the character string and both sides of ruby correspond each other. As shown in Fig. 4b, when ruby on either side does not fit or exceed the each target character, this suggestion would be inapplicable.
+
+Currently, we have difficulty in choosing a path that allows specifying both the object outline and structure of Japanese language together; therefore, a new definition over ruby annotation is needed as a means to this end. As shown in Fig. 5, our current solution is to mark up the manuscript in a way which makes it possible to output two types of XML file that specify the information of the object and the structure of Japanese language separately, rather than to fulfill both at the same time.
+
+
+Fig. 5: Solution for problem (B); exporting two types of XML file
+
+5. Conclusion
+In this study, developing a corpus for historical documents in a comprehensive and versatile way was considered the ultimate goal. We devised a tag-set based on the TEI-element, and structured Sharebon’s “Keisei-kai Futasuji-michi” as a model case. We examined the problems of (A) text formatting on #PCDATA level and (B) structuring ruby annotations which were previously unsolved. For problem (A), a concrete policy to bring morphological analysis into reality, by combing the element of <seg> and <choice>, was considered. For problem (B), major difficulties of structuring both outward information and the linguistic structure of Japanese documents at the same time were presented, and problems to solve were pointed out. Especially, ruby annotation is absolutely imperative for Japanese documents. This extra-textual addition is common and employed almost everywhere from historical documents to modern comics for highlighting the pronunciation or meaning of a word. Our future challenge is to examine a compromise that satisfies both structures simultaneously while working out the problems with the TEI Council.
+
+Funding
+This work was supported by the collaborative research project “Design of a Diachronic Corpus” and “Study of the History of the Japanese Language Using Statistics and Machine Learning” carried at the National Institute for Japanese Language and Linguistics. 
+
+References
+Benoit, G. (2010). Expanding, Facilitating, and Applying Ruby to Explore User Engagement with Encoded Texts, http://web.simmons.edu/~benoit/rc/ruby/ Ruby-Poster.pdf (accessed 15 October 2013).
+
+Burnard, L. and Bauman, S.(2007).TEI P5: Guidelines for Electronic Text Encoding and Interchange, Text Encoding Initiative.Arlington, MA: TEI Consortium. http://www.tei-c.org/Guidelines/P5/ (accessed 15 October 2013).
+
+Ichimura, T., Kawase, A. and Ogiso, T. (2012). Structuring Colloquial Early Modern Japanese Text and Its Issues of Definition, Proceedings of the 96th IPSJ SIG Computers and the Humanities, CH96: 1-8.
+
+Ichimura, T., Kawase, A. and Ogiso, T. (2013). Structuing the Corpus of Share-bon, Proceedings of the 3rd Workshop on Corpus Japanese Linguistics, 249-258.
+
+Kawase, A., Ichimura, T. and Ogiso, T. (2013). Problems in TEI P5 Encoding on Colloquial Japanese Documents of the Early Modern Period, Proceedings of the IPSJ SIG-CH/PNC/ECAI/CIAS Joint Symposium 2013, 7-12.
+
+Keene, D. (1999). A History of Japanese Literature Volume 2: World Within Walls, Columbia University Press, New York.
+
+Ogiso, T., Komachi, M., Den, Y. and Matsumoto, Y. (2012). UniDic for Early Middle Japanese, Proceedings of the 8th International Conference on Language Resource and Evaluation (LREC), 911-915.

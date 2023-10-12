@@ -1,0 +1,71 @@
+10441	2016	
+      
+         In dieser Posterpräsentation soll das am Exzellenzcluster Asien und Europa der Universität Heidelberg angesiedelten Projekt "Standardisierte Arbeitsabläufe zur Retrodigitalisierung am Fallbeispiel der Grabungsdokumentation Kastell Heidelberg-Neuenheim" (RetroDig) vorgestellt werden. Im Rahmen dieses einjährigen (04/2015 - 03/2016) Disziplin übergreifenden Forschungsprojekts entwickelt die JRG Digital Humanites and Digital Cultural Heritage zusammen mit der Heidelberg Research Architecture (HRA) eine Reihe von strikt generischen Komponenten für den Einsatz in einem interdisziplinären Forschungsverbund.
+         Außeruniversitärer Partner bei diesem Vorhaben ist das Kurpfälzische Museum der Stadt Heidelberg, das eine bisher unpublizierte archäologische Grabungsdokumentation aus den 1970er für einen exemplarischen Retrodigitalisierungs-Workflow bereitstellt.
+         Im Fallbeispiel werden sämtliche analogen Artefakte der vom Verfall bedrohten Dokumentation (handgezeichnete Pläne, handschriftliches Grabungstagebuch und Papierabzüge von Fotos) von Mitarbeitern der JRG Digital Humanities digitalisiert, erschlossen und annotiert. Dazu wird am Exzellenzcluster vorhandene digitale Infrastruktur verwendet und wo nötig erweitert.
+         Das Kernstück der digitalen Forschungsumgebung des Clusters ist das
+        Metadaten-Ökosystem Tamboti1. Es handelt sich dabei um ein auf eXist DB basierendes Open Source System,
+      dass von der HRA zusammen mit ihren Partnern bereits seit mehreren Jahren entwickelt
+      und schrittweise ausgebaut wird. Größere Komponenten für Tamboti werden
+      grundsätzlich an Forschungsfragen orientiert im Rahmen von kleinen thematischen
+      Fallbeispielen entworfen und implementiert. Nach Projektabschluss werden die
+      entwickelten Softwarekomponenten von der HRA in den Regelbetrieb in Forschung und
+      Lehre überführt. 
+         Im hier vorgestellten Projekt RetroDig sollen darüber hinaus auch Einsatzmöglichkeiten im Museumsbereich evaluiert werden. Die generierten Datensätze und Softwarekomponenten werden die Grundlage für eine inhaltliche Aufbereitung der RetroDig Ergebnisse in einem zukünftigen digitalen Editionsprojekt der JRG Digital Humanities and Digital Cultural Heritage sein.
+         Im derzeit laufenden Prokjekt wurden bereits die analogen Dokumente im Medialab der
+        HRA digitalisiert. Im ersten Erschließungsschritt werden die materiellen
+        Gesichtspunkte der Artefakte betrachtet und dabei die Objektmetadaten im VRA Core 4
+        Standard aufgenommen. Dazu wird der formbasierter Zizphus VRA Editor2  verwendet, der die VRA-XML Datensätze direkt in einer Kollektion Tamboti
+      speichert, wo die Daten bereits durchsucht, mit anderen Nutzern geteilt oder für
+      Präsentationszwecke im integrierten Atomic-Wiki aufbereitet werden können. 
+         Mitunter aus arbeitsökonomischen Gesichtspunkten werden beim Erstellen der Metadaten auch Beschriftungen transkribiert und vorerst im VRA  aufgenommen. Erst einmal ohne dabei qualitative Aussagen über deren Inhalt zu treffen.
+         Dieses Vorgehen erlaubt es der HRA parallel zur Erfassung der Daten an der
+        Entwicklung einer mehrteiligen Annotationskomponente zu arbeiten. Diese besteht 1.)
+        aus einem DOM-nahen SVG Editor, der auf OpenSeadragon aufsetzt, 2.) einem
+        semantischen Verlinkungsmechanismus (zum Zeitpunkt der Einreichung des Posters
+        werden mehrere Möglichkeiten der Informationsmodellierung und Umsetzung diskutiert
+        und ausprobiert. Bei der finalen Posterpräsentation wird sowohl auf die Diskussion,
+        als auch auf die Implementierung Bezug genommen werden) und 3.) der Integration von
+        TEIAN3,
+        einem Editor, der es erlaubt beliebige Subsets von XML Vokabularen über eine
+        graphische Nutzeroberfläche auf einen Text anzuwenden. Mit diesen Komponenten wird
+        es u. a. möglich sein: Annotationen im Sinne des Open Annotation Data Model (OADM)
+        zu erstellen, das im ersten Erfassungsschritt bereits transkribierte Material z. B.
+        in TEI auszuzeichnen und mit dem SVG-Editor Grabungspläne so nachzuzeichnen, dass
+        sie im Detail annotiert und in ein Geoinformationssystem eingehängt werden können. 
+         Im vorgestellten Projekt haben wir uns aufgrund der kurzen Projektlaufzeit bewusst
+          gegen die Entwicklung einer projektspezifischen Präsentationsoberfläche entschieden.
+          Stattdessen konzentrieren wir uns auf Arbeitsabläufe zum Erstellen standardisierter
+          Daten und der Frage wie diese möglichst zukunftssicher modelliert werden können. Die
+          Datenanzeige soll derweil über Tamboti oder per IIIF-P über Mirrador oder andere
+          standardkonforme Viewer erfolgen können. Die Daten können über Tamboti für weitere
+          Nutzergruppen freigegeben werden und so z. B. im Unterricht mit Atomic Wiki oder
+          HyperImage4 aufbereitet werden. Ein Tutorenprogramm5 und eine
+          ausführliche Dokumentation dafür wurden in den letzten Semestern bereits etabliert
+          und regelmäßig in unterschiedlichen Fachbereichen eingesetzt. 
+      
+      
+         
+            Die
+      Produktivinstanz des Exzellenzclusters Asien und Europa ist unter http://tamboti.uni-hd.de zu
+      erreichen. Der Quellcode ist unter https://github.com/exc-asia-and-europe/tamboti veröffentlicht.
+    
+             Ziziphus ist ein integrierter Bestandteil von
+        Tamboti und wird von der HRA in Zusammenarbeit mit betterFORM und eXist
+        solutions entwickelt. Der Quellcode ist unter https://github.com/exc-asia-and-europe/ziziphus/ veröffentlicht.
+      
+             Der Quellcode ist unter https://sourceforge.net/projects/teian/ veröffentlicht. 
+             Derzeit wird die Community
+        Edition des HyperImage Authoring Environment in der Version 3.0.beta2
+        eingesetzt.
+             Das Tutorenprogramm wurde im Wintersemester 2013 / 14,
+        unterstützt durch Mittel aus dem „Willkommen in der Wissenschaft“
+        Förderprogramm, vom Lehrstuhl für Visuelle und Medienanthropologie (Christiane
+        Brosius) initiert und gemeinsam mit der HRA implementiert. Der kontinuierliche
+        Ausbau des Programms wird von der Abteilung Schlüsselkompetenzen und
+        Hochschuldidaktik der Universität Heidelberg begleitet.
+         
+      
+   
+
+

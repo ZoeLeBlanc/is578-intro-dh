@@ -1,0 +1,365 @@
+1859	2014	As the term “Digital Humanities” has been gradually gaining
+attention around the world, with researchers in Englishspeaking
+countries gathering under this banner in increasing
+numbers. Among these, there are the earlier scholars who had
+previously known the field as Humanities Computing; and there
+are also scholars who have become involved more recently,
+directly under the rubric of Digital Humanities. Yet another
+new trend is that where scholars from non-English-speaking
+and non-Western countries have also been gradually getting
+involved in the international DH community. One of these recent
+entrants to the international DH community is the Japanese
+Association for Digital Humanities (JADH). The presence of this
+new organization constitutes one piece of evidence to show that
+the international community is gradually broadening the scope
+of its membership. This trend has been actively supported by
+the Multi-lingualism and Multi-culturalism Committee of the
+ADHO, as well as by individual scholars who believe forming
+a global community can only enrich DH and the humanities.
+In view of this fact, it seems that it will become worthwhile to
+release the CFP of the DH conference in many languages.
+Additionally, recently several non-English Western
+communities have been established. For example, Hispanic,
+Italian, and German DH were discussed during the DH2012
+conference at Hamburg. Each language area has long and
+deep history to engage in the research and practice of DH.
+Moreover, Global Outlook::Digital Humanities (GO::DH) has
+started to cover a wider area, such as Latin America, China,
+Africa, and so on, especially focusing on communication and
+collaboration across and between High, Mid, and Low Income
+Economies. It is remarkable that the first pilot project of the
+GO::DH, “AroundDH in 80 Days” could immediately fill the list of
+DH projects around the world (Gil) with the help of international
+volunteers. In the context of the humanities, globalization is not
+always intrinsically good, but international communication would
+be significant for DH and the humanities.
+While there have been efforts focused actual local
+development, in some cases, such as of the Japan, most DH
+activities hadn’t been known in the global community and
+most of global DH activities hadn’t been known in Japan until
+several years ago. This is in spite of the fact that the number
+of identified Japanese DH-related researchers is over 200 and
+recently the domestic annual DH conferences have gathered
+40-60 papers every year, with 800 papers being presented
+since 1989 from many universities, museums, libraries, and
+other institutions in a DH-related quarterly workshop (A. Charles
+Muller). As the case might be similar in other non-English and
+non-Western countries, it might be useful to report our recent
+attempts to bridge between the DH research being carried out
+by non-English-speaking scholars and those in the international
+community.
+First, the establishment of the JADH has proved itself to be
+one of the most effective solutions for closing this kind of gap.
+Since around 80 researchers participated in the first conference
+in 2011 in Osaka, 80-90 Japanese researchers have attended
+the annual conference and communicated with international
+researchers. Then, several germs of international collaboration
+have come into being there and Japanese researchers
+who paid attention to the results of research activities of the
+international DH community have gradually increased as a
+“methodological commons”—although most of the research is
+still focused on Japanese or Eastern materials.
+Secondly, an e-newsletter titled “Digital Humanities
+Monthly” (DHII and ARG) has been published by the
+International Institute for Digital Humanities since July 2011. It
+is has 390 subscribers and is also published on the Web. The
+e-newsletter written in Japanese consists of an invited essay,
+brief news of international activities of DH and Digital History,
+DH-event calendar, and reports of DH events held in Japan and
+foreign countries collaborating with some local and international
+voluntary DH researchers. The event reports are plotted on
+a time-space map of the Neatline.(fig.1) The total number of
+the access to the Web pages was over 5,000 this October.
+According to comments of the readers, it seems to have gained
+the attention of not only DH researchers, but also librarians,
+curators, archivists, publishers, and general public, enabling
+them to see the picture of the entire situation of the domestic
+and the international DH.
+Thirdly, we plan to make it easier to treat Japanese and
+Eastern materials compliant with kinds of international
+standards. So far, we are working to propose the encoding
+of Han characters that occur in our research materials in the
+Universal Character Set as a group of researchers (rather than
+as a national body, as has been the policy heretofore) so that
+researchers can not only treat the characters but also propose
+the inclusion of new characters more easily. Moreover, we
+are planning to form an appropriate guideline of text encoding
+of Japanese and Eastern materials in the framework of the
+Text Encoding Initiative P5 guidelines (Bauman) collaborating
+with related researchers around the world. As a preparation
+for this, we’ve held full-day TEI workshop by the participation
+of international TEI researchers over 10 times and taught the
+framework of the TEI to 50 researchers in total.
+While it has up to now been difficult to bridge the local
+and the global, we hope our attempts will be useful for an
+Digital Humanities 2014
+278
+appropriate mode of globalization. We would like to discuss
+various possibilities with participants in the conference.
+Fig. 1:
+References
+A. Charles Muller, Kozaburo Hachimura, Shoichiro Hara,
+Toshinobu Ogiso, Mitsuru Aida, Koichi Yasuoka, Ryo
+Akama, Masahiro Shimoda, Tomoji Tabata, and Kiyonori
+Nagasaki (2010). "The Origins and Current State of Digitization
+of Humanities in Japan." Digital Humanities 2010 : 68-70.
+Bauman, Lou Burnard and Syd (2007). TEI P5: Guidelines
+for Electronic Text Encoding and Interchange. http://www.teic.org/release/doc/tei-p5-doc/en/html/index.html.
+DHII and ARG. Ed. Kiyonori Nagasaki et al. 7 (2011). 
+www.dhii.jp/DHM .
+Gil, Alex ed. AroundDH | Global List. (2013). http://
+goo.gl/4ov5nR.
+Active Authentication through
+Psychometrics
+Noecker Jr, John
+Juola & Associates, United States of America
+What can your computer habits reveal about you?  The
+answer might surprise you.  Previous work (Juola, et al., 2013)
+has shown that just a few minutes of computer usage can be
+used to identify who is at the keyboard and their demographic
+and psychological attributes with a fairly high degree of
+accuracy.  We expand upon this to show that the same usage
+data can be used to thoroughly profile a previously-unknown
+user to obtain valuable psychological information about the
+user.
+Authorship attribution, the analysis of a document’s writing
+style to infer the author’s identity, is a well-established problem
+in text classification.  Previously, we used classical authorship
+attribution techniques to identify “who was at the keyboard”
+using the DARPA Active Authentication Corpus (Juola et al,
+2013).  Researchers have successfully applied the analysis
+of language usage to infer authorship of written documents
+(Juola, 2006. Koppel et al, 2009. Stamatatos, 2009. Jockers &
+Witten, 2010), and stylometric analysis has also been applied
+to things like gender (Argamon et al, 2006), personality (Luyckx
+& Daelemans, 2008), and even psychological disorders like
+depression (Rude et al, 2004).
+Here, we attempt to perform the same technique with groups
+composed of individuals who share common psychological
+traits.  Previous work (Luyckx & Daelemans, 2008. Noecker
+& Juola, 2013) on personality profiling has so far focused
+on analyzing previously-written documents.  In contrast, our
+system provides a method for real-time psychological profiling
+of a user based on his or her interactions with a computer over
+a relatively short period of time (approximately 30 minutes).
+  The ultimate goal is two-fold: to learn something about a
+previously-unobserved user (traditional stylometric identification
+techniques require us to have training data on a user before
+we can identify him) and to use psychological traits as an
+enhancement to current user authentication methods.
+Currently, exact accuracy on the user-based authentication
+is approximately 90%.  This task becomes more difficult
+(and the accuracy becomes correspondingly lower) as the
+pool of potential author models grows.  In order to improve
+overall accuracy of the user authentication task, we propose to
+include these psychological profiling tools in the authentication
+system.  If a given user can be identified as the most likely
+candidate with 90% probability, and several facets of that user’s
+personality can be confirmed with similarly high confidence,
+this will increase the overall robustness of the authentication
+system.
+For our purposes, we used two personality/intelligence
+measurement systems to profile users: Myers-Briggs Type
+Indicator (MBTI) and Multiple Intelligences Developmental
+Assessment Scales (MIDAS).
+The Myers-Briggs type indicator (MBTI) assigns four binary
+classifications to define personality (Myers & Myers, 1980)
+–  Extroversion vs Introversion
+–  iNtuition vs Sensing
+–  Thinking vs Feeling
+–  Judgement vs Perception
+The Multiple Intelligences Developmental Assessment Scales
+(MIDAS) were developed by Dr. Howard Gardner in his 1983
+book “Frames of Mind” (Gardner, 1983).  He used a unique
+definition of intelligence: “The ability to solve a problem or
+create a product that is valued within one or more cultures” (MI
+Research and Consulting).  He identified 8 primary intelligent
+scales, each of which have several subscales (MI Research
+and Consulting):
+–   Musical
+–   Vocal Ability
+–   Instrumental Skill
+–   Composer
+–   Appreciation
+–   Kinesthetic
+–   Athletics
+–   Dexterity
+–   Logical-Mathematical
+–   Everyday Math
+–   School Math
+–   Everyday Problem Solving
+–   Strategy Games
+–   Spatial
+–   Space Awareness
+–   Working with Objects
+–   Artistic Design
+–   Linguistic
+–   Expressive Sensitivity
+–   Rhetorical Skill
+–   Written-academic
+–   Interpersonal
+–   Social Sensitivity
+–   Social Persuasion
+–   Interpersonal Work
+–   Intrapersonal
+–   Personal Knowledge / Efficacy
+–   Effectiveness
+–   Calculations
+–   Spatial Problem Solving
+–   Naturalist
+–   Animal Care
+–   Plant Care 
+We also include a 9th main scale, Leadership, with its own
+subscales: Communication, Management, and Social.
+Materials and Methods
+Lausanne, Switzerland
+279
+Corpus
+In order to create the most accurate corpus possible, we
+set up a simulated office environment and hired 80 temporary
+workers for one week each.  Workers were tasked to perform a
+long-term blogging project (research and write blog articles on
+topics “related to Pittsburgh in some way”) over the course of a
+normal workweek.  For this study, we use the Free Key Logger
+output, which provides the exact text typed by each user.  We
+do not include any information about the applications being
+used or any data the user pastes from the clipboard.
+Feature Extraction
+For our analysis, we used the Java Graphical Authorship
+Attribution Program (JGAAP) (Juola et al, 2009).  JGAAP
+is a Java-based, modular program for textual analysis, text
+categorization, and authorship attribution.  It provides a
+comprehensive framework, allowing us to rapidly test the
+effectiveness of different analysis techniques on the recorded
+data.
+JGAAP divides analysis into several steps: Canonicization
+(Preprocessing), Event Set (Feature) Generation, and Analysis.
+  In Canonicization, preprocessors are used to standardize
+the text.  For this step, we converted all input letters to lower
+case (“Unify Case”) and converted all strings of whitespace
+characters into a single space character (“Normalize
+Whitespace”).  At this stage, we also processed a variety of
+special keyboard characters, converting these non-printable
+characters into a printable placeholder (e.g. “backspace” was
+replaced with “β”).  Finally, we divided the input data into blocks
+of 1,000 characters, representing about 30 minutes of computer
+usage.
+For the event set generation, we tested character N-grams
+for all N from 1 to 15, and word N-grams for N from 1 to 5.
+  We then applied a number of analysis methods for each
+experiment: Cosine Distance, Intersection Distance, Manhattan
+Distance, and Matusita Distance.  For each method, we used
+a centroid-based nearest neighbor classifier.  We performed
+leave-one-out cross-validation to reach our final conclusion.
+Models
+For the MBTI classifiers, we built four binary classifiers (i.e. E
+vs I, N vs S, T vs F, and J vs P).  For the MIDAS classifiers, we
+first built a single 9-way classifier to identify a user’s principle
+main scale.  This was the scale along which the user scored
+highest (i.e. the scale for which the user showed the highest
+preference).  For example, a user might have a preference
+for “Musical” or “Linguistic”.  We also developed subscale
+classifiers, which identify a user’s preference within each major
+scale.  For instance, a user might be identified as “(Musical)
+Vocal Ability” and “(Kinesthetic) Dexterity”, etc.  Thus, each user
+was identified by a single main scale preference as well as nine
+subscale preferences.
+Results
+MBTI
+For the MBTI classifiers, we averaged an accuracy of 81.5%.
+  The expected baseline average (assuming we pick the most
+prevalent personality type for each category) is 55%. 
+MIDAS
+For the MIDAS main category identification, our best
+performing classifier had accuracy of 70.7%.  This was using
+character 15 grams with Intersection Distance.  The expected
+baseline accuracy (achieved by choosing the most common
+main scale, “Linguistic”) was 22.1%.
+For the MIDAS subscale identification, the best performing
+classifiers used a variety of Character n-grams, again with
+Intersection Distance as the top performing analysis method. 
+The average subscale accuracy was 81%.
+Conclusion
+We have shown here a method to reliably psychologically
+profile a computer user based on only a short period (about
+30 minutes) of usage time.  In addition to providing valuable
+information about the user in question, this method can also
+be used to provide additional layers of security for the active
+authentication system we have described previously.  Even
+in an adversarial situation, the difficulty of imitating both an
+individual user’s style, as well as mimicking the psychological
+profile of the user, will provide additional security to the
+authentication system.
+Also interesting to note is the limited usage data required to
+perform these analyses.  The initial user psychological testing
+period took approximately 3 hours, but accurate results were
+obtained for only 30 minutes of computer usage.  In addition,
+the three hours of testing were completely lost time – the
+users were able to work only on the tests during this time.  In
+contrast, the 30 minutes of analysis can be done on whatever
+the user is working on at the time.  No downtime is required
+to perform these analyses.  We believe this system could be
+useful anywhere a non-intrusive analysis of a user might be
+beneficial (e.g. determining whether a potential employee would
+be a good fit).
+For future work, we intend to focus on reducing the amount
+of data needed even further.  Preliminary results on as little as
+500 characters (about 15 minutes of usage time) have been
+promising.  Additional work is also being done to integrate these
+methods into the broader active authentication system in order
+to bolster the overall reliability of the system.
+References
+Argamon, S., Koppel, M., Fine, J., Shimoni, A. R (2006).
+“Gender, Genre, and Writing Style in Formal Written Texts”.
+Interdisciplinary Journal for the Study of Discourse. Volume 23.
+Issue 3. pp. 321-346.
+“Broad Agency Announcement: Active Authentication”.
+(2012). DARPA. Solicitation No. DARPA-BAA-12-06. 12
+Jan. 2012. <http://www.fbo.gov/index?tab=documents&t
+abmode=form&subtab=core&tabid=494b6b2c612c4
+fd3db6cb018d4467e21>.
+Gardner, Howard (1983). “Frames of Mind: The Theory of
+Multiple Intelligences”.  Basic Books.
+Jockers, M. L., Witten, D. (2010) “A Comparative Study of
+Machine Learning Methods for Authorship Attribution”.Literary
+and Linguistic Computing, vol. 25, no. 2. pp. 215–23.
+Juola, P. (2006) “Authorship Attribution”.Foundations and
+Trends in Information Retrieval, vol. 1, no. 3.  pp. 233–334.
+Juola, Patrick, Noecker Jr., John, Ryan, Mike, Speer,
+Sandy (2009). “JGAAP 4.0 – A Revised Authorship Attribution
+Tool”. Proc. Digital Humanities 2009. pp. 357–359. Maryland
+Insitute. for Technology in the Humanities. University of
+Maryland.
+Juola, Patrick, Noecker Jr., John, Stolerman, Ariel,
+Ryan, Michael, Brennan, Patrick, Greenstadt, Rachel
+(2013). "Keyboard Behavior Based Authentication for
+Security". IT Professional. 18 June 2013. IEEE computer
+Society Digital Library. IEEE Computer Society. <http://
+doi.ieeecomputersociety.org/10.1109/MITP.2013.49>.
+Koppel, M., Schler, J., Argamon, S. (2009)“Computational
+Methods in Authorship Attribution”. J. Amer. Soc. Information
+Science and Technology, vol. 60, no. 1. pp. 9–26.
+Luyckx, K., Daelemans, W. (2008) “Personae, a Corpus for
+Author and Personality Prediction from Text”.Proceedings of the
+Sixth International Conference on Language Resources and
+Evaluation. Marrakech, Morroco.
+MI Research and Consulting, Inc. “Multiple Intelligences
+Theory”. <www.miresearch.org/mi_theory.html>.
+Digital Humanities 2014
+280
+Myers I B, Myers P. (1980)“Gifts Differing: Understanding
+Personality Type”. Palo Alto, CA. Consulting Psychologists
+Press.
+Noecker Jr., J. Juola, P. (2013) “Psychological Profiling
+Through Textual Analysis”. Literary and Linguist Computing.
+Rude, S., Gortner, E., Pennebaker, J. (2004) “Language
+Use of Depressed and Depression-Vulnerable College
+Students”.Cognition and Emotion.
+Stamatatos, E. (2009) “A Survey of Modern Authorship
+Attribution Methods”. J. Amer. Soc. Information Science and
+Technology, vol. 60, no. 3. pp. 538–556.
+Zheng, N., Paloski, A., Wang, H. (2011) “An Efficient User
+Verification System via Mouse Movements,”Proc. 18th ACM
+Conf. Computer and Communications Security (CCS 11). ACM.
+pp. 139–150.
+

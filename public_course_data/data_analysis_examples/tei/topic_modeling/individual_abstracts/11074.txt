@@ -1,0 +1,56 @@
+11074	2020	
+      
+         ODD (One Document does it all) ist eine Metasprache, entwickelt im Kontext der Text Encoding Initiative (TEI), zur (formalen) Beschreibung und Dokumentation von XML Schemata. ODD bildet die Grundlage (d.h. den Quellcode) der Richtlinien und Schemata sowohl der Text Encoding Initiative (TEI) als auch der Music Encoding Initiative (MEI). Aber ODD ist nicht auf diese bestehenden Codierungsrichtlinien beschränkt; so lässt es sich auch zur Beschreibung anderer bestehender XML-Dialekte benutzen (beispielsweise HTML [4]), oder zur Entwicklung eigenständiger Codierungsrichtlinien in ganz anderen Kontexten, wie etwa im Falle von Music Performance Markup (MPM) [1].
+         Das grundlegende Designprinzip von ODD folgt einem Literate Programming Ansatz, d.h. in einem ODD-Dokument sind sowohl die Code-Bestandteile zur Beschreibung der Grammatik eines Schemas als auch die menschenlesbare Beschreibung – und Exemplifizierung – dieser Regeln miteinander verwoben [6]. Im Kontext der TEI und MEI Communities wird dies insbesondere von digitalen Editionen genutzt. Der besondere Anreiz liegt für diese Unternehmungen hierbei darin, dass die Dokumentation (im ODD-Format) der jeweils spezifischen Nutzung der TEI bzw. der MEI-Richtlinien gewissermaßen das digitale Pendant zu herkömmlichen Editionsrichtlinien darstellt.
+         Aus „Endnutzersicht“ wird ODD meist zur Maßschneiderung von TEI oder MEI Schemata genutzt. Die aktive Weiterentwicklung von ODD hat jedoch interessante neue Möglichkeiten eröffnet; so ist es neuerdings mittels so genanntem ODD-Chaining [2] auch möglich geworden, eigene Editionsrichtlinien nicht unmittelbar von den TEI- oder MEI-Richtlinien abzuleiten, sondern vermittelt von anderen ODD-Anpassungen. Dies wird beispielsweise im Deutschen Textarchiv genutzt, um die Richtlinien zur Auszeichnung von Drucken bzw. von Manuskripten von einem gemeinsamen DTA Basisformat abzuleiten [3].
+         Solchen Anwendungsfällen von ODD werden jedoch meist nur wenige „Eingeweihte“ gewahr, da die häufig eine Verständnisbarriere für die Mechanismen von ODD vorliegt. Diesem soll der vorliegende Workshop entgegenwirken. Deshalb ist der ganztägige Workshop speziell auf die Bedürfnisse von Einsteigern ausgerichtet. Es werden sowohl die notwendigen theoretischen Hintergründe vermittelt, als auch praktische Hilfestellungen zum Erstellen eines ersten eigenen Schemas bzw. dessen Dokumentation vermittelt. Hierfür wird im ersten Teil des Workshops zunächst als niederschwelliger Einstieg der von Raffaele Viglianti neu entwickelte webbasierte ODD-Editor „Roma“ [5] vorgestellt und damit die Erstellung einfacher Anpassungen des TEI-Schemas verwendet; dazu gehören etwa Operationen wie das Hinzufügen oder Entfernen von ganzen teilbereichen des Schemas (Modulen), von einzelnen Elementen oder Attributen, sowie das Einschränken von Attributwerten auf geschlossene Listen.
+         Im zweiten Teil des Workshops sollen dann durch direktes Bearbeiten des ODD-Quelldokuments erweiterte Funktionen wie Modularisierung, ODD-Chaining oder das Generieren von Schemata mit mehreren Namespaces erläutert werden.
+         Der Workshop ist als Hands-On-Session konzipiert, in der die Teilnehmer an Ihrem eigenen Laptop direkt Erfahrungen sammeln sollen. Das Tutoren-Team steht ihnen dabei stets mit Rat und Tat zur Seite.
+         
+            Formalia
+            
+               Maximale Zahl der möglichen Teilnehmerinnen und Teilnehmer: 25
+               benötigte technische Ausstattung: Beamer; die Teilnehmer*innen sollen eigene Laptops mit vorinstalliertem oXygen-XML-Editor mitbringen. Eine oXygen-Lizenz zur Nutzung im Workshop wird gestellt
+            
+         
+         
+            Beiträger
+            
+               Peter Stadler
+                Wissenschaftlicher Mitarbeiter an der Carl-Maria-von-Weber-Gesamtausgabe an der Universität Paderborn und Mitglied des TEI Councils. Zu seinen Forschungsgebieten zählen digitale Musik- und Briefeditionen.
+            
+            
+               Raffaele Viglianti
+                Research Programmer am Maryland Institute for Technology in the Humanities (MITH) at the University of Maryland und Mitglied des TEI Councils. Seine Forschung kreist um Textwissenschaft und digitale Editionen mit einem Fokus auf Musik.
+            
+            
+               Benjamin W. Bohl
+                Research Software Engineer der Bernd Alois Zimmermann-Gesamtausgabe und in seiner Mitgliedschaft im MEI Board als Co-chair des MEI Technical Teams eingesetzt. In seiner Forschung befasst er sich mit Datenmodellierung und -haltung in digitalen Editionsprojekten mit plurimedialen Gegenständen.
+            
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  [1] Berndt, Axel / Bohl, Benjamin W. (2018): Music Performance Markup: Formale Beschreibung musikalischer Interpretationen. In: Editio Bd. 32 (2018), Nr. 1, S. 185–204.
+               
+                  [2] Burnard, Lou: ODD chaining for beginners, 
+               
+               
+                  [3] Deutsches Textarchiv: Schema und Dokumentation der DTABf Schema, http://www.deutschestextarchiv.de/doku/basisformat/schema.html
+               
+                  [4] Holmes, Martin 2018: Using ODD for HTML, in Proceedings of of the Text Encoding Initiative Conference and Members Meeting The Markup Conference, Tokyo, Japan, September 9–13 2018. Pages 240–241, 
+               
+               
+                  [5] TEI Consortium: Roma ODD Editor, https://romabeta.tei-c.org
+               
+                  [6] Viglianti, Raffaele: One Document Does-it-all (ODD): a language for documentation, schema generation, and customization from the Text Encoding Initiative, 
+               
+            
+         
+      
+   
+
+

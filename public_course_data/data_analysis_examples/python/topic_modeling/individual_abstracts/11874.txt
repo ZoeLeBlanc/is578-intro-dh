@@ -1,0 +1,97 @@
+11874	2022	
+        
+            Recently, the relevance of sound for the meaning of words in a language has increasingly gotten scholarly attention. Works on sonic iconicity in different languages all over the world are gaining importance, regarding both the importance of sound in bound language (lyrics), and in daily spoken language. This research has provided serious evidence suggesting that the sound of a word already gives us information about its meaning, or at least, about the overall associations attached to it. In other words, phonemes already seem to carry semantic information (Auracher, 2020). Whereas a number of studies have investigated phonosemantics concerning single phonemes in a general sense, a noticeable research gap exists in the context of poetry or verse drama. Since it became the first modern mass culture, the early modern verse drama appears to constitute an especially crucial corpus for this field of research. 
+            The short presentation format was chosen to present the ongoing work of my research including first hints on the use of phonosemantic relations in Spanish early modern theatre (16
+                th and 17
+                th century). As a basis for researching such relations, in a first step, we created a corpus from the existing digital text repositories, collecting over 500 plays by different playwrights such as Pedro Calderón de la Barca, Lope de Vega, Tirso de Molina, Sor Juana Inés de la Cruz, Mira de Amescua, and many others. The second step included the development of a Python script, enabling the analysis of the phonic structure of every single verse line. The program identifies the number of syllables, the rhythmical patterns, the rhymes, identifies between stressed and unstressed vowels, and creates a csv-file to collect all the created data. As a first result, a phonologic transcriptor and a syllabic analysis tool have already been published as Python libraries (see Sanz Lázaro, 
+                fonemas and 
+                silabeador). These scripts will be presented briefly, taking into account the existing research on automatic verse analysis in Spanish (González-Blanco, Remón, de la Rosa).
+            
+            In order to analyze these phonetic data on a large scale, a number of shorter Python scripts were developed. Using the libraries pandas and matplotlib, the goal of research is to answer the following questions: Do the different playwrights have preferences for different rhythmical patterns? Do these rhythmical patterns appear randomly throughout the texts? Or is it possible to establish a pattern between negative and positive emotions and the occurrence of certain rhythmical structures? To what extent are rhythmical patterns related to other phonosemantic phenomena? Is there an interrelation between rhyming structures and different rhythms or a connection between the stressed vowels and the rhythmical patterns?
+            As it aims to evoke very strong emotions in its spectators, the early modern theatre is often referred to as an affect machinery. This aspect of Spanish Golden Age theatre is usually reduced to visual aspects: the use of baroque theatre machinery, special effects, and the overwhelming costumes of the professional actors.
+            In contrast, this research shows, that an important medium to achieve this goal can be found in the sound of the verses themselves. Therefore, this presentation has a threefold aim:
+            
+                to present the new Python scripts and libraries created for the automatic verse analysis;
+                to discuss phonosemantic relations and the digital methods to analyze them;
+                to provide new insights into the importance of sound effects in the affect machinery of the early modern theatre.
+            
+            Thus, the presentation will show important advances in the automatic analysis of metrical texts, which can easily be transferred to texts from other epochs and, with slight adaptations, also to other romance languages like Italian.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Auracher, J., Menninghaus, W. and Scharinger, M. (2020). Sound Predicts Meaning: Cross-Modal Associations Between Formant Frequency and Emotional Tone in Stanzas. 
+                        Cognitive Science, 
+                        44:10: e12906. 
+                        https://doi.org/10.1111/cogs.12906.
+                    
+                    
+                        Bird, S., Klein, E. and Loper, E. (2009). 
+                        Natural Language Processing with Python. Sebastopol, CA: O’Really.
+                    
+                    
+                        De la Rosa, J., Pérez, Á., Hernández, L., Ros, S. and González-Blanco, E. (2020). Rantanplan, fast and accurate syllabification and scansion of spanish poetry. 
+                        Procesamiento del Lenguaje Natural
+                        65, 83-90.
+                    
+                    
+                        Eder, M., Rybicki, J. and Kestemont, M. (2016). Stylometry with R: A Package for Computational Text Analysis. 
+                        The R Journal
+                        8,1: 107–21.
+                    
+                    
+                        González-Blanco, E. Pérez, Á., Ros, S. 
+                        PoetryLab​. An Open Source Toolkit for the Analysis of Spanish Poetry Corpora.
+                    
+                    
+                        Karsdorp, F., Kestemont, M. and Riddell, A. (2021). 
+                        Humanities Data Analysis: Case Studies with Python. Princeton, Oxford: Princeton University Press. 
+                        
+                            https://press.princeton.edu/books/hardcover/9780691172361/humanities-data-analysis
+                        .
+                    
+                    
+                        Manning, C., Surdeanu, M., Bauer, J., Finkel, J., Bethard, S. and McClosky, D. (2014). The Stanford CoreNLP Natural Language Processing Toolkit. In 
+                        Proceedings of 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations, 55–60. Baltimore, Maryland: Association for Computational Linguistics. 
+                        https://doi.org/10.3115/v1/P14-5010.
+                    
+                    
+                        Marco, G. De La Rosa, J., Gonzalo, J. Ros, S., González-Blanco, E. (2021). Automated Metric Analysis of Spanish Poetry: Two Complementary Approaches. 
+                        IEEE Access
+                        9, 51734-51746.
+                    
+                    
+                        McKinney, W. 
+                        Python for Data Analysis, Sebastopol, CA: O’Really.
+                    
+                    
+                        Plecháč, P. (2018). Versification and authorship attribution. A pilot study on Czech, German, Spanish and English poetry. 
+                        Studia Metrica et Poetica, 
+                        5, 2: 30-54.
+                    
+                    
+                        Remón, GM., Gonzalo, J. (2021). Escansión automática de poesía española sin silabación. 
+                        Procesamiento del Lenguaje Natural
+                        66: 77-87.
+                    
+                    
+                        Sanz Lázaro, F. (2021). 
+                        Fonemas. A Python phonologic transcription library for Spanish. Version 1.0.3. fsanzl, Okt. 2021. Software. 
+                        GitHub, 
+                        https://github.com/fsanzl/fonemas
+                    
+                    
+                        Sanz Lázaro, F. (2021). 
+                        Silabeador: A Python library for syllabic division and stress detection for Spanish. Version 1.0.5, fsanzl, Okt. 2021. Software. 
+                        GitHub, 
+                        https://github.com/fsanzl/silabeador
+                        .
+                    
+                
+            
+        
+    
+
+

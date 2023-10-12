@@ -1,0 +1,59 @@
+1995	2014	1. Introduction
+The copyright expiry on James Joyce’s Ulysses in 2012 created a unique opportunity to read the seminal modernist text through the refraction of technologies made available by the Digital Humanities and techniques from Computer Science. Ulysses is avowedly and manifestly a work both constructed by and read through explicit references to geography and spatial relations. For instance, Frank Budgen attributes the following statement to Joyce, “‘I want,’ said Joyce, as we were walking down the Universitätstrasse, ‘to give a picture of Dublin so complete that if the city one day suddenly disappeared from the earth it could be reconstructed out of my book.’”.1
+
+However, it has been suggested that uncertainty and disorientation play as great a part as explicit references to place and these qualities are evoked through specific narrative strategies.2 From a Digital Humanities perspective, being able to note such contested or defamiliarising areas presents a challenge.
+
+Significant work has been done in the scholarly literature to manually compile and list named entities such as geographic and place name references in Ulysses. However a significant occasion exists to exploit techniques such as XML mark-up and Natural Language Processing (NLP) to explicitly render geographic and spatial references in Ulysses, make the references available for machine processing and accessible to users for reading the novel.
+
+This paper investigates the automatic extraction of toponyms from the Wandering Rocks episode of Ulysses, proposes a model for encoding the episode and accounting for different types of place (including uncertain locations) and, combining these elements, explores XSLTs and visualisations that support a spatial reading of the text. The model proposed by the paper supports not only the notion of the significance of place but also qualities of spatial uncertainty and disorientation noted in the critical literature. The approach taken in the paper leverages exisiting models and technologies.
+
+2. Methodology
+This approach seeks to instantiate geographical evidence in the narrative that is almost exclusively transmitted to the reader through unstructured text in print presentations of the novel. This has been done through a combination of Natural Language Processing tools, geocoding the resulting data and merging the data into a TEI encoded version of the text and presenting the output in a web application.
+
+From a Digital Humanities and Computer Science perspective, a number of readily available tools, technologies and methodologies exist to link place names in unstructured text to geographical data. Such tools allow the novel approaches suggested by Moretti and undertaken by Clement.34For example, Named Entity Recognition (NER), a subset of Natural Language Processing, represents a viable methodology to extract toponyms from unstructured text. Geoparsing place names to match geographical coordinates is assisted through such openly available digital gazetteers such as GeoNames.5  Projects such as the University of Edinburgh’s  Unlock provide non-technical interfaces that allow for automated NER and geoparsing. 6
+
+
+This paper addresses the role that names play in Ulysses, specifically the Wandering Rocks episode and what this role reveals about the novel as a whole. It confronts whether there is a topographical quality in Ulysses and if so how that quality is defined. Accordingly, it considers three hypotheses: that geoparsing of Ulysses enables distant reading that will in turn enable new interpretations of the text; that geoparsing Ulysses creates a virtual gazetteer of the text; that the development of a model for encoding encompasses areas, such as uncertainty as a quality of place, outside of the scope of geoparsing.
+
+
+Geoparsing and geocoding have been utilised as a primary methodology for the project. A number of technologies such as the Natural Language Toolkit and software produced by Stanford’s Natural Language Processing Lab were available and assisted in determining whether such an approach was feasible78. Again, it was anticipated that an iterative approach would be followed where initial automated extraction of toponyms via NLP would inform the encoding of episodes. This encoding, in turn, would provide the basis for a coterminal presentation of text and geographical elements through the web application and as the basis for interrogating the text along a geographical orientation.
+
+
+The data model for the Literary Atlas of Europe was utilised as a framework to assign types to toponyms in the resulting TEI.9 The framework provided by the LAE allowed for further analysis on the role of place in the text, particularly the representation of uncertainty. Accordingly, while the LAE model provides a preliminary scaffolding, the mode proposed in the paper combines semi-automated extration of toponyms combined with a document-based encoding.
+
+3. Lessons Learned
+The work described by the paper resulted in a number of outcomes. Firstly, the development of the model and subsequent encoding of toponyms in the text rendered a comprehensive and programmatically presentable list of geographic references. Such a list constitutes a sort of virtual gazetteer for the novel. Secondly, this approach works towards identifying any inconsistencies in Joyce’s use of geographic references (with regard to the “traps” identified by Hart), indicates the role of geographical uncertainty in the episode and potentially suggests productive interpretive approaches.10 Thirdly, such an approach contributes towards the notion of a literary cartography and echoes the work undertaken by the Literary Atlas of Europe. The data produced by such an approach would be available for use in contexts outside the academic realm including use in literary tourism.
+
+4. Conclusions
+This paper tentatively indicates that automated processing of text may support a procedural, iteratively based approach to geoparsing Ulysses that combines the application of software with manually identified terms. The project strongly suggests that the NER-CRF software was most effective in identifying explicit toponyms that were marked in the encoding as either routes or projected spaces. What the results of the project suggest also is that the application of typography might be partially automated; types of place may be determined through automated  processes.
+
+The application of the Literary Atlas of Europe’s five categories of spatial representation as a place type within the encoding of the episode clearly supports the contentions of Gunn, Hart and others that place plays a dominant role in the Wandering Rocks episode.11 The relative dominance of places of type “route” in the episode is not surprising and supports the notion of place as being significant to the novel.12 What this approach indicates though is that such critical insights may be verified using the algorithmic or distant reading frameworks. In this case, place is important to the episode because the majority of toponyms indicate explicit routes in particular, verifiable places.
+
+However, one is also left with the insight that uncertainty, as marked by the absence of geographical identifiers, is the highest for certain types of places in the text. While place's significance to the novel is undoubtedly a likely outcome of a traditional, close-reading approach, the model proposed in the paper enforces a certain rigour in its approach to the text. Therefore, while the episode may be in some way explicitly “about” place, roughly a third of the places are of uncertain locations. This would markedly imply that, in the critical literature, Bulson’s emphasis on the notion of disorientation and Hart’s attention to the various “traps” of place can be traced back to measurable “quantities”, within the confines of a constricted model, in the text. Additionally, one outcome of this approach is the difficulty in visually representing spatial uncertainty. This element is accomodated in the web component in terms of character routes rather than explicit location.
+
+While toponym extraction and a geographically-contextualised approach towards the text enabled visual representations of the types of place in Wandering Rocks, the evocation of uncertainty, as facilitated by the LAE data model, made representation of such data challenging in a web-based, visual environment. The work described in this paper is generalizable within the larger Digital Humanities context as it demonstrates the practical application of NER, uses document encoding to explore meaningful geographic relationships in the text and leverages these relationships to interrogate spatial uncertainty.
+
+References
+1. Budgen, F. & Hart, C., (1989). James Joyce and the making of ‘Ulysses’ and other writings, Oxford University Press.
+
+2. Bulson, E., (2011). ‘Disorienting Dublin’ in Making Space in the Works of James Joyce 1st ed. V. Benejam & J. Bishop, eds., Routledge.
+
+3. Moretti, F., (2007). Graphs, Maps, Trees: Abstract Models for Literary History, Verso.
+
+4. Clement, T.E., (2008). ‘A thing not beginning and not ending’: using digital tools to distant-read Gertrude Stein’s The Making of Americans. Literary and Linguistic Computing, 23(3), pp.361 –381.
+
+5. Anon, GeoNames. Available at: www.geonames.org [Accessed November 3, 2011].
+
+6. Edina, (2009). Unlock - Unlock Text: Geoparser Web service. Unlock - Unlock Text: Geoparser Web service. Available at: unlock.edina.ac.uk [Accessed November 4, 2011].
+
+7. Bird, Stephen, (2013). Natural Language Toolkit, Available at: www.nltk.org [Accessed March 6, 2013].
+
+8. Stanford Natural Language Processing Group, (2013). The Stanford NLP (Natural Language Processing) Group, Available at: nlp.stanford.edu/software/CRF-NER.shtml [Accessed August 10, 2013].
+
+9. Piatti, B., (2013). A Literary Atlas of Europe. Available at: www.literaturatlas.eu/en [Accessed November 4, 2011].
+
+10. Hart, C., (1974). “Wandering Rocks” in James Joyce’s Ulysses. Critical essays. Edited by Clive Hart and David Hayman., Berkeley: University of California Press.
+
+11. Gunn, I., Hart, C. & Beck, H., (2004). James Joyce’s Dublin: A Topographical Guide to the Dublin of Ulysses: with 121 Illustrations, Thames & Hudson, Limited.
+
+12. Bulson, E., (2001). Joyce’s Geodesy. Journal of Modern Literature, 25(2), pp.80–96.

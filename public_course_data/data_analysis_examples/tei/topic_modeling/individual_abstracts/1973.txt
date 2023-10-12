@@ -1,0 +1,40 @@
+1973	2014	Getting an XML-based website up and running can be a repetitive, time consuming and tedious task. It usually also requires someone with good technical knowledge to bring all of the pieces together into a complete package. Kiln is a tool that allows a non-technical user to quickly and easily create a working web application that provides base functionality for publishing, indexing and searching XML source content.
+
+The user is free to focus on developing the content, and can easily assess the way in which content is used and review changes to see how they are reflected in the published output. Importantly this ease of use does not preclude the customisation of the existing functionality, nor the addition of new tools, processes and outputs.
+
+Kiln, previously known as xMod, is an open source multi-platform framework for building and deploying complex websites whose source content is primarily in TEI/XML. It brings together various independent software components into an integrated whole that provides the infrastructure and base functionality for such sites.
+
+Kiln is developed and maintained by a team at the Department of Digital Humanities, King’s College London. Over the past years and over several versions, Kiln has been used to generate more than 50 websites for digital humanities research projects which have very different source materials and customised functionality.
+
+The main Kiln components are:
+
+Apache Cocoon web development framework for XML processing.
+Jetty web application server.
+Apache Solr, a searching platform for indexing, searching and browsing of contents.
+Sesame, a framework for processing RDF data.
+In a production web server context, Kiln integrates with other web publishing tools to support images, maps and other data sources, like relational databases. It can equally easily be used to provide a full web application solution, or as a backend providing content to be surfaced by some other technology, such as Django or WordPress.
+
+Kiln has been developed around the concept of the separation of roles, allowing people with different backgrounds, knowledge and skills to work simultaneously on the same project without interfering with one another’s work. The parts of the system used by developers, designers and content editors are distinct. For example, the templating engine handles the general structure of an output document in individual files, with reference to separate sources which supply the individual content elements. Templating is also achieved using a lightweight syntax that allows frontend development to take place without any knowledge of XSLT.Kiln has two competing design goals: to support the development of unique, complex web applications; and to provide an out-of-the-box system suitable for a single non-technical person to publish a TEI-based site. The former demands not only the customisability of every component, but also the avoidance of any technical magic that makes one way easier at the cost of another way being harder. The latter requires a large amount of built-in behaviour that can be easily tweaked in isolation, and excellent documentation. Kiln’s documentation includes a tutorial showing how to customise each of the major elements of a site, as required beyond the provided defaults.
+
+In comparison with other publishing tools, such as XTF, SADE and TE- ICHI, Kiln offers some advantages. It is mature and flexible, as it has been in active development for 10 years since its initial version, and has been used in many research projects. It is standalone (beyond an installation of the Java language), requiring no other software for any of its functionality, and it provides a working site, including a faceted search, with no more than placing TEI files in a particular directory.
+
+The proposed poster will provide a diagrammatic overview of a Kiln project structure, and an accompanying interactive demo will show the system in action, from creating a new project through to displaying content as a website.
+
+References
+1. kcl-ddh.github.io/kiln/
+
+2. A list of some of these projects is available at kiln.readthedocs.org/en/latest/ projects.html.
+
+3. cocoon.apache.org/2.1/
+
+4. www.eclipse.org/jetty/
+
+5. lucene.apache.org/solr/
+
+6. www.openrdf.org/
+
+7. xtf.cdlib.org/
+
+8. www.bbaw.de/telota/software/sade/sade-1
+
+9. www.teichi.org/

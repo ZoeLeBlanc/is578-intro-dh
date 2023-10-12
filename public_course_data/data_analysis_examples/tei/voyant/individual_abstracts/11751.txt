@@ -1,0 +1,69 @@
+
+        
+            
+                Introduction
+                The Historiographical Institute in the University of Tokyo has provided a digital archive called “SHIPS” with about 40 different databases (a total of 5.6 million data) and about 20 million images of historical materials related to Japan from the 8th to the 19th century. Based on these accumulated data, we aim to establish a system that supports historical data analysis and visualization by applying information technology to realize the advancement and efficiency of the historical research process and the multifaceted dissemination of research results, including educational use. For this purpose, we build a knowledge base about people, places, and historical facts, and create an application that utilizes this knowledge base. This is an effort to elucidate the effects of data-driven methods on the research process of history. This study targets 2 historical painting materials; Wako Zukan and Shoho Ryukyu Kuniezu, owned by the Historiographical Institute.
+                The construction of a data-driven infrastructure for historical information research is a theme actively pursued both in Japan and abroad. In Europe, the Time Machine Project [3] is underway, and in Japan, for example, ROIS/Collaborative Open Data Center for the Humanities is conducting historical big data research [1]. We will also carry out research using international standards such as TEI, IIIF, and RDF to build a highly interoperable research infrastructure that can be linked to these research results. It will enable the utilization of research resources across institutions and countries.
+            
+            
+                Case 1: Wako Zukan
+                The Wako Zukan is a historical document depicting the appearance of Japanese pirates in the 16th century. This is a picture scroll over five meters long and depicts the story of the Ming dynasty's defeat of the Japanese pirates who attacked from across the sea, but since there are no characters in the picture scroll to determine the character of the scroll, reading it has been a major challenge. 
+                We have developed a digital storytelling feature that utilizes IIIF annotations to solve this problem. The annotations are displayed along with the screen transitions of the scroll, and the image portions are magnified. The IIIF's Choice function also provides a comparison screen with infrared photographs. These functions enable us to express the contents of the picture scroll interactively.
+                
+                    
+                
+                Fig. 1 Digital storytelling using IIIF annotations and infrared photographs.
+                We have also developed a text viewer using IIIF and TEI. It displays several types of text on the left, images in the center, and maps and lists of people and places on the right. These data are structured by TEI and displayed with each other. This supplementary information supports the reading of the text.
+                
+                    
+                
+                Fig. 2 Text viewer that displays several types of text, images, and maps in conjunction.
+                These features have enabled us to incorporate the knowledge that historians have been deciphering.
+            
+            
+                Case 2: Shoho Ryukyu Kuniezu
+                The Shoho Ryukyu Kuniezu are large-scale maps with a maximum length of over 7 meters and were produced nationwide in 1644 under the orders of the Edo Shogunate. It is the oldest large-scale pictorial map of the Ryukyu Islands and has attracted much attention because of its rich topographical and textual information, but the problem was that it was difficult to handle due to its size.
+                We developed a system that provides functions including viewing high-resolution images and text searches of written information to solve this problem. Annotations were assigned to each place name, giving information on classification and latitude/longitude.
+                
+                    
+                
+                Fig. 3 Annotations and searches for place names written in kuzushiji.
+                It also provides a function to superimpose the sketch map with a modern map based on the coordinate information given to the annotations (Fig. 4 Left). In addition, a comparison of kuniezu from different periods released by the National Archives of Japan revealed differences in the precision of topographical rendering (Fig. 4 Right).
+                
+                    
+                
+                Fig. 4 Comparison of images with modern maps and materials from other institutions.
+                Structuring the data with annotations enables us to solve the problem of reading kuzushiji, which is a high hurdle for many users. In addition, metadata for place names enables the data to be overlaid on modern maps, making it possible to expand the use of the data to include research other than historical studies.
+            
+            
+                Conclusion
+                We describe the construction of a knowledge base for building a data-driven infrastructure for historical information research. We have published these applications [2][4] in December 2021. These applications' actual and potential use will be reported at the conference.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Asanobu KITAMOTO and Mika ICHINO and Chikahiko SUZUKI and Tarin CLANUWAT.
+                         (2018). 
+                        Historical Big Data: Reconstructing the Past through the Integrated Analysis of Historical Data. Eighth Conference of Japanese Association for Digital Humanities (JADH2018),
+                        pp.67-69.
+                    
+                    
+                        Shoho Ryukyu Kuniezu Digital Archive.
+                        https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/en/ (accessed 10 December 2021).
+                    
+                    
+                        Time Machine Europe.
+                        https://www.timemachine.eu/ (accessed 10 December 2021).
+                    
+                    
+                        Wakozukan Digital Archive.
+                        https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/en/ (accessed 10 December 2021).
+                    
+                
+            
+        
+    
+

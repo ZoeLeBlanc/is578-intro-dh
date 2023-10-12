@@ -1,0 +1,203 @@
+10936	2019	
+      
+         
+         
+            Stand der Forschung und Problemaufriss 
+            Im Zuge des anhaltenden Aufschwungs der Schreibprozessforschung geraten seit einiger Zeit Quellentypen in den Blick der literatur- und kulturwissenschaftlichen Forschung, die Prozesse der auktorialen Selbstorganisation, der Notation oder der Lektüre dokumentieren. Dazu gehören etwa Notizbücher (Hoffmann 2008, Efimova 2018), Zettelkästen (Gfrereis, Strittmatter 2013; Krajewski 2011; Schmidt 2016) oder auch Autor*innenbibliotheken. Während dabei für Notizbücher und Zettelkästen avancierte, auf Transkriptionen und TEI-Editionen basierende Techniken der digitalen Präsentation entwickelt werden (vgl. etwa Radecke 2018 für Notizbücher, Schmidt 2016 für Luhmanns Zettelkasten), beschränkt sich die digitale Präsentation von Autor*innenbibliotheken derzeit auf die Bereitstellung entweder von elektronischen Findmitteln, die bibliothekarische Metadaten zur Verfügung stellen (vgl. etwa die Bibliothek Paul Celans: 
+                    https://www.dla-marbach.de/bibliothek/spezialsammlungen/bestandsliste/bibliothek-paul-celan/) oder von einfachen Digitalisaten, die in einem Viewer und/oder als PDF-Download angeboten werden (vgl. etwa die Grimm-Bibliothek 
+                    https://www.digi-hub.de/viewer/browse/gelehrtenbibliotheken.grimmbibliothek/-/1/-/-/). Wenngleich diese Präsentationsformen dem bibliothekarischen Charakter der Bücher einer Autor*innenbibliothek durchaus gerecht werden, gelingt es ihnen nicht, den autographischen Charakter dieser Bücher zu erfassen, deren Besonderheit in den Lese- und Gebrauchsspuren liegt, die die Autorin oder der Autor (bzw. später die Erb*innen, Nachlassverwalter*innen, besitzenden Institutionen etc.) in ihnen hinterlassen haben. Zugleich erweist sich die Handhabung der Bücher einer Handbibliothek nach den Standards der Edition von Autographen als unverhältnismäßig, ist das Ziel ihrer Präsentation doch eben nicht ein edierter Text; vielmehr soll durch sie der Nachvollzug kreativer Lektüre- und Gebrauchspraktiken ermöglicht werden. 
+                
+            Dabei lassen sich für eine solche Präsentation, in Bezugnahme auf die Bedürfnisse der Forschung, drei Ziele formulieren: 1) die Bereitstellung möglichst der Gesamtheit der Bände einer Autor*innenbibliothek; 2) die Implementierung von Suchanfragen-basierten Findmitteln; 3) die Bereitstellung von Anwendungen, mit denen sich das Profil der Sammlung und die in ihr sich abzeichnenden Kreativitäts- und Lektüremuster entdecken, erkennen und erforschen lassen. 
+            Für Ziel 1) stehen gängige Techniken zur Präsentation von digitalisierten Büchern (zumeist auf METS/MODS basierend) bereits zur Verfügung (DFG-Viewer, Visual Library o.Ä.); auch für Ziel 2) werden heute mit bibliothekarischen oder archivarischen Discovery-Tools oder mit einer auf den X-Technologien basierenden Umgebung bereits Lösungen angeboten. Für Ziel 3), das im Fokus unseres Projektes steht, liegen für den Spezialfall Autor*innenbibliotheken hingegen bisher weder Lösungsansätze noch Konzeptualisierungen vor, obwohl in den letzten Jahren Forderungen nach der Ergänzung von such-basierten Interfaces durch ›glückliche‹ Zufälle ermöglichende Konzepte laut wurden (Dörk et al. 2011, Thudt et al. 2012, Whitelaw 2015). Auch wenn die Etablierung sogenannter Explore-Modi zur Erfüllung dieser Ziele schon teilweise beigetragen hat, fehlt es in der digitalen Verfügbarmachung noch an flexibler Navigation entlang der Relationen zwischen den Objekten (Kreiseler et al. 2017).
+         
+         
+            Projekt, Vorgehen und Korpus 
+            Im Folgenden stellen wir einen im Verfahren des forschungsbasierten ›Rapid Prototyping‹ entwickelten Entwurf einer explorier- und skalierbaren Gesamtrepräsentation einer Autorenbibliothek vor. Dabei verbindet unsere Prototypenstudie die in der Regel als eine philologische und archiv- bzw. bibliothekswissenschaftliche Problematik adressierte Präsentation von Autor*innenbibliotheken mit der gestaltungsorientierten Forschung zur Visualisierung kultureller Sammlungen (Glinka et al. 2017; Dörk et al. 2017; Windhager et al. 2018). Im Fokus des Forschungsprojekts – das im Mai 2018 gestartet ist und bis März 2019 durchgeführt wird – steht ein in enger Koordination zwischen digitaler Archivwissenschaft, Literaturwissenschaft und informatischer Visualisierungsforschung entwickelter, webbasierter Software-Prototyp, der eine Idee realisiert, wie sich Autor*innenbibliotheken digital repräsentieren ließen. Das Projekt nimmt dabei zwei Impulse auf: Zum einen ist es dem ›Distant Reading‹ (Moretti 2013) verpflichtet, das nach Möglichkeiten einer Mustererkennung auf der Gesamtheit oder auf Teilen einer Autorenbibliothek sucht; zum anderen sollen die Repräsentationen skalierbar sein (Weitin 2017), was Fragen zu Übergängen zwischen verschiedenen Granularitäten aufwirft.
+            Grundlage für die modellhafte Erschließung ist die ca. 155 Bände umfassende Handbibliothek Theodor Fontanes, die im Theodor-Fontane-Archiv der Universität Potsdam bewahrt und ergänzt wird. Die Bedeutung dieser überlieferten Autorenbibliothek ergibt sich in erster Linie aus ihrer Provenienz. Sie ist Teil der ›Schriftstellerwerkstatt‹, unersetzbar wegen der zahlreichen von Fontane verfassten Marginalien und wertvoll durch die verschiedenen Widmungsexemplare (Rasch 2005). Die Bände, die Fontane zur Abfassung von Essays und Rezensionen herangezogen hat, weisen beispielsweise besonders viele Bewertungen aus Fontanes Feder auf.
+            Neben der vollständigen Verscannung des Bestandes nach archivarischen Standards und der Verzeichnung der Einzelbände nach bibliothekarischen Kriterien erfolgt eine Datenerfassung sowohl auf Seiten- wie auch auf Korpusebene. Die Daten zu Fontanes Handbibliothek sind gemäß relationalem Datenmodell in Tabellen verzeichnet, in denen die Verknüpfungen der Gegenstände abgebildet werden. Der Zugang zu den Daten erfolgt multiperspektivisch: auf Gesamtkorpus-, auf Objekt-, auf Seiten- und Einzelphänomenebene. Die Offenlegung der Zugänge im Rahmen einer Visualisierung zeigt beispielhaft die thematische und personelle Clusterbildung innerhalb der Sammlung oder die Verbindungen verschiedener Benutzungsspuren. 
+         
+         
+            Visualisierungskonzept 
+            Das im Projekt entwickelte Visualisierungskonzept legt einen besonderen Fokus auf die kontinuierliche, auf mehreren Granularitätsebenen zoom- und filterbare Navigation, welche die Erkundung einzelner Objekte ebenso zulässt wie deren Vergleich. Der interaktive Prototyp, der im März 2019 veröffentlicht wird, bietet drei grundlegende Ebenen, auf denen man sich durch den Bestand bewegt: Autor*innen, Bücher und Seiten.
+            
+               
+               
+                  Abbildung 1. Startseite/Buch-Ebene (Screenshot des Prototypen)
+					
+            
+            Ausgangspunkt für die Exploration der Visualisierung ist die Buch-Ebene, die eine Übersicht aller Bücher der Handbibliothek, geordnet nach Autor*innen, darstellt (Abb. 1). Dies folgt einem bei Visualisierungsinterfaces typischen Prinzip, den ersten Zugang über einen Überblick zu schaffen (Shneiderman 1996, Whitelaw 2015).
+            Jedes Buch wird durch einen vertikalen Balken dargestellt, in dem eine Seite wiederum durch ein abgegrenztes Segment repräsentiert wird, sodass sich eine Leseordnung der einzelnen Bücher von oben nach unten ergibt. Die Seitensegmente sind farblich entsprechend ihrer Lese- und Gebrauchsspuren kodiert. Während Seiten ohne Spuren weiß dargestellt werden, unterteilen sich die farbigen Lesespuren in die Kategorien: 1) Provenienzangaben (Grautöne), 2) Markierungen (Rottöne), 3) Marginalien (Blautöne) und 4) zusätzliches Material (Gelb). Mouseover über ein Segment zeigt eine Vorschau des jeweiligen Seiten-Scans und den Buchtitel an (Abb. 2).
+            
+               
+               
+                  Abbildung 2. Seiten-Ebene mit hervorgehobenen Marginalien und Mouseover über ein Element
+					
+            
+            Ablesbar sind auf der Buch-Ebene, die einem individuellen Strichcode der Bücher ähnelt, zum einen der Umfang eines Buches (Gesamtlänge des Balkens), aber auch die Verteilung der Lesespuren in diesem (Farbkodierung). Die Filterleiste über der Visualisierung dient hierbei als Legende für die Farbkodierung und bietet die Möglichkeit zur Fokussierung auf bestimmte Lesespur-Typen. Die Auswahl eines Lesespur-Typs löst die Entfaltung der entsprechenden Unterkategorien in der Filterleiste aus. 
+            Mit Hilfe eines Suchfeldes können spezifische Textstellen, die einer Suchanfrage entsprechen, hervorgehoben werden. Durch die Selektion eines Buches werden die anderen Bücher zusammengestaucht und eine Detailansicht des ausgewählten Buches wird entfaltet, die zusätzliche Meta-Informationen zum Werk bietet.
+            Über die Scrollfunktion des Browsers können die Granularitätsebenen der Visualisierung erreicht werden. Dem Funktionsprinzip des Semantic Zoom folgend (Perlin & Fox 1993) führt Scrollen nach oben zu einer höheren Abstraktion und nach unten zu einem höheren Detailgrad – es erlaubt also einen Wechsel zwischen den drei Ebenen. Das Scrollen ermöglicht dabei kontinuierliche, sinnhafte Übergänge zwischen den Ansichten und bietet die Möglichkeit, in eigener Geschwindigkeit vor- und zurückzugehen, mit dem Ziel, die Ansichtswechsel nachvollziehbarer zu gestalten.
+            
+               
+               
+                  Abbildung 3.  Autor*innen-Ebene. Alle Filter-Kategorien sind entfaltet. Hier deutlich zu sehen ist z.B. die bei allen Büchern gleich stark ausgeprägten Provenienzangaben in grau zu Beginn der Bücher.
+					
+            
+            Im Gegensatz zur mittleren Buch-Ebene sind auf der höheren Ebene (Abb. 3) alle Bücher eines Autors zusammengefasst, indem die Gesamtverteilung der Lesespuren in Form eines Flächen-Diagramms dargestellt wird. Hierdurch ist ein Vergleich von Fontanes Lesespuren, verteilt über die Werke unterschiedlicher Autor*innen, möglich, aber es lassen sich durch die höhere Abstraktion auch umfassende Muster nachvollziehen. Navigiert man von der mittleren Buch-Ebene in die andere Richtung auf die untere Ebene, wird die Visualisierung ins Detail entfaltet (Abb. 2), sodass für eine*n ausgewählte*n Autor*in einzelne Seiten gezielt ausgewählt werden können und Marginalien detailliert auch in der Transkription sichtbar werden. 
+            Alle Selektionen, Filterungen und die ausgewählte Granularitätsebene werden in der URL kodiert, wodurch sowohl die Nutzung der Verlaufsfunktionen des Browsers als auch das Speichern unter Favoriten oder das Teilen und Referenzieren von Ansichten per Link möglich wird.
+         
+         
+            Reflexion der Ergebnisse
+            Die im Rahmen des Prototypen entwickelte, neuartige visuelle Annäherung an Autor*innenbibliotheken und die in ihnen bezeugten Lektürespuren verbindet gestaltungsorientierte Ansätze zur Visualisierung kultureller Sammlungen mit philologisch-, archiv- und bibliothekswissenschaftlichen Forschungsfragen.
+            Anhand visueller Filter können Untermengen identifiziert sowie Kategorien gebildet werden, die Mustererkennungen in der Sammlung ermöglichen. Nutzer*innen sollen in die Lage versetzt werden, Begriffs- und Themenräume innerhalb dezidierter Kategorien und über deren Grenzen hinweg zu erfassen. Gefragt wurde nach der Integration von Suchfunktionen, Skalierung und Sichtbarmachung in Interfaces und wie durch attraktive Einstiege in einen Bestand weitergehende Explorationsmöglichkeiten eröffnet werden können.
+            Die Entdeckung neuer Forschungsfragen während des Prototypingprozesses und die damit einhergehende Nachjustierung in der Erschließung beleuchtet die Wechselwirkungen zwischen visueller Forschung, Metadatenmanagement und Philologie. Deutlich wurde, dass die Sammlung als Konstrukt zu verstehen ist, das erst die (multimodale) Rückschau generiert. Dabei entsteht ›die‹ Sammlung aus der Verschränkung von Perspektive und Objekt. Die sich daraus ergebende Konsequenz, multiple Sichten auf ›das‹ und auf ›die‹ Objekt(e) anzubieten, schlägt sich in den verschiedenen Granularitätsebenen des Protoypen nieder und hat eine Ablösung der statischen Verzeichnung eines OPAC-Katalogs durch eine beobachtungsabhängige Visualisierung der verfügbaren Quelldaten zur Folge. Diese Sichtbarmachung fußt auf einem dynamischen Modell der Sammlungserfassung geleitet durch eine digitale Repräsentationsmodellierung.
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Dörk, Marian / Carpendale, Sheelagh / Williamson, Carey (2011):
+                  The Information Flaneur: A Fresh Look at Information Seeking, in: 
+                        Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 1215-1224.
+                    
+               
+                  Dörk, Marian / Pietsch, Christopher / Credico, Gabriel (2017): 
+                  
+                     One view is not enough: High-level visualizations of a large cultural collection
+                  , in: 
+                        Information Design Journal, 23:1, 39-47. 
+                        
+                     http://mariandoerk.de/papers/idj2017.pdf
+                  
+               
+               
+                  Efimova, Svetlana (2018): 
+                  Das Schriftsteller-Notizbuch als Denkmedium in der russischen und deutschen Literatur. Paderborn: Wilhelm Fink.
+                    
+               
+                  Gfrereis, Heike / Strittmatter, Ellen (eds.) (2013): 
+                  Zettelkästen. Maschinen der Phantasie. Ausstellungskatalog. Deutsche Schillergesellschaft. Marbach a.N.
+                    
+               
+                  Glinka, Katrin / Pietsch, Christopher / Dörk, Marian (2017): 
+                  
+                     Past Visions and Reconciling Views: Visualizing Time, Texture and Themes in Cultural Collections
+                  , in: 
+                        Digital Humanities Quarterly 11.2. 
+                        
+                     http://www.digitalhumanities.org/dhq/vol/11/2/000290/000290.html
+                  
+               
+               
+                  Haber, Peter (2010):
+                  Autorenbibliotheken im digitalen Zeitalter, in: 
+                        Quatro. Zeitschrift des Schweizerischen Literaturarchivs 30/31, 39-43.
+                    
+               
+                  Höppner, Stefan / Jessen, Caroline / Münkner, Jörn (eds.) (2018):
+                  Autorschaft und Bibliothek. Sammlungsstrategien und Schreibverfahren. Mit einem Vorwort von Reinhard Laube. Göttingen: Wallstein.
+                    
+               
+                  Hoffmann, Christoph (2008):
+                  Wie lesen? Das Notizbuch als Bühne der Forschung, 
+                        in:
+                        Birgit Griesecke (ed.): 
+                  Werkstätten des Möglichen 1930-1936: L. Fleck, E. Husserl, R. Musil, L. Wittgenstein, Würzburg: 45-57.
+                    
+               
+                  Knoche, Michael (ed.) (2015):
+                  Autorenbibliotheken. Erschließung, Rekonstruktion, Wissensordnung. Wiesbaden: Harrassowitz.
+                    
+               
+                  Krajewski, Markus (2011): 
+                  Paper Machines. About cards & catalogs, 1548-1929. Cambridge: MIT Press.
+                    
+               
+                  Kreiseler, Sarah / Brüggemann, Viktoria / Dörk, Marian (2017):
+                  Tracing exploratory modes in digital collections of museum web sites using reverse information architecture, in: 
+                        First Monday 22.4.
+                    
+               
+                  Moretti, Franco (2013): 
+                  Distant Reading. London: Verso.
+                    
+               
+                  Perlin, Ken / Fox, David (1993):
+                  Pad: an alternative approach to the computer interface, in: 
+                        SIGGRAPH '93: Proceedings of the 20th annual conference on Computer graphics and interactive techniques, 57-64.
+                    
+               
+                  Rasch, Wolfgang (2005):
+                  Zeitungstiger, Bücherfresser. Die Bibliothek Theodor Fontanes als Fragment und Aufgabe betrachtet, 
+                        in: 
+                        Ute Schneider (ed.): 
+                  Imprimatur. Ein Jahrbuch für Bücherfreunde. N.F. [Bd.] XIX. Wiesbaden: Harrassowitz 103-144.
+                    
+               
+                  Rohmann, Ivonne (2015):
+                  Aspekte der Erschließung und Rekonstruktion nachgelassener Privatbibliotheken am Beispiel der Büchersammlungen Herders, Wielands, Schillers und Goethes, 
+                        in: 
+                        Michael Knoche (ed.):
+                  Autorenbibliotheken. Erschließung, Rekonstruktion, Wissensordnung. Wiesbaden: Harrassowitz 17-59.
+                    
+               
+                  Schmidt, Johannes (2016):
+                  Niklas Luhmann´s Card Index: Thinking Tool, Communication Partner, Publication Machine, 
+                        in: 
+                        Alberto Cevolini (ed.): 
+                  Forgetting Machines. Knowledge Management Evolution in Early Modern Europe. Leiden: Brill 289-311.
+                    
+               
+                  Shneiderman, Ben (1996):
+                  The eyes have it: A task by data type taxonomy for information visualizations, in: 
+                        Visual Languages, 1996. Proceedings., IEEE Symposium. IEEE, 336-343.
+                    
+               
+                  Thud, Alice / Hinrichs, Uta / Carpendale, Sheelagh (2012):
+                  The bohemian bookshelf, in: 
+                        Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 1461-1470.
+                    
+               
+                  Weitin, Thomas (2017):
+                  Scalable Reading, in: 
+                        
+                            Zeitschrift für Literaturwissenschaft und Linguistik
+                         47.1: 1-6. 
+                        
+                     https://doi.org/10.1007/s41244-017-0048-4
+                  
+               
+               
+                  Wieland, Magnus (2015):
+                  Materialität des Lesens. Zur Topographie von Annotationsspuren in Autorenbibliotheken, 
+                        in: 
+                        Knoche, Michael (ed.):  
+                        Autorenbibliotheken. Erschließung, Rekonstruktion, Wissensordnung. Wiesbaden: Harrassowitz 147-173.
+                    
+               
+                  Windhager, Florian / Federico, Paolo / Schreder, Günther / Glinka, Katrin / Dörk, Marian / Miksch, Silvia/ Mayr, Eva (2018):
+                  
+                     Visualization of Cultural Heritage Collection Data: State of the Art and Future Challenges.
+                   in: 
+                        TVCG: IEEE Transactions on Visualization and Computer Graphics.
+                        
+                     http://mariandoerk.de/papers/tvcg2018.pdf
+                  
+               
+               
+                  Whitelaw, Mitchell (2015):
+                  
+                     Generous Interfaces for Digital Cultural Collections,
+                   in: 
+                        Digital Humanities Quarterly, 9.1. 
+                        
+                     http://www.digitalhumanities.org/dhq/vol/9/1/000205/000205.html
+                  
+               
+            
+         
+      
+   
+
+

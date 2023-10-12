@@ -1,0 +1,80 @@
+11712	2022	
+        
+            This study tests the use of a novel computational approach, one that analyses changes in shape of historical artefacts across time, in a new context. Previously developed by the authors and tested upon Western art, in particular ancient Greek pottery, this methodology is here applied for the first time to East-Asian art, in particular Chinese vases [1]. The East-Asian perspective is crucial in understanding the adaptability of the approach to different geographical regions and time periods, contributing to the construction of a global history of shape evolution and design progression over time. 
+            The study of shapes and styles as embodying the cultural concerns of a particular historical moment has been at the center of several disciplines including art history and archaeology. It has captured the interest of scholars since the eighteenth century when Johann Joachim Winckelmann devised his categorisation of style, focusing particularly on Greek and Roman art [2]. In more recent times, George Kubler proposed new ways of historical sequencing of form based on continuous change across time [3]. In Chinese art, surveys of the development of pottery over time have also been conducted, most recently by Ye Zhemin叶喆民 [4].
+            The current research inscribes itself within this intellectual tradition yet propose a new way of quantifying changes in shape and exploring connections between objects: a computational technique. A few studies have attempted to move in this direction although they have been restricted by the technology, and materials, namely photographs [5, 6]. This paper employs a new methodology and material, 3D scans of historical artefacts, therefore providing one of the first case studies of corpus research on 3D digitised objects. 
+            The approach has been tested on a case study of four Chinese vases of the Beaker type, deriving from late Ming and early Qing Dynasties (1620-1683). These objects are held in the Ashmolean Museum in Oxford, U.K., under ascension numbers EA1978.799, EA1978.798, EA1971.22, and EA1978.1903. These were chosen because of the transformation in shape of beaker vases between the late-Ming and early-Qing Dynasties (1620-1683), due to changing tastes in this period of dynastic transition. This has captured much scholarly interest. Some scholars, such as Geng Baochang 耿宝昌, Zhu Jun朱军 and Xu Jingjing徐菁菁 have examined the changing shapes of vases in this period, noting that appraisers were required to memorise shapes when inspecting and identifying ceramic vases [7, 8, 9]. Other scholars, such as Soame Jenyns and Margaret Medley, applied a topological method of visual analysis of ceramic vases, leading to a revision in their dating [10, 11]. A combination of quantitative methods and topological techniques were used by Ji Dongge
+                纪东歌 and Yu Haiyang 于海洋, both of whom were interested in the historical and societal influences over shape design and patterns in the two dynasties [12, 13]. This paper proposes a new, quantitative approach to undertake the study of shapes and forms. 
+            
+            To analyse the dataset, the vases were captured in three dimensions using photogrammetry, from which a 3D model was built. From the mesh of each model, a random sample of vertices of 1000 points was extracted. The vases were roto-translated and centered so that the orientations were standardised across models. These models were compared by relying on metrics that measured the distance between their distribution of points. In this study, an approximation of the Wasserstein metric, known as the Sinkhorn distance, was used. The benefit of the Wasserstein metric for this comparative approach lies in its capacity to synthetise into one ‘number’ the dissimilarity between two distributions (shapes): the greater the difference, the greater the cost (value) to reposition the points. A pre-existing suite was deployed to implement the algorithm [14, 15]. The Sinkhorn distances are the final output of the analysis. The comparison produced is a series of pairwise distances that can be used to assess the relative closeness or similarity between shapes.
+            This study has outlined the usefulness of this new computational approach for quantifying changes in East-Asian pottery. The method can be scaled to large datasets of 3D objects scans where changes can be computed automatically, without the need for human intervention. As museums and cultural institutions move to digitise their collections in three dimensions, this approach opens new possibilities for the large-scale study of form across time and geographical locations.
+        
+        
+            
+                
+                    Bibliography
+                    [1] Pala, G. and Costiner, L. (2022). “Tracing Changes in Shape of Historical Artefacts across Time using 3D Scans: A New Computational Approach”, 
+                        Journal of Open Humanities Data, forthcoming. 
+                    
+                    [2] Winckelmann, J. (1764). 
+                        Johann Winckelmanns, […] Geschichte der Kunst des Alterthums. Dresden: In der Waltherischen Hof-Buchhandlung. The English translation is Winckelmann, J. (2006), 
+                        The History of the Art of Antiquity. Los Angeles: Getty Research Institute.
+                    
+                    [3] Kubler, G. (1962). 
+                        The shape of time: Remarks on the history of things. New Haven: Yale University Press.
+                    
+                    [4] Zhemin, Y., 叶喆民 (2011), 
+                        Zhongguo taoci shi
+                  中国陶瓷史 [
+                        History of Chinese Pottery and Porcelain]. Beijing: SDX Joint Publishing Company. 
+                    
+                    [5] Liming, G., L. Hongjie and J. Wilcock (1989). “The Analysis of Ancient Chinese Pottery and Porcelain Shapes: a Study of Classical Profiles from the Yangshao Culture to the Qing Dynasty Using Computerised Profile Data Reduction, Cluster Analysis and Fuzzy Boundary Discrimination”, in Rahtz, S. (ed.),
+                         Computer Applications and Quantitative Methods in Archaeology. CAA89 (BAR International Series 548). Oxford: B.A.R., pp. 362-374.
+                    
+                    [6] Liying W., and B. Marwick (2020). “Standardization of ceramic shape: A case study of Iron Age pottery from northeastern Taiwan”. 
+                        Journal of Archaeological Science: Report, Vol. 33, pp. 1-11. 
+                    
+                    [7] Baochang, G. 耿宝昌 (1993).
+                         Ming Qing ciqi jianding 
+                  明清瓷器鉴定 [Ming and Qing Porcelain on Inspection]. Beijing: The Palace Museum.
+                    
+                    [8] Jun Z. 朱军 (2002). “
+                        Mingmo Qingchu qinghau huagu jianding 
+                  明末清初青花花觚鉴定 [A late Ming and early Qing dynasty blue and white goblet identification]”, 
+                        Wenwu Shijie 
+                  文物世界 4, pp. 38-42.
+                    
+                    [9] Jingjing, X 徐菁菁 (2017). “
+                        Mingqing cigu yuanliu ji tezheng
+                  明清瓷觚源流及特征 [Sources and Characteristics of Ming and Qing beaker vases].” 
+                        Yishupin 
+                  艺术品, 11, pp. 66-73.
+                    
+                    [10] Medley, M. (1987). “The Ming-Qing Transition in Chinese Porcelain”, 
+                        Arts Asiatiques 42, pp. 65-76.
+                    
+                    [11] Jenyns,S. (1955). “The Wares of the Transitional Period Between the Ming and Ch’ing, 1620-1683”, 
+                        Archives of the Chinese Art Society of Americas 9, pp. 20-42.
+                    
+                    [12] Dongge, J. (2012). 纪东歌, “
+                        Qingchuqi Jingdezhen Jinian ciqi fenqi yanjiu 
+                  清初期景德镇纪年瓷器分期研究[A staging study of early Qing dynasty Jingdezhen chronological porcelain]”, 
+                        Zhongguo yishu yanjiu yuan 
+                  中国艺术研究院.
+                    
+                    [13] Haiyang, Y. (2012) 于海洋, “
+                        Mingqing guxing ciqi yanjiu 
+                  明清觚形瓷器研究 [A study of Ming and Qing beaker vases]”, PhD diss., Jilin Daxue 吉林大学[Jilin University].
+                    
+                    [14] Point Cloud Utils (pcu) - A Python library for common, 
+                        https://github.com/fwilliams/point-cloud-utils.
+                    
+                    [15] Cuturi, M. (2013). 
+                        Sinkhorn distances: Lightspeed computation of optimal transport. Advances in Neural Information Processing Systems, 26, pp. 2292-2300.
+                    
+                
+            
+        
+    
+
+

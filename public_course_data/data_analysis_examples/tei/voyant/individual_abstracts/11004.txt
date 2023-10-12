@@ -1,0 +1,120 @@
+
+      
+         
+            Historischer Raum konstituiert sich stets als Summe der dokumentierten Wahrnehmungen einer Zeit. Dabei spielen die beschriebenen Räume nicht nur eine dokumentarische Rolle, vielmehr waren sie in ihrer Zeit normative Dokumente, so dass sich mentale Räume nicht nur im Begehen entwickeln konnten, sondern auch im Erlesen oder Erblicken. Historischer Raum kann also als Bricolage aus Erfahrungen historischer AkteurInnen verstanden werden, welche diese selbst körperlich oder aber textuell bzw. bildlich vermittelt gemacht haben.
+         
+         
+            Das durch die Österreichische Akademie der Wissenschaft geförderte Projekt „Becoming Urban – Reconstructing the city of Graz in the long 19th century (BeUrb)“ widmet sich als Gemeinschaftsprojekt der Karl-Franzens-Universität Graz, des Stadtmuseums Graz sowie des Stadtarchivs Graz der (Re-)konstruktion dieses historischen Raums am Fallbeispiel der Stadt Graz im langen 19. Jahrhundert (1789-1914). Thematisiert werden dabei gleichfalls die Veränderung der Stadt im Kontext der Urbanisierung wie auch deren Wahrnehmung in schriftlichen, bildlichen und kartographischen Quellen.
+         
+         
+            Durch die Zusammenarbeit von Stadtarchiv, GrazMuseum und Universität konnte die Quellenbasis mit historischen Reiseberichten und -führern, Karten, Plänen und weiteren geographischen Darstellungen sowie Stadtansichten auf Fotografien, Druckgrafiken und Gemälden auf unterschiedlichsten Gattungen aufgebaut werden, was einen umfangreichen Blick auf das Verständnis von der Stadt Graz im 19. Jh. erlaubt. Diese transdisziplinäre Herangehensweise, welche Historische Geographie, Kunstgeschichte, Urbanistik und Digitale Geisteswissenschaften vereint, wird durch eine gemeinsame technische Grundlage in Form eines Geoinformationssystems ermöglicht. 
+         
+         
+            Als erste Herausforderung steht dabei die Erarbeitung eines gemeinsamen Datenmodells, welches die quellenspezifischen Charakteristika abbildet und die aufgenommenen Quellen gleichzeitig auf einer topographischen Ebene miteinander in Beziehung setzt. Modellierung wird dabei als „a process of signification and reasoning in action“ (Ciula / Eide, 2017  i34) angesehen. Die Theorie Modelle als
+            Icons
+             – also als bildhafte
+Vertreter anzusehen, hilft dabei Blickpunkte zu verschieben und
+Interpretationsspielräumen zu eröffnen, denn: “The context of the
+interpretation changes the sign but the sign also changes the context
+of interpretation” (i38). Fotografien und Pläne, aber auch Texte sind
+zudem an sich bildhafte Modelle, die in einem spezifischen
+Ähnlichkeitsverhältnis zum Original stehen. Ziel des Projektes ist es
+also, aus diesen singulären Modellen relationale, diagrammatische
+Modelle in Form eigener historischer, dynamisch abfragbarer Karten zu
+erzeugen, die eine, wie Kralemann und Lattmann definieren,
+“interdependence between the structure of the sign and the structure
+of the object” (Kralemann / Lattmann, 2013: 3408) aufweisen.
+         
+         Umsetzung
+         
+            Die Umsetzung kann in eine Datenaufbereitung und daran anschließend eine vertiefte Geoanalyse unterteilt werden. Abschließend werden beide Ergebnisse des Projektes in einem Webauftritt präsentiert und nachhaltig in einem Repositorium archiviert.
+         
+         a)
+                    Ein Metadatenmodell wird für die bildlichen, textuellen und kartographischen Quellen in LIDO implementiert.
+            
+         b)
+                    Historische Karten werden georeferenziert und transkribiert, d.h. die in der Entzerrung entstandenen Artefakte werden auf einen Grundplan übertragen, der auf der Basis des Franziszeischen Katasters (1824) erstellt wird. Dabei werden bauliche Veränderungen, die sich aus den späteren Kartendarstellungen ergeben, in die Grundkarte integriert. Ein in diesem Kontext aufgebauter eindeutiger Identifikator fungiert als Grundlage für die räumliche Verortung der Bild- und Textquellen.
+            
+         c)
+                    Textuelle Stadtbeschreibungen (z.B. Reiseberichte) werden transkribiert und die räumlichen Objekte (Gebiete, Wege, Plätze, Gebäude) darin in TEI-P5 mit den Referenzen aus der Basiskarte ausgezeichnet. In den Texten implizit vorhandene ‚narrative‘ Wege bzw. Abfolgen der Nennungen der Geoobjekte finden dabei ebenfalls besondere Berücksichtigung.
+            
+         d)
+                    Bildliche Darstellungen (z.B. Gemälde, Druckgraphiken, Fotos, Postkarten) werden in LIDO beschrieben, in ihrer zeitlichen und räumlichen Gestaltung verortet. Dabei werden nicht nur abgebildete Objekte, sondern auch die mögliche Standorte und Blickrichtungen einbezogen
+            
+         Auf Basis der gewonnenen Daten kann nun ein ‚Spiel mit den Räumen‘
+beginnen, welches die hermeneutische Aneignung durch die Projektteilnehmer ebenso beinhaltet wie die diagrammatische Analyse (vgl. Bauer / Ernst 2010, Rau 2013). In der Analyse wird nun die sich stets im architektonischen Wandel begriffene ‚fluide‘ Stadt stehen, wie auch das Diskursfeld Graz, welche sich in den Quellen widerspiegelt. Dabei wird nicht nur die ‚dargestellte‘ Stadt im Zentrum stehen, sondern in besonderer Weise auch diejenigen Bezirke, die gerade nicht in den Quellen genannt werden und so als ‚blinde Flecken‘ im Diskursfeld der Stadt besonderer Aufmerksamkeit bedürfen.
+            
+         Dabei stellen sich fragen wie: In wieweit sind jene Gebäude Ereignisorte der öffentlichen, aber auch einer ganz privaten Wahrnehmung? Wie sind die Eindrücke einer Stadt für Bewohnerinnen und Bewohner? Wie im Gegensatz dazu für Reisende? Wie möchte sich die Stadt nach außen repräsentieren? Was bewirken diesbezüglich Bau- und Infrastrukturmaßnahmen? Welche Bedeutung kommt Plänen einer zukünftigen Stadt zu, die niemals umgesetzt wurden? Wo finden sich widersprüchliche Wahrnehmungen – oder Raumverzerrungen?
+      
+      
+         
+            
+      Als Spielwiese dient das open-source geographisches Informationssystem ‚QGIS‘ und die ‚GAMS-Infrastruktur‘, die die Forschungsdaten (GML, TEI, LIDO) langzeitarchiviert und die Möglichkeit bietet Daten neu zu kombinieren (content models, GEOSPARQL) und zu vernetzen (RDF) und abzufragen (SPARQL, SOLR).
+    
+         
+         
+            
+               Bibliographie
+               
+                   Bauer, Matthias / Ernst, Christoph 
+	(2010): Diagrammatik. Einführung in ein kultur- und
+	medienwissenschaftliches Forschungsfeld. Bielefeld:
+	transcript.
+      
+               
+                   Ciula, Arianna / Eide, Øyvind  (2017): „Modelling in digital humanities: Sings in context“ in: Digital Scholarship in the Humanities 32 (suppl_1) i33-i46 
+        https://doi.org/10.1093/llc/fqw045
+               
+               
+                   GAMS:  Geisteswissenschaftliches Asset
+	Management System, 
+        http://gams.uni-graz.at/
+               
+               
+                   GEOSPARQL – A Geographic Query Language for
+	RDF DATA  (2012). Version 1.0 (eds.) OGC 
+        https://www.opengeospatial.org/standards/geosparql
+               
+               
+                   GML: Geographic Markup Language  (2012) – Extended schemas and encoding rules. Version 3.3.0 (eds.) OGC 
+        https://www.opengeospatial.org/standards/gml
+               
+               
+                   LIDO – Lightweight Information Describing
+	Objects  (2010). Version 1.0 (eds.) Coburn, Erin et al. 
+        http://www.lido-schema.org/schema/v1.0/lido-v1.0-specification.pdf
+               
+               
+                   Kralemann, B. / Lattmann, C.  (2013):
+	„Models as icons: modeling models in the semiotic framework of Peirce’s theory of signs“ in:  Synthese 190, 3397-3420.
+      
+               
+                   QGIS: 
+                  https://www.qgis.org/de/site/
+               
+               
+                   Rau, Susanne (2013): Räume, Wahrnehmungen, Nutzungen. Frankfurt/New York: Campus.
+               
+                   RDF – Resource Description Framework  (2014) (eds.) W3C 
+          https://www.w3.org/RDF/
+               
+               
+                   Scheuermann, Leif  (2014): “Thoughts on a Web Based Co-productive Spatio-Temporal Information System” in: Rau, Susanne / Schönherr, Ekkehard (eds.): Mapping Spatial Relations, Their Perceptions and Danymics. Cham / Heidelberg / New York: Springer 17-23.
+               
+                   SOLR: Apache Solr. (eds.)  Apache Software Foundation 
+          https://lucene.apache.org/solr/
+               
+               
+                   SPARQL 1.1 Query Language  (2013) (eds.) W3C 
+  https://www.w3.org/TR/sparql11-query/
+               
+               
+                   TEI P5: Guidelines for Electronic Text
+	  Encoding and Interchange  (2019). Version 3.6.0 (eds.) the TEI Consortium 
+          https://tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf
+               
+            
+         
+      
+   
+

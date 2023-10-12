@@ -1,0 +1,103 @@
+
+      
+         Seit März 2006 entsteht in der Hans Kelsen-Forschungsstelle (bis 2011 in Erlangen, seitdem in Freiburg i. Br.) die historisch-kritische Ausgabe der Werke des österreichischen Rechtstheoretikers Hans Kelsen (1881–1973). Mit der Aufnahme in das Programm der Akademie der Wissenschaften und der Literatur | Mainz im Jahr 2018 wurde eine weitere Arbeitsstelle für die digitale Komponente der Edition in Frankfurt a. M. etabliert.
+                Die im Mohr Siebeck Verlag erschienenen Druckbände werden nach dem 
+                Moving-Wall-Prinzip ebenfalls als digitale Edition aufbereitet und unter einer CC BY 2.0 Lizenz zur Verfügung gestellt. Fünf der geplanten 35 Bände (Jestaedt 2007–2013) sind bereits vor 2018 als Print erschienen und werden nachträglich für das Digitale aufbereitet, während zukünftig die digitale und die analoge Form der Edition 
+                single source in einer XML-basierten digitalen Editionsumgebung erarbeitet wird. Somit werden für die (Rechts-)Wissenschaften maschinenlesbare Forschungsdaten zum Werk einer zentralen rechtshistorischen Figur des 20. Jahrhunderts nachnutzbar.
+            
+         Wie bei vielen Editionsprojekten, die bisher in rein analoger Form zur Verfügung standen und nun eine „digitale Wende“ vollziehen, stellen sich für die HKW vielschichtige Herausforderungen. Diese betreffen insbesondere die Beschaffenheit der Datengrundlage und deren Aufbereitung, die Umstellung bisher etablierter Redaktionsprozesse sowie Lern- und Lehrabläufe der digitalen und der klassischen Geisteswissenschaften. In unserem Poster stellen wir dar, inwiefern etablierte Workflows und Standards der Digital Humanities für die „Hans Kelsen Werke“ eingesetzt werden und geben einen Ausblick auf den Wert für die (digitale) Rechtswissenschaft insgesamt.
+         
+            Datengrundlage und -modellierung
+            Vor Abschluss der Redaktionsumstellung in eine XML-basierte digitale Editionsumgebung bilden die Drucksatzdaten der nach bisherigem Verfahren erstellten Bände (innerhalb des Textverarbeitungsprogramms Microsoft-Word) die Datengrundlage für die digitale Edition der entsprechenden Werke Hans Kelsens. Die Datenmodellierung der Texte und der Register anhand der Guidelines der 
+                    Text Encoding Initiative (TEI) in XML orientiert sich am Basisformat des Deutschen Textarchivs und wurde um projektspezifische Anforderungen erweitert. Eine Besonderheit der Texte im Vergleich zur herkömmlichen Quellenedition besteht beispielsweise im doppelten Fußnotenapparat – demjenigen Hans Kelsens und den Anmerkungen der HKW-Editor*innen – sowie der Heterogenität der Texte an sich (Buchbesprechungen, Gesetzestexte, Aufsätze, Monografien). Auch der vielfältige Einsatz des editorischen Fußnotenapparats der HKW birgt für die Übertragung in eine semantische Kodierung der Texte kreative Möglichkeiten.
+                
+            Die Bände der HKW liefern umfangreiche und für die Kelsen-Forschung unverzichtbare Personen- und Sachregister. Die einzelnen Personenregister wurden zusammengeführt und mit entsprechenden Normdaten der 
+                    Gemeinsamen Normdatei (GND) versehen. Sie bilden ein digitales Register, welches bereits vor der endgültigen Umstellung des Redaktionsprozesses in eine digitale Editionsumgebung in die reguläre Editionsarbeit integriert wird. Ebenso wurden die Schriftenverzeichnisse der bisher publizierten Bände homogenisiert in das Literaturverwaltungssystem 
+                    Zotero
+               
+                übertragen, in der zukünftig die Literatur nicht nur verwaltet, sondern auch in die neue Arbeitsumgebung integriert wird. Eine besondere Herausforderung stellt das heterogene und komplexe – und dafür umso bedeutendere – Sachregister dar, welches perspektivisch eine Grundlage für die Erarbeitung einer Ontologie in den digitalen Rechtswissenschaften und damit einen Einstieg der Fachrichtung in das Feld der 
+                    Linked Open Data darstellen kann. Die datenbasierte Modellierung der Hans Kelsen Werke bietet somit vielfältige innovative Spielräume für die Digital Humanities hinsichtlich ihrer Wirkung auf die Rechtswissenschaften.
+                
+         
+         
+            Digitale Infrastruktur
+            In der digitalen Infrastruktur und Editionsumgebung der HKW werden etablierte Standards und Angebote aus den DH zur Anwendung gebracht und weiterentwickelt. Die zu edierenden Quellen und Forschungsdaten werden in einer Instanz der XML-Datenbank eXist-db verwaltet und über eine Integration in den oXygen XML-Editor im Author-Modus editorisch bearbeitet. Zum Einsatz kommt hierbei ein projektspezifisches Erweiterungsframework auf Basis von 
+                    ediarum sowie die eXistdb-App ediarum.db
+               
+               .
+                
+            Die Präsentation der digitalen Edition findet sich perspektivisch auf 
+                    kelsen.online, zunächst werden hier nähere Projektinformationen, die PDF der bisher analog publizierten HKW-Bände und ein kumuliertes Gesamtregister der entsprechenden Bände zur Verfügung gestellt. Die Präsentationsschicht basiert auf dem Content Management System TYPO3, in das die Forschungsdaten aus der eXist-db importiert werden und redaktionelle Arbeiten an der Website stattfinden. Neben einer ansprechenden und benutzerfreundlichen Präsentation der Forschungsdaten und korpusinterner sowie -externer Interaktion werden diese über Schnittstellen beziehbar und für weitere maschinengestützte Forschungen nutzbar sein.
+                
+            Von der digitalen Redaktionsumstellung profitiert auch die gedruckte Buchausgabe der Edition, welche weiterhin ein gleichwertiger Bestand des Projektes bleibt. So beispielsweise durch die Reduzierung bisheriger Arbeitsschritte und einheitliche Ansetzungen in den Verzeichnissen.
+         
+         
+            Ausblick
+            Die digitale Edition der Hans Kelsen Werke wird in der 25-jährigen Laufzeit des Projektes die Entwicklungen und Standards der Digital Humanities verfolgen, gegebenenfalls adaptieren und sich dem Forschungsgegenstand “Hans Kelsen” mit dem Einsatz digitaler Methoden nähern. Auch für die rechtswissenschaftliche Forschung insgesamt hoffen wir durch die Erarbeitung von Standards für die digitale Aufbereitung fachspezifischer Daten einen nachhaltigen Beitrag zu leisten.
+         
+      
+      
+         
+            
+      www.deutschestextarchiv.de/doku/basisformat/.
+    
+            
+      https://www.zotero.org/.
+    
+            
+      http://exist-db.org/exist/apps/homepage/index.html.
+    
+            
+      https://www.oxygenxml.com/.
+    
+            
+      https://github.com/ediarum.
+    
+            
+      https://typo3.org/.
+    
+         
+         
+            
+               Bibliographie
+               
+                  Jestaedt, Matthias (eds.) (2007): Hans Kelsen Werke. Band 1. Veröffentlichte Schriften 1905–1910 und Selbstzeugnisse. Tübingen: Mohr Siebeck.
+                    
+               
+                  Jestaedt, Matthias (eds.) (2008): Hans Kelsen Werke. Band 2: Veröffentlichte Schriften 1911. Tübingen: Mohr Siebeck.
+                    
+               
+                  Jestaedt, Matthias (eds.) (2010): Hans Kelsen Werke. Band 3: Veröffentlichte Schriften 1911–1917. Tübingen: Mohr Siebeck.
+                    
+               
+                  Jestaedt, Matthias (eds.) (2013): Hans Kelsen Werke. Band 4: Veröffentlichte Schriften 1918–1920. Tübingen: Mohr Siebeck.
+                    
+               
+                  Jestaedt, Matthias (eds.) (2011): Hans Kelsen Werke. Band 5: Veröffentlichte Schriften 1919–1920. Tübingen: Mohr Siebeck.
+                    
+               
+                  Reinthal, Angela (2014): „InterNationalität und InterDisziplinarität der Hans Kelsen Werke (HKW)“ in: Stolz, Michael / Chen, Yen-Chun (eds.): Internationalität und Interdisziplinarität der Editonswissenschaft (= Beihefte zu editio 38). Berlin: De Gruyter 303-314.
+                    
+               
+                  Nečaský, Martin / Knap, Tomáš / Klímek, Jakub / Holubová, Irena / Vidová-Hladká, Barbora (2013) Linked Open Data for Legislative Domain – Ontology and Experimental Data, in: Abramowicz W. (eds) Business Information Systems Workshops (= Lecture Notes in Business Information Processing 160). Berlin / Heidelberg: Springer Verlag 172–183.
+                    
+               
+                  Sahle, Patrick (2013): Digitale Editionsformen. Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels. Teil 1: Das typografische Erbe. (= Schriften des Instituts für Dokumentologie und Editorik 7). Norderstedt: BoD https://kups.ub.uni-koeln.de/5351/.
+                    
+               
+                  Sahle, Patrick (2013): Digitale Editionsformen. Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels. Teil 2: Befunde, Theorie und Methodik. (= Schriften des Instituts für Dokumentologie und Editorik 8). Norderstedt: BoD https://kups.ub.uni-koeln.de/5352/.
+                    
+               
+                  Sahle, Patrick (2013): Digitale Editionsformen. Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels. Teil 3: Textbegriffe und Recodierung. (= Schriften des Instituts für Dokumentologie und Editorik 9). Norderstedt: BoD https://kups.ub.uni-koeln.de/5353/.
+                    
+               
+                  Staab, Steffen / Studer, Rudi (2009) (eds.): Handbook on Ontologies. Berlin / Heidelberg: Springer Verlag.
+                    
+               
+                  TEI Consortium (eds.) (2019): TEI P5: Guidelines for Electronic Text Encoding and Interchange. Version 3.6.0 vom 17.07.2019. TEI Consortium. https://tei-c.org/guidelines/P5/ [letzter Zugriff 25.09.2019].
+                    
+            
+         
+      
+   
+

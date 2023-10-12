@@ -1,0 +1,24 @@
+2109	2014	This poster represents the first stage of a larger project on automated genre classification in a collection of a million volumes (the HathiTrust collection of English-language books 1700-1950). Much existing work on genre classification has focused on fine distinctions between subgenres of fiction1 or poetry.2 But in mapping a large digital library, "genre" is a term that has a range of different meanings appropriate to different scales of analysis.3 Before we can even attempt to make subtle discriminations between, say, "the sensation novel" and "detective fiction," we need to create a simpler map of the collection that identifies sections of each volume broadly as "prose fiction" or "drama," or for that matter as "publishers' ads" or a "library bookplate." At the University of Illinois, we've developed an automated workflow that we feel does this initial mapping accurately enough for distant reading. The technique was described at the IEEE Big Humanities workshop in October, 2013,4 with a brief illustration, but we haven't yet presented results across a broad range of genres. That's what this poster will do.
+
+ In an ideal world, structural features of a volume would be coded manually with TEI. But since large digital libraries collect plain text rather than TEI, mining large collections will initially require an automated strategy. Our strategy involves training an ensemble of classifiers to recognize genres and aspects of volume structure at the page level. For instance, we train classifiers to recognize "prose fiction" and "drama," but also "tables of contents," "bookplates," "date due slips," and "publishers' ads." By themselves these classifiers can achieve reasonable accuracy, but we've also found it useful to pair them with another level of machine learning: a hidden Markov model trained on page sequences that implicitly learns about the larger-scale patterns that organize page-level features into volumes. (For instance, indexes are more likely to follow nonfiction than fiction, and not at all likely to precede fiction.)
+
+
+Fig. 1: Tenfold cross-validation of page-level classification. The top seven rows are F1 measures for individual genres; the bottom two rows reflect macro- and micro- averaged F1 measures for all genres. Green bars indicate raw classification accuracy before smoothing; blue bars reflect gains from hidden Markov smoothing.
+
+A preliminary tenfold cross-validation of this technique is presented in Figure 1. This was based on relatively modest training data (101 volumes); by the time we present in Lausanne we expect to be able to increase the size of the training set by an order of magnitude, and significantly increase accuracy. But even with an F1 metric in the range of 85-90%, the technique is accurate enough to illuminate the broad outlines of book history, revealing roughly what proportion of the collection is devoted to nonfiction, or fiction, or (as illustrated in Fig. 2) publisher's advertisements. Here we've focused specifically on publishers' advertisements in volumes of fiction, and graphed their prevalence as a percentage of words in the fiction corpus.
+
+
+Fig. 2: The yearly percentage of words devoted to publishers' advertisements, in 5000 volumes of fiction selected randomly from a larger corpus of 32,200.
+
+In the poster we will include a streamgraph visualizing the relative sizes of major literary genres across time (for instance, verse drama, lyric poetry, narrative poetry, prose fiction), as well as smaller graphs that visualize the history of particular structural features within volumes (for instance, for the prose footnotes that occupy a great deal of space in eighteenth- and nineteenth-century volumes of poetry).5
+
+References
+1. S. Allison, R. Heuser, M. Jockers, F. Moretti and M. Witmore. (2011) Quantitative Formalism: An Experiment, Stanford Literary Lab Pamphlet Series. [Online]. Available: litlab.stanford.edu/?page id=255
+
+2. B. Yu. (2008) An Evaluation of Text Classification Methods for Literary Study, in Literary and Linguistic Computing, Vol. 23 (2008): 327-343.
+
+3. M. Santini. (2004) State-of-the-Art on Automatic Genre Identification, Information Technology Research Institute Technical Report Series, ITRI, University of Brighton, Jan. 2004.
+
+4. T. Underwood, M. L. Black, L. Auvil, and B. Capitanu (2013). Mapping Mutable Genres in Structurally Complex Volumes. Proceedings of IEEE Big Data 2013. arxiv.org/abs/1309.3323
+
+5. This poster reflects work by Shawn Ballard, a graduate student in English at the University of Illinois, who may be added as co-author in the final version. The project has also been supported by the Andrew W. Mellon Foundation, the National Endowment for the Humanities, and the American Council of Learned Societies.

@@ -1,0 +1,57 @@
+11739	2022	
+        
+            
+                Sumerian is a language of utmost importance to the cultural heritage of all humankind. As the very first written language, it has a vast literature spanning thousands of years (4th to 1st millenium BC) and ranges from genres as diverse as poems and songs over mythological and historical treatises, laws and letters to contracts and administrative records.
+                So far, much of this data remained underexplored and accessible to experts only. Although portals such as the Cuneiform Digital Library Initiative (CDLI) provided much of the textual data in digital form, very little of it had been translated and/or annotated, and if so, only at the level of morphological glosses (Cunningham et al., 2006; Zólyomi et al., 2008). In order to improve access to these texts for both a larger audience and machines, we developed an innovative annotation workflow (Chiarcos et al. 2018) and now provide the first syntactically annotated corpus of Sumerian, 
+                    ETCSANS: The Electronic Text Corpus of Syntactically Annotated Neo-Sumerian. Our talk describes its creation, access strategies and usage scenarios. With respect to the syntactic annotation of cuneiform languages, some progress has recently been reported for Akkadian (Gordin et al. 2020, Sahala 2021), with similar challenges in orthography and sparsity, but for Sumerian, the situation is more complicated because of a number of unusual features of the language as a linguistic isolate (Bansal et al., 2021).
+                
+                The ETCSANS corpus is the result of the project 
+                    Machine Translation and Automated Annotation of Cuneiform Languages (MTAAC, 2017-2020), and serves as a tool for the study of economy and society of the Neo-Sumerian period (2100-2000 BCE). ETCSANS complements two other corpora for Sumerian, the Electronic Text Corpus of Sumerian Literature (ETCSL, primarily Post-Sumerian), and the Electronic Text Corpus of Sumerian Royal Inscriptions (ETCSRI, all periods, for a limited domain), but these provide morphosyntactic annotations only. Prior to ETCSANS, no corpora have been published that also provide syntactic or semantic analyses for Sumerian. In order to facilitate the usability of ETCSANS for concrete research questions, we adopt a semantics-oriented approach to syntax, and to facilitate its usability beyond Assyriology, we followed the Universal Dependencies (UD). We discuss advantages and downsides of this approach and provide an overview and rationale for a number of notable cases where we had to deviate from UD conventions to account for philological and Assyriological requirements.
+                
+                Aside from its Assyriological, philological and historical relevance, we addressed (and solved) a number of typical challenges arising in DH projects, namely, the diversity and sparsity of existing data (dictionaries, morphological annotations), the limited capacities to create highly specialized annotations on a restricted budget, and the challenge to overcome technological barriers between different disciplines and infrastructures in the process. We systematically employ RDF as a middleware to integrate heterogeneous resources, automated pre-annotation, moderated crowdsourcing for quality control and the support for Linked Data as exchange and import mechanism. Machine learning also played a major role in the project, however this contribution focuses on the creation of data as a necessary prerequisite of machine learning. For this purpose, we had to resort to rule-based methods and manual refinements.
+                ETCSANS is accessible in different forms. We provide developer access for the annotated data via a public GitHub repository (
+                    ). The native format is a tabular format (CDLI-CoNLL), from which Linked Data and TEI exports are being generated. The TEI export is designed for local querying by means of the TEITOK corpus management system (Janssen 2018). All three formats can be accessed from the CDLI API along with the associated inscribed artifacts, their original transliterations, object metadata, bibliography, and visualizations. These data are available in their native formats as well as in RDF, and linked with each other. All ETCSANS-related content, code, data and documentation is open source and available from our GitHub repositories. This also includes graphical user interfaces for search, visualization and manual annotation/revision of ETCSANS data as part of the larger CDLI framework.
+                
+                With a total of 24,460 syntactically annotated texts, the ETCSANS core corpus covers about 22% of the overall Neo-Sumerian textual data. It consists of three subcorpora for which we could bootstrap syntax annotations in a semi-automated fashion, based on the domain (transaction subcorpus: 22,276 texts, 1,742,634 tokens, see Fig. 1 for an example), the possibility of annotation projection (parallel subcorpus: 1,572 texts, 46,321 tokens) or the existence of specialized morphological annotations (royal subcorpus: 612 texts, 9,133 tokens). Given the complexities of Sumerian writing and the specific nature of the Sumerian language, manual annotation focused on morphology, whereas manual syntax annotation is limited to a small evaluation corpus (11,220 tokens). The extended ETCSANS corpus contains another 47,476 texts (1,775,582 tokens), for which we provide automated annotations for morphology and named entities and a generic, rule-based annotator that exploits the explicit morphological marking of phrase structure boundaries in Sumerian morphology.
+                
+                    
+                        
+                    Fig. 1 Excerpt from a transaction text: “For 8 gan2 (~2.8 ha) [of acre] 7 gur (~2,100 l) rations and beer, first time, and for 18 gan2 (~6.5 ha) [of acre] 31.5 gur (~9,450 l), second time, for Ur-Enlilla.” (P101040)
+                
+                Overall, ETCSANS syntax annotation is largely derived from manual annotation or translations rather than directly manually created. Given the amount of data and the high degree of specialization required for doing the annotation, this is unavoidable, but from a methodological view, it presents a challenge that we would like to discuss with the wider DH audience, as we deal with (and delineate) different levels of trust and reliability, the possibilities (and limitations) for manual corrections and editorial decisions regarding the annotation, and, finally, the development of communication strategies to clarify potential and pitfalls of semiautomated annotations and their usage for future research in the humanities in a way that is transparent to scholars and laymen alike. At the time of writing, evaluation is still on-going. Preliminary results indicate that the different strategies we employed for bootstrapping annotations (two different approaches on rule-based annotation over manual morphology, annotation projection, ensemble combination of several such methods) differ greatly in the types of errors they produce, so that the focus of our current work is on developing methods to provide context-sensitive confidence scores for our annotations.
+            
+        
+        
+            
+                
+                    Bibliography
+                    Bansal, R., et al. (2021). How Low is Too Low? A Computational Perspective on Extremely Low-Resource Languages. In 
+                        Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: Student Research Workshop, 44–59. 
+                    
+                    Chiarcos, C., et al. (2018). Annotating a low-resource language with LLOD technology. 
+                        Information, 9:11, 290.
+                    
+                    Cunningham, G., et al. (2006). 
+                        The Electronic Text Corpus of Sumerian Literature. Oxford Text Archive Core Collection.
+                    
+                    Gordin, S. et al. (2020). Reading Akkadian cuneiform using natural language processing. 
+                        PloS one, 
+                        15:10, e0240511.
+                    
+                    Janssen, M. (2018). Dependency Graphs and TEITOK: Exploiting Dependency Parsing. In 
+                        International Conference on Computational Processing of the Portuguese Language, Springer, Cham
+                        , pp. 470-478.
+                    
+                    Sahala, A. (2021). 
+                        Contributions to Computational Assyriology. PhD Dissertation, University of Helsinki.
+                    
+                    Zólyomi, G., et al. (2008). 
+                        The Electronic Text Corpus of Sumerian Royal Inscriptions. URL: 
+                        , Budapest (accessed 21 April 2022).
+                    
+                
+            
+        
+    
+
+

@@ -1,0 +1,33 @@
+1. Introduction
+The Initiative for Digital Humanities, Media, and Culture at Texas A&M University received a $734,000 grant from the Andrew W. Mellon Foundation in 2012 to make machine readable 45 million pages of data1. By partnering with Gale and Proquest, eMOP will combine open source OCR (Optical Character Recognition) software and book history in order to improve the accuracy of
+
+OCR for early modern (1473-1800) texts2. The Early Modern OCR Project (eMOP) aims to publish an open source OCR workflow, improve the visibility of early modern texts by making them fully searchable3, and form a community of scholars and institutions interested in the digital preservation of these texts4. Our goal is to foster collaboration among various disciplines, and, in doing so, cultivate inter-institutional and international relationships that make possible new kinds of humanities research.
+
+2. Poster Description
+Our workflow (see images below for two early drafts of our workflow, subject to change) blends the disciplines of book history, digital humanities, textual analysis, and machine learning in order to create a corpus of keyed texts that are far more correct than is now possible with the current set of tools. These keyed texts will improve access to early modern texts that are currently only searchable through “dirty” OCR or metadata alone. The open source OCR workflow will contain, among other things, access to an early modern font database, customization guidelines for the Tesseract OCR engine, post-processing and diagnostic algorithms, and crowdsourcing correction tools.
+
+
+Fig. 1: Two versions of the eMOP workflow from October 2012 and February 2014, respectively.
+
+In addition to presenting a detailed and accurate representation of our OCR workflow for early modern texts, we intend to present the following aspects of eMOP: 
+
+Information on how to obtain the open source code for all of the tools, software, and workflows that eMOP has produced. 
+How our tools and software can be used by individual scholars, instructors, and institutions in the classroom, for an OCR project, or for personal research. 
+3. Demonstration Description
+We intend to go beyond presenting an overview of the project; instead our poster and demonstration will communicate the concrete solutions found and software available to address the "OCR problem" from a Digital Humanities perspective. To this end, we will demo our our five crowdsourcing and scholar-sourcing correction tools for conference attendees. These demonstrations of the tools will be operating in production with our eMOP OCR output of the EEBO ECCO datasets (45 million pages).
+
+The Franken+ tool, developed by Bryan Tarpley at Texas A&M, enables the creation of an “ideal” typeface using glyphs identified in scanned images of documents from the early modern period. Franken+ also exports these typefaces to a training library for the open-source OCR engine Tesseract5.
+Aletheia Layout Editor (ALE), developed by PRImA at the University of Salford, is a crowd-sourced correction tool for re-drawing regions on problematic OCR’d pages, such as Title pages, multi-columned texts, image-heavy documents, and more.
+The TypeWright software, developed by Performant Software Solutions and 18thConnect, enables users to correct the “dirty” OCR of an entire early modern document, and our partnership with ECCO allows 18thConnect to release fully corrected documents to their scholar-editors in plain text and TEI-A formats.
+The Cobre tool, developed by Dr. Anton DuPlessis and Cushing Memorial Library at Texas A&M, enables scholar-experts to compare, re-order pages, and annotate the metadata for multiple printings of documents in the eMOP dataset. 
+The Anachronaut tool, developed by a team of undergraduates and Dr. Ricardo Gutierrez-Osuna at Texas A&M, is a Facebook game that uses the power of Facebook (and many layers of user confidence testing) to correct single words and phrases.
+References
+1. Mandell, Laura. Mellon Foundation Grant Proposal: "OCR'ing Early Modern Texts." Grant Proposal. 30 Jun 2012.
+
+2. Heil, Jacob and Todd Samuelson.Book History in the Early Modern OCR Project, or, Bringing Balance to the Force. Journal for Early Modern Cultural Studies 13.4 (2013): 90-103. Web. 30 Oct 2013.
+
+3. Mandell, Laura.Digitizing the Archive: The Necessity of an 'Early Modern' Period. Journal for Early Modern Cultural Studies 13.2 (2013): 83-92.
+
+4. European Commission: The Comité des Sages.The New Renaissance: Report of the comité des sages on bringing Eu rope’s cultural heritage online. By Elizabeth Niggemann, et al. 10 Jan 2011.
+
+5. Katayoun, Torabi, Jessica Durgan and Bryan Tarpley.Early modern OCR project (eMOP) at Texas A&M University: using Aletheia to train Tesseract. Proceedings of the 2013 ACM symposium on Document Engineering. New York: ACM, 2013.

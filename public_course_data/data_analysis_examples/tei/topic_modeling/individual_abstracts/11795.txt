@@ -1,0 +1,39 @@
+11795	2022	
+        
+            The purpose of this study is to update the Hachidaishu (ca. 905–1205; about 9500 poems) dataset (Yamamoto and Hodošček 2021a, 2021b), which is already available on Zenodo/Github. We provide details on changes to 1) the data description format, 2) the Word List by Semantic Principles' labels (Kato et al. 2018), and 3) updates and item additions to the analysis program.
+                The Hachidaishū is a collection of eight anthologies of classical Japanese poetry compiled by the order of Emperors during the 300 years from the Kokinshū (ca. 905), the first anthology written in Japanese kana characters, to the Shinkokinshū (1205). The main text is based on a collection of the Nijūichidaishū created by NIJL, and the text is now distributed by both NIJL and NII (National Institute of Japanese Literature 2016). Classical Japanese poetry is not only a literary work created through singing, which is of great literary value in itself, but also a work created based on the phonology of the spoken language of the time, which is an extremely valuable research material for linguistic studies of classical Japanese.
+                The Japanese imperial anthologies of classical Japanese poetry (waka: wa=Japanese, ka=song) were composed over a period of 300 years using the same form and with the same divisions, called 'butate', allowing us to compare waka poems with each other. These anthologies are convenient for analyzing the historical changes in Japanese language. We have published the datasets on Zenodo and Github, which allow Japanese linguists and literary researchers to study them on the data analysis basis (Yamamoto and Hodošček 2021c). However, because the format used in these datasets was original, they were not generic enough for comparisons with other works or for use with publicly available tools.
+                In order to solve these problems, we updated the datasets. The updates and additions include the following items:
+            
+            
+                Replacing the current fixed-length data description format with TEI and JSON, which are general-purpose data description formats, so that they can be used by more analysis tools. The purpose of the JSON conversion is to provide a more self-describing and accessible version of the data, while that of the TEI conversion is to have a standard version of the dataset as a corpus going forward.
+                Replaced the Word List by Semantic Principles' labels (WLSP; Kato et al. 2018) from the old version to the new version to allow us to compare them with other datasets.
+                The part-of-speech (PoS) tags were previously based on the PoS numbers used in an older Japanese morphological analysis system, so we added a mapping to the Universal Dependencies tag set (17 types). This will allow us to compare lexical items, syntactic rules, and structures among different languages and works.
+                We have developed tools that can be freely used on researchers’ hardware and also provide a hosted version on Google Collaborator to allow other researchers to use and analyze these datasets. For example, basic statistics, conditional string search, and visualization are available. To these tools, we have added programs that can draw graphs using bi-gram patterns, so that the structure of the vocabulary can be easily visualized.
+                Since the general lexical set does not include proper nouns (names of people, places, etc.), we included data on pillow names and place names included in the Hachidaishū.
+                An English bilingual dataset was created, allowing for easy generation and output of English glosses when presenting at international conferences or writing international papers.
+            
+            These updates will contribute to the elucidation of the characteristics and historical evolution of Japanese poetic vocabulary in more detail.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Kato S., Asahara M., and Yamazaki, M. (2018) “Annotation of ‘Word List by Semantic Principles’ Labels for the Balanced Corpus of Contemporary Written Japanese”, in Proceedings of the 32nd Pacific Asia Conference on Language, Information and Computation, Hong Kong: Association for Computational Linguistics, pp. 247-253.
+                    
+                    
+                        Yamamoto, H. and Hodošček B. (2021a) “Hachidaishū part of speech dataset”, https://doi.org/10.5281/zenodo.4835806.
+                    
+                    
+                        Yamamoto, H. and Hodošček B. (2021b) “Hachidaishū vocabulary dataset”, https://doi.org/10.5281/zenodo.4744170.
+                    
+                    
+                        Yamamoto, H. and Hodošček B. (2021c) “Open source datasets of the Hachidaishū for the research of classical Japanese poetic vocabulary”, The 11th Conference of Japanese Association for Digital Humanities, Proceedings of JADH conference, Japanese Association for Digital Humanities, Vol. 2021, pp. 82-87, Sept.
+                    
+                
+            
+        
+    
+
+

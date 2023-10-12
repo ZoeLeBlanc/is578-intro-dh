@@ -1,0 +1,76 @@
+1994	2014	1. Introduction
+A community of Digital Humanities in Spanish and Portuguese (HD*) has been consolidating over the past few years. Due to a series of events gathering numerous colleagues and taking place in diverse latitudes, 2013 has been a turning point. A milestone was the first DíaHD, which brought together about a hundred practitioners and showed that HD scholarship is highly active and eager to build a cohesive community. The purpose of the event was “to identify and establish or improve networks and collaborative work among the community of digital humanists in Latin America, the Caribbean, and the Iberian Peninsula, as well as digital humanists in other regions of the world whose work is done in Spanish or Portuguese” (translation ours)1. Our project, MapaHD originated that day and has embraced the bilingual profile established by that event. MapaHD is an exploration of the features and intersections among those who self-identify as HD practitioners and their characteristics beyond language affiliation. In our paper, we provide insights into issues of temporal development of HD, geographic location, interdisciplinary practices and approaches, and how progressively a community of digital humanists has been taking shape. The development of MapaHD has been made public from its beginnings at mapahd.org where we have gathered visualizations and preliminary results. Simultaneously, the data collected has been used to build an interactive and exploratory map using DARIAH-DE Geo-Browser that is also available through our website.
+
+1.1. Overview
+MapaHD is a direct address to the question launched by Domenico Fiormonte, “Is there a non Anglo-American Digital Humanities, and if so, what are its characteristics?”2. In this project we have gathered and analyzed practitioners’ data that evidences not only the existence of a thriving DH community in Spanish and Portuguese languages, but more importantly what its features are. The diversity of the characteristics we have observed sheds light on the HD community’s institutional and project affiliations, area of research, geographic location, research approaches, and temporal data.
+
+1.2. Methodology
+In order to tackle these issues, we have carried out three research phases:
+
+1) Data collection gathered entirely online through a survey, answered voluntarily by 85 participants. The survey was available during a four-month period from June 10th to October 10th, 2013. Questions included gathered data on participants’ institutional, project, and disciplinary affiliations, research approaches, location, among others. The survey was distributed through mailing lists and Twitter. Links to the projects’ survey were tweeted using hashtags used by similar events and communities such as #DíaHD, #HDH2013, #DH2013, #ThatCampBaires, #HDBr, #RedHD, #arounddh, #HumanidadesDigitales, and #dhpoco. The aim of this distribution model was to catch the attention of as many participants in as many locations as possible. This approach to data collection sought to allow anybody who identified himself/herself as a digital humanist in the two languages to self-report their characteristics, rather than send out invitations to those we might consider to fall even under a “big tent” definition of digital humanities.3
+
+2) Using the available data, we built a graph database organized according to the semantic network schema in Fig 1. Rather than looking for person to person connections, this analysis sought to shed light on non-obvious and non-personal connections among participants. The links joining researchers and students among them are disciplines, approaches, work spaces, and geographic proximity. The data was subjected to frequency, central tendency, and network analysis. Several results emerged from the data contained in the database and are presented in the next section.
+
+
+Fig. 1: Database Schema.
+
+3) An interactive map visualization built on DARIAH-DE Geobrowser. This resource is a second contribution of this project to the field as it seeks to serve not only as a visualization of the data collected, but also as a reference tool. Finally, aside from providing a glimpse of the state of the field, MapaHD hopes to strengthen and expand the sense of community and connection among Spanish and Portuguese speaking digital humanists initiated by DíaHD.
+
+2. Results  
+2.1. Discipline Outlook
+More than half of the 85 participants reported working in at least two disciplines distributed as shown in Fig 2. Literary studies was the discipline most participants reported. However, out of the 56 participants who reported working on the literary fields, 32 also reported working in other disciplines.
+
+
+Fig. 2: Discipline distribution of participants.
+
+In Fig 3 we show the most common combinations of literary studies and other disciplines. Aside from the recurrence of literary studies together with other disciplines, the only other recurrent disciplinary combination was History and Visual Art. The rest were mostly unique combinations. This information confirms the fact that, not unlike DH, HD is also “a hybrid domain, crossing disciplinary boundaries and also traditional barriers between theory and practice, technological implementation and scholarly reflection”4.
+
+
+Fig. 3: Combinations between Literary Studies, the most common discipline in the database, and other fields.
+
+Our analyses offer qualitative insights as to what different disciplines might be bringing in into the mix. For example, the recurrence of interdisciplinary work attached to a “root” field of Literary studies suggests that the field is not necessarily the gravity centre of HD as has been suggested by Azofra5 but, as observed in Fig 4, a hub where other expertises converge, shedding light upon each other. In contrast, network analysis has shown that the second and third best connected disciplines are Information Sciences and History.
+
+
+Fig. 4: Network visualization showing the prominence of Literary Studies by measuring degree, and History and Information Science as the next two best connected disciplines.
+
+The relevance of these two fields in the network resides not so much in how many participants reported them, but how variably combined they are. As a matter of fact, the cluster formed around Information Sciences brings together a few other disciplines such as Education and Computer Science. Even though they have key links joining them to the rest of the network, disciplines such as Philosophy, Film and Media Studies, and Linguistics retain a certain level of isolation. From our data it is possible to see both the exposing of disciplines to other fields of knowledge, on the one hand; and on the other, how in opening up, disciplines flood other fields too. While some disciplines, by sheer numbers seem to be exercising a larger influence, connecting fields like History and Information Sciences might be providing a common foundation of porous perspectives through which these dynamics take place.
+
+2.2. Geographic Outlook
+The geographic location of MapaHD participants (Fig 5) was a foundation for the initial concept of the project. Through the interactive map visualization, we also explored the participants distribution. In total 41 cities located in 11 countries were identified (Fig 6). As a reference, this is close to 50% of the total number of countries represented in ACH membership set at 23, as Bethany Nowviskie reported via Twitter in October 20136.
+
+
+Fig. 5: Screenshot of MapaHD, built on DARIA-DE Geobrowser, showing the spread of the HD community around the world.
+
+Interestingly, close to half of the locations are found in the UK, USA, Canada, Germany, and Italy where, though common, neither Spanish nor Portuguese are official languages. Although some of the participants’ location can be seen as a ‘diaspora’, our results have showed that this is only a small portion of them (22%) and not the sole distinctive of the analyzed group.
+
+
+Fig. 6: Geographic distribution of participants.
+
+The issue of location and problems of centrality and periphery in the context of Digital Humanities have been better expressed by Domenico Fiormonte, who stresses the fact that DH have not “succeeded in either strengthening the field of humanities or putting some balance into the power relationships between humanities and computer science” 7. We believe that, as Isabel Galina proposes, this lack of balance “can also help us think about DH from a different perspective… [and] pushes the limits of our creativity and our capacity to solve problems”8.
+
+The clear ties with the Anglo-American branch of DH, and to a lesser extent with the continental European one, seem to imply that as an identifiable community HD is porous and prone to cross-polination in terms of approaches, academic practices, and language. The international spread of HD practitioners might be the cause behind the particular diversity in this community. Nevertheless, the HD community maintains a sense of cohesion that can be traced perhaps to the shared lack of visibility, institutional similarities, and linguistic coincidences – Rafael Alvarado’s “network of family resemblances”9. Furthermore, HD ties with other DH communities, both geographic and linguistic, have set up a communication channel through which approaches and projects may travel back and forth.
+
+3. Conclusions
+Much has been said about the characteristics of DH on a global scale and, especially, of the Anglo-American branch. MapaHD constitutes the first data-driven approach to the HD community and we provide insights into its disciplinary and geographical particularities. Not discussed in this abstract but included in the paper are the issues of collaboration and where it takes place, as well as an outlook of the connections among the research approaches undertaken, and the historical development of our participants’ trajectories.
+
+Endnotes
+*We use HD to distinguish the Spanish and Portuguese speaking branch of digital humanities from the Anglo-American one commonly referred to as DH.
+
+References
+1. “Día de las Humanidades Digitales 2013. Día HD 2013. Día de las Humanidades Digitales. 10 May 2013. Web. 25 August 2013. Par. 1 dhd2013.filos.unam.mx/acerca/
+
+2. Fiormonte, Domenico (2012). Towards a Cultural Critique of the Digital Humanities. Historical Social Research. Historische Sozialforschung. Vol. 37. Print. p. 59.
+
+3. Azofra, Elena. Humanidades digitales cerca del ‘Finis terrae’. MorFlog. 9 July 2013. Web. 13 Sept. 2013. http: morflog.hypotheses.org
+
+4. Flanders, Julia, Wendell Piez, and Melissa Terras (2013). Welcome to Digital Humanities Quarterly. DHQ: Digital Humanities Quarterly:. The Alliance of Digital Humanities Organizations, 2007. Web. 24 Sept. Par. 3 www.digitalhumanities.org/dhq/vol/001/1/000007/000007.html
+
+5. Nowviskie, Bethany (nowviskie). Our numbers have grown & diversified since this page was last updated: ach.org/membership/ -- 480 ACHers now hail from 23 countries. October 14th, 2013, 8:50 a.m. Tweet.
+
+6. Galina, Isabel. Is There Anybody Out There? Building a Global Digital Humanities Community. Red HD. Red de Humanistas Digitales. 19 July 2013. Web. 4 Sept. 2013. Par. 16 humanidadesdigitales.net/blog/2013/07/19/is-there-anybody-out-there-building-a-global-digital-humanities-community
+
+7. Fiormonte, Domenico (2012). Towards a Cultural Critique of the Digital Humanities. Historical Social Research. Historische Sozialforschung. Vol. 37. Print. p. 72.
+
+8. Galina, Isabel. Is There Anybody Out There? Building a Global Digital Humanities Community. Red HD. Red de Humanistas Digitales. 19 July 2013. Web. 4 Sept. 2013. Par. 16 humanidadesdigitales.net/blog/2013/07/19/is-there-anybody-out-there-building-a-global-digital-humanities-community
+
+9. Flanders, Julia, Wendell Piez, and Melissa Terras (2007). Welcome to Digital Humanities Quarterly. DHQ: Digital Humanities Quarterly:. The Alliance of Digital Humanities Organizations. Web. 24 Sept. 2013. Par. 3 www.digitalhumanities.org/dhq/vol/001/1/000007/000007.html

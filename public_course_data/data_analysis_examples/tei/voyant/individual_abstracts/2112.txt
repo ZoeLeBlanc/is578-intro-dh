@@ -1,0 +1,36 @@
+Introduction: Difficulties in Working with Handwritten Manuscripts 
+Some of historically important manuscripts, especially those written in the modern age, are hard to read due to their authors' unclear handwriting. Transcription processes for these manuscripts tend to be more time-consuming, eventually decreasing historians' productivity. When manuscripts are written in East-Asian languages such as Japanese, which have a vast number of characters, transcriptions are even harder. Because historians of the modern age face the challenge of studying a large number of documents, these difficulties can be crucial to them. 
+
+SMART-GS, a system for image-based historical studies, has been developed by Japanese historians and developers since 2006 to help historians work on such manuscripts, and has been successfully applied to six historical research projects1. It is written in Java, and runs on Windows, OS X, and Linux. Its source code is distributed on sourceforge.jp under the GPL 2.0 license2. In this paper, we will discuss the approach the SMART-GS project has taken, and its applications to historical studies of handwritten documents. 
+
+Project Background
+SMART-GS was originally developed by Susumu Hayashi for his study of the history of 19th century mathematics. It was first built for helping the analysis of the mathematical notebooks of the prominent mathematician David Hilbert. These notebooks consist of short notes, each expressing Hilbert's mathematical ideas. In order to identify the time of writing of the notes, Hayashi developed a system that supports image-and-text markup, one-to-many links between markups, search of handwritten texts, and so on. Later the system, named SMART-GS, turned out to be applicable to other historical studies and has been adopted so far by six research programs for the analysis of handwritten manuscripts. 
+
+There are a number of applications and web services which look similar to SMART-GS, such as Image-Markup-Tool3 and T-PEN4. However, they are mainly aimed at creating transcriptions or annotations for archival purposes, whereas SMART-GS is designed for a different purpose: to streamline historians' work flows, making them more productive.
+
+Supported Features
+One of the most basic features of SMART-GS is its markup system for texts and images. SMART-GS can markup an image region in various ways: selecting it with a rectangle or polygon shape, putting comments on it, drawing an arrow from one region to another, and so on (See Fig. 1). This markup information will be stored in an XML file separately from the original images. Therefore a user only has to exchange a small XML file to share his or her project with others; provided they have the same image files. In addition, it's possible to create a bidirectional and one-to-many link between any two markups. This feature enables users to make correspondences between an image region and its transcribed text. 
+
+
+Fig. 1: Markups for image and text
+
+For deciphering illegible words in manuscripts SMART-GS features an image search function. Using this feature users can easily find a word or phrase that has a similar shape to the query image (See Fig. 2). Also, SMART-GS supports adaptive-repetitive search, in which users can recursively increase the relevance of search results.
+
+
+Fig. 2: Search results for an image query "Scheler", a German philosopher's name
+
+For team-based projects SMART-GS offers resource sharing through the Internet. Metadata added on documents and their revision histories can be uploaded to and saved in the subversion-like version control server HCP (Humanities Cyber Platform), so that the project members can work together on the same documents (further cloud collaboration support is planned). 
+
+Conclusion
+Historical studies based on handwritten texts generally require considerable time and experiences. SMART-GS' features such as image-and-text markup, image search, and project sharing through the Internet, can streamline historians' workflows so that they can focus on the analysis of the content in the manuscripts. 
+
+Currently we are implementing two other features into SMART-GS: a built-in TEI editor and automatic mass transcription function. Since at present SMART-GS only supports relatively simple HTML markup for texts, the semantic richness of TEI will bring more power of expression to its markup and link system. The automatic mass transcription will be realized as an application of SMART-GS' image search function. This feature will make it much more efficient to transcribe texts to which OCR is not applicable.
+
+References
+1. SMART-GS was for the first time presented in Hayashi, S. (2007). SMART-GS Project: a tool for seaching, marking up, and linking historical documents. A talk delivered in the 3rd international symposium of Grant-in-Aid for Scientific Research Areas "Japanese Technological Innovations". sts.kahaku.go.jp/tokutei/intforumprogram_No2.php (Japanese)
+
+2. en.sourceforge.jp/projects/smart-gs/
+
+3. tapor.uvic.ca/~mholmes/image_markup/
+
+4. t-pen.org/TPEN/

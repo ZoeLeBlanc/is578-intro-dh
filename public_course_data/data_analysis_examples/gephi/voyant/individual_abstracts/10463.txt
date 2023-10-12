@@ -1,0 +1,189 @@
+
+      
+         
+            Netzwerke und Historische Epistemologie
+            Methoden der Netzwerkanalyse kommen immer stärker als heuristisches Tool zum
+          Einsatz, wenn es darum geht historische Prozesse zu beschreiben und zu
+          analysieren. Netzwerktheorie stellt hierbei eine Möglichkeit dar, um
+          systematisch Wissensstrukturen und die Formation und Transformation von
+          Wissenssystemen zu beschreiben. Methodische Ansätze können hierbei von den
+          Sozialwissenschaften, der Innovationsforschung sowie aus der Informatik und der
+          Graphentheorie übernommen werden. Zunächst machten die meisten Ansätze in der
+          historischen Forschung hauptsächlich von den qualitativen Konzepten gebrauch und
+          weniger von den quantitativen Methoden, die die Netzwerktheorie liefert. Ein
+          eindrucksvolles Beispiel zeigt sich im Werk von Irad Malkin in seinen Arbeiten
+          über die griechische Antike (Malkin 2011). Mit der verbesserten Verfügbarkeit
+          von Tools für die qualitative Analyse verändert sich diese Situation nun
+          deutlich. Die Anzahl der Fallstudien hat mittlerweile die Größe erreicht, dass
+          erste Theoretisierungen dieser Methode in der historischen Forschung unternommen
+          wurden (van den Heuvel 2015). Große Impulse gehen von der sich um http://historicalnetworkresearch.org organisierenden Gruppe aus.
+          Netzwerktheorie hat insbesondere ein großes Potential in der
+          Wissenschaftsgeschichte insbesondere der historischen Epistemologie, die
+          Entwicklung von Wissen als eine Verknüpfung von sozialen, materiellen und
+          kognitiven Wissenssystemen sieht. Diese Systeme lassen sich als Netzwerke im
+          Sinne der Netzwerktheorie verstehen. Dazu schlagen wir drei miteinander
+          interagierende Netzwerke vor: ein soziales Netzwerk, ein semiotisches Netzwerk,
+          sowie das darüber liegende epistemische Netzwerk: grob gesprochen ein Netzwerk
+          von Akteuren, ein Netzwerk der Repräsentation von Wissen, das sich in
+          materiellen Objekten oder auch kodifizierten Verfahren darstellt und schließlich
+          das eigentliche kognitive Netzwerk. Wir werden in unserem Beitrag die ersten
+          Ergebnisse zweier Fallstudien vorstellen. Dabei liegt unser Schwerpunkt weniger
+          auf den konkreten Ergebnissen, sondern darauf zu zeigen, wie sich der Prozess
+          der Übersetzung von historischen Fakten und Annahmen in netzwerktheoretisch
+          auswertbare Daten darstellt und damit die Digital Humanities dazu beitragen,
+          interdisziplinäre geisteswissenschaftliche Forschung zu ermöglichen. 
+         
+         
+            Fallstudien
+            In der ersten Fallstudie gehen wir der Frage nach, wie sich eine bestimmte
+            Wissenstradition in der frühen Neuzeit mittels gedruckter Traktate in der Zeit
+            von 1472 bis in das Jahr 1650 in ganz Europa verbreiten konnte. Es geht hierbei
+            um die mit der Sphaera des Sacrobosco (Thorndike 1949),
+            einem ursprünglich handgeschriebenen grundlegenden Text, verbundenen
+            Wissenstradition. Ursprünglich ein Text über Astronomie und Kosmologie wurde
+            dieser im Laufe seiner Editionsgeschichte immer wieder durch zusätzliche Texte
+            erweitert und umfänglich kommentiert. Es gehörte zum verbindlichen Wissenskanon
+            der Universitäten dieser Periode. In der Zeit von 1472 bis 1650 haben wir bisher
+            363 Editionen identifiziert, die in ganz Europa veröffentlicht wurden. Welches
+            sind die Voraussetzungen, die eine solche Verbreitung ermöglichten und welche
+            Wissensinhalte wurden verbreitet und wie veränderten sich diese über die Zeit?
+            Wir sehen in der Netzwerktheorie einen vielversprechenden Ansatz diese Fragen zu
+            klären. Dazu haben wir ein erstes Netzwerk von wesentlichen Akteuren, den
+            Verlegern, identifiziert, die maßgeblich für die Verbreitung des Traktats waren.
+            Von welcher Form die Interaktionen zwischen den Verlegern waren, können wir
+            bisher nur in sehr begrenztem Rahmen sicher bestimmen. Gleiches gilt für Ihre
+            Rolle in den lokalen Wissensnetzwerken, in die sie eingebunden sind. Es ist
+            jedoch möglich, Hypothesen über die Einflussbereiche aufzustellen, die die
+            Kanten in dem Netzwerk rechtfertigen. Diese Hyptohesen lassen sich mit
+            Netzwerktools in unserem Falle durch den Einsatz von Skripten in iPython (cf.
+            Pérez / Granger 2007) unter Benutzung der Pakete networkx (cf. NetworkX
+            developer team 2014) und graph-tool (cf. Peixoto) testen und modifizieren, in
+            unserem Beitrag werden wir die von uns angewandten Verfahren darstellen. Die
+            Skripte werden in Zukunft auf der Webseite des Projektes veröffentlicht werden.
+            Neben den Verlegern gibt es ein weiteres Netzwerk, das eigentliche Netzwerk der
+            Publikationen besser der Publikationsereignisse, diese stellen im Rahmen der
+            angerissenen Theorie der Wissenssysteme eine andere Kategorie dar, sie sind
+            materieller Ausdruck von Wissen, gehören damit zum semantischen Wissenssystem.
+            Auch hier stellt sich die Frage, wie diese Editionen miteinander in Beziehung
+            stehen. Offensichtlich stehen diese Beziehungen in enger Verbindung mit dem
+            Akteursnetz. Jedoch gibt es auch andere Beziehungen, wie zum Beispiel die in den
+            Editionen enthaltenen zusätzlichen Traktate und Kommentare, oder Abweichungen
+            von Vorgängern. Auch hier sind wir bisher nur in der Lage Hypothesen
+            anzustellen, aber auch hier zeigen uns Methoden der Netzwerktheorie bereits
+            jetzt Wege auf, wie diese sich überprüfen lassen. Schließlich ist die
+            entscheidende Frage: Welches Wissen wird durch die Traktate in welcher Form
+            vermittelt und wie trägt dieses zur Wissensorganisation in der frühen Neuzeit
+            bei? Wie oben beschrieben war das Traktat über die Sphaera ursprünglich ein
+            Traktat über Astronomie und Kosmologie, die Ergänzungen umfassen jedoch einen
+            wesentlich erweiterten Wissensbereich. Die Themenfelder, um die das Traktat
+            erweitert wurden, umfassen Felder der mathematischen Astronomie,
+            Kalenderberechnungen, die Benutzung und in einigen Bereichen konkrete Anleitung
+            für die Konstruktion von astronomischen Instrumenten, nautische Astronomie und
+            Geographie, Kartographie, Meteorologie, Arithmetik, Geometrie, der Konstruktion
+            und des Gebrauchs von mathematischen Instrumenten zur Ausführung arithmetischer
+            Berechnungen, Astrologie, Literatur, angewandte Optik und Mechanik. Die Antwort
+            auf die Frage, welche Inhalte an welchen Stellen in die einzelnen Editionen
+            eingeflossen sind, gibt Aufschlüsse über die Veränderung der frühneuzeitlichen
+            Wissensstruktur. Auch hier kann Netzwerktheorie nach unserer Überzeugung einen
+            wesentlichen Beitrag dazu leisten, schlüssige Antworten aufzufinden. Wir
+            untersuchen dazu welche Ko-Autoren in welchen Traktaten genannt werden,
+            insbesondere Clavius und Pedro Nuñes, und wie sich diese Subnetze ausprägen.
+            Diese Koautoren stehen jeweils für bestimme Wissensgebiete geben also ein Indiz
+            dafür welche Wissensbereich sich neu etablierten. Auch für diese Analysen haben
+            wir Skripte entwickelt, die helfen diese Netzwerke zu visualisieren und deren
+            Charakteristika zu untersuchen. Erste Ergebnisse der Netzwerkanalyse lassen
+            Rückschlüsse auf die Stabilität des Wissensnetzwerkes zu. Wir können im
+            wesentlichen drei Phasen deutlich identifizieren: eine noch instabile radiale
+            Verbreitung, eine relative lange Phase der Stabilität und schließlich eine Phase
+            der Reduktion. 
+            
+               
+               
+                  Abb. 1: Minimaler verbundener Graph der Editionen der
+            Sphaera. Kanten spiegeln hier die chronologische Ordnung wieder. Dieser Graph
+            legt die Randbedingungen für die weiter Analyse der Einflussbereiche der
+            Editionen fest. Blaue Punkte stellen die lateinischen Editionen, rote die
+            Editionen in lokalen Sprachen dar.
+            
+            
+               
+               
+                  Abb. 2: The graph shows the role of editions where Clavius
+            is given as one co-author (squares). The color indicates the publishers which
+            are clustered by city. Only the places where Clavius is a co-author have labels.
+            The big unnamed cluster in the middle is Paris.
+            
+            Die zweite Fallstudie widmet sich einem anderen Bereich. Dem epistemischen
+              Netzwerk der Allgemeinen Relativitätstheorie. Kurz umrissen geht es hierbei um
+              die Analyse des Prozesses, der dazu führte, dass die ART in der Nachkriegsphase
+              von einem Randproblem zu einem zentralen Ankerpunkt der theoretischen Physik
+              wurde. Dieser Prozess wurde auch als "Renaissance der allgemeinen Relativität"
+              (Will 1983) bezeichnet. Aus einem zersplitterten lose gebundenen Netzwerk von
+              Einzelpersonen wird in dieser Zeit ein stabiles Netzwerk, dass von Institutionen
+              getragen wird. Darauf aufbauend entwickelt sich ein Netzwerk materieller
+              Kommunikation in Form von neuen Journalen und Konferenzreihen, sowie eine neue
+              disziplinäre Sprache, die das Wissen über die ART kodifizierte. Die ART
+              entwickelte sich so zur unangefochtenen Theorie von Raum und Zeit (Blum 2015).
+              Zum jetzigen Zeitpunkt haben wir ein Netzwerk aus über 500 Akteuren
+              identifiziert und ihre Beziehungen klassifiziert. Mit Methoden der
+              Netzwerkanalyse können wir zeigen, welche Akteure über die Zeit an Bedeutung
+              gewonnen und verloren und die Formation von Subclustern zeigen. Auch hier werden
+              wir in unserem Beitrag im wesentlichen darauf eingehen, wie der konkrete Prozess
+              der Umwandlung von historischen Fakten und Hypothesen in netzwerktheoretische
+              Konzepte als Anwendung der DH in der historischen Forschung vollzogen wird.
+              Insbesondere werden wir auf die Überlegungen und Schwierigkeiten eingehen,
+              sinnvolle Verknüpfungen zwischen den Akteuren zu definieren und insbesondere zu
+              Gewichten, d. h. in der Sprache der Netzwerktheorie, weak and strong ties zu
+              idenfizieren. Von besonderer Bedeutung ist auch hier die Frage des Umgangs mit
+              der dynamischen Entwicklung des Netzwerkes. Wie können diese so visualisiert
+              werden, dass der historisch Forschende daraus Rückschlüsse ziehen kann, wie
+              können diese Tools so zur Verfügung gestellt werden, dass sie auch direkt durch
+              den Forscher nutzbar sind? In unserem Fall haben wir dazu unterschiedliche
+              Ansätze verfolgt, erneut die Umsetzung mittels iPython, und die Visualisierung
+              dann in Gephi und Cytoscape.
+            
+               
+               
+                  Abb. 3: Visualization of the network of collaborations of
+              scientists who worked on general relativity in the post-war period. Node size is
+              proportional to the degree centrality. The color of the nodes is a
+              representation of betweenness centrality (from lighter to darker). 
+            
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Drucker, Johanna (2013): "Performative Materiality
+                and Theoretical Approaches to Interface", in: Digital
+                Humanities Quartely 7,1 http://www.Digitalhumanities.org/dhq/vol/7/1/000143/000143.html
+                [letzter Zugriff 03. September 2015]. 
+               
+                  Edwards, Charlie (2012): "The Digital Humanities and
+                Its Users", in: Gold, Matthew K. (ed.): Debates in the
+                Humanities
+                  http://dhdebates.gc.cuny.edu/debates/text/31 [letzter Zugriff 03.
+                  September 2015]. 
+               
+                  Kirschenbaum, Matthew (2008): Mechanisms. New Media and the Forensic Imagination. Cambridge: MIT
+                  University Press.
+               
+                  Lauer, Gerhard (2013): "Die digitale Vermessung der
+                  Kultur. Geisteswissenschaften als Digital Humanities", in: Geiselberger,
+                  Heinrich / Moorstedt, Tobias (eds.): Big Data. Das
+                  neue Versprechen der Allwissenheit. Berlin: Suhrkamp. 
+               
+                  Manovich, Lev (2001): Language of
+                  New Media. Cambridge: MIT Press.
+               
+                  Warwick, Claire (2012): "Studying users in digital
+                  humanities, in: Warwick, Claire / Terras, Melissa / Nyhan, Julianne (eds.):
+                  Digital Humanities in Practice. London: Facet
+                  Publishing. 
+            
+         
+      
+   
+

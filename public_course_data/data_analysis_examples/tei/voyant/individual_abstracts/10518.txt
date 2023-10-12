@@ -1,0 +1,54 @@
+
+      
+         
+            Einleitung 
+            Dieser Vortrag präsentiert Analysen und Visualisierungen eines derzeit im Aufbau befindlichen Corpus an graphischen Romanen (oder „Graphic Novels“, einer Unterform des Medium Comics) und stellt den für die Annotation dieser multimodalen Erzählform entwickelten Editor vor, der zeitgerecht zur DHd-Jahrestagung in Leipzig für den Download zur Verfügung stehen wird. Während sich die Analyse literarischer Text-Corpora bereits seit mehreren Jahren im Fokus der Digitalen Geisteswissenschaften befindet, stehen Bestrebungen zur Erforschung visueller Erzählformen wie Theater, Comics, Film, Fernsehen, sowie Computerspiele, oft eine Randerscheinung in den DH dar und vor einer Reihe ungelöster Herausforderungen. Diese bestehen sowohl in technischer - etwa in Bezug auf die automatisierte Erkennung visueller Objekte und die Annotation komplexer Bild-Text- Kombinationen – als auch in methodischer Hinsicht. Angesichts der Dominanz visueller Erzählformen seit dem frühen 20. Jahrhundert, sowie noch verstärkt in der Gegenwartskultur, stellt dies eine außerordentliche Forschungslücke dar. 
+            In einer kurzen Einleitung wird der Vortrag den derzeit im Aufbau befindlichen Corpus sowie die Zielsetzungen der vom deutschen Bundesministerium für Bildung und Forschung (BMBF) geförderten Nachwuchsgruppe „Hybride Narrativität: Digitale und Kognitive Methoden zur Erforschung Graphischer Literatur“ erläutern. Darauf folgt die Vorstellung der für die Annotation entwickelten XML-Beschreibungssprache und des graphischen Editors. Im zweiten Teil des Vortrages stellen wir einige Methodenkombinationen vor, die es ermöglichen sollen, die Bild-­Text-­Verbindungen multimodaler Kulturformen, sowie deren Beitrag zur spezifischen Narrativität graphischer Romane, zu verstehen. 
+         
+         
+             GNML-Editor: Werkzeuge zur (Halb-)Automatischen Annotation 
+            Während die Analyse von Textcorpora oft bereits automatisiert möglich ist, bleibt eine automatische Analyse multimodaler Narrative derzeit eine Zukunftsvision. Im Fall von Comics und gezeichneter, sowie aus anderen Gründen nicht perspektivischer, Bilder gelingt die Objekt-Identifikation (etwa die Wiedererfassung eines vorab bekannten Charakters) nur mit viel Trainingsaufwand und recht hohen Fehlerzahlen. Auch bei der automatischen Erkennung Handschriften-ähnlicher Fonts versagen übliche Standard-OCRs. Daher führt der Weg über eine Annotation des Bild-­Materials mit anschließender Analyse der Annotationen und Bild-Daten. Hierzu wird im Rahmen unseres Forschungsprojektes die XML-Sprache „Graphic Narrative Markup Language“ (GNML) entwickelt, welche die visuellen und textuellen Aspekte Graphischer Literatur beschreibt. GNML baut auf der „Text Encoding Initiative“ (TEI), und damit auf etablierten Standards, auf. Basierend auf den GNML-Annotationen können die in der graphischen Literatur enthaltenen Texte analysiert werden, Auswertungen der Bildinhalte vorgenommen, oder deren Kombination analysiert werden. 
+            Um die Fehleranfälligkeit bei der Annotation gering zu halten wird ein graphischer GNML-Editor entwickelt. Dieser unterstützt Fachwissenschaftler bei der effizienten Annotation mit Mechanismen wie Autovervollständigung von Charakter-Namen oder integrierten Rechtschreibprüfungen. Durch eine halb-automatische Erfassung wird die Annotation beschleunigt und so erst der Aufbau eines größeren Corpus ermöglicht. Teil des Editors ist eine Erkennung der Panel-Strukturen, sowie Werkzeuge, welche die Eckpunkte einer Sprechblase oder eines Textkästchens automatisch ermitteln. Ergänzt werden diese Werkzeuge um eine effiziente Charakter-Erfassung.
+            Da sich die Konzepte des Editors (visuelle Objekte mit graphischen und textuellen Eigenschaften) nicht nur auf Comics beschränken sondern auch auf andere Bild-Text- Kombinationen anwendbar sind, lässt sich der Editor auf eine Obermenge solcher Formate erweitern. Diese Generalisierung erlaubt es, eine XML-basierte Annotationssprache zu hinterlegen und automatisch einen entsprechenden Editor zu generieren, sowie Daten in der hinterlegten Annotationssprache zu erfassen. Damit kann der Editor auch in der Annotation anderer multimodaler Medien Anwendung finden.
+         
+         
+             Analysen und Visualisierungen eines Corpus Graphischer Romane
+            Der zweite Teil des Vortrags stellt Ansätze vor, die exemplarisch für einige strukturelle Bestandteile von Comics (und insbesondere des graphischen Romans) Methoden der Bild- und Textanalyse miteinander verbinden. Für die digitale Literaturwissenschaft entwickelte Zugänge wie das Topic Modelling sind für solche Kulturformen aufgrund ihrer Bildlastigkeit nur von beschränkter Relevanz. Ansätzen zur computergestützten Bilderkennung und der Analyse großer Bildmengen fehlt hingegen bisher oft das narrative Erkenntnisinteresse. Erschwerend kommt noch hinzu, dass die Konzepte der Narratologie meist für literarische Texte entwickelt wurden und den Spezifika multimodalen Erzählens häufig nicht gerecht werden.
+            In einer ersten Analyse des derzeit noch in Erstellung befindenden Gesamtkorpus
+          von rund 300 graphischen Romanen vergleichen wir die historische Entwicklung der
+          visuellen und Textebenen ihrer Buchcovers. Dazu gehören sowohl grammatische und
+          semantische Auswertungen der Romantitel mit Hilfe des Stanford Parser (vgl. De
+          Marneffe et al. 2006), als auch der farblichen und stilistischen Gestaltung. In
+          einem weiteren Schritt widmen wir uns detaillierteren Analysen eines ersten
+          Sub-Corpus, der aus den zehn meist zitierten Titeln des Gesamtcorpus besteht.
+          Zwar lassen sich aufgrund der geringen Zahl hier keine Genre-Vergleiche
+          anstellen, oder stichhaltig historische Entwicklungen nachverfolgen.
+          Beispielhaft können allerdings narrative Entwicklungen dargestellt werden: so
+          kombinieren wir Netzwerkanalysen der Figuren mit deren visueller Prominenz und
+          zugeordnetem Textanteil, sowie mit stilistischen Analysen dieser Figurentexte.
+          Weiters stellen wir, im Anschluss an Arbeiten von Lev Manovich (vgl. u. a.
+          Manovich 2012), explorative Visualisierungen aller Einzelseiten im Gesamtverlauf
+          der Erzählung vor.
+            Abschließend wendet sich der Vortrag der Frage zu, ob die Text-Bild-Verbindungen
+            multimodaler Narrative mit solchen Methodenkombinationen aus der digitalen
+            Literatur- und Bildwissenschaft zu erfassen sind, oder sich durch die
+            Operationalisierung alternativer Ansätze aus der intermedialen Narratologie,
+            etwa Rick Altmans Konzept des „Following“ (vgl. Altman 2008), eigenständige
+            Analysemethoden entwickeln lassen.
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Manovich, Lev (2012): „How to Compare One Million Images?", in: Berry, David (ed.): Understanding Digital Humanities Basingstoke: Palgrave Macmillan 249-278.
+               
+                  Altman, Rick (2008): A theory of narrative. Columbia University Press.
+               
+                  De Marneffe, Marie-Catherine / MacCartney, Bill / Manning, Christopher D. (2006): „Generating Typed Dependency Parses from Phrase Structure Parses“, in: Proceedings of Language Resources and Evaluation (LREC) 6: 449-454.
+            
+         
+      
+   
+

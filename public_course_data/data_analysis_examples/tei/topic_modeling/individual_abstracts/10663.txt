@@ -1,0 +1,142 @@
+10663	2017	
+      
+         In meinem Vortrag setze ich mich mit der Frage auseinander, welchen Beitrag die Datenbank TInCAP („Tübingen Interdisciplinary Corpus of Ambiguity Phenomena“), die bei der Tagung der Digital Humanities im deutschsprachigen Raum 2016 in Leipzig vorgestellt wurde und die der Sammlung und Annotation von Ambiguitätsbelegen dient, zur Erforschung des Phänomens „Ambiguität“ leisten kann. Den Mehrwert, den TInCAP durch die innovative interdisziplinäre Annotation und die Zusammenführung von Belegen in einer durchsuchbaren Datenbank liefert, werde ich am Beispiel ambiger idiomatischer Ausdrücke in kinderliterarischen Texten illustrieren. 
+         Die Datenbank TInCAP entsteht im Rahmen des interdisziplinären Graduiertenkollegs 
+                GRK 1808 Ambiguität – Produktion und Rezeption (
+                www.ambiguitaet.uni-tuebingen.de; Arbeitsgruppe TInCAP: Wiltrud Wagner, Lisa Ebert, Jutta Hartmann, Gesa Schole, Susanne Winkler) mit dem Zweck, Ambiguitätsbelege aus allen beteiligten Disziplinen zu sammeln und zu annotieren. Hauptziele sind dabei die interdisziplinäre Auseinandersetzung mit dem Phänomen Ambiguität durch die Erstellung eines gemeinsamen Annotationsschemas sowie die nachhaltige Speicherung und Zugänglichmachung der Datensammlung für die nationale und internationale Forschungsgemeinschaft (in Kürze über die Homepage des GRK 1808).
+            
+         Auch wenn alle an diesem Projekt beteiligten WissenschaftlerInnen das Interesse am Phänomen der Ambiguität verbindet, das hier als Doppel- oder Mehrdeutigkeit in ihren verschiedensten Formen verstanden wird, so sind die zu annotierenden Belege doch sehr divers: Durch die Vielzahl der beteiligten Disziplinen unterscheiden sich die Belege hinsichtlich Medium (aktuell: Schrift, Audio, Bild, Video) und Sprache (aktuell: Deutsch, Englisch, Französisch, Hebräisch, Italienisch, Latein, Spanisch, Griechisch), aber auch Umfang. Im Bestreben, eine gemeinsame Datenbank aufzubauen, sahen wir uns demnach zwei großen Herausforderungen gegenüber gestellt: (1) Der Erarbeitung einer disziplinenübergreifenden Terminologie, die einerseits präzise, andererseits aber nicht an das Vokabular einer der Disziplinen gebunden ist, und (2) der Entwicklung eines interdisziplinären Annotationsschemas, das – trotz der notwendigen Komplexitätsreduktion – den Anforderungen der einzelnen Disziplinen genügt und für alle Beteiligten profitabel ist. 
+         Das Ergebnis ist ein Annotationsschema, das die folgenden fünf Punkte fokussiert:
+         
+            
+               Communication level: Auf welcher Ebene der Kommunikation wird die Ambiguität annotiert? Für literarische Texte wird zum Beispiel zwischen der Ebene der fiktiven Charaktere, der Ebene des/der Erzähler(s) und der Ebene des Autors und Lesers unterschieden.
+                
+            
+               Strategic or non-strategic production and/or perception: Wird die Ambiguität strategisch produziert? Wird die Ambiguität strategisch rezipiert?
+                
+            
+               Level of Trigger and Range: Zu annotieren ist, auf welcher Ebene die Ambiguität ausgelöst wird und bis zu welcher Ebene sie relevant ist. Die Ebenen für Auslöser und Wirkung der Ambiguität bilden dabei ein Größenverhältnis ab, analog zum menschlichen Körper, bei dem sich größere Elemente aus kleineren zusammensetzen (z.B. die Ebene 
+                    Subelement, die u.a. Phoneme, Grapheme und Morpheme umfasst; die Ebene 
+                    Element, die u.a. Worte umfasst; usw.). 
+                
+            
+               Type of Paraphrase Relation: In welchem Verhältnis stehen die möglichen Lesarten zueinander? Sind sie voneinander abgeleitet oder völlig unabhängig voneinander?
+                
+            
+               Phenomenon: Welches Phänomen steht mit der vorliegenden Ambiguität im Zusammenhang? Hier kann und soll disziplininternes Vokabular zur Anwendung kommen, um die Einbindung in den jeweiligen Forschungskontext zu gewährleisten.
+                
+         
+         Zusätzlich ist die Verknüpfung von Annotationen möglich, zum Beispiel, wenn ein Beleg auf verschiedenen Kommunikationsebenen (unterschiedlich) annotiert wird.
+         Die Nachhaltigkeit der gesammelten Daten wird durch eine Kombination verschiedener Faktoren gewährleistet: Das von uns entwickelte XML-Schema ist soweit möglich TEI-konform, es wurde für die inhaltliche Annotation der Daten um ein eigenes Schema erweitert. Der gesamte Korpus bzw. Subkorpora können im XML-Format im- und exportiert werden. Diese XML-Dateien werden in Kooperation mit Clarin-D Tübingen im Rahmen der universitären Infrastruktur langfristig gespeichert, katalogisiert und mit PIDs zugänglich gemacht. Teilkorpora können dabei ebenso exportiert werden wie das Gesamtkorpus. Bei Video-, Audio- und Bilddateien halten wir uns an die üblichen Standards für nachhaltige Datenformate (nicht-proprietäre Formate, Formate mit gutem Nachnutzungswert).
+         Nach der allgemeinen Vorstellung der Datenbank wende ich mich im zweiten Teil des Vortrags der Frage zu, was die Datenbank im Hinblick auf konkrete Fragestellungen leistet. Die von mir in die Datenbank eingebrachten Ambiguitätsbelege entstammen zum größten Teil meiner Dissertation, die einen interdisziplinären Beitrag zur Ambiguitätsforschung leistet: Der linguistische Teil der Arbeit untersucht, wie idiomatischen Ausdrücken das Potential zur Ambiguität inhärent sein kann. An der Schnittstelle zur Literaturwissenschaft zeigt die Arbeit, wann und wie idiomatische Ausdrücke in Interaktion mit unterschiedlichen Kotexten ihr Ambiguitätspotential entfalten. Am Beispiel von kinderliterarischen Texten wird schließlich dargestellt, wie die aus dieser Interaktion resultierende Bewusstmachung von Ambiguität als sprachspielerisches Potential für literarische Texte produktiv gemacht werden kann. (a)-(c) stellen typische Beispiele aus meinem Korpus dar, die jeweils annotierten Stellen sind fett markiert:
+         (a)
+         
+            One day he went to King Big-Twytt, who was eating a bathtub of roast chicken, custard and chips, and said: 'King - I want a licence to catch ye dragons.'
+            
+         'What?' said King Twytt. 'But ye dragons are dangerous! They eat ye farm animals.'
+         'So do we,' said Sir Nobonk, 'and no one says we're dangerous.'
+         'Yea, very well,' said King Twytt, 'I will give you a licence, but 
+                be it on your own head.'
+            
+         So Sir Nobonk strapped the licence to his head.
+         Sir Nobonk had been in many wars. Usually […]
+         (Spike Milligan: 
+                Sir Nobonk and the terrible, awful, dreadful, naughty, nasty Dragon, 1982)
+            
+         
+            
+            (b)
+            
+         
+            Draw the drapes
+             when the sun comes in.
+            
+         read Amelia Bedelia. She looked up. The sun was coming in. Amelia Bedelia looked at the list again. "Draw the drapes? That's what it says. I'm not much of a hand at drawing, but I'll try."
+         So Amelia Bedelia sat right down and she drew those drapes.
+         (Peggy Parish: 
+                Amelia Bedelia,1963.)
+            
+         (c)
+         Tom ging auf den frierenden König zu. „Ich bin gekommen, um mein Versprechen einzulösen“, sagte er und warf die Satteltasche auf den Tisch.
+         König Knöterich schaute ungläubig auf die Tasche. „Hast du mir etwa ein Paar warme Handschuhe mitgebracht?“
+         „Nein, Herr König“, antwortete Tom. „Etwas viel Kostbareres. Ich habe für Euch den goldenen Dings, äh, Kelch erobert.“
+         „Aahhh! Oohhh!“, hallte es durch den Saal.
+         „Ihr wollt wohl den König 
+                auf den Arm nehmen“, sagte Friedrich von Edelstein.
+            
+         „Ich fürchte, mit den vielen Umhängen und Mützen ist mir der König zu schwer“, grinste Tom.
+         (Bernd Schreiber: Ritter Tollkühn und der goldene Dings, 2010.)
+         Die Annotation meiner Beispiele mit TInCAP ermöglicht die Sichtbarmachung von Aspekten, die bei der reinen linguistischen oder literaturwissenschaftlichen Analyse möglicherweise verborgen bleiben. Besonderes Gewicht kommt dabei der Möglichkeit zu, Ambiguitäten auf mehreren Kommunikationsebenen zu annotieren und die resultierenden Annotationen zu verknüpfen. Dies möchte ich anhand von Beispielen wie (a)-(c) illustrieren und mich dabei auf folgende Phänomene konzentrieren:
+         
+            
+               strategische vs. nicht-strategische Produktion/Rezeption: In den untersuchten kinderliterarischen Texten erfolgt meist die Produktion auf der innersten Ebene (Ebene der Figuren) nicht strategisch, auf der äußersten Ebene (Ebene des Autors) jedoch strategisch. 
+                
+            
+               Typ der Ambiguitätsverwendung: Sehr häufig wird in den untersuchten kinderliterarischen Texten die Ambiguität auf der innersten Ebene nicht erkannt, auf der äußersten Ebene muss jedoch eine semantische Reanalyse erfolgen, wodurch die Ambiguität sichtbar gemacht wird.
+                
+            
+               Erste Lesart (phrasal vs. kompositional): Die erste (und damit oftmals einzige) Lesart auf der innersten Ebene ist sehr häufig die kompositionale. Auf der äußersten Ebene ist es jedoch die phrasale Lesart, die primär verarbeitet wird, woraus die Notwendigkeit der semantischen Reanalyse resultiert.
+                
+         
+         Diese Phänomene, die erst durch die Annotation mit TInCAP und durch entsprechende Suchabfragen sichtbar werden, zeigen das Potential, das diese Datenbank innerhalb eines Projekts entfaltet. In einem abschließenden Ausblick möchte ich darüber hinaus auf den interdisziplinären Nutzen der Datenbank verweisen, der im Rahmen des GRK 1808 bereits zum Tragen kommt, insbesondere in der Vergleichbarkeit, die über Medien hinweg geschaffen wird.
+      
+      
+         
+            
+               Bibliographie
+               
+                  Hartmann, Jutta / Sauter, Corinna / Schole, Gesa / Wagner, Wiltrud / Gietz, Peter / Winkler, Susanne (2016): 
+                        TInCAP – ein interdisziplinäres Korpus zu Ambiguitätsphänomenen. Posterpräsentation,
+                        in:
+                        DHd 2016: Modellierung - Vernetzung - Visualisierung.
+                    
+               
+                  Hartmann, Jutta / Ebert, Lisa / Schole, Gesa / Wagner, Wiltrud / Winkler, Susanne (eingereicht): 
+                        „Annotating Ambiguity Across Disciplines: The Tübingen Interdisciplinary Corpus of Ambiguity Phenomena“, 
+                        in: Bauer, Matthias / Zirker, Angelika (eds.): 
+                        Strategies of Ambiguity.
+                    
+               
+                  Hartmann, Jutta / Ebert, Lisa / Schole, Gesa / Wagner, Wiltrud / Winkler, Susanne (in Vorbereitung): 
+                        TInCAP User Manual.
+                    
+               
+                  Klein, Wolfgang / Winkler, Susanne (eds.) (2010): 
+                        Ambiguität. Zeitschrift für Literaturwissenschaft und Linguistik 40 (158). 
+                        Stuttgart: Metzler.
+                    
+               
+                  TEI Consortium (eds.): 
+                        Guidelines for Electronic Text Encoding and Interchange. [6.4.2015]. 
+                        http://www.tei-c.org/P5/.
+                    
+               
+                  Wagner, Wiltrud (in Vorbereitung): 
+                        Idioms and Ambiguity in Context: Compositional and Phrasal Readings of Idiomatic Expressions. 
+                        Dissertation. Tübingen.
+                    
+               
+                  Winkler, Susanne (eds.) (2015): 
+                        Ambiguity: Language and Communication. 
+                        Berlin: de Gruyter.
+                    
+               
+                  Winter-Froemel, Esme / Zirker, Angelika (2010): 
+                        „Ambiguität in der Sprecher-Hörer-Interaktion. Linguistische und literaturwissenschaftliche Perspektiven“, 
+                        in: Klein, Wolfgang / Winkler, Susanne (eds.): 
+                        Ambiguität. Zeitschrift für Literaturwissenschaft und Linguistik 40 (158). 
+                        Stuttgart: Metzler 76–97.
+                    
+               
+                  Winter-Froemel, Esme / Zirker, Angelika (2015): 
+                        „Ambiguity in Speaker-Hearer-Interaction: A Parameter-Based Model of Analysis“, 
+                        in: Winkler, Susanne (eds.): 
+                        Ambiguity: Language and communication. 
+                        Berlin: de Gruyter 283–339.
+                    
+            
+         
+      
+   
+
+

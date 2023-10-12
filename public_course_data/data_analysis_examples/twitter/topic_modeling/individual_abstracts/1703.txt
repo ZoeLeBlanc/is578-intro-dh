@@ -1,0 +1,57 @@
+1703	2013	Introduction
+Rankings of academic articles and journals have been used in most disciplines, although concerns and objections about their use have been raised, particularly when they affect appointments, promotions and research grants. In addition, journal rankings may not represent real research outcomes, since low-ranking journals can still contain good work. Arts and humanities scholars have raised additional concerns about whether the various rankings accommodate differences in cultures, regions and languages. Di Leo (2010) wrote that “journal ranking is not very useful in academic philosophy and in the humanities in general” and one reason is the “high level of sub-disciplinary specialization”. Additionally, Di Leo notes there is “little accreditation and even less funding” in the humanities when compared with business and sciences.
+
+In a Nature article entitled, “Rank injustice”, Lawrence (2002) notes that the “Impact factor causes damaging competition between journals since some of the accepted papers are chosen for their beneficial effects on the impact factor, rather than for their scientific quality”. Another concern is the effect on new fields of research. McMahon told The Chronicle of Higher Education, “Film studies and media studies — they were decimated in the metric because their journals are not as old as the literary journals. None of the film journals received a high rating, which is extraordinary” (quoted by Howard 2008).
+
+Although the Australian government dropped rankings after complaints that they were being used “inappropriately”, it will still offer a profile of journal publications that provides an “indication of how often a journal was chosen as the forum of publication by academics in a given field” (Rowbotham 2011). Despite concerns over rankings, educators and researchers agree there should be a quality management system. By publishing their results, researchers are not just talking to themselves. Research outcomes are for public use, and others should be able to study and measure them. However, the questions are how can we measure the research efforts and their impact, and can we get an early indication of research work that is capturing the research community’s attention. A second question is whether measures appropriate for one research area also can be applied to publications in a different area. In this study, we seek initial insights on these questions by using data from a social media site to measure a real-time impact of articles in the digital humanities.
+
+Research Community Article Rating (RCAR)
+Citation analysis is a well-known metric to measure scientific impact and has helped in highlighting significant work. However, citations suffer from delays that could span months or even years. Bollen, et al., (2009) concluded that “the notion of scientific impact is a multi-dimensional construct that cannot be adequately measured by any single indicator”. Terras (2012) found that digital presence in social media helped to disseminate research articles, and “open access makes an article even more accessed”.
+
+An alternative approach to citation analysis is to use data from online scholarly social networks (Priem and Hemminger 2010). Scholarly communities have used social reference management (SRM) systems to store, share and discover scholarly references (Farooq et al 2007). Some well-known examples are Zotero [1] , Mendeley (Henning and Reichelt, 2008) and CiteULike [2] . These SRM systems have the potential to influence and measure scientific impact (Priem et al., 2012). Alhoori and Furuta (2011) found that SRM is having a significant effect on the current activities of researchers and digital libraries. Accordingly, researchers are currently studying metrics that are based on SRM data and other social tools. For example, Altmetrics [3] was defined as “the creation and study of new metrics based on the social web for analyzing and informing scholarship”. PLOS proposed article-level metrics (ALM) [4] that are a comprehensive set of research impact indicators that include usage, citations, social bookmarking, dissemination activity, media, blog coverage, discussion activity and ratings.
+
+Tenopir and King (2000) estimated that scientific articles published in the United States are read about 900 times each. Who are the researchers reading an article? Does knowing who these researchers are influence the article’s impact? Rudner, et al., (2002) used a readership survey to determine the researchers’ needs and interests. Eason, et al. (2000) analyzed the behavior of journal readers using logs.
+
+There is a difference between how many times an article has been cited and how many times it has been viewed or downloaded. A citation means that an author has probably read the article, although this is not guaranteed. With respect to article views, there are several viewing scenarios such as intended clicks, unintended clicks or even a web crawler. Therefore, the number of views has hidden influential factors. To eliminate the hidden-factors effect, we selected the articles that researchers had added to an academic social media site. In this study, we ranked readers based on their education level. For example, a professor had a higher rank than a PhD student, who in turn had a higher rank than an undergraduate student.
+
+Zotero’s readership statistics were not available to the public, and in CiteULike, the most cited articles in Literary and Linguistic Computing (LLC) were shared by few users. Therefore, we were unable to use either system’s data. Instead, we obtained our data from Mendeley, using its API [5] . We measured the research community article rating (RCAR)using the following equation:
+
+
+RCAR uses the following quantities:
+
+
+Citations, Readership and RCAR
+We looked at seven digital humanities journals that were added to Mendeley and also mentioned in Wikipedia [6] . Of the seven journals, Google Scholar had an h5-index for only two journals: Digital Creativity (h5-index = 7) and LLC (h5-index = 13). We calculated the RCAR and compared the top-cited LLC articles with Mendeley readerships, as shown in Table 1. The number of citations were significantly higher than the number of Mendeley readerships for LLC (p-value>0.05).
+
+
+Table 1:
+Google citations, Mendeley readerships and RCAR for LLC
+
+We investigated how the digital humanities discipline is different from other disciplines. We compared LLC with a journal from a different area of research, Library Trends, which had a similar h5-index. Library Trends received more citations and readerships than LLC. Three of its top articles also had more Mendeley readerships than citations, whereas LLC only had one such case. However, there was no significant difference between Library Trends citations and readerships. Next, we tested the Journal of the American Society for Information Science and Technology (JASIST) and the Journal of Librarianship and Information Science (JOLIS). We found that JASIST and JOLIS readerships of articles published in 2012 were higher than the citations with significance difference. This indicates that computer, information, and library scientists are more active in academic social media site than digital humanities researchers. By active we mean that they share and add newly published articles to their digital library.
+
+Citations and altmetrics
+In order to better understand different socially-based measures, we compared LLC articles using altmetrics and citations. We used an implementation of altmetrics called Altmetric that gave “each article a score that measures the quantity and quality of attention it has received from Twitter, Facebook, science blogs, mainstream news outlets and more sources”. We found that most of the articles that received social media attention were published during the last two years. A number of articles that were published four or more years ago were exceptions to this finding. These older articles had received at least four citations, as shown in Table 2. We also found similar correlations with articles in Digital Creativity.
+
+Finally, we compared readerships and Altmetric. We found no significant difference between LLC citations of articles published in 2012 and readerships. However, we found a significant difference between Altmetric and citations (p<0.05) for articles that were published in 2012. This shows that the researchers who are interested in digital humanities are more active in general social media sites (e.g. Twitter, Facebook) than academic social media sites (e.g. Mendeley).
+
+
+Table 2:
+Altmetric score and citations to LLC articles
+
+In this paper we describe a new multi-dimensional approach that can measure in real-time the impact of digital humanities research using academic social media site. We found that RCAR and altmetrics can quantify an early impact of articles gaining scholarly attention. In the future, we plan to conduct interviews with humanities scholars, to better understand how these observations reflect their needs and the standards in their fields.
+
+References
+Alhoori, H., and R. Furuta (2011). Understanding the Dynamic Scholarly Research Needs and Behavior as Applied to Social Reference Management. TPDL’11 Proceedings of the 15th international conference on Theory and practice of digital libraries. Berlin Heidelberg: Springer. 169–178.
+Bollen, J., H. Van de Sompel, A. Hagberg, and R. Chute (2009). A principal component analysis of 39 scientific impact measures. PloS one. 4(6). e6022.
+Eason, K., S. Richardson, and L. Yu (2000). Patterns of use of electronic journals. Journal of Documentation. 56(5): 477–504.
+Farooq, U., Y. Song, J. M. Carroll, and C. L. Giles (2007). Social Bookmarking for Scholarly Digital Libraries. IEEE Internet Computing. 11(6): 29–35.
+Henning, V., and J. Reichelt (2008). Mendeley — A Last.fm For Research? In 2008 IEEE Fourth International Conference on eScience. IEEE. 327–328.
+Howard, J. (2008). New Ratings of Humanities Journals Do More Than Rank They Rankle. The Chronicle of Higher Education. http://chronicle.com/article/New-Ratings-of-Humanities/29072 (Accessed 5 March 2013).
+Lawrence, P. A. (2002). Rank injustice. Nature. 415(6874): 835–6.
+Di Leo, J. (2010) Against Rank. Inside Higher Ed. http://www.insidehighered.com/views/2010/06/21/dileo (Accessed 5 March 2012).
+Priem, J., and B. M. Hemminger (2010). Scientometrics 2.0: Toward new metrics of scholarly impact on the social Web. First Monday. 15(7).
+Priem, J., C. Parra, H. Piwowar, P. Groth, and A. Waagmeester (2012). Uncovering impacts: a case study in using altmetrics tools. Workshop on the Semantic Publishing (SePublica 2012) at the 9th Extended Semantic Web Conference.
+Rowbotham, J. (2011). End of an ERA: journal rankings dropped. The Australian. http://www.theaustralian.com.au/higher-education/end-of-an-era-journal-rankings-dropped/story-e6frgcjx-1226065864847 (Accessed 5 March 2013).
+Rudner, L.M., J. S. Gellmann, and M. Miller-Whitehead (2002). Who Is Reading On-line Education Journals? Why? And What Are They Reading? D-Lib Magazine. 8(12).
+Tenopir, C., and D. W. King (2000). Towards Electronic Journals: Realities for Scientists, Librarians, and Publishers. Washington, D.C.: Special Libraries Association.
+Terras, M. (2012). The impact of social media on the dissemination of research: results of an experiment. Journal of Digital Humanities. 1(3): 30–38.

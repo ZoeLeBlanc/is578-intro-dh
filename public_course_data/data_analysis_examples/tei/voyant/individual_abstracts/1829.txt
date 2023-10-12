@@ -1,0 +1,25 @@
+1. Introduction
+
+Reading comprehension of historical materials is one of important elements in historical study. The results of the reading comprehension should be encoded as texts; however, in Japanese historical study amount of the texts is a few rather than of digital images. Almost encoded texts are not shared and there are no rules for text structuring. 
+In the study due to structuring encoded texts automatically and sharing the texts among researchers, we developed a text encoding support system for pre-modern Japanese historical materials, especially Japanese medieval period. The features of our system are follows: web-based system, automatic text structuring, text editing, text sharing and support for reading the characters in the materials. Our system doesn’t have and manage any material’s catalogues. We suppose that the system uses a ready-made system to search catalogue. Particularly, we use “Catalogue database of holding materials”1 (called “HICAT”) in Historiographical Institute the University of Tokyo.
+2. Our System
+
+2.1. Basic Methods
+
+Our system has 2 methods; search method and authoring method. The search method allows a user to search for images, texts and annotations. An annotation assignment is one of important work in encoding for research of Japanese history. Our system can deal with following 2 annotation types: marginal note and format note. In the study we defined that a marginal note is a description of “a result of reading comprehension or research” and disappear in the material. Examples of marginal note are personal name, location name, correction and so on. Format note indicates descriptive pattern for strings (e.g. erasure, divide note,…) or lines (address, title, subject,…).
+Editing the texts and the annotations can be supported by the authoring method. Using the authoring method, the system starts text structuring automatically as soon as a user edit a text. If the text editing is finished and the text is committed, then new version of the text is created. A version is identified by a user ID, modified time and image ID (as URI). A user can use the previous version and the versions of other users. If the user edits other user’s version, the new version will be created. The new version takes over all annotations in original version and can be edited freely. Therefore, the method of text reuse never violates other user’s text.
+2.2. Attempt of converting into TEI
+
+The system can output XML document as the result of text encoding. The structure is useful only in our system, because the structure is specialized in the system. We think an encoded text should be outputted in a general format when the text is used outside our system. Because TEI P52 is “de facto standard” of text encoding in Humanities, we attempted convert our text into TEI P5. We carefully treat the expression of the line and the annotation in the conversion, because in our system text is represented as a set of lines and annotations. For the expression of the marginal notes as personal name, place name, and correction, we use <persName>, <placeName>, and <choice> respectively.
+Moreover, we consider automatical assignment of opener and closer in the text. We analyze a form pattern of Japanese historical materials, and the assignment is realized by the basis of the results.
+2.3. Reading Support Method
+
+Since the encoding a historical material is very hard, the researcher of Japanese history is needed training or practice for a long time. In order to support the encoding, we provide a suggestion method for support of inputting character. When a user input string in a text field on our system, the suggestion method presents a candidate character which appears after current inputted string. The method is realized by character n-gram model. A learning data of the n-gram is constructed by texts extracted from fulltext database of Historiographical Institute. In order to improve the precision of the suggestion method, we use Modified Kneser-Ney Smoothing method3. We experiment for the confirming the performance of the suggestion method. As the experimental result, the hit ratio whether a set of candidate character in top 20 includes a correct is 0.72. The ratio might seem to low, but it can be effectively used in the actual work.
+3. Conclusion
+
+Our system has been developed for managing texts which are represented as results of reading comprehension. We believe that the most important element of the study is to provide an environment in which researchers of Japanese history can encode texts pleasantly and comfortably. In order to achieve it, we'd like to improve the expressiveness of texts and performance of methods in the system.
+References
+
+1. Databases of HI. wwwap.hi.u-tokyo.ac.jp/ships/.
+2. TEI guidelines. www.tei-c.org/Guidelines/P5/.
+3. F. James (2000), Modified Kneser-Ney Smoothing of n-gram Models, Technical report, RIACS Technical Report 00.07, www.riacs.edu/navroot/Research/TRpdf/.

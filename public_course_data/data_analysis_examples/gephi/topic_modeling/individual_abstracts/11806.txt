@@ -1,0 +1,357 @@
+11806	2022	
+        
+            
+                Abstract
+                
+                This paper analyzes 1206 inscribed bronzes excavated from different archaeological sites. Treating the phenomenon that bronzes with different clan signs appeared in the same tomb as a kind of co-occurrence, the co-occurrence networks of clan signs in two sequential time periods (1300 BC – 1046 BC and 1046 BC – 900 BC) are constructed to examine the interrelationship of the clans. The
+                 strong heterogeneity of the networks in different periods shows the huge impact of the Zhou conquest of Shang, which is called “the Great Transformation from Shang to Zhou” by historians and archaeologists.
+            
+            
+                Keyword Chinese bronze inscription; 
+                clan sign; co-occurrence; historical network analysis
+            
+            
+                1
+                BACKGROUND
+            
+            One well-recognized cultural trait of ancient China was the existence of the clan system, which can be traced to the Shang dynasty and has deeply affected Chinese history for three thousand years.
+            Due to a lack of historical documents, bronze inscriptions are 
+                of great value to the study of clans in early China. During the late Shang dynasty (1300 BC – 1046 BC), the most common form of bronze inscriptions was a single graph functioning as a kind of emblem designating the clan name of the ancestor to whom the bronze was dedicated. After the Zhou people conquered the Shang dynasty, this cultural custom still lasted for a period of time among the Shang people in the early Western Zhou dynasty (1046 BC – 900 BC). 
+            
+            According to our current estimate, there are about 6800 bronzes with the so-called clan signs. 1200 of them are unearthed, while the rest are unprovenanced. A thorough investigation of these materials can increase our understanding of the clan system and fill the gaps in the early history of China.
+            
+                
+                    
+                
+                
+                    
+                
+            
+            
+                Figure 1. Bronzes with different clan signs unearthed from Shigushan(石鼓山) M1
+            
+            
+                2
+                RELATED WORK
+            
+            Scholars have been studying the clan-sign inscriptions since the Song dynasty. However, traditional humanities researchers mostly focused on the paleographical study of clan signs or the historical origin of each clan. The inter-clan associations haven’t been paid enough attention. 
+             Archaeological discoveries in recent decades provided new clues. Bronze objects belonging to one clan were often found to be buried in tombs of another clan, which can be attributed to gift-giving, marriage, exchange or pillage. Bronzes with different clan signs excavated from the same tomb can reflect the interrelationships between the tomb occupant’s clan and other clans.
+             Some scholars have realized the potential of such investigation (Barnard, 1986; Sun, 2017). But their attempts were all limited to case studies, not from a macro perspective. Using methods of Social Network Analysis, we can discuss the clan system and social structure of early China from a whole new perspective. 
+            
+                3
+                DATA AND METHOD
+            
+            Our data were extracted from 
+                A Compendium of Inscriptions and Images on Bronzes from the Shang and Zhou Period (商周青銅器銘文暨圖像集成) by manual, including 1206 unearthed bronzes with clan signs. Among them, 684 bronzes were excavated from 219 tombs of the late Shang dynasty, while 522 bronzes were excavated from 185 tombs or hoards of the Western Zhou dynasty. The collected data underwent text preprocessing including tokenization, standardization and manual proofreading. 309 clan signs were recognized on these bronzes. 
+            
+            The following methods were then applied:
+            (1) Frequency analysis of clan signs from the two periods was conducted to show the rise or decline of different clans, since the bronzes were thought to be the symbol of wealth and status.
+            (2) Treating the archaeological phenomenon that different clan signs appeared in the same tomb as a kind of co-occurrence, the co-occurrence networks of clan signs in the two periods (1300 BC – 1046 BC and 1046 BC – 900 BC) were constructed to examine the interrelationships of these clans.
+            
+                
+            
+            
+                Figure 2. Clan sign frequency in the Shang and Western Zhou dynasty
+            
+            
+                
+            
+            
+                
+                Figure 3. Co-occurrence network of clan signs in the late Shang dynasty (1300 BC – 1046 BC)
+            
+            
+                
+            
+            
+                Figure 4. Co-occurrence network of clan signs in the early Zhou dynasty 
+                (1046 BC – 900 BC)
+            
+            
+                
+                Table 1. Clan groups in the late Shang dynasty (1300 BC – 1046 BC)
+            
+            
+                
+            
+            
+                Table 2. Clan groups in the early Zhou dynasty (1046 BC – 900 BC)
+            
+            
+                
+            
+            
+                4
+                RESULTS AND DISCUSSION
+            
+            
+                4.1 
+                
+                Changes of the networks over time
+            
+            The network in the early Western Zhou dynasty (1046 – 900 BC) is denser than the network in the late Shang dynasty (1300 – 1046 BC), although the size of nodes in the two networks are almost the same. More frequent co-occurrences of clan signs reflect more frequent associations between clans. 
+            
+                Table 3. Metrics of the co-occurrence networks of clan signs
+            
+            
+                
+                    
+                        Period
+                    
+                    Clan signs
+                    Edges
+                    
+                        Density
+                    
+                    
+                        Average degree
+                    
+                    
+                        Average weighted degree
+                    
+                    
+                        Average path length
+                    
+                    
+                        Modularity
+                    
+                
+                
+                    
+                        
+                        1300 – 1046 BC
+                    
+                    
+                        137
+                    
+                    
+                        261
+                    
+                    
+                        0.028
+                    
+                    
+                        3.810
+                    
+                    
+                        7.737
+                    
+                    
+                        3.079
+                    
+                    
+                        0.708
+                    
+                
+                
+                    1046 – 900 BC
+                    
+                        130
+                    
+                    
+                        428
+                    
+                    
+                        0.051
+                    
+                    
+                        6.585
+                    
+                    
+                        13.631
+                    
+                    
+                        2.657
+                    
+                    
+                        0.526
+                    
+                
+            
+            
+                4.2 Clan groups in different periods
+            
+            Using the Louvain algorithm with a resolution at 1.0, we partitioned the two networks separately into different communities, which can be seen as the clan groups. We laid out the network with 
+                the Yifan Hu algorithm and used different colors for different groups (Figure 3 and 4). Clans of the same group had closer connections.
+            
+            Besides, we used the Kulczynski distance (Cha, 2007; Shang, 2021) to
+                 measure the similarity between groups in different periods. There is no similarity score higher than 0.2, proving that the heterogeneity of the two networks is very strong.
+            
+            
+                Table 4. Kulczynski similarity between the clan groups in different periods
+            
+            
+                
+                    
+                    
+                        Group 1
+                    
+                    
+                        Group 2
+                    
+                    
+                        Group 3
+                    
+                    
+                        Group 4
+                    
+                    
+                        Group 5
+                    
+                    
+                        Group 6
+                    
+                    
+                        Group 7
+                    
+                
+                
+                    
+                        Group A
+                    
+                    0.042
+                    0.091
+                    0.091
+                    0
+                    0.072
+                    0.099
+                    0
+                
+                
+                    
+                        Group B
+                    
+                    0.053
+                    0.111
+                    0.111
+                    0
+                    0
+                    0
+                    0.126
+                
+                
+                    
+                        Group C
+                    
+                    0.056
+                    0
+                    0
+                    0.085
+                    0.170
+                    0
+                    0
+                
+                
+                    
+                        Group D
+                    
+                    0.060
+                    0.063
+                    0
+                    0
+                    0
+                    0
+                    0.133
+                
+                
+                    
+                        Group E
+                    
+                    0
+                    0.142
+                    0.071
+                    0
+                    0
+                    0.125
+                    0
+                
+                
+                    
+                        Group F
+                    
+                    0
+                    0.159
+                    0
+                    0
+                    0
+                    0
+                    0
+                
+                
+                    
+                        Group G
+                    
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                
+            
+            Cultural and political changes from the late Shang to the early Western Zhou dynasty is called “the Great Transformation from Shang to Zhou” by some scholars (Wang, 1923). With methods of network analysis, we examined this traditional topic from a new angle and displayed it in a visual way. The results showed us how deeply the Zhou conquest of Shang changed the inter-clan associations and the entire clan system of the Shang people.
+             For future work, we plan to build a hyper-network with three different types of nodes (tombs, bronzes and clan-sign inscriptions) to reveal more historical details, which can not only increase our understanding of the clan system but also contribute to the study of burial custom in early China.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Bastian, M., Heymann, S. and Jacomy, M. (2009). Gephi: An Open Source Software for Exploring and Manipulating Networks. 
+                        Proceedings of the International AAAI Conference on Web and Social Media, 3(1): 361-62.
+                    
+                    
+                        
+                        Barnard, N. (1986). A New Approach to the Study of Clan-sign Inscriptions of Shang. In Chang, K. C. (ed), 
+                        Studies of Shang Archaeology. New Haven: Yale University Press, pp. 141-206.
+                    
+                    
+                        Cha, S.-H. (2007). Comprehensive Survey on Distance/Similarity Measures Between Probability Density Functions. 
+                        International Journal of Mathematical Models and Methods in Applied Sciences, 1(4): 300-307.
+                    
+                    
+                        Fei, J. C. H. and Liu, T.-J. (1982). The Growth and Decline of Chinese Family Clans. 
+                        The Journal of Interdisciplinary History, 12(3): 375-408.
+                    
+                    
+                        He, J. (2009). 
+                        Studies of Clan Inscriptions on Bronzes in the Shang and Zhou Dynasty. Jinan: Qilu shushe.
+                    
+                    
+                        Liu, J., Wang, Z. and Xin, Y. (2013). The Excavation of the Western Zhou Tombs at Shigushan in Baoji, Shaanxi. 
+                        Wenwu, 2: 4-54.
+                    
+                    
+                        Painter, D. T., Daniels, B. C. and 
+                        
+                        Jost, J. (2019). Network Analysis for the Digital Humanities: Principles, Problems, Extensions. 
+                        Isis, 110(3): 538-54.
+                    
+                    
+                        Rawson, J. (1985). Late Western Zhou: A Break in the Shang Bronze Tradition. 
+                        Early China, 11: 289-96.
+                    
+                    
+                        Sun, Y. (2017). 
+                        Inscribed Bronzes, Gift-giving and Social Networks in the Early Western Zhou: A Case Study of the Yan Cemetery at Liulihe. In 
+                        Shaughnessy, E. C. (ed), 
+                        Imprints of Kinship: Studies of Recently Discovered Bronze Inscriptions from Ancient China. Hong Kong: The Chinese University Press, pp. 47-70.
+                    
+                    
+                        Shang, W. (2021). The Aristocratic Social Network in the Eastern Jin Dynasty (317-420 C.E.) [Panel discussion]. Historical Network Research in Chinese Studies. (Online conference)
+                    
+                    
+                        Wang, G. (1923). Institutional Change in the Yin and Zhou Dynasties. In Wang, G., 
+                        Guantang Jilin. Shanghai: Wucheng Jiangshi kanben.
+                    
+                    
+                        Wu, Z. (2012). 
+                        A Compendium of Inscriptions and Images on Bronzes from the Shang and Zhou Period. Shanghai: Shanghai guji chubanshe.
+                    
+                
+            
+        
+    
+
+

@@ -1,0 +1,80 @@
+1. Introduction
+Discourse analysis has for the past half century been a staple of the text-based historical and social sciences. Part and parcel of the ‘linguistic turn’ of the 1960s, French discourse analysis was furthermore one of the first disciplines to embrace computational text processing when Michel Pêcheux developed a computer program to identify ideological processes in textual corpora 1. Steeped in contemporary linguistic theory, Pêcheux and his team sought an automated method for uncovering hidden ideological meanings in text corpora. That same year, Michel Foucault’s L’Archéologie du savoir broadened the conception of ‘discourse’ and of the underlying power politics at play in its formation 2. Diverging significantly with Pêcheux, Foucault’s analytical model of ‘archaeology’ brought with it a less strictly-linguistic approach to the discursive. By “loosening the embrace [...] of words and things”, discourses are understood “as practices that systematically form the objects of which they speak” 3.
+
+This expanded notion of discourse would go on to exert a strong influence on French historical studies, and in particular, on the historiography of the French Enlightenment and Revolutionary periods, as is evident in the work of François Furet, Lynn Hunt or Keith Baker 456. More recently, Sophia Rosenfeld and Dan Edelstein have re-introduced the specifically linguistic elements of discourse analysis back into the historian’s and literary scholar’s toolbox, most notably through the analytical use of historical and linguistic databases 78.
+
+With the rapid growth of digital text collections, a revisiting of Pêcheux’s earlier notion of an ‘Automatic Discourse Analysis’ approach would seem warranted, particularly given recent developments in information retrieval such as topic modeling 9. This paper is thus an attempt at reconciling the computational and the discursive, using topic modeling to uncover Enlightenment discourses in the Encyclopédie of Diderot and d'Alembert. Moreover, Foucault’s concept of archaeology is used to justify topic modeling’s ‘bag of words’ analytical model, as it frees us from exclusive interest in language structure, and what that structure conveys, and orients us more towards the association of the various ideas or ‘topics’ that form a discourse.
+
+2. Topic Modeling as Discourse Analysis
+Topic modeling is a machine learning approach that was originally designed as a way to classify large amounts of text with minimal human intervention 10. David Newman and Sharon Block have furthermore demonstrated through their use of pLSA (Probabilistic Latent Semantic Analysis) that such unsupervised algorithms can provide a unique overall picture of the contents of a corpus by organizing the data in a manner that gives researchers an objective and wholly original perspective on the texts being analyzed 11. Of course, categorizing texts with no human interaction is not something humanists can accept without question, and this critical point forms the basis of our previous experiments with supervised classification algorithms such as Naive Bayes and Vector Space 1213.
+
+For this project, we employ the Latent Dirichlet Allocation (LDA) algorithm as it is built upon the important premise that documents, however focused, are never about one single topic, but are the result of multiple topics bound together in a single text unit 14. Consequently, the documents analyzed by this algorithm will be identified by a unique signature: a distribution of topics that represents the variety of things discussed in them. As these clusters of words do not necessarily map onto what humanists consider a ‘topic’ or theme, we judge their coherence based less on their thematic consistency and more as the representation of a particular discourse, where closely related concepts are used together in a given context. One could imagine, for instance, finding a discourse that never seems to be the main subject of any document, but that nevertheless runs through a significant number of them.
+
+3. Use Case: Topic Modeling the Encyclopédie
+As a use case, we have chosen to examine one the Enlightenment’s exemplary texts, the Encyclopédie of Diderot and d’Alembert 15. Our aim here is to use LDA to go beyond the disciplinary boundaries of the editors’ original classification scheme, which was designed (along with the cross-references) to connect articles amongst themselves across the whole work, but in reality did little to provide guidance to its readers. The physical structure of the text, which caused articles to be read in relative isolation from others, made obtaining a full dialogic perspective of any given class or article unrealistic. By using topic modeling as a discourse analysis tool we aim to highlight each article’s unique discursive makeup. This will allow us to generate a more transversal view of the encyclopaedia and its contents. Whereas David Blei has asked: “What is the likely hidden topical structure that generated my observed documents?” 16; we likewise ask, “what are the non-obvious discourses than span across multiple disciplines in the Encyclopédie?”
+
+From a methodological perspective, we are using the well-known machine learning toolkit MALLET with several Python wrap-arounds 17. Since our goal is to uncover discourses across the entire Encyclopédie, we settled on a relatively low number of topics (between 280 and 360) compared to the total number of classes of knowledge (2,900), but this number was consistent with our previous machine classification experiments 18. Once our topic model was generated, we stored the results in a SQLite table, along with all available metadata. We then wrote a web interface to visualize this database and run queries against the original metadata.
+
+Using the above interface we were able to identify many of the Encyclopédie's disciplinary vocabularies in our topic lists, which were verified using article metadata. Not surprisingly, the ‘chemistry’ topic was found most in chemistry articles, the ‘botany’ topic in botanical articles, mathematics in mathematics, etc. What interests us, however, are topics that are both distinct in nature -- i.e., identifiable with a particular ‘discourse’ -- and that span multiple disciplinary boundaries. Mapping these discourses through the various classes and articles in which they are prevalent leads to a greater understanding of the dialogic and discursive elements at play in the seemingly innocuous encyclopaedic classification system.
+
+The topic we have identified with the discourse ‘droit naturel’, for instance, is present in more than 60 grammar articles, almost double that of its own class (Figure 1).
+
+
+Fig. 1: Topic #56: "Droit Naturel"
+
+Among the top grammar articles we find the small unsigned article ‘Inviolable’ that has since been attributed to Diderot. In it, alongside the grammatical definition of the term, we find a usage example that reads: “La liberté de conscience est un privilege inviolable” (8:864) -- a reference that subtly places freedom of thought amongst other ‘natural’ and unalienable rights. We find a similar treatment in the article ‘Supplanter’, which contains a thinly-veiled condemnation of tyranny as an unnatural state of governance.
+
+Other classes function in much the same way as Grammar, allowing the philosophes to smuggle controversial opinions into articles of a seemingly neutral scope. By tracing the presence of various discourses in an inter-disciplinary manner we can begin to uncover the various subversive, discursive, and ideological practices in play over the entirety of the Encyclopédie. The discourse around morality, for instance, is found in no less than 94 articles from the ‘géographie ancienne’ class (Figure 2).
+
+
+Fig. 2: Topic #227: "Morale"
+
+Diderot is here again exemplary in his discursive acrobatics. Whilst describing a tribe of ancient Thracians in the article ‘Dranses’, he quickly turns the discussion towards moral relativism (in a move the prefigures his later work, Le Supplément au voyage de Bougainville), with the assertion that: “Ce n'est pas la nature, c'est la tyrannie qui impose sur la tête des hommes un poids qui les fait gémir & détester leur condition” (5:106).
+
+A similar deployment of the discourse around ‘le culte religieux’ -- a subject on which the encyclopédistes were forced to tread lightly -- can be found in the more than 100 articles labeled as ‘histoire moderne’ (Figure 3).
+
+
+Fig. 3: Topic #242: "Culte Religieux"
+
+The article ‘Schooubiak’, for instance, is another unsigned (but later attributed) article by Diderot, in which he describes an Islamic sect that practices an unusual form of religious tolerance. This seeming incongruence with the accepted cultural stereotypes of the time allows Diderot to raise the issue of religious intolerance thus using the sect as a proxy for the philosophes themselves, and condemning those who would oppose them: "les prêtres étant les mêmes par-tout, il faut que la tolérance soit détestée par-tout" (14:778). 
+
+As we have seen above, many of these encyclopaedic discourses were deployed subversively in order to move the narrative of Enlightenment forward, and indeed, the discursive nature of the Enlightenment in France has recently been brought to light 19. By extending the reach of our topic modeling approach to other Enlightenment texts we can begin to identify the discursive practices of texts and authors on an even greater scale and with a greater level of systematicity. As a philosophic war machine, as well as a contemporary reference work, the Encyclopédie is an ideal starting point for this sort of work. Many of the discourses we find therein may have been lost to the modern reader through the classification process itself, and still others may prove useful in uncovering interdisciplinary connections that would have otherwise gone unnoticed.
+
+References
+1. Michel Pêcheux (1969), Analyse automatique du discours, Paris: Dunod.
+
+2. Michel Foucault (1989), L'Archéologie du savoir, Paris: Gallimard, (1969) [English translation: The Archaeology of Knowledge, London: Routledge].
+
+3. Foucault (1989), p. 54.
+
+4. François Furet (1978), Penser la Révolution française, Paris: Gallimard.
+
+5. Lynn Hunt (1984), Politics, Culture and Class in the French Revolution Berkeley: University of California Press.
+
+6. Keith Michael Baker (1990), Inventing the French Revolution: Essays on French Political Culture in the Eighteenth Century Cambridge: Cambridge University Press.
+
+7. Sophia Rosenfeld (2001), A Revolution in Language: The Problems of Signs in Late Eighteenth-Century France, Stanford: Stanford University Press.
+
+8. Dan Edelstein (2009), The Terror of Natural Right: Republicanism, the Cult of Nature, and the French Revolution Chicago: University of Chicago Press.
+
+9. For a thorough introduction and discussion of topic modeling for humanistic research, see the special issue of the Journal of Digital Humanities edited by Scott Weingart and Elijah Meeks (2012): Journal of Digital Humanities Vol. 2, No. 1 Winter [journalofdigitalhumanities.org/2-1/].
+
+10. David M. Blei, Andrew Y. Ng, and Michael I. Jordan (2003), Latent Dirichlet Allocation, Journal of Machine Learning Research 3 (4–5): 993–1022.
+
+11. David J. Newman and Sharon Block (2006), Probabilistic Topic Decomposition of an Eighteenth-Century American Newspaper, Journal of the American Society for Information Science and Technology 57(6): 753–67.
+
+12. Russell Horton, Robert Morrissey, Mark Olsen, Glenn Roe, and Robert Voyer (2009), Mining Eighteenth Century Ontologies: Machine Learning and Knowledge Classification in the Encyclopédie, in: Digital Humanities Quarterly 3.2 Spring.
+
+13. Charles Cooney, Russell Horton, Mark Olsen, Glenn Roe, and Robert Voyer (2008), Hidden Roads and Twisted Paths: Intertextual Discovery using Clusters, Classiﬁcations, and Similarities, Digital Humanities 2008, eds. Lisa Opas-Hänninen, Mikko Jokelainen, Ikka Juuso, and Tapio Seppänen, Univeristy of Oulu, Finland: 93-4.
+
+14. Blei et al. (2003).
+
+15. All data and references are drawn from the ARTFL digital edition of the Encyclopédie, developed by the University of Chicago's ARTFL Project: [encyclopedie.uchicago.edu].
+
+16. David Blei (2013), Topic Modeling and Digital Humanities, Journal of Digital Humanities 2.1.
+
+17. See [mallet.cs.umass.edu/].
+
+18. Horton et al. (2009).
+
+19. Dan Edelstein (2010), The Enlightenment: A Genealogy Chicago: University of Chicago Press.

@@ -1,0 +1,169 @@
+
+        
+            In this contribution, we investigate to what extent data from one digital scholarly edition project (
+                Dehmel digital
+                
+                     https://www.slm.uni-hamburg.de/germanistik/forschung/forschungsprojekte/dehmel-digital.html
+                ) can be used to fine-tune a large-scale language model, which was pre-trained for the purposes of another project (
+                The Complete Works of Uwe Johnson
+                
+                     https://www.bbaw.de/en/research/uwe-johnson-werkausgabe-the-complete-works-of-uwe-johnson
+                ). We discuss the opportunities and practical limitations of such an attempt dealing with differences in the language properties of the material that was used to pre-train the transferred model and the material that is applied to fine-tune this model for the specific NER task. As part of this, we investigate to what extent the quantity and quality of training data affects the performance of NER models. This places our contribution in the line of approaches dealing with computational analysis of textual material from different periods of time (Labusch et al., 2019; Schmidt et al., 2021; Ehrmann et al. 2022).
+            
+            
+                Technical prerequisites
+                We use the software 
+                    NEISS TEI Entity Enricher (NTEE).
+                    
+                         https://github.com/NEISSproject/tei_entity_enricher
+                     Following a Transfer Learning (Kamath et al., 2019) approach the tool provides access to large-scale language models in a Bidirectional Encoder Representations from Transformers (BERT) architecture (Devlin et al., 2019; Underwood, 2019) for different languages, which can be fine-tuned to be applicable for NER tasks. The pre-trained model selected for our investigation is a representation of modern German of the 20th and 21st centuries, trained on 8 GB of text data from German Wikipedia and a web crawl of various German newspaper portals (Zöllner et al., 2021: 2–3).
+                
+            
+            
+                Datasets
+                The investigation is based on two differently sized datasets, which were taken from the 
+                    Dehmel digital project and consist of German-language letters from the early 20th century (see table 1). 10 per cent of the sets were taken for validation purposes respectively.
+                
+                
+                    
+                        
+                            Token category
+                        
+                        big
+                        small
+                    
+                    
+                        Person
+                        9397
+                        3683
+                    
+                    
+                        Place
+                        3056
+                        1092
+                    
+                    
+                        Organisation
+                        635
+                        269
+                    
+                    
+                        Work
+                        654
+                        294
+                    
+                    
+                        unlabeled
+                        190970
+                        52271
+                    
+                    
+                        total
+                        204712
+                        57609
+                    
+                
+                Table 1: Composition of the big and small set of training data used as ground truth for NER model training
+            
+            
+                Assumptions
+                Historical-linguistics insights show that grammatical properties of language change slowly over long periods (Nübling et al., 2017). We assume that the difference in time between the 21st and the early 20th century is not associated with an essential difference in the German language system, that would prevent useful entity predictions.
+                We suppose that the difference at hand in text types (newspaper and encyclopedia articles vs. letters) can be neglected for our purpose based on the experiences made in the 
+                    Complete Works of Uwe Johnson project: The same language model has already been successfully used for NER tasks on a corpus of letters.
+                
+            
+            
+                Investigation
+                The investigation focuses on the question of how the amount of training data affects the performance of NER models for the detection of places, persons, organisations and works in historical letters. 
+                The evaluation of the performance happens in two steps: We evaluate the E-
+                    F
+                    1 of each training epoch determined on the validation set by NTEE itself during the training processes and we use the created models to predict entities on four specific sample texts, which are not part of the validation or the training set. Subsequently, we calculate Precision, Recall and E-
+                    F
+                    1 for all of them. To determine the strengths and weaknesses in detail this quantitative approach is accompanied by a qualitative analysis of the predictions.
+                
+            
+            
+                Selected results
+                
+                    
+                
+                Figure 1: E-
+                    F
+                    1-scores of four models comparing the performances depended on the ground truth data amount and annotation consistency
+                
+                
+                    
+                
+                Figure 2: E-
+                    F
+                    1-scores of four models calculated in the sample text prediction analysis, entity-wise and overall
+                
+                The big model performs worse on the validation set of its respective ground truth than the small one (fig. 1). This finding contradicts the general assumption, that more ground truth leads to better prediction results. But if we take a closer look at the data, we encounter a problem inside the big ground truth dataset: About 5.3% of the text was not annotated. In this case, fixing the big ground truth by adding the missing annotations or by deleting the unannotated sequence leads to equivalent performance values to just using the small one.
+                The data collected leads to qualitative insights regarding the training process and the difficulties that come along with it. From the incorrectly predicted annotations, three problem categories can be derived:
+                
+                    a lack of ground truth data, including a lack of samples for representatives of the categories ‘work’ and ‘organisations’ within the training data,
+                    inconsistent annotations,
+                    ambiguous entities, which can belong to several categories.
+                
+                In the talk, we would like to go into more detail on the quantitative and qualitative analyses to present conclusions with which we shed light on the computer-assisted, transfer-learning-based analysis of historical letters in digital scholarly editions.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova
+                         (2019): Bert: Pre-training of deep bidirectional transformers for language understanding. In: 
+                        Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics 1
+                        , p. 4171–4186.
+                    
+                    
+                        Ehrmann, Maud, Ahmed Hamdi, Elvys Linhares Pontes, Matteo Romanello, and Antoine Doucet
+                         (2022): Named Entity Recognition and Classification on Historical Documents: A Survey. URL: 
+                        
+                            http://arxiv.org/abs/2109.11406
+                        
+                        .
+                    
+                    
+                        Kamath, Uday, John Liu, and James Whitaker
+                         (2019): Deep Learning for NLP and Speech Recognition. Cham: Springer. URL: 
+                        
+                            https://doi.org/10.1007/978-3-030-14596-5
+                        
+                         [Access: 8th December 2021].
+                    
+                    
+                        Labusch, Kai, Clemens Neudecker, and David Zellhöfer
+                         (2019): BERT for Named Entity Recognition in Contemporary and Historical German.
+                    
+                    
+                        Nübling, Damaris, Antje Dammel, Janet Duke, and Renata Szczepaniak
+                         (2017): Historische Sprachwissenschaft des Deutschen. Eine Einführung in die Prinzipien des Sprachwandels. 5th revised and updated edition. Narr Francke Attempto: Tübingen.
+                    
+                    
+                        Schmidt, Thomas, Katrin Dennerlein, and Christian Wolff
+                         (2021): Emotion Classification in German Plays with Transformer-based Language Models Pretrained on Historical and Contemporary Language.
+                    
+                    
+                        Underwood, Ted
+                         (2019): Do Humanists need BERT? URL: 
+                        
+                            https://tedunderwood.com/2019/07/15/do-humanists-need-bert/
+                        
+                         [Access: 8th December 2021].
+                    
+                    
+                        Zöllner, Jochen, Konrad Sperfeld, Christoph Wick, and Roger Labahn
+                         (2021): Optimizing small berts trained for german NER. arXiv. URL: 
+                        
+                            https://arxiv.org/abs/2104.11559
+                        
+                         [Access: 8th December 2021].
+                    
+                
+            
+        
+    
+

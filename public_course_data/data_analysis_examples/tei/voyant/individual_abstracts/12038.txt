@@ -1,0 +1,60 @@
+
+        
+            Despite the existence of huge amount of textual material, TEI has not been as widespread in East Asia as in the West. The reason for this may be due to socio-cultural differences, but also probably to the fact that East Asian characters were difficult to use on computers in the past, thus there was little incentive to address text encoding. However, as the characters have become somewhat easier to use, the environment is now ready for scholars to work on text encoding. This presentation will describe our attempts to encode an East Asian literature under the situation.
+            As a part of effort to digitalize the scholarly standard text of Chinese buddhist canon, 
+                Taisho Tripitaka 
+            大正新脩大藏經, the authors are working on the markup of 
+                Xu Yiqiejing Yinyi 
+            續一切經音義 (Xilin, 1928), which has a non-trivial structure. The text is a kind of dictionary which glosses characters, words, and their pronunciation occurred in Buddhist scriptures. As the headwords are sequenced by the order of occurrence in the scriptures, it provides at least two pieces of interesting information, that is: firstly, the glosses usually explain them in the contexts of each text; and secondly, it preserves more traditional forms of the characters and the words rather than what in ordinary scriptures referred by the dictionary. Since the editor of the dictionary consulted or annotated against various manuscript texts of the Buddhist scriptures available in the 8
+                th century before woodcut printing became popular in East Asia, it often preserves the older forms than the texts we currently know, which has been changed through the historical inheritance. The feature makes it useful in reconstruction of the original texts and the old form of the characters. However, since many characters cited by the dictionary are marked as non-standard at that time, those characters are sometimes difficult to gain support for encoding, in spite of the increasingly academic attitude of character encoding communities including Unicode Consortium, ISO/IEC JTC1/SC2/WG2, and IRG (Ideographic Research Group).
+            
+            According to the situation, encoding of the dictionary requires not only the structure of a dictionary, but also linkage to the targeted scriptures. So, we aim to mark it up according to the following policy based on the Best Practices Level 3 (
+                Best Practices for TEI in Libraries, n.d.).
+            
+            
+                
+                    The dictionary has a common style in East Asia, that a headword is glossed by following doubled lines (Fig. 1). It is necessary to encode not only the headword and the gloss, but also the typical style of the sub-lines with a line break. We currently adopt  and  with @type=”wari” to describe it (Fig. 2) but see the necessity of unambiguous handling of sub-linear layout with additional attribute(s).
+                    
+                        
+                            
+                        
+                        
+                            
+                        
+                    
+                
+                The structure of the dictionary is related to both the physical form of itself and that of referenced scriptures. While the two divisions are sometimes overlapped, we constructed the basic hierarchy based on the latter and the former is marked up by .
+                
+                    As mentioned above, character encoding is an issue in this text. Although our proposal to encode several hundred characters occurred in this text have already accepted in the UCS (Universal coded Character Set), that is, Unicode, many remain unencoded due to not only the uncertainty such as erroneousness and blur, but procedural restrictions (Lu, 2022). In this case, gaiji module in TEI Guidelines (
+                        Characters, glyphs, and Writing Modes, n.d.) is useful. The following situations are seen in East Asian literature: a) appearance of characters not reducible to an existing UCS character are fairly common; b) with a high number of unencoded characters, they need to queue long for Unicode standardization and take progressive steps before completion; c) character sets with questionable Unicode compatibility are sometimes popular to cover missing characters. The gaiji module is almost compatible with East Asian characters, but not enough for self-contained character description needed at this level. To solve the issue, we suggest the following extensions to the TEI Guidelines in the meantime.
+                    
+                    
+                        To add declaration of non-Unicode source to  as @scheme.
+                        To add minimum and maximum version numbers to , , and  as @minVer and @maxVer for mutable properties.
+                        To add datable attributes (att.datable) to  for traceability of historical identities of a character in standards.
+                    
+                    The extension provides a way to keep persistent reference of non-Unicode characters in TEI document.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Lu, 
+                        Q
+                        . 
+                        (ed). (2022). IRG Principles and Procedures (IRG PnP) Version 15. https://appsrv.cse.cuhk.edu.hk/~irg/irg/irg58/IRGN2515PnP15Confirmed.pdf (accessed 19 April 2022).
+                    
+                    
+                        Xilin [希麟]. (1928). Xu Yiqiejing Yinyi [續一切經音義]. In Takakusu, J. and Watanabe K. [高楠順次郎・渡邊海旭] (eds), 
+                        Taishō Shinshū Daizōkyō [大正新脩大藏經], vol. 54. Tokyo: Taisho Issai-Kyo Kanko Kwai, pp. 934–979.
+                    
+                    Best Practices for TEI in Libraries. (n.d.). https://tei-c.org/extra/teiinlibraries/ (accessed 1 December 2021).
+                    Characters, Glyphs, and Writing Modes. (n.d.). https://tei-c.org/Vault/P5/4.3.0/doc/tei-p5-doc/en/html/WD.html (accessed 10 December 2021).
+                
+            
+        
+    
+

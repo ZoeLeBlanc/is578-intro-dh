@@ -1,0 +1,64 @@
+
+      
+         Public History (vgl. einführend Zündorf 2010) ist im deutschsprachigen Raum ein noch junges Feld, die erste Professur wurde erst Ende 2012 in Heidelberg eingerichtet. Die Disziplin ist zurückzuführen auf die doppelte Erkenntnis, dass die Mehrheit der Fachstudierenden nicht in der Geschichtswissenschaft wird arbeiten können (und dementsprechend zielgerichtet in Vermittlungskompetenzen aller Art geschult werden muss) und dass die meisten HistorikerInnen sich zwar über mangelnde Aufmerksamkeit für ihr Fach nicht beklagen können, demgegenüber aber kaum wissenschaftlich valide Werkzeuge für den Umgang mit der Öffentlichkeit entwickelt wurden.
+         Paradoxerweise scheint die Public History trotz ihres modernen Selbstanspruchs den Fehler der herkömmlichen Geschichtswissenschaft zu wiederholen: Die Digitalisierung ihrer Arbeit bleibt weit hinter den technischen Möglichkeiten zurück und beschränkt sich größtenteils auf die Erleichterungen einer erweiterten Schreibmaschine. Doch Öffentlichkeiten, die sie schon ihrem Namen nach im Blick hat, migrieren zusehends in den digitalen Raum der sozialen Netzwerke und sollten genau dort angesprochen werden.
+         Eine Möglichkeit, die digitale Teilöffentlichkeit zu erreichen, bietet das soziale Netzwerk Twitter. Seit ungefähr sechs Jahren werden dort historische Ereignisse in je maximal 140 Zeichen zeitgenau nacherzählt, was unter den Bezeichnungen „Re-Entweetment“ oder auch “Twhistory” bekannt geworden ist. Dieses Potential des Medium wurde bislang fast ausschließlich von Laien genutzt, so über die Accounts 
+                @TitanicRealTime und das MDR-Projekt 
+                @9Nov89live, das über einen Tag eine fiktive Geschichte des Mauerfalls zeichnete. In jüngerer Zeit wird es aber zunehmend auch von einer geringen Zahl von (Public) Historians aktiv angeboten, beispielsweise für 
+                @NRWHistory und das Zweitweltkriegsprojekt 
+                @DigitalPast, zu dem parallel das Sachbuch “Als der Krieg nach Hause kam” (Hoffmann 2015) veröffentlicht wurde. Wahrscheinlich besser als jede andere Medienform bietet Twhistory die Möglichkeit der Erzählung in Echtzeit als nicht-textlichem Inhalt, über den Geschichte lebendig gemacht und vorhandenes historisches Interesse (re-)aktiviert werden kann.
+            
+         Insbesondere die Zeichenbegrenzung ist für das Re-Entweetment Chance und Risiko zugleich: die Einstiegsschwelle ist im Vergleich zu herkömmlichen Darreichungsformen (Buch, Museum) äußerst gering, zugleich besteht die Gefahr der Simplifizierung sowie der Falschdarstellung von Geschichte als Aneinanderkettung von Einzelereignissen. Trotz der mittlerweile international steigenden Projektzahl hat sich noch keine Best Practice ergeben, um diesen Risiken zu begegnen. Dadurch ist auch die Zahl der digitalen Tools für diesen Bereich noch sehr klein, die Liste der Desiderate an die Digital Humanities aber lang und äußerst divers. Beispielsweise sind für die Planung, die Sammlung, die Gesamtschau und die Quellenreferenzierung von Inhalten Datenbanken oder zumindest tabellarische Aufstellungen notwendig, für die noch keine Möglichkeit bestand, die aggregierten Inhalte auch automatisch mit der Twitter-Plattform zu verknüpfen.
+         Dies hat sich mit der Bereitstellung der Software autoChirp geändert, die an der Kölner Informationsverarbeitung entwickelt wurde, um die Umsetzung entsprechender Twhistory-Projekte zu unterstützen. Zum einen vereinfacht autoChirp die Arbeit für die ErstellerInnen von Twitter-Timelines historischer Ereignisse, indem es eine Schnittstelle zum automatischen Upload von tabellarischen Sammlungen unterschiedlichen Formats anbietet. Dabei können neben dem gewünschten Datum, der genauen Uhrzeit und den Tweet-Text auch Bilder und Geolocations für den Tweet angegeben werden (vgl. Abb. 1). Auch können ganze Gruppen von Tweets per Mausklick auf eine neue Referenzzeit geschedulet werden.
+         
+            
+         
+         Abb. 1: Sceenshot des autoChirp-Web-Clients, mit dem eine Reihe von Tweets automatisch aus einer Tabelle geschedulet wurde. Das Web-Application-Frontend interagiert mit einer redundant angelegten Datenbank, um die Sicherung der in den verschiedenen Projekten generierten Tweets auch jenseits der Twitter-Plattform nachhaltig zu gewährleisten. 
+         Die autoChirp-App wird zur Zeit mindestens von den Twitter-Projekten @DigitalPast (
+                http://digitalpast.de/), @NRWHistory (
+                http://nrwhistory.de/)und 
+                @goals_from_past genutzt und dabei unter anderem auch in der Lehre eingesetzt. Dabei stehen die EntwicklerInnen im engen Austausch mit den AnwenderInnen, um das Potential für Weiterentwicklungen abzuwägen. Aktuell wird die Integration von autoChirp in das Tiwoli-Projekt (vgl.Fischer & Strötgen 2015) realisiert, was zeigt, dass nicht nur historische, sondern auch literaturwissenschaftliche Vorhaben von einer Unterstützung im Zugang zur Twitter-Plattform profitieren können. 
+            
+         
+            Für einen niederschwelligen Einstieg läuft eine Instanz von autoChirp als Web-Application zur freien Nutzung unter 
+                
+               https://autochirp.spinfo.uni-koeln.de/
+            . Dort finden sich auch ausführliche Tutorials zur Benutzung. Für Weiterentwicklungen steht der dokumentierte Code im Github-Verzeichnis 
+                
+               https://github.com/spinfo/autoChirp
+             zur Verfügung.
+            
+      
+      
+         
+            
+               Bibliographie
+               
+                  Fischer, Frank / Strötgen, Jannik (2015):
+                        „Wann ﬁndet die deutsche Literatur statt? Zur Untersuchung von Zeitausdrücken in großen Korpora“,
+                        in: 
+                        DHd 2015: Von Daten zu Erkenntnissen.
+                    
+               
+                  Hoffmann, Moritz (2015): 
+                        Als der Krieg nach Hause kam.
+                        Berlin: Ullstein.
+                    
+               
+                  Strötgen, Jannik / Gertz, Michael (2012):
+                        „Temporal Tagging on Different Domains: Challenges, Strategies, and Gold Standards“,
+                        in 
+                        Proceedings of LREC 2012 3746–3753. 
+                    
+               
+                  Zündorf, Irmgard (2010):
+                        „Zeitgeschichte und Public History, Version: 1.0“,
+                        in: 
+                        Docupedia-Zeitgeschichte, 11.2.2010 
+                        http://docupedia.de/docupedia/index.php?title=Public_History&oldid=68731 [letzter Zugriff 24. August 2016].
+                    
+            
+         
+      
+   
+

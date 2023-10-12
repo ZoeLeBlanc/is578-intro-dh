@@ -1,0 +1,302 @@
+11985	2022	
+        
+            Over the last decades, several breakthroughs have made the dream to automatically transcribe thousands of handwritten documents a reality (Causer et al., 2018; Sánchez et al., 2017; Seaward, 2017; Yin et al., 2013). For example, software like 
+                Transkribus (Kahle et al., 2017) and 
+                eScriptorium (Stokes et al., 2021) provide non-specialist users with simple environments to conduct transcription campaigns relying on efficient HTR
+                
+                    
+                         HTR stands for Handwritten Text Recognition.
+                    
+                 engines. While transposing scriptures from a piece of paper onto a text editor used to require effort and concentration, it is now possible to imagine simply pressing a button and letting your computer work while you start preparing your next cup of tea. A few minutes later, your drink is ready, and so is the transcription of the two thousand pages you needed. As automatic transcription software is about to produce huge volumes of data (Clanuwat et al., 2019; Camps, 2021. See also the Vietnamica project
+                
+                    
+                        Vietnamica is a research project undertaken jointly by the École Pratique des Hautes Études, the Institute of Hán-Nôm Studies, the Social Sciences Academy of Viêt Nam and the National University of Viêt Nam (Faculty of Humanities and Social Sciences). See 
+                        
+                            https://vietnamica.online/
+                        
+                    
+                .), it seems crucial to think about how we can interact with the resulting files with maximum efficiency.
+            
+            In response to previous similar initiatives (Carius, 2020), we would like to present an end-to-end workflow revolving around the use of various automatic techniques to go from a set of digital images to the actual publication of a text edition. Such techniques include, on top of HTR, information extraction tools
+                
+                    
+                         Rosa Stern defined information extraction as a task consisting of extracting and structuring, in semantic classes, the specific information elements contained in non-structured data for automatic processing, such as coreference resolution, relationship extraction, and named entity recognition (Stern, 2013, p. 59).
+                    
+                 and an open source and ready-to-use environment for publication. Moreover, we aim to make this framework as simple and generic as possible: it is independent from the transcription engine, and potentially compatible with any language, writing system, and any type of document (Balogh and Griffiths, 2020. See also the TEI Special Interest Group for East Asian/Japanese
+                
+                    
+                         See 
+                        
+                            https://tei-c.org/Activities/SIG/EastAsian/
+                        
+                         and 
+                        
+                            https://wiki.tei-c.org/index.php/SIG:East_Asian
+                        
+                    
+                ).
+            
+            Several key principles ensure the coherence of the workflow: transparency and availability of the data at each step and the use of a fully standardized format like TEI XML as the cornerstone to store all the available information. Other XML standards like ALTO
+                
+                    
+                         See the Analyzed Layout and Text Object (ALTO) 4.2 schema specifications at 
+                        
+                            https://www.loc.gov/standards/alto/news.html#4-2-released
+                        
+                    
+                 or PAGE (Pletschacher & Antonacopoulos, 2010) are commonly used by transcription software to export the output, but we advocate for a change of paradigm in order to give more importance to TEI earlier in the workflow (Scheithauer et al., 2020). The TEI guidelines define a set of elements to document this type of data, namely “sourceDoc” and its children
+                
+                    
+                         See 
+                        
+                            https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDoc.html
+                        
+                    
+                . Leveraging TEI from the start is essential to connect the metadata of the images
+                
+                    
+                        Including when the images are distributed within the IIIF framework .
+                    
+                 and documents, the text and layout information generated during the transcription, and any further editorial layer added to the raw transcription.
+            
+            
+                
+                    
+                        
+                            
+                            
+                        
+                    
+                
+                
+                    
+                        Fig. 1: TEI as a threefold structure.
+                    
+                
+            
+            We imagine a configuration capable of processing a large family of TEI customizations as long as the file follows a structure (Fig. 1) in which:
+            
+                “teiHeader” stores the metadata,
+                “sourceDoc” the raw transcription, and
+                “body” the interpreted logical structure along with the editorial layers
+                    
+                        
+                             Logical structure reconstruction can be performed semi-automatically (see the pipeline built for the LECTAUREP project called “LEPIDEMO”, 
+                            
+                                https://github.com/lectaurep/lepidemo
+                            
+                            ), or automatically with tools such as GROBID (
+                            
+                                https://github.com/kermitt2/grobid
+                            
+                            ).
+                        
+                    .
+                
+            
+            We thus aggregate two phases in the digitization lifecycle which are often disconnected.
+            Editorial operations can include preprocessing tasks such as post-HTR corrections (spell-checking) and text normalization, as well as information extraction (text mining). When the volume of data increases, extracting and linking named entities with indexes quickly risks becoming a laborious task. Instead, natural language processing tools can automate the process (Ehrmann et al., 2020; Frontini et al., 2015) all the while relying on the analysis of the sentences and words within their context. We developed 
+                Semantic@, a proof of concept utilizing deep learning models, to extract named entities which are then cycled back into the TEI tree (Fig. 2). The extraction of named entities (i.e. names of people, places, or dates, etc.) is a crucial step before disambiguation which further permits to build links with open general or domain-specific knowledge bases. These steps allow for later explorations of the text with data mining technologies.
+            
+            
+                
+                    
+                        
+                            
+                            
+                        
+                    
+                
+                
+                    
+                        Fig. 2: Virtuous circle for the enriched TEI document.
+                    
+                
+            
+            Once all the layers of an edition are connected into the same TEI file, edited documents can be posted online with softwares like 
+                TEI Publisher (Turska et al., 2016; Chiffoleau et al., 2021). It provides a fully customizable environment where templates generate “views” based on the content of the XML files. With the aforementioned TEI structure, we propose an edition template containing:
+            
+            
+                a flat representation of the transcription,
+                an imitative representation of the transcription based on SVG
+                    
+                        
+                             An XML-based markup language, see the Scalable Vector Graphics (SVG) 2 recommandations at
+                             
+                            
+                                https://www.w3.org/TR/SVG2/
+                            
+                             ; we wish to point at the fact that working with SVG when displaying transcriptions allows us to deal with different writing systems and languages.
+                        
+                     integrating the layout of the pages,
+                
+                a diplomatic edition of the source document, based on the content of the body element, and
+                a facsimile, using the IIIF protocol (Fig. 3).
+            
+            
+                
+                    
+                        
+                            
+                            
+                        
+                    
+                
+                
+                    
+                        Fig. 3: A mock-up showing the four different views potentially available in an application like TEI-Publisher.
+                    
+                
+            
+            We would like to take the opportunity of presenting a short paper during the DH2022 international conference to subject our framework (Fig. 4) -and its robustness to different writing systems- to the scrutiny of the DH community. In particular, we believe that our proposition addresses challenges raised by Open Science, primarily the necessity to gain better control over every step within complex pipelines that involve various tools, thus facilitating reproducibility. A paradigm revolving around a pivotal element, like a TEI file grouping the different results, frees us from the constraint of a linear progression by maintaining multiple entry points in the workflow.
+            
+                
+                    
+                        
+                            
+                            
+                        
+                    
+                
+                
+                    
+                        Fig. 4: Simplifying the workflow by using TEI from the beginning.
+                    
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Balogh, D. and Griffiths, A. (2020). DHARMA Encoding Guide for Diplomatic Editions EFEO ; Humboldt-Universität (Berlin) ; CEAIS - Centre d’Études de l’Inde et de l’Asie du Sud report 
+                        https://halshs.archives-ouvertes.fr/halshs-02888186 (accessed 10 December 2021).
+                    
+                    
+                        Camps, J.-B. (2021). Gallic(orpor)a: Extraction, annotation et diffusion de l’information textuelle et visuelle en diachronie longue Paper presented at the Inauguration du BnF DataLab, Paris 
+                        https://www.academia.edu/58990010/Gallic_​orpor_​a_​Extraction_​annotation_​et_​diffusion_​de_​l_​information_​textuelle_​et_​visuelle_​en_​diachronie_​longue (accessed 9 December 2021).
+                    
+                    
+                        Carius, J.-C. (2020). Plateforme d’éditions enrichies à l’INHA : Premier point d’étape d’un projet en cours d’élaboration Billet 
+                        Numérique et recherche en histoire de l’art
+                        https://numrha.hypotheses.org/1107 (accessed 8 December 2021).
+                    
+                    
+                        Causer, T., Grint, K., Sichani, A.-M. and Terras, M. (2018). ‘Making such bargain’’: Transcribe Bentham and the quality and cost-effectiveness of crowdsourced transcription. 
+                        Digital Scholarship in the Humanities doi:
+                        10.1093/llc/fqx064. 
+                        https://academic.oup.com/dsh/advance-article/doi/10.1093/llc/fqx064/4810663 (accessed 11 June 2018).
+                    
+                    
+                        Chagué, A. and Scheithauer, H. (2021). 
+                        LEPIDEMO, a Pipeline Demonstrator for LECTAUREP to Go from EScriptorium to TEI-Publisher. Jupyter Notebook doi:
+                        10.5072/zenodo.977657. 
+                        https://github.com/lectaurep/lepidemo (accessed 10 December 2021).
+                    
+                    
+                        Chiffoleau, F., Baillot, A. and Ovide, M. (2021). A TEI-based publication pipeline for historical egodocuments -the DAHN project. 
+                        Next Gen TEI, 2021 - TEI Conference and Members’ Meeting. Virtual, United States 
+                        https://hal.archives-ouvertes.fr/hal-03451421 (accessed 10 December 2021).
+                    
+                    
+                        Clanuwat, T., Lamb, A. and Kitamoto, A. (2019). KuroNet: Pre-Modern Japanese Kuzushiji Character Recognition with Deep Learning. 
+                        ArXiv:1910.09433 [Cs]
+                        http://arxiv.org/abs/1910.09433 (accessed 8 December 2021).
+                    
+                    
+                        e-editiones (2021). 
+                        Eeditiones/Tei-Publisher-App. XQuery e-editiones.org 
+                        https://github.com/eeditiones/tei-publisher-app (accessed 10 December 2021).
+                    
+                    
+                        Ehrmann, M., Romanello, M., Flückiger, A. and Clematide, S. (2020). Extended Overview of CLEF HIPE 2020: Named Entity Processing on Historical Newspapers. 
+                        CLEF 2020 Working Notes. Conference and Labs of the Evaluation Forum. [online event]: Zenodo doi:
+                        10.5281/ZENODO.4117566. 
+                        https://zenodo.org/record/4117566 (accessed 10 December 2021).
+                    
+                    
+                        Frontini, F., Brando, C. and Ganascia, J.-G. (2015). Semantic Web Based Named Entity Linking for Digital Humanities and Heritage Texts. In Zucker, A., Draelants, I., Zucker, C. F. and Monnin, A. (eds), 
+                        First International Workshop Semantic Web for Scientific Heritage at the 12th ESWC 2015 Conference. Portorož, Slovenia: Arnaud Zucker and Isabelle Draelants and Catherine Faron Zucker and Alexandre Monnin 
+                        https://hal.archives-ouvertes.fr/hal-01203358 (accessed 10 December 2021).
+                    
+                    
+                        Kahle, P., Colutto, S., Hackl, G. and Mühlberger, G. (2017). Transkribus - A Service Platform for Transcription, Recognition and Retrieval of Historical Documents. 
+                        14th IAPR International Conference on Document Analysis and Recognition (ICDAR), vol. 04. pp. 19–24 doi:
+                        10.1109/ICDAR.2017.307.
+                    
+                    
+                        Kiessling, B. (2021). 
+                        Mittagessen/Kraken. Python 
+                        https://github.com/mittagessen/kraken (accessed 10 December 2021).
+                    
+                    
+                        Lopez, P. (2008). 
+                        GROBID. Java 
+                        https://github.com/kermitt2/grobid (accessed 10 December 2021).
+                    
+                    
+                        Pletschacher, S. and Antonacopoulos, A. (2010). The PAGE (Page Analysis and Ground-truth Elements) format framework. pp. 257–60 doi:
+                        10.1109/ICPR.2010.72.
+                    
+                    
+                        Sánchez, J. A., Romero, V., Toselli, A. H., Villegas, M. and Vidal, E. (2017). ICDAR2017 Competition on Handwritten Text Recognition on the READ Dataset. IEEE Computer Society, pp. 1383–88 doi:
+                        10.1109/ICDAR.2017.226. 
+                        https://www.computer.org/csdl/proceedings-article/icdar/2017/3586b383/12OmNy4IEXJ (accessed 9 December 2021).
+                    
+                    
+                        Scheithauer, H., Chagué, A., Gabay, S., Romary, L., Janes, J. and Jahan, C. (2021). From page to content – which TEI representation for HTR output?. 
+                        Next Gen TEI, 2021 - TEI Conference and Members’ Meeting. Weaton (virtual), United States 
+                        https://hal.archives-ouvertes.fr/hal-03380807 (accessed 7 December 2021).
+                    
+                    
+                        Seaward, L. (2017). Project Update – teaching a computer to READ Bentham 
+                        UCL Transcribe Bentham
+                        http://blogs.ucl.ac.uk/transcribe-bentham/2017/06/09/project-update-teaching-a-computer-to-read-bentham/ (accessed 4 June 2018).
+                    
+                    
+                        Stern, R. (2013). Identification automatique d’entités pour l’enrichissement de contenus textuels Université Paris-Diderot - Paris VII phdthesis 
+                        https://tel.archives-ouvertes.fr/tel-00939420 (accessed 10 December 2021).
+                    
+                    
+                        Stokes, P. A., Kiessling, B., Ezra, D. S. B., Tissot, R. and Gargem, E. H. (2021a). The eScriptorium VRE for Manuscript Cultures. 
+                        Classics@ Journal. [online] 
+                        https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/ (accessed 30 November 2021).
+                    
+                    
+                        Stokes, P. A., Kiessling, B., Ezra, D. S. B., Tissot, R. and Gargem, E. H. (2021b). The eScriptorium VRE for Manuscript Cultures. 
+                        Classics@ Journal. [online] 
+                        https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/ (accessed 30 November 2021).
+                    
+                    
+                        Terriel, L. (2021). 
+                        Semantic@. Python 
+                        https://github.com/Lucaterre/semanticat (accessed 10 December 2021).
+                    
+                    
+                        Tissot, R. (2021). 
+                        Scripta/EScriptorium. Python 
+                        https://gitlab.com/scripta/escriptorium/-/tree/v0.10.2a (accessed 10 December 2021).
+                    
+                    
+                        Turska, M., Cummings, J. and Rahtz, S. (2016). Challenging the Myth of Presentation in Digital Editions. 
+                        Journal of the Text Encoding Initiative(Issue 9). Text Encoding Initiative Consortium doi:
+                        10.4000/jtei.1453. 
+                        https://journals.openedition.org/jtei/1453 (accessed 10 December 2021).
+                    
+                    
+                        Yin, F., Wang, Q.-F., Zhang, X.-Y. and Liu, C.-L. (2013). ICDAR 2013 Chinese Handwriting Recognition Competition. IEEE Computer Society, pp. 1464–70 doi:
+                        10.1109/ICDAR.2013.218. 
+                        https://www.computer.org/csdl/proceedings-article/icdar/2013/06628856/12OmNxEBzcq (accessed 9 December 2021).
+                    
+                    
+                        
+                            https://gitlab.com/scripta/escriptorium/-/tree/v0.10.2a
+                        
+                    
+                
+            
+        
+    
+
+

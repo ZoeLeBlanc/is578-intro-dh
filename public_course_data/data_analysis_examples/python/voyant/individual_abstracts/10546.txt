@@ -1,0 +1,313 @@
+
+      
+         
+            Einleitung: Digital Humanities und Filmanalyse
+            Während sich die „Vermessung der Kultur“ (Lauer 2013) in den textorientierten
+          Geisteswissenschaften in den letzten Jahren rasant entwickelt hat (vgl. etwa
+          Konzepte wie Culturomics, Distant
+          Reading, etc.), so befindet sich die „Vermessung ästhetischer
+          Erscheinungen“ (Flückinger 2011) für den Bereich der Filmwissenschaft und
+          Filmanalyse noch in den Anfängen. Flückinger (2011: 44) spricht in diesem
+          Zusammenhang gar von einem Spannungsfeld zwischen Empirie und Ästhetik, welches
+          sich zwangsläufig ergeben muss, wenn man „die eigentümliche Unschärfe, die allen
+          künstlerischen Werken eignet, in messbare Einheiten zerlegen will“. Dabei lassen
+          sich quantitative Ansätze in der Filmanalyse mindestens bis in das Jahr 1912
+          1 zurückverfolgen und auch aktuelle Lehrbücher zur Filmanalyse beschreiben
+          gleichermaßen weiche (qualitative) und harte (quantitative) Kategorien und Methoden (Korte 2004: 15). Bei
+          quantitativen Ansätzen steht vor allem die Analyse von Dauer und
+          Auftretenshäufigkeit einzelner Einstellungen in einem Film im Mittelpunkt (vgl.
+          Salt 2006, Kap. „The Numbers Speak“). So stellt etwa die online verfügbare
+          Datenbank 
+                  Cinemetrics
+                (Cinemetrics o. J.) entsprechende Informationen
+          zur Länge und Verteilung einzelner Einstellungen für mehrere tausend Filme
+          bereit und ermöglicht so vergleichende Analysen von Filmen aus unterschiedlichen
+          Genres und Epochen. 
+            Während die Segmentierung der Filme in der Cinemetrics-Datenbank von der Community manuell vorgenommen wird, gibt es
+            auch Beispiele für Forschungsarbeiten, bei denen die quantifizierbaren Parameter
+            automatisch erhoben werden. Hoyt, Ponot und Roy (2014) präsentieren etwa einen
+            Prototyp namens ScripThreads, der in der Lage ist, Filme
+            der American Film Scripts Online-Datenbank zu parsen und
+            die Handlungsentwicklung eines Films anhand der Szenen und Figuren zu
+            visualisieren. Ein Beispiel für die vergleichende Analyse von Filmmetadaten
+            findet sich im 
+                  Cinegraph-Projekt  von Chris Weaver
+            (2014). Hier können Filme anhand unterschiedlicher Metadaten (z. B. Filmname,
+            Veröffentlichungsdatum, Bewertung, Genre, Oscars, Darsteller, etc.) miteinander
+            verglichen und in einer interaktiven Darstellung zueinander in Beziehung gesetzt
+            werden. 
+            Daneben finden sich im Netz eine ganze Reihe experimenteller Tools, die nicht
+              immer einen wissenschaftlichen Anspruch haben, aber gut illustrieren, welche
+              weiteren Aspekte von Filmen automatisch analysierbar sind: Beispielhaft sei etwa
+              das Python-Tool 
+                  VideoGrep
+                (Lavigne 2014) genannt, welches das
+              Durchsuchen von Filmdialogen nach bestimmten Schlüsselwörtern ermöglicht, um auf
+              Basis der Treffer dann einen automatischen Zusammenschnitt („supercut“) all der
+              Szenen, in denen das gesuchte Wort vorkommt, zu erstellen. Die Anwendung 
+                  Pretentious-O-Meter
+                (Beard 2015) analysiert automatisch, wie
+              groß die Bewertungslücke zwischen Nutzerbewertungen und professionellen
+              Filmkritiken eines Films ist und visualisiert dies in einem Kontinuum, welches
+              von „mass-market“ bis „very pretentious“ reicht. Weitere Ansätze der
+              automatischen Filmanalyse finden sich für die Farbverwendung in Filmen: Frederic
+              Brodbeck (2011) visualisiert in seinem 
+                  Cinemetrics-Projekt Filme als kreisförmig angeordnete
+              Timelines, in denen u. a. die jeweils dominanten Farben zu sehen sind. Ein
+              weiteres Projekt visualisiert Filme als zusammengestauchte Einzelframes, um so
+              farbige 
+                  MovieBarcodes
+                (MovieBarcodes o. J.) zu erstellen. 
+            Auch auf der DHd 2015 wurde das Thema der Quantifizierung filmischer Strukturen über Filmbild, Filmschnitt und Filmstil bereits auf methodischer Ebene thematisiert (Heftberger 2015) und Howanitz (2015) präsentierte eine erste
+                Distant Watching-Studie für das „Fern-Sehen“ memetischer YouTube-Videos, deren „Schnittkurven“ er auf Frame-Ebene analysiert. In diesem Beitrag knüpfen wir thematisch an die genannten DHd-Vorträge an und diskutieren grundlegende Möglichkeiten der computergestützten Filmanalyse, die über die Quantifizierung von Einstellungen und Szenen hinausgehen. Dabei sollen weitere automatisch quantifizierbare Parameter zur Diskussion gestellt werden, um so neue Perspektiven und Zugänge zur computergestützten Filmanalyse aufzuzeigen und das Thema noch stärker in den Digital Humanities zu verankern. Um die Grenzen und Möglichkeiten dieser Ansätze besser illustrieren zu können, wurde eine Reihe von Prototypen erstellt, die nachfolgend kurz vorgestellt werden.
+              
+         
+         
+            Prototypen für die computergestütze Filmanalyse
+            In diesem Abschnitt werden drei unterschiedliche Prototypen beschrieben, die
+                jeweils auf unterschiedliche quantifizierbare Aspekte von Filmen abzielen und
+                damit die Untersuchung ganz unterschiedlicher Fragestellungen erlauben. Die
+                Tools greifen allesamt auf im Web frei verfügbare Informationen zu Filmen
+                zurück: So stehen etwa über die Plattformen 
+                  OpenSubtitles
+                oder die 
+                  Internet Script Movie Database
+               
+                maschinenlesbare Dialoge von Filmen und Serien in großem Umfang zur Verfügung.
+                Zusätzlich können detaillierte Metadaten sowie auch nutzergenerierte Bewertungen
+                und Kommentare zu Filmen über Plattformen wie 
+                  IMDb
+                (Internet Movie Database)
+                abgerufen werden. Darüber hinaus soll als weiterer quantifizierbarer Parameter,
+                der direkt aus den Filmen extrahiert werden kann, die Farbverwendung 2 in die Analysen mit einbezogen werden. Alle nachfolgend beschriebenen
+                Prototypen wurden jeweils mit Standard-Webtechnologien (HTML / CSS / JavaScript)
+                und bestehenden Python-Bibliotheken umgesetzt. 
+            
+               
+                  SubVis – Analyse der Filmsprache
+                  
+               Das SubVis-Tool analysiert über OpenSubtitles verfügbare Dialoge von beliebigen, zunächst
+                  allerdings nur englischsprachigen Filmen anhand typischer linguistischer
+                  Parameter wie Wortfrequenzen oder POS-Tagging und visualisiert die
+                  Ergebnisse in einem interaktiven Web-Interface. Zusätzlich kann die
+                  Auftretenshäufigkeit einzelner Zeichen oder längerer Sprachsequenzen (=
+                  jeweils ein eingeblendeten Untertitel) für beliebig definierbare
+                  Analyseintervalle (z. B. jeweils für 5 Minuten-Sequenzen) in einer Timeline
+                  dargestellt werden, um bspw. auf einen Blick zu sehen, an welchen Stellen im
+                  Film besonders viel oder wenig gesprochen wird (vgl. Abbildung 1). 
+               
+                  
+                  
+                     Abb. 1: Beispielhafte Visualisierung der Zeichen-
+                    und Sprachsequenzhäufigkeiten für jeweils fünfminütige Teilabschnitte
+                    des Films „Anchorman: The Legend of Ron Burgundy“.
+               
+               
+                  Beispielhafte Fragestellungen, die mit dem Tool untersucht werden können:
+                  
+               
+                  Gibt es für die Filme unterschiedlicher Regisseure jeweils typische Schlüsselwörter?
+                  Kann man für Filme aus unterschiedlichen Genres beobachten, dass an
+                      bestimmten Stellen (z. B. Anfang oder Schluss) besonders viel oder wenig
+                      gesprochen wird? 
+                  Wird in Filmen aus den 1980er Jahren insgesamt mehr gesprochen als in Filmen der 1990er Jahre?
+               
+            
+            
+               
+                  Series Analysis Tool (SAT) – Analyse von TV-Serien anhand von Nutzerbewertungen, Figuren und Sprache
+                    
+               Das Series Analysis Tool ( SAT)
+                    ermöglicht die Analyse von Serien und einzelnen Episoden. Dabei werden
+                    verschiedene Parameter in einer Timeline-Darstellung visualisiert. Ein
+                    wesentlicher Analyseaspekt ist dabei die Bewertung einzelner Episoden durch
+                    die IMDb-Community, sodass auf einen Blick erkennbar ist, ob eine Serie im
+                    Laufe der Zeit besser oder schlechter bewertet wird, oder ob es einzelne
+                    Episoden gibt, die auffallend positiv oder negativ bewertet wurden.
+                    Zusätzlich liest das Tool das Figureninventar für jede Episode aus und
+                    erlaubt es, die Darstellung nach bestimmten Figuren zu filtern. So kann
+                    schnell erkannt werden, ob das Auftreten bestimmter Figuren ggf. Einfluss
+                    auf die Bewertung einzelner Episoden hat. Weiterhin wurde die Sprache der
+                    Serien hinsichtlich Sentiment- und Emotionswörtern analysiert (vgl.
+                    Abbildung 2). Als Datengrundlage dient ein bestehendes Korpus (Tiedemann
+                    2012), in dem alle auf 
+                     OpenSubtitles
+                   in englischer
+                    Sprache verfügbaren Untertitel von TV-Serien und Filmen bis zum Jahr 2013
+                    enthalten sind. Dabei kam für die Sentiment Analyse das AFINN-Lexikon (Nielsen 2011) und für die Identifikation acht
+                    grundlegender Emotionen (Angst, Wut, Freude, etc.) das NRC
+                    Emotion Lexicon (Mohammad / Turney 2010) zum Einsatz. Sowohl die
+                    Sentiment-Scores (positiv / negativ) als auch die Emotionsmarker können für
+                    jede Episode in die Visualisierung mit einbezogen werden, um so potenzielle
+                    Korrelationen zu den Nutzerbewertungen aufzuzeigen. 
+               
+                  
+                  
+                     Abb. 2: Beispielhafte Visualisierung der Serie
+                      „Breaking Bad“, mit paralleler Darstellung der Benutzerbewertungen sowie
+                      der Sentiment-Analyse der Dialoge für jede einzelne Episode.
+               
+               
+                  Beispielhafte Fragestellungen, die mit dem Tool untersucht werden können:
+                    
+               
+                  Gibt es generelle Trends bei der Bewertung von Serien mit zunehmender Zahl von Staffeln?
+                  Wirken sich Sentiment- und Emotionsmarker der Dialoge positiv oder negativ auf die Bewertung einer Episode aus?
+                  Wirkt sich das Auftreten bestimmter Nebenfiguren positiv oder negativ auf die Bewertung einer Episode aus?
+               
+            
+            
+               
+                  MovieColors – Analyse von Filmen anhand von Farbe und Sprache
+                    
+               Der Prototyp
+                      MovieColors erlaubt die computergestützte Analyse von Filmen anhand der Parameter Farbe und Sprache. Dabei wird zunächst der Film in einzelne Frames zerlegt. Mithilfe eines Clustering-Algorithmus werden dann die jeweils dominanten Farben extrahiert. Anhand dieser Farbinformation können charakteristische Farbprofile – ähnlich wie im eingangs erwähnten
+                      MovieBarcodes-Projekt – für den gesamten Film erstellt werden. Zusätzlich wird die Sprache des Films über dessen Untertitel anhand von Wortfrequenzen und grundlegenden Sentiment-Werten (positiv / negativ) analysiert.
+                    
+               Die Visualisierungskomponente des Tools erlaubt es, Farbinformation und
+                      Sprachanalyse in einer parallelen Ansicht darzustellen, um so potenzielle
+                      Korrelationen zwischen dem Sentiment der Sprache und besonders markanten
+                      Schlüsselwörtern sowie auch der Farbverwendung identifizieren zu können
+                      (vgl. Abbildung 3). Zusätzlich kann jeder Frame einzeln angezeigt werden,
+                      zusammen mit dem entsprechenden Untertitel sowie einer Analyse der
+                      dominanten Farben im jeweiligen Bild.
+               
+                  
+                  
+                     Abb. 3: Analyse des Films „König der Löwen“, mit
+                        Darstellung des Farbprofils (oben), der Sentiment-Analyse (Mitte) sowie
+                        der häufigsten Wörter (unten) entlang der Zeitachse des Films.
+               
+               
+                  Beispielhafte Fragestellungen, die mit dem Tool untersucht werden können:
+                      
+               
+                  Gibt es charakteristische Farbprofile für Filme aus verschiedenen Genres oder Epochen?
+                  Korrelieren bestimmte Farben mit positiven oder negativen Sentiment-Scores, also etwa dunkle Farben bei negativer Sprache?
+                  Korrelieren bestimmte Farben mit Schlüsselwörtern, also etwa schwarz und lila immer dann, wenn der Bösewicht des Films auftritt?
+               
+            
+         
+         
+            Ausblick
+            Die in diesem Beitrag vorgestellten Prototypen beschreiben erste Versuche, Filme
+                      computergestützt anhand unterschiedlicher, automatisch quantifizierbarer
+                      Parameter zu analysieren. Im Austausch mit Kollegen aus der Medienwissenschaft
+                      werden die Tools in den nächsten Monaten praktisch erprobt und je nach
+                      Fragestellung iterativ angepasst und gegebenenfalls um weitere Funktionen
+                      ergänzt. Sobald die Prototypen weiter ausgearbeitet sind, sollen sie auch der
+                      Community über den DH-Regensburg-Blog zugänglich gemacht werden. Gleichzeitig sind
+                      weitere Prototypen angedacht, bei denen als zusätzliche Analyseparameter
+                      Gesichtserkennung (vgl. Arandjelovic / Zisserman 2005) sowie auch die Auswertung
+                      der Audiospur (vgl. Zulko 2014) umgesetzt werden sollen. 
+         
+         
+            Danksagungen
+            Alle hier beschriebenen Prototypen wurden im Rahmen des Projektseminars „Digital Humanities“, im Masterstudiengang Medieninformatik an der Universität Regensburg, angefertigt. Besonderer Dank für die engagierte Umsetzung der Tools gebührt Hanns Meißner und Michael Stahl (
+                        SubVis), Robert Jackermeier, Florian Ludwig und Alexander Uitz (
+                        SAT) sowie Michael Kao (
+                        MovieColors).
+                      
+         
+      
+      
+         
+            Vgl. den Vortrag von Tsivian (2014) auf der 1. Cinemetrics Conference, Chicago (Neubauer Collegium 2014).
+            Zur historischen Verwendung von Farbe im Film vgl. auch die Online-Datenbank "Timeline of Historical Film Colors" von Flückinger (2011-2013).
+         
+         
+            
+               Bibliographie
+               
+                  Arandjelovic, Ognjen / Zisserman, Andrew (2005):
+                          "Automatic face recognition for film character retrieval in feature-length
+                          films", in: Proceedings of the Computer Vision and Pattern
+                          Recognition Conference (IEEE) 860-867. 
+               
+                  Beard, Niall (2015): Pretentious-O-Meter http://pretentious-o-meter.co.uk/ [letzter Zugriff 04. Februar
+                          2016].
+               
+                  Brodbeck, Frederic (2011): Cinemetrics. Bachelor graduation project at the Royal Academy of
+                          Arts (KABK), Den Haag  http://cinemetrics.fredericbrodbeck.de/ [letzter Zugriff 04.
+                          Februar 2016].
+               
+                  Cinemetrics (o. J.): http://www.cinemetrics.lv/
+                          [letzter Zugriff 04.Februar 2016]
+               
+                  Flückiger, Barbara (2011): "Die Vermessung ästhetischer
+                            Erscheinungen", in: Zeitschrift für
+                            Medienwissenschaft 5, 2: 44-60. 
+               
+                  Flückinger, Barbara (2011-2013): Timeline of Historical Film Colors
+                  http://zauberklang.ch/filmcolors/ [08. Januar 2016].
+               
+                  Heftberger, Adelheid (2015): "Filmbild , Filmschnitt ,
+                                Filmstil – die Quantifizierung und Visualisierung von filmischen
+                                Strukturen", in: Book of Abstracts, DHd 2015. 
+               
+                  Howanitz, Gernot (2015): „Distant Waching: Ein
+                                  quantitativer Zugang zu YouTube-Videos“, in: Book of
+                                  Abstracts, DHd 2015. 
+               
+                  Hoyt, Eric / Ponot, Kevin / Roy, Carrie (2014):
+                                    „Visualizing and Analyzing the Hollywood Screenplay with ScripThreads“, in:
+                                    Digital Humanities Quarterly 8, 4. 
+               
+                  IMDb (o. J.): Internet Movie
+                                    Database. http://www.imdb.com/ [letzter Zugriff 04. Februar 2016]. 
+               
+                  IMSDb (o. J.): Internet Script
+                                    Movie Database. http://www.imsdb.com/ [letzter Zugriff 04. Februar 2016]. 
+               
+                  Korte, Helmut (2004): Einführung in
+                                      die Systematische Filmanalyse. Berlin: Erich Schmid Verlag. 
+               
+                  Lauer, Gerhard (2013): "Die digitale Vermessung der
+                                        Kultur", in: Geiselberger, Heinrich / Moorstedt, Tobias (eds.): Big Data – Das neue Versprechen der Allwissenheit.
+                                        Berlin: Suhrkamp 99-116. 
+               
+                  Lavigne, Sam (2014): Videogrep. Automatic Supercuts with Python http://lav.io/2014/06/videogrep-automatic-supercuts-with-python/
+                                        [letzter Zugriff 04. Februar 2016].
+               
+                  Mohammad, Saif M. / Turney, Peter D. (2010): "Emotions
+                                          evoked by common words and phrases: Using Mechanical Turk to create an
+                                          emotion lexicon", in: Proceedings of the NAACL HLT 2010
+                                          Workshop on Computational Approaches to Analysis and Generation of
+                                          Emotion in Text 26-34. 
+               
+                  MovieBarcode (o. J.): http://moviebarcode.tumblr.com/ [letzter Zugriff 04. Februar
+                                          2016].
+               
+                  Neubauer Collegium (2014): UChicago
+                                          Cinemetrics Conference
+                  https://www.youtube.com/watch?v=6ZXj67bygEc [letzter Zugriff 04.
+                                            Februar 2016].
+               
+                  Nielsen, Finn Å. (2011): "A new ANEW: evaluation of a
+                                            word list for sentiment analysis in microblogs", in: Proceedings of the ESWC2011 Workshop on „Making Sense of Microposts:
+                                            Big things come in small packages“ 93-98. 
+               
+                  OpenSubtitles (o. J.) www.opensubtitles.org/ [letzter
+                                            Zugriff 04. Februar 2016]. 
+               
+                  Salt, Barry (2006): Moving into
+                                              Pictures. London: Starwood. 
+               
+                  Tiedemann, Jörg (2012): "Parallel Data, Tools and
+                                                Interfaces in OPUS", in: Proceedings of the 8th
+                                                International Conference on Language Resources and Evaluation
+                                                2214-2218.
+               
+                  Weaver, Chris (2014): Cinegraph
+                  http://www.cs.ou.edu/~weaver/improvise/examples/cinegraph/index.html
+                                                  [letzter Zugriff 04. Februar 2016].
+               
+                  Zulko (4.7.2014): "Automatic Soccer Highlights
+                                                    Compilations With Python" (Blogpost), in: __del__
+                                                    (self) Eaten by the Python http://zulko.github.io/blog/2014/07/04/automatic-soccer-highlights-compilations-with-python/
+                                                    [letzter Zugriff 08. Januar 2016].
+            
+         
+      
+   
+

@@ -1,0 +1,22 @@
+1987	2014	18thConnect (18thConnect.org) and REKn (the Renaissance English Knowledgebase Project) are two new digital aggregators of early modern digital materials and scholarship, both built on the model of NINES (the Networked Infrastructure for Nineteenth Century Electronic Scholarship, nines.org) (McGann and Nowviskie). Unlike NINES, however, 18thConnect and REKn have two major digital resources for primary materials: Early English Books Online dataset (EEBO) and Eighteenth-Century Collections Online (ECCO), the former owned by ProQuest, the latter by Gale Cengage Learning. Both companies have given us the opportunity to work with the page images in these collections which have been derived, unfortunately, from microfilm. In fact, many of these page images are practically impenetrable to Optical Character Recognition Engines, for reasons having to do both with early print practices during the handpress era and the quality of the images themselves. A consortium of libraries called the Text Creation Partnership (TCP), led by Rebecca Welzenbach at the University of Michigan, has decided to key in, type by hand, one instance of each "title" in the collection.  But because metadata for such early texts is notoriously unreliable, the texts not typed may contain some “buried treasures” in the EEBO Collection (Jackson). The TCP has not generated enough money to key ECCO texts: only approximately 1.2% of the 182,000 documents have been typed by the TCP. Texas A&M University has received generous funding from the Andrew W. Mellon Foundation to work on creating Optical Character Recognition training sets for open-source OCR engines that will allow us to mechanically type those page images. However, OCR can only work so well with these images, and so the Early Modern OCR Project (eMOP; emop.tamu.edu) is also building three crowd-source correction tools: TypeWright, Cobre, and MapThePage. This poster will demonstrate these tools, revealing their use in research and teaching. Cobre allows users to consult multiple editions at once in order to corroborate image data.  For images that are particularly problematic for the eMOP OCR engines, the AWL editor allows users to edit the bounding boxes in order to produce a more accurate OCR.  Finally, within TypeWright users can compare the OCR with the actual images, updating the former as needed.  The proposed poster will:
+
+1. Describe the development of each of these three open-source tools.
+
+2. Detail how each tool is needed for creating and verifying OCR data.
+
+3. Demonstrate the online versions of each tool.
+
+4. Show the utility of these tools both inside and outside of the classroom by discussing how they have been used by researchers and students at Texas A&M University.
+
+5. Explain how this improved OCR will then be fed to EEBO and ECCO to enhance scholarship worldwide.
+
+6. Outline the generous contracts we received from ProQuest and Gale: anyone who corrects a text gets to have it and, in effect, liberates it so that it can be full-text searchable, for free, via the 18thConnect and REKn interfaces. Also, scholars are given TEI versions when the text has been freed by their work, enabling them to make digital scholarly editions such as Jess McCarthy’s edition of Daniel Defoe’s “Hymn to the Pillory” (ahymntothepillory.blogspot.com).
+
+We are about to start a “Liberate the Text!” campaign, and we would like to demonstrate the crowd-sourced correction tools and how to use them as a poster at the DH2014 Conference.
+
+References
+The eMOP Project: emop.tamu.edu
+
+Jackson, Millie (2008). “Using Metadata to Discover the Buried Treasure in Google Book Search.”Journal of Library Administration 47.1/2: 165-73.
+
+McGann, Jerome, and Bethany Nowviskie (2005). NINES white paper (PDF, 124kb).

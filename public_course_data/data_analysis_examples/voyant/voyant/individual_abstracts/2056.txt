@@ -1,0 +1,93 @@
+“Humanists have always been explorers. They sail not on seas of water but on seas of color, sound, and, most especially, words.” — John B. Smith, 1984
+
+Why is big data such a big deal? Modern digital communications are producing and recording data at a feverish rate, with 90% of the world’s recorded data, most of it unstructured, having been produced in just the last two years (Dragland, 2013). In addition, more traditional texts are being digitized all the time, and Crane (2006) tells us that while the largest academic digital libraries now hold tens of thousands of books, a completed Google Library will likely have more than ten million. To further Smith’s analogy, we are adrift in a sea of data, and we are at risk of floundering.
+
+Front page news events like Edward Snowden’s May 2013 revelations disclosing the secret NSA (America’s National Security Agency) collection and analysis of massive amounts of ostensibly private data both domestically and internationally, are making big data analytics part of the public lexicon.  Major corporations, led by IBM with $1.3 billion in big data revenue in 2012, are scrambling to adopt practices that will allow them to capitalize on the volume of information now being generated.  Global big data related revenues in 2012 were $11.6 billion, and are projected to break $18 billion in 2013 (Kelly et al.).
+
+While one might shudder to think what the NSA will do with all that information, outside of the world of politics and espionage, what can researchers and academics do with the volume of information now, or at least soon to be at our disposal? Matthew Jockers asks, “How do we mine them [texts] to find something we don’t already know?” (University of Nebraska-Lincoln) To utilize such massive corpora and avoid succumbing to the dilemma of what McCormick et al (1987) refer to as “information without interpretation” we need to find the most effective ways for end-users to explore, visualize and interact with big data such that it is both meaningful and understandable, if possible by both the trained and untrained eye. 
+
+Big data analytics and computer-supported visualization offer ways to read collections as our cognitive abilities are stretched to their limit with the sheer volume of data available (Araya, 2003). However, as Franco Moretti has pointed out, what we are reading when we use text mining methods and visualizations are really models of the collections. (Moretti 2013, p. 157) It is important therefore to survey the visual models emerging and question if they can better be designed to suit humanities exploration. In this paper we therefore propose to look at visualization for text mining in the following ways:
+
+Survey text mining visualization in the humanities. Who is using text mining and why? What kinds of visualizations do they find compelling and why?
+Identify and Combine commonly presented visualizations for modeling. What visual models could be used for the exploration of large corpora? How could they be combined?  
+Model interactive prototypes of different combinations of visualizations for exploration. 
+Surveying: In a poster at DH 2013 we presented a framework of text mining tools that are useful in the humanities. Now we will survey the variety of visualizations used to present mining results. We will begin with early discussions of visualization like Smith’s “Computer Criticism” (Style 1978, p. 326), where he notes with agreement Paul de Man’s observation that as late as 1973 there had been no evolution beyond the close reading “techniques of description and interpretation” being used by literary critics since the 1930s or 40s, and suggests “pictorial representation” as one of the potential uses of computer aided text analysis. Brunet in a 1989 article talks about exploiting large corpora and provides a number of examples of visualizations. Our survey will examine advances in practice and understanding in the intervening thirty plus years, leading to contemporary works like Franco Moretti’s Graphs, Maps, and Trees, which, as the title suggests, introduces visual models for literary exploration.
+
+Our survey pays particular attention to recent text mining projects and tools including “The Proceedings of the Old Bailey”, David L. Hoover’s work with cluster analyses at NYU using “MiniTab”, Matt Jockers’ topic modeling work in “Macroanalysis”, the University of Waikato’s “WEKA”, the open-source visualization tool “Gephi”, the UMass machine learning tool “MALLET”, the research tools for textual study reviewed on “TAPoR”as well as some of our own INKE related projects such as “Dynamic Table of Contents”, “CiteLens”, “TextTiles” and “dialR”. 
+
+Identifying and Combining: While we recognize that output will assume a variety of formats including for instance heat maps, topographic plots or scatter plots, our survey suggests that text-mining projects commonly use five principal types of visualization:
+
+1. Dendrograms, showing data clustering within sets
+2. Histograms, showing change over time
+3. Networkdiagrams, showing how entities are connected within a network
+4. Wordclouds, representing topics of words
+5. Scatterplots, showing words or parts in an abstract space
+Visualizations that are presented in print are typically Spartan, focusing the attention on the results through careful design. All affordances are removed. The same types of visualizations automatically generated from large data sets, however, tend to be too dense to be useful and have to include affordances if meant to be interactive. Simple representative visualizations, like histograms for instance, are insufficient to display complex interrelationships. Dendrograms, especially if you are working with massive data sets, quickly become an illegible mass of inter-connectivity. Word clouds are good at showing the relative frequency of words in a text or topic, but not at comparing one text or topic to another. Network diagrams produce some beautiful results, but suffer from the same difficulties as dendrograms; large data sets quickly lead to illegibility.
+
+“By visualizing information, we turn it into a landscape that you can explore with your eyes, a sort of information map. And when you’re lost in information, an information map is kind of useful.” — David McCandless, 2010
+
+Modeling: Our research now is looking at ways to increase the exploratory power of visualization of large data sets. Used in combination, visualizations can provide otherwise elusive insight and clarity. They can also provide affordances for each other – a histogram can be used to explore a dendrogram. We have developed interactive prototypes using combinations of visualizations, and focusing on not simply allowing, but even encouraging the user to truly explore the (big) data, “function[ing] almost instinctively”, as McCullough (1996) stated, “to serve the process of development”. The more we can encourage users to explore and play with the data, the more likely they are to develop useful insights.
+
+
+Fig. 1: Combination of a modified dendrogram showing clustering, and a diachronic timeline of 500 philosophy papers.
+
+Figure 1 shows a prototype of a combination of dendrogram and histogram that we developed to visualize the clustering of 500 papers published between 1966 and 2004. The prototype is a combination of a modified dendrogram showing the clusters, and a diachronic visualization displaying the subjects over time. The displayed data is intuitively explorable, and the modified dendrogram is designed to encourage exploration. We developed the R code to prepare the data for interactivity. In Voyant we have developed skins that combine scatter plots and histograms, word clouds and histograms, and network diagrams with other tools. Again, the tools are open for others to recombine.
+
+To conclude, surveying commonly used graphical representations allowed us to identify commonly used visualizations that humanists find useful. To scale these so that they can be used interactively to explore large data sets we have prototyped combinations, where one visualization can be used to explore another and vice versa. The goal is visualizations that help researchers make sense of big data; visualizations that let us explore the forest, not just the trees so that we can draw accurate and appropriate inferences from the data.
+
+References
+The Proceedings of the Old Bailey - http://www.oldbaileyonline.org/
+
+Cluster Analysis, Principal Components Analysis (PCA), and T-testing in Minitab - https://files.nyu.edu/dh3/public/ClusterAnalysis-PCA-T-testingInMinitab.html
+
+Jockers, M. Macroanalysis.
+
+Weka 3: Data Mining Software in Java - http://www.cs.waikato.ac.nz/ml/weka/
+
+Gephi - The Open Graph Viz Platform - https://gephi.org/
+
+Mallet - MAchine Learning for LanguagE Toolkit - http://mallet.cs.umass.edu/
+
+TAPoR - Research Tools for Textual Study - http://tapor.ca/
+
+Dynamic Table of Contents - http://www.ualbertaprojects.info/dyntoc/dyntoc_v3_5/Main.html
+
+CiteLens - http://labs.fluxo.art.br/CiteLens/
+
+TextTiles - http://dev.giacometti.me/textTiles/trunk/
+
+dialR - http://research.artsrn.ualberta.ca/~dialr/drMain.html
+
+Allison, S., Heuser, R., Jockers, M., Moretti, F. and Witmore, M. (2012 ). Quantitative Formalism: An Experiment.Pamphlet 1, Stanford Literary Lab. Print.
+
+Araya, A. A. (2003). The Hidden Side of Visualization. Techné: Research in Philosophy and Technology; Vol 7, No 2, Print.
+
+Brunet, É. (1989). L'Exploitation des Grands Corpus: Le Bestiare de la Littérature Française. Literary and Linguistic Computing, Vol. 4, No. 2, p. 121-134. Print.
+
+Crane, G. (2006). What Do You Do with a Million Books? D-Lib MagazineVol. 12 No. 3, Print.
+
+Dragland, Å. (2013). Big Data, for better or worse. SINTEF.no. 22 May 2013. Web. 27 Oct. 2013.
+
+Jockers, M. (2013). Macroanalysis : digital methods and literary history - University of Illinois Press, Urbana, Chicago & Springfield.
+
+Kelly, J., Floyer, D., Vellante, D. and Miniman, S. (2013). Big Data Vendor Revenue and Market Forecast 2012-2017. Wikibon.org. 19 Feb. 2013. Web. 28 Oct. 2013.
+
+McCandless, D. (2010). David McCandless: The beauty of data visualization. TED Talks. Web Video.  25 Oct.  2013. 
+
+McCormick, Bruce H., DeFanti, Thomas A., and Brown, Maxine D. (1987). Visualization in Scientific Computing. Computer Graphics 21, 6 (November). New York: Association for Computing Machinery, SIGGRAPH, Print.
+
+McCullough, M. (1996).  Abstracting Craft: The Practiced Digital Hand; Cambridge, MIT Press, Print.
+
+Moretti, F. (2013). The End of the Beginning: A Reply to Christopher Prendergast.Distant Reading. London: Verso, p. 137-158. Print.
+
+Risen, J. and Poitras, L. (2013). NSA Gathers Data on Social Connections of U.S. Citizens, New York Times, 28 Sep. 2013. Web, 27 Oct, 2013.
+
+Simpson J.; Rockwell, G.; Sinclair, S.; Uszkalo, K.; Brown, S.; Dyrbye, A.; Chartier, R.. (2013). Framework for Testing Text Analysis and Mining Tools.Poster presented at the Digital Humanities 2013 conference at the University of Nebraska-Lincoln. Lincoln, Nebraska, USA.
+
+Smith, J. (1978). Computer Criticism.Style. Vol XII, No 4. Print.
+
+Smith, J. (1984). A New Environment For Literary Analysis.Perspectives in Computing 4. 2/3, (1984): 20-31. Print.
+
+Tufte, Edward. (1983). The Visual Display of Quantitative Information; Cheshire, CT: Graphics Press, Print.
+
+University of Nebraska-Lincoln. (2012). By text-mining the classics, UNL prof unearths new literary insights. UNL News Blog. 23 Aug. 2012. Web. 27 Oct. 2013.

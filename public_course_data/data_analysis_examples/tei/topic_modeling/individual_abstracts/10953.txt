@@ -1,0 +1,105 @@
+10953	2019	
+      
+         
+            Einleitung
+            Wir präsentieren 
+                WebAnno-MM1, eine Erweiterung des populären web-basierten Annotationstools 
+                WebAnno2 (Yimam et al., 2013; Eckart de Castilho et al., 2014), welches die Annotation transkribierter Daten ermöglicht und dabei parallel synchronisierte Ansichten auf die Daten zur Verfügung stellt. Die Erweiterung wurde im Rahmen eines Projekts zur Erarbeitung und Erprobung innovativer Lehrmethoden entwickelt (vgl. Remus et al, 2018), um Annotation von Videodaten als Unterstützung für die Analyse und Reflexion authentischer Diskursbeispiele einsetzen zu können. Eine entscheidende Rolle spielen dabei das kollaborative Annotieren und die systematische Überprüfung der Übereinstimmung – einerseits zwischen Studierenden, als Diskussionsgrundlage im Seminar, und anderseits durch einen Studierenden zu verschiedenen Zeitpunkten, um so Einblicke in die Aneignung neuer Konzepte zu bekommen. Die Auswertung von Inter- und Intra-Annotator-Agreement wird durch die elaborierte Nutzerverwaltung und das bereits existierende Kurationsmodul von WebAnno ermöglicht. Ein weiterer Vorteil von WebAnno in Hinblick auf die Diskursannotation ist der bessere Überblick über größere Abschnitte des Diskurses verglichen mit gängigen Werkzeugen, die in erster Linie für die Transkription und Annotation auf Äußerungsebene entwickelt worden sind, wie z.B. der EXMARaLDA Partitur-Editor (Schmidt und Wörner, 2014) oder ELAN (Sloetjes, 2014). Auch hinsichtlich der Struktur der Annotationen bietet WebAnno große Flexibilität, da neben einfacher Spannenannotation auch relationale und feature-basierte Annotationen möglich sind. Ein wichtiger Aspekt für den Einsatz in der Lehre ist zudem die einfache Handhabung einer web-basierten Plattform.
+                
+         
+         
+            WebAnno-MM Plugin
+            WebAnno bietet in der Basisversion nur geringe Funktionalität für transkribierte gesprochene Daten. WebAnno-MM bietet daher nun als Plugin für WebAnno sowohl die Möglichkeit, alignierte Mediendateien abzuspielen, als auch die Transkriptionsdaten nach bestimmten Konventionen und dem vorgesehenen Layout für die qualitative Analyse zu visualisieren. Durch ein Open-Source-Projekt wie WebAnno wird nicht nur der Einsatz der Lehrmethode und der neuen WebAnno-Version in verschiedenen Kontexten ermöglicht, sondern auch die Ergänzung und Weiterentwicklung zusätzlicher Funktionalitäten für ähnliche Vorhaben. In Hinblick auf Interoperabilität und Nachhaltigkeit der Lösung wurde dementsprechend der auf den 
+                TEI-Richtlinien3 basierende ISO-Standard „Transcription of Spoken 
+                Language“4 als Grundlage gewählt, für die eine Konvertierung aus gängigen Transkriptionswerkzeugformaten bereits möglich ist (vgl. Schmidt et al., 2017).
+                
+         
+         
+            Datenmodellierung in WebAnno
+            Die Grundlage in WebAnno‘s Backend ist UIMA (Unstructured Information Management 
+                Architecture)5 (Ferrucci und Lally, 2004). UIMA speichert Textinformationen, d.h. den Text selbst und die Annotationen, in sogenannten CASs (Common Analysis Systems). Eine große Herausforderung ist die Darstellung von Transkriptionen und den (zeitlichen) Annotationen basierend auf mehreren Sprechern. Die Textsequenz soll dabei die Wahrnehmung einer Konversation möglichst wenig behindern und die einzelnen segmentierten Äußerungen der Sprecher und ihrer kontinuierlichen Annotationen beibehalten. Dazu parsen wir ISO/TEI-XML-Inhalte und speichern Äußerungen einzelner Sprecher in verschiedenen sogenannten Views (verschiedene CASs des gleichen Dokuments) und behalten Zeitstempel als Metadaten innerhalb einer CAS. Wir verwenden das jeweils auf einzelnen Sprecherbeiträgen basierende 
+                    annotationBlock-XML-Element als eine unterbrechungsfreie Einheit, da wir in diesem Fall davon ausgehen können, dass einzelne Annotationen innerhalb der Zeitgrenzen des Sprecherbeitrags liegen. Äußerungen und vorhandene Spannenannotationen werden auf diese Weise in die vorhandene Annotationsansicht von WebAnno übernommen. Eigenständige Ereignisse wie beispielsweise non-verbale Äußerungen hingegen, die als sogenannte 
+                    Incidents auch über andere, sprecherabhängige Äußerungen hinweg auftreten können, werden nicht in die sequentielle WebAnno Annotationsansicht konvertiert, sondern nur in der zusätzlichen Partituransicht dargestellt.
+                
+         
+         
+            Visualisierung der Transkriptionsdaten
+            Die neu integrierte Partituransicht basiert auf einer Visualisierung von Äußerungen und Annotationen im bekannten 
+                Partiturlayout6. Abbildung 1 (rechts) zeigt einen Screenshot von der Partituransicht. Die Annotationsansicht und die Partituransicht sind synchronisiert, d.h. durch Klicken auf die entsprechenden Zeitmarkierungen im jeweiligen Browserfenster ändert sich der Fokus in dem anderen. Durch Klicken wird auch die Medienwiedergabe gestartet oder pausiert. Darüber hinaus kann in der Partituransicht unter den verknüpften Medienformaten die aktuell abzuspielende Datei festgelegt und die Breite der Partiturflächen nach Bedarf eingestellt werden. Es stehen außerdem die Metadaten der Aufnahme und den Sprechern zur Verfügung.
+                
+            
+               
+               
+                  
+                  Abbildung 1. Annotationsansicht (links), Partituransicht (rechts)
+               
+            
+         
+         
+            Präsentation
+            Wir stellen auf der Grundlage unseres Posters die theoretischen Hintergründe sowie die technische Implementierung der Erweiterung vor und zeigen das Plugin und seine Anwendung in einer Live-Demonstration.
+         
+      
+      
+         
+             https://github.com/webanno/webanno-mm
+                    
+             https://webanno.github.io
+                    
+             http://www.tei-c.org/guidelines/p5/
+                    
+             http://www.iso.org/iso/catalogue_detail.htm?csnumber=37338
+                    
+             https://uima.apache.org/
+                    
+             Beispiel der Partituransicht: http://hdl.handle.net/11022/0000-0000-4F70-A
+                    
+         
+         
+            
+               Bibliographie
+               
+                  Eckart de Castilho, Richard / Biemann, Chris / Gurevych, Iryna / Yiman, Seid Muhie (2014):
+                  WebAnno: a flexible, web-based annotation tool for CLARIN, 
+                        in: Proceedings of the CLARIN Annual Conference 2014 1-3.
+                    
+               
+                  Ferrucci, David / Lally, Adam (2004):
+                  UIMA: An Architectural Approach to Unstructured Information Processing in the Corporate Research Environment, 
+                        in: Natural Language Engineering, 10(3–4): 327-348.
+                    
+               
+                  Remus, Steffen / Hedeland, Hanna / Ferger, Anne / Bührig, Kristin / Biemann, Chris (2018):
+                  WebAnno meets EXMARaLDA, 
+                        in: Selected papers from the CLARIN Annual Conference 2018, Pisa, 8–10 October 2018. Linköping: University Electronic Press.
+                    
+               
+                  Schmidt, Thomas / Wörner, Kai (2014):
+                  EXMARaLDA, 
+                        in: 
+                        Durand, Jacques / Gut, Ulrike / Kristoffersen, Gjert (eds.): 
+                  Handbook on Corpus Phonology. Oxford: University Press 402-419.
+                    
+               
+                  Schmidt, Thomas / Hedeland, Hanna / Jettka, Daniel (2017):
+                  Conversion and annotation web services for spoken language data in CLARIN, 
+                        in: Selected papers from the CLARIN Annual Conference 2016, Aix-en-Provence, 26–28 October 2016. Linköping: University Electronic Press 113–130.
+                    
+               
+                  Sloetjes, Han (2014):
+                  ELAN: Multimedia annotation application, 
+                        in: 
+                        Durand, Jacques / Gut, Ulrike / Kristoffersen, Gjert (eds.): 
+                  Handbook on Corpus Phonology. Oxford: University Press 305–320.
+                    
+               
+                  Yimam, Seid Muhie / Gurevych, Iryna / Eckart de Castilho, Richard / Biemann, Chris (2013):
+                  WebAnno: A flexible, web-based and visually supported system for distributed annotations, 
+                        in: Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics: System Demonstrations  , Sofia, Bulgaria 1-6.
+                    
+            
+         
+      
+   
+
+

@@ -1,0 +1,43 @@
+10482	2016	
+      
+         Dank Bibliotheken und Archiven konnten große Bestände mittelalterlicher Handschriften über die Jahrhunderte erhalten werden. Zur Beantwortung zentraler Fragestellungen der buchhistorischen Forschung werden die Handschriften analysiert und insbesondere die verschiedenen Bestandteile des Layouts – beispielsweise Seitengröße, Schrift- und Bildraum – vermessen. Die meist manuelle Analyse ist jedoch sehr zeit- und arbeitsintensiv, so dass nur eine geringe Anzahl mittelalterlicher Handschriften auf diese Art und Weise untersucht werden kann. Mit Hilfe digitaler Methoden und Werkzeuge können vorhandene Digitalisate der Handschriftenseiten automatisch oder halbautomatisch ausgewertet werden. Im Gegensatz zum manuellen Ansatz kann in diesem Fall mit einer signifikanten Verbesserung im Hinblick auf Schnelligkeit, Genauigkeit sowie Reproduzierbarkeit gerechnet werden. Bisher mangelt es jedoch an grafischen Oberflächen, die die entstehenden hochdimensionalen Metadaten großer, elektronisch erfasster Bestände dynamisch visualisieren können. Als Mehrwert wird es Geisteswissenschaftlern ermöglicht, Zusammenhänge zwischen Handschriften einfach zu erkennen und neue Erkenntnisse aus den Daten zu gewinnen.
+        Aus diesem Grund entwickelt das vom BMBF geförderte Verbundprojekt „eCodicology“ (http://www.ecodicology.org) einen Software Workflow zur automatischen Annotation und Visualisierung von makro- und mikrostrukturellen Layoutmerkmalen mittelalterlicher Handschriften.
+         In diesem Kontext präsentieren wir das Visualisierungsframework CodiVis, das die Erforschung von Korrelationen im abstrakten Merkmalsraum digitalisierter mittelalterlicher Handschriften vereinfacht und unterstützt. Die Datengrundlage von CodiVis sind mittelalterliche Handschriften, die zwischen dem achten und neunzehnten Jahrhundert in der Bibliothek der Trierer Benediktinerabtei St. Matthias aufbewahrt wurden.
+          Der Bestand wurde im Rahmen des Projektes „Virtuelles Skriptorium St. Matthias“ (http://www.stmatthias.uni-trier.de) digitalisiert und mit bibliografischen Metadaten, wie Datierung, Beschreibstoff, Format und inhaltlichen Informationen, in TEI P5 konformen XML-Dateien angereichert. Nach Einspeisung der Digitalisate in das Datenrepositorium CodiStore können mit Hilfe von SWATI (Software Workflow for the Automatic Tagging of Images) verschiedene Layoutmerkmale der Handschriftenseiten bestimmt sowie die bibliografischen Metadaten extrahiert werden. 
+         
+            
+            
+               Abb. 1: CodiVis Prototyp, der beide Metadatenarten zur
+            Visualisierung nutzt.
+         
+         Für einen schnellen Überblick über den gesamten Datenbestand und eine gleichzeitige Darstellung der zugehörigen Handschriftendetails wird eine Kombination zweier Visualisierungsformen angeboten. Auf der linken Seite ist der Bestand mit Hilfe eines radialen Baumdiagramms illustriert, geordnet nach dem Jahrhundert der Entstehung. Auf der rechten Seite werden die extrahierten Merkmale Schriftraum, Seitenhöhe und Seitenbreite mittels paralleler Koordinaten dargestellt. Die verschiedenen Linien repräsentieren dabei die spezifischen Ausprägungen der Layoutmerkmale einzelner Handschriften. Zur Untersuchung der Korrelationen werden Markierungen im Radialbaum automatisch in die Ansicht der parallelen Koordinaten übernommen. 
+         Bisherige Evaluationen des Visualisierungsframeworks zeigen, dass der überwiegende Teil der Nutzer durch die interaktive Zugangsweise erfolgreich Zusammenhänge zwischen ähnlichen Handschriften, fehlerhafte Informationen und Ausreißer erkennen konnte. Darüber hinaus eröffnet CodiVis neue Fragestellungen im Hinblick auf die Visualisierung von Unsicherheiten in den bibliografischen Daten sowie in den automatischen Messungen, die in einem nächsten Schritt zusätzlich zu Visualisierungsmöglichkeiten einzelner Seiten integriert werden. Insgesamt können durch CodiVis neue Möglichkeiten der intuitiven Erkundung historischer Daten aufgezeigt werden. 
+         Die Präsentation gibt einen Einblick in die Entwicklung und Benutzung von CodiVis im
+            Rahmen des Projektes eCodicology mit einem Ausblick auf die mögliche Weiternutzung
+            mit anderen Beständen. Zum Ende der Projektlaufzeit ist die Veröffentlichung als
+            Teil des DARIAH Portals geplant.
+      
+      
+         
+            
+               Bibliographie
+               
+                  DARIAH: DARIAH-EU. Digital
+                Research Infrastructure for the Arts and Humanities http://www.dariah.eu/ [letzter
+                Zugriff 11. Februar 2016].
+               
+                  Technische Universität Darmstadt / KIT Karlsruhe /
+                  Universität Trier (2014): eCodicology.
+                  Algorithmen zum automatischen Tagging mittelalterlicher Handschriften http://www.ecodicology.org
+                  [letzter Zugriff 16. Februar 2016].
+               Kompetenzzentrum für elektronische Erschließungs- und
+                    Publikationsverfahren in den Geisteswissenschaften (2010-2014): Virtuelles
+                    Skriptorium St. Matthias. Der mittelalterliche Bibliotheksbestand der
+                    Trierer Abtei St. Matthias digital im Netz. Universität Trier: http://www.stmatthias.uni-trier.de/index.php [letzter Zugriff 16.
+                    Februar 2016].
+            
+         
+      
+   
+
+

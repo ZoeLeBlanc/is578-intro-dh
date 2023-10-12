@@ -1,0 +1,476 @@
+Natural language processing (NLP) is a research area that stands at the intersection of linguistics and computer science; its focus is the development of automatic methods that can reason about the internal structure of text. This includes part-of-speech tagging (which, for a sentence like John ate the apple, infers that John is a noun, and ate a verb), syntactic parsing (which infers that John is the syntactic subject of ate, and the apple its direct object), and named entity recognition (which infers that John is a Person, and that apple is not, for example, an Organization of the same name). Beyond these core tasks, NLP also encompasses sentiment analysis, named entity linking, information extraction, and machine translation (among many other applications).
+
+Over the past few years, NLP has become an increasingly important element in computational research in the humanities. Automatic part-of-speech taggers have been used to filter input in topic models (Jockers, 2013) and explore poetic enjambment (Houston, 2014). Syntactic parsers have been used to help select relevant context for concordances (Benner, 2014). Named entity recognizers have been used to map the attention given to various cities in American fiction (Wilkens, 2013) and to map toponyms in Joyce's Ulysses (Derven et al., 2014) and Pelagios texts (Simon et al., 2014). The sequence tagging models behind many part-of-speech taggers have also been used for identifying genres in books (Underwood et al., 2013).
+
+There is a substantial gap, however, between the quality of the NLP used by researchers in the humanities and the state of the art. Research in natural language processing has overwhelmingly focused much of its attention on English, and specifically on the domain of news (simply as a function of the availability of training data). The Penn Treebank (Marcus et al., 1993)—containing morphosyntactic annotations of the Wall Street Journal—has driven automatic parsing performance in English above 92% (Andor et al., 2016); part-of-speech tagging on this same data now yields accuracies over 97% (S0gaard, 2011). While a handful of other high-resource languages (German, French, Spanish, Japanese) have attained comparable performance on similar data (Hajic et al., 2009), many languages simply have too few resources (or none whatsoever) to train robust automatic tools. Even within English, out-of-domain performance of many NLP tasks—in which, for example, a syntactic parser trained on the Wall Street Journal is used to automatically label the syntax for Paradise Lost—is bleak. Figure 1 illustrates one sentence from Paradise Lost automatically tagged and parsed using a tool trained on the Wall Street Journal. Since this model is trained on newswire, it expects newswire as its input; errors in the part-of-speech assignment snowball to bigger errors in syntax.
+
+
+Figure 1: Parsers and part-of-speech taggers trained on the
+
+WSJ expect newswire syntax. Automatically parsed syntactic dependency graph with part-of-speech tags for Long is the way and hard, that out of Hell leads up to light. Errors in part-of-speech tags and dependency arcs are shown in red. Part-of-speech errors snowball into major
+
+syntactic errors.
+
+Table 1 provides a summary of recent research that has investigated the disparity between training data and test data for several NLP tasks (including part-of-speech tagging, syntactic parsing and named entity recognition). While many of these tools are trained on the same fixed corpora (comprised primarily of newswire), they suffer a dramatic drop in performance when used to analyze texts that come from a substantially different domain. Without any form of adaptation (such as normalizing spelling across time spans), the performance of an out-of-the-box part-of-speech tagger can, at worse, be half that of its performance on contemporary newswire. On average, differences in style amount to a drop in performance of approximately 10-20 absolute percentage points across tasks. These are substantial losses.
+
+Citation
+
+Task
+
+In domain
+
+Accuracy
+
+Out domain
+
+Accuracy
+
+RäüSQRetal. (2007)
+
+POS
+
+English news
+
+97.0%
+
+Shakespeare
+
+81.9%
+
+§^giWftetal.(2011)
+
+POS
+
+German news
+
+97.0%
+
+Early Modem German
+
+69.6%
+
+Moon and Baidridge, (2007)
+
+POS
+
+WSJ
+
+97.3%
+
+Middle English
+
+56.2%
+
+gfiSUagSidSMiand
+
+Xaa&9dß(2008)
+
+POS
+
+Italian news
+
+97.0%
+
+Dante
+
+75.0%
+
+l&xsw&et al. (2013b)
+
+POS
+
+WSJ
+
+97.3%
+
+Twitter
+
+73.7%
+
+Yang and Eisenstein (2016)
+
+POS
+
+WSJ
+
+Early Modem English
+
+74.3%
+
+Südsa(2oon
+
+PS
+
+parsing
+
+WSJ
+
+86.3 F
+
+Brown corpus
+
+80.6 F
+
+Lease and CMroM (2005)
+
+PS
+
+parsing
+
+WSJ
+
+89.5 F
+
+GENIA medical texts
+
+76.3 F
+
+ßjHgaetal. (2013)
+
+Dep.
+
+parsing
+
+WSJ
+
+88.2%
+
+Patent data
+
+79.6%
+
+ggjggetal. (2014)
+
+Dep.
+
+parsing
+
+WSJ
+
+86.9%
+
+Broadcast news
+
+79.4%
+
+Magazines
+
+77.1%
+
+Broadcast
+
+conversation
+
+73.4%
+
+QSi«W&et al. (2013a)
+
+NER
+
+CoNLL 2003
+
+89.0 F
+
+Twitter
+
+41.0 F
+
+Figure 2: Out-of-domain performance for several NLP tasks, including POS tagging, phrase structure (PS) parsing, dependency parsing and named entity recognition. Accuracies are reported in percentages; phrase structure parsing and NER are reported in F1 measure.
+
+While many techniques are currently under development in the NLP community for domain adaptation (Blitzer et al., 2006; Chelba and Acero, 2006; Daumé III, 2009; Glorot et al., 2011; Yang and Eisenstein, 2014), including leveraging fortuitous data (Plank, 2016), they often require specialized expertise that can be a bottleneck for researchers in the humanities. The simplest and most empowering solution is often to create in-domain data and train NLP methods on it directly; in-domain data can substantially increase performance, almost to levels approaching state-of-the-art on newswire. When adding training data of Early Modern German and adding spelling normalization, Scheible et al. (2011) increase POS tagging accuracy on Early Modern German texts from 69.6% to 91.0%; when Moon and Baldridge (2007) train a POS tagger on Middle English texts, this pushes their accuracy from 56.2% to 93.7%; when Derczynski et al. (2013b) train a POS tagger directly on Twitter data, this increases accuracy from 73.7% to 88.4%. In-domain data is astoundingly helpful for many NLP tasks, from part-of-speech tagging and syntactic parsing to temporal tagging (Strotgen and Gertz, 2012).
+
+The difficulty, of course, is that training data is expensive to create at scale since it relies on human judgments; and the cost of this data scales with the complexity of the task, so that morphosyntactic or semantic annotations (which require a holistic understanding of an entire sentence) are often prohibitive. Few projects achieve this scale for domains in the humanities, but when they do, they have real impact - these include WordHoard, which contains part-of-speech annotations for Shakespeare, Chaucer and Spenser (Mueller, 2015); the Penn and York parsed corpora of historical English (Taylor and Kroch, 2000; Kroch et al., 2004; Taylor et al., 2006); the Perseus Greek and Latin treebanks (Bamman and Crane, 2011), which contain morphosyntactic annotations for classical Greek and Latin works; the Index Thomisticus (Passarotti, 2007), which contains morphosyntactic annotations for the works of Thomas Aquinas; the PROIEL treebank (Haug and J0hndal, 2008), which contains similar annotations for several translations of the Bible (Greek, Latin, Gothic, Armenian and Church Slavonic); the Tycho Brahe Parsed Corpus of Historical Portuguese (Galves and Faria, 2010); the Icelandic Parsed Historical Corpus (Rognvaldsson et al., 2012), and Twitter, annotated for part-of-speech (Gimpel et al., 2011) and dependency syntax (Kong et al., 2014).
+
+The availability of these annotated corpora means that we have the ability to train NLP tools for some dialects, domains and genres in Ancient Greek, Latin, Early Modern English, historical Portuguese, and a few other languages; this doesn't help the scholar working on John Milton, Virginia Woolf, Miguel Cervantes, or the countless other authors and genres in the long tail of underserved domains that researchers are increasingly finding high-quality NLP useful to help analyze. In this talk, I'll argue for an alternative: an open repository of linguistic annotations that scholars can use to train statistical models for processing natural language in a variety of domains, leveraging information from complementary sources (such as the works of Shakespeare) to perform well on a target domain of interest (such as the works of Christopher Marlowe). What this repository critically relies on is the expertise of the individuals who simultaneously are the consumers of NLP for their long-tail domain and are in the uniquely best position to create linguistic data to support their own work—and in doing so, can help develop an ecosystem that can support the work of others.
+
+Citation
+
+Task
+
+In domain
+
+Accuracy
+
+Out domain
+
+Accuracy
+
+RäüSQRetal. (2007)
+
+POS
+
+English news
+
+97.0%
+
+Shakespeare
+
+81.9%
+
+§^giWftetal.(2011)
+
+POS
+
+German news
+
+97.0%
+
+Early Modem German
+
+69.6%
+
+Moon and Baidridge, (2007)
+
+POS
+
+WSJ
+
+97.3%
+
+Middle English
+
+56.2%
+
+gfiSUagSidSMiand
+
+Xaa&9dß(2008)
+
+POS
+
+Italian news
+
+97.0%
+
+Dante
+
+75.0%
+
+l&xsw&et al. (2013b)
+
+POS
+
+WSJ
+
+97.3%
+
+Twitter
+
+73.7%
+
+Yang and Eisenstein (2016)
+
+POS
+
+WSJ
+
+Early Modem English
+
+74.3%
+
+Südsa(2oon
+
+PS
+
+parsing
+
+WSJ
+
+86.3 F
+
+Brown corpus
+
+80.6 F
+
+Lease and CMroM (2005)
+
+PS
+
+parsing
+
+WSJ
+
+89.5 F
+
+GENIA medical texts
+
+76.3 F
+
+ßjHgaetal. (2013)
+
+Dep.
+
+parsing
+
+WSJ
+
+88.2%
+
+Patent data
+
+79.6%
+
+ggjggetal. (2014)
+
+Dep.
+
+parsing
+
+WSJ
+
+86.9%
+
+Broadcast news
+
+79.4%
+
+Magazines
+
+77.1%
+
+Broadcast
+
+conversation
+
+73.4%
+
+QSi«W&et al. (2013a)
+
+NER
+
+CoNLL 2003
+
+89.0 F
+
+Twitter
+
+41.0 F
+
+Figure 1. Out-of-domain performance for several NLP tasks, including POS tagging, phrase structure (PS) parsing, dependency parsing and named entity recognition. Accuracies are reported in percentages; phrase structure parsing and NER are reported in F1 measure.
+
+Acknowledgements
+Many thanks to the anonymous reviewers for helpful feedback. This work is supported by a grant by the Digital Humanities at Berkeley initiative.
+
+Bibliography
+Andor, D., Alberti, C., Weiss, D., Severyn, A., Presta, A., Ganchev, K., Petrov, S., and Collins, M. (2016). Globally normalized transition-based neural networks. In
+
+Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 2442-2452, Berlin, Germany, August 2016. Association for Computational Linguistics.
+
+Bamman, D., and Crane, G. (2011) The ancient Greek and Latin dependency treebanks. In Language Technology for Cultural Heritage, pages 79-98. Springer, 2011.
+
+Benne, D. C. (2014). Marrying the benefits of print and digital: Algorithmically selecting context for a key word. In Digital Humanities 2014, 2014.
+
+Blitzer, J., McDonald, R., and Pereira, F. (2006) Domain adaptation with structural correspondence learning. In
+
+Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing, EMNLP '06, pages
+
+120-128, Stroudsburg, PA, USA, 2006. Association for Computational Linguistics.
+
+Burga, A., Codina, J., Ferraro, G., Saggion, H., and Wanner, L. (2013). The challenge of syntactic dependency parsing adaptation for the patent domain. In ESSLLI-13 Workshop on Extrinsic Parse Improvement, 2013.
+
+Chelba, C., and Acero, A. (2006). Adaptation of maximum entropy capitalizer: Little data can help a lot. Computer Speech & Language, 20 (4): 382-399, 2006.
+
+Daume, H. (2009) Frustratingly easy domain adaptation.
+
+arXiv preprint arXiv:0907.1815.
+
+Derczynski, L., Maynard, D., Aswani, N., and Bontcheva,
+
+K. (2013a) Microblog-genre noise and impact on semantic annotation accuracy. In Proceedings of the 24th ACM Conference on Hypertext and Social Media, pages 21-30. ACM, 2013.
+
+Derczynski, L., Ritter, A., Clark, S., and Bontcheva, K.
+
+Twitter part-of-speech tagging for all: Overcoming sparse and noisy data. In RANLP, pages 198-206, 2013b.
+
+Derven, C., Teehan, A., and Keating, J. (2014). Mapping and unmapping Joyce: Geoparsing wandering rocks. In Digital Humanities 2014, 2014.
+
+Galves, C., and Faria, P. (2010). Tycho Brahe Parsed Corpus of Historical Portuguese. http://www.tycho.iel.uni-camp.br/corpus/en/index.html .
+
+Gildea, D. (2001) Corpus variation and parser performance. In Proceedings of the 2001 Conference on Empirical Methods in Natural Language Processing, pages 167202, 2001.
+
+Gimpel, K., Schneider, N., O'Connor, B., Das, D., Mills, D., Eisenstein, J., Heilman, M., Yogatama, D., Flanigan, J.,
+
+and Smith, N. A. (2011) Part-of-speech tagging for Twitter: Annotation, features, and experiments. In Proceedings of the Annual Meeting of the Association for Computational Linguistics, companion volume, Portland, OR, June 2011.
+
+Glorot, X., Bordes, A., and Bengio, Y. (2011). Domain adaptation for large-scale sentiment classification: A deep learning approach. In Proceedings of the 28th International Conference on Machine Learning (ICML-11), pages 513-520, 2011.
+
+Hajic, J., Ciaramita, M., Johansson, R., Kawahara, D., Marti, M. A., Marquez, L., Meyers, A., Nivre, J., Pado,
+S., Stepanek, J., et al. (2009) The CoNLL-2009 shared
+
+task: Syntactic and semantic dependencies in multiple languages. In Proceedings of the Thirteenth Conference
+
+on Computational Natural Language Learning: Shared
+
+Task, pages 1-18. Association for Computational Linguistics, 2009.
+
+Haug, D. TT, and J0hndal, M. (2008) Creating a parallel treebank of the old indo-european bible translations. In
+
+Proceedings of the Language Technology for Cultural Heritage Data Workshop (LaTeCH 2008), Marrakech, Morocco, 1st June 2008, pages 27-34, 2008.
+
+Houston, N. (2014) Enjambment and the poetic line: Towards a computational poetics. In Digital Humanities 2014, 2014.
+
+Jockers, M. (2013) “Secret” recipe for topic modeling themes. http://www.matthewjock-ers.net/2013/04/12/secret-recipe-for-topic-modeling-themes/, April 2013.
+
+Kong, L., Schneider, N., Swayamdipta, S., Bhatia, A.,
+
+Dyer, C., and Smith, N. A (2014). A dependency parser for tweets. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing
+
+(EMNLP), pages 1001-1012, Doha, Qatar, October 2014. Association for Computational Linguistics.
+
+Kroch, A., Santorini, B., and Delfs, L. (2004). Penn-Helsinki parsed corpus of Early Modern English. Philadelphia: Department of Linguistics, University of Pennsylvania, 2004.
+
+Lease, M., and Charniak, E. (2005). Parsing biomedical literature. In Natural Language Processing-IJCNLP 2005, pages 58-69. Springer.
+
+Marcus, M. P., Santorini, B., and Marcinkiewicz, M. A.
+(1993). Building a large annotated corpus of English: The Penn Treebank. Computational Linguistics, 19 (2): 313-330, 1993.
+
+Moon, T., and Baldridge, J. (2007). Part-of-speech tagging for Middle English through alignment and projection of parallel diachronic texts. In EMNLP-CoNLL, pages 390399, 2007.
+
+Mueller, M. (2015). Wordhoard. http://wordhoard.north-western.edu/, Accessed 2015.
+
+Passarotti. M. (2006), Verso il Lessico Tomistico Bicul-turale. La treebank dell'Index Thomisticus. In Petrilli Raffaella and Femia Diego, editors, Il filo del discorso. In-trecci testuali, articolazioni linguistiche, composizioni logiche. Atti del XIII Congresso Nazionale della Societa di Filosofia del Linguaggio, Viterbo, Settembre 2006, pages 187-205. Roma, Aracne Editrice, Pubblicazioni della Societa di Filosofía del Linguaggio, 2007.
+
+Pekar, V., Yu, J., El-karef, M., and Bohnet, B. (2014)Ex-
+
+ploring options for fast domain adaptation of dependency parsers. SPMRL-SANCL 2014, page 54.
+
+Pennacchiotti, M., and Zanzotto, F. M. (2008). Natural language processing across time: An empirical investigation on italian. In Advances in natural language processing, pages 371-382. Springer.
+
+Plank, B. (2016). What to do about non-standard (or noncanonical) language in NLP. In KONVENZ, 2016.
+
+Rayson, P., Archer, D., Baron, A., Culpeper, J., and Smith,
+
+N. (2007). Tagging the bard: Evaluating the accuracy of a modern pos tagger on early modern english corpora.
+
+In Proceedings of Corpus Linguistics (CL2007).
+
+Rognvaldsson, E., Ingason, A. K., Sigursson, E. F., and
+Wallenberg, J. (2012). The Icelandic Parsed Historical Corpus (IcePaHC). In LREC, pages 1977-1984, 2012.
+
+Scheible, S., Whitt, R. J., Durrell, M., and Bennett, P.
+
+(2011). Evaluating an ‘off-the-shelf' POS-tagger on early modern German text. In Proceedings of the 5th ACL-HLT
+
+workshop on language technology for cultural heritage, social sciences, and humanities, pages 19-23. Association for Computational Linguistics, 2011.
+
+Simon, R., Barker, E. T. E., de Soto, P., and Isaksen, L.
+(2014). Pelagios 3: Towards the semi- automatic annotation of toponyms in early geospatial documents. In
+
+Digital Humanities 2014.
+
+S0gaard, A. (2011). Semisupervised condensed nearest neighbor for part-of-speech tagging. In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: short papers-Volume 2, pages 48-52. Association for Computational Linguistics, 2011.
+
+Strotgen, J., and Gertz, M. (2012). Temporal tagging on different domains: Challenges, strategies, and gold standards. In Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Mehmet Ugur Dogan, Bente Mae-gaard, Joseph Mariani, Asuncion Moreno, Jan Odijk, and Stelios Piperidis, editors, Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC'12), Istanbul, Turkey, may 2012. European Language Resources Association (ELRA). ISBN 978-29517408-7-7.
+
+Taylor, A., and Kroch, A.S. (2000) The Penn-Helsinki Parsed Corpus of Middle English. University of Pennsylvania, 2000.
+
+Taylor, A., Nurmi, A., Warner, A., Pintzuk, S., and Neva-lainen, T. (2006). Parsed Corpus of Early English Correspondence. Oxford Text Archive.
+
+Underwood, T., Black, M. L., Auvil, L., and Capitanu, B.
+
+(2013). Mapping mutable genres in structurally complex volumes. In Big Data, 2013 IEEE International Conference on, pages 95-103. IEEE, 2013.
+
+Wilkens, M. (2013). The geographic imagination of Civil War-era American fiction. American Literary History, 25 (4): 803-840, 2013. 10.1093/alh/ajt045.
+
+Yang, Y., and Eisenstein, J. (2014). Fast easy unsupervised domain adaptation with marginalized structured dropout. Proceedings of the Association for Computational Linguistics (ACL), Baltimore, MD, 2014.
+
+Yang, Y., and Eisenstein, J. (2016). Part-of-speech tagging for historical English. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 1318-1328, San Diego, California, June 2016. Association for Computational Linguistics.

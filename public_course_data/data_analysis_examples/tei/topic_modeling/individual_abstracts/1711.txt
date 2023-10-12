@@ -1,0 +1,43 @@
+1711	2013	1 Introduction and Goals
+The Holocaust's aftermath on memory discourses still represents an important research field. Almost 70 years after the end of the Second World War, there will soon be no direct witnesses of the Nazi crimes anymore. What will remain are texts bearing witness to the crimes. These texts are to be collected, preserved, and made accessible in a systematic manner. Especially the early texts are of great interest: texts written or published between 1933 and 1949, particularly in the years 1944/1945. In this context Germany, bearing the guilt for the Holocaust, and Poland, as a Nazi-occupied country where large parts of the Holocaust took place, are of special relevance.
+
+
+Figure 1:
+Outline of the GeoBib project workflow
+
+Unfortunately, the early texts on the Holocaust were soon forgotten or suppressed. With the formation of the two German states (1949), a process of suppression of the texts of the victims began (Cf. Hickethier 1986, p. 578). The official artistic doctrine in the GDR and Soviet Poland excluded certain authors, themes, and forms of presentation.
+
+The goal of the interdisciplinary [2] GeoBib project is to build a systematic and geo-referenced online bibliography of the early German and Polish Holocaust and camp literature: the first complete, bilingual, i.e. with respect to texts written both in German and Polish, research platform for information on the texts. On these, GeoBib seeks to collect annotations and metadata. This includes short summaries, keywords, biographical information on the authors, reviews, scientific literature, information on persons, geographical data, as well as time periods mentioned in the texts. The goal is to make information on these widely unknown texts accessible and searchable for a broad and interdisciplinary audience of researchers. Due to legal restrictions, the project does not, however, aim at annotating the whole texts. The focus lies on the collection and integration of these various kinds of information.
+
+The combination of literary and geo-temporal annotations, as well as the implementation of different (geographical) search mechanisms, enables scholars to conduct innovative research in different scientific domains like literature or history, but is also intended to suit the needs of students, teachers, and the interested public. Maps and other visualizations of geo-temporal information are expected to reveal “historical relations that might otherwise go unasked” (White 2010, p.6).
+
+2 Workflow and Technical Implementation
+Since various research areas are involved, we need to aggregate a multitude of different information from the fields of literature, history, and geography — a challenge in data management and text technology. An adaptation of the TEI standard, using an ODD file, is being used to build a schema that serves to integrate the intended collection of the different kinds of metadata mentioned above.
+
+Starting with the texts, annotation data is collected in TEI files that will be used as input for different processing steps (see Fig. 1): Bibliographical, biographical, and other metadata on the text need to be saved in a database and will be linked to the annotated geo-temporal data. Places need to be mapped to coordinates and annotated with the corresponding timestamp. The geographical data will be used in a geographic information system (GIS) and in an online database to support search queries across all relevant annotation data (see Fig. 2). The combination of time and space, extracted from the texts, will be used to display the data in form of geographical maps.
+
+
+Figure 2:
+Exemplary queries that the GeoBib system is expected to support by returning a list of relevant bibliographic references.
+
+3 Context and Outlook
+The Holocaust was a traumatic event that has recently been examined with increasing focus on space and time. Or as Beorn et. al. (2009, p. 563) put it: the “Holocaust was a profoundly geographical event, rooted in specific physical spaces, times, and landscapes”. Their project ‘Geographies of the Holocaust’ is actively working on analyzing the Holocaust from a geo-spatial point of view.
+
+Others are looking at how geography is represented in texts (cf. Eide 2012, Appadurai 2010). Specialized software projects were developed to make the representation of, or the work with, geographical information in the humanities easier, e.g. Neatline (Nowviskie et. al. 2012).
+
+Geo-spatial information extracted from literary texts, e.g. Google Ancient Places (GAP), can play a “vital role in improving efficiency for researchers” (Isaksen 2011, p. 82).
+
+Hence, the GeoBib project is active in a growing field of interdisciplinary geo-spatial research as well as the European Holocaust research community (cf. Kahn 2011).
+
+The GeoBib team is looking forward to collaborate in this context.
+
+References
+Appadurai, A. (2010). How Histories Make Geographies: Circulation and Context in a Global Perspective, Transcultural Studies. 1: 4–13.
+Beorn, W., T. I. M. Cole, S. Gigliotti, et al. (2009). Geographies of the Holocaust, Geographical Review. 99(4): 563–574.
+Eide, Ø. (2012). Underspecified, Ambiguous or Formal. Problems in Creating Maps Based on Texts. http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/underspecified-ambiguous-or-formal-problems-in-creating-maps-based-on-texts/ (acessed 10 April 2012).
+Hickethier, K. (1986). Biographie, autobiographie, Memoirenliteratur. In Fischer, L. (ed.), Literatur in der Bundesrepublik bis 1967. München 574–584.
+Isaksen, L., E. Barker, E. Kansa, et. al. (2011). GAP: a NeoGeo approach to classical resources, Leonardo, 45(1): 82–83.
+Kahn, R. (2011). The EHRI Project: building an online archive for European Holocaust research. SCONUL Focus. (52). 21–22.
+Nowviskie, B., W. Graham, D. McClure, et al. (2012). Geo-Temporal Interpretation of Archival Collections Using Neatline. Digital Humanities 2012. Conference Abstracts. 299–302.
+White, R. (2010). What is Spatial History? http://www.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29. (acessed 10 April 2012).
+Notes

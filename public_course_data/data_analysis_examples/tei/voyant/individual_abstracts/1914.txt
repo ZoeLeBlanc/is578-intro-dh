@@ -1,0 +1,38 @@
+The production of digital multi-text editions requires a wide range of preparatory steps. In the case of texts transmitted in (medieval) manuscripts, the witnesses have to be transcribed according to specific encoding rules. The transcriptions then are collated following certain ideas and concepts of how the transmission process could have developed (phylogenetic analysis can help in this concern, cf. Howe et al. 2004 and 2012, Stolz 2013). The transcriptions and collations finally have to be transferred to a digital edition that allows the users to explore the characteristics of single witnesses as well as the history of a text, which is delivered in variants and in different versions. A dynamically organized database offering various components and adapted to the needs of diverse user-profiles is nowadays the right tool for this purpose.
+
+The poster demonstrates the steps described above that are abstracted from the experiences made in the Swiss Parzival Project, based at the university of Bern (cf. http://www.parzival.unibe.ch). The electronic edition of Wolfram von Eschenbach’s German Grail novel, written shortly after 1200 and transmitted during several centuries in ca. hundred witnesses (complete manuscripts as well as fragments), has now been completed by more than a half of the textual corpus (cf. Stolz 2003 and 2011, Viehhauser 2008). During the last years, transcription rules have been established that consider particular manuscript features as well as the compatibility with international standards such as TEI (cf. Stolz et al. 2007). Following these rules, the manuscript transcriptions are made.
+
+The next step after transcription is the collation of the manuscript texts. In the editing process of Wolfram’s Parzival this decisive stage has to cope with the existence of different textual versions (‘Fassungen’) created in the author’s context (caused by the oral delivery of texts in the Middle Ages). Due to this fact not only different manuscript texts (on a first level), but also the textual versions (founded on different manuscripts groups, on a second level) have to be collated to each other. The poster shows the problems resulting from this two-level collation (performed in the Parzival project so far by electronic, but not automatized procedures), and discloses options for resolving them in a future semi-automatic process of electronic text comparison.
+
+At an early stage of the project, program packages such as Collate (cf. Robinson 1994) seemed to be an adequate tool for producing an electronic edition right from the transcription up to the final product including collations, variant apparatuses and digital images. In a later period of the project the editors switched to modules supported by components of TuStep (Tübinger System von Textverarbeitungs- programmen), which, due to its flexible character, fitted in better with their requests. An electronic mask created with TuStep allows the editors to handle the complexity featured in the Parzival text. However, by using this tool, the collations concentrate more on the editor’s handwork than they would have to with the semi-automatic, yet imperfect techniques offered by Collate. Nowadays, program packages such as CollateX (cf. http://collatex.net/, accessed 05/03/14) offer alternative tools, but still don’t fully satisfy the project’s needs. The examples given in the poster show some basic requirements occurring in the collation of a text transmitted in multiple versions. They result in a plea for enhancing the ingenious potential contained in currently obsolescent programs such as Collate and TuStep.
+
+The poster also demonstrates the concept of the project database that is currently under construction. This tool will enable the users to find their way through a complex textual tradition. They can browse through both single manuscripts and different versions, and they can edit the text in different encodings, both in electronic and printed form.
+
+The readers can, in fact, access synoptic listings of single verses in the variant wordings of the different manuscripts, e.g. verse 249.27:
+
+
+They can compare the transcriptions and digitized images of singular manuscripts, e.g., V and V’ representing an exemplar and its copy (with V’ omitting a substantial passage before 799.1):
+
+
+And the readers can explore the textual varieties of a critical electronic edition presenting the Parzival text in four versions. Links to the relevant manuscripts on which the versions are based on are provided (with an example of ms. D in the second image).
+
+
+
+The poster concludes with perspectives on the current endeavour of developing sustainable formats for the Parzival database and other textual databases in Switzerland, which are performed by a recently established national “Daten- und Dienstleistungszentrum für geisteswissenschaftliche Forschungsdaten” (DDZ), funded by the Swiss Academy of Humanities and Social Sciences.
+
+References
+Howe, Christopher J./ Barbrook, Adrian C. / Mooney, Linne R. / Robinson, Peter (2004): Parallels between Stemmatology and Phylogenetics, in: Studies in Stemmatology II, ed. by Pieter van Reenen/ August den Hollander/ Margot van Mulken, Amsterdam/ Philadelphia 2004, pp. 3–11
+
+Howe, Christopher J./ Conolly, Ruth / Windram, Heather F (2012): Responding to Criticisms of Phylogenetic Methods in Stemmatology, in: Studies in English Literature 1500–1900 52, pp. 51–67
+
+Robinson, Peter: Collate (1991). A Program for Interactive Collation of Large Textual Traditions, in: Research in Humanities Computing 3. Selected Papers from the ALLC/ACH Conference, Tempe (Arizona), March 1991, ed. by Don Ross/ Dan Brink, Oxford 1994, pp. 32–45
+
+Stolz, Michael (2003): New Philology and New Phylogeny. Aspects of a Critical Electronic Edition of Wolfram’s Parzival, in: Literary and Linguistic Computing 18,2, pp. 139–150
+
+Stolz, Michael/ Schöller, Robert/ Viehhauser, Gabriel (2005): Transkriptionsrichtlinien des Parzival-Projekts, in: Edition und Sprachgeschichte. Baseler Fachtagung 2005, ed. by Michael Stolz/ Robert Schöller/ Gabriel Viehhauser, Tübingen 2007 (Beihefte zu editio 26), pp. 295–328
+
+Stolz, Michael (2011): Benutzerführung in digitalen Editionen. Erfahrungen aus dem Parzival-Projekt, in: Digitale Edition und Forschungsbibliothek. Beiträge der Fachtagung im Philosophicum der Universität Mainz am 13. und 14. Januar 2011, ed. by Christiane Fritze et al., Wiesbaden 2011 (Bibliothek und Wissenschaft 44), pp. 49–80
+
+Stolz, Michael (2013): Early versions in medieval textual traditions. Wolfram’s Parzival as a test case, in: Dating Egyptian Literary Texts, vol. 1, ed. by Gerald Moers et al., Hamburg (Lingua Aegyptia – Studia monographica 11), pp. 561–587
+
+Viehhauser, Gabriel (2008): On the Margins of the Canon – Editions, the ‘Whole’ Text and the ‘Whole’ Codex, in: Variants 7 (2008 [recte 2010]), pp. 57–74

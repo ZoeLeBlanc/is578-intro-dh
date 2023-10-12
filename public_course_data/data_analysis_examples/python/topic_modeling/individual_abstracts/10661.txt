@@ -1,0 +1,264 @@
+10661	2017	
+      
+         
+            Forschungsstand
+            Die Anwendung von Methoden der Netzwerkanalyse auf literarische Texte hat sich in den letzten Jahren zu einem eigenständigen Forschungsfeld der 
+                    Digital Literary Studies entwickelt. Im Vordergrund stehen dabei häufig computerlinguistische Fragen, insbesondere solche nach der automatisierten Extraktion von Netzwerkdaten (z.B. qua 
+                    named entity recognition, 
+                    co-reference resolution) und deren Evaluation (u. a. Elson et al. 2010; Park et al. 2013; Agrarwal et al. 2013; Rochat 2014; Fischer et al. 2015; Waumans et al. 2015; Jannidis et al. 2016). 
+                
+            Darüber hinaus wird ausgelotet, inwiefern sich mittels visueller und/oder statistischer Auswertung der Netzwerkdaten genuin literaturwissenschaftliche Erkenntnisse gewinnen bzw. neue Wege der literaturwissenschaftlichen Analyse entwickeln lassen: Neben Ansätzen zur quantitativen Beschreibung und Hierarchisierung des Figurenpersonals (Jannidis et al. 2016) werden hier, im Rahmen korpusbasierter Analysen, Optionen der literaturhistorischen Periodisierung auf Basis von quantitativen Strukturdaten diskutiert (Trilcke et al. 2015) sowie Typen der ästhetischen Modellierung sozialer Formationen in und durch literarische Texte differenziert (Stiller et al. 2003; Stiller & Hudson 2005; Trilcke et al. 2016).
+         
+         
+            Forschungsdesiderat: Plotanalyse
+            Nahezu keine Rolle spielte bisher jedoch ein durchaus hehres Erkenntnisversprechen, das – bereits in der prä-automatisierten Zeit formuliert (de Nooy 2006) – auch den Fluchtpunkt des einschlägigen ›Pamphlets‹ von Franco Moretti steht: dass nämlich die Netzwerkanalyse als ein Instrumentarium der quantitativen »plot analysis« (Moretti 2011) fungieren könne. 
+            Tatsächlich lässt sich dieses Erkenntnisversprechen mit den derzeit verfolgten Ansätzen im Bereich der literaturwissenschaftlichen Netzwerkanalyse kaum aufgreifen, geschweige denn einlösen (so auch Prado et al. 2016). Denn die sequentielle Dimension literarischer Texte, mithin ihre Temporalität, bleibt hier in der Regel ausgeblendet: Erfasst, visualisiert und analysiert werden statische Netzwerke. Plot ist jedoch wesentlich ein Konzept, das die Temporalität narrativer (wie auch dramatischer) 
+                    1 Texte theoretisch fassen soll: »the repeated attempts to redefine parameters of plot reflect both the centrality and the complexity of the temporal dimension of narrative« (Dannenberg 2005: 435). Plot lässt sich begreifen als Konzept zur Beschreibung der »progressive structuration« (Kukkonen 2013, §4) literarischer Texte. 
+                
+            Versuche, die Netzwerkanalyse in Richtung einer quantitativen Plotanalyse weiterzuentwickeln, stehen also zunächst vor der Aufgabe, bei ihrer Modellierung des Untersuchungsgegenstandes die Zeitdimension zu berücksichtigen. Der Text ist entsprechend nicht lediglich als ein statisches Netzwerk zu modellieren, sondern als eine sich über die Zeit verändernde Folge von Netzwerkzuständen. Erst anhand dieser Netzwerkdynamiken lassen sich die Erkenntnispotenziale, die netzwerkanalytische Zugänge für die quantitative Plotanalyse bergen, überhaupt diskutieren. 
+         
+         
+            Forschungsvorhaben 
+            Der projektierte Vortrag wird – in Anschluss an Prado et al. 2016 – aus theoretischer und methodischer Perspektive sowie anhand exemplarischer Fallstudien eine Erweiterung der bisherigen, auf die Analyse 
+                    statischer Strukturen fokussierten Forschung zu literarischen Netwerken um die Analyse 
+                    progressiver  Strukturierungen vorschlagen. Übergreifendes Ziel ist es, zu prüfen, ob (und mit welchen Einschränkung) sich auf diesem Wege ein Beitrag zur Operationalisierung des literaturwissenschaftlichen Plot-Konzepts erarbeiten lässt. Dabei soll es nicht darum gehen, das semantische reiche und vielseitige Plot-Konzept der ›traditionellen‹ Literaturwissenschaft durch ein quantitatives und insofern notgedrungen reduktionistisches Konzept zu ersetzen. Vielmehr soll zunächst der wesentlich bescheidenere Nachweis erbracht werden, dass sich bestimmte Aspekte dessen, was gemeinhin im Rahmen des Plot-Konzepts diskutiert wird, durchaus mittels der computerbasierten Analyse von Netzwerkdynamik beobachten lassen, etwa ereignishafte Konfliktverläufe (so schon Moretti 2011), Formen der sozialen Integration und Desintegration von Figuren oder basale Techniken der Handlungsführung, z.B. die Komposition von Haupt- und Nebenhandlung(en). 
+                
+            Entsprechend der zweigleisigen Auswertungsroutinen, die auf netzwerkanalytische Daten angewendet werden, wird der Vortrag zwei Szenarien der netzwerkbasierten Analyse der progressiven Strukturierung literarischer Texte diskutieren: zum einen (3.1) sind Möglichkeiten und Erkenntnispotenziale der 
+                    Visualisierung dynamischer Netzwerke, zum anderen (3.2) Möglichkeiten und Erkenntnispotenziale der Berechnung
+                     netzwerkanalytischer Maße für dynamische Netzwerke auszuloten.
+                
+            
+               Visualisierung von Netzwerkgraphen
+               Während die Visualisierung dynamischer Netzwerke in anderen Domänen bereits seit längerem gang und gäbe ist (vgl. exemplarisch Pohl et al. 2008; Frederico et al. 2011), wurde erst vor Kurzem der Versuch unternommen, entsprechende Visualisierungsverfahren auch auf literarische Netzwerke anzuwenden (Xanthos et al. 2016). Während Xanthos et al.  u.a. auf didaktische Anwendungsszenarien hinweisen, wird ein literaturwissenschaftliches Erkenntnispotenzial lediglich angedeutet; eine Diskussion dessen, was durch eine solche Visualisierung nicht nur 
+                        sichtbar, sondern auch 
+                        erkennbar wird, bleibt aus. 
+                    
+               Hingegen zeigen erste, im Vortrag zu vertiefende Zwischenergebnisse unserer Analysen, dass die dynamische Visualisierung insbesondere dann erkenntnisrelevant wird, wenn es darum geht, multiplexe Netzwerke zu modellieren, d. h. Netzwerke, die unterschiedliche Interaktionstypen zugleich erfassen. So zeigt eine statische Visualisierung von Lessings bürgerlichem Trauerspiel 
+                        Emilia Galotti die Familie Galotti als eine geschlossene Triade (siehe Abb. 1): Die Kanten symbolisieren hier szenische Kopräsenzen (Interaktionstyp 1), wobei jene Kanten, die 
+                        zugleich Verwandtschaftsverhältnisse darstellen, rot erscheinen (Interaktionstyp 2). 
+                    
+               
+                  
+               
+               Abb. 1: Statisches Netzwerk zu Lessing: 
+                        Emilia Galotti (rote Knoten: Familienmitglieder; rote Kanten: Familienmitglieder sind szenisch kopräsent)
+                    
+               Zerlegt man das statische Dramennetzwerk (Abb. 1) nun nach Akten und dynamisiert es damit, so zeigt sich, dass die Familie Galotti zu keinem Zeitpunkt des Dramas gemeinsam auf der Bühne steht (vgl. Abb. 2). 
+               
+                  
+               
+               Abb. 2: Dynamisches Netzwerk zu Lessings 
+                        Emilia Galotti, zerlegt nach Akten
+                    
+               Anschaulich und 
+                        erkennbar wird auf diese Weise eine Position der traditionellen Forschung, nach der Lessing in 
+                        Emilia Galotti nicht nur die äußere Bedrohung der ›bürgerlichen‹ Kleinfamilie, sondern auch deren innere Problematik inszeniert hat (siehe z. B. Alt 1994: 268). Die Analyse der dynamischen Strukturierung zeigt hier die soziale Desintegration der familäre Triade, die als formal beschreibbarer Teilaspekt des zentralen dramatischen Konflikts verstanden werden kann. 
+                    
+               Dass dynamische Visualisierungen in diesem Sinne aus literaturwissenschaftlicher Sicht v.a. für die Analyse multiplexer Netzwerke produktiv gemacht werden können, werden wir im Vortrag anhand weiterer Beispiele aus dem dlina-Korpus (philologisch kuratierte Netzwerkdaten zu 465 deutschsprachige Dramen aus der Zeit 1730–1930, siehe 
+                        https://dlina.github.io/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) zeigen. Darüber hinaus werden wir zum Zweck eines intergenerischen Vergleichs exemplarisch dynamische Visualisierung von Romannetzwerken diskutieren. Zu reflektieren sind hier insbesondere Fragen der Sequenzierung: Während Dramen mit ihrer Einteilung in Akte und Szenen eine naheliegende Segmentierung vorgeben, liefert die romantypische Einteilung in Kapitel keine vergleichbar überzeugenden Ergebnisse. 
+                    
+            
+            
+               Berechnung netzwerkanalytische Maße 
+               Mehr noch als die Visualisierung statischer Netzwerke stellt diejenige dynamischer im Grunde keine Option eines korpusbasierten 
+                        distant reading dar. Sie ermöglicht zwar die anschauliche Modellierung einzelner Netzwerke, kann aber nur begrenzt Erkenntnisse über eine große Anzahl von Netzwerken liefern: Methoden, mit denen sich die auf algorithmischen Layouts basierenden Netzwerkgraphen kontrolliert miteinander vergleichen lassen, fehlen weitgehend; zudem kostet die Rezeption von dynamischen Visualisierungen – etwa der von Xanthos et al. 2016 präsentierten Prototypen – schlicht Zeit, wir haben es hier also eher mit 
+                        fast reading, denn mit 
+                        distant reading zu tun. Die Berechnung netzwerkanalytischer Maße und deren statistische Weiterverarbeitung bietet hingegen Möglichkeiten, aus einer dezidierten 
+                        distant reading-Perspektive sowohl allgemeine Charakteristika der Netzwerke eines Korpus zu beschreiben als auch, vergleichend, spezifische formale Typen von Netzwerken innerhalb des Korpus zu identifizieren (entsprechend unserer Überlegungen zum 
+                        Small World-Phänomen in statischen Netzwerken, siehe Trilcke et al. 2016). 
+                    
+               Von Carley (2003: 135–136) wurden dabei mehrere rudimentäre globale Maße (i. e. 
+                        size, 
+                        density, 
+                        homogeneity in the distribution of ties, 
+                        rate of changes in nodes, 
+                        rate of changes in ties) für die Analyse dynamischer Netzwerke vorgeschlagen. Darüber hinaus haben Prado et al. 2016 für die Anwendung von akteursorientierten Maßen, v.a. Zentralitätsindices, bei der Rekonstruktion von Plot
+                        -Verläufen plädiert. Im Vortrag werden wir einzelne dieser Maße – u. a. 
+                        size pro Akte und Szenen; 
+                        density pro Akte und Szene; die 
+                        change-
+                        rates; sowie einfache Zentralitätsmaße – für das dlina-Korpus berechnen; die dafür nötigen Daten liegen bereits, philologisch kuratiert, in den dlina-Zwischenformat-Dateien vor (zum Zwischenformat: 
+                        https://dlina.github.io/Introducing-Our-Zwischenformat/ – die Daten sind offen, siehe unser Github-Repositorium: 
+                        https://github.com/dlina); eine entsprechende Erweiterung des in Python geschriebenen Auswertungstools 
+                        dramavis (Kittel / Fischer 2016) wird derzeit entwickelt. Die erhobenen Daten werden wir schließlich mit Rekurs auf ausgewählte literaturwissenschaftliche Konzepte für die Beschreibung spezifischer Plot-Phänomene diskutieren, insbesondere in Hinblick auf Expositionstypen (Pfister 1977: 124–136), auf die ›klassische‹ Aktstruktur der Tragödie sowie auf das Kompositionsprinzip von Haupt- und Nebenhandlung (Pfister 1977: 286–289).
+                    
+            
+         
+         
+            Resümee
+            Der Vortrag liefert einen Beitrag zur Methodenentwicklung und -reflektion im Bereich der 
+                    Digital Literary Studies. Auf literaturtheoretisch-methodologischer Ebene diskutiert er Möglichkeiten einer netzwerkanalytischen Operationalisierung des literaturwissenschaftlichen Plot
+                    -Konzepts, wobei der literarische Text zu diesem Zweck nicht, wie bisher die Regel, als statische Struktur, sondern als ›progressive Strukturierung‹ modelliert wird. Als empirische Grundlage der Methodendiskussion fungieren Analysen von Dramen und Romanen, in denen exemplarisch die Potenziale und die Grenzen des Ansatzes verdeutlich werden. 
+                
+         
+      
+      
+         
+             Unter systematischen Gesichtspunkten können die Unterschiede zwischen narrativen und dramatischen Texten in Hinblick auf das Plot-Konzept zunächst vernachlässigt werden (vgl. Korthals 2003); entsprechend wurden sowohl ›epische‹ als auch ›dramatische‹ Texte bis ins 19. Jahrhundert hinein verschiedentlich unter dem Oberbegriff ›pragmatische Gattung‹ vereint. 
+         
+         
+            
+               Bibliographie
+               
+                  Agarwal, Apoorv / Corvalan, Augusto / Jensen, Jacob / Rambow, Owen (2012): 
+                        „Social Network Analysis of Alice in Wonderland“, 
+                        in: 
+                        Proceedings of the Workshop on Computational Linguistics for Literature. 
+                        Montréal 88–96 
+                        http://www.aclweb.org/anthology/W12-2513 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Alt, Peter-André (1994): 
+                        Die Tragödie der Aufklärung. Eine Einführung. 
+                        Tübingen / Basel: Francke.
+                    
+               
+                  Carley, Kathleen M. (2003): 
+                        „Dynamic Network Analysis“, 
+                        in: Breiger, Ronald / Carley, Kathleen M. / Pattison, Philipp (eds.): 
+                        Dynamic Social Network Modeling and Analysis. Workshop Summary and Papers. 
+                        Washington D.C.: 133–145 
+                        http://www.nap.edu/read/10735/chapter/9.
+                    
+               
+                  Dannenberg, Hilary (2005): 
+                        „Plot“, 
+                        in: Herman, David / Jahn, Manfred / Ryan, Marie-Laure (eds.): 
+                        The Routledge Encyclopedia of Narrative Theory. 
+                        London: Routledge 435–439.
+                    
+               
+                  Fischer, Frank / Göbel, Mathias / Kampkaspar, Dario / Trilcke, Peer (2015): 
+                        „Digital Network Analysis of Dramatic Texts“, 
+                        in: 
+                        DH2015: Global Digital Humanities
+                  http://dh2015.org/abstracts/xml/FISCHER_Frank_Digital_Network_Analysis_of_ Dramati/FISCHER_Frank_Digital_Network_ Analysis_of_Dramatic_Text.html [letzter Zugriff 25. August 2016].
+                    
+               
+                  de Nooy, Wouter (2006): 
+                        „Stories, Scripts, Roles, and Networks“, 
+                        in: 
+                        Structure and Dynamics 1.2 
+                        http://escholarship.org/uc/item/8508h946#page-1 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Elson, David K. / Dames, Nicholas / McKeown, Kathleen R. (2010): 
+                        „Extracting Social Networks from Literary Fiction“, 
+                        in: 
+                        Proceedings of ACL-2010. 
+                        Uppsala: 138–147 
+                        http://dl.acm.org/ft_gateway.cfm?id=1858696&type=pdf&CFID=659731302 &CFTOKEN=83466756 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Federico, Paolo / Aigner, Wolfgang / Miksch, Silvia / Windhager, Florian / Zenk, Lukas (2011): 
+                        „A Visual Analytics Approach to Dynamic Social Networks“, 
+                        in: 
+                        Proceedings of the 11th International Conference on Knowledge Management and Knowledge Technologies (i-KNOW).
+                        Graz 
+                        http://publik.tuwien.ac.at/files/PubDat_198995.pdf [letzter Zugriff 25. August 2016].
+                    
+               
+                  Jannidis, Fotis / Reger, Isabella / Krug, Markus / Weimer, Lukas / Macharowsky, Luisa / Puppe, Frank (2016): 
+                        „Comparison of Methods for the Identification of Main Characters in German Novels“, 
+                        in: 
+                        DH2016: Conference Abstracts 578–582 
+                        http://dh2016.adho.org/abstracts/297 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Kittel, Christopher / Fischer, Frank (2016): 
+                        dramavis (v0.2.1). GitHub 
+                        https://github.com/lehkost/dramavis [letzter Zugriff 25. August 2016].
+                    
+               
+                  Korthals, Holger (2003): 
+                        Zwischen Drama und Erzählung. Ein Beitrag zur Theorie geschehensdarstellender Literatur. 
+                        Berlin: Erich Schmidt
+                    
+               
+                  Kukkonen, Karin (2013): 
+                        „Plot“, 
+                        in: Hühn, Peter et al. (eds.): 
+                        The Living Handbook of Narratology. Hamburg 
+                        http://www.lhn.uni-hamburg.de/article/plot [letzter Zugriff 25. August 2016].
+                    
+               
+                  Moretti, Franco (2011): 
+                        Network Theory, Plot Analysis (= Stanford Literary Lab Pamphlets, No. 2). 1.5.2011. 
+                        http://litlab.stanford.edu/LiteraryLabPamphlet2.pdf [letzter Zugriff 25. August 2016].
+                    
+               
+                  Park, Gyeong-Mi / Kim, Sung-Hwan / Cho, Hwan-Gue (2013): 
+                        „Structural Analysis on Social Network Constructed from Characters in Literature Texts“, 
+                        in: 
+                        Journal of Computers 8.9: 2442–2447 
+                        http://ojs.academypublisher.com/index.php/jcp/article/view/jcp080924422447/7672 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Pfister, Manfred (1977): 
+                        Das Drama. Theorie und Analyse.
+                        München: Fink.
+                    
+               
+                  Pohl, Mathias / Reitz, Florian / Birke, Peter (2008): 
+                        „As Time Goes by. Integrated Visualization and Analysis of Dynamic Networks“, 
+                        in: 
+                        AVI 2008 – Proceedings of the Working Conference on Advanced Visual Interfaces. 
+                        Neapel 372–375 
+                        http://doi.acm.org/10.1145/1385569.1385636 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Prado, Sandra D. / Dahmen, Silvio R. / Bazzan, Ana L.C. / Carron, Padraig Mac / Kenna, Ralph (2016): 
+                        „Temporal Network Analysis of Literary Texts“, 24.2.2016 
+                        https://arxiv.org/pdf/1602.07275 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Rochat, Yannick (2014): 
+                        Character Networks and Centrality. 
+                        Thèse de Doctorat. Lausanne 
+                        https://infoscience.epfl.ch/record/203889/files/yrochat_thesis_infoscience.pdf [letzter Zugriff 25. August 2016].
+                    
+               
+                  Stiller, Jaames / Nettle, Daniel / Dunbar, Robin I. M. (2003): 
+                        „The Small World of Shakespeare's Plays“, 
+                        in: 
+                        Human Nature 14: 397–408 
+                        https://www.staff.ncl.ac.uk/daniel.nettle/shakespeare.pdf [letzter Zugriff 25. August 2016].
+                    
+               
+                  Stiller, James / Hudson, Mathew (2005): 
+                        „Weak Links and Scene Cliques Within the Small World of Shakespeare“, 
+                        in: 
+                        Journal of Cultural and Evolutionary Psychology 3: 57–73.
+                    
+               
+                  Trilcke, Peer / Fischer, Frank / Göbel, Mathias / Kampkaspar, Dario (2015): 
+                        „200 Years of Literary Network Data“ [Blogposts], 
+                        https://dlina.github.io/200-Years-of-Literary-Network-Data/ [letzter Zugriff 25. August 2016].
+                    
+               
+                  Trilcke, Peer / Fischer, Frank / Göbel, Mathias / Kampkaspar, Dario / Kittel, Christopher (2016): 
+                        „Theatre Plays as ›Small Worlds‹? Network Data on the History and Typology of German Drama, 1730-1930“, 
+                        in: 
+                        DH2016: Conference Abstracts 417–419 
+                        http://dh2016.adho.org/abstracts/407 [letzter Zugriff 25. August 2016].
+                    
+               
+                  Waumans, Michaël C. / Nicodème, Thibaut / Bersini, Hugues (2015): 
+                        „Topology Analysis of Social Networks Extracted from Literature“, 
+                        in: 
+                        Plos One 3. Juni 2015 
+                        10.1371/journal.pone.0126470.
+                    
+               
+                  Xanthos, Aris / Pante, Isaac / Rochat, Yannick / Grandjean, Martin (2016): 
+                        „Visualising the Dynamics of Character Networks“, 
+                        in: 
+                        DH2016: Conference Abstracts 417–419 
+                        http://dh2016.adho.org/abstracts/407 [letzter Zugriff 25. August 2016].
+                    
+            
+         
+      
+   
+
+

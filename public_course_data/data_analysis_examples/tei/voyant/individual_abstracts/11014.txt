@@ -1,0 +1,97 @@
+
+      
+         Das sogenannte „Detmolder Hoftheater-Projekt“ hat im Laufe der letzten fünf Jahre den überlieferten Musikalienbestand des Detmolder Hoftheaters aus der Zeit von 1825–1875 einschließlich der erhaltenen Aktenmaterialien erschlossen bzw. übertragen und mit einer eigenen Software im Web präsentiert (www.hoftheater-detmold.de). Die dabei eingesetzte Software „Theatre-Tool“ wurde ausdrücklich so konzipiert, dass sie auf andere ähnliche Bestände übertragbar ist. Dieser Vortrag möchte die bisherigen Arbeitsergebnisse des Projekts zusammenfassen und die Erschließungsgrundsätze und den Aufbau und die Anforderungen der Software erläutern. Dabei werden auch die Möglichkeiten und Probleme der Übertragbarkeit und der Zusammenarbeit mit anderen bestehenden und neuen Erschließungsprojekten angesprochen.
+            
+         Im Bereich der digitalen Edition ist es inzwischen zum Standard geworden, Kontextmaterialien im Rahmen der Edition ebenfalls als Volltext bereit zu stellen und über Markup zu verknüpfen (vgl. die für den Musiktheaterbereich vorbildliche Präsentation https://freischuetz-digital.de/). Doch im Bereich der Erschließung von Beständen wird noch sehr viel mit proprietären Datenbanken bzw. bibliothekarischen Standards gearbeitet, die nicht ohne weiteres im Web zugänglich gemacht werden können, und werden vor allem unterschiedliche Quellentypen getrennt in je eigenen Systemen erfasst. Dies zeigt sich z. B. in der zur Zeit im Bibliotheksbereich geführten Diskussion um die Erfassung von Ephemera (siehe Literaturverzeichnis), die gerade im Bereich der für die Theaterforschung wichtigen Erschließung von Theaterzetteln zu zahlreichen Insellösungen geführt hat (vgl. z. B. 
+http://digital.ub.uni-duesseldorf.de/theaterzettel, 
+http://www.theaterzettel-weimar.de), was eine übergreifende Suche z. B. nach Darstellernamen unmöglich macht. 
+
+         Das Hoftheater-Projekt hat ein Modell zur kontextuellen Erschließung der verschiedenen Materialien entwickelt, auf dem das in seiner Oberflächengestaltung zunächst noch rein funktionale Theatre-Tool aufbaut (https://hoftheater-detmold.de/47-2/das-modell/) . 
+
+         
+            
+            Abbildung 1: Modell des „Theatre Tool“ 
+         
+         Dieses Modell basiert auf dem im Bibliotheksbereich allgemein angewandten FRBR-Modell, so dass die erfassten Daten sowohl bibliothekarische als auch wissenschaftliche Anforderungen erfüllen. Die Erschließung der Quellen erfolgt nach FRBR auf drei verschiedenen Ebenen: Die Werkdateien erfassen die Grunddaten ggf. mit dem Datum der Uraufführung und einer normierten Angabe zur Klassifikation. Die Quellendateien (entspricht der FRBR-Entität: manifestation) beschreiben die vorliegenden Quellen, die in unserem Fall zu einer „componentGroup“ zusammengefasst werden, da die Aufführungsmaterialien eine Einheit bilden. Bindeglied zwischen Werk und Quelle ist die expression-Datei, denn das jeweilige Aufführungsmaterial des Theaters in Detmold ist als Einheit eine expression des Werks, dasjenige eines anderen Theaters jedoch eine andere. Auch wäre beispielsweise eine Bearbeitung der Oper für Bläser-Ensemble wiederum eine weitere expression. Die Beziehungen zwischen den Dateien werden mit Relationen beschrieben, wie sie durch FRBR vorgegeben sind: „hasRealization“, „isEmbodimentOf“, „hasEmbodiment“, „isPartof“ etc. 
+         Zusätzlich zu diesen zur Quellenerschließung notwendigen Dateien werden solche zu Personen und dramatis personae angelegt. Durch eine jeweils eindeutige ID, mit der jede Datei gekennzeichnet wird, ist bei jeglicher Wiederkehr eines Werk-, Rollen- oder Personennamens eine eindeutige Kennzeichnung möglich. 
+         Handelt es sich bei diesen Dateien um typische Katalog-Erschließungen, die jedoch zumindest bei den Quellendateien weit über eine übliche bibliothekarische Erfassung hinausgehen, so werden die umfangreich überlieferten Kontextmaterialien z. T. als Regeste, überwiegend aber im Volltext erfasst. Beide Erschließungsformen basieren auf den XML-Standards TEI und MEI, so dass alle Daten durch ein Markup ausgezeichnet werden können.
+         Darüber hinaus werden für Personen, Werke und ggf. Orte Normdaten (GND, VIAF, GeoNames) verwendet, so dass externe Informationen eingebunden werden können. Da aber etliche Personen und Werke wenig bekannt oder nicht eindeutig zu bestimmen sind und damit nicht eindeutig einer Normdaten-ID zugeordnet werden können, bleibt die Verwendung von eigenen IDs notwendig.
+         Durch die Verknüpfung der Daten über alle Quellengrenzen hinweg ergeben sich verschiedene inhaltliche Verbindungen: So können zu den Personen des Detmolder Hoftheaters einerseits die Daten zu Gage und eventuellen Sonderzuwendungen, Beschäftigungsdauer und zusätzliche Beschäftigungen im Theaterbetrieb abgerufen werden, andererseits aber auch die Werke und sogar die Rollen, in denen sie beschäftigt waren. Zu den Aufführungsmaterialien werden aus den Akten Angaben zur Datierung und zum Schreiber verknüpft und die Einträge in den Kostüm- und Regiebüchern geben erste Hinweise auf die Darstellung einzelner Werke auf der Bühne. 
+         Die Materialien (Digitalisate ausgewählter Quellen) und die XML-Dateien der Katalog- oder der Volltext-Erschließungen werden in einer Web-Präsenz zusammengefasst. 
+         
+            
+            Abbildung 2: Startseite des Portals 
+         
+         Die hierfür eigens entwickelte Software „Theatre-Tool“ basiert auf XQuery und JavaScript.
+         Die Darstellung der Faksimiles erfolgt mit Hilfe eines Leaflet-Plugins (https://leafletjs.com), einer Bibliothek für die Kartendarstellung im Web. 
+         Die Software bietet bislang eine einfache Suche nach Personen, Rollen und Werken, die mit einem Fuse.js Plugin, einer Fuzzy basierten Bibliothek, erstellt wurde. 
+         Wie in Web-Präsenzen üblich, können die Inhalte als XML-Dateien heruntergeladen werden, um weitere Arbeiten mit den Daten zu ermöglichen (Suche, Abfrage in größerem Kontext etc.). Selbstverständlich können die Daten auch als Beispiele für eine Erschließung in anderen Projekten verwendet werden. 
+         Die Werke, Quellen, Personen und Rollen können mit Hilfe von Permalinks von anderen Projekten direkt referenziert werden.
+         Da bislang im Detmolder Hoftheater-Projekt vor allem Materialien zum Musiktheater erschlossen worden sind, sind in die Software einige musik-spezifische Anwendungen integriert. So werden z. B. die Anfänge der einzelnen Musiknummern mit Noten-Incipits wiedergegeben, um sie rasch vergleichbar zu machen. Um dem Musikwissenschaftler auch Informationen zur originalen Partituranordnung, Schlüsselung, Schreibweise der Instrumente etc. zu geben, wird nicht nur – wie traditionell üblich – eine Stimme oder ein Klavierauszug wiedergegeben, sondern werden die ersten Takte und der Singstimmeneinsatz vollständig in Partitur wiedergegeben. Die Codierung der Incipits erfolgt mit MEI, die Darstellung mit einem Verovio-Plugin (http://www.verovio.org/index.xhtml). 
+         
+            
+            Abbildung 3: Darstellung der Incipits 
+         
+         Eine weitere Besonderheit des Projekts ist die exemplarische
+sog. Tiefenerschließung einiger ausgewählter Aufführungsmaterialien:
+Bei diesen werden auch die Faksimiles der Quellen zur Verfügung
+gestellt und zwar in einer Aufbereitung für einen taktgenauen
+Zugriff. Nur durch diese Form der Erschließung ist es z. B. möglich,
+Eingriffe in den Notentext nicht auf Grund der Materialität (also
+z. B.: Streichung auf Bl 4v bis 5r vorletzter Takt), sondern
+inhaltlich (z. B.: Streichung in Nr. 1 von T. 17–20) und damit für den
+Nutzer (mit Hilfe anderer Materialien, also gedruckter oder anderer
+handschriftlicher Quellen) nachvollziehbar anzugeben. Zur Erstellung
+der sog. Vertaktung wird die Software „Edirom“ benutzt und zur
+Darstellung ist das „Theatre Tool“ mit Edirom Online
+(https://github.com/Edirom/Edirom-Online) verknüpft. Diese Software wurde zwar für die Aufbereitung von Notenmaterial entwickelt, aber es lassen sich damit auch Textquellen z. B. nach Szenen oder sogar Zeilen kartieren.
+            
+         Das Theatre-Tool ist für die Darstellung dieser komplexen Text- und Datenstrukturen entwickelt, kann aber leicht an andere Anforderungen angepasst werden: Bei dem im Projekt erfassten Material handelt es sich z. B. überwiegend um handschriftliches Material, weshalb die nach FRBR vorgesehene vierte Ebene, das Exemplar (item), nach der Regel der „manifestation singleton“ nicht berücksichtigt wird. Selbstverständlich wäre aber auch diese darstellbar. Da das Hauptinteresse der Erschließung auf der Arbeitsweise und dem Personal der Detmolder Hoftheater-Gesellschaft liegt, werden die erwähnten Orte zwar ausgezeichnet, gibt es für diese aber keine eigenständigen Dateien (mit der Möglichkeit zu Referenzen) und bislang keine Suchmöglichkeit. 
+         Mit der zunehmenden Digitalisierung der Bestände durch die Bibliotheken könnten diese über iiiF in das Theatre Tool eingebunden werden, wodurch etliche rechtliche Probleme gelöst werden könnten. Wie damit auch eine Vertaktung verbunden werden kann, wäre zu überprüfen. 
+         Weiterer Abstimmungsbedarf, an dem aber beidseitig großes Interesse besteht, ist notwendig zwischen Wissenschaft und Bibliothek. Es ist selbstverständlich, dass die Beispiele der Tiefenerschließung des Projekts ebenso wie die Erstellung z. B. von Komponisten-Werkverzeichnissen nur durch die Wissenschaft zu leisten sind. Dennoch besteht großes Interesse, diese Detailinformationen zu einzelnen Quellen auch über die besitzende Bibliotheken zugänglich zu machen Die Verwendung von Standards und Normdaten wie sie im Hoftheater-Projekt erprobt worden sind, bildet hierzu einen erster Schritt, doch muss sicherlich auch verstärkt über Schnittstellen für den Datenaustausch nachgedacht werden. 
+      
+      
+         
+            
+               Bibliographie
+               
+                   Kamzelak, Roland S. (2016): „Digitale Editionen im semantic web. Chancen und Grenzen von Normdaten, FRBR und RDF“ in: Richts, Kristina / Stadler, Peter (eds.): 
+	„ei, dem alten Herrn zoll ich Achtung gern“. Festschrift für Joachim Veit zum 60. Geburtstag. München: Allitera Verlag 423–435; online unter: 
+	https://nbn-resolving.org/urn:nbn:de:bsz:14-qucosa2-233392
+               
+               
+                   Münzmay, Andreas (2018): „Lesen und Schreiben im digitalen Dickicht, Musikwissenschaft, Digital Humanitites und die hybride Musikbibliothek“ in: BIBLIOTHEK Forschung und Praxis 42; 236–246.
+      
+               
+                   Münzmay, Andreas  (2019): „Kulturtransferforschung und Musikwissenschaft“, in:  Calella, Michele / Leßmann, Benedikt (eds.): 
+        Zwischen Transfer und Transformation: Horizonte der Rezeption von Musik (= Wiener Veröffentlichungen zur Musikwissenschaft 51). Wien 175–190. 
+      
+               
+                   Richts, Kristina / Veit, Joachim (2018): „Stand und Perspektiven der Nutzung von MEI in der Musikwissenschaft und in Bibliotheken“ in: BIBLIOTHEK Forschung und Praxis 42: 292–301.
+      
+               
+                   Pernerstorfer, Matthias J.  (2012): 
+        Theater – Zettel – Sammlungen. Erschliessung, Digitalisierung, Forschung. Wien (= Don Juan Archiv Wien: Bibliographica, 1)
+      
+               
+                   Pernerstorfer, Matthias J.  (2015): 
+        Theater – Zettel – Sammlungen Bd. 2: 
+        Bestände, Erschließung, Forschung. Wien 2015 (= Don Juan Archiv Wien: Bibliographica 2)
+      
+               
+                   Veit, Joachim  (2020): „Notistenspezifische Erwartungen der Wissenschaft an die Web-Präsentation digitalisierter Musikhandschriftenbestände“ in
+        : Das Instrumentalrepertoire der Dresdner Hofkapelle in den ersten beiden Dritteln des 18. Jahrhunderts – Überlieferung und Notisten.
+               
+               
+                   Wiermann, Barbara  (2018a): „Bibliothekarische Normdaten und digitale Musikwissenschaft“ in: 
+        Die Musikforschung, 71: 338–357.
+      
+               
+                   Wiermann, Barbara  (2018b): „musiconn. performance: musikalische Ereignisdaten im Fachinformationsdienst Musikwissenschaft“ in: Bonte, Achim / Rehnolt, Juliane (eds.):
+         Kooperative Informationsinfrastrukturen als Chance und Herausforderung. Thomas Bürger zum 65. Geburtstag herausgegeben von. Berlin, Boston 398–415.
+      
+            
+         
+      
+   
+

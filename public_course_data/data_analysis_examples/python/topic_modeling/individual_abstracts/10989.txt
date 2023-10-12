@@ -1,0 +1,258 @@
+10989	2020	
+      
+         
+            Einleitung
+            Der Workshop adressiert eine der großen Herausforderungen für Arbeiten in den Digital Humanities – die Operationalisierung geisteswissenschaftlicher Konzepte und Fragestellungen für computergestützte Methoden (vgl. Jannidis 2010, 109–132; Moretti 2013; Flanders, Jannidis 2015; Jacke 2014, 118–139). Während Geisteswissenschaftler vor allem mit komplexen, häufig textübergreifenden Phänomenen arbeiten und als relevant erachtete Kontexte der behandelten Themen heranziehen, ist die computergestützte Arbeit an identifizierbare Phänomene auf der Textoberfläche gebunden. Die hieraus erwachsende Diskrepanz zwischen Erwartungen und Ergebnissen gilt es über eine adäquate Operationalisierung, 
+                    also eine Messbarmachung theoretischer Konzepte, zu überbrücken. Mit unserem Workshop wollen wir genau diese Schnittstelle in den Fokus rücken. Anhand dreier Anwendungsfälle zeigen wir auf, welche Herausforderungen sich aus dem Einsatz computergestützter Methoden für geisteswissenschaftliche Zwecke ergeben und wie mit ihnen umgegangen werden kann. In einem praktischen Teil haben die Teilnehmenden die Möglichkeit, selbst an der Operationalisierung eines Phänomens zu arbeiten; hierfür stellen wir Anwendungsfälle mit geeigneten Tools und Technik-„Baukästen“ zur Verfügung. Programmierkenntnisse werden dabei nicht vorausgesetzt. Ziel des Workshops ist es, das Bewusstsein für die Differenzen zwischen geisteswissenschaftlicher und computergestützter Arbeitsweise zu schärfen, typische Herausforderungen zu adressieren und Herangehensweisen zur Operationalisierung geisteswissenschaftlicher Phänomene aufzuzeigen. Denn nur durch die reflektierte Auseinandersetzung mit den Operationalisierungsannahmen kann ein angemessener (also reflektierter) Umgang mit den Ergebnissen gewährleistet werden.
+                
+         
+         
+            
+               Use Cases
+                
+            Als Anwendungsfälle stellen wir drei unterschiedliche literatur- und sozialwissenschaftliche Phänomene vor, zu denen wir im Rahmen des Stuttgarter „Center for Reflected Text Analytics“ (CRETA)
+umfangreiche Erfahrungen gesammelt haben. Die gewählten Beispiele decken verschiedene Aufgabentypen ab: Wir behandeln erstens die Extraktion bestimmter Instanzen aus einem Text, zweitens die Segmentierung eines Textes und drittens ein holistisches Textphänomen.
+                
+            
+               
+                  Entitäten und Entitätenreferenzen
+                    
+               Zum einen befassen wir uns mit dem Konzept der Entität und ihrer Referenz in literatur- und sozialwissenschaftlichen Texten (vgl. Reiter u.a. 2017, 19–22; Blessing u.a. 2017). Als Entitätenreferenzen gelten alle Ausdrücke, die auf eine Entität der realen oder fiktiven Welt referieren. Dazu zählen Personen/Figuren, Orte, Organisationen sowie Ereignisse, so dass das Konzept der Entität bewusst weit gefasst und für verschiedene Forschungsfragen anschlussfähig ist. Auf Entitäten kann auf verschiedene Weise referiert werden, u.a. über Eigen- und Gattungsnamen (z.B. “Angela Merkel”, “die Kanzlerin”). Um Entitäten in einem Text zu extrahieren, müssen folglich die Entitätenreferenzen annotiert und kookkurrente Ausdrücke aufgelöst werden. Die Herausforderungen bestehen vor allem in der Festlegung der Referenzausdrücke (welche Ausdrücke werden berücksichtigt?), in der Abgrenzung von Entitätenreferenzen gegenüber Generika sowie im Umgang mit Verschachtelungen, Metonymien und textspezifischen Besonderheiten. Am Beispiel zweier Textsorten (mhd. Artusroman und Bundestagsdebatten) stellen wir das Phänomen und Möglichkeiten der Umsetzung vor.
+            
+            
+               
+                  Erzählebenen
+                    
+               Des Weiteren beschäftigen wir uns mit der Annotation von Erzählebenen.
+Hierbei geht es formal darum, einen Text in sinnvolle Segmente zu zerlegen, die seriell aneinandergereiht oder ineinander verschachtelt sein können. Auch wenn das narratologische Konzept ‘Erzählebene’ recht klar definiert erscheint, wird das Phänomen je nach theoretischer Grundlage unterschiedlich aufgefasst und analysiert (vgl. Genette 1988 [1983]; Ryan 1991). Um eine intersubjektive Annotation von Erzählebenen zu erreichen, gilt es deshalb zunächst, einen gemeinsamen Konsens zu theoretischen Grundannahmen zu finden. Ferner macht es die Operationalisierung von Erzählebenen notwendig, das vage Konzept akkurat zu formalisieren und distinktive Merkmale zu bestimmen, die das Phänomen sinnvoll abgrenzen können.
+                    
+            
+            
+               
+                  “Wertherness”
+                    
+               Als dritten Anwendungsfall stellen wir die sog. “Wertherness” vor, womit eine Sammlung von Texteigenschaften gemeint ist, die Texte als “Wertheriaden” identifizieren können. Die Veröffentlichung von Goethes “Die Leiden des jungen Werthers” 1774 zog eine Reihe an literarischen Adaptationen nach sich, die sich durch verschiedene Bezugnahmen auf den Originaltext als sog. Wertheriaden ausweisen. Die Referenzen können dabei sowohl formaler (z.B. Briefroman, Dreiecksbeziehung) als auch inhaltlicher (z.B. Rolle der Natur, Verhältnis Subjekt-Gesellschaft) Art sein. Für eine computergestützte Analyse solcher Referenztexte müssen einerseits die einzelnen formalen und semantischen Kategorien operationalisiert und in den Texten identifiziert werden, andererseits ist zu untersuchen, welche Kriterien in bekannten Wertheriaden in Kombination miteinander auftreten.
+            
+         
+         
+            
+               Ansätze zur Operationalisierung
+                
+            Im Workshop stellen wir zwei Ansätze zur Operationalisierung vor, die sich – in verschiedenen Phasen des Forschungsprozesses – sehr gut gegenseitig ergänzen. Der erste Ansatz besteht dabei in der Schärfung von 
+                    Konzeptdefinitionen durch Annotationen und richtet sich an Menschen. Die Ergebnisse sind also keine Skripte oder Funktionen, sondern klare(re) Definitionen der fraglichen Konzepte, die von Menschen mit größerer intersubjektiver Übereinstimmung umgesetzt werden können, aber auch die theoretische Diskussion bereichern (vgl. Gius/Jacke, 2017; Pagel et al., 2018; Reiter et al., im Erscheinen). Daneben führt der Annotationsprozess auch zu einer intensiven und kritischen Beschäftigung mit dem Material und den textuellen Instanzen des Konzeptes und liefert damit auch Ideen für eine computergestützte Operationalisierung.
+                
+            Als zweiten Ansatz stellen wir die Idee vor, Zielphänomene 
+                    indirekt zu operationalisieren. Hierbei werden pro Phänomen mehrere messbare Eigenschaften in den Blick genommen, die mit dem Zielkonzept verwandt, aber nicht deckungsgleich sind. Aufschlussreich ist dabei in erster Linie nicht die Inspektion einzelner Eigenschaften, sondern die Gesamtschau der verschiedenen Einflussfaktoren (vgl. “instrumental variables” in Sack, 2011; “indirekte Operationalisierung” in Reiter/Willand, 2018). Bei textbasierten Phänomenen können so insbesondere linguistische und strukturelle Eigenschaften betrachtet werden, die größtenteils mit großer Reliabilität automatisch extrahierbar sind.
+                
+         
+         
+            
+               Ablauf
+                
+            In einem Theorieteil führen wir in die Problematik der Operationalisierung von geisteswissenschaftlichen Phänomenen für die computergestützte Analyse ein. Anhand der drei oben genannten Beispiele aus der CRETA-Praxis thematisieren wir die Problematik und stellen die Ansätze der Operationalisierung im Detail vor. Je nach Interesse kann anschließend einer dieser Anwendungsfälle ausgewählt und bearbeitet werden.
+            Im praktischen Teil des Workshops haben die Teilnehmenden die Möglichkeit, beide Operationalisierungsansätze an ihrem gewählten Anwendungsfall zu erproben. Hierfür befassen sie sich zunächst mit dem Phänomen, indem sie es anhand eines Textauszugs manuell annotieren und parallel stichpunktartig die Richtlinien schärfen. In einer ersten Diskussionsrunde werden die verschiedenen Ergebnisse gesammelt und diskutiert. Zur Erprobung des zweiten Ansatzes stellen wir für jeden Anwendungsfall einen Operationalisierungs-„Baukasten“ vor. Dieser besteht aus einer Sammlung von Python-Skripten in einem Jupyter-Notebook, die auf das jeweilige Untersuchungsvorhaben zugeschnitten ist und den Teilnehmenden die Möglichkeit gibt, sich dem zu untersuchenden Phänomen über computergestützte Verfahren anzunähern. Die Teilnehmenden können in Kleingruppen in diesem Baukasten verschiedene Parameter einstellen sowie manuell Eigenschaften an- oder abwählen, wobei sie auf ihr Vorwissen über den Untersuchungsgegenstand aus der ersten Praxisrunde zurückgreifen (können). Nachdem die Teilnehmenden die Eigenschaften ausgewählt und ggf. parametrisiert haben, können sie die Ergebnisse visualisieren und mit den Texten abgleichen. Damit erhalten die Teilnehmenden ein direktes Feedback zu den ausgewählten Parametern und können prüfen, ob das Untersuchungsvorhaben mit den festgelegten Einstellungen angemessen umgesetzt wird. Der Baukasten ist zur iterativen Nutzung vorgesehen, so dass der Einfluss verschiedener verwandter Eigenschaften auf die Ausgaben sichtbar wird und die Teilnehmenden sich einer geeigneten technischen Umsetzung sukzessiv annähern können. In einer abschließenden Diskussion werden die Ergebnisse gesammelt und es wird ausgewertet, wie adäquat sich die jeweiligen Zielphänomene mittels der gewählten Annahmen haben abbilden lassen.
+
+         
+         
+            
+               Lernziele
+                
+            Ziel unseres Workshops ist es, die Teilnehmenden für die
+Wichtigkeit der Operationalisierung in den Digital Humanities zu
+sensibilisieren und ihnen Lösungsangebote vorzustellen. Durch die
+interdisziplinäre Ausrichtung von DH-Arbeiten kommt der
+Operationalisierung eine Schlüsselposition zu, indem diese eine Brücke
+zwischen geisteswissenschaftlichem Phänomen und computergestützter
+Umsetzung schlägt. Mit den gewählten Anwendungsfällen wollen wir den
+Teilnehmenden ein “Repertoire” für die Operationalisierung
+verschiedener Aufgabentypen mitgeben. Wir zeigen zum einen, dass die
+Annotation eines Phänomens als Methode seiner Operationalisierung
+dienen kann (vgl. Gius, Jacke 2017, 233–254); zum anderen führen wir
+für textbasierte Phänomene eine approximative Operationalisierung ein
+(vgl. Reiter/Willand, 2018). Beide Verfahrensweisen sind auf andere
+Anwendungsfälle übertragbar. Gleichzeitig möchten wir deutlich machen,
+dass es für jedes Untersuchungsvorhaben nicht nur eine, sondern
+verschiedene Wege der Operationalisierung gibt. Die Spielräume, die
+bei der Operationalisierung geisteswissenschaftlicher Fragestellungen
+entstehen, machen es notwendig, Entscheidungen reflektiert zu treffen,
+sie offenzulegen und ihren Einfluss auf die Ergebnisse als
+Voraussetzung für eine angemessene Interpretation zu bedenken.
+               
+            
+               Abgrenzung zum CRETA-Hackatorial “Maschinelles Lernen lernen”
+               Neben diesem Workshop zur Operationalisierung wird noch ein weiterer Workshop des Stuttgarter DH-Zentrums CRETA während der diesjährigen DHd-Konferenz stattfinden (Gerhard Kremer, Kerstin Jung: “Maschinelles Lernen lernen: Ein CRETA-Hackatorial zur reflektierten automatischen Textanalyse”). Auch wenn es eine gewisse Schnittmenge zwischen den Workshops gibt (Textgrundlagen, Anwendungsfälle), ist die jeweilige Zielsetzung grundsätzlich verschieden: Während es beim CRETA-Hackatorial um Verfahren des Maschinellen Lernens geht, konzentriert sich der hier vorgestellte Workshop auf den grundsätzlicheren Schritt der Operationalisierung. Es geht also darum, Ansätze aufzuzeigen, wie ein Untersuchungsvorhaben oder theoretisches Konzept überhaupt für die computergestützte Analyse “vor- bzw. aufbereitet” werden kann. Beide Workshops ergänzen einander sinnvoll, was die Teilnahme an beiden oder an nur einem der Workshops möglich macht.
+            
+         
+         
+            
+               Anhang
+  
+            
+               
+                  Zeitplan
+    
+               (insgesamt 3 Stunden + 30 Min. Pause)
+               
+                  Einführung und Ablauf (10 Min.)
+                  Theoretischer Teil (insgesamt 40 Min.)
+      
+                        Erläuterung der Problemstellung 
+                        Vorstellung der drei Anwendungsfälle
+                     
+                  
+                  Praktischer Teil
+      
+                        Einführung in die Primärtexte und Tools, Ausgabe der skizzierten Guidelines (10 Min.)
+                        Erste Praxisrunde (Kleingruppen): Manuelle Annotation eines Phänomens, parallele Erweiterung/Überarbeitung der Guidelines, iterativ (30-40 Min.)
+	  - Kaffeepause (30 Min.) -
+                        
+                        Sammeln der Ergebnisse und Diskussion der Herangehensweisen (20 Min.)
+                        Zweite Praxisrunde (Kleingruppen): Arbeit am Operationalisierungsbaukasten, Feedback über Ausgabedatei, iterativ (30-40 Min.)
+                     
+                  
+                  Abschlussdiskussion: Sammeln der „Ergebnisse“, Diskussion der Erfahrungen und Lernziele (30 Min.)
+               
+            
+            
+               
+                  Zahl der möglichen Teilnehmer
+    
+               Zwischen 15 und 25.
+            
+            
+               
+                  Angaben zur technischen Ausstattung
+    
+               Abgesehen von Beamer und ausreichend Steckdosen ist keine besondere technische Ausstattung erforderlich. Die Teilnehmenden arbeiten im praktischen Teil an ihrem eigenen PC. Informationen zu eventuellen Vorab-Installationen werden rechtzeitig mitgeteilt.
+            
+            
+               
+                  Beitragende
+  
+               Der Workshop wird von Mitarbeitenden des “Center for Reflected Text Analytics” (CRETA) der Universität Stuttgart veranstaltet, die bereits erfahrene Workshop-Leiter/-innen im DH-Bereich sind (DHd 2017, DH 2017, DHd 2018, ESU 2018, DHd 2019, HCH 2019). 
+               Das BMBF-geförderte eHumanities-Zentrum CRETA ist auf die interdisziplinäre Zusammenarbeit von Literaturwissenschaft, Linguistik, Philosophie und Sozialwissenschaft mit Maschineller Sprachverarbeitung und Visualisierung ausgerichtet. Die übergreifende Zielsetzung besteht in der Erarbeitung systematischer und transparenter Workflows, in denen die Entwicklung komputationeller Modelle und Methoden kritisch reflektiert und adäquat auf die unterschiedlichen geistes- und sozialwissenschaftlichen Forschungsfragen angepasst wird.
+                
+               
+                  Nora Ketschik
+                  
+                  nora.ketschik@ilw.uni-stuttgart.de
+                  Universität Stuttgart
+    Institut für Literaturwissenschaft, Abt. für Germ. Mediävistik
+    Keplerstraße 17
+    70174 Stuttgart
+  
+               Nora Ketschik ist Promotionsstudentin in der Abteilung für
+  Germanistische Mediävistik. Im Rahmen von CRETA führt sie
+  Netzwerkanalysen zu ausgewählten mittelhochdeutschen Romanen durch
+  und setzt sich dabei kritisch mit der Verwendung computergestützter
+  Methoden für literaturwissenschaftliche Analysezwecke
+  auseinander.
+                
+               
+                  Benjamin Krautter
+                  
+                  Benjamin.Krautter@ilw.uni-stuttgart.de
+                  Keplerstraße 17
+    70174 Stuttgart
+  
+               Benjamin Krautter ist Promotionsstudent in der Abteilung für
+  Neuere Deutsche Literatur II und Mitarbeiter im Projekt QuaDramA -
+  Quantitative Drama Analytics. Dort arbeitet er an der
+  Operationalisierung Aristotelischer Kategorien für die quantitative
+  Dramenanalyse. Er beschäftigt sich zudem mit der Integration
+  quantitativer Methoden in literaturwissenschaftliche Fragestellungen
+  (scalable reading).
+  
+                
+               
+                  Sandra Murr
+                  
+                  sandra.murr@ts.uni-stuttgart.de
+                  Universität Stuttgart
+  Institut für Literaturwissenschaft, Abt. für Neuere Deutsche Literatur I 
+  Keplerstraße 17
+  70174 Stuttgart
+  
+               Sandra Murr ist Promotionsstudentin in der Abteilung für Neuere Deutsche Literatur I. In CRETA arbeitet sie an der digitalen Analyse des “Wertheriaden-Korpus”, Texte, die in der Folge von Goethes “Werther” seit 1774 erschienen sind. Mittels computergestützter Verfahren wird sich mit der Frage auseinandergesetzt, anhand welcher charakteristischer Kriterien eine “Wertheriade” als solche definiert wird und wie sich entsprechende strukturelle und inhaltliche Kriterien operationalisieren, in den Texten automatisch identifizieren und reflektiert vergleichen lassen.
+                  
+               
+                  Janis Pagel
+                  
+                  janis.pagel@ims.uni-stuttgart.de
+                  Universität Stuttgart
+  Institut für Maschinelle Sprachverarbeitung
+  Pfaffenwaldring 5b
+  70569 Stuttgart
+  
+               Janis Pagel ist Promotionsstudent am Institut für Maschinelle Sprachverarbeitung und Mitarbeiter im QuaDramA-Projekt. Er forscht zu Anwendungen von computerlinguistischen Methoden auf literaturwissenschaftliche Fragestellungen und innerhalb von CRETA hauptsächlich zu Koreferenzresolution für literarische Texte.
+                
+               
+                  Nils Reiter
+                  
+                  nils.reiter@uni-koeln.de
+                  Institut für Digital Humanities
+    Universität zu Köln
+    Albertus-Magnus-Platz
+    50931 Köln
+  
+               Nils Reiter hat Computerlinguistik/Informatik an der Universität des Saarlandes studiert, wurde 2013 an der Uni Heidelberg promoviert und ist seit 2014 Post-Doc am Institut für Maschinelle Sprachverarbeitung. Seit seiner Promotion ist er im Bereich Digital Humanities unterwegs, mit einem besonderen Interesse an Fragen der Operationalisierung, und zwar sowohl im Hinblick auf Automatisierung wie auch auf manuelle Annotation. Er arbeitet dabei auch an praktischen Fragen der Kooperation zwischen Geistes- und Computerwissenschaftler*innen, und organisiert einen shared task zur Erkennung von Erzählebenen. Derzeit ist er Vertretungsprofessor für Sprachliche Informationsverarbeitung/Digital Humanities an der Universität zu Köln.
+            
+         
+      
+      
+         
+            
+               www.creta.uni-stuttgart.de
+            
+            
+    Bei der Umsetzung des Konzepts wurde auf Vorarbeiten des Shared Tasks “SANTA” (Systematic Analysis of Narrative Texts through Annotation) zurückgegriffen, 
+    . Das Material ist veröffentlicht in Reiter u.a. (2019).
+  
+            
+               
+            
+         
+         
+            
+               Bibliographie
+               
+                  Blessing, André / Echelmeyer, Nora / John, Markus / Reiter, Nils (2017): „An end-to-end environment for research question-driven entity extraction and network analysis“ in 
+  Proceedings of the Joint SIGHUM Workshop on
+  Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, Vancouver.
+
+               
+                   Julia Flanders / Fotis Jannidis (2015):
+  Knowledge Organization and Data Modeling in the Humanities, urn:nbn:de:bvb:20-opus-111270.
+
+               
+                   Gérard Genette (1988 [1983]: Narrative Discourse Revisited. (Translated by Jane E. Lewin), Ithaca. 
+               
+                   Marie-Laure Ryan (1991): Possible Worlds, Artificial Intelligence and Narrative Theory, Bloomington, Indianapolis.
+               
+                   Evelyn Gius / Janina Jacke (2017): The Hermeneutic Profit of Annotation. On Preventing and Fostering Disagreement in Literary Analysis, in: International Journal of Humanities and Arts Computing 11, S. 233–254.
+               
+                   Janina Jacke (2014): Is There a Context-Free Way of Understanding Texts? The Case of Structuralist Narratology, in: Journal of Literary Theory 8, S. 118–39.
+               
+                   Fotis Jannids (2010): Methoden der computergestützten Textanalyse, in: Methoden der literatur- und kulturwissenschaftlichen Textanalyse. Ansätze – Grundlagen – Modellanalysen, hg. v. Vera Nünning, Ansgar Nünning und Irina Bauder-Begerow, Stuttgart, Weimar, S. 109–132.
+               
+                   Franco Moretti (2013): “Operationalizing”: or, the function of measurement in modern literary theory, in: Literary Lab 6, S. 1–13.
+               
+                   Janis Pagel / Nils Reiter / Ina Rösiger / Sarah
+Schulz (2018): A Unified Text Annotation Workflow for Diverse Goals, in: Proceedings of the Workshop for Annotation in Digital Humanities (annDH), hg. v. Sandra Kübler und Heike Zinsmeister, Sofia, Bulgaria, August 2018, S. 31–36.
+               
+                   Nils Reiter / Evelyn Gius / Marcus Willand
+(Hrsg.) (2019): A Shared Task for the Digital Humanities. Special issue of Cultural Analytics. November 2019.
+               
+                   Nils Reiter / Marcus Willand (2018): Poetologischer Anspruch und dramatische Wirklichkeit: Indirekte Operationalisierung in der digitalen Dramenanalyse, in: Quantitative Ansätze in den Literatur- und Geisteswissenschaften: Systematische und historische Perspektiven, hg. v. Toni Bernhart, Marcus Willand, Sandra Richter und Andrea Albrecht, Stuttgart, S. 45–76.
+               
+                   Nils Reiter /   André Blessing / Nora Echelmeyer /
+Gerhard Kremer / Steffen Koch / Sandra Murr / Maximilian Overbeck /
+Axel Pichler (2017): CUTE: CRETA Unshared Task zu Entitätenreferenzen, in: DHd 2017 Bern, Conference Abstracts, S. 19–22.
+               
+                   Graham Alexander Sack (2011): Simulating Plot: Towards a Generative Model of Narrative Structure, in: Papers from the AAAI Fall Symposium (FS-11-03).
+            
+         
+      
+   
+
+

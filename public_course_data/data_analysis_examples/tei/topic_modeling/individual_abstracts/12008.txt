@@ -1,0 +1,96 @@
+12008	2022	
+        
+            In recent years, given that the Unicode Standard has been updated, the number of Chinese character (Hanzi/Kanji) codes available for text databases of historical documents written in Chinese and Japanese has increased significantly. With the addition of the CJK Unified Ideographs Extension G in 2020, the current Unicode Standard now contains a total of more than 93,000 Chinese characters (Lunde, 2021). To maximize reproduction of the content in historical documents, it is desirable to use Chinese characters that can be displayed in a form that is as close to the original glyphs as possible.
+            TEI-encoded
+                
+                     https://tei-c.org/
+                 text databases are also becoming increasingly common. However, there are still few examples of the use of these extended Chinese characters in publicly available text databases. Possible causes are the difficulty of checking whether a character can be represented in Unicode and determining how to input those newly included characters in Unicode without input method support.
+            
+            The most common computer-based Chinese character input method entails reading the character. If the reading is inconclusive or if the character has not yet been incorporated into an input method, Ideographic Description Sequence (IDS) can be used to search for the input (The Unicode Consortium, 2021).
+            IDS describes Chinese characters according to their mechanism and components. For example, 紅(red) can be described as 
+                ⿰糸工 (Figure 1). Tools such as CHISE
+                
+                     https://www.chise.org/
+                 (Morioka, 2008) and GlyphWiki
+                
+                     https://www.glyphwiki.org/
+                 (上地, 2018) are useful to search for Chinese characters (in Japanese), but no existing tools specialize in inputting Chinese characters and allow TEI-encoded output data in a format suitable for reprinting. Regarding actual reprinting, there are three issues that need to be addressed.
+            
+            
+                Searching: Transcribing old documents is complex on a computer. Moreover, it is difficult to input components as search keywords (e.g., 氵or 𦍌).
+                Display: Results display depends on the font installed on the device; characters that are not part of the font will be displayed in Tofu. Without a suitably designed results page, it is difficult to select and copy Chinese characters for input.
+                Application: Searching should be fast and accurate. Given that it is necessary to search for all Chinese characters in Unicode, deal those data may takes a lot of time before the results are displayed.
+            
+            
+                
+            
+            Figure 1: a sample of IDS
+            To solve the above issues, we have developed a tool for searching and inputting Chinese characters that cannot be input via ordinary input methods using Chinese character components and stroke numbers. The tool has the following features, and the corresponding issue is given in parentheses:
+            
+                With data on characters’ components from CHISE. IDS
+                    
+                         https://gitlab.chise.org/CHISE/ids
+                    , can search up to 93,000 characters based on the newest Unicode Standard. [Searching]
+                
+                Filter results by the number of strokes remaining. The data stroke number is from Unihan
+                    
+                         https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip
+                    . [Searching]
+                
+                Decomposition of Chinese characters to input complex parts. [Searching]
+                Search results are displayed as SVG or PNG images from GlyphWiki to avoid displaying in Tofu.
+                Copy the target character to the clipboard with one click. [Display]
+                The user does not need to have fonts to cover all the Chinese characters in Unicode because the results display as SVG glyphs from GlyphWiki. [Display]
+                Data are cached in the memory to avoid communication latency with a server. [Application]
+                Output in multiple formats (encoded character, Unicode scala, XML block). XML block is customizable with template (Figure 3). [Application]
+            
+            The tool uses IDS data from CHISE and glyph images from GlyphWiki. Compared to both, users can search and input Chinese characters more efficiently by filtering according to the number of strokes remaining (Figure 2). Furthermore, it is easy to select and copy the result in one click, offering a fast response. It is also possible to copy the Chinese characters you want to input as a block of TEI-encoded XML to create a text database. This saves database creators’ time. Here is an example (Figure 4).
+            
+                
+            
+            Figure 2: interface of the tool
+            
+                
+            
+            Figure 3: customizable XML block template
+            
+                
+            
+            Figure 4: TEI-encoded sample
+            This tool has been applied to the creation of TEI-encoded text databases at the Historiographical Institute, University of Tokyo
+                
+                     https://www.hi.u-tokyo.ac.jp/en/
+                . Details will be presented in the poster.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Lunde, J. H. J. C. K. (2021). 
+                        Unicode® Standard Annex #38 UNICODE HAN DATABASE (UNIHAN)
+                        https://www.unicode.org/reports/tr38/#BlockListing, (accessed 20 November 2021).
+                    
+                    
+                        Morioka, T. (2008). 
+                        CHISE: Character Processing Based on Character Ontology. In Tokunaga, T. and Ortega, A. (eds), Large-Scale Knowledge Resources. Construction and Application. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 148–62 https://doi.org/10.1007/978-3-540-78159-2_14.
+                    
+                    
+                        The Unicode Consortium (2021). 
+                        The Unicode® Standard Version 14.0. 
+                        https://www.unicode.org/versions/Unicode14.0.0/ch18.pdf, (accessed 20 November 2021).
+                    
+                    
+                        
+                     上地, 宏一
+                  (2018). 
+                        GlyphWiki：漢字字形自由共有サイト
+                  . 学芸国語国文学, 48: 181–91 doi:10.24672/gkokugokokubun.48.0_181.
+                    
+                
+            
+        
+    
+
+

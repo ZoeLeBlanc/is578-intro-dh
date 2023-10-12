@@ -1,0 +1,65 @@
+2062	2014	TEI is good at what it does: static documents rendered in glorious detail. But TEI is old. Its age doesn’t make TEI irrelevant, but it’s important to be conscious of how the way we weave the fabric of the web has changed since TEI was conceived in 1994, and reevaluate some of our assumptions about its use. In this early work, we are exploring this rethinking as part of a larger study within the center on general methods for isolating the complexity frequently associated with XML-based frameworks.
+
+The Richmond Times Dispatch corpus of TEI-encoded newspapers comprises the Confederate newspaper’s Civil War run, 1860 — 1865. It is compelling both in terms of organization and content and amounts to a comprehensive textual index. In addition to the historical allure of its content, the formal properties of the digitized documents made available through the Perseus Collection make the Dispatch an extraordinary raw material for building a rich interactive visual experience that augments the textual one.
+
+The Dispatch is not in need of a new home; the Perseus Collection hosts a perfectly functional version and uses best practices for data encoding and organization. Rather than strive to be the primary resource for the source material, our project uses the source material to explore recent patterns in web development as well as alternative, more visually compelling ways to interact with XML corpora in a web application. The goal is to produce a powerful reading environment that is tailored to its source material to an extent that the generalized project of the Perseus Collection can afford.
+
+With respect to its implementation, our project fits the genre of a ‘single page application’ (SPA). This project demonstrates best practices for implementing this type of software project using a particular suite of tools; as an open source example of an SPA that is considerably more complex than the usual teaching examples for this kind of thing, we hope that our implementation will be useful to other people who are considering using the same tools, and especially to humanists interested in presenting TEI-encoded documents.
+
+The SPA is du juor. We prefer beautiful URLs and smooth transitions. We are less fond of all these big lists cluttering our sidebars and clunky arrays of checkboxes. We don’t expect websites to always be inert collections of documents. We want to be able to control the connective tissues. The web development community has responded to our current expectations with tools to suite them.
+
+The client-side MVC (Model-View-Controller) libraries that have recently emerged have reached a high level of maturity A client-side MVC library codifies conventional solutions to the generic problems posed by web traffic. It provides semantics for describing the interaction layer between data and presentation. The codification of conventions that MVC libraries manifest is exciting. It deeply simplifies matters for those who want to make interactive documents. Humanists who have a grasp of the language and concepts involved will be that much better able to articulate and realize project architectures that delight the contemporary reader.
+
+For instance, our application is built around a client-side router. The router formalizes protocols for state transitions that allow for timely and efficient request management. We rely heavily on the concept of the run loop, which exposes powerful document management techniques and is tightly linked with a client-driven templating engine. We are able to achieve a remarkably clean separation of concerns in a highly condensed space by exploiting the conventional roles organized and implemented by these libraries. And by shifting our application’s emphasis to the client, we have constant access to a unified programming environment, limiting the context-switching required when developing different parts of the application.
+
+In addition to our project’s strong client-focused application architecture, we also demonstrate a data architecture solution to the problems posed by the corpus’ rich TEI markup. To expose the facets embedded in the source XML, the implementation transforms the deeply nested structure inherent into flat relational representations that can be searched efficiently. Furthermore our project demonstrates a novel, pythonic approach to transforming the source XML to browser-ready HTML that is particularly amenable to the constraints of an SPA.
+
+XSLT wasn’t very well suited to our TEI transformation problem. One of the key UI features of our application was the ability to discover and search for special entities such as people and places in the text. By implementing a custom transformer in python, we had the flexibility to both translate the TEI tag names into valid HTML versions and retain the original TEI tag names and attributes as attributes on the HTML element.
+
+In addition to serving content thus transformed as needed, the role of the server in our application is limited to various precomputation and preprocessing tasks that only need to be run whenever the source material changes--a process that is fully automated with Unix batch processing (via cron) in the cloud. Users never notice. Research projects are often quagmired in a chaotic sprawl of one-off scripts; we demonstrate a coherent architectural pattern for orchestrating these preprocessors.
+
+Sometimes the affordances of an SPA make it worthwhile to depart from the original document’s presentation. Content on the web wants a different kind of exposure than a stack of newspapers. You want to be able to find things quickly. You want to be able to highlight and hyperlink, associate and drill down. Once you’ve computed a graph of your stack of newspapers, now you can move laterally, staying in the same section and moving from date to date, just as easily as you could stay on the same date and move top-to-bottom through the articles. We demonstrate a novel, minimalistic navigation scheme for the Dispatch.
+
+If you’re taking full advantage of a Javascript environment to render your XML content, you can use modern libraries to plug in visualizations with simplicity, and furthermore to turn these visualizations into interactive filters for a very powerful browsing experience. Using a cluster of technologies surrounding Mike Bostock’s work, we demonstrate how to integrate a visualization library into an SPA.
+
+And yet we believe that datafication shouldn’t overwhelm the content. You want to be discrete about placing your controls lest you scare the casual user, but they should be powerful. Live feedback from search inputs has come to be a common expectation for user interfaces and the SPA environment makes it easy to architect that. We show one effective way to make your XML live-searchable.
+
+We close with just a few screenshots of the work in progress. It is important to note that this interface is being further refined based on new work Trevor is doing in his new role as a front-end software developer. 
+
+
+Fig. 1: An early version of the splash page, presenting user interface controls for the issue date, section, and subsection. Selecting a subsection would reveal the list of headlines it contains. The date selectors reload the issue content asynchronously, without reloading the page.
+
+
+Fig. 2: The early version of the article reader, presenting the text in a modal context. The summary of facets across the top act as toggles for corresponding highlights in the text. You can page through the section content using the controls at the bottom of the modal.
+
+
+Fig. 3: This screen capture shows the direction taken in the latest development. The URL bar demonstrates stateful client-side routing. The content selection controls have been flattened into a trio of type-ahead controls with pagination buttons for navigating forward and backwards both in the document structure and across documents.
+
+This stuff is fun. The tools are a joy to use. The free/open source community behind it is excellent and innovative. We want to see more humanists building applications, and moving away from consuming and rather heavyweight content management systems such as Drupal. Based on our experience, humanists can learn the tools and frameworks quickly with excellent results to boot. We hope that our implementation of the Dispatch will set a strong example for our (and others’) future DH projects.
+
+References
+We note that we are proponents of using XML, especially for its originally intended purposes of self-describing data interchange, which remains tremendously valuable in developing type safe RESTful web services. 
+
+George K. Thiruvathukal is leading a separate and parallel effort to develop the Standoff Markup text editor, standoffmarkup.org,  which is aimed at simplifying the encoding and maintenance of XML texts (without exposing tree-oriented abstractions). This is where we started exploring the use of SPA when it comes to building DH-facing tools in general.
+
+Richmond Times Collection, www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:RichTimes.
+
+Single Page Applications original conception, code.google.com/p/trimpath/wiki/SinglePageApplications
+
+Conventionally, a to-do list. See, for instance, todomvc.com.
+
+The Model-View-Controller design pattern (and paradigm) was introduced as part of the Xerox PARC Alto computer, which used the Smalltalk programming language. An excellent historical read about this paradigm can be found at heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html.
+
+We use Ember.js: emberjs.com. Our technical term for “high level of maturity” is “rock” but we eschew this Americanism for the purpose of a conference paper submission.
+
+We rely throughout on the wonderful lxml library for Python: lxml.de.
+
+Our present implementation is deployed on Heroku, an agile and scalable framework for deploying apps like ours. The overall project is moving to Linode (a dedicated Linux-based cloud hosting provider).
+
+In this we rely on the large-scale application planning features offered by the Flask web framework for python: flask.pocoo.org.
+
+Author of d3js.org among other things.
+
+We have found dc.js (nickqizhu.github.io/dc.js) to be a perfect storm of visualization functionality.
+
+We use the well-known elasticsearch library (www.elasticsearch.org) to achieve an effect like Google’s live search results.

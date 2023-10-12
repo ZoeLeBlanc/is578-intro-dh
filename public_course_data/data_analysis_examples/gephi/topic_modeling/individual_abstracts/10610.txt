@@ -1,0 +1,78 @@
+10610	2017	
+      
+         
+            
+         
+         
+            Beispiele Graphbasierter Erschließung der Datenbank Nomen et Gens
+            Die Datenbank Nomen et Gens ist aus einem DFG-Projekt hervorgegangen und verzeichnet Quellen und die in Ihnen belegten Personen für die vier Jahrhunderte vor der Zeit Karls des Großen. Das Abfragefrontend der Mysql-Datenbank ist im Internet unter www.nomen-et-gens.de zu erreichen.
+            Ein Teil der Datenbank wurde im Vorfeld eines DFG-Antrages in eine Graphdatenbank konvertiert um neue Auswertungsmöglichkeiten zu testen, die im Rahmen dieses Posters dargestellt werden sollen.
+            Frage an die Datenbank:
+            Zeige mir die Quelle „Annales Petaviani“ und alle Personen, die in dieser Quelle belegt sind und alle Quellen, in denen diese Personen wiederum gemeinsam belegt sind. 
+            
+               
+                  
+                  Abbildung 1: Visualisierung der Graphdatenbankabfrage.
+               
+            
+            Bewertung des Abfrageergebnisses:
+            
+               Der interessanteste Information der Visualisierung ist die traversale Abfrage zu Personen in einer Quelle, die wiederum in einer Quelle gemeinsam vorkommen. Die Abfrage „Zeige mir alle Personen in einer Quelle" funktioniert ja auch mit einer relationalen Datenbank. Aber es gibt keine Möglichkeit, auf die Weise auch noch gleich zu sehen, in welcher Quelle eine Person außerdem noch steht. Insofern fügt die Graphdatenbank hier eine "Dimension" hinzu. 
+               Verwandtschaftliche Beziehungen zwischen Personen stehen beim jeweiligen Personeneintrag und sind damit immer nur bis zum nächsten Glied zu sehen.
+               Für Frühmittelalterhistoriker besonders interessant sind gemeinsam urkundlich belegte Personen. Eine solche Abfrage ist über die relationale Datenbank nur schwer umfassend durchzuführen.
+               Die Visualisierung aus der Graphdatenbank veranschaulicht die Überlieferungssituation von einzelnen Personen. Der umkringelte Radbod ist, anders als z.B. Bonifatius zu dem es sehr viele Belege gibt, nur schwer historisch fassbar.
+            
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Kuczera, Andreas (2016c): 
+                        „Digital Editions beyond XML – Graph-based Digital Editions“, 
+                        in: 
+                        Proceedings of the 3rd HistoInformatics Workshop on Computational History (HistoInformatics 2016) 37–46
+                        http://ceur-ws.org/Vol-1632/paper_5.pdf.
+                    
+               
+                  Kuczera, Andreas (2016b): 
+                        „Graphbasierte digitale Editionen“, 
+                        in: 
+                        Mittelalter: Interdisziplinäre Forschung und Rezeptionsgeschichte 19. April 2016 
+                        mittelalter.hypotheses.org/7994
+               
+               
+                  Kuczera, Andreas (2016a): 
+                        „Endcoding and Presenting Historical Biographical Data with Graph Data Bases“,
+                        in: 
+                        CO:OP. The Creative Archives' and Users' Network
+                  https://coop.hypotheses.org/297.
+                    
+               
+                  Kuczera, Andreas (2015): 
+                        „Graphdatenbanken für Historiker. Netzwerke in den Registern der Regesten Kaiser Friedrichs III. mit neo4j und Gephi“,
+                        in: 
+                        Mittelalter: Interdisziplinäre Forschung und Rezeptionsgeschichte 5. Mai 2015
+                        mittelalter.hypotheses.org/5995
+               
+               
+                  Kuczera, Andreas (2014b): 
+                        „Big Data History“, 
+                        in: 
+                        Mittelalter: Interdisziplinäre Forschung und Rezeptionsgeschichte 10. Oktober 2014
+                        mittelalter.hypotheses.org/3962
+               
+               
+                  Kuczera, Andreas (2014a): 
+                        „Digitale Perspektiven mediävistischer Quellenrecherche“, 
+                        in: 
+                        Mittelalter: Interdisziplinäre Forschung und Rezeptionsgeschichte 18. April 2014
+                        mittelalter.hypotheses.org/3492
+               
+            
+         
+      
+   
+
+

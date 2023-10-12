@@ -1,0 +1,116 @@
+11901	2022	
+        
+            
+                Aim of the workshop
+                In the half-day workshop, DraCor (https://dracor.org), an open platform for researching plays in different languages, will be introduced using practical examples from digital drama analysis. At the center of DraCor are so-called 'Programmable Corpora'. By this we mean infrastructurally research-oriented, open, extensible, Linked-Open-Data-friendly full-text corpora, which should make it possible to address diverse research questions from the field of digital literary studies in a low-threshold way using corpora in a data-based, traceable, and reproducible way (Fischer et al. 2019).
+                The workshop aims at people who
+                - work or would like to work with literary texts and in particular with dramas and would like to create their own corpora for this purpose or reuse already existing corpora;
+                - want to learn methods of digital drama analysis (network analysis, stylometry) or want to try them out on the basis of the Programmable Corpora approach;
+                - are interested in the possibilities of researching literary texts using Linked Open Data (LOD).
+                There will be a presentation of the concept of 'Programmable Corpora' as well as a demonstration of the exemplary implementation in the DraCor platform including a presentation of all components. Hands-on tutorials will give participants a practical introduction to creating and curating their own drama corpora for analysis with DraCor. Another part introduces the use of the DraCor API as well as the Python library PyDraCor by means of practical examples on the methods stylometry and network analysis. The Application Programming Interface (API) allows customized direct access to specific parts of the corpora. The possibilities for cross-corpus queries and inclusion of information from the Linked Open Data cloud using SPARQL will also be explored.
+            
+            
+                The Concept of Programmable Corpora
+                The core of DraCor consists of corpora of dramas in eleven languages (German, Russian, French, English, Italian, Swedish, Spanish, Ancient Greek, Alsatian, Latin, Bashkir and Tatar) as well as two additional author corpora (Shakespeare, Calderón), to which the platform offers a variety of possible research accesses: The dramas are encoded as XML files according to the TEI guidelines and are freely available under an open license via GitHub at https://github.com/dracor-org. They can be loaded from there, transformed or enriched by oneself if necessary, and reused for further research with any tools. 
+                In addition to this "classical" modus operandi of corpus-based research, however, DraCor as an open digital ecosystem offers further interfaces and connected tools (network visualizations, Shiny App, Easy Linavis). Fundamental to this is the DraCor REST API (https://dracor.org/doc/api), which provides functions for retrieving data in different formats (TEI, JSON, plaintext, RDF, GEXF, GraphML) as well as some built-in analysis functionalities (e.g. on network metrics). The API can be used to retrieve not only structural and metadata, but also the full texts without further markup, so that methods such as stylometric analysis or topic modeling can be applied without any further intermediate step to remove markup. The DraCor API is documented in the OpenAPI standard and can be used in an interactive documentation implemented using Swagger UI (https://dracor.org/documentation/api) directly from the web browser. 
+                API libraries are available for the Python (PyDraCor: https://github.com/dracor-org/pydracor) and R (rdracor: https://github.com/dracor-org/rdracor) programming languages, which allow the API functionalities to be integrated quickly and adapted to the respective programming language. For complex queries, a SPARQL endpoint (https://dracor.org/sparql) is available on the platform. This allows both cross-corpus and combined queries (federated queries), in which DraCor can be queried simultaneously with other resources available as LOD, such as Wikidata.
+            
+            
+                Digital Drama Analysis with DraCor
+                Corpus-based analyses of drama, usually using quantitative methods, have emerged as a distinct subfield of Computational Literary Studies (CLS) in recent years (cf. Willand et al. 2017; Reiter 2021). In this context, the provision of jointly curated and open resources such as DraCor has proven productive also for related disciplines such as computational linguistics (cf. for example Pagel, Reiter 2020).
+                Methods operating at the word level have focused, for example, on authorship attribution (Schöch 2014) or genre classification with topic modeling (Schöch 2017). Currently, promising reconceptualizations of stylometric measures such as the measure Zeta are being developed and applied (Schöch 2018). Furthermore, on the basis of structurally annotated corpora, targeted analyses of, for example of stage directions can be performed, operating with POS information or semantic fields (Trilcke et al. 2020). 
+                In the field of structural analysis, drama corpora were studied early on using network analytic approaches, beginning with the work of Stiller, Nettle, Dunbar (2003) and continuing, for example, with Moretti (2011). Typological work on, for example, the concept of Small Worlds (Trilcke et al. 2016) stands here alongside approaches to the quantitative classification of figure types (Fischer et al. 2018). 
+                Although semantic technologies are now an integral part of the spectrum of methods in the digital humanities, they have rarely been applied in corpus-based CLS (on prose, for example, Frank and Ivanovic 2018; Dittrich 2017). However, the collection of metadata as Linked Data and the connection to external reference resources, especially Wikidata, allow for far-reaching query possibilities and can be profitably used for the analysis of literary corpora. For example, the DraCor corpus data does not contain detailed information on authors and performance locations. However, since the unique Wikidata identifiers are stored for the individual pieces, this information can be retrieved via federated queries in SPARQL and displayed in various visualization forms, such as a map.
+            
+            
+                Learning objectives and timeline of the workshop
+                In the first part of the workshop the concept of 'Programmable Corpora' will be introduced and discussed. Afterwards, the platform DraCor and its components will be introduced, with short practical phases during which the participants can directly try out the presented components and tools. In particular, the different possibilities for the reference and analysis of corpus data will be tested. One focus will be on the use of the API. The API functionalities will be explained with the help of interactive documentation and can be tested extensively by the participants. This will be followed by a short overview of corpus creation and the specifics of TEI encoding as used in DraCor.
+                The second part of the workshop will consist of work phases in which three topics can be explored in more depth:
+                (1) corpus creation and curation with DraCor: Participants will delve into TEI coding of dramas through hands-on exercises and learn how to set up a local instance of the platform using Docker, customize it if necessary, and populate it with their own corpora.
+                (2) Drama analysis with DraCor API and Python: Using Jupyter notebooks with extensively documented Python code, participants will be introduced to methods of digital drama analysis using the DraCor API. The notebooks should also enable participants who have no previous experience in programming with Python to follow the individual analysis steps and to adapt them themselves in the sense of a literate programming approach. The notebooks implement concrete research questions on drama analysis, for example on the literary-historical development of network-analytical measures or on the quantitative dominance of characters.
+                (3) Drama Analysis with Linked Data: The focus will be on practical analyses made possible from connecting DraCor to the Linked Open Data Cloud. The workshop will provide a brief crash course in the SPARQL query language, followed by joint queries of DraCor and Wikidata and visualization of the results.
+            
+            
+                Organizational matters
+                Number of possible participants: 25
+                The Workshop will be held via Zoom. Software to be installed on local machines (Oxygen XML editor, Docker, ...) will be announced in advance. Materials will be made available on GitHub; Jupyter notebooks will be posted at (https://github.com/dracor-org/dracor-notebooks).
+            
+            
+                Contributors / Contact details
+                Ingo Börner (ingo.boerner@uni-potsdam.de) works as a research assistant in the project "CLSInfra" at the University of Potsdam on the further development of DraCor. His work focuses on data modeling and Linked Open Data.
+                Frank Fischer (fr.fischer@fu-berlin.de) is Professor at the Freie Universität Berlin. His involvement with digital drama analysis goes back to the Digital Literary Network Analysis DLINA project (https://dlina.github.io), from which DraCor emerged.
+                Peer Trilcke (trilcke@uni-potsdam.de) is Professor of modern German literature at the University of Potsdam. His work focuses on the research-based development of infrastructures for literary corpora and the quantitative analysis of literary texts.
+                Carsten Milling (cmil@hashtable.de) is a web developer and is responsible for the development of the DraCor platform in the project "CLSInfra" at the University of Potsdam. 
+                Henny Sluyter-Gäthje (sluytergaeth@uni-potsdam.de) is a research assistant at the Chair of 19th Century German Literature at the University of Potsdam. She holds a Master of Science in Cognitive Systems with a focus on computational linguistics and works on algorithmic processing of literary texts.
+            
+            
+                Funding
+                DraCor is currently being further developed within the EU Horizon 2020 funded project "CLSInfra" (grant number: 101004984, https://cordis.europa.eu/project/id/101004984).
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Dittrich, Andreas (2017): "Intra-Connecting an Exemplary Literary Corpus with Semantic Web Technologies for Exploratory Literary Studies" in: Bański, Piotr et al. (Hg.): 
+                        Proceedings of the Workshop on Challenges in the Management of Large Corpora and Big Data and Natural Language Processing (CMLC-5+BigNLP) 2017. Mannheim: Institut für Deutsche Sprache. https://nbn-resolving.org/urn:nbn:de:bsz:mh39-62441.
+                    
+                    
+                        Fischer, Frank / Trilcke, Peer / Kittel, Christopher / Milling, Carsten / Skorinkin, Daniil (2018): "To catch a protagonist: Quantitative dominance relations in german-language drama (1730–1930)" in: 
+                        Digital Humanities 2018. Conference Abstracts. Mexico City: El Colegio de México / Universidad Nacional Autónoma de México / Red de Humanidades Digitales 193–201. 
+                    
+                    
+                        Fischer, Frank / Börner, Ingo / Göbel, Mathias / Hechtl, Angelika / Kittel, Christopher / Milling, Carsten / Trilcke, Peer (2019): "Programmable Corpora: Die digitale Literaturwissenschaft zwischen Forschung und Infrastruktur am Beispiel von DraCor " in: 
+                        DHd2019: »Digital Humanities: multimedial & multimodal«. Book of Abstracts. Mainz/Frankfurt a. M.: Johannes Gutenberg Universität Mainz / Goethe Universität Frankfurt, 194–197.
+                    
+                    
+                        Frank, Andrew / Ivanovic, Christine (2018): "Building Literary Corpora for Computational Literary Analysis – A Prototype to Bridge the Gap between CL and DH" in: Calzolari, Nicoletta et al. (Hg.): 
+                        Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018). Miyazaki, Japan: European Language Resources Association.
+                    
+                    
+                        Moretti, Franco (2011): "Network Theory, Plot Analysis " in: 
+                        Stanford Literary Lab Pamphlets 2. http://litlab.stanford.edu/LiteraryLabPamphlet2.pdf [letzter Zugriff 13.7.2021].
+                    
+                    
+                        Pagel, Janis / Reiter, Nils (2020): "GerDraCor-Coref: A Coreference Corpus for Dramatic Texts in German" in: 
+                        Proceedings of the Language Resources and Evaluation Conference (LREC). Marseille 55-64 http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.7.pdf [Letzter Zugriff: 15.7.2021].
+                    
+                    
+                        Reiter, Nils (2021): "Möglichkeiten Quantitativer Dramenanalyse" in: 
+                        Comparatio. Zeitschrift für Vergleichende Literaturwissenschaft 12(2): 39–52.
+                    
+                    
+                        Schöch, Christof (2017): "Topic Modeling Genre: An Exploration of French Classical and Enlightenment Drama" in: 
+                        Digital Humanities Quarterly 11, Nr. 2 http://www.digitalhumanities.org/dhq/vol/11/2/000291/000291.html [Letzter Zugriff: 15.7.2021].
+                    
+                    
+                        Schöch, Christof (2018): "Zeta für die kontrastive Analyse literarischer Texte. Theorie, Implementierung, Fallstudie" in: Bernhart, Toni et al. (Hg): 
+                        Quantitative Ansätze in den Literatur- und Geisteswissenschaften. Systematische und historische Perspektiven. Berlin: de Gruyter 77–94 doi:10.1515/9783110523300-004.
+                    
+                    
+                        Schöch, Christof (2014): "Corneille, Molière et les autres. Stilometrische Analysen zu Autorschaft und Gattungszugehörigkeit im französischen Theater der Klassik" in: Schneider, Lars / Schöch, Christof (Hg.): 
+                        Literaturwissenschaft im digitalen Medienwandel. Beihefte zu Phin 7 http://web.fu-berlin.de/phin/beiheft7/b7t08.pdf [Letzter Zugriff: 15.07.2021].
+                    
+                    
+                        Stiller, James / Nettle, Daniel / Dunbar, Robin I. M. (2003): "The Small World of Shakespeare's Plays" in: 
+                        Human Nature 14: 397–408.
+                    
+                    
+                        Trilcke, Peer / Fischer, Frank / Göbel, Mathias / Kampkaspar, Dario / Kittel, Christopher (2016): "Theatre Plays as ›Small Worlds‹? Network Data on the History and Typology of German Drama, 1730-1930" in: 
+                        Digital Humanities 2016. Conference Abstracts. Jagiellonian University & Pedagogical University, Kraków 385-387 https://dh2016.adho.org/abstracts/static/dh2016_abstracts.pdf [Letzter Zugriff: 15.07.2021].
+                    
+                    
+                        Trilcke, Peer / Kittel, Christopher / Reiter, Nils / Maximova, Daria / Fischer, Frank (2020): "Opening the Stage. A Quantitative Look at Stage Directions in German Drama" in: 
+                        Digital Humanities 2020. Conference Abstracts. Ottawa: University of Ottawa https://dh2020.adho.org/wp-content/uploads/2020/07/337_Opening​the​Stage​A​Quantitative​Look​at​Stage​Directions​in​German​Drama​.html [Letzter Zugriff: 15.07.2021].
+                    
+                    
+                        Willand, Marcus / Trilcke, Peer / Schöch, Christof / Rißler-Pipka, Nanette / Reiter, Nils / Fischer, Frank (2017): "Aktuelle Herausforderungen der Digitalen Dramenanalyse" in: 
+                        DHd 2017. Digitale Nachhaltigkeit. Konferenzabstracts. Bern: Universität Bern 175–180 doi:10.5281/zenodo.3684825.
+                    
+                
+            
+        
+    
+
+

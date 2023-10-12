@@ -1,0 +1,143 @@
+10464	2016	
+      
+         
+            Untersuchungsgegenstand und Zielsetzung
+            In der neueren deutschen Literatur steht Stefan George (1868-1933) wie kein anderer für die außergewöhnliche Beschäftigung eines Autors mit bzw. für die Verwendung von Typografie. Ab 1904 werden seine Werke in
+          Stefan-George-Schrift (St-G) gedruckt. Der Formenkanon der serifenlosen Type basiert auf Georges Buchschrift1 sowie auf der
+          Akzidenz-Grotesk der Schriftgießerei Berthold und zeigt zudem Einflüsse historischer Schriften wie der Unziale und der karolingischen Minuskel. Bis zu der vom Dichter autorisierten
+          Gesamt-Ausgabe der Werke (1927-1934) entwickelt sich das Typenrepertoire der Schriftart, sodass die St-G-Schrift nicht in einer, sondern in mehreren Fassungen vorliegt.
+        
+            Eine serifenlose Schrift inmitten der in Deutschland tobenden Antiqua-Fraktur
+          Debatte zu verwenden, ihr Design an der eigenen Handschrift zu orientieren und
+          gleichzeitig auf historische Vorbilder zu referieren – lediglich ausschnitthaft
+          verdeutlichen diese Aspekte die große Relevanz von Typografie für Georges Werk.
+          Umso verwunderlicher ist es, dass bisherige Editionen2 keine tiefentypografische Analyse der Drucke
+          vornehmen. Die Abhandlungen der einschlägigen Forschung zur Gestaltung und
+          Genese der Type sowie zu ihrer Verwendung und Wirkung sind dementsprechend
+          dürftig. Daher ist das Ziel des Projekts Stefan George Digital
+        (StGD) die erstmalige Edition der Drucküberlieferung der Georgeschen Lyrik,
+        wobei der Schwerpunkt auf der Erschließung typografischer Formen mittels eines
+        semantischen Modells liegt.3
+            
+         
+         
+            Vorgehen und Methodik
+            Das Editionskorpus StGDs besteht aus 29 Druckausgaben der insgesamt 11 lyrischen
+        Werke4 Georges, in denen die Anwendung und die Entwicklung der typografischen
+        Gestaltung sichtbar werden. Die digitalen Volltexte werden größtenteils aus
+        bestehenden Repositorien (z. B. Deutsches Textarchiv und TextGrid
+        Repository) semi-automatisch in ein projektspezifisches XML/TEI Schema
+        konvertiert. Da der Schwerpunkt der Edition auf der buchwissenschaftlichen
+        Erschließung des Materials liegt, werden die Daten entsprechend mit Metadaten
+        (z. B. FRBR, METS) angereichert. Schließlich werden digitale Faksimiles,
+        vereinzelt aus bestehenden Repositorien (z. B. ULB Düsseldorf), größtenteils jedoch erstmalig hochauflösend
+        digitalisiert, auf einen IIIF basierten Imageserver mit angepassten Viewern
+        (Open Seadragon, Mirador) in die Edition integriert. Die digitalen Bilder werden
+        sowohl parallel zum edierten Text als auch separat typografisch annotiert.
+        Während die Ebenen der Meso- (Schrift in der Fläche), Makro- (Organisation von
+        Schrift) und Paratypografie (Materialität und Technik) im Rahmen der digitalen
+        Edition weitestgehend mit bestehenden Datenmodellen erfasst werden können, wird
+        das Modell zur Erschließung der Mikrotypografie (Formausstattungsmerkmale) erst
+        im Rahmen des Projekts entwickelt (zu den typografischen Ebenen vgl. Stöckl
+        2004). 
+            Die Modellierung der typografischen Detailformen erfolgt in Form einer Ontologie, welche ihre eindeutige Identifikation, formalisierte Beschreibung und Zitation ermöglicht. Damit wird eine netzwerkartige Erschließung und Verknüpfung unterschiedlicher Aspekte und Charakteristika von Schrift unternommen, welche sowohl für Mensch als auch für Maschine interpretierbar sind. Die Technologien des Semantic Web zur Wissensrepräsentation in Thesauri (SKOS), Klassenmodelle (RDFs) und Ontologien (OWL) können dafür ebenso verwendet werden wie Methoden der Daten- und Softwaremodellierung (UML). 
+            Sowohl die Digitale Edition als auch die Ontologie zur Beschreibung von Typografie werden unter CC BY-SA Lizenz auf der
+          GAMS, der technischen Infrastruktur des
+          Grazer Zentrums für Informationsmodellierung, bereitgestellt.
+        
+         
+         
+            Kontextualisierung in den Digitalen Geisteswissenschaften
+            Das Projekt ist vorrangig für die digitale Editorik relevant, die seit geraumer Zeit
+          verstärkt auch die Materialität von Dokumenten zu erschließen versucht. Statt den Weg der
+          Abbildung von Schrift mittels Faksimiles oder ihrer Rekonstruktion im Rahmen der
+          Transkription (z. B. Schriftfaksimile ) zu gehen, wählt das Projekt die formale
+          Modellierung und macht die Informationen so analysierbar. In diesem Zusammenhang trägt
+          StGD auch zur Bildung einer 5 noch kaum
+          bestehenden Digitalen Buchwissenschaft und Typenkunde bei, für welche der Ansatz der
+          semantischen Modellierung von Typenformen ebenfalls neu ist.6
+            
+            Schließlich kann das StGD auch als exemplarisch für den Einsatz und Umgang mit projektspezifischen Datenmodellen gelten. Um die Ontologie für die breitere Forschungscommunity nutzbar zu gestalten, wird die Übertragbarkeit des Modells auf verschiedene Arten von Typen, wie beispielsweise bewegliche Lettern und frühneuzeitliche Typen, getestet. Außerdem ist der Versuch eines mappings des Modells auf Handschriften in Zusammenarbeit mit
+          DigiPal vorgesehen.
+        
+         
+         
+            Zentrale Aspekte auf dem Poster
+            Neben einer Gesamtpräsentation des Projekts StGD, wird das Poster vorrangig drei aktuelle Herausforderungen illustrieren:
+            
+               Modellierung mikrotypografischer Formen basierend auf einer stabilen
+            Terminologie, festgelegten Beschreibungskategorien (z. B. Form und Stil)
+            sowie zentraler Unterscheidungsmerkmale (z. B. Serifen und Strichdicke). 
+               Vernetzung der vier typografischen Ebenen Mikro-, Meso, Makro- und Paratypografie, welche mit unterschiedlichen Datenmodellen an unterschiedlichen Orten der Edition erfasst werden.
+               Visualisierung typografischer Genese sowie gestalterischer Brüche und Kontinuitätslinien über das lyrische Gesamtwerk Georges hinweg. 
+            
+         
+      
+      
+         
+            
+            Ab circa 1896 stilisierte George seine Kursivhandschrift verstärkt zu einer Buchschrift, welche in der Folgezeit auch von Mitgliedern des George-Kreises verwendet wurde.
+          
+             Neben den Editionen einzelner Werke v.a.: Sämtliche Werke in 18. Bänden. Herausgegeben von der
+            Stefan George-Stiftung; bearbeitet von Peter Landmann und Ute Oelmann.
+            Stuttgart 1981-2013. 
+             Das Projekt
+            Stefan George Digital entsteht im Rahmen von DiXiT (Digital Scholarly
+            Editions Initial Training Network), als Teil der Marie Curie Actions im 7.
+            Rahmenprogramm der Europäischen Kommission. 
+            Die Bandzählung und -aufteilung folgt der
+            Veröffentlichung der Werke in der Gesamt-Ausgabe (1927-1934). „Der
+            Teppich des Lebens“ ist beispielsweise vier Mal (1900/1,1901/2,1904/3,
+            1932/Gesamt-Ausgabe), „Der Stern des Bundes“ nur zwei Mal (1914/1,
+            1928/Gesamt-Ausgabe) im Korpus repräsentiert. Im Laufe des Projekts
+            werden außerdem auch einzelne Gedichte, welche im Vorfeld in der von
+            George gegründeten Zeitschrift Blätter für die
+              Kunst (1892-1919) veröffentlicht wurden, in das Editionskorpus
+            aufgenommen.
+            Vgl. die „stilisierte Ursprungsschrift“
+            (Tool Dreifachlupe der Universität Würzburg).
+            Das Typenrepertorium des Gesamtkatalogs der
+            Wiegendrucke beschreibt die formalen Aspekte von Typen beispielsweise in
+            Prosaform (vgl. Inkunabelreferat der Staatsbibliothek zu Berlin –
+            Preußischer Kulturbesitz).
+         
+         
+            
+               Bibliographie
+               
+                  Eide, Øyvind (2015): "Ontologies, Data Modeling, and
+              TEI", in: Journal of the Text Encoding Initiative 8.
+              http://jtei.revues.org/1191 [letzter Zugriff 13. Oktober 2015]. 
+               
+                  Inkunabelreferat der Staatsbibliothek zu Berlin –
+                  Preußischer Kulturbesitz (o.J.): TW.
+                  Typenrepertorium der Wiegendrucke http://tw.staatsbibliothek-berlin.de/ [letzter Zugriff 15.
+                  Februar 2016]. 
+               
+                  Lucius von, Wolf D. (2012): "Buchgestaltung und
+                    Typographie bei Stefan George", in: Aurnhammer, Achim / Braungart, Wolfgang
+                    / Breuer, Stefan / Oelmann, Ute (eds.): Stefan George und
+                    sein Kreis. Ein Handbuch, 1. Berlin / Boston: De Gruyter 467-491. 
+               
+                  Stöckl, Hartmut (2004): "Typographie: Körper und Gewand
+                      des Textes. Linguistische Überlegungen zu typographischer Gestaltung", in:
+                      ZfAL Zeitschrift für Angewandte Linguistik 41:
+                      5-48. 
+               
+                  Stokes, Peter A. (2011): Describing
+                        Handwriting. Part I: http://www.digipal.eu/blog/describing-handwriting-part-i/
+                        [letzter Zugriff 13. Oktober 2015]. 
+               
+                  Universität Würzburg (o. J.): Dreifachlupe
+                  http://vb.uni-wuerzburg.de/ub/lskd/dreifachlupe.html [letzter
+                          Zugriff 15. Februar 2016].
+               
+                  Wehde, Susanne (2000): Typographische
+                            Kultur. Eine zeichenhistorische und kulturgeschichtliche Studie zur
+                            Typographie und ihrer Entwicklung. Tübingen: Niemeyer. 
+            
+         
+      
+   
+
+

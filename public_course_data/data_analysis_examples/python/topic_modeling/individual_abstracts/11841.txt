@@ -1,0 +1,152 @@
+11841	2022	
+        
+            From Shibuya ward with its intense nightlife in 
+                After Dark and the commercial area of Kichijōji in 
+                Sputnik Sweetheart, to Setagaya’s highway in 
+                1Q84, Bunkyo's Rikugien Garden in 
+                Norwegian Wood, Aoyama Cemetery in 
+                South of the Border, West of the Sun, and the Pacific Hotel near Shinagawa station in 
+                The Wind-Up Bird Chronicle – Haruki Murakami, arguably the most famous Japanese contemporary writer, has left his mark on the capital of Japan both within and outside of fiction. In his fourteen novels, Tokyo’s thousand faces appear in great detail, even though they are filtered through a wide variety of characters’ perspectives and reconceptualized by magical realism. Regardless of the literary space abstraction, Seymour Chatman’s theory affirms that literary characters are cognitively experienced in the same way a reader would get to know a person in real life; and Akhil Gupta’s research argues the existence of a link between spatial perception and cultural identity. This would suggest that the spatial conceptualization performed by literary characters entail a 
+                forma vivendi ascribable to a certain cultural environment. But is it really that simple? Does an identifiable Tokyo's 
+                genius loci emerge from Murakami’s novels? In the wake of Computational Criticism, we will use code-writing to help us get a glimpse of the characters’ cognitive mapping processes and thus delve into a literary-cultural analysis, bearing in mind that imaginative literature is the result of layers of mediation and re-presentation causing straightforward cultural seeping-through to be questioned. In order to do this, we present a Python script able to extract spatial data concerning the cognitive mapping of Murakami’s fictional figures. 
+            
+             In fact, in the last few years, literary spatiality has emerged both from a theoretical and a digital perspective. In light of this, the results given by the software application will be discussed in order to reflect on Tokyo as an example of Japanese urbanisation, and to identify pros and cons of digitally-assisted interpretive acts regarding spatiality. Lastly, in treating Murakami’s fictional spatiality with digital tools, particular attention will be given to recent criticism of distant reading and corpus selection. 
+             From a technical perspective, the presented script will use Natural Language Processing to tokenize, tag, and parse a selected corpus from of Murakami's novels to eventually perform Named Entity Recognition. The script will identify when movement verbs present fictional characters as subjects, leading to the extraction of the starting points and destinations of some of their itineraries. Thus, it will be possible to identify meaningful landmarks and itineraries of some characters, leading to the schematization of their cognitive maps. 
+             The spatial structures extracted by digital means will be interpreted in view of cultural differences that Eastern and Western societies present as far as living in metropolitan areas is concerned. Spurious results (counterfactual spatial indications, and phraseological expressions, among others) will also be considered from a technical perspective. Lastly, with respect to the multilingual DH approach, the analysis will be conducted onto the English corpus but a few observations the original text in Japanese language will be presented, thus suggesting new possible research paths.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Algee-Hewitt, M.
+                         (2017). Canon/Archive: Studies in Quantitative Formalism from the Stanford Literary Lab, N+1 Foundation
+                    
+                    
+                        Bode K.
+                         (2018). A World of Fiction: Digital Collections and the Future of Literary History, University of Michigan Press.
+                    
+                    
+                        Bode, K.
+                         (2020). 
+                        «Why You Can
+                        ’
+                        t Model Away Bias»
+                        , Modern Language Quarterly, 81, 95-124
+                    
+                    
+                        Bushell, S.
+                         (2020). Reading and Mapping Fiction: Spatialising the Literary Text, Cambridge University Press
+                    
+                    
+                        Chatman, S.
+                         (2019). Story and Discourse: Narrative Structure in Fiction and Film, Cornell University Press
+                    
+                    
+                        Cooper, D. and Gregory, I.
+                         (2011) «
+                        Mapping the English Lake District: A Literary GIS»
+                        , Transactions of the Institute of British Geographers 36, no. 1, 89–108
+                    
+                    
+                        Cooper, D., Donaldson, C., and Murrieta-Flores, P.
+                         (2016). Literary Mapping in the Digital Age, Burlington
+                    
+                    
+                        Gitelman L.
+                         (2013). Raw Data Is an Oxymoron, MIT Press
+                    
+                    
+                        Gupta, A. and Ferguson, J.
+                         (1992). «
+                        Space, Identity, and the Politics of Difference»
+                        , in Cultural Anthropology, Vol. 7, No. 1, pp. 6-23
+                    
+                    
+                        Herman, D.
+                         (2002). Story logic. Problems and possibilities of narrative, University of Nebraska Press.
+                    
+                    
+                        Heuser, R., Moretti, M., and Steiner, E.
+                         (2016). 
+                        «The Emotions of London»
+                        , Pamphlets of the Stan- ford Literary Lab
+                    
+                    
+                        Hillman, J. 
+                        (1992). The Thought of the Heart and the Soul of the World, Spring
+                    
+                    
+                        Loper, E., Klein, E., Bird, S
+                        . (2009). Natural Language Processing with Python, O’Reilly Media
+                    
+                    
+                        Marie-Laure Ryan, et al.
+                        (2016). Narrating Space/spatializing Narrative: Where Narrative Theory and Geography Meet, Ohio State University Press
+                    
+                    
+                        Moretti F.
+                        (1997). Atlas of the European Novel, Einaudi
+                    
+                    
+                        Moretti, F.
+                         (2013). Distant Reading, Verso
+                    
+                    
+                        Nan Z, D.
+                         (2019).
+                        «The Computational Case against Computational Literary Studies»
+                        , in Critical Inquiry, 45
+                    
+                    
+                        Schmid, C., Karaman, O., Hanakata, N. C., Kallenberger, P., Kockelkorn, A., Sawyer, L., Streule, M., & Wong, K. P. 
+                        (2018). Towards a new vocabulary of urbanisation processes: A comparative approach, Urban Studies, 55(1), 19–52
+                    
+                    
+                        Sorensen, A.
+                         (1999). 
+                        «Land Readjustment, Urban Planning and Urban Sprawl in the Tokyo Metropolitan Area»
+                        , Urban Studies, 36(13), 2333–2360
+                    
+                    
+                        Strecher, M. C.
+                         (1999). 
+                        «Magical Realism and the Search for Identity in the Fiction of Murakami Haruki»
+                        , The Journal of Japanese Studies , Vol. 25, No. 2, pp. 263-298
+                    
+                    
+                        Strecher, M. C.
+                         (2021). Dances with Sheep: The Quest for Identity in the Fiction of Murakami Haruki, University of Michigan Press
+                    
+                    
+                        Suter, R.
+                         (2008). The Japanization of modernity: Murakami Haruki between Japan and the United States, Harvard University Asia Center
+                    
+                    
+                        Tally, R.
+                         (2013). Spatiality, Routledge
+                    
+                    
+                        Underwood, T.
+                         (2019). Distant Horizons: Digital Evidence and Literary Change, University of Chicago Press
+                    
+                    
+                        Vasiliev, Y
+                        . (2020). Natural Language Processing with Python and SpaCy: A Practical Intro- duction, No Starch Pres
+                    
+                    
+                        Westphal B.
+                         (2009). Geocriticism: Real and Fictional Spaces, Armando editore
+                    
+                    
+                        Wilkens, M.
+                         (2021). «
+                        “Too isolated, too insular”: American Literature and the World»
+                        , The journal of Cultural analytics
+                    
+                
+            
+        
+    
+
+

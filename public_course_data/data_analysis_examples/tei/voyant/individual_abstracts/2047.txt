@@ -1,0 +1,54 @@
+Within the Digital Humanities, there is a long history of debate and discussion as to how texts are accurately represented in digital form. Arguments as to how texts are encoded in both a logical and semantic sense are a recurring feature of past DH conferences. 
+
+ Yet the intense intellectual focus on the precise details of marking up small corpora or even individual texts has masked the fact that issues related to the representation of large corpora of digitised materials - books, manuscripts, newspapers, records etc. - have been too often ignored.  Libraries, archives, museums and other collection institutions have now been digitising corpora of material for many years, but with a very few exceptions, it is still quite rare for an entire run of primary sources to be digitised and made available online.
+
+This means that there are gaps within the digital record.  Yet it is unusual for online resources to actively demonstrate these gaps; resources may be advertised as a growing corpus, but when searching through or downloading a digital resources there is rarely any indication of what has not been digitised. This skews the sense of the nature of the collection the scholar is working with and erodes trust. 
+
+This problem is compounded by assumptions made by end users that when a search is made in a digital resource, they actually are searching over everything in the original archive.  In most cases, this is far from being the case. 
+
+ This long paper looks at this problem in the context of the Europeana Newspapers project (www.europeana-newspapers.eu), a three year, four million euro project, which is creating full-text for 10m pages of digitised newspapers from 12 libraries across Europe, and also developing an interface to allow for cross searching of over 18m newspaper pages. The final interface, available from the European Library in 2014 (www.theeuropeanlibrary.org), will also provide keyword searching over the OCRd (Optical Character Recognition) text and allow users to compare different newspapers from around Europe published on the same day.
+
+While it is an ambitious project, it is only a drop in the ocean of the overall number of digitised newspapers in Europe (a conservative calculation within the project put the number of digitised newspaper pages in European libraries at 130m ). What appears on the final interface will only be a sample of what actually exists in European libraries. 
+
+ Moreover, other issues - political, economic, legal and technical - mean that the quality and national distribution of newspapers in the project (and therefore represented in the final online interface) are unevenly balanced. For the resource to be trusted by the academic community, this lack of balance must be acknowledged
+
+In terms of the economic and legal issues, the project is integrating newspapers from 12 existing newspapers online libraries, each of which have different business models. These different business models affect the final project interface. The National Library of Turkey and the British Library newspapers operate behind a pay wall, for instance - therefore the final Europeana Newspapers site will not be able to directly show images from their collection.
+
+Other libraries are wary of sharing full-resolution images, with the legitimate fear that the users will no longer visit their own national website. In such cases, only fragments of their newspaper images will appear in the central site. Legal issues are also pertinent; some libraries are unsure of the copyright status of some of their historic newspapers and therefore do not want to commit to allowing another entity to publish them
+
+In addition, there are several technical issues impeding uniform access to the resources. Nearly every digital newspaper collection today contains full-text derived from automatic processing with OCR software. But while some newspaper repositories grant access to the full-text, often the full-text is hidden and only exposed as an index for searching, but not available to the end user for online display or (programmatic) download, or sometimes not even for indexing by Google.
+
+In other cases, full-text is made available, but not for the entirety of the collection, either due to IP issues or because the content holder took a deliberate decision not to show the full-text to the user, often because of the amount of error rate in the OCRd text. Regularly there is no sufficient information provided about the OCR error rate of a particular digital resource, which makes it even harder to assess what amount of the content can realistically be retrieved through a full-text search.
+
+There are also different ways how digital facsimiles are made accessible. Many recent online newspaper portals use the JPEG2000 image file format. The benefit of this is the ability to zoom more or less seamlessly in and out of the digital facsimile. But since JPEG2000 has not been around for a very long time in the digitisation community, many collections that have been digitised in the past are only available in TIF format. This means that zooming can only be provided in a static way on these images, e.g. through different resolution JPEGs. As a result, it is often not possible for researchers to explore these legacy resources in much the same way as they do with recently digitised materials. 
+
+In other cases, digital facsimiles have been produced by capturing existing microfilm copies rather than the original source material, thus the digital versions expose artefacts that were not present in the original paper source, but only introduced in the microfilm. However, this type of provenance is most typically not available to end users who are left alone in their interpretation of the differences in resource presentation and functionality.
+
+Finally, the metadata standards used to describe the digital contents also vary. Not only are there different representations in use for encoding full-text such as plain text, ALTO or TEI. But also descriptive metadata is commonly encoded in different standards, and with different degrees of granularity. While standard bibliographic information such as the title or date of publication are commonly available, more specific information on, for example, a particular article or the names of persons or places occurring in it rarely are. Within the Europeana Newspapers project a subset of 2m pages out of the total 10m will be refined further down to the article level, thus enabling more sophisticated search and retrieval functionality than the remaining 8m pages.
+
+A central point of this paper is that these issues are not just issues for librarians; it is not about showcasing how a digital resource is. Rather it is the urgent need to demonstrate how such issues have a profound effect on the academic community’s engagement with online resources.
+
+If a researcher wants to conduct a comparative analysis of newspapers in Chronicling America (the US historic newspaper site), the National Library of France and the British Library, she will have to use three different interfaces with different levels of content and metadata quality. Moreover, she will also have to grasp the particularities of each of these collections with regard to their quality and completeness and what that entails for her research.
+
+This paper will conclude with some recommendations for how those building digital resources can make their content choices more transparent. Informed dialogue between the cultural heritage organisations and the research communities is required. It calls for creators to tear down the illusion of completeness and help persuade end users that many digital resources are fragmentary things, where the representation of absence is just as important as representation of existence.
+
+References
+For a brief summary of the issue see Julia Flanders, ”Collaboration and dissent: challenges of collaborative standards for digital humanities” in Collaborative Research in the Digital Humanities (eds. Marilyn Deegan, Willard McCarty), 2012. The TEI mailing list provides ample evidence of such discussion listserv.brown.edu/archives/cgi-bin/wa?A1=ind1309&L=TEI-L.
+
+For instance, Johanna Drucker in “Performative Materiality and Theoretical Approaches to Interface”Digital Humanities Quarterly (2013, Volume 7 Number 1) and also “Humanities Approaches to Graphical Display”Digital Humanities Quarterly (2011, Volume 7 Number 1)  addresses theoretical concerns relating to the interface but with less focus on its practical representation within online resources. The issue has received much more attention in the world of 3D visualisation, e.g. with the creation of the London Charter (www.londoncharter.org).
+
+See “History, Digitized (and abridged)” for a summary of the extent of digitisation in 2007. www.nytimes.com/2007/03/10/business/yourmoney/11archive.html?pagewanted=all&_r=1.
+
+One of the findings in, Reinventing research? Information practices in the humanities, Research Information Network, 2011, www.rin.ac.uk/our-work/using-and-accessing-information-resources/information-use-case-studies-humanities.
+
+David Nicholas, Ian Rowlands (2007), Google Generation, Paul Huntington www.jisc.ac.uk/whatwedo/programmes/resourcediscovery/googlegen.aspx.
+
+Alastair Dunning, European Newspaper Survey Report, 2012, www.europeana-newspapers.eu/wp-content/uploads/2012/04/D4.1-Europeana-newspapers-survey-report.pdf.
+
+For a comparative study of search ranking of digital newspaper repositories see Digital collections: If you build them, will they visit?, Frederick Zarndt et. al., IFLA WLC2013, Newspaper and Genealogy Section, Singapore, www.ifla.org/files/assets/newspapers/Singapore_2013_papers/day_1-_01_xzarndt_frederick_et_al_digital_collections.pdf.
+
+Jan Hillgärtner (2013), Digitalisierte Zeitungen und OCR: Welche Forschungszugänge erlauben die digitalen Bestände?, 18/03/13, newsphist.hypotheses.org/23.
+
+For a study in the methodology and analysis of digitised newspapers vs. paper copies see  The Digital Turn. Exploring the methodological possibilities of digital newspaper archives, Bob Nicholson, in Media History Vol. 13, Issue 1 2013, Special issue: Journalism and History: Dialogues.
+
+For an example of this issue within the Digging into Data projects see One Culture. Computationally Intensive Research in the Humanities and Social Sciences A Report on the Experiences of First Respondents to the Digging Into Data Challenge,Christa Williford and Charles Henry, (2012) www.clir.org/pubs/reports/pub151 and also the aforementioned Reinventing research? Information practices in the humanities.

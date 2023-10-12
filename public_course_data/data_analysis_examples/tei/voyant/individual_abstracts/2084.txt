@@ -1,0 +1,28 @@
+1. Introduction
+1.1. Overview
+El propósito de este póster es proporcionar una demostración del proyecto de etiquetado y edición digital con TEI de los paratextos en obras impresas de escritoras españolas desde el siglo XV al XVIII de BIESES (www.bieses.net). La información contextual que aportan los paratextos sobre sus autoras, el contexto de producción, las motivaciones que impulsaron su escritura, su recepción o su proceso de edición exigen una visión dinámica de la obra literaria mediante su representación digital, no como un producto hecho (work) sino como un acto de producción de sentido (act) que se reactualiza en cada cultura o época y en cada lector ("text in performance" [Bryant, 2002]1).
+
+1.2. Methodology
+Partiendo de la experiencia de toda una serie de proyectos de investigación dedicados a la escritura femenina (Brown University Project, African American Women Writers of the 19th Century, British Women Romantic Poet, 1789-1832, Women writer Resource Pages, UNiversidad de Chicago, The Orlando Project, Victorian Women Writers Project, Indiana UNiversity, Emory Women Writer Project)2, estamos fijando esquemas de etiquetado, a partir de un thesaurus de "valores" aplicados a los atributos que definan la posición de las escritoras en el campo literario, sus actitudes ante la escritura y las valoraciones que sus contemporáneos vierten en estos textos preliminares o epilogales.
+
+El codificado de este tipo de textos invierte el esquema tradicional de TEI, que privilegia el desarrollo del "body" frente al "front" y "back", dado que los paratextos ocupan un espacio "marginal" en la obra literaria: portada, preliminares (antes del cuerpo de la obra) y epílogo (después del cuerpo de la obra); además de otro tipo de informaciones paratextuales que se pueden intercalar en el cuerpo del texto y otro tipo de glosas o anotaciones marginales, que también hay que codificar.
+
+2. Getting Started
+En nuestro proyecto prescindimos del "body", que queda reducido a un enlace a un texto digitalizado o a una breve mención del inicio o final de la obra literaria en cuestión, y codificamos únicamente los textos reservados a los módulos del "front" y "back" [Burnard-Rahtz 2004: 5-8]3.
+
+Por analogía de temas e intereses seguimos muy de cerca el modelo de customización [Bauman y Flander 2004]4 de Women Writer Project (Brown University), que usa el "ODD language" (véase: www.wwp.brown.edu)5.
+
+En esta primera fase la customización se está centrando en la eliminación de elementos inncesarios y en la definición y establecimiento de valores para atributos, centrados en la caracterización de los enunciadores de estos textos (escritoras y destinatarios) y en las valoraciones sobre el proceso de escritura. A medida que el proceso de customización avance puede resultar necesario cambiar la estructura interna de algunos elementos para representar la realidad textual de los paratextos.
+
+Por todo ello creeemos que, siguiendo los modelos citados de proyectos que ya tiene una amplia andadura, la customización a través de TE IODD que proponemos para los paratextos de obras literarias españolas escritas entre el el siglo XV-XVIII, centrada en los elementos de front y back puede resultar interesante para otros investigadores y proyectos que atiendan a la literatura femenina de este período.
+
+References
+1. Bryant, Jonh (2002), The fluid Text: A Theory of Revision and Editing for Book and Screen, Ann Arbor, University of Michigan Press
+
+2. digital.lib.ucdavis.edu/projects/bwrp/; meet.tge-adonis.fr/projet/roles-et-pouvoirs-des-femmes-au-xvie-siecle-dans-la-france-de-louest; webapp1.dlib.indiana.edu/vwwp/welcome.do;jsessionid=9135BDD19390863752F291EAEA63E22E y https://wiki.dlib.indiana.edu/display/vwwp/Home; www.womenwriters.nl/index.php/Prefaces; womenwriters.library.emory.edu/; www.artsrn.ualberta.ca/orlando/; www.wwp.brown.edu/http://digital.nypl.org/schomburg/writers_aa19/
+
+3. Lou Burnard y Sebastian Rahtz, Relax NG with Son of ODD, Extreme Markup Languague, 2004: citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.7139&rep=rep1&type=pdf
+
+4. Bauman, Syd y Flander, Julia, Odd customizations, Extreme Markup Languague, 2004: conferences.idealliance.org/extreme/html/2004/Bauman01/EML2004Bauman01.html
+
+5. www.wwp.brown.edu/research/publications/guide/html/customization.html

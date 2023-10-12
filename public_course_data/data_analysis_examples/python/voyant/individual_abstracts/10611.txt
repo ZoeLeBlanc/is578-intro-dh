@@ -1,0 +1,71 @@
+
+      
+         Graphische Romane vereinen als hybride Gattung Aspekte von Literatur und bildender Kunst (McCloud, 1993). Wie interagieren Bild und Text beim Lesen graphischer Literatur und ermöglichen das Verstehen des Gesamtwerkes? Worauf fokussiert die Aufmerksamkeit des Lesers? Als Methode zur Beantwortung dieser Fragen ist die Blickbewegungsmessung besonders geeignet. Blickbewegungen haben sich in einer Vielzahl an Studien als valides, nichtreaktives Maß für die Verarbeitung und das Verstehen von Text und Bild erwiesen, in dem sich zudem auch unbewusste Verarbeitungsprozesse niederschlagen (Findlay & Gilchrist, 2003; Wade & Tatler, 2005). 
+         In früheren Arbeiten (Laubrock, Hohenstein & Thoß, 2016; Dunst, Hartel, Hohenstein Laubrock, 2016) haben wir mit Eyetracking-Analysen gezeigt, dass beim Lesen grafischer Literatur der größte Teil der Aufmerksamkeit dem Text in Sprechblasen und Beschriftungen (Captions) zugewandt wird und nur ein relativ kleiner Teil den originär visuellen Gestaltungselementen alloziert wird. Wird der visuelle Inhalt gar nicht beachtet, oder kann er möglicherweise bereits im peripheren Sehen während der Fixationen auf dem Text verarbeitet werden? Wir hatten bereits berichtet, dass Comics-Experten den Bildanteil stärker beachten und darauf verstehensrelevante Information extrahieren. In einer neuen Serie von Studien untersuchen wir mittels blickkontingenter Präsentation, ob (a) den Bildanteilen mehr Aufmerksamkeit zugewandt wird, wenn die Vorschau verhindert wird, indem das Bild erst eingeblendet wird, wenn der Blick sich auf ein Panel bewegt und (b) die Aufmerksamkeit andere grafische Elemente auswählt, wenn zwar der visuelle Teil der Panels sichtbar ist, der Text aber erst nach Fokussierung eines Panels eingeblendet wird.
+         Das visuelle Material wurde auf zweierlei Weise annotiert. Einerseits annotierten Menschen Personen und einzelne Objekte innerhalb der Panels. Andererseits versuchen wir eine objektiven Beschreibung des visuellen Materials mithilfe von Deskriptoren aus dem maschinellen Sehen (Computer Vision), z.B. mittels Farbhistogrammen, lokalem Fourier-Spektrum oder SIFT-Deskriptoren (Lowe, 1999). Der Vorteil dieser Beschreibung ist neben der Objektivität die skriptgesteuerte Anwendbarkeit auf große Datenmengen, etwa digitalisierte Korpora grafischer Literatur. Vergleichbare Arbeiten aus der Schnittstelle von Kunstgeschichte und Informatik ermöglichen beispielsweise eine automatisierte Klassifikation von Kunstrichtungen (Saleh & Elgammal, 2015) und zeigen das Potenzial eines solchen Ansatzes als Stilometrie visueller Merkmale.
+         Für die Zuordnung der Blickbewegungsdaten auf das Stimulusmaterial nutzen wir die im Projekt entwickelte Graphic Novel Markup Language (GNML), eine Erweiterung der Comic Book Markup Language (CBML; Walsh, 2012). Das Material wurde mit unserem Editor annotiert, für Weiterverarbeitung und statistische Analyse der Daten nutzten wir ein in Entwicklung befindliches R-Paket. Die objektive Beschreibung des visuellen Materials mit Deskriptoren aus dem maschinellen Sehen wurde unter Nutzung von OpenCV (Bradski, 2000) und VLFEAT (Vedaldi & Fulkerson, 2008) teils in Python und teils in Matlab implementiert, da für R für diesen Anwendungsbereich keine hinreichend entwickelte Funktionsbibliothek existiert. 
+      
+      
+         
+            
+               Bibliographie
+               
+                  Bradski, Gary (2000):
+                        „The OpenCV library“,
+                        in:
+                        Dr. Dobb’s Journal of Software Tools 25 (11): 120–125. 
+                    
+               
+                  Dunst, Alexander / Hartel, Rita / Hohenstein, Sven / Laubrock, Jochen (2016):
+                        „Corpus Analyses of Multimodal Narrative: The Example of Graphic Novels“,
+                        in:
+                        DH2016: Conference Abstracts 178–180.
+                    
+               
+                  Findlay, John M. / Gilchrist, Ian D. (2003):
+                        Active Vision. The Psychology of Looking and Seeing.
+                        Oxford: Oxford University Press.
+                    
+               
+                  Laubrock, Jochen / Hohenstein, Sven / Thoß, Aalexander (2016):
+                        „Moving around the city of glass“,
+                        in: 
+                        DHd 2016: Modellierung - Vernetzung - Visualisierung 186. 
+                    
+               
+                  Lowe, David G. (1999):
+                        „Object recognition from local scale-invariant features“,
+                        in:
+                        Proceedings of the International Conference on Computer Vision (ICCV'99) 1150–1157.
+                    
+               
+                  McCloud, Scott (1993):
+                        Understanding comics: the invisible art.
+                        Northampton, MA: Tundra.
+                    
+               
+                  Saleh, Babak / Elgammal, Ahmed M. (2015):
+                        „Large-scale classification of fine-art paintings: Learning the right metric on the right feature“,
+                        in:
+                        CoRR abs/1505.00855, 1–21 
+                        http://arxiv.org/pdf/1505.00855v1.pdf.
+                    
+               
+                  Vedaldi, Andrea / Fulkerson, Brian (2008):
+                        VLFeat: An open and portable library of computer vision algorithms. [Computer Software: http://www.vlfeat.org/ ]
+               
+                  Wade, Nicholas J. / Tatler, Benjamin W. (2005): 
+                        The Moving Tablet of the Eye: Origins of modern eye movement research. 
+                        Oxford: Oxford University Press.
+                    
+               
+                  Walsh, John (2012):
+                        „Comic Book Markup Language: An Introduction and Rationale“,
+                        in:
+                        DHQ: Digital Humanities Quarterly 6 (1).
+                    
+            
+         
+      
+   
+

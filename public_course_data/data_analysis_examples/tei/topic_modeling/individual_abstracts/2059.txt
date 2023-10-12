@@ -1,0 +1,69 @@
+2059	2014	1. Introduction
+How to represent texts in computer systems has always been an important topic in Digital Humanities. Tree based formalisms such as SGML 1 and XML (URL: http://www.w3.org/XML/ (checked 2013-10-26)) are useful for many purposes, but problems related to their hierarchical structures are inherent. Various solutions has been presented over the years, from questioning the existence of overlap in textual material 2 through various workaround for overlapping structures 3 (chapter 20) to the abolition of nesting formalisms, as in the example of MECS 4.
+
+In this paper I will focus on three different design principles for text representation systems, namely, linear, hierarchical and graph based. These labels represent concepts similar to Cayless' data types text as stream, text as tree, and text as graph 5. Examples of text modelling tool types focusing on each of these can be found in table 1. In the following I will analyse the relationship between the left and the right sides of the table based on experiences from the development and use of a text modelling tool called GeoModelText (URL: http://sourceforge.net/projects/geomodel/ (checked 2013-10-26)). Description of the development process can be found at the resource page for my PhD project (URL: http://www.oeide.no/dg/dp/ (checked 2013-11-01)). A use case is described in 6.
+
+Type	Text representation system 	Example of modelling tool type 
+1 	Linear	Plain text
+2 	Hierarchical 	XML encoding 
+3 	Graph based 	RDF encoding 
+Table 1 caption: Computer based text representation systems and modelling tools.
+
+2. Previous work
+In the last 10–15 years, most practical work in text encoding have lived with the nesting structure of SGML and XML. Alternative formalisms, such as MECS, has mostly yielded to the dominant tree based structure. There has, however, been an undercurrent of experiments and theoretical research into other types of solutions. One important example originally intiated in 2002 is LMNL (URL: http://www.lmnl-markup.com/ (checked 2013-10-26)), with its range based annotation 7. A recent attempt to examine text markup under the microscope is pure transcriptional markup8. Both these examples show on-going attempts to get to the core of markup practice and were important in the development of this paper. 
+
+In my own research into semiotic differences between texts and maps I developed a system for computer assisted conceptual text modelling called GeoModelText where all three types from table 1 have the same status. GeoModelText is currently tailor suited to my work. One aim of this paper is to investigate into its usability for other types of research.
+
+Systems for visualising graph networks based on and connected to texts are easily available. What is lacking are systems for manipulating the graph structure as part of interactive text modelling, that is, including the graph structure in the internal editing system. To the degree graph based editing is included in XML editors it tends to be in an indirect sense, e.g., through manipulation of attribute values for ID–IDREF links.
+
+3. GeoModelText
+GeoModelText is implemented as a Java application. The text to be analysed is imported from a TEI P5 document. The import results in a DOM structure representing the XML tree of the TEI source. Within the DOM structure the text itself is found in PCDATA segments. During analysis, these segments are used to reconstruct parts of the text as a linear structure; in this view the XML hierarchy is hidden from the user.
+
+An important function of a tree structure is inheritance, where aspects of a parent is inhereted by its children. This is used in the system to migrate responsibility to statements: the person responsible for a paragraph is also responsible for each sentence in the paragraph. One example is relationships between places claimed in the text. The claims are connected to the person responsible for the encapsulating paragraph. The places are referred to by names. In order to build up networks of related places, co-references between occurrences of names must be taken into consideration. For an introduction to co-reference see 9, and 10 for the use of co-reference networks. Thus, in order to establish this graph structure of related places, we need to read the linear text (type 1 in table 1), use inheretence (type 2), and then build up a network of related places and place names (type 3). This network connects strings which can be found at any level of the document structure. The co-reference networks change the document structure as a whole into a graph, as indicated in figure 1.
+
+
+Fig. 1: The XML tree turned into a graph.
+
+In the graph data structure, each node has a chain of links back to the place in the tree, and thus in the text, on which it is based. In this perspective, type 3 from table 1 is the dominant, but with links to the other types. In the distinction in 11 (p. 75) between hypertextual editions and editions in database format, GeoModelText is primarily a database system, but with aspects of a hypertext system.
+
+4. The hierachy of structures
+Everything we have seen in the example above is well known from XML tools, they are commonly used to establish such data structures. However, in the typical XML tool, the status of the three types are presented differently. To take one example: when opening an XML file in the Oxygen XML editor (URL: http://www.oxygenxml.com/ (checked 2013-10-27)) the tree structure is presented at the left of the Oxygen window as a number of expandable folders. This indicates that this structure is the base structure of the document. In the centre window we see the text as a sequence of tokens, with the XML elements shown in different ways or fully hidden at user discretion. Graph structures, e.g., a co-reference network, is only shown indirectly as attribute values.
+
+Thus, type 1 and 2 from table 1 are highlighted at the expense of type 3. In GeoModelText, on the other hand, separate windows give access to data in any of the three types. I do not claim that the graphical user interface of GeoModelText is better than the one in Oxygen; it is not. Rather, I want to make the point that the freedom of the object oriented programmer is not yet offered to the user of markup tools. What a user actually do with markup tools can be expressed in three different layers:
+
+Create a tree model of the text
+Formalise that model in TEI/XML
+Reificaite the model into the editing tool
+With these layers reified into the tool it is more difficult to get rid of, or even see, the straightjacket of the tree structure. While XML is useful for many purposes and is used both as input format and as storage format for GeoModelText, there is still a tendency to under-expose the non-hierarchical structure of the text. This tendency is there even if a number of technices are developed to overcome the problems created by the hierarchical nature of XML.
+
+A radical solution to these problem would be to leave XML, or, more generally, avoid hierarchical markup systems based on context free grammers all together. This was the solution of MECS. However,  this solution generated its own set of problems. In the development of LMNL, the choice was rather to use XML and the XML tools for what it is good for, and only leave the hierachical structure when one needs something else. This is also used as a design principle in GeoModelText. I use XML, both in the form of linearised files and DOM structures, whenever it is useful. But by operating in a programming environment (which is also where Piez finds himself in his work with the LMNL toolchain Luminescent (URL: https://github.com/wendellpiez/Luminescent/ (checked 2013-11-01)), although the langauge is different), I can leave the XML/DOM structure whenever I need to, e.g., to establish tools for capturing and visualising co-references. 
+
+5. The way forward
+Sometimes, in the frustration of the hierarchical straightjacket, it is tempting to leave XML as a whole behind. Keeping XML as a part of the information system, adding non-hierarchical modules as needed, is a better way forward for text encoding in general and for TEI specifically. XML is only a straightjacket in certain situations. Luminescent and GeoModelText are two examples of tools pointing towards a future where we can live with the limitations of XML because we are free to leave it whenever we need to. Craig outlines a complementary strategy for improvements of TEI 12.
+
+One central question remains, however. Is it possible to avoid the straightjacket as a user of a premade system, or is it something fundamental in my role as a programmer who gives me the freedom to create input mechanisms as well as visualisations based on all three types from table 1? Can we make tools which give users this freedom? When we create a tree model of a text we are still aware of the choices made, often out of convenience. When using an XML editing tool these choices has been implemented in a structure with a real material existence. The awareness of the straightjacket may be lost in the process from abstract model to editing tool. 
+
+References
+1. Goldfarb, C. F. and Y. Rubinsky (1990). The SGML handbook. Oxford: Clarendon Press.
+
+2. Renear, A., E. Myonas, and D. Durand (1996). Refining our Notion of What Text Really Is: The Problem of Overlapping Hierarchies. In S. M. Hockey and N. M. Ide (Eds.), Selected papers from the ALLC/ACH Conference, Christ Church, Oxford, April 1992, pp. 263–280. Oxford: Clarendon Press.
+
+3. TEI Consortium (2013). TEI P5: Guidelines for Electronic Text Encoding and Interchange. [2.5.0]. [July 26 2013]. [S.n.]: TEI Consortium.
+
+4. Sperberg-McQueen, C. and C. Huitfeldt (1999). Concurrent document hierarchies in MECS and SGML. Literary and Linguistic Computing 14(1), 29–42.
+
+5. Hugh A. Cayless, Rebooting TEI Pointers. In Journal of the Text Encoding Initiative, 6(2013). URL: jtei.revues.org/907 (checked 2014-03-07) ; DOI: 10.4000/jtei.907
+
+6. Eide, Ø. (2013). Why Maps Are Silent When Texts Can Speak. Detecting Media Differences through Conceptual Modelling. In M. F. Buchroithner, N. Prechtel, D. Burghardt, K. Pippig, and B. Schröter (Eds.), Proceedings from From Pole to Pole. The 26th International Cartographic Conference 2013, Dresden.
+
+7. Piez, W. (2013). Markup Beyond XML. In Proceedings from Digital Humanities July 16–19 2013, University of Nebraska–Lincoln, USA, pp. 343–345. Center for Digital Research in the Humanities.
+
+8. Caton, P. (2013). Pure Transcriptional Markup. In Proceedings from Digital Humanities July 16–19 2013, University of Nebraska–Lincoln, USA, pp. 140–142. Center for Digital Research in the Humanities.
+
+9. Eide, Ø. (2009). Co-Reference: A New Method to Solve Old Problems. In Proceedings from Digital Humanities June 22–25 2009, University of Maryland, USA, pp. 101–103. Maryland Institute for Technology in the Humanities.
+
+10. Meghini, C., M. Doerr, and N. Spyratos (2009). Managing Co-reference Knowledge for Data Integration. In Y. Kiyoki, T. Tokuda, H. Jaakkola, X. Chen, and N. Yoshida (Eds.), Information Modelling and Knowledge Bases XX. Amsterdam, Washington, D.C.: IOS Press.
+
+11. Buzzetti, D. (2002). Digital Representation and the Text Model. New Literary History 33(1), 61–88.
+
+12. Hugh A. Cayless, Rebooting TEI Pointers. In Journal of the Text Encoding Initiative, 6(2013). URL: jtei.revues.org/907 (checked 2014-03-07) ; DOI: 10.4000/jtei.907

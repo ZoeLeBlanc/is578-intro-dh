@@ -1,0 +1,94 @@
+11724	2022	
+        
+            Establishing English as the 
+                lingua franca in Academia has contributed to what has become known as “linguistic injustice” (see Van Parijs, 2002; Hyland, 2016; Politzer-Ahles et al., 2016; Soler, 2020). This idea states that second-language learners are at a disadvantage when using the new language. The predominance of English and the difficulties that a poor command of the language can pose have been a relevant concern in Digital Humanities (DH) (see Mahony, 2019, p. 384; Galina, 2014, p. 314). When discussing the consequences and possible solutions to the English-speaking bias in DH, the literature focuses on the following problems: i) the lack of translations of research output (see Galina, 2013); ii) issues of connectivity, for example, the so-called “digital divide” (Galina, 2014, p. 314; Mahony, 2019, p. 385); iii) the unavailability of data sources in languages other than English to quantify DH (Galina, 2014, p. 310); iv) problems with digital standards such as Unicode and TEI (see Fiormonte, 2012, pp. 67-69; Mahony, 2019, p. 374); and v) increasing the number of sources of textual information in languages other than English (see Galina, 2014, p. 314). In this sense, multilingual DH critiques seem to be centered on the deficiencies of non-English-language resources rather than on the level of accuracy of digital analytical tools.
+            
+            The aim of this work is twofold. Firstly, to distinguish a phenomenon that produces a new type of linguistic injustice, which we label as “the paradox of Anglocentric multilingualism.” This paradox arises when a multilingual philosophy is pursued in constructing complex systems of analysis in a digital environment (digital platforms, ontologies). However, these systems imply advantages in the study of English over other languages. The injustice derives from a poor level of precision in the output of technology when analyzing non-English languages. Secondly, we contend that multilingual DH should address the different challenges posed by this paradox. Multilingual DH needs to deal with the deficiencies of tools’ performance as well as those of language resources, because this disadvantage makes it difficult for any cross-linguistic study to provide reliable empirical data in (dis)proving linguistic intuitions.
+            To illustrate some of the potential problems derived from the paradox, this work will detail the difficulties we have faced in a cross-linguistic study on color terms (Bordonaba-Plou and Jreis-Navarro, forthcoming), when using the Arabic corpus arTenTen (Arts et al., 2014) and the Spanish corpus esTenTen (Kilgariff and Renau, 2013) in Sketch Engine. We will study the different performances of the tool in Arabic and Spanish, compared to English, to point out the weaknesses of this tool in a multilingual arena, making it possible to improve it and enriching the critical and inclusive framework of multilingual DH. Two main issues emerged in our inquiries. Firstly, the lists of collocations provided by the Sketch Word tool are of differing types and usefulness. For example, in Spanish, the tool provides lists like those in English (enTenTen20), i.e., lists based on a functional perspective. However, in Arabic, the researcher has fewer lists available, and those only reflect grammatical categories and the collocation position (left or right). This shortcoming of the tool means it does not provide a complete perspective on the linguistic behavior of the term. Secondly, the analyses conducted by the tool show different degrees of accuracy in Part of Speech (PoS) tagging. In Spanish, the PoS tagger classifies proper nouns as modifiers and verbs. For example, it invents 
+                paular “to paul” (from the proper name Paula),” or 
+                rodrigar “to Rodrigo” (from the proper name Rodrigo).” In Arabic, the PoS tagger does not cover cliticization in smart search. Cliticization is the most important phenomena in Arabic morphology and a big challenge in computational analysis (Habash, 2010, pp. 47-50). For example, the tagger reads 
+                bāhit “pale” as if the prepositional particle proclitic 
+                b+ “with/in” were attached to the non-existent inflected base word 
+                āhit. These inaccuracies imply that the statistical scores –MI-score (Hunston, 2002, p. 71; Baker, 2006, p. 101), t-score (Hunston, 2002, p. 73), and Log Dice (Gablasova, Brezina and McEnery, 2017, p. 164)– cannot be used with total confidence.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Arts, T., Belinkov, Y, Habash, N., Kilgarriff, A. and Suchomel, V. (2014). arTenTen: Arabic Corpus and Word Sketches. 
+                        Journal of King Saud University - Computer and Information Sciences, 
+                        26(4): 357-371.
+                    
+                    
+                        Baker P. (2006). 
+                        Using Corpora in Discourse Analysis. Continuum.
+                    
+                    
+                        Bordonaba-Plou, D., and Jreis-Navarro, L. M. (forthcoming). A cross-linguistic study of color terms in Arabic and Spanish. In Bordonaba-Plou, D. (ed.), 
+                        Experimental Philosophy of Language: Perspectives, Methods and Prospects. Springer.
+                    
+                    
+                        Fiormonte, D. (2012). Towards a cultural critique of the Digital Humanities. 
+                        Historical Social Research, 
+                        37(3): 59-76.
+                    
+                    
+                        Gablasova, D., Brezina, V., and McEnery, T. (2017). Collocations in corpus‐based language learning research: identifying, comparing, and interpreting the evidence. 
+                        Language Learning, 
+                        67(S1): 155-179.
+                    
+                    
+                        Galina Russell, I. (2013). Is there anybody out there? Building a global Digital Humanities community. 
+                        Humanidades Digitales, http://humanidadesdigitales.net/blog/2013/07/19/is-there-anybody-out-there-building-a-global-digital-humanities-community/ (accessed 15 August 2021)
+                    
+                    
+                        Galina Russell, I. (2014). Geographical and linguistic diversity in the Digital Humanities. 
+                        Literary and Linguistic Computing, 
+                        29(3): 307-316.
+                    
+                    
+                        Habsh, N. Y. (2010). 
+                        Introduction to Arabic Natural Language Processing. Morgan & Claypool.
+                    
+                    
+                        Hunston, S. (2002). 
+                        Corpora in Applied Linguistics. Cambridge University Press.
+                    
+                    
+                        Hyland, K. (2016). Academic publishing and the myth of linguistic injustice. 
+                        Journal of Second Language Writing, 
+                        31: 58-69.
+                    
+                    
+                        Kilgarriff, A., and Renau, I. (2013). esTenTen, a vast web corpus of Peninsular and American Spanish. 
+                        Procedia - Social and Behavioral Sciences, 
+                        95: 12-19.
+                    
+                    
+                        Mahony, S. (2018). Cultural diversity and the Digital Humanities. 
+                        Fudan Journal of the Humanities and Social Sciences, 
+                        11: 371-388.
+                    
+                    
+                        Van Parijs, P. (2002). Linguistic Justice. 
+                        Politics, Philosophy and Economics, 
+                        1(1): 59-74.
+                    
+                    
+                        Politzer-Ahles, S., Holliday, J. J., Girolamo, T., Spychalska, M. and Berkson, K. H. (2016). Is linguistic injustice a myth? A response to Hyland (2016). 
+                        Journal of Second Language Writing, 
+                        34: 3-8.
+                    
+                    
+                        Soler, J. (2020). Linguistic injustice and global English: Some notes from its role in academic publishing. 
+                        Nordic Journal of English Studies, 
+                        19(3): 35-46.
+                    
+                
+            
+        
+    
+
+

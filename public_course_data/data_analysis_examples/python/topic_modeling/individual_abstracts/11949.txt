@@ -1,0 +1,123 @@
+11949	2022	
+        
+            
+                Introduction
+                Picture books are a main source for pre-schoolers to learn about the wider world; it is important for children to see themselves in books and be aware of differences (Johnston and Bainbridge, 2017; Latima, 2020). Male dominance in children’s books, such as the dominance of male characters has long been problematic (Gooden and Gooden, 2001; Kim, 2016; Terras, 2018), it is important therefore to consider gender (as a protected characteristic) when considering diversity in the Chinese children’s book market. 
+                Picture books in different countries reflect diverse cultural preferences (Saxby & Winch, 1987; Wee et al., 2015). With a large, growing children’s picture book market (Johnson, 2018), China has translated children’s titles from countries including US, UK, Japan, etc (Li et al., 2020). This study examines the diversity in gender and popular themes in Chinese children’s picture books, by analysing the book authorship, titles, and blurbs of 2,000 bestselling children’s picture books from Dangdang, the major Chinese online bookseller. It provides a general reflection of topics in children’s books from different countries, including Asian, Western countries and other regions. 
+            
+            
+                Method
+                
+                    Data Corpus
+                    We conducted an experimental approach from publicly available information online. Metadata from 2,000 best-selling pre-school picture books were scraped from Dangdang.com, using Python. All data, including book title, blurbs, author introductions were collected on 24
+                        th September 2020 and filtered by sales, the earliest title was published in 2003. Data was allocated to four separate corpora regarding original language and region of publication including Chinese local, East Asian (Japan, South Korea, etc), English (US, UK, Canada, etc) European, and multiregional books (French, Germany, South Africa, etc).
+                    
+                
+                
+                    Data Analysis
+                    This study firstly matched all authors with their sex and nationality by analysing authors’ introductions, as well as searching for official authorial information online, then compiling a statistical breakdown. Secondly, we tokenized book titles and blurbs using the Jieba package in Python, calculated the top 1,000 word list for each corpus. We then identified gendered words, classified them into five groups: pronouns (he/she); gender roles (mum/dad); nouns (princess/witch); animals (cow/cock); name of character (Carmela/Tintin); calculated frequency and compared them. 
+                    Thirdly, we adopted topic modelling, a text mining method for understanding contents of a corpus through a group of topics (Heidarysafa et al., 2019), to investigate how book topics differ. We used Bertopic, which supports English and Chinese, and tested different parameters for each corpus. We finally modified the number of topics to 3 and 30 topic words, with a value for each word showing its centrality to the topic. 
+                    All data was collected in Chinese with Chinese-style narratives. We analysed data in Chinese then translated the results into English, as presented below. Finally, we tried to match characters’ names with their original versions and present English names (if there were any).
+                
+            
+            
+                Results
+                
+                    Comparison of Authors
+                    China had imported picture books from 34 countries and areas, with a male dominance among authors (see in Fig1&2). There are 519 East Asian titles, 730 English titles and 332 multilingual titles. 
+                    
+                        
+                        
+                        
+                    
+                    Fig 1 Nationality of Authors
+                    
+                        
+                    
+                    Fig 2 Gender of Authors
+                        
+                             There are some titles were written by a group of editors, it is difficult to confirm their sex information, so we classified them into the none group.
+                        
+                    
+                
+                
+                    Gender representation in books 
+                    A gendered keyword list compared the gender representation in books. There are more male characters in all corpora, however, mum/mom weighed more than dad in all books. Chinese and Asian titles have fewer gendered words, while more characters were portrayed in English books, correspondingly more pronouns are used. 
+                    
+                        
+                    
+                    * Numbers in every blank respectively represent the number of different words in this type and the total frequency of all words in this type.
+                
+                
+                    Topic clustering between corpora of different regions
+                    Topics from each dataset were presented in word clouds (Fig 3-14). Chinese culture, children’s education and books resulting from corporate franchises are three main topics in Chinese local titles. Similar topics can be found in East Asian titles, but there are more local topics. Big brands such as Disney, family education and animal stories are important aspects in English titles. 
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+                    
+                
+            
+            
+                Discussion
+                The data-driven analysis of book authors and blurbs indicates publishing, purchasing, and reading preferences and showed an overall male dominance the Chinese children’s picture book market. Chinese and East Asian titles emphasise cultural contents and are more education-oriented, while books from Western countries portray more characters and focus on storytelling and children’s emotions. However, this study is a partial reflection of the Chinese children’s book market due to limited data collected for popular titles. All translated titles were chosen under the publishing censorship in China, and they might not be proper representatives of diverse picture books. Further studies can expand the dataset, include more languages and book genres, as well as adopting other methods such as network analysis.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Gooden, A. M. and Gooden, M. A. (2001). Gender Representation in Notable Children’s Picture Books: 1995-1999. 
+                        Sex Roles, 
+                        45(1/2), pp. 89–101. 
+                        http://dx.doi.org/10.1023/A:1013064418674.
+                    
+                    
+                        Johnston. and Bainbridge, J. (2017). 
+                        Reading Diversity through Canadian Picture Books: Preservice Teachers Explore Issues of Identity, Ideology, and Pedagogy. University of Toronto Press. 
+                        10.3138/9781442666412.
+                    
+                    
+                        Johnson. (2018a). 
+                        China’s Children’s Book Market: Big Numbers and Local Talent. 
+                        Publishing Perspectives. 
+                        https://publishingperspectives.com/2018/11/china-childrens-book-market-big-numbers-local-talent/ (accessed 25 October 2021).
+                    
+                    
+                        Johnson. (2018b). 
+                        Why Children’s Book Publishing in China Is Growing So Fast. 
+                        Publishing Perspectives. 
+                        https://publishingperspectives.com/2018/03/why-chinas-childrens-book-industry-is-growing-so-fast/ (accessed 25 October 2021).
+                    
+                    
+                        Kim, S. J. (2016). Expanding the Horizons for Critical Literacy in a Bilingual Preschool Classroom: Children’s Responses in Discussions with Gender-Themed Picture Books. 
+                        International Journal of Early Childhood, 
+                        48(3), pp. 311–27. 
+                        http://dx.doi.org/10.1007/s13158-016-0171-3.
+                    
+                    
+                        Li, Yi., Hangxizi, S. and Li, Yongning. (2020). Is the Chinese Children’s Mainstream Book Market Inclusive Enough? A Data Analysis of Children’s Bestsellers on Dangdang.Com. 
+                        Publishing Research Quarterly, 
+                        36(1), pp. 129–44. 
+                        http://dx.doi.org/10.1007/s12109-019-09706-z.
+                    
+                    
+                        Saxby, H. M. and Winch, G. (1987). 
+                        Give Them Wings: The Experience of Children’s Literature. South Melbourne: Macmillan Co. of Australia.
+                    
+                    
+                        Wee, S.-J., Park, S. and Choi, J. S. (2015). Korean Culture as Portrayed in Young Children’s Picture Books: The Pursuit of Cultural Authenticity. 
+                        Children’s Literature in Education, 
+                        46(1), pp. 70–87. 
+                        10.1007/s10583-014-9224-0.
+                    
+                
+            
+        
+    
+
+

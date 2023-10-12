@@ -1,0 +1,34 @@
+2055	2014	>Contexts for Humanities Visualization
+Literary scholars are increasingly turning to graphical display of humanistic information as a way to encounter texts in new and engaging ways. Digitally facilitated humanities visualization presents literary critics with opportunities for new insight1, while also opening practitioners to charges of wholesale importation of simplistic scientific methodologies.2 This poster session outlines the rationale, method, and significance of a focused humanities visualization project in order to demonstrate how new techniques of visualization may be undertaken with literary texts to produce new and speculative “aesthetic provocations” in literary studies.3
+
+Materials and Scope
+In order to model and theorize how such a project might develop, I am producing a network visualization of the sixteenth-century play Ralph Roister Doister by Nicholas Udall. Using the open-source "interactive visualization and exploration" platform Gephi, I map the relationships between characters in the play based upon dialogue. In other words, this project structurally maps dialogue between characters, producing a network visualization that productively reconfigures the play to provoke new analytical responses. Following the example of Franco Moretti’s work with Hamlet, these models prompt new insight into the “deep structures” of literary works. For Moretti, however, “the most important thing of all” about these reconfigurations is that they can be manipulated: “one can intervene on a model; make experiments.”4 [116, italics in original]. With a baseline visualization of dialogue established, I, following Jerome McGann, selectively intervene and “deform” the re-modeled text to continually reconfigure it. Such processes bring us “to a critical position in which we can imagine things about the texts that we didn’t and perhaps couldn’t otherwise know.”5 [116] Motivated by Drucker and Nowviskie’s call to “engage computing to produce new aesthetic provocations,” I use Roister Doister to understand how humanities visualization may reconfigure our approach to literary inquiry.6 
+
+Methods of Production
+In order to map the dialogic relationships between these characters in Gephi, I have created each character as a node in the network; these nodes are connected by directional dialogue originating at a particular node and terminating at another. Thus, the main characters Roister Doister and Merygreeke are nodes 1.0 and 2.0, for example. Within Gephi’s data manipulation environment, a line of dialogue from the former to the latter would be mapped visually as a line [or an “edge”] from node 1.0 to node 2.0. Each exchange is recorded as tabled data in Gephi, which is then used to produce visualizations. Visualizations can be produced for any discrete unit of the text, including scene, act, or the entirety of the play. This project produces visualizations of each of these divisions for comparative purposes. Following Moretti and McGann, I have undertaken selective deformations by, for example, removing various characters at different points, thereby revealing their network centrality. Criticism of Roister Doister has, for the most part, focused heavily on the play’s dramaturgical debt to the classical comedies of Terence and Plautus, the extent to which those formal structures were successfully integrated with “native” elements of English drama, and the play’s debts to the miles gloriosus [“braggart-soldier”] tradition of Classical comedy.78 This project is in part an attempt to revitalize an ossified critical conversation as an example of how new techniques can vigorously re-engage old texts. 
+
+Significance of Anticipated Visualizations
+Experimentation in visualization of textual works is a timely one. As can be seen from the growing use of the Voyant suite9 of analysis and visualization tools as well as the popular Mapping the Republic of Lettersproject,10 humanities visualization is a growing area of scholarly concern. Elijah Meeks has argued that “the shift from creating, annotating and analyzing archives to modeling systems can have a profound impact beyond the [admittedly high value of] usability of scholarly material developed during a digital humanities project.”11 [italics mine]. When humanities scholars have reached a certain point of visual literacy, we will begin to engage with such models in profoundly important ways. Indeed, these models may “provide a much more nuanced form of knowledge transmission than the raw datasets or interactive and dynamic applications typically presented as the future of digital scholarly media.”12 This project is an effort to explore how these new forms of knowledge transmission and analysis might impact literary inquiry. 
+
+References
+1. Manovich, Lev. (2010). What Is Visualization? Poetess Archive Journal 2(1), n. pag.
+
+2. Drucker, Johanna. (2011). Humanities Approaches to Graphical Display. Digital Humanities Quarterly 5(1), n. page.
+
+3. Drucker, Johanna, and Bethany Nowviskie. (2004). Speculative Computing: Aesthetic Provocations in Humanities Computing. Companion to Digital Humanities. In Schreibman, Susan, Siemens, Ray, & Unsworth, John (eds). Oxford, Blackwell. Accessed 03 April 2012. Available at [journals.tdl.org/paj/index.php/paj/article/view/19/58]
+
+4,5. Moretti, Franco. (2011). Network Theory, Plot Analysis. Stanford, Stanford Literary Lab.
+
+6. Drucker, Johanna, and Bethany Nowviskie. (2004). Speculative Computing: Aesthetic Provocations in Humanities Computing. Companion to Digital Humanities. In Schreibman, Susan, Siemens, Ray, & Unsworth, John (eds). Oxford, Blackwell. Accessed 03 April 2012. Available at [journals.tdl.org/paj/index.php/paj/article/view/19/58]
+
+7. Boas, Frederick S. (1933). An Introduction to Tudor Drama. Oxford, Clarendon.
+
+8. Brooke, C. F. Tucker. (1911). The Tudor Drama: A History of English National Drama to the Retirement of Shakespeare. Boston, Riverside.
+
+9. Voyant Tools. (2012). [voyant-tools.org]. Accessed October 2012.
+
+10. Mapping the Republic of Letters: Navigating Big Data from the Early Modern Period. (2012). Available at [republicofletters.stanford.edu].
+
+11. Meeks, Elijah. (2011). More Networks in the Humanities or Did Books Have DNA? Digital Humanities Specialist. Published 6 December 2011. Accessed 17 April 2012.
+
+12. Meeks, Elijah. (2011). More Networks in the Humanities or Did Books Have DNA? Digital Humanities Specialist. Published 6 December 2011. Accessed 17 April 2012.

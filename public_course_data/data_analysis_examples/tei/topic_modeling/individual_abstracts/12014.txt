@@ -1,0 +1,182 @@
+12014	2022	
+        
+            
+                Introduction
+                Broadly defined, a corpus is a collection of machine-readable texts that are somewhat representative of a particular reality of scholarly interest (McEnery et al. 2006: 5, Xiao 2012: 147). Corpus creation has been part of the research practices of linguists and philologists for decades, and it has recently entered the computer sciences via the mixture field of natural language processing (NLP). Corpora have become a key resource in the development and evaluation of computer systems that deal with language. As these approaches from NLP are being re-discovered, applied, and enriched within the computational humanities, the making of these corpora and their transformation into structured or plain digital texts is of vital importance. Just in the literary domain, there are arguably thousands of corpora available to download or query. In a comprehensive survey, Xiao (2010) describes over a hundred well-known and highly influential corpora in English and other languages. Smaller corpora for understudied or endangered languages have also recently appeared (see Scannell 2007, Ostler 2008, Cox 2011). Notably, only five corpora in these surveys contained poetry and only one of them was annotated with relevant poetic features. As newer poetic corpora with rich annotations are becoming available, we need a proper tool to uniformly access them.
+            
+            
+                Averell
+                Among the characteristics that should guide the building of a corpus (McEnery and Wilson, 2001; Gries and Berez, 2015), two are commonly desired: machine readability and availability to researchers. Unfortunately, even when corpora is made fully available in electronic format, it is often the case that scholars struggle to find a proper way to address their research questions using the ready-made corpora (see e.g., Xiao, 2010). In this sense, Averell is a tool that tries to lower the barrier for researchers interested in the study of multilingual poetry corpora. It provides a unified interface to query, manage, download, and merge corpora of poetic nature in multiple languages based on features relevant for poetry scansion and meter analysis. At its core, Averell is a Python library that connects existing annotated corpora in either JSON, XML, or TEI formats, and makes them available into rich CSV and JSON-lines formats that can be later converted into semantic RDF according to the POSTDATA network of ontologies (González-Blanco et al., 2020). Averell exposes a consistent programming application interface to integrate its functionalities into larger software projects, and it is also packaged as a command line tool for its direct use from the terminal.
+            
+            
+                Granularity
+                Averell is structured around two key aspects: the catalogue and its granularity. Each corpus defines a granularity level at which its documents can be split. All corpora support splitting by poems and lines (verses), but a line can also be split into words, and then syllables, for which metrical patterns might be provided. In some cases, stanzas, a set of structural and often semantical units within the poem, are also available. Extra information such as the lengths of verses, the amount of lines per stanza, or the type of rhymes is also added when available. This granular annotation allows scholars to merge different corpora and extract sets of poems that meet specific criteria. For example, a corpus of hendecasyllabic safic verses, or poems for a specific period only at the level of the stanza. Instances of the use of Averell to carry out studies in poetry already exist. De la Rosa et al. (2020, 2021) used Averell to create training and validation datasets to fine-tune transformers-based models and to create rule-based systems to a metrical prediction task.
+            
+            
+                Catalogue
+                The current catalogue in Averell (Table 1) contains corpora in Czech, English, French, Italian, Portuguese, and Spanish. A total of 12 corpora with 3,847,739 verses are available to download and remix, with different levels of granularity but all of them annotated to a certain extent.
+                Since corpora have different sizes, formats, and metrical information, we pre-processed each corpus looking for common metadata tags and structures. We then created reusable parsers to extract the relevant information exposed by Averell. The result is a JSON-lines structure capable of capturing the common details of the different corpora. From this common intermediate format, Averell is able to produce data in formats suitable for analysis such as CSV, Parquet, XML TEI, and even POSTDATA RDF triplets.
+            
+            
+                Conclusions
+                In this work, we have introduced the tool Averell for the management and remixing of annotated poetic corporar in a multilingual setting. We have described its structure and showcased a few of its uses in existing scholarly work. We hope to enrich the tool supporting more formats, better interoperability, a larger catalogue, and an easy-to-use web interface.
+                Table 1. Corpora available and granularity levels for each
+                
+                    
+                        51
+                        141
+                        51
+                    
+                    
+                        Name
+                        Description
+                        Granularity
+                    
+                    
+                        Disco v2.1 and v3
+                        The Diachronic Spanish Sonnet Corpus (DISCO) Spanish 15th and the 19th centuries sonnets corpus
+                        stanza
+                            line
+                        
+                    
+                    
+                        Sonetos siglo de oro
+                        Spanish 16th and the 17th centuries sonnets corpus (Miguel de Cervantes Virtual Library)
+                        stanza
+                            line
+                        
+                    
+                    
+                        ADSO 100
+                        Spanish Golden age sonnet corpus
+                        stanza
+                            line
+                        
+                    
+                    
+                        Poesía Lírica Castellana del Siglo de Oro
+                         Golden Age Castilian lyric poetry corpus 
+                        stanza
+                            line
+                            word
+                            syllable
+                        
+                    
+                    
+                        Gongocorpus
+                        Luis de Gongora poetry corpus 
+                        stanza
+                            line
+                            word
+                            syllable
+                        
+                    
+                    
+                        Eighteenth-Century
+                            Poetry Archive
+                        
+                        English Eighteenth Century poetry corpus
+                        stanza
+                            line
+                            word
+                        
+                    
+                    
+                        For Better For Verse
+                        University of Virginia poetry corpus
+                        Stanza
+                            line
+                        
+                    
+                    
+                        Métrique en Ligne
+                        Université de Caen Normandie (CRISCO) french poetry corpus
+                        stanza
+                            line
+                        
+                    
+                    
+                        Biblioteca Italiana
+                        Italian Medioevo to Novecento poetry corpus
+                        stanza 
+                    
+                    
+                        Corpus of Czech Verse
+                        Corpus of Czech poetry of the 19th and of the beginning of the 20th centuries
+                        stanza
+                            line
+                            word
+                        
+                    
+                    
+                        Stichotheque Portuguese
+                        Stichotheque project portuguese poetry copus
+                        stanza
+                            line
+                        
+                    
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Cox, C. (2011). 
+                        Corpus Linguistics and Language Documentation: Challenges for Collaboration. Brill doi:
+                        10.1163/9789401206884_013. 
+                         (accessed 28 April 2022).
+                    
+                    
+                        De la 
+                        Rosa, J., Pérez, Á., Hernández, L., Ros, S. and González-Blanco, E. (2020). Rantanplan, Fast and Accurate Syllabification and Scansion of Spanish Poetry. 
+                        Procesamiento del Lenguaje Natural, 
+                        65(0): 83–90.
+                    
+                    
+                        De la 
+                        Rosa, J., Pérez, Á., Sisto, M. de, Hernández, L., Díaz, A., Ros, S. and González-Blanco, E. (2021). Transformers analyzing poetry: multilingual metrical pattern prediction with transfomer-based language models. 
+                        Neural Computing and Applications doi:
+                        10.1007/s00521-021-06692-2. 
+                         (accessed 28 April 2022).
+                    
+                    
+                        González-Blanco, E., Ros Muñoz, S., De la Rosa, J., Pérez Pozo, Á., Hernández, L., De Sisto, M., Díaz, A., Khalil, O., Rodríguez, J. L. and Leguina, L. (2020). Towards an Ontology for European Poetry doi:
+                        10.5281/zenodo.4299645. 
+                         (accessed 28 April 2022).
+                    
+                    
+                        Gries, S. Th. (2009). What is Corpus Linguistics?. 
+                        Language and Linguistics Compass, 
+                        3(5): 1225–41 doi:
+                        10.1111/j.1749-818X.2009.00149.x.
+                    
+                    
+                        McEnery, T. and Wilson, A. (2001). 
+                        Corpus Linguistics: An Introduction. Edinburgh University Press.
+                    
+                    
+                        Ostler, N. (2008). Corpora of less studied languages. 
+                        Corpus Linguistics: An International Handbook, 
+                        1. Walter de Gruyter Berlin: 457–83.
+                    
+                    
+                        Scannell, K. P. (2007). The Crњbadсn Project: Corpus building for under-resourced languages. 
+                        Cahiers Du Cental, 
+                        5. Citeseer: 1.
+                    
+                    
+                        Xiao, R. (2010). Corpus creation. In Indurkhya, N. and Damerau, F. (eds), 
+                        The Handbook of Natural Language Processing. 2nd edition. CRC PRESS-TAYLOR & FRANCIS GROUP, pp. 147–65.
+                    
+                    Corpus-Based Language Studies: An Advanced Resource Book 
+                        Routledge & CRC Press
+                         (accessed 28 April 2022).
+                    
+                
+            
+        
+    
+
+

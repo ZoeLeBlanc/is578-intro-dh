@@ -1,0 +1,738 @@
+
+      
+         
+            Einleitung
+            In diesem Beitrag wird ein Verfahren vorgestellt, das Netzwerkvisualisierungen dramatischer Texte für eine spezifische Form der kommunikativen Interaktion zwischen Figuren fokussiert.
+            Es wird gezeigt, inwiefern gewichtete, gerichtete und dynamische Figurennetzwerke narrative Informationsvermittlung in der Figurenrede visualisieren können und auf diesem Weg dramennarratologische Analysen bzw. Annotationen ausgewertet werden.
+            Im Gegensatz zu literaturwissenschaftlichen Netzwerkanalysen, die um die automatisierte Analyse 
+                    des „kompositorische[n] Grundgerüst[s]“ 
+                    
+                    (Trilcke 2013: 224) von großen Dramenkorpora 
+                    
+                    (Piper et al 2017; Trilcke et al. 2015) bemüht sind, steht in diesem Beitrag also die Visualisierung von manuellen Annotationen im Vordergrund.
+                
+            Darüber hinaus werden mit Rückgriff auf die ermittelten Netzwerkdaten Deutungspotenziale exemplarisch an Kleists 
+                    Die Familie Schroffenstein (DFS) diskutiert.1 Das Erkenntnisinteresse zielt also auf zwei Aspekte: (1) Inwiefern lassen sich narrative Redebeiträge, die ein zentrales Element der inneren und äußeren Informationsvermittlung im Drama (Pfister 2001: 20-22) sind, durch Annotationen netzwerkgraphisch visualisieren? (2) Inwiefern stellt die literaturwissenschaftliche Netzwerkanalyse in diesem Kontext einen Mehrwert dar?
+                
+         
+         
+            Annotation narrativer Figurenrede
+            Ausgangspunkt der vorgestellten Netzwerke ist eine Typologie narrativer Figurenrede bzw. von Binnenerzählungen, die zur Annotation der Dramen Heinrich von Kleists genutzt wurden.2 Dabei wurden über 800 Vorkommnisse narrativer Figurenrede in den Dramen manuell annotiert. In einem ersten Schritt unterscheidet die Typologie zwischen narrativen Äußerungen, mit denen Figuren über ihre eigene Wirklichkeit erzählen, und narrativer Figurenrede, bei der das nicht der Fall ist. Der erste Phänomentyp, die horizontalen Binnenerzählungen, können mit dem narratologischen Kategorieninventar zur Beschreibung anachronen Erzählens (Lahn & Meister 2008: 138-141) genauer beschrieben und annotiert werden:3
+            
+            
+               
+                  Binnenerzählungen
+               
+               
+                  Horizontal
+                  Analepsen
+                  488
+               
+               
+                  
+                  Simullepsen
+                  123
+               
+               
+                  
+                  Prolepsen
+                  33
+               
+               
+                  Vertikal
+                  Pseudoanalepsen
+                  33
+               
+               
+                  
+                  Pseudosimullepsen
+                  6
+               
+               
+                  
+                  Pseudoprolepse
+                  29
+               
+            
+            Tabelle 1: Vorkommen narrativer Figurenrede in Kleists Dramen
+            Diese manuellen Annotationen sind die Grundlage dafür, dass unterschiedliche Formen der Informationsvermittlung netzwerkgraphisch visualisiert werden können.
+         
+         
+            Netzwerkerstellung
+            Unter Rückgriff auf die Annotationen der narrativen Figurenrede und die TEI-Annotationen von Sprecherfiguren und Szenen- sowie Aktwechseln im TextGrid-Korpus wurden chronologisierte Sender-Adressaten-Kanten erstellt. Dazu wurden die vier Sprecherfiguren, die auf eine narrative Äußerung folgen oder ihr vorangehen, als Adressaten berücksichtigt, sofern keine Akt- oder Szenenwechsel zwischen narrativer Figurenrede und potenziellem Adressaten liegt und es sich um unterschiedliche Figuren handelt. Die Anzahl der erzeugten Kanten ist somit deutlich höher als die Anzahl der narrativen Äußerungen (siehe exemplarisch in Tabelle 2 die Kanten 4 und 5 sowie 8-10). 
+            
+               
+                  Id
+                  
+                     Source (Sprecher)
+                  
+                  
+                     Target (Adressat)
+                  
+                  
+                     Label (Akt)
+                  
+                  
+                     Timeset (Beginn & Ende)
+                  
+                  
+                     Weight
+                  
+               
+               
+                  1
+                  Rupert
+                  Eustache
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  2
+                  Rupert
+                  Jeronimus
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  3
+                  Rupert
+                  Ottokar
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  4
+                  Jeronimus
+                  Ottokar
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  5
+                  Jeronimus
+                  Ottokar
+                  1
+                  
+                     ""
+                  
+                  2
+               
+               
+                  6
+                  Ottokar
+                  Jeronimus
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  7
+                  Jeronimus
+                  Kirchenvogt
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  8
+                  Kirchenvogt
+                  Jeronimus
+                  1
+                  
+                     ""
+                  
+                  1
+               
+               
+                  9
+                  Kirchenvogt
+                  Jeronimus
+                  1
+                  
+                     ""
+                  
+                  2
+               
+               
+                  10
+                  Kirchenvogt
+                  Jeronimus
+                  1
+                  
+                     ""
+                  
+                  3
+               
+            
+            Tabelle 2: Auszug aus der Kantenliste zu DFS
+            Das Kantengewicht 
+                (Weight) zwischen einer Sender- und einer Adressatenfigur steigt mit jeder narrativen Äußerung, die eine Senderfigur im ‚Beisein‘ derselben Adressatenfigur äußert (siehe z.B. Kante 4 und 5). 
+                
+            Die Figurennetzwerke, die auf dieser Grundlage erstellt werden, illustrieren, welche Figuren sich zu welchem Zeitpunkt des Dramenverlaufs narrativ äußern, welche Figuren narrative Informationen bekommen und wie häufig Figuren an narrativem Informationsaustausch beteiligt sind.
+         
+         
+            Visualisierungs- und Analysebeispiele
+            Abbildung 1 zeigt dieses Potential der Netzwerkvisualisierung exemplarisch für 
+                    Die Familie Schroffenstein.4
+            
+            
+               
+               
+                  Abbildung 1.
+                        Narrative Informationsvermittlung in DFS
+               
+            
+            Die Größe der Knotenbeschriftung repräsentiert hier die betweenness centrality5 der Figuren und damit den Stellenwert bzw. Einfluss der Figur auf die narrative Informationsvermittlung innerhalb des Dramas.
+                
+            
+               
+                  Label
+                  
+                     betweenness centrality
+                  
+                  
+                     weighted indegree
+                  
+                  
+                     weighted outdegree
+                  
+                  indegree
+                  outdegree
+                  degree
+               
+               
+                  Jeronimus
+                  125,45
+                  99
+                  82
+                  25
+                  28
+                  53
+               
+               
+                  Gertrude
+                  98,74
+                  46
+                  70
+                  15
+                  15
+                  30
+               
+               
+                  Sylvester
+                  85,37
+                  107
+                  31
+                  29
+                  14
+                  43
+               
+               
+                  Rupert
+                  74,47
+                  145
+                  17
+                  36
+                  10
+                  46
+               
+               
+                  Agnes
+                  45,90
+                  59
+                  85
+                  18
+                  23
+                  41
+               
+               
+                  Eustache
+                  17,25
+                  37
+                  73
+                  14
+                  19
+                  33
+               
+               
+                  Ottokar
+                  5,11
+                  180
+                  51
+                  33
+                  14
+                  47
+               
+               
+                  Ursula
+                  3,31
+                  1
+                  4
+                  1
+                  4
+                  5
+               
+               
+                  Santing
+                  2,94
+                  10
+                  49
+                  6
+                  12
+                  18
+               
+               
+                  Johann
+                  2,35
+                  4
+                  106
+                  3
+                  15
+                  18
+               
+               
+                  Kirchenvogt
+                  0,00
+                  1
+                  80
+                  1
+                  14
+                  15
+               
+               
+                  Ein Diener
+                  0,00
+                  2
+                  2
+                  2
+                  2
+                  4
+               
+               
+                  Sylvius
+                  0,00
+                  7
+                  3
+                  4
+                  2
+                  6
+               
+               
+                  Gärtner
+                  0,00
+                  2
+                  0
+                  2
+                  0
+                  2
+               
+               
+                  Aldöbern
+                  0,00
+                  1
+                  0
+                  1
+                  0
+                  1
+               
+               
+                  Theistiner
+                  0,00
+                  5
+                  15
+                  4
+                  5
+                  9
+               
+               
+                  Der Wanderer
+                  0,00
+                  0
+                  1
+                  0
+                  1
+                  1
+               
+               
+                  Zweiter Wanderer
+                  0,00
+                  0
+                  4
+                  0
+                  3
+                  3
+               
+               
+                  Die Kammerzofe
+                  0,00
+                  2
+                  13
+                  2
+                  6
+                  8
+               
+               
+                  Barnabe
+                  0,00
+                  1
+                  21
+                  1
+                  8
+                  9
+               
+               
+                  Ein Ritter
+                  0,00
+                  0
+                  2
+                  0
+                  2
+                  2
+               
+            
+            Tabelle 3: Betweenness centrality, (weighted) in- und outdegree in DFS
+            Schon anhand dieses Beispiels und der netzwerkmetrischen Daten in Tabelle 3 lassen sich einige Vorzüge einer netzwerkgraphischen Annotationsauswertung zeigen:
+            
+               Die Reichweite einer Figurenerzählung wird im Hinblick auf den Adressatenkreis ermittelt.
+               Die narrativen Funktionen der Figuren werden durch ihre Netzwerkeigenschaften erkennbar:
+                        
+                     
+                        Brückenfiguren: hohe betweenness centrality; Verbindung getrennter Netzwerkbereiche 
+                                (Trilcke 2013: 217): z.B. Jeronimus (siehe hier und nachfolgend Tabelle 2).
+                            
+                     
+                        Botenfiguren: Geringe betweenness centrality; mind. eine narrative Äußerung: 
+                                
+                           
+                              Botenfiguren i.e.S., die 
+                                        nach dem ersten Akt erzählend in Erscheinung treten: z.B. die Wanderer, der Ritter und Barnabe.
+                                    
+                           
+                              Expositionsfiguren, die 
+                                        im ersten Akt/Dramenteil erzählend in Erscheinung treten: z.B. der Kirchenvogt.6
+                           
+                        
+                     
+                     
+                        Zielfiguren: hohe betweenness centrality; hoher gewichteter Eingangsgrad; geringer gewichteter Ausgangsgrad: z.B. Sylvester und Rupert, die häufig die Adressaten, aber selten die Sprecher narrativer Figurenrede sind. (Die Handlung des hier gewählten Beispieltexts legt die These nahe, dass diese Figuren entscheidungsmächtige Figuren sind und daher zahlreiche Informationen bekommen.)
+                            
+                     
+                        Figuren der Informationskontrolle: hohe betweenness centrality; sehr hoher Ausgangsgrad; Netzwerke mit geringer Kantendichte: z.B. Hermann in Kleists 
+                                Hermannsschlacht.
+                        7
+                     
+                  
+               
+               Es lassen sich Figurenpaare und Netzwerkbereiche identifizieren, zwischen denen es keinen oder nur vermittelten Informationsaustausch gibt. Hier sind natürlich Dyaden besonders interessant, bei denen die beiden Figuren eine hohe betweenness centrality aufweisen: z.B. Rupert und Sylvester.
+               Die Informationsstrukturen geben Aufschluss über den allgemeinen Grad der Informiertheit der Figuren: z.B. die Kantendichte.8
+               
+            
+            Zudem können unterschiedliche Formen der narrativen Figurenrede netzwerkgraphisch miteinander verglichen werden. Die Abbildungen 3 und 4 zeigen dies exemplarisch. In Abbildung 3 werden Figurenerzählungen visualisiert, in denen sich Figuren in Übereinstimmung mit der fiktionalen Wirklichkeit äußern. Abbildung 4 zeigt narrative Äußerungen, bei denen das Gegenteil der Fall ist. Es handelt sich also um narrative Falschaussagen. Der Vergleich ist in diesem Fall aufgrund der vorhandenen Parallelen 
+                    und Unterschiede aufschlussreich. Bei beiden Netzwerken behält Jeronimus die zentrale Position im Netzwerk. Hier schlägt sich nieder, dass er für die Verbreitung von wirklichkeitsgemäßen Informationen ebenso verantwortlich ist, wie für die Verbreitung von falschen Verdächtigungen, Lügen und Vorurteilen. Agnes‘ Netzwerkposition verändert sich hingegen stark (Abb. 4). Sie ist innerhalb ihrer Familie und in der kommunikativen Interaktion mit Ottokar die zentrale Figur bei der Weitergabe falscher Informationen.
+                
+         
+         
+            Informationsvermittlung im Dramenverlauf: Dynamische Netzwerke
+            Wie 
+                    
+                    Agarwal et al. (2012: 94) gezeigt haben, hat die Erstellung von dynamischen Netzwerken den Vorteil, die Veränderlichkeit der netzwerkmetrischen Eigenschaften einer Figur, einer Figurengruppe oder eines gesamten Netzwerks im Verlauf eines Roman- oder Dramengeschehens berücksichtigen zu können. Das bestätigen die netzwerkmetrischen Auswertungen der 
+                    Familie Schroffenstein in Abbildung 2. Hier wird der gewichtete Ausgangsgrad für vier ausgewählte Figuren aktweise dokumentiert. So tritt der Kirchenvogt narrativ nur im ersten Akt in Erscheinung, was seine Funktion als Expositionsfigur unterstreicht. Auch Barnabes Funktion als Vermittlerin von Anagnorisis-Informationen zum Dramenende spiegelt sich wider. Jeronimus Bedeutung relativiert sich, weil ersichtlich wird, dass er – aufgrund seiner Ermordung am Ende des dritten Akts – nur in den ersten drei Akten als informationsvermittelnde Figur auftritt. Seine hohen Werte in Akt zwei und drei zeigen jedoch, dass er für den Handlungsverlauf entscheidende Informationen äußert. Bei Rupert bestätigt sich seine geringe narrative Aktivität (Tabelle 3) als ein relativ konstantes Verhalten. Der niedrige gewichtete Ausgangsgrad für das gesamte Drama ist also nicht darauf zurückzuführen, dass er nur in wenigen Szenen (erzählerisch) in Erscheinung tritt. 
+                
+            
+               
+               
+                  Abbildung 2.
+                        Gewichteter Ausgangsgrad im Dramenverlauf in DFS
+               
+            
+         
+         
+            Schluss
+            Solange die automatische Annotation narrativer Figurenrede nicht möglich ist, setzt das vorgestellte Verfahren einen relativ großen Annotationsaufwand voraus. Es ermöglicht somit keinen umfassenden Vergleich von Dramen, was unter anderem zur Einordnung der vorgestellten quantitativen Netzwerkanalysen wünschenswert wäre.
+            In diesem Beitrag wurde jedoch exemplarisch gezeigt, inwiefern netzwerkgraphische Visualisierungen für die Auswertung narratologischer Annotationen einen analytischen Mehrwert haben können. Die formalen Annotationen können und sollen durch inhaltsbezogene Annotationen angereichert werden. Auf dieser Grundlage könnte netzwerkgraphisch der Informationsaustausch über bestimmte Themen oder Figuren visualisiert werden.
+         
+         
+            Anhang
+            
+               
+               
+                  Abbildung 3. Narrative Informationsvermittlung (Horizontale Binnenerzählungen/Wirklichkeitserzählungen) in DFS 
+            
+            
+               
+               
+                   Abbildung 4.
+                        Narrative Informationsvermittlung (Pseudoanalepsen/Falschaussagen) in DFS
+               
+            
+            
+               
+                  Label
+                  
+                     betweenness centrality
+                  
+                  
+                     weighted indegree
+                  
+                  
+                     weighted outdegree
+                  
+                  indegree
+                  outdegree
+               
+               
+                  Hermann
+                  482,7
+                  66
+                  47
+                  36
+                  27
+               
+               
+                  Thuiskomar
+                  107,25
+                  5
+                  10
+                  5
+                  6
+               
+               
+                  Thusnelda
+                  69,62
+                  28
+                  25
+                  13
+                  9
+               
+               
+                  Ventidius
+                  61,95
+                  7
+                  27
+                  5
+                  14
+               
+               
+                  Varus
+                  57,8
+                  10
+                  9
+                  6
+                  8
+               
+               
+                  Dagobert
+                  27
+                  3
+                  3
+                  2
+                  3
+               
+               
+                  Zweite Hauptmann
+                  21
+                  2
+                  1
+                  2
+                  1
+               
+               
+                  Gertrud
+                  20
+                  7
+                  6
+                  4
+                  3
+               
+               
+                  Marbod
+                  16,2
+                  11
+                  5
+                  7
+                  4
+               
+               
+                  Wolf
+                  11,96
+                  5
+                  4
+                  5
+                  4
+               
+               
+                  Aristan
+                  8,5
+                  1
+                  5
+                  1
+                  4
+               
+               
+                  Rinold
+                  6
+                  1
+                  5
+                  1
+                  4
+               
+               
+                  Erste Cherusker
+                  6
+                  1
+                  5
+                  1
+                  4
+               
+               
+                  Der zweite Cherusker
+                  5,2
+                  1
+                  2
+                  1
+                  2
+               
+               
+                  Gueltar
+                  5
+                  1
+                  2
+                  1
+                  2
+               
+               
+                  Der Mann
+                  4
+                  1
+                  3
+                  1
+                  3
+               
+               
+                  Das Volk
+                  2
+                  2
+                  1
+                  2
+                  1
+               
+               
+                  Erste Älteste
+                  0,5
+                  1
+                  1
+                  1
+                  1
+               
+               
+                  Scäpio
+                  0,33
+                  1
+                  5
+                  1
+                  4
+               
+            
+            Tabelle 4: Figuren mit höchster betweenness centrality in Kleist Hermannsschlacht
+            
+         
+      
+      
+         
+             Textgrundlage der Annotationen war Kleists Werkausgabe von Siegfried Streller, die durch das TextGrid Repositorium digital zur Verfügung steht: https://textgrid.de/en/digitale-bibliothek.
+             Dazu wurde das Annotationstool CATMA (Meister et al. 2016) verwendet. CATMA bietet die Möglichkeit, mit selbstdefinierten literaturwissenschaftlichen Analysetaxonomien zu annotieren und ist damit für narratologische Forschungsprozesse besonders geeignet.
+             Grundlegend für die Annotation ist ein Narrativitätskonzept, das berücksichtigt, dass Texte aller Gattungen narrative Elemente enthalten können, wie es u.a. Wolf (2002) beschreibt. Zu der narratologischen Terminologie vgl. Lahn/Meister 2016: 147-149.
+             Alle Visualisierungen und Netzwerkanalysen wurden mit dem Tool GEPHI (Bastian et al. 2008) erstellt.
+             Mit der betweenness centrality wird gemessen, für wieviele Knotenpaare ein Knoten den kürzesten Netzwerkpfad darstellt. Eine hohe betweenness centrality in Netzwerken, die Informationsflüsse abbilden, indiziert also einen großen Einfluss der Figur auf die Informationsvermittlung im Netzwerk, da sie als Brückenfigur fungiert.
+             Vgl. zum Unterschied Pfister 2001: 280f.
+             Kantendichte der Hermannsschlacht: 0,051; Kantendichte Die Familie Schroffenstein: 0,388. Siehe zur Hermannsschlacht Tabelle 4 im Anhang, in der sich Hermanns propagandistische „Überzeugungsarbeit“ (Müller-Salget 2009: 78) widerspiegelt.
+             Hier ist zu berücksichtigen, dass die Kantendichte natürlich auch durch andere Faktoren beeinflusst wird (Trilcke 2013: 225).
+         
+         
+            
+               Bibliographie
+               
+                  
+                  Agarwal, A. / A. Corvalan / J. Jensen / O. Rambow (2012):
+                  Social Network Analysis of Alice in Wonderland, 
+                        Proceedings of the Workshop on Computational Linguistics for Literature: 88–96.
+                    
+               
+                  
+                  Bastian, M. / S. Heymann / M. Jacomy (2008):
+                  Gephi: An open source sofware for exploring and manipulating networks. 
+                        AVI 2008 – Proceedings of the Working Conference on Advanced Visual Interfaces.
+                    
+               
+                  
+                  Lahn, Silke/ J. C. Meister (2008):
+                  Einführung in die Erzähltextanalyse. Stuttgart: Verlag J.B. Metzler.
+                    
+               
+                  Meister, J. C. / M. Petris / E. Gius / J. Jacke (2016): 
+                  CATMA 5.0. software for text annotation and analysis.
+                    
+               
+                  
+                  Moretti, F. (2011):
+                  Network Theory, Plot Analysis. 
+                        Stanford Literary Lab Pamphlets 2.
+                    
+               
+                  
+                  Müller-Salget, Klaus (2009):
+                  Die Herrmannsschlacht, 
+                        in: 
+                        Ingo Breuer (Hg.):
+                  Kleist-Handbuch. Leben – Werk – Wirkung. 
+                        Stuttgart: Verlag J.B. Metzler. S. 76-79.
+                    
+               
+                  Piper, Andrew / Mark Algee-Hewitt / Koustuv Sinha / Derek Ruths / Hardik Vala (2017):
+                  Studying Literary Characters and Character Networks.
+                        Digital Humanities 2017, Conference Abstracts.
+                    
+               
+                  
+                  Pfister, Manfred (2001):
+                  Das Drama. 
+                        München. Wilhelm Fink Verlag.
+                    
+               
+                  Trilcke, P. / F. Fischer / D. Kampkaspar (2015):
+                  Digital Network Analysis of Dramatic Texts. 
+                        Digital Humanities 2015: Book of Abstracts.
+                    
+               
+                  
+                  Trilcke, Peer (2013):
+                  Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft. 
+                        Empirie in der Literaturwissenschaft. Hrsg. von Christoph Rauen, Katja Mellmann und Philip Ajouri. Münster: 201–247.
+                    
+               
+                  
+                  Wolf, Werner (2002):
+                  Das Problem der Narrativität in Literatur, bildender Kunst und Musik: Ein Beitrag zu einer intermedialen Erzähltheorie. 
+                        Erzähltheorie transgenerisch, intermedial, interdisziplinär. Hrsg. von Vera Nünning und Ansgar Nünning. Trier: 23–104.
+                    
+            
+         
+      
+   
+

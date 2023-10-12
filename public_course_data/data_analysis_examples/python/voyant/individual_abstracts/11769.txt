@@ -1,0 +1,170 @@
+
+        
+            
+                Introduction
+                Since the 2003 UNESCO convention stated the importance of preserving intangible cultural heritage (ICH), numerous efforts were undertaken to expand traditional cultural heritage to encompass immaterial aspects. However, the boundaries of what should be intended as ICH are not set: the intangible element can be found in such areas as the aesthetics (e.g. performing arts), epistemology (style, semiotics) and transmission (oral history) of culture.
+                Treating martial arts as cultural heritage potentially incorporates all these categories of immateriality 
+                    (Hou, Picca, Egloff, & Adamou,
+                    2021). The Hong Kong Martial Arts Living Archive (HKMALA) 
+                    (Chao, Delbridge, Kenderdine,
+                    Nicholson, & Shaw, 
+                    2018), as a testimony of arts, styles and methods that are passed down onto small communities, is a prominent example of multiple degrees of ICH occurring together. Whilst gathering a mass of audio-visual and motion capture content to visually preserve endangered Southern Chinese cultures (see Figure 
+                    1), it offers an opportunity to turn it into structured knowledge, being originally organized around its past run of exhibitions.
+                
+                We present an ongoing endeavor to extract and formalize Hakka martial arts knowledge out of HKMALA content into a knowledge graph of linked datasets, thus offering a ground truth for future research questions on the understanding of cultural contact across martial arts communities. 
+                
+                    
+                
+                Figure 1: 
+                    Overview of HKMALA content types.
+                
+            
+            
+                A basic ontological framework for martial arts
+                Barring sports or military contexts, no known ontology presents a unified theory of the martial discipline, to form the basis of such a knowledge organization of archival content. As an initial task, this project built one such framework. This is modelled as an ontology network grounded on foundational ontologies, rather than cultural heritage models, but whose modularity reflects the intent to highlight the aesthetic, epistemic and social traits of martial arts (Figure 
+                    2). The identification of which traits to be considered culturally relevant will subsequently be delegated to inference models (rule systems, reasoners) combining domain ontologies with cultural ones like CIDOC-CRM and ArCo 
+                    (Carriero et
+                    al.,
+                    2019). See 
+                    (Adamou, Hou, Picca, Egloff, Kenderdine, 
+                    2021) for details on our ontology engineering work.
+                
+                
+                    
+                
+                Figure 2: 
+                    Documented ontology at 
+                    https://crossings.github.io/ont/
+                
+            
+            
+                Instantiation on the HKMALA content
+                A knowledge organization of HKMALA involves (1) annotating media content of technique demonstrations, MoCap segments and interviews to masters, and (2) indexing these media so that they can be consumed using computational methods like ontology-based data access and semantic query languages like SPARQL. The above ontologies offer a basic framework for a martial arts data domain, yet do not specifically model HKMALA’s Hakka Kung Fu domain: therefore, an instantiation effort is required. This is accomplished, as per Figure 
+                    3, by:
+                
+                
+                    
+                
+                Figure 3: 
+                    Pipeline of HKMALA knowledge organization.
+                
+                
+                    Constructing the Hakka martial arts dataset from selected sources.
+                    Semantically annotating HKMALA media content using terminology lifted from the dataset in question.
+                    Iteratively refining our martial arts ontologies to satisfy the versatility required by the media annotation schema.
+                    Continuously publishing the knowledge graph resulting from datasets (1,2) as FAIR data 
+                        (Groth & Dumontier, 
+                        2020).
+                    
+                
+                To generate the dataset that instantiates the Martial Arts ontology (1), we performed data extraction and reengineering from the following sources:
+                a) texts of past HKMALA exhibition panels and captions; b) glossaries in the literature on Southern Chinese martial arts referenced by said texts; c) manifest files containing tabular data to assemble exhibitions out of the archive content; d) transcripts of interviews to masters. 
+                Entity extraction from the texts was performed using the Stanford named entity tagger. Part of these sources had previously been used to bootstrap the ontology itself, therefore the terms not used then that denoted instances were included in the dataset. 
+                Semantic media annotation (2) is performed using the ELAN toolkit, a multi-tiered video annotation software that allows custom terminology and stores annotation in the open format EAF (
+                    Sloetjes & Seibert,
+                    2016), which can be exported to JSON-LD and is therefore interoperable with the standards underneath knowledge graphs. Our tiered organization of EAF reflects the three dimensions of cultural heritage that constitute the ontology modules: for example, a video of a Southern Praying Mantis master demonstrating a technique will be annotated along a layer for the aesthetic dimension (e.g. movement, stance and body parts involved), one for the epistemic dimension (technique, style and symbolic reference such as the mantis itself), and one for the social/transmission dimension (the master’s identity).
+                
+                The scrutiny and annotation of HKMALA media files brought to light a need to refine the original ontological framework (3) to accommodate the expressivity of the knowledge encoded in the medium. For example, a master explaining what qualities are developed by a training exercise on what parts of the body required that an n-ary relation should be materialized as a 
+                    Development class. Similarly, distinguishing techniques where the energy flow (
+                    qi ) comes from the point of contact (external) or from the attacker’s body (internal) hinted that a class 
+                    FlowTransmissionType should be formalized.
+                
+                The dataset and annotations (4) are published in formats compliant with the Linked Data standards (i.e. Turtle, N-Triples and JSON-LD), both on GitHub
+                    
+                         CROSSINGS knowledge graph sources, 
+                            https://github.com/CROSSINGS/kg
+                        
+                     and on Zenodo
+                    
+                         DOI for data citation: 
+                            https://doi.org/10.5281/zenodo.5886867
+                        
+                    
+                     and following a rolling release / continuous update model. The choice of representation formats and publishing channels was driven by the need to a) ensure data FAIRness and the ability to load them onto any triple store for querying; b) ease of availability for programming libraries to download and use the data in client code, as exemplified in the concluding section.
+                
+            
+            
+                Conclusions
+                Aiming at creating a gold standard for building knowledge graphs on martial arts, we offer data and annotations for a subset of the HKMALA content that was originally made publicly available
+                    
+                         Hakka Kung Fu portal, 
+                            http://www.hakkakungfu.com/
+                        
+                    ,
+                     with a view on extending it to the entire archive in the future.
+                
+                The next step is to align our datasets with the open data cloud: although full third-party coverage is not expected for our domain, Wikidata offers limited authority coverage for some masters, techniques and most importantly geographical and ethnological coordinates.
+                The project will provide a way to programmatically consume public HKMALA media through an extension of the DHTK Python library, an ontology- based computational model for Humanities data access 
+                    (Picca & Egloff, 
+                    2017).
+                
+            
+            
+                Acknowledgement 
+                This work was supported by CROSSINGS - Computational Interoperability for Intangible and Tangible Cultural Heritage, a project in Collaborative Research on Science and Society (CROSS 2021). The authors also acknowledge the 
+                    Hong Kong Martial Arts Living Archive, a research collaboration between the International Guoshu Association, City University of Hong Kong, and the Laboratory of Experimental Museology at EPFL.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    Adamou, A., Hou, Y., Picca, D., Egloff, M., Kenderdine, S. (2021). 
+                        Ontology- mediated cultural contact detection through motion and style in Southern Chinese martial arts. In Semantic web and ontology design for cultural heritage (swodch 2021) (Vol. 2949). CEUR-WS.org. Retrieved from 
+                        
+                        
+                            http://ceur-ws.org/Vol-2949#short2
+                        
+                    
+                    Carriero, V. A., Gangemi, A., Mancinelli, M. L., Marinucci, L., Nuzzolese, A. G.,Presutti, V., & Veninata, C. (2019). 
+                        ArCo ontology network and LOD on italian cultural heritage. In A. Poggi (Ed.), Proceedings of the first international workshop on open data and ontologies for cultural heritage, odoch@caise 2019 (Vol. 2375, pp. 97–102). CEUR-WS.org. Retrieved from 
+                        
+                        
+                            http://ceur-ws.org/Vol-2375/short3.pdf
+                        
+                    
+                    Chao, H., Delbridge, M., Kenderdine, S., Nicholson, L., & Shaw, J. (2018). Kapturing 
+                        Kung Fu: Future proofing the Hong Kong martial arts living 
+                        
+                        archive. In Digital echoes (pp. 249–264). Springer.
+                    
+                    Groth, P., & Dumontier, M. (2020). 
+                        Introduction - FAIR data, systems and analysis. Data Sci., 3 (1), 1–2. Retrieved from 
+                        
+                            https://doi.org/10.3233/
+                        
+                        
+                        
+                            ds-200029
+                        doi: 10.3233/ds-200029
+                    
+                    Hou, Y., Picca, D., Egloff, M., & Adamou, A. (2021). 
+                        Digitizing intangible cultural heritage embodied: state of the art. Journal on Computing and 
+                        Cultural Heritage. (To appear)
+                    
+                    Picca, D., & Egloff, M. (2017). 
+                        DHTK: the digital humanities toolkit. In A. Adamou, E. Daga, & L. Isaksen (Eds.), Proceedings of the second workshop on humanities in the semantic web (whise II
+                        ) (Vol. 2014, pp. 81–86). CEUR-WS.org. Retrieved from 
+                        
+                            http://ceur-ws.org/Vol-2014/
+                        
+                        
+                        
+                            paper-09.pdf
+                        
+                    
+                    Sloetjes, H., & Seibert, O. (2016). 
+                        New facets of the multimedia annotation tool ELAN. In M. Eder & J. Rybicki (Eds.), 11th annual international conference of the alliance of digital humanities organizations, DH 2016 (pp. 888–889). ADHO. Retrieved from 
+                        
+                            http://dh2016.adho.org/abstracts/
+                        
+                        
+                            161
+                        
+                    
+                
+            
+        
+    
+

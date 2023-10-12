@@ -1,0 +1,63 @@
+11748	2022	
+        
+            
+                Introduction: The Purpose of Research
+                We have been analyzing accounting books in order to understand the economic history of the early Spanish empire. This presentation focuses on the double-entry accounting books of the Salamanca company in Burgos, a city in northern Spain, in the mid-sixteenth century. This paper reports our materials, analytical framework, progress, and prospect. In this research, data mining from the accounting book, structured with the Text Encoding Initiative /DEPCHA, has enabled historical insights into the unique terminology of accounting, the balance of payments, and the tendency of abbreviation.
+            
+            
+                Materials
+                Our materials are found among the accounting books in the Archive of Burgos Provincial Congress (Table 1). We picked out as an example a pair of accounting books based on the double-entry method (classified as CM32 and CM108). In this method, two types of books are required. One is the journal (diario in Spanish), in which all transactions are recorded chronologically. The other is the ledger (libro mayor), where each transaction in the journal must be transcribed twice, one on the left page as a debit transaction, and the other as a credit on the right (cf. Figure 1). This double transcription, a quintessential characteristic of the method, must be encoded with TEI. 
+                Each transcription in the ledger has at least two sections: the detail of the transaction on the left; the value of the transaction on the right. On average, the left section contains information such as the name of the debtor, date and place of transaction, merchandise and its price and quantity, names of other parties involved, terms of the transaction, and page number of the corresponding transcription. As of March 2022, we have marked up 12 folios of the ledger, which contains 197 entries.
+                
+                    
+                
+                Table 1: List of Accounting Books kept in ADPB
+                
+                    
+                
+                Figure 1: Credit and debit entries in the ledger
+            
+            
+                Analytical Framework
+                For the markup of accounting records, XBRL might be a possible candidate framework (Anderson et al. 2016). However, this modern framework seems to be not suitable enough to capture all the elements of the historical records, not present in the contemporary ones. Instead, we have chosen DEPCHA, an extended TEI schema. DEPCHA has developed a domain ontology, based on the concept of ‘Transactiongraphy’ (Tomasek and Bauman, 2013), for extracting machine-readable data in RDF format from transactional information in accounting records in the TEI or CSV format. A member of the DEPCHA, states that their future challenge is to normalize the vocabulary of words such as "currency" and "item" in accounting records that emerge from various case studies and to build an interoperable data model for open data (Pollin, 2019), but at present, there are not so many case studies. Furthermore, concrete examples of double-entry books, which are considered as the basis of accounting practice in the modern world, have not sufficiently been marked up using the DEPCHA scheme. Our research will contribute to filling this gap and giving practical feedback to DEPCHA. We also think that more normalized TEI/DEPCHA can make the analysis of historical financial data more efficient, when the scale of data becomes bigger.
+            
+            
+                Progress and prospect
+                Let us explain our markup policy. As mentioned earlier in the materials section, the correspondence between transactions is displayed across each of the left and right pages, so the facing page needs to be structured as a coherent space when marking up. (cf. Markup 1). While following DEPCHA's recommended policy of using  tags to structure the transaction information in a tabular form, we ensure that the @ana attribute value is entered in a human-readable form—though it is not completely machine-processable at the moment—, so that the correspondence between the left and right pages is clearly indicated. In addition, the reference relationships between the diary and ledger are also structured (cf. Markup 1).
+                
+                    
+                
+                Markup 1: Tagging an Entry in the Ledger
+                We will demonstrate our achievements using the above-mentioned mark-up files to conduct analyses, as follows: (1) identification of abbreviated person names, (2) accounting terms and abbreviations, and (3) checking the balance of payments; all of them is available to browse at our page .
+                We prospect to mark up more accounting books kept in the same archive, and launch trend and network analyses using metadata, e.g. time, name of person/company, place, commodity, and price. And we will also investigate more proper way of displaying our analysis. We would like to share our framework with the researchers pursuing similar themes to improve the analytical frameworks and tools for the study of economic history.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Anderson, C., Eide, O., Orlowska, A., Pindl, K., Tomasek, K. and Vogeler, G. (2016). Modeling semantically Enhanced Digital Edition of Accounts (MEDEA) for Discovery and Comparison on the Semantic Web. Humanities Commons. 
+                        https://hcommons.org/deposits/item/hc:24347/ (accessed 21 April 2022).
+                    
+                    
+                        GAMS (2017). DEPCHA - Digital Edition Publishing Cooperative for Historical Accounts 
+                        DEPCHA - Digital Edition Publishing Cooperative for Historical Accounts
+                        http://gams.uni-graz.at/archive/objects/context:depcha/methods/sdef:Context/get?mode=howto (accessed 1 June 2019).
+                    
+                    
+                        Pollin, C. (2019). Digital Edition Publishing Cooperative for Historical Accounts and the Bookkeeping Ontology. 
+                        Proceedings of the Doctoral Symposium on Research on Online Databases in History, 
+                        http://ceur-ws.org/Vol-2532/paper1.pdf (accessed 21 April 2022).
+                    
+                    
+                        Tomasek, K. and Bauman, S. (2013). Encoding Financial Records for Historical Research. 
+                        Journal of the Text Encoding Initiative (Issue 6), 
+                        http://journals.openedition.org/jtei/895 (accessed 21 April 2022).
+                    
+                
+            
+        
+    
+
+

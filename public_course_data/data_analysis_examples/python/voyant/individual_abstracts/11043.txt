@@ -1,0 +1,168 @@
+
+      
+         Kochtraditionen, ob regional oder international, sind eine der herausragendsten Elemente der europäischen Kultur und ein wichtiger Bestandteil der europäischen Identität. Aber die Fragen nach ihrem Ursprung, den Einflüssen und ihrer Entwicklung sind nach wie vor unklar. In den letzten Jahrzehnten kam die Forschung zu zwei wichtigen Schlussfolgerungen, welche mittlerweile die Forschungsbestrebungen prägen: Erstens gibt es keine quantitativen Studien über den Ursprung und die Entstehung der regionalen Küche in Europa; zweitens sind erst ab dem Mittelalter Handschriften mit Tausenden von Kochrezepten überliefert, was wohl als die Geburt der modernen europäischen Küche angesehen werden kann (vgl. Flandrin & Hyman 1988, Laurioux 2005). Auf dem europäischen Kontinent stellen frühneuhochdeutsche, mittelfranzösische und mittellateinische Rezepte den größten Teil der kulinarischen Überlieferung dar, die mehr als 80 Manuskripte und etwa 8000 Rezepte umfasst. Das Projekt “Cooking Recipes of the Middle Ages” bereitet die Kochrezeptüberlieferung von Frankreich und dem deutschsprachigen Raum auf, um ihre Herkunft, ihre Beziehung und ihre Migration innerhalb Europas zu analysieren (vgl. thematisch ähnliche Studien mit unterschiedlicher Fokussetzung: Hieatt 1995 mit linguistischem Fokus, Flandrin 1984, Adamson 1995, Carlin 1989, Adamson 2002, Karg 2007 allgemein und van Winter 1989, Hyman 2005, Laurioux 2002 mit Fokus auf spezielle Gerichte). Die Partner, das Zentrum für Informationsmodellierung der Universität Graz und das Laboratoire CESR (Centre d’Etudes Supérieures de la Renaissance) der Universität Tours werden diese mehrsprachigen Texte mit Hilfe von digitalen Standards aufarbeiten und sie mit aktuellen quantitativen und qualitativen Forschungsmethoden untersuchen. Der Vergleich der französischen und deutschen Ernährungsgeschichte eignet sich besonders gut für diese Aufgabe, da Frankreich einen kulturell prägenden Einfluss auf die deutschsprachigen Völker hatte. 
+         Kochrezepte sind kulturell aufgeladene, flüchtige Texte; die erhaltenen Niederschriften stellen daher nur ein punktuelles Zeugnis, eine individuelle Zubereitungsweise eines Gerichts (Hieatt 1985, 26) in Raum und Zeit dar. Das inhaltliche Verständnis dieser Rezepte, ihre möglichen Entstehungs- und Anwendungskontexte und ihre Überlieferung ist zudem kein einfacher Prozess, denn die Fachbegriffe, Zutaten, Utensilien, Verfahren und Bräuche der damaligen Zeit, die in den Rezepten eher öfter implizit als direkt genannt werden, sind auch für Sprach- und Geschichtswissenschaftler, die sich auf das Thema spezialisiert haben, immer wieder eine Herausforderung. Ihre Entwicklung sollte daher am besten diachron und räumlich analysiert werden, was mittlerweile mit digitalen geisteswissenschaftlichen Methoden verhältnismäßig leicht möglich ist – vorausgesetzt, die entsprechenden Daten liegen vor. Im aktuellen Projekt werden die historischen Texte auf mehreren Ebenen erschlossen: So werden die Texte nicht nur neu transkribiert und philologisch-editorisch bearbeitet (vgl. Klug, Kranich 2015), sondern auch in unterschiedlichen Wissensgebieten semantisch angereichert. Das schafft jene Spielräume, die nötig sind, um Analysen wie maschinengestützte Abgleiche von Zutaten, Kochprozessen oder Kochutensilien, die Suche nach Rezepttradition und -migration oder standardisierte philologische Vergleiche, wie z.B. Kollationierungen, durchzuführen. Die Basis unserer Daten sind customized TEI/XML-Dokumente mit einem zusätzlichen adaptierten Schema, das die semantische Annotation von Kochrezepten im Allgemeinen erleichtern soll. 
+         Die Rezeptüberlieferung – in Form einzelner Rezeptsammlungen – wird mithilfe einer , die sich an den Handschriftenbeschreibungen renommierter Bibliotheken orientiert und die in Kooperation mit der Abteilung für Sondersammlungen der Grazer Universitätsbibliothek entstanden ist, räumlich und zeitlich fixiert. Besonderes Augenmerk wird dabei auf Informationen zur Handschriftenentstehung (materiell wie auch inhaltlich) und auf die Schriftbeschreibung bzw. den Schreibhandbefund der Rezeptsammlungen gelegt, wobei erstere Informationen meist den Katalogen entstammen, letztere aus der Arbeit mit den Texten kommen. Die Grundlage des Projekts ist die einheitliche Erfassung der überlieferten Texte durch eine hyperdiplomatische Neutranskription der historischen Quellen: Als Arbeitsumgebung fungiert Transkribus, wo das Textlayout automatisch erkannt und die Texte manuell mittels proprietären Codierungen erfasst werden. Mithilfe mehrerer Transformationsschritte wird aus den Rohdaten die Basis für die elektronische Quellenabbildung erstellt, die sich an germanistisch-editorischen Richtlinien orientiert. Die Quellentexttranskription verzeichnet dabei nicht nur das unterschiedliche Schriftzeicheninventar, sondern auch alle textstrukturierenden Elemente. Das gesamte Zeicheninventar ist in einer nach den Richtlinien der TEI erstellten Zeichenbeschreibung erfasst. Die Beschreibung stützt sich dabei auf die theoretischen Ergebnisse zur Beschreibung von Zeichen aus dem DigiPal-Projekt und verwendet außerdem die Zeichenidentifikatoren der Medieval Unicode Font Initiative (vgl. Böhm, Klug 2020). Die so produzierten Daten sind nicht nur der Ausgangspunkt für die wissenschaftlichen Fragestellungen im Projekt, sondern bieten eine solide Grundlage für viele weitere Forschungsfragen aus Germanistik/Linguistik, Paläographie usw. Diese Erarbeitungsstufe wird nach editorischen Richtlinien normalisiert und gibt im Rahmen des Webauftritts in Form einer Text-Bild-Synopse detaillierten Einblick in die historische Quelle.
+            
+         Aus den Transkriptionsdaten wird außerdem eine auf Zeichenebene normalisierte, in Sinneinheiten untergliederte Textfassung geschaffen, in der die semantischen Informationen annotiert werden. Diese Sinneinheiten umfassen neben dem eigentlichen Rezept und Rezepttitel Eingangs- und Schlussformeln, Handlungsanweisungen, Küchen- und Serviertipps, Hinweise auf medizinische und religiöse Aspekte und selbstverständlich Zutaten, Gerichte und Küchenutensilien. 
+         Den Kern der digitalen Forschungsstrategie bildet das Semantic Web beziehungsweise die Anbindung und Integration unserer Daten an Linked Open Data. Wir sind innerhalb der Geisteswissenschaften in der vorteilhaften Position, dass sich unser Projekt zu einem großen Teil mit Lebensmittelzutaten befasst, d.h. mit Tieren, Pflanzen und Pilzen. Das sind Forschungsgebiete, in denen sich bereits eine signifikante Menge an relevanten Ontologien etabliert haben und die gut an die Linked Open Data Cloud, einschließlich der allgemeinen Wissensdatenbanken Wikidata und DBPedia angeschlossen sind. Ontologien werden, wenn auch mit unterschiedlichen Schwerpunkten und Granularität der Daten, außerdem bereits erfolgreich für die Repräsentation von Kochrezepten (Hoehndorf & Lange 2018, Sam et al. 2014, Ribeiro et al. 2006) und in deren Analyse eingesetzt (Chow & Grüniger 2019, Jovanovic et al. 2015, Vadivu & Waheeta Hopper 2010). In unserem digitalen Forschungsansatz setzen wir zwar teilweise auch auf Textähnlichkeiten, der größte Teil unserer Analyse basiert jedoch auf dem Vorkommen von Zutaten, Kochprozessen bzw. Zubereitungshinweisen und Kochutensilien. Weitere Entitäten, die wir für die Analyse der Rezepte heranziehen sind Serviervorschläge sowie medizinische, kulturelle und religiöse Aspekte in den Texten. Die Annotation dieser Entitäten gestaltet sich schon aufgrund ihrer schieren Menge in historischen Kochrezepten als sehr komplex. Neben den Möglichkeiten zuvor unbekannte Beziehungen zwischen den Quellen und deren Entitäten zu finden, war das Arbeiten außerhalb von Sprachbarrieren ein Hauptargument für die Entscheidung, Semantic Web-Technologien in den Mittelpunkt des Projekts zu stellen. 
+            
+         Durch die Verwendung von 
+                Konzepten, im Sinne einer Idee oder eines mentalen Bildes und nicht eines 
+                Begriffes, versuchen wir, historische und sprachliche Grenzen zu überwinden. Ein konkretes Beispiel für diese Diskrepanz zwischen Begriff und mentaler Vorstellung liefert uns die österreichische / süddeutsche Variante für Kartoffel: "Erdapfel" ("erdaphel" im Frühneuhochdeutschen) wird etwa in einem Manuskript aus der Zeit um 1488 erwähnt, lange bevor die Kartoffel von Südamerika nach Europa importiert wurde, was uns zeigt, dass das Konzept von "Erdapfel" ein anderes gewesen sein muss (wahrscheinlich jede Art von Rübe) als das heutige Konzept des Erdapfels. Wie oben bereits erwähnt, war es also nötig einen Workflow zu finden, der nicht nur die philologische, sondern auch die semantische Komplexität der Rezepte widerspiegelt. Während die phrasenartigen Informationseinheiten manuell annotiert werden, erfolgt die Annotation auf Wortebene semiautomatisch, indem die Texte mithilfe von XSLT- und Python-Skripten und individuellen Vokabularien, vorgehalten als CSV Dateien, angereichert werden, die alle darauf ausgerichtet sind, die Varianz der historischen Sprachstufen auszugleichen. Für die frühneuhochdeutschen Texte stand uns aus einem früheren Projekt eine Liste mittelalterlicher Pflanzennamen und ihrer Übersetzungen in modernes Englisch und Deutsch sowie ihrer mittelalterlichen Variantendiktionen zur Verfügung. Dies gab uns die Möglichkeit, mit Hilfe der von OpenRefine bereitgestellten Reconciliation Service API, einen teilautomatisierten Prozess zur Annotation von Wikidata-Konzepten zu starten. Die daraus resultierenden Daten bildeten den Grundstock für die zuvor genannten Vokabularien. Ähnliche Listen wurden von den Projektpartnern in Frankreich erstellt, die mithilfe des von den französischen Kollegen entwickelten Tools “Heterotoki” in einem kollaborativen Arbeitsschritt konsolidiert werden können. Sobald jeder Begriff mit einem Konzept verbunden ist, werden diese Konzepte verwendet, um die Zutaten innerhalb der eigentlichen Rezepttexte in den TEI-Dokumenten anzureichern. Ein entscheidender Faktor dieses semiautomatischen Prozesses bleibt jedoch die menschliche Interpretation der angereicherten Einheiten und die Entscheidung für ein konkretes bereits bestehendes Konzept bzw. die Erstellung eines neuen Konzepts in Wikidata.
+            
+         Wir befinden uns derzeit mitten in dieser semantischen Annotationsphase. Ist diese abgeschlossen, bieten sich mannigfaltige Analysemethoden an. Sobald die Einheiten der einzelnen Rezepte mit Konzepten ausgestattet sind, kann die Analyse des Projekts übereinstimmende oder abweichende Essgewohnheiten, Textmigration sowie den Einfluss der Nachbarländer auf die jeweilige Küche aufzeigen. Die Implementierung von Ontologien aus den Naturwissenschaften wie FoodOn oder SNOMED ermöglicht es uns, Verbindungen von historischen Essgewohnheiten zu modernen Konzepten von Lebensmitteln herzustellen und neues Wissen für den Bereich der Ernährungsgeschichte zu generieren. Die Ontologiedaten werden zusammen mit den Entitäten in einem Triplestore gespeichert und können mit Hilfe von SPARQL Queries befragt werden. Die Ergebnisse dienen als Grundlage für eine räumliche und zeitliche Visualisierung der Daten.
+            
+          Die Speicherung, Analyse und Dissemination der Projektdaten erfolgt über das vom Zentrum für Informationsmodellierung in Graz entwickelte Repository GAMS (Geisteswissenschaftliches Asset Management). Innerhalb dieser auf Langzeitarchivierung ausgerichteten Infrastruktur wird auf den Triplestore “Blazegraph” über einen Webservice zur Speicherung und Abfrage von RDF-Triples zugegriffen.
+            
+      
+      
+         
+            
+               https://transkribus.eu/Transkribus/
+            
+            
+      Describing Handwriting I-VII; http://www.digipal.eu/blog
+            
+            
+               https://folk.uib.no/hnooh/mufi/
+            
+            
+      Für eine Übersicht an Ontologien in diesen Bereichen siehe: 
+      http://www.ontobee.org/, 
+      http://aims.fao.org/, 
+      https://ndb.nal.usda.gov/ndb/, 
+      https://agclass.nal.usda.gov/about.shtml, 
+      http://zbw.eu/stw/version/latest/thsys/70498/about.de.html.
+      
+	Alle sind an die Linked Open Data Cloud angeschlossen indem eine oder mehrere Serialisierungen in OWL und/oder RDF(S) vorliegen. 
+      
+            
+            
+               http://medieval-plants.org
+            
+            
+               https://github.com/OpenRefine/OpenRefine/wiki/Reconciliation-Service-API
+            
+            
+               https://github.com/ponchio/heterotoki
+            
+            
+               http://foodon.org/
+            
+            
+               https://browser.ihtsdotools.org/
+            
+            
+               https://gams.uni-graz.at
+            
+            
+               https://www.blazegraph.com/
+            
+         
+         
+            
+               Bibliographie
+               
+                  Adamson, M. W. (Ed.)  (1995): Food in the
+      Middle Ages. A Book of Essays. New York, London:
+      Garland. Adamson, M. W. (Ed.). (2002). Regional Cuisines of
+      Medieval Europe: A Book of Essays. New York, London: Routledge.
+      
+               
+                  Amoia, M. / Martínez, J.M.M.  (2019): SaCoCo Diachronic Corpus [WWW Document]. URL 
+	http://fedora.clarin-d.uni-saarland.de/sacoco/ (accessed 1.7.20).
+      
+               
+                  Böhm, A.  /  Klug, H.: Quellenorientierte
+      Aufbereitung historischer Texte im Rahmen digitaler Editionen:
+      Das Problem der Transkription in mediävistischen
+      Editionsprojekten. In: [Titel steht noch nicht fest] Hrsg. von
+      Ingrid Bennewitz und Martin Fischer (= Bamberger
+      interdisziplinäre Mittelalterstudien.) [in Vorbereitung]
+      
+               
+                  Carlin, M. /  Rosenthal, J. T. (Eds.)
+      (1998): Food and Eating in Medieval Europe. London: Hambledon
+      Press.
+      
+               
+                  Chow, A. E. / Ninger, M. G.  (o. J.): 
+	Multimodal Event Recognition with an Ontology For Cooking Recipes. 12.
+      
+               
+                  Dooley, D. M. / Griffiths, E. J. / Gosal, G. S. / Buttigieg, P. L. / Hoehndorf, R. / Lange, M. C.,  / …  / Hsiao,
+	W. W. L.  (2018): FoodOn: A harmonized food ontology to increase global food traceability, quality control and data integration. 
+	Npj Science of Food, 2(1), 23. 
+	https://doi.org/10.1038/s41538-018-0032-6
+               
+               
+                  Flandrin, J.-L. (1984): «Internationalisme,
+      nationalisme et régionalisme dans la cuisine des XIVe et XVe
+      siècles: le témoignage des livres de cuisine». In Manger et
+      boire au Moyen âge. Actes du Colloque de Nice (15-17 octobre
+      1982). (pt. 2, p. 75-91). Paris.
+      
+               
+                  Flandrin, J.-L.  /  Hyman, P. (1988):
+      “Regional tastes and cuisines: Problems, documents, and
+      discourses on food in Southern France in the 16th and 17th
+      centuries”. Food and Foodways 1-3, p. 221-251.
+      
+               
+                  Gloning, T.,  (2000): Monumenta Culinaria et Diaetetica Historica. Corpus of culinary & dietetic texts of Europe from the Middle Ages to 1800. Corpus älterer deutscher Kochbücher und Ernährungslehren [WWW Document]. URL 
+	http://www.staff.uni-giessen.de/gloning/kobu.htm (accessed 1.7.20).
+      
+               
+                  Hammad, R. /  Hassouna, M.  (2011): 
+	Multi-Language Semantic Search Engine. 6.
+      
+               
+                  Hieatt, C.  (1995): Sorting through the
+	Titles of Medieval Dishes: What Is, or Is Not, a “Blanc
+	manger”. In M. W. Adamson (Ed.), Food in the Middle Ages. A
+	Book of Essays. (pp. 25-43). New York, London: Garland.
+      
+               
+                  Hyman, P.  /  M.  (2005): «Les associations de saveurs dans les livres de cuisine français du XVIe siècle». In 
+	Le Désir et le Goût. Une autre histoire (XIIIe-XVIIIe siècles). Actes du colloque international à la mémoire de Jean-Louis Flandrin (Saint-Denis, septembre 2003). Dir. Odile Redon, Line Sallman et Sylvie Steinberg. (p. 135-150). Saint-Denis: Presses Universitaires de Vincennes.
+      
+               
+                  Karg, S. (Ed.) (2007): Medieval Food
+      Traditions in Northern Europe. Copenhagen: National Museum of
+      Denmark.
+      
+               
+                  Klug, H. W. /  Kranich, K.  (2015): “Das Edieren von handschriftlichen Kochrezepttexten am Weg ins digitale Zeitalter. Zur Neuedition des Tegernseer Wirtschaftsbuches.” In T. Bein (Ed.), Vom Nutzen der Editionen. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte. (pp. 121-137). Berlin, Boston: De Gruyter.
+               
+                  Lamé, M. /  Pittet, P. (2018):
+      Heterotoki: Non-st / ructured and heterogeneous terminology alignment for Digital Humanities data producers. 12.
+      
+               
+                  Laurioux, B.  (2005): «Les voyageurs et la gastronomie en Europe à la fin du Moyen âge ». In Le Désir et le Goût. Une autre histoire (XIIIe-XVIIIe siècles), Actes du colloque international à la mémoire de Jean-Louis Flandrin (Saint-Denis, septembre 2003). Dir. Odile Redon, Line Sallman et Sylvie Steinberg. (p. 99-117). Saint-Denis, Presses Universitaires de Vincennes.
+               
+                  Ribeiro, R. / Batista, F. / Pardal, J. P.  / Mamede, N. J. /  Pinto, H. S.  (2006): Cooking an Ontology. In J. Euzenat & J. Domingue (Hrsg.), 
+	Artificial Intelligence: Methodology, Systems, and Applications (S. 213–221). Springer Berlin Heidelberg.
+      
+               
+                  Sam, M. / Krisnadhi, A. A. / Wang, C. / Gallagher, J. /  Hitzler, P. (2014): 
+	An Ontology Design Pattern for Cooking Recipes – Classroom Created.
+      
+               
+                  Vadivu, G. / Hopper, S. W.  (2010): Semantic Linking and Querying of Natural Food, Chemicals and Diseases. 
+	International Journal of Computer Applications, 
+	11(4), 35–38. 
+	https://doi.org/10.5120/1567-2093
+               
+               
+                  van Winter, J. M. (1989):
+	“Kochen und Essen im Mittelalter.” In B. Herrmann
+	(Ed.). Mensch und Umwelt im
+	Mittelalter. (pp. 88-100). Frankfurt am Main: Fischer
+	Taschenbuch Verl.
+      
+            
+         
+      
+   
+

@@ -1,0 +1,256 @@
+11932	2022	
+        
+            
+                The goal of this tutorial is to introduce participants to the principles and hands-on practice of the eScriptorium platform for the automatic and/or manual segmentation and transcription of manuscripts and printed books in a very wide range of languages, writing-systems and complex page-layouts.
+            
+            
+                The tutorial will begin with a very brief overview of Handwritten Text Recognition (HTR) and its potential and remaining challenges, particularly when applied to so-called “rare” or historical scripts. HTR has long been a goal – indeed dream – of many in the Digital Humanities and beyond, and this is now becoming realised and increasingly accessible. Relatively general models for automatic transcription can now often achieve character error rates (CER) of less than 1% even for manuscript material, while a CER of 10% or even 20% is sufficient for some types of analysis such as text identification or text-image alignment. Very large quantities of manuscript material are also becoming available, particularly with the increasingly widespread use of IIIF. Machine learning is also relatively accessible, including computers with GPUs that are sufficiently powerful to treat thousands or even tens of thousands of images of manuscript pages within a reasonable timeframe. This combination is enabling new possibilities that were not feasible only a few years ago. However, most of the existing systems were designed at least initially in European (primarily Anglophone) contexts, and the differences between these and other writing contexts may seem subtle but very often make software unusable in practice.
+            
+            
+                eScriptorium is Free Open-Source Software
+                
+                     The source code is released under an MIT licence at 
+                        
+                            https://gitlab.com/scripta/escriptorium/
+                        .
+                    
+                
+                 designed to facilitate transcription of manuscripts in a wide variety of languages, scripts and complex layouts. The software began as part of the Scripta-PSL project which incorporated experts in dozens of scripts and languages, including Sumerian, Ugaritic, Syriac, Arabic, Hebrew, Classical and Pre-Imperial Chinese, Old and Medieval Japanese, Tibetan, Devanagari, Old Khmer, Pali, Tamil, and many more (see further 
+                
+                    https://scripta.psl.eu/langues/
+                
+                ). It is designed to interact with kraken, another Free Open-Source Software developed by Benjamin Kiessling (of the same institution as the eScriptorium team).
+                
+                     The source code is released under an Apache 2.0 licence at 
+                        
+                            http://github.com/mittagessen/kraken
+                        .
+                    
+                
+                 Kraken provides a flexible, modular HTR engine that can be run on its own or as the engine behind eScriptorium.
+            
+             
+            
+                
+            
+            
+                Transcription (transliteration) of Old Javanese palm-leaf books with eScriptorium (courtesy of Marine Schoettel, École Française d’Extrême-Orient)
+            
+            
+                
+            
+            
+                The interface showing a complex page layout: page image with lines and regions (left panel); transcription aligned to the page layout (centre panel); transcription in ‘regular’ lines (right panel).
+            
+            
+                Participants will be introduced to eScriptorium and kraken, focussing particularly on the key design decisions that distinguish them from other HTR systems. One is that the system should be as independent as possible of any assumptions about language or script. For instance, writing can be left-to-right, right-to-left, top-to-bottom then right to left (as in Japanese), or top to bottom then left to right (as in Mongolian). The writing can be on a baseline (as in English), from a top-line (as in Hebrew) or in a column (as in Chinese), and the lines can be oriented at any angle, including upside-down and therefore ‘reversed’ from the normal direction relative to the page image (so upside-down Arabic reads from left to right relative to the page orientation, and so on). Participants are therefore strongly encouraged to bring their own materials in different scripts and languages, and will learn the possibilities and limits of eScriptorium and kraken for these different cases.
+            
+            
+                After an introductory session on the principles of HTR and of eScriptorium and kraken in particular, we will go through the different stages of the workflow, always with attention to the challenges of non-European scripts. This involves first, segmentation of pages into regions and lines; second, potentially modifying the order of lines on the page if it has not been correctly identified by the system; and, third, performing the transcription. The first and third of these are currently based on machine learning (Kiessling 2020), and so they both normally involve a process of creating ground truth data for a sample of content, training a model on the basis of this data (most likely on top of an existing one already trained on similar content), then applying this model to new images. This process in turn raises methodological questions, such as which categories of region and line types to use, which standards of transcription to use, how best to share corpora for ground truth, how to manage large character sets or abbreviations, and so on. Participants will be directed to existing work and initiatives on this topic such as SegmOnto, HTR for All, and OCR-D.
+            
+            
+                
+            
+            
+                Uncorrected results of automatic line detection in a previously unseen scroll (writing in Chinese from top to bottom then right to left).
+            
+            
+                
+            
+            
+                Manually transcribing Chinese (top to bottom then right to left)
+            
+            
+                
+            
+            
+                The eScriptorium interface showing lines showing mixed Hebrew (right to left) and Chinese (top to bottom or right to left). Numbers indicate the order of reading (detected automatically but correctable manually).
+            
+            
+                eScriptorium and kraken are also designed to be as open as possible, including that data should be interchangeable and that users should not be locked into any one instance of the framework. Participants will therefore learn how to import and export images, page layout data and transcriptions in a variety of standard formats (plain text, ALTO, PAGE XML; import from IIIF manifests; transformation of export to TEI). We will also briefly discuss the strengths and limitations of these formats, particularly for the wide range of different scripts.
+            
+            
+                As well as importing and exporting data, users of eScriptorium and kraken are also able (and actively encouraged) to import and export trained models for layout analysis and transcription, including not only sharing with other users in the same instance of eScriptorium but also publishing models on external repositories. A Zenodo community has been established to help share models, and publishing to and from Zenodo is already implemented as part of kraken and will be shortly in eScriptorium. In this way, models can be reused across different instances of the software, and no user is locked into any single instance. This has clear advantages in reducing the human effort in repeating training and ground-truth generation, and also provides a small but not insignificant step towards reducing the energy and environmental impact of machine learning, in that it reduces the need to pointlessly retrain identical models with the same ground truth. This is in contrast to many other systems of machine learning, where some or all of the software may be Open Source, and where the ground truth can sometimes be exported, but the models themselves are locked into a given instance of the system and cannot be exported, and/or the software is not sufficiently open that an entirely new instance can be set up independently.
+            
+            
+                
+            
+            
+                Model management in eScriptorium, including export, import, sharing and basic version control. Models shown are for manuscripts written in Hebrew
+            
+            
+                eScriptorium also provides a web API to allow for automated execution of project-specific processes, and so a brief introduction to this will also be provided, depending on time and the interest of participants.
+            
+            
+                Finally, eScriptorium and kraken are both freely available for anyone to download and install on their own servers, and a number of groups in different countries have already done so to our knowledge. In practice, eScriptorium can run even on a home computer for most tasks, but training on a large corpus requires relatively powerful computers and servers, and so the last part of the tutorial will be spent discussing practical questions about how to get an instance up and running, how to plan a future project with the software, and any other issues that come up during the session.
+            
+            Acknowledgements
+            
+                This work was supported by grants from the European Union (RESILIENCE RI and Vietnamica), Université Paris Sciences et Lettres (Scripta-PSL), the Mellon Foundation (OpenITI), the French Ministry of Higher Education and Research, the French Ministry of Culture (LectauRep) and the Domaine d'intérêt majeur STCN (ManuscriptologIA).
+            
+            
+                For a full list of contributors to eScriptorium, see the GitLab repository and wiki (links below).
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Chagué, A.
+                         [no date]. Prendre en main eScriptorium. 
+                        
+                            https://lectaurep.hypotheses.org/documentation/prendre-en-main-escriptorium
+                        
+                        . English version (transl. Jonathan Allen),
+                        
+                            https://lectaurep.hypotheses.org/documentation/escriptorium-tutorial-en
+                        
+                         
+                    
+                    
+                        eScriptorium
+                        [source code]: 
+                        
+                            https://gitlab.com/scripta/escriptorium/
+                        
+                         
+                    
+                    
+                        Gabay
+                        , S., Camps, J.-B., Pinche, A., and Jahan C.
+                         (2021). SegmOnto: common vocabulary and practices for analysing the layout of manuscripts (and more). 
+                        16th International Conference on Document Analysis and Recognition (ICDAR 2021).
+                    
+                    
+                        HTR United
+                        
+                            https://github.com/HTR-United
+                        
+                    
+                    
+                        Kiessling
+                        , B. 
+                        (2020). A Modular Region and Text Line Layout Analysis System. 
+                        17th International Conference on Frontiers in Handwriting Recognition (ICFHR)
+                        .
+                    
+                    
+                        Kiessling, B.
+                         (2022). 
+                        Kraken
+                         [source code] 
+                        
+                            http://github.com/mittagessen/kraken
+                        
+                    
+                    
+                        Kiessling, B.
+                         (2022). 
+                        Kraken
+                         [project website]. 
+                        
+                            http://kraken.re/
+                        
+                    
+                    
+                        Kiessling
+                        , B., Stökl Ben Ezra, D., Miller M.
+                         (2019)
+                         
+                        BADAM: A Public Dataset for Baseline Detection in Arabic-script Manuscript
+                        
+                            s
+                        
+                        , 
+                        HIP@ICDAR
+                         2019. 
+                        
+                            https://arxiv.org/abs/1907.04041
+                        
+                         
+                    
+                    
+                        Kiessling
+                        , B.; Tissot, R., Stökl Ben Ezra, D., Stokes P.
+                         (2019) eScriptorium: An Open Source Platform for Historical Document Analysis, 
+                        OST@ICDAR 2019
+                        . doi: 
+                        
+                            10.1109/ICDARW.2019.10032
+                        
+                    
+                    
+                        Kiessling
+                        , B.
+                         (2019) Kraken – A Universal Text Recognizer for the Humanities. 
+                        Digital Humanities Book of Abstracts
+                        . doi:
+                        
+                            10.34894/Z9G2EX
+                        
+                    
+                    
+                        OCR-D: DFG-Funded Initiative for Optical Character Recognition Development
+                        .
+                        
+                            https://ocr-d.de
+                        
+                    
+                    
+                        OCR/HTR Model Repository
+                        .
+                        
+                            https://www.zenodo.org/communities/ocr_models
+                        
+                         
+                    
+                    
+                        SegmOnto
+                        .
+                        
+                            https://github.com/SegmOnto
+                        
+                    
+                    
+                        Stokes, P.A.
+                         (2020). RESILIENCE tool: eScriptorium. 
+                        
+                            https://www.resilience-ri.eu/blog/resilience-tool-escriptorium/
+                        
+                        . Version française : eScriptorium : un outil pour la transcription automatique des documents. 
+                        
+                            https://ephenum.hypotheses.org/1412
+                        
+                    
+                    
+                        Stokes
+                        , P., Kiessling, B., Tissot, R., Stökl Ben Ezra, D.
+                         (2019) EScripta: A New Digital Platform for the Study of Historical Texts and Writing, 
+                        Digital Humanities 2019 Book of Abstracts
+                        . doi:
+                        
+                            10.34894/BIXSWX
+                        
+                    
+                    
+                        Stokes
+                        , P.A., Kiessling, B., Stökl Ben Ezra, D., Tissot, R. and Gargem, H.
+                         (2021). The eScriptorium VRE for Manuscript Cultures. 
+                        Ancient Manuscripts and Virtual Research Environments
+                        , ed. Claire Clivaz and Garrick V. Allen. Special issue of 
+                        Classics@
+                         18. 
+                        
+                            https://classics-at.chs.harvard.edu/the-escriptorium-vre-for-manuscript-cultures/
+                        
+                    
+                    
+                        All URLs last verified 21 April 2022.
+                    
+                
+            
+        
+    
+
+

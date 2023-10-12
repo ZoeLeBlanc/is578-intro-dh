@@ -1,0 +1,208 @@
+11766	2022	
+        
+            
+                
+                    Introduction
+                
+                Social network analysis (Abraham et al., 2009) plays an important role in the computational analysis and quantification of dramas (Moretti, 2011; Trilcke et al., 2015; Fischer et al., 2017).
+                Usually, these networks are based on the co-presence of stage characters. In such a network, each node represents a character and edges between nodes indicate if two characters co-occurred on stage, i.e. if they appeared in the same scene.
+                For other types of literary texts such as novels, there have been several works on what type of information the edges could be based on, such as adjacent quoted speech (Elson et al., 2010), topic frequencies (Celikyilmaz et al., 2010), social events (Agarwal et al., 2012) or similarities of word embeddings (Wohlgenannt et al., 2016). However, for dramatic texts, the majority of research on social networks only uses the co-occurrence of characters as a basis for edges.
+                In this paper, we propose to not only model when characters interact on stage, but also when a character is mentioned by another character while this character is not present. This follows the approach by Agarwal et al. (2012) and Agarwal et al. (2010) who model different types of social events, including characters mentioning and thinking about one another.
+                As Agarwal et al. (2012) already point out, many of the social events described in Agarwal et al. (2010) do not normally occur in historical literary works. For dramatic texts, there are further restrictions, e.g. thinking about another character will not occur in dramatic texts, but is a frequent occurrence for the novel 
+                    Alice in Wonderland, used by Agarwal et al. (2012).
+                
+                We therefore focus on the social event of characters mentioning each other, while the mentioned character is not present on stage.
+                    
+                        Called “Cognition Event” in Agarwal et al. (2010).
+                     In order to access this information, we make use of a corpus of annotated co-references and speaker tags.
+                
+            
+            
+                
+                    Application of Co-reference Networks
+                
+                The following networks are constructed on data from 31 plays annotated for co-reference (Pagel & Reiter, 2020).
+                    
+                        The data used in this paper is available at 
+                            .
+                        
+                     These annotations build upon the TEI-annotations of the DraCor initiative (Fischer et al., 2019), which provides the co-presence information.
+                    
+                        TEI-XML available from 
+                            
+                        
+                    
+                
+                Figure 1 shows the application of a co-reference network on Gotthold Ephraim Lessing’s
+                
+                    
+                        
+                    
+                
+                Fig. 1: Network of
+                    Miß Sara Sampson with co-reference information. Node size is scaled according to weighted degree.
+                
+                play 
+                    Miß Sara Sampson. Each node represents a character in the play and each edge represents a mention made by one character about another character. The direction of the
+                
+                mention is indicated by arrows, while the arrow points towards the character being mentioned. The weights on each edge indicate how often the character in question is mentioned by another character. Nodes are scaled in size according to their weighted degree, which is the sum of all incoming and outgoing weights of a node (Barrat et al., 2004). It can be observed that the three main characters of the play 
+                    Mellefont, 
+                    Sara and 
+                    Marwood receive a higher weighted degree compared to the other characters, showing that the network models character importance to a certain degree, just like a co-presence network would.
+                
+            
+            
+                
+                    Comparison to Co-presence Networks
+                
+                Comparing the network in Figure 1 to the co-presence network of the same play in Figure 2 reveals commonalities and differences between the two approaches. Again, the three main characters are exponated compared to other side characters, however, the overall weighted degrees are much smaller. It is noticeable that 
+                    Sir William, Sara’s father, holds much less importance in the co-presence network, while he has much more weight compared to other characters in the co-reference network in Figure 1. Furthermore, 
+                    Marwood has the same degree value as 
+                    Betty, Sara’s maidservant, while in the co-reference network, it becomes clear that Marwood holds a more important role in the social configuration of the play compared to Betty.
+                
+                
+                    
+                        
+                    
+                
+                Fig. 2: Network of 
+                    Miß Sara Sampson with co-presence information. Node size according to weighted degree.
+                
+                A reader of the play will be able to make several observations: Sir William is often not present on stage, but plays an important role in the plot and in the decision making of Sara and Mellefont. Furthermore, Marwood plays a more important role in the overall plot of the play than Betty does. However, quantitatively, this only really becomes apparent when comparing and juxtaposing the two different networks.
+                We can also see this complementary nature when abstracting away from looking at the pure networks and comparing the development of weighted degree during the course of the play.
+                Figure 3 shows the current weighted degree for the three characters 
+                    Sara, 
+                    Mellefont and 
+                    Marwood when constructed from information available for each scene of the play. For example, for Scene 1, a co-presence network with all co-presences of the character in this scene is constructed and the weighted degree is computed based on this network. The same is done for all further scenes and separately for all coreferent mentions of a character. We can clearly see that especially Marwood and Sara are frequently mentioned in scenes from which they are physically absent.
+                    
+                        This type of observation can also be explored in a comparison of active and passive stage presence, see for example Willand et al. (2020).
+                    
+                
+                
+                    
+                        
+                    
+                
+                Fig. 3: Development of weighted degree per scene for co-presence and co-reference in 
+                    Miß Sara Sampson.
+                
+                Lastly, when looking at a comparison of all annotated 31 plays, seen in Table 1, the overall averaged values for different centrality measures, namely degree, betweenness, closeness and eigenvector centrality (cf. Newman, 2010, chap. 7), are higher for co-reference networks than for co-presence networks, except for closeness
+                    
+                        The fact that closeness is lower for co-reference networks when compared to co-presence networks is to be expected, since networks with a fewer number of edges have a higher chance to receive higher closeness values per node. However, as the difference is rather small, it is difficult to make generalisations about the differences between the two network types with regards to closeness and based on the data.
+                    . At the same time, the standard deviations for the measures are comparable. This shows that while capturing the same phenomenon, which is the importance of characters in the social constellations of the plays, individual characters receive higher importance depending on co-presence or co-reference, and as such, the complementary information that both approaches provide can also be seen on a larger scale.
+                
+                
+                    
+                        
+                        Centrality Measure
+                        Mean
+                        Standard Deviation
+                    
+                    
+                        Co-presence
+                        Degree
+                        0.48
+                        0.28
+                    
+                    
+                        Betweenness
+                        0.04
+                        0.08
+                    
+                    
+                        Closeness
+                        0.44
+                        0.18
+                    
+                    
+                        Eigenvector
+                        0.41
+                        0.31
+                    
+                    
+                        Co-reference
+                        Degree
+                        0.55
+                        0.30
+                    
+                    
+                        Betweenness
+                        0.05
+                        0.09
+                    
+                    
+                        Closeness
+                        0.43
+                        0.18
+                    
+                    
+                        Eigenvector
+                        0.47
+                        0.33
+                    
+                
+                Tab. 1: Mean values for different centrality measures in either the co-presence or co-reference networks and standard deviation.
+            
+            
+                
+                    Conclusion
+                
+                We have presented the conception and application of social networks for German theatre plays. The approach can easily be applied for dramas of other languages with annotated co-presence and co-reference information. Furthermore, we demonstrated that the currently widely used co-presence networks can be complemented by the use of co-presence networks and it appears to be beneficial to use both types of information when conducting network analysis on larger collections of texts, in order to access different layers of character importance. This was shown both on the level of single plays as well as on the level of a small corpus. One way to quantitatively capture the different perspectives the two types of networks contribute has been shown by using averaged centrality measures. There are also potential shortcomings of the approach, e.g. a comparison of the two networks would not capture characters which are mentioned but never appear on stage. Furthermore, additional approaches of comparing the network types may be developed, for instance comparing the networks more directly by utilising distance measures.
+            
+        
+        
+            
+                
+                    Bibliography
+                    Abraham, A., Hassanien, A.-E., & Snášel, V. (2009). 
+                        Computational Social Network Analysis: Trends, Tools and Research Advances. Springer Science & Business Media.
+                    
+                    Agarwal, A., Corvalan, A., Jensen, J., & Rambow, O. (2012). Social Network Analysis of Alice in Wonderland. 
+                        Proceedings of the NAACL-HLT 2012 Workshop on Computational Linguistics for Literature, 88–96. https://aclanthology.org/W12-2513
+                    
+                    Agarwal, A., Rambow, O., & Passonneau, R. J. (2010). Annotation Scheme for Social Network Extraction from Text. 
+                        Proceedings of the Fourth Linguistic Annotation Workshop, 20–28. https://aclanthology.org/W10-1803
+                    
+                    Barrat, A., Barthélemy, M., Pastor-Satorras, R., & Vespignani, A. (2004). The architecture of complex weighted networks. 
+                        Proceedings of the National Academy of Sciences, 
+                        101(11), 3747–3752. https://doi.org/10.1073/pnas.0400087101
+                    
+                    Celikyilmaz, A., Hakkani-Tur, D., He, H., Kondrak, G., & Barbosa, D. (2010). The Actor-Topic Model for Extracting Social Networks in Literary Narrative. 
+                        Proceedings of the NIPS 2010 Workshop – Machine Learning for Social Computing. https://webdocs.cs.ualberta.ca/~denilson/files/publications/nips2010.pdf
+                    
+                    Elson, D., Dames, N., & Mckeown, K. (2010). Extracting Social Networks from Literary Fiction. 
+                        Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (ACL), 138–147. https://aclanthology.org/P10-1015
+                    
+                    Fischer, F., Börner, I., Göbel, M., Hechtl, A., Kittel, C., Milling, C., & Trilcke, P. (2019). Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama. 
+                        Proceedings of DH2019: “Complexities.” https://zenodo.org/record/4284002
+                    
+                    Fischer, F., Göbel, M., Kampkaspar, D., Kittel, C., & Trilcke, P. (2017). Network Dynamics, Plot Analysis. Approaching the Progressive Structuration of Literary Texts. 
+                        Book of Abstracts of the DH2017 Conference.
+                    
+                    Moretti, F. (2011). Network Theory, Plot Analysis. 
+                        Pamphlets of the Stanford Literary Lab, 
+                        2, 2–11.
+                    
+                    Newman, M. (2010). 
+                        Networks: An introduction. Oxford University Press.
+                    
+                    Pagel, J., & Reiter, N. (2020). GerDraCor-Coref: A Coreference Corpus for Dramatic Texts in German. 
+                        Proceedings of the Language Resources and Evaluation Conference (LREC), 55–64. http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.7.pdf
+                    
+                    Trilcke, P., Fischer, F., & Kampkaspar, D. (2015). Digital network analysis of dramatic texts. 
+                        DH2015 Conference Abstracts.
+                    
+                    Willand, M., Krautter, B., Pagel, J., & Reiter, N. (2020). Passive Präsenz tragischer Hauptfiguren im Drama. In C. Schöch (Ed.), 
+                        DHd 2020 Spielräume: Digital Humanities zwischen Modellierung und Interpretation. Konferenzabstracts (pp. 177–181). https://zenodo.org/record/3666690
+                    
+                    Wohlgenannt, G., Chernyak, E., & Ilvovsky, D. (2016). Extracting Social Networks from Literary Text with Word Embedding Tools. 
+                        Proceedings of the Workshop on Language 
+                        Technology Resources and Tools for Digital Humanities (LT4DH), 18–25. 
+                        
+                    
+                
+            
+        
+    
+
+

@@ -1,0 +1,112 @@
+12029	2022	
+        
+            
+                A combined approach to the relevance of text passages
+                In this contribution, we want to outline insights that arise from combining two distinct approaches to literary texts that analyse the relevance of specific text passages. We have been working on the identification of the 
+                    narrativity represented in literary texts as well as on the 
+                    quotation of the texts in research to identify passages especially relevant from a hermeneutical perspective. This now allows us to explore whether the structures and patterns that are emerging from these two approaches can be related to each other in a meaningful way.
+                
+                
+                    Narrativity as textual relevance criterion
+                    Our identification of narrativity of literary prose texts is based on the annotation of events. By considering the core features of events in narrative theory (i.e., being a state, a process in time and change of state) we classify each verbal phrase in a text as change of state, process event, stative event or non-event.
+                        
+                            For a detailed explanation of the manual annotation on which the data used in this contribution is based cf. Vauth and Gius, 2021.
+                        
+                        ,
+                        
+                            For a description of classification of events as well as the automation approach and results cf. Vauth et al., 2021. 
+                         To enable measuring narrativity, this categorical scaling is transposed into a numerical scaling reflecting the degree of narrativity of the event categories. In accordance with a narrative theory understanding of events, we determine the narrativity of the annotation categories with the values 7 (change of state), 5 (process event), 2 (stative event), and 0 (non-event). By additionally smoothing the narrativity value we are able to model the narrativity of a text as a graph.
+                        
+                            For a discussion of the adequacy of this implementation for literary studies, especially with regard to intersubjectivity, cf. Gius and Vauth, 2022.
+                         Figure 1 shows the narrativity graph for the novella 
+                        Die Judenbuche by Annette von Droste-Hülshoff which serves as an example for our approach.
+                    
+                    
+                        
+                            
+                            Figure 1. Narrativity score
+                        
+                    
+                
+                
+                    Key passages: quotation as textual relevance criterion
+                    
+                        We consider key passages as parts of a literary text that are especially relevant for interpretation and can differ in length from only a few words to one or more paragraphs. To learn which parts of a text are more relevant than others, we rely on expert knowledge, which we obtain from numerous interpretations of a literary work containing quoted passages. This is a new approach in text and literature studies, that has not been theoretically founded yet; though the term “Schlüsselstelle” (key passage) and equivalents are used regularly in text interpretations in German language.
+                        
+                            For more details on key passages and the aim of the project cf. Arnold and Fiechter, 2022.
+                        
+                    
+                    
+                        For this study, we limit ourselves to a quantitative view. We have analysed 44 interpretations of 
+                        Die Judenbuche
+                        , all in German language, published between 1995 and 2015 and identified quoted passages with a Python tool for quotation detection in fictional texts.
+                        
+                            For a detailed explanation, cf. Arnold and Jäschke (accepted). Source code available at: 
+                                .
+                            
+                        
+                         Figure 2 
+                        visualises the identified quotations over the course of the text; the histogram shows quotation frequency and the graph the smoothed frequency for each verbal phrase identified during the event annotation (cf. Section 1.1). Notably, the beginning and the end are quoted most frequently, together with three other frequently quoted passages. 
+                    
+                    
+                        
+                            
+                            Figure 2. Quotation frequency
+                        
+                    
+                
+            
+            
+                Combining the approaches: frequently quoted (key) passages and narrativity
+                By combining exploration of narrativity and quotation frequency (cf. Figure 3) we can explore whether a passage is referred to as one that is mainly interesting for the storyline or for the interpretation. Passages with a high narrativity score are particularly important for the plot and the comprehension of the plot, while passages with a low narrativity value more often contain dialogue or narrator comments in which interpretation proposals are already made that are taken up in literary studies texts. For passages with a medium narrativity value, potential interdependencies are difficult to determine on the basis of only one text, but we are aiming to obtain more detailed knowledge on this in the future, including also non-frequency based analyses of references. Also, the beginning and the end of the text seem to be quoted in a different manner. Here quotation frequency and narrativity seem to be connected only loosely. Instead, these borders of the text seem to be used mostly to provide a framework for interpretations, in which the interpreters select the most interesting passages for their intent. 
+                
+                    
+                        
+                        Figure 3. Narrativity score and quotation frequency 
+                    
+                
+            
+            
+                Outlook
+                While these findings point out how the quotation of text passages may relate to their narrativity, they should be evaluated against a broader corpus of texts. There, the classification of functions of 
+                    quotations is the most interesting aspect. We assume that plot-orientated 
+                    quotations in the secondary literature correlate with higher narrativity, whereas passages quoted in order to develop a more comprehensive interpretation of the text display less narrativity. For evaluating this, we plan to combine our automated analysis of narrativity with the automated detection of key passages.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Arnold, F. and Fiechter, B. (2022). Lesen, was wirklich wichtig ist: Die Identifikation von Schlüsselstellen durch ein neues Instrument zur Zitatanalyse. 
+                        DHd2022: Konferenzabstracts. 
+                         (accessed 11 April 2022).
+                    
+                    
+                        Arnold, F. and Jäschke, R. (accepted). Lotte and Annette: A Framework for Finding and Exploring Key Passages in Literary Works. 
+                        Proceedings of the Workshop on Natural Language Processing for Digital Humanities at ICON 2021.
+                    
+                    
+                        Gius, E. and Vauth, M. (2022). Inter Annotator Agreement und Intersubjektivität. 
+                        DHd2022: Konferenzabstracts. 
+                         (accessed 11 April 2022).
+                    
+                    
+                        Vauth, M. and Gius, E. (2021). Richtlinien für die Annotation narratologischer Ereigniskonzepte. 
+                        Zenodo.
+                         
+                         (accessed 11 April 2022).
+                    
+                    
+                        Vauth, M., Hatzel, H. O., Gius, E. and Biemann, C. (2021). Automated Event Annotation in Literary Texts. 
+                        CHR 2021: Computational Humanities Research Conference. Amsterdam, pp. 333–45.
+                         
+                         (accessed 11 April 2022).
+                    
+                
+            
+        
+    
+
+

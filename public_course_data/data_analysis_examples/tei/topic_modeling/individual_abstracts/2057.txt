@@ -1,0 +1,20 @@
+2057	2014	Blumenbach-online, a project of the Göttingen Academy of Sciences and Humanities, started in January 2010 and aims at both digitizing and presenting the writings and collections of the influential Gottingen physician and naturalist Johann Friedrich Blumenbach (1752-1840), one of the founding fathers of physical anthropology, online. To date, almost half of the textual material (77.000 pages altogether) and roughly a quarter of the collections have been digitized and converted into TEI-encoded texts or entered into a database. It is through an exploration and application of Semantic Web technologies in a spin-off project called "Semantic Blumenbach" that we hope to establish robust and powerful methods for presenting and providing heterogeneous machine-readable linked data for Blumenbach-online. 
+
+Two major tasks have been completed so far. The first is carrying out Named Entity Recognition (NER) on the TEI P5 Tite1 encoded full-texts that have been provided to Semantic Blumenbach2 by Blumenbach-online. These texts lacked the semantic markup e.g. for places, persons and objects from the natural history domain. In addition, we had to deal with historical and irregular orthography of multilingual texts from the second half of the 18th century. Currently we are able to recognize precisely (96%) most (96%) of the technical terms that appear in the text using a list-based algorithm. This algorithm is also able to detect binominal entities from the Linnaean taxonomy, even when they appear as separate strings in different parts of the text. For modeling the relationship between entities in the text and metadata in the collection, we use the WissKI Framework for scientific communication (www.wiss-ki.eu) that allows presenting and using data from various sources in a robust and open system, which is both scalable and reusable by other projects. With the help of the Erlangen CRM Ontology3, an OWL-DL 1.0 implementation of the CIDOC CRM4 and a special application ontology, we model the semantic relationships between objects described in TEI-encoded texts and metadata of these objects.5 We particularly focus on place names, persons and special terms from the natural history domain, including the Latin names of animals and geological objects and construct the relationship between both types of data by using our NER to encode reference strings in the TEI text. 
+
+The Erlangen CRM provides a way to classify these objects in a meaningful way and to model the relationship between the occurrence of the objects in the writings of Blumenbach and the University of Göttingen’s collections. With the help of colleagues from the WissKI Project at Erlangen and Nurnberg we have been able to develop new modules for the Drupal-based system to ingest the TEI and triplify the metadata that we created in the texts. Following a policy of Open Access and Linked Open Data, we will test and implement ways to generate and publish results of academic research in a way that it can be reused in other contexts and by other researchers. Finally, we plan to use a full-text search index (Apache solr) to make both texts and object-related data available in a way that allows both triplyfied metadata and XML full-text to be searched efficiently. 
+
+URL: dhfv-ent2.gcdh.de/blumenbach/wisski
+
+Username and password available on request. 
+
+References
+1. www.tei-c.org/release/doc/tei-p5-exemplars/html/tei_tite.doc.html
+
+2. Wettlaufer, Jörg & Thotempudi, Sree Ganesh (2013): Poster - NER in historical Text corpora. Lessons learned so far. 4.-6.03.2013, Mehr Personen – Mehr Daten – Mehr Repositorien, Tagung des Personendatenrepositoriums der BBAW, Berlin. www.gcdh.de/index.php/download_file/view/168/405
+
+3. erlangen-crm.org
+
+4. “CIDOC CRM,” n.d. www.cidoc-crm.org/index.html.
+
+5. C.f. www.tei-c.org/SIG/Ontologies/meetings/m20131003.html

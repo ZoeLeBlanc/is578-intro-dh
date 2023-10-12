@@ -1,0 +1,50 @@
+1972	2014	Introduction
+During the last 15 to 20 years, a considerable amount of premodern Chinese texts have been made available electronically, both for free and unhindered use and commercially in dedicated and locked down applications. Examples for the first type include projects such as the Chinese Buddhist Electronic Text Association (www.cbeta.org) and Wikisource (zh.wikisource.org) and the Internet Archive (www.archive.org), while examples for the latter includes products like the Siku quansshu electronic edition (四庫全書 電子版) by Digital Heritage Publishing or Zhongguo jiben guji ku 中国 基本古籍庫 by Airusheng.
+
+For scholars wanting to make use of these ressources for their research, there are a few obstacles, including:
+
+different formats and ways to access the texts
+in many cases, texts do not confirm to philological standards
+researchers can not annotate the texts and share their notes
+Now, the projects described here attempt to develop an infrastructure for enabling scholars to work with repositories of freely available texts using a rapid prototyping approach with an expanding group of scholars for testing and early adoption. Technically, the main idea is to develop this as a network of repositories of texts, where each node a network consists of a set of git repositories, that can represent multiple editions of texts.
+
+Kanripo: A repository of premodern Chinese texts
+First experiments for one node of such a network have been started at Kyoto University's Institute for Research in Humanities and its associated Center for Informatics in East-Asian Studies, CIEAS. In this experiment, the distributed version control system (DVCS) git is used as a basic transportation layer. Every text in the repository is represented by one DVCS node; different editions of the text can be represented by different versions or "branches" within this node; digital facsimiles can be associated with such versions. Users can also "fork" public projects and create new branches with their own annotations and comments and share these with other researchers, either in closed groups or with the general public.
+
+The interaction with Kanripo occurs mainly through the web interface, but can also occur directly from the desktop tool Mandoku. However, as the experience so far has shown, it seems necessary to further develop the web interface, to enable it to become not just a hub for interaction between the users, but also a full-fledged client for editing texts in the repository or add comments and annotations. For this purpose, a system similar to the popular Github site (github.com) is envisioned, starting from a open source clone of github called gitlab. This is in a very early stage of development and any feedback from the audience will be much appreciated.
+
+Mandoku: A tool for interacting with the repository
+Development has also started aiming at a convenient desktop based tool for interacting with the repositories; a preliminary development version of this tool called Mandoku will also be demonstrated during the presentation.
+
+Mandoku tries to meet researchers of premodern Chinese texts where they spent most of their time, that is reading, annotating and translating texts. This is why the current prototype is build on the powerful and extensible editor Emacs, while as a future implementation a interface for more casual users is also planned. To incite users to overcome the initial hurdle of adopting to a new and unusual editing program, a number of tools have been implemented, that enhance the usefulness of the system, among them a keyword in context (KWIC) index is generated on each text in every repository node, which can then be queried through Mandoku and the aggregated results will be displayed, a cumulative index for the query of dictionaries and specialized reference works; further text-analytic tools are planned.
+
+Repository for digital publications
+Another problem this system tries to adress is a serious problem with the current mainstream form of digital publication: Currently a website serves usually as the main and in many cases as the sole venue of publication, thus usually hiding a complex textual resources between one browser-mediated interface (For a further discussion of this problem and a model for overcoming it see1, {6}, {7} and {8}). This topic has been discussed for some time and valid suggestions and a discussion of the requirements can be found in 2, 3, 4 and 5. Here, this proposal is taken up and expanded, namely by adding the requirement that the text will not only be made available to the scholarly community, but that it also be able to annotate it in a way that can be owned by the scholar adding the annotation and still be shared with interested colleagues.
+
+In the framework presented here, fulfilling these requirements on a technical level is constructed as follows:
+
+A text available from the repository (which can be edited only by the editors) is "forked" into a private text repository on this or any other node in the network.
+The researcher can now edit and annotate the text to its hearts content, if so desired making the annotations available to others through pushing them to the forked repository.
+Occasionally, the researcher might come across errors in the text or has material he would like to offer for inclusion in the authorative published text. He now issues a "merge request", which alerts the editors of the published texts to the existence of this piece of information, which usually is already visible on the private repository.
+The editor will consider the merit of the correction and can then incorporate it into the published text. When doing so, the origin of this information and any communication concerning the reason and argument for this correction will retain their relationship to this piece of text and is available as part of the scholarly record for this text.
+If used correctly, this mechanism could provide a solution to the above mentioned problems with online digital publications. First experiments with scholars connected to the Kanripo research project showed that the technical protocol is not easily transparent to the scholars who are supposed to use it and does require more fine-tuning and better tool support in order to become more widely acceptable.
+
+Conclusion
+In an attempt to provide a stable, extensible platform for the curation of the textual heritage of China, a blueprint for text repositories that can form a network of related, but independent repositories for critically edited texts has been provided and a prototype of this implemented as the Kanseki Repository of texts (Kanripo), which can be accessed through one prototype client Mandoku. Further development will occur in collaborative form with scholars using this framework by attending to their emerging needs and thus hopefully developing into sustainable resources that can provide a solid base for all kinds of scholarly inquiry that relates to premodern Chinese texts.
+
+References
+1. Wittern, Christian (2013) "Beyond TEI: Returning the Text to the Reader". In: Journal of the Text Encoding Initiative [jtei.revues.org/691], 2013, 4.
+
+2. Robinson, P. (2009). “Towards a Scholarly Editing System for the Next Decades”. In: Sanskrit Computational Linguistics: First and Second International Symposia Rocquencourt, France, October 29-31, 2007 Providence, RI, USA, May 15-17, 2008 Revised Selected Papers. Springer London, Limited, pp. 346–357.
+
+3. Schmidt, Desmond and Robert Colomb (June 2009). “A data structure for representing multi-version texts online”. In: International Journal of Human-Computer Studies 67.6, pp. 497–514.
+
+4. Shillingsburg, Peter (2010). “How Literary Works Exist: Implied, Represented, and Interpreted”. In: Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions. Ed. by Willard Mc- Carty. Cambridge: Open Book Publishers.
+
+5. Siemens, Ray et al. (2009). “It May Change My Understanding of the Field: Understanding Reading Tools for Scholars and Professional Readers”. In: DHQ: Digital Humanities Quarterly 3.4.
+
+Christian Wittern"Towards an Architecture for Active Reading", in: Scholarly and Research Communication (www.src-online.ca/index.php/src/article/view/59), 2013, volume 3 / issue 4 p.1-11.
+
+Christian Wittern, "The Digital Daozang Jiyao – How to get the edition into the Scholar's labs", in: digital humanities 2012. Conference Abstracts, Hamburg, 2012, p.422-424.
+
+Christian Wittern, "Text Representation and Interchange in the Digital Age", at Annual conference of the Japanese Association for Digital Humanities 2012 at University of Tokyo, Sep. 15-17, 2012.

@@ -1,0 +1,151 @@
+
+        
+            
+                Introduction
+                Invarsson (2021) suggests a digital epistemology that is to be “understood as an attempt to do digital humanities without being committed to digital tools and objects”. While it is an intriguing idea to leave digital tools and methods out of the equation in order to discern the true epistemological core of DH, we believe that it is equally possible to argue that the use of specific tools virtually shapes and influences the epistemology of DH, or as Nietzsche (1882) put it: “Unser Schreibzeug arbeitet mit an unseren Gedanken
+                    
+                        
+                            Translation: “Our writing tools [in Nietzsche’s case: his new typewriter] shape our thoughts”.
+                        
+                    ”. Today, Nietzsche’s observations on writing tools can be easily extended to all kinds of research tools, allowing us to ask questions about the epistemological implications of tools for the digital humanities (see Dalbello, 2011; Drucker, 2002; Ramsay & Rockwell, 2012). As there are manifold, rather diverse tools that are used in DH, there is a certain tradition for tool directories that systematically list and categorize different tools. One of the most popular directories is TAPoR
+                    
+                        
+                            TAPoR: https://tapor.ca/home
+                        
+                    , which has steadily evolved and by now includes more than 1,600 tools. 
+                
+                The TAPoR list of tools has been used lately to extract and analyze tools mentioned in DH abstracts (Barbot et al. 2019, Fischer & Moranville, 2020b) and tutorials (Fischer & Moranville, 2020a). The motivation of these analyses is primarily to identify relevant and widely used tools in order to make them sustainably available via infrastructures like the 
+                    Social Sciences & Humanities Open Marketplace
+                    
+                        
+                             SSH Open Marketplace: https://marketplace.sshopencloud.eu/
+                        
+                    . While the previous studies so far have only looked at comparatively small corpora, we suggest to enhance the scope of DH tool studies by using a large corpus of DH journal articles (
+                    Computers and the Humanities, 
+                    Digital Humanities Quarterly, 
+                    Literary and Linguistic Computing/
+                    Digital Scholarship in the Humanities). The corpus comprises 3,737 articles and covers a time span from 1966-2020, which allows for diachronic analyses of tool usage in DH. In addition to using a larger corpus, we also propose an approach to automatically increase the size of the TAPoR tool list.
+                
+            
+            
+                Experiments with the TAPoR tool list
+                For our experiments we followed the approach described by Barbot et al. 2019 and also used the TaPOR directory to derive queries to find tool occurrences in our corpus. All in all, we found 319 different tools being mentioned throughout the corpus
+                    
+                        
+                            For a complete list see https://docs.google.com/spreadsheets/d/1BtDVo_2A6a1cLPQCZ8CriNcSGHz3UuVc2mxTsM-ZCxo/edit?usp=sharing
+                        
+                    . Figure 1 shows the most frequent 25 tools in the overall corpus.
+                
+                
+                    
+                    Top 25 tools mentioned in the corpus.
+                
+                It is noticeable that among the top 25 DH tools we find many tools for text and data analysis, but also a large proportion of high-level programming languages. This is certainly a bias of the early days of humanities computing. Taking a closer look at the diachronic development reveals the natural rise and fall of programming languages, with the steady rise of 
+                    Python in the DH since the beginning of the 2010s being particularly prominent (see Figure 2)
+                    
+                        
+                             An interactive version of the plots in Figures 2+3 alongside with more plots can be found here: https://bbrause.github.io/tools-in-dh/
+                        
+                    .
+                
+                
+                    
+                    The rise and fall of programming languages in DH.
+                
+                To provide some more high-level insights, we also did a cooccurrence analysis of the most frequent 150 tools, i.e. tools that are mentioned together in an article (see Figure 3). Such cooccurrence analyses could yield insights into typical tool combinations and more complex workflows, for instance the use of 
+                    Brat to annotate 
+                    Twitter data and the use of 
+                    SentiStrength to perform sentiment analyses of tweets.
+                
+                All in all, Figures 1-3 show some strong potential to analyze tools to find out more about their epistemological implications of DH. However, the predominance of outdated programming languages and the absence of state-of-the-art tools such as 
+                    spaCy or transformer architectures clearly shows large gaps in the TAPoR list.
+                
+                
+                    
+                    UMAP 2D projection of the top 150 most-frequent tools and their nPMI cooccurrence scores (point size indicates numbers of occurrences).
+                
+            
+            
+                Query expansion experiments by means of tool embeddings
+                
+                    To fill these gaps, we conducted a second experiment in which we used BERT embeddings to expand our list of tools, as proposed by Wevers & Koolen (2020). We created embeddings for the 25 most frequent tools (see Figure 1) and looked for their nearest neighbors, i.e. words that have similar embedding vectors as the 25 most frequent tools (see Figure 4). 
+                
+                
+                    
+                    Ten nearest neighbors for the embeddings of “python”, “rstudio” and “fortran”, ranked by their cosine similarity.
+                
+                This approach allows us to identify tools that are not listed in the TAPoR directory directly, but that are mentioned in similar article contexts as the TAPoR-listed tools. Obviously, not all the nearest neighbors identified in this way are actual tools, but if we rank the results according to the number of nearest neighborhoods for the top 25 tools, there are indeed many promising results in the higher ranks
+                    
+                        
+                             The nearest neighbors for each of the 25 most frequent tools as well as a ranked overall list is available here: https://docs.google.com/spreadsheets/d/1iipWwyk7wVcaSzzpEq-W5_vjTe2FO-dmjk_IGjMitEc/edit?usp=sharing
+                        
+                    . To give just one example: 
+                    XSLT (Extensible Stylesheet Language Transformations) has a fairly high score of 16, which means it was in the nearest neighbors of 16 of the 25 most frequent tools from the initial list. In the top ranks we find many other promising tool candidates, such as 
+                    RDF, 
+                    SGML, 
+                    mySQL and also more generic concepts, such as 
+                    NLP and 
+                    parsing, which could be interpreted as tool super categories.
+                
+            
+            
+                Conclusion and next steps
+                The experiments by Barbot et al. 2019 and Fischer & Moranville, 2020a/b as well as our follow-up experiments with a larger corpus of texts demonstrate that the empirical analysis of tool mentions in DH publications can be used to discern patterns in the diachronic use of different types of tools. This allows us to explore the effects of tools as rapidly evolving epistemological frameworks in the DH. At the same time, it became clear that the static list of tools as provided by TAPoR has obvious gaps, as the tool landscape is evolving swiftly. We therefore plan to include further directories in follow-up studies, including 
+                    ProgrammingHistorian
+                    
+                         Programming Historian: https://programminghistorian.org/en/lessons/
+                    , 
+                    forTEXT
+                    
+                         forTEXT: https://fortext.net/
+                    , 
+                    DigiHum
+                    
+                         DigiHum: https://digihum.de/tools/
+                    , 
+                    DMI (Digital Methods Initiative)
+                    
+                         DMI: https://wiki.digitalmethods.net/Dmi/ToolDatabase
+                    , 
+                    DH Toychest
+                    
+                         DH Toychest: http://dhresourcesforprojectbuilding.pbworks.com/w/page/69244319/Digita
+                    , etc. In this article, we illustrated the benefits of an embeddings-based approach to further expand these static lists of tools. Our next steps will be to extend our corpus to also include articles from neighboring disciplines, such as computational linguistics, computational social sciences, information science and others. We also plan to expand the nearest neighbor search beyond the limit of the 25 most frequent tools and to filter the results list manually, to identify reasonable tools. 
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Barbot, L., Fischer, F., Moranville, Y. & Pozdniakov, I. (2019). Which DH tools are actually used in research? Published via weltliteratur.net – A Black Market for the Digital Humanities, https://weltliteratur.net/dh-tools-used-in-research/
+                    
+                    Bush, V. (1945). As we may think. The Atlantic Monthly, 176(1), 101-108.
+                    
+                        Dalbello, M. (2011). A genealogy of digital humanities. Journal of Documentation.
+                    
+                    Drucker, J. (2002), “Theory as praxis: the poetics of electronic textuality”, Modernism/Modernity, Vol. 9, November, pp. 683-91. 
+                    
+                        Fischer, F. & Moranville, Y. (2020a). DH tools mentioned in "The Programming Historian"? Published via weltliteratur.net – A Black Market for the Digital Humanities, https://weltliteratur.net/dh-tools-programming-historian/
+                    
+                    
+                        Fischer, F. & Moranville, Y. (2020b). Tools mentioned in DH2020 abstracts. ublished via weltliteratur.net – A Black Market for the Digital Humanities, https://weltliteratur.net/tools-mentioned-in-dh2020-abstracts/.
+                    
+                    
+                        Ingvarsson, J. (2020). Digital Epistemology: An Introduction. In Towards a Digital Epistemology (pp. 1-28). Palgrave Macmillan, Cham.
+                    
+                    
+                        Nietzsche, F. (1882). Letter 202. An Heinrich Köselitz in Venedig (Typoskript). Nietzsche Source – Digital Critical Edition (eKGWB): http://www.nietzschesource.org/#eKGWB/BVN-1882,202
+                    
+                    
+                        Ramsay, S., & Rockwell, G. (2012). Developing things: Notes toward an epistemology of building in the digital humanities. Debates in the digital humanities, 75-84.
+                    
+                    
+                        Wevers, M., & Koolen, M. (2020). Digital begriffsgeschichte: Tracing semantic change using word embeddings. Historical Methods: A Journal of Quantitative and Interdisciplinary History, 53(4), 226-243.
+                    
+                
+            
+        
+    
+

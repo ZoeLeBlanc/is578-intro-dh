@@ -1,0 +1,91 @@
+11728	2022	
+        
+            Reconstructing past population configurations is no easy task, even when detailed demographic information exists such as birth, death and marriage records (e.g. Bailey et al. 2020, Efremova 2016). Reconstruction is necessary to be able to disambiguate and link people mentioned across various historic sources. The best way to do it is by hand, but that is prohibitively labor intensive. For automatic methods, name and spelling variations and uncertain relations between mentioned names present large problems (see e.g. Idrissou et al. 2018). Missing information does, too: demographic records tend not to include information on migrations into or out of the city in question, in our case Amsterdam.
+            Methods that are being tried tend to reconstruct individuals on the basis of detected name identifications and their relations to other mentioned names (e.g. Bloothooft et al 2015, Bailey et al. 2020). While this seems promising, it fails to include other information we may make use of: demographic and biological statistics (e.g. Störmer 2018, Alter and Clark 2010). Using the latter, we should be able to identify a person mentioned with one name in a certain source with the same person mentioned in another by only a nickname without being dependent on related names being mentioned as well.
+            We explore employing a temporal, iterative agent interaction model, similar to those used in biological population evolution models (e.g. Toni and Stumpf, 2010, Marchetti et al 2017,Levin et al 1997). We set up a Python actor model using 
+                
+                    MESA
+                 (Kazil et al. 2020) that can iterate over time and has access to all birth, death and marriage ‘events’ that are known from the archival records. We iterate over a 50-year sample in the dataset (for Amsterdam data is available from ca. 1600 through 1940, we use 1750-1800 as a test case).
+            
+            Each year, all names mentioned in ‘events’ in that year become actors (in the model sense). So if there is a birth record, the name of the child will be ‘born’ in that year, and the parents become actors that have children. The actors then decide how they ended up existing in that year: are they representations of actors that already exist in the current model because of a mention in a previous year? Are they new migrations into the city? Are they births of new citizens, or perhaps deaths of previously known or unknown actors? Do they (re)marry, should they have been married before that year? Actors make these decisions based on the event, their existing relations within the currently running model, and probability.
+            The decisions the actors make are based on statistics of the population in question combined with biological statistics and limitations. For example, it is very unlikely that people in the dataset live longer than 130 years, but very young children also die often, so mortality probability changes over an actor’s lifespan. But we also know that mortality rates are not constant over the whole timespan – certain years may have seen disasters, increasing mortality (see e.g. Aberth 2013, Jensen 2019), and others may have seen immigration waves, increasing population size without a higher birth rate. Other basic probabilities also affect the model: e.g. women rarely have children before age 11 or after age 60, and unmarried women are more likely to be childless than married ones.
+            Running this model we end up with a temporally changing network that we can evaluate in different ways in order to approximate historic reality. First, we can use general demographic knowledge to evaluate it, for example known population sizes (e.g. Lourens and Lucassen 1997, Paping 2014, Frijhoff et al 2006 etc.), mortality rates, birth rate estimations etc. (e.g. Heathcote 2001). Secondly, we can use network properties (e.g. population spikiness, average number of children, average age etc.) to evaluate. A third way is to deduce how ‘solid’ each actor’s life is, recording e.g. whether they have parents, whether the parents have the same last name as themselves, whether they have any relations to others in the model at all, whether they have only one or multiple mentions in the records etc. A fourth way is to compare them to known prosopographic data (we use ECARTICO). We test each of these methods and combine them into a meta-evaluation method.
+            Re-running the model many times, resulting in different models, we evaluate each in order to select the one best approximating reality and will discuss our findings.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Aberth, John (2013): 
+                        From the Brink of the Apocalypse: Confronting Famine, War, Plague and Death in the Later Middle Ages. 2nd Edition 2013, First Published 2010
+                    
+                    
+                        Alter, G., & Clark, G. (2010). 
+                        The demographic transition and human capital. In S. Broadberry & K. O'Rourke: The Cambridge Economic History of Modern Europe, pp. 43-69. Cambridge: Cambridge University Press. doi:10.1017/CBO9780511794834.004
+                    
+                    
+                        Bayley, Martha J., Connor Cole, Morgan Henderson and Catherine Massey (2020): 
+                        How Well Do Automated Linking Methods Perform? Lessons from US Historical Data. Journal of Economic Literature Vol.. 58, NO. 4, December 2020 (pp. 997-1044)
+                    
+                    
+                        Bloothooft, Gerrit, Peter Christen, Kees Mandemakers and Marijn Schraagen (2015): 
+                        Population Reconstruction. Springer
+                    
+                    
+                        Efremova, I. (2016). 
+                        Mining social structures from genealogical data. Technische Universiteit Eindhoven.
+                    
+                    
+                        Frijhoff, W., M. Prak and M. Hel (2006):
+                         Geschiedenis van Amsterdam, II-2, Zelfbewuste stadstaat 1650-1813. Bijdragen en mededelingen betreffende de geschiedenis der Nederlanden 121(3):500 DOI:10.18352/bmgn-lchr.6475
+                    
+                    
+                        Heathcote C., Higgins T. (2001) A Regression Model of Mortality, with Application to the Netherlands. In: Tabeau E., van den Berg Jeths A., Heathcote C. (eds) Forecasting Mortality in Developed Countries. European Studies of Population, vol 9. Springer, Dordrecht. https://doi.org/10.1007/0-306-47562-6_3
+                    
+                    
+                        Idrissou, A., Zamborlini, V., Latronico, C., van Harmelen, F., & van den Heuvel, C. M. J. M. (2018). 
+                        Amsterdamers from the Golden Age to the Information Age via Lenticular Lenses: Short paper.
+                    
+                    
+                        Jensen, L.E. (2019): 
+                        'Disaster upon Disaster Inflicted on the Dutch'. Singing about Disasters in the Netherlands, 1600-1900. Bijdragen en Mededelingen Betreffende de Geschiedenis der Nederlanden, 134, 2, (2019), pp. 45-70 https://doi.org/10.18352/bmgn-lchr.10449
+                    
+                    
+                        Kazil, Jackie, David Masad, and Andrew Crooks (2020): 
+                        Utilizing Python for Agent-Based Modeling: The Mesa Framework. In Robert Thomson, Halil Bisgin, Cristopher Dancy,Ayaz Hyder and Muhammad Hussain: Social, Cultural, and Behavioral Modeling. Springer International Publishing
+                    
+                    
+                        Levin, Simon A., Bryan Grenfell, Alan Hastings, Alan S. Perelson (1997): 
+                        Mathematical and Computational Challenges in Population Biology and Ecosystems Science. Science 1997 Vol 275, Issue 5298 pp. 334-343 DOI: 10.1126/science.275.5298.334
+                    
+                    
+                        Lourens, Piet, and Jan Lucassen (1997): 
+                        Inwonertallen van Nederlandse steden ca. 1300-1800. Amsterdam: Vereniging Het Nederlandsch Economisch-Historisch Archief..
+                    
+                    
+                        Marchetti, Luca, Corrado Priami and Vo Hong Tanh (2017): 
+                        Simulation Algorithms for Computational Systems Biology. 2017 Springer 331963111X 
+                    
+                    
+                        Newton, G., & Bennett, R. (2020). 
+                        Record-linkage of entrepreneurs in the England and Wales Censuses 1851-91 using BBCE and I-CeM. https://doi.org/10.17863/CAM.50178
+                    
+                    
+                        Paping, Richard (2014): 
+                        General Dutch Population development 1400-1850. 1st ESHD conference, Italy
+                    
+                    
+                        Störmer, Charlotte, Corry Gellatly, Anita Boele, and Tine De Moor (2017): 
+                        Long-Term Trends in Marriage Timing and the Impact of Migration, the Netherlands (1650-1899). Historical Life Course Studies 6 (December):40-68. https://doi.org/10.51964/hlcs9327.
+                    
+                    
+                        Toni, Tine, Stumpf, Michael P.H (2010): 
+                        Simulation-based model selection for dynamical systems in systems and population biology. Bioinformatics, Volume 26, Issue 1, 1 January 2010, Pages 104–110, https://doi.org/10.1093/bioinformatics/btp619.
+                    
+                
+            
+        
+    
+
+

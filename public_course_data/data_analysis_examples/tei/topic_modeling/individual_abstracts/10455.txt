@@ -1,0 +1,36 @@
+10455	2016	
+      
+         
+            Das Vorhaben
+            Die Uwe Johnson Werkausgabe ist ein Vorhaben der Berlin Brandenburgischen
+          Akademie der Wissenschaften an der Universität Rostock. Erstmals wird mit Uwe
+          Johnson ein Autor des 20. Jahrhunderts in einem Akademienvorhaben ediert. Die
+          Werkausgabe gliedert sich in die Abteilungen Werke, Schriften und Briefe und wird
+          sowohl als Buch wie auch digital erscheinen. Für beide Medien bilden gemäß TEI
+          (P5) ausgezeichnete Texte die gemeinsame Datengrundlage, im Digitalen ergänzt um
+          die digitalisierten Materialien des Uwe Johnson-Archivs. Um „lesbare“ Bücher zu
+          ermöglichen, werden textkritische Apparate, Kommentare und Erläuterungen in
+          einer exemplarisch sinnstiftenden Auswahl in den Druck aufgenommen, digital wird
+          historisch-kritische Vollständigkeit angestrebt. 
+            Zu den Eigenheiten des Autors Uwe Johnson gehört eine textsortenübergreifende Arbeitsmethode: In Briefen formuliert er Prosaversuche, aus Zeitungen übersetzt er in seine Bücher, Personen, Dokumente und Ereignisse der Zeitgeschichte treten in seinen Romanen auf.
+         
+         
+            Aus der Werkstatt
+            Aus dieser Arbeitsweise ergibt sich beinahe zwingend, dass im Digitalen mit den
+            Buchdeckeln auch die Grenzen zwischen den drei die Buchausgabe gliedernden
+            Abteilungen durchlässig werden. Anhand einiger Beispiele soll Johnsons Arbeiten
+            gezeigt werden: welche Brücken zwischen Texten und unterschiedlichen Medien er
+            schlägt, und welche Auswirkungen das auf einen Editionsprozess hat, der diesen
+            Pfaden nachgehen will, um sie den Nutzern zu präsentieren. Hinzu kommen Fragen
+            der Einbindung externer Ressourcen, audiovisuellen Materials und der
+            Berücksichtigung von Urheberrechtsfragen.
+            Durch die beiden Zielmedien ergibt sich ein unterschiedlicher Bedarf in der Tiefe der TEI-Auszeichnung der jeweiligen Dokumente. Die Ansprüche an die Auszeichnung für ein Buch sind selbstverständlich andere als die, für eine digitale Edition, in der die Grenzen lediglich durch die editorischen Kriterien gezogen werden. Das Erforderliche kann aufgenommen werden, während auf zu weit Entferntes oder Weiterführendes nur hingewiesen wird. Aus diesem Grund wird für jedes Werk eine vollausgezeichnete „Masterdatei“ erstellt, aus der sich beide Versionen speisen und somit dieselbe Textgrundlage haben, wodurch eine doppelte Datenhaltung vermieden wird. Neben der Erfassung der verschiedenen Varianten finden sich in dieser Datei sowohl der text- als auch der historisch-kritische Kommentar. Das Ziel der Buchfassung, nämlich eine lesbare Ausgabe zu sein, die das zum Textverständnis Notwendige enthält, steht dem der digitalen Edition gegenüber, welche losgelöst der analogen Grenzen funktioniert. Hier kann vom Optimum ausgegangen werden und dann durch den Nutzer entsprechend seiner Fragestellung reduziert werden. Durch Zuweisung von Attributen ist es möglich per XSL Transformation das gewünschte Endprodukt zu generieren. Dazu werden einerseits einige der typischen TEI-Elemente als „Filtersignal“ genutzt, andererseits ein „Digital“- oder „Print“-Attribut, welches in dem Prozess wieder entfernt wird. Die so generierte print-XML wird per XSL-FO in PDF umgewandelt, um eine orientierende Vorlage für den Verlag zu erhalten, der diese beiden Dateien für den Satz erhält. Nach dem gleichen Prinzip wird die Digital-XML als Grundlage der digitalen Edition generiert.
+            Künftig wird eine weitere Auszeichnungsebene hinzukommen. In der praktischen Arbeit hat sich gezeigt, dass eine zusätzliche semantische Auszeichnung sinnvoll ist. Daher konzipieren wir zurzeit eine Möglichkeit neben der TEI- auch eine semantische Auszeichnung vorzunehmen. In welcher Ebene dies geschieht ist noch in der Überlegung. Anzunehmen ist ein erneutes Transformationsszenario.
+            Johnsons Arbeitsmethoden bieten einen sehr großen Anreiz zur Vernetzung und Visualisierung in der digitalen Präsentation. Intertextualität und Collage sind nur zwei von vielen Termini, die sich auf ihn anwenden und im digitalen Raum auf eine Art und Weise präsentieren lassen, wie es in einem Buch nicht möglich wäre. So können Zusammenhänge sicht- und erfahrbar gemacht werden, die sonst nur Abstrakt zu erfassen wären.
+            Dazu gehört auch die angestrebte Multimedialität. Johnson hielt vielerlei Lese- und sonstige Reisen ab, welche zum Teil als Video- oder Audiodokument vorliegen. Im Zusammenspiel mit seinen Manuskripten – er hat oft dokumentiert, wo er was geschrieben hat – lässt sich die Entstehung seines Œuvres auch räumlich nachverfolgen und etwaige Koinzidenzen erforschbar machen.
+            Die spätere Präsentation dieser Ergebnisse wird sich der Nutzer gemäß seinen Bedürfnissen komplett selbst anpassen können. Die Textvarianten, die von Interesse sind, werden sich nach eigenem Wunsch anordnen, zu- oder abschalten lassen. Die einzelnen Anzeigeelemente werden also nicht in einem Layout „gefangen“ sein, sondern können durch den Nutzer selbst angeordnet werden. Entscheidungen, welche Varianten wie nebeneinander gelegt werden und ob ein Faksimile hinzugeschaltet werden soll liegen in der Hand des Benutzers, der seinen Schreibtisch in der Art anordnen kann, wie es seiner Arbeit dienlich ist.
+         
+      
+   
+
+

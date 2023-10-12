@@ -1,0 +1,170 @@
+
+        
+            
+                Theoretical background
+                Periodization is one of the fundamental topics of literary studies. As Rene Wellek puts it in one of the most notorious and important books of the last century theory of literature: “the concept of period is certainly one of the main instruments of historical knowledge”, meaning, of course, literary-historical knowledge. 
+                    (Wellek, 1956: 268). And yet is one of the most controversial and debated:
+                
+                It is virtually impossible to divide periods according to dates for, as [Jurij] Lotman points out, human culture is a dynamic system. Attempts to locate stages of cultural development within strict temporal boundaries contradict that dynamism. 
+                    (Bassnett, 2013: 41)
+                
+                How it comes that we can hypostatize the dynamic nature of cultural systems, superimposing on them a scalar chronology? How can we say, as Jameson puts it, that Ulysses is something that happened in 1922 
+                    (Jameson, 1971: 313)? Following Meneghelli 
+                    (Meneghelli, 2013), we can individuate at least 4 critical issues, or even aporias in literary periodization:
+                
+                
+                    Historical categories are related to cultural and social phenomena and overlap and interact in complex ways, determining 
+                        anisochronies and 
+                        dischronies;
+                    
+                    Most if not all literary-historical categories have an ontological and trans-historical status and meaning embedded in them (take for instance Romanticism or Modernism);
+                    Historical categories interact with and are dependent on geospatial ones, resulting in a multiplicity of asynchronous periodizations;
+                    The notion of a historical category in literature is strictly associated with the canonical corpus of texts that are considered representative of a period, and the “dialectics between these two poles, period and canon, are complex and manifold” (Meneghelli, 2013: 3).
+                
+                This last point is particularly relevant: literary periodization is usually the product of a process of generalization and synthesis, within a historical and social horizon, of the small-scale critical and interpretive practices that characterize the study of literary texts. Being bound to idiosyncratic hermeneutical practices and to the “epistemology of close reading”, periodization suffers from all the pitfalls and limitations of that approach. In the last two decades, the landscape of literary and cultural studies has been enriched by a methodological perspective that is based on a quantitative approach. Among the various disciplinary labels that identify this current in studies, the most common is distant reading, introduced by Franco Moretti in his work on World Literature 
+                    (Moretti, 2000) and subsequently extended to denote (even retroactively) the entire tradition of quantitative literary studies 
+                    (Moretti, 2013; Underwood, 2019; Piper, 2018; Jockers, 2013). In this framework literary texts are elements of a population whose synchronic and diachronic characteristics should be empirically investigated on a molar scale, adopting statistical-probabilistic and computational methods. This would require the move from 
+                    interpretation to 
+                    explanation as the primary methodology of scholarly inquiry in the cultural and literary domains 
+                    (Ciotti, 2021). 
+                
+                The possible contribution of a distant reading approach to the literary periodization problem, has been previously explored by some important studies, like 
+                    (Jockers, 2013: chap. 6), 
+                    (Piper, 2018: chap. 4), 
+                    (Underwood, 2019) for English narrative fiction, all based on a supervised classification approach; while 
+                    (Jannidis and Lauer, 2014) for German literature adopted a stylometric method. This paper explores the results of a mainly explorative and unsupervised analysis of a corpus of 19
+                    th and 20th century Italian narrative fiction.
+                
+            
+            
+                The corpus and the methodology
+                The main research hypothesis is if adopting computational quantitative methods, it’s possible to identify time-based groupings in a set of texts distributed over a long historical period. Related to this there is the question of whether those eventual groupings are aligned with traditional historical periodization. The corpus consists of 660 Italian novels and short novels written between 1810 and 2000 of different aesthetic "levels", canonization status, genre, dimension, and authors’ gender. Admittedly, this corpus is still far from being adequate and well balanced, mainly due to the uneven chronological distribution, but it is sufficient for an exploratory inquiry.
+                I wanted to test if the corpus can be clustered in a chronological sensible way using an algorithmic approach without presuming any prior categorization: this explains the preference for unsupervised methods in this research. In particular, I have adopted two different approaches, based on different assumptions, analytical techniques and features selection:
+                
+                    bootstrap consensus network, following (Eder, 2017) that applies phylogenetic consensus networks method to MFW based clustering;
+                    lexicon-based text analysis and subsequent K-Means clustering of the results.
+                
+                Fort the first experiment I have adopted the popular stylometric R package 
+                    Stylo
+                    (Eder et al., 2016) to generate the consensus network dataset, conflating ten hierarchical clusterings generated comparing from 100 to 1000 most frequent words. The resulting output dataset is imported into the network analysis tool Gephi 
+                    (Bastian et al., 2009) and each node is associated with an attribute that specifies its decade of composition. Then modularity is calculated with a resolution set at 4, resulting in 10 modules, and the final layout is generated applying the layout algorithm Force Atlas 2.
+                
+                The second approach is based on the text analysis of the corpus with the tool 
+                    Linguistic Inquiry and Word Count (
+                    LIWC) 
+                    (Pennebaker et al., 2015). For each text, LIWC produces a vector containing the relative frequencies of various words-classes (E.g.: "Affect Words", "Cognitive Processes", "Perceptual Processes", "Biological Processes"....). The final output is a low dimensional document matrix, to which I have applied a K-Means clustering process, adopting the Python implementation of the algorithm in the 
+                    SciKit-Learn library 
+                    (Pedregosa et al., 2011). The choice of the number of clusters has been done evaluating 20 different models with 
+                    Elbow method and 
+                    Silhouette Score tests, which both indicated an optimal value of 4 clusters.
+                
+            
+            
+                Results and future directions
+                The results of the stylometric approach represented in Fig.1 shows that the texts clustered in time sensible way are only those written in the second half of the 20
+                    th century (that in the network have a blue color tone), while texts written in the first and second half of the 19
+                    th century e in the first half of 20
+                    th are not clearly separated, with the exception of the island in the upper right part of the graph, which is mostly composed of canonical Italian modernist texts.
+                
+                
+                    
+                    Consensus Network of the corpus: red 1810-1860; green 1860-1900; yellow 1900-1940; blue 1940-2010
+                
+                This overall result is confirmed by the K-Means approach. For my analysis I have produced two matrices using the LIWC dictionary for Italian 
+                    (Agosti and Rellini, 2007):
+                
+                
+                    a matrix with all LIWC lexical categories;
+                    a matrix limited to the following word categories: Verbs, Pronouns, orthographic signs of represented speech, and categories related to emotional and cognitive activity.
+                
+                In this way I can test an additional hypothesis very common in literary-historical and critical scholarship: the linguistic sphere of the cognitive and emotional dimension is a characteristic feature of the evolution of narrative along the nineteenth and twentieth centuries, namely it’s a characteristic of the transition to the Modernism. While the K-Means clustering of the first matrix has very little relation to chronology, the second one provides clear indicators of temporal segmentation (Figure 2). Therefore, we can say that the incidence of the lexicon related to the sphere of thought/consciousness/emotivity is a signal of an evolutional pattern in the Italian novel. Anyway, also in this case the more clearly time-based cluster is that of the text written in the second half of the 20
+                    th century.
+                
+                
+                    
+                    K-Means clusters in the document matrix restricted to the cognitive/emotional lexicon
+                
+                In conclusion, the first analysis in general confirms for Italian literature the limited role of the time dimension for clustering texts on a purely stylometric base already observed by 
+                    (Jockers, 2013: chap. 6), as compared to authorship and even author gender. Instead, there is some evidence that quantitative empirical analysis partially confirms the relevance of cognitive/emotional lexicon in the evolution of literature. In this direction, I think that a fruitful development of the research will require a more effective way to identify the presence of cognitive/emotional attitudes in texts. To this end, we are training a streamlined Italian BERT language model to identify the relevant textual blocks, and the provisional results are promising.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Agosti, A. and Rellini, A. (2007). The Italian LIWC dictionary. 
+                        Austin, TX: LIWC. Net.
+                    
+                    
+                        Bassnett, S. (2013). 
+                        Translation Studies. London: Routledge.
+                    
+                    
+                        Bastian, M., Heymann, S. and Jacomy, M. (2009). Gephi - The Open Graph Viz Platform https://gephi.org/ (accessed 26 November 2018).
+                    
+                    
+                        Ciotti, F. (2021). Distant reading in literary studies: a methodology in quest of theory. 
+                        TESTO & SENSO(23).
+                    
+                    
+                        Eder, M. (2017). Visualization in stylometry: Cluster analysis using networks. 
+                        Digital Scholarship in the Humanities, 
+                        32(1): 50–64 doi:10.1093/llc/fqv061.
+                    
+                    
+                        Eder, M., Rybicki, J. and Kestemont, M. (2016). Stylometry with R: A Package for Computational Text Analysis. 
+                        The R Journal, 
+                        8(1): 107–21.
+                    
+                    
+                        Jameson, Fredric. (1971). 
+                        Marxism and Form : Twentieth-Century Dialectical Theories of Literature. Princeton (N.J.): Princeton University Press.
+                    
+                    
+                        Jannidis, F. and Lauer, G. (2014). Burrows’s Delta and Its Use in German Literary History. In Erlin, M. and Tatlock, L. (eds), 
+                        Distant Readings. Topologies of German Culture in the Long Nineteenth Century. Rochester: Camden House, pp. 29–54 gerhardlauer.de/index.php/download_file/view/335/1/.
+                    
+                    
+                        Jockers, M. L. (2013). 
+                        Macroanalysis: Digital Methods and Literary History. (Topics in the Digital Humanities). University of Illinois Press 
+                    
+                    
+                        helli, D. (2013). Periodization, Comparative Literature, and Italian Modernism. 
+                        CLCWeb: Comparative Literature and Culture, 
+                        15(7) doi:10.7771/1481-4374.2386. https://docs.lib.purdue.edu/clcweb/vol15/iss7/12 (accessed 8 December 2021).
+                    
+                    
+                        Moretti, F. (2000). Conjectures on World Literature. 
+                        The New Left Review http://newleftreview.org/A2094.
+                    
+                    
+                        Moretti, F. (2013). 
+                        Distant Reading. London: Verso http://www.amazon.de/Distant-Reading-Franco-Moretti/dp/1781680841.
+                    
+                    
+                        Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., et al. (2011). Scikit-learn: Machine Learning in Python. 
+                        Journal of Machine Learning Research, 
+                        12: 2825–30.
+                    
+                    
+                        Pennebaker, J. W., Boyd, R. L., Jordan, K. and Blackburn, K. (2015). The Development and Psychometric Properties of LIWC2015. University of Texas at Austin doi:10.15781/T29G6Z. http://hdl.handle.net/2152/31333 (accessed 8 December 2021).
+                    
+                    
+                        Piper, A. (2018). 
+                        Enumerations: Data and Literary Study. Chicago ; London: The University of Chicago Press.
+                    
+                    
+                        Underwood, T. (2019). 
+                        Distant Horizons: Digital Evidence and Literary Change. Chicago: The University of Chicago Press.
+                    
+                    
+                        Wellek, R., Warren, Austin,, (1956). 
+                        Theory of Literature. New York: Harcourt, Brace & World.
+                    
+                
+            
+        
+    
+

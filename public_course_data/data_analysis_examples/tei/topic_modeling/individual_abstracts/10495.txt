@@ -1,0 +1,112 @@
+10495	2016	
+      
+         In diesem Poster wird die digitale Edition der Excerpta
+        Constantiniana (im Weiteren Excerpta), einer
+        byzantinischen Geschichtsenzyklopädie, die im 10. Jahrhundert in Konstantinopel in
+        Altgriechisch verfasst wurde, vorgestellt. 
+         Zugrunde liegt ein disziplinspezifisches Forschungsprojekt im Bereich Klassische und Byzantinische Philologie, dessen Ziel darin besteht, die Edition einer wichtigen Quelle der byzantinischen Geschichtsschreibung vorzulegen. Das Ziel dieses Posters ist fachübergreifend und besteht darin, die Rolle des Herausgebers sowie das Konzept der Präsentation einer historischen Quelle in digitaler Umgebung zu definieren.
+         Bei den Excerpta handelt es sich um ein groß angelegtes,
+        mehrere Bände umfassendes Werk. Es besteht aus mehreren Tausend einzelnen Auszügen
+        (Exzerpten), die inhaltlich aus etwa drei Dutzend antiken und byzantinischen
+        Geschichtswerken stammen. Die erhaltenen Reste umfassen etwa 560 000 Wörter (es wird
+        vermutet, dass fast das Zehnfache verlorengegangen ist). Die beiden erhaltenen
+        Originalhandschriften der Excerpta (je ein Band) zeichnen
+        sich durch ein bemerkenswertes Layout aus: zum Zweck der Navigation durch den Inhalt
+        wurden an deren Rändern mehrere hundert Notizen und Piktogramme angebracht (s.
+        Abbildung 2). 
+         Die Edition des Gesamtwerks befindet sich in der Vorbereitungsphase; exemplarisch
+          wurde bereits ein Abschnitt aus den Excerpta ediert, und zwar
+          24 Seiten aus der Originalhandschrift Vaticanus graecus 73
+          (ca. 9 000 Wörter). Bei der Handschrift handelt es sich um einen Palimpsest: der
+          Text der Excerpta wurde etwa im 14. Jahrhundert ausradiert
+          und mit einem anderen Text überschrieben, sodass der frühere Text heute nur mühsam
+          lesbar ist (s. Abbildung 1). 
+         Die Standardlösung wäre es, das Faksimile der Handschrift zu publizieren und eine historisch-kritische Edition des Texts anzufertigen. Die Publikation von dermaßen beschädigten Seiten erwies sich jedoch als wenig ergiebig. Auch die traditionelle Art der Textgestaltung im Rahmen einer historisch-kritischen Edition war kaum für die Wiedergabe der
+            Excerpta geeignet. So bedurfte es beispielsweise einer originalgetreuen Reproduktion der Notizen und Piktogramme an den Rändern, die einen wichtigen Beitrag für das Verständnis des Textes leisten.
+          
+         Die Art der Gestaltung der Excerpta war ausschlaggebend bei
+          der Entwicklung des Konzepts dieser Digitaledition. Es wurde eine pluralistische Herangehensweise an den Text zugrunde gelegt, die
+          gleichzeitig mehrere Ansichten (Wiedergabemöglichkeiten)
+          desselben Textes ermöglicht. Dabei wurden drei Grundansichten ausgewählt: (1) die
+          digitale Rekonstruktion der Handschrift (topographische
+          Edition), (2) die diplomatische Abschrift (diplomatische
+          Edition) sowie (3) die normalisierte, historisch-kritische Version des
+          Textes (digitale historisch-kritische Edition). 
+         
+            
+               Topographische Edition: Die topographische Edition umfasst
+              die digitale Rekonstruktion des Originals und die zweidimensionale, detaillierte
+              Darstellung der Oberfläche. Das bedeutet, dass der ausradierte Text der
+              Handschrift, stark vergrößert, auf Touchscreen mit Stylus nachgemalt wird (s.
+              Abbildungen 1 und 2). Diese Methodik wurde hier m.W. zum ersten Mal angewendet
+              und wird daher im Poster vorgestellt. Sie kombiniert menschliches Expertenwissen
+              mit den aktuellen technischen Möglichkeiten. 
+            
+               Diplomatische Edition: Unter einer diplomatischen Edition
+                wird eine möglichst originalgetreue Abschrift einer Handschrift verstanden. In
+                dieser Ansicht wird die Gestaltung der Originalhandschrift, d. h. vor allem das
+                Layout und die Navigationselemente des ursprünglichen Texts, visualisiert (s.
+                Abbildung 2). Nach Möglichkeit wird die ursprüngliche Orthographie wiedergeben.
+                Hier ist auch die Option vorgesehen, innerhalb derselben Ansicht auf
+                normalisierte Orthographie umzuschalten (dies ermöglicht z. B. die Wahl zwischen
+                mittelalterlicher und moderner Zeichensetzung, zwischen der Schreibweise mit
+                Abbreviaturen oder mit deren Auflösung u. ä.) 
+            
+               Digitale historisch-kritische Edition: Diese Ansicht hat
+                  das Layout einer modernen Edition, die Orthographie wird weitgehend
+                  normalisiert. Außerdem wird unter dieser Ansicht als Option die Möglichkeit der
+                  Hervorhebung unterschiedlicher Textinhalte angeboten, wie z. B. von Zitaten,
+                  Orten, Personennamen, Völkerbezeichnungen usw. In diese Ansicht gehören ferner
+                  der kritische Apparat sowie Indices mit Namen, Orten usw. 
+         
+         Technisch wird das folgenderweise implementiert. Die topographische Edition wird in Form von Bildern hergestellt. Die Transkription der Handschrift für die diplomatische und historisch-kritische Edition wird in TEI-XML angefertigt. Erscheinungen, die mit XML-Tags kodiert werden, werden in größere
+                  Blöcke aufgeteilt. Die wichtigsten Blöcke sind:
+                
+         
+            
+               Physischer Zustand der Handschrift und physische Struktur des
+                      Texts: physische Schäden der Handschrift, Lesbarkeit des Textes,
+                      Seiten- und Zeileneinteilung an den Stellen, wo sie nicht mit der logischen
+                      Struktur des Texts in Verbindung stehen (s. u.); 
+            
+               Logische Struktur des Texts sowie alle Elemente des Layouts,
+                          welche die Navigation im Text unterstützen: Einheiten wie Bände,
+                          Kapitel, Exzerpte; Elemente der Gestaltung, die auf diese Einteilung verweisen
+                          (z. B. größere Leerräume im Text); Piktogramme und Randnotizen; 
+            
+               Orthographie der Handschrift: originale Zeichensetzung, Akzentuierung, Abbreviaturen und Ligaturen;
+                          
+            
+               Normalisierte Orthographie: moderne Zeichensetzung, Worttrennung (fehlt in der Handschrift), Groß- und Kleinschreibung nach modernen Normen.
+                          
+            
+               Inhalte im Text: Zitate, Namen, Orte, Völker u. a. 
+         
+         Die Webdarstellung wird auf der Basis von XSLT erstellt. Für jede Ansicht wird einzeln modelliert, wie die einzelnen Blöcke der Tags transformiert werden sollen. So ist beispielsweise für das Layout der diplomatischen Edition der physische Zustand der Handschrift und die physische Struktur des Texts maßgebend, während für das Layout der historisch-kritischen Edition die logische Struktur des Texts entscheidend ist. Die endgültige Darstellung wird über Cascading Stylesheets (CSS) gestaltet. Es ist geplant, die Edition bis Mitte des Jahres 2016 online zu stellen.
+                            
+         
+         
+            
+            
+               Abb. 1: Der Prozess der graphischen Rekonstruktion des
+                            Palimpsests
+         
+         
+            
+            
+               Abb. 2: Die topographische Edition
+         
+         
+            
+            
+               Abb. 3: Die diplomatische Edition
+         
+         
+            
+            
+               Abb. 4: Die historisch-kritische Edition
+         
+      
+   
+
+

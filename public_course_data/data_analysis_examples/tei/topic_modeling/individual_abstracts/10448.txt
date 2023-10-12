@@ -1,0 +1,114 @@
+10448	2016	
+      
+         
+            Ziel: Erfassung und Analyse literarischer Topographien
+            Der Fokus der Untersuchung liegt auf der literarischen Repräsentation von Raum.
+          Bisherige Untersuchungen ihres Werks haben erwiesen, dass Aichingers Bezugnahmen
+          auf Orte und Ereignisse in Wien zentrale Bedeutung zukommt (Fässler 2013). Dabei
+          fällt auf, dass Aichinger Raumbezüge in verschiedenen Phasen ihres Werks auf
+          ganz unterschiedliche Weise elaboriert: Der Wienbezug ihres ersten Romans, Die größere Hoffnung (1948), ist für den Leser / die
+          Leserin unzweifelhaft erkennbar, obwohl Aichinger konsequent auf die Nennung
+          identifizierbarer Ortsnamen verzichtet. Im mittleren Werk werden Ortsbezüge
+          zunehmend abstrakt; in ihren spätesten Texten hingegen häufen sich exakte
+          Ortsangaben im Stadtraum Wien. Ziel des Projekts ist es, grundlegende Strukturen
+          in Aichingers Referenzierung auf Orte zu ermitteln und deren Zusammenhang zur
+          historischen Erfahrung herauszuarbeiten, deren Darstellung im Zentrum ihres
+          Werks steht. Zu diesem Zweck sollen alle Angaben zu Ort, Zeit und Person in
+          ihren Texten so codiert werden, dass sie einer maschinellen Abfrage zugänglich
+          und damit sowohl systematisch als auch vollständig evaluiert werden können.
+         
+         
+            Arbeitsschritte
+            
+               Digitale Texterfassung
+               Textgrundlage ist die achtbändige Ausgabe der Werke Ilse Aichingers (S.
+              Fischer Verlag 1991) sowie die danach erschienenen Einzelbände. Diese Bände
+              wurden gescannt und mittels OCR (Optical Character Recognition) erfasst und
+              dadurch maschinenlesbar gemacht. Als Vergleichskorpora sollen zusätzlich die
+              davon abweichenden Textfassungen der Erstausgabe des Romans sowie der
+              zwischen 2000 und 2004 in Tageszeitungen publizierten Texte erfasst
+              werden.
+            
+            
+               Digitale Texterschließung
+               Im zweiten Arbeitsschritt wird eine TEI-konforme Datei erstellt, in der die
+                Texte mithilfe von Standards wie RDF (Resource Description Framework), XML
+                (Extensible Markup Language) und PoS (Part-of-Speech-Tagging) codiert und
+                dadurch der maschinellen Abfrage durch Abfragesprachen wie SPARQL (SPARQL
+                Protocol And RDF Query Language) zugänglich gemacht werden. Im Hinblick auf
+                den primären Fokus der Untersuchung, die Erfassung und Analyse der
+                literarischen Topographien Aichingers, werden vorrangig Personennamen sowie
+                Orts- und Zeitangaben kodiert. Außerdem ist eine Analyse anhand semantischer
+                Felder geplant, wofür eine Vernetzung mit unterschiedlichen Datenbanken (z.
+                B. Dornseiff) vorgesehen ist. Von vornherein soll so gearbeitet werden, dass
+                die Möglichkeit weitere bzw. speziellere Codierungen zu ergänzen offen
+                bleibt.
+            
+            
+               Erhebung und Einpflege zusätzlicher Daten / Metadaten
+               Ergänzend zur digitalen Erfassung und Erschließung der Texte werden weitere
+                  Metadaten eingebracht. Dies können textgenetisch relevante Daten sein wie
+                  Entstehungs- und Publikationsdaten, oder Sacherläuterungen, wie sie in
+                  Apparaten wissenschaftlicher Editionen oder Kommentaren üblich sind, sowie
+                  Hinweise auf Varianten, Querverweise, Illustrationen etc. Ein Teil dieser
+                  Daten ist durch Recherchen in Wiener Archiven oder am Aichinger-Vorlass im
+                  Deutschen Literaturarchiv (DLA) in Marbach zu erheben. Die Auszeichnung
+                  durch RDF ermöglicht aber auch die Verlinkung mit online Datenbanken und
+                  damit den Anschluss an das semantic web (Hitzler et al. 2008; Ivanovic /
+                  Frank 2015). 
+            
+         
+         
+            Darstellung der Ergebnisse
+            Das Textkorpus :aichinger soll die Basis bilden für die Durchführung von Abfragen
+                  und Analysen, die eine präzise, systematische und vollständige Evaluierung der
+                  Raumbezugnahmen im Gesamtwerk der Autorin ermöglichen soll. Erfassbar werden
+                  dadurch beispielsweise Personenkonstellationen in Verbindung mit Orten sowie
+                  Frequenzen der Nennung bestimmter Orte resp. Wege in Korrelation zur
+                  beschriebenen Zeit wie zur Zeit der Textabfassung. Diese Ergebnisse verlangen
+                  unterschiedliche Darstellungsformen. So sind Diagramme möglich, oder Wordclouds,
+                  die wiederum Häufungen oder Übereinstimmungen bzw. Korrelationen darstellen
+                  können. Auf der Basis der RDF Codierung lassen sich z. B. maschinell Karten
+                  generieren, in denen die erwähnten Orte oder Wege der in den Texten genannten
+                  Figuren u. a. aufscheinen. Die kartographische Darstellung ermöglicht es darüber
+                  hinaus Leerstellen ihres Werkes (nie genannte Orte oder Zonen) oder verdeckte
+                  Strukturen (die Wientopographie, die der für Aichinger maßgebliche Film Der
+                  Dritte Mann darstellt) sichtbar zu machen. Insbesondere anhand solcher Karten
+                  wird das Poster das Konzept und die Analysemöglichkeiten unseres Projektes
+                  darstellen.
+         
+         
+            Prototyp
+            Das Projekt dient der Sichtbarmachung und besseren Analyse der raumrelevanten Strukturen im Werk Aichingers und deren Relevanz für die erinnerungskulturell motivierte Schreibweise, der die Autorin verpflichtet ist. Das Projekt hat insofern paradigmatischen Charakter, als die an diesem Beispiel entwickelten Methoden den Status eines Prototyps haben und auch bei der Analyse anderer Textkorpora Anwendung finden sollen.
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Aichinger, Ilse (1991): Werke in acht
+                      Bänden. Herausgegeben von Richard Reichensperger (Die größere
+                      Hoffnung / Der Gefesselte / Eliza Eliza / Schlechte Wörter / Kleist, Moos,
+                      Fasane / Auckland / Zu keiner Stunde / Verschenkter Rat). Frankfurt / Main:
+                      S. Fischer. 
+               
+                  Fässler, Simone (2011): Von Wien
+                      her, auf Wien hin. Ilse Aichingers „Geographie der eigenen
+                      Existenz.“ Wien: Böhlau.
+               
+                  Hitzler, Pascal / Krötzsch, Markus
+                        / Rudolph, Sebastian (2008): Semantic
+                        Web. Berlin / Heidelberg: Springer. 
+               
+                  Ivanovic, Christine / Frank,
+                          Andrew (2015): „Auf der Suche nach dem erfüllten Raum: Digitale
+                          Korpusanalyse in der Literaturwissenschaft am Beispiel Ilse Aichinger“, in:
+                          Tagung der Digital Humanities im deutschsprachigen
+                            Raum, Graz. 
+            
+         
+      
+   
+
+

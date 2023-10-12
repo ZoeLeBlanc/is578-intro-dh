@@ -1,0 +1,94 @@
+11059	2020	
+      
+         Die kulinarische Tradition ist eine der prägendsten Elemente der europäischen Kultur und sie stellt einen großen Teil der nationalen Identitäten dar. In den letzten Jahrzehnten kam die Forschung zu zwei wichtigen Schlussfolgerungen in Bezug auf dieses Thema: Erstens, es gibt keine quantitativen Studien über die Herkunft und die Bildung von regionalen Küchen in Europa. Zweitens, im Mittelalter entstehen wesentliche Quellen: Manuskripte mit tausenden von Kochrezepten. Damit kann das Mittelalter als die Wiege der modernen europäischen Küche angesehen werden. Auf dem europäischen Kontinent bilden lateinische, mittelfranzösische und frühneuhochdeutsche Rezepte den Großteil der kulinarischen Überlieferung.
+         Das vorliegende internationale Projekt (ANR-17-CE27-0019-01, fwf I 3614) zielt darauf ab, die interkulturelle Forschung der mittelalterlichen Kochrezepte und deren Wechselbeziehung mithilfe eines interdisziplinären Ansatzes zu verwirklichen. Das Projekt nimmt die Kochrezeptüberlieferung von Frankreich und den deutschsprachigen Ländern als Korpus – dieses umfasst mehr als 80 Manuskripte und an die 8000 Rezepte – und untersucht sie in Hinblick auf ihre Entstehung, ihre Beziehung untereinander und ihre Migration durch Europa. Der Vergleich der französischen und deutschen Kulinargeschichte eignet sich besonders für diese Aufgabe, da Frankreich seit jeher einen kulturell prägenden Einfluss auf deutschsprachigen Völker hatte!
+         Die Partner, das Zentrum für Informationsmodellierung der Universität Graz und das Laboratoire CESR (Centre d’Etudes Supérieures de la Renaissance) der Universität Tours werden diese mehrsprachigen Texte nach modernen Standards aufarbeiten und sie mit aktuellen quantitativen und qualitativen Forschungsmethoden untersuchen. Für eine computergestützte Analyse werden die Rezeptsammlungen und die darin enthaltenen Texte und deren Metadaten in TEI/XML (Digitale Transkription und Edition) modelliert und mit Semantic Web Technologien analysiert (Digitale Annotation und Datenvisualisierung). Die Daten werden einer Langzeitarchivierungsinfrastruktur (GAMS, Zentrum für Informationsmodellierung Graz) zugeführt, in der sie weiter erforscht werden können. Alle Rezepte werden mithilfe von Vokabularien für Zutaten, Kochprozesse und Kochutensilien sowie kulturhistorisch relevanten Metadaten (z. B. in Bezug auf religiöse, kulturelle oder medizinische Aspekte) angereichert. Aufgrund dieser Informationen wird das Projekt über die Sprachgrenzen hinweg konkurrierende oder abweichende Essgewohnheiten, Textmigration sowie den gegenseitigen Einfluss der Nachbarländer auf ihre jeweilige Küche zu Tage fördern. Für die Analyse der deutschsprachigen Texte werden außerdem NLP-Methoden für historische Sprachstufen herangezogen, um Textverwandtschaften innerhalb dieser Überlieferung untersuchen zu können. Die Forschungsdaten und die Auswertungsergebnisse werden die Grundlage für eine räumliche und zeitliche Visualisierung und statistische Auswertung bilden, die neue Ansätze zur Interpretation des historischen und kulturellen Vermögens fördern wird.
+         Die im Projekt erarbeiteten Workflows und Daten werden ganz im Sinne des Open Science Gedanken und den FAIR-Prinzipien für die Nachnutzung zur Verfügung gestellt:
+         Der Transkriptionsworkflow und die Transkriptionsprinzipien (Theorie und Praxis, in Kooperation mit KONDE) können zur Gänze nachgenutzt werden. Da die Manuskripte mit Transkribus
+                 transkribiert wurden, steht ein trainiertes HTR-Modell zur Verfügung mit dem eine automatische Handschriftenerkennung von ähnlichen Texten denkbar ist. Das Annotationsvokabular (Zutaten, Speisen, Küchengeräte, Zubereitungsweisen) wird samt der zugewiesenen semantischen Wikidata-Konzepte zur Verfügung gestellt und stellt somit eine essentielle Basis für die Forschung im Bereich Kulinarhistorik dar. Die Konzepte in Wikidata werden falls vorhanden kontrolliert und gegebenenfalls mit weiteren Daten (wie etwa Links zu relevanten Ontologien wie FoodO oder SNOMED) von unserer Seite angereichert. Noch nicht vorhandene Konzepte werden von uns neu erstellt und mit allen nötigen Daten (Statements) versehen. Die Nutzung von Wikidata verfolgt neben praktischen Überlegungen hauptsächlich das Ziel, die im Projekt gewonnenen Daten auf einfache Art und Weise für die Community bereitzustellen und eine weitere Bearbeitung dieser Daten zu ermöglichen. Überdies hinaus werden von uns auch die Annotationsskripte (Python und XSLT) für die Übertragung der Annotationsvokabularien nach TEI/XML zum Download angeboten. 
+            
+         Die überlieferten Texte werden durch eine hyperdiplomatische Neutranskription der historischen Quellen einheitlich erfasst und stehen als TEI/XML ebenfalls zur weiteren Nutzung zur Verfügung. Die Quellentexttranskription verzeichnet dabei nicht nur das unterschiedliche Schriftzeicheninventar, sondern auch alle textstrukturierenden Elemente. Das gesamte Zeicheninventar ist in einer nach den Richtlinien der TEI erstellten Zeichenbeschreibung erfasst. Die Beschreibung stützt sich dabei auf die theoretischen Ergebnisse zur Beschreibung von Zeichen aus dem DigiPal-Projekt und verwendet außerdem die Zeichenidentifikatoren der Medieval Unicode Font Initiative (vgl. Böhm, Klug 2020). Die so produzierten Daten sind nicht nur der Ausgangspunkt für die wissenschaftlichen Fragestellungen im Projekt, sondern bieten eine solide Grundlage für viele weitere Forschungsfragen aus Germanistik/Linguistik, Paläographie usw. Die Textdaten werden für eine Nutzung durch NLP Tools auch als Plaintext angeboten und die Handschriftenabbildungen sind je nach Nutzungsbedingungen der Bibliotheken frei verfügbar. 
+            
+         Darüber hinaus wird aus dem CoReMA-Projekt heraus ein Modell für die Integration weiterer Texte in die Forschungsumgebung bereitgestellt. Das Projekt soll fachliche Impulse für alle betroffenen Disziplinen der mittelalterlichen und frühneuzeitlichen Geschichte, Kulinargeschichte, Digitale Edition und Digital Humanities liefern.
+      
+      
+         
+            
+               http://www.digitale-edition.at/
+            
+            
+               https://transkribus.eu/Transkribus/
+            
+            
+               https://www.wikidata.org
+            
+            
+               http://foodon.org/
+            
+            
+               https://browser.ihtsdotools.org/
+            
+            
+      Describing Handwriting I-VII; http://www.digipal.eu/blog
+            
+            
+               https://folk.uib.no/hnooh/mufi/
+            
+         
+         
+            
+               Bibliographie
+               
+                  Adamson, M. W. (Ed.)  (1995): Food in the Middle Ages. A Book of Essays. New York, London: Garland. Adamson, M. W. (Ed.). (2002). Regional Cuisines of Medieval Europe: A Book of Essays. New York, London: Routledge.
+      
+               
+                  Amoia, M., Martínez, J.M.M.  (2019): SaCoCo Diachronic Corpus [WWW Document]. URL 
+	http://fedora.clarin-d.uni-saarland.de/sacoco/
+	(accessed 1.7.20).
+      
+               
+                  Böhm, A. & Klug, H.: Quellenorientierte Aufbereitung historischer Texte im Rahmen digitaler Editionen: Das Problem der Transkription in mediävistischen Editionsprojekten. In: [Titel steht noch nicht fest] Hrsg. von Ingrid Bennewitz und Martin Fischer (= Bamberger interdisziplinäre Mittelalterstudien.) [in Vorbereitung]
+      
+               
+                  Carlin, M., & Rosenthal,
+	J. T. (Eds.).  (1998): Food and Eating in Medieval Europe. London: Hambledon Press.
+      
+               
+                  Flandrin, J.-L.  (1984): «Internationalisme, nationalisme et régionalisme dans la cuisine des XIVe et XVe siècles: le témoignage des livres de cuisine». In Manger et boire au Moyen âge. Actes du Colloque de Nice (15-17 octobre 1982). (pt. 2, p. 75-91). Paris.
+      
+               
+                  Flandrin, J.-L. & Hyman, P.  (1988): “Regional tastes and cuisines: Problems, documents, and discourses on food in Southern France in the 16th and 17th centuries”. Food and Foodways 1-3, p. 221-251.
+      
+               
+                  Gloning, T.,  (2000): Monumenta Culinaria et Diaetetica Historica. Corpus of culinary & dietetic texts of Europe from the Middle Ages to 1800. Corpus älterer deutscher Kochbücher und Ernährungslehren [WWW Document]. URL http://www.staff.uni-giessen.de/gloning/kobu.htm
+	(accessed 1.7.20).
+      
+               
+                  Hieatt, C.  (1995): Sorting through the Titles of Medieval Dishes: What Is, or Is Not, a “Blanc manger”. In M. W. Adamson (Ed.), Food in the Middle Ages. A Book of Essays. (pp. 25-43). New York, London: Garland.
+      
+               
+                  Hyman, P. & M.  (2005). «Les associations de saveurs dans les livres de cuisine français du XVIe siècle». In 
+	Le Désir et le Goût. Une autre histoire (XIIIe-XVIIIe siècles). Actes du colloque international à la mémoire de Jean-Louis Flandrin
+	(Saint-Denis, septembre 2003). Dir. Odile Redon, Line Sallman et Sylvie Steinberg. (p. 135-150). Saint-Denis: Presses Universitaires de Vincennes.
+      
+               
+                  Karg, S. (Ed.).  (2007): Medieval Food Traditions in Northern Europe. Copenhagen: National Museum of Denmark.
+      
+               
+                  Klug, H. W., & Kranich, K. (2015): “Das Edieren von handschriftlichen Kochrezepttexten am Weg ins digitale Zeitalter. Zur Neuedition des Tegernseer Wirtschaftsbuches.” In T. Bein (Ed.), Vom Nutzen der Editionen. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte. (pp. 121-137). Berlin, Boston: De Gruyter.
+      
+               
+                  Laurioux, B. (2005): «Les voyageurs et la gastronomie en Europe à la fin du Moyen âge ». In Le Désir et le Goût. Une autre histoire (XIIIe-XVIIIe siècles), Actes du colloque international à la mémoire de Jean-Louis Flandrin (Saint-Denis, septembre 2003). Dir. Odile Redon, Line Sallman et Sylvie Steinberg. (p. 99-117). Saint-Denis, Presses Universitaires de Vincennes.
+      
+               
+                  van Winter, J. M.  (1989). “Kochen und Essen im Mittelalter.” In
+      B. Herrmann (Ed.). Mensch und Umwelt im
+      Mittelalter. (pp. 88-100). Frankfurt am Main: Fischer
+      Taschenbuch Verl.
+      
+            
+         
+      
+   
+
+

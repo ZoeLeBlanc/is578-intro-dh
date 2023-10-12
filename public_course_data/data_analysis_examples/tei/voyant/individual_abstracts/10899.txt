@@ -1,0 +1,86 @@
+
+      
+         
+            Einleitung    
+                        
+            
+            Digitale Editionen gehören zu den „prominentesten Themen“ (Sahle 2017: 237) in den Digital Humanities. Sie leisten Grundlagenarbeit für die geisteswissenschaftliche Forschung und bilden ein eigenes Forschungsfeld in den Digital Humanities. Hier verortet sich auch das digitale Editions- und Forschungsprojekt „DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde“ (https://sturm-edition.de). 
+            Gegenstand ist das 1910 gegründete Berliner Kunstunternehmen „Der Sturm“ um den Publizisten, Komponisten und Kritiker Herwarth Walden, der zahlreichen Künstlerinnen und Künstlern unterschiedlicher Kunstgattungen eine Plattform bot. Das Unternehmen umfasste die Zeitschrift „Der Sturm“, die „Sturm“-Galerie, die „Sturm“-Bühne sowie den „Sturm“-Verlag. Neben den Veröffentlichungen des „Sturm“ selbst bezeugen die überlieferten Briefe an das Ehepaar Walden den internationalen Einfluss des Unternehmens.
+            Unser Editionsprojekt, in dem bereits digital verfügbares Material aus dem „Sturm“-Kontext transkribiert, standardkonform nach XML/TEI P5 aufbereitet und mit Normdaten versehen wird, führt diese Quellen erstmals zentral zusammen und setzt sie mittels digitaler Methoden in Relation zueinander.
+         
+         
+            Drei Forschungsansätze im STURM-Projekt
+            Integraler Teil des Editionsprojektes ist die Forschung mit den STURM-Quellen. Auf dem Poster stellen wir neben der Quellenedition die folgenden drei Forschungsansätze vor, die sich explizit mit den im Projekt edierten Materialien beschäftigen.
+            
+               Modellierung der STURM-Domäne
+               Ein Ansatz arbeitet mit den in der digitalen Quellenedition DER STURM zusammengeführten Quellen und modelliert deren Verknüpfungen und Beziehungen untereinander. Die Grundlage bildet hierbei das CIDOC Conceptual Reference Model als Domain-Ontologie im Bereich Cultural Heritage (Doerr 2009), die im Bereich der musealen Sammlungen und der bildenden Kunst weit verbreitet ist. Ergänzt wird diese Ontologie durch fachspezifische Vokabulare wie den Getty Art & Architecture Thesaurus (AAT). Die semantischen Verknüpfungen zwischen den einzelnen Quellen und Quellen-Typen beziehen sich auf die in den bereits edierten Quellen annotierten Entitäten (Personen, Orte und Werke) sowie auf weitere Entitäten, die noch in den Editionsprozess aufgenommen werden: auf Körperschaften, Ereignisse und Themen. In der digitalen Quellenedition des STURM sind für diese Entitäten bereits URIs vorhanden bzw. vorgesehen. Durch Anreicherung der Entitäten mit Normdaten werden Verknüpfungen mit weiteren Ressourcen ermöglicht.
+               Die semantische Modellierung der STURM-Domäne – bestehend aus den Quellen der Edition und dem, was sie bezeugen – dient der Weiterentwicklung der digitalen Quellenedition DER STURM sowie perspektivisch der Weiternutzung der dabei gewonnenen Daten, denn sie bildet die Grundlage für eine Verfügbarmachung der Daten und ihrer Zusammenhänge in Form von Linked Open Data. In dieser Form können die Daten beim Ermitteln und Zeigen von Zusammenhängen helfen und somit die Basis bilden für weitere Forschungen in einzelnen Fachwissenschaften, insbesondere in der Kunst- und in der Literaturwissenschaft.
+            
+            
+               Historische Netzwerkforschung zum „Sturm“
+               Ein weiterer Ansatz im Projekt beschäftigt sich mit der historischen Netzwerkforschung (Düring et al. 2016). In der bisherigen „Sturm“-Forschung steht aufgrund der Komplexität und Dezentralität der Quellen eine dezidiert „kunsthistorische Beschäftigung mit dem 
+                        Sturm“ aus (van Rijn 2013: 11). Insbesondere an einer ‚Gesamtschau‘ zum „Sturm“ fehlt es – ein Desiderat, an das hier mit der Methode der Historischen Netzwerkforschung angeknüpft werden soll. Dafür wird für das zu untersuchende Phänomen des historischen „Sturm“ ein Gesamtnetzwerk modelliert und anhand algorithmischer sowie hermeneutischer Methoden analysiert (Brandes et al. 2013: 4). Datengrundlage der Netzwerkerhebung bilden archivalische Metadaten und die im STURM-Projekt maschinenlesbar modellierten Quellen.
+                    
+               Das Netzwerk ist multimodal, bestehen die einzelnen zueinander in Relation stehenden Entitäten doch aus im Kontext des „Sturm“ aufkommenden Personen, multimedialen Werken, Briefdaten und einigem mehr. Diese Daten gilt es in der Visualisierung des erhobenen Netzwerkes anschaulich zu machen (Baillot 2018: 357). Darüber hinaus offenbart die computergestützte Historische Netzwerkforschung auch in der Analyse komplexer Netzwerke ihre Stärken. Durch eine rein klassische Untersuchung des facettenreichen „Sturm“-Netzwerkes, so die These, würden Darstellung und Analyse unübersichtlicher und damit fehleranfälliger werden.
+               Die kritische Untersuchung der Quellen selbst – und damit einhergehend die Interpretation des erhobenen Gesamtnetzwerkes „Sturm“ – bildet einen weiteren wichtigen Schritt in der Gesamtanalyse des Kunstunternehmens hinsichtlich eines möglichen ‚gesamtgesellschaftlichen Spiegels‘. Ziele der historischen Netzwerkstudie sind das Ausmachen und die Analyse von 
+                        broken ties (Jannidis 2017: 158) im komplexen „Sturm“-Netzwerk und die Einordnung des „Sturm“ in den zeitgenössischen kultur- und soziopolitischen Kontext.
+                    
+               
+                  
+                  
+                     Abbildung 1. Gerichtetes Korrespondenznetzwerk um Herwarth Walden (rot), Else Lasker-Schüler (gelb) und Nell Walden (grün); Layout: ForceAtlas 2; Knotengröße: 
+                            outdegree; Knotenfarbe: 
+                            indegree; Kantendicke: 
+                            weight (Menge der überlieferten Briefe).
+                        
+               
+            
+            
+               Diskursanalyse des Simultaneitätsbegriffs im „Sturm“         
+               Ein Beispiel für die fachspezifische Nutzung digitaler Editionen gibt die Studie zu avantgardistischen Simultaneitätskonzepten im „Sturm“. Als ein die Avantgarde bestimmendes Strukturprinzip kommt Simultaneität in verschiedenen Kunstrichtungen vor, die innerhalb ihrer Programmatik mitunter konkurrierende Modelle entwickeln. F. M. Marinettis „Technisches Manifest der futuristischen Literatur“, die kubistischen „Fenster“-Bilder Robert Delaunays oder die Simultangedichte der Dadaisten ähneln sich im grundlegenden Bestreben, nach dem avantgardistischen Primat von „Transgression und Diffundierung“ (Asholt / Fähnders 2000: 17) beim Rezipienten gleichzeitig unterschiedliche Wirklichkeitsansichten und -ebenen zu erzeugen. Im medialen Komplex des „Sturm“, mit seinen vielfältigen Publikations- und Distributionswegen sowie seinen dezidiert antimimetischen Gestaltungsprinzipien, finden diese bildkünstlerischen wie literarischen Werke trotz Gattungs- und Stilunterschieden gleichermaßen eine adäquate Präsentationsform. Eingebettet in den spezifischen historischen Kontext des „Sturm“-Netzwerks werden sie von Para- und Metatexten begleitet, die ihre Rezeption lenken und kommentieren – und die nicht zuletzt in den privaten Korrespondenzen an Walden vorbereitet und verhandelt werden.
+               Die webbasierte Zusammenführung der verschiedenen Quellen des „Sturm“ erlaubt es nun, wechselseitige Bezüge zwischen den unterschiedlichen Textsorten offenzulegen und so diskursiv etablierte sprachlich-rhetorische Muster zu rekonstruieren. Mit Hilfe korpuslinguistisch informierter diskursanalytischer Verfahren wird der Frage nachgegangen, inwiefern solche multimodalen Diskurspraktiken die Bedeutung von Gleichzeitigkeit im historischen „Sturm“-Netzwerk unterschiedlich konstituieren und auf diese Zeitkonstruktion als typisch avantgardistischen Diskurs verweisen. Um die entsprechenden „Diskursfragmente“ (Jäger 2012: 98ff.) im Netzwerkkontext situieren und den einzelnen Künstlern und Kunstrichtungen zuordnen zu können, sollen zusätzlich netzwerkanalytische Zugänge berücksichtigt werden. Schließlich zielt die Auswertung der im Projekt erarbeiteten Daten darauf ab, den Begriff der Simultaneität im Problemfeld von Scheitern (Habermas) und Überleben (Luhmann) der Avantgarde zu konturieren.
+            
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Asholt, Wolfgang / Fähnders, Walter (2000): „Einleitung“, in: Asholt, Wolfgang / Fähnders, Walter (eds.): Der Blick vom Wolkenkratzer. Avantgarde – Avantgardekritik – Avantgardeforschung. Amsterdam / Atlanta: Editions Rodopoi 9–27.
+                    
+               
+                  Baillot, Anne (2018): „Die Krux mit dem Netz. Verknüpfung und Visualisierung bei digitalen Briefeditionen“, in: Bernhart, Toni / Willand, Marcus / Richter, Sandra / Albrecht, Andrea (eds.): Quantitative Ansätze in den Literatur- und Geisteswissenschaften. Systematische und historische Perspektiven. Open Access: De Gruyter 355–370.
+                    
+               
+                  Brandes, Ulrik / Robins, Garry / McCranie, Ann / Wasserman, Stanley (2013): Editorial. What is network science? Network Science 1: 1–15.
+                    
+               
+                  Chytraeus-Auerbach, Irene / Uhl, Elke (2013): „Vorwort“, in: Chytraeus-Auerbach, Irene / Uhl, Elke (eds.): Der Aufbruch in die Moderne. Herwarth Walden und die europäische Avantgarde. Berlin: LIT Verlag 7–11.
+                    
+               
+                  Doerr, Martin (2009): „Ontologies for Cultural Heritage“, in: Staab, Steffen / Studer, Rudi (eds.): Handbook on Ontologies. Berlin / Heidelberg: Springer Verlag 463–486.
+                    
+               
+                  Düring, Marten / Eumann, Ulrich / Stark, Martin / Keyserlingk, Linda v. (2016) (eds.): Handbuch Historische Netzwerkforschung. Grundlagen und Anwendungen. Berlin: LIT Verlag.
+                    
+               
+                  Jäger, Siegfried (2012): Kritische Diskursanalyse. Eine Einführung. 6. vollständig überarbeitete Aufl. Münster: Unrast.
+                    
+               
+                  Jannidis, Fotis (2017): „Netzwerke“, in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): Digital Humanities. Eine Einführung. Stuttgart: J. B. Metzler 147–161.
+                    
+               
+                  Pirsich, Volker (1985): Der Sturm. Eine Monographie. Herzberg: Traugott Bautz 1985.
+                    
+               
+                  Rijn, Maaike van (2013): Bildende Künstlerinnen im Berliner „Sturm“ der 1910er Jahre. Tübingen: TOBIAS-lib, http://tobias-lib.uni-tuebingen.de/volltexte/2013/6987.
+                    
+               
+                  Sahle, Patrick (2017): „Digitale Edition“, in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): Digital Humanities. Eine Einführung. Stuttgart: J. B. Metzler 234–249.
+                    
+            
+         
+      
+   
+

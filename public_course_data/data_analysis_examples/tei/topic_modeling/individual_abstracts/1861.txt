@@ -1,0 +1,80 @@
+1861	2014	Goal of the project
+
+The European Union (EU) is a “union of law”: it is created by law; it enacts laws which confer rights upon EU citizens and impose duties; it acts in accordance with its law and under the legal review of the Court of Justice. The EU has, by its own, neither peoples nor territories. Its existence is entirely enclosed in its ability to bring closer its members states as well as the Europeans through the law. Thus, the knowledge (and the understanding) of the EU law is an essential part of an ongoing democratic process. In practice, pure and perfect knowledge of the law has always faced many difficulties. This is particularly true for the EU constitutional law. It is an economic and technical law faced with significant several changes in recent years and published in all official languages of the Union (24).
+The goal of the project is to create a tool for assisting the researchers in European Integration Studies in the analysis of the EU treaties. The system should allow the user to navigate through the treaties along with different axes of inquiry: access to a particular unit inside a treaty (part, section, chapter, article, etc.); multilingual alignment; modifications operated upon or by a treaty and the history of its different (consolidated) versions; status (entered into forced, repealed); possibility to add and retrieve user’s comments. The tool aims also to provide the EU citizens with the consolidated and the original versions of EU treaties enriched with additional materials (i.e. contextual resources, legal & economic doctrine, case law, …). The documents under study are part of the CVCE’s Lisbon research corpus, including founding treaties of the European Union and the treaties modifying them.
+Although Web-based services allowing the navigation (EUR-Lex 1, LegiFrance 2, DOCLEG 3,the versioning (Progilex 4, MetaLex 5) and/or annotation (AT4AM for All 6) of legal documents already exists, there is no integrated solution addressing all the questions entailed by our research. So far, our experiments have been dealing with the identification of the documents structure and their relations, and the construction of small prototypes using XML-TEI as an encoding format. As the project is still in an exploratory phase, the paper will focus on the theoretical bases of the project, first experimental results and further development.
+Overview of the process of creating/modifying European Integration Treaties
+
+The EU – formerly the European Communities – was established by the Rome Treaty concluded in March 1957. Since then, this treaty was modified more than 20 times, either in application of the general revision procedure or by simplified revision procedures. Every revision is enacted in the form of a legal act – be it a new treaty such as the Maastricht treaty (1992) or a secondary law like a Council decision. The act which introduces changes exists by itself, in addition to the act which is modified. However, nowhere the consolidated versions of the treaties and all their modifications are provided, even by Eur-Lex – the web service maintained by the Publications Office of the EU. This makes any analysis of EU legal texts highly tricky as any user looking for an updated version of a specific text has to compare its original version with all its subsequent revisions. Due to their complexity and their multi-linguistic nature, EU legal texts require also corrections which are legally binding. The rule relating to the allocation of seats in the European Parliament among the EU Member States since 1951 is illustrative of the complexity of the EU law. The modifications are laid down either in primary law or in secondary law; they insert, repeal, include either a whole Article or a part of it. The dates of adoption, of publication, of entry into force, of effective implementation vary from one modification to another. Some modifications were published but never entered into force applied, some other were changed before they become effective.
+
+Fig. 1: Complexity of the EU treaties revision process: the example of the provisions on the allocation of seats in the European Parliament from 1951 to 2013.
+Documents structure. Relationships
+
+Structure of the documents
+
+The text of a treaty can include the following elements:
+preamble;
+main body of the treaty;
+annexes;
+protocols;
+declarations;
+final acts;
+corrections.
+The corresponding TEI document may contain, apart from the metadata encoded in the TEI Header7, a text element 8with the following constituents: front(title, preamble); body (main body of the treaty); back (protocols, declarations, final act, corrections). Except from the title and the main body of the treaty, the other elements are optional. Imbrication between some of these components is possible. For instance, protocols or declarations can appear independently or be included in a final act. The main body of a treaty is structured in Fig. 2. Other components, like protocols or annexes, may have a similar configuration. 
+
+Fig. 2: Structure of the main body of a treaty
+Smaller items can be further identified but the lowest unit considered in the study is the alinea (it corresponds to a paragraph in the non-legal writing) 9.
+Relations
+
+The relations to be modeled operate either between treaties (Fig. 3) or at the fragment level, for example, an article from a treaty is modifying another article from a different treaty (Fig. 4). The relations between treaties (see also 10) are represented below and correspondingly in Fig.3.
+amended_by / amends (oblique arrows pair);
+previous /next versions (other than linguistic) (horizontal arrows);
+linguistic_version (oblique arrow).
+
+Fig. 3: Inter-treaties relations
+The figure shows, along with the Modification and Time/Status axes, how the Treaty establishing European Economic Community (EEC, 1957) is amended by the Single European Act (SEA, 1986) and by the Treaty on the European Union (TEU, 1992), two subsequent consolidated versions being produced accordingly (EEC, 1986; EEC, 1992) (numeric codes are inspired by 11). The Language axis adds another dimension to the representation of the different linguistic versions of the treaties. Since the relations actually produce a multi-dimensional space, we can imagine the representation as functioning by parallel plans, rather than in a single three dimensional reference system. Moreover, the Time/Status axes are used to define three different timelines, for the creation/signature, entered into force and end of validity dates and places.
+The relations at the fragment level can be of the following types:
+modified_by / modifies;
+cited_by / cites;
+previous / next.
+
+Fig. 4: Relations at the fragment level
+Fig. 4 illustrates the previous/next relations (horizontal arrows) between fragments (dispositions) from a version to the other and how a disposition from TEU (1992) repeals another from EEC (1986) (vertical arrows).
+Experiments
+
+The experiments conducted so far dealt with encoding the structure of the treaties main body (Fig. 2) and the multilingual alignment. The production of XML-TEI documents involved a transformation chain represented in Fig. 5.
+
+Fig. 5: XML-TEI transformation chain
+First, the styled Microsoft Word documents, with styles corresponding to the structural components down to the level of Article (Fig. 2), were converted into XML-TEI (P5) using the OxGarage converter 12. The components were encoded using div elements. An XSL 13 file was created in order to enrich the encoding produced by the first conversion with attributes (@typeaccepting as values the components names, @xml:id, @n) for every div element. The transformation performed via Saxon 14also included procedures for the delimitation and identification of paragraphs and alineas (not marked by Microsoft Word styles). The resulted XML-TEI files were stored in an eXist-db 15database and HTML, CSS and XQuery 16 scenarios were added for visualization and queries. Fig. 6 shows the result of a search at the level of alinea and its multilingual alignment.
+
+Fig. 6: Search by alinea. Multilingual alignment
+Further work
+
+The complexity of the relations modeling involved in our study mainly resides, on one hand, in their temporal dimension (the modifications, the generation of new versions, their validity, and implicitly their relations, query and retrieval should operate in terms of time points and time frames) and, on the other hand, in the linguistic diversity of their expression (multilingual nature but also different ways of expressing, inside the same language, how a given fragment from a treaty modifies another). Our current inquiry is therefore related to the expression of the: types of amendment (e.g. repeal, insertion, substitution) 17; nature of the reference (document/fragment, internal/external, simple/multiple, contextual/non-contextual) 18; active/inactive time intervals 19. Other elements under study and experimentation are the relations encoding (TEI linking specifications 20; xLink, xPointer 21, 22), as well as the potential use of TEI extensions for legal texts 23. Aspects related to the balance between manual versus automatic processing, the corresponding workflow, and the maintenance strategies allowing the incorporation of new data or the integration of user’s intervention are also to be considered.
+The presentation will focus on the theoretical bases of the project and the experimental results.
+References
+
+1. EUR-Lex Access to European Union, eur-lex.europa.eu/en/index.htm.
+2. Legifrance, le service public de la diffusion du droit, www.legifrance.gouv.fr/.
+3. Documents DOCLEG, www.riziv.fgov.be/webprd/docleg/cgi-bin/cgint.exe?9&ulang=fr.
+4. Progilex, legal publisher in Luxembourg, www.legitech.lu/fr/progilex/presentation.
+5. CEN MetaLex, Open XML Interchange Format for Legal and Legislative Resources, www.metalex.eu/.
+6. AT4AM for all, the web-based amendment authoring tool used at the European Parliament, www.at4am.org/.
+7. Text Encoding Initiative, P5, TEI Header, www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html.
+8. Text Encoding Initiative, P5, Default Text Structure, www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html.
+9. Mencia, Eneldo Loza (2009), Segmentation of legal documents, Proceedings of the 12th International Conference on Artificial Intelligence and Law, Barcelona, Spain, p. 88–97.
+10. Treaty on European Union, 11992M/TXT, Eur_Lex, eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:11992M/TXT:EN:NOT#top.
+11. HOW CELEX NUMBERS ARE COMPOSED, EUR-Lex, 2011, 2013, eur-lex.europa.eu/en/tools/HowCelexNumbersAreComposed.pdf.
+12. OxGarage Conversion, www.tei-c.org/oxgarage.
+13. The Extensible Stylesheet Language Family (XSL), www.w3.org/Style/XSL.
+14. Saxon, The XSLT and XQuery Processor, saxon.sourceforge.net.
+15. eXist-db Open Source Native XML Database, exist-db.org.
+16. W3C XML Query (XQuery), www.w3.org/XML/Query/.
+17. Spinosa, P., Giardiello, G., Cherubini, M. (2009), NLP-based metadata extraction for legal text consolidation, ICAIL '09 Proceedings of the 12th International Conference on Artificial Intelligence and Law, pp. 40-49
+18. Martinez Gonzalez et al. (1997), Electronic Manipulation of European Texts about Conflicts of Jurisdiction : a Semantic Web Tool, Paper delivered at the Text Encoding Initiative Tenth Anniversary User Conference, November 1997, www.lefis.org/images/documents/outcomes/lefis_series/ lefis_series_2/capitulo4.pdf.
+19. Boer, A., Hoekstra, R., Winkels, R. (2002), METALex: Legislation in XML, in T. Bench-Capon, A. Daskalopulu and R. Winkels (eds.), Legal Knowledge and Information Systems, Jurix 2002: The Fifteenth Annual Conference, Amsterdam: IOS Press, pp. 1-10, citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.12.3189&rep=rep1&type=pdf.
+20. Text Encoding Initiative, P5, Linking, Segmentation, and Alignment, www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html.
+21. W3C XML Pointer, XML Base and XML Linking, www.w3.org/XML/Linking.
+22. Martínez M.M, De La Fuente, P., Derniame, J-C., Pedrero, A. (2003), Relationship-based dynamic versioning of evolving legal documents, INAP'01, Proceedings of the Applications of prolog 14th international conference on Web knowledge management and decision support, Springer-Verlag Berlin, Heidelberg, pp. 290-305.
+23. Finke, N.D. (1997), TEI Extensions for Legal Text, Text Encoding Initiative Tenth Anniversary User Conference, www.stg.brown.edu/conferences/tei10/tei10.papers/finke.html#fn0.
+

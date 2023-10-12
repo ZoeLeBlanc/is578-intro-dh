@@ -1,0 +1,35 @@
+1981	2014	Open access to digital research data for historical linguistics enables a fruitful exchange of resources and  methods. To achieve this goal the LAUDATIO-Repository provides long-term storage and open access to historical corpus linguistic data. We build a research data repository that on the one hand serves a set of well-defined scholarly communities’ needs, but is on the other hand flexible enough to be used and extended to serve other communities not considered beforehand. In order to consider the scholar's needs, a clear understanding of the research data usage and research practice is required.
+
+Digitalization and annotation of historical texts for linguistic purposes is a methodologically and technologically challenging task that consumes a lot of time and resources. Linguistic analysis uses various annotations and methods such as multiple segmentations¹ 1, normalizations 2, constituent syntax trees, dependency annotations and (semi-) automatic consistency checks 3. Having the chance to either look up these methods and their results, the corpus itself, or to re-use existing corpora for further research may facilitate and enrich the research methods and possibilities of the linguistic community. An extensive documentation of the whole corpus preparation phase including annotation, tools and the resulting data allows a uniform and structured access to such a heterogeneous field of research data and thereby a first establishment of best practice standards.
+
+There are many tools and formats that are used to annotate and process historical corpora, e.g. for token based annotations and parses. g. 4, 5). Thus the repository is open to all formats. The repository is based on the Open-Source Software Fedora 3.6 6 and a custom web interface that uses its API. A single corpus can be stored and downloaded in multiple formats. A specific corpus version therefore comprises any number of data streams that capture the same dataset at a certain point in time. This mechanism is flexible enough to deal with annotation format diversity deriving from existing annotation tools such as EXMARaLDA, @nnotate or ELAN and as well as new formats (that have not been invented yet).
+
+We have also developed a unified meta-model for (historical) text corpora that is used to describe heterogeneous corpus linguistic data and that can be modified according to future developments in the research field. Our repository will support all existing metadata versions for compatibility reasons. For each corpus in the repository a metadata documentation using this meta-model exists. Each corpus’ metadata is automatically validated against the scheme while being imported into the repository. To enable a flexible metadata modeling we chose a customization of TEI XML with the help of an ODD 7 specification. The meta-model indirectly refers to basic concepts of corpora.2 Each corpus has a structured and uniform documentation which comprises information about the corpus creation, the documents and every kind of annotation. For instance the authorship of each annotation layer is reported for citation and copyright reasons. Furthermore the whole corpus preparation process is covered as well.
+
+In order to support re-use of existing corpora and to reduce duplicate work, researchers can search, download and import new corpora. Additionally, new annotations or documents can be added as new versions of existing corpora. The detailed metadata documentation helps researchers to understand the corpus and its context. Moreover LAUDATIO provides a faceted and free-text search for certain annotation methods, tools or annotation values (see  8 for an extensive discussion of faceted search). ElasticSearch³ is used as a technical backend.
+
+The flexible technical infrastructure and the extensive corpus documentation of LAUDATIO will be presented in the demo session.
+
+Footnotes
+1 Multiple segmentations or tokenizations are used to represent different, possible conflicting, interpretations of the smallest units in a corpus.
+
+2 The current documentation of the metadata can be accessed under korpling.german.hu-berlin.de/schemata/laudatio/doc/S6/corpus
+
+3 ElasticSearch website, www.elasticsearch.org, accessed 29 Oct. 2013
+
+References
+1. Krause, Thomas, Lüdeling, Anke, Odebrecht, Carolin, Zeldes, Amir (2012) Multiple Tokenization in a Diachronic Corpus. Exploring Ancient Languages through Corpora Conference (EALC), 14.-16.Juni 2012.
+
+2. Bollmann, Marcel, Petran, Florian, Dipper, Stefanie (2011) Rule-Based Normalization of Historical Texts. Proceedings of Language Technologies for Digital Humanities and Cultural Heritage Workshop Hissar, Bulgaria, 16 September 2011. pp. 34–42.
+
+3. Dickinson, Markus, and W. Detmar Meurers. . Detecting errors in part-of-speech annotation. Proceedings of the tenth conference on European chapter of the Association for Computational Linguistics-Volume 1. Association for Computational Linguistics.
+
+4. Schmidt, Thomas (2009) Creating and Working with Spoken Language Corpora in EXMARaLDA. In: Lyding, V. (ed.) LULCL II: Lesser Used Languages & Computer Linguistics II. pp. 151-164.
+
+5. Brugman, Hennie, Russel, Albert (2004). Annotating Multimedia/ Multi-modal resources with ELAN. In: Proceedings of LREC 2004, Fourth International Conference on Language Resources and Evaluation.
+
+6. Lagoze, Carl, et al. (2006) Fedora: an architecture for complex objects and their relationships. International Journal on Digital Libraries 6.2: 124-138.
+
+7. Burnard, Lou, Rahtz, Sebastian (2004) RelaxNG with Son of ODD. Extreme Markup Languages Proceedings 2004. Montréal, Québec.
+
+8. Tunkelang, Daniel (2009) Faceted search. Synthesis Lectures on Information Concepts, Retrieval, and Services 1.1. pp. 1-80.

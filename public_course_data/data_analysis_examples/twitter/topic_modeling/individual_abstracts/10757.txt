@@ -1,0 +1,228 @@
+10757	2018	
+      
+         
+            Einleitung
+            Twitter ist ein soziales Netzwerk bzw. ein Mikroblogging-Dienst, welches das Senden von Textnachrichten („Tweets“) ermöglicht. Es ist das derzeit am schnellsten wachsende soziale Netzwerk, worin die Twitter-Benutzer untereinander stark vernetzt sind und ihre eigenen Meinungen sowie Gefühle zu aktuellen Themen ausdrücken. Die textuellen und sprachlichen Inhalte der einzelnen Tweets sind nicht normativ, da die enthaltenen Informationen von umgangssprachlichen Ausdrücken, Abkürzungen, Emoticons und von Grammatikfehlern durchsetzt sind, sodass kein standardisiertes / automatisiertes Auswertungsverfahren zur Sentiment Analyse angewendet werden kann. Den Tweets können zudem Anhänge wie Bilder, Videos oder Hyperlinks beigefügt werden. Memes sind beliebte Vertreter solcher Bildanhänge in Tweets: 
+                    „I define an Internet meme as: (a) a group of digital items sharing common characteristics of content, form, and/or stance, which (b) were created with awareness of each other, and (c) were circulated, imitated, and/or transformed via the Internet by many users.” (Shifman L., 2013, S. 41) Auf Basis dieser Definition von L. Shifman zählen somit auch Videos zur Gattung der Memes. Memes haben die Eigenschaft Bild und Text zu kombinieren, dadurch eine polysemische Nachricht zu generieren, welche die Rezipienten anspricht und Emotionen auslösen. 
+                    „Ein Internet-Meme ist die humoristische/sarkastische Reaktion der Internetgemeinde auf ein (mediales) Ereignis.“ (Marx und Weidacher, 2014, S. 143) Zudem sind Memes in politischem Kontext aktuell wenig empirisch erforscht 
+                    (Shifman L., 2013, S. 119). Gerade aus diesen Gründen wurden Memes, speziell Memes in politischem Kontext, als Untersuchungsgegenstand für diese Sentiment Analyse gewählt.
+                
+            Die vorliegende Analyse basiert auf zwei Memes: Das erste Meme steht im Kontext zur Wahl des US-Präsidenten inkl. des Vizepräsidenten vom 8. November 2016, das Zweite im Zusammenhang der Ersten 100 Amtstage von Präsident Donald John Trump. Parallel zur Präsidentschaftswahl verbreitete sich bereits zwei Tage nach dem Wahlstichtag ein statisches Bild der Simpsons, worin schon im Jahr 2000 der Wahlausgang mit der geografischen Karte der Wahlergebnisse prophezeit wurde 
+                    (siehe Abbildung 1). Als Reaktion auf die Ersten 100 Tage von D. Trump im Amt wurde am 26. April 2017 ein Video von den Simpsons 
+                    (siehe Abbildung 2) auf YouTube veröffentlicht, welches genau diesen Zeitraum seiner Amtshandlungen parodiert. Bereits einen Tag danach setzte die Diskussion zum Video auf Twitter ein. Die vorliegende Arbeit analysiert die aus diesen beiden Memes entstandenen emotionalen Diskussionen und Reaktionen auf die beiden politischen Ereignisse via Twitter.
+                
+            
+               
+               Abbildung 1: Simpson Prediction
+               
+            
+            
+               
+               Abbildung 2: Donald Trump's First 100 Days In Office | Season 28 | THE SIMPSONS
+               
+            
+         
+         
+            Forschungsstand
+            Dass die Meinungen anderer Mitmenschen unsere eigenen Entscheidungen beeinflussen, ist schon lange aus der Psychologie bekannt 
+                    (Friedkin, 1990). Auch die Sammlung und Auswertung von Meinungen wird schon lange betrieben. Mit dem Aufkommen des Web 2.0 ergeben sich viel bessere Möglichkeiten, große Datenmengen gezielt auf Meinungen hin zu analysieren. Die Sentiment Analyse zielt auf die Ergründung der Haltung, Stimmung, Meinung und die generelle Einstellung von Personen in Bezug auf ein speziell ausgewähltes Produkt, andere Personen, Dienstleistungen oder aktuellen Themen ab. Dieses Forschungsgebiet fällt in den Bereich der 
+                    Computerlinguistik bzw. der 
+                    linguistischen Datenverarbeitung (Natural Language Processing), welche Untergebiete des 
+                    Text Minings sind. Die Sentiment Analyse ist als Klassifikationsproblem von Texten und dessen Polaritätserkennung zu verstehen. Für die Polaritätserkennung müssen Indikatoren im Text identifiziert werden, welche Rückschlüsse auf das sogenannte Sentiment zulassen. Dabei handelt es sich um sprachspezifische Ausdrücke, die aufgrund ihrer Wortbedeutung bereits positiv, neutral oder negativ vorbelegt sind. Diese Stimmungsinformation lässt sich aus sogenannten Sentimentlexika (bzw. Sentiment-Wörterbüchern) der jeweiligen Sprachen entnehmen. Hier werden stimmungstragende Ausdrücke - häufig Adjektive - als solche gekennzeichnet. Meist wird von deren kontextunabhängigen Polaritätsausprägung ausgegangen, die binär (positiv/negativ bzw. +/-) oder verhältnisskaliert (wie beispielsweise beim Wörterbuch 
+                    „SentiWordNet“) kodiert wird. Die Vorgehensweise bei einer Sentiment Analyse kann entweder 
+                    Lexikon basiert, anhand eines Wörterbuchs erfolgen oder 
+                    lernbasiert, wo man sich auf die Algorithmen aus dem Fachgebiet des maschinellen Lernens stützt. Bei der Durchführung der Sentiment Analyse untergliedert man die drei Ebenen (
+                    Level): 
+                    Dokumenten-Ebene, 
+                    Satz-Ebene und die 
+                    Aspekt-Ebene. Bei der 
+                    Dokumenten-Ebene wird der gesamte Inhalt eines Dokuments in die Analyse mit einbezogen um eine generelle Stimmung zu deuten. Genauere Ergebnisse liefert die Betrachtung der 
+                    Satz-Ebene, da hier die ausgedrückte Meinung für jeden einzelnen Satz berechnet wird. Die genausten Ergebnisse erhält man bei der Analyse der 
+                    Aspekt-Ebene, da hier zu jedem Aspekt einer bestimmten Entität, die Stimmung des Meinungsvertreters zu einem bestimmten Zeitpunkt betrachtet wird.
+                
+            Nach der Definition von 
+                    Liu Bing besteht eine Meinung aus einem 5-Tupel: 
+                
+            
+               opinion = (e,a,s,h,t)
+            
+            Wobei 
+                    e eine Entität (Objekt), 
+                    a einen Aspekt (Feature) der Entität, 
+                    s die subjektiv positive, negative oder neutrale Stimmung (Sentiment) des Aspekts der Entität, 
+                    h den Meinungsvertreter (Opinion holder) und 
+                    t den Zeitpunkt der Meinungsäußerung darstellt.
+                
+         
+         
+            Forschungsdesign und Methode 
+            Aufbauend auf dem Forschungsstand untersucht diese Arbeit die inhaltlichen Diskussionen zu beiden eingangs erwähnten Memes auf Twitter hinsichtlich deren Emotionen und stellt diese in einem direkten Vergleich gegenüber. 
+                    „Communication messages such as tweets, emails, and digital images are by definition memes, because they are replicable transmitters of cultural meanings.” (Spitzberg B. H., 2014, S. 312) In dieser Arbeit findet ein 
+                    Lexikon basierter Ansatz für die Sentiment Analyse der Tweets Anwendung, da im Gegensatz zu den 
+                    lernbasierten Methoden des maschinellen Lernens, die Lexikon basierten Verfahren für Bereiche eingesetzt werden können, für die keine Trainingsdaten existieren (Kennedy und Inkpen, 2006). Da für die vorliegende Sentiment Analyse lediglich ein relativ kleiner Untersuchungskorpus von 167 Tweets zur Verfügung steht, kommt die Anwendung der lernbasierten Methoden nicht in Frage. Des Weiteren können bei den Lexikon basierten Methoden kontextbedingte Ambivalenzen und andere sprachliche Konstrukte leichter berücksichtigt werden, da linguistische Aspekte eines Textes in Betracht gezogen werden können (Brooke et al., 2009). Dies ist vor allem zur Analyse von Mikroblogging-Einträgen geeignet, weil die Texte sehr kurz gehalten sind (Twitter erlaubt maximal 140 Zeichen pro Tweet). Grundsätzlich sind allerdings die Methoden des maschinellen Lernens bei Sentiment Analysen im Hinblick auf die Genauigkeit und Präzision der Klassifizierung meist effektiver als die Lexikon basierten Ansätze (Kennedy und Inkpen, 2006).
+                
+            Es existieren zahlreiche Wörterbücher, wie beispielsweise 
+                    „MPQA Subjectivity Lexicon“, „Bing Liu and Minqing Hu Sentiment Lexicon“, „SentiWordNet“, „VADER Sentiment Lexicon“, „SenticNet“, „LIWC“, „Harvard General Inquirer“, „ANEW“ usw. um nur einige Beispiele zu nennen. Die meisten dieser beispielhaft genannten Wörterbücher liefern allerdings nur die tendenziellen Stimmungen 
+                    positiv, 
+                    negativ oder 
+                    neutral. Das hier verwendete Wörterbuch 
+                    „SentiWordNet 3.0“ liefert vertiefend die einzelnen Gewichte der Stimmungen („Score“) zu einzelnen Wörtern.
+                
+            Das Ziel dieser Sentiment Analyse ist die 
+                    Bestimmung der emotionalen Färbungen der einzelnen Tweets und in weiterer Folge die 
+                    Ermittlung der generellen Stimmungshaltung der Diskussionen bezüglich des Statischen im Vergleich zum bewegten Bild. Die Datenerhebung der einzelnen Tweet-Ströme (Tweets + Retweets) erfolgt über die Twitter API mit Hilfe des Web-Tools 
+                    „FollowTheHashtag“
+               . Die Datensätze werden direkt in Microsoft Excel exportiert und dort weiterverarbeitet. Zur Grundgesamtheit gehören alle Tweets (exkl. Retweets) die im Zuge der US-Präsidentschaftswahl oder im Zuge der Ersten 100 Tage nach Amtsantritt von D. Trump via Twitter weltweit abgesetzt wurden und beide Hashtags 
+                    „#thesimpsons“ und 
+                    „#trump“ beinhalten. Retweets werden bei der vorliegenden Sentiment Analyse nicht berücksichtigt, da diese keine neuen Aussagen, Meinungen oder Emotionen enthalten, sondern lediglich eine intendierte Wiederholung eines vorangegangenen Tweets darstellen.
+                
+            Die Analyseeinheit ist der jeweils im Tweet enthaltene Text 
+                    („Tweet Content“). Der textuelle Inhalt eines Tweets kann Hashtags (#), Taggings (@) oder (Medien-) Links enthalten. Alle Texte, deren Aussagen nicht in Relation mit den beiden Memes stehen, werden als Spam klassifiziert und aus dem Datensatz bereinigt. Die beiden Memes an sich werden nicht untersucht, sondern stellen nur den Auslöser der Diskussion dar.
+                
+            Die Untersuchungszeiträume betragen jeweils sieben Tage ab dem Stichtag des Absetzens des ersten Tweets zu einem der beiden definierten Memes. Der Datensatz des statischen Bildes beläuft sich somit auf den Untersuchungszeitraum vom 
+                    10.11.2016 bis zum 
+                    16.11.2016 und beinhaltet 
+                    N = 94 Tweets (exkl. Retweets). Der Datensatz des Videos beläuft sich auf den Untersuchungszeitraum vom 
+                    27.04.2017 bis zum 
+                    04.05.2017 und beinhaltet 
+                    N = 73 Tweets (exkl. Retweets). Von der Kombination des Lexikon basierten Ansatzes mit lernbasierten Methoden wird aufgrund der geringen Datenmenge 
+                    (N = 167 relevante Tweets) abgesehen.
+                
+            Nach der Datenerhebung und –bereinigung folgt manuell der Prozess der 
+            Textnormalisierung nach dem Konzept von 
+                    Tajinder Singh and Madhu Kumari, gefolgt von der manuellen Vorverarbeitung inkl. Satztypen Erkennung der textuellen Einheiten nach dem Konzept von 
+                    Lei Zhang et al. Die einzelnen Tweet Contents werden hinsichtlich ihrer Satz- und Wortebene unterteilt, wobei für jede textuelle Einheit die 
+                    positive, 
+                    negative oder 
+                    neutrale Stimmung aus einem Wörterbuch entnommen wird. Die einzelnen Tweets werden nach den Satztypen 
+                    deklarativ, 
+                    imperativ und 
+                    interrogativ kategorisiert. Interrogativsätze fließen nicht in die Auswertung ein, da dieser Satztyp keine informativen Meinungen, sondern lediglich Fragestellungen zum Thema oder zu vorausgehenden Tweets ausdrückt.
+                
+            Danach folgt die Betrachtung der Wortebene, wobei nun alle Wörter mit emotionaler Stimmung aus den textuellen Einheiten extrahiert werden. Die Gewichtung der Stimmung jedes dieser Wörter wird mit Hilfe des Wörterbuchs 
+                    „SentiWordNet 3.0“ bestimmt. Für die einzelnen Abfragen aus dem Wörterbuch wird der freie Programmcode von 
+                    Petter Törnberg adaptiert. Nach der Abfrage aller Gewichte erfolgt die Auswertung der Daten. Hierzu wird der 
+                    „Score“ je Tweet (bestehend aus einzelnen bzw. mehreren Sätzen) durch die Summe der einzelnen Gewichte der Stimmungen der Wörter der textuellen Einheiten eines Tweets ermittelt. 
+                
+            
+               score = score(pos(Wort)) + score(neg(Wort))
+            
+            Wobei 
+                    score(pos(Wort)) die Summe der Scores aller positiven Gewichte der relevanten Wörter eines Tweets enthält. 
+                
+            
+               Score(neg(Wort)) stellt analog die Summe aller negativen Gewichte dar. Durch obige Formel wird der Score des Tweets berechnet. 
+                
+            Punktationen, wie beispielsweise ;-), Smileys, Emoticons oder ähnliche nicht textuelle Ausdrucksformen von Stimmungen werden in der Sentiment Analyse nicht berücksichtigt.
+         
+         
+            Ergebnisse 
+            Die Ähnlichkeiten und Unterschiede der emotionalen Diskussionen beider Memes konnten ermittelt und beschrieben werden. Dabei stellte sich insbesondere heraus, dass sich die emotionalen Richtungen der Diskussionen bezüglich des statischen Bilds im Vergleich zum Video erheblich voneinander unterscheiden. Die Auswertung der Häufigkeiten der emotionalen Färbungen der Tweets zum statischen Bild 
+                    (N = 86) unterteilt sich in 
+                    19 positive, 
+                    51 neutrale und 
+                    16 negative Äußerungen. Die Ergebnisse für das Video 
+                    (N = 70) beinhalten 
+                    18 positiv, 
+                    36 neutral und 
+                    16 negativ gestimmte Tweets.
+                
+            Vergleicht man rein die Häufigkeiten des Auftretens der einzelnen Stimmungen, sieht man, dass die Verteilung fast ähnlich ist. Betrachtet man die Scores für das statische Bild 
+                    (score = 1,339) bzw. das Video 
+                    (score = -.153), sprich die Summe aller positiven und negativen Gewichte der Wörter aller Tweets je Datensatz, so zeigt sich, dass trotz ähnlicher Häufigkeitsverteilungen die finale Stimmung für das statische 
+                    Bild in Summe positiv gehalten ist. Beim 
+                    Video fällt die Stimmung negativ aus. Ob bzw. in wie weit beispielsweise das Unterhaltungserlebnis oder die (ironischen) Inhalte des Videos im Gegensatz zum statischen Bild einen Einfluss auf die Emotionalität der Twitter-Nutzer beim Verfassen der einzelnen Texte der Tweets hat, wird im Rahmen dieser Forschungsarbeit nicht betrachtet.
+                
+            Die Forschungsarbeit dient als Anwendungsbeispiel für eine Social Media Sentiment Analyse auf Twitter Daten und bildet einen thematisch übergreifenden Forschungsansatz für die Disziplinen der Informatik, der traditionellen Geisteswissenschaften und der Digital Humanities aufgrund der Kombination von 
+                    „User-Generated-Content“ in sozialen Netzwerken, über eine Programmierung bis hin zum Untersuchungsgegenstand der Memes, welcher wiederum typisch für die Geistes- und Sprachwissenschaften ist.
+                
+         
+         
+            Schlussfolgerungen
+            
+               Die Plattform Twitter ist ein stark genutztes soziales Netzwerk bzw. ein Mikroblogging-Dienst, wodurch dessen Nutzer ihre eigenen Meinungen sowie Gefühle zu Themen aller Art ausdrücken. Die Twitter-Benutzer kommentierten das Thema der US-Wahl und die ersten 100 Amtstage von D. Trump. Die Auslöser dieser Diskussionen stellten die beiden eingangs gezeigten Memes dar inkl. ihrer transportierten Nachrichten, welche durch das Zusammenspiel von Text und Bild vermittelt werden. Memes können durchaus Emotionen in der Internetgemeinde erzeugen - unter anderem auch in politischen Kontexten – ansonsten hätten sich diese beiden Memes nicht binnen kürzester Zeit via Twitter verbreiten können.
+               Bezüglich der inhaltlichen Ausgestaltung der einzelnen Tweet Contents kann man sagen, dass nahezu alle Tweets Abkürzungen und/oder Emoticons beinhalteten. Die Polaritäten der Emoticons wurden allerdings nicht berücksichtigt, da hier auf keinen entsprechenden wissenschaftlichen Ansatz zurückgegriffen werden konnte.
+               Für manuell durchgeführte Sentiment Analysen auf kleinem Untersuchungskorpus eignen sich Lexikon basierte Ansätze hervorragend. Ob eine Kombination mit Methoden des maschinellen Lernens herangezogen wird, hängt vom Untersuchungsgegenstand und von der Größe des Untersuchungskorpus ab.
+               Grundsätzlich existieren zahlreiche Wörterbücher für Sentiment Analysen. Allerdings liefern die meisten Wörterbücher lediglich die tendenziellen Wortbedeutungen 
+                        positiv, 
+                        negativ oder 
+                        neutral. Das Wörterbuch 
+                        „SentiWordNet“ hingegen skaliert die stimmungstragenden Wörter auf dem Intervall [-1, 1] und verleiht den Wörtern spezifische Gewichte, wobei „-1“ negativ und „1“ positiv bedeuten. Die verhältnisskalierten Stimmungsinformationen zu den einzelnen Wörtern konnten größtenteils über dieses Wörterbuch bestimmt werden, allerdings gab es einige Wörter die selbst dieses Wörterbuch nicht beinhaltete. Das Wörterbuch „
+                        SentiWordNet“ ist somit kein vollständiges Sentimentlexikon.
+                    
+               Bei der reinen Auswertung der Häufigkeiten der emotionalen Färbungen der Tweets zeigt sich, dass die Verteilung fast ident ist zwischen dem statischen Bild 
+                        (N = 86, davon 
+                        19 positiv, 
+                        51 neutral und 
+                        16 negativ) und dem Video 
+                        (N = 70, davon 18 positiv, 
+                        36 neutral und 
+                        16 negativ). Deshalb wurden zusätzlich die verhältnisskalierten Stimmungsinformationen erhoben und einzelnen Gewichte betrachtet. Hierdurch lässt sich zeigen, dass die finale Stimmung für das statische 
+                        Bild in Summe positiv (score = 1,339) gehalten ist. Beim 
+                        Video fällt die Stimmung negativ (score = -.153) aus. Die Deutung/Interpretation der Ergebnisse einer Sentiment Analyse ist somit stark von der verwendeten Methode und dessen Ansatz abhängig.
+                    
+            
+         
+      
+      
+         
+            Quelle Abbildung 1: 
+                 https://img.buzzfeed.com/buzzfeed-static/static/201611/9/16/asset/buzzfeed-prod-fastlane02/sub-buzz18441-1478727536-5.png?downsize=715:*&outputformat=auto&output-quality=auto (zuletzt aufgerufen: 30.06.2017) 
+             
+            Quelle Abbildung 2: 
+                 https://www.youtube.com/watch?v=Qo3fT0xPeHs (zuletzt aufgerufen: 30.06.2017)
+             
+            
+               http://www.followthehashtag.com/ (zuletzt aufgerufen: 26.07.2017)
+             
+            Programmcode verfügbar unter GNU General Public License. Quelle: 
+                 https://github.com/mserrate/twitter-streamingapp/blob/master/twitter-stormtopology/src/main/java/analysis/SentiWordNet.java (zuletzt aufgerufen: 30.06.2017) 
+             
+         
+         
+            
+               Bibliographie
+               
+                  Baccianella, S., Esuli, A., & Sebastiani, F. (2010). 
+                        SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining. LREC, Vol. 10, S. 2200-2204. 
+                    
+               
+                  Brooke, J.; Tofiloski, M.; Taboada, M.: Crosslinguistic sentiment analysis: From english to spanish. In: Proceedings of the 7th International Conference on Recent Advances in Natural Language Processing, Borovets, Bulgaria, 2009, S. 50–54.
+               
+                  Friedkin, N.E. & Johnsen, E.C. (1990) 
+                        Social influence and opinions. J. Math. Soc. 15. pp. 193 – 206. 
+                    
+               
+                  Kennedy, A.; Inkpen, D.: Sentiment Classification of Movie and Product Reviews Using Contextual Valence Shifters. In: Computational Intelligence 22 (2006), Nr. 2, S. 110–125.
+               
+                  Liu, B. (2010):
+                        „Sentiment Analysis: A Multifaceted Problem“. IEEE Intelligent Systems, S. 76-80. 
+                    
+               
+                  Marx, K. & Weidacher, G. (2014). 
+                        Internetlinguistik. Ein Lehr- und Arbeitsbuch. Tübingen: Narr. 
+                    
+               
+                  Shifman, L. (2013). 
+                        Memes in Digital Culture. MA: MIT Press. 
+                    
+               
+                  Singh, T. und Kumari, M. (2016). 
+                        Role of Text Pre-processing in Twitter Sentiment Analysis. Procedia Computer Science, 89, 549-554. 
+                    
+               
+                  Spitzberg, B. H. (2014). 
+                        Toward A Model of Meme Diffusion (M3D). Communication Theory 24. S. 311–339. 
+                    
+               
+                  Wilson, T., Wiebe, J., & Hoffmann, P. (2005). 
+                        Recognizing contextual polarity in phrase-level sentiment analysis. In: Proceedings of the conference on human language technology and empirical methods in natural language processing. S. 347–354. 
+                    
+               
+                  Zhang, L., et al. (2011). Combining Lexicon-based and Learning-based Methods for Twitter Sentiment Analysis. HP Laboratories, Technical Report HPL-2011-89. 
+            
+         
+      
+   
+
+

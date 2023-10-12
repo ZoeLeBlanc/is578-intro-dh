@@ -1,0 +1,91 @@
+10877	2019	
+      
+         
+            Projektübersicht
+            Ziel des an der Universität Jena durchgeführten Projekts ist die Entwicklung eines uneingeschränkt zugänglichen Onlineportals zur Publikation digitaler historisch-kritischer Editionen von vorrangig handschriftlichen Quellen der Neuzeit. Es wird an der Thüringer Universitäts- und Landesbibliothek (ThULB) gehostet und in Zusammenarbeit mit zahlreichen Partnern (darunter READ/Transkribus, Deutsches Textarchiv, Herzog August Bibliothek Wolfenbüttel, Landesarchiv Thüringen, Sammlungs- und Forschungsverbund Gotha und viele weitere) realisiert. Mit TEI-basierten Meta- und Volltextdaten, Digitalisaten, Registern, Paratexten, Visualisierungen, gezielten Such-, Sortierungs- und Filteroptionen wird das Editionsportal Thüringen eine wissenschaftlich hochwertige digitale Publikations- und Rechercheumgebung anbieten. Das Portal spricht in erster Linie Projekte an, die ihre Edition dauerhaft verfügbar und intuitiv zugänglich machen wollen, aber kein eigenes Onlineportal entwickeln und nachhaltig betreiben können oder möchten. Damit diese Projekte den Heraus- und Anforderungen exzellenter digitaler Editionen [s. bspw. Sahle 2014] entsprechen, legt das Portal Schwerpunkte auf die nachfolgend erläuterten Aspekte.
+         
+         
+            Fokus Nachnutzung und Langzeitverfügbarkeit
+            Um die im Portal befindlichen Editionen nachnutzen und in andere digitale Wissensbasen einbinden zu können, liegt ein Fokus auf der Bereitstellung von Datenschnittstellen, der Verwendung offener und standardisierter Datenformate und der Nachnutzung bewährter Open-Source-Software. So basiert nicht allein das technische Backend-System MyCoRe auf entsprechenden Technologien (Abb. 1). Auch das eigens für das Editionsportal entwickelte TEI-Basisformat (ThULBBf) ist eng an das TEI-Subset des Deutschen Textarchivs (DTABf) angelehnt und erweitert dieses handschriftenspezifisch (bspw. in den Bereichen Normdatenanreicherung, Materialität, Textzeugen-Wiedergabe, Transkriptions- und Auszeichnungsrichtlinien, auto-generierte Register etc., Abb. 2.), um die Ausspielung der Portaldaten in das DTA zu ermöglichen. Damit geht sowohl die Speicherung und Verwendung der Forschungsdaten in der CLARIN-D-Infrastruktur als auch die Nachnutzung etablierter linguistischer DTA-Tools einher, ohne dass (ggf. redundante) Neuentwicklungen erforderlich werden.
+            Damit ist bereits ein weiteres zentrales Portalmerkmal, die Langzeitverfügbarkeit der darin dargebotenen Informationen, benannt. Wenngleich die Frage der Langzeitspeicherung noch ungelöst ist [Carusi / Reimer 2010: 42], so folgt das Portal doch derzeitigen 
+                Nachhaltigkeitsempfehlungen. Dazu gehört unter anderem, dass die nachhaltige Speicherung der Portaldaten im Rahmen der von EFRE geförderten Langzeitarchivierungsplattform des Landes Thüringen auf Grundlage des Digitalen Archives NRW (Kooperation mit dem Landschaftsverband Rheinland) erfolgt [Mutschler 2017: 316].
+                
+            
+               
+               MyCoRe-Architektur (
+                        http://www.mycore.de/features/index.html)
+                    
+            
+            
+               
+               Das TEI-Basisformat des Editionsportals (ThULBBf)
+            
+         
+         
+            Fokus multimodale editorische und fachwissenschaftliche Benutzung
+            Das Portal verfolgt einen generischen Ansatz mit fest definiertem Arbeitsworkflow (Abb. 3), um Editionen projektübergreifend multimodal recherchier-, visualisier- und erforschbar zu machen. Zugleich wird jede Edition des Portals als eigenständige Forschungsleistung in Form einer projektspezifischen Publikation sichtbar und zitierbar. Editoren können zudem zwischen verschiedenen Werkzeugen zur Editionserstellung wählen. Je nach Ziel und Kenntnisstand können Microsoft Word, die Trierer Editionsforschungsumgebung FuD oder ein beliebiger XML-Editor eingesetzt werden. Für NutzerInnen bietet das Portal multimodale Recherche- und Visualisierungsinstrumente für disziplinübergreifende Fragestellungen (Netzwerke, Zeitleisten, Diagramme, Karten etc.). Durch die Einbettung des Editionsportals in ein umfassenderes 
+                Cultural-Heritage-Internetportal können die Quellenbestände dutzender Thüringer Institutionen und Partner außerhalb Thüringens in die Recherche und Analyse unmittelbar einbezogen werden.
+                
+            
+               
+               Der verbindliche Workflow für Editionsprojekte des Portals
+            
+         
+         
+            Verortung innerhalb der editorischen Portallandschaft
+            Innerhalb der editorischen Portallandschaft verortet sich das Editionsportal Thüringen zwischen Einzeleditionsprojekte weitestgehend nivellierenden Textsammlungen wie bspw. dem Deutschen Textarchiv oder dem TextGrid-Repository einerseits und Einzeleditionsportalen mit zu projektspezifisch ausgerichteten Eigenschaften und Funktionalitäten ohne editionsübergreifende Such- und Analysemöglichkeiten andererseits. Zu letzteren sind bspw. die Editionen der Wolfenbütteler Digitalen Bibliothek oder des Geisteswissenschaftlichen Asset Management Systems (GAMS) zu rechnen. Auch die Repositorien (trans)nationaler Infrastrukturen wie bspw. DARIAH oder CLARIN bleiben aufgrund ihrer wiederum zu unspezifischen Forschungsdatenausrichtung hinter den anwendungsorientierten Datenmodellen und Funktionalitäten des Editionsportals Thüringen zurück. Zum Novum des Editionsportals gehört ferner seine betont breite Ausrichtung auf möglichst zahlreiche Handschriftengattungen, unterschiedliche Zielgruppen, disparate Editionswerkzeuge und eine priorisierte Softwarenachnutzung.
+            Das Portal wird in einem ersten Schritt die bereits existierenden und in Arbeit befindlichen Editionen der digitalen ThULB-Bibliothek UrMEL aufnehmen und an diesen evaluiert. Es ist aber als Plattform konzipiert, die zur digitalen Aufbereitung von Quellenbeständen verschiedenster, auch kleinerer Einrichtungen (Archive, Bibliotheken, Museen, Vereine) anregen soll und keinesfalls an Thüringer Quellen, Institutionen o.ä. gebunden ist. 
+         
+         
+            Zielgruppenorientierung
+            Das Portal versteht sich in erster Linie als wissenschaftliches Angebot, das schwer zugängliche Handschriften aus fünf Jahrhunderten verfügbar macht und hochwertige Volltexte für die computergestützte Weiterverarbeitung liefert. In editionswissenschaftlicher Hinsicht leistet es einen Forschungsbeitrag zu der Frage, wie ein generisches Editionsportal sowohl projektspezifische, aus der Heterogenität der Quellen und den Erwartungen der Edierenden, Rezipienten und Förderer resultierende, als auch gesamtportalische, editionsübergreifende Interessen und Ansprüche gleichermaßen verbinden kann [s. bspw. Dogunke 2017]. Das Editionsportal richtet sich aber nicht ausschließlich an die Wissenschaft, sondern auch an Schulen und Bildungseinrichtungen und die interessierte Öffentlichkeit. Diesen wird mit der Integration des e-Learning-Tools „TranskribusLearn“ ein Werkzeug zum Erlernen altdeutscher Schrift angeboten sowie die Möglichkeit gegeben, das Portal mit eigenen Transkriptionen anzureichern. Eine hohe Qualität der Editionsinhalte und -daten wird durch Empfehlungen und Anleitungen, Reviewing, verbindliche Workflows (Abb. 3) und Dateneingaben sowie verschiedene technische Validierungsinstanzen gewährleistet.
+         
+         
+            Projektgenese und Arbeitsstand
+            Das Projekt ist aus einem Editionsprojekt [Prell / Schmidt-Funke 2017] hervorgegangen, für das nur sehr geringe Ressourcen zur Verfügung standen. Da dies eine häufig zu beobachtende Rahmenbedingung von Editionen darstellt, werden die im Editionsprojekt entwickelten Lösungen ausgebaut, institutionalisiert und anderen ForscherInnen kostenfrei zugänglich gemacht. Aktuell befindet sich das Portal in der zweiten Förderphase, nachdem in den Jahren 2017 und 2018 konzeptuelle und anpassende Maßnahmen des Backend-Systems vorgenommen worden. Derzeit findet die Entwicklung des TYPO3-Frontends statt.
+         
+      
+      
+         
+            
+                Vgl. beispielsweise die durch Sustainability-Zertifikate wie das Data Seal of Approval bzw. CoreTrustSeal formulierten Kriterien für nachhaltige Datenrepositorien (
+               
+                  https://www.coretrustseal.org/
+               
+               , 
+               
+                  https://www.datasealofapproval.org
+               
+                (letzter Zugriff 27.09.2018) sowie Buddenbohm et al. 2014.
+            
+            
+                Das „Digitale Kultur- und Wissensportal Thüringen“ wird im 1. Quartal 2019 online geschaltet.
+            
+         
+         
+            
+               Bibliographie
+               
+                  Buddenbohm, Stefan / Enke, Harry / Hofmann, Matthias / Klar, Jochen / Neuroth, Heike / Schwiegelshohn, Uwe (2014): „Erfolgskriterien für den Aufbau und nachhaltigen Betrieb Virtueller Forschungsumgebungen“. Göttingen. http://webdoc.sub.gwdg.de/pub/mon/dariah-de/dwp-2014-7.pdf [letzter Zugriff 27.09.2018].
+                    
+               
+                  Carusi, Annamaria / Reimer, Torsten (2010): “Virtual Research Environment Collaborative Landscape Study. A JISC funded project.” Oxford/London: JISC http://www.jisc.ac.uk/publications/reports/2010/vrelandscapestudy.aspx [letzter Zugriff 27.09.2018].
+                    
+               
+                  Dogunke, Swantje (2017): „Tagungsbericht: Editionsportale, 03.08.2017 – 04.08.2017 Jena“, in: H-Soz-Kult, 10.10.2017,  [letzter Zugriff 28.09.2018].
+                    
+               
+                  Mutschler, Thomas (2017): „Neue Wege der Kulturgutdigitalisierung in Thüringen“, in: Bibliotheksdienst 51, 310-321.
+                    
+               
+                  Prell, Martin / Schmidt-Funke, Julia (Hg.) (2017): „Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)“. Jena http://erdmuthe.thulb.uni-jena.de [letzter Zugriff 28.09.2018].
+                    
+               
+                  Sahle, Patrick (2014): „Kriterienkatalog für die Besprechung digitaler Editionen, Version 1.1“ (unter Mitarbeit von Georg Vogeler und den Mitgliedern des IDE) https://www.i-d-e.de/publikationen/weitereschriften/kriterien-version-1-1/ [letzter Zugriff 27.09.2018].
+                    
+            
+         
+      
+   
+
+

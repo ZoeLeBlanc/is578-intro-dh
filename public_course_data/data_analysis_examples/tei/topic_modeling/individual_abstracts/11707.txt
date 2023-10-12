@@ -1,0 +1,148 @@
+11707	2022	
+        
+            
+                Introduction and motivation
+                In a 2020 talk entitled “A Hornbook for Digital Book History”, Whitney Trettien weaves together many of the strands that have led book history, bibliography, media studies, and the digital humanities to have become deeply entangled in recent years. She convincingly argues for the potential of Book History done digitally “to build connective tissue across scattered collections” and advocates “using the digital tools at our disposal in order to see the big picture of the past”.
+                    
+                        
+                            https://rarebookschool.org/rbs-online/a-hornbook-for-digital-book-history/. She shares this vision of a continuum of print and digital with other influential voices at the intersection of book history, media studies, and the digital humanities, among them Henrike Laehnemann, Sarah Werner, and Matt Kirschenbaum to name but a few.
+                        
+                    
+                
+                It is in this vein that this paper presents the motivation for and realisation of a new open-access open scholarship platform (currently in public beta) named PRISMS.
+                    
+                        
+                            https://www.prisms.digital/
+                        
+                     The aim of the PRISMS Open Scholarship platform is two-fold:
+                
+                
+                    It offers a publication platform for digital scholarly editions, with full-text (preferably encoded in TEI) and facsimiles, and any accompanying materials, such as introduction, editorial statement, critical apparatus, contextual source materials, bibliography, and indices;
+                    It facilitates the semantic annotation of these editions and their related scholarship (in any format) by enabling easy-to-perform formal ontological modelling (based on the CIDOC-CRM family of ontologies
+                        
+                            
+                                http://www.cidoc-crm.org/
+                            
+                        ), and thus hopes to contribute to providing the abovementioned “connective tissue” not only for scattered collections, but to overcome the artificial print/digital divide.
+                    
+                
+                PRISMS was born out of the realization that digital editions do not break with the historicity or materiality of the sources they organize and present, but instead remediate and extend them in ways that enable new forms of access, engagement, presentation, and analysis. PRISMS conceptualizes digital editions as living entities that perform rather than merely document the remediation they engage in.
+                The scholarship that underpins each digital edition provides the essential context for these remediation processes, and collectively they sustain the knowledge network that supports all academic engagement with the texts from any disciplinary viewpoint. PRISMS is designed to allow for the collaborative and collective modelling of this continuum of digital editions and scholarship by placing digital editions, their material and contextual basis, and the resulting academic engagement in a linked context, building on the standards and tools provided by the Semantic Web.
+                We believe that this type of formalization is beneficial for the purposes of this project in at least three ways: firstly, ontologies facilitate modelling with reduced reliance on implicit knowledge through an explicit, shared conceptualization of the domain. Secondly, formal models encourage collaboration as they can be shared, re-used, adapted (forked), enhanced, aggregated, and developed collaboratively. Thirdly, as a form of knowledge representation, visualization, and preservation, formal models support computational processing and ultimately reasoning, and can develop alongside the mental models and human reasoning we engage in as scholars. PRISMS facilitates scholarship that is based on these principles
+                    
+                         Ground-breaking research projects in this domain include the 
+                            ResearchSpace platform and the 
+                            Sphaera CorpusTracer project.
+                        
+                    .
+                
+            
+            
+                Approach and implementation
+                The PRISMS Open Scholarship platform integrates the task of publishing digital editions with the need for analytical and modelling tools to perform the type of knowledge representation that connects the material, digital, and the scholarship that builds on them. PRISMS aims to support digital editors, book historians, experts in media and cultural studies, librarians, literary scholars, and of course digital humanists, to ensure a wide range of domain expertise, disciplinary practices, and methodological approaches are reflected in the platform. To this end, the PRISMS platform hosts a variety of tools alongside the digital editions, which can be categorized as component tools (such as text-based tools, image-based tools, XML-based tools, etc.) and workbench tools (those available across document types and editions).
+                
+                    
+                    Figure 1 
+                        Some of the built-in analysis and visualization tools in PRISMS. Voyant-Tools is shown alongside a relation being made between two editions, and some highlighted annotations
+                    
+                
+                The former category of tools is useful for any type of close scholarly work, and in PRISMS these tools include a bookmarking tool, an annotation tool (initially focussing on texts and images, but with a vision to extend annotation capabilities across all media types), the ability to keep research records (and other forms of note-taking, e.g. transcriptions, translations etc.) in the form of notebooks, and integration of Voyant Tools
+                    
+                        
+                            https://voyant-tools.org/
+                        
+                     for statistical analysis and a variety of visualisations of texts. The latter category includes the ability to participate in the shaping of the knowledge graph by modelling concepts and relationships, an easy way to organize research materials, and the ability to download, share, and publish contributions for the benefit of all.
+                
+                
+                    
+                    Figure 2 
+                        Modelling both the material legacies and digital remediation processes with Linked Data technologies and Cytoscape.js
+                    
+                
+                All semantic modelling work, e.g. with regard to the provenance of the material and digital manifestations of an edition, can be performed both directly in a visual representation of the graph using Cytoscape.js or via a set of customizable HTML forms. All resulting triples are stored in an RDF-native graph database (using the abovementioned ontologies) for long-term preservation, collaboration, and re-use. Every user of PRISMS has both read access to this global graph that underpins the platform and unlimited access (via SPARQL Update operations) to a private graph. By default, everything in PRISMS is private. Everything contributors add is immediately visible to them, and they can conduct their scholarship in complete privacy, without delay or interference. Only when the user decides to publish their contributions will they be made available to everyone. Depending on the type of contribution made, there are options to share, download, and/or publish them. All contributions made to the PRISMS platform are stored in standard formats, e.g. the W3C Web Annotation Data Model for annotations and relations.
+            
+            
+                Contribution and further work
+                PRISMS has been launched with corpora from the EEBO-TCP
+                    
+                        
+                            https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/
+                        
+                    , ECCO-TCP
+                    
+                        
+                            https://textcreationpartnership.org/tcp-texts/ecco-tcp-eighteenth-century-collections-online/
+                        
+                    , EVANS-TCP
+                    
+                        
+                            https://textcreationpartnership.org/tcp-texts/evans-tcp-evans-early-american-imprints/
+                        
+                    , the DTA extended core corpus
+                    
+                        
+                            https://www.deutschestextarchiv.de/
+                        
+                    , and the Taylor Editions
+                    
+                        
+                            https://editions.mml.ox.ac.uk/
+                        
+                     scholarly editions platform. And it is easy to add new editions to the platform either as part of a dedicated digital scholarly editing process, for which training is provided, or by simply adding a IIIF manifest and using a built-in XML-aware or standard text-editor to start transcribing and adding contextual materials. The platform already supports the addition and semantic annotation of a wide range of primary and secondary materials, such as facsimiles in IIIF, a transcription of a source text, a PDF of a journal article, a video of a theatrical performance, an audio book, an image, or a 3D-model of a sculpture mentioned in a text, etc. 
+                
+                
+                    
+                    Figure 3 
+                        A view of the PRISMS workbench, with three editions of Faust loaded, and an aggregation of primary and research materials in support of a performance analysis, with a facsimile, two videos, and an audio book
+                    
+                
+                Moving forward, we will continue to work on integrating the digital research and tools important to PRISMS’ users (e.g. reference manager, images taken in reading rooms, items deposited in institutional repositories). With end of the beta phase, the project also intends to provide access to the entire PRISMS knowledge graph through regular data dumps and a public SPARQL endpoint. We envision that over time, PRISMS will evolve both as a powerful discovery tool and a personal research tool.
+            
+        
+        
+            
+                
+                    Bibliography
+                    Ciotti, F. (2015) “Digital methods for Literary Criticism.” Lecture slides. University of Rome Tor Vergata, 
+                        http://didattica.uniroma2.it/files/scarica/insegnamento/161783-Informatica-Umanistica-Lm-Per-Il-Llea/37175-Slide
+                    
+                    Ciula, A. and Marras, C. (2016) “Circling around texts and language: towards 'pragmatic modelling' in Digital Humanities.” 
+                        
+                            Digital Humanities Quarterly (DHQ)
+                         10.3 
+                        http://www.digitalhumanities.org/dhq/vol/10/3/000258/000258.html
+                    
+                    Ciula, A. and Eide, Ø. (2107) “Modelling in digital humanities: Signs in context.” 
+                        
+                            Digital Scholarship in the Humanities
+                         32: i33–i46. 
+                        https://doi.org/10.1093/llc/fqw045
+                    
+                    Ciula, A., Eide, Ø, Marras, C. and Sahle, P. (2018) 
+                        Models and Modelling between Digital and Humanities — A Multidisciplinary Perspective. 
+                        Historical Social Research (HSR) Supplement 31.
+                    
+                    Eide, Ø. (2015)
+                         Media Boundaries and Conceptual Modelling: Between Texts and Maps. Pre-print manuscript, 
+                        https://www.oeide.no/research/eideBetween.pdf
+                    
+                    Kirschenbaum, M. and Werner, S. (2014) “Digital Scholarship and Digital Studies: The State of the Discipline.” 
+                        Book History 17, 406-458 
+                        https://www.academia.edu/15995371/Digital_​Studies_​and_​Digital_​Scholarship_​The_​State_​of_​the_​Discipline
+                    
+                    Kräutli, F. and Valleriani, M. (2018) “CorpusTracer: A CIDOC database for tracing knowledge networks.” 
+                        Digital Scholarship in the Humanities 33(2): 336-346. 
+                        https://pure.mpg.de/rest/items/item_2472866_10/component/file_3002633/content
+                    
+                    Laehnemann, H. (2022) “History of the Book blog.” 
+                        https://historyofthebook.mml.ox.ac.uk/
+                    
+                    Oldman, D., Doerr, M. and Gradmann, S. (2016) “Zen and the Art of Linked Data: New Strategies for a Semantic Web of Humanist Knowledge.” In Schreibman, S., Siemens, R., Unsworth, J. (eds.) 
+                        A New Companion to Digital Humanities. Malden, MA: Wiley Blackwell, 251-273.
+                    
+                
+            
+        
+    
+
+

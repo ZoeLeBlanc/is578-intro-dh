@@ -1,0 +1,70 @@
+
+      
+         Die journalistische Gattung der „Spectators“ des 18. Jahrhunderts stellt ein wichtiges Kulturerbe aus der Zeit der Aufklärung dar. Die Zeitschriften entsprachen dem demokratischen Ideal, kulturelle und moralische Fragen in nicht-akademischen Kreisen zu verbreiten und Werte der Aufklärung wie Weltoffenheit, Toleranz, intellektuelle Kritik und soziale Verantwortung zu popularisieren. Ausgehend von den englischen Modellzeitschriften 
+                The Tatler (1709-1711), 
+                The Spectator (1711-1712 bzw. 1714) und 
+                The Guardian (1713) hat sich dieses journalistische Genre über ganz Europa mittels Übersetzungen, Adaptionen und Imitationen verbreitet. Auf Basis des mehrsprachigen Korpus (derzeit Italienisch, Spanisch, Französisch, Englisch, Deutsch, Portugiesisch) der Digitalen Edition 
+                The Spectators in the International Context (Ertler et al.) zeigt das Poster die Ausbreitung zentraler Themen des Aufklärungsdiskurses, wie etwa Theater, Sitten und Bräuche, Frauen- und Männerbild. 
+            
+         Anhand der Untersuchung von populären Themen mit maschinellen Methoden präsentiert der Beitrag zentrale Linien des Transfers von Diskursen innerhalb des Genres der Spectators und reflektiert damit den Zeitgeist des 18. Jahrhunderts. Mit Hilfe einer Kombination aus 
+                close reading, 
+                distant reading und Visualisierungsmethoden wird aufgezeigt, welche Themen lokale Relevanz hatten und welche länderübergreifend in den Diskurs aufgenommen wurden. Innerhalb letzterer soll zwischen Themen kontrastiert werden, die in unterschiedlichen Sprachgemeinschaften unabhängig voneinander Relevanz erlangt hatten, und jenen, die durch Imitation und Übersetzung verbreitet wurden.
+            
+         Als Fallbeispiel kann das Thema Theater angeführt werden, das in zahlreichen Zeitschriften unterschiedlicher Länder unabhängig voneinander diskutiert wurde. Während in Frankreich das neoklassizistische Theater im 18. Jahrhundert bereits vollends etabliert und somit als Thema in den Spectators weniger relevant war, erlebten Italien und Spanien eine bewegte nationale Theaterdiskussion. Seit dem 16. Jahrhundert hatte sich das italienische Theater stetig weiterentwickelt. Im 18. Jahrhundert wurde es jedoch als Repräsentationsmedium für ein modernes Italien auserkoren und erlebte eine massive Veränderung. Unabhängig davon wurde auch in Spanien der politische Streit zwischen Progressisten und Traditionalisten über das Thema des Theaters ausgetragen: Spanische Intellektuelle versuchten zunehmend durch kulturelle Reformen den intellektuellen Anschluss an Europa zu schaffen und lieferten sich mit Traditionalisten einen regelrechten Streit über eine radikale Reform des Theaters nach neoklassizistisch französischem Vorbild. (Vgl. z.B. Guinard 1973, 133-138; Ertler 2003, 120-124)
+         Die Basis der Untersuchungen bildet das Korpus von etwa 4000 Texten, das im 
+                close reading-Verfahren hinsichtlich der narrativen, thematischen und sachorientierten Inhalte annotiert und mittels des XML/TEI Standards (TEI Consortium 2019) ausgezeichnet wurde. Der Vorteil der TEI Kodierung für die Analyse ist neben der quantitativen Auswertung der Metadaten, Schlagworte und Entitäten die Möglichkeit von Untersuchungen auf Basis der narrativen Textstruktur. So können nicht nur der gesamte Text, sondern in den Zeitschriftentexten ausgezeichnete narrative Erzählformen (wie etwa Traumsequenzen oder Leserbriefe) separiert voneinander analysiert und kontrastiert werden. Neben der quantitativen Auswertung der manuell zugewiesenen Themen wird Topic Modelling (z.B. Blei et al. 2003, 
+                Jelodar et al. 2019, Kuang et al. 2015) eingesetzt, um diese Annotationen zu bestätigen und zu ergänzen und neue Perspektiven auf die Rezeption des Materials zu eröffnen. Abb. 1 und 2 zeigen einen Vergleich der manuellen und der maschinellen Auswertung von Themen: Es zeigt sich eine Übereinstimmung beider Herangehensweisen dahingehend, dass die maschinelle Auswertung das verstärkte Auftreten des Themas Theater in den Ausgaben 18-27, 37-46 und 68-78 bestätigt.
+            
+         
+            
+             Abbildung 1: Statistische Auswertung der manuell zugewiesenen Themen (in rosa z.B. “Theatre Literature Arts”) auf die Ausgaben des El Pensador.
+         
+         
+            
+            Abbildung 2: Topic Modelling: Verteilung des Topics “Comedia & Theatro” (mit den 10 häufigsten Wörtern comedia, theatro, poetas, pueblo, pieza, amor, accion, nacion, pasion, tragedia) auf die Ausgaben des El Pensador. 
+         
+         Darüber hinaus werden die (manuellen und maschinellen) Annotationen verwendet, um das zeitliche Auftreten ausgewählter Themen innerhalb einer Sprachgemeinschaft und sprachenübergreifend zu analysieren. Als Referenz für diese Untersuchungen dient das Zeitschriftennetzwerk der Spectators: Dieses stellt die Abhängigkeit von Zeitschriften unterschiedlicher Sprachgemeinschaften hinsichtlich Übersetzung, Adaption und Imitation dar.
+         
+            Der wissenschaftliche Beitrag des Posters und der dem Beitrag zugrunde liegenden Arbeit am Projekt 
+                Distant Spectators: Distant Reading for Periodicals of the Enlightenment – einer Kooperation zwischen dem Zentrum für Informationsmodellierung und dem Institut für Romanistik der Universität Graz, sowie dem Institute of Interactive Systems and Data Science der Technischen Universität Graz und dem Know-Center Graz – kann in zwei Aspekte unterteilt werden. Einerseits kann durch die Anwendung von 
+                distant reading-Methoden die Liste der manuell selektierten Themen erweitert und feiner granuliert werden. Dieser Zugang relativiert die vorab generierte Leseerwartung und ermöglicht somit einen unvoreingenommenen Blick auf den Text sowie die Analyse größerer, ggf. noch nicht annotierter Korpora. Andererseits wird durch die vorgestellte Arbeit die öffentlich zugängliche Digitale Edition der Spectators (Ertler et al.) zusätzlich (semi-automatisiert) angereichert und durch auf den TEI-Annotationen basierende Visualisierungen augmentiert. Dies ist ein erster explorativer Schritt in Richtung intelligentes maschinelles Lernen im Kontext der Spectators und eröffnet neue Wege der Erschließung, Analyse und Präsentation dieser multilingualen literaturwissenschaftlichen Ressource.
+            
+      
+      
+         
+            
+               Bibliographie
+               
+                   Ertler, K.; Fuchs, A.; Fischer, M.; Hobisch, E.;
+  Scholger, M.; Völkl, Y. (Hg.)  (2011-2019): 
+  The Spectators in the International Context, https://gams.uni-graz.at/spectators.
+
+               
+                   Ertler, K. (2003): 
+  Moralische Wochenschriften in Spanien. José Clavijo y Fajardo: ‚El Pensador’. Tübingen: Gunter Narr.
+
+               
+                   Guinard, P.  (1973): 
+  La Presse espagnole de 1737 à 1791. Formation et signification d’un genre. Paris: Centre de recherches hispaniques.
+
+               
+                  Blei, D. M., Ng, A. Y., & Jordan, M. I.  (2003): Latent dirichlet allocation. 
+  Journal of machine Learning research, 3 (Jan), 993-1022.
+
+               
+                  Jelodar, H., Wang, Y., Yuan, C., Feng, X., Jiang, X., Li, Y., & Zhao, L. (2019): Latent Dirichlet Allocation (LDA) and Topic modeling: models, applications, a survey. 
+  Multimedia Tools and Applications, 78 (11), 15169-15211.
+
+               
+                  Kuang, D., Choo, J., & Park, H.  (2015): Nonnegative matrix factorization for interactive topic modeling and document clustering. In 
+  Partitional Clustering Algorithms (pp. 215-243). Springer, Cham.
+
+               
+                  TEI Consortium  (2019): eds. 
+  Guidelines for Electronic Text Encoding and Interchange. July 2019. http://www.tei-c.org/P5/.
+
+            
+         
+      
+   
+

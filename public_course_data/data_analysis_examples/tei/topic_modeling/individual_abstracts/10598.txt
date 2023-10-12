@@ -1,0 +1,90 @@
+10598	2017	
+      
+         
+            Das vom österreichischen Wissenschaftsfonds FWF geförderte Projekt hat sich zum Ziel gesetzt, die illuminierten Urkunden des Mittelalters zu sammeln, auf der Plattform 
+                    
+                  monasterium.net
+                zur Verfügung zu stellen und umfassend zu untersuchen. Die ExpertInnen aus den Bereichen der Diplomatik (Zajic Andreas, Gneiß Markus), der Kunstgeschichte (Roland Martin, Bartz Gabriele) und den Digitalen Geisteswissenschaften (Vogeler Georg, Bürgermeister Martina) arbeiten bewusst interdisziplinär zusammen und achten dabei vor allem auch auf Nachhaltigkeit. Das Poster wird zeigen, wie bei Materialerfassung, Erschließung und wissenschaftlicher Auswertung zukünftige Nutzerszenarien bedacht werden – also die soziale Dimension von Nachhaltigkeit konsequent berücksichtigt wird. Es reicht nicht, die Daten von Festplatte zu Festplatte zu kopieren (Langzeitarchivierung), sondern sie müssen auch nutzbar bleiben. Die im Projekt eingesetzten Mittel dafür sind 1. Datenkuratierung über eine etablierte Online-Plattform mit projektübergreifendem institutionellem Interesse, 2. Datenmanagement durch die Verwendung von gut dokumentierten und öffentlichen Datenstandards und 3. kontrollierte Vokabularien für die inhaltliche Erschließung. 
+                
+            
+               Datenkuratierung
+               Schon in der Planungsphase des Projektes war klar, dass alle Projektdaten im weltweit größten Onlineangebot von Urkunden 
+                        monasterium.net verarbeitet werden sollen. Damit wird ein sozialer Aspekt von Nachhaltigkeit berücksichtigt: Monasterium ist ein seit 2002 existierendes Großprojekt zur Zurverfügungstellung und (kollaborativen) Erschließung von Beschreibungen und Faksimiles von Urkunden des Mittelalters und der Frühen Neuzeit. Das Portal wird überwiegend von Archiven gespeist, es sind aber auch retrodigitalisierte Urkundenbücher und von ForscherInnen erstellte Sammlungen enthalten. Hinter dem virtuellen Archiv Monasterium steht 
+                        ICARUS, ein Konsortium von Archiven und wissenschaftlichen Institutionen, das sein Wissen und seine Erfahrungen ständig austauscht und erweitert. Die große Datenmenge, die Etabliertheit des Angebots in der Fachcommunity und der institutionelle Hintergrund haben Monasterium aus einem kleinen DH-Projekt zu einem nachhaltigen Host nicht nur für unser Projekt gemacht: 1. Die projektübergreifende Infrastruktur erlaubt, dass die projektspezifischen Forschungsdaten über die Projektdauer hinaus zur Verfügung stehen. 2. Durch die Integration der Forschungsdaten in Monasterium bekommt jeder Datensatz auch einen persistenten Identifikator. D.h. alle Datensätze sind eindeutig adressierbar und zitierbar. 3. Das Interesse am Erhalt des Angebots ist groß, sodass selbst unter widrigen finanziellen Bedingungen aktiv nach Lösungen für den Erhalt der auf 
+                        monasterium.net verfügbaren Daten gesucht werden wird.
+                    
+            
+            
+                Datenmanagement
+               Die im Projekt 
+                        Illuminierte Urkunden entstehenden Forschungsdaten werden als strukturierte Datensätze in einer XML-Datenbank verwaltet und archiviert. Die einzelnen Urkunden-Datensätze werden nach dem Standard der CEI annotiert, die sich als TEI-P4-Dialekt in andere Datenstrukturen integriert und öffentlich dokumentiert ist. In der Datenbank ist ein für 
+                        monasterium.net spezialisiertes Schema (XSD 1.1) im Einsatz, das einerseits die Verwendung der zulässigen Beschreibungselemente dokumentiert und andererseits die Konsistenz und Validität der zu importierenden Daten prüft. Schon in der Projektplanungsphase haben die Projektbeteiligten über Mittel und Möglichkeiten der Datenmodellierung gemeinsam diskutiert. Da der CEI-Standard zur wissenschaftlichen Bearbeitung von Urkunden initiiert wurde, brauchte die Überführung der aus dem Projekt 
+                        Illuminierte Urkunden stammenden Forschungsdaten aus dem Bereich der Diplomatik keine Anpassungen an das Datenmodell. Um aber die Beschreibungsdaten zu Dekor und Buchschmuck aufnehmen zu können, musste das Datenmodell um die Möglichkeit einer kunsthistorischen Beschreibung erweitert werden. Dafür konnten Strukturen aus der TEI direkt übernommen werden. Die Daten werden also sozial nachhaltig, indem sie öffentlich dokumentierte und in der Fachcommunity geläufige Datenbeschreibungsstandards verwenden, Standards, die jede und jeder nachlesen kann.
+                    
+            
+            
+               Kontrollierte Vokabularien
+               Im Projekt 
+                        Illuminierte Urkunden ist die Vergleichbarkeit von Datensätzen für die Weiternutzung ein wichtiger Faktor. Kulturelle Kontexte und Fragen der Mehrsprachigkeit spielen seit Projektstart eine Schlüsselrolle, da von Beginn an mit Forschungspartnern aus West-, Süd- und Südosteuropa zusammengearbeitet wird.
+                    
+               Bisher werden noch keine vollständigen Beschreibungen in mehreren Sprachen auf 
+                        monasterium.net angeboten, aber im Rahmen des Projekts wurde die Möglichkeit entwickelt, Metadaten in mehrsprachigen kontrollierten Vokabularien zu erfassen. Sie werden im W3C SKOS als RDF/XML ausgedrückt. Bisher wurden ein viersprachiges kontrolliertes Vokabular zur Klassifikation des Dekors von Urkunden (vgl. Roland 2014) und ein Glossar erstellt. Diese Neuerung steigert die Qualität einerseits des Information Retrieval und führt zu einer umfassenden Kontextualisierung des Forschungsgegenstandes. Damit sind also auch die Inhalte der Daten für eine breitere Community besser nachvollziehbar, ein Konzept, das wir vorläufig als „Langzeitverständlichkeit“ bezeichnen möchten.
+                    
+            
+         
+         
+            Zusammenfassung
+            Die kurze Laufzeit jedes Drittmittelprojektes – und damit auch des Projektes 
+                    Illuminierte Urkunden macht Nachhaltigkeit als soziales Phänomen zu einer zentralen Frage: Die Forschungsdaten sollen einer sekundären Nutzung zur Verfügung gestellt werden und zu neuen Forschungsfragen führen. Deshalb werden im Projekt 
+                    Illuminierte Urkunden drei „soziale“ Nachhaltigkeitsstrategien angewandt. Integration in eine in der Forschercommunity und bei Institutionen etablierte Plattform (monasterium.net), Verwendung von verbreiteten und facheinschlägigen Metadatenstandards und Erschließung von Inhalten mit kontrollierten Vokabularien.
+                
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  CEI, Charter Encoding Initiative: 
+                        http://www.cei.lmu.de [letzter Zugriff 23. August 2016].
+                    
+               
+                  Heinz, Karl (2010):
+                        „Monasterium.net. Auf dem Weg zu einem europäischen Urkundeportal“,
+                        in: Kölzer, Theo (ed.):
+                        Regionale Urkundenbücher. Die Vorträge der 12. Tagung der Commission Internationale de Diplomatique, St. Pölten 2010 (Mitteilungen aus dem Niederösterreichischen Landesarchiv 14) 
+                        139–145.
+                    
+               
+                  ICARUS, International Centre for Archival Research: 
+                        http://icar-us.eu/ [letzter Zugriff 23. August 2016].
+                    
+               
+                  Krah, Adelheid (2009):
+                        „Monasterium.net - das virtuelle Urkundenarchiv Europas: Möglichkeiten der Bereitstellung und Erschließung von Urkundenbeständen“,
+                        in:
+                        AZ 91: 221–246.
+                    
+               
+                  Roland, Martin (2013):
+                        „Illuminierte Urkunden im digitalen Zeitalter – Maßregeln und Chancen“,
+                        in: Ambrosio, Antonella / Barret, Sébastien / Vogeler, Georg (eds.):
+                        Digital diplomatics. The computer as a tool for the diplomatist?, Archiv für Diplomatik, Beiheft 14.
+                        Köln / Weimar /Wien 245–269.
+                    
+               
+                  Roland, Martin / Zajic, Andreas (2013):
+                        „Illuminierte Urkunden des Mittelalters in Mitteleuropa“,
+                        in:
+                        Archiv für Diplomatik 58: 237-428.
+                    
+               
+                  SKOS, Simple Knowledge Organization System: 
+                        https://www.w3.org/2004/02/skos/ [letzter Zugriff 23. August 2016]. 
+                    
+            
+         
+      
+   
+
+

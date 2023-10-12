@@ -1,0 +1,28 @@
+2140	2014	Visualization As a Bridge to Close Reading: The Audience in The Castle of Perseverance
+
+1. Introduction
+
+In thinking of visualizations and how they can help bridge the gap between traditional close readings of texts and digital projects, Matthew Kirschenbaum asks, "What patterns would be of interest to literary scholars? … How would we evaluate the effectiveness of our visualizations, or the software in general?  Is it succeeding if it surprises us with its results, or if it doesn’t?"1  Many scholars have noted the importance of approaching a visualization project with an appropriate amount of scholarly attention, and it is my intention to show how the activity of creating a visualization of a text and the visualization itself can highlight areas of the text which would benefit from a traditional close reading.234  The text I have chosen for this visualization-prompted close reading is The Castle of Perseverance, a 15th century morality play which takes the form of a locus-and-platea play.  Creating a visualization of the network of characters within the play leads us to inquire into the role of the audience of the play, both the original audience of medieval spectators and contemporary readers or watches of the play.
+
+The Castle of Perseverance stage plan, Macro MS folio 191v.
+2. Tool
+
+The tool I have chosen for the visualization is Gephi, an open-source graphic visualization software.  Gephi is "an interactive visualization and exploration platform for all kinds of networks and complex systems, dynamic and hierarchical graphs."5  I have two main reasons for this choice.  The first is that Gephi is a relatively easy program to work with, while also being quite powerful and allowing a nuanced approach to the visualization process.  The second reason for this choice is the set of algorithms which come with Gephi, two of which I will be using in my visualizations.  One measures "Betweenness Centrality," a measure of the size of the network and the average path length between nodes, in this case characters, in the network.  The second algorithm measures modularity and identifies community groups within the network.  Different critical approaches to visualizing will affect the ways in which these two algorithms interpret the data and the resulting visualization will lead to different conclusions.
+3. Theoretical Issues
+
+One of the benefits of creating a visualization of the network within a play is that "nothing ever disappears.  What is done, cannot be undone … The past becomes the past, yes, but it never disappears from our perception of the plot."6  In the case of The Castle of Perseverance, however, this permanence of action that exists in a visualization can cause some problems.  Medieval morality plays, by nature, are heavily didactic and often address the audience directly.  In The Castle of Perseverance, over 800 lines, more than one-fifth of the play, are directed at the audience.  Throughout the play, the audience is addressed both directly and indirectly, "all the men that in this werld wold thryve" (521), "Lordyngys" (1425), and "all men" (3694) to give but a few examples.7  Should a visualization of the network of characters in a play include the audience of that play?  They have no speaking role and would certainly not be included in any list of dramatis personae.  Leaving the audience out of the network leads to the network which appears in figure 2.
+
+Fig. 1: The Castle of Perseverance network, without the audience as a node.
+If we are troubled by leaving out such a large portion of the play and create a network which includes the audience, the result is figure 3.
+
+Fig. 2: The Castle of Perseverance network with the audience included as a node.
+The interesting difference between these visualizations is the members of the various communities as identified by Gephi.  In figure 2, Humanum Genus, the mankind figure, is grouped with the bad angle and most of the seven deadly sins.  In figure 3, however, Humanum Genus is grouped with the good angle and the seven virtues; this is also how the play ends, with Humanum Genus asking for God’s mercy and ascending to heaven.  The audience in some way, according to the communities identified by Gephi, is a factor in Humanum Genus ending the play in God’s grace.  These two maps of the network within The Castle of Perseverance cause us to turn back to the text for a close reading of the ways in which the audience appears as a character through the efforts of the dramatic characters of the play.
+References
+
+1. Kirschenbaum, M.Poetry, Patterns, and Provocation: The Nora Project. The Valve. January 12, 2006. Web. October 31, 2013.
+2. Jessop, Martyn (2008). Digital Visualization As a Scholarly Activity. Literary and Linguistic Computing 23.3: 281-193. Print.
+3. Rieder, Bernhard and Theo Rohle (2012). Digital Methods: Five Challenges. Understanding Digital Humanities. Ed. David M. Berry. New York: Palgrave Macmillan. Print. 67-84.
+4. Scully, D. and Bradley M. Pasanek (2008). Meaning and Mining: The Implicit Assumptions in Data Mining for the Humanities. Literary and Linguisting Computing 23.4: 409-424. Print.
+www.gephi.org
+6. Moretti, Franco. (2011). Network Theory, Plot Analysis. Stanford, Stanford Literary Lab.
+7. Eccles, Mark (1969). The Macro Plays. London: Oxford University Press. Print.

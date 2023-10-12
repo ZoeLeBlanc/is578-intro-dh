@@ -1,0 +1,65 @@
+2004	2014	1. Introduction
+From colonial times to World War Two, most of Australia’s many newspapers incorporated serial fiction, including local and overseas titles. The Australian fiction in these periodicals has largely been identified (Austlit), and important research in this area is ongoing (Bode 2012; Gelder 2011). However, very little is known about the overseas works, including the titles, authors and themes, and their circulation and reception in Australia.
+
+An important reason for this lack of knowledge is the size of the archive. With hundreds of newspapers – many containing multiple instalments of novels per edition – a systematic manual search for fiction is unfeasible. The search possibilities for this archive have dramatically expanded with the creation of the National Library of Australia’s (NLA) Trove database. From 2007 to 2012, the NLA digitised over four million pages of Australian newspapers, from every state and territory, published from 1803 to the 1950s. Combined with digital humanities methods for data mining and analysis, this ongoing digitisation project makes identifying serial fiction in Australian newspapers possible for the first time in a systematic and reliable way.
+
+The project reported in this paper describes a computer-enabled approach to exploring the presence, circulation and reception of fiction in Australian newspapers that enables research, and advances arguments, relevant to bibliographical, book historical and literary studies as well as digital humanities.
+
+2. Bibliography
+The project showcases how digital humanities methods can significantly enhance bibliographical records and knowledge. Searching Trove using terms associated with serial fiction – including ‘chapter’, ‘story’ and ‘fiction’ – enables identification of potentially relevant records. The bibliographic information and full text results of these searches are extracted as CSV and text files using a Python harvesting tool developed by Sherratt (2013). These files are supplemented through additional research (for instance, the authors’ nationalities and gender), and transfer to a database that will be freely accessible to researchers and the public.
+
+This approach is providing extremely effective in identifying serial fiction. The first search – of ‘chapter’ – yielded approximately 200,000 individual instances of fiction in Australian newspapers. Many other searches remain to be done; however, even this initial result demonstrates this method’s capacity to enhance bibliographical records. This search process will undoubtedly reveal previously unrecorded instances of publication, particularly of non-Australian fiction. Some of these instances will almost certainly be of titles that have not been indexed previously, including by well-known authors. More broadly, this project demonstrates the potential of digital humanities methods to maximise the utility, and thus enhance the value and consequence, of digital collections.
+
+3. Book History
+The collected bibliographic data enables quantitative analysis of the transnational movement of fiction. This approach builds on earlier studies, most prominently, Moretti’s ‘distant reading’ (2005) and, more recently, Jockers’s ‘macroanalysis’ (2013). In terms of the archive searched and the cultural phenomena analysed, it is also indebted to Nicholson’s identification and analysis of American jokes in digitised nineteenth-century British newspapers (2012). Importantly, however, unlike these other works, the body of data underpinning this project’s arguments and findings will be publicly available, so other scholars can explore, check, extend and potentially challenge the findings; and so this data can be reused in future research.
+
+Findings of initial data analysis, for 1830 to 1880, already indicate trends that challenge existing perceptions of Australian literary culture. Where metropolitan newspapers are routinely identified as the main Australian serial fiction publishers (e.g. Webby 2000), this study highlights the strong involvement of regional newspapers. This finding challenges the existing centre/periphery understanding of colonial literary culture. Also contesting this model is the revelation that – while overseas fiction has been estimated to vastly outnumber local titles (Morrison 1998) – in this period, more local than overseas fiction was published. One interesting outcome of this strong local publication is a reversal of the much-discussed female-dominance of nineteenth-century serial fiction authorship. Although most American and British serial fiction was by women (Casey 1996; Coultrap-McQuin 1990; Thompson 1999), men wrote the majority of titles in Australian periodicals in this period. While local titles outnumbered overseas fiction, this initial search has identified a significant amount of non-Australian titles, including a higher-than-anticipated number of American stories, as well as fiction from a wide range of countries besides Britain, including China, Russia, France and Germany. As well as highlighting the status of Australian periodicals as ‘contact zones’ (Pratt 1990) for literature, this range of national literatures further challenges a centre/periphery understanding of colonial literary culture.
+
+This project’s combination of digital humanities and book history suggests important directions for the former as well as the latter field of study. Book history is increasingly recognised as playing an important role in the development of digital humanities. Alan Liu describes book history as a Levi-Straussian ‘trickster figure’ for digital humanities, uniting the field’s commitment to older humanities disciplines, and the value of the old itself, with more recent interest in emergent media and design (2013, 410). Elsewhere he points to the way book historians ‘increasingly compare, and not just contrast, earlier writing/reading practices to their digital successors’ (2012, 16), and the potential of this approach to enhance understanding the digital age and the digital humanities.
+
+The project employs this comparative framework to consider reading practices. While one might assume nineteenth-century newspapers differ entirely from the Internet, in fact both are networked interfaces uniting various content, including that previously published elsewhere, for readers who have significant autonomy in deciding what to read and what connections to draw. Notwithstanding these significant parallels, it is equally important that the use of digitised archives, and digital humanities search and retrieval methods, not occlude historical context. In particular, this project works to maintain a view of nineteenth-century newspapers as coherent and interconnected cultural artefacts rather than containers of discrete content (a perception potentially encouraged by search results in the form of individual articles).
+
+4. Literary Studies
+The full-text records extracted from Trove provide the basis for computer-assisted textual analysis, particularly topic modelling. This aspect of the project will follow, and in so doing, test and extend Jockers’s analysis of influence in relation to Irish, English and American literature (2013). Topic modelling will be used to investigate whether, and if so, to what extent, local stories in Australian newspapers employed similar themes, language, or generic strategies to the other-national literatures alongside which they were published. The same method will be used to consider relationships between other-national literary forms. Like Moretti’s and Jockers’s analyses, this project will contribute to shifting literary studies beyond a nation-based framework. However, where these earlier studies consider general bibliographic corpora, in exploring texts published alongside one another, this project provides an important opportunity to consider influence in relation to a specific material context: that is, fiction received and experienced by particular readers at particular times.
+
+5. Digital Humanities
+McCarty's notion of modelling is a key concept in this project's formulation and development. In McCarty’s words, a model is ‘an abstraction or simple representation of a more complex real phenomena’ (2008), and modelling enables exploration of and experimentation with phenomena that would otherwise be intractable or inaccessible (2005: 27). This project will complicate and extend this methodological framework by highlighting the multiple number and layers of models and modelling processes involved in exploring serial fiction in Australian periodicals. These layers include the digitised newspaper pages (themselves created from other models, predominantly microfiche), the Trove database more broadly, the database in which the search and harvesting results are represented, as well as the subsequent quantitative analyses of bibliometric and textual data. Where McCarty has always insisted upon the status of models as fictions, this foregrounding of multiple and layered models emphasises the radical contingency of this foundational concept for digital humanities, as well as the theoretical nature of its outcomes.
+
+Foregrounding the contingent and theoretical nature of modelling has two key implications for this project, and for digital humanities research broadly. First, it provides the groundwork for working with an historical record that necessarily contains multiple gaps: Trove has not digitised all Australian newspapers; some records have been lost, others are still to emerge; the quality of OCR for the texts differs radically; and the search process will not discover all serial fiction in Trove. Second, it enables a recognition that even the historical record we have – including what might be considered its obvious facts – needs to be treated as contingent and theoretical. For instance, bibliographic details added to the database – such as the name and gender of authors – are obviously facts, but may not have been present to historical readers (stories were published anonymously or under pseudonyms) and thus cannot be taken as absolute points of reference for understanding the historical circulation and reception of fiction. In moving away from understanding quantitative analysis of archival records as proof of historical phenomena, the underlying framework seeks to forge a conversation between bibliographers, archivists, book historians, literary critics and digital humanists that is data-rich, but oriented towards theoretical possibilities and constructs rather than proof and measures.
+
+References
+Austlit: The Australian Literature Resource. (2002–). www.austlit.edu.au. 
+
+Bode, K. (2012). Reading by Numbers: Recalibrating the Literary Field. London: Anthem Press. 
+
+Casey, E. (1996). Edging Women Out? Reviews of Women Novelists in the Athenaeum, 1860-1900. Victorian Studies39.2: 151-71. 
+
+Coultrap-McQuin, S. (1990). Doing Literary Business: American Women Writers in the Nineteenth Century. Chapel Hill: University of North Carolina Press.
+
+Gelder, K. (2011). Negotiating the Colonial Australian Popular Fiction Archive. JASAL Special Issue: Archive Madness: 1-12.  
+
+Jockers, M. (2013). Macroanalysis: Digital Methods and Literary History. Champaign: University of Illinois Press. 
+
+Liu, A. (2012). The State of the Digital Humanities: A Report and a Critique. Arts and Humanities in Higher Education11.1-2: 8-41.
+
+Liu, A. (2013). The Meaning of the Digital Humanities. PMLA128.2: 409-23.
+
+McCarty, W. (2005). Humanities Computing. London: Palgrave Macmillan.
+
+McCarty, W. (2008). Knowing …: Modeling in Literary Studies. In Susan Schreibman and Ray Siemens (eds), Companion to Digital Literary Studies. Oxford: Blackwell. http://www.digitalhumanties.org/companionDLS/.
+
+Moretti, F. (2005). Maps, Graphs, and Trees: Abstract Models for Literary History. London: Verso.
+
+Morrison, E. (1998). Serial Fiction in Australian Colonial Newspapers. In John O. Jordan and Robert L. Patten (eds), Literature in the Marketplace: Nineteenth-Century British Publishing and Reading Practices (2nd ed.). Cambridge: Cambridge University Press, pp. 306-24.
+
+National Library of Australia. (2007–). Trove Database. http://trove.nla.gov.au/.
+
+Nicholson, B. (2012). 'You kick the bucket; we'll do the rest': Jokes and the Culture of Reprinting in the Transatlantic Press. Journal of Victorian Culture17.3: 273-86. 
+
+Pratt, M. L. (1991). Arts of the Contact Zone. Profession: 33-40.
+
+Sherratt, T. (2013). Mining the Treasures of Trove (part 1). Discontents. Blog. http://discontents.com.au/mining-the-treasures-of-trove-part-1/.
+
+Thompson, N. (1999). Responding to the Woman Questions: Rereading Noncanonical Victorian Women Novelists. In Nicola Diane Thompson (ed.), Victorian Women Writers and the Woman Question. Cambridge: Cambridge University Press, pp. 1-23.
+
+Webby, E. (2000). Colonial Writers and Readers. In Elizabeth Webby (ed.), The Cambridge Companion to Australian Literature. Cambridge: Cambridge University Press, pp. 50-73.

@@ -1,0 +1,104 @@
+11046	2020	
+      
+         
+            Theoretischer Hintergrund
+            Literarische Motive – in ihrer Gestalt als 
+                    „a theme, character, or verbal pattern which recurs in literature“ (Beckson & Ganz: 1960) – stellen seit Langem einen Untersuchungsgegenstand der Literaturwissenschaft dar. Als 
+                    „anthrophologische Grundsituationen, die zwar historisch variiert werden, aber in ihrem Kern konstant bleiben“ (Nünning 2013: 542), ziehen sie sich durch die Literaturgeschichte und damit durch den geisteswissenschaftlichen Forschungsbereich. Hiervon angeregte Erkenntnisinteressen umfassen sowohl Fragen danach, wie bestimmte Motive in ausgewählten Werken auftauchen (u. a. Ester et al. 2017, Nölle 2017), als auch danach, wie sich dieses Auftauchen diachron verhält: Wie beständig bzw. flüchtig ist das jeweilige literarische Motiv (Freedman 1971: 126) und inwiefern koppelt es sich an bestimmte Perioden, Textgattungen oder Autor*innen (von Wilpert 2013: 534)? Daran, welcher Aspekt eines Motivs dabei im Wandel der Zeit bestehen bleibt, kann man Wilpert (2013: 533–534) zufolge zudem zwischen verschiedenen Motivarten differenzieren: Bei konstanten Situationen, wie jener des 
+                    heimkehrenden Sohnes, handelt es sich um Situationsmotive, während konstant bleibende Charaktere, wie der 
+                    Menschenfeind, Typus-Motive konstituieren.
+                
+         
+         
+            Forschungsstand
+            Obwohl die Motivforschung, wie oben beschrieben, ein vielseitiges Forschungsfeld aufspannt, wurde dieses im Rahmen der Digital Humanities bisher kaum beachtet: Im deutschsprachigen Raum existieren derzeit keine digitalen Korpora, in welchen eine Motivannotation vorgenommen wurde, und auch im nicht-deutschsprachigen Raum scheinen sich derartige Bestrebungen primär auf die Textgattung der Volksmärchen zu beschränken (u. a. Karsdorp et al. 2012, Garcia-Fernandez et al. 2014). Nur in wenigen Ausnahmefällen, wie in der Mittelhochdeutschen Begriffsdatenbank (Springeth 2005), liegt eine semantische Annotation vor, die Themen oder andere motivähnliche Aspekte mit Mark-Up versieht. Begründung findet dieser Umstand der fehlenden Motivannotation vor allem in der vagen Natur des zu Annotierenden. So erfahren Motive nach Best (2008: 349) schließlich erst 
+                    „im sprachl. Kunstwerk ihre individuelle Ausformung [und sind] somit erst durch Abstraktion faßbar“ und nicht an spezifische sprachliche Ausdrücke gebunden. Die Annotation von literarischen Motiven müsste insofern (noch) manuell vorgenommen werden, wodurch ein hoher Zeitaufwand entstünde sowie eine starke Subjektivität gegeben wäre. 
+                
+         
+         
+            Forschungsvorhaben
+            Dennoch macht die Überführung der Motivforschung in den Bereich der Digital Humanities Sinn: Korpusbasierte Untersuchungen ermöglichen die systematische Erforschung sowie quantitative Auswertung umfangreicher Textmengen und gewähren somit – vor allem im Hinblick auf die diachron angelegte Motivgeschichte und die Häufigkeiten spezifischer Motive (Freedman 1971: 126) – neue Erkenntnisse. Da es sich bei motivannotierten Korpora zum jetzigen Zeitpunkt jedoch noch um ein Desiderat handelt, muss hierfür ein anderer Zugang gewählt werden und zwar jener der Motivsuche – über folgende Frage: Mithilfe welcher Suchstrategien können Motive in nicht motivisch annotierten Korpora ausfindig gemacht werden?
+            Für ebendiese Herausforderung versucht der hier geplante Beitrag mögliche Lösungsansätze aufzuzeigen, wobei der Fokus auf ausgewählten Typus-Motiven, wie dem 
+                    weisen Salomon oder dem 
+                    armen Sünder, liegt. Anhand dieser sollen exemplarisch diverse Suchstrategien entwickelt werden, mithilfe welcher literarische Motive in digitalen Korpora, wie dem Austrian Baroque Corpus (ABaC:us) oder dem Deutschen Textarchiv (DTA), identifiziert werden können. Die Potentiale der verwendeten digitalen Ressourcen für die Motivsuche werden dabei genauso diskutiert wie ihre auftauchenden Limitationen. Immer mitzubedenken gilt es etwa die bereits angesprochene wechselnde Gestalt von literarischen Motiven: Da es sich bei ihnen um abstrakte Konzepte handelt, welche auf der Textoberfläche eine Vielfalt an sprachlichen Formen annehmen können, sind sie nur schwer über wenige ausgewählte „key words“ aufspürbar. Hierzu trägt auch ihre Komplexität bei: 
+                    „Motive zeigen Personen und Sachen nicht isoliert, sondern in einem Zusammenhang“ (Frenzel 1978: 29) und bestehen damit immer aus mehreren inhaltlichen Komponenten – wie im Falle von Typus-Motiven, bei welchen Charakteren gewisse Eigenschaften zugeschrieben werden. 
+                
+            Diesen Problemen versucht das vorliegende Forschungsvorhaben mit vielfältigen Mitteln beizukommen. So wird beispielsweise aus der in vielen Korpora bereits vorhandenen linguistischen Basisannotation, bestehend aus einer Lemmatisierung und einer Wortartenzuordnung (POS-Tagging), Nutzen gezogen: Eigenschaften, wie Weisheit, können etwa als attributive Adjektive operationalisiert und über Abstandsoperatoren nahe eines interessierenden Charakters lokalisiert werden. Zudem können über Open-Source-Anwendungen wie AntConc oder Voyant Tools Kookkurrenzanalysen durchgeführt werden, um Charaktere und Eigenschaften zueinander in Bezug zu setzen und typische Zuschreibungen und Formulierungen sichtbar zu machen. Passend hierzu wird ebenfalls das von Huijnen und Lonij (2016) für die thematische Suche entwickelte Programm „Keyword Generator“ auf seinen Ertrag für die Motivsuche hin befragt werden: Kann die Generierung motivspezifischer Suchwörter anhand bereits erkannter Textpassagen bei der Identifikation weiterer Belegstellen behilflich sein? Diese Frage soll genauso zu beantworten versucht werden wie jene nach der Wahl der adäquaten Suchtermini, für deren Ermittlung sowohl Synonym- als auch Motivdatenbanken zum Einsatz kommen werden. Damit soll der geplante Beitrag letztendlich anhand konkreter Beispiele aus der literaturwissenschaftlichen Praxis verschiedenste Suchstrategien sowie deren Vor- und Nachteile aufzeigen, um die Motivsuche für zukünftige Nutzer*innen zu erleichtern und dadurch zur vermehrten digitalen Motivforschung anzuregen.
+         
+      
+      
+         
+            
+               Bibliographie
+               
+                  Anthony, Laurence (2019): 
+                        AntConc (Version 3.5.8). Tokyo: Waseda University https://www.laurenceanthony.net/software [letzter Zugriff 25. September 2019].
+                    
+               
+                  Berlin-Brandenburgische Akademie der Wissenschaften (eds.) (2019): 
+                        Deutsches Textarchiv. Grundlage für ein Referenzkorpus der neuhochdeutschen Sprache. http://www.deutschestextarchiv.de/ [letzter Zugriff 25. September 2019].
+                    
+               
+                  Beckson, Karl / Ganz, Arthur (1960): 
+                        A Reader's Guide to Literary Terms. New York: The Noonday Press.
+                    
+               
+                  Best, Otto F. (2008): 
+                        Handbuch literarischer Fachbegriffe. Definitionen und Beispiele. Frankfurt am Main: Fischer.
+                    
+               
+                  
+                  Ester, Hans / Mariacher, Barbara / Tax, Evelyne (eds.) (2017): 
+                        Abschied als literarisches Motiv in der deutschsprachigen Literatur. Festschrift zu Ehren des 75. Geburtstages von Jattie Enklaar. Würzburg: Königshausen & Neumann.
+                    
+               
+                  Freedman, William (1971): „The Literary Motif: A Definition and Evaluation“, in: 
+                        NOVEL: A Forum on Fiction 4 (2): 123–131.
+                    
+               
+                  Frenzel, Elisabeth (1978): 
+                        Stoff-, Motiv- und Symbolforschung. 4., durchges. u. erg. Aufl. Stuttgart: Metzler.
+                    
+               
+                  
+                  Garcia-Fernandez, Anne / Ligozat, Anne-Laure / Vilnat, Anne (2014): „Construction and Annotation of a French Folkstale Corpus“, in: 
+                        Proceedings of the Ninth International Conference on Language Resources and Evaluation 2430–2435. 
+                    
+               
+                  Huijnen, Pim / Lonij, Juliette (2016). „From Keyword Search To Discourse Mining – The Meaning Of Scientific Management In Dutch Vocabulary, 1900-1940“, in: 
+                        Digital Humanities 2016: Conference Abstracts 569–570. 
+                    
+               
+                  Karsdorp, Folgert / van Kranenburg, Peter / Meder, Theo / Trieschnigg, Dolf / van den Bosch, Antal (2012): 
+                        In search of an appropriate abstraction level for motif annotations. http://dolf.trieschnigg.nl/papers/CMN.2012.karsdorp.pdf [letzter Zugriff 25. September 2019].
+                    
+               
+                  Nölle, Volker (2017): 
+                        Der heimliche Blick: Motiv und Modell – eine Matrix innovativer Perspektiven. Würzburg: Königshausen & Neumann.
+                    
+               
+                  Nünning, Ansgar (ed.) (2013): 
+                        Metzler Lexikon Literatur- und Kulturtheorie. Ansätze – Personen – Grundbegriffe. Fünfte, aktualisierte und erweiterte Auflage. Stuttgart: J. B. Metzler.
+                    
+               
+                  Resch, Claudia / Czeitschner, Ulrike (eds.) (2015): 
+                        ABaC:us – Austrian Baroque Corpus. http://acdh.oeaw.ac.at/abacus/ [letzter Zugriff 25. September 2019].
+                    
+               
+                  Sinclair, Stéfan / Rockwell, Geoffrey (2019): 
+                        Voyant Tools (Version 2.4). https://voyant-tools.org/ [letzter Zugriff 25. September 2019]. 
+                    
+               
+                  Springeth, Margarete (2005): „Auf der Suche nach Begriffen und Motiven. Die Mittelhochdeutsche Begriffsdatenbank (MHDBDB) an der Universität Salzburg“, in: Schubert, Martin J. (ed.): 
+                        Deutsche Texte des Mittelalters zwischen Handschriftennähe und Rekonstruktion (= Beihefte zu Editio 23). Tübingen: Niemeyer 317–323.
+                    
+               
+                  Von Wilpert, Gero (2013): 
+                        Sachwörterbuch der Literatur. Sonderausgabe der 8. verbesserten und erweiterten Auflage 2001. Stuttgart: Alfred Kröner.
+                    
+            
+         
+      
+   
+
+
