@@ -264,10 +264,10 @@ Now that we have these topics, we might return to the initial keywords in the da
 
 #### In Class Assignment
 
-Working in small groups, start experimenting with Voyant Tools and the various corpora. Try to answer the following questions:
+Working in small groups, start experimenting with Voyant Tools and the various corpora (again available at either our [GitHub repo](https://github.com/ZoeLeBlanc/is578-intro-dh/tree/gh-pages/public_course_data/data_analysis_examples) or [Google Drive folder](https://drive.google.com/drive/folders/1S0NuYbGvwHMXsl_5cEahlsjMSOm2pI3h?usp=sharing)). Try to answer the following questions:
 
-- How does the context of various tools change across the corpora?
-- How should this inform our understanding of the tool frequency?
+- How does the context of various tools change across the corpora? Are there any patterns that might be useful for understanding how these tools are utilized in DH?
+- How should this inform our understanding of the tool frequency? Is tool frequency a useful way for studying these abstracts or are there other approaches that might be more useful, like the topics or keywords?
 - How might we start updating our keywords or creating a controlled vocabulary based on these findings for DH Tools?
 - What are the limitations of this approach? What are the benefits?
 
@@ -294,6 +294,8 @@ For this assignment, the goal is to build from our in-class assignment and under
 - MALLET [https://mimno.github.io/Mallet/topics.html](https://mimno.github.io/Mallet/topics.html) or for a web browser version JSlda [https://mimno.infosci.cornell.edu/jsLDA/jslda.html](https://mimno.infosci.cornell.edu/jsLDA/jslda.html)
 - WordCounter from DataBasic [https://www.databasic.io/en/wordcounter/](https://www.databasic.io/en/wordcounter/) (also web browser)
 
-and then compare the results from one of these tools to what you produced in Voyant Tools. You can use the same corpora or a different one, but the goal is to try to identify the differences between these tools and what they tell us about the data. In terms of sharing results, you should either create a Markdown file or Google Doc that outlines your findings and then link to that in the relevant GitHub discussion. If you are having trouble with the tools, please let me know and I can help you troubleshoot.
+and then compare the results from one of these tools to what you produced in Voyant Tools. You should once again use this data: [GitHub repo](https://github.com/ZoeLeBlanc/is578-intro-dh/tree/gh-pages/public_course_data/data_analysis_examples) or [Google Drive folder](https://drive.google.com/drive/folders/1S0NuYbGvwHMXsl_5cEahlsjMSOm2pI3h?usp=sharing), though if you have an idea for a different corpora you are welcome to use that instead or ask the instructor for help generating one from our Index of DH Abstracts.
+
+In your assignment, you can use the same corpora or a different one from the one you used in class, but the goal is to try to identify the differences between these tools and what they tell us about the data. In terms of sharing results, you should either create a Markdown file or Google Doc that outlines your findings and then link to that in the relevant GitHub discussion. If you are having trouble with the tools, please let me know and I can help you troubleshoot.
 
 Remember this assignment is exploratory so there is no right or wrong answer, but you should try to identify the differences between these tools and what they tell us about the data.
