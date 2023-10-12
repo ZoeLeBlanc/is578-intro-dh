@@ -200,7 +200,7 @@ While our primary focus has been on word counts, our readings this week have sho
 
 As we've identified, one of the most popular tools in DH for doing this type of text analysis is Voyant Tools, a tool created by Stéfan Sinclair and Geoffrey Rockwell. Voyant Tools is a web-based tool that allows users to upload their own texts or use texts from the web to analyze. It also allows users to create their own custom tools and visualizations.
 
-Let's try it out with our Index of DH Abstracts. If you go to either our GitHub repo or Google Drive folder, you'll find that I've created a number of corpora based around our DH Tools. Today, we'll initially be using the `voyant` corpora. 
+Let's try it out with our Index of DH Abstracts. If you go to either our [GitHub repo](https://github.com/ZoeLeBlanc/is578-intro-dh/tree/gh-pages/public_course_data/data_analysis_examples) or [Google Drive folder](https://drive.google.com/drive/folders/1S0NuYbGvwHMXsl_5cEahlsjMSOm2pI3h?usp=sharing), you'll find that I've created a number of corpora based around our DH Tools. Today, we'll initially be using the `voyant` corpora. 
 
 Within the folder, you'll find a `csv` file that contains the rows from our Index of DH Conferences dataset, and then a folder called `voyant`. This contains the data we need for Voyant Tools. If you open the folder, you'll see a number of files that end in `.txt`. These are the abstracts from the Index of DH Conferences. 
 
