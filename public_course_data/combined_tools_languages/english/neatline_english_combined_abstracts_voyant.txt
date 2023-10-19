@@ -1,0 +1,1065 @@
+
+Any tool should be useful in the expected way, but a truly great tool lends itself to uses you never expected.
+
+Eric Raymond, The Cathedral and the Bazaar
+Eric Raymond’s Cathedral and the Bazaar describes a series of lessons about the importance of sharing code with users learned during the development of Linux. Raymond emphasizes that non-technical users and third-party developers are capable of doing far more than just finding and fixing bugs—freely distributing code encourages users to take the software and develop new and unexpected things with it. “The next best thing to having good ideas,” argues Raymond, “is recognizing good ideas from your users. Sometimes the latter is better.” (2000) This kind of engagement with users tends to be the exception, not the rule, though, and even when developers are interested in establishing a cycle of feedback with users, that cycle has to be nurtured and maintained. Software development usually does not take place in a vacuum; software is developed for particular users and use cases. How people use software, and the ways in which they can share those uses, can be myriad. Developers are interested in learning how to recognize and nurture those uses, but this often proves difficult. Our panel will examine this complicated issue.
+
+“Building” as a hermeneutic has gained increased attention and scrutiny among the Digital Humanities community. Ramsay (2011) argues that “the Digital Humanities is about building things” and is central to its “methodologization.” Sample (2012) emphasizes the importance of building as work. In particular, Sample espouses collaborative construction as a group effort where each contribution takes place in dialogue with other contributions, and creative analysis as a way to learn through creation. An emphasis on building necessitates an equal emphasis on builder, and as Gina Trampani (2011) argues, nurturing a beneficial user-contributor community that allows a variety of users, regardless of existing skills, to benefit from a hermeneutic of building. Accordingly, we are interested in modeling the communal approaches to building that bridge developer, researcher, and student.
+
+This panel will bring together developers and users to explore the symbiotic relationships built during the life cycle of a software project, to discuss the ways in which open-source Digital Humanities projects should work to build both tools and user/developer communities. The project that we are using as a testbed for this examination is Neatline, a set of a geo-temporal tools built by the Scholars’ Lab at the University of Virginia for use in the Omeka content management system. During the months leading up to the conference, panel participants will work closely together to build and document their working relationships, all the while working to improve Neatline and implement it in productive ways. The panel will elaborate on problems and solutions for collaboration among developers and users they encountered, and suggest ways to turn users into contributors while better attuning a software development team to the needs of its users. Of particular attention to the panel will be the way in which the tool is used for multiple purposes, including research and teaching, and how such uses impact the feedback loop.
+
+Panel Organization & Participants
+We propose to conduct a panel featuring users and developers of the Neatline suite. Each participant will open the panel with a 5 minute statement describing their particular experience over the course of their collaboration, followed by a group discussion that addresses several questions. All participants are excited to participate in this panel.
+
+Participants
+Jeremy Boggs is Design Architect for Digital Research and Scholarship at the University of Virginia Library. Boggs will discuss methods for getting outside users more easily involved in the development process for Neatline. He will focus on the tools used and documentation developed during the group’s collaboration effort.
+
+Amy Earhart is Assistant Professor of English at Texas A&M University. Earhart will discuss how her undergraduate students used Neatline to map Malcolm X’s New York, pointing to particular areas of tension between pedagogical models of digital humanities tools and the feedback loop. She will offer potential ways to eliminate such issues.
+
+Wayne Graham is Head of Research and Development for Digital Research and Scholarship at the University of Virginia Library. Graham will discuss the day-to-day management of Neatline development, and in particular his strategies for balancing user needs and contributions with the priorities of the core Neatline development team.
+
+T. Mills Kelly is Associate Professor of History at George Mason University and Associate Director of the Roy Rosenzweig Center for History and New Media. Kelly will discuss the use of Neatline in his historical methods course, “Dead in Virginia.” He will focus on the aspects of the user experience that seemed to influence student learning in the course.
+
+David McClure is Web Applications Developer for Digital Research and Scholarship at the University of Virginia Library, and is lead developer on Neatline. McClure will talk about his perspective as a lead developer on Neatline.
+
+Shawn Moore is a doctoral student at Texas A&M University and is a fellow for the Initiative for Digital Humanities, Media, and Culture (IDHMC). Moore will talk about the process of transitioning from a user of Neatline to a contributing developer during his ongoing dissertation project on Margaret Cavendish, Duchess of Newcastle (1623-1673).
+
+Eric Rochester is Senior Developer for Digital Research and Scholarship at the University of Virginia Library. Rochester will discuss the tenuous balance between choosing the best tools and languages for a project with getting and encouraging outside contributions to a project.
+
+Questions
+What benefits will a software feedback loop provide to both user and developer?
+What tools and methods did the group find most helpful during the process?
+Discuss the impact of non-specialist users, such as students, on the feedback loop.
+How can open-source projects create inclusive communities that invite contributions from people with skill-sets and backgrounds that are underrepresented in the open-source community?
+In what ways does nurturing an outside user/developer community contribute to the use and sustainability of a Digital Humanities project?
+What were the most challenging aspects of this collaboration?
+Discuss future models of the feedback loop based on what you have learned in this model.
+References
+Bryant, T. (2006). Social software in academia. Educause Quarterly 29(2): 61.
+Clement, T., and D. Reside (2011). Off the Tracks: Laying New Lines for Digital Humanities Scholars. Results of an NEH Workshop, Maryland Institute for Technology in the Humanities. http://mith.umd.edu/offthetracks/.
+Cohen, D. J. (2008). Creating Scholarly Tools and Resources for the Digital Ecosystem: Building Connections in the Zotero Project. First Monday 13(8) http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/2233/2017.
+Easley, D., and J. Kleinberg (2010). Networks, Crowds, and Markets: Reasoning about a Highly Connected World. http://www.cs.cornell.edu/home/kleinber/networks-book/
+Fogel, K. (2005). Producing Open Source Software: How to Run a Successful Free Software Project. Sebastopol, CA: O’Reilly.
+Klein, L. F. (2012). A Report Has Come Here. http://lmc.gatech.edu/~lklein7/?p=86.
+McPherson, T. (2010). Scaling Vectors: Thoughts on the Future of Scholarly Communication. Journal of Electronic Publishing 13(2) http://hdl.handle.net/2027/spo.3336451.0013.208.
+Neatline. http://neatline.org
+Nowviskie, B. (ed.) (2011). #Alt-Academy: Alternative Academic Careers for Humanities Scholars. MediaCommons Press. http://mediacommons.futureofthebook.org/alt-ac/
+Omeka. http://omeka.org.
+Perspectives on Free and Open Source Software. (2010). Cambridge: The MIT Press.
+Ramsay, S. (2011). On Building. http://stephenramsay.us/text/2011/01/11/on-building.html (accessed 11 January 2011).
+Ramsay, S.. (2011). Who’s In and Who’s Out?http://stephenramsay.us/text/2011/01/08/whos-in-and-whos-out.html (accessed 8 January 2011).
+Ramsay, S.. (2012). Programming with Humanists: Reflections on Raising an Army of Hacker-Scholars in the Digital Humanities. In Hirsch, B. D. (ed.), Teaching Digital Humanities: Principles, Practices, Politics. Ann Arbor: University of Michigan Press.
+Ramsay, S., and G. Rockwell (2012). Developing Things: Notes Toward an Epistemology of Building in the Digital Humanities In Gold, M. (ed.), Debates in the Digital Humanities. Minneapolis: University of Minnesota Press. 75-84.
+Raymond, E. S. (2000). The Cathedral and the Bazaar. Sebastopol, CA: O’Reilly.
+Sample, M. (2012). Building and Sharing (When You’re Supposed to be Teaching). Journal of Digital Humanities. 1(1) http://journalofdigitalhumanities.org/1-1/building-and-sharing-when-youre-supposed-to-be-teaching-by-mark-sample/.
+Trapani, G. Designers, Women, and Hostility in Open Source. http://smarterware.org/7550/designers-women-and-hostility-in-open-source (accessed 23 March 2011).
+1 Introduction and Goals
+The Holocaust's aftermath on memory discourses still represents an important research field. Almost 70 years after the end of the Second World War, there will soon be no direct witnesses of the Nazi crimes anymore. What will remain are texts bearing witness to the crimes. These texts are to be collected, preserved, and made accessible in a systematic manner. Especially the early texts are of great interest: texts written or published between 1933 and 1949, particularly in the years 1944/1945. In this context Germany, bearing the guilt for the Holocaust, and Poland, as a Nazi-occupied country where large parts of the Holocaust took place, are of special relevance.
+
+
+Figure 1:
+Outline of the GeoBib project workflow
+
+Unfortunately, the early texts on the Holocaust were soon forgotten or suppressed. With the formation of the two German states (1949), a process of suppression of the texts of the victims began (Cf. Hickethier 1986, p. 578). The official artistic doctrine in the GDR and Soviet Poland excluded certain authors, themes, and forms of presentation.
+
+The goal of the interdisciplinary [2] GeoBib project is to build a systematic and geo-referenced online bibliography of the early German and Polish Holocaust and camp literature: the first complete, bilingual, i.e. with respect to texts written both in German and Polish, research platform for information on the texts. On these, GeoBib seeks to collect annotations and metadata. This includes short summaries, keywords, biographical information on the authors, reviews, scientific literature, information on persons, geographical data, as well as time periods mentioned in the texts. The goal is to make information on these widely unknown texts accessible and searchable for a broad and interdisciplinary audience of researchers. Due to legal restrictions, the project does not, however, aim at annotating the whole texts. The focus lies on the collection and integration of these various kinds of information.
+
+The combination of literary and geo-temporal annotations, as well as the implementation of different (geographical) search mechanisms, enables scholars to conduct innovative research in different scientific domains like literature or history, but is also intended to suit the needs of students, teachers, and the interested public. Maps and other visualizations of geo-temporal information are expected to reveal “historical relations that might otherwise go unasked” (White 2010, p.6).
+
+2 Workflow and Technical Implementation
+Since various research areas are involved, we need to aggregate a multitude of different information from the fields of literature, history, and geography — a challenge in data management and text technology. An adaptation of the TEI standard, using an ODD file, is being used to build a schema that serves to integrate the intended collection of the different kinds of metadata mentioned above.
+
+Starting with the texts, annotation data is collected in TEI files that will be used as input for different processing steps (see Fig. 1): Bibliographical, biographical, and other metadata on the text need to be saved in a database and will be linked to the annotated geo-temporal data. Places need to be mapped to coordinates and annotated with the corresponding timestamp. The geographical data will be used in a geographic information system (GIS) and in an online database to support search queries across all relevant annotation data (see Fig. 2). The combination of time and space, extracted from the texts, will be used to display the data in form of geographical maps.
+
+
+Figure 2:
+Exemplary queries that the GeoBib system is expected to support by returning a list of relevant bibliographic references.
+
+3 Context and Outlook
+The Holocaust was a traumatic event that has recently been examined with increasing focus on space and time. Or as Beorn et. al. (2009, p. 563) put it: the “Holocaust was a profoundly geographical event, rooted in specific physical spaces, times, and landscapes”. Their project ‘Geographies of the Holocaust’ is actively working on analyzing the Holocaust from a geo-spatial point of view.
+
+Others are looking at how geography is represented in texts (cf. Eide 2012, Appadurai 2010). Specialized software projects were developed to make the representation of, or the work with, geographical information in the humanities easier, e.g. Neatline (Nowviskie et. al. 2012).
+
+Geo-spatial information extracted from literary texts, e.g. Google Ancient Places (GAP), can play a “vital role in improving efficiency for researchers” (Isaksen 2011, p. 82).
+
+Hence, the GeoBib project is active in a growing field of interdisciplinary geo-spatial research as well as the European Holocaust research community (cf. Kahn 2011).
+
+The GeoBib team is looking forward to collaborate in this context.
+
+References
+Appadurai, A. (2010). How Histories Make Geographies: Circulation and Context in a Global Perspective, Transcultural Studies. 1: 4–13.
+Beorn, W., T. I. M. Cole, S. Gigliotti, et al. (2009). Geographies of the Holocaust, Geographical Review. 99(4): 563–574.
+Eide, Ø. (2012). Underspecified, Ambiguous or Formal. Problems in Creating Maps Based on Texts. http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/underspecified-ambiguous-or-formal-problems-in-creating-maps-based-on-texts/ (acessed 10 April 2012).
+Hickethier, K. (1986). Biographie, autobiographie, Memoirenliteratur. In Fischer, L. (ed.), Literatur in der Bundesrepublik bis 1967. München 574–584.
+Isaksen, L., E. Barker, E. Kansa, et. al. (2011). GAP: a NeoGeo approach to classical resources, Leonardo, 45(1): 82–83.
+Kahn, R. (2011). The EHRI Project: building an online archive for European Holocaust research. SCONUL Focus. (52). 21–22.
+Nowviskie, B., W. Graham, D. McClure, et al. (2012). Geo-Temporal Interpretation of Archival Collections Using Neatline. Digital Humanities 2012. Conference Abstracts. 299–302.
+White, R. (2010). What is Spatial History? http://www.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29. (acessed 10 April 2012).
+Notes
+As the term “Digital Humanities” has been gradually gaining
+attention around the world, with researchers in Englishspeaking
+countries gathering under this banner in increasing
+numbers. Among these, there are the earlier scholars who had
+previously known the field as Humanities Computing; and there
+are also scholars who have become involved more recently,
+directly under the rubric of Digital Humanities. Yet another
+new trend is that where scholars from non-English-speaking
+and non-Western countries have also been gradually getting
+involved in the international DH community. One of these recent
+entrants to the international DH community is the Japanese
+Association for Digital Humanities (JADH). The presence of this
+new organization constitutes one piece of evidence to show that
+the international community is gradually broadening the scope
+of its membership. This trend has been actively supported by
+the Multi-lingualism and Multi-culturalism Committee of the
+ADHO, as well as by individual scholars who believe forming
+a global community can only enrich DH and the humanities.
+In view of this fact, it seems that it will become worthwhile to
+release the CFP of the DH conference in many languages.
+Additionally, recently several non-English Western
+communities have been established. For example, Hispanic,
+Italian, and German DH were discussed during the DH2012
+conference at Hamburg. Each language area has long and
+deep history to engage in the research and practice of DH.
+Moreover, Global Outlook::Digital Humanities (GO::DH) has
+started to cover a wider area, such as Latin America, China,
+Africa, and so on, especially focusing on communication and
+collaboration across and between High, Mid, and Low Income
+Economies. It is remarkable that the first pilot project of the
+GO::DH, “AroundDH in 80 Days” could immediately fill the list of
+DH projects around the world (Gil) with the help of international
+volunteers. In the context of the humanities, globalization is not
+always intrinsically good, but international communication would
+be significant for DH and the humanities.
+While there have been efforts focused actual local
+development, in some cases, such as of the Japan, most DH
+activities hadn’t been known in the global community and
+most of global DH activities hadn’t been known in Japan until
+several years ago. This is in spite of the fact that the number
+of identified Japanese DH-related researchers is over 200 and
+recently the domestic annual DH conferences have gathered
+40-60 papers every year, with 800 papers being presented
+since 1989 from many universities, museums, libraries, and
+other institutions in a DH-related quarterly workshop (A. Charles
+Muller). As the case might be similar in other non-English and
+non-Western countries, it might be useful to report our recent
+attempts to bridge between the DH research being carried out
+by non-English-speaking scholars and those in the international
+community.
+First, the establishment of the JADH has proved itself to be
+one of the most effective solutions for closing this kind of gap.
+Since around 80 researchers participated in the first conference
+in 2011 in Osaka, 80-90 Japanese researchers have attended
+the annual conference and communicated with international
+researchers. Then, several germs of international collaboration
+have come into being there and Japanese researchers
+who paid attention to the results of research activities of the
+international DH community have gradually increased as a
+“methodological commons”—although most of the research is
+still focused on Japanese or Eastern materials.
+Secondly, an e-newsletter titled “Digital Humanities
+Monthly” (DHII and ARG) has been published by the
+International Institute for Digital Humanities since July 2011. It
+is has 390 subscribers and is also published on the Web. The
+e-newsletter written in Japanese consists of an invited essay,
+brief news of international activities of DH and Digital History,
+DH-event calendar, and reports of DH events held in Japan and
+foreign countries collaborating with some local and international
+voluntary DH researchers. The event reports are plotted on
+a time-space map of the Neatline.(fig.1) The total number of
+the access to the Web pages was over 5,000 this October.
+According to comments of the readers, it seems to have gained
+the attention of not only DH researchers, but also librarians,
+curators, archivists, publishers, and general public, enabling
+them to see the picture of the entire situation of the domestic
+and the international DH.
+Thirdly, we plan to make it easier to treat Japanese and
+Eastern materials compliant with kinds of international
+standards. So far, we are working to propose the encoding
+of Han characters that occur in our research materials in the
+Universal Character Set as a group of researchers (rather than
+as a national body, as has been the policy heretofore) so that
+researchers can not only treat the characters but also propose
+the inclusion of new characters more easily. Moreover, we
+are planning to form an appropriate guideline of text encoding
+of Japanese and Eastern materials in the framework of the
+Text Encoding Initiative P5 guidelines (Bauman) collaborating
+with related researchers around the world. As a preparation
+for this, we’ve held full-day TEI workshop by the participation
+of international TEI researchers over 10 times and taught the
+framework of the TEI to 50 researchers in total.
+While it has up to now been difficult to bridge the local
+and the global, we hope our attempts will be useful for an
+Digital Humanities 2014
+278
+appropriate mode of globalization. We would like to discuss
+various possibilities with participants in the conference.
+Fig. 1:
+References
+A. Charles Muller, Kozaburo Hachimura, Shoichiro Hara,
+Toshinobu Ogiso, Mitsuru Aida, Koichi Yasuoka, Ryo
+Akama, Masahiro Shimoda, Tomoji Tabata, and Kiyonori
+Nagasaki (2010). "The Origins and Current State of Digitization
+of Humanities in Japan." Digital Humanities 2010 : 68-70.
+Bauman, Lou Burnard and Syd (2007). TEI P5: Guidelines
+for Electronic Text Encoding and Interchange. http://www.teic.org/release/doc/tei-p5-doc/en/html/index.html.
+DHII and ARG. Ed. Kiyonori Nagasaki et al. 7 (2011). 
+www.dhii.jp/DHM .
+Gil, Alex ed. AroundDH | Global List. (2013). http://
+goo.gl/4ov5nR.
+Active Authentication through
+Psychometrics
+Noecker Jr, John
+Juola & Associates, United States of America
+What can your computer habits reveal about you?  The
+answer might surprise you.  Previous work (Juola, et al., 2013)
+has shown that just a few minutes of computer usage can be
+used to identify who is at the keyboard and their demographic
+and psychological attributes with a fairly high degree of
+accuracy.  We expand upon this to show that the same usage
+data can be used to thoroughly profile a previously-unknown
+user to obtain valuable psychological information about the
+user.
+Authorship attribution, the analysis of a document’s writing
+style to infer the author’s identity, is a well-established problem
+in text classification.  Previously, we used classical authorship
+attribution techniques to identify “who was at the keyboard”
+using the DARPA Active Authentication Corpus (Juola et al,
+2013).  Researchers have successfully applied the analysis
+of language usage to infer authorship of written documents
+(Juola, 2006. Koppel et al, 2009. Stamatatos, 2009. Jockers &
+Witten, 2010), and stylometric analysis has also been applied
+to things like gender (Argamon et al, 2006), personality (Luyckx
+& Daelemans, 2008), and even psychological disorders like
+depression (Rude et al, 2004).
+Here, we attempt to perform the same technique with groups
+composed of individuals who share common psychological
+traits.  Previous work (Luyckx & Daelemans, 2008. Noecker
+& Juola, 2013) on personality profiling has so far focused
+on analyzing previously-written documents.  In contrast, our
+system provides a method for real-time psychological profiling
+of a user based on his or her interactions with a computer over
+a relatively short period of time (approximately 30 minutes).
+  The ultimate goal is two-fold: to learn something about a
+previously-unobserved user (traditional stylometric identification
+techniques require us to have training data on a user before
+we can identify him) and to use psychological traits as an
+enhancement to current user authentication methods.
+Currently, exact accuracy on the user-based authentication
+is approximately 90%.  This task becomes more difficult
+(and the accuracy becomes correspondingly lower) as the
+pool of potential author models grows.  In order to improve
+overall accuracy of the user authentication task, we propose to
+include these psychological profiling tools in the authentication
+system.  If a given user can be identified as the most likely
+candidate with 90% probability, and several facets of that user’s
+personality can be confirmed with similarly high confidence,
+this will increase the overall robustness of the authentication
+system.
+For our purposes, we used two personality/intelligence
+measurement systems to profile users: Myers-Briggs Type
+Indicator (MBTI) and Multiple Intelligences Developmental
+Assessment Scales (MIDAS).
+The Myers-Briggs type indicator (MBTI) assigns four binary
+classifications to define personality (Myers & Myers, 1980)
+–  Extroversion vs Introversion
+–  iNtuition vs Sensing
+–  Thinking vs Feeling
+–  Judgement vs Perception
+The Multiple Intelligences Developmental Assessment Scales
+(MIDAS) were developed by Dr. Howard Gardner in his 1983
+book “Frames of Mind” (Gardner, 1983).  He used a unique
+definition of intelligence: “The ability to solve a problem or
+create a product that is valued within one or more cultures” (MI
+Research and Consulting).  He identified 8 primary intelligent
+scales, each of which have several subscales (MI Research
+and Consulting):
+–   Musical
+–   Vocal Ability
+–   Instrumental Skill
+–   Composer
+–   Appreciation
+–   Kinesthetic
+–   Athletics
+–   Dexterity
+–   Logical-Mathematical
+–   Everyday Math
+–   School Math
+–   Everyday Problem Solving
+–   Strategy Games
+–   Spatial
+–   Space Awareness
+–   Working with Objects
+–   Artistic Design
+–   Linguistic
+–   Expressive Sensitivity
+–   Rhetorical Skill
+–   Written-academic
+–   Interpersonal
+–   Social Sensitivity
+–   Social Persuasion
+–   Interpersonal Work
+–   Intrapersonal
+–   Personal Knowledge / Efficacy
+–   Effectiveness
+–   Calculations
+–   Spatial Problem Solving
+–   Naturalist
+–   Animal Care
+–   Plant Care 
+We also include a 9th main scale, Leadership, with its own
+subscales: Communication, Management, and Social.
+Materials and Methods
+Lausanne, Switzerland
+279
+Corpus
+In order to create the most accurate corpus possible, we
+set up a simulated office environment and hired 80 temporary
+workers for one week each.  Workers were tasked to perform a
+long-term blogging project (research and write blog articles on
+topics “related to Pittsburgh in some way”) over the course of a
+normal workweek.  For this study, we use the Free Key Logger
+output, which provides the exact text typed by each user.  We
+do not include any information about the applications being
+used or any data the user pastes from the clipboard.
+Feature Extraction
+For our analysis, we used the Java Graphical Authorship
+Attribution Program (JGAAP) (Juola et al, 2009).  JGAAP
+is a Java-based, modular program for textual analysis, text
+categorization, and authorship attribution.  It provides a
+comprehensive framework, allowing us to rapidly test the
+effectiveness of different analysis techniques on the recorded
+data.
+JGAAP divides analysis into several steps: Canonicization
+(Preprocessing), Event Set (Feature) Generation, and Analysis.
+  In Canonicization, preprocessors are used to standardize
+the text.  For this step, we converted all input letters to lower
+case (“Unify Case”) and converted all strings of whitespace
+characters into a single space character (“Normalize
+Whitespace”).  At this stage, we also processed a variety of
+special keyboard characters, converting these non-printable
+characters into a printable placeholder (e.g. “backspace” was
+replaced with “β”).  Finally, we divided the input data into blocks
+of 1,000 characters, representing about 30 minutes of computer
+usage.
+For the event set generation, we tested character N-grams
+for all N from 1 to 15, and word N-grams for N from 1 to 5.
+  We then applied a number of analysis methods for each
+experiment: Cosine Distance, Intersection Distance, Manhattan
+Distance, and Matusita Distance.  For each method, we used
+a centroid-based nearest neighbor classifier.  We performed
+leave-one-out cross-validation to reach our final conclusion.
+Models
+For the MBTI classifiers, we built four binary classifiers (i.e. E
+vs I, N vs S, T vs F, and J vs P).  For the MIDAS classifiers, we
+first built a single 9-way classifier to identify a user’s principle
+main scale.  This was the scale along which the user scored
+highest (i.e. the scale for which the user showed the highest
+preference).  For example, a user might have a preference
+for “Musical” or “Linguistic”.  We also developed subscale
+classifiers, which identify a user’s preference within each major
+scale.  For instance, a user might be identified as “(Musical)
+Vocal Ability” and “(Kinesthetic) Dexterity”, etc.  Thus, each user
+was identified by a single main scale preference as well as nine
+subscale preferences.
+Results
+MBTI
+For the MBTI classifiers, we averaged an accuracy of 81.5%.
+  The expected baseline average (assuming we pick the most
+prevalent personality type for each category) is 55%. 
+MIDAS
+For the MIDAS main category identification, our best
+performing classifier had accuracy of 70.7%.  This was using
+character 15 grams with Intersection Distance.  The expected
+baseline accuracy (achieved by choosing the most common
+main scale, “Linguistic”) was 22.1%.
+For the MIDAS subscale identification, the best performing
+classifiers used a variety of Character n-grams, again with
+Intersection Distance as the top performing analysis method. 
+The average subscale accuracy was 81%.
+Conclusion
+We have shown here a method to reliably psychologically
+profile a computer user based on only a short period (about
+30 minutes) of usage time.  In addition to providing valuable
+information about the user in question, this method can also
+be used to provide additional layers of security for the active
+authentication system we have described previously.  Even
+in an adversarial situation, the difficulty of imitating both an
+individual user’s style, as well as mimicking the psychological
+profile of the user, will provide additional security to the
+authentication system.
+Also interesting to note is the limited usage data required to
+perform these analyses.  The initial user psychological testing
+period took approximately 3 hours, but accurate results were
+obtained for only 30 minutes of computer usage.  In addition,
+the three hours of testing were completely lost time – the
+users were able to work only on the tests during this time.  In
+contrast, the 30 minutes of analysis can be done on whatever
+the user is working on at the time.  No downtime is required
+to perform these analyses.  We believe this system could be
+useful anywhere a non-intrusive analysis of a user might be
+beneficial (e.g. determining whether a potential employee would
+be a good fit).
+For future work, we intend to focus on reducing the amount
+of data needed even further.  Preliminary results on as little as
+500 characters (about 15 minutes of usage time) have been
+promising.  Additional work is also being done to integrate these
+methods into the broader active authentication system in order
+to bolster the overall reliability of the system.
+References
+Argamon, S., Koppel, M., Fine, J., Shimoni, A. R (2006).
+“Gender, Genre, and Writing Style in Formal Written Texts”.
+Interdisciplinary Journal for the Study of Discourse. Volume 23.
+Issue 3. pp. 321-346.
+“Broad Agency Announcement: Active Authentication”.
+(2012). DARPA. Solicitation No. DARPA-BAA-12-06. 12
+Jan. 2012. <http://www.fbo.gov/index?tab=documents&t
+abmode=form&subtab=core&tabid=494b6b2c612c4
+fd3db6cb018d4467e21>.
+Gardner, Howard (1983). “Frames of Mind: The Theory of
+Multiple Intelligences”.  Basic Books.
+Jockers, M. L., Witten, D. (2010) “A Comparative Study of
+Machine Learning Methods for Authorship Attribution”.Literary
+and Linguistic Computing, vol. 25, no. 2. pp. 215–23.
+Juola, P. (2006) “Authorship Attribution”.Foundations and
+Trends in Information Retrieval, vol. 1, no. 3.  pp. 233–334.
+Juola, Patrick, Noecker Jr., John, Ryan, Mike, Speer,
+Sandy (2009). “JGAAP 4.0 – A Revised Authorship Attribution
+Tool”. Proc. Digital Humanities 2009. pp. 357–359. Maryland
+Insitute. for Technology in the Humanities. University of
+Maryland.
+Juola, Patrick, Noecker Jr., John, Stolerman, Ariel,
+Ryan, Michael, Brennan, Patrick, Greenstadt, Rachel
+(2013). "Keyboard Behavior Based Authentication for
+Security". IT Professional. 18 June 2013. IEEE computer
+Society Digital Library. IEEE Computer Society. <http://
+doi.ieeecomputersociety.org/10.1109/MITP.2013.49>.
+Koppel, M., Schler, J., Argamon, S. (2009)“Computational
+Methods in Authorship Attribution”. J. Amer. Soc. Information
+Science and Technology, vol. 60, no. 1. pp. 9–26.
+Luyckx, K., Daelemans, W. (2008) “Personae, a Corpus for
+Author and Personality Prediction from Text”.Proceedings of the
+Sixth International Conference on Language Resources and
+Evaluation. Marrakech, Morroco.
+MI Research and Consulting, Inc. “Multiple Intelligences
+Theory”. <www.miresearch.org/mi_theory.html>.
+Digital Humanities 2014
+280
+Myers I B, Myers P. (1980)“Gifts Differing: Understanding
+Personality Type”. Palo Alto, CA. Consulting Psychologists
+Press.
+Noecker Jr., J. Juola, P. (2013) “Psychological Profiling
+Through Textual Analysis”. Literary and Linguist Computing.
+Rude, S., Gortner, E., Pennebaker, J. (2004) “Language
+Use of Depressed and Depression-Vulnerable College
+Students”.Cognition and Emotion.
+Stamatatos, E. (2009) “A Survey of Modern Authorship
+Attribution Methods”. J. Amer. Soc. Information Science and
+Technology, vol. 60, no. 3. pp. 538–556.
+Zheng, N., Paloski, A., Wang, H. (2011) “An Efficient User
+Verification System via Mouse Movements,”Proc. 18th ACM
+Conf. Computer and Communications Security (CCS 11). ACM.
+pp. 139–150.
+
+This project uses Neatline and Gephi to demonstrate how digital visualization tools can bring to light new dimensions of modernist studies and periodical studies. Drawing on metadata from as-yet-undigitized letters between various Canadian writers and editors, the project uses geospatial visualizations and network diagrams to interrogate the literary networks and geographical patterning of authors associated with the little magazine Contemporary Verse. In addition to the printed poster, I will have a laptop running Neatline and Gephi, which will allow attendees to interact with the data by exploring it through maps, timelines and network diagrams.
+
+Contemporary Verseran from 1941-1953 and was one of the only vehicles for the publication of modern poetry in mid-century Canada. It was edited by Alan Crawley (1887-1975), whose voluminous correspondence – lodged in various archives across Canada – is an enormously rich resource for the study of the social networks through which poetic currents and aesthetic influences developed. To read it is to get a clear sense of the importance of Crawley in brokering relationships between writers and publishers, shaping the poems that contributors submitted to the journal, and encouraging young writers – particularly younger women who faced considerable difficulties breaking into male-dominated networks for publication and critique – to see their poetry as something worth pursuing.1 
+
+The letters tell an important story of pre-digital cultural empowerment that digital humanities approaches are particularly well suited to uncovering, given that the volume of correspondence lends itself to the kind of distant reading that is made possible by computational analysis of prosopographical and geographical metadata. The new perspectives opened up on this archival material by digital methods are also timely, as scholars of Canadian literature are increasingly engaged in challenging canonical accounts of modernism’s development within the country,2 something which has coincided with a postcolonial turn of sorts within digital humanities more generally.3
+
+The poster, which reports on work in progress into the Crawley letters, is focused around two research questions:
+
+1) How does geography inflect the development of modern poetry in Canada?
+Each letter was entered as a record in Omeka and then visualized geospatially using Neatline (www.modmaps.net/mm/neatline/show/crawley-letters). Neatline was configured so that as the timeline slider was moved from earlier to later dates, the map display showed the growth and geographical distribution of Crawley’s network of correspondents. Displaying the correspondence in this way enables investigation of spatial questions that arise at a range of scales from the national to the local, for example the extent to which Crawley’s location on the west coast was able to challenge the dominance of literary networks in the eastern cities of Montreal and Toronto, and the effect of Vancouver’s geography on his ability to participate in literary activities.
+
+2) What is the relationship between literary networks and cultural production?
+Gephi was used to create a directed graph with 25 nodes, representing Crawley, various authors with whom he corresponded, other journal editors, and the women who did the bulk of the administrative work for Contemporary Verse. As with the Neatline map, the network diagrams generated by Gephi do not give a complete picture of Crawley’s network of correspondents as archival work is still ongoing, but nonetheless some preliminary suggestive patterns emerge. Crawley’s initial correspondents are more likely to be women, for instance, but as the journal accrues prestige, more established poets become interested in submitting to it, and these poets were more likely to be men. Such a narrative is clearly open to critique – for example it raises methodological questions about which letters were included – but this is a valuable process for raising questions about the partiality of the “data” on which existing narratives about the development of Canadian modernism have relied.
+
+This project forms part of EMiC: Editing Modernism in Canada (editingmodernism.ca). It is also being developed in association with TCLL: Twentieth Century Literary Letters (www.modmaps.net/tcllp), a collaborative project in its early stages which aims to build a digital infrastructure for the discovery, analysis, and visualization of the metadata from a wide range of epistolary materials relating to twentieth century literary figures. As a founding member of TCLL, I am keen to find other scholars working on letter collections who would be interested in joining the project, and one of the aims of showcasing this work at DH2014 is to make connections with others whose metadata could be productively brought into conversation with existing TCLL materials.
+
+References
+1. McCullagh, Joan. Alan Crawley and Contemporary Verse. Vancouver: U British Columbia P, 1976. Print; Robertson, George. “Alan Crawley and Contemporary Verse.” Canadian Literature 41 (1969): 87–96. Print; Wilson, Ethel. “Of Alan Crawley.” Canadian Literature 19 (1964): 33–42. Print.
+
+2. Irvine, Dean (2011). Spectres of Modernism. Canadian Literature 209: 6–10. Print.
+
+3. Koh, Adeline, and Roopika Risam (2013). Open Thread: The Digital Humanities as a Historical “Refuge” from Race/Class/Gender/Sexuality/Disability? Postcolonial Digital Humanities. 10 May 2013. Web. 1 Nov. 2013.
+1. Background
+The DiRT (Digital Research Tools, dirt.projectbamboo.org) directory is a longstanding resource for scholars interested in digital tools and methodologies, providing basic information about software that can facilitate different stages of the research process. DiRT was originally designed as a wiki, where a single wiki page contained information about all tools in a given category. In 2011, under the auspices of Project Bamboo, DiRT was completely rebuilt using the Drupal content management system, which allowed for data to be stored in a structured manner. This enabled more complex searching and browsing options (such as allowing the user to limit results based on criteria like platform or cost), and provided individual profile pages for each tool, which could then serve as a locus for specific comments, or be referenced in other tool profiles. For instance, if a profile page indicates that Neatline is a suite of add-on tools for Omeka, a link to Omeka appears on the Neatline tool profile page, and vice versa.
+
+2. Current development project
+One of the biggest limitations of DiRT has been the fact that its contents-- the product of a considerable amount of volunteer work-- have only been available via DiRT’s own web interface. Creating and curating the tool listings on DiRT is largely a manual process. A steering and curatorial board takes an active role in shaping the ongoing development of the site and ensuring data quality, but individual contributions by users make up a large portion of the data. DiRT is currently undergoing a new phase of development, supported by the Andrew W. Mellon Foundation, with the goals of making DiRT data available to others who want to incorporate information about tools into other projects, resources and environments, and also expanding the content provided by DiRT to more clearly situate the tools in the contexts of the projects, research workflows, and pedagogical activities that use them. This poster will demonstrate the accomplishments of the current development project and include information about opportunities to get involved with the project, by trying the DiRT API and plug-ins, or contributing to tool reviews and documented workflows.
+
+3. Areas of work
+The poster will also highlight the progress made on developing a DiRT plug-in for Commons In A Box (CBOX), an open source scholarly networking platform created by the City University of New York and used by the Modern Language Association (MLA), the regional NYC Digital Humanities group, and an increasing number of projects and organizations that could benefit from integrated access to information about tools. The CBOX plug-in will:  
+
+provide users with the ability to display information about their DiRT site activity (e.g. tool contributions and edits, reviews, and tool usage information) on their Commons profile;
+provide an interface for searching DiRT within the CUNY Academic Commons, for use by groups with an interest in digital humanities;
+provide a link to DiRT to facilitate access for inputting new tools.
+The poster will also illustrate other areas of development including:
+
+Use of the DiRT API and the API for the DHCommons project directory to augment DiRT tool profiles with information about what projects are using a particular tool
+Guidelines and examples of best practice for writing tool reviews, with potential pedagogical applications (e.g. providing a framework for instructors who want to assign students to write reviews of digital research tools, which could then be refined for ultimate publication on DiRT)
+Guidelines and examples of best practice for documenting workflows or “recipes” that combine multiple tools in the DiRT registry to achieve some research objective.
+Adoption of the taxonomy of research methods jointly developed between DiRT and DARIAH-DE, to replace the previous ad-hoc set of tool categories. DiRT will serve as one of three initial test cases for this taxonomy, which has benefitted from extensive public feedback.
+Documentation for how to develop custom tool lists (e.g. tools to be used in a particular class, or tools that are particularly relevant for the disciplines that a subject specialist librarian supports) that pull from the information stored in DiRT, and display that information on other sites.
+References
+Babeu, Alison (2006). Rome Wasn’t Digitized in a Day”: Building a Cyberinfrastructure for Digital Classicists. CLIR reports, August 2011.Borgman, Christine L. “The Digital Future Is Now: A Call to Action for the Humanities.” Digital Humanities Quarterly 3, no. 4 (Fall 2009). http://www.digitalhumanities.org/dhq/vol/3/4/000077/000077.html.Unsworth, John. Our Cultural Commonwealth: The Report of the American Council of Learned Societies Commission on Cyberinfrastructure for the Humanities and Social Sciences. American Council of Learned Societies. http://acls.org/uploadedFiles/Publications/Programs/Our_Cultural_Commonwealth.pdf.
+New advances in online game engines have made it possible to easily view 3D virtual environments from any web browser, but the full potential of 3D humanities research has gone unrealized because of the difficulty in connecting important 3D findings to the work of traditional scholars grounded in texts. This presentation will discuss the current development and show demonstrations of the Scholarly 3D Toolkit, (S3DT) a plug-in for the Unity game engine designed to help better interface 3D historical reconstructions with other data. The work of a team lead by James Coltrain, S3DT will provide simple interfaces that allow creators to link their 3D scenes to sources and documents, and to dynamically import and view traditionally indexed digital humanities data from databases, spreadsheets, or GIS programs. The result will allow users to view multiple layers of data plotted within a single online 3D environment, showing markers for events, personal connections, documents, images, and annotations from multiple users, all in time and space. S3TD will allow for greater and more sophisticated interdisciplinary analysis, helping scholars studying three dimensional spaces to contextualize models of architecture, urban structures, and natural topography using texts and other spatial data. By comparing existing digital humanities findings with 3D scenes that show scale, light, and texture, the platform will allow for more complex and nuanced investigations of past spaces. Along with a discussion of the project’s progress and the theoretical questions at play, this presentation will show early demos of a test case for the platform. These will include a richly annotated high quality 3D reconstruction of Fort Stanwix, an 18th-century historic site and National Monument, with an existing database constructed by Nebraska undergraduates of over 400 letters, maps, and plans.
+
+S3DT will build upon the achievements of previous digital humanities projects by expanding the options scholars have for working in 3D spaces. Earlier platforms have allowed for the real-time display of annotated 3D models, but some could not stream live in a browser, and most allowed creators little in the way of customization.i Extremely important work has been done with diverse and creative applications of historical GIS, and S3DT will allow for those established types of analyses to be brought into the third dimension. ii More recently, some scholars have made use of online game engines like Unity to achieve some of the goals set forth in the S3DT project, including the use of advanced real time graphics in an online environment. iii However, these projects have not resulted in open, customizable platforms, and none allow for the importation of new 3D content. S3DT will build upon previous work in Unity by connecting 3D scenes from multiple creators to the layered viewing of all kinds of outside humanities data.
+
+The practical tools in S3DT also make many previously difficult modes of spatial analysis quicker and more accessible. S3DT scenes can show spaces changing over time with numerous iterations and nuance, and also display multiple interpretations of the same structure side by side as competing arguments. With 3D objects linking to multimedia sources, users can now better understand the interpretive leaps creators made, and which pieces of fragmentary evidence scholars privileged in creating coherent 3D spaces, information that also facilities efficient peer review. The ability to display different types of data can also promote public outreach in addition to academic collaboration, letting universities, museums, archives, historic sites, and even individual visitors contribute to the same online 3D spaces. The design of the S3DT plug-in for Unity will allow for open analysis of 3D scenes, while protecting scholars’ data for future use. The plug-in does not interfere with the traditional workflows for 3D content creation, and also stores all textual and multimedia data in standard MySQL databases. As a result, neither scholars’ 3D models nor their annotations or data will become stuck in the S3DT if creators find better future platforms for presentation.
+
+S3DT will consist of a two part plug-in for Unity. The first part, within the Unity Editor, will allow creators to add notes and metadata to imported 3D objects, and prepare them for publishing. The second, is a web template which will allow for the viewing and manipulation of published scenes, as well as the live importation and plotting of new data layers from outside sources. Below is a typical workflow for S3DT along with key features at each step. This presentation will conclude with early demonstrations of many features from both parts of the plug-in.
+
+I. 3D Content Creation
+Creators begin by modeling and texturing a 3D scene in their typical workflow in a 3D suite such as 3D Studio Max, Maya, or Blender. When they have finished, they export their 3D models to industry standard formats (ex. .obj or .fbx) . They then download and install the Unity Editor and the accompanying S3DT plug-in. Finally they load their 3D scene into the Unity Editor.
+
+II. S3DT Plug-in for Unity Editor
+
+With their models loaded into the Unity editor, creators will use the S3DT plug-in to prepare them for publication. This includes creating an object hierarchy, denoting nested neighborhoods, complexes, buildings, rooms, architectural features, and sub-features, each as defined by the creator. Once the objects are defined, creators can enter metadata for each scene object in any fields they like. In particular, creators will be able to enter time sensitive information, such as the dates for the object's creation, alteration, damage, and destruction. Creators will also be able to enter links to sources used in their interpretation of the reconstructed object, as well as notes about their specific decisions.
+
+Next creators will publish their scene. In the process each published scene is exported as two parts, a Unity 3D file formatted for web display, and a matching MySQL database containing all metadata and links to sources and annotations.
+
+III. S3DT Plug-in for Browsers
+
+The S3DT web browser plug-in consists of a Javascript library and web template for loading and displaying published S3DT scenes on the web. Most projects will use a customized version of the web template, but the Javascript library is available for projects that are integrated into existing sites or for which creators desire a higher level of customization.
+
+The S3DT browser plug-in has a simple user interface consists of the following:
+
+The Main Window displays the published Unity scene in real-time 3D.
+The Timeline consists of a scalable time line with a slider to control time position and markers corresponding to time sensitive events plotted in the scene.
+The Layers List shows all the elements in the scene, organized by package. Each layer has a collapsible view that expands to show the entire object hierarchy as defined by scene creators in the S3DT Unity Editor plug-in. Any additional content or data loaded into the 3D scene will appear in the layers list as a new layer, including published S3DT packages, maps, images, collections of user annotations, collections of plotted events, GIS data, etc. Users will be able to toggle the visibility and opacity of any layer or any object within a layer hierarchy.
+The Tools Window features a set of utilities users can use to manipulate or analyze the scene. These will include:
+Advanced Search - Allowing customizable complex searches bases on any metadata field or object attribute.
+Groups - Allows users to group objects from any layer together into a new layer.
+Edit Object Metadata - If enabled, allows users to add to or edit metadata for scene objects. Annotate -Allows users to leave comments live in the scene, either attached to scene objects or in freestanding 3D space.
+Camera Tools - Allows users to place custom cameras, define camera paths and animate them, and to take and save camera snapshots.
+Import Data - Allows users to import data with geographic information from outside sources including SQL, Excel, KML, and ARCGIS. Also allows users to choose and customize marker appearances based on imported data, or upload their own.
+Create Exhibits - A set of sub-tools will allow users to connect camera views, and animations over time and space with HTML text for guided tours and other exhibits. Created exhibits will load into the layers view.
+Map and Image Import- Allows users to import maps and images into the live scene, and to align maps to existing terrain or images to camera views. Imported maps and images can then load into the layers view.
+References
+VSIM https://idre.ucla.edu/gis-visualization/vsim; Rome Reborn http://romereborn.frischerconsulting.com; CDI Second Life projects http://wt-dc19-prod.astate.edu/a/centers-programs-and-institutes/cdi/projects.dot .
+
+Anne Kelly KnowlesPast time, past place: GIS for history;David J. Bodenhamer, John Corrigon, and Trevor M. HarrisThe Spatial Humanities; Spatial History Project http://www.stanford.edu/group/spatialhistory/cgi-bin/site/index.php; Hypercities http://hypercities.com/ ; Neatline http://neatline.org/about/ ; World Map Project http://worldmap.harvard.edu/.
+
+lab, UCLA Experimental Technologies Center http://etc.ucla.edu/research/projects/romelab/ ; Hadrian's Villa Simulation http://idialab.org/nsf-funded-virtual-simulation-of-hadrians-villa/ ; Digital Pompeii http://classics.uark.edu/DigitalPompeii.html; Simulated Environment for Theater, http://humviz.org/set/index.html.
+Introduction
+
+“Humanities on the Z-axis” is an interdisciplinary research project that works across modernist studies, geospatial humanities, and desktop fabrication. Through a combination of techniques in three-dimensional (3D) fabrication, geospatial mapping, speculative computing, and pattern analysis, z-axis research expresses the geospatial narratives of modernist novels by geo-referencing them and then using that geo-data to transform base layers of maps from the modernist period. The output of the research includes warped, 3D maps of cities (e.g., Paris and Dublin) central to modernist literary production. These maps can be viewed as 3D models on a screen or as physical prototypes in hand, and they are currently being transformed using geo-data drawn from novels by Djuna Barnes, James Joyce, and Jean Rhys. Ultimately, they show how modernist authors wrote the city, and findings suggest they contradict existing research in modernist studies about how, exactly, cities are expressed in modernist novels.
+Research Problems
+
+This project addresses two specific research problems that currently exist across geospatial humanities and modernist studies. First, in fields such as digital humanities, geospatial mapping techniques (Moretti 2005) and data visualizations (Bostock 2012) tend to produce isomorphic cartographies or flat representations of data (Drucker 2011), even when literature resists this type of representation. One consequence of these flat or isomorphic approaches is that they tend to ignore the importance of subjective experience to literary criticism (in particular) and the humanities (in general). Second, and related to the first point, mapping techniques in geospatial humanities research can too easily be applied across literary periods without regard to the historical, material, or formal differences between texts, especially when something like Google Maps or Google Earth is the core technology. As a result, geospatial methodologies do not always persuasively correspond with the literary period, aesthetics, and textual particulars under examination.
+In response to these problems, z-axis research tailors mapping practices to suit the needs of literary periods. For instance, modernist literature deliberately resists isomorphic representations of geographic space (Vidler 2000). It also frequently treats the city as a medium, which is represented through fiction. Consequently, we argue that modernism not only calls for speculative, non-isomorphic modes of geographical expression (i.e., deformed maps) but also techniques that engage geographic representation directly (i.e., by distorting a map's base layer instead of "pinning" data on top of it). Additionally, the z-axis methodology involves a "text-first" workflow wherein the specificities of the text practically dictate the mapping method and, by extension, the aesthetics of the transformed, 3D maps.
+Research Questions
+
+Z-axis research currently asks the following research questions of geospatial humanities and modernist studies:
+How and to what extent do geospatial approaches to modernist novels benefit from distinct methods of analysis? With what implications on existing geospatial methods in digital humanities?
+How do modernist authors write the modernist city? Through 3D maps, how can we compare multiple, literary versions of the same modernist city, using the same base map?
+How can traditions in speculative computing (Drucker and Nowviskie 2004; Drucker 2009) and deformance (Samuels and McGann 1999) be applied to geospatial analysis and the modernist novel (Nowviskie et al. 2013)?
+In modeling and fabrication practices, to what degree (if at all) do 3D-printed maps afford interpretations that screen-based maps do not? Where visual expression is concerned, how do we put screen and print into conversation, and to what effects on the trajectories of scholarly communication?
+Literature Review
+
+Many geospatial projects in digital humanities are largely two-dimensional and rely significantly on isomorphism. In the case of modernist cities, projects such as Walking Ulysses (2012) and WatsonWalk (2012) pin events to flat base maps. While the Scholars’ Lab at the University of Virginia is working on “social and spatial maps of modernist correspondence,” projects of this sort are rare in the field. Building on these initiatives, z-axis research uses historical maps as a medium for expressing social and cultural currents in the modernist city.
+At the same time, many writers interested in modernity have documented the constructed character of modernist geographies. Henri Lefebvre (1974) unpacks the social production of urban space, arguing that discrete social and spatial practices are embedded in different cities. Elsewhere, Foucault’s heterotopias (1984) and Marc Augé’s (1992) non-spaces chart the social construction of space as it ruptures geographic locales, producing overlapping and contradictory spaces. Embedding the social and political nature of modern cities into their narrative, many modernist novels construct the city or treat it as a medium. In his work on cartographical rhetoric in Ulysses, Jon Hegglund argues that the very act of mapping within the text is seen as a way of knowing. Richard Zeikowitz (2005) and Deborah Parsons (2000) similarly analyze the construction of feminist cityscapes in Jean Rhys's works, while Amy Wells-Lynn (2005) reveals the way Djuna Barnes and other female modernists “construct new Parisian geographic and literary female spaces” (79).
+When combined, geospatial research in both digital humanities and modernist studies suggests that specific mapping approaches to literary modernism underscore the importance of socially constructed, geographic space. Here, work in speculative computing (Drucker and Nowviskie 2004; Drucker 2009) and deformation (Samuels and McGann 1999) provides precedent when blending computation with humanities inquiry.
+Method and Workflow
+
+When studying modernist novels, the current workflow for z-axis research is bifurcated into two processes. The first process involves geo-referencing plain-text versions of modernist novels, and includes the following steps: 1) use VueScan software to produce high-resolution scans (600 dpi) of the text; 2) run the text through ABBYY FineReader to render it machine-readable; 3) where necessary, correct the text; 4) geolocate the narrative of the text in XML (if a character appears in a certain location while imagining or talking about another location, then the location is tagged as the place where the narrative occurs); 5) conduct a word-count to see how many words are nested in certain geographic locations; 6) record these numbers in a spreadsheet; and 7) divide the number of words per location by the total number of words in the text to produce a ratio.
+The second process mobilizes the geo-data and ratio from the first process to transform historical maps in 3D. It includes the following steps: 1) use a high-quality scanner to digitize an archival map; 2) use Photoshop to convert the scanned archival map into a displacement map; 3) apply the displacement map to a flat subdivided mesh using Autodesk’s Mudbox, then scale the plane along its z-axis to render details from the displacement map as changes in elevation (figures 1-3); 4) procedurally apply the bulge function for each area indicated by the data model, warping the three-dimensional map along its z-axis (figures 4, 5), with differences in warping determined by the geo-data ratio; 5) use MeshLab to determine if the Mudbox model is watertight; if it is not, then automatically correct errors if they are not glaring; and 6) print the model using a desktop 3D printer.
+
+
+
+
+
+Findings
+
+One of the key findings of this research is the articulation of a methodology and workflow for expressing the geospatial narratives of modernist novels through transformance and speculative computing. Additional, related findings suggest that, contrary to an abundance of modernist scholarship (e.g., Hegglund 2003), James Joyce's Ulysses does not provide an isomorphic representation of Dublin. Instead, the novel presents a biased version of the city, privileging specific geographic areas over others. What’s more, in the case of modernist novels about Paris, constructions of the city are highly contingent upon constructions of sexuality, especially when Barnes's Paris is compared with that of Rhys. That is, the sexual politics of literary Paris dramatically influence how and what parts of it are represented in texts from the 1920s and '30s. Finally, where comparisons between screen and print media are concerned,  findings suggest that the latter not only affords tactile engagements lacking in the former but also bypass many visual design problems, including tendencies to squeeze too much complex information into a single frame or window. More generally, our findings suggest that the humanities can be empowered through the material transformation of scholarly communication, including evocative objects and publications in 3D.
+Acknowledgements
+
+This research has been conducted at the Electronic Textual Cultures Lab and the Maker Lab in the Humanities at the University of Victoria with support from the Modernist Versions Project (MVP) and Implementing New Knowledge Environments (INKE). The research is supported by the Social Sciences and Humanities Research Council (SSHRC).
+References
+
+Augé, Marc (1997). Non-Lieux: introduction à une anthropologie de la surmodernité. Paris: Le Seuil.
+Barnes, Djuna (1995). Nightwood: The Original Version and Related Drafts. Ed. Plumb, Cheryl J. Normal, IL: Dalkey Archive Press.
+Bostock, Mike (2012). "D3.js: Data-Driven Documents."d3js.org.
+Declan, Kiberd (2009). Ulysses and Us: The Art of Everyday Living. London: Faber and Faber.
+Drucker, Johnanna (2009. SpecLab: Digital Aesthetics and Projects In Speculative Computing. Chicago: Chicago University Press.
+---. “Humanities Approaches to Graphical Display.” (2011) Digital Humanities Quarterly. 5.1.
+Drucker, Johanna and Bethany Nowviskie. "Spectulative Computing: Aesthetic provocation in Humanities Computing." A
+Companion to Digital Humanities (2004.  ed. Susan Schreibman, Ray Siemens, John Unsworth. Oxford: Blackwell.
+Foucault, Michel and Jay Miskowiec (1986). "Of Other Spaces." Diacritics 16.1 (Spring 1986). 22-27.
+Joyce, James (1922). Ulysses. Paris: Shakespeare & Co.
+Kraus, Kari. (2009) “Conjectural Criticism: Computing Past and Future Texts.” Digital Humanities Quarterly 3.4 (Fall 2009): n. pag.
+Hegglund, Jon (2003. “Ulysses and the Rhetoric of Cartography.” Twentieth Century Literature. 49.2. 164-192.
+Lefebvre, Henri (1991. The Production of Space. Trans. Donald Nicholson-Smith. Oxford: Blackwell.
+Moretti, Franco (2005). Graphs, maps, trees: abstract models for a literary history. London: Verso.
+Nowviskie, Bethany. Neatline. LLC.
+Parsons, Deborah (2000). Street Walking the Metropolis: Women, the City, and Modernity. Oxford: Oxford UP.
+Ramsay, Stephen and Geoffrey Rockwell (2012. "Developing Things: Notes toward an Epistemology of Building in the Digital Humanities." Debates in the Digital Humanities. Ed. Matthew K. Gold. Minneapolis: University of Minnesota Press. 75-84.
+Rhys, Jean. Good Morning, Midnight (1970). New York: Harper & Row. First published in 1939.
+Rhys, Jean (1969). Quartet. London: Andre Deutsch. First published in 1928.
+Seidel, Michael (1976). Epic Geography: James Joyce’s Ulysses. Princeton UP: 1976.
+Vidler, Anthony (2000). Warped Space. Cambridge, Mass: MIT Press.
+Wells-Lynn, Amy (2005). “The Intertextual, Sexually-Coded Rue Jacob: A Geocritical Approach to Djuna Barnes, Natalie Barney, and Radclyffe Hall.” South Central Review 22.3 (Fall 2005). 78-112.
+Zeikowitz, Richard (2005). “Writing a Feminine Paris in Jean Rhys’s ‘Quartet.’” Journal of Modern Literature. 28:2. 1-17.
+
+
+    
+        
+            
+                Following the Stars (Under the Stars): Mapping The Film Circuits of Inter-War Outdoor Picture Gardens in Western Australia
+                
+                    
+                        Courtney
+                        Angela
+                    
+                    Indiana University, United States of America
+                    ancourtn@indiana.edu
+                
+                
+                    
+                        Courtney
+                        Michael
+                    
+                    Indiana University, United States of America
+                    micourtn@Indiana.edu
+                
+            
+            
+                
+                    2014-12-19T13:50:00Z
+                
+            
+            
+                Paul Arthur, University of Western Sidney
+                
+                    Locked Bag 1797
+                    Penrith NSW 2751
+                    Australia
+                    Paul Arthur
+                
+            
+            
+                Converted from a Word document 
+            
+        
+        
+            
+                
+                    DHConvalidator
+                
+            
+        
+        
+            
+                
+                    Paper
+                
+                
+                    Poster
+                
+                
+                    GIS
+                    mapping
+                    film
+                    cinema
+                    Australia
+                
+                
+                    film and cinema studies
+                    maps and mapping
+                    English
+                
+            
+        
+    
+    
+        
+            In his 2011 exploration of using GIS and the film history, Klenotic discusses his realization of the potential that GIS technologies offer for his work in film history: 
+            GIS has enabled me to think more carefully about cinema history as a history of spatial relations, and it has helped me to rethink the modalities in which historical evidence can be examined, assembled, interpreted, stored and presented to the public; modalities that are impossible to describe and explain in writing alone. (Klenotic, 2011, 58)
+            Our project, 
+                Following the Stars: Mapping the Film Circuits of Inter-War Outdoor Cinemas in Western Australia, seeks not only to map the geographical proliferation of outdoor cinemas but also to re-create the exhibition history of films in Western Australia between the two world wars, creating a visual representation of film exhibition. Based in large part on Ina Bertrand’s now-aged Cinemaweb database, we have compiled a list of roughly 125 outdoor cinemas in operation between the end of the First World War and the beginning of the Second. Ranging widely in design and intent, these spaces offered outdoor film exhibition opportunities for many far-flung rural communities as well as for the urban populations on the Perth environs. In light of recent interest in mapping the movies by such projects as the Australian Cinemas Map
+                1 and the Cinemas and Audiences Research Project (CAARP),
+                2 this project addresses a particular type of cinema space during the pretelevision era in which outdoor cinemas were particularly popular.
+            
+            Some of these spaces were purposely built ‘picture gardens’ such as the still-operating Sun Pictures
+                3 designed specifically for film exhibition outside. Others, however, were developed through opportunistic convenience, adding a fence and deckchairs on a lawn behind a hotel, or projecting outside from an indoor cinema during summer nights when the weather cooperated. Many of these venues operated as part of a larger circuit (Goldfield Pictures, Hoyts, Nulsen’s West Touring Talkies, the Salvation Army Biorama Company, and more). 
+            
+            
+                Following the Stars is developing maps of the circuits that we are re-creating using Omeka and the Neatline plugin via research conducted through Cinemaweb and the invaluable newspaper resources in Trove, in addition to months of months of fieldwork locating and researching cinemas or former sites. The project also features a timeline of film exhibited and develops a narrative of the history of this type of film exhibition in western Australia. 
+            
+            Data used in developing the project include venue names, locations, and years of operation; circuit operators and routes; film titles and dates shown; sources; images of cinemas both currently and historically when available; and lengthy bibliographies upon which the project is based.
+            Notes
+            1. See http://auscinemas.flinders.edu.au/.
+            2. See http://caarp.flinders.edu.au/.
+            3. See http://www.broomemovies.com.au/sun-pictures.html.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Cinemaweb. (n.d.). www.ammpt.asn.au/CinemaWEB/SITE/ (not functional as of time of publication). 
+                    
+                    
+                        Klenotic, Jeffrey. (2011). Putting Cinema History on the Map: Using GIS to Explore the Spatiality of Cinema. In Maltby, R., Biltereyst, D. and Meers, P. (eds), 
+                        Explorations in New Cinema History: Approaches and Case Studies. Hoboken, NJ: Wiley-Blackwell; ProQuest ebrary (accessed 19 October 2014).
+                    
+                    
+                        Trove: Digitised Newspapers. (n.d.). https://trove.nla.gov.au/newspaper.
+                    
+                
+            
+        
+    
+
+
+        
+            The Wired! Lab for digital art history and visual culture at Duke University comprises a group of faculty, staff, and students engaged in applications of visualization methods to studies of material culture and art, architectural, and urban histories. Members of the lab collaborate to develop critical digital research employing 3D modeling, mapping, and database tools. Art historians and digital humanists work together to integrate both digital and art historical methodologies in lab courses and projects.
+            In the Wired! classroom’s collaborative teaching model, a digital humanist takes on a significant role in both course planning and implementation. She works with instructors, graduate assistants, and librarians to redesign syllabi and assignments for preexisting departmental courses that incorporate not only digital tools but also critical methods. She then attends class meetings to familiarize herself with courses’ art historical content; she delivers workshops on digital concepts and tools; and she works with instructors and students to establish project workflows, to troubleshoot technical issues, and to critique student work. For students, this kind of collaboration can provide opportunities to make intellectual connections across two modes of inquiry as they apply digital methodologies to art historical topics. For instructors, this collaboration can enrich pedagogical practice as digital methods present different possibilities for student engagement.
+            While some educators have focused on pedagogical challenges such as, “How does one teach students the digital tools to address a wide variety of projects without neglecting traditional discipline-specific issues of research formulation and data collection?”, (Johanson and Sullivan et al., 2012) the Wired! Lab’s digital pedagogy focuses on only the digital knowledge required for a specific topic. This approach ensures that students intentionally engage art historical content via digital methods, prioritizing quality of digital interventions over quantity while also addressing very practical issues of scalability within a disciplinary context.
+            In this presentation, I will examine two cases in which Wired! Lab instructors and a digital humanist collaborated to design and implement project-based undergraduate courses. These examples will demonstrate how the different teaching teams worked in tandem to create these learning experiences and will discuss benefits and challenges of these pedagogical collaborations. I will also situate the Wired! Lab’s pedagogical work within the larger digital humanities and digital art history ecosystem.
+          
+            Introduction to Art History 
+            In Spring 2015, Professor Caroline Bruzelius implemented a team-based teaching approach for her Introduction to Art History course. Together, we worked with a graduate assistant and librarian to redesign the survey course and student projects. We all attended class meetings, we each taught aspects of the course, and we assessed student projects as a group. Combining our variant expertise, we created a course in which students employed a digital humanities approach to performing art historical critical analyses of spatial, temporal, and cultural relationships that influenced the movement of raw materials and cultural objects across ancient and medieval Western and Mediterranean societies. The digital tools we chose to use in the course were Neatline, a spatiotemporal exhibit builder, and Omeka, a collection management system in which Neatline operates. We implemented Neatline first for visualizing the syllabus and second for developing students’ visual narratives concerning specific pre-modern art historical objects and materials.
+            
+                
+                Fig. 1. Neatline syllabus for Introduction to Art History
+            
+            The interactive visual syllabus (Fig. 1) introduces students to the course narrative: its units and lectures are shown in time and space accompanied by contextual maps, specific geospatial points of reference, and other relevant multimedia including hyperlinks to important objects’ museum pages, lecture slides, and supplementary videos. The interactive visual syllabus makes explicit temporal, spatial, and cultural relationships that effected the development of art practices across pre-modern societies. Presenting the syllabus in Neatline also familiarized students with Neatline’s affordances and interface in preparation for creating their own Neatline projects, in which they used critical understandings of spatiotemporal narrative to develop cohesive art historical arguments concerning particular pre-modern objects, their making processes, political influences, and economic and environmental impacts.
+          
+          
+            Visualizing Venetian Art
+            Dr. Kristin Lanzoni’s upper level course on early modern Venetian art also employed a collaborative teaching model. She and I worked together to develop a syllabus and project in which students studied course material through processes of visualization. Students spent the semester not only learning about Venetian art, history, and culture but also working together to model a Venetian palace no longer extant and to design an immersive visual narrative about the palace’s political and cultural significance (Fig. 2). The students worked with tools ranging from Adobe Photoshop to SketchUp to Unity3D to visualize the palace.
+            
+                
+                Fig. 2. Model of a Venetian palazzo created by students in Visualizing Venetian Art
+            
+            As the semester progressed, Dr. Lanzoni and I worked closely with the students to troubleshoot a number of problems that arose as students strove to translate historical evidence into an historically informed 3D model. These issues stemmed from both primary sources, which give conflicting visual evidence for the palace’s scale and appearance, and digital tools, which present challenges for modeling non-rectilinear structures and force compromises with regard to levels of detail. Students had to make joint decisions regarding model and narrative designs based on both historical research and the digital tools’ affordances and limitations.
+            In both courses, students gained understandings of art historical topics through digital visualization processes. Wired! Lab teaching teams facilitate these types of learning experiences by combining their expertise in course design and implementation. While in the survey course, students were asked to create individual visual narrative projects, guided by an art historian, a graduate student, a librarian, and a digital humanist, the students in Visualizing Venetian Art worked together on a single topic from which their learning about early modern Venice radiated outward. While some digitally-inflected Wired! courses ask students to work individually, other courses model collaboration not only in the teaching but also in the learning. Overall, the majority of Wired! courses are not “Introduction to Digital Humanities” but rather art history courses redeveloped to integrate specific digital approaches that directly support course-specific content and disciplinary methods. The integration of a digital humanist in Wired! art history courses ensures that students’ digital projects are informed not only by disciplinary knowledge but also by critical approaches to digital methodologies.
+         
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Johanson, C. and Sullivan E. et al. (2012). Teaching Digital Humanities through Digital Cultural Mapping. In Hirsh, B.D. (ed) 
+                        Digital Humanities Pedagogy, Open Book Publishers, pp. 121-49.
+                    
+                
+            
+        
+    
+
+
+        
+            Famine, as John Walter writes, was “…a recurring reality and ever-present fear” in the early modern period (Walter, 2015). The AHRC-funded project 
+                Famine and Dearth in India and Britain, 1550-1800: Connected Cultural Histories of Food Security (
+                http://humanities.exeter.ac.uk/english/research/projects/famine/) examines the practices, discourses and literary modes through which societies in early modern India and Britain articulated their concerns about the availability and distribution of food (Mukherjee, 2014). A collaboration between the University of Exeter and Jadavpur University, Calcutta, the project draws upon a large body of texts written in languages including English, Latin, Persian, Bengali and Hindi for evidence about cultural responses to landscapes of famine and dearth. Its aim is to produce a digital resource that includes encoded extracts from the source materials and maps that reflect the variety and scope of identified responses to the landscapes encountered in the sources. 
+            
+            The application of digital methods to large corpora of thematic texts presents both opportunities and challenges, which will be examined in this work-in-progress paper. The dataset is highly diverse, not only in terms of the languages in which these texts are written but also in the types of documents that form our body of evidence. The source materials include chronicle histories, gazetteers, official correspondence, legislation, pamphlets, periodicals, plays, poetry, surveys and prose (fiction and non-fiction), and the project will publish excerpts from each of these categories. Our markup priorities (beyond the basic structure of the document) lie in how to encode the many themes surrounding famine and dearth that are present in our texts, which we need to extract in order to address the research questions of the project. We can use natural language processing tools to help us identify names and places, for instance (at least for some of the languages), but the range of terms used in these texts to describe the features of the landscape, the people, and the food situation are extremely varied. Inevitably there are also subtleties in the ways in which particular concepts are represented in the various languages of our source materials, as well as added complications such as variant spellings. The project uses the open source software GATE (General Architecture for Text Engineering, 
+                http://gate.ac.uk/) to identify names and places in the texts written in English, and we would like to apply a similar process to the texts written in other languages. It is likely that we will create some of the gazetteers from scratch, in which case we would aim to make these available as part of the project’s outputs.
+            
+            One of the most interesting challenges is in how to map the resulting data meaningfully. Exploring responses to landscapes of scarcity is a key research question of the project, and descriptions of such responses feature very heavily in some of our texts, particularly in the travel writings (see McRae, 2009 for a discussion of some of themes in travel writing of this period). The works of Peter Mundy, for instance, are full of rich descriptions of the places he visited, including very personal observations of the circumstances in which he found himself (Carnac Temple, 1914; Pritchard, 2011). We are particularly keen to place our work in the context of some of the projects that have taken place during the last decade on mapping emotional responses to landscapes at other periods and in different geographical areas. While many of the recent projects on emotional cartography use wearable technologies to measure and record responses to the landscape, such as Christian Nold’s 2006 Greenwich Emotion Map (an art project combining annotations with measurements of skin responses at different stages of a walk through the Greenwich area of London: 
+                http://www.emotionmap.net/background.htm), we see potential in learning from, and building upon, their approaches to visualising the resulting data (Nold, 2009). Projects such as Kurt Jensen’s representation of Sterne’s 
+                A Sentimental Journey, built using Neatline (
+                http://neatline.org/), have also suggested possible directions for representing some of the travel writings (
+                http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey), and our recent workshop on food security has helped to clarify the relevant user requirements (
+                http://foodsecurity.exeter.ac.uk/). However the question of how to integrate such a wide variety of sources and languages into useful and meaningful maps remains one of the most interesting and challenging aspects of the project. As such, it will be a key focus of our paper, and we anticipate that presenting the results of our experiments with this data could be helpful for other projects that are grappling with similar issues, potentially in very different subject areas.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Carnac Temple, R. (ed.). (1914). 
+                        The Travels of Peter Mundy in Europe and Asia, 1608-1667. London: printed for the Hakluyt Society.
+                    
+                    
+                        McRae, A. (2009). 
+                        Literature and Domestic Travel in Early Modern England. Cambridge: Cambridge University Press.
+                    
+                    
+                        Mukherjee, A. (2014). 
+                        Penury Into Plenty: Dearth and the Making of Knowledge in Early Modern England. London and New York: Routledge.
+                    
+                    
+                        Nold, C. (ed.). (2009). 
+                        Emotional Cartography – Technologies of the Self. Available at 
+                        http://emotionalcartography.net/ Accessed 5th March 2016.
+                    
+                    
+                        Pritchard, R.E. (2011). 
+                        Peter Mundy, Merchant Adventurer. Oxford: Bodleian Library, University of Oxford.
+                    
+                    
+                        Walter, J. (2015). Abstract for “Poverty without patience? The politics of dearth and scarcity in early modern England”, presented at the workshop ‘Food Security: Past and Present’, Oxford, 3-4 September 2015.
+                    
+                
+            
+        
+    
+
+This poster will explore the challenges of creating digitized historical spaces as faced through the design and subsequent exhibition of the interactive, open-access map, Prohibition Raids in New Orleans, 19191933. During Prohibition, Federal agents (or ‘Prohis') raided thousands of establishments throughout the city of New Orleans, arresting thousands more. Using data gleaned from The Times-Picayune, one of New Orleans's oldest newspapers, this map documents the
+
+proliferation of these raids through the 1920s into the
+
+early 1930s. Currently housed in The Museum of the American Cocktail in New Orleans, this exhibit is a collaboration between the Southern Food and Beverage Museum and my digital humanities project, In-temperance.org, an Omeka archive of cocktail culture in New Orleans. The goals and questions raised by this project will be presented in this poster. These include:
+
+1.    Summarizing the historical context of the project and considering the ways in which early 20th century New Orleans constructed and created spaces of leisure, as well as assessing the cultural importance of the bars, restaurants, residences, and other locales raided by Prohibition agents;
+
+2.    Exploring how to turn historical spaces into modern spaces in ways that are intuitive and accessible to diverse audiences and different publics;
+
+3. Optimizing user experience for those viewers unfamiliar with the historical information presented and/or the digital plat-form(s) with which the exhibit was created;
+
+4. Acknowledging the limitations of visualization and user experience of digitized historical spaces.
+
+As a project rooted in Public History, the challenge of achieving the aforementioned goals lay in the digital platform. This poster will explain the exhibit's functionality goals and specific interactivity issues encountered during the exhibition's creation. This includes the ability to
+
+• optionally read a description of the exhibit and summarized history;
+
+• view details of each individual Prohibition raid;
+
+• organize and view raids by year;
+
+• filter by type of establishment raided;
+
+• zoom in, zoom out, and view the page in full.
+
+In order to achieve these goals, the exhibit was initially built in Neatline using the Starter Theme from Scholars' Lab, which works capably on any modern browser. Neatline advantageously allows users to explore the breadth of the historical archive by connecting Neatline points to Omeka items. When displayed on the Museum's multitouch tablet, however, issues of mobile compatibility and long loading times resulted in poor user experience. Ultimately, we had to modify the exhibition by changing the visualization platform to Tableau Public. Tableau not only circumvents the mobile compatibility issues found with Neatline, but it allows users to interactively filter historical data by year and raid type, a feature not currently possible in Neatline.
+
+While both Neatline and Tableau are capable platforms to achieve these goals, each has its own advantages. With these specific goals in mind, this poster will furthermore compare and contrast the advantages and limitations of Neatline and Tableau Public as both mobile and desktop interfaces. This poster
+
+will furthermore highlight the exhibition's successful outcomes as well as the limitations of its interactivity. Much could be learned about visualization from the challenges faced in the creation of this exhibition.
+Introduction
+In her DH 2014 keynote address, Bethany Nowvis-kie encouraged digital humanists to “attend to the environmental and human costs of DH” (2015). These costs are sometimes accrued through acts of inaccessibility, such as through building websites that are not practical for screen readers or mobile devices. But they may also be accrued through acts of accessibility like exposing communities to unwanted surveillance through digital publications. (See, for example, the recent controversy around the digitization and open access publication of the lesbian erotic magazine On Our
+
+Backs raised by Tara Robertson in “Digitization: Just Because You Can, Doesn't Mean You Should”, as well as Reveal Digital’s response. Projects like Mukurtu are seeking to temper the open access movement by providing a platform that keeps the power of distribution and access within the hands of community members). These costs are accrued whether the intentions are deliberate or not.
+
+In the environmental humanities, like in the digital humanities, "access" is not always a desirable goal. The actions of thousands of First Nations and Native American people, who continue to protest corporate and state access to tribal lands for the purpose of building pipelines, attest that access is both a human and environmental issue. In late October 2016, a viral Facebook campaign launched in the U.S. in response to unsubstantiated reports that the FBI was targeting Standing Rock, North Dakota protesters' locations via Facebook. Regardless of the veracity of the reports, the mass responses on social media—where individuals “checked in” en masse to Standing Rock—attest to a perceived privacy violation where personal data is accessed to enact environmental injustices. Access, especially human access, may well put endangered ecosystems at risk, expediting the "climate of extinction" in which, Nowviskie asserts, digital humanists work.
+
+The papers in this session confront this “climate of extinction” both directly and obliquely.
+
+Drawn from a diverse range of disciplinary fields and locales—including literature, media studies & archaeology, information science, and environmental science—this session interweaves examinations of the lived ecologies of the digital with analyses of digital representations of lived ecologies. Collectively, they address both the material and immaterial repercussions of digital humanities within the Anthropocene.
+
+In the contact between humans, non-humans, and the more-than-human, this session asks us to consider the ways in which digital humanists and digital humanities projects are complicit in environmental degradation. How are digital tools leveraged to enact environmental injustices and destruction? How are they used to redress environmental injustice? How might we, in the words of The Dark Mountain Project manifesto “face this reality honestly and learn how to live with it” (“The Manifesto,” n.p)?
+
+(Un)natural Disasters: The United States' Racialized Response to Disaster Relief
+Christina Boyles
+Hurricane Matthew wreaked incalculable damage in the United States and Caribbean. According to the Weather Channel, "The eyewall may deliver the strongest, most destructive winds anyone in parts of the northeast and east-central Florida coast has seen in their lifetime. The last, and only, Category 4 hurricane to make landfall anywhere in northeast Florida or the Georgia coast was an 1898 hurricane south of St. Simons Island, Georgia" ("Hurricane Matthew a Potentially Catastrophic Category 4 or 5 Strike Ahead on Florida's East Coast; Strongest in Decades").
+
+In fact, the severe impacts from this hurricane have led to some locations being uninhabitable for weeks or months. Governor Rick Scott encouraged residents of Florida's southeastern shore to evacuate. Other residents, like those farther north in Jacksonville or farther West near Orlando, were put on high alert. Over 1.5 million residents of these areas fled their homes ("Hurricane Matthew Strengthens as Florida Governor Urges Evacuations").
+
+Not all residents of Florida had the means to escape the onslaught of Matthew. Many residents, particularly those living in rural and inland communities, did not have access to the resources needed to flee the coming storm. In fact, if history has anything to tell us, those without resources will suffer the most. In 1928, Florida was hit by a category 4 hurricane now referred to as the Lake Okeechobee hurricane. Although the loss of life was catastrophic—the Galveston hurricane of 1900 is the only natural disaster to have caused more American deaths—the legacy of the storm has largely been lost to history. Nicole Sterghos Brochu asserts that this is "because the vast majority of those who died were black migrant workers, segregated in life and abandoned in death" ("Florida's Forgotten Storm").
+
+The fallout of the storm, however, has left a lasting cultural legacy in central Florida. Notably, anger has simmered for decades in West Palm Beach's African-American community over disparate memorials for black and white storm victims. Sixty-nine white victims in a segregated mass grave received personalized burial markers. In a nearby pauper's cemetery, a mass grave of 674 black victims was forgotten and left unmarked, later sharing space with a dump, a sewage plant, and a street extension ("Storm's Path Remains Scarred after 75 Years").
+
+Government documents reveal that the racialized response to the 1928 storm was intentional. Seeking to protect Florida's burgeoning tourist industry, federal officials minimized the damages caused by the storm, even going so far as to dramatically underestimate the death toll. Since many individuals who lost their lives were transient—meaning their names and residences did not appear in census data—the government could easily downplay and even negate their existence.
+
+To bring the stories of the storm's underrepresented victims back into our cultural memory, I created a Neatline exhibit demonstrating the loss of life the 1928 hurricane caused in both the United States and the Caribbean. To do so, I am also conducting interviews with family members of survivors and embedding their stories into the exhibit.
+
+As Florida and the Caribbean start to recover from Hurricane Matthew, it is important to note that those living in economically disadvantaged communities will suffer the greatest from the storm's damage. Heavily populated by black residents, these towns risk facing the same mistreatment of these residents both during the storm and in the recovery process, even recent storms—Katrina and Sandy are two prominent examples—reveal that discriminatory practices are common to disaster practices and clean-up processes.
+
+In order to prevent a similar injustice it is crucial to point out the United States' racialized responses to natural disasters and to focus aid efforts on the locations most impacted by the storm, many of which will be communities of color. By failing to do so, we risk contributing to a troublesome legacy of disaster relief discrimination.
+
+No, Drones: Institutional Critique of UAS Data Accessibility and    implications    for
+Environmental Humanities
+Nicholas Weber Lindsay Barbieri
+In name, pastiche isn't a method familiar to most earth scientists. But in practice, monitoring and observing environmental phenomena is a recombinatory process not that different from pastiche of the art world; it requires collecting data via a network of remote sensing instruments, normalizing this information so that it can meaningfully interoperate, and combining different stores of data in order to reliably produce knowledge about the natural world. The process of knowledge production in the earth sciences is both techno-scientific (Haraway, 1997), in the sense that sources of data are historically and locally situated, but also highly contingent on evidential cultures (Collins, 1998; Baker, 2011) in that collecting, finding and using data is mediated by the background practices of an academic department, scientific discipline, or research program.
+
+Compare our generic description of knowledge
+
+production in environmental monitoring to Louise
+
+Lawler’s recent series titled ‘No Drones’ - a critique of contemporary art institutions. Lawler created the series through a pastiche process of photographing private art collections, commissioning drawings of her photographs, and then digitizing the illustrations as vector-based images that are magnified and printed on adhesive vinyl (see Image 1 below). For an unassuming viewer, the result is a powerful reflexive image that is both full of layers of symbols and yet stripped down to a single black-and-white outline of complex ideas. For an audience that can unpack the provenance of Lawler's images this work also creates a self-reflexive form of institutional critique of how highly priced and commoditized artworks serve as cultural markers of wealth, privilege, and accessibility (Nixon, 2014).
+
+This paper attempts to use the same form of institutional critique as Lawler (Fraser, 2005) in discussing the emergence of Unmanned Aerial Systems (UAS) in environmental monitoring. Our goal is to demonstrate that with reflexivity the process of producing knowledge about environmental phenomena with UAS data can shed considerable light on markers of wealth, privilege and accessibility at play in contemporary informatics-driven science. Further, we argue that by creating ‘legible' provenance information, UAS data can have a dramatic impact on the burgeoning practices of environmental humanities (Castree, 2014).
+
+
+Figure 1: Louise Lawler's installation ‘No Drones' at Spruth Magers, Berlin 2015. Pictured left is ‘Dots and Traces' - A drawing by Jon Buller that has been digitized and printed on a vinyl adhesive. Buller's sketch is a direct copy of photo taken by Lawler, which is itself a sculpture by Damien Hirst. (Image via Spruth Magers)
+
+The use of unmanned aerial systems (UAS) as tools for collecting innovative remote sensing data and geospatial imaging is increasing. Recent technological advances present communities with an opportunity to use UAS to push boundaries in data collection. The recent drop in costs combined with the advancement in lightweight technology mean UAS could become a ubiquitous means of collecting scientific data (Dunba-bin and Marques, 2012). UAS are predominantly used for imagery, however, given their advantages over traditional data capture methods (higher temporal and spatial resolution, new area access, etc.) novel sensors are being explored and UAS use has opened doors for both researchers and communities interested in monitoring environment, landscapes, community vulnerability and disaster response.
+
+We present on three important topics in UAS-based collection of environmental data (1) the results of a survey of UAS use in the earth sciences (flight platforms, data and metadata standards, and data sharing practices) and how this may shape the ability of communities to access these technologies (2) a discussion of the experience of unwanted surveillance and how drones as tools could shift the equity of surveillance (self surveillance / community surveillance) and power dynamics. (3) a discussion of how drone data collection, with unprecedented ability to capture data
+
+on environment and landscape, may shift responses of
+
+organic beings to their physiographic surroundings -a topic of growing importance for the field of environmental humanities.
+
+The English Lake District and ‘World Ecology'
+Margaret Linley
+In his Guide to the Lakes (1835), William Wordsworth famously condemns changes occurring in the Lake District since the late eighteenth century, changes accelerating ironically because visitors were flocking there from all parts of England to see the landscapes Wordsworth celebrated in his nature poetry. Wordsworth is induced to speak out “at length” by a “wish to preserve the native beauty” of the district against the transformations that seem so rapidly to be taking place. The new mobility and accessibility enabled by improved transportation and communication, however, are only part of the problem. The “invention and universal application of machinery” are, for Wordsworth, equally to blame. Rather than simply argue for isolation, Wordsworth's solution to this conundrum of access and preservation is to use the mass print genre of the travel guide as an educational platform for cultivating environmental consciousness toward a reconstitution of the Lakeland as public space: “a sort of national property, in which every man has a right and interest who has an eye to perceive and a heart to enjoy” (Guide).
+
+Early in the Guide Wordsworth describes the process by which “nature is indebted to the hand of man,” its state and appearance the outcome of historical and social processes. In so doing, he complicates a strain of environmental writing, interestingly often attributed to the Romantic legacy, which differentiates human activity from “the natural,” a habit of thought that, according to ecocritics such as Jason W. Moore (Capitalism in the Web of Life), ultimately mystifies the role of capitalism in resource exploitation and climate change. Yet perhaps even more provocative is the way Wordsworth analyses the history of travel in the Lake District as essentially a form of colonization and insists, additionally, that the operations of such modernized forces of power on nature demand that readers think ecologically.
+
+This paper will explore how the problem of access Wordsworth identified dovetails with concerns raised by scholars about the environmental and human costs of digital humanities (such as Nowviskie, Parikka, and Haraway, among many others) through the specific example of Lake District Online, a digital research project based on Simon Fraser University's collection of 260 illustrated rare books about the English Lake District, including many maps and historical specimens of ornate book bindings, illustrations, and photography, spanning 300 years (1709-2000) with a concentration in the nineteenth century. As Elizabeth DeLoughrey and George B. Handley argue, historicization has been a primary tool of postcolonial studies and it is central to our understanding of land and, by extension, the earth. In order to continue to engage a historical model of ecology and an epistemology of space in time, we must carry these concepts, not least of all the spatial imaginary made possible by the experience of place, into the dialogue around access to emerging digital environments.
+
+Guided by this premise, Lake District Online has produced several freely accessible research, educational, and public engagement resources: 1) an extensible bibliographic research database for linking with other open databases (such as Wikipedia), comprising a metadata framework for searching and indexing bibliographical, biographical, and critical information about the books as well as their contents; 2) an experimental prototype of a teaching and learning platform, Reading Up Close and At a Distance, designed to enable students to interpret literature interactively on different scales; 3) a co-curated public exhibition with the Wordsworth Trust, Wordsworth Country: From the English Lake District to the Pacific Northwest, launched simultaneously at the Wordsworth Museum (UK), SFU Library and Special Collections (BC), and online; and 4) a corpus of high-resolution digital images and text files based on the SFU Lake District rare book collection. To approach these resources through the paradigm of colonial violence that Wordsworth identifies at work in the regional landscapes of Cumbria is also to engage empire building and environmental histories as highly mobile, flexible, and mutually constitutive. Moreover, as Wordsworth implies, access - and the related concept of openness - is a question of spa-tiality and especially of boundaries, exclusions, and limitations entailed in the politics and ethics of place making. Focusing especially on the significance of the present location of the Lake District collection in Vancouver, British Columbia, this paper will reflect on colonial legacies of organizing, producing, and accessing nature in the context of the digital humanities.
+
+Decaying Plastic Play: Flappy Birds Hacked Afterlife as Media Archaeological Praxis
+Jeffrey Moro
+On March 28th, 2016, prolific YouTube streamer
+
+SethBling posted a video demonstrating how, using only timed button presses and graphical glitches present in the console original, he injected three hundred and thirty-one new bytes into the seminal 1990 Super Nintendo Entertainment System (SNES) platforming game Super Mario World—bytes corresponding to the source code of the 2013 viral iPhone game phenomenon Flappy Bird. The hack allows users to play a fully functional port of Flappy Bird within Super Mario World, grafting the former's computational logic into the latter's graphics. The choice of games here is striking; while Super Mario World has been re-released across a variety of hardware platforms—to say nothing of Mario's cultural ubiquity—Flappy Bird remains a touchstone for its inaccessibility, both in its frustratingly difficult design and the fact that in February 2014, its creator pulled it from all platforms, citing concerns that its addictiveness ruined people's lives (Nguyen). SethBling's hack then produces a chimeric object; a hybrid of plastic, logic, and time; the ghost of one game haunting the shell of another. This haunting constitutes, as this short paper argues, a regenerative practice: a “circuit bending,” to draw on a theoretical and practical challenge from Garnet Hertz and Jussi Parikka, that engages the “archive” of dead (whether by accident or design) computational media not only within artistic traditions of remix, tinkering, and collage, but also with a media archaeological eye towards circulations of technological waste, supply chains, and resource extractions (“Zombie Media”).
+
+In characterizing this haunting as “regenerative,” I engage interdisciplinary work in the environmental humanities and media archaeology alongside tactics from games and software studies. In a post-400ppm world, questions of digital media's emergence from and contribution to the feedback loops of climate crisis within industrial capitalism loom large. In the digital humanities, Bethany Nowviskie's oft-cited keynote at DH2014 in Lausanne provides a cri de coeur, alongside emerging conversations from the GO::DH working group on minimal computing from the same conference, for thinking through the ecological circulations and impacts of DH technologies and practices—what Nowviskie, drawing from Steven Jackson, calls the challenge of “broken world thinking” (5). Media studies as a field has also begun to take up broader questions of climate, geology, infrastructure, and the An-thropocene in theoretical and material studies of digital technologies, whether under the rubric of the “nonhuman turn” (ex. Grusin, Richard, ed. The Nonhuman Turn, U of Minnesota P, 2015); geological and elemental media histories (ex. Parikka, Jussi. A Geology of Media. U of Minnesota P, 2015; Peters, John Durham. The Marvelous Clouds: Toward a Philosophy of Elemental Media. U of Chicago P, 2015); computational infrastructure (ex. Bratton, Benjamin. The Stack: On Software and Sovereignty. MIT P, 2015; Starosielski, Nicole. The Undersea Network. Duke UP, 2015; Blum, Andrew. Tubes: A Journey to the Center of the Internet. Ecco, 2013); or sustainability and waste (ex. Gabrys, Jennifer. Digital Rubbish: A Natural History of Electronics. U of Michigan P, 2011; Acland, Charles, ed. Residual Media. U of Minnesota P, 2007; Scanlan, John. On Garbage. Reaktion Books, 2005). These diverse approaches, only a small fraction of such work, share a common reading of computational technologies both relying on and contributing to a material reorientation of human/Earth relations, whether through open-pit mining, ozone depletion, or undersea cable networking—to say nothing of new social relations made possible by the connective potentiality of such technologies.
+
+It is no coincidence that SethBling's hack emerges at the same time as academic and environmentalist communities' explorations of technological obsolescence, material production, and sustainability/waste grow more prominent. Nor is he working in isolation: his hack is only one within of a subculture of videos exploring different ways to hack, deform, and manipulate “classic” (almost always a euphemism for “obsolete”) video games. Part of these players' engagement with obsolete video games and platforms is practical: the relative (to contemporary platforms) simplicity of the hardware and coding allows for more granular engagement with the technologies themselves. But the choice of Flappy Bird and Super Mario World reveals multiple valences of computational obsolescence and decay: a game forcibly disappeared emerges within one that, through the cooperative/coercive machinations of nostalgia and capitalism, endures. Moreover, the hack itself is a kind of deliberate decay, one that deforms the digital object until it becomes pliable, ma-nipulable, and inscribable. Much like the acrylonitrile butadiene styrene (ABS) that comprises its cartridge shell, the game becomes plastic: transformable, recyclable, and pliable under the right (industrial) conditions.
+
+At its root, this hack plays (in multiple senses of the word) with the roots, tendrils, and growths of computational memory. It reveals “memory” as a function of physical hardware, the encoded rhetoric of software, and the transmission of shared culture. Wendy Hui Kyong Chun, in her 2008 book Programmed Visions, offers the idea of software's “enduring ephemerality,” computational media's capacity to “remember” through material regeneration—continual acts of writing and rewriting across electrical charge and silicon (148). Through this frame, SethBling's hack is rewriting, and its ingenious incarnating and recycling of Flappy Bird's three hundred and thirty-one bytes embodies Chun's claim that “what is not constantly upgraded or ‘migrated' or both becomes unreadable. . . . The experiences of using—the exact paths of execution—are ephemeral. Information is ‘undead': neither alive or dead, neither quite present or absent.” (148). Hertz and Parikka deploy “zombie” as a metaphor for reinvigorated dead media to similar ends, observing that the materials constituting software—the plastic,
+
+the rare earth metals—are also subject to regimes of
+
+ephemerality (150-53). ABS, in its petroleum-based non-biodegradability, may be effectively immortal, but the systems through which humans articulate its use are subject to entropic decay. Only the ephemerality endures.
+
+This paper closes by offering SethBling's hack and the broader gaming subcultures of glitch play to which it belongs as artistic responses to computational obsolescence and decay. Chun's “enduring ephemerality” becomes artistic praxis much as Hertz and Parikka offer circuit bending as a media archaeological arts method. It extends the material concerns of media studies' Anthropocenic turn to code and its cultures, and offers these deforming/reforming modes of play as potential sites of resistance for an ecologically-engaged digital humanities practice.
+
+SethBling. (2016) “SNES Code Injection -- Flappy Bird in
+
+SMW.” Mar 28, 2016. YouTube, accessed Oct 27, 2016,
+
+https://www.youtube.com/watch?v=hB6eY73sLV0
+
+Bibliography
+Baker, J. D. (2011). Tradition and toxicity: evidential cultures in the kava safety debate. Social studies of science, 0306312710395341.
+
+Castree, N. (2014). The Anthropocene and the environmental humanities: extending the conversation. Environmental Humanities, 5(1), 233-260.
+
+Chun, W. H. K. (2011). Programmed Visions: Software and Memory. MIT P.
+
+Collins, H. M. (1998). The meaning of data: Open and closed evidential cultures in the search for gravitational waves 1. American Journal of Sociology, 104(2), 293338.
+
+Dunbabin, M., & Marques, L. (2012). Robots for environmental monitoring: Significant advancements and applications. IEEE Robotics & Automation Magazine,
+
+19(1), 24-39.
+
+Fraser, A. (2005). From the Critique of Institutions to an Institution of Critique. Artforum, 44(1), 278.
+
+Haraway, D. J. (1997). Modest- Witness@ Second- Millennium. FemaleMan- Meets- OncoMouse: Feminism and Technoscience. Psychology Press Nixon, M. (2014). Louise Lawler: No Drones. October, 20-37. https://doi.org/10.1162/OCTO a 00164
+
+Hertz, G.,and Parikka, J. (2015) “Zombie Media: Circuit Bending Media Archaeology into an Art Method.” Appendix. A Geology of Media, by Jussi Parikka. U of Minnesota P, 2015, pp. 141-53.
+
+Minimal Computing. (n.d.) “Minimal Computing: a working group of GO::DH.” Accessed Oct 27, 2016, http://go-dh.github.io/mincomp/
+
+Nguyen, L. A. (2014) “Exclusive: Flappy Bird Creator Dong Nguyen Says App ‘Gone Forever' Because It Was ‘An Addictive Product.'” Feb 11, 2014. Forbes, accessed Oct 27, 2016, http://www.forbes.com/sites/lananhngu-yen/2014/02/11 /exclusive-flappy-bird-creator-
+
+dong-nguyen-says-app-gone-forever-because-it-was-
+
+an-addictive-product/
+
+Nowviskie, B. (2015). “Digital Humanities in the Anthropo-cene.” Digital Scholarship in the Humanities, special printing, pp. 1-12, doi:10.1093/llc/fqv015.
+
+        
+            My research is multi- and interdisciplinary focusing on electronic literature and cybercultures in/of Latin America. My latest articles and book manuscript explore the divide and convergence in literature and technology. This project lends itself well to the application of those theories and the evaluation of how they can best be implemented in classroom practices and complemented with co-curricular modules. I will therefore present my research findings on the use of Digital Humanities components specifically for the teaching of Latin American Studies. The presentation would thus serve as a report of: 1) initial research findings and best practices found at other institutions; 2) work accomplished at the DHSI 2018 Workshop (Victoria, Canada) “Critical Pedagogy and Digital Praxis in the Humanities”; 3) feedback gained from presentation at the DHSI 2018 Conference &amp; Colloquium; and, 4) samples of syllabi to foster a lively discussion on the application of such a course with co-curricular components for Latin American Studies programs.
+            The goal of this project is to do a detailed study of program and curriculum design at other institutions on the use of DH modules specifically for Latin America/US Latino culture with a focus on pedagogical methodologies that engage critically about the problems that DH platforms do and do not resolve in Latin American Studies. The course design and the co-curricular components complement and intersect each other. This project will facilitate the assessment of various curriculums and specialized courses for the digital humanities and would ultimately lead to develop a course for all students interested in DH Latin American Studies.
+                
+                     Students in this course would include (but not limited to) those in the Latin American Studies Minor Program, International Business, International Studies (BAIS and GPIS), Humanities, Political Science, Spanish majors and Minors, World Cultural Studies majors and minors.
+                 Course components will include developing language proficiency, learning and using DH tools, and analyzing the effectiveness and drawbacks of such technologies specifically to Latin American Studies.
+            
+            The interactive, systematic, and innovative features of digital humanities have been proven to advance language learning both in and outside of the classroom. Through exploring different forms of digital humanities, including multi-media, online archives, as well as existing web tools like Google Earth and Twitter, instructors and scholars of foreign languages not only facilitate collective and immersive language learning, but also broaden and deepen students’ exposure and knowledge of foreign culture. These projects break the traditional geographical and cultural boundaries in learning a foreign culture and/or language. Therefore, it is essential for instructors to reflect on how best to incorporate digital humanities in language/culture learning, and to determine to what extent digital learning complements and even replaces traditional ways of teaching and learning. 
+            Students will be encouraged to adapt these new tools of analysis to their own future career objectives. The field of Digital Humanities is collaborative and very interdisciplinary as it produces new scales of analysis with varying modules (texts, maps, audio-mapping and networks) which may include experiments across modalities with: distant reading alongside close reading techniques, programming language, audio creation, geotagging, speech recognition encoding documents in TEI (Text Encoding Initiative
+                
+                     Text Encoding Initiative Markup Language at the University of Virginia, 
+                        https://dh.virginia.edu/tool/text-encoding-initiative-markup-language-tei (for my future reference)
+                    
+                ), learning the basics of computational text analysis, programming chatbots using the Python programming language, etc. The course will also note the drawbacks or pitfalls of the use of technology.
+            
+            However, the skills needed in DH have less to do with a particular hardware or commercial software and more about engaging in digital literacy (train interpretative methods necessary for critical analysis), and showcase how digital humanities is valuable to better understand Latin America’s transformations in the production, circulation and reception as well as its impact on culture, politics, history, literature, music, etc. The course will encourage students to develop more analytical projects from the use of such modalities. The focus will also be to analyze and address 
+                why this method of learning is complementary or even superior to traditional methods, specifically addressing the impact and implications that technology involved on ideologies, ethics and ideas. For example, a more involved topic would approach the idea of “mapping” as interpretation of geospatial data in GIS, georectify historical maps in 
+                Map Warper, manage digital archival objects in 
+                Omeka, and use 
+                Neatline to build “deep maps” of particular neighborhoods or landmarks in a city, layering historical photographs, maps, geospatial data, literary texts, and other elements to build analysis about their city. 
+            
+            Additionally, the course will attempt to link to public libraries (Slover in Norfolk), museums (Chrysler, Mariners, Living Museum), research centers, community groups (Norfolk Chamber of Commerce, Hispanic Chamber of Commerce, Hispanic Community Dialogue) or other campus-level initiatives (ODU’s Institute of Humanities “Mapping Lambert’s Point Project,” for instance). The goal is to build projects that make use of the University and community’s collections. These public projects can energize students to work that much harder, as they can create materials with a chance of life beyond the classroom itself. The course will draw on resources from, participate in and continue their learning with the Regional, National and International Network
+                
+                     To be featured in the Latin American Studies Program website
+                 aimed to promote digital humanities initiatives to Old Dominion University faculty and to learn from and collaborate with external groups.
+                
+                     I already have established contacts and am in current collaborations with: Centro de Cultura Electrónica in Mexico City; the project Cultura Digital Chile (Universidad Diego Portales, Chile); the Latin American and Digital Humanities/Cybercultures at University of Georgia; the Digital Latin American Cultures Network: Researching the Cultural Dimensions of New Media in the United Kingdom; I am also a board member of the organization Lit-e-Lat: Red de Literatura Electrónica.
+                 This network would be dedicated to exploring, analyzing, and sharing the cultural and visual modalities of digital humanities in the research and teaching of Latin America. The network would engage in these discussions through symposia for faculty and students with guest speakers or virtual conferences, virtual exhibitions, and online or hybrid workshops.
+                
+                     For example, “Tecnoestética y sensorium contemporáneo: arte, literatura, diseño y tecnología” in September 2017 in Córdoba Argentina; 
+                 The network and initiatives that I foresee fostering and/or facilitating may include: 
+            
+            
+                K-12 Service Education: Working with the College of Education and the Licensure Students in the World Languages and Cultures Department to: Expand on its longstanding educational outreach commitments with K-12 educators and students at the local and state level; and, serve as a resource to K-12 educators working to meet Virginia Performance Standards as they relate to Latin American content in the social, natural, and life sciences by 
+                Language Without Borders Initiative: Create the next generation of global professionals through innovative language education, with Superior level proficiency in Spanish and overseas internship experience.
+                DH and Latin/o American Cybercultures Initiative: Exposure to the digital culture of Latin America through seminars, symposia, courses, exhibitions, and workshops.
+            
+        
+    
+
+        
+            2017 saw the 50th anniversary of the Gen Con gaming convention, the oldest and largest continuously running gaming convention in the United States. Started in 1967 as a wargaming convention, Gen Con faced exponential growth following the 1974 creation of Dungeons &amp; Dragons by one of its founders, Gary Gygax. Since then, Gen Con has seen a wealth of change. Evolving from a wargaming convention to a roleplaying game convention, growing to encompass video games and board games and finally reaching its current state of a gaming convention with close ties to popular culture. Aside from the content Gen Con has covered, the convention has also seen fluctuations in the populations that attend the event. All of these factors make Gen Con a prime target for scholarly study in areas of popular culture, games, gender in games studies, and the impact of Dungeons &amp; Dragons. Scholars in media studies, history, material culture and gender studies, to name a few, would all be interested in data related to Gen Con.
+            Though Gen Con offers a wealth of possibility for scholarship, the information about the
+                convention has largely remained inaccessible to scholars. As a corporate entity, Gen Con LLC, the company that currently runs Gen Con, keeps the majority of their records confidential. One resource that is publically available, however, are the programs from each year of the convention. The quality of the data within the programs varies from year to year, but they generally contain information pertaining to events that were run, who ran them, and descriptions of those events along with other information. Another barrier regarding these programs is that the vast majority of them exist only in physical form, with no digital counterparts. Many of these paper programs are also quite rare, particularly from the conventions that took place in the
+            
+            1960s and 1970s. An additional resource that is dwindling is those who attended and organized the convention during its early years. Gen Con’s most famous founder, Gary Gygax, passed away in 2008. Many of the others involved with the convention from its inception are approaching an advanced age and part of an insular group within gaming culture that few outside of it have approached. These barriers to access have, thus far, limited the scholarship that could be conducted on the Gen Con game convention.
+            With the above in mind and the 50th anniversary of the convention quickly approaching, we took the opportunity to undertake a project to make resources related to Gen Con more accessible to scholars. The primary work for the first phase of this project took place during 2016 and the first 3 quarters of 2017. We set out to first collect digital and physical copies of all 50 years of Gen Con which we were successful in doing. Second, we converted all event data from these programs into a database of more than 150,000 records which scholars and members of the gaming and Gen Con communities could access online via a Black Light discovery layer. Third, we conducted oral history interviews of several people involved in the history of Gen Con’s past and present and transcribed them. Fourth, we conducted some preliminary research using textual analysis and data analysis methods to showcase some of the research that could be conducted using this data and other resources. Finally, we created an Omeka instance and Neatline timeline to both house these resources and make them available for others to use. All of this information can be found at http://best50yearsingaming.com/
+            We are continuing to conduct research with this dataset and are creating workshops that utilize the dataset in order to educate students in how to use large datasets. We also would like to increase awareness of this open dataset in order to connect more scholars to the resource so they can utilize it in their own research. This project has been able to connect the gaming community, the Gen Con community, and the Gen Con LLC community over a dataset they all have interest in, and we would like to see them connected with more scholars as well. The work we conducted for this project and knowledge of the availability of this dataset is something that attendees of DH2018 would be interested in, particularly those looking for a 20th and 21
+                st century data set suitable for textual and other forms of data analysis, and we hope you will allow us to present it to them.
+            
+        
+        
+            
+                
+                    Bibliography
+                    Best 50 Years in Gaming Project Website. http://best50yearsingaming.com/
+                
+            
+        
+    
+
+        
+            
+                Panel Overview
+                The Mellon-funded grant project “Digital Chicago: Unearthing History and Culture” represents the fruits of three years of collaboration and digital humanities learning by faculty and student researchers at Lake Forest College, drawing on work by faculty from across the humanities and humanistic social sciences. Our work has centered on a particular theme: the history of Chicago, as explored through diverse digital humanities approaches and tools that tell stories of Chicago’s forgotten or at-risk past. Our full project draws on work done in several disciplines, and through this approach, the city of Chicago becomes a bridge between disciplines, traversed by means of digital humanities tools, even as Chicago’s river is itself connected by many bridges. 
+                We have selected several representative projects and one overview presentation from the Digital Chicago’s collaboration to share with attendees at the ADHO 2018 conference. These specific projects include a mapped timeline of racial restrictive housing covenants in Chicago’s Cook County; a set of 360° immersive, educational tours of Chicagoland sacred spaces, a history of Shakespeare in Chicago as reflective of the city’s cultural development, and a map reflecting points of origin for artifacts from an archaeological dig. 
+                A final presentation links together the themes of the Digital Chicago project as a whole, and will emphasize scaffolding to meet the capabilities the small liberal arts college environment, which often presents challenges in terms of staffing, student support, and scope of research. 
+            
+            
+                First Panelist: Desmond Odugu, “Restricted Chicago” 
+                This presentation explores the history of educational inequities in Chicago through the lens of Chicago and Cook County's history of discriminatory housing practices such as racial restrictive covenants. This presentation will focus on the archival and digital work that undergirds the project, as well as research conclusions drawn from the project. 
+                The digital project represents the results of archival research into official housing records, which provided ample evidence of restrictive practices. Student research assistants, working with the faculty member, located over 200 affected “subdivisions” on a Neatline map, aligning those locations with a Neatline timeline to indicate when each restriction was enacted and eventually removed. Accessible for a broad scholarly and general audience, the timeline and map permits the user to visualize the changing shape of Cook County’s housing practices during the twentieth century. 
+                These restrictive housing policies had a strong effect on the educational disparities that still characterize schools in Chicago and Cook County. By aligning subdivisions with United States government census tracts, this project reveals the connections between racial restrictive covenants and their consequences in terms of socioeconomic status, school rankings, and educational outcomes. The presenter, a professor of education, will also discuss how the fruits of digital humanities research such as this can be used to inform local citizens about their own history. 
+            
+            
+                Second Panelist: Ben Zeller, “Sacred Spaces in 360°” 
+                This panel presentation features a project creating educational virtual reality walkthroughs of three churches in the Chicago area, all of which have historic, architectural, and religious value. The tours are intended to be used by high school or undergraduate students in lieu of in-person field trips to the sites, and the paper addresses the process of creating tours using tools such as the Ricoh Theta S camera, Panotour software by Kolor, and student research assistance. 
+                Two of the tours utilize historical digital images overlaid on digital images of the contemporary structure. This method proved particularly relevant in the case of a Baptist church and former synagogue which burned in 2006. Photographs of what is now the burned-out shell of a historically significant building becomes a device for travel through time.
+                In particular, this project reveals the potential for readily available tools and software to create informative, educational, and scholarly tours of historic sites. Because the tours are optimized for desktop as well as smartphone (and therefore Google Cardboard, etc.), they translate easily to classroom experiences, and offer users a way of touring sites that might be otherwise inaccessible. 
+                The presenter will also address the incorporation of 360° digitalization projects into the undergraduate curriculum. After an initial pilot project, the instructor extended the creation of these tours into a class about sacred spaces, which presents some pedagogical advantages and disadvantages, but nonetheless serves multiple learning goals and their assessment. 
+            
+            
+                Third Panelist: Rebecca Graff, “Mapping Historical Consumerism through Urban Archaeology”
+                This presentation reveals how historical archaeology coupled with digital tools can disclose historic patterns of consumption and consumerism in a mixed class neighborhood in of turn-of-the-twentieth-century Chicago. The project locates the manufacturing or point of sale origins—Chicago and worldwide—of artifacts excavated from the area surrounding a well-known historic Chicago home, using historical and anthropological methods to identify the origins of specific items. The student-faculty team created two digital maps that trace the fragments to their points of origin, alongside images of the historical advertising and other textual records that help to identify an item. 
+                The Charnley-Persky House was designed by architect Louis Sullivan, with architect Frank Lloyd Wright serving as Sullivan’s chief assistant. Completed in 1892, it offers an important example of American architecture, and the House is now a museum as well as the headquarters for the Society of Architectural Historians (SAH). Extensive renovation and construction work at the site revealed a rich deposit of nineteenth-century refuse which excavated in 2010 and 2015. 
+                The digital maps allow for bridges between the architectural scholarship about the Charnley-Persky House to that which was found archaeologically. By clicking through the digital maps of products eaten, worn, used, and ultimately discarded adjacent to the Charnley House, site visitors can engage with the globalizing tastes and trends of American urban dwellers at the turn of the twentieth century.
+            
+            
+                Fourth Panelist, Richard Pettengill, “Shakespeare in Chicago” 
+                Shakespeare’s plays have been an integral part of Chicago's history ever since the city’s incorporation in 1837. This project traces the history of Shakespeare in Chicago as part and parcel of the history of the city itself, with a particular focus on the city’s cultural development. 
+                The project uses several digital tools to present this historical narrative: first, a timeline suggests the ubiquity of Shakespeare on the American frontier, detailing the shift from “low-brow” to “high-brow” culture (as described by Lawrence Levine) by the end of the nineteenth century, and leading to Chicago’s world-renowned twentieth and twenty-first-century theater scene. 
+                Second, photographic time sliders suggest the dramatic changes that have taken place in Chicago’s built theatrical environment. These demonstrations rely on historic imagery and modern digital photography to overlay images of Chicago’s theaters of the past onto the hustle and bustle of their contemporary locations. 
+                Finally, a map plots the locations of Chicago’s now-vanished theaters on the contemporary streetscape of the city, highlighting which areas of Chicago’s former incarnations brought stagecraft to the city’s scene. 
+                Taken together, this collection of digital tools informs both a public and scholarly audience about the forgotten history of Shakespeare as representative of the city’s theater scene. The three tools are eminently accessible, and will appeal particularly to a non-scholarly audience. They offer a way of engaging with history that bridges that gap between public and scholarly users of the site. 
+            
+            
+                Fifth Panelist: Emily Mace, “Building a Small-Scale Bridge via #DH”
+                The Mellon-funded grant project “Digital Chicago: Unearthing History and Culture” represents the fruit of three years of collaboration and digital humanities learning by faculty and student researchers at a small liberal arts college, drawing on work from across the humanities and humanistic social sciences. 
+                Our work has centered on a particular theme: the history of Chicago, as explored through diverse #DH approaches and tools that tell stories of Chicago’s forgotten or at-risk past. The project as a whole supported digital humanities work in many disciplines––including theater, English, religious studies, anthropology, music, communications, history, education, and politics––and with this cross-disciplinary approach, the city of Chicago becomes a bridge between disciplines, traversed by means of digital humanities tools, even as Chicago’s river is itself connected by many bridges.
+                Although the Digital Chicago suite of projects is Mellon-funded, we nevertheless faced the challenges of doing digital humanities on the smaller scale of the liberal arts college. To this end, this final presentation will reflect on the value of scaffolding our understanding of “digital humanities” to meet the capabilities of individual faculty as well as of the institution. Our projects relied on undergraduate student research assistance, usually with one research assistant per faculty member. We relied, also, on pre-existing digital humanities tools as vehicles for our projects, and focused on finding the best tool to present each project to a broad audience of scholars and non-scholars alike. 
+                Taken together, this approach outlines a scope of work attainable at smaller schools which also bridges the gap between scholarly audience and the general public, through the creation of an engaging and broadly useful digital humanities website. 
+            
+        
+    
+
+        
+            Place and space are critical elements of medieval popular romance, both in the journeys undertaken by the romance protagonist (and imaginatively recreated by the romance reader), and in the transmission of texts across space and time. These phenomena have driven critical interest in spatial markers in literary texts. The Morrois (Mapping of Romance Realms and Other Imagined Spaces) project, a digital geographic concordance of literary spaces, collects line-by-line instances of explicitly geographic place-name usage in Middle English manuscripts. The end goal of Morrois is to explore the research possibilities afforded through distant reading and various data visualizations (including GIS). Our poster will present data migration from Omeka Classic to RDF. 
+            In its current form, Morrois uses the Omeka Classic content management system (encoded using Dublin Core metadata schema), and maps the places associated with the Alliterative Morte Arthure (found in the Lincoln Cathedral Library MS 91, “the Thornton MS”) through the Neatline framework. Since the beginning of this academic year until August 2020, we will be migrating this and other datasets to a new triple-store database platform with more nuanced and transferrable metadata schema. The rest of the texts from the Lincoln Thornton MS and Edinburgh, National Library of Scotland Advocates’ MS 19.2.1 (“the Auchinleck MS”) will also be added to the database, and we hope to offer a series of new visualizations via SPARQL Queries, as well as a more robust GIS that will allow for fuzzy spaces, a critical element of medieval geodata. 
+            Our poster highlights our methodology, including the selection and customization of flexible and transferable ontologies and the benefits of RDF metadata modelling. We address some of the challenges inherent in data migration from a traditional relational database format to one geared for Linked Open Data. In the case of Morrois, Omeka Classic’s implementation of Dublin Core was effective for information about the manuscript texts themselves (the metatextual data), but unsuited for the line-by-line references found within the texts (the intratextual data). Migrating data from this “shoehorned” format to more accurate schema required considerable overhaul. Finally, we will address the current state of Middle English manuscript studies, wherein texts can be found in editions preserved in simple HTML format, printed and non-digitized critical and diplomatic editions, or in hard copy or digital manuscript facsimile. This situation means that data collection must follow different methodologies and different forms of data storage, including CSV or TEI.
+        
+    

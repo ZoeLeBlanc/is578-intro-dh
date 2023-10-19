@@ -1,0 +1,1117 @@
+
+A wide range of interdisciplinary scholarship on sound has sparked investigations into the cultural histories of aurality and sound reproduction, the politics of the voice and noise, urban soundscapes, ethnographic modernities, acoustemologies, and the sonic construction of gender, race, and ethnicity.[i] These important qualitative studies, moreover, have in recent years been supplemented by large-scale quantitative analyses of speech and music datasets, several of which have been underwritten by the International Digging into Data Challenge, including the “Structural Analysis of Large Amounts of Music” (SALAMI) and the “Mining a Year of Speech” projects. Yet a lingering textual bias within digital humanities – largely a product of the field’s emergence from textual and literary studies – has obscured the significance of this work for the field, often preventing meaningful overlap. Copyright restrictions, the difficulties of archiving audio formats, and the general lack of tools for researching and writing in audio have contributed to the difficulty of working with sound in digital projects. Aside from the occasional use of CD appendixes or supplementary websites, for example, many studies have not taken full advantage of the affordances of digital media to produce scholarship that integrates audio content into scholarly argumentation. It is against this backdrop that leading sound theorist Jonathan Sterne has argued that “existing digital humanities work has largely reproduced visualist biases in the humanities” (2011).
+By identifying and highlighting four research initiatives clustered around audio artifacts, this panel aims to bring sound scholarship and digital humanities into a more meaningful conversation with each other. As these projects demonstrate, sound is materially constituted, containing invisible environmental fingerprints or leaving physical traces in artifacts; and, further, is performative and temporally mediated. Thus to access and analyze sound requires not only a new approach to “tool making” within digital humanities, but a deeper engagement with media studies, archival science, and creative forms of scholarship more generally. As Trettien and Lingold’s Soundbox initiative shows, the methodological vibrancy of the field is also predicated on innovation and reform of our critical infrastructures, including the development of publication environments that can take advantage of the cross-medial character of much sound research. Elliott’s kits for cultural history, for example, allow users to experience the past through multiple sensory channels, including sight, sound, and touch; and Clement and Kraus’s work incorporates extensive spectrographic analysis. Thus a larger aim of the panel is to draw attention to the richly synaesthetic nature of digital sound studies.
+Access and Analysis, Tanya Clement (15 minutes)
+
+There are few analysis tools available for humanists interested in accessing and analyzing audio archives that comprise significant artifacts of bygone oral traditions represented in storytelling, speeches, oral histories, and poetry performances. In response to this lack, the iSchool at UT-Austin and the Illinois Informatics Institute (I3) at the University of Illinois at Urbana-Champaign (UIUC) hosted a year-long NEH-funded Institute for Advanced Topics in the Humanities called High Performance Sound Technologies for Analysis and Scholarship (HiPSTAS). HiPSTAS included twenty humanities junior and senior faculty and advanced graduate students as well as librarians and archivists interested in analyzing large audio collections. As this speaker will address, HiPSTAS has yielded significant results for audio big data analysis in the humanities including an implementation of the ARLO (Adaptive Recognition with Layered Optimization) software, a machine learning application for analyzing sound on Stampede, an NSF petascale HPC system at the Texas Advanced Computing Center. Originally developed to classify and analyze bird calls by extracting audio features and displaying the audio data as a spectral graph (Downie et al. 2008, Punyasena et al. 2012), ARLO has also been used by humanists as part of HiPSTAS to extract basic prosodic features such as pitch, rhythm and timbre for matching, discovery (clustering) and automated classification (prediction or supervised learning) (Figure 1). This talk will discuss how significant sonic patterns of interest to humanists are discoverable using ARLO with the PennSound poetry archive and the University of Texas Folklore Center Archives, among other collections.
+
+Fig. 1: This spectrogram, created in ARLO, shows Gertrude Stein reading “Some such thing” from her novel The Making of Americans; each row of pixels is a frequency band presented across an X-access of time.
+Media Archaeology, Devon Elliott (15 minutes)
+
+Recent research in media archaeology (Fuller 2005, Gitelman 2006, Kirschenbaum 2008) underscores why the material particulars of technology matter where questions of culture are concerned. This research is frequently anchored in archival documents—including lab notebooks, patents, and engineering journals—that correspond with technological experiments. Building on this research, this talk shares initial findings from the “Kits for Cultural History” project, a collaboration between the Maker Lab in the Humanities (UVic), the Lab for Humanistic Fabrication (Western), and several memory institutions across Canada. The project involves making physical kits that encourage scholars to reconstruct historical experiments through the use of schematics, facsimiles, and rich media. Audio is central to a number of these kits, especially kits that focus on sound reproduction. Not only does it add another modality to research that is usually text-based or visual in character. It also emphasizes how any media history is a history of the senses: a history of how embodied behaviors like listening relate recursively with technological developments. With audio in mind, the talk argues for the relevance of experimental reconstruction to digital humanities, highlighting the importance of: 1) old technologies to contemporary computing practices, 2) multimodal learning and applied methods to media history, 3) integrating museum collections into these methods, and 4) understanding sound as necessarily material, subject to techniques commonly found in, say, textual studies. These four points draw together domains all too often parsed: visual and sonic paradigms, critical thinking and critical making, media archaeology and digital humanities. 
+Signal and Noise, Kari Kraus (15 minutes)
+
+Twentieth-century recorded sound, like the first electric power system, originated in Thomas Edison’s Menlo Park laboratory shortly before the turn of the century (Hughes, Morton). In the decades that followed, sound technology and power transmission would continue to develop in tandem.  In this presentation we introduce an unexpectedly useful consequence of the historic entanglement of sound and electricity: the ability to code our past for time and place. A new collaboration at the University of Maryland aims to recover the date and time on which an historic recording was made based on analysis of incidentally captured traces of small variations in the electric power supply at the time of recording (Oard, et al; Su, et al). Although the field of audio forensics has used such Electric Network Frequency signatures to authenticate contemporary recordings for over a decade, our project seeks to extend the period for which baselines are available a further half century into the past. We do this by assembling recordings that were made at known times and comparing their ENF signatures with the signatures in recordings for which we lack such provenance information. 
+After summarizing the results of our initial experiments, we focus on implications for archival practice, including retention of the original ENF signal across media formats (Figure 1), and conclude on a theoretical note: because ENF is traditionally dismissed as electronic noise by audio engineers and regarded as non-semantic in character, it poses an interesting challenge to the well-established archival concept of “significant properties.”
+
+Fig. 2: Analog recordings that have undergone digital conversion and reformatting will often contain two or more ENF signatures: an original and a recaptured signature. The spectrogram in the image on the left shows the ENF trace from a 1962 magnetic tape recording of an oval office meeting during the Kennedy administration and a separate ENF trace embedded at the time of digitization. In the figure on the right, two signatures overlap. We have developed preliminary techniques for distinguishing these multiple traces.
+Publication and performance, Whitney Trettien and Mary Caton Lingold (15 minutes)
+
+Soundbox is a collaborative exercise in producing and publishing sonic scholarship. Its main research output is an edited digital collection bringing together a vanguard of emerging scholars and critical artists engaging in sonic scholarship, from exhibits and installations to digital essays, soundscapes, and speculative digital tools.
+While the original goal of the project was to show, through example, the wide range of possibilities for an amplified digital humanities, the impossibility of publishing this work through standard scholarly venues – that is, those that facilitate the forms of peer review required for advancement in the profession – has become clear as the project proceeds. Because of concerns over long-term maintenance of digital scholarship, database-driven platforms like Omeka, Scalar, and Wordpress are quickly becoming the standard publishing format for digital work. Designed around arguments written in text and image, though, these platforms are largely inadequate to scholarship that integrates sound beyond the occasional linked audio clip. Thus the potential for amplified scholarly production opened up by, for instance, creative, small-scale, targeted uses of the HTML5 audio tag remains largely unrealizable within an increasingly calcified digital publishing infrastructure – a fact with ongoing consequences for what “counts” as digital humanities scholarship.
+Using Soundbox’s experience as a case study, the speakers address the structural biases that continue to silence digital humanities. We argue for balancing the need for long-term maintenance and accessibility with a pluralistic approach that does not foreclose the possibilities of new forms and formats.
+References
+
+Attali, Jacques (1985). Noise: The Political Economy of Music.  Minneapolis: University of Minnesota Press.
+Cavarero, Adriana (2005).For More Than One Voice: Toward a Philosophy of Vocal Expression.  Stanford, Calif: Stanford University Press. Print.
+Dolar, Mladen (2006). A Voice and Nothing More. Cambridge, Mass: MIT Press.
+Downie, J. S. , Tcheng, David K., and Xiang, Xin (2008). “Novel interface services for bioacoustic digital libraries” in Proc. 8th ACM/IEEE-CS Joint Conf. on Digital Libraries. New York: ACM, 2008: 423-423.
+Fuller, Matthew. (2005). Media Ecologies: Materialist Energies in Art and Technoculture. Cambridge, Mass: MIT Press.  
+Gitelman, Lisa. (2005) Always Already New: Media, History, and the Data of Culture. Cambridge, Mass: MIT Press.  
+Hirschkind, Charles. (2006) The Ethical Soundscape: Cassette Sermons and Islamic Counterpublics.  New York: Columbia University Press.
+High Performance Sound Technologies for Access and Scholarship project blogs.ischool.utexas.edu/hipstas/
+Hughes, Thomas Parke. (1983) Networks of Power: Electrification in Western Society, 1880-1930. Baltimore: Johns Hopkins University Press. Print.
+Josephson, Matthew (1992). Edison: A Biography. New York: J. Wiley. Print.
+Kirschenbaum, Matthew (2008). Mechanisms: New Media and the Forensic Imagination. Cambridge, Mass: MIT Press.  
+LaBelle, Brandon (2010). Acoustic Territories: Sound Culture and Everyday Life.  New York: Continuum.
+Meintjes, Louise (2003. Sound of Africa!: Making Music Zulu in a South African Studio. Durham: Duke University Press.
+Morton, David. (2004). Sound Recording: The Life Story of a Technology. Westport, CT: Greenwood Press. Print.
+Moten, Fred (2003). In the Break: The Aesthetics of the Black Radical Tradition.  Minneapolis: University of Minnesota Press.
+Oard, D., M. Wu, K. Kraus, A. Hajj-Ahmad, H. Su, R. Garg (2014). “It’s about Time: Projecting Temporal Metadata for Historically Significant Recordings.” Forthcoming, Proceedings of the 2014 iConference. Berlin, Germany. 4-7 March 2014. ACM Digital Library. Web.
+Ochoa, Ana Maíra (2006). “Sonic Transculturation, Epistemologies of Purification and the Aural Public Sphere in Latin America.” Social Identities 12.6: 803-25.
+Punyasena, Surangi W., Tcheng, David K., Wesseln, Cassandra, Mueller, Pietra G (2012). “Classifying black and white spruce pollen using layered machine learning.”New Phytologist 196.3: 937-944.
+Rodgers, Tara (2010).Pink Noises: Women on Electronic Music and Sound.  Durham, NC: Duke University Press.
+Smith, Mark M (2006). How Race Is Made: Slavery, Segregation, and the Senses.  Chapel Hill: University of North Carolina Press. Print
+Smith, Mark M (2001). Listening to Nineteenth-Century America.  Chapel Hill: University of North Carolina Press. Print.
+Sterne, Jonathan. The Audible Past: Cultural Origins of Sound Reproduction.  Durham, NC: Duke University Press, 2003.
+Sterne, Jonathan. (2011) “Audio in Digital Humanities Authorship: A Roadmap.” (essay in progress) Super bon! Online:superbon.net/?p=1915. Accessed June 7, 2013.
+Sterne, Jonathan (2012). MP3: The Meaning of a Format.  Durham: Duke University Press.
+Su, H., Garg, R., Hajj-Ahmad, A., Min Wu (2013). “ENF Analysis on Recaptured Audio Recordings.” Proceedings of the 2013 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP). Vancouver, BC, Canada. 26-31 May 2013. 3018-3022. Web.
+Thompson, Emily Ann (2002). The Soundscape of Modernity: Architectural Acoustics and the Culture of Listening in America, 1900-1933. Cambridge, Mass. : MIT Press.
+Toop, David (2010). Sinister Resonance: The Mediumship of the Listener.  New York: Continuum.
+Weheliye, Alexander G. (2005). Phonographies: Grooves in Sonic Afro-Modernity.  Durham, NC: Duke University Press.
+For cultural histories of aurality, see entries for Smith 2001, 2006 in the bibliography; for sound reproduction, Sterne 2003, 2012; for the politics of the voice, Cavarero 2005, Dolar 2006; and noise, Attali 1984; for urban soundscapes, see entries for Toop 2010, Thompson 2002, Labelle 2010; ethnographic modernities and acoustemologies are covered in Hershkind 2006 and Ochoa 2006. The sonic construction of gender receives treatment in Rodgers 2010 and Martin 1991; for race and ethnicity, see Weheliye 2002, Moten 2003, Smith 2006, and Meintjes 2003.
+1. Introduction
+While sound studies is experiencing a resurgence in literary criticism, academic arguments involving sound are nearly impossible to make in traditional print media.  An article could include an excerpt of a score, but only scholars who can read music would be able to understand it.  Likewise, articles or books could include audio files externally, as did Nicholas Temperley’s special edition of Victorian Studies, which included a cassette tape with the songs discussed in the articles. 1  However, these solutions do not address the central problem:  readers will have difficulty finding the exact musical phrases mentioned in articles, and those with less musical expertise will be left out of the conversation entirely.  Newer options for incorporating music in academic articles include SoundCite (soundcite.knightlab.com), a tool that lets users embed sound clips in websites, Scalar (scalar.usc.edu/scalar), a publishing framework that lets users annotate media, and the strategy of assigning a QR code to each audio excerpt and inserting these into a print article, as Jennifer Wood suggests. 2  None of these options integrates the audio with the score:  SoundCite will only let users hear the audio, Scalar only supports textual annotations of media files, and QR codes require readers to have smart phones, which vastly limits the audience for the article.  To address these problems, I have built two tools:  "Songs of the Victorians" (www.songsofthevictorians.com), an archive and analysis of musical settings of Victorian poems with an interactive framework that highlights each measure of a score in time with its music, and "Augmented Notes" (www.augmentednotes.com), a public humanities tool that allows users who do not know how to program to build their own sites like "Songs of the Victorians."
+
+2. Overview of "Songs of the Victorians"
+"Songs of the Victorians" melds the archive and the scholarly article.  It examines both high- and low-brow Victorian settings of contemporaneous poetry by integrating scores, audio files, and scholarly analytical commentary in an interactive environment to help users understand both the literary and musical elements of the argument.  As an archive, it provides audio files of each song and archival-quality scans of first-edition printings of each score.  For every song, the user can listen to the audio while each measure of the score is highlighted in time with the music, as the archive page for William Balfe’s "Come into the Garden Maud" demonstrates (www.songsofthevictorians.com/balfe/archive.html).  The project also functions as a collection of scholarly articles in which each song includes an analysis of the song’s interpretation of the text.  When the commentary discusses a particular measure, the users can click on an icon of a speaker, which will play the relevant excerpt of the audio file and highlight the score so they can hear for themselves the effect the commentary describes, as in the analysis page for Caroline Norton's "Juanita" (www.songsofthevictorians.com/norton/analysis.html).
+
+
+Fig. 1: Musical excerpt from the analysis page of Caroline Norton’s “Juanita”
+
+"Songs of the Victorians" includes Caroline Norton’s "Juanita," Sir Arthur Sullivan’s setting of "The Lost Chord," and two settings of Tennyson's Maud:  a parlor song by Michael William Balfe and an art song by Sir Arthur Somervell.  The site furthers scholarship for bibliographers, musicologists, Victorianists, and cultural studies scholars alike.  More generally, this new framework, which enables critics to describe musical arguments to non-musicians, facilitates this interdisciplinary approach of bringing music and literature together.  It also preserves the musical and cultural afterlives of well-known poems, as many of these scores have either disintegrated and been lost to time or are only available in select libraries.  "Songs of the Victorians" empowers users regardless of musical training:  those who cannot read music can overcome their feelings of intimidation at a musical score and can better understand the ideas described in the analysis, whereas those who can read music will still benefit, since few people can hear in their mind the music on the page.
+
+3. Overview of "Augmented Notes"
+After the success of "Songs of the Victorians," I used its framework to produce "Augmented Notes" (http://www.augmentednotes.com), a generalized, public humanities tool to allow anyone to develop similar websites.  "Augmented Notes" eliminates the need for users to understand programming by creating archive pages, like those from "Songs of the Victorians," which users can tweak and redesign.  It is simple to use, as the site only requires audio files and images of the score to produce an archive page.  After the audio and image files are uploaded, users are taken to a page where they click and drag to draw boxes around each measure (they can also edit the sizes and order of these boxes), indicating what portion of the score should be highlighted when that measure plays.  
+
+
+Fig. 2: Box-drawing page of “Augmented Notes”
+
+Users can also optionally upload an MEI file--the TEI-based scholarly standard for music--for the score if they already have measure positions recorded in MEI. Users then set the times at which the highlighting box changes position through a "time editing" page.
+
+
+Fig. 3: Time editing page of “Augmented Notes”
+
+The site brings together the measure and time information, saving them in a JSON file, which enables each measure of the song to be highlighted in time with the music.  Users then click "Download Zip" to download a zip file with the HTML, CSS, and JavaScript files necessary for a complete archive page, which they can then restyle themselves.  
+
+"Augmented Notes" also has a sandbox (www.augmentednotes.com/example) through which users who would like to experiment with the technology but do not themselves have the requisite files can try it out.  "Augmented Notes" is already being used by scholars, both for archival purposes (such as the "Performing Romantic Lyrics" project from the University of South Carolina) and for pedagogical purposes such as generating interactive scores for use in music classrooms.  Since this tool produces websites with integrated audio and scores, it empowers users to preserve cultural archives, whether their materials include classical music, unpublished manuscripts, popular music, or folk music and traditional tunes from around the globe.
+
+4. Implications
+This presentation will discuss the projects in greater detail, complete with live demonstrations and an explanation of the underlying technology to show their digital as well as scholarly innovations.  I will explain the rationale for my choice of poems, settings, sound files, and editions for "Songs of the Victorians," as well as my plans for future collaboration and expansion for both projects.  The presentation will illustrate the sorts of arguments that this framework can enable: for example, my examination of Sir Arthur Sullivan’s setting of Adelaide Procter’s "A Lost Chord" challenges the received interpretation that the poem merely describes a domestic, uncomplicated religious moment of transcendence.  Likewise, Caroline Norton’s "Juanita" has been considered a conventional song that preserves the traditional rules of courtship and parlor propriety, but my analysis of the music helps us see that it critiques the Victorian institution of marriage as imprisoning.  I will conclude by exploring the ways in which "Songs of the Victorians" is itself a Victorian endeavor, as it uses new technology to collect, analyze, and bring together Victorian music and poetry, thereby giving voice to the silent page.
+
+5. Funding
+This project was made possible by fellowships from NINES and the Scholars’ Lab.
+
+References
+1. Temperley, Nicholas (1986). Music in Victorian Society and Culture: A Special Issue of Victorian Studies. 30.1.
+
+2. Wood, J. (2013). Noisy Texts: How to Embed Soundbytes in Your Writing. Burnable Books. Ed. Bruce Holsinger. burnablebooks.com/noisy-texts-how-to-embed-soundbytes-in-your-writing-a-guest-post/ (Accessed 30 October 2013).
+
+
+    
+        
+            
+                Challenges of an XML-based Open-Access Journal: Digital Humanities Quarterly
+                
+                    
+                        Flanders
+                        Julia
+                    
+                    Northeastern University, United States of America
+                    j.flanders@neu.edu
+                
+                
+                    
+                        Piez
+                        Wendell
+                    
+                    Piez Consulting Services
+                    wapiez@wendellpiez.com
+                
+                
+                    
+                        Walsh
+                        John
+                    
+                    Indiana University
+                    jawalsh@indiana.edu
+                
+                
+                    
+                        Terras
+                        Melissa
+                    
+                    University College London
+                    m.terras@ucl.ac.uk
+                
+            
+            
+                
+                    2014-12-19T13:50:00Z
+                
+            
+            
+                Paul Arthur, University of Western Sidney
+                
+                    Locked Bag 1797
+                    Penrith NSW 2751
+                    Australia
+                    Paul Arthur
+                
+            
+            
+                Converted from a Word document 
+            
+        
+        
+            
+                
+                    DHConvalidator
+                
+            
+        
+        
+            
+                
+                    Paper
+                
+                
+                    Long Paper
+                
+                
+                    open access
+                    digital publishing
+                    XML
+                    TEI
+                
+                
+                    project design
+                    organization
+                    management
+                    publishing and delivery systems
+                    xml
+                    copyright
+                    licensing
+                    and Open Access
+                    standards and interoperability
+                    English
+                
+            
+        
+    
+    
+        
+            
+                Background and Technical Infrastructure
+                
+                    DHQ’s technical design was constrained by a set of higher-level goals and needs. As an early open-access journal of digital humanities, the journal had an opportunity to participate in the curation of an important segment of the scholarly record in the field. This meant that it was more than usually important that the article data be stored and curated in a manner that would maximize the potential for future reuse. In addition to mandating the use of open standards, this aim also strongly indicated that the data should be represented in a semantically rich format. Of equal concern was the need for flexibility and the ability to experiment with both the underlying data and the publication interface, throughout the life of the journal, without constraint from the publication system. Both of these considerations moved the journal in the direction of XML, which would give us the ability to represent any semantic features of the journal articles we might find necessary for either formatting or subsequent research. It would also permit us to design a journal publication system, using open-source components, that could be closely adapted to the 
+                    DHQ data. At the journal’s founding, several alternative publishing platforms were proposed (including the Open Journal System), but none were XML-based and none offered the opportunity for open-ended experimentation that we needed.
+                
+                
+                    DHQ’s technical infrastructure is a standard XML publishing pipeline built using components that are familiar in the digital humanities. Submissions are received and managed through OJS through the copyediting stage, at which point articles are converted to basic TEI using OxGarage (http://www.tei-c.org/oxgarage/). Further encoding and metadata are added by hand, and items from the articles’ bibliographies are entered into a centralized bibliographic system that is also XML-based. All journal content is maintained under version control using Subversion. The journal’s organizational information concerning volumes, issues, and tables of contents is represented in XML using a locally defined schema. The journal uses Cocoon, an XML/XSLT pipelining tool, to process the XML components and generate the user interface. 
+                
+            
+            
+                
+                    DHQ’s Evolving Data and Interface
+                
+                As noted above, 
+                    DHQ’s approach to the representation of its article data has from the start been shaped by an emphasis on long-term data curation and a desire to accommodate experimentation. The specific encoding practices have evolved significantly during the journal’s lifetime. The first schema developed for the journal was deliberately homegrown and was designed based on an initial informal survey of article submissions and articles published in other venues. Following this initial period of experimentation and bottom-up schema development, once the schema had settled into a somewhat stable form we expressed it as a TEI customization and did retrospective conversion on the existing data to bring it into conformance with the new schema. At several subsequent points, significant new features have been added to the journal’s encoding: for example, explicit representation of revision sites within articles (for authorial changes that go beyond simple correction of typographical errors), enhancements to the display of images through a gallery feature, and adaptation of the encoding of bibliographic data to a centralized bibliographic management system.
+                
+                These changes to the data have typically been driven by emerging functional requirements, such as the need to show where an article has been revised or the requirements of the special issue on comics as scholarship. However, they also respond to a broader set of requirements that this data should represent the intellectual contours of scholarship rather than simply interface. For example, the encoding of revision notes retains the text of the original version, identifies the site of the revision, and supports an explanatory note by the author describing the reason for the revision. Although 
+                    DHQ’s current display uses this data in a simple manner to permit the reader to read the original or revised version, the data would support more advanced study of revision across the journal. Similarly, although our current display uses the encoding of quoted material and accompanying citations in very straightforward ways, the same data could readily be used to generate a visualization showing most commonly quoted passages, quotations that commonly occur in the same articles, and similar analyses of the research discourse. The underlying data and architecture lend themselves to incremental expansion.
+                
+            
+            
+                Analysis
+                The approach 
+                    DHQ has taken offers several significant advantages and also some corresponding disadvantages. The most important advantages are
+                
+                 • The autonomy the journal has to control all aspects of its own data modeling and interface.
+                 • The high value of the resulting data, from a historiographic perspective.
+                 • The ease of long-term curation of the data, including continuing evolution of our modeling decisions.
+                 • The ease of long-term evolution of the publication infrastructure, including migration to other XML-based systems as needed.
+                 • The scalability of a template-based infrastructure: with the system in place, each article requires no incremental work in styling or design; all effort goes towards consistent representation of semantically valued features.
+                These advantages all carry a burden of cost and effort: autonomy and control necessarily entail responsibility for maintaining appropriate levels of expertise and undertaking the labor necessary to build and revise technical systems. Because our article work flow includes some hand encoding in TEI, our managing editors need to be better trained and more expert than if they were simply formatting articles in Word and exporting PDF. However, there are also some less obvious tradeoffs. 
+                    DHQ’s publication model gains its efficiencies and scalability through an emphasis on uniform handling of repeated features, but this means that it is comparatively difficult to accommodate individual authorial requests for special handling. These entail not only extra effort at the time of publication but also the long-term prospect of special attention during the future data curation activities and updates to the interface and publication system. Authors familiar with content management systems such as WordPress or Scalar are accustomed to being able to exercise a significant level of control over the formatting and behavior of their text and accompanying media such as images and video. Long-term data curation is a less visible feature of such publishing systems. 
+                
+                Even more interesting and challenging are the special cases that entail semantically distinctive features. Although such submissions are rare, they have provided some valuable test cases in which the data being represented is not a straightforward ‘article’ but some other rhetorical mode: commented program code, dynamic HTML that provokes reader interaction, an article in the form of a comic book. In handling these cases, 
+                    DHQ has sought to find ways to accommodate the distinctive form of the original piece while also giving it a proxy presence within the standard 
+                    DHQ XML archive, so that its content can be searched and analyzed as part of the larger 
+                    DHQ corpus of DH scholarship. As these cases accumulate, the editors seek to identify repeated needs that could become part of the regular 
+                    DHQ feature set. 
+                
+                In the full version of this paper, we will consider in greater detail the role of authorial design in digital humanities publication, and the possible convergences between XML-based systems like 
+                    DHQ and content-management based systems like Scalar.
+                
+            
+            
+                Future Directions
+                
+                    DHQ is now completing a multiyear project to centralize its bibliography, and the next step will be to develop interface features that exploit this data. We are also in the planning stages of a project to explore internationalization of the journal through a series of special issues dedicated to individual languages. In both cases, these amplifications of the journal represent natural extensions of the journal’s existing architecture, and although both are substantial projects, they are made feasible by the investment already made in strongly modeled data and an extensible publication infrastructure. In the fuller version of this paper, we will discuss both of these developments in greater detail.
+                
+            
+        
+    
+
+
+        
+        
+            Introduction
+            Through the spatial arrangements of temples, houses, roads, and more, the built environment provides a window to human interaction (Lawrence and Low, 1990). Spatial configurations influence how people negotiate their surroundings. People “read environmental cues, make judgments…and then act accordingly” (Rapoport, 1990: 139), and these decisions in turn, affect the frequency and intensity of interaction (Fletcher 1981). While many factors influence interaction within landscapes, in this paper I focus on visibility. 
+            The visibility, intervisibility, and invisibility of features communicate information that guides pedestrian movement, and consequently, structures social interaction and community organization (Llobera, 2003, 2006; Gillings, 2015). Building on these ideas, this paper uses Geographic Information Systems (GIS) and 3D visualization to explore the role of visibility in ancient landscapes asking: 
+                How might visibility influence where people went, what they did, who interacted with whom, and how did these interactions shape their daily experiences? 
+            
+            
+                
+                Figure 1: Map of Copan’s location at southeastern periphery of Maya region (Map: H. Richards-Rissetto)
+            
+            
+            
+            Case Study: Copan, Honduras
+            The case study is the ancient Maya polity of Copan (Figure 1) ruled for over four-hundred years by a line of dynastic kings who by the late eighth century were facing mounting sociopolitical and environmental problems (Fash, 2001). Copan’s final dynastic ruler, 
+                Yax Pasaj, like the rulers of many other Maya polities, was coping with strenuous environmental, demographic, and sociopolitical circumstances that would ultimately lead to the kingdom’s demise. Yet during this time of stress, it seems that 
+                Yax Pasaj carried out a major urban renewal project commissioning several new temples in the city center that elevated Copan’s skyline. Given the changes to Copan’s urban fabric, 
+                Yax Pasaj’s reign is an ideal case study to investigate the role visibility may have played in the production or reproduction of social interaction among the ancient Maya. 
+            
+            At Copan, as at other Maya centers, imagery on ceramics, murals, and freestanding monuments depicted deities floating over lords who subsequently looked down over lower-ranking persons. Maya architecture replicated this vertical succession by elevating royal compounds above other architecture, and in essence linking Maya rulers to the heavens (Messenger, 1987). In terms of visibility, epigraphic decipherments indicate that “seeing” afforded high status, and sight had an authorizing gaze and witnessing function—similar to Foucault’s (1995) Panoptic gaze—where those who were all-seeing were all-knowing (Houston et al. 2006: 173). In order to be all-seeing or to give such an impression, however, Maya rulers needed to be seen, and so often located themselves in physically high and easily visible places or built tall temples that dominated the landscape.
+            While we know that Maya kings typically constructed highly visible temples, we actually know very little about the role visibility may have played in structuring social connections and daily interactions among social groups. To do this we need to broaden our view from civic-ceremonial precincts to encapsulate the broader landscape (Doyle et al., 2012; Richards-Rissetto 2010; Landau, 2015). 
+            
+            
+            Background: GIS & 3D Visualization
+            Early visibility studies in the Maya region focused on astronomical alignments among structures, freestanding monuments, and the sky (Aveni and Hartung, 1986). Later, ethnographic studies showing that contemporary Maya often use sight lines to mark out spaces (Hanks, 1990) inspired researchers to investigate whether non-astronomical lines-of-sight also existed at ancient sites; and in fact, archaeologists identified sight lines between a major temple and outlying stelae at the site of La Milpa, Belize (Hammond and Tourtellot, 1999). Recent research has moved away from lines-of-sight between two objects to study the relationships that an object may have to the many objects or features found within a landscape, referred to as a visualscape (Llobera, 2003). Simple line-of-sight measurements cannot provide data on the relationships among multiple objects because they are done along a fixed line; however, visualscapes can be measured using viewsheds that calculate an object‘s entire 360° field-of-view using GIS. 
+            A GIS links mapped features to attributes stored in a database and overlays different data layers such as land usage, elevation, and buildings to help reveal complex patterns, relationships, and trends that are not readily apparent using other tools such as traditional databases not linked to maps. 
+            
+                Pros: In regard to visibility analysis, GIS allows archaeologists to move beyond line-of-sight analysis to viewshed analysis. A viewshed uses raster data (pixels) to identify all cells visible from one or more viewpoints in a landscape; all non-visible cells are assigned a 0 and all visible cells are assigned a 1. This basic binary schema allows for complex mathematical calculations, for example, Boolean operations or map algebra, to calculate topographic prominence of individual features (or classes of features) and percentage of intervisibility among features. 
+            
+            
+                Cons: “Viewsheds depicted in a GIS map bear little resemblance to what people experience on the ground” (Conolly and Lake, 2006: 233). This limitation occurs because viewshed data are 2.5D. In other words, viewsheds store heights and elevation, but they are not actually 3D models (Figure 2). For digital humanists, these flat maps lack a sense of mass, scale, and aesthetics integral to human perception and experience, and the numerical outputs fail to differentiate visibility of a building’s façade versus its sides or back—essential for close reading interpretation. Technically, data resolution (i.e., ratio of pixel size to earth’s surface) can dramatically affect viewshed results—low spatial resolution often masking variation and too high a spatial resolution underestimating visibility (King et al., 2015). 
+            
+            
+                
+                Figure 2: Cumulative viewshed illustrating number of valley stelae visible at locations at Copan
+            
+            3D technologies offer an alternative to GIS. 3D data acquisition (e.g., airborne LiDAR, terrestrial laser scanning, and photogrammetry), 3D modeling (e.g., SketchUp, 3D StudioMax, Agisoft), and interactive 3D visualization (e.g., Unity, Oculus Rift) are transforming archaeological practice. But, what impact are such 3D technologies having on visibility analysis across ancient landscapes? Airborne LiDAR, for example, rapidly collects 3D data for archaeological sites across vast areas (Thompson and Prufer, 2015). Most LiDAR data are of unexcavated mounds requiring subsequent 3D modeling of architecture and proper alignment within terrains in order to perform visibility analysis—traditionally time-consuming tasks (Richards-Rissetto, 2013). 
+            While most visibility analyses of archaeological landscapes use traditional 2.5D GIS, recently archaeologists have been exploring the potential of 3D approaches for visibility analysis in archaeology. Paliou (2014) developed a computational visibility approach to analyze the visual range of paintings first using 3D modeling programs (3DStudioMax and AutoCAD) and then converting the results into raster maps to be analyzed in a GIS. Dell’ Unto and colleagues (2015) bring georeferenced 3D architectural models (using laser scanning and photogrammetry) into a GIS to calculate visibility of building interiors at Pompeii. While Saldana and Johanson (2015) also use 3DGIS, they employ procedural modeling to rapidly generate alternative 3D building reconstructions based on a set of architectural rules and attributes stored in a GIS to explore visibility in Ancient Rome (Saldana, 2015).
+            
+            
+            Methods
+            Building on this scholarship, I employ an iterative 3DGIS approach to explore the role of visibility at the ancient Maya site of Copan—today a UNESCO World Heritage Site in Honduras. The approach is twofold: computational and experiential. In the computational approach, I employ traditional 2.5D viewshed analysis in GIS to establish a baseline for comparative analysis with viewshed results in 3DGIS. 
+            First, I use ArcGIS 10.3 (standard GIS software) to assign known building heights and interpolate building heights of unexcavated mounds and run viewsheds to calculate topographic prominence and percent visibility in relation to settlement of major temples and classes of architecture (Richards-Rissetto, 2013). Recent acquisition of airborne LiDAR data has generated a 1m resolution terrain allowing for greater accuracy than earlier visibility analyses (Richards-Rissetto, 2010; von Schwerin et al., 2016). Second, I employ CityEngine—a procedural modeling program that convert GIS data to 3D models—to generate 3D models for Copan’s 3,000+ buildings with the LiDAR terrain using the GIS data and a set of architectural rules as well as laser scanned and photogrammetric models of some standing monuments at Copan (Figure 3) (Muller et al., 2006; Richards-Rissetto and Plessing, 2015; von Schwerin et al., 2013). These procedurally-generated 3D models are then returned to ArcScene (a 3D viewer for ArcGIS) and the viewshed analysis is rerun for comparative analysis of 2.5DGIS vs. 3DGIS of visibility at ancient Copan.
+            
+                
+                Figure 3: Illustrating procedurally-generated models and various data types imported into CityEngine
+            
+            In the experiential approach, I export the 3D models and terrain from CityEngine into Unity 5—a gaming engine—to interactively explore the 3D models. In this model, vegetation is added to the landscape and avatars proceed along set paths generated from a combined cost surface and visibility analysis (Figure 4) (Richards-Rissetto, 2013; Richards-Rissetto and Landau, 2014). Oculus Rift—a head-mounted virtual reality display—is employed to create an immersive experience for ancient Copan as a means to more intuitively interact with archaeological data (Bartolo et al., 2000; Frisher and Dakouri-Hild, 2008). 
+            
+                
+                Figure 4: 3D Models (from SketchUp using GIS data) visualization in Unity 5 (Richards-Rissetto and Day)
+            
+            
+            
+            Discussion
+                Strongly embedded in the Digital Humanities, this 3DGIS iterative approach tacks back and forth between 2.5D and 3D data to compare results and potentially derive new methods and interpretations for visibility analysis of ancient landscapes—analyses that would not be possible without taking advantage of the digital to cross-cut the computational and experiential. 
+            
+            
+            Acknowledgements
+                The Layman Award, University of Nebraska-Lincoln provided a seed grant to carry out initial procedural modeling tests. This research would not be possible without permission and assistance from the Honduran Institute of Anthropology and History (IHAH). The MayaArch3D Project has generously providing the airborne LiDAR data and the laser scanned and photogrammetric models for this research. I want to thank UNL students Zachary Day, Stephanie Sterling, and Rachel Plessing for their important work on the visualizations. 
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Aveni, A., and Hartung, H. (1986). Maya City Planning and the Calendar. 
+                        Transactions of the American Philosophical Society, 0065-9746, Vol. 76, pt. 7. Philadelphia: American Philosophical Society.
+                    
+                    
+                        Barcelo, J., Forte, M. and Sanders, D. (Eds.) (2000). 
+                        Virtual reality in archaeology. Oxford: Archaeopress. 
+                    
+                    
+                        Conolly, J. and Lake M. (2006). 
+                        Geographical Information Systems in Archaeology. Cambridge University Press. 
+                    
+                    
+                        Dell’ Unto, N., Landeschi, G., Leander, T., Touati, A., Dellepiane, M., Callieri M. and Ferdani, D. (2015). Experiencing Ancient Buildings from a 3D GIS Perspective: a Case Drawn from the Swedish Pompeii Project. 
+                        Journal of archaeological method and theory.
+                    
+                    
+                        Doyle, J., Garrison, T. and Houston, S. (2012). Watchful Realms: integrating GIS analysis and political history in the southern Maya lowlands. 
+                        Antiquity, 86(333): 972-807.
+                    
+                    
+                        Fash, W. (2001). 
+                        Scribes, Warriors, and Kings: The City of Copan and the Ancient Maya. Thames and Hudson, London. 
+                    
+                    
+                        Fletcher, R. (1981). People and Space: A Case Study on Material Behavior. In 
+                        Pattern of the Past: Studies in Honour of David Clarke, edited by I. Hodder, G. Issac, and N. Hammond, Cambridge University Press, Cambridge, pp. 97-128.
+                    
+                    
+                        Foucault, M. (1995). 
+                        Discipline and Punishment. Vintage Books, New York.
+                    
+                    
+                        Frisher, B. and Dakouri-Hild, A. (Eds.) (2008). 
+                        Beyond Illustration: 2D and 3D Digital Technologies as Tools for Discovery in Archaeology, BAR International Series 1805. Oxford: Archaeopress, 2008
+                    
+                    
+                        Gillings, M. (2015). Mapping invisibility: GIS approaches to the analysis of hiding and seclusion. 
+                        Journal of Archaeological Science 62: 1–14
+                    
+                    
+                        Hammond, N. and Tourtellot G. (1999). Shifting Axes: Spatial Expressions of Power at La Milpa. Paper presented at the 64
+                        th Annual Meeting, Society for American Archaeology. Chicago, IL. March 27th.
+                    
+                    
+                        Hanks, W. (1990). 
+                        Referential Practice: Language and Lived Space among the Maya. The University of Chicago Press, Chicago and London.
+                    
+                    
+                        Houston, S., Stuart, D. and Taube, K. (2006). 
+                        The Memory of Bones: Body, Being, and Experience among the Classic Maya. University of Texas, Austin.
+                    
+                    
+                        King. J., Richards-Rissetto, H. and Landau K. (2015). Enter the Void: A GIS Analysis of the Visibility of Empty Spaces at Copan, Honduras. Paper presented at Society for American Archaeology 80th Annual Meeting, San Francisco, CA. April 2015.
+                    
+                    
+                        Landau, K. (2015). Spatial Logic and Maya City Planning: The Case for Cosmology. 
+                        Cambridge Archaeological Journal 25(1): 275-92.
+                    
+                    
+                        Lawrence, D. and Low, S. (1990). The Built Environment and Spatial Form. 
+                        Annual Review of Anthropology 19: 453-505.
+                    
+                    
+                        Llobera, M. (2003). Extending GIS Based Analysis: The Concept of the Visualscape. 
+                        International Journal of Geographic Information Science 1(17): 25-48.
+                    
+                    
+                        Llobera, M. (2006). What you see is what you get?: Visualscapes, visual genesis and hierarchy. In 
+                        Digital Archaeology: Bridging Method and Theory, (Ed) P. Daly and T. Evans,  Routledge, Taylor and Francis, New York and London, pp. 148-67.
+                    
+                    
+                        Messenger, L. (1987). Community Organization of the Late Classic Southern Periphery of Mesoamerica: Expressions of Affinity. In 
+                        Interaction on the Southeast Mesoamerican Frontier: Prehistoric and Historic Honduras and El Salvador, In E. J. Robinson (Ed), BAR International Series 327 (ii), pp. 385-420.
+                    
+                    
+                        Muller, P., Vereenooghe, T., Wonka, P., Papp, I. and van Gool L. (2006). Procedural 3D reconstruction of Puuc buildings in Xkipché. 
+                        7th International Symposium on Virtual Reality, Archaeology and Cultural Heritage, VAST. M. Ioannides, D. Arnold, F. Niccolucci, and K. Mania (Ed). 
+                    
+                    
+                        Paliou, E. (2014). Visibility analysis in 3D built spaces: a new dimension to the understanding of social space. In 
+                        Spatial analysis and social spaces: Interdisciplinary approaches to the interpretation of prehistoric and historic built environments, E. Paliou, U. Lieberwirth, and S. Polla (eds). Series: Topoi – Berlin Studies of the Ancient World 18.
+                    
+                    
+                        Rapoport, A. (1990). 
+                        The Meaning of the Built Environment: A Nonverbal Communication Approach. University of Arizona Press: Tucson.
+                    
+                    
+                        Richards-Rissetto, H. (2010). 
+                        Exploring Social Interaction at the Ancient Maya City of Copán,
+                    
+                    
+                        Honduras: A Multi- Scalar Geographic Information Systems (GIS) Analysis of Access and Visibility. Unpublished PhD: University of New Mexico.
+                    
+                    
+                        Richards-Rissetto, H. and Plessing, R. (2015). Procedural modeling for ancient Maya cityscapes: Initial methodological challenges and solutions. 
+                        Proceedings for Digital Heritage International Congress 2015, Granada, Spain. 
+                    
+                    
+                        Richards-Rissetto, H. (2013). From mounds to maps to models: visualizing ancient architecture across landscapes. 
+                        Proceedings of Digital Heritage International Congress 2013, Marseille, France.
+                    
+                    
+                        Richards-Rissetto, H. and Landau, K. (2014). Movement as a means of social re(production): Using GIS to measure social integration in urban landscapes. 
+                        Journal of Archaeological Science 41: 365-75.
+                    
+                    
+                        Saldaña, M. (2015). An Integrated Approach to the Procedural Modeling of Ancient Cities and Buildings. 
+                        Digital Research in the Humanities (print volume forthcoming).
+                    
+                    
+                        Saldaña, M. and Johanson, C. (2013). Procedural Modeling for Rapid-Prototyping of Multiple Building Phases and Hypothetical Reconstructions of Early Rome. 
+                        International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. XL-5/W1.
+                    
+                    
+                        Thompson, A. and Prufer, K. (2015). Evaluating airborne LiDAR for detecting settlements and modified landscapes in disturbed tropical environments at Uxbenka, Belize. 
+                        Journal of Archaeological Science 57: 1-13.
+                    
+                    
+                        von Schwerin, J., Richards-Rissetto, H., Remondino, F. and Agugiaro G. (2013). The MayaArch3D Project: A 3D WebGIS for Analyzing Ancient Maya Architecture and Landscapes at Copan, Honduras. 
+                        Literary and Linguistic Computing. Oxford University Press.
+                    
+                    
+                        Von Schwerin, J., Richards-Rissetto, H., Remondino, F., Grazia Spera, M., Auer, M., Billen, N., Loos, L. and Reindel M. (2016). Airborne LiDAR Acquisition, Post-Processing and Accuracy-Checking for a 3D WebGIS of Copan, Honduras. 
+                        Journal of Archaeological Science Reports. 
+                    
+                
+            
+        
+    
+
+
+        
+            An interdisciplinary team of researchers has built a new multimedia editorial tool: the eTalks (Clivaz 2014; Clivaz et al., 2015a; Clivaz et al., 2015b; EADH projects, 2016), based primarily on speeches of scholars. Simple videos or MP3 recordings of lectures may prove insufficient to many researchers since they are unquotable in detail and they do not offer the possibility of being combined with text, images, hyperlinks, and references. Until now, no tool has been available for creating a carefully edited product that includes text-image-sound, all entirely quotable in details: yet, this is what we have achieved with the eTalks [http://etalk.vital-it.ch/mooser/mode-demploi-en/].
+            In creating the eTalks, we were motivated by the fact that academic publications and pedagogy have been deeply reconfigured by the emergence of a new kind of knowledge produced by the synergy between text, image and sound. As Tanya Clement points out, diverse Digital Humanities (DH) pedagogies, such as new media studies and game studies, can be characterized by looking at multiliteracies “that are engaged within undergraduate humanities curricula through general skills, principles and habits of mind that allow students to progress within and engage society in the twenty-first century” (Clement 2012). Academic publications in Humanities are slower than pedagogy in terms of the testing of multimodal literacies. However, different tools are now able to present slides joined to videos of scholarly talks, such as Slideshot and Dashboarding [http://slideshot.epfl.ch/play/cops_binney; http://www.infoq.com/presentations/dashboard-data-analysis?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_presen], but they cannot be quoted in detail. Scalar, a very impressive multimodal tool, proposes to “create interpretive pathways through the materials”[http://scalar.usc.edu/about/], privileging users’ points of view. The eTalks claim to rely on the scholar’s oral talk as a leading way among multimodal materials while giving the users the possibility of reconsidering the auctorial point of view by directly accessing all the quoted sources.
+            
+                
+            
+            The eTalks application implements an easy-to-use editor interface, designed for the use of researchers themselves, allowing for the creation and editing of original enhanced talks. This permits the linking together of images, sounds and textual materials by means of hyperlinks, thereby enriching the content with relevant information. The result of the editing is displayed through a viewer interface, allowing one to experiment with the entire eTalk or to actively navigate, scroll and search inside its content. After recording the speech of the scholar, the Audacity software allows for the splitting of the speech into pieces of 2-3 sentences. Each piece of speech can be associated with its written version, a slide, images, or hyperlinks and so forth. Each piece is also quotable with a specific URL: a new kind of reference. Thus, the final release of eTalks allows for the complete ‘citability’ of its contents: each and every portion of the researchers’ talks can be precisely referred to and therefore cited, just like any traditional, paper-based scientific publication but with all the potential for plural literacies.
+            The core of the eTalk engine was developed in JavaScript and the code is now available as open source on Github as a free application for further development. The eTalks are currently being further developed and disseminated by an interdisciplinary team of researchers in Digital Humanities and bioinformatics at the Swiss Institute of Bioinformatics (Lausanne). Four series of eTalks have thus far been published as openly accessible: twelve on funerary rituals, nine on the enhanced Human, two on the institutional biobank of Lausanne, and one in Digital Humanities [http://etalk.vital-it.ch]. The eTalks are now in development by institutional and research collaborations, notably the Pedagogical High School of Lausanne (HEPVaud) and the ERASMUS+ #dariahTeach project, whose purpose is to offer a webportal by 2017 that will include digital teaching modules [www.dariah.eu/teach].
+            We will present eTalks’ main features in our poster, and in particular the question of copyrights: to be able to quote several images, the team had to learn the basic rules of the relevant Swiss laws, and how Wikipedia commons work in Switzerland; furthermore we plan to develop European test-cases. We have also learned to negotiate with the authors and to convince them to rather use open access material. In difficult cases, we consult specialized people. Such obstacles had to be navigated and new skills acquired by our team as new, necessary knowledge. We will secure the interoperability of our data, and progressively introduce videos, and purl references.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Clement, T. (2012). Multiliteracies in the Undergraduate Digital Humanities Curriculum: Skills, Principles, and Habits of Mind. In Hirsch, B. (ed.)
+                        Digital Humanities Pedagogy: Practices, Principles and Politics, Cambridge, UK: Open Book Publishers, pp. 365–88. 
+                        http://www.openbookpublishers.com/htmlreader/DHP/chap15.html
+                    
+                    
+                        Clivaz, C. (2014). De l’article à l’etalk : enjeux et défis de la littératie plurielle dans la communication académique, 
+                        Actes du colloque de l'AIPU 2014, Mons (Belgique). 
+                        http://hosting.umons.ac.be/php/aipu2014/C9TEST/select_depot2.php?q=1775
+                    
+                    
+                        Clivaz, C., Rivoal, M. and Sankar, M. (2015a). A New Platform for Editing Digital Multimedia: The eTalks. In Schmidt, B. and Dobreva, M.  (Eds.)
+                        New Avenues for Electronic Publishing in the Age of Infinite Collections and Citizen Science, The authors and IOS Press, doi: 10.3233/978-1-61499-562-3-156; 
+                        http://ebooks.iospress.nl/publication/40894
+                    
+                    
+                        Clivaz, C., Pache, C., Rivoal, M. and Sankar, M. (2015b). Multimodal literacies and academic publishing: the eTalks, 
+                        Information Services and Use, 35: 4.
+                    
+                    
+                        EADH projects (2016). 
+                        http://eadh.org/projects/etalks
+                    
+                
+            
+        
+    
+
+
+        
+            
+                Introducing 
+                    thresholds
+                
+                
+                    handwritten sticky notes, highlighted document pages, and grainy photographs rub against one another, forming dense and shifting thickets. the blank spaces between once-distinct districts become cluttered and close. geographically distant realms ache to converge. the bookcase furiously semaphores toward the far corner of the room. thin lines of colored paper arrive to splay across sections. the wall bursts at every seam.
+                
+                Whether it be real or virtual, every project has its own “wall”: the irrepressibly interdisciplinary network that inspires and propels the work. Populating this capharnaum are the ideas, images, sentences, scenes, and characters that “stick to us,” to use Lara Farina’s evocative phrase (Farina, 2014). They are the “encounters” that Deleuze describes as the impetus toward work, the things that “strike” us, as Benjamin puts it, like a hammer to unknown inner chords (Deleuze, 1988; Benjamin, 1999). This affective principle of collection (what strikes you) means that the wall is an intensely personal artifact. Its unique architecture springs from a thinker’s nomadic wanderings through and amidst a cultural and aesthetic landscape, whose dimensions are stretched beyond traditional disciplinary boundaries to include anything that clings to us, whether it be Werner Heisenberg’s letters or an episode of 
+                    Breaking Bad.
+                
+                Although instrumental to every humanities project, the wall has a brutally short lifespan. The writer strives to reassert control over its borders and boundaries by whittling down its undisciplined excesses; indeed, training to be a scholar is in large part learning to compress and contain the wall’s licentious sprawl. We shorten our focus to a single period, place, or author; excise those fragments that fall outside the increasingly narrow range of our “expertise”; and briskly sever any loose ends that refuse to be tied. These regulatory measures help align our work with the temporal, geographic, and aesthetic boundaries of our disciplinary arbiters: the journals and university presses that publish our work, the departments that hire and tenure us. In an increasingly tight academic marketplace, where the qualified scholars, articles, and projects far outnumber the available positions, deviation from the standard model can seem like risky business indeed. 
+                Even as entrenched structures dictate compression and containment in scholarly writing, the open networks of the web have enabled a publication model based on public sharing and collaboration, spurring a turn to process across the humanities. It has become normal for scholars of all fields to share their incipient, in-progress research on blogs and wikis, and look to the comments sections for peer review. On a larger scale, these moves toward a collaborative process of knowledge-making are visible in the editing policies of Wikipedia; in Femtechnet’s Distributed Open Content Course (DOCC), an open repository for course materials; and in new open access imprints like the Dead Letter Office of Punctum Books, which publishes abandoned scholarly projects (to name just a few examples among many). This turn to process has put pressure on the gatekeeping mechanisms described above, as many scholars yearn for a less rigid publishing model that foments the networked creativity of the wall.
+                Advocating for the transformative effect of a process-oriented model of digital publication, this short paper asks: how can digital humanities not only embrace process rhetorically, but in fact accrete tangible value to the more piecemeal, contingent aspects of knowledge creation? How can we make it the wall’s scholarly sprawl “count” within systems that still rely on the trimmed and trussed-up products of research? How can we not only laud conceptually but help to build materially critical practices that eschew disciplinary (and disciplining) boundaries in favor of openings and traversals? 
+                After a brief survey of existing digital journals and other publishing initiatives, including 
+                    Hyperrhiz, Scalar, and Electric Press, we turn to our own incipient venture, titled 
+                    thresholds. 
+                    thresholds is a web-based digital publishing platform for creative scholarship, stitched together from existing digital humanities tools. By sketching the primary design features of 
+                    thresholds – both their theoretical motivations and technical solutions, described in brief below – this short paper argues for a capacious digital publishing model that negotiates, without dissolving, the shifting edges between reading and writing, process and product, the fragment and the collective.
+                
+            
+            
+                Design Features
+                The primary design feature of 
+                    thresholds is the split screen. On the webpage’s virtual verso are short critical essays that exceed disciplinary boundaries, whether it be in content, style, or approach. We solicit work that a traditional academic journal may deem unfinished, unseemly, or otherwise unbound, but which discovers precisely in its unboundedness new and oblique critical perspectives. Along with her essay, the author submits the textual, visual, and audible fragments that provoked and surreptitiously steered her work. These are published on the right side of the screen and scroll in tandem with the corresponding essay. These scraps are not explicitly harnessed to the work’s main body, but instead lie beside it to create provocative juxtapositions; it is left to the reader to forge lines of connection between recto and verso.
+                
+                Reinforcing its commitment to process and material form, 
+                    thresholds further provides a digital toolkit for readerly making. These tools assign names and haptic functions to those critical traversals that a reader makes through and against a text. As the author’s fragments scroll up the right-hand side of the screen, the reader can anchor a piece, holding it in place for future reference, or join one scrap to another to generate new patterns and co-movements. She can also import new material, either by copying text over from the essay on the verso or by composing additional fragments that leak new texts, artists, or ideas into the system. At the end of any given reading session, then, the reader will have generated her own “wall,” plucking, amassing, and recomposing the author’s fragments to create her own annotative assemblage.
+                
+                At any time, the reader can capture and conserve the “constellation” that she has produced—that is, the current arrangement of the fragments that she has chosen to lock and join together. Although every user has access to the same firmament of texts that cycle through 
+                    thresholds, each constellation will be singular; their unique spatial architecture will attest to the creative and critical value in visualizing the relations between fragments and texts, readers and authors, and readers and texts. Readers who choose to publically share their work will be able to see how their own creation fits into a galaxy of all other users’ constellations, mapping their own choices against that of a collective readership. By enabling the reader to place herself in relation to both the author’s text 
+                    and all other readers of the site, 
+                    thresholds models criticism as an intimate yet communal activity that inheres in the delicate links we build in the spaces between each other, as much as between the texts themselves.
+                
+                To ensure that this intervention is not only conceptually provocative but also formally useful, 
+                    thresholds endows each fragment with a flexible markup language. Readers can download their constellations, receiving a file listing all texts, objects, and art cited therein. This file can then be imported into citation software or shared with others. This underlying information architecture, not immediately present to visitors but baked into the structure of the site, plugs the swirl of scraps that make up any given constellation into the existing citational infrastructure of the humanities. In so doing, it allows 
+                    thresholds to negotiate the gap between that which is in-progress and incomplete within our reading practices—the stray underline, the forgotten marginal note—and more formalized and prescriptive methods for incorporating others’ work into our own. There is a place, 
+                    thresholds implicitly argues, for the fragmentary in our collecting and collective practices; for the wall’s sprawl within the more regimented systems that order our work.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Benjamin, W. (1999). 
+                        The Arcades Project, trans. Howard Eiland and Kevin McLaughlin. Cambridge: Harvard University Press.
+                    
+                    
+                        Deleuze, G. (1988). 
+                        L'abécédaire de Gilles Deleuze, an interview with Gilles Deleuze, directed by Claire Parnet.
+                    
+                    
+                        Farina, L. (2014). Sticking Together. In Cohen, J. J., Joy, E. A., and Seaman, M. (eds), 
+                        Burn After Reading/The Future We Want. Brooklyn: Punctum Books, pp. 31-38.
+                    
+                
+            
+        
+    
+
+Lexos is a browser-based suite of tools that helps lower barriers of entry to computational text analysis for humanities scholars and students. Situated within a clean and simple interface, Lexos consolidates the common pre-processing operations needed for subsequent analysis, either with Lexos or with external tools. It is especially useful for scholars who wish to engage in research involving computational text analysis and/or wish to teach their students how to do so but lack the time for a manual preparation of texts, the skill sets needed to prepare their texts analysis, or the intellectual contexts for situating computational methods within their work. Lexos is also targeted at researchers studying early texts and texts in non-Western languages, which may involve specialized processing rules. It is thus designed to facilitate advanced research in these fields even for users more familiar with computational techniques. Lexos is developed by the Lexomics research group led by Michael Drout (Wheaton College), Mark LeBlanc (Wheaton College), and Scott Kleinman (California State University, Northridge). It is built on Python 2.7-Flask microframework, with jQuery-Bootstrap UI, and visualizations in d3.js. The Lexomics research group provides access to an public installation of Lexos which does not retain data after a session has expired. Users may also install Lexos locally by cloning the GitHub repository.
+
+Lexos guides users through a workflow of steps that reflects effective practices when working with digitized texts. The workflow includes: (i) uploading Unicode-encoded texts in plain text, HTML, or XML formats; (ii) “scrubbing” functions for consolidating preprocessing decisions such as the handling of punctuation, white-space, and stop words, the use of lemmati-zation rules, and the handling of embedded markup tags and special character entities; (iii) “cutting” texts into segments based on the number of characters, tokens, or lines, or by embedded milestones such as chapter breaks; (iv) tokenization into a Document Term Matrix of raw or proportional counts using character or word n-grams; (v) visualizations such as comparative word clouds per segment (including the ability to visualize topic models generated by MALLET); Rolling Window Analysis that plots the frequency of string, phrase, or regular expression patterns or pattern-pair ratios over the course of a document or collection; and (vi) analysis tools including statistical summaries, hierarchical and k-means clustering, cosine similarity rankings, and Z-tests to identify the relative prominence of terms in documents, document classes, and the collection as whole. At each stage in the workflow the user may download data, visualizations, or the results of the analytical tools, along with metadata about their preprocessing decisions or the parameters selected for their experiments. Lexos thus enables the export of data for use with other tools and facilitates experimental reproducibility.
+
+Lexos {scrubber} An Integrated Lexomics Workflow
+
+Scrubbing Options
+
+Q Remove All Punctuation
+
+B Keep Hyphens ©
+
+Q Make Lowercase
+
+B Keep Word-Internal Apostrophes©
+
+Q Remove Digits
+
+■ Remove Whitespace 0
+
+B Scrub Tags 0
+
+Additional Options
+
+Stop Words/Keep Words O >
+
+
+Previews of Documents
+
+
+A1.3_Dan_T00030.txt
+
+
+
+
+Gefr&ae;gn ic Hebreos eadge lifgean in Hierusalem goldhord d&ae;lan cyningdom hab ban swa him gecynde w&ae;s si&d;&d;an &t;urh metodes m&ae;gen on Moyses hand w
+
+ealra gesceafta drihten and waldend se him dom forgeaf unscyndne bl&ae;d eor&d;an rices and &t;u lignest nu &t;&ae;t sie lifgende se ofer deoflum duge&t;um wealde&d;. A3.3_Az_T00130.txt
+
+
+orn dryhten herede wis in weorcum ond &t;as Word acw&ae;&d;: Meotud allwihta &t;u eart meahtum swi&d; ni&t;as to nerganne. Is &t;in noma m&ae;re wütig ond wul h
+
+
+
+
+Special Characters 0 v
+
+
+Lemmas 0 v
+
+
+Consolidations 0 v
+
+
+Figure 1: The Lexos Scrubber Tool
+
+Lexos addresses three significant challenges for our intended users. The first challenge involves the adoption of computational text analysis methods. Many approaches require proficiency with command line scripting or the use of complex user interfaces that require time to master. Lexos addresses this problem through a simple, browser-based interface that manages workflow through the three major steps of text analysis: pre-processing, generation of statistical data, and visualization. In this, Lexos resembles Voyant Tools (Sinclair and Rockwell, 2016), although Lexos places more emphasis on and providing more tools for preprocessing and segmenting texts. Lexos also shares with tools like Stylometry with R (Eder, et al., 2013; Eder, 2013) and emphasis on cluster analysis, providing both hierarchical and K-Means clustering with silhouette scores as limited form of statistical validation. While Lexos is not a topic modeling tool, it provides a useful “topic cloud” feature for MALLET data that will be useful for beginners since there are few accessible ways to visualize MALLET output that work well out of the box.
+
+
+Figure 2: The Lexos Multicloud tool showing Chinese "topic clouds"
+
+The second challenge is the opacity of the procedures required to move between computational and traditional forms of text analysis. In order to reduce the “black boxiness” of algorithmic methods, Lexos contains an embedded component called “In the Margins” which provides non-technical explanations of the statistical methods used and effective practices for
+
+handling situations typical of humanities data. “In the
+
+Margins” is a Scalar “book” which can be read separately; however, its individual pages are embedded in Lexos using Scalar's API, making them easily accessible for users of the tool. Lexos shares with tools like Voyant an engagement with the hermeneutics of text analysis and attempts to embed “In the Margins” discussion of these issues in the user interface close to the user's workflow. We hope “In the Margins” will host advice and commentary from contributors with the Digital Humanities community.
+
+A third challenge is the tension between quantitative and computational approaches and the traditions of theoretical and cultural criticism that dominate the humanities in the academy. As Alan Liu (2013) has recently argued, the challenge is to give a better theoretical grounding to the hybrid quantitative-qualitative method of the Digital Humanities by exploring the ways in which we negotiate the difficulties imposed by “the aporia between tabula rasa quantitative interpretation and humanly meaningful qualitative interpretation” (414). The design of Lexos and the discussions in “In the Margins” are intended to open a space for discussion of issues related to the opacity of algorithmic approaches and the limitations and epistemological challenges of computational stylistic analysis and visual representation of humanities data.
+
+This poster presentation provides demonstrations of Lexos using some literature from Old, Middle, and Modern English, as well Chinese, which are in our current test suite. We also discuss use cases and best practices, how to install Lexos locally, and how scholars may contribute to the still growing content of “In the Margins”.
+
+Bibliography
+
+Drout, M., Kleinman, S., and LeBlanc, M. 2016-. “In the Margins.” http://scalar.usc.edu/works/lexos./
+
+Eder, M. (2013). “Mind Your Corpus: Systematic Errors in Authorship Attribution.” Literary and Linguistic Computing 28 (4): 603-14.
+
+Eder, M., Kestemont, M., and Rybiki, J. 2013. “Stylometry with R: A Suite of Tools (Abstract of Poster Session)”. Presented at Digital Humanities 2013, Lincoln, Nebraska. http://dh2013.unl.edu/abstracts/ab-136.html, https://sites.google.com/site/computationalstylistics/
+
+Kleinman, S., LeBlanc, M.D., Drout, M. and Zhang, C. 2016. Lexos v3.0. https://github.com/WheatonCS/Lexos/.
+
+Liu, A. (2013). “The Meaning of the Digital Humanities.” PMLA 128 (2): 409-23.
+
+McCallum, A.K. (2002). MALLET: A Machine Learning for
+
+Language Toolkit. http://mallet.cs.umass.edu.
+
+Sinclair, S., and Rockwell, G. (2016). Voyant Tools. Web.
+
+http://voyant-tools.org/.
+This poster presents research into integration and assessment of digital humanities pedagogy in a distance course on the History of Children's Literature, and provokes conversation about pedagogical approaches that expand student access to DH methods, tools, and dispositions. Much of the existing literature on DH pedagogy addresses methods courses or multimodal writing courses rather than integration of DH practices in particular topical contexts, or advanced topics courses that explore a narrow slice of disciplinary content through extended engagements with digital projects (Ball 2012; Mostern & Gainor 2013; Fyfe 2016; Nyhan, Mahony, and Terras 2016). This literature provides valuable lessons but raises questions about the feasibility of engaging with DH across the curriculum in small-to-medium scale engagements with new methods and technologies. Amy E. Earhart and Toniesha L. Taylor (2016), for example, respond to this situation by rejecting the idea that DH should be limited to advanced courses and propose broader integration of “embedded [DH] skills development” that students can take out of the environment of a specific institution. Similarly, we suggest that allowing for repeated and diverse engagement by students across methods-intensive and topic-intensive courses (as is now common for writing) is necessary for teaching deeper DH dispositions like collaboration, openness to failure, and creativity with technology.
+
+Simultaneously, the existing literature has focused on residential instruction with access to physical artifacts. This limit is problematic when at least one discipline with a heavy investment in DH, library and information science, is well past transition to a majority distance learning population. LIS programs have developed experience and expertise in teaching technology at a distance, and lessons from these programs may be useful to the DH community. While some teaching goals may only be met in person, others might be achieved through well-structured online learning.
+
+To ground this discussion, the authors, the course instructor, and a subject librarian will present their development, assessment, and rethinking of a multimodal publication assignment using the Scalar platform in a synchronous online course on the History of Children's Literature. Students worked in groups to create a multi-media web resource on “diverse history.” The class discussed what is included or omitted from historical narratives, whether they be children's historical fiction or history textbooks, before contemplating this selection process in children's literature itself. The librarian introduced students to the context of DH publishing and Scalar, and to issues related to responsible use of multimedia. Then each group chose an issue related to “diverse history” and built one section of the website. The long-term goal is for successive classes to edit, revise, and expand this project
+
+This collaborative project replaced an assignment from previous years, when students built individual websites about a children's book of their choice. This project maximized scaffolding, with detailed guidance on information students should locate about their books and the final website shape. This iteration of the class took place during a time when distance students came to campus one weekend each semester, and this time was used for in-depth introduction to the array of specialized library resources needed to complete the questions about their book's production and reception. The new assignment sought to re-imagine learning outcomes that would allow students to engage with a particular DH publishing technology, Scalar, and grapple with issues of collaboration and multimodal authoring in a context where the final product was less predetermined. Nonetheless, the elimination of the in person component, which occurred at the same time, removed an obvious “lab” opportunity for learning related technical issues. The pedagogical design involved making the best balance between asynchronous and synchronous activities to compensate for the absence of in person activities. Our evaluation of the success of the assignment relied on assessment
+
+of Scalar sample sites and final projects created by the students, as well as on reflective essays written by the students and observations made in the course of student consultations. This evaluation led to ideas for how to revise the course for future semesters to improve learning of collaborative behaviors, openness to failure, and creativity with technology. This includes, most notably, a re-envisioning of how synchronous class time is used in the future.
+
+By sharing our experiences in developing, teaching, assessing, and revising this course in successive iterations, we hope to explore with attendees the ways in which DH methods, tools, and dispositions can proliferate across the curriculum. We will promote discussion of what DH methods, tools, and dispositions can be taught well in different settings, whether that means varying scales of integration in DH classrooms, or exploring what can be taught virtually versus in person.
+
+Bibliography
+
+Ball, C. E. (2012). “Assessing Scholarly Multimedia: A Rhetorical Genre Studies Approach.” Technical Communication Quarterly 21: 61-77.
+
+Earhart, A. E., and Taylor, T L. (2016) “Pedagogies of Race: Digital Humanities in the Age of Ferguson.” Debates in the Digital Humanities 2016. Ed. Matthew K. Gold and Lauren F. Klein. U of Minnesota P, Minneapolis. 251-64.
+
+Fyfe, P. (2016). “Mid-Sized Digital Pedagogy.” Debates in the Digital Humanities 2016. Ed. Lauren F. Klein and Matthew K. Gold. University of Minnesota Press. 104-117.
+
+Mostern, R., and Gainor, E.. (2013). “Traveling the Silk
+
+Road on a Virtual Globe: Pedagogy, Technology and Evaluation for Spatial History.” Digital Humanities Quarterly
+
+7.
+
+Nyhan, J., Mahony, S., and Terras, M. (2015)“Digital Humanities and Integrative Learning.” Integrative Learning. Ed. Daniel Blackshields, James Cronin, Bettie Higgs, Shane Kilcommins, Marian McCarthy, and Anthony Ryan. London: Routledge. 235-47.
+The German Historical Institute Washington (GHI) is in the development phase of German History-Digital (GH-D), a transatlantic digital initiative to meet the scholarly needs of historians and their students facing new historiographical and technological challenges. In the proposed paper we will discuss the research goals, methodology, prototyping, and development strategy of GH-D as infrastructure to facilitate transnational historical knowledge co-creation for the large community of researchers and students already relying on digital resources of the GHI and for the growing constituency of citizen scholars.
+
+Despite its great progress, the digital humanities have yet to broadly impact research in German history. The past ten years have witnessed the proliferation of online resources relevant to the field, yet these materials largely remain siloed in different systems, with material difficult to discover or gather by scientists into corpora. Historians themselves are today increasingly producing scholarly content in digital form, but there remains no established criteria for the peer review of digital publications and projects. This ultimately limits the time and energy the research community is willing to invest into digital knowledge production and thus confines the Digital Humanities' potential for growth.
+
+Preservation and future access to digital materials is also of critical importance, particularly in the North American context where continental and national digital research infrastructures for digital humanities are lacking; there is currently no equivalent to European research infrastructures like CLARIN or DARIAH. In respect to scientific methodology, there is growing expectation that historians take advantage of an abundance of digital tools, yet there remains insufficient integration between tools for historical research and between tool sets and online resources. The importance of citizen science and knowledge co-creation for the future of historical research is also recognized, yet for these developments to occur there must exist beyond e-lists and other legacy communication technologies scholarly environments for the creation of area-specific research communities, scientific collaboration, and public engagement.
+
+The planning for GH-D involved surveying over four hundred scholars of the many thousands already using digital resources produced by the GHI. The most prominent of these resources is the digital source collection „German History in Documents and Images“ (GHDI), which is widely used at universities in the German and English speaking world. Launched in 2003 and currently undergoing a technical and conceptual revamp in conjunction with GH-D, GHDI currently includes thousands of pages of English-language translations of German historical texts, as well as images and maps, all of which are accessed by approximately 5,000 visitors per day. Our planning for GH-D also continues to involve consultations and workshops with expert historians and digital humanists, and the establishment of partnerships with institutions and major initiatives that share our concern for the future of history in the digital age.
+
+The German History-Digital platform addresses needs of digital scholarship through five goals and integrated work packages concerted to these goals: discovery, analysis, production, preservation, and community.
+
+We believe GH-D provides a new model in the design and development of a social knowledge creation environment for humanities-oriented research. The proposed paper will be structured by providing technical and theoretical explication of the core work packages within relevant DH contexts.
+
+Discovery
+A major challenge facing scholarship online is that a vast number of digital resources, particularly those produced independently by scholars or smaller institutions, do not have standardized metadata records and are not accessible via any centralized scientific index. GH-D involves development of a peer-reviewed index of scholarly digital objects using Dublin Core
+
+(DC) and CLARIN's Component MetaData Infrastructure (CMDI) standards via a customized Backlight technology stack.
+
+Preservation
+For scholars developing historical digital projects in North America, there exists no inter-institutional infrastructure for preserving their data and making it openly available. With consultative and knowledge support from CLARIN-D, which is part of the European research infrastructure CLARIN, the GH-D project will establish the first portal to CLARIN in North America at GHI Washington. Central to this process is the implementation of a repository that allows a sustainable storage of the content and the inclusion in a digital environment to ease access, search and an interoperable data formats. The content of the repository and the repository itself adheres to international, widely accepted and supported standards. The high quality of the technical solution and the conformance to standards is secured by an independent organization that gives out the Data Seal of Approval. Like the majority of CLARIN centres in Germany, the GH-D will use a Fedora Commons repository with Apache Solr for indexing and search, components included in the technology stack of Project Hydra. Our partnership with CLARIN promotes open access, open science and knowledge co-creation in the North American context, and is an important component in the overall digital humanities research strategy of the GHI. As an institute of the Max Weber Stiftung, we are also in partnership with DARIAH-DE and arrangements have been made for DARIAH to provide long term preservation of GHI digital projects in their entirety, beginning with the first edition of German History in Documents and Images. Beginning with the GHDI project, GH-D is part of the DARIAH-DE Service Lifecycle program. Production and Publication
+
+As a knowledge co-creation platform, GH-D will bring together editors, researchers and citizen scientists in the development of innovative online projects. Three such pilot projects are currently in development based on customization, including support for TEI, and internationalization of the Scalar 2.0 platform. GH-D is using Scalar 2.0 for the baseline content management system, particularly on account of its interface features, support for RDF, connectivity to external repositories, Dublin Core support. Hypothes.is integration, and its multiple path navigation system.
+
+Analysis
+Historians are increasingly using digital humanities tools to analyze data and express their research findings. A further advantage of storing digital objects within the CLARIN repository the GHI wants to built up is that the full range of corpus linguistic analytic tools of CLARIN can be applied by scientists to GHI textual content. During the first phase of the project we also look to prototyping connectivity to PARTHENOS, another major European infrastructure project. PAR-THENOS integrates within a virtual research environment (VRE) access to data from numerous national archives and a broad set of digital tools which can be chained together into analytic processing workflows. Community
+
+The GH-D platform integrates blog aggregation, an advanced discussion system, community-oriented tools, and social media, to facilitate collaborative knowledge communities and open research. This is a pioneering aspect of our project that will investigate the adoption by historians of social and community digital tools in their research activities. We also intend to make use of the unique role the GHI plays as a hub of transatlantic scholarly dialogue and a major knot within an international network of historians in order to facilitate connections between different scholarly communities.
+
+        
+            
+                
+                    Brief Summary
+                    “Jumpstarting Digital Humanities Projects” is a half-day pre-conference workshop on various aspects of beginning a digital humanities project: scoping and planning a sizable project; determining when to use institutional infrastructure and when to go beyond the institution; winning cooperation from institutional authorities and collaborators; collecting and digitizing materials; and designing for iterative development and efficient feedback loops. Our sessions will focus on the common type of digital humanities project that consists of a assembling a database of source material and generating interactive interpretations such as maps and visualizations from that database. Five scholars from different disciplines and institutions, each a participant in the Mellon-funded Resilient Networks for Inclusive Digital Humanities initiative, will give short tutorials, and workshop attendees will spend an hour on exercises in which they can begin planning a digital humanities project with help from the instructors.
+                    Description of Content
+                    “Jumpstarting Digital Humanities Projects” is a half-day pre-conference workshop on various aspects of beginning a digital humanities project: scoping and planning a sizable project; determining when to use institutional infrastructure and when to go beyond the institution; winning cooperation from institutional authorities and collaborators; collecting and digitizing materials; hiring students and technologists; and designing for iterative development and efficient feedback loops. Our sessions will focus on the common type of digital humanities project that consists of a assembling a database of source material and generating interactive interpretations such as maps and visualizations from that database. Five scholars from different disciplines and institutions, each a participant in the Mellon-funded Resilient Networks for Inclusive Digital Humanities initiative, will give presentations apiece of 30-45 minutes, and workshop attendees will spend an hour on exercises in which they themselves can begin planning their own digital humanities project with individualized help from the instructors. We will end the day with a brief group discussion on how humanities scholars at institutions without digital humanities centers can best form networks and advocate for infrastructure at their own institutions to support digital scholarship. 
+                    
+                         Scoping and Planning
+                        Workshop leaders will discuss the collaborative and creative processes by which they determine what is achievable in a given project, and how they found the most optimal paths towards achieving their goals. These presentations will not be didactic but exploratory, the “leaders” having at this stage, on average, only begun to execute their workflows. This will provide an ideal space for attendees at various stages in their projects to feel invited to ask questions and contribute to strategies for determining what can be achieved within the specific constraints of budget, time, skills, and archival resources.
+                    
+                    
+                         Institutional and Extra-Institutional Infrastructure
+                        One of the major decisions projects have to make in their beginning stages is where to host content. Digital humanities projects of the type we are discussing in this workshop require a website, yet many if not most institutions do not provide server space for humanities scholars. Increasingly, libraries will host and manage digital humanities projects, but not all libraries provide this service, and those that have provided it in the past often find that as software and systems age, the cost in labor of maintaining digital humanities projects is a disincentive to provide such services for future projects. Commercial hosts such as GoDaddy and HostGator are one option, and an increasingly well-known option is Reclaim Hosting, founded by instructional technologists by and for educators, but many humanities faculty members are either not aware of these options or do not know how to choose between them. Workshop leaders will discuss their own choices and the relative advantages and disadvantages of each, balancing speed, efficiency, cost, support, sustainability, and longevity. 
+                    
+                    
+                         Feedback loops &amp; iterative design
+                        Collaborative humanities projects depend on the gathering of diverse skills in the pursuit of complex goals. While it is difficult in institutional settings to achieve appropriate parity, this sort of cross-department and cross-strata project work can form alternative modes of collective intellectual labor that takes seriously the input of all stakeholders. The appropriate site for this integration of viewpoints in the context of project work is what we call “design.” By negotiating over what a thing does and how, a team comes to understand better what it is they are doing in the first place. A project often looks different at the end than it did in the earliest planning stages, and this aspect of the discussion will invite participants to think more creatively about the possibilities of interdisciplinary and inter-departmental collaboration.
+                    
+                    
+                         Achieving and Maintaining Buy-in
+                        The differences in institutional situations between the different groups represented by collaborating members in an interdisciplinary project necessarily create communicative friction and potential divergences in goals and perceptions. While this on some level represents differences in commitments, the perceived shared goal of any project is what brings collaborators to the table in the first place, and a flexible orientated-ness is what maintains buy-in. Workshop leaders will lead open-ended discussions about experiences in this process.
+                    
+                    
+                         Collecting and Digitizing Materials
+                        Many digital projects in the humanities begin with non-digital materials, such as the images and documents in the county archives of Waller County, Texas. Projects that include oral histories such as the Houston Asian American Archive now usually capture recordings in born-digital formats, but comprehensive archives of this nature may also need to convert analog audio and video materials from earlier eras. Libraries and archives have a great deal of knowledge about digitization and metadata standards and conversion and migration technologies that can be of use to humanities scholars, so partnering with library and archives professionals early on can be of great benefit. Workshop leaders in this section will discuss their practices with digitizing and collecting materials, especially in partnership with librarians.
+                    
+                
+                
+                     Description of Audience
+                    Humanities scholars in the early planning stages of large projects that require a broad array of technical and scholarly competencies. While Digital Humanities is of course a conference for advanced practitioners, we hope in this session both to entice “analog” humanities scholars to commingle with more experienced digital humanities scholars and to encourage experienced digital humanities scholars to think about how best to foster the spread of their methods.
+                
+                
+                     Technical Requirements
+                    This workshop requires a digital projector with audio capabilities, preferably one that can be used with instructor laptops: it requires no special software or hardware. We will expect attendees to bring laptops, and we hope that the workshop room will have sufficient power outlets for attendees.
+                
+                
+                     Length, Format, and Budget
+                    “Jumpstarting Digital Humanities Projects” will be a one-day workshop on the following schedule: 
+                    9am-12:30pm: Presentations of 20 to 30 minutes by course instructors
+                    12:30pm-1:30pm: Lunch
+                    1:30pm-3:30pm: Guided exercises in digital humanities project planning
+                    3:30pm-4:15pm: Reflections on the day and discussion of institutional support needs for digital humanities projects
+                    The Resilient Networks for Inclusive Digital Humanities project can fund the registration and travel of instructors. We would prefer a cost of no more than $25 USD for participants, especially since this workshop is meant to appeal chiefly to relative beginners in digital humanities.
+                
+                
+                     Workshop Leaders
+                    
+                         Anne Chao
+                        Title: Manager, Houston Asian American Archive
+                        Email: annechao@rice.edu
+                        Phone: 713-202-5599
+                        Address: 3970 Inverness Dr., Houston, TX 77019
+                        Anne Chao is manager of the Houston Asian American Archive at Rice University. She oversees Rice student interns to conduct interviews with Asian Americans in Houston and the greater metropolitan area. Since 2010, HAAA has accumulated over 160 oral history interviews spanning diverse ethnicities from East, to Southeast, and South Asian-Americans. The collection of primary source materials details the contribution of Asian Americans in the building of greater Houston since the Jim Crow era, and provides new insight into the history of the region. Working with the archivist at the Fondren Library, HAAA uses the Omeka platform and includes GIS mapping to plot the life trajectories of the interviewees. The interviews are fully transcribed and time-stamped, synchronized, indexed with key words through the use of the Oral History Metadata Synchronizer (OHMS).
+                    
+                    
+                         Amanda French
+                        Title: Director, Resilient Networks for Inclusive Digital Humanities
+                        Email: amandafrench@gwu.edu
+                        Phone: 720-530-7515
+                        Address: GWU Libraries, 2130 H Street NW, Washington, DC 20052
+                        
+                            Amanda French’s particular expertise consists of making humanities content (both cultural content and scholarly interpretation of that content) openly available online, as well as introducing scholars to the various methods of and issues with making humanities content openly available online. She held the CLIR Postdoctoral Research Fellowship at NCSU Libraries from 2004-2006. From 2010-2014, she was first Coordinator and later Principal Investigator for the Mellon-funded initiative THATCamp (The Humanities and Technology Camp), an international unconference that has seen more than 300 events to date attended by more than 7000 people. She often speaks and sometimes writes about open access, the scholarly publication landscape, Omeka, Scalar, Hypothes.is, THATCamp, the Digital Public Library of America, Wikipedia, grant-writing, and alternative careers for humanities PhDs. Her most recent digital research project is a catalog with accompanying exhibits of the personal library of the American poet Edna St. Vincent Millay, available at 
+                            
+                                http://steepletoplibrary.org
+                            
+                            . 
+                        
+                    
+                    
+                         Brian Riedel 
+                        Title: Professor in the Practice of Humanities; Associate Director, Center for the Study of Women, Gender, and Sexuality – Rice University
+                        Email: riedelbs@rice.edu 
+                        Phone: 713-348-2162
+                        Address: CSWGS, MS-38 | 6100 Main St | Houston, TX | 77005-1892
+                        Brian Riedel received his Ph.D. in Anthropology from Rice University. His research and teaching focus on engaged research and lesbian, gay, bisexual, transgender, and queer social movements, particularly in Greece and the United States. Two of his current projects use GIS to examine the historical connections of place and sexuality. One project examines the histories of the Montrose neighborhood of Houston, Texas, and the uses to which they are put. A core component of that project is a GIS visualization of Houston’s LGBT-centered businesses from 1945 to 2015. The other project, conducted in collaboration with the African American Library at the Gregory School (part of Houston Public Library) and Rice Century Scholar Cameron Wallace, documents Houston's formal red-light district known as the "reservation," which operated from 1908 to 1917. Although freed slaves had settled on that land since Emancipation, the city claimed the area held “only a few Negro huts.” The project uses GIS and StoryMaps to meld primary resources like census, city directory, and tax record data.
+                    
+                    
+                         Marco Robinson
+                        Title: Assistant Professor of History, Prairie View A &amp; M University, Prairie View, Texas
+                        Email: mtrobinson@pvamu.edu
+                        Phone: 936-261-3219
+                        Address: Division of Social Work, Behavioral, and Political Sciences, Prairie View A&amp;M University, P.O. Box 519; MS 2203, Prairie View, TX 77446-2203
+                        Marco Robinson is an Assistant Professor of History at Prairie View A &amp; M University, Prairie View, Texas. Marco’s research is centered around capturing the social, political, economic, and cultural histories of communities in the American South through collecting, preserving, and analyzing archival and oral history data. As it relates to digital humanities, Dr. Robinson uses this data to tell digital stories, for mapping using GIS and the digitization of historical artifacts. His most recent publication and project are "Telling the Stories of Forgotten Communities: Oral History, Public Memory, and Black Communities in the American South" (Collections: A Journal for Museum and Archives Professionals, Volume 13, Number 2, (Spring 2017): 171- 184.) and Using Interactive Maps and Apps to Preserve Local History: Digitizing the Black Experience in Waller County, Texas.
+                    
+                
+            
+        
+    
+
+        
+            This poster presents the technical redesign of the web resource 
+                German History in Documents and Images/Deutsche Geschichte in Dokumenten und Bildern (GHDI) as a transatlantic knowledge production and conveyance model for community-engaged public history. It is a multilingual project led and based at the German Historical Institute Washington (GHI) in partnership with DARIAH-DE, the Max Weber Foundation, and the University of Southern California. It was awarded a three-year development grant from the German Research Foundation/Deutsche Forschungsgemeinschaft (DFG) in 2017. We display the project’s theoretical foundations and aims, the resulting technical design, and report on the proof-of-concept phase and first-year of development.
+            
+            GHDI was first conceived in 2002 by a group of academic historians who sought to make a large collection of German historical documents openly available online in German and English translation. GHDI would consist of ten chronological volumes to cover German history from 1500 to 2009, each of which includes an introduction and a selection of historical documents, images, and maps, accompanied by interpretations. The site currently contains 1,784 German documents (along with an equal number of English translations), 2,374 images, and 55 maps (for a total of 16,068 pages), with content being expanded in the revamp. The project has developed a large and diverse international community of users, registering approximately 100,000 unique visitors a month.
+            The reconceptualization and revamp of the GHDI includes the encoding of original and new materials in TEI P5, Dublin Core metadata for all content, a site-wide co-created bibliography, and a scholarly annotation system. The integration of, and project development contributions to, 
+                Scalar—a robust open-source authoring, editing, and publishing platform with support for RDF content—allows users to navigate content in diverse ways and along various critical historiographical paths, challenging “master narrative” approaches to German history. The Scalar adapters developed by the project will link a number of important German archives to English-speaking scholarly communities for the first time, and the GHDI platform will ultimately allow users to use and “mix” this and other content to produce their own and collaborative scholarly outputs.
+            
+            Data resources of the project are being described using Dublin Core metadata vocabulary.  Sources with annotations or other semantic enhancement adhere to TEI (Text Coding Initiative) P5 using the DTA base format.  Linked-open data representations are being be stored in RDF-XML.  Using Scalar’s built-in API, all content will be made available directly via URL-based requests in RDF-XML.  This is also the technical basis for user content "remixing" and user publication facilitation being developed within the GHDI environment. Authority control for personal names and other entities, both in consumption and publication, will be assured through GND and similarly broadly accepted standards.  Resources suitable for language analyses tools conform to Component MetaData Infrastructure (CDMI) as prescribed by CLARIN-DE data centers.   Geographic data is being encoded in GeoJSON.   All data will be published to prioritize permissiveness of use under Creative Commons licensing. 
+        
+    
+
+        
+            
+                Overview
+                This panel intervenes in debates about interpretative methods that are often lumped under “reading,” and often measured by metaphors of scale, from close to distant. Mining data in vast corpora promises to transform literary history, and all scholars in the humanities rely upon online materials and tools. Yet many humanists stand aloof from DH because of its presumed hyperbolic claims, its apparent blurring of the detailed artifact (the domain of humanities), and to some, its collusion, post-critique, with neo-liberal globalization. Four panelists, collaborating for the first time, have encountered provocative concepts in each other’s work that moderate such stark oppositions between the humanist and the computational. The panelists’ previous studies have demonstrated the “payoff” or mutual instruction of DH and other recognized standards of scholarship. At the same time, in meticulous capture of language, style, form, and cultural production, the panelists highlight the limits that some champions of algorithms might want to leap in a single bound. Technological approaches to literary studies require highly curated corpora and modulation, often excision, of noisy results. Each paper addresses the loss inherent in categories and models, and the gain in tracing discarded, fuzzy, or inaccessible data. While our fields span centuries of Anglophone culture, our work advocates diversity, women’s history, and the DH community’s values of open access and collaborative technological innovation.
+                Our papers address disruptions as well as continuities in observational scale as the tools and materials shift. Each panelist speaks from experience with a different dataset and her or his innovative approach to interpretation, touching on both language and technology. The first two speakers propose forms of mid-range reading to describe imaginative and interpretive leaps that scholars make between individual documents/texts and broader social forces; the second two address the reductions and abstractions that are necessary to the research project, themes common to all papers. As an archeologist of technologies, Wythoff rediscovers the concept of the gadget as an instance of human-inanimate interaction mirrored in DH. Booth expands on her response in 
+                    PMLA to Franco Moretti’s 
+                    Distant Reading, highlighting typologies as well as specific textual features in biographical nonfiction that enforce communal narratives. Allison, co-author on Stanford Lit Lab pamphlets associated with distant reading, proposes reductive reading, or explicit acknowledgment of necessary simplification, even of such ambitious problems as the nature of fictionality, which has been differently framed in studies by Piper, Underwood, and Eliot. While concepts of scale pervade claims for methods, Shore offers the approaches of construction grammar and corpus linguistics for particular insights into abstractions and categorizations. Shore, like Allison, calls on us to acknowledge the motivated reductions that are necessary to the research process. Our talks reflect on the history of technology and biographical representation, the forms of fiction and nonfiction, and the preconditions of selection and labeling of data—enduring issues in the humanities that become more telling with the expanding digital capacity to “read” at large and at speed.
+                
+                Grant Wythoff, Tacit computing and method in the humanities
+                Humanistic research has always involved imaginative and interpretive leaps from the person to "the social," from the text to "the historical." Think for instance of the Annales school and its emphasis on the history of collective mentalities, or how Foucault described "discourse" by reverse-engineering historical ways of constituting knowledge. Today however, with the availability of big data, many of these forms of humanistic interpretation have become second nature. The search for broad cultural formations is implicit in the earliest steps we take in a research project, from keyword searches to frequency analyses. To what degree are certain kinds of historical argumentation baked into these mundane, day-to-day research activities, and what other kinds of cultural formations might we be overlooking?
+                In my current book project, 
+                    Gadgetry: A History of Techniques, I reconstruct the history of a discourse on technology. The book focuses on the many kinds of objects that were described as "gadgets" across the twentieth century, from dashboard gauges to atomic bombs, can-openers to smartphones. While “gadget” can be a placeholder for any kind of object, even imaginary ones, I argue that its evolving application to particular tools and techniques reveals important lessons about our relationship to technology.
+                
+                In this book, I explore the user's imagination of how their gadgets work. For example, a single iPhone contains over half the elements of the periodic table, extracted from almost every continent on the planet and compressed into a thin slab that allows the user to dip her toes into a river of collective affect generated by the social network of everyone she's ever met. This is a fantastically science-fictional experience that is now part of our everyday lives. But the emergence of new digital cultures, political movements, and forms of intimacy are all predicated on the unique habits each user adopts in order to understand these complex gadgets.
+                For this book, I text mine archives of novels, magazines, and newspapers in order to explore the distinctly vernacular philosophies––the media theories from below––that emerge from users and their everyday practices. Using databases like the Corpus of Historical American English, Historical American Newspapers, and the Media History Digital Library, I proceed by collecting as many instances of the word "gadget" as possible and plugging them into categories of my own making based on how the term is applied: is the gadget handmade or mass produced, seen as important or a trinket, does the word refer to the entirety of the tool or a component within it, and so on. Because I have hand-coded this "dataset" and designated myself the categories into which I sort each instance of the word, the portrait that emerges of a discourse on technology could be described as entirely of my own making, as opposed to algorithmically-generated. But what really is the distance between these two categories of interpretation? In this talk, I will compare my digital methods to other methods throughout the history of the humanities that have attempted to paint a portrait of collective feeling.
+                Alison Booth, Mid-Range reading: typologies, events, and discourse in a network of women’s biographies
+                Although many investigate fictionality, scholars have attended much less to nonfiction and biography than to imaginative forms such as novels or film. Digital humanities (DH) expand the scale of literary history while building on existing maps of period, genre, and notable authors, with finding aids shaped by previous scholarship. Thus Andrew Piper’s impressive textual analysis, “Fictionality,” neglects life narrative. Collective Biographies of Women (CBW) accesses a corpus of 1270 English-language biographical collections published across centuries, in a feminist historical study of a “hidden collection” of nonfiction. CBW developed before Google Books glimmered on the horizon; we worked with WorldCat and analogue materials to rediscover such publications as 
+                    Noted Negro Women (1893). Reversing the usual DH phases, I published the book before collaborating on an online resource. What could we learn about the trends in gender ideology already constructed by biographers and publishers, publication data, and contents? Biography is a model (i.e. reduction) of a life within networks of typologies based on social difference. Distant reading is not best adapted to ramifications within curated corpora, where there is no mystery of author or genre. We capture the distinctive form and rhetoric of biography (and changing meaning of words such as “noble”) in relation to such scenarios as inter-class contact or recognition of genius. Sentiment analysis or word vectors developed for large corpora of novels or newspapers would miss the mark. The actual dynamics of gender representation, for example, can hardly be captured as a grammatical binary or by rates of male or female agents per 300 words, while nationality is a shifting attribute across geopolitical and individual transformations.
+                
+                This paper extends Booth’s “Mid-range reading: not a manifesto” and builds on the findings from CBW’s method of mid-range reading as well as from the typologies and networks of women in the CBW database. CBW researchers are tagging discourse in biographies, such as first-person plural and plural proper names, and quantifying the distribution of types of events across versions of the same person or occupational types. Both scales of reading and typologies press upon ethics as well as epistemology: how to classify the individual text, or the character/person. Attention must be paid, yet cognition and knowledge depend on generalizations. CBW has focused on sets of books that document the ways women’s lives have been typologically interpreted. Our “sample corpora” range from all the books that include a short life of the saintly Victorian nurse, Sister Dora, and the distinct set of books that feature the famous adventuress, Lola Montez; other networks cluster around Queen Cleopatra, Frances Trollope, African Americans, women in medicine, Latinas, presenters (publishers, biographers), and others among the 8500 persons. A method we call mid-range reading uses the Biographical Elements and Structure Schema (BESS), a stand-aside XML schema (not TEI editing within the text file) that links element types (of stage of life, events, discourse, persona description, topos) to numbered paragraphs. BESS analyses, then, measure rates and distributions of element types across versions of lives sorted typologically by the contents of interrelated books. In 2018 we will obtain TEI files of remaining texts, with non-consumptive use of the copyright materials, through the HathiTrust Research Center. Becoming in this sense an archive as well as a testing ground for narrative theory of biography and network analysis across centuries of representation of women, CBW can demonstrate the comparative rewards of large-scale textual analysis and mid-range reading, and add to the understanding of biographical representation in many forms.
+                Sarah Allison, Harnessing Pegasus: On Setting Reasonable Limits
+                This paper takes up a theoretical question in digital humanities practice: how we understand the borders or boundaries of projects. “Reductive reading” is my term for critical methods that call attention to how they subordinate, or reduce, textual complexity. I argue that the explicit way with which DH research acknowledges this act of simplification creates an ethos of critical frankness. As Stephen Ramsay argues, code must “assert its utter lack of neutrality with candor, so that the demonstrably non-neutral act of interpretation can occur.” “Harnessing Pegasus” focuses on the poignant question of setting limits. How do researchers establish the right distance from the texts under consideration, or reduce the scope of their inquiry? Here, I consider how researchers set limits in three projects that aim to understand what we might take to be the constitutive feature of the novel: fictionality.
+                It is axiomatic that the most irritating questions after a talk--but often also the best--are those that deal with a project’s limits. Researchers announce what they have done, and the members of the audience say, Ah, but why didn’t you do something else? This practice can help establish that one has taken a reasonable approach to a legitimate question in the field or open up future possibilities for research. It can also bring home the importance of narrowing one’s approach in order to answer a specific question, as in We 
+                    didn’t do something else. We did the thing we did. In sharing work publically, researchers are called to account for the boundaries they have set--or, as it is often framed, that they have been forced to set.
+                
+                It is the latter attitude that interests me here, the moment when the scalar ambitions of distant reading meet pragmatic reality and intellectual justification. Mid-range reading leaves space to account for both. In this paper, I will consider three approaches to fictionality in literary history: by Andrew Piper in 
+                    Cultural Analytics,
+                     by Ted Underwood, Michael L. Black, Loretta Auvil, and Boris Capitanu in their work on genre in the HathiTrust Digital Library, and by Simon Eliot in his bibliographic work on trends in publishing, 1800-1914. In considering the way each project treats its limitations, I seek to create connections--bridges--across them. How do their definitions of fictionality intersect with Catherine Gallagher’s theoretical treatment of the topic, and what that that tell us about nonfictionality? In each of these three studies, non-fiction is represented by a discrete collection of texts. How does limiting the generic canon change the way we understand fictionality?
+                
+                Dan Shore, Other than Scale
+                This paper explores the limits of the concept of scale in digital inquiry. Quantitative scholars in particular have naturally chosen scale as what sets their approach apart from other established methods. They speak of the computer as a “macroscope” that permits “macroanalysis.” Scholars counted things before computers, but computers let them count and compute lots of things. Contrasting themselves with close readers, distant readers propose, with the help of machines, to step back from the page to see more and see bigger. Claims of scalar difference are often quite quantitatively precise. Instead of offering a reading of a single novel, distant readers study the titles of 7,000 British novels from 1740-1850, or ask how not to read a million books, or search through the 60,237 full texts in EEBO TCP I and II. For nearly all quantitative analyses of texts, the authors could tell the reader exactly how many words they count in how many documents, in light of sophisticated metrics and models.
+                Talk of scale in the digital humanities has not been simply ill advised. In spite of quantitative precision, we don’t really know what we talk about when we talk about scale. Individual texts are much bigger than are usually acknowledged. Even when bag-of-words approaches are forthright about discarding word order and syntax, they rarely itemize what they are discarding. What has been characterized as an increase in scale can be more accurately described as the sacrifice of one sort of information for another. The point is not to oppose reductionism, but to be fully aware of what is being reduced.
+                Scalar conceptualization of digital tools and methods has tended to crowd out other, non-scalar distinctions. Some, like experimental design, theories of evidence, and falsifiability (an account of what it would mean to be wrong) should be more prominent in the conversation. I’ll focus on concepts - abstraction, categorization, hierarchy - that are central to meaning and linguistic creativity across languages. Here I turn to the insights of construction grammar and corpus linguistics to suggest further possibilities for investigation. The bigram 
+                    thought leader is two words, but it is also a single compound noun, the meaning of which can’t be fully predicted from the meaning of its parts. How big is it? An abstract construction like 
+                    Once upon a time… [] and they lived happily ever after may be only ten words, and yet as big as the fairy tale that fills its blank. How long is it? The relevant distinctions in these examples are not scalar in any simple sense, and the methods for understanding them cannot be captured by distance or proximity. I start with linguistic examples at the level of the utterance, propose a few ways forward for qualitative and quantitative inquiry, and close by suggesting how the non-scalar distinctions at work in construction grammar might be relevant for specifically literary questions such as genre and narrative form.
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    Allison, Sarah. 
+                        Reductive Reading: A Syntax of Victorian Moralizing. Baltimore: Johns Hopkins University Press, forthcoming 2018.
+                    
+                    Allison, Sarah. “Other People’s Data: Humanities Edition,” 
+                        Cultural Analytics, Dec. 8, 2016. 
+                        
+                    
+                    Bode, Katherine. “The Equivalence of ‘Close’ And ‘Distant’ Reading; Or, toward a New Object for Data-Rich Literary History.” 
+                        Modern Language Quarterly 78, no. 1 (March 1, 2017): 77–106,
+                         
+                        .
+                    
+                    Booth, Alison. 
+                        How to Make It as a Woman: Collective Biographical History from Victoria to the Present. Chicago: University of Chicago Press, 2004.
+                    
+                    Booth, Alison. “Mid-Range Reading: Not a Manifesto.” 
+                        PMLA 132: 3 (May 2017): 620-27.
+                    
+                    Burguiere, Andre. 
+                        The Annales School: An Intellectual History. Trans. Jane Marie Todd. Ithaca, NY: Cornell University Press, 2009.
+                    
+                    Eliot, Simon. “Some Trends in Book Publishing, 1800-1914” in John O. Jordan and Robert L. Pattern (eds.), 
+                        Literature in the Marketplace. Cambridge: Cambridge University Press, 2003.
+                    
+                    Eliot, Simon, and Jonathan Rose, eds. 
+                        A Companion to the History of the Book. Malden, MA: Wiley-Blackwell, 2009.
+                    
+                    Gallagher, Catherine. 
+                        Nobody’s Story: The Vanishing Acts of Women Writers in the Marketplace, 1670-1820. Berkeley, U. of California P, 1994. 
+                    
+                    Gallagher, Catherine. “The Rise of Fictionality.” 
+                        The Novel. Ed. Franco Moretti, Vol. 1. Princeton: Princeton UP, 2006. 336-63. 
+                    
+                    Goldberg, Adele E. 
+                        Constructions at Work: The Nature of Generalization in Language. New York: Oxford UP, 2006.
+                    
+                    Goldberg, Adele E. 
+                        Constructions: A Construction Grammar Approach to Argument Structure. Chicago: U of Chicago P, 1995.
+                    
+                    Hancher, Michael. “Re: Search and Close Reading,” in 
+                        Debates in the Digital Humanities 2016. University of Minnesota Press, 2016. 118–38.
+                         
+                        .
+                    
+                    Langacker, Ronald W. 
+                        Cognitive Grammar: A Basic Introduction. Oxford: Oxford UP, 2008.
+                    
+                    Nunberg, Geoffrey, Ivan A. Sag, and Thomas Wasow. “Idioms,” 
+                        Language 70 (1994): 491–538.
+                    
+                    Piper, Andrew. “Fictionality.” 
+                        Journal of Cultural Analytics, December 20, 2016.
+                         
+                        .
+                    
+                    Robertson, Stephen, and Lincoln Mullen. “Digital History &amp; Argument White Paper – Roy Rosenzweig Center for History and New Media.” November 13, 2017. https://rrchnm.org/argument-white-paper/.
+                    Shore, Daniel. 
+                        Cyberformalism: Histories of Linguistic Forms in the Digital Archive. Baltimore: Johns Hopkins UP, forthcoming 2018.
+                    
+                    Shore, Daniel. “Shakespeare’s Constructicon,” 
+                        Shakespeare Quarterly 66.2 (2015): 113-136.
+                    
+                    Smith, Barbara Herrnstein. “What Was Close Reading? A Century of Method in Literary Studies,” 
+                        Minnesota Review 87 (2016): 57–75.
+                    
+                    Underwood, Ted. “Distant Reading and the Blurry Edges of Genre. ” 
+                        The Stone and the Shell. 22 Oct. 2014.
+                    
+                    Underwood, Ted. “Understanding Genre in a Collection of a Million Volumes, Interim Report.” Figshare.
+                         
+                        
+                    
+                    Wythoff, Grant. 
+                        Gadgetry: A History of Techniques, in progress.
+                    
+                    Wythoff, Grant. 
+                        The Perversity of Things: Hugo Gernsback on Media, Tinkering, and Scientifiction. University of Minnesota Press, 2016.
+                    
+                
+            
+        
+    
+
+        
+            Las manifestaciones afrolatinoamericanas y sus conexiones con el mundo digital han comenzado a generar un creciente interés en diversos campos de estudio: las humanidades digitales, los estudios culturales, literarios y antropológicos entre otros. A pesar del interés, el estudio de tal intersección se encuentra en una etapa inicial debido a factores como a) las limitaciones de acceso a herramientas digitales por parte de algunos agentes y comunidades identificadas y auto-identificadas como afrolatinoamericanas/afrolatinas; b) limitaciones en la consecución de derechos de autor de algunas piezas y manifestaciones cuya distribución e intercambio digital se hace más difícil; y c) falta de innovación en la forma de clasificar piezas y manifestaciones que, en muchos casos, no coinciden con la tradición letrada que subyace al proceso de archivo ya sea digital o no. Tales limitaciones han hecho más difícil la consolidación de propuestas analíticas que, desde las humanidades digitales, den cuenta del estado y evolución de las culturas afrolatinoamericanas, así como de sus aportes a nivel de conocimiento en espacios locales, regionales y globales. 
+            Algunas formas de revertir dichas limitaciones ha sido el desarrollo de iniciativas y colecciones digitales por parte las mismas comunidades afrolatinoamericanas en cooperación con entidades académicas, agencias multilaterales, gubernamentales, intergubernamentales y no gubernamentales. Tales iniciativas muestran la diversidad de manifestaciones generadas desde dichas comunidades; manifestaciones que son fundamentales para su identificación, visibilización y, sobre todo, consideración dentro de un modelo de justicia social que, como el contemporáneo, se centra en el reconocimiento de los derechos humanos. Asimismo, dichas adaptaciones tecnológicas se convierten en una forma de lo que Steve E. Jones determina como ‘eversion” (Jones, 2016) o la consolidación de unas realidades híbridas entre lo digital, lo análogo y lo performático. Algunos de los proyectos más importantes en este ámbito son, entre otros, Digital Portobelo, Mueseu Afro Digital Río de Janeiro o Proyecto Afrolatin@, a partir de los cuales se hacen evidentes diversas formas de ser afrolatinoamericano, así como diversas formas de representación y expresión de sujetos cuya identificación intersecta varios espacios discursivos, políticos y de acción. Algunos de los puntos positivos de dichas plataformas y colecciones es que a) son espacios en constante construcción –actuales y constantemente actualizados- y b) permiten ver procesos de acceso, creatividad, justicia simbólico-social que las comunidades están persiguiendo y han perseguido por largo tiempo. Sin embargo, el carácter de construcción constante de dichas plataformas es, al mismo tiempo, un aspecto negativo dado que el flujo de información se convierte en un desafío para unas humanidades digitales cuyo modelo se ha centrado en la digitalización y análisis de información canónica, única, extraordinaria (Manovich, 2016). Las plataformas generadas por parte de esas comunidades afrolatinoamericanas, por el contrario, registran el flujo de la cultura en el presente que no ha sido propiamente abordado por las humanidades ya sean análogas o digitales. En el caso de la intersección entre estudios afrolatinoamericanos y estudios digitales, el proceso de análisis ha estado mucho más rezagado no solo por la falta de bases de datos o de construcción de archivos digitales, sino por la falta de interés y apoyo para construirlos y, a partir de allí, desarrollar metodologías innovadoras de análisis (Gomez, 2011). 
+            De acuerdo con el panorama descrito, esta presentación corta dará cuenta del proceso de investigación e implementación metodológica llevado a cabo a partir de 
+                Manuel Zapata Olivella Collections, una colección digital desarrollada por la biblioteca de la Universidad de Vanderbilt. Manuel Zapata Olivella fue uno de los escritores y activistas afrolatinoamericanos más importantes del siglo XX, cuya obra y pensamiento han influido al movimiento afrolatinoamericano contemporáneo. Sus cartas, manuscritos y documentación personal como escritor, artista y activista habían quedado en un archivo personal manejado por su familia. Sólo hasta el 2008 la Universidad de Vanderbilt adquirió el fondo y desarrolló una colección digital en el cual se hacen visibles varios de sus documentos y proyectos tanto etnológicos como antropológicos. Entre los archivos digitalizados se encuentran los documentos –cartas, panfletos, memorias, comunicaciones personales, fotografías y audios- del 
+                Primer Congreso de Cultura Negra de las Américas, realizado en Colombia en 1978. El proyecto, llevado a cabo con apoyo de la Universidad de Indianápolis, consistió en el análisis digital de dicha documentación y del Congreso como uno de los nodos centrales de la acción política, literaria y cultural afrolatinoamericanas del siglo XX y XXI. El proyecto buscaba a) responder preguntas tales como: ¿Cuáles fueron las redes artísticas y textuales que permitieron la emergencia del Congreso?, ¿Cuáles fueron los discursos socio-culturales latinoamericanos con los cuales el congreso desarrolló un diálogo y logró establecer su propio conjunto de valores y códigos para explicar lo afrolatinoamericano?, ¿Cuáles de los valores políticos y estrategias estéticas creadas y adoptadas por el Congreso devinieron patrones de acción y fueron transmitidas al movimiento afrloatinoamericano de la era digital?. Asimismo, el proyecto buscaba b) desarrollar propuestas metodológicas digitales para comenzar a entender la complejidad e interconexión –en tiempo y espacio- del movimiento afrolatinoamericano. Esta última actividad se desarrolló a través de la implementación de mapas de tópicos y el uso de plataformas digitales para visualizar la información de forma inter-relacional –Vg. Scalar, Wandora, Gephi, etc.-, considerando la diversidad de materiales en el ecosistema informativo de la tradición afrolatinoamericana. 
+            
+            La presentación entonces mostrará los resultados de esa investigación a través del mapeo de textos, de agentes, instituciones y sistemas de valores relacionados para, finalmente, conectarlo con las propuestas ideológicas fundamentales del movimiento afrolatinoamericano surgido de la Conferencia Mundial Contra el Racismo realizada en Durbán en 2001. A través de esta presentación se discutirán no solamente los hallazgos de la investigación en particular sino, sobre todo, las perspectiva de unas humanidades digitales afrolatinoamericanas que, aunque se incluyan en las discusiones regionales (RedHD, Humanidades digitales en Latinoamérica) intentan ir más allá, en busca de la conexión entre activismo e investigación académica con un objetivo claro: la justicia social y la descolonización del conocimiento.
+        
+        
+            
+                
+                    Bibliografía
+                    
+                        Gómez F. P. (2011). La colección Manuel Zapata Olivella. 
+                        Revista de estudios colombianos, 37-38: 117-118.
+                    
+                    
+                        Jones E. S. (2016). The Emergence of the Digital Humanities. 
+                        Debates in the Digital Humanities, University of Minnesota Press. 
+                        http://dhdebates.gc.cuny.edu/debates/text/52
+                    
+                    
+                        Manovich, L. (2016). The Science of Culture? Social Computing, Digital Humanities and Cultural Analytics. 
+                        Journal of Cultural Analytics. Doi: 
+                        
+                            10.22148/16.004
+                        
+                    
+                
+            
+        
+    
+
+        
+            Theatre ‘constitutes itself through disappearance’ (Phelan 1993) and its ephemerality poses methodological problems for researches. Before the twentieth century, most theatre scholarship focused exclusively on texts, whether they were produced before or after a performance. This is true for many theatre traditions around the world (including Javanese theatre, the case study in this paper). A textual model of theatre has serious limitations, as many of the social and improvised aspects of performance are rarely reflected in the texts. Audiovisual documents constitute better (if still imperfect) records, but they have yet to be adopted as authoritative critical editions in theatre studies. Several online platforms offer full length recordings of key theatre performances (for example digitaltheatreplus.com), but they don’t usually include the level of detailed annotation found in literary editions, where individual words or phrases are annotated to report their genesis, elucidate interpretations and trace variations across versions. Audiovisual theatre resources are often accompanied by interviews with performers or introductory notes, but there are no standard formats to annotate specific moments in a performance (the intonation of a word, the movement of a performer, the laughter of the audience) and explain their significance within larger historical and cultural contexts. A scholarly infrastructure for the critical annotation of audiovisual documents has yet to emerge, even though relevant resources and technologies exist. We suggest that a digital philology of performance can be used to imagine new formats for scholarly analysis and communication, at the intersection of theatre studies and digital humanities.
+            
+                Why philology?
+                Conventionally, philology has been associated with the study of literary material and the production of textual editions. However, the principles of philology can be used to interpret all aspects of a theatre performance: the audiovisual, social, and kinesthetic aspects of a performance can all benefit from a philological perspective. Theatre studies tends to be presentist, placing emphasis on novelty rather than tradition (Arps 2016). A philological perspective offers a principled method to study the historical layering of a performance (contemporary performance included), countering this narrow focus on the present. There are many ways in which a text-based philological edition of a performance can document the emergent, interactive and multimedia aspects of a performance, by using notational conventions to represent vocal parameters (an approach pioneered by Tedlock in 1978), tinkering with the spatial arrangement of text on a page, and using extensive notes to describe emergent and interactive aspects of a performance. However, the potential of philological editions can be more fully realized in digital editions that can combine audiovisual sources with careful philological attention. 
+                There are calls for born-digital scholarship in performance studies (Mee 2018) in response to impressive growth of digital archives that offer full-length recordings of performances around the world (Caplan 2016). However, the authoring platforms suggested by Mee (such as blogs or Scalar) are not sufficiently malleable to accomplish the level of critical attention required by a scholarly, multimedia edition of performance. For example, it is important for scholars to link specific sections of audiovisual media to textual transcription and translations, in ways that transcend subtitles. These different media should all be amenable to meticulous cross-reference and annotation in ways that are sustainable, findable and reusable. There is no straightforward way to achieve these objectives with most available tools. How does a digital edition of a theatre performance look? What should it seek to achieve? Textual editions are standard critical objects that have benefited from a long history of continuous experimentation in both print and born-digital formats. There is an extensive corpus of influential digital editions and an extensive literature that explores how digital editions modify and continue traditions of textual editing (for example Dsicoll et al. 2016). But this level of experimentation and theoretical discussion has yet to be extended to multimedia editions in theatre studies. 
+                To sketch a prototype for such scholarly, multimedia editions, the present authors embarked on a collaborative journey of creativity and discussion. Both authors have an interest in the Javanese tradition of wayang kulit (shadow puppet theatre). A has worked as a scholar of Javanese language and culture for more than three decades; B is an early-career digital humanities scholar and web developer. In 2016, A published a philological, annotated translation of the work of an influential wayang kulit artist, based on the recording of a performance. The first version of this translation was published in book format. A and B are currently collaborating on an interactive, multimedia version of this translation. The development of a digital portal for this purpose is not just a matter of ‘adding’ audiovisual materials but a dialogical experimentation with the format and possibilities of a digital philology of performance.
+            
+            
+                Conceptualizing multimedia editions
+                Spatz (2015) suggests that video can document several aspects of performance, such as training (2015). Although he refers to these videos as ‘editions’, it is unclear how they constitute scholarly interventions. As Sahle (2016) notes, an edition without additional material that makes the document understandable or accessible is just a facsimile or an item in an archive. A critical attitude is required to determine what additional materials are required, and how they should be included. Their inclusion should follow rules derived from the relevant scholarly context, and these rules should be transparently and rigorously applied. An example from A’s print edition is that the symbol • indicates that the dhalang (the puppet-master in wayang kulit) knocks a mallet against a wooden box. The specific sequence of such knocks is of great significance to a performance: it might constitute a cue to the gamelan musicians or indicate that a different personage is speaking, while also contributing to the aural aesthetic of the performance. The transcription of these sounds is surrounded by explanations, and linked to detailed notes (indicated by the symbol ⓐ). For example:
+                [T]he dhalang raps the puppet chest to signal an accelerando and sforzando in the gamelan. ⓐ At the appropriate point in the structure of the piece he raps the pattern •• • as a cue to the gamelan to play slowly and pianissimo. 
+                In the print version, the symbols substitute for the experience of listening to the actual sounds of these rhythmical pattern. In the multimedia version, the passage above is time-linked to the recording. The user can play the recording, and the appropriate segment of the transcript will be highlighted in a different color (Fig. 1). The user can also click on any portion of the transcript to navigate trough the audiovisual recording. This description is no longer a stand-in for an absent sound, but an interpretive scholarly layer. People who are not familiar with the tradition might not be able to identify the •• • pattern just by listening to the recording. Thus, the co-presence of audio and annotation, linked through time-based playback directs the attention of the users, making the material more accessible, understandable and usable for future research. 
+                This example shows that even the simplest inclusion of audiovisual material is never just an appendage. The audiovisual material changes the function and potential of scholarly annotation. We are at the early stages of discovering the full implications of linked transcripts, annotations and audiovisual documents. Besides producing a specific web portal for this wayang kulit performance, we are documenting our process and producing an open-source software package that can be adapted by other scholars to tackle the problems a performance philology poses for other theatrical traditions.
+                We aim to develop tools that are usable by theatre scholars (even if they are not interested in web development) in ways that are citable, reusable and sustainable. The transcripts, translations and annotations of our edition are all TEI-complaint and we are working with both an academic publisher and a digital archive to preserve our edition and to manage its metadata records. We are also committed to making our materials available as data: this will enable the perusal of the materials online through customizable portals, as well as their eventual integration within computational, data-driven research projects. We believe that more collaborative work on this area will open new avenues for the digital transformation of theatre scholarship. 
+                
+                    
+                        
+                    
+                
+                Figure 1. As the recording plays, the appropriate section of the transcript is highlighted.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Arps, B. (2016). 
+                        Tall Tree, Nest of the Wind: The Javanese Shadow-Play Dewa Ruci Performed by Ki Anom Soeroto: A Study in Performance Philology. ( Book, Whole). Singapore: NUS Press.
+                    
+                    
+                        Caplan, D. (2017). Reassessing Obscurity: The Case for Big Data in Theatre History. 
+                        Theatre Journal, 
+                        68(4): 555–73 doi:
+                        10.1353/tj.2016.0106.
+                    
+                    
+                        Mee, E. (2018). Born-Digital Scholarship. 
+                        TDR/The Drama Review, 
+                        62(3): 8–9.
+                    
+                    
+                        Phelan, P. (1993). 
+                        Unmarked: The Politics of Performance. London; New York: Routledge.
+                    
+                    
+                        Sahle, P. (2016). What is a Scholarly Digital Edition?. 
+                        Digital Scholarly Editing, vol. 4. 1st ed. (Theories and Practices). Open Book Publishers, pp. 19–40 
+                         (accessed 23 February 2018).
+                    
+                    
+                        Spatz, B. (2015). 
+                        What a Body Can Do: Technique as Knowledge, Practice as Research. London and New York: Routledge 
+                         (accessed 22 June 2017).
+                    
+                    
+                        Tedlock , Dennis (1978). 
+                        Finding the Center. Narrative Poetry of the Zuni Indians. Lincoln: University of Nebraska Press.
+                    
+                
+            
+        
+    
+
+        
+            There has been greater inclusion of teaching in DH debates in recent years, yet in practice, UK digital humanities teaching tends to be found in explicitly DH postgraduate courses or as specific skills training for self-selecting staff or (often postgrad) students; it also appears less in English literature teaching than in history, classics, media studies or linguistics. This paper offers a case study where TEI XML encoding was introduced to first-year undergraduates in an established course on Shakespeare, to facilitate discussion on how digital humanists can enable integration of digital skills into ‘traditional’ English literature teaching by capitalizing on affinities between DH, book history, and textual scholarship. Integrating digital approaches into undergraduate teaching of English literature enables us to introduce students early on to reflecting critically on the digital, and lets us embrace the complexities of encoding as editing, rather than allowing undergraduates to only interact with the digital through a GUI.
+            Early modern studies provides an ideal context in which to teach text encoding and digital literacy skills. In part this is due to the availability of encoded early modern texts for analysis and reuse, for example in the massive release into the public domain of lightly encoded EEBO-TCP texts in January 2015, and in part to fewer issues around copyright than with more modern texts (see Brown and Zimmer, 2017). More specifically, there is a synergy between the existing concerns of the Shakespeare course under discussion and those of digital publication, where the latter finds a natural fit in conversations on book history, text technologies, and editorial agency. Olin Bjork, in an article comparing American composition and computing classes to the “new media studies” side of digital humanities, suggests that “A weakness of digital humanities is that it undertheorizes the transformation of material objects into digital objects” (Bjork, 2012: 103). The materiality and the instability of the text are complexities that go to the heart of early modern literature studies: these are issues that our students grapple with when they consider the nature of the early modern play-text, yet rarely do we recognise that the digital text must be part of this conversation. Accordingly, in a course that unsettles the Shakespearean play as single authoritative text, there is a real need to push conversations on early print and textual scholarship into the realm of the digital, to unsettle and critique the digital texts the students encounter more often than they open their assigned course book.
+            The course under discussion is a first year module with c.200 students enrolled, and the digital element ran as a successful pilot in 2018 and was expanded in 2019. The digital element is introduced in a guest lecture by a digital humanist; issues raised are debated in seminar groups, and existing digital texts and projects are introduced to the students, including A Digital Anthology of Early Modern English Drama (EMED), Internet Shakespeare Editions, the Queen’s Men Editions, Digital Renaissance Editions, and Folger Digital Texts, where students use the Folger API to explore the possibilities opened up by text encoding. The students then have the opportunity to create their own digital edition of the ending of King Lear, opting in to an additional workshop on TEI XML. They can elect to do their final assessment as a TEI-encoded play excerpt coupled with traditional essay, which allows them to reflect on the differences between early print, modern printed editions, and digital media. Writing about the medium and the choices it encourages or enforces allows them to critically reflect on digital texts at a crucially early point in their university careers. In the encoding part of the assignment, by taking ownership of a digital play text, they come to see both the scholarly edition and the digital medium as less an unquestionably authoritative black box and more something that they themselves can have agency over and interrogate. By pulling back the curtain on the scholarly text and the digital medium, they are more able to critique both text and textual manifestation. 
+            DH in the undergraduate classroom often tends towards GUI publication, with wikis, Wordpress sites, or platforms like the Alliance for Networking Visual Culture’s Scalar (Bjork, 2012: 99–100). While that is a valuable part of the picture, this paper explores what happens when students are introduced to the complexities of XML encoding as an editing practice, and how exposure to the component parts of a digital publication opens up that black box. This reveals to the students the variety of people involved in publication, in modern as well as early modern times, and demonstrates that encoders are editors and developers are intellectual partners who have concrete influence over the resulting output. Significantly, this message is also imparted to fellow academic staff teaching on the course. This approach thus invites fellow academic staff into the digital humanities, developing by proxy their understanding of digital resource creation and consequently their ability to critique this growing area of scholarly production.
+            The aim of this paper is to share experiences and create discussion around the natural affinity between early modern studies and digital publication and digital critical literacy, especially in an undergraduate context. A parallel can be seen between the instinct to view the digital object as something that appears from thin air and the unquestioning acceptance of a particular critical edition as the immutable authoritative text. It is too easy to ignore the digital provenance of a text online or the multiple agents involved in producing any (especially canonical) text. To do this is to remove those who construct the text, and obscure the encoding as well as editorial choices made at every stage of its creation. To direct attention towards these is to put them back. This is a conversation that we need to begin early on in students’ academic career, to situate digital critical literacy within an existing tradition of literary criticism: we need to teach students to close-read the material digital object at the same time as the literary text and its early print origins.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Bjork, O. (2012). Digital Humanities and the First-Year Writing Course. In Hirsch, B. ed., (2012) 
+                        Digital Humanities Pedagogy: Practices, Principles and Politics. Open Book Publishers, pp. 97–119. 
+                    
+                    
+                        Brown, M., Poston, M. and Williamson, E. A Digital Anthology of Early Modern English Drama https://emed.folger.edu/ (accessed 20 November 2018).
+                    
+                    
+                        Greatley-Hirsch, B. (2015) Digital Renaissance Editions 
+                        http://digitalrenaissance.uvic.ca (accessed 20 November 2017).
+                    
+                    Hackfest and Ideas Hack, Early English Books Online Text Creation Partnership (EEBO-TCP) at the Bodleian Libraries http://www.bodleian.ox.ac.uk/eebotcp/early-english-books-hackfest/ (accessed 20 November 2018).
+                    
+                        Hirsch, B. ed. (2012) 
+                        Digital Humanities Pedagogy: Practices, Principles and Politics. Open Book Publishers. 
+                    
+                    
+                        Hirsch, B., and Jenstad, J. (2016). Beyond the Text: Digital Editions and Performance. 
+                        Shakespeare Bulletin 34, 107–27. 
+                    
+                    Internet Shakespeare Editions, (2016). 
+                        http://internetshakespeare.uvic.ca/ (accessed 20 November 2017).
+                    
+                    
+                        Mowat, B., Werstine, P., Poston, M. and Niles, R., eds., (n.d.) Shakespeare's Plays from Folger Digital Texts. 
+                        www.folgerdigitaltexts.org (accessed 20 November 2018). 
+                    
+                    The Alliance for Networking Visual Culture (n.d.) Scalar 
+                        https://scalar.usc.edu/scalar/ (accessed 20 November 2017).
+                    
+                    Queen's Men Editions, (2011). 
+                        http://qme.internetshakespeare.uvic.ca/ (accessed 20 November 2017). 
+                    
+                    
+                        Zimmer, E. and Brown, M. (2017) History of Early English Books Online. Folgerpedia. 
+                        https://folgerpedia.folger.edu/History_of_Early_English_Books_Online (accessed 20 November 2018).
+                    
+                
+            
+        
+    
+
+        
+            This workshop will go over how to complete an initial Linux server setup for use with the web. We will go over security, firewalls, HTTPS, and high availability. Administering one’s own server rather than relying on managed web hosting empowers researchers, teachers, and students by providing them with complete control over their web assets. The resulting setup can be used for webapps, static sites like Jekyll and Hugo, or more robust sites like WordPress, Omeka, Scalar, and Drupal. These will be ready for use with domain names. In addition to providing an entry point to the web, servers can also enable teams of researchers and students to collaborate on programming projects or access shared data. 
+        
+    
+
+
+
+        
+            The introduction of digital text analysis tools and methodologies in (non-digital) humanities undergraduate courses has been sparsely documented in the literature. Furthermore, most of the times we encounter it, it is done in the context of semester-long or mid-term projects (Boyle and Hall 2016; Ficke 2014), where the stakes for the students are very high. Other times, they include a session on text analysis but no practical application of the tools and methodologies discussed in the course, other than a follow along demonstration.
+            This short paper introduces a middle point between these two extremes through the introduction of low stakes activities and assignments to help student discover and use digital text analysis tools and methodologies.
+            Besides giving students the opportunity to interact with the material in a safe and relaxed manner, low stakes activities help with student retention, confidence, and relationship building (Hamilton 2020; Meer and Chapman 2014). Low stakes activities are also a useful tool to assess comprehension and instruction when the person delivering the lesson is not the regular or official instructor in the course, such as the case of a librarian or a guest speaker. Furthermore, these types of activities are particularly useful for digital humanities instruction because they contribute to scaffolding, a method that has been identified as ideal in this type of instruction (Griffin and Taylor 2017; Isuster 2020; Sample and Schrum 2013; Tracy and Hoiem, 2018).
+            In the context of a Hispanic Studies course, a librarian offered a workshop series on digital text analysis and the web-based reading and analysis environment Voyant Tools. Interspersed with instruction there were a series of low stakes assessments that helped students understand and apply the content of the workshops. Working with the class readings, the librarian created activities that did not rely on having a single answer but encouraged students to discuss and interrogate both the methods and the information used. For example, when preparing a text for text analysis, students debated how different research questions necessitate different text preparation. The activities were completed in groups and were not graded. Results were discussed within the class.
+            The short paper presentation will explore the process of creating and implementing low stakes activities for digital text analysis and other digital humanities instruction. It will discuss the benefits of these types of activities as they pertain to digital humanities instruction and engagement and will share best practices and tips to help attendees create these kinds of activities in their own classrooms, including assignment design and sourcing materials.
+        
+        
+            
+                
+                    Bibliography
+                    Boyle, M. and Hall, C. (2016) ‘Teaching “Don Quixote” in the Digital Age: Page and Screen, Visual and Tactile’, 
+                        Hispania, 99(4), pp. 600–614.
+                    
+                    Ficke, S.H. (2014) ‘From Text to Tags: The Digital Humanities in an Introductory Literature Course’, 
+                        CEA Critic, 76(2), pp. 200–210. 
+                        10.1353/cea.2014.0012.
+                    
+                    Griffin, M. and Taylor, T.I. (2017) ‘Shifting expectations: Revisiting core concepts of academic librarianship in undergraduate classes with a digital humanities focus’, 
+                        College & Undergraduate Libraries, 24(2–4), pp. 452–466. 
+                        10.1080/10691316.2017.1325346.
+                    
+                    Hamilton, M. (2020) ‘Implementation of a low-stakes daily assessment in a large introductory LAC course’, 
+                        Teaching and Assessment Symposium [Preprint]. Available at: 
+                        https://digscholarship.unco.edu/posters_2020/4.
+                    
+                    Isuster, M.Y. (2020) ‘From students to authors: Fostering student content creation with Scalar’, 
+                        College & Undergraduate Libraries, 27(2-4), pp. 133–148. 
+                        10.1080/10691316.2020.1830908.
+                    
+                    Meer, N.M. and Chapman, A. (2014) ‘Assessment for confidence: Exploring the impact that low-stakes assessment design has on student retention’, 
+                        The International Journal of Management Education, 12(2), pp. 186–192. 
+                        10.1016/j.ijme.2014.01.003.
+                    
+                    Sample, M. and Schrum, K. (2013) ‘What’s Wrong with Writing Essays: A Conversation’, in Cohen, D.J. and Scheinfedlt, J.T. (eds) 
+                        Hacking the academy : new approaches to scholarship and teaching from digital humanities. Ann Arbor, MI: University of Michigan Press, pp. 87–96.
+                    
+                    Tracy, D.G. and Hoiem, E.M. (2018) ‘Scaffolding and Play Approaches to Digital Humanities Pedagogy: Assessment and Iteration in Topically-Driven Courses’, 
+                        Digital Humanities Quarterly, 11(4). Available at: 
+                        http://digitalhumanities.org:8081/dhq/vol/11/4/000358/000358.html.
+                    
+                
+            
+        
+    
+

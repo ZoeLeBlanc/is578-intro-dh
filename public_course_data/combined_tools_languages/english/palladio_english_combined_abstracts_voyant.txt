@@ -1,0 +1,1429 @@
+
+
+
+    
+        
+            
+                Building The Early Modern Digital University: Using Social Network Analysis and Digital Visualization Tools To Bring The Early Modern Network Of Networks (EMNON) To Life
+                
+                    
+                        Wilson
+                        Emma Annette
+                    
+                    University of Alabama, United States of America
+                    eawilson8@ua.edu
+                
+            
+            
+                
+                    2014-12-19T13:50:00Z
+                
+            
+            
+                Paul Arthur, University of Western Sidney
+                
+                    Locked Bag 1797
+                    Penrith NSW 2751
+                    Australia
+                    Paul Arthur
+                
+            
+            
+                Converted from a Word document 
+            
+        
+        
+            
+                
+                    DHConvalidator
+                
+            
+        
+        
+            
+                
+                    Paper
+                
+                
+                    Short Paper
+                
+                
+                    network analysis
+                    visualization
+                
+                
+                    historical studies
+                    literary studies
+                    philosophy
+                    renaissance studies
+                    visualisation
+                    maps and mapping
+                    networks
+                    relationships
+                    graphs
+                    English
+                
+            
+        
+    
+    
+        
+            This paper will present the prototype of EMNON, the Early Modern Network Of Networks, an open-access research resource using social network analysis in tandem with digital visualization techniques to enable modern scholars to access, explore, and participate in the reconstruction of the social network of scholars working in Europe and America between 1500 and 1750 whose intellectual discoveries fuelled literary and historical developments throughout this period. I will discuss how EMNON expands on the work of Findlen et al. (2008–), Elson, Dames, and McKeown (2010), and Piper (2014) by pioneering the combination of NodeXL and VisualEyes to create digital visualizations of different facets of the Early Modern Network Of Networks. In using digital techniques to re-discover early modern social networks, EMNON aims to enable our modern global knowledge network to re-engage with our early modern counterparts in an interactive digital environment, so that we reach new understandings of how social relationships drove intellectual change in this period on a global scale. 
+            Critical Background for the Project
+            Findlen et al. (2008–) are using network analysis to reconstruct correspondence networks, whilst Elson, Dames, and McKeown (2010) used these techniques to investigate social networks of fictional characters. Turkel’s (2011) use of network analysis examining the NiCHE community is a representative example visualizing a modern knowledge network, whilst Klein’s (2012) engagement with Protovis to explore familial interactions documented in 
+                The Papers of Thomas Jefferson provides insight into the utility of network analysis in animating historical social dynamics. One of the most exciting recent applications of network analysis in literary studies has been Piper’s (2014) research creating network graphs visualizing a variety of connections between the literary works of J. W. Goethe. In treating the texts themselves and their lexis as network nodes, Piper’s work is closely aligned to the approach used by EMNON in which not only people but also specific intellectual terms act as nodes within network diagrams. 
+            
+            Work conducted by the Centre for Early Modern Mapping, News, and Networks and the Centre for Early Modern Exchanges provides crucial early-modern-specific critical contexts. Ahnert’s 6 Degrees of Francis Bacon is a reference point, though EMNON differs from this in reconstructing a very specific early modern network of logicians and their readers. Aranda’s prosopographical study of scientific networks in Spain is also a useful comparison, as, like EMNON, he uses archival research to trace early modern intellectual relationships linking people with one another via the ideas that they promulgated. Likewise, Suzanne Sutherland’s research (2000–) exploring and visualizing the correspondence network of Athanasius Kircher via Palladio offers crucial blueprints for effective data collection and analysis from early modern manuscript materials in particular. These projects are allies with my work in transforming textual data into network visualizations, and by the time of DH 2015 it is my hope to have live dynamic network mapping capabilities on the EMNON website to provide a new approach for this kind of work. I concur that James Secord’s (2004) concept of ‘knowledge in transit’ is key to my project, and I will engage with his.
+            EMNON’s Approach: Aims and Method
+            Logic was the fundamental ‘
+                ars artium, scientia scientiarum’ (art of arts, science of sciences) in the early modern period, providing the tools for creating all forms of written expression and textual analysis, and governing the selection of subject matter and the structuring of discourse. A plethora of logic textbooks were produced across Europe and America from 1500 to 1750, and these texts were used ubiquitously in schools and universities in this period to teach students to read, analyze texts, and write new works. Howell (1956), Kneale and Kneale (1962), and recently Mack (2011) have employed traditional approaches to establish a bibliographic printing history of this field. EMNON expands on this work to contend that intellectual developments in this fundamental ‘art of arts’ were propelled by an extensive global knowledge network of scholars working throughout Europe and America. These scholars operated in diverse confessional, geographic, chronological, and linguistic contexts, and yet it is through their intellectual exchanges and friendships that the early modern ‘art of arts’ evolved. 
+            
+            Whilst much work is being done using tools specifically designed for historical network analysis, there is a notable lacuna of engagement with software designed to tackle the social elements of social network analysis. EMNON is innovative in highlighting the importance of the sociability of early modern knowledge networks by using software explicitly created for the analysis of social networks via social media, NodeXL. This open-source graphing software enables complex multi-faceted analysis of relationships in a large dataset. NodeXL’s flexible, extendible format allows EMNON to visualize relationships between people and ideas in the early modern network in numerous different ways. In conjunction with the use of NodeXL to reconstruct social relationships within the early modern network of networks, EMNON also engages with the open-source tool VisualEyes developed at the University of Virginia, and used experimentally by Bill Ferster et al. to visualize Jefferson’s travels to England. EMNON is among the first projects to adopt VisualEyes as a tool for the visualization and animation of historical social networks, and in this paper I propose to discuss the benefits of doing so, furnishing examples from the prototype EMNON website, which will be live at DH2015. 
+            
+                Data Collection
+            
+            Working in rare book libraries for five years, I transcribed 1.5 million words from logic textbooks and literary works from 1550 to 1700.
+                1
+            
+            Sources include publications by writers and thinkers involved, their manuscript discussions of early modern logic with one another, correspondence, marginalia, pedagogical exercises, university class lists, and records of book loans from private libraries, which combine to illuminate distinctive edges connecting people and ideas in the network.
+            EMNON at Work: Examples
+            In this paper I wish to show several examples of the utility of using NodeXL and VisualEyes in creating dynamic visualizations that capture the intricate layers of connectivity in a social network. In this proposal I wish to furnish some brief examples to illustrate the early results of the efficacy of these dual approaches, creating graph-based visualizations of the Early Modern Network Of Networks, and animated visualizations of this data bringing digitized primary source materials about this subject to life. 
+             The following example documents the birth, genealogy, and migration of the logical term ‘procatarctic’. This term refers to an ‘external’ logical cause, and was coined and adopted by a very specific but diffuse network of scholars whose links had not been appreciated prior to their documentation and discovery within EMNON’s NodeXL graphs. Bartholomaeus Keckermann first uses the term ‘procatarctic’ in 1600. He identifies Galen as the intellectual progenitor of this word, and this engenders two of the first critical connections in the ‘procatarctic’ network: almost half a century earlier, also writing on ‘external cause’, Petrus Ramus references the same part of Galen in his 1543 
+                Dialecticae Libri Duo, although without adopting this terminology. This small triadic relationship between two of the titans of early modern logic had been 
+            
+            unappreciated until discovered via NodeXL’s graph visualizations as follows:
+            
+                Figure 1. NodeXL visualizes a triadic relationship in EMNON.
+            
+            Yet the network of intrigue does not end with these three nodes. The term was promulgated through a subset of scholars working in Europe in the 17th century, from English Puritans Zachary Coke and John Milton to Dutch scholars Burgersdijck and Heereboord, who passed the torch to English Presbyterian dissenting academies via Samuel Jones and Charles Morton. Morton in turn used this term and its corresponding logical precepts to teach pupils including Daniel Defoe at the dissenting academy at Newington Green in the 1670s and 1680s, before immigrating to the Massachusetts Bay Colony where he introduced it to students at Harvard and later Yale. NodeXL enables users of EMNON to visualize this network in many different ways, including chronologically (Figure 2) and as a web of influence (Figure 3).
+            
+            Figure 2: A chronological graph of usage. Figure 3: A graph showing the web of influence and connections between users of this term.
+            Alongside these graph representations, EMNON is pioneering the application of the VisualEyes software to bring this early modern social network to life. 
+            VisualEyes enables me to animate the spread of ideas through the early modern network, displaying its results in video format with multiple different available views. For example, Figure 4 is a still from EMNON’s moving map, which has traced the geographic spread of the same term ‘procatarctic’ as it moved through Europe and eventually to America:
+            
+                
+            
+            Figure 4. EMNON uses VisualEyes to create a moving map tracing the geographic spread of the term ‘procatarctic’.
+            In this paper I will also showcase the ways in which EMNON uses the interactive capabilities of VisualEyes to allow users an enriched engagement with this early modern social network. For instance, Figure 5 illustrates what happens if a user clicks on one of the ‘clickable’ waypoints on EMNON’s moving map tracking ‘procatarctic’:
+            
+                
+            
+            Figure 5. Interactive map whose ‘clickable’ labels display pictures and text about that particular user of the term ‘procatarctic’.
+            VisualEyes enables users to discover multiple pages of additional information about any of the waypoints on EMNON’s moving map, including digitized primary materials and research resources. VisualEyes also has its own graphing capabilities that EMNON can draw upon to enable users to visualize specific subsets of the extensive early modern social network that it documents (Figure 6):
+            
+                
+            
+            Figure 6. Concept map showing the nexus of users of the term ‘procatarctic’.
+            In pioneering the use of NodeXL and VisualEyes in the context of historical network analysis, EMNON aims to bring the early modern global knowledge network to life so that, in turn, a network of modern scholars can make new discoveries about the accomplishments, trials, and tribulations of the Early Modern Network Of Networks on a pan-European and transatlantic scale.
+            Note
+            1. Thanks to the following institutions for fellowships that enabled this research: the Rare Book and Manuscript Library at the University of Illinois at Urbana-Champaign for the John ‘Bud’ Velde Fellowship, the International Society for the History of Rhetoric for their fellowship award, and the University of St. Andrews for their Russell Trust Award.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Ahnert, R. (2012–). Six Degrees of Francis Bacon. http://sixdegreesoffrancisbacon.com/page/2. 
+                    
+                    
+                        Elson, D. K., Dames, N. and McKeown, K. R. (2010). Extracting Social Networks from Literary Fiction. In 
+                        Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (ACL 2010), Uppsala, Sweden.
+                    
+                    
+                        Findlen, P., et al. (2008–). Mapping the Republic of Letters. https://republicofletters.stanford.edu.
+                    
+                    
+                        Howell, W. S. (1956). 
+                        Logic and Rhetoric in England, 1500–1700. Princeton University Press, Princeton, NJ.
+                    
+                    
+                        Klein, L. F. (2012). Social Network Analysis and Visualization in ‘The Papers of Thomas Jefferson’. 
+                        DH2012, http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/social-network-analysis-and-visualization-in-the-papers-of-thomas-jefferson.1.html.
+                    
+                    
+                        Kneale, W. C. and Kneale, M. (1962). 
+                        The Development of Logic. Oxford University Press, Oxford.
+                    
+                    
+                        Mack, P. (2011). 
+                        A History of Renaissance Rhetoric, 1380–1620. Oxford University Press, Oxford.
+                    
+                    
+                        NodeXL. (n.d.). http://nodexl.codeplex.com/. 
+                    
+                    
+                        Piper, A. (2014). 
+                        Blue Periods: On Aging and Writing. http://txtlab.org/?p=278. 
+                    
+                    
+                        Secord, J. (2004). Knowledge in Transit. 
+                        Isis,
+                        95(4) (December): 654–72.
+                    
+                    
+                        Sutherland Duchacek, S. and Gorman, M. J. (2000–). Athanasius Kircher at Stanford. http://web.stanford.edu/group/kircher/cgi-bin/site/. 
+                    
+                    
+                        Turkel, W. J. (2011). Social Network Analysis and Visualization. http://williamjturkel.net/2011/08/02/social-network-analysis-and-visualization/. 
+                    
+                    
+                        VisualEyes. (n.d.). http://viseyes.org/. 
+                    
+                
+            
+        
+    
+
+
+
+    
+        
+            
+                Data Revisualization as Critical Humanities Practice: Reinterpreting 19th Century Data with Modern Tools
+                
+                    
+                        Schmidt
+                        Benjamin
+                    
+                    Northeastern University, United States of America
+                    bmschmidt@gmail.com
+                
+            
+            
+                
+                    2014-12-19T13:50:00Z
+                
+            
+            
+                Paul Arthur, University of Western Sidney
+                
+                    Locked Bag 1797
+                    Penrith NSW 2751
+                    Australia
+                    Paul Arthur
+                
+            
+            
+                Converted from a Word document 
+            
+        
+        
+            
+                
+                    DHConvalidator
+                
+            
+        
+        
+            
+                
+                    Paper
+                
+                
+                    Long Paper
+                
+                
+                    Data Visualization
+                    United States History
+                    Humanities Data Analysis
+                
+                
+                    historical studies
+                    visualisation
+                    maps and mapping
+                    English
+                
+            
+        
+    
+    
+        
+            Data visualization is a rhetorical form of increasing importance, both inside the digital humanities and in arenas of public discourse from journalism to advertising. This paper will argue that the act of revisualizing and representing information whose historical importance was consolidated through visualization offers a useful opportunity for humanists. It lets them fruitfully contribute to and intervene in the professional practice of data visualization, while building new methods of visualization that are specifically grounded in historical reflection on the self-presentation and failures of visualization in a wider historical context. It will do so by constructing 
+                revisualizations of influential historical data from the US Bureau of the Census. This data was first visualized in atlases published between 1870 and 1920 that remain some of the most widely influential works in the history and present practice of data visualization and thematic mapping. Revisualization reveals the elisions, illusions, and labor at the heart of these canonical works.
+            
+            In the world of data analysis and visualization itself, a recent process of canon formation has made historical visualization a fundamental part of the field’s self-conception and acts as an inspiration (Tufte, 1983).
+                
+            
+            Inside the digital humanities, the grounding of data visualization as a historically situated practice is somewhat muted. Martin Jessop (2008) and John Theibault (2012) have called for better situating practices of data visualization as historical practices themselves.
+                 On the one hand, there is deep interest in data visualization as a deliverable for digital humanities projects in which humanists implement out-of-the-box practices of visualization
+                 (‘Palladio Project’, 2014) and take the representation and augmentation of historical visualizations for digital modes of presentation as an end goal (Fletcher, 2014).
+                
+            
+            On the other hand, scholars such as Lauren Klein have called for situating these advances in the history of data visualization; still others, such as Johanna Drucker (2011), call for an authentically humanistic form of data visualization that will register uncertainty among the power relations involved in categorical enforcement.
+                
+            
+            The practice of data revisualization bridges the divide between enthusiastic application of other tools and critical reflection on the elisions inherent in visualization. This talk will investigate a self-consciously critical practice of data visualization through the re-analysis and re-visualization of two deeply influential cartographic data visualizations produced by the US Bureau of the Census between 1870 and 1920. One shows shifting population densities in recent decades of US history. It was widely discussed across American society, including providing the impetus for the single most influential article in the historiography of the United States, Frederick Jackson Turner’s frontier thesis
+                 (Turner, 1894). The other shows the ‘center of population’ for the population as a whole and for the white and Negro subsets of it. These maps, and the census atlases they come from, are well known both among practitioners of data visualization and scholars of the 19th-century American state (Dandison, 2012; Kinnahan, 2008; Hannah, 2000).
+                
+            
+            This paper will investigate and deconstruct these maps in two ways:
+            1. Through the use of archival sources from the National Archives, the paper will better contextualize the maps as products of state construction. The center-of-population maps, for example, are described internally by the Census Bureau in terms that highlight the extreme difficulty of calculating the mean rather than the median of population. Employment records and extraordinary quantities of saved paperwork at the Census Bureau bear this out. These files can help explain the rhetorical origins of data visualization in practices of the state that emphasize the extraordinary labor invested in created data visualization as a way of constituting authority. Archival records also help to clarify the way that these records were used in the early 20th century by other members of the national polity, from advertisers interested in demonstrating the centrality of their state to newspaper editors fearfully tracking the Negro population’s move north after the Great War.
+            2. Through revisualization of the historical data using the D3 framework for JavaScript, the paper will investigate the elisions in the original data as well as the ways that different choices can open up different perspectives on the data. For example, while Turner treated the closing of the frontier as an objective fact, this analysis will show how it was only possible through an aggressively imposed set of assumptions about population distributions that even the Census Bureau itself abandoned 10 years later, leading a (mostly ignored) restoration of the frontier on official documents.
+            The challenges this poses for data visualization make possible useful interventions in the wider community of data visualization. For example, to adequately represent the shifting frontier line, in all its incarnations, requires extending default svg path behavior to enable smooth transitions in ways that are broadly useful for digital humanities mapping projects mapping with D3.
+            The strictly national character of this history will usefully intersect with the global themes of the conference, because they highlight the fundamental but frequently repressed connection between data visualization and explicitly state-centered ways of seeing. The census data is doubly so; it both relies on state-focused data and historically served to consolidate a nation-centered identity. Yet recent scholarship has tended to focus on the 
+                scientific provenance of data visualization, despite the earlier emergence of both specific forms like the choropleth and the widespread dominance of what Lorraine Daston and Peter Galison called ‘trained judgment’ as a way of seeing data in state circles decades before their hegemony in scientific circles (2007).
+                
+            
+            In contrast to these state-oriented, bureaucratic forms of organization, this paper will propose a model of humanities visualization as an interpretive, authorial practice that aims to open questions of data integrity and visual design rather than mask them through interactivity. As a single-author visualization project, it will address the ways that claims for the inevitability of collaboration in digital humanities can serve as a backdoor for the introduction of statist forms of argumentation.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Dandison, B. (2012). A Handsome Atlas: Historical Maps, Old Charts, and Vintage Data Visualization. http://www.handsomeatlas.com/.
+                    
+                    
+                        Daston, L. and Galison, P. (2007). 
+                        Objectivity. Zone Books, New York.
+                    
+                    
+                        Drucker, J. (2011). Humanities Approaches to Graphical Display. 
+                        Digital Humanities Quarterly,
+                        5(1), 
+                        http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html.
+                    
+                    
+                        Drucker, J. (2014). 
+                        Graphesis: Visual Forms of Knowledge Production. Harvard University Press, Cambridge, MA.
+                    
+                    
+                        Fletcher, W. L. (2014). Atlas of the Historical Geography of the United States. http://dsl.richmond.edu/historicalatlas/.
+                    
+                    
+                        Hannah, M. G. (2000). 
+                        Governmentality and the Mastery of Territory in Nineteenth-Century America. Cambridge Studies in Historical Geography 32. Cambridge University Press, Cambridge.
+                    
+                    
+                        Jessop, M. (2008). Digital Visualization as a Scholarly Activity. 
+                        Literary and Linguistic Computing,
+                        23(3) (September 1): 281–93, doi:10.1093/llc/fqn016.
+                    
+                    
+                        Kinnahan, T. P. (2008). Charting Progress: Francis Amasa Walker’s Statistical Atlas of the United States and Narratives of Western Expansion. 
+                        American Quarterly,
+                        60(2): 399–423, doi:10.1353/aq.0.0012.
+                    
+                    
+                        Meirelles, I. (2013). 
+                        Design for Information: An Introduction to the Histories, Theories, and Best Practices behind Effective Information Visualizations. Rockport Publishers, USA. 
+                    
+                    
+                        ‘Palladio Project’. (2014). http://hdlab.stanford.edu/projects/palladio/.
+                    
+                    
+                        Theibault, J. (2012). Visualizations and Historical Arguments [in English]. In Dougherty, J. (ed.).,
+                        Writing History in the Digital Age, 23 March, http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/.
+                    
+                    
+                        Tufte, E. R. (1983). 
+                        The Visual Display of Quantitative Information. Graphics Press, Cheshire, CT.
+                    
+                    
+                        Turner, F. J. (1894). The Significance of the Frontier in American History. In 
+                        Annual Report of the American Historical Association, 1893. Washington, DC: Government Printing Office, http://archive.org/details/1893annualreport00ameruoft, pp. 197–228. 
+                    
+                
+            
+        
+    
+
+
+
+    
+        
+            
+                From Mapping the Republic of Letters to Humanities +Design Research Lab: Creating Visualization Tools for Humanistic Inquiry
+                
+                    
+                        Coleman
+                        Catherine Nicole
+                    
+                    Stanford University, United States of America
+                    cncoleman@stanford.edu
+                
+                
+                    
+                        Caviglia
+                        Giorgio
+                    
+                    Stanford University, United States of America
+                    giorgio.caviglia@gmail.com
+                
+                
+                    
+                        Comsa
+                        Maria
+                    
+                    Stanford University, United States of America
+                    mcomsa@stanford.edu
+                
+                
+                    
+                        Braude
+                        Mark
+                    
+                    Stanford University, United States of America
+                    braude@stanford.edu
+                
+                
+                    
+                        Edelstein
+                        Dan
+                    
+                    Stanford University, United States of America
+                    danedels@stanford.edu
+                
+                
+                    
+                        Ceserani
+                        Giovanna
+                    
+                    Stanford University, United States of America
+                    ceserani@stanford.edu
+                
+            
+            
+                
+                    2014-12-19T13:50:00Z
+                
+            
+            
+                Paul Arthur, University of Western Sidney
+                
+                    Locked Bag 1797
+                    Penrith NSW 2751
+                    Australia
+                    Paul Arthur
+                
+            
+            
+                Converted from a Word document 
+            
+        
+        
+            
+                
+                    DHConvalidator
+                
+            
+        
+        
+            
+                
+                    Paper
+                
+                
+                    Long Paper
+                
+                
+                    knowledge design
+                    interface design
+                    open design
+                    visualization
+                
+                
+                    interface and user experience design
+                    software design and development
+                    knowledge representation
+                    visualisation
+                    networks
+                    relationships
+                    graphs
+                    spatio-temporal modeling
+                    analysis and visualisation
+                    English
+                
+            
+        
+    
+    
+        
+            What does it mean to build visualization tools that support the research process in the humanities? In this paper we will trace the evolution of our thinking about data-driven tools beginning with case studies in early modern intellectual history and eventually including a wide range of projects from classics, social history, performance studies, and other fields. We will give concrete examples of how individual tools were designed and whether those tools ultimately failed or succeeded to provide scholars with a means to gain insights into historical data. Through these examples, this paper argues for the role of an open design process in the development of visualization tools for humanities research that brings designers, developers, and scholars into deep collaboration to build nuanced and rigorous tools for humanities research. 
+            Mapping the Republic of Letters
+            Mapping the Republic of Letters was formed on the assumption that intellectual history is one of the fields that stands the most to gain from the influx of big data. By combining metadata from library catalogues and large-scale digitization projects, the project seeks to maximize the transformative effect of all this information. The cartographic, chronological, and network visualizations ultimately produced allow researchers to examine some of the big questions that intellectual historians have long struggled with: How do intellectual networks function? How interconnected are they? How independent are these networks from other social networks? 
+            The 2009 Digging Into Data Challenge grant award launched an active tool development phase in the Mapping the Republic of Letters (MRofL) project at Stanford. In partnership with DensityDesign Research Lab in Milan, the team began to engage in a tool design process in response to concrete research questions. The data—based on individuals and their correspondence, travel, and publications—were multidimensional and qualitatively rich. It became clear that historians who wish to bring data visualization tools to bear on the study of the past face a number of challenges. Many available tools had a steep learning curve and were ultimately of limited help for humanists. These tools rest on assumptions about the completeness and empirical value of data that often do not hold true for humanities research. Historical data can be incomplete and messy: statistical analysis can be a helpful to a limited extent, but interpretation at the most fundamental level is required to uncover meaning. Humanists also ask questions about the data that cannot be answered by numerical analysis. We needed tools that help us filter, contextualize, compare, and see the gaps in our data. 
+            Humanities + Design
+            
+                Humanities + Design, a research lab founded in 2012 by Dan Edelstein, Paula Findlen, and Nicole Coleman, emerged directly out of lessons learned and opportunities for humanities data analysis discovered through MRofL. The mission of the lab is to produce, through the lens of humanistic inquiry, new modes of thinking in design and computer science to serve data-driven research in the humanities. We believe that humanistic inquiry, grounded in interpretation, has much to contribute to the development of technologies if they are to help us reveal ambiguity and paradox, allowing human-scale exploration of complex systems. In the laboratory environment, theoretical and methodological discussions happen side by side with hands-on work with digital materials. Humanities scholars and students, designers, engineers, and computer scientists engage together in ongoing tool design as defined by the specific needs of participating humanities projects.
+            
+            Palladio Project
+            The award of the 2012 NEH Implementation Grant for Networks in History allowed the lab to pursue the development of visualization techniques and rich interaction with data that supports ‘thinking through data’ rather than using prescribed algorithms for data analysis. Palladio is a web-based demonstration application that allows any researcher to upload, visualize, and explore complex and multidimensional data, directly in a web browser. 
+                It has been designed for humanistic inquiry, with a special focus on historical research. 
+                The Palladio visualization system combines a primary view (for example, Map, Network Graph, and Tabular views) with filters to make it easy to query a dataset. 
+                There is no need to create an account, nor do we store any data
+                . 
+                Researchers can save and shared the work they have done in the browser as a Palladio Project. Palladio’s TimeLine and TimeSpan filters encourage filtering and sorting temporal data, and allows the filtering of two or more discontinuous time periods. A Facet filter is also particularly useful when exploring multidimensional datasets and drilling down to specific aspects of one’s data. Using case studies (examples listed later in this document) we will discuss how scholars have used Palladio, highlighting those instances when uses of the tool diverged from our expectations or led us toward new insights that we incorporated (or plan to incorporate) in future versions.
+            
+            Open Design
+            
+                The development of Palladio has been an iterative process. We have been eliciting and incorporating feedback from the academic community concerning Palladio’s current and potential features and uses. Most specifically, we have engaged in sustained discussion with a small and inter-disciplinary group of scholars, known as Open Design Contributors. Our paper will offer insight into this design process and the ways that it has directly influenced current and future iterations of Palladio, as well as other tools.
+            
+            Summary
+            The core innovation of our project is the design of visualization techniques that emphasize the contextualization and interpretation of data in cases where we lack the metrics for useful quantitative analysis. The two other key innovations both involve the leveraging of novel technologies that are particularly important to the study of cultural heritage data: we use new flexible data models to let individual scholars create and apply their own data categorizations, and we use open linked data sources to reconcile datasets against established authority files, in order to link entities across datasets and thereby explore networks across collections.
+            
+                Additional Case Studies to Be Discussed
+            
+            
+                Case Study: Toward More Complex Ways of Displaying Travel
+            
+            
+                Kate Elswit, Lecturer in Theatre and Performance Studies at the University of Bristol, ‘Ballet, Digital History, and the Cold War: Visualizing the Labor of Dance Touring’
+            
+            Dance scholar Kate Elswit has been using Palladio in her research on the labor of dance touring. She writes, ‘Such [visualization] techniques enable us to feel the passage of time differently.’ Following discussion with Elswit and other scholars interested in tracing travel routes, we have been thinking about how to display point-to-point travel in ways that go beyond simple flight-path-like visualizations. How to account for the differences in traveling at night rather than in the day? How to represent different levels of comfort, safety, and efficiency in travel?
+            Case Study: Questions of Scale and Incomplete Data
+            
+                Molly Taylor-Poleskey, PhD Candidate, Department of History, Stanford: Food Culture in Brandenburg-Prussia
+            
+            
+                Taylor-Poleskey uses a large base of manuscript sources detailing the yearly consumption of one of the palaces of Prince-Elector Friedrich Wilhelm of Brandenburg-Prussia. She argues that the elector’s cultural agenda helped transform his territories over the course of his reign from dilapidated and war-torn to stable and powerful. To support her argument, she wants to see how tastes and consumption patterns changed over time, to consider how such changes might reveal the court’s aesthetic values and cultural ambitions. Creating visualizations in Palladio have helped her analyze what proportions of different foods or food groups were consumed. We have worked with Taylor-Poleskey toward creating visualizations that privilege the display of relative magnitude, and that are especially sensitive to working in different registers and scales. As some of the years in the sources she studies have incomplete or missing data, her use case has also aided us in thinking about how best to work with and represent incomplete data in ways that are not misleading or overly simplistic.
+            
+            Case Study: Toward New Palladio Data-Visualization Iterations
+            
+                Office of the Historian, US State Department, Foreign Relations of the United States
+            
+            We will share results from our ongoing work with Thomas Faith at the Office of the Historian at the US Department of State, with whom we have been working toward the goal of producing an integrated version of Palladio that would function as a visual browser for extant online data concerning the foreign relations of the United States. The State Department project is one of many we are working on, as we look to help other researchers to implement customized versions of Palladio that can be used as search, analysis, and visualization exploratory tools within extant large-scale research projects.
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Balsamo, A. 
+                        (2009). Design. 
+                        International Journal of Learning and Media,
+                        1
+                        (4): 1–10.
+                    
+                    
+                        Berry, D. M. 
+                        (2012). 
+                        Understanding Digital Humanities.
+                         Palgrave Macmillan, New York.
+                    
+                    
+                        Buchanan, R. 
+                        (2001). Design Research and the New Learning. 
+                        Design Issues,
+                        17
+                        (4): 3–23.
+                    
+                    
+                        Burdick, A. 
+                        (2009). Design Without Designers. 
+                        Conference on the Future of Art and Design Education in the 21st Century
+                        , University of Brighton, England, 29 April 2009.
+                    
+                    
+                        Burdick, A. and Willis, H. 
+                        (2011). Digital Learning, Digital Scholarship, and Design Thinking.
+                        Design Studies,
+                        32
+                        (6): 546–56.
+                    
+                    
+                        Drucker, J. 
+                        (2009). SpecLab. In 
+                        Digital Aesthetics and Projects in Speculative Computing.
+                         University of Chicago Press, Chicago.
+                    
+                    
+                        Drucker, J. 
+                        (2011). Humanities Approach to Interface Theory. 
+                        Culture Machine,
+                        12
+                        : 1–20.
+                    
+                    
+                        Friedman, K. 
+                        (2003). Theory Construction in Design Research: Criteria, Approaches, and Methods. 
+                        Design Studies,
+                        24
+                        (6): 16.
+                    
+                    
+                        Fuller, M.
+                        (2008). Software Studies. MIT Press, Cambridge, MA.
+                    
+                    
+                        Ivanhoe.
+                         (n.d.). http://www2.iath.virginia.edu/jjm2f/old/IGamehtm.html. 
+                    
+                    
+                        Lunenfeld, P., Burdick, A., Drucker, J., Presner, T. and Schnapp, J. P.
+                        (2012).
+                        Digital_Humanities
+                        . MIT Press, Cambridge, MA.
+                    
+                    
+                        Mandala Browser. 
+                        (n.d.). http://mandala.humviz.org/.
+                    
+                    
+                        Masud, L., Valsecchi, F., Ciuccarelli, P., Ricci, D. and Caviglia, G.
+                        (2010). From Data to Knowledge: Visualizations as Transformation Processes within the Data-Information-Knowledge Continuum. In Banissi, E., Bertschi, S., Burkhard, R., Counsell, J., Dastbaz, M., Eppler, M., Forsell, C., et al. (eds),
+                        Information Visualisation IV, 2010 14th International Conference
+                        , pp. 445–49.
+                    
+                    
+                        McCarty, W. 
+                        (2003). 
+                        Encyclopedia of Library and Information Science.
+                         Vol. 2. 2nd ed. New York: Dekker, pp. 1224–35.
+                    
+                    
+                        McGann, J. and Samuels, L. 
+                        (2004). Deformance and Interpretation. In 
+                        Radiant Textuality.
+                        New York: Palgrave Macmillan.
+                    
+                    
+                        Moretti, F. (
+                        2005). 
+                        Graphs, Maps, Trees.
+                         Verso Books, New York.
+                    
+                    
+                        Nowviskie, B.
+                        (2004). 
+                        Speculative Computing: Instruments for Interpretative Scholarship.
+                         Ph.D. thesis, University of Virginia.
+                    
+                    
+                        Orbis.
+                        (n.d.). http://orbis.stanford.edu/.
+                    
+                    
+                        Pope, R. (
+                        1995). 
+                        Textual Intervention: Critical and Creative Strategies for Literary Studies.
+                        Routledge, London.
+                    
+                    
+                        Ramsay, S. 
+                        (2011a). On Building, 11 January, http://stephenramsay.us/text/2011/01/11/onNbuilding.html.
+                    
+                    
+                        Ramsay, S. 
+                        (2011b). Who’s In and Who’s Out, 8 January, http://stephenramsay.us/text/2011/01/08/whosNinNandNwhosNout.html.
+                    
+                    
+                        Ruecker, S., Radzikowska, M. and Sinclair, S.
+                         (2011). 
+                        Visual Interface Design for Digital Cultural Heritage.
+                         Ashgate.
+                    
+                    
+                        Schnapp, J. and Presner, T. 
+                        (2009). The Digital Humanities Manifesto 2.0, 17 June, www.humanitiesblast.com/manifesto/Manifesto_V2.pdf.
+                    
+                    
+                        Schon, D. A. 
+                        (1983). 
+                        The Reflective Practitioner: How Professionals Think in Action.
+                        1st ed. Basic Books, New York.
+                    
+                    
+                        Temporal Modeling. 
+                        (n.d.). http://www2.iath.virginia.edu/time/time.html.
+                    
+                    
+                        Voyant.
+                         (n.d.). http://voyant-tools.org.
+                    
+                
+            
+        
+    
+
+
+        
+            This paper presents a transparent and quantitative analysis of the overall development of Finnish book production between 1640-1828. The work is based on automated information extraction from library catalogues, and introduces the concept of open analytical ecosystems as a novel research tool for digital humanities. This extends our earlier pilot project on the use of the English Short Title (ESTC) catalogue (
+                https://github.com/rOpenGov/estc). In this new work we focus on Scandinavia, further demonstrating the potential of digitized library catalogues as a valuable resource for digital humanities and reproducible research. We continue our experimental analysis of paper consumption in early modern book production, and provide a practical demonstration on the importance of open-science principles for digital humanities. 
+            
+            Compared to our earlier British analysis (Lahti et al., 2015) we now integrate data across multiple library catalogues from Finland and Sweden. This analysis transcends national boundaries and brings forward key questions in metadata integration such as entry harmonization and duplicate identification. We propose a set of best practices for such tasks in automated large-scale analyses, and exemplify their use in the Scandinavian context. Such pilot project is crucial to later integrate data across the Heritage of the Printed Book database that eventually covers all of early modern Europe. Our emerging data analytical ecosystem supports these goals concretely. 
+            Instead of ready-made standard software, such as Open Refine, Palladio, or similar user-friendly software, we have developed a set of custom tools in the R statistical programming environment to combine automation with full flexibility and access to state-of-the-art data analysis and visualization algorithms. An important contribution in comparison with related earlier work, for example Kalev’s GDELT (
+                http://blog.gdeltproject.org/mapping-212-years-of-history-through-books/), is that we have drastically refined the metadata, for instance by harmonizing synonymous entries and by enriching the data with external information such as name-gender mappings and geographical information. The bibliographic metadata in national library catalogues follow international standards and, as we demonstrate, the fully open source computational data analysis tools introduced within this project are immediately relevant and widely applicable in further studies based on library catalogue metadata.
+            
+            We focus on the extraction and statistical analysis of library catalogue metadata to study the emergence and development of public discourse in Finland (1640–1828). The main data source for our analysis is Fennica, Finnish National Bibliography (
+                https://github.com/rOpenGov/fennica). This is complemented with further metadata and content analysis of Finnish newspapers and journals and material from Sweden, from the Kungliga collection, Stockholm (
+                https://github.com/rOpenGov/kungliga), and include comparisons with further library catalogue material from other countries as well. The analysis allows us to provide concrete, quantitative figures on publication activity, places, and topics and compare these to political, technological, and social ruptures. The quantitative analysis of print culture will allow us to study how the development of Finnish book, newspaper and journal production compares to European trends.
+            
+            It is not enough, however, to see European public discourse by combining nationally organized knowledge. The hypothesis is that the European map of knowledge production will have local flavors in different corners of Europe. The aim should thus be to integrate data across library catalogues to analyze different streams of influence and varying regional perspectives and uncover potential asymmetries that may have guided intellectual life. The comparison between neighboring countries also allows for the detection of local publishing networks in the Baltic Sea region.
+            
+                
+                Fig. 1. Paper consumption of documents recorded in Fennica until 1828 by place of publication (Turku, other places in Finland and elsewhere including Sweden)
+            
+            Our aim in this paper is particularly to study the development of publishing houses in Finland and their spread from Turku to other parts of Finland. We will also identify overlooked moments of transformation in public discourse in Finland by blending historical and computational approaches. The research undertaken will reflect on how social change and public discourse are intertwined, and how cultural, institutional, legal and technological changes are reflected both in publication metadata and the textual content of the publications. In terms of the historical timeframe, our study begins with the founding of the first Finnish press at the Academy of Turku in 1640, tracks the overall publishing history of the country until 1828 when Helsinki starts to play a major role in Finland.
+            Public discourse in Finland has been largely approached from the perspective of the breakthrough of the Finnish language, the role of elite discourse at the university, early Swedish-language newspapers, and book history. We combine these perspectives, and further analyze how language-barriers, elite culture and popular debate, as well as different publication channels interacted. Large-scale quantitative analysis of library catalogues opens novel opportunities to characterize the general impact of the turn from Swedish to Russian rule in early nineteenth-century regarding public discourse in Finland. Previous historical research on the development of civility in nineteenth-century Finland has lacked appropriate quantitative tools to take an objective ‘bird-eye’ view of these complicated and crucial transformations. Questions of how, for instance, the establishment of the university in Turku/Åbo (1640), the introduction of freedom of print (1766), the formation of a Finnish Grand Duchy in the Russian Empire (1809–1812), the changes in the enforcement of censorship, the decision to transform Helsinki into a capital city (1819), the lack of estate representation in the Grand Duchy, and the slow emergence of a Finnish written language resonated in publication practices are explored from a quantitative perspective. 
+            Our open data analytical ecosystems provide powerful and flexible data analytical tools that can best serve the needs of genuinely data-intensive research, in contrast to traditional point-and-click interfaces that are suitable for simple query tasks but not designed for fully transparent, reproducible and automated large-scale algorithmic data mining. The open source ecosystems will also enable new collaboration models around digital data collections that are now becoming increasingly available for research and other purposes. This emphasis on transparent and collaborative methodology, already wide-spread in other fields of computational science, sets the context for our work within digital humanities. Others can benefit from the new tools and the libraries from the refined data sets. The data analytical algorithms, including data extraction, statistical analysis, summarization and reporting, will be are released in full detail within a unified open source ecosystem in Github (
+                http://github.com/rOpenGov/fennica), where all steps from raw data to the final results can be traced back and improved further. In this sense, our emphasis on open data analytical process and collaboration model is different from Anderson's and Blanke's discussion on digital humanities ecosystems (Anderson and Blanke, 2012), which focuses on the role of the community of researchers. 
+            This paper continues an ongoing trend of quantitative analysis of publishing history (Moretti, 2013; Towsey et al., 2015). While reuse of library catalogue data has been discussed in recent digital humanities scholarship (for example, Prescott, 2013 and Bode and Osborne, 2014), large-scale library catalogues represent a so far underestimated research resource, containing systematic information on publication activity over years, language barriers, genres, geographical regions and other variables in which the evolution of the public sphere is reflected. Moreover, our work complements the distant reading and related concepts discussed by Bode and Moretti by introducing concrete algorithms and proposing a collaborative development model. Lincoln Mullen has used a related approach to analyze historical texts (
+                http://lincolnmullen.com/#software).
+            Our ultimate aim is to develop algorithms to extract, harmonize and integrate relevant metadata across the different European library catalogues, regardless of language. This research data will be further enriched by complementing it with data from auxiliary sources, such as linked data on person records, biographies of partner organizations, ontologies and other assets. The enriched information is then used to formulate statistical summaries and systematic quantitative comparisons, as well as interactive and dynamic visual representations of the publication activity, topics and geographical variation and of their evolution over time. To demonstrate the efficiency of this approach, we quantify the importance of Turku in the Finnish publication landscape during 1640-1828.
+        
+        
+            
+                
+                    Bibliography
+                     
+                        Anderson, S. and Blanke, T. (2012). Taking the Long View: From e-Science Humanities to Humanities Digital Ecosystems. 
+                        Historical Social Research, 37: 147-64.
+                    
+                    
+                        Bode, K. and Osborne, R. (2014). Book History from the Archival Record. In Leslie Howsam (Ed.), 
+                        The Cambridge Companion to the History of the Book. Cambridge University Press, pp. 219-36.
+                    
+                    
+                        Lahti, L., Ilomäki, N., Tolonen, M. (2015). A Quantitative Study of History in the English Short-Title Catalogue (ESTC) 1470-1800. 
+                        LIBER Quarterly, 25(2): 87-116. 
+                    
+                    
+                        Moretti, F. (2013). 
+                        Distant Reading. Verso books. 
+                    
+                    
+                        Prescott, A. (2013). Bibliographic records as humanities big data. Big Data IEEE International Conference 2013: Conference Abstracts. Silicon Valley, pp. 55-58.
+                    
+                   
+                    
+                        Towsey, M., Bode, K. Burrows, S. et al. (2015). Remapping Cultural History: Digital Humanities, Historical Bibliometrics, and the Reception of Print Culture. 
+                        Digital Humanities 2015 Conference, University of Western Sydney.
+                    
+                
+            
+        
+    
+
+
+        
+            
+                Motivation
+                Digital humanities needs tools that better support the core processes of humanistic inquiry. This includes support for handling uncertainty and incompleteness in the data, for interactive exploration, and for fluidly moving between close and distant reading (Drucker 2011; Jänicke et al., 2015; Caviglia, Ciuccarelli, and Coleman, 2012; Uboldi and Caviglia, 2015). 
+                The Khepri tool presented here is part of a project to develop a modular set of components that take these requirements into account, and can be connected and configured to respond to the needs of a particular humanities task and data. Khepri targets data stored as Linked Data (Heath and Bizer, 2011), a set of scalable standards that has gained widespread adoption particularly in the sphere of cultural heritage. 
+            
+            
+                Development process
+                To ensure the tools developed meet the needs of humanities users, they are being developed iteratively, utilizing participatory design in case studies, as advocated by the field of design science (Hevner et al., 2004; Peffers et al., 2007; Wieringa 2009). The task of the computer scientist is to see beyond these individual studies; to identify common components allowing the tools to generalize beyond the projects under scrutiny. 
+                To date, a variety of collaborations have been embarked upon, from the prosopographical study of the Republic of Letters
+                    
+                        
+                    , through supporting engagement with WW1 primary sources (Mäkelä, Törnroos, et al., 2015), to developing a contextual network for Finnish fiction (Mäkelä, Hypén, and Hyvönen, 2013). Together, these span a range of research questions, and types of data.
+                
+                Through these collaborations, a prevalent process of inquiry was identified – the need to explore and contrast differently constrained subsets of a dataset. For instance, this might be looking at the correspondence networks of different individuals and comparing them, or looking at how possible values of a linguistic variable behave with respect to each other as well as associated metadata.
+                To support this process, Khepri utilizes the view-based paradigm (Mäkelä, 2010), where data is presented simultaneously from different perspectives, with each perspective acting both as a visualization as well as a means to constrain what is shown. A proper implementation of the paradigm also allows for speedy informed variation of parameters, and thus interactive exploration. 
+                Because the views interact in a defined way, they can be developed as separate components targeting major visualization classes such as geographical, temporal or statistical. Each individual Khepri instance can then select from these the views suitable for that particular use. 
+                Thus far, most of the work has been preparatory, with the functionalities simulated through ad-hoc disconnected components, tied together and supplemented by manual work of the computer scientist. However, now a first complete tool for a particular task has been developed. This instance has been configured for historical sociolinguistics. 
+            
+            
+                Khepri for historical sociolinguistics
+                Historical sociolinguistics is the study of language in relation to social factors through time (Nevalainen and Raumolin-Brunberg, 2003). A possible research question would be to chart the role of gender, age and socioeconomic status in the diffusion of the English progressive (as in 
+                    I am writing). From the viewpoint of the Khepri tool, this is interesting because it requires combining access to unstructured text with access to the structured (meta)data describing their authors.
+                
+                This is also the area where current tools fall short, for while corpus tools (e.g. CQPweb (Hardie, 2012), Korp (Borin, Forsberg, and Roxendal, 2012) and WordSmith
+                    
+                        
+                    ) enable querying texts by linguistic features, they poorly support walking from the texts to the attributes of the authors. On the other hand, tools for visually exploring structured data (e.g. Palladio
+                    
+                        
+                    , Europeana4D
+                    
+                        http://www.tinyurl.com/e4d-_project
+                     and RAW
+                    
+                        
+                    ) do not support interacting with text corpora.
+                
+                This makes research currently very labor-intensive. For instance, if one wishes to study the aforementioned progressive, one first searches for instances of 
+                    -ing in the corpus using a corpus tool. The instances are then exported into Excel to analyze them and eliminate false hits such as gerunds
+                    (My favourite hobby is
+                    writing). Next, the number of hits produced by each person is calculated using another sheet that lists the authors by gender, age, socioeconomic status and time period. These numbers are then exported for statistical analysis and visualization. Because the corpus texts, spreadsheets, visualizations and statistical analyses are not connected to each other, the exploration and interpretation of the observations is cumbersome and time-consuming at every stage.
+                
+                
+                    
+                        
+                        Figure 1. the Khepri for historical sociolinguistics interface
+                    
+                
+            
+            
+                The user interface configuration of Khepri for historical sociolinguistics
+                The Khepri interface for historical sociolinguistics is depicted in Figure 1. The interface is divided into three columns, with the views contained in each having different primary purposes. 
+                On the left are views aimed primarily at producing a subset of interest. The first view is for text search. Below the query, matching keywords from the data are presented for evaluation. Notice that two sets of counts are given. One shows the overall amount of hits for a keyword in the corpus, while the other takes into account constraints set in other windows. This way, the view acts not only as a selector, but also as a statistical breakdown of the current subset. 
+                Below the keyword search view, the user can add metadata views. Here for example, a view visualizes and allows one to constrain the data through the lens of the author's education. 
+                The second column shows the items in the current subset. Matches are shown in their textual context, with metadata and additional context available on mouse-over. While tuned for close reading, this view also acts as a filter. Clicking on an item removes it from the current subset. For linguistic research, this is important as the inclusion or exclusion of a particular example of a phenomenon may depend on contextual cues and background knowledge that cannot be defined as search parameters, but require manual evaluation.
+                When focusing on close reading, the column can be expanded to occupy the whole right-hand side of the interface. Expanded, the view shows additional metadata, such as the author and year of the texts. The view can also be sorted according to these properties, as well as grouped by them, so that for example only a listing of the authors, or the linguistic types (e.g. different words ending with 
+                    -ing) is shown, with the individual matches revealed by expanding.
+                
+                To further help in keeping a close reading task organized, the interaction between this view and the constraining views has been designed so that it is easy to temporarily restrict the matches shown to only those from e.g. a particular spelling, or a particular social class. 
+                Finally, the column on the right is intended primarily for visualization. In fact, it can visualize and contrast multiple subsets of the data. To facilitate this, the first two columns are subsumed in a tabbing container, with each tab containing the query state of a single subset. In the example of Figure 1, these are spelling variants of the negated auxiliary verb 
+                    cannot (written separately, contraction, written together).
+                
+                By default, the frequency of each subset is visualized as its own line chart. However, numerous options affecting this are provided, drawn from best practices in the field (Hinneburg et al., 2007). For example, separate lines can be graphed for each of the values of a particular metadata property. In Figure 1 for example, each chart contains lines for male and female writers, showing that the use of the form “can not” seems to follow an approximately linear decline for men, but not for women. 
+                To prevent misinterpretations arising from small samples, each graph can be accompanied by a dotted logarithm representing the size of the corpus as a whole for that metadata value. The interface also supports bootstrapping to visualize confidence intervals. As this takes considerable time to calculate, it should only be enabled when a seemingly significant discovery needs verification. 
+                The interface also offers alternative charts. For example, when comparing possible values of a single linguistic variable, the area chart visualization shown in Figure 2 is appropriate. In addition, a motion chart visualization (Figure 3, inspired by the static scatterplots in Nevalainen, Raumolin-Brunberg, and Mannila (2011)) is provided, used to see how different individuals relate to the variable under study, and even how they change their use through time.
+                In line with the view-based querying paradigm, all visualizations also act as selectors, enabling delving deeper into interesting phenomena. Through them, one can for example constrain the instance list to show only usage by women in a particular timespan, or in the case of the motion chart, even the use of a single individual. 
+                
+                    
+                        
+                        Figure 2. Area charts showing the relative proportions of “can not” (blue), “cannot” (yellow) and “can’t” (red) by time and gender
+                    
+                
+            
+            
+                Discussion and future work
+                Khepri for historical sociolinguistics is the first complete version of the tool. It is also only in its second iteration, and will continue to improve based on feedback. However, it has already been received with excitement, enabling research that was previously too time-consuming to attempt.
+                With the architecture of the tool now in place, other instances will soon follow, targeting next the Republic of Letters and Finnish fiction use cases. This can be said because all the views created are actually generic, and can be pointed to different data by reconfiguring. For example, text search is also useful for locating individuals or books, while the metadata facets directly target structured data already. The views requiring most modification are the statistical charts, but even here work will be fine-tuning to match differing metrics. Correspondingly, any visualizations developed for other scenarios can be imported here, to for example visualize language phenomena on maps.
+                
+                    
+                        
+                        Figure 3. Motion chart showing how many percent of individual writers use the form “cannot”
+                    
+                
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                    Lars, B., Forsberg, M. and Roxendal, J. (2012). Korp – the corpus infrastructure of Språkbanken. 
+                        Proceedings of the Eighth International Conference on Language Resources and Evaluation (LREC’12).
+                        url: 
+                        http://www.lrec-_conf.org/proceedings/lrec2012/pdf/248_Paper.pdf.
+                    
+                    Caviglia, G., Ciuccarelli, P. and Coleman, N. (2012). Communication Design and the Digital Humanities. 
+                            Proceedings of the 4th International Forum of Design as a Process.
+                    
+                    Drucker, J. (2011). Humanities approaches to graphical display. 
+                            Digital Humanities Quarterly, 5(1): 1–21.
+                    
+                    Hardie, A. (2012). CQPweb - combining power, flexibility and usability in a corpus analysis tool. 
+                            International Journal of Corpus Linguistics,
+                        17(3): 380–409. doi: 10.1075/ijcl.17.3.04har.
+                    
+                    Heath, T. and Bizer, Ch. (2011). 
+                            Linked Data: Evolving the Web into a Global Data Space.
+                        Synthesis Lectures on the Semantic Web. Morgan and Claypool Publishers. doi: 10.2200/S00334ED1V01Y201102WBE001.
+                    
+                    Hevner, Alan R., et al. (2004). Design Science in Information Systems Research. 
+                            MIS Quarterly, 28(1): 75–105.
+                    
+                    Hinneburg, A., et al. (2007). How to Handle Small Samples: Bootstrap and Bayesian Methods in the Analysis of Linguistic Change. 
+                            Literary and Linguistic Computing,
+                        22(2): 137–150. doi: 10.1093/llc/fqm006.
+                    
+                    Jänicke, S., et al. (2015). On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges. 
+                            Eurographics Conference on Visualization (EuroVis) - STARs.
+                        Ed. by R. Borgo, F. Ganovelli, and I. Viola. The Eurographics Association. doi: 10.2312/eurovisstar.20151113.
+                    
+                    Mäkelä, E. (2010). View-Based User Interfaces for the Semantic Web. D.Sc. dissertation. PhD thesis. Aalto University, School of Science and Technology, Espoo. 
+                    Mäkelä, E., Hypén, K. and Hyvönen E. (2013). 
+                            Fiction Literature as Linked Open Data - the BookSampo Dataset.
+                    
+                    Mäkelä, E., Törnroos, J., et al. (2015). 
+                            World War 1 as Linked Open Data. Submitted for review.
+                    
+                    Nevalainen, T. and Raumolin-Brunberg, H.  (2003). 
+                        Historical Sociolinguistics: Language Change in Tudor and Stuart England. London: Pearson Education.
+                    
+                    Nevalainen, T., Raumolin-Brunberg, H. and Mannila H. (2011). The diffusion of language change in real time: Progressive and conservative individuals and the time depth of change. 
+                            Language Variation and Change,
+                        23(1): 1–43. doi: 10.1017/S0954394510000207.
+                    
+                    Peffers, K., et al. (2007). A Design Science Research Methodology for Information Systems Research. 
+                            Journal of Management Information Systems,
+                        24(3): 45–77.
+                    
+                    Uboldi, G. and Giorgio C. (2015). Information Visualizations and Interfaces in the Humanities. English. 
+                            New Challenges for Data Design.
+                        Ed. by David Bihanic. Springer London, pp. 207–18. isbn: 978-1-4471-6595-8. doi: 10.1007/978-1-4471-6596-5˙11.
+                    
+                    Wieringa, R. (2009). Design science as nested problem solving. 
+                            Proceedings of the 4th international conference on design science research in information systems and technology. ACM, p. 8.
+                    
+                
+            
+        
+    
+
+
+        
+            Digital Humanities has seen slow adoption in the Slavic language and literature fields in North American academia. This issue frames our project, the Digital Émigré, a digital resource for exploring Russian émigré periodical literature. Our project has a threefold aim. As periodical studies scholars, we want to enable access to Russian émigré journals for new audiences. As digital humanists, we believe that DH tools and methodologies can facilitate new forms of knowledge about twentieth-century Russian, and more broadly diaspora, literary and cultural history. Finally, as Slavists, we hope our project will be a hub for discussion about the applicability of DH theory and practice for scholars working with Russian-language material.
+            At this pilot stage, Digital Émigré is a web-based searchable database of article-level metadata of Russian-language journals published outside of Russia in the twentieth century. Our pilot contains four titles (approximately 100 issues and 1,500 articles): 
+                Novoselye and 
+                Novyi zhurnal were published in the 1940s in New York, and 
+                Sintaksis and 
+                Kontinent, in the late 1970s and 1980s in Paris. Our pilot site provides insight into literary culture at both the beginning and end of the Cold War, bookending the twentieth-century Russian diaspora experience. Digital Émigré is intended to scale, and will eventually contain additional titles and new functionality. 
+            
+            We will highlight the main scholarly avenues that DH methods allow us investigate, such as mapping networks of co-publication, tracking evolving political, social and cultural concerns of émigrés over the course of the Cold War, demonstrating the increased opportunities for émigré women as editors and contributors, and highlighting the proportion of original vs. re-printed work in émigré publications. This way, our project encourages experimentation that will enrich the study of Slavic periodical culture: accessing journals through their data can challenge narratives that are often framed by retroactive canonization, close reading and focus on individual authors. Digital Émigré thereby bridges philological approaches and sociological questions about intellectual networks and communities of artistic production. 
+            The poster address the project’s core technical design: our strategy for data modeling and management and database design.  We will also present our plans for next steps, which is to provide full-text access and to federate our titles with other digital periodical collections. For this, we are designing a TEI schema modeled on major periodical studies digital collections -  specifically the Blue Mountain Project at Princeton University (
+                http://bluemountain.princeton.edu and the Yellow 90’s Online at Ryerson University (
+                http://www.1890s.ca)  
+            
+            We will also discuss the specific challenges of working with Russian language material and Cyrillic script, such as character encoding, transliteration, translation, and  tokenizing and stemming. These issues can be barriers to success when working with popular DH tools that are developed primarily for Western scripts and languages, and we will show our solutions for using some well-known tools for: data normalization (OpenRefine), text analysis (Voyant), network analysis (Gephi), visualization (Raw, Palladio), and topic modeling (MALLET).
+            Digital Émigré is committed not only to the exploration of the intellectual experience of diaspora cultural life. As a digital humanities project, it is itself invested in building intellectual communities around the engagement with this material and its afterlife. It aims to foster contact between scholars working with Russian and other Slavic languages internationally, especially through the discussion of issues of interoperability and creating multilingual digital research environments.
+        
+    
+
+Introduction
+
+nodegoat allows scholars to build datasets based on their own data model and offers relational modes of analysis with spatial and chronological forms of contextualisation. By combining these elements within one environment, scholars are able to instantly process, analyse and visualise complex datasets relationally, diachronically and spatially; trailblazing. nodegoat follows an object-oriented approach throughout its core functionalities. Borrowing from actor-network theory this means that people, events, artefacts, and sources are treated as equal: objects, and hierarchy depends solely on the composition of the network: relations. This object-oriented approach advocates the self-identification of individual objects and maps the correlation of objects within the collective.
+
+Research Environment
+
+nodegoat is a web-based research environment that facilitates an object-oriented form of data management with an integrated support for diachronic and spatial modes of analysis. This research environment has been developed to allow scholars to design custom relational database models. nodegoat dynamically combines functionalities of a database management system (e.g. Access/FileMaker) with visualisation possibilities (e.g. Gephi/Palladio) and extends these functionalities (e.g. in-text referencing, LOD-module) in one web-based GUI. As a result, nodegoat offers researchers an environment that seamlessly combines data management functionalities with the ability to analyse and visualise data.
+
+The explorative nature of nodegoat allows researchers to trailblaze through data; instead of working with static ‘pushes’ - or exports - of data, data is dynamically ‘pulled’ within its context each time a query is fired. The environment can be used in self-defined collaborative configurations with varying clearance levels for different groups of users.
+
+As a result of nodegoat's object-oriented set-up, everything is an object. In the case of a research project on correspondence networks, this means that a researcher would define three types of objects in nodegoat: 'letter', 'person', 'city'. Each object relates to an other object via relations (e.g. a letter relates to persons to identify the sender/receiver and this letters has been sent from/received in a city). In an extended research process, researchers could also define themselves as objects in the dataset, their sources or other datasets. Due to the focus on relations and associations between heterogeneous types of objects, the platform is equipped to perform analyses spanning multitudes of objects. By enriching objects with chronological and geospatial attributed associations, the establishment and the evolution of networks of objects is fully contextualised. In nodegoat, these contexts and sets of networked data can be instantly visualised through time and space.
+
+This open-ended approach makes nodegoat different from tools like the Social Networks and Archival Context Project, Alan Liu’s Research Oriented Social Environment, the Software Environment for the Advancement of Scholarly Research, Prosop, or tools with a main focus on coding of qualitative data as seen in various computer-assisted qualitative data analysis software. With its object-oriented approach, nodegoat facilitates the aggregation of collections, coding of texts, and analysis of networks, but models these methods towards the creation and contextualisation of single objects that move through time and space. Facts & Figures
+
+nodegoat is conceptualised and built by the independent research firm LAB1100, based in The Hague, The Netherlands. In order to share the functionalities of nodegoat with the scholarly community, scholars and research institutes are invited to use nodegoat for their own research purposes. Over 300 scholars have a personal research domain on nodegoat.net. Over 15 institutional partnerships have been established with universities, research institutes, and museums in The Netherlands, Belgium, Luxembourg, and Germany.
+
+A nodegoat user forum and FAQ is hosted on the Historical Network Research website. In the course of 2018 an open source package of nodegoat will be released within the wider framework of the nodegoat community.
+
+Examples of projects in nodegoat
+
+Over 12.000 battles as described by Wikidata and DBPedia users visualised in nodegoat,
+
+http://nodegoat.net/blog.s/14/a-wikidatadbpedia-geography-
+
+of-violence.
+
+Project Mapping Notes and Nodes in Networks' in collaboration with Huygens ING, University of Amsterdam, & KNiR
+
+
+The whereabouts of over 20.000 people visualised through time and space in nodegoat http://mnn.nodegoat.net/viewer.p/1/47/scenario/17/geo/
+
+illustration of a personal research dataset in nodegoat
+
+
+Geographical network visualisation in nodegoat by Tobias Winnerling for the project 'Wer Wissen Schafft'
+
+A Wikidata/DBpedia Geography of Violence
+During the late-1960s and early 1970s, independent media artists imagined a network of organizations that would support the production, distribution, exhibition, preservation, and study of film and video not only in the known centers of activity (New York City and San Francisco), but across all regions of the United States. By 1980 the Media Arts Center Movement had gained significant momentum leading to the establishment of the National Alliance of Media Arts Centers (NAMAC). These centers included national players, such as the Museum of Modern Art in New York City, along with regional organizations like the Rocky Mountain Film Center and Pacific Film Archives, and other metropolitan organizations like Pittsburgh Filmmakers (one of the oldest remaining active media
+
+arts centers). These organizations provided services
+
+for artists - funding and equipment rentals - and to the surrounding community - screenings, coursework, and study collections. NAMAC changed its nomenclature in the mid-1990s to the National Alliance of Media Arts and Culture, yet the legacy of the media arts center movement continues today. Mapping the Independent Media Community (MIMC) is a project that seeks to illustrate the impact of the individuals and organizations that were part of this larger movement to support the development of independent media arts, not just in the United States, but across the globe.
+
+MIMC is currently in its first phase of development, generously funded by a Major Project Grant from the University of Iowa. Partnering with Carnegie Museum of Art (CMOA) in Pittsburgh, Pennsylvania, the MIMC team at the University of Iowa has worked in conjunction with CMOA's Time-Based Media Project (funded by a grant from the A.W. Mellon Foundation) to digitize and provide access to records contained with the CMOA's Film Section Archives (spanning 1970-2002). The MIMC prototype is based on the data contained within the Film and Video Makers' Travel Sheet and Film and Video Makers' Directory published between 1973 and 1987. The Travel Sheet, a monthly publication, served as a social networking tool for media artists and media arts centers. At no cost, artists could publish booked tour dates along with a general sense of their travel schedule, while organizations posted the contact information for their internal programmers, indicating a willingness to host makers. Over the years, the Travel Sheet grew to include sections for new works available, film festival announcements, and other advertisements of general interest to film and video makers. The Directory, published in 1978 and 1979 included the information of all of the individuals and organizations subscribing to or listed in the Travel Sheet. From its humble beginnings as a single hand-typed 11x17 sheet of paper, the publication grew to include thousands of individuals and organizations from all corners of the globe. Using the data from the Travel Sheet, this first phase of the MIMC project serves as a prototype for a much larger and more robust application that will visualize data from a wide variety of sources in order to provide a more comprehensive understanding of the Media Arts Center Movement in the United States as well as global independent media production, distribution, exhibition, preservation, and study.
+
+The MIMC database (built using the University of Sydney's Heurist Academic Knowledge System) currently holds only a few years of the Travel Sheet data. However, even this small subset of the data MIMC illustrates that the Media Arts Center Movement was indeed successful in building a wide-reaching network of organizations and individuals. The image below represents a sample of data from New York-based artists reported between 1973 and 1975 in the Film and Video Makers Travel Sheet (data from 26 artists residing in New York City and New York state).
+
+
+Figure 1: Selected event data from the Film and Video Makers Travel Sheet 1973-1975 (created with Palladio).
+
+
+In the above image, the artists' home address is represented in blue while the event location is represented in orange (the event locations are sized according to the number of events, 99 total). This visualization demonstrates the connections between organizations and individuals emerging from the data in the Travel Sheet. Here we can see the beginnings of a network that extends beyond the United States and into Europe and Canada. As data entry and analysis continues, the data promises to demonstrate a global network of artists and media arts organizations as a sample from the 1979 Film and Video Makers' Directory illustrates, below.
+
+
+Figure 2: Organizations (square) and Individuals (teardrop) from the 1979 Film and Video Makers Directory
+
+While the term network was the preferred terminology of the Media Arts Center Movement, this is an overly simplistic understanding that masks the complexity of the MIMC data. Anthropologist Tim Ingold argues that the lines of a network are connectors, static points joining two nodes, that presume an absolute connection that does not fully illustrate the complexity of the relationship. In contrast, Ingold offers the concept of the meshwork, suggesting that these lines are not connectors, but the “lines of becoming” from Deluze and Guattari's rhizome (Ingold, 2013: 132). These lines do not meet - the nodes in the network map instead represent knots and entanglements in the meshwork, places where lines emerge and diverge rather than connecting in absolutes. The mesh-work, like the rhizome, affords multiple narratives and entry points; it offers no hierarchy or structure. MIMC seeks to offer this alternative mapping of the mesh-work - the entanglements between artists, distributors, museums, governmental bodies, local communities, and countless other actors in the fabric of the independent media arts.
+
+Unlike other digital humanities approaches to cinema and media history, like Jeffrey Klenotic’s Mapping Movies, MIMC provides access not only to a representation of the history of the independent media arts, but access to the archives that hold these traces as well.
+
+The MIMC data model includes the provenance for each discrete data point in the database, linking individual records back to the primary source material from which it was derived. These connections will afford opportunities to link directly to the digital archives that hold the digital surrogates as these records, allowing MIMC to serve as an extension of these archival collections as a digital finding aid of sorts. In this way, MIMC is enfolded in the archives; the project does not derive-from but is entangled-with the archival organizations and other sites that hold the history that MIMC seeks to represent, continuing to build the meshwork that entangles the various organizations and individuals represented in the visualizations. In locating and documenting these archival traces, MIMC provides an understanding not only of the historical unfolding of the independent media arts and Media Arts Center Movement, but of the archival-ization of this history as well - the project itself becoming further enmeshed and entangled in the very history that it seeks to uncover.
+
+This brief paper will introduce the MIMC project and discuss the development of the MIMC application as well as the potential impact of the project as a Public Digital Humanities resource for scholars and for the archives that collect and provide access to the primary source materials from which the MIMC data is derived. In addition to the database and visualizations, by preserving the source information for each record and linking to the digitized archival records (or archival finding aids), MIMC links the archive of the independent media arts that is distributed across archives, personal collections, the active and inactive organizations that are part of this vast meshwork. While there is still much work to be done, MIMC promises to provide widespread access to historical data that can be reused and re-imagined beyond the initial bounds of the project.
+
+Bibliography
+
+Ingold, T.(2013). Making: Anthropology, Archaeology, Art and Architecture, New York: Routledge.
+Scholars conducting historical research are provided with a growing range of digital humanities tools, supporting different phases of the research process: there is software for extracting text from documents
+
+(such as pdftotex, available on many Linux distributions or as part of Poppler), run OCR processes on images (for example Tesseract), tools for the creation, analysis, and visualization of datasets (for instance Nodegoat, Palladio, or Visualeyes), or software to work with annotations (for example Annotation Studio) or networks (such as Gephi or Cytoscape). Programming libraries are being developed to serve the needs of humanity scholars, like Spacy or Tethne. There are several repositories (such as HathiTrust or the Europeana) that provide access to sources and can easily be integrated into other services through APIs. Many tools, however, work well as self-contained units that scholars can use as singular parts of their research process, but cannot easily be combined into an integrated workflow by the researcher. Existing and new tools are developed using different languages and programming frameworks depending on requirements, skillset, and preference of the original developer, making reuse and integration harder for the developer seeking to combine several tools. Moreover, since most tools are developed independently of each other, many efforts are repeated by reimplementing functionality that is already provided by a different piece of software.
+
+In this workshop, we would like to gather developers and programming-literate scholars to share their tool-building experiences and to present our first practical steps to create a system integrating multiple tools to work with historical documents from scan to analysis. The workshop is intended as a starting point for future exchange and cooperation for digital humanities developers.
+
+In the summer of 2016, the Digital Innovation Group at Arizona State University (ASU) and the Max Planck Institute for the History of Science (MPIWG) started to combine their efforts in developing software for the history of science. One outcome of this collaboration is a research system that allows users to manage their documents, automatically runs OCR on uploaded files, provides an image viewer for uploaded and extracted images, and integrates document management with a multi-user Jupyter notebook server for writing analysis and visualization scripts. Rather than one big system, however, the research system is comprised of several integrated services developed independently of each other using different programming languages and frameworks.
+
+For the Digital Humanities Conference 2017, we propose a full-day workshop with the goal to connect different tools and services to build a tool infrastructure for historical research.
+
+The first half of the workshop will give tool developers a chance to present their software. Every presenter will be allowed 10 minutes for their presentation and 5 minutes for questions. ASU and MPIWG will present the different components of the developed research system. Specifically, we will present the following projects:
+
+•    Collaborative Jupyter Notebooks: a Ju-
+
+pyter Notebook server that allows sharing and publishing of notebooks based on Next-cloud and Dataverse.
+
+•    DocuManager: an environment for annotating, correcting and searching digital documents, in particular for OCR text in ALTOXML and HOCR.
+
+•    Giles Ecosystem: an Apache Kafka-based service to extract images and texts from documents and run OCR procedures on them.
+
+•    Digilib: a Java-based IIIF-compliant image server and viewer.
+
+The second half will be dedicated to discussing how different tools can be connected and integrated, and how we can build a community around those tools.
+
+We envision the results of this workshop to be a concrete roadmap of how different tools will be integrated. We will define interfaces and API requirements, and if possible start development work during the workshop. Second, we will develop an organizational strategy for cooperation and collaboration among different projects. To aid organization, we will provide a Jira and Confluence project that participants can use during and after the workshop to organize collaboration.
+
+We plan on organizing a follow-up meeting at the end of 2017 at Arizona State University to review progress since the initial workshop and plan next steps. If the collaboration is successful, we hope to establish regular meetings and expand the group to connect more tools and services.
+
+Participants/Call
+We will send out a call for participation in form of a short tool presentation for the first part of the workshop. We will ask presenters to focus on the technical perspective of their tool answering the following key questions:
+
+• What is the general workflow of the tool?
+
+• What is the core functionality of the tool?
+
+• What input and output formats does the tool accept? Or what interfaces does it expose?
+
+• What license model was chosen?
+
+• What features are still missing and what are the next development goals?
+
+• How is maintenance and development of the tool organized?
+
+The deadline for the call is July 1st, 2017. We plan to accept 5-10 submission for our call, based on the usefulness of the tool and the potential for integration with other tools, which would all fit the first half of the workshop.
+
+Audience
+The target audience for this workshop are developers, historians with programming background, scholars with a technical background, and generally people involved in the development of tools to support historical research.
+
+• Dirk Wintergrün (Max Planck Institute for the History of Science, Germany)
+
+• Julia Damerow (Arizona State University, USA)
+
+• Robert Casties (Max Planck Institute for the History of Science, Germany)
+
+• Malte Vogl (Max Planck Institute for the History of Science, Germany)
+
+Confirmed Presenters
+
+        
+            The 1853 New York Crystal Palace, also known as the Exhibition of the Industry of All Nations, was the center of America’s first World’s Fair. Modeled on the Great Exhibition held at the Crystal Palace in London, the exhibition sought to “draw forth such a representation of the world’s industry and resources as would enable us to measure the strength and value of our own, while it indicated new aims for our enterprise and skill.” While the exhibition burnt down by the end of the decade, it survives through catalogues documenting its success and breadth.
+            This poster considers the catalogues from the 1853 New York Crystal Palace exhibition in physical and digital forms: as book, file, and database. Originating with the Museum Wormianum and the Louvre, catalogs were published by early museums to visualize and document their work for the world. The New York Crystal Palace exhibition generated multiple print publications to record the museum-like experience through databases and narratives. In the digital era, however, these traditional exhibition catalogs can be used in new ways. As both a physical and digital object, the cataloging forms encourage and allow relationships among user, data, and experience to come to fruition.  This project created a dataset and subsequent database from a digitized copy of the New York Crystal Palace catalog to explore the artifacts documented inside. Explored through digital tools such as OpenRefine, Tableau, Palladio, D3.js, and Google Fusion, the Crystal Palace catalogs aid us in viewing catalogs, and their modern database descendants, more generally.  How can looking at the Crystal Palace through digital tools let us see not only what others have seen, but also to see things better, see things differently?
+            Databases, by their nature, lend themselves to exploration – the 1853 Crystal Palace exhibition catalog is no exception. Creating a database from the catalog frees the information inside. The curators of the exhibition thought hard about the best way to arrange the 
+                Official Catalog, but once they decided, it couldn’t be changed. Now, the data is alive and fluid. It can be analyzed, represented in new ways. It can be searched, sorted, faceted, mapped, and turned into networked and nodes. Revisualized and revitalized in digital scholarship, this database and subsequent visualizations offer non-narrative perspectives to the exhibition's construction and imagined possibilities. Contributing both to historical and museological scholarship, 
+                Cataloging History considers histories of technology through the catalog to understand exhibition construction and the ways in which we can reconstruct it in the digital age.
+            
+            
+                
+                Ultimately, visualizations of any kind open up the catalog to a new form of interrogation. But they also ask us to reimagine the relationships connections embedded inside. What if we wanted to re-curate the Crystal Exhibition by role, showing off inventors and agents in the major divisions? What if we wanted to use this as an opportunity to tease out specific class categories? What if we wanted to reorganize the catalog by class first, instead of country? Visualizations offer us the ability to think through both the construction of the exhibition and the catalog, while also allowing us the chance to reconstruct its data to new ends. We can use the database and visualizations as way to look into the past, evolving this nineteenth-century exhibition along with new forms oft he catalogue. 
+            
+            Developed in cooperative collaboration with representatives of Brown's Center for Digital Scholarship, 
+                Cataloging History examines the ways in which traditional museum data can be mobilized to reimagine historical spaces. Using the catalogue as a piece of technology for understanding the past, it also opened a new dialogue for thinking about catalogues of the future. Building on conversations around "collections as data," this project uses a historical example to pose to both scholars and museums about how cultural heritage may work to be more readily open to computation. How does digital humanties help us unpack historical collections? These visualizations highlight how digital tools can unearth relationships among data to better understand what was there. 
+                Cataloging History challenges us to think more deeply about what information is contained in a catalog, about what remains when an exhibition is gone, and about how datasets and tools like these promote the evolution of exhibitions.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Croxall, B., Esten, E., Gomez, S., Lubar, S., and Rashleigh, P. (2017). 1853 New York Crystal Palace accessed April 25, 2018. 
+                        http://cds.library.brown.edu/projects/crystalpalace/. 
+                    
+                    
+                        Esten, E. (2017). "Visualizing the Crystal Palace." 
+                        https://github.com/sheishistoric/Visualizing-the-Crystal-Palace
+                        .
+                    
+                    
+                        Lubar, S. (2017). "A brief history of American museum catalogs to 1860." 
+                        https://medium.com/@lubar/cataloging-history-eac876941db6
+                        .
+                    
+                    
+                        Lubar, S. and Esten, E. (2017). "Catalog as Book, File, and Database." 
+                        https://medium.com/@lubar/catalog-as-book-file-and-database-ac954096152e
+                        .
+                    
+                    
+                        Lubar, S. (2017). "The New York Crystal Palace Catalogs." 
+                        https://medium.com/@lubar/the-new-york-crystal-palace-catalogs-b09d1f2bd20e.
+                    
+                    
+                        Lubar, S. and Esten, E. (2017). "Revisualizing the Crystal Palace." 
+                        https://medium.com/@lubar/revisualizing-the-crystal-palace-d239e50d9e12
+                        .
+                    
+                    New York Exhibition of the Industry of All Nations, New York, N.Y. (1853). 
+                        Official Catalogue of the New-York Exhibition of the Industry of All Nations. 1853. New York: G.P. Putnam &amp; Co.
+                    
+                
+            
+        
+    
+
+        
+            Teaching digital humanities at the undergraduate level is as much about issues of critical theory, inclusion, and diversity as it is about teaching digital tools and methods. Examining DH methods such as topic modeling introduces students to the concept of algorithmic bias, pointing to the algorithms that shape our daily lives. Working with DH tools such as Palladio enables students to confront and reveal the layers of representation (and inequality) that structure the virtual and physical spaces that we inhabit. And creating digital archives with platforms such as Omeka challenges students to question the purpose and limits of digital tools, offering opportunities to reflect on the ethics of (digital) representation. The dialectics of teaching new DH tools and questions of critique, the archive, and representation central to the humanities form the basis of the undergraduate Digital Humanities Minor at our institution, in which students take two sequential, required courses: “Introduction to Digital Humanities” and the “Seminar in the Digital Humanities”. Our talk will explore how we weave together these courses to create a holistic and critical approach to the foundations of digital humanities at the undergraduate level.
+            In “Introduction to Digital Humanities,” students examine a range of DH methods and activities and create a final project of their own choosing. We explore DH approaches to humanities questions by evaluating digital projects that engage with the Harlem Renaissance and its context. By centering students’ exposure to DH on one broad but unifying topic, we can avoid the trap of the carousel of tools into which an Intro DH class could fall. The Harlem Renaissance centers the course because it touches on cultural areas of critical interest spanning disciplines – art, music, literature, economic history, social history, political history, and urban planning – and has several DH projects either directly on the Harlem Renaissance or on related topics. By rooting the course in a historical cultural period, students are introduced to structural trends and issues that reverberate today.
+            In analyzing digital projects as a class, we critique the data behind the project, its presentation - in terms of style, effectiveness, and accessibility - and the structures in which it was made. We discuss what role grant funding plays in promoting certain types of projects, how crowdsourcing relates to labor ethics and the digital, who the project’s users may be, and what its long term preservation prospects are. We then apply this critical framework to projects ranging from a digital edition (such as 
+                Claude McKay’s Early Poetry) to large scale image analysis (such as 
+                On Broadway) to linked data and network analysis (such as 
+                Linked Jazz). We also talk to project leaders (from Virtual Harlem, 
+                Umbra Search, and the 
+                Mapping the Second Ku Klux Klan projects) to get a behind-the-scenes perspective on project management, origins, and goals. The bulk of the second half of the semester is spent on student projects. Students choose any topic they like and develop a critical research question. It is then is up to each student to choose a DH method and to find, gather, and clean their data. Class time is built in for one-on-one assistance from the professor and the embedded librarian to guide the students through the frustration and joy of the iterative DH project. By the end of the semester, the same digital project evaluation framework is used to analyze the students’ projects.
+            
+            The second semester in this year-long sequence, “Seminar in Digital Humanities,” deepens students’ skills with DH tools and methods, applies these skills in a semester-long DH project, and combines students’ DH knowledge with the reflective practices of critical theory. As both “Text, Technology, and the Body” (spring 2016) and “Digital Humanities and Critical Theory” (spring 2017), students participate in a collaborative DH project, in which they design and build an online collection using archival materials from our institution’s Special Collections as well as analyze and reflect on their digital work and the content of our archive. Whether it is digitizing criminology broadsheets from 17th Century Europe or early-twentieth century comics, this course frames DH as a continuation of - instead of a break with - critical debates over media, technology, and culture - from classics such as Walter Benjamin to current critical voices in DH such as 
+                Alan Liu and 
+                Laura Klein. The goal of these projects is not only to enable students to conceptualize and execute a student-led DH project, but also to develop their ability to read and critique digital tools and recognize their affordances, limitations, and political implications.
+            
+            Exploring and employing a variety of digital techniques, “Seminar in the Digital Humanities” adapts and expands on the “read, play, build” approach to teaching DH proposed by Joanna Swafford at DH 2016. The semester is divided into seven units, the first two of which position DH within contemporary (and 
+                critical) debates in the humanities and introduce students to the historical and disciplinary context pertaining to our subject matter. For each unit, students read theoretical texts and articles that contextualize the tool under consideration as part of a larger historical-critical discourse within media studies, critical theory, and the history of DH. These readings provide the background in which students then learn how to implement these tools and explor examples aided by guest DH specialists from around our institution. The final phase of each unit provides a collaborative space for class members to create a working plan to apply this technique to our project - in order, for example, to clean our metadata, digitize our selected archival materials, and set up the Omeka site. Finally, students execute this plan as their individual project and compose a reflective essay that positions their work in the critical debates and comments on the technological, epistemological, and ethical choices that went into their digital work. These individual projects and critical reflections provide a self-reflective context for our digital collection, while allowing the students to cultivate their identities as critical thinkers and digital humanists.
+            
+            Taken together, these two undergraduate courses expose students to a range of digital tools and methods for humanistic inquiry, providing them with experience overseeing their own DH project from conception to completion as well as participating in a semester-long team project. In different ways, the courses introduce students to critical frameworks for asking humanities questions of the digital and for using the digital to ask humanities questions. Teaching DH and critical thought as two sides of the same coin, this DH sequence provides students with tools to not only understand, but also intervene in a world increasingly mediated by digital processes.
+        
+    
+
+        
+            Theatre studies is a largely under-discussed topic in digital humanities research projects. It's lagging behind the first wave of digital humanities scholarship, «  focus[ing] on large-scale digitization projects and the establishment of technological infrastructure » (Presner, 2010). Theatre studies remains on the fringe of a growing phenomenon : culture analytics. In the context of big and complex datasets, culture analytics « is the data-driven analysis of culture » (IPAM, 2016). I suggest the expression « theatre analytics » (Bardiot, 2017). To paraphrase the culture analytics definition, theatre analytics is the data-driven analysis of theatre, whether it concerns theatre history (Caplan, 2016), drama or mise-en-scène. To understand what quantitative methodologies can bring to the knowledge of theatre, I propose a case study of Merce Cunningham. What can we learn about Merce Cunningham, one of the most influential 
+                choreographers of the 20th century, thanks to theatre analytics ? A leader of the American avant-garde throughout his seventy year career from 1938 to 2009, he establishes in 2000, in the twilight of his career, the Merce Cunningham Trust, in order to preserve the integrity of his work. At the same time, he decides to dissolve the Merce Cunningham Dance Company (MCDC) two years after his death and a legacy tour. This is an unprecedented initiative. On one hand, it demonstrates exceptional effort and dedication to document the works. On the other hand, it challenges the ephemeral nature of performing arts : 86 out of 183 choreographies are documented with “digital Dance Capsules” “so that it may be performed in perpetuity”(Dance Capsules, n.d.). By the way, two groups of works are defined : the canon (key works with extensive documentation in order to perform them again and again) ; the auxiliary (minor works with no documentation available to the public and 
+                de facto impossible to replay).
+            
+            The data was collected from the Merce Cunningham Trust website. It concerns theatre production and cast, Dances Capsules documentation and the history of the MCDC. The dataset contains 183 works from 1938 to 2009 (including 86 Dance Capsules) and 347 people. We can identify three main data categories : people, works and documentation. What can we infer from beyond the data about the MCDC history, Cunningham's aesthetics and documentation strategies ?
+            Measuring means measuring instruments. I used various and complementary tools in order to vary the approaches and analysis of the same dataset : Gephi for network analysis ; Palladio for geographic and temporal representation ; spreadsheet (Excel, Open Office, Datamatic) for statistics analysis. This paper will present the first results of this research, part of it conducted with students during a graduate « introduction to digital humanities » course. Statistical diagrams show three different periods of Cunningham's work ; a stylistic signature with a preference for pieces that are 30 minutes long, and for soli, sextets and works with 13 to 15 dancers ; a general trend towards more dancers and more length ; the special place of soli in order to articulate the canon and the auxiliary ; the organization of documents in the Dance Capsules. Network analysis let me define two different ways of collaboration, the « star » and the « spiral », and raises awareness on pivotal dancers. Geographic representation highlights relations between Europe and the United States.
+            In a wider historical perspective, it would be interesting to compare these preliminary results with other datasets. One example : two patterns have been identified in the Cunningham collaborations network : the star (figure 1), with discontinuous, centralized collaborations and groups separated from each other; the spiral (figure 2), with continuous, collective collaborations and one group growing organically. The change from the star to the spiral takes place when the company is created. Do these patterns characterize other choreographers and directors careers ? Is the creation of the company the main factor causing the evolution from the first pattern towards the second one ? While a well-worn issue – we do know that the creation of a company plays a crucial role in a career – the fact remains that “theatre analytics” let us visualize the patterns this break constitutes (or maybe not) and define different ways of collaborations.
+            
+                
+                    
+                
+            
+            Figure 1 : Merce Cunningham's collaborations network before 1954. The star pattern. 
+            Pink, dancers; orange, composers ; green, stage designers ; blue, choreographer.
+            
+                
+                    
+                Figure 2 : Merce Cunningham's collaborations network after 1954. The spiral pattern.
+            
+        
+        
+            
+                
+                    Bibliography
+                    Dance Capsules - Merce Cunningham Trust 
+                         (accessed 29 May 2018).
+                    
+                    Merce Cunningham Dance Capsules 
+                         (accessed 29 May 2018).
+                    
+                    
+                        Bardiot, C. (2017). Arts de la scène et culture analytics. (Ed.) Galleron, I. 
+                        Revue d’historiographie du Théâdre. Etudes théâtrales et humanités numériques(4): 11–20.
+                    
+                    
+                        Caplan, D. (2016). Reassessing Obscurity: The Case for Big Data in Theatre History. 
+                        Theatre Journal, 
+                        68(4): 555–73.
+                    
+                    
+                        Tangherlini, T. R. (ed). (2016). 
+                        Culture Analytics : White Papers. 
+                        .
+                    
+                    
+                        Presner, T. (2010). Digital Humanities 2.0: a report on knowledge. 
+                        Connexions Project.
+                    
+                
+            
+        
+    
+
+        
+            The largest collections of art historical images are not found online but are safeguarded by museums and other cultural institutions in photographic libraries. These collections can encompass millions of reproductions of paintings, drawings, engravings and sculptures. The 14 largest institutions hold together an estimated 31 million images (Pharos). Manual digitization and extraction of image metadata undertaken over the years has succeeded in placing less than 100,000 of these items for search online. Given the sheer size of the corpus, it is pressing to devise new ways for the automatic digitization of these art historical archives and the extraction of their descriptive information (metadata which can contain artist names, image titles, and holding collection). This paper focuses on the crucial pre-processing steps that permit the extraction of information directly from scans of a digitized photo collection. Taking the photographic library of the Giorgio Cini Foundation in Venice as a case study, this paper presents a technical pipeline which can be employed in the automatic digitization and information extraction of large collections of art historical images. In particular, it details the automatic extraction and alignment of artist names to known databases, which opens a window into a collection whose contents are unknown. Numbering nearing one million images, the art history library of the Cini Foundation was established in the mid-twentieth century to collect and record the history of Venetian art. The current study examines the corpus of the 330’000+ digitized images.
+            
+                Image Processing Pipeline
+                
+                    Photo/Cardboard Extraction 
+                    The records in the Cini Foundation consist of a photographic reproduction mounted on a cardboard card onto which metadata information is recorded. The initial scan of these records is a 300 dpi picture produced on a scanning table, and includes the digitized cardboard and color balance markers. The first task consists in separating the cardboard backing and the photographic reproduction from the raw scanned image.
+                    Despite the apparent simplicity of such a task, it proved challenging on account of the multiple layouts of the metadata information on the cardboard cards, and the variations in the sizes and positions of the attached images. In the end, what proved most effective in the extraction of the image was a Convolutionnal Neural Network (CNN) architecture designed for semantic segmentation (Ronneberger, O. et al 2015). For this, an accurate model was trained on scans which had been annotated in the course of 2 hours. The details oft he approach are part of another study (Ares Oliveira, S. and Seguin, B. 2018).
+                    
+                        
+                        Figure Left: original scan with the extracted areas highlighted with red and blue rectangles.
+                            Right: the prediction mask generated by the neural network.
+                        
+                    
+                
+                
+                    Text Extraction
+                    The second part of the pipeline consists of extracting and reading the metadata. For this task, the open-source Tesseract toolkit and the commercial Google Vision API were tested, with the latter having better performance.
+                    The OCR system provided a list of words and their positions, which were then clustered into blocks of text representing the different metadata fields (authorship, title of painting, location etc.). A layout model was used to represent the expected positions of these different fields. This allowed the assignment of each block of text to its corresponding metadata field.
+                    A precise analysis of the performance of this step is presented in another publication (Seguin, B. 2018).
+                    
+                        
+                        Figure Illustration of the OCR process. The extracted words (top-left) are clustered into blocks of metadata (top-right) and then assigned to their corresponding label (bottom).
+                    
+                
+            
+            
+                Automatic Alignment of Artist Names
+                In order to leverage the extracted metadata to get insights into a collection, it is important to link them to a knowledge database. This can allow, for example, city names to be placed geographically on a map. Here, we focus on aligning artist names with a knowledge database: the Union List of Artist Names (ULAN), managed by the Getty. This opens up a wealth of new information for the contextual understanding of the artwork’s creation.
+                The alignment process is depicted on Figure 3, it is a complex two-pass process that integrates automatic matching with collection specific knowledge in an efficient manner. The first pass tries to perform an exact match with a large name dictionary. For the second pass, a list of candidates are generated from the correctly matched elements of the first pass, and approximate matching is used to correct small OCR errors.
+                
+                    
+                    Figure Alignment process. The parts in color correspond to collection-specific knowledge.
+                
+                There are three challenges that needed to be tackled during this alignment process :
+                
+                    
+                        Names variation : one major issue that arises is that a given artist may be called by different names, depending on regional variations and pseudonyms. Many variations are recorded in ULAN (i.e “
+                        Tiepolo Gianbattista” and “
+                        Tiepolo Giovanni Battista” both corresponding to the same artist), although some have to be added to the name dictionary. Furthermore, the naming conventions for elements whose dating or provenance is known but not authorship, which may be specific to a collection, can be added to the dictionary.
+                    
+                    
+                        Implicit knowledge : one related challenge is linked with the pragmatics of the annotation process. Understanding that if one archivist writes “
+                        Leonardo” on a file, he or she is referring to 
+                        Leonardo da Vinci implies modeling a series of implicit assumptions which are changing depending on the evolution of local cataloging practices and that of the art historical field itself. In our case, we tackle this by disambiguating unclear names. For instance “
+                        Tiziano Vecellio” could technically refer to the well-known “
+                        Tiziano”, or his relative “
+                        Tizianello”, but the first is much more prominent than the second.
+                    
+                    
+                        Compositional structure : the last challenge is linked with the practice of archivists to describe particular unknown authors using specific syntactic process like (“
+                        Tiziano (bottega di-)”, “
+                        Tintoretto (Maestro di)” or “
+                        Michelangelo (copia da-)”), referring to workshop productions or copies. Understanding and modeling this “grammar” permits to generate, in a compositional manner, potential matching strings to be considered when looking for possible alignments. Such strings do not only give a link to an artist but also qualify relationships (how strongly an artist was involved in the creation process of a painting, whether the piece is an original or a copy, etc.).
+                    
+                
+            
+            
+                Results
+                
+                    
+                    Figure Left : Distribution of number of artworks assigned for each artist.
+                    Right : Proportion of images assigned with respect to the most common artists. The 200 most represented artists represent 43% of the collection.
+                
+                Of the 330,078 scans composing the corpus of study, 14.6% had an empty author field, mostly because the photographs represented architecture or aerial city views. Out of the remaining 85.4% with an authorship field, 73.8% were automatically matched to an author (61.6% after the first pass), with an additional 1.4% representing ambiguous situations which could be resolved. This accounts for 208'510 elements automatically matched. At the end of pre-processing, the potential author names can be divided into three categories :
+                
+                    (A) Author names which have been matched with a reference record of another database
+                    (B) Author names which may have been matched if the algorithm were to be improved (e.g. in terms of author name variation or possible compositional structure)
+                    (C) Authors undocumented in standard databases of artists.
+                
+                Figure 5 shows the global matching results for category A. The geographical composition of aligned authors is dominated by Venetian artists (Tiepolo, Tintoretto, Palladio, Tiziano, Veronese, etc.) showing the rationale behind the creation of the collection. In terms of chronology, the collection is focused on the sixteenth century, as shown by the distribution of year of death of the aligned artists. This is in line with the period referred to as the “Venetian Golden Age”. Figure 4 shows the very uneven representation of artists, with only 346 having more than 100 images, representing more than 50% of the whole collection.
+                
+                    
+                    Figure Spatial (right) and temporal (left) distribution of the 1’746 artists with at least 10 images assigned. 
+                
+                Category B is predominant in the elements that were not matched. Apart from OCR errors, the most typical unmatched string corresponds to collective works in which several authors are named. For instance, the string “
+                    Bassano Jacopo e Francesco” (his son) corresponds to 134 records. Adding additional parsing capabilities to the system could enable the resolution of such cases in the future.
+                
+                Names in category C, which were not matched with ULAN, are in fact not a product of misalignment but represent new discoveries in the collection. In the present study, a number of artists who do not feature in ULAN were uncovered in the Cini archive. These include, Augusto Caratti, a minor artist from nineteenth-century Padua, who is represented by 65 images in the Cini collection, and Natale Melchiori an early eighteenth-century painter from Castelfranco, Veneto, represented by 39 images. Another artist who does not feature in the ULAN database but nevertheless has a significant presence in the Cini archive with 106 drawing, is Antonio Contestabile, an eighteenth-century draftsman from Piacenza.
+            
+            
+                Conclusion
+                These early results show the potential of the systematic processing of a large number of art historical records, leading to the mapping of unknown collections, and to new discoveries. It also highlights for the first time the challenges inherent in the process. Such challenges, it is important to note, are not purely technical but rather linked with the complexity of modeling local archiving traditions and the historical practices of art history.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Pharos. 
+                        PHAROS: The International Consortium of Photo Archives. http://pharosartresearch.org/
+                    
+                    
+                        Ronneberger, O. and Fischer, P. and Brox, T. (2015) 
+                        U-Net: Convolutional Networks for Biomedical Image Segmentation.
+                    
+                    
+                        D. A. Brown, D. A. and Ferino-Pagden, S. and Anderson, J. and Berrie, B. H (2006) 
+                        Bellini, Giorgione, Titian, and the Renaissance of Venetian painting
+                    
+                    
+                        Ares Oliveira, S.* and Seguin, B.* and Kaplan, F. (2018) 
+                        dhSegment: A generic deep-learning approach for document segmentation. 
+                    
+                    
+                        Seguin, B
+                        . (2018) 
+                        New Techniques for the Digitization of Art Historical Photographic Archives—the Case of the Cini Foundation in Venice, Proceedings of Archiving 2018.
+                    
+                
+            
+        
+    
+In this paper we use materials in two languages from three different archives and using the DH platform DocuSky to consolidate them. The three archives are Dan-Hsin Archives, Ming-Qing Taiwan Administrative Archives, both in Chinese, and the Chinese Recorder, in English. We use the missionary activities in Taiwan during Guangxu era(1875-1908) as an example.We first retrieve documents of Guangxu era from these three sources and combine them into one corpus on DocuSky. The latter involves reorganizing the metadata, tags and connecting meaningful terms. Tools in DocuSky enable us to analyze the documents even from different sources and languages. We use two examples to show the efficacy of our method. First, we show the different perspectives from missionaries and Chinese during the Sino-French War(1885) revealed from the documents. We also show how DocuSky’s DocuXML format can easily link to Palladio to show social network among foreign missionaries and native believers.
+
+        
+            Chair: Marc Priewe
+            The dramatic expansion of newspapers during the nineteenth century created a global culture of abundant, rapidly circulating information. For scholars of nineteenth-century periodicals and intellectual history, the digitization of newspaper archives and the ever-growing array of tools for accessing and assessing them provide a fruitful platform of new evidence to re-evaluate how readers around the world perceived each other and to obtain fresh insights on the global networks through which news and concepts traveled. Through the identification of patterns and trends, text mining is particularly suited for this task. In this panel, we want to focus on the array of methods within text mining (e.g., text categorization, text clustering, concept/entity extraction, production of granular taxonomies, sentiment analysis, document summarization, entity relation modeling, word vector models) that are used in current research to identify and model patterns of information flow as well as to trace the migration of concepts across different communities over space and time.
+            The panel brings together the efforts of scholars from different disciplines within the humanities (e.g., cultural history, comparative literature, historical linguistics) and computer scientists to explore and share how text mining methods and tools are currently used to answer research questions such as:
+            Which stories spread between nations and how quickly?
+            How did the migration of texts facilitate the circulation of knowledge, ideas and concepts and how were these ideas transformed once they migrated from one side of the Atlantic to the other?
+            How did geopolitical realities (e.g., economic integration, migration) influence the directionality of these transnational exchanges?
+            How did reporting within ethnic communities differ from reporting in surrounding host countries?
+            The panel will begin with a five-minute introduction to the 
+                Oceanic Exchanges project and then present five ten-minute test cases exploring sets of data in a variety of languages (i.e., English, Italian, Spanish, French, German, Finnish, Swedish and Dutch) and employing different text mining methods. The panel’s main objective is not to prove one method “right” and another “wrong” but to explore the dominant strategies and methodological approaches that unveil the thematic and textual complexities between historical newspapers archives. Throughout the five papers of this panel, we offer multi-layered text mining approaches that, encompassing several methods, varying sets of data, and different discourse scenarios in a range of languages, are structurally coherent, methodologically solid, and comparatively rich. The panel will appeal to historians, linguists,  media and communication scholars, literary scholars, and computer scientists interested in textual and conceptual changes, continuities and replacements, but also to those focusing on representation of actors and events in public discourses.
+            
+            
+                Oceanic Exchanges between Italy and the United States: How Italian Americans became White
+                
+                    (Lorella Viola, Jaap Verheul)
+                
+                Presenter: Lorella Viola, Jaap Verheul
+                Between 1880 and 1930, it is estimated that more than 22 million people from all over the world migrated to the United States, 4 million of whom were Italian. As immigrant communities grew, the immigrant press boomed accordingly. As far as the Italian language is concerned, between 1880 and 1920, there were between 150 and 264 Italian language newspapers published in the United States. Diasporic newspapers became an instrument for community building and helped immigrants cope with life in the New World, including easing their transition into American society as well as serving as powerful tools of language retention and national identity preservation. At the same time, acting as advocates for the rights of the respective immigrant communities, they performed social control by drawing attention to what was acceptable within the Italian immigrant community but also within the dominant norms and values of the American society.
+                This paper explores the role of printed media in constructing the concept of Italian identity, the so called 
+                    italianità, between the end of the nineteenth century and the beginning of the twentieth century in Italy and the United States. The overarching aim is to investigate the dynamics of knowledge transfer between the two Italian communities: Italians of the newly formed Italy and Italian diasporic groups in the United States. Using a mixed-methods approach that pairs Digital Humanities technologies such as text mining and semantic modelling with the discourse-historical approach pioneered by Ruth Wodak (2001), this study compares Italian newspapers published in Italy from 1867 to 1900 with Italian language newspapers published in the United States from 1880 to 1920. The results will show that the concept of 
+                    being Italian, after originating in Italy as a synonym for national identity, travelled to the United States, where it was reshaped by the Italian language press into a means for fighting against marginality and vindicating whiteness and social inclusion. In this way, in Italy 
+                    italianità embedded the ideals of the 
+                    Risorgimento and conveyed connotations of patriotism and nationalism. In the United States, on the contrary, Italian ethnic newspapers became powerful tools through which the Italian immigrant community could negotiate social integration in the host country. 
+                    Italianità became a way to uplift the Italian “race” which was simultaneously distancing itself from African-Americans.
+                
+            
+            
+                Tracing the Traffic of Cholera in Nineteenth-Century Newspaper Repositories
+                (Jana Keck, Moritz Knabben, Steffen Koch)
+                Presenter: Jana Keck, Moritz Knabben
+                In this presentation we introduce a new corpus exploration tool which offers access to datasets of historical newspapers from North America, Europe, and Australasia (1840-1914), including at least six languages. With this tool, we are able to search for news articles containing specific keywords. However, since our corpus covers over one hundred million articles, the set of documents containing even specific keywords might be extensive. We address this problem by using visualizations to summarize the results and to find ways of deriving meaning from a vast body of texts. Our project is framed around a historical case study examining the traffic of cholera, which was one of the deadliest and most feared diseases. The nineteenth-century press played a crucial role in helping to construct the public image of cholera and other diseases. Contemporary medical scientists and practitioners, especially in the United States, wrote mostly negatively about the role of newspapers in insufficiently informing the public about possible causes, transmission roots and routes, and treatment methods. In this paper we will show how “cholera” was covered by the press in different languages and in different countries. To this end, we add functionality to a quantitative search method by applying further visualization techniques. This allows both a “distant reading” of a large newspaper corpus, while retaining some of its contextual meaning by filtering and displaying the set of found articles. Questions we ask include, but are not limited to: Can we identify a narrative of disease propagation circulating in the press that was absent, or even suppressed and disagreed with, in the official conduits of medicine? Did the increasing discrediting of miasma theory and of cholera itself cause a similar decline in the news coverage? We highlight the potential of this search tool to show how newspaper articles de-centered medical knowledge from being located only within the medical field to illustrate instead that the acceptance of these medical developments was not only a scientific, but moreover a social and cultural  effort. By placing the non-scientific newspaper articles into conversation with the social and medical developments, a more complete picture of the modernization and professionalization of medicine and (scientific) journalism is possible.
+            
+            
+                The Origins of Fake News: Lajos Kossuth, Political Celebrity, and Dis/Information in the Nineteenth-Century Press
+                (Paul Fyfe, Jana Keck, Mila Oiva, Jamie Parker)
+                Presenter: Mila Oiva
+                In December of 1851, the Hungarian revolutionary Lajos Kossuth landed in New York City at the outset of a publicity campaign to secure American support for Hungarian independence. His trip along the eastern seaboard, ultimately arriving in Washington, DC, was exhaustively covered by not only the American press but by an increasingly connected network of international newspapers. In many ways, that network established Kossuth as an international celebrity, stirring the crowds that flocked to his speeches, inspiring far-flung editors to adapt Kossuth’s messages, and inviting Hungarian political operatives and others to discredit Kossuth and manipulate the news network itself. This paper argues that Kossuth’s journey—and the international news coverage and censorship it inspired—showcases the mid-century operations of a networked mass media system. Connected by domestic telegraph wires, railways, steamships, exchange networks, and extensive reprinting practices, the international newspaper network by the mid-nineteenth century was increasingly functioning 
+                    as a system. The Kossuth case shows how its properties as a system were exploited for various ends, including not only Kossuth’s political aspirations but a complex set of goals that shift with language and location. The manipulation of the international news network shows the stirrings of dissemination, disinformation, and censorship that now shape political discourse via globally-connected social media platforms.
+                
+                Our sources span the United States, Britain, Germany, Austria, Finland, and Russia, comprising thousands of articles published in multiple languages following Kossuth’s arrival in New York City in December 1851. We identify news reprints manually and with the help of computational linguistic tools, including the use of rare word tokens and Named Entity Recognition. This selected corpus is then used to create visualizations of news reprints and their dissemination. The patterns and disparities of those reprints, in turn, allow us to evaluate the accuracy of these reports, to identify “fake” news, and to explore how and why it spread. Much like contemporary social media, international media in the nineteenth century allowed for disinformation practices based on the political goals of national stakeholders. Then as now, these practices exploit the paradoxes of any international media system: its seeming connectedness and yet its enduring distances. As Lajos Kossuth carried his message personally across the Atlantic, stories about his trip circulated and spun behind him. The international news network at once consolidated Kossuth as a global celebrity and fractured his message for various regional political ends.
+            
+            
+                “Remember the 
+                    Maine”: Newspapers in the Spanish-American War
+                
+                Ernesto Priani Saisó, Jamie Parker, Marc Priewe, Isabel Galina Russell, Miriam Peña Pentel, Rocio Castellanos, Laura Martinez Dominguez, Laura Lopez, Ximena Gutierrez-Vasques, Adan Lerma. 
+                Presenter: Ernesto Priani Saisó
+                On February 15, 1898, an explosion destroyed the US-American battleship 
+                    Maine stationed at Havana’s port and the following morning the news hit the front pages of many cities in the United States, Mexico, Spain, the United Kingdom, Germany, Austria, and Finland. The explosion happened amidst already existing diplomatic tensions that would result in the Spanish-American War, which in turn marked the emergence of the United States as a new imperial actor in international politics. The objective of this paper is to show how the information about the explosion of the 
+                    Maine was disseminated throughout selected European countries (Spain, UK, France, Germany, Austria and Finland), the United States, and Mexico by analyzing news reuse in the press using several digital tools as well as text mining and Natural Language Processing (NLP) techniques. In addition, we employ Automatic Author Profiling and Vector Space models to characterize the news semantic content applied to a corpus constituted from several National Newspaper Libraries. This allows us to compare historical news coverage of events in ways that were hitherto impossible. In Mexico, for instance, the news diffusion occurred through newspapers from the Spanish, French and American communities living in the country. Internationally, the news dispatch system depended on telegraph cables connecting the US and Europe and an alternative one between Spain, Cuba, Mexico, and Central America, inaugurated two years before the outbreak of war in April 1898. Our analysis shows further that the location source of the news was initially Havana but then moves to Washington, New York, and Key West in the United States. Quickly the American voice was the dominant one on the event; meanwhile, there was a debate in virtually all national presses about the explosion, whether it was an accident or provoked and what the political implications might be of either cause of the explosion.
+                
+            
+            
+                News Flows in 1904: The Media Coverage of Nikolay Bobrikov's Assassination
+                (Otto Latva, Asko Nivala, Mila Oiva, Hannu Salmi, Marja Jalava)
+                Presenter: Hannu Salmi
+                General Governor of the Grand Duchy of Finland Nikolai Bobrikov was assassinated in Helsinki in 1904. While the first shot was heard in Helsinki at noon on 16 June, the news was published in Mexico City, thanks to the eight-hour time difference backwards, the next morning, on 17 June. The shooting of Bobrikov offers an illuminating case for the study of European and global news circulation at the beginning of the twentieth century. The efficient international telegraph network and press agencies forwarded information that was estimated to be of interest for the news market quite quickly. The system of news delivery emphasized big centers, but the Bobrikov case shows that news from the remotest corners of Europe could also get a wide circulation. The rhizomatic communication network had its centers, but it was not centralized. 
+                This presentation studies the tempo and the ways in which news about Bobrikov was disseminated in the network of newspapers. It concentrates particularly on the viral expansion of the news during the first week after the assassination. What kinds of temporal rhythms did it have? What narrative elements did it include? What kinds of spatial ramifications did the news have? What is the diagram of news flow behind the spread of this particular case? The presentation also focuses on the thematic differences in the discourse on Bobrikov’s murder in different cultural settings. The presentation utilizes digitized newspaper collections from Finnish, French, German, Dutch, US, Australian, Austrian, Swedish, and Danish archives. In addition, we have used microfilm and physical newspaper collections of Russian newspapers at the Finnish National Library. The study takes advantage of the transnational news dataset and follows the most frequent paths of news flow, and visualizes them using tools like Palladio.
+            
+        
+    
+
+        
+            Variation is a complex phenomenon engaging almost all aspects of folklore. Every cultural performance in daily life gets adapted to time and place, circumstances and audience. In this panel we we are going to explore complex phenomena of variation and stability in folklore on the basis of textual and musical representations of oral tradition with the help of digital and computational methods.
+            In many cases, variations can be interpreted as intentional and meaningful. However, folklore seldom changes beyond recognition: there is always a part of narratives and songs that remains stable. Detecting in which points lies the stability in folklore sources, reveals to us what the very essence, the core of tradition is. Approaching the material from the other end, it needs to be analyzed how variation is produced, where the adaptability and creativity of folklore lies, and which are the meaningful possibilities for variation within the limits of tradition. As far as we are dealing with texts or melodies, we can determine in what respect oral performances can be labeled as traditional and to what extent folklore is the product of individual creativity and improvisational skills. After determining what parts of folklore remain the same, what changes and what parts are left out, we need to come up with an explanation: what does this all mean in the light of the culture of daily life?
+            Our core material consists of narratives and songs: epics, poetry, myths and other folktales, life testimonies, and folk songs (both texts and melodies). Millions of folklore texts and performances, collected in the folklore archives and nowadays available in digital form can, together with the existing metadata, be used as data for finding out the regularities and irregularities in folklore - a universal kind of natural communication with its specific functions in society.
+            
+                Computational Analysis of Life Stories
+                Theo Meder (Meertens Instituut &amp; University of Groningen)
+                In 2013, a new project was started by the Humanitas Foundation, department Almere, which was called "Levensboek" (Life Book). Volunteers from Humanitas would conduct interviews with elderly people who would tell their life stories. This life story was then recorded or edited by a volunteer and, with photos, then printed as a booklet in a limited edition. The booklets with life stories were mainly meant as testimonials for the children and grandchildren, other family and friends. One of the initiators of Humanitas, Veronica Stutvoet, contacted Theo Meder of the Meertens Institute with the question whether such Life Books were also interesting for archiving and studying. Since the study of contemporary folk culture is one of the core tasks of the Meertens Institute, Humanitas also decided to offer a booklet for the archive. Due to privacy legislation, a contract was added in which the narrators could indicate when the book could be studied freely. And from the Meertens Institute a list was drawn up with subjects that would interest the researchers, such as folktales, songs, games, festivities and rituals. The first Life Book was received in May 2013 in a festive manner: it concerned the book Met hart en ziel (With heart and soul) by Mrs Elly IJsendijk. After proven success, the Humanitas departments in Apeldoorn and Zaandam also started to produce life books, and after five years 20 booklets were produced. In addition to a paper copy, the Meertens Institute also receives a digital copy on request, so that the stories can also be subjected to a computational analysis. This may include structure analysis, research into motifs or sentiment analysis. Research into gender is also possible; do women talk about other subjects than men? The storytellers were, without exception, born in the 1920s, 30s or 40s - meaning that some experienced the crisis years as a child, while some were born shortly after the Second World War. In any case, the war has left a mark on many children, even if they only heard the stories. The life stories are always linear: they often start with the parents, then the childhood, the (aftermath of the) war, school, friends, education and profession, marriage, children and grandchildren, holidays, illnesses and deaths of loved ones. And yet the stories are always different, through the emphasis on certain themes, and through many unique personal experiences. Perhaps most revealing are the themes that all (or most) narrators ignore or leave out. In my research, I analysed the digital life books on structure, sentiments, themes and the distribution of motifs, using tools such as AntConc and LIWC2015 (Linguistic Inquiry and Word Count 2015).
+            
+            
+                Stability in folk song transmission
+                Berit Janssen (Digital Humanities Lab, University of Utrecht)
+                In folk song traditions, melodies are circulated through transmission. In this process, parts of melodies may change, while other parts remain stable, meaning they resist change. Stability has been a long-standing point of interest in folk song research: how can stability be quantified, and can we predict which parts of a melody are stable? In the past, this question has been addressed through experimental research, in which artificial transmission chains were observed. While this direction of research is inspirational, the ecological validity of such approaches may be questioned. With the current computational means and rich digitized corpora of folk songs, we can study the results of real-life transmission of melodies by comparing variants of the same song.
+                The current contribution describes such research on a corpus of 4120 Dutch folk song melodies. Two melodic units were investigated: folk song phrases and motifs. For the phrases, the goal was to predict the occurrence of a phrase in a family of related songs: a phrase occurring in many variants in almost identical form was considered more stable, and was expected to have different melodic properties from less stable phrases. To determine the occurrence of folk song phrases, a pattern matching method was developed in Python, which was optimized on a training set of annotated phrase occurrences. Several similarity measures were compared, and those approaching human judgements on phrase occurrences most closely were combined to detect phrase occurrences in the full set of folk songs. For the motifs, a set of motifs considered characteristic melodic material of 360 melodies was compared against random melodic patterns, with the expectation that the characteristic motifs would have different melodic properties from the random melodic material.
+                We evaluated prediction success through Generalized Linear Mixed Models. The results show a number of successful predictors for stability of melodic segments in transmission: the length, position and number of repetitions in a melody, conformity to musical expectations, and the presence of repeating motifs can help us to predict whether or not a given melodic segment is stable. Both for folk song phrases and folk song motifs, the melodic predictors explain between 5% and 10% of the variation, constituting a medium-sized effect. Other factors might influence stability in folk song transmission: preference to copy performances of individuals based on their status in society (prestige bias), or preference to copy the most common variants of a melody (conformity bias). Given that such factors cannot be controlled in the current dataset, the extent to which stability can be explained purely on the musical properties of melodic segments is impressive, and shows that stability is certainly not a randomly occurring phenomenon, but arises from the resonance of melodic structures with our cognitive capacities to perceive and memorize music.
+            
+            
+                Rule Mining for Melodic Cadences
+                Peter van Kranenburg (Meertens Instituut, Amsterdam)
+                The availability of large collections of digitized folk songs enables an empirical approach to the study of various aspects of melodic structure. In this contribution, we focus on melodic patterns that are used to indicate a cadence, or ‘end of phrase’. Most existing approaches for modelling cadential patterns are either based on pre-defined rules or on statistical learning. Rule based approaches include Narmour’s Implication-Realization model (Narmour, 1992), and Cambouropoulos’ Local Boundary Detection Model (Cambouropoulos, 2001), which both are grounded in principles from Gestalt Theory. Statistical approaches include Rens Bod’s Data Oriented Parsing (Bod, 2001), Huron’s ITPRA-model (Huron, 2006), and the IDyOM model by Pearce et al. (2010). The current study takes a hybrid approach by employing a rule-mining algorithm to infer a model of melodic closure (cadence) from a collection of folk melodies. There are many machine learning methods that could be used to learn models from data. The advantage of a rule-mining algorithm is that the resulting model is highly interpretable, as it consists of a series of rules.
+                We employ a collection of more than 4,000 melodies in Western tonal idiom from the Meertens Tune Collections (Van Kranenburg, 2014). Since the digitized melodies in these data sets include annotations of phrase boundaries, these are well suited to train cadence-detectors. The data set for rule mining consists of all pitch tri-grams from all melodies. The tri-grams are labelled as either ‘cadential’ or ‘non-cadential’. We represent each tri-gram as a vector of feature values. Features include scale degrees of the three pitches, melodic contour, and metric weights.
+                We use the RIPPER algorithm (Cohen, 1995) to perform the rule mining. The output of the algorithm consists of a series of rules to separate the cadential tri-grams from the non-cadential tri-grams.
+                In a first run, we obtain a F-measure of 0.789 on a separate test-set. The three most important rules describe cadences on the first and the fifth degree of the melodic scale. The first rule states that a tri-gram which ends on the tonic, has a high metric weight for the third pitch, and has a descending contour is a cadential tri-gram. This rule reflects common knowledge from music theory.
+                By closely examining the cases in which the discovered rules fail, we are able to identify possible other features to include. In particular, we find that the position of the tri-gram in a melodic phrase is of importance. Therefore, we include this in our feature set and perform a next run of the algorithm. The newly discovered model achieves a F-measure of 0.839 on a separate test-set. Adding the feature, clearly improved the discovered model.
+                From this study, we conclude that cadence patterns obey general rules, and that it is possible to derive these rules from melodic data when including the right features. The advantage of a rule-based model is its interpretability in musical terms.
+            
+            
+                Browsing the corpus of Finnic oral poetry
+                Kati Kallio &amp; Eetu Mäkelä (University of Helsinki)
+                With a versatile corpus of Finnic oral poems in several related languages and dialects and a wide variety of different orthographies, a central question is how to gather relevant items for each research setting. How to find similar poetic formulas or themes and trace intertextual relationships in a linguistically and poetically heterogenous corpus of oral poetry, and what theoretical possibilities does digital reading offer for the research?
+                In this paper, we compare searches made with research interface Octavo (https://github.com/jiemakel/octavo) and the present interfaces of two corpora of historical Finnic oral poetry in runo-song meter (www.skvr.fi, www.folklore.ee/regilaul) to the analyses that were made earlier manually with these collections, discussing both the practical and theoretical possibilities and implementations given by digital browsing possibilities.
+                During the last decades, the folklore archives in Estonia and Finland have digitised two large sources of historical Finnic oral poetry, consisting of c. 181,000 poems in various dialects of small related languages around the Baltic sea: Karelian, Izhorian, Votic, Estonian and Finnish. The poems were recorded in 1564–1939 with various orthographical systems. Some words may appear in hundreds of different written forms. The stories and main characters may exist in various ways, with individual, local and regional peculiarities. The language may contain archaisms or special word forms, syllables and words used only in songs. The poetic system is complex and versatile, and there are no comprehensive dictionaries or ready-made parsers for the data.
+                Yet, the research history provides a point of comparison. During the first half of the 20th century, a great amount of detailed studies on geographical variation of individual song types was made, with the aim of taking all the collected examples into account. Although the theoretical understanding of oral poetry has since changed, making these studies partly invalid, these studies are still relevant depictions of variation within the data. When compared with searches made with digital tools, they give a baseline for evaluating the possibilities and limitations of the present tools. The paper focuses on three examples:
+                1) Analysis by Väinö Kaukonen (1956) of the manuscript sources of oral poetry used by Elias Lönnrot when composing the Finnish national epic 
+                    Kalevala.
+                
+                2) Historical-geographical analysis by Martti Haavio (1948) of the vernacular 
+                    Death Song of Saint Henrik, the medieval patron saint of Finland.
+                
+                3) Typological-stylistic analysis by Matti Kuusi (1949) of the Karelian mythological 
+                    Sampo-epics.
+                
+                Is it possible to find digitally all those variations and intertextual links — or more — of a particular theme or poetic formula that were gathered manually by the past researchers? This is approached 1) with word and collocation searches, 2) by checking the results by using a thematic index of the SKVR-corpus (using also visualisation with Palladio), and 3) finally comparing both strategies with the findings of earlier manual research.
+            
+            
+                Potential of Stylometry in Studying Folkloric Variation: Content, Style, Language
+                Mari Sarv (Estonian Literary Museum, Tartu)
+                Stylometry - a statistical method comparing sets and share of most frequent words (or other units) in different texts - has been most notably used in the field of authorship attribution, but also in genre studies, in translation studies etc. The main idea lies in the assumption that individual style of an author is represented in the way he/she (unconsciously) uses the most frequent words (usually grammatical function words) or other units. In applying stylometry for the large historical corpora of literary writings one can detect development of style, which is not clearly distinguishable of the changes in natural (and thus also literary) language use (see e.g. Eder and Górski, 2016; Eder, 2018).
+                The current paper addresses the potential of stylometry in studying variation in folklore texts. Stylometric analysis could possibly help us to find answers to many questions concerning the nature of folklore and variation inherent to it, say the individuality versus traditionality of performers/creators, similarities/differences of different folklore genres. In addition, stylometry could be used as clustering tool for detecting tradition areas within a bigger area, and even folkloristic text-types within the text corpora when focusing on content words in the analysis.
+                At first glance stylometry seems to be an extremely useful and feasible method for getting better knowledge on variation in folklore; there are additional difficulties to solve though. First, the linguistic (dialectal) variation and folkloric variation are inseparable and overlapping. Different words and word forms used in different (micro)dialects do not have to mean differences in content aspects, like modes, genres, types. Non-standard language and non-standard orthographies present in folklore texts do not make the task of comparison easier either. Moreover, the folklore texts are usually not written down by performers themselves, but collectors who have left prints of their personal style into recordings. The complexity of variation in folklore makes it a challenge to tackle, and evokes questions if the variation we are able to detect using stylometry (comparing the presence and share of most frequent words in different text groups), form part of dialectal, stylistic or folkloric variation; is it individual, or reflects the peculiarities of genre, thematic or functional groups of texts.
+                My experiments with multilingual corpora of folksongs (www.skvr.fi, www.folklore.ee/regilaul) in several Finnic languages (dialects) on the basis of word forms have revealed that both, linguistic as well as content aspects play a role in clustering, reflecting main dialect boundaries in first instance, but revealing for example also regional predominance of lyric and epic mode in songs, and different thematic accents in regional groups.
+            
+            
+                The network of characters in Estonian animal tales
+                Risto Järv (Estonian Literary Museum, Tartu)
+                If folklore is characterised by variation and milieu-morphological adaptation of characters, the adaptation of internationally spread animal tales will retain some established dominant characters – it is certain fixed characters that appear as certain types. The presentation observes the variability of animal characters, using network analysis. The study is based on the Estonian folk tale text corpus created by the Estonian Folklore Archives of the Estonian Literary Museum and the Department of Estonian and Comparative Folklore at the University of Tartu. The corpus contains 13,000 Estonian texts, of which approximately a fifth is made up by animal tales. While the Estonian folklore scholar Pille Kippar has noted in an earlier discussion of characters of animals tales (Kippar, 1989) that the characters can be easily interchangeable within the limits of their stereotypes, I am analysing a sample of selected tale types to check how predominant such variability is, which characters in particular appear as interchangeable, and which regularities emerge in the variability as concerns versions of specific tale types as well as versions by particular storytellers.
+                I analyse which sets (pairs) of characters are most likely to vary within the tradition and whether there are causal relationships between this feature and the animal characters being active or passive. As several animal tales appear as cycles in the folklore tradition, which combine different tale types within one tale, also this characteristic is taken into account to detect whether any distinct features of character variability emerge in these cases.
+            
+        
+        
+            
+                
+                    Bibliography
+                    
+                        Bod, R.
+                         (2001). Probabilistic grammars for music. 
+                        Proceedings of BNAIC
+                         2001.
+                    
+                    
+                        Cambouropoulos, E.
+                         (2001). The local boundary detection model (LBDM) and its application in the study of expressive timing. 
+                        Proc. of the Intl. Computer Music Conf.
+                    
+                    
+                        Cohen, W. W.
+                         (1995). Fast Effective Rule Induction. 
+                        Proceedings of the Twelfth International Conference on Machine Learning.
+                    
+                    
+                        Eder, M. and Górski, R. L.
+                         (2016). Historical Linguistics' New Toys, or Stylometry Applied to the Study of Language Change. 
+                        DH 2016
+                        , pp. 182-184.
+                    
+                    
+                        Eder, M.
+                        (2018). Words that Have Made History, or Modeling the Dynamics of Linguistic Changes. 
+                        DH 2018
+                        , pp. 362-364.
+                    
+                    
+                        Huron, D.
+                         (2006). 
+                        Sweet Anticipation.
+                         Cambridge, Mass.: MIT Press.
+                    
+                    
+                        Kippar, P.
+                        (1989). Eesti loomamuinasjuttude tegelastest. 
+                        Paar Sammukest eesti kirjanduse uurimise teed. Uurimusi XII. Jakob Hurda 150. sünniaastapäevaks. ENSV Teaduste Akadeemia Fr. R. Kreutzwaldi nimeline kirjandusmuuseum.
+                         Tallinn: Eesti Raamat, pp. 148–157.
+                    
+                    
+                        Narmour, E.
+                         (1992). 
+                        The Analysis and Cognition of Basic Melodic Structures.
+                         Chicago: University of Chicago Press.
+                    
+                    
+                        Pearce, M., Müllensiefen, D. and Wiggins, G.
+                         (2010). The role of expectation and probabilistic learning in auditory boundary perception: A model comparison. 
+                        Perception
+                        ,
+                        39 (10)
+                        : 1365–1389.
+                    
+                    
+                        Van Kranenburg, P., De Bruin, M., Grijp, L. P. and Wiering, F.
+                         (2014). 
+                        The meertens tune collections. Meertens Online Reports
+                         2014-1, Amsterdam: Meertens Institute.
+                    
+                
+            
+        
+    
