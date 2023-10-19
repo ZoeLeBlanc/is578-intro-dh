@@ -11,12 +11,12 @@ class_date: 2023-10-19
 
 ### Contextual Materials
 
-- Part II Cultural Networks (Chapter 3) and Part III Manoeuvres (Chapter 4) in Ahnert, Ruth, Sebastian E. Ahnert, Catherine Nicole Coleman, and Scott B. Weingart. *The Network Turn: Changing Perspectives in the Humanities*. Elements in Publishing and Book Culture, December 2020. [https://doi.org/10.1017/9781108866804](https://doi.org/10.1017/9781108866804).
+- Part II Cultural Networks: Chapter 3 Culture Is Data and Chapter 4 Visual Networks in Ahnert, Ruth, Sebastian E. Ahnert, Catherine Nicole Coleman, and Scott B. Weingart. *The Network Turn: Changing Perspectives in the Humanities*. Elements in Publishing and Book Culture, December 2020. [https://doi.org/10.1017/9781108866804](https://doi.org/10.1017/9781108866804).
 - Klein, Lauren F., and Sandeep Soni. "How Words Lead to Justice." Public Books (blog), August 17, 2021. [https://www.publicbooks.org/how-words-lead-to-justice/](https://www.publicbooks.org/how-words-lead-to-justice/).
 
 ### Applied Materials
 
-- Earhart, Amy E, Roopika Risam, and Matthew Bruno. "Citational Politics: Quantifying the Influence of Gender on Citation in Digital Scholarship in the Humanities." *Digital Scholarship in the Humanities* 36, no. 3 (September 1, 2021): 581–94. [https://doi.org/10.1093/llc/fqaa011](https://doi.org/10.1093/llc/fqaa011).
+- Skim Earhart, Amy E, Roopika Risam, and Matthew Bruno. "Citational Politics: Quantifying the Influence of Gender on Citation in Digital Scholarship in the Humanities." *Digital Scholarship in the Humanities* 36, no. 3 (September 1, 2021): 581–94. [https://doi.org/10.1093/llc/fqaa011](https://doi.org/10.1093/llc/fqaa011).
 
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
