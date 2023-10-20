@@ -392,27 +392,25 @@ Modularity is a metric that measures the strength of the division of a network i
 
 ## Network Analysis Assignment
 
-Working together in breakout groups, you will try out the following tools:
+Your assignment is try out the following tools, using some form of network data:
 
 - [Gephi-lite](https://gephi.org/gephi-lite/)
 - [Palladio](https://hdlab.stanford.edu/palladio/)
 - [Network Navigator](https://networknavigator.jrladd.com/)
 
-Each member of the group will use a separate dataset from Melanie Walsh's repository and the goal is to complete the following tasks:
+You might try using a dataset from Melanie Walsh's repository of sample datasets, or even try to create your work. The core goals are:
 
 - try to upload the data to each of these tools
 - try to create some sort of visualization
 - try to calculate some network metrics (if that is possible in the tool)
+- try to export your visualization and metrics (again if possible for the tool)
 
-You should help each other through each task, and if you get stuck you can ask me for help.
+While these are all new tools, by now you are all experts on testing out DH tools and reading documentation. But also feel free to reach out to the Instructor or generally on Slack if you have any questions or need help.
 
-While these are all new tools, by now you are all experts on testing out DH tools and reading documentation. 
-
-Once completed, we will discuss the differences between these tools and how they work.
-
-
-
+Once completed, you should post your visualization and any insights in this forum discussion [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/7](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/7).
 
 ## Resources
 
-- Marten Düring, "From Hermeneutics to Data to Networks: Data Extraction and Network Visualization of Historical Sources," Programming Historian 4 (2015), https://doi.org/10.46430/phen0044.
+- Marten Düring, "From Hermeneutics to Data to Networks: Data Extraction and Network Visualization of Historical Sources," Programming Historian 4 (2015), [https://doi.org/10.46430/phen0044](https://doi.org/10.46430/phen0044).
+- Miriam Posner, Tutorial on building Networks in Flourish [https://miriamposner.com/classes/dh201w23/tutorials-guides/network-analysis/flourish-graph/](https://miriamposner.com/classes/dh201w23/tutorials-guides/network-analysis/flourish-graph/)
+- Martin Grandjean Tutorial to Gephi [https://www.martingrandjean.ch/introduction-to-network-visualization-gephi/](https://www.martingrandjean.ch/introduction-to-network-visualization-gephi/)
