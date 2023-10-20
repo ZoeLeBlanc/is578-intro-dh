@@ -390,7 +390,7 @@ Betweenness centrality is also very popular, and it represents the number of tim
 Modularity is a metric that measures the strength of the division of a network into communities. Partioning networks into communities is a very popular approach, and uses the structure of the network to identify groups of nodes that are more connected to each other than to the rest of the network. 
 
 
-## In-Class Assignment
+## Network Analysis Assignment
 
 Working together in breakout groups, you will try out the following tools:
 
@@ -410,7 +410,7 @@ While these are all new tools, by now you are all experts on testing out DH tool
 
 Once completed, we will discuss the differences between these tools and how they work.
 
-## Network Analysis Assignment(s)
+
 
 
 ## Resources
