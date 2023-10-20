@@ -20,10 +20,11 @@ class_date: 2023-10-26
 
 ### Applied Materials
 
-- Siddiqui, Nabeel. "Are We There Yet? Diversity and Mobility in the Digital Humanities – Nabeel Siddiqui." Accessed August 19, 2023. [https://nabeelsiddiqui.net/digital-projects/are-we-there-yet-diversity-and-mobility-in-the-digital-humanities/](https://nabeelsiddiqui.net/digital-projects/are-we-there-yet-diversity-and-mobility-in-the-digital-humanities/).
-- Example projects:
-  - Cameron Blevins and Jason Heppler, Geography of the Post [http://cameronblevins.org/gotp/](http://cameronblevins.org/gotp/)
-  - American Panorama [https://dsl.richmond.edu/panorama/](https://dsl.richmond.edu/panorama/). There's a number of projects within this larger website, feel free to choose one to explore.
+- Skim Siddiqui, Nabeel. "Are We There Yet? Diversity and Mobility in the Digital Humanities – Nabeel Siddiqui." Accessed August 19, 2023. [https://nabeelsiddiqui.net/digital-projects/are-we-there-yet-diversity-and-mobility-in-the-digital-humanities/](https://nabeelsiddiqui.net/digital-projects/are-we-there-yet-diversity-and-mobility-in-the-digital-humanities/).
+- Explore one of the example projects:
+    - Cameron Blevins and Jason Heppler, Geography of the Post [http://cameronblevins.org/gotp/](http://cameronblevins.org/gotp/)   
+    - Julius Wilm, Robert K. Nelson, and Justin Madron, “Homesteading,” American Panorama, ed. Robert K. Nelson and Edward L. Ayers, accessed October 20, 2023, [https://dsl.richmond.edu/panorama/homesteading/](https://dsl.richmond.edu/panorama/homesteading/)
+    - T. Arnold, N. Ayers, J. Madron, R. Nelson, L.Tilton, L. Wexler. Photogrammar (Version 3.0). 2021. [https://photogrammar.org/](https://photogrammar.org/)
 
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
