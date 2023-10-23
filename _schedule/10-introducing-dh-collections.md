@@ -19,6 +19,7 @@ class_date: 2023-11-09
 ### Applied Materials
 
 - Alles Torrent, Susanna, Alexander Gil Fuentes, and Terence Catapano. “Ed v1.0.2,” 2017. [https://doi.org/10.7916/d8-wgzr-1384](https://doi.org/10.7916/d8-wgzr-1384).
+- Gonzalez, Aston. "Colored Conventions Project." *Journal of American History* 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568).
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
