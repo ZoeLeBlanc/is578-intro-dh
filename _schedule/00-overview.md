@@ -28,11 +28,10 @@ This overview gives a top level view of the topics for each of our meetings. You
 | October 12, 2023 | [Introducing DH Analysis]({{site.baseurl}}/schedule/06-introducing-dh-analysis) | [Intro to Text Analysis]({{site.baseurl}}/materials/intro-data-analysis/01-intro-text-analysis) |
 | October 19, 2023 | [Introducing DH Networks]({{site.baseurl}}/schedule/07-introducing-dh-networks) | [Intro to Networks]({{site.baseurl}}/materials/intro-data-analysis/02-intro-network-analysis) |
 | October 26, 2023 | [Introducing DH Maps]({{site.baseurl}}/schedule/08-introducing-dh-maps) | Intro to Mapping (To be posted) |
-| November 2, 2023 | [Introducing DH Markup]({{site.baseurl}}/schedule/09-introducing-dh-markup) | Intro to Markup Languages (To be posted) |
-| November 9, 2023 | [Introducing DH Websites]({{site.baseurl}}/schedule/10-introducing-dh-websites) | Intro to Websites (To be posted) |
-| November 16, 2023 | [Introducing DH Collections]({{site.baseurl}}/schedule/11-introducing-dh-collections) | Intro to Static Sites (To be posted) |
-| November 30, 2023 | [Introducing DH Workshops]({{site.baseurl}}/schedule/12-introducing-dh-workshops) | Open session |
-| December 7, 2023 (Optional) | [Introducing DH Futures]({{site.baseurl}}/schedule/13-introducing-dh-futures) | Open session |
+| November 2, 2023 | [Introducing DH Websites]({{site.baseurl}}/schedule/09-introducing-dh-websites) | Intro to Websites (To be posted) |
+| November 9, 2023 | [Introducing DH Collections]({{site.baseurl}}/schedule/10-introducing-dh-collections) | Intro to Static Sites (To be posted) |
+| November 16, 2023 | [Introducing DH Workshops]({{site.baseurl}}/schedule/11-introducing-dh-workshops) | Open session |
+| November 30, 2023 | [Introducing DH Futures]({{site.baseurl}}/schedule/12-introducing-dh-futures) | Open session |
 
 
 ## Workshop Assignment Schedule
@@ -48,8 +47,8 @@ This overview gives a top level view of the topics for each of our meetings. You
 | [Intro to Data Visualization Assignment]({{site.baseurl}}/materials/intro-visualizing-data/01-intro-data-visualization#data-visualization-assignments) | [October 12]({{site.baseurl}}/schedule/06-introducing-dh-analysis) |
 | [Intro to Text Analysis Assignment]({{site.baseurl}}/materials/intro-data-analysis/01-intro-text-analysis#text-analysis-assignments) | [October 19]({{site.baseurl}}/schedule/07-introducing-dh-networks) |
 | [Intro to Network Analysis Assignment]({{site.baseurl}}/materials/intro-data-analysis/02-intro-network-analysis#network-analysis-assignment) | [October 26]({{site.baseurl}}/schedule/08-introducing-dh-maps) |
-| [Intro to Markup Languages Assignment](#) | [November 2]({{site.baseurl}}/schedule/09-introducing-dh-markup) |
-| [Intro to Web Styling Assignment](#) | [November 9]({{site.baseurl}}/schedule/10-introducing-dh-websites) |
+| [Intro to Mapping Assignment](#) | [November 2]({{site.baseurl}}/schedule/09-introducing-dh-markup) |
+| [Intro to Web Languages Assignment](#) | [November 9]({{site.baseurl}}/schedule/10-introducing-dh-websites) |
 | [Intro to Static Sites Assignment](#) | [November 16]({{site.baseurl}}/schedule/11-introducing-dh-collections) |
 
 

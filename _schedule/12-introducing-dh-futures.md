@@ -1,8 +1,8 @@
 ---
 title: "Introducing DH Futures (Optional Session)"
-permalink: /schedule/13-introducing-dh-futures/
+permalink: /schedule/12-introducing-dh-futures/
 toc: true
-class_date: 2023-12-07
+class_date: 2023-11-30
 ---
 
 ## Seminar and Workshop Framing

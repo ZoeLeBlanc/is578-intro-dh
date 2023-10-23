@@ -1,8 +1,8 @@
 ---
 title: "Introducing DH Workshops"
-permalink: /schedule/12-introducing-dh-workshops/
+permalink: /schedule/11-introducing-dh-workshops/
 toc: true
-class_date: 2023-11-30
+class_date: 2023-11-16
 ---
 
 ## Seminar and Workshop Framing

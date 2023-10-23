@@ -1,8 +1,8 @@
 ---
 title: "Introducing DH Collections"
-permalink: /schedule/11-introducing-dh-collections/
+permalink: /schedule/10-introducing-dh-collections/
 toc: true
-class_date: 2023-11-16
+class_date: 2023-11-09
 ---
 
 ## Seminar and Workshop Framing
