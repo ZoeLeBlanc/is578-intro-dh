@@ -141,21 +141,76 @@ But for time, I'm once again going to use some code to generate our data (you ca
 | 2013-01-01 | Lincoln, Nebraska, United States | GLAM: galleries, libraries, archives, museums | Drupal | 2 |
 | 2013-01-01 | Lincoln, Nebraska, United States | GLAM: galleries, libraries, archives, museums | Google Books | 1 |
 
+Now if we upload the topic network to Palladio we see the following:
 
+<figure>
+    <a href="{{site.baseurl}}/assets/images/palladio_topic_network.png"><img src="{{site.baseurl}}/assets/images/palladio_topic_network.png"></a>
+</figure>
 
+This is pretty overwhelming so we might also try faceting by tools, like `Palladio` and `Voyant`, which starts to show us which topics overlap between these tools:
 
+<figure>
+    <a href="{{site.baseurl}}/assets/images/palladio_topic_network_facet.png"><img src="{{site.baseurl}}/assets/images/palladio_topic_network_facet.png"></a>
+</figure>
 
+Now if we try to do the same with our keywords you may find that the browser crashes because it is so much data (over 3000 rows). One alternative is to try something like Gephi-lite.
+
+Now normal Gephi would let us just upload our spreadsheet but Gephi-lite requires an `gexf` file. I'm generating these in this code notebook, but you could also download Gephi and generate them locally from the spreadsheets that way.
+
+I've also uploaded the `gexf` files to GitHub so now we can use them from GitHub directly in Gephi-Lite:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/gephi_lite_upload.png"><img src="{{site.baseurl}}/assets/images/gephi_lite_upload.png"></a>
+</figure>
+
+This gives us an initial graph:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/gephi_lite_graph.png"><img src="{{site.baseurl}}/assets/images/gephi_lite_graph.png"></a>
+</figure>
+
+That we can then use layout algorithms like force layout to visulize our network:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/gephi_lite_force.png"><img src="{{site.baseurl}}/assets/images/gephi_lite_force.png"></a>
+</figure>
+
+And then we can use statistics to color our network again:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/gephi_lite_statistics.png"><img src="{{site.baseurl}}/assets/images/gephi_lite_statistics.png"></a>
+</figure>
+
+The result is a graph that shows us that certain keywords like `user_studies` connects certain tools:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/user_studies_graph.png"><img src="{{site.baseurl}}/assets/images/user_studies_graph.png"></a>
+</figure>
+
+Compared to `data_exploration`:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/data_exploration_graph.png"><img src="{{site.baseurl}}/assets/images/data_exploration_graph.png"></a>
+</figure>
+
+And we can even search for nodes like `mapping`, which is shared across multiple tools:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/mapping_graph.png"><img src="{{site.baseurl}}/assets/images/mapping_graph.png"></a>
+</figure>
+
+There's more explorations we could do, and we could still even project this graph for example but hopefully you are starting to see the potential for network analysis.
 
 ## Mapping in DH
 
 Now that we have discussed some of the mapping projects from this week, as well as the broader question of why and how we map in Digital Humanities, we can start to explore ways to map our own data.
 
-You'll notice that I've included a `location` column in these datasets of some of the networked datasets. This is because I wanted to show how we might start to map our data.
+You'll notice that I've included a `location` column in these datasets of some of the networked datasets. Let's try using the `projected_weighted_tools_dates_location_edges.csv`.
 
 We can start by uploading our data to Palladio and seeing what we can do:
 
 <figure>
-    <a href="{{site.baseurl}}/assets/images/palladio_location.png"><img src="{{site.baseurl}}/assets/images/palladio_location.png"></a>
+    <a href="{{site.baseurl}}/assets/images/empty_map.png"><img src="{{site.baseurl}}/assets/images/empty_map.png"></a>
 </figure>
 
 You'll notice that our map contains no data. That's because our `location` column though containing the locations of columns is not actually geocoded.
@@ -178,15 +233,89 @@ Here's a step-by-step breakdown of how geocoding typically works:
 
 4. **Output**: Once a match is found, the service returns the precise latitude and longitude of the address or place name.
 
+There are a number of different geocoding services, but we can easily use one through Google Sheets with their extension functionality. Today I'm using the [Geocoding by Awesome Table](https://workspace.google.com/marketplace/app/geocode_by_awesome_table/904124517349) extension.
 
+![gecoder](https://lh3.googleusercontent.com/sKatWxvPUi8V3Y2QKur7jtwybVwncilRmkynaxhyYJiv-lQGQLJml5gvmJHuBvRWTMyavEBF=w1280-h800)
 
----
+To try this out, I've uploaded our dataset to Google sheets and have installed this extension. The first thing though that I'll try doing is creating a unique list of place names so that I don't have to geocode the same place multiple times.
 
-I hope this helps complete your lesson on geocoding! If you need further information or examples, please let me know.
+<figure>
+    <a href="{{site.baseurl}}/assets/images/unique_places.png"><img src="{{site.baseurl}}/assets/images/unique_places.png"></a>
+</figure>
 
-### Extracting Place Data from Text
+Now I can select the `Geocode` option from the `Add-ons` menu:
 
-We've seen an example of geocoding before in Voyant Tools:
+<figure>
+    <a href="{{site.baseurl}}/assets/images/geocode_places.png"><img src="{{site.baseurl}}/assets/images/geocode_places.png"></a>
+</figure>
+
+Eyeballing the results, they look fairly accurate but geo-coding as we saw in one of our readings is far from exact science and can often result in empty or incorrect values.
+
+If I'm happy with the results, then I just need to merge the two datasets back together:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/formula_latitutde.png"><img src="{{site.baseurl}}/assets/images/formula_latitutde.png"></a>
+</figure>
+
+Now I could download my data at this point, but Palladio requires geographic data as coordinates, so next I'll combine those two columns into a new one:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/coordinates_sheets.png"><img src="{{site.baseurl}}/assets/images/coordinates_sheets.png"></a>
+</figure>
+
+Now when working with Palladio, I can create the following map:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/palladio_map.png"><img src="{{site.baseurl}}/assets/images/palladio_map.png"></a>
+</figure>
+
+This looks great (though perhaps counting tools to conferences is a bit complicated) but the one downside with Palladio is that I can't easily create an interactive map.
+
+So, I might try a tool like [Kepler.gl](https://kepler.gl/), which is a free open-source geospatial analysis tool for large-scale data sets. The tool is produced by Uber, so it is designed to work with large datasets.
+
+Similar to Palladio we can just upload our data:
+
+![upload kepler](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/image42.png)
+
+And we should get a map that looks like the following:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/initial_kepler_map.png"><img src="{{site.baseurl}}/assets/images/initial_kepler_map.png"></a>
+</figure>
+
+We can start to tweak, but if you go the filter functionality you'll notice that we aren't seeing the option of creating a timeline even though Kepler is telling us we have `date` column:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/kepler_dates.png"><img src="{{site.baseurl}}/assets/images/kepler_dates.png"></a>
+</figure>
+
+The issue is that Kepler expects a `datetime` column, so back in google sheets we can update our dataset to do the following:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/corrected_date.png"><img src="{{site.baseurl}}/assets/images/corrected_date.png"></a>
+</figure>
+
+And now if we re-upload our data to Kepler we should see the following:
+
+<figure>
+    <a href="{{site.baseurl}}/assets/images/finalized_kepler_map.png"><img src="{{site.baseurl}}/assets/images/finalized_kepler_map.png"></a>
+</figure>
+
+Which we can also embed here:
+
+<figure>
+
+<iframe src="https://kepler.gl/#/demo?mapUrl=https://gist.githubusercontent.com/ZoeLeBlanc/32daed91a4eb0038640891b95e78029c/raw/580a8252b3757387e0fc5ae309e88a3c921f9c06/kepler.gl.json" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="900px" width="1200px" allowfullscreen=""></iframe>
+
+</figure>
+
+I'll explain more of how I embedded this map next week when we starting talking about websites, but you can see how with filtering and the timeline we can start to explore our data. The big question though that we have yet to discuss is how accurate my geocoding is and how I might improve it. 
+
+## (In Class/At Home) Mapping Assignment
+
+So far we have been using place names already provided to us, but from our readings we also know that we can also extract place names from text to geocdoe and map them.
+
+We've seen an example this before in Voyant Tools:
 
 <figure>
     <!--	Exported from Voyant Tools (voyant-tools.org).
@@ -198,12 +327,20 @@ Feel free to change the height and width values or other styling below: -->
 <iframe style='width: 891px; height: 487px;' src='https://voyant-tools.org/tool/DreamScape/?corpus=3380d938601f8ebdf055fc572adc1b61'></iframe>
 </figure>
 
-## Mapping Assignment(s)
+Depending on the time left in class, your assignment is to use any textual data (whether your own or abstracts from the *Index of DH Conferences* or novels), and try to creating a dataset of place names to map. You can use any spreadsheet software and any geocoding service, as well as any mapping tool. But the goal is to have at least 10 locations and a map to share with the class. 
 
-1. Curated Mapping: Manually Generating GeoSpatial Data
+Some things to consider include:
+- What would you define as a place name? Is that the same as a geographic location? 
+- Could you use something like Google Sheets to automate the process of geocoding? Or even the process of locating place names?
+- Are your locations points or larger polygons? How might you represent that in your map?
+- Are you interested in story mapping or more aggregate views?
 
-Using either some of our *Index of DH Conferences* data or your own, 
-   
-2. Computationally Mapping: Extracting and Mapping Named Entities
+Once completed, you should upload a screenshot of your map and share your dataset in this GitHub discussion forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8].(https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8).
 
-3. Mapping DH: Investigating Maps in DH Projects
+## Resources 
+
+- Miriam Posner's Mapping Resources [https://miriamposner.com/classes/dh201w23/tutorials-guides/mapping/mapping-resources/](https://miriamposner.com/classes/dh201w23/tutorials-guides/mapping/mapping-resources/) and recommended mapping tools [https://miriamposner.com/classes/dh101f17/tutorials-guides/mapping/recommended-mapping-tools/](https://miriamposner.com/classes/dh101f17/tutorials-guides/mapping/recommended-mapping-tools/)
+- Stephen Robertson's Teaching Digital Mapping with kepler.gl [https://drstephenrobertson.com/blog-post/teaching-digital-mapping-with-kepler-gl/](https://drstephenrobertson.com/blog-post/teaching-digital-mapping-with-kepler-gl/)
+
+
+
