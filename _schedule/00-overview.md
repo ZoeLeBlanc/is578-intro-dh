@@ -27,7 +27,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 | October 5, 2023 | [Introducing DH Visualizations]({{site.baseurl}}/schedule/05-introducing-dh-visualizations) | [Intro to Data Visualization]({{site.baseurl}}/materials/intro-visualizing-data/01-intro-data-visualization) |
 | October 12, 2023 | [Introducing DH Analysis]({{site.baseurl}}/schedule/06-introducing-dh-analysis) | [Intro to Text Analysis]({{site.baseurl}}/materials/intro-data-analysis/01-intro-text-analysis) |
 | October 19, 2023 | [Introducing DH Networks]({{site.baseurl}}/schedule/07-introducing-dh-networks) | [Intro to Networks]({{site.baseurl}}/materials/intro-data-analysis/02-intro-network-analysis) |
-| October 26, 2023 | [Introducing DH Maps]({{site.baseurl}}/schedule/08-introducing-dh-maps) | Intro to Mapping (To be posted) |
+| October 26, 2023 | [Introducing DH Maps]({{site.baseurl}}/schedule/08-introducing-dh-maps) | [Intro to Mapping]({{site.baseurl}}/materials/intro-data-analysis/03-intro-mapping) |
 | November 2, 2023 | [Introducing DH Websites]({{site.baseurl}}/schedule/09-introducing-dh-websites) | Intro to Websites (To be posted) |
 | November 9, 2023 | [Introducing DH Collections]({{site.baseurl}}/schedule/10-introducing-dh-collections) | Intro to Static Sites (To be posted) |
 | November 16, 2023 | [Introducing DH Workshops]({{site.baseurl}}/schedule/11-introducing-dh-workshops) | Open session |

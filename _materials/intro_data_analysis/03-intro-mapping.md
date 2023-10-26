@@ -335,7 +335,7 @@ Some things to consider include:
 - Are your locations points or larger polygons? How might you represent that in your map?
 - Are you interested in story mapping or more aggregate views?
 
-Once completed, you should upload a screenshot of your map and share your dataset in this GitHub discussion forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8].(https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8).
+Once completed, you should upload a screenshot of your map and share your dataset in this GitHub discussion forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8).
 
 ## Resources 
 
