@@ -254,7 +254,7 @@ Eyeballing the results, they look fairly accurate but geo-coding as we saw in on
 If I'm happy with the results, then I just need to merge the two datasets back together:
 
 <figure>
-    <a href="{{site.baseurl}}/assets/images/formula_latitutde.png"><img src="{{site.baseurl}}/assets/images/formula_latitutde.png"></a>
+    <a href="{{site.baseurl}}/assets/images/formula_latitude.png"><img src="{{site.baseurl}}/assets/images/formula_latitude.png"></a>
 </figure>
 
 Now I could download my data at this point, but Palladio requires geographic data as coordinates, so next I'll combine those two columns into a new one:
