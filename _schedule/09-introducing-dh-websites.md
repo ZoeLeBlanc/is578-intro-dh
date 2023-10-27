@@ -21,8 +21,8 @@ None
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
-- Estill, Laura, Jennifer Guiliano, Élika Ortega, Melissa Terras, Deb Verhoeven, and Glen Layne-Worthey. “The Circus We Deserve? A Front Row Look at the Organization of the Annual Academic Conference for the Digital Humanities.” *Digital Humanities Quarterly* 016, no. 4 (August 5, 2022).
-- Lincoln, Matthew, Jennifer Isasi, Sarah Melton, and François Dominic Laramée. “Relocating Complexity: The Programming Historian and Multilingual Static Site Generation.” *Digital Humanities Quarterly* 016, no. 2 (June 25, 2022).
+- Estill, Laura, Jennifer Guiliano, Élika Ortega, Melissa Terras, Deb Verhoeven, and Glen Layne-Worthey. “The Circus We Deserve? A Front Row Look at the Organization of the Annual Academic Conference for the Digital Humanities.” *Digital Humanities Quarterly* 016, no. 4 (August 5, 2022). [http://www.digitalhumanities.org/dhq/vol/16/4/000643/000643.html](http://www.digitalhumanities.org/dhq/vol/16/4/000643/000643.html)
+- Lincoln, Matthew, Jennifer Isasi, Sarah Melton, and François Dominic Laramée. “Relocating Complexity: The Programming Historian and Multilingual Static Site Generation.” *Digital Humanities Quarterly* 016, no. 2 (June 25, 2022). [https://www.digitalhumanities.org/dhq/vol/16/2/000585/000585.html](https://www.digitalhumanities.org/dhq/vol/16/2/000585/000585.html)
 - Posner, Miriam. “JavaScript Is for Girls.” *Logic(s) Magazine*, March 15, 2017. [https://logicmag.io/intelligence/javascript-is-for-girls/](https://logicmag.io/intelligence/javascript-is-for-girls/).
 
 ### Workshop Assignments (to be completed prior to class)
