@@ -16,8 +16,8 @@ class_date: 2023-11-02
 - Parham, Marisa. "Breaking, dancing, making in the machine: notes on .break.dance" *Sx Archipelagos*, no. 2 (July 10, 2019) [https://doi.org/10.7916/archipelagos-xn3y-vj19](https://doi.org/10.7916/archipelagos-xn3y-vj19) **OR** Proctor, Brittnay L. “Review: .Break .Dance.” *Reviews in Digital Humanities* II, no. 8 (August 16, 2021). [https://doi.org/10.21428/3e88f64f.c62a7450](https://doi.org/10.21428/3e88f64f.c62a7450).
 
 ### Applied Materials
- 
-- Allfrey, Philip "What is #Digital​Humanities? The Album" [https://what-is-dh-the-album.netlify.app/](https://what-is-dh-the-album.netlify.app/) and [https://github.com/philipallfrey/what-is-dh](https://github.com/philipallfrey/what-is-dh). 
+
+None
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
@@ -27,7 +27,7 @@ class_date: 2023-11-02
 
 ### Workshop Assignments (to be completed prior to class)
 
-- TBD
+- Complete one of the mapping assignments, available [here]({{site.baseurl}}/materials/intro-data-analysis/03-intro-mapping#mapping-assignments).
 
 #### Workshop Resources
 

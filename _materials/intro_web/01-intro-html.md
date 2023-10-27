@@ -1,0 +1,2 @@
+- We will be exploring this example in class, so feel free to skim: 
+  - Allfrey, Philip "What is #Digital​Humanities? The Album" [https://what-is-dh-the-album.netlify.app/](https://what-is-dh-the-album.netlify.app/) and [https://github.com/philipallfrey/what-is-dh](https://github.com/philipallfrey/what-is-dh). I would particular encourage you 

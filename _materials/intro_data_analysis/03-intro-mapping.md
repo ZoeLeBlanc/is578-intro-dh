@@ -7,13 +7,13 @@ toc: true
 
 ## Network Analysis Solutions
 
-So from our assignment last week, there was a number of different datasets and tools to work with. I'm going to focus on showing how we might create networked data from our DH conference + tools data, but happy to answer any questions about the other datasets.
+So from our assignment last week, there were a number of different datasets and tools to work with. I'm going to focus on showing how we might create networked data from our DH conference + tools data, but happy to answer any questions about the other datasets.
 
 ### Networking DH Conference + Tools Data
 
-There's a number of potential networks we might create from our original Index of DH Conferences Data or from our combined tool counts and conference data.
+There are a number of potential networks we might create from our original Index of DH Conferences Data or from our combined tool counts and conference data.
 
-One option is simply take our `updated_all_tool_counts.csv`, which has the following columns:
+One option is to simply take our `updated_all_tool_counts.csv`, which has the following columns:
 
 `tool_name`,`tool_counts`,`data_origin`,`year`
 
@@ -205,7 +205,7 @@ There's more explorations we could do, and we could still even project this grap
 
 Now that we have discussed some of the mapping projects from this week, as well as the broader question of why and how we map in Digital Humanities, we can start to explore ways to map our own data.
 
-You'll notice that I've included a `location` column in these datasets of some of the networked datasets. Let's try using the `projected_weighted_tools_dates_location_edges.csv`.
+You'll notice that I've included a `location` column in some of these networked datasets. Let's try using the `projected_weighted_tools_dates_location_edges.csv`.
 
 We can start by uploading our data to Palladio and seeing what we can do:
 
@@ -217,7 +217,7 @@ You'll notice that our map contains no data. That's because our `location` colum
 
 ### Geocoding Location Data
 
-Often in DH, scholars will want to create a map from some type of data but struggle to understand that places mentioned in texts or even spreadsheets are not actually geographic locations.
+Often in DH, scholars want to create maps from data but struggle to understand that places mentioned in texts or spreadsheets aren't necessarily geographic locations.
 
 To transform that type of data, we need to do something called geocoding. 
 
@@ -313,16 +313,36 @@ I'll explain more of how I embedded this map next week when we starting talking 
 
 ## Mapping Assignment(s)
 
-For your assignment this week you have two options:
+For your assignment this week, you have two options:
 
-1. Compare and Compass: Try out Two Mapping Tools
+1. Compare and Compass: Testing Mapping Tools
    
-For this assignment, you are welcome to use any data (whether our dataset from class available )
+For this assignment, you are welcome to use any data (including our dataset from class available here [https://github.com/ZoeLeBlanc/is578-intro-dh/blob/gh-pages/public_course_data/network_data/geocoded_projected_weighted_tools_dates_location_edges.csv](https://github.com/ZoeLeBlanc/is578-intro-dh/blob/gh-pages/public_course_data/network_data/geocoded_projected_weighted_tools_dates_location_edges.csv), or data from any of the projects we looked at or some other dataset). The goal is to try out  different mapping tools and either compare between them OR generate multiple different style maps in one tool. Depending on the tools you try, mapping might be more laborious, so it is acceptable if your map is more of a prototype or proof of concept, and therefore has fewer data points.
 
-2. Place to Space: Try out Geocoding and Mapping
+Some potential mapping tools include the ones we discussed in class:
 
+- Kepler.gl [https://kepler.gl/](https://kepler.gl/)
+- Palladio [https://hdlab.stanford.edu/palladio/](https://hdlab.stanford.edu/palladio/)
+- StoryMaps.JS [https://storymap.knightlab.com/](https://storymap.knightlab.com/)
+- ArcGIS StoryMaps [https://storymaps.arcgis.com/](https://storymaps.arcgis.com/)
+- Flourish Maps [https://flourish.studio/](https://flourish.studio/)
+- Tableau Maps [https://www.tableau.com/](https://www.tableau.com/)
+- Google Maps [https://www.google.com/maps](https://www.google.com/maps)
+- Geojson.io [https://geojson.io/](https://geojson.io/)
+- Mapbox [https://www.mapbox.com/](https://www.mapbox.com/)
 
-So far we have been using place names already provided to us, but from our readings we also know that we can also extract place names from text to geocdoe and map them.
+But you are welcome to use any other mapping tool you find. The goal is to consider the following questions:
+
+- What is the process of uploading data to the tool or creating a map? Is it easy or difficult?
+- What sort of visualization options does the tool have? Are you able to visualize the data how you imagined? Are there any limitations?
+- What sort of interactivity does the tool have? Is it easy to filter or explore the data?
+- Can you export the map? If so, what formats are available? Can you embed the map in a website?
+
+Once completed, you should upload a screenshot of your map (or whatever format makes the most sense) and share your dataset in this GitHub discussion forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8).
+
+1. Place to Space: Try out Geocoding and Mapping
+
+So far we have been using place names already provided to us, but from our readings we also know that we can also extract place names from text to geocode and map them.
 
 We've seen an example this before in Voyant Tools:
 
@@ -336,7 +356,7 @@ Feel free to change the height and width values or other styling below: -->
 <iframe style='width: 891px; height: 487px;' src='https://voyant-tools.org/tool/DreamScape/?corpus=3380d938601f8ebdf055fc572adc1b61'></iframe>
 </figure>
 
-Depending on the time left in class, your assignment is to use any textual data (whether your own or abstracts from the *Index of DH Conferences* or novels), and try to creating a dataset of place names to map. You can use any spreadsheet software and any geocoding service, as well as any mapping tool. But the goal is to have at least 10 locations and a map to share with the class. 
+For this assignment, you can use any textual data (whether your own or abstracts from the *Index of DH Conferences* or novels, etc.), and the goal is to and try create a dataset of place names to map. You can use any spreadsheet software and any geocoding service, as well as any mapping tool. But the goal is to have at least 10 locations and a map to share with the class. 
 
 Some things to consider include:
 - What would you define as a place name? Is that the same as a geographic location? 
@@ -344,7 +364,7 @@ Some things to consider include:
 - Are your locations points or larger polygons? How might you represent that in your map?
 - Are you interested in story mapping or more aggregate views?
 
-Once completed, you should upload a screenshot of your map and share your dataset in this GitHub discussion forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8).
+Once completed, you should upload a screenshot of your map (or whatever format makes the most sense) and share your dataset in this GitHub discussion forum [https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8](https://github.com/ZoeLeBlanc/is578-intro-dh/discussions/8).
 
 ## Resources 
 

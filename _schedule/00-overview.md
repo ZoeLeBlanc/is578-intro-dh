@@ -47,7 +47,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 | [Intro to Data Visualization Assignment]({{site.baseurl}}/materials/intro-visualizing-data/01-intro-data-visualization#data-visualization-assignments) | [October 12]({{site.baseurl}}/schedule/06-introducing-dh-analysis) |
 | [Intro to Text Analysis Assignment]({{site.baseurl}}/materials/intro-data-analysis/01-intro-text-analysis#text-analysis-assignments) | [October 19]({{site.baseurl}}/schedule/07-introducing-dh-networks) |
 | [Intro to Network Analysis Assignment]({{site.baseurl}}/materials/intro-data-analysis/02-intro-network-analysis#network-analysis-assignment) | [October 26]({{site.baseurl}}/schedule/08-introducing-dh-maps) |
-| [Intro to Mapping Assignment](#) | [November 2]({{site.baseurl}}/schedule/09-introducing-dh-markup) |
+| [Intro to Mapping Assignment]({{site.baseurl}}/materials/intro-data-analysis/03-intro-mapping#mapping-assignments) | [November 2]({{site.baseurl}}/schedule/09-introducing-dh-websites) |
 | [Intro to Web Languages Assignment](#) | [November 9]({{site.baseurl}}/schedule/10-introducing-dh-websites) |
 | [Intro to Static Sites Assignment](#) | [November 16]({{site.baseurl}}/schedule/11-introducing-dh-collections) |
 
