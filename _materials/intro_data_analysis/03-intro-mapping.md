@@ -311,7 +311,16 @@ Which we can also embed here:
 
 I'll explain more of how I embedded this map next week when we starting talking about websites, but you can see how with filtering and the timeline we can start to explore our data. The big question though that we have yet to discuss is how accurate my geocoding is and how I might improve it. 
 
-## (In Class/At Home) Mapping Assignment
+## Mapping Assignment(s)
+
+For your assignment this week you have two options:
+
+1. Compare and Compass: Try out Two Mapping Tools
+   
+For this assignment, you are welcome to use any data (whether our dataset from class available )
+
+2. Place to Space: Try out Geocoding and Mapping
+
 
 So far we have been using place names already provided to us, but from our readings we also know that we can also extract place names from text to geocdoe and map them.
 
