@@ -17,8 +17,9 @@ class_date: 2023-11-09
 
 ### Applied Materials
 
+Skim the following:
 - Gonzalez, Aston. "Colored Conventions Project." *Journal of American History* 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568).
-- Minimal Computing Special Interest Group of Global Outlook::Digital Humanities, "Resources" [https://go-dh.github.io/mincomp/resources/](https://go-dh.github.io/mincomp/resources/)
+- Amanda Visconti, "Building a static website with Jekyll and GitHub Pages," *Programming Historian* 5 (2016), [https://doi.org/10.46430/phen0048](https://doi.org/10.46430/phen0048).
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
@@ -36,8 +37,8 @@ class_date: 2023-11-09
 
 #### Workshop Resources
 
-- Amanda Visconti, "Building a static website with Jekyll and GitHub Pages," *Programming Historian* 5 (2016), [https://doi.org/10.46430/phen0048](https://doi.org/10.46430/phen0048).
+
 - Amanda Visconti, Brandon Walsh, and Scholars' Lab Community, "Running a Collaborative Research Website and Blog with Jekyll and GitHub," *Programming Historian* 9 (2020), [https://doi.org/10.46430/phen0090](https://doi.org/10.46430/phen0090).
 - Jonathan Reeve, "Installing Omeka," *Programming Historian* 5 (2016), [https://doi.org/10.46430/phen0052](https://doi.org/10.46430/phen0052).
 - Miriam Posner and Megan R. Brett, "Creating an Omeka Exhibit," *Programming Historian* 5 (2016), [https://doi.org/10.46430/phen0049](https://doi.org/10.46430/phen0049).
-
+- Minimal Computing Special Interest Group of Global Outlook::Digital Humanities, "Resources" [https://go-dh.github.io/mincomp/resources/](https://go-dh.github.io/mincomp/resources/)
