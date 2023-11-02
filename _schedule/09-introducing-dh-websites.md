@@ -12,7 +12,7 @@ class_date: 2023-11-02
 ### Contextual Materials
 
 - Dombrowski, Quinn. “Minimizing Computing Maximizes Labor.” *Digital Humanities Quarterly* 016, no. 2 (June 25, 2022). [https://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html](https://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html)
--  “Breaking, Dancing, Making in the Machine: Notes on .Break .Dance.” *Sx Archipelagos*, no. 2 (July 10, 2019) [https://archipelagosjournal.org/issue03/parham/parham.html](https://archipelagosjournal.org/issue03/parham/parham.html) 
+-  “.Break .Dance.” *Sx Archipelagos*, no. 2 (July 10, 2019) [https://archipelagosjournal.org/issue03/parham/parham.html](https://archipelagosjournal.org/issue03/parham/parham.html) 
 - Parham, Marisa. "Breaking, dancing, making in the machine: notes on .break.dance" *Sx Archipelagos*, no. 2 (July 10, 2019) [https://doi.org/10.7916/archipelagos-xn3y-vj19](https://doi.org/10.7916/archipelagos-xn3y-vj19) **OR** Proctor, Brittnay L. “Review: .Break .Dance.” *Reviews in Digital Humanities* II, no. 8 (August 16, 2021). [https://doi.org/10.21428/3e88f64f.c62a7450](https://doi.org/10.21428/3e88f64f.c62a7450).
 
 ### Applied Materials

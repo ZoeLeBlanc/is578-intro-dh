@@ -17,8 +17,8 @@ class_date: 2023-11-09
 
 ### Applied Materials
 
-- Alles Torrent, Susanna, Alexander Gil Fuentes, and Terence Catapano. “Ed v1.0.2,” 2017. [https://doi.org/10.7916/d8-wgzr-1384](https://doi.org/10.7916/d8-wgzr-1384).
 - Gonzalez, Aston. "Colored Conventions Project." *Journal of American History* 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568).
+- Minimal Computing Special Interest Group of Global Outlook::Digital Humanities, "Resources" [https://go-dh.github.io/mincomp/resources/](https://go-dh.github.io/mincomp/resources/)
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
@@ -28,6 +28,7 @@ class_date: 2023-11-09
 - Caines, Autumm, and Sarah Silverman. “Back Doors, Trap Doors, and Fourth-Party Deals: How You End up with Harmful Academic Surveillance Technology on Your Campus without Even Knowing.” *The Journal of Interactive Technology and Pedagogy*, December 10, 2021. [https://jitp.commons.gc.cuny.edu/?p](https://jitp.commons.gc.cuny.edu/?p).
 - Terras, Melissa. “Crowdsourcing in the Digital Humanities.” In *A New Companion to Digital Humanities*, 420–38. [https://doi.org/10.1002/9781118680605.ch29](https://doi.org/10.1002/9781118680605.ch29).
 - Tarnoff, Ben. “The Data Is Ours!” *Logic(s) Magazine*, April 1, 2018. [https://logicmag.io/scale/the-data-is-ours/](https://logicmag.io/scale/the-data-is-ours/).
+- Alles Torrent, Susanna, Alexander Gil Fuentes, and Terence Catapano. “Ed v1.0.2,” 2017. [https://doi.org/10.7916/d8-wgzr-1384](https://doi.org/10.7916/d8-wgzr-1384).
 
 ### Workshop Assignments (to be completed prior to class)
 
