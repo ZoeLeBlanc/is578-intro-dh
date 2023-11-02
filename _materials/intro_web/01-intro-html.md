@@ -549,7 +549,7 @@ See if you can answer the following:
 - How does Parham create interactivity in this piece? What technologies does she use to do so?
 
 
-## Web Assignment(s)
+## Web Technologies Assignment(s)
 
 For this week's assignment, you have two options:
 
