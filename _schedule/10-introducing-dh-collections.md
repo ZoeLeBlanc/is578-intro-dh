@@ -17,8 +17,8 @@ class_date: 2023-11-09
 
 ### Applied Materials
 
-Skim the following:
-- Gonzalez, Aston. "Colored Conventions Project." *Journal of American History* 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568).
+- Skim Gonzalez, Aston. “Colored Conventions Project.” Journal of American History 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568) and explore [https://coloredconventions.org/](https://coloredconventions.org/ )
+- Explore at least one of the models on Lib-Static [https://lib-static.github.io/models/](https://lib-static.github.io/models/) 
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
