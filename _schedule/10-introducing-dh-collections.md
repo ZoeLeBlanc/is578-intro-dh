@@ -11,13 +11,13 @@ class_date: 2023-11-09
 
 ### Contextual Materials
 
-- Risam, Roopika, and Alex Gil. “Introduction: The Questions of Minimal Computing.” Digital Humanities Quarterly 016, no. 2 (2022). [http://digitalhumanities.org:8081/dhq/vol/16/2/000646/000646.html](http://digitalhumanities.org:8081/dhq/vol/16/2/000646/000646.html).
+- Risam, Roopika, and Alex Gil. “Introduction: The Questions of Minimal Computing.” *Digital Humanities Quarterly* 016, no. 2 (2022). [http://digitalhumanities.org:8081/dhq/vol/16/2/000646/000646.html](http://digitalhumanities.org:8081/dhq/vol/16/2/000646/000646.html).
 - Christen, Kimberly. “Does Information Really Want to Be Free? Indigenous Knowledge Systems and the Question of Openness.” *International Journal of Communication* 6 (November 30, 2012). [https://apo.org.au/node/265091](https://apo.org.au/node/265091).
 - Berry, Dorothy. “The House Archives Built.” *Up//Root*, June 22, 2021. [https://www.uproot.space/features/the-house-archives-built](https://www.uproot.space/features/the-house-archives-built).
 
 ### Applied Materials
 
-- Skim Gonzalez, Aston. “Colored Conventions Project.” Journal of American History 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568) and explore [https://coloredconventions.org/](https://coloredconventions.org/ )
+- Skim Gonzalez, Aston. “Colored Conventions Project.” *Journal of American History* 107, no. 4 (March 1, 2021): 1060–62. [https://doi.org/10.1093/jahist/jaaa568](https://doi.org/10.1093/jahist/jaaa568) and explore *Colored Conventions Project*, [https://coloredconventions.org/](https://coloredconventions.org/)  co-directed by P. Gabrielle Foreman and Jim Casey. Center for Black Digital Research, Penn State University.
 - Explore at least one of the models on Lib-Static [https://lib-static.github.io/models/](https://lib-static.github.io/models/) 
 
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
