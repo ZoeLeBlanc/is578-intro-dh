@@ -29,7 +29,7 @@ This overview gives a top level view of the topics for each of our meetings. You
 | October 19, 2023 | [Introducing DH Networks]({{site.baseurl}}/schedule/07-introducing-dh-networks) | [Intro to Networks]({{site.baseurl}}/materials/intro-data-analysis/02-intro-network-analysis) |
 | October 26, 2023 | [Introducing DH Maps]({{site.baseurl}}/schedule/08-introducing-dh-maps) | [Intro to Mapping]({{site.baseurl}}/materials/intro-data-analysis/03-intro-mapping) |
 | November 2, 2023 | [Introducing DH Websites]({{site.baseurl}}/schedule/09-introducing-dh-websites) |[Intro to Websites]({{site.baseurl}}/materials/intro-web/01-intro-html) |
-| November 9, 2023 | [Introducing DH Collections]({{site.baseurl}}/schedule/10-introducing-dh-collections) | Intro to Static Sites (To be posted) |
+| November 9, 2023 | [Introducing DH Collections]({{site.baseurl}}/schedule/10-introducing-dh-collections) | [Intro to Static Sites]({{site.baseurl}}/materials/intro-web/02-intro-websites/) |
 | November 16, 2023 | [Introducing DH Workshops]({{site.baseurl}}/schedule/11-introducing-dh-workshops) | Open session |
 | November 30, 2023 | [Introducing DH Futures]({{site.baseurl}}/schedule/12-introducing-dh-futures) | Open session |
 
@@ -49,6 +49,6 @@ This overview gives a top level view of the topics for each of our meetings. You
 | [Intro to Network Analysis Assignment]({{site.baseurl}}/materials/intro-data-analysis/02-intro-network-analysis#network-analysis-assignment) | [October 26]({{site.baseurl}}/schedule/08-introducing-dh-maps) |
 | [Intro to Mapping Assignment]({{site.baseurl}}/materials/intro-data-analysis/03-intro-mapping#mapping-assignments) | [November 2]({{site.baseurl}}/schedule/09-introducing-dh-websites) |
 | [Intro to Web Technologies Assignment]({{site.baseurl}}/materials/intro-web/01-intro-html/#web-technologies-assignments) | [November 9]({{site.baseurl}}/schedule/10-introducing-dh-collections) |
-| [Intro to Static Sites Assignment](#) | [November 16]({{site.baseurl}}/schedule/11-introducing-dh-workshops) |
+| [Intro to Static Sites Assignment]({{site.baseurl}}/materials/intro-web/02-intro-websites/#at-homein-class-static-assignments) | [November 16]({{site.baseurl}}/schedule/11-introducing-dh-workshops) |
 
 
