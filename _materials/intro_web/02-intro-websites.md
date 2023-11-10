@@ -218,11 +218,15 @@ Most static site generators rely on similar patterns for how to manipulate your 
 
 ### Creating a Jekyll Site
 
-One of the most popular static site generators is **Jekyll**, which is built in the programming language **Ruby**. You don't need to know Ruby to use Jekyll, but you do need to have it installed on your computer. One of the best resources for doing that is this Programming Historian lesson, Amanda Visconti, "Building a static website with Jekyll and GitHub Pages," Programming Historian 5 (2016), [https://doi.org/10.46430/phen0048](https://doi.org/10.46430/phen0048).
+One of the most popular static site generators is **Jekyll**, which is built in the programming language **Ruby**. You don't need to know Ruby to use Jekyll, but you do need to have it installed on your computer. One of the best resources for doing that is Amanda Visconti, "Building a static website with Jekyll and GitHub Pages," *Programming Historian* 5 (2016), [https://doi.org/10.46430/phen0048](https://doi.org/10.46430/phen0048).
 
 I will be demo-ing how to create a Jekyll site using the command line, but you can also use a GUI (graphical user interface) like Github Desktop or GitKraken.
 
-Once again I can use both the Jekyll documentation [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/) and my handy ChatGPT to help me generate the initial commands for creating a Jekyll site:
+Once again I can use both the Jekyll documentation [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/) and my handy ChatGPT to help me generate the initial commands for creating a Jekyll site.
+
+<div class="notice--info">⚡️ Before you can use Jekyll, you will need to install Ruby on your computer. The best instructions are through either Jekyll Documentation <a href="https://jekyllrb.com/docs/installation/#requirements">https://jekyllrb.com/docs/installation/#requirements</a> or the Programming Historian Lesson <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#on-a-mac-">https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#on-a-mac-</a>. Please reach out to the instructor if you get stuck so that you can get assistance.</div>
+
+The following commands should work once you have everything correctly installed:
 
 1. Install Jekyll and Bundler Gems:
 
@@ -256,18 +260,27 @@ bundle exec jekyll serve
 
 Some of these commands you've seen before, like `cd`, but the rest are new. You don't really need to understand them but to sum it up:
 
-- first, we install the necessary code libraries
-- then, we use those libraries to make a new Jekyll site that is a directory of files and code
+- first, we install the necessary code libraries for our static site (you can see some of these files here [https://github.com/jekyll/jekyll](https://github.com/jekyll/jekyll))
+- then, we use those libraries to make a new Jekyll site that is a directory of files and code (essentially the command `jekyll new` is built into the Jekyll library)
 - then, we move into that directory
-- finally, we build the site and make it available on a local server
+- finally, we use another command **build** the site and make it available on a local server
 
-So now we can open our new files and start to explore the website in our browser, which should look like the following:
+You might see some angry warning messages but you can ignore them as long as you see the following lines:
+
+```bash
+Server address: http://127.0.0.1:4000/
+Server running... press ctrl-c to stop.
+```
+
+Those lines tell us that our computer is now acting as a server for our site and so if we click on that Server address, we should see our new site in the browser, which should look like the following:
 
 <figure>
   <a href="https://programminghistorian.org/images/building-static-sites-with-jekyll-github-pages/building-static-sites-with-jekyll-github-pages-11.png" class="image-popup">
   <img src="https://programminghistorian.org/images/building-static-sites-with-jekyll-github-pages/building-static-sites-with-jekyll-github-pages-11.png">
   </a>
 </figure>
+
+In many ways, this site is the exact same as the HTML files you all created, but there's a few differences. First, if we had looked through our directory before doing the `bundle exec jekyll serve` command, we would have seen that there was no folder called `_site` and that while there were HTML files, there weren't any of our About page or blog posts. That command essentially tells Jekyll to take those Markdown files and create HTML files from them, and then put those HTML files in the `_site` folder. Which is why this type of static site generator is so popular: it saves you the time of having to manually create HTML files.
 
 We don't have time today to full explore all the parts of this site, but I do want to highlight a few things:
 
@@ -290,9 +303,16 @@ baseurl: /new-intro-dh
 
 Now if we regenerate our site, can see that our site is available at `http://127.0.0.1:4001/new-intro-dh/` with out new title.
 
+<figure>
+  <a href="{{site.baseurl}}/assets/images/updated_jekyll_site.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/updated_jekyll_site.png">
+  </a>
+</figure>
+
+
 1. `posts` directory
    
-Most of what makes Static Sites so appealing is that we can write our files in Markdown and have those rendered in HTML. Again almost every static site option has a direcotry called `posts` (sometimes seen as `_posts`).
+The other main attraction of static sites is that they are excellent for blogging, because almost every static site option has a directory called `posts` (sometimes seen as `_posts`).
 
 If we open up the example in our new site, we'll see the following:
 
@@ -304,29 +324,213 @@ If we open up the example in our new site, we'll see the following:
 
 My main goal here is to show you how I can embed my Kepler map into this page, so I'm going to create a new file (using the `touch` command), make sure to name it similarly to this existing file (so date followed by topic), and then fill in the rest of the metadata and add my code. 
 
-Once complete, I should be able to see the interactive map as a part of my new site. Now the final step is to host this site on the internet.
+```markdown
+---
+layout: post
+title:  "Interactive Map 2.0"
+date:   2021-10-04 12:00:00 -0400
+categories: jekyll update
+---
+
+<figure>
+
+  <iframe src="https://kepler.gl/#/demo?mapUrl=https://gist.githubusercontent.com/ZoeLeBlanc/32daed91a4eb0038640891b95e78029c/raw/580a8252b3757387e0fc5ae309e88a3c921f9c06/kepler.gl.json" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="900px" width="1200px" allowfullscreen=""></iframe>
+
+</figure>
+```
+
+Once completed and **saved** (always remember to save!), I should be able to **reload** the site and see the interactive map as a part of my new site. 
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/jekyll_map_post.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/jekyll_map_post.png">
+  </a>
+</figure>
+
+Now the final step is to host this site on the internet.
 
 ### Hosting a (Jekyll) Site with GitHub Pages
 
-As we've discussed today, there are many options for hosting websites (Wordpress, Squarespace, etc.). That's also true for Static Sites, with many DHers liking Reclaim Hosting for hosting their websites. 
+As we've discussed today, there are many options for hosting websites (Wordpress, Squarespace, etc.). That's also true for Static Sites, with many DHers liking [Reclaim Hosting](https://www.reclaimhosting.com/) for hosting their websites and purchasing domain names. 
 
 Today, we're instead going to use GitHub Pages. GitHub Pages is a free service that allows you to host static sites on GitHub. You can read more about GitHub Pages here [https://pages.github.com/](https://pages.github.com/).
 
 To host a Jekyll site on GitHub Pages, we need to do a few things:
 
-1. Create a GitHub Repository
-2. Push/Add our Jekyll Site to GitHub
-3. Configure GitHub Pages to publish our website
+1. Create a GitHub Repository (Somewhat Optional)
 
-I'm going to demo this fairly quickly, because I want you all to try making your own GitHub Pages website.
+First, we need a GitHub repository for where we want to store our website files. You could use your existing repository for this course or create a new one.
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/create_jekyll_repo.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/create_jekyll_repo.png">
+  </a>
+</figure>
+
+If you do create a new repository, be sure to make it public and add a README.md file.
+
+2. Update our Jekyll Gemfile
+
+Before, we add our files we need to make a small change so that GitHub correctly renders our website (this is what went wrong with my example in class 😅). 
+
+If you open your `Gemfile`, you should see the following:
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/existing_gemfile.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/existing_gemfile.png">
+  </a>
+</figure>
+
+You'll notice that's there an automated message saying that we should add a line to our `Gemfile` to make sure that GitHub Pages correctly renders our site:
+
+```ruby
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
+# If you have any plugins, put them here!
+```
+
+So to follow those instructions we need to make sure there's a `#` symbol before this line:
+
+```ruby
+gem "jekyll", "~> 4.3.2"
+```
+
+Then we need to remove the `#` symbol from this line:
+
+```ruby
+# gem "github-pages", group: :jekyll_plugins
+```
+
+So the final result should look like the following: 
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/updated_gemfile.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/updated_gemfile.png">
+  </a>
+</figure>
+
+Finally, we need to run the following command to update our Jekyll site:
+
+```bash
+bundle update github-pages
+```
+
+If you get an error with that command, I would recommend trying either `bundle update` or `bundle install` instead.
+
+3. Push/Add our Jekyll Site to GitHub
+
+Once we have our GitHub repository and our updated `Gemfile`, we can now add our Jekyll site to GitHub. You can do this through the `.dev` interface or through using ChatGPT to generate the correct commands.
+
+Regardless, we want our final repository to look like the following:
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/updated_github_repo.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/updated_github_repo.png">
+  </a>
+</figure>
+
+4. Configure GitHub Pages to publish our website
+
+Once we have this all added, the final piece is to go into our settings and configure GitHub Pages to publish our website. You can do this by going to the `Settings` tab and then scrolling down to `Pages`:
+
+<figure>
+  <a href="https://www.stefanocottafavi.com/assets/img/gh_actions.png" class="image-popup">
+  <img src="https://www.stefanocottafavi.com/assets/img/gh_actions.png">
+  </a>
+</figure>
+
+To make our site run, we need to select the `GitHub Actions` option under `Build and deployment`:
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/github_pages_jekyll.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/github_pages_jekyll.png">
+  </a>
+</figure>
+
+Selecting this option will open another page that looks a bit intimidating:
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/jekyll_github_action.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/jekyll_github_action.png">
+  </a>
+</figure>
+
+You don't need to change anything on this page, but simply just press the green `Commit changes` button and then GitHub will start building your site. If you give a minute or two, when you go back to the `Settings` tab and scroll down to `Pages` you should see a green box saying your site is published and a link to your site.
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/published_github_pages.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/published_github_pages.png">
+  </a>
+</figure>
+
+Now you can see all this code in my repository [https://github.com/ZoeLeBlanc/map-jekyll-intro-dh](https://github.com/ZoeLeBlanc/map-jekyll-intro-dh) and visit the website at [http://zoeleblanc.com/map-jekyll-intro-dh/](http://zoeleblanc.com/map-jekyll-intro-dh/).
+
+Now this entire example only works because I already have a domain name for my website (aka an address) but before you can have a subdomain, you need a domain. So let's talk about how to get a domain name (for free!).
 
 #### Creating a Custom Github.io Website
 
 As a user on GitHub, you can create a custom website that is hosted on GitHub Pages. This is a great option for creating a personal website, or a website for a project. This website is hosted at the `github.io` domain name so you don't have to pay for a domain name. However, to make this domain you need to create a repository with a specific name: your username. So for example, my GitHub username is `ZoeLeBlanc` so I need to create a repository called `ZoeLeBlanc.github.io`.
 
-Once you've created this repository, you can simply add a `index.html` file to the repository and GitHub will automatically publish it to your website. You can read more about this here [https://pages.github.com/](https://pages.github.com/).
+<figure>
+  <a href="{{site.baseurl}}/assets/images/githubio_repo.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/githubio_repo.png">
+  </a>
+</figure>
 
-Let's try this out and explore how we might use this with our homework HTML pages and Jekyll site we created earlier.
+When you create your repository, you need to make sure it is `Public` and you can add a `README.md` (though that is optional).
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/create_new_file.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/create_new_file.png">
+  </a>
+</figure>
+
+Once you have your repository, the next step is to add some web files. The most basic file you can add is an `index.html` file.
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/create_index_html.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/create_index_html.png">
+  </a>
+</figure>
+
+Once you've created your `index.html` file, you can either leave it blank or add some HTML code. Now the key thing is to remember to **commit** your HTML page. Remember committing is how we save things on GitHub. So you can either commit via the command line or via the GitHub website.
+
+Now, GitHub should start automatically hosting your website at `https://yourusername.github.io`. 
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/github_pages_settings_html.png">
+  <img src="{{site.baseurl}}/assets/images/github_pages_settings_html.png">
+  </a>
+</figure>
+
+You'll notice you don't need to configure any Actions (though you can for HTML), and that's because this is a special type of repository that GitHub does this for, so any HTML files you add will automatically be hosted but that will **not** happen in other repos.
+
+You can still see how GitHub is deploying your site by clicking on the tab called `Actions`:
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/actions_tab.png">
+  <img src="{{site.baseurl}}/assets/images/actions_tab.png">
+  </a>
+</figure>
+
+You should see some green lines and checks, all of which indicates your site is live.
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/live_website.png">
+  <img src="{{site.baseurl}}/assets/images/live_website.png">
+  </a>
+</figure>
+
+You can find see this live here [https://testzoe.github.io/](https://testzoe.github.io/).
+
+So, hopefully following these steps will help you create your initial website. You can do the similar steps above for a `Jekyll` site with your github.io repository, just be sure to update your `Gemfile`, add your files, and then configure GitHub Pages to publish your site with the `Github Actions for Jekyll`. If you get stuck or have questions, don't hesitate to reach out to the instructor for help.
+
+You might also look at the following resources for more information:
+
+- GitHub's documentation on GitHub Pages [https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+- GitHub's documentation on Jekyll and GitHub Pages [https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
+- Library Carpentries Lesson on GitHub Pages [https://librarycarpentry.org/lc-git/05-github-pages.html](https://librarycarpentry.org/lc-git/05-github-pages.html)
 
 ## At Home/In Class Static Assignment(s)
 
