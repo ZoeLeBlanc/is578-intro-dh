@@ -17,8 +17,6 @@ class_date: 2023-11-16
 
 ### Applied Materials
 
-- Watch and read the following tutorial on CollectionBuilder [https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/). Actually copying the steps is optional, but highly encouraged!
-
 #### Curated Additional Materials (optional but recommended if familiar with assigned materials)
 
 - LeBlanc, Zoe, Brandon Walsh, Chelcie Rowell, and Yasmeen Shorish. “Workshopping the Workshop: Moving Your Sessions Beyond Buttonology.” Edited by Liz Rodrigues and Erin Pappas. #DLFteach Publications, September 19, 2019. [https://doi.org/10.21428/65a6243c.41fb7b06](https://doi.org/10.21428/65a6243c.41fb7b06).
@@ -29,7 +27,7 @@ class_date: 2023-11-16
 
 ### Workshop Assignments (to be completed prior to class)
 
-- TBD
+- Complete (as much as you are able) the [Intro to Static Sites Assignment]({{site.baseurl}}/materials/intro-web/02-intro-websites/#at-homein-class-static-assignments) from the Intro to Web Technologies workshop. 
 
 #### Workshop Resources
 
