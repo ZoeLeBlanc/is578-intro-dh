@@ -12,7 +12,7 @@ class_date: 2023-11-16
 ### Contextual Materials
 
 - Keralis, Elizabeth Grumbach, Spencer D. C. “A Design Justice Approach to Creating Equitable Workshops.” in Guiliano, Laura Estill, Jennifer, ed. *Digital Humanities Workshops: Lessons Learned*. London: Routledge, 2023. [https://doi.org/10.4324/9781003301097](https://doi.org/10.4324/9781003301097) 
-- Russell, John E., and Merinda Kaye Hensley. “Beyond Buttonology: Digital Humanities, Digital Pedagogy, and the ACRL Framework | Russell | College & Research Libraries News,” December 4, 2017. [https://doi.org/10.5860/crln.78.11.588](https://doi.org/10.5860/crln.78.11.588).
+- Russell, John E., and Merinda Kaye Hensley. “Beyond Buttonology: Digital Humanities, Digital Pedagogy, and the ACRL Framework" *College & Research Libraries News* December 4, 2017. [https://doi.org/10.5860/crln.78.11.588](https://doi.org/10.5860/crln.78.11.588).
 - Morgan, Paige C. “The Consequences of Framing Digital Humanities Tools as Easy to Use.” *College & Undergraduate Libraries* 25, no. 3 (July 3, 2018): 211–31. [https://doi.org/10.1080/10691316.2018.1480440](https://doi.org/10.1080/10691316.2018.1480440).
 
 ### Applied Materials
@@ -27,7 +27,7 @@ class_date: 2023-11-16
 
 ### Workshop Assignments (to be completed prior to class)
 
-- Complete (as much as you are able) the [Intro to Static Sites Assignment]({{site.baseurl}}/materials/intro-web/02-intro-websites/#at-homein-class-static-assignments) from the Intro to Web Technologies workshop. 
+- Complete (as much as you are able) of the [Intro to Static Sites Assignment]({{site.baseurl}}/materials/intro-web/02-intro-websites/#at-homein-class-static-assignments). 
 
 #### Workshop Resources
 
