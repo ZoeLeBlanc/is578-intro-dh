@@ -464,6 +464,23 @@ You don't need to change anything on this page, but simply just press the green 
   </a>
 </figure>
 
+If you instead get a message like this in actions:
+
+<figure>
+  <a href="{{site.baseurl}}/assets/images/jekyll_build_fail.png" class="image-popup">
+  <img src="{{site.baseurl}}/assets/images/jekyll_build_fail.png">
+  </a>
+</figure>
+
+It means that GitHub failed to build your website. This error message is not super important to understand but to fix it you need to run the following line of code in your Terminal in the directory with your Jekyll site, which I learned from the following StackOverflow post (which is a forum for coding questions) [https://stackoverflow.com/questions/72331753/ruby-and-rails-github-action-exit-code-16](https://stackoverflow.com/questions/72331753/ruby-and-rails-github-action-exit-code-16):
+
+```bash
+bundle lock --add-platform x86_64-linux
+```
+
+Then you need to commit and push your changes to GitHub. Once you do that, GitHub should start building your site correctly. If you get **any** other error message, please don't hesitate to reach out to the instructor for help, and just remember that these types of issues though frustrating **are not representative of your ability to do this work**. In fact, an HCI professor wrote an excellent post about how this type of configuration errors can deter students (you can read a bit about that here [https://www.kevinbrowne.ca/command-line-bullshittery-and-other-realities-of-computing/](https://www.kevinbrowne.ca/command-line-bullshittery-and-other-realities-of-computing/)).
+
+
 Now you can see all this code in my repository [https://github.com/ZoeLeBlanc/map-jekyll-intro-dh](https://github.com/ZoeLeBlanc/map-jekyll-intro-dh) and visit the website at [http://zoeleblanc.com/map-jekyll-intro-dh/](http://zoeleblanc.com/map-jekyll-intro-dh/).
 
 Now this entire example only works because I already have a domain name for my website (aka an address) but before you can have a subdomain, you need a domain. So let's talk about how to get a domain name (for free!).
