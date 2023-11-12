@@ -7,9 +7,9 @@ toc: true
 
 ## Interactive Map 2.0
 
-In our assignment last week, we created an HTML version of our Kepler.gl map and explored in our browser. But we did not discuss how I embedded the map into this course website.
+In our assignment last week, we created an HTML version of our Kepler.gl map and explored in our browser. However, we did not discuss how the map was embedded into this course website.
 
-First, rather than download an HTML version of the map, I downloaded the JSON file, an option you can see here:
+Initially, instead of downloading an HTML version of the map, I downloaded the JSON file, an option you can see here:
 
 <figure>
   <a href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/k-save-and-export-5.png" class="image-popup">
@@ -17,7 +17,7 @@ First, rather than download an HTML version of the map, I downloaded the JSON fi
   </a>
 </figure>
 
-Then I uploaded it to something called a GitHub gist. Gists are a way to share individual code snippets and files with others, rather than entire projects. Somewhat confusingly, though GitHub gists are part of GitHub, they are not part of a GitHub repository. You can read more about gists [here](https://docs.github.com/en/github/writing-on-github/creating-gists).
+Subsequently, I uploaded it to something called a GitHub gist. Gists are a way to share individual code snippets and files with others, rather than entire projects. Somewhat confusingly, though GitHub gists are part of GitHub, they are not part of a GitHub repository. You can read more about gist [here](https://docs.github.com/en/github/writing-on-github/creating-gists).
 
 <figure>
   <a href="{{site.baseurl}}/assets/images/kepler_gist.png" class="image-popup">
@@ -25,11 +25,11 @@ Then I uploaded it to something called a GitHub gist. Gists are a way to share i
   </a>
 </figure>
 
-This is what my gist looks like, and you'll notice I created a secret one. That's because this code contains my mapbox token so I don't want to share that publicly or others might use and either use up all my free map loads or worse lead to MapBox charging me for too many loads.
+This is what my gist looks like, and you'll notice I created a secret one. That's because this code contains my Mapbox token, so I don't want to share that publicly, as others might use it and either exhaust all my free map loads or, worse, lead to MapBox charging me for excessive usage.
 
-So taking my downloaded json file, I simply pasted into my gist and saved it (again as a secret gist).
+So, taking my downloaded JSON file, I simply pasted it into my gist and saved it (again as a secret gist).
 
-Then I simply copied the link to the gist (in this case `https://gist.githubusercontent.com/ZoeLeBlanc/32daed91a4eb0038640891b95e78029c/raw/580a8252b3757387e0fc5ae309e88a3c921f9c06/kepler.gl.json`) and pasted in the following code:
+Then, I simply copied the link to the gist (in this case `https://gist.githubusercontent.com/ZoeLeBlanc/32daed91a4eb0038640891b95e78029c/raw/580a8252b3757387e0fc5ae309e88a3c921f9c06/kepler.gl.json`) and pasted it into the following code:
 
 ```html
 <figure>
@@ -39,27 +39,27 @@ Then I simply copied the link to the gist (in this case `https://gist.githubuser
 </figure>
 ```
 
-You'll notice in this HTML we are using some new elements (`figure` and `iframe`) and those elements have attributes that we've seen (like `style`) and then a bunch of new ones (`src`, `name`, `scrolling`, `frameborder`, `marginheight`, `marginwidth`, `height`, `width`, `allowfullscreen`).
+You'll notice in this HTML we are using some new elements (`figure` and `iframe`) along with attributes we've seen before (like `style`) and several new ones (`src`, `name`, `scrolling`, `frameborder`, `marginheight`, `marginwidth`, `height`, `width`, `allowfullscreen`).
 
-While this code is more complex, to give a top level overview, this code uses the `figure` element to create a container for our map, and then the `iframe` element to embed the map into our page. The `src` attribute tells the browser where to find the map, and the `style` attribute tells the browser how to display the map. The rest of the attributes are used to set the size of the map.
+While this code is more complex, a high-level overview reveals that it uses the `figure` element to create a container for our map, and the `iframe` element to embed the map into our page. The `src` attribute specifies the map's location for the browser, while the `style` attribute dictates the map's display. The other attributes are used to determine the map's size.
 
-So to recreate this approach I could simply copy this code and put it in our `first_page.html` file, and see the results when I open that page in the browser.
+To replicate this approach, you could simply copy this code into our `first_page.html` file and observe the results when opening that page in a browser.
 
-But even if I can see it and you can see it via my Zoom screen, you cannot currently see it on the internet. To do that, we need to discuss how the web works.
+However, even though I can see it and you can view it via my Zoom screen, it is not currently visible on the internet. To achieve that, we need to explore how the web works.
 
 
 ## What is the Web and How does it Work?
 
-We all use the web constantly, but what is it exactly? 
+We all use the web constantly, but what exactly is it? 
 
-If we go to our handy source of information, Wikipedia, we can find the following definition:
+Turning to our reliable source of information, Wikipedia, we find the following definition:
 
 [**From Wikipedia:**](https://en.wikipedia.org/wiki/World_Wide_Web)
 "The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as <https://www.example.com/>), which may be interlinked by hypertext, and are accessible over the Internet.[1][2] The resources of the WWW are transferred via the Hypertext Transfer Protocol (HTTP) and may be accessed by users by a software application called a web browser and are published by a software application called a web server."
 
-This is technically a definition but there's a lot to unpack here. 
+While this is technically a definition, there's a lot to unpack here.
 
-### What is a Uniform Resource Locators (or URL)?
+### What are Uniform Resource Locators (or URL)?
 
 <figure>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png" class="image-popup">
@@ -67,15 +67,15 @@ This is technically a definition but there's a lot to unpack here.
   </a>
 </figure>
 
-This diagram is from the Mozilla web docs that have a great overview of the topic [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL). You've already seen a form of URLs when we created an `a` tag in our HTML page. 
+This diagram is from the Mozilla Web Docs, which provide a great overview of the topic [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL). You've already encountered URLs when we created an `a` tag in our HTML page. 
 
 ```html
 <a href="https://www.google.com/">Google</a>
 ```
 
-This is a type of **Hyperlink** or **Link** that allows us to link to other webpages. In our case, we created something called an **external link** because we linked to a webpage that is not part of our website. But you can also created **internal links** that link to other pages on your website or **anchors** that link to specific parts of a webpage (this is how you can use the sidebar to navigate this page). You can read more about hyperlinks here [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_are_hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_are_hyperlinks).
+This is a type of **Hyperlink** or **Link** that allows us to link to other webpages. In our case, we created something called an **external link** because we linked to a webpage that is not part of our website. But you can also create **internal links** that link to other pages on your website, or **anchors** that link to specific parts of a webpage (this is how the sidebar to navigate this page functions). You can read more about hyperlinks here [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_are_hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_are_hyperlinks).
 
-But URLs are more than just links, they are also the way we access webpages.Mozilla describe URLs as similar to postal addresses, which I think is a helpful analogy. If you want to send a letter to someone, you need to know their address. If you want to send a request to a webpage, you need to know the URL. Before we break down this anatomy of URLs, it's helpful to know a bit about domain names and how the web works. 
+But URLs are more than just links; they are the way we access webpages. Mozilla describes URLs as akin to postal addresses, an analogy I find helpful. Just as you need an address to send a letter, you need a URL to send a request to a webpage. Before delving into the anatomy of URLs, understanding domain names and the web's functionality is beneficial.
 
 While we often talk about the **cloud**, the concept of the web was originally based on the idea of a **web** of interconnected computers.
 
