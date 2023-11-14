@@ -18,6 +18,10 @@ Our DH Librarian, Mary Ton, has kindly offered to host any of your DH workshops 
 
 This is an **optional** way to share your workshop, but if you would like to share your workshop on this channel, you will need to caption clean your video and give Mary co-publishing privileges. If you are interested in this option, please let me know and I can put you in touch with Mary to discuss the logistics.
 
+## Submitting Your Workshop
+
+To submit your workshop, please complete the following form, [DH Workshop Submissison Form](https://forms.gle/HfmQ2C474HA7GVMe8). You will need to use your Illinois email address to complete the form. In the form you can share a link to your workshop materials. I've also included a link to a series of folders in our Google Drive folder, under the `DH Workshops` folder. Each of the folders are named under the topic/group of your workshop, and you are welcome to upload your materials there though it is completely optional. You can find the link to spreadsheet with all the information about submissions in the `DH Workshops` folder as well, or through our Canvas site.
+
 ## Feedback Logistics
 
 As outlined in our [assessments]({{site.baseurl}}/assessments/03-semester-project/), you will be expected to watch at least one of your peers' workshops and provide feedback.
