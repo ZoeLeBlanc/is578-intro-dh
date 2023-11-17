@@ -30,12 +30,14 @@ As you are developing your proposal, I would highly recommend trying to attend a
 <h2 id="workshop-presentation">Workshop Presentation 15%</h2> 
 <h3>Due Nov 16, 2023 (Extension Possible Until Nov 23, 2023)</h3>
 
-Once your proposed workshop is approved, you will begin working on it culminating in a “test-run” presentation of your DH workshop. While most DH workshops have audiences, increasingly many are happening remotely without any synchronous audience engagement. Therefore, this presentation will mimic this new reality, and be recorded virtually and shared with your peers in the course, who will then provide feedback and suggestions for your workshop (more on that below). Presentations should be ~20-40 minutes in length (absolutely no longer than 60 minutes), and you are welcome to use any video recording platform. More details will be provided closer to the submission date.
+Once your proposed workshop is approved, you will begin working on it culminating in a “test-run” presentation of your DH workshop. While most DH workshops have audiences, increasingly many are happening remotely without any synchronous audience engagement. Therefore, this presentation will mimic this new reality, and be recorded virtually and shared with your peers in the course, who will then provide feedback and suggestions for your workshop (more on that below). Presentations should be ~20-40 minutes in length (ideally no longer than 60 minutes), and you are welcome to use any video recording platform. More details will be provided closer to the submission date.
 
 <h2 id="workshop-feedback">Workshop Feedback 5%</h2> 
 <h3>Due Nov 30, 2023 (Extension Possible Until Dec 7, 2023)</h3>
 
-Each student will watch at least one workshop once posted, and provide feedback to the presenter via a Google Form. This feedback is intended to help the presenter improve their workshop and should be constructive and respectful. While watching the presentation you should attempt to follow any of the steps and detail your experience completing the workshop.  More details will be provided closer to the submission date.
+Each student will watch at least one workshop once posted, and provide feedback to the presenter. Group assignments for watching materials are available [here]({{site.baseurl}}/assessments/05-workshop-feedback/#workshop-groups). This feedback is intended to help the presenter improve their workshop and should be constructive and respectful. While watching the presentation you should attempt to follow any of the steps and detail your experience completing the workshop.
+
+You have two options for submitting feedback. You can either complete the feedback via Google Form (available on the Canvas Assignment page) or use this Workshop Feedback Template (available [here]({{site.baseurl}}/assets/files/feedback_form_template.md) as a file to download or from our course GitHub repository [https://github.com/ZoeLeBlanc/is578-intro-dh/blob/gh-pages/assets/files/feedback_form_template.md](https://github.com/ZoeLeBlanc/is578-intro-dh/blob/gh-pages/assets/files/feedback_form_template.md)) and submit it via email or Slack to the Instructor. The instructor will distribute the feedback to the presenter.
 
 ## Final Workshop Submission 20% 
 <h3>Due Dec 18, 2023</h3>
