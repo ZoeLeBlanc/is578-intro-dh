@@ -42,20 +42,19 @@ You have two options for submitting feedback. You can either complete the feedba
 ## Final Workshop Submission 20% 
 <h3>Due Dec 18, 2023</h3>
 
-The final piece of your semester-long project is submitting your workshop in written form. This final submission is somewhat based on the structure of a Programming Historian lesson (we will discuss these in class). This final submission is split in two sections: 
+<div class="notice--info">⚡️ If you need another day or two, you can take it for submitting your final workshop but final grades are due Thursday December 21, so please try your best to submit by this date. Thank you!</div>
 
-- The first half is a written version of your workshop that could be shared publicly with future students or peers interested in the topic.  You may write this section either individually or collectively, and it should be between 5 and 10 pages double spaced. 
-- The second section essentially serves as an author's note. It is intended for other instructors and should explain your pedagogical choices, as well as how the workshop aligns with your learning objectives. This section must be written individually and should be between 3 and 6 pages double spaced.
+The final piece of your semester-long project is submitting your workshop in written form. This final submission is split in two sections: 
 
-You are welcome to use screenshots or link to recordings. Also, be sure to include citations to the relevant scholarship, both from the course and beyond.
+- The first half is a written version of your workshop that could be shared publicly with future students or peers interested in the topic. I realize it is tricky to turn a video into a written version, but I would encourage you to use a combination of screenshots and citations to help transform from video to print. You may write this section either individually or collectively, and it should be between 5 and 10 pages double spaced (though this limit is more of a suggestion, just try to avoid excessively long like 30 pages). You're welcome to use transcription software to help you transcribe the video, but you should still edit the transcription to make it more readable and also will likely need to work a bit on how to transform live demonstrations into walk-throughs of the interface (ideally with screenshots). Also, be sure to include citations to the relevant scholarship, both from the course and beyond.
+- The second section essentially serves as an author's note/reflection on your experience of learning a new topic in DH. It is intended as a space to explain your pedagogical choices, as well as how crafting the workshop was informed by your experiences learning a new DH topic. This section is a chance to talk about pivots or experiments you tried that didn't work, and how that experienced lead you to alter your workshop but also understand DH in new ways. This section must be written individually if you did a collaborative workshop, and should be between 3 and 6 pages double spaced (though again this size limitation is a suggestion and not a hard line). You can also include citations in this section, especially to relevant course readings.
 
-Finally, this final submission must be submitted via GitHub into the appropriate course folder. If you choose, you may also publish it publicly on the course website (More details available closer to submission).
+In short, the first half of this submission is a written version of your workshop, and the second half is a reflection on your experience of learning a new DH topic and crafting a workshop around it. In terms of the workshop feedback, you should ideally try to incorporate that as much as possible though you can also indicate in the second half of your submission how you would incorporate the feedback if you had more time.
+
+## Final Project Submission Logistics
+
+This final submission can be submitted in any format (whether a Markdown file, Word Doc, Google Doc, or PDF). I would prefer that you submit it with your relevant datasets and additional materials via a GitHub repository link that you would share via either Canvas or Slack, but if you don't have additional materials you can submit just the written document (again via either Canvas or Slack). If you have any questions about this final submission, please don't hesitate to reach out to the instructor.
 
 
-## Logistics
-
-- All assignments can be sent to the instructor in Slack, uploaded via Canvas, or sent directly via email. 
-- You do not need to ask for extension for the posted extension date, but any extension past that date requires instructor approval.
-- You may use whatever file formats/structures you prefer, unless specified otherwise.
 
 
